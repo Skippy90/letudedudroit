@@ -1,0 +1,785 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 345.77,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 8.034,
+   "phrases": [
+    {
+     "texte": "Un samedi, dans un magasin d'électronique à Martigny.",
+     "debut": 0.0,
+     "fin": 2.902
+    },
+    {
+     "texte": "Un ordinateur portable disparaît d'un présentoir.",
+     "debut": 3.344,
+     "fin": 5.793
+    },
+    {
+     "texte": "Quatre personnes ont joué un rôle.",
+     "debut": 5.968,
+     "fin": 8.034
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 8.484,
+   "fin": 14.243,
+   "phrases": [
+    {
+     "texte": "Lina a eu l'idée.",
+     "debut": 8.484,
+     "fin": 9.761
+    },
+    {
+     "texte": "C'est elle qui a convaincu Max, en lui promettant de lui racheter l'ordinateur.",
+     "debut": 9.935,
+     "fin": 14.243
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 14.693,
+   "fin": 27.557,
+   "phrases": [
+    {
+     "texte": "Max et Jade ont tout organisé ensemble.",
+     "debut": 14.693,
+     "fin": 17.387
+    },
+    {
+     "texte": "Jade occupe le vendeur avec des questions.",
+     "debut": 17.595,
+     "fin": 19.616
+    },
+    {
+     "texte": "Pendant ce temps, Max glisse l'ordinateur dans un sac.",
+     "debut": 20.219,
+     "fin": 23.226
+    },
+    {
+     "texte": "Ils comptent se partager l'argent de la revente.",
+     "debut": 23.354,
+     "fin": 25.525
+    },
+    {
+     "texte": "Le vendeur ne remarque rien.",
+     "debut": 25.908,
+     "fin": 27.557
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 28.007,
+   "fin": 33.115,
+   "phrases": [
+    {
+     "texte": "Et ce sac, c'est Noé qui l'a prêté, en sachant très bien à quoi il allait servir.",
+     "debut": 28.007,
+     "fin": 33.115
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 33.565,
+   "fin": 40.392,
+   "phrases": [
+    {
+     "texte": "Une seule main a pris l'ordinateur.",
+     "debut": 33.565,
+     "fin": 35.179
+    },
+    {
+     "texte": "Mais qui, parmi ces quatre personnes, répond du vol ?",
+     "debut": 35.783,
+     "fin": 39.033
+    },
+    {
+     "texte": "Et comment ?",
+     "debut": 39.544,
+     "fin": 40.392
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 40.842,
+   "fin": 51.709,
+   "phrases": [
+    {
+     "texte": "Le droit pénal distingue deux familles.",
+     "debut": 40.842,
+     "fin": 42.723
+    },
+    {
+     "texte": "D'un côté, les auteurs : ceux qui commettent l'infraction.",
+     "debut": 43.048,
+     "fin": 46.252
+    },
+    {
+     "texte": "De l'autre, les participants : ceux qui y contribuent sans la commettre eux-mêmes.",
+     "debut": 46.693,
+     "fin": 51.709
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 52.159,
+   "fin": 59.403,
+   "phrases": [
+    {
+     "texte": "Parmi les auteurs, il y a l'auteur seul, et les coauteurs.",
+     "debut": 52.159,
+     "fin": 55.12
+    },
+    {
+     "texte": "Parmi les participants, il y a l'instigateur et le complice.",
+     "debut": 55.63,
+     "fin": 59.404
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 59.853,
+   "fin": 65.89,
+   "phrases": [
+    {
+     "texte": "Chacun de ces rôles a ses conditions, et sa peine.",
+     "debut": 59.853,
+     "fin": 62.581
+    },
+    {
+     "texte": "Prenons nos quatre personnages un par un.",
+     "debut": 63.278,
+     "fin": 65.89
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 66.34,
+   "fin": 74.653,
+   "phrases": [
+    {
+     "texte": "Commençons par Max et Jade.",
+     "debut": 66.34,
+     "fin": 68.383
+    },
+    {
+     "texte": "La coactivité n'est pas définie par un article du Code pénal.",
+     "debut": 68.766,
+     "fin": 72.017
+    },
+    {
+     "texte": "C'est le Tribunal fédéral qui l'a précisée.",
+     "debut": 72.226,
+     "fin": 74.653
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 75.103,
+   "fin": 86.713,
+   "phrases": [
+    {
+     "texte": "Est coauteur celui qui collabore avec d'autres, intentionnellement et de manière déterminante.",
+     "debut": 75.103,
+     "fin": 80.653
+    },
+    {
+     "texte": "Il prend part à la décision de commettre l'infraction, à son organisation ou à son exécution.",
+     "debut": 80.896,
+     "fin": 86.713
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 87.163,
+   "fin": 93.34,
+   "phrases": [
+    {
+     "texte": "Il faut qu'il apparaisse comme l'un des participants principaux.",
+     "debut": 87.163,
+     "fin": 90.588
+    },
+    {
+     "texte": "Sa contribution doit être essentielle.",
+     "debut": 90.832,
+     "fin": 93.34
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 93.79,
+   "fin": 101.684,
+   "phrases": [
+    {
+     "texte": "Max et Jade ont décidé ensemble.",
+     "debut": 93.79,
+     "fin": 95.868
+    },
+    {
+     "texte": "Ils se sont partagé les rôles.",
+     "debut": 96.251,
+     "fin": 97.645
+    },
+    {
+     "texte": "Sans Jade pour occuper le vendeur, le plan ne tenait pas.",
+     "debut": 98.086,
+     "fin": 101.685
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 102.134,
+   "fin": 110.865,
+   "phrases": [
+    {
+     "texte": "Ils sont donc tous deux coauteurs du vol.",
+     "debut": 102.134,
+     "fin": 104.177
+    },
+    {
+     "texte": "Peu importe que seul Max ait touché l'ordinateur.",
+     "debut": 104.781,
+     "fin": 107.393
+    },
+    {
+     "texte": "Chacun répond de l'infraction entière, comme un auteur.",
+     "debut": 107.602,
+     "fin": 110.865
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 111.315,
+   "fin": 117.724,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral ajoute que la décision commune n'a pas besoin d'être exprimée en mots.",
+     "debut": 111.315,
+     "fin": 115.518
+    },
+    {
+     "texte": "Elle peut résulter de leurs actes.",
+     "debut": 115.959,
+     "fin": 117.724
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 118.174,
+   "fin": 124.025,
+   "phrases": [
+    {
+     "texte": "Passons à Lina.",
+     "debut": 118.174,
+     "fin": 119.068
+    },
+    {
+     "texte": "Elle n'était pas dans le magasin.",
+     "debut": 119.347,
+     "fin": 120.798
+    },
+    {
+     "texte": "Mais c'est elle qui a fait naître chez Max l'idée de voler.",
+     "debut": 121.123,
+     "fin": 124.025
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 124.475,
+   "fin": 134.413,
+   "phrases": [
+    {
+     "texte": "L'article vingt-quatre du Code pénal vise celui qui a intentionnellement décidé autrui à commettre un crime ou un délit.",
+     "debut": 124.475,
+     "fin": 132.265
+    },
+    {
+     "texte": "On l'appelle l'instigateur.",
+     "debut": 132.869,
+     "fin": 134.413
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 134.863,
+   "fin": 143.176,
+   "phrases": [
+    {
+     "texte": "L'instigation, c'est susciter chez autrui la décision d'agir.",
+     "debut": 134.863,
+     "fin": 138.659
+    },
+    {
+     "texte": "Une simple demande, une suggestion ou une promesse peuvent suffire.",
+     "debut": 138.985,
+     "fin": 143.176
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 143.626,
+   "fin": 159.091,
+   "phrases": [
+    {
+     "texte": "Créer une simple occasion ne suffit pas.",
+     "debut": 143.626,
+     "fin": 145.971
+    },
+    {
+     "texte": "Il faut une influence directe sur la volonté de l'autre.",
+     "debut": 146.482,
+     "fin": 149.187
+    },
+    {
+     "texte": "Et il y a une autre limite.",
+     "debut": 149.628,
+     "fin": 151.254
+    },
+    {
+     "texte": "Si Max était déjà décidé à voler avant de parler à Lina, il n'y a pas d'instigation.",
+     "debut": 151.637,
+     "fin": 156.246
+    },
+    {
+     "texte": "On ne peut pas décider quelqu'un qui l'est déjà.",
+     "debut": 156.757,
+     "fin": 159.09
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 159.541,
+   "fin": 165.81,
+   "phrases": [
+    {
+     "texte": "Et la sanction surprend souvent.",
+     "debut": 159.541,
+     "fin": 160.911
+    },
+    {
+     "texte": "Si l'infraction a été commise, l'instigateur encourt la même peine que l'auteur.",
+     "debut": 161.085,
+     "fin": 165.81
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 166.26,
+   "fin": 175.362,
+   "phrases": [
+    {
+     "texte": "L'article vingt-quatre va même plus loin.",
+     "debut": 166.26,
+     "fin": 168.768
+    },
+    {
+     "texte": "Celui qui a seulement tenté de décider autrui à commettre un crime encourt la peine de la tentative.",
+     "debut": 169.046,
+     "fin": 175.362
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 175.812,
+   "fin": 188.072,
+   "phrases": [
+    {
+     "texte": "Un exemple réel jugé par le Tribunal fédéral.",
+     "debut": 175.812,
+     "fin": 178.714
+    },
+    {
+     "texte": "Un homme avait offert vingt mille francs à un informaticien.",
+     "debut": 179.225,
+     "fin": 182.081
+    },
+    {
+     "texte": "En échange, il voulait une copie d'un CD-ROM appartenant aux employeurs de l'informaticien.",
+     "debut": 182.523,
+     "fin": 188.072
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 188.522,
+   "fin": 197.067,
+   "phrases": [
+    {
+     "texte": "L'informaticien a refusé et prévenu son employeur.",
+     "debut": 188.522,
+     "fin": 191.459
+    },
+    {
+     "texte": "Aucun vol n'a eu lieu.",
+     "debut": 191.784,
+     "fin": 193.05
+    },
+    {
+     "texte": "Mais l'homme a été condamné pour tentative d'instigation à vol.",
+     "debut": 193.561,
+     "fin": 197.067
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 197.517,
+   "fin": 203.88,
+   "phrases": [
+    {
+     "texte": "Reste Noé, qui a prêté son sac.",
+     "debut": 197.517,
+     "fin": 199.328
+    },
+    {
+     "texte": "Il n'a pas eu l'idée, il n'a pas organisé le vol.",
+     "debut": 199.653,
+     "fin": 202.126
+    },
+    {
+     "texte": "Il a seulement aidé.",
+     "debut": 202.405,
+     "fin": 203.879
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 204.33,
+   "fin": 214.268,
+   "phrases": [
+    {
+     "texte": "L'article vingt-cinq du Code pénal vise celui qui a intentionnellement prêté assistance à l'auteur.",
+     "debut": 204.33,
+     "fin": 209.682
+    },
+    {
+     "texte": "L'aide porte sur un crime ou un délit.",
+     "debut": 210.286,
+     "fin": 212.654
+    },
+    {
+     "texte": "C'est le complice.",
+     "debut": 213.165,
+     "fin": 214.268
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 214.718,
+   "fin": 223.03,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral demande deux choses.",
+     "debut": 214.718,
+     "fin": 216.819
+    },
+    {
+     "texte": "D'abord, une contribution réelle : sans l'aide, les choses ne se seraient pas passées de la même manière.",
+     "debut": 217.261,
+     "fin": 223.031
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 223.48,
+   "fin": 237.877,
+   "phrases": [
+    {
+     "texte": "Ensuite, l'intention.",
+     "debut": 223.48,
+     "fin": 225.001
+    },
+    {
+     "texte": "Le complice doit savoir qu'il aide à un acte déterminé, et le vouloir, ou au moins l'accepter.",
+     "debut": 225.698,
+     "fin": 231.874
+    },
+    {
+     "texte": "Le dol éventuel de la vidéo quatre suffit donc.",
+     "debut": 232.199,
+     "fin": 234.858
+    },
+    {
+     "texte": "Il n'a pas besoin de connaître tous les détails du plan.",
+     "debut": 235.241,
+     "fin": 237.876
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 238.327,
+   "fin": 244.318,
+   "phrases": [
+    {
+     "texte": "Noé savait à quoi servirait son sac.",
+     "debut": 238.327,
+     "fin": 240.382
+    },
+    {
+     "texte": "Les deux conditions sont remplies.",
+     "debut": 240.893,
+     "fin": 242.344
+    },
+    {
+     "texte": "Il est complice du vol.",
+     "debut": 242.785,
+     "fin": 244.318
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 244.768,
+   "fin": 251.548,
+   "phrases": [
+    {
+     "texte": "Et pour lui, la loi est plus douce.",
+     "debut": 244.768,
+     "fin": 246.811
+    },
+    {
+     "texte": "L'article vingt-cinq prévoit que la peine du complice est atténuée.",
+     "debut": 247.415,
+     "fin": 251.548
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 251.998,
+   "fin": 262.307,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 251.998,
+     "fin": 253.67
+    },
+    {
+     "texte": "On croit souvent que seul celui qui a commis le geste est vraiment coupable.",
+     "debut": 254.111,
+     "fin": 258.349
+    },
+    {
+     "texte": "Les autres auraient juste « un peu aidé ».",
+     "debut": 258.558,
+     "fin": 260.926
+    },
+    {
+     "texte": "C'est faux.",
+     "debut": 261.53,
+     "fin": 262.308
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 262.757,
+   "fin": 272.045,
+   "phrases": [
+    {
+     "texte": "Jade, qui n'a pas touché l'ordinateur, répond comme Max.",
+     "debut": 262.757,
+     "fin": 266.182
+    },
+    {
+     "texte": "Lina, restée chez elle, encourt la même peine.",
+     "debut": 266.391,
+     "fin": 268.934
+    },
+    {
+     "texte": "Seul le complice bénéficie d'une peine atténuée.",
+     "debut": 269.142,
+     "fin": 272.045
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 272.495,
+   "fin": 280.204,
+   "phrases": [
+    {
+     "texte": "Ce qui compte, ce n'est pas qui tient l'objet.",
+     "debut": 272.495,
+     "fin": 275.397
+    },
+    {
+     "texte": "C'est le rôle que chacun a joué dans la décision et dans l'exécution.",
+     "debut": 275.676,
+     "fin": 280.204
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 280.654,
+   "fin": 301.97,
+   "phrases": [
+    {
+     "texte": "Une dernière précision.",
+     "debut": 280.654,
+     "fin": 281.769
+    },
+    {
+     "texte": "L'instigation et la complicité dépendent de l'acte de l'auteur principal.",
+     "debut": 282.279,
+     "fin": 286.854
+    },
+    {
+     "texte": "On dit qu'elles sont accessoires.",
+     "debut": 287.237,
+     "fin": 290.581
+    },
+    {
+     "texte": "Sans infraction commise ou tentée, il n'y a pas de complice.",
+     "debut": 291.091,
+     "fin": 294.725
+    },
+    {
+     "texte": "Et pour une contravention, la complicité n'est punissable que si la loi le prévoit.",
+     "debut": 295.108,
+     "fin": 299.868
+    },
+    {
+     "texte": "On l'a vu dans la vidéo trois.",
+     "debut": 300.251,
+     "fin": 301.97
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 302.42,
+   "fin": 313.241,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 302.42,
+     "fin": 303.105
+    },
+    {
+     "texte": "Les coauteurs décident et agissent ensemble, de façon essentielle : chacun est auteur.",
+     "debut": 303.709,
+     "fin": 309.189
+    },
+    {
+     "texte": "L'instigateur fait naître la décision chez l'auteur : même peine.",
+     "debut": 309.63,
+     "fin": 313.24
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 313.691,
+   "fin": 322.375,
+   "phrases": [
+    {
+     "texte": "Le complice aide intentionnellement : sa peine est atténuée.",
+     "debut": 313.691,
+     "fin": 317.22
+    },
+    {
+     "texte": "Face à un cas, demandez-vous quel rôle chacun a joué, et à quel moment.",
+     "debut": 317.731,
+     "fin": 322.375
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 322.825,
+   "fin": 330.859,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 322.825,
+     "fin": 323.858
+    },
+    {
+     "texte": "Paul prête sa voiture à un ami.",
+     "debut": 324.369,
+     "fin": 326.18
+    },
+    {
+     "texte": "Il sait que l'ami va s'en servir pour cambrioler une maison.",
+     "debut": 326.563,
+     "fin": 329.21
+    },
+    {
+     "texte": "Le cambriolage a lieu.",
+     "debut": 329.454,
+     "fin": 330.859
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 331.309,
+   "fin": 337.625,
+   "phrases": [
+    {
+     "texte": "Quel est le rôle de Paul ?",
+     "debut": 331.309,
+     "fin": 332.54
+    },
+    {
+     "texte": "Et quelle peine encourt-il ?",
+     "debut": 332.981,
+     "fin": 334.629
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 335.14,
+     "fin": 337.625
+    }
+   ]
+  },
+  {
+   "ligne": 37,
+   "debut": 338.075,
+   "fin": 345.32,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 338.075,
+     "fin": 343.021
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 343.532,
+     "fin": 345.32
+    }
+   ]
+  }
+ ]
+}
