@@ -1,0 +1,764 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 334.688,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 7.43,
+   "phrases": [
+    {
+     "texte": "Un dimanche d'été, à la piscine d'Yverdon.",
+     "debut": 0.0,
+     "fin": 2.589
+    },
+    {
+     "texte": "Clara est la surveillante de baignade.",
+     "debut": 2.798,
+     "fin": 4.644
+    },
+    {
+     "texte": "C'est son travail, et elle est payée pour cela.",
+     "debut": 4.853,
+     "fin": 7.43
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 7.88,
+   "fin": 15.218,
+   "phrases": [
+    {
+     "texte": "Au bord du grand bassin, elle regarde son téléphone.",
+     "debut": 7.88,
+     "fin": 10.504
+    },
+    {
+     "texte": "Elle ne voit pas le petit Timéo, huit ans, qui se débat dans l'eau.",
+     "debut": 10.748,
+     "fin": 15.218
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 15.668,
+   "fin": 20.544,
+   "phrases": [
+    {
+     "texte": "À deux mètres, un autre baigneur, Maël, voit tout.",
+     "debut": 15.668,
+     "fin": 18.756
+    },
+    {
+     "texte": "Lui non plus ne fait rien.",
+     "debut": 19.197,
+     "fin": 20.544
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 20.994,
+   "fin": 27.821,
+   "phrases": [
+    {
+     "texte": "Timéo est sorti de l'eau à temps par un autre enfant.",
+     "debut": 20.994,
+     "fin": 23.571
+    },
+    {
+     "texte": "Mais il a avalé beaucoup d'eau et doit passer deux jours à l'hôpital.",
+     "debut": 24.175,
+     "fin": 27.821
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 28.271,
+   "fin": 36.026,
+   "phrases": [
+    {
+     "texte": "Clara et Maël n'ont rien fait.",
+     "debut": 28.271,
+     "fin": 30.105
+    },
+    {
+     "texte": "Aucun geste, aucune poussée, rien.",
+     "debut": 30.489,
+     "fin": 33.066
+    },
+    {
+     "texte": "Peut-on être coupable sans avoir rien fait ?",
+     "debut": 33.507,
+     "fin": 36.026
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 36.476,
+   "fin": 41.677,
+   "phrases": [
+    {
+     "texte": "Jusqu'ici, nos cas parlaient d'actes.",
+     "debut": 36.476,
+     "fin": 38.694
+    },
+    {
+     "texte": "Marc poussait Julien, Léo frappait un ballon.",
+     "debut": 39.135,
+     "fin": 41.677
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 42.127,
+   "fin": 54.155,
+   "phrases": [
+    {
+     "texte": "Mais le droit pénal connaît aussi l'omission.",
+     "debut": 42.127,
+     "fin": 44.345
+    },
+    {
+     "texte": "C'est le fait de ne pas agir, alors qu'on aurait dû.",
+     "debut": 44.948,
+     "fin": 47.886
+    },
+    {
+     "texte": "Une piscine, une crèche, une montagne : bien des drames viennent d'un geste qui n'a pas été fait.",
+     "debut": 48.396,
+     "fin": 54.155
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 54.605,
+   "fin": 63.94,
+   "phrases": [
+    {
+     "texte": "L'article onze du Code pénal le dit clairement.",
+     "debut": 54.605,
+     "fin": 57.333
+    },
+    {
+     "texte": "Un crime ou un délit peut aussi être commis par un comportement passif, contraire à une obligation d'agir.",
+     "debut": 57.844,
+     "fin": 63.939
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 64.39,
+   "fin": 70.148,
+   "phrases": [
+    {
+     "texte": "Toute la question devient alors : qui avait l'obligation d'agir ?",
+     "debut": 64.39,
+     "fin": 68.001
+    },
+    {
+     "texte": "Clara ?",
+     "debut": 68.094,
+     "fin": 68.697
+    },
+    {
+     "texte": "Maël ?",
+     "debut": 68.871,
+     "fin": 69.336
+    },
+    {
+     "texte": "Les deux ?",
+     "debut": 69.464,
+     "fin": 70.149
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 70.598,
+   "fin": 77.982,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral est net.",
+     "debut": 70.598,
+     "fin": 72.258
+    },
+    {
+     "texte": "N'importe quelle obligation ne suffit pas.",
+     "debut": 72.862,
+     "fin": 74.72
+    },
+    {
+     "texte": "Il faut que la personne ait été dans une position de garant.",
+     "debut": 74.998,
+     "fin": 77.982
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 78.432,
+   "fin": 86.792,
+   "phrases": [
+    {
+     "texte": "Un garant, c'est quelqu'un que sa situation oblige à protéger.",
+     "debut": 78.432,
+     "fin": 82.321
+    },
+    {
+     "texte": "Il protège un bien précis, comme la vie ou la santé d'une personne.",
+     "debut": 82.704,
+     "fin": 86.791
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 87.242,
+   "fin": 92.861,
+   "phrases": [
+    {
+     "texte": "L'article onze donne quatre sources possibles de cette obligation.",
+     "debut": 87.242,
+     "fin": 90.493
+    },
+    {
+     "texte": "Les voici, une par une.",
+     "debut": 90.876,
+     "fin": 92.861
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 93.311,
+   "fin": 99.905,
+   "phrases": [
+    {
+     "texte": "Première source : la loi.",
+     "debut": 93.311,
+     "fin": 94.878
+    },
+    {
+     "texte": "Par exemple, le Code civil impose aux parents de protéger le développement de leur enfant.",
+     "debut": 95.261,
+     "fin": 99.905
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 100.355,
+   "fin": 107.089,
+   "phrases": [
+    {
+     "texte": "Deuxième source : un contrat.",
+     "debut": 100.355,
+     "fin": 102.48
+    },
+    {
+     "texte": "C'est le cas d'une surveillante de baignade engagée pour veiller sur les nageurs.",
+     "debut": 102.99,
+     "fin": 107.089
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 107.539,
+   "fin": 116.084,
+   "phrases": [
+    {
+     "texte": "Troisième source : une communauté de risques librement acceptée.",
+     "debut": 107.539,
+     "fin": 111.463
+    },
+    {
+     "texte": "Par exemple, une cordée d'alpinistes qui partent ensemble en montagne.",
+     "debut": 111.846,
+     "fin": 116.084
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 116.534,
+   "fin": 123.779,
+   "phrases": [
+    {
+     "texte": "Quatrième source : la création d'un risque.",
+     "debut": 116.534,
+     "fin": 119.262
+    },
+    {
+     "texte": "Celui qui crée un danger doit empêcher qu'il ne fasse du mal.",
+     "debut": 119.773,
+     "fin": 123.779
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 124.229,
+   "fin": 132.681,
+   "phrases": [
+    {
+     "texte": "Un exemple réel jugé par le Tribunal fédéral.",
+     "debut": 124.229,
+     "fin": 127.491
+    },
+    {
+     "texte": "Pour des travaux, un fonctionnaire avait fait planter une plaque métallique dans le Rhône.",
+     "debut": 127.933,
+     "fin": 132.681
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 133.131,
+   "fin": 142.279,
+   "phrases": [
+    {
+     "texte": "En créant cet obstacle pour les bateaux, il avait créé un risque.",
+     "debut": 133.131,
+     "fin": 137.09
+    },
+    {
+     "texte": "Il devait agir pour éviter l'accident, notamment faire retirer la plaque.",
+     "debut": 137.206,
+     "fin": 140.724
+    },
+    {
+     "texte": "Il était garant.",
+     "debut": 141.165,
+     "fin": 142.28
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 142.729,
+   "fin": 150.996,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral distingue deux sortes de devoirs.",
+     "debut": 142.729,
+     "fin": 145.423
+    },
+    {
+     "texte": "Le devoir de protection : veiller sur une personne ou un bien précis, quoi qu'il arrive.",
+     "debut": 145.933,
+     "fin": 150.995
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 151.446,
+   "fin": 160.641,
+   "phrases": [
+    {
+     "texte": "Et le devoir de surveillance : maîtriser une source de danger, pour qu'elle ne blesse personne.",
+     "debut": 151.446,
+     "fin": 156.612
+    },
+    {
+     "texte": "Clara protège.",
+     "debut": 157.216,
+     "fin": 158.191
+    },
+    {
+     "texte": "Le fonctionnaire surveille son obstacle.",
+     "debut": 158.516,
+     "fin": 160.641
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 161.091,
+   "fin": 166.803,
+   "phrases": [
+    {
+     "texte": "Revenons à la piscine.",
+     "debut": 161.091,
+     "fin": 162.287
+    },
+    {
+     "texte": "Clara a été engagée pour surveiller le bassin, et elle était à son poste.",
+     "debut": 162.67,
+     "fin": 166.803
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 167.253,
+   "fin": 174.776,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral précise que c'est cette prise de poste effective qui compte, pas seulement la signature du contrat.",
+     "debut": 167.253,
+     "fin": 173.383
+    },
+    {
+     "texte": "Clara est garante.",
+     "debut": 173.534,
+     "fin": 174.776
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 175.226,
+   "fin": 182.656,
+   "phrases": [
+    {
+     "texte": "Maël, lui, n'est qu'un baigneur parmi d'autres.",
+     "debut": 175.226,
+     "fin": 177.815
+    },
+    {
+     "texte": "Aucune loi, aucun contrat, aucun risque créé par lui.",
+     "debut": 178.14,
+     "fin": 181.252
+    },
+    {
+     "texte": "Il n'est pas garant.",
+     "debut": 181.495,
+     "fin": 182.656
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 183.106,
+   "fin": 189.422,
+   "phrases": [
+    {
+     "texte": "Pour Clara, il faut encore deux conditions.",
+     "debut": 183.106,
+     "fin": 185.625
+    },
+    {
+     "texte": "D'abord, si elle avait agi, l'accident aurait-il été évité ?",
+     "debut": 186.008,
+     "fin": 189.422
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 189.872,
+   "fin": 196.931,
+   "phrases": [
+    {
+     "texte": "Le juge raisonne par hypothèse.",
+     "debut": 189.872,
+     "fin": 191.393
+    },
+    {
+     "texte": "Il imagine que Clara a fait son travail, et se demande si Timéo aurait été sauvé à temps.",
+     "debut": 191.718,
+     "fin": 196.931
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 197.381,
+   "fin": 206.669,
+   "phrases": [
+    {
+     "texte": "Ensuite, l'article onze pose une condition d'équivalence.",
+     "debut": 197.381,
+     "fin": 201.259
+    },
+    {
+     "texte": "Son inaction doit mériter le même reproche qu'un geste qui aurait causé l'accident.",
+     "debut": 201.862,
+     "fin": 206.669
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 207.119,
+   "fin": 215.014,
+   "phrases": [
+    {
+     "texte": "Si ces conditions sont remplies, Clara répond des blessures de Timéo comme si elle les avait causées.",
+     "debut": 207.119,
+     "fin": 212.03
+    },
+    {
+     "texte": "Le juge peut toutefois atténuer sa peine.",
+     "debut": 212.541,
+     "fin": 215.014
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 215.464,
+   "fin": 231.161,
+   "phrases": [
+    {
+     "texte": "Et souvenez-vous de la vidéo quatre.",
+     "debut": 215.464,
+     "fin": 217.322
+    },
+    {
+     "texte": "Clara n'a pas voulu l'accident.",
+     "debut": 217.832,
+     "fin": 219.249
+    },
+    {
+     "texte": "On parlera donc plutôt de négligence, punissable ici.",
+     "debut": 219.574,
+     "fin": 222.778
+    },
+    {
+     "texte": "Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle.",
+     "debut": 223.219,
+     "fin": 229.338
+    },
+    {
+     "texte": "Ce serait bien plus grave.",
+     "debut": 229.663,
+     "fin": 231.161
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 231.611,
+   "fin": 239.97,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 231.611,
+     "fin": 233.19
+    },
+    {
+     "texte": "On croit souvent que Maël, qui n'est pas garant, n'a rien à se reprocher devant la loi.",
+     "debut": 233.631,
+     "fin": 238.287
+    },
+    {
+     "texte": "C'est plus subtil.",
+     "debut": 238.798,
+     "fin": 239.97
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 240.42,
+   "fin": 248.454,
+   "phrases": [
+    {
+     "texte": "Il existe une infraction à part, qui vise tout le monde.",
+     "debut": 240.42,
+     "fin": 243.45
+    },
+    {
+     "texte": "C'est l'omission de prêter secours, à l'article cent vingt-huit du Code pénal.",
+     "debut": 243.729,
+     "fin": 248.454
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 248.904,
+   "fin": 262.464,
+   "phrases": [
+    {
+     "texte": "Elle punit celui qui ne secourt pas une personne en danger de mort imminent.",
+     "debut": 248.904,
+     "fin": 252.759
+    },
+    {
+     "texte": "Il faut qu'on puisse raisonnablement l'exiger de lui.",
+     "debut": 253.269,
+     "fin": 256.45
+    },
+    {
+     "texte": "Elle vise aussi celui qui laisse sans secours une personne qu'il a lui-même blessée.",
+     "debut": 256.834,
+     "fin": 262.464
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 262.914,
+   "fin": 270.113,
+   "phrases": [
+    {
+     "texte": "Un enfant se noie à deux mètres de Maël, dans une piscine.",
+     "debut": 262.914,
+     "fin": 266.409
+    },
+    {
+     "texte": "On pouvait au moins exiger de lui qu'il appelle à l'aide.",
+     "debut": 266.919,
+     "fin": 270.112
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 270.563,
+   "fin": 284.169,
+   "phrases": [
+    {
+     "texte": "La différence est importante.",
+     "debut": 270.563,
+     "fin": 271.979
+    },
+    {
+     "texte": "Maël ne répond pas des blessures de Timéo.",
+     "debut": 272.676,
+     "fin": 275.126
+    },
+    {
+     "texte": "Il répond seulement de ne pas avoir porté secours.",
+     "debut": 275.637,
+     "fin": 278.133
+    },
+    {
+     "texte": "Il encourt tout de même jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire.",
+     "debut": 278.829,
+     "fin": 284.17
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 284.619,
+   "fin": 291.957,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 284.619,
+     "fin": 285.234
+    },
+    {
+     "texte": "Ne rien faire peut constituer un crime ou un délit.",
+     "debut": 285.931,
+     "fin": 288.439
+    },
+    {
+     "texte": "Mais seulement pour celui qui avait une position de garant.",
+     "debut": 288.88,
+     "fin": 291.957
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 292.407,
+   "fin": 298.955,
+   "phrases": [
+    {
+     "texte": "Cette position vient de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé.",
+     "debut": 292.407,
+     "fin": 298.955
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 299.405,
+   "fin": 312.13,
+   "phrases": [
+    {
+     "texte": "Pour les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminent.",
+     "debut": 299.405,
+     "fin": 305.454
+    },
+    {
+     "texte": "Face à un cas d'omission, posez toujours la même question.",
+     "debut": 306.058,
+     "fin": 309.227
+    },
+    {
+     "texte": "Cette personne devait-elle agir, et pourquoi ?",
+     "debut": 309.552,
+     "fin": 312.13
+    }
+   ]
+  },
+  {
+   "ligne": 37,
+   "debut": 312.58,
+   "fin": 318.942,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 312.58,
+     "fin": 313.753
+    },
+    {
+     "texte": "Lucas allume un feu de camp en forêt.",
+     "debut": 314.263,
+     "fin": 316.202
+    },
+    {
+     "texte": "Il part sans l'éteindre, et le feu s'étend.",
+     "debut": 316.446,
+     "fin": 318.942
+    }
+   ]
+  },
+  {
+   "ligne": 38,
+   "debut": 319.392,
+   "fin": 326.497,
+   "phrases": [
+    {
+     "texte": "Lucas était-il garant ?",
+     "debut": 319.392,
+     "fin": 320.785
+    },
+    {
+     "texte": "Et si oui, d'après laquelle des quatre sources ?",
+     "debut": 321.168,
+     "fin": 324.001
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 324.384,
+     "fin": 326.497
+    }
+   ]
+  },
+  {
+   "ligne": 39,
+   "debut": 326.947,
+   "fin": 334.238,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 326.947,
+     "fin": 331.777
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 332.218,
+     "fin": 334.238
+    }
+   ]
+  }
+ ]
+}
