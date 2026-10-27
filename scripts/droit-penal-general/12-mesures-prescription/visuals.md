@@ -36,7 +36,7 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 10.2 | sous-titre "Trois principales" |
 | 11.1 | effacer-titres ; article "Art. 59 CP" ; liste-ajouter "1. Traitement institutionnel" |
 | 11.2 | titre "Grave trouble mental" |
-| 12.1 | effacer-titres ; case "Lien avec le trouble" ; case "Effet attendu" |
+| 12.1 | scene-vide ; article "Art. 59 CP" ; case "Lien avec le trouble" ; case "Effet attendu" |
 | 12.2 | titre "Un établissement adapté" |
 | 13.1 | scene-vide ; frise ; point 0.1 "Début" ; repere 0.45 "5 ans" |
 | 13.2 | repere 0.8 "+ 5 ans" ; titre "Prolongeable" |
@@ -58,8 +58,8 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 20.1 | scene-vide ; article "Art. 97 CP" ; frise |
 | 20.2 | repere 0.95 "30 ans" ; titre "À vie : 30 ans" |
 | 21.1 | repere 0.5 "15 ans" |
-| 21.2 | repere 0.33 "10 ans" |
-| 21.3 | repere 0.23 "7 ans" |
+| 21.2 | repere 0.33 "10" |
+| 21.3 | repere 0.23 "7" |
 | 22.1 | repere 0.1 "3 ans" ; renvoi "vidéo 3" |
 | 23.1 | article "Art. 98 CP" ; effacer-titres ; titre "Dès l'acte" |
 | 23.2 | point 0.02 "Le tag" |

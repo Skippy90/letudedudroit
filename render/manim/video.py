@@ -197,6 +197,8 @@ class Schemas(Scene):
             self.play(AnimationGroup(*[FadeIn(g, shift=UP * 0.1) for g in groupes], lag_ratio=1.0), run_time=4.5)
             return []
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
+        if nouveau.width > 13.0:  # titre trop long : réduit pour rester dans le cadre
+            nouveau.scale_to_fit_width(13.0)
         nouveau.original_text = contenu
         self.titre = nouveau
         self.focus = nouveau
