@@ -1,0 +1,10 @@
+{
+  "source": "synthese",
+  "fournisseur": "elevenlabs",
+  "modele": "eleven_multilingual_v2",
+  "voice_id": "À CHOISIR",
+  "nom_voix": "À CHOISIR",
+  "reglages": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.0, "speed": 1.0 },
+  "format_sortie": "mp3_44100_128",
+  "mention_publication": "Narration synthétique."
+}
