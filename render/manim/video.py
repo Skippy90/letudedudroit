@@ -62,6 +62,7 @@ class Schemas(Scene):
         self.batiment = self.livre = self.liste = self.cases = self.pyramide = None
         self.frise = self.colonnes = self.livres = None
         self.frise_points, self.mots_barres, self.fleches_retour = [], [], []
+        self.questions_etages, self.bouclier = {}, None
         self.focus = None
 
     # ----- temps -----
@@ -100,7 +101,8 @@ class Schemas(Scene):
             for t in groupe or []:
                 textes.append(t.original_text)
         if self.batiment:
-            textes += c.Batiment.NOMS
+            textes += c.Batiment.NOMS[:3 - sum(1 for e in self.batiment.etages if e[1].get_fill_opacity() == 0)]
+            textes += [q.original_text for q in getattr(self, "questions_etages", {}).values()]
         if self.pyramide:
             textes += c.Pyramide.NOMS
         if self.livres:
@@ -285,6 +287,7 @@ class Schemas(Scene):
 
     def a_accent(self, cible):
         objets = {"titre": self.titre, "livre": self.livre, "liste": self.liste, "cases": self.cases,
+                  "batiment": self.batiment,
                   "frise": self.frise, "livres": self.livres and VGroup(*self.livres)}
         m = self.personnages.get(cible) or objets.get(cible)
         if m is None:
@@ -307,9 +310,10 @@ class Schemas(Scene):
     def a_bulle(self, ident, contenu):
         b = c.Bulle(self.personnages[ident], contenu)
         b.contenu = contenu
+        anims = [FadeOut(self.bulles[ident])] if ident in self.bulles else []
         self.bulles[ident] = b
         self.focus = b
-        return [FadeIn(b, scale=0.8)]
+        return anims + [FadeIn(b, scale=0.8)]
 
     def a_jetons(self, de, vers):
         depart = self.personnages[de].silhouette.get_center()
@@ -330,10 +334,11 @@ class Schemas(Scene):
         return []
 
     # ----- actions : l'infraction -----
-    def a_batiment(self):
+    def a_batiment(self, *options):
         self.batiment = c.Batiment()
+        self.batiment.vide = "vide" in options
         self.focus = self.batiment
-        etapes = self.batiment.construire()
+        etapes = self.batiment.construire(vide=self.batiment.vide)
         self.play(AnimationGroup(*etapes, lag_ratio=0.25), run_time=1.6)
         self.t += 1.6
         return []
@@ -341,6 +346,76 @@ class Schemas(Scene):
     def a_etage(self, n, etat):
         self.focus = self.batiment.etages[int(n) - 1]
         return [self.batiment.colorer(int(n), etat)]
+
+    def a_etage_nom(self, n):
+        etiquette = self.batiment.etages[int(n) - 1][1]
+        self.focus = etiquette
+        return [etiquette.animate.set_opacity(1)]
+
+    def a_etage_question(self, n):
+        cadre = self.batiment.etages[int(n) - 1][0]
+        marque = c.texte("?", c.T_TITRE, c.ACCENT, gras=True).next_to(cadre, RIGHT, buff=0.3)
+        self.focus = marque
+        return [FadeIn(marque, scale=1.4)]
+
+    def a_question_etage(self, n, contenu):
+        """Écrit une question à droite d'un étage ; une seule à la fois (règle des douze mots)."""
+        anims = []
+        if not getattr(self, "questions_etages", None):
+            self.questions_etages = {}
+            # Le bâtiment se décale à gauche pour laisser la place au texte.
+            self.play(self.batiment.animate.shift(LEFT * 3), run_time=0.5)
+            self.t += 0.5
+        for ancienne in self.questions_etages.values():
+            anims.append(FadeOut(ancienne))
+        self.questions_etages = {}
+        cadre = self.batiment.etages[int(n) - 1][0]
+        q = c.texte(contenu, c.T_CORPS, c.ACCENT).next_to(cadre, RIGHT, buff=0.4)
+        q.original_text = contenu
+        self.questions_etages[n] = q
+        self.focus = q
+        return anims + [FadeIn(q, shift=LEFT * 0.2)]
+
+    def a_bouclier(self):
+        # À droite du bâtiment, à hauteur de l'illicéité ; sinon au centre de l'écran.
+        centre = self.batiment.etages[1][0].get_right() + RIGHT * 1.4 if self.batiment else [0, 0.6, 0]
+        self.bouclier = c.Bouclier(centre)
+        self.focus = self.bouclier
+        return [FadeIn(self.bouclier, scale=0.6)]
+
+    def a_bouclier_repousser(self):
+        b = self.bouclier
+        depart = b.get_right() + RIGHT * 2.2
+        fleche = c.Arrow(depart, b.get_right() + RIGHT * 0.1, color=c.TEXTE, stroke_width=6, buff=0)
+        self.play(GrowArrow(fleche), run_time=0.5)
+        self.play(fleche.animate.shift(RIGHT * 1.5).set_opacity(0), b.animate(rate_func=there_and_back).scale(1.1),
+                  run_time=0.6)
+        self.remove(fleche)
+        self.t += 1.1
+        self.focus = b
+        return []
+
+    def a_dommage(self, ident):
+        """Le dommage, seul usage du rouge : éclair sur la silhouette."""
+        s = self.personnages[ident].silhouette
+        eclair = c.Polygon([0.1, 0.35, 0], [-0.15, 0.0, 0], [0.05, 0.0, 0], [-0.1, -0.35, 0], [0.2, 0.05, 0],
+                           [0.0, 0.05, 0], color=c.ROUGE, fill_color=c.ROUGE, fill_opacity=1, stroke_width=0)
+        eclair.scale(1.6).next_to(s[1], RIGHT, buff=-0.15)
+        self.focus = eclair
+        return [FadeIn(eclair, scale=1.8)]
+
+    def a_deplacer(self, ident, position):
+        p = self.personnages[ident]
+        p.position = position
+        return [p.animate.move_to([c.X_POSITIONS[position], p.get_center()[1], 0])]
+
+    def a_basculer(self, ident):
+        p = self.personnages[ident]
+        self.focus = p
+        return [p.silhouette.animate.rotate(-1.2).shift(DOWN * 0.6 + RIGHT * 0.4)]
+
+    def a_effacer_bulle(self, ident):
+        return [FadeOut(self.bulles.pop(ident))]
 
     def a_fleche(self, n):
         haut = -2.6 + 1.05 * int(n) - 0.15

@@ -104,13 +104,29 @@ class Batiment(VGroup):
                        color=TEXTE, stroke_width=3)
         super().__init__(*groupe, toit)
 
-    def construire(self):
-        # Le schéma se construit devant le spectateur, de bas en haut.
+    def construire(self, vide=False):
+        # Le schéma se construit devant le spectateur, de bas en haut ; « vide » laisse
+        # les noms des étages à écrire un par un (etage-nom).
+        if vide:
+            for e in self.etages:
+                e[1].set_opacity(0)
+            return [Create(e[0]) for e in self.etages] + [Create(self[-1])]
         return [Create(e[0]) for e in self.etages] + [Write(e[1]) for e in self.etages] + [Create(self[-1])]
 
     def colorer(self, n, etat):
         cadre = self.etages[n - 1][0]
         return cadre.animate.set_fill(ETATS[etat], opacity=0.85 if etat != "neutre" else 1)
+
+
+class Bouclier(VGroup):
+    """Un fait justificatif : bouclier, à droite du bâtiment ou du personnage."""
+
+    def __init__(self, centre):
+        forme = Polygon([-0.7, 0.8, 0], [0.7, 0.8, 0], [0.7, 0.0, 0], [0, -0.9, 0], [-0.7, 0.0, 0],
+                        color=TEXTE, stroke_width=5, fill_color=SURFACE, fill_opacity=1)
+        bande = Line([0, 0.8, 0], [0, -0.9, 0], color=ACCENT, stroke_width=6)
+        super().__init__(forme, bande)
+        self.move_to(centre)
 
 
 class Livre(VGroup):
@@ -249,11 +265,17 @@ class Bulle(VGroup):
         etiquette.move_to(ellipse)
         cote = personnage.vers_le_centre()
         tete = personnage.silhouette[0]
-        ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, UP + cote, buff=0.35)
+        # À côté de la tête, légèrement au-dessus, pour ne pas monter dans la zone des titres.
+        ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, cote, buff=0.75).shift(UP * 0.45)
         petites = VGroup(
-            Circle(radius=0.08, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.55 + UP * 0.5),
-            Circle(radius=0.12, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.8 + UP * 0.8),
+            Circle(radius=0.07, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.5 + UP * 0.1),
+            Circle(radius=0.11, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.75 + UP * 0.28),
         )
+        # Jamais hors du cadre (largeur visible : de -7,1 à 7,1).
+        if ellipse_groupe.get_right()[0] > 6.9:
+            ellipse_groupe.shift(LEFT * (ellipse_groupe.get_right()[0] - 6.9))
+        if ellipse_groupe.get_left()[0] < -6.9:
+            ellipse_groupe.shift(RIGHT * (-6.9 - ellipse_groupe.get_left()[0]))
         super().__init__(petites, ellipse_groupe)
 
 
