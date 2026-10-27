@@ -21,69 +21,69 @@ videos:
     slug: crime-delit-contravention
     titre: "Crime, délit ou contravention ?"
     notion: "Les trois catégories d'infractions selon la peine menace"
-    articles: ["10", "103"]
+    articles: ["10", "103", "34", "139", "172ter", "144", "126", "105", "106", "109", "97"]
     requiert: ["01"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 04
     slug: intention-negligence
     titre: "Le voulait-il vraiment ?"
     notion: "Intention (y compris le dol éventuel) et négligence"
-    articles: ["12"]
+    articles: ["12", "123", "125", "144"]
     requiert: ["01"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 05
     slug: commission-par-omission
     titre: "Coupable de n'avoir rien fait"
     notion: "La commission par omission et la position de garant"
-    articles: ["11"]
+    articles: ["11", "125", "128", "CC 302"]
     requiert: ["01", "04"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 06
     slug: faits-justificatifs
     titre: "Avait-il le droit de se défendre ?"
     notion: "Légitime défense et état de nécessité"
-    articles: ["15", "16", "17", "18"]
+    articles: ["14", "15", "16", "17", "18", "144"]
     requiert: ["01"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 07
     slug: erreur
     titre: "Je ne savais pas"
     notion: "L'erreur sur les faits et l'erreur sur l'illicéité"
-    articles: ["13", "21"]
+    articles: ["13", "21", "139", "137"]
     requiert: ["01", "04"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 08
     slug: responsabilite
     titre: "Était-il responsable ?"
     notion: "Responsabilité, responsabilité restreinte, irresponsabilité"
-    articles: ["19", "20"]
+    articles: ["19", "20", "263"]
     requiert: ["01"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 09
     slug: tentative
     titre: "Il a essayé, mais…"
     notion: "La tentative et le désistement"
-    articles: ["22", "23"]
+    articles: ["22", "23", "260bis", "105", "139", "144"]
     requiert: ["01", "04"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 10
     slug: participation
     titre: "Ils étaient plusieurs"
     notion: "Coactivité, instigation, complicité"
-    articles: ["24", "25"]
+    articles: ["24", "25", "105", "139"]
     requiert: ["01", "04"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 11
     slug: peines
     titre: "Quelle peine ?"
     notion: "Peine privative de liberté, peine pécuniaire, amende, sursis"
-    articles: ["34-47"]
+    articles: ["34", "40", "41", "42", "43", "44", "45", "46", "47", "106", "139"]
     requiert: ["01", "03"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 12
     slug: mesures-prescription
     titre: "Quand la justice ne poursuit plus"
     notion: "Mesures et prescription"
-    articles: ["56-65", "97-101"]
+    articles: ["56", "59", "63", "64", "97", "98", "99", "101", "109", "144"]
     requiert: ["08", "11"]
-    statut: a-ecrire
+    statut: script-redige
