@@ -231,7 +231,19 @@ class Frise(VGroup):
     def __init__(self):
         self.ligne = Arrow([-6.3, Y_FRISE, 0], [6.4, Y_FRISE, 0], color=TEXTE, stroke_width=4, buff=0,
                            max_tip_length_to_length_ratio=0.02)
+        self.etiquettes = []
         super().__init__(self.ligne)
+
+    def placer(self, etiquette, sens):
+        """Décale une étiquette d'un rang (vers le haut ou le bas) tant qu'elle touche une voisine."""
+        for _ in range(3):
+            if not any(abs(etiquette.get_x() - e.get_x()) < (etiquette.width + e.width) / 2 + 0.15
+                       and abs(etiquette.get_y() - e.get_y()) < (etiquette.height + e.height) / 2
+                       for e in self.etiquettes):
+                break
+            etiquette.shift(sens * (etiquette.height + 0.12))
+        self.etiquettes.append(etiquette)
+        return etiquette
 
     @staticmethod
     def x(fraction):
@@ -240,13 +252,13 @@ class Frise(VGroup):
     def repere(self, fraction, libelle):
         x = self.x(fraction)
         trait = Line([x, Y_FRISE - 0.35, 0], [x, Y_FRISE + 0.35, 0], color=ACCENT, stroke_width=6)
-        etiquette = texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15)
+        etiquette = self.placer(texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15), DOWN)
         return VGroup(trait, etiquette)
 
     def point(self, fraction, libelle):
         x = self.x(fraction)
         point = Dot([x, Y_FRISE, 0], radius=0.13, color=TEXTE)
-        etiquette = texte(libelle, T_PETIT).next_to(point, UP, buff=0.25)
+        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.25), UP)
         return VGroup(point, etiquette)
 
     def zone(self, a, b, etat):
