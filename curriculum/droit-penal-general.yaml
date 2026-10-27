@@ -1,0 +1,89 @@
+# Curriculum — Droit pénal général (Code pénal suisse, RS 311.0)
+# Une entrée par vidéo. "requiert" liste les vidéos à voir avant.
+matiere: droit-penal-general
+recueil: "Code pénal suisse, RS 311.0"
+videos:
+  - id: 01
+    slug: trois-etages
+    titre: "Qu'est-ce qu'une infraction ? Les trois étages"
+    notion: "Typicité, illicéité, culpabilité : la structure de toute infraction"
+    articles: ["1", "12", "14-19", "123", "125"]
+    requiert: []
+    statut: script-redige
+  - id: 02
+    slug: pas-de-peine-sans-loi
+    titre: "Pas de peine sans loi"
+    notion: "Le principe de la légalité"
+    articles: ["1"]
+    requiert: ["01"]
+    statut: a-ecrire
+  - id: 03
+    slug: crime-delit-contravention
+    titre: "Crime, délit ou contravention ?"
+    notion: "Les trois catégories d'infractions selon la peine menace"
+    articles: ["10", "103"]
+    requiert: ["01"]
+    statut: a-ecrire
+  - id: 04
+    slug: intention-negligence
+    titre: "Le voulait-il vraiment ?"
+    notion: "Intention (y compris le dol éventuel) et négligence"
+    articles: ["12"]
+    requiert: ["01"]
+    statut: a-ecrire
+  - id: 05
+    slug: commission-par-omission
+    titre: "Coupable de n'avoir rien fait"
+    notion: "La commission par omission et la position de garant"
+    articles: ["11"]
+    requiert: ["01", "04"]
+    statut: a-ecrire
+  - id: 06
+    slug: faits-justificatifs
+    titre: "Avait-il le droit de se défendre ?"
+    notion: "Légitime défense et état de nécessité"
+    articles: ["15", "16", "17", "18"]
+    requiert: ["01"]
+    statut: a-ecrire
+  - id: 07
+    slug: erreur
+    titre: "Je ne savais pas"
+    notion: "L'erreur sur les faits et l'erreur sur l'illicéité"
+    articles: ["13", "21"]
+    requiert: ["01", "04"]
+    statut: a-ecrire
+  - id: 08
+    slug: responsabilite
+    titre: "Était-il responsable ?"
+    notion: "Responsabilité, responsabilité restreinte, irresponsabilité"
+    articles: ["19", "20"]
+    requiert: ["01"]
+    statut: a-ecrire
+  - id: 09
+    slug: tentative
+    titre: "Il a essayé, mais…"
+    notion: "La tentative et le désistement"
+    articles: ["22", "23"]
+    requiert: ["01", "04"]
+    statut: a-ecrire
+  - id: 10
+    slug: participation
+    titre: "Ils étaient plusieurs"
+    notion: "Coactivité, instigation, complicité"
+    articles: ["24", "25"]
+    requiert: ["01", "04"]
+    statut: a-ecrire
+  - id: 11
+    slug: peines
+    titre: "Quelle peine ?"
+    notion: "Peine privative de liberté, peine pécuniaire, amende, sursis"
+    articles: ["34-47"]
+    requiert: ["01", "03"]
+    statut: a-ecrire
+  - id: 12
+    slug: mesures-prescription
+    titre: "Quand la justice ne poursuit plus"
+    notion: "Mesures et prescription"
+    articles: ["56-65", "97-101"]
+    requiert: ["08", "11"]
+    statut: a-ecrire
