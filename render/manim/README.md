@@ -35,12 +35,18 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `personnage ID "Nom" COULEUR POSITION` | Silhouette ; couleurs : `bleu_clair`, `ambre_pale`, `rose`, `violet`, `turquoise` ; positions : `gauche`, `centre-gauche`, `centre`, `centre-droite`, `droite` |
 | `retirer ID` | Retire un personnage, sa parole et sa bulle |
 | `parole ID "…"` / `effacer-parole ID` | Ce que dit le personnage |
-| `bulle ID "…"` | Bulle de pensée (état d'esprit) |
-| `accent CIBLE` | Met en avant : un personnage, `titre`, `livre`, `liste`, `cases`, `frise`, `livres` |
+| `bulle ID "…"` / `effacer-bulle ID` | Bulle de pensée (état d'esprit) ; une nouvelle bulle remplace la précédente |
+| `dommage ID` | Éclair rouge sur la silhouette (seul usage du rouge) |
+| `deplacer ID POSITION` / `basculer ID` | Le personnage se déplace ; le personnage tombe |
+| `accent CIBLE` | Met en avant : un personnage, `titre`, `livre`, `liste`, `cases`, `frise`, `livres`, `batiment` |
 | `jetons ID1 ID2` | L'argent passe de ID1 à ID2 |
 | `rembobiner` | Icône de rembobinage (variante du cas) |
 | `batiment` | Bâtiment à trois étages, construit de bas en haut |
 | `etage N vert\|gris\|ambre\|neutre` | Colore l'étage N |
+| `batiment vide` + `etage-nom N` | Bâtiment sans noms, puis chaque nom écrit à son tour |
+| `etage-question N` | Point d'interrogation à droite de l'étage N |
+| `question-etage N "…"` | Question écrite à droite de l'étage N (une seule à la fois ; le bâtiment se décale à gauche) |
+| `bouclier` / `bouclier-repousser` | Fait justificatif : bouclier à droite du bâtiment, qui repousse une flèche |
 | `fleche N` | Flèche qui monte jusqu'à l'étage N |
 | `liste "…" …` / `liste-ajouter "…"` / `liste-surligner N` | Liste à gauche |
 | `cases "…" …` / `case "…"` | Cases à cocher (toutes d'un coup, ou une par une) |
