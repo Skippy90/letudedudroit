@@ -31,7 +31,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 12 | Première exigence : il faut un texte de loi. Pas une habitude. Pas l'avis personnel du juge. Pas la morale. Le juge pénal ne peut pas inventer une infraction. | Ligne « 1. Un texte » en grand ; trois mots barrés tour à tour : « Habitude », « Avis du juge », « Morale » |
+| 12 | Première exigence : il faut un texte de loi. Pas l'avis personnel du juge. Pas la morale. Le juge pénal ne peut pas inventer une infraction. | Ligne « 1. Un texte » en grand ; deux mots barrés tour à tour : « Avis du juge », « Morale » |
 | 13 | Cherchons donc un article qui punit le mensonge. On ne trouve aucune infraction qui s'appelle simplement « mentir ». | Le livre se feuillette ; une loupe passe sur les pages et revient vide |
 | 14 | Le mensonge de Tom est blessant. Il est même moralement condamnable. Mais la morale n'est pas la loi pénale. | Silhouette de Tom ; le mot « Morale » à gauche, « Loi pénale » à droite, séparés par un trait |
 | 15 | Premier constat : aucun texte ne décrit ce que Tom a fait. Le premier étage n'est pas franchi. Pas d'infraction. | Le bâtiment revient ; l'étage « Typicité » devient gris ; la flèche s'arrête |
@@ -48,7 +48,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | 21 | Là aussi, un article existe : l'escroquerie, à l'article 146. Mais il ne suffit pas de mentir. | Bloc « Art. 146 CP » ; le mot « Escroquerie » |
 | 22 | Il faut une tromperie astucieuse. Il faut que la victime agisse contre ses intérêts financiers. Et il faut que l'auteur veuille s'enrichir. | Trois cases s'alignent : « Astuce », « Préjudice financier », « Volonté de s'enrichir » |
 | 23 | Dans notre histoire de départ, Tom ne parle pas à un tribunal. Il ne cherche pas d'argent non plus. Aucune de ces descriptions ne correspond. | Retour à la version de départ ; les cases restent vides, en gris |
-| 24 | Et le juge ne peut pas élargir un texte. Il ne peut pas punir Tom parce que son mensonge ressemble à une escroquerie. | Le bloc « Art. 146 CP » tente de s'étirer vers Tom, puis revient à sa taille |
+| 24 | Le juge peut interpréter un texte, même largement. Mais il ne peut pas y ajouter ce qui n'y est pas. Il ne peut donc pas punir Tom parce que son mensonge ressemble à une escroquerie. | Le bloc « Art. 146 CP » tente de s'étirer vers Tom, puis revient à sa taille |
 | 25 | S'il manque un élément de la description, l'acte n'est pas réprimé. Même s'il est proche. Même s'il est choquant. | Une case grise clignote ; les mots « Proche ? Choquant ? Pas suffisant » |
 
 ## Troisième exigence : un texte qui existait déjà
