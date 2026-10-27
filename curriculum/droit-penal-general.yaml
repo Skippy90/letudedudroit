@@ -14,9 +14,9 @@ videos:
     slug: pas-de-peine-sans-loi
     titre: "Pas de peine sans loi"
     notion: "Le principe de la légalité"
-    articles: ["1"]
+    articles: ["1", "2", "146", "307", "333", "335", "LCR 90"]
     requiert: ["01"]
-    statut: a-ecrire
+    statut: script-redige
   - id: 03
     slug: crime-delit-contravention
     titre: "Crime, délit ou contravention ?"
