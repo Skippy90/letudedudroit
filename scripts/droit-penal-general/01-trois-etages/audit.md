@@ -1,0 +1,21 @@
+# Audit — Vidéo 1 : Qu'est-ce qu'une infraction ? Les trois étages
+
+- Recueil : Code pénal suisse, RS 311.0
+- Version consultée sur Fedlex : état au 1er octobre 2026 (version en vigueur), consultée le 27 octobre 2026
+- Adresse : https://www.fedlex.admin.ch/eli/cc/54/757_781_799/20261001/fr
+- Version suivante (état au 1er novembre 2026) également comparée : aucun des articles ci-dessous n'y change.
+
+La colonne « Vérifié » n'est cochée que par la relectrice.
+
+| Article | Ce que le script lui fait dire | Point d'attention à la relecture | Vérifié |
+| --- | --- | --- | --- |
+| [Art. 1 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_1) | Pas de peine sans une loi qui réprime expressément le comportement | Texte exact : « Une peine ou une mesure ne peuvent être prononcées qu'en raison d'un acte expressément réprimé par la loi. » Le script ne parle que de la peine ; la mesure est couverte aussi. | - [ ] |
+| [Art. 12 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_12) | Les crimes et délits ne sont punis qu'intentionnellement, sauf disposition expresse ; l'intention inclut le fait de tenir pour possible et d'accepter (dol éventuel) | Conforme. Al. 1 : « Sauf disposition expresse et contraire de la loi, est seul punissable l'auteur d'un crime ou d'un délit qui agit intentionnellement. » Al. 2, seconde phrase : « L'auteur agit déjà intentionnellement lorsqu'il tient pour possible la réalisation de l'infraction et l'accepte au cas où celle-ci se produirait. » | - [ ] |
+| [Art. 15 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_15) | Légitime défense : celui qui est attaqué sans droit peut repousser l'attaque de manière proportionnée | Le script simplifie. Texte exact pour la description : « Quiconque, de manière contraire au droit, est attaqué ou menacé d'une attaque imminente a le droit de repousser l'attaque par des moyens proportionnés aux circonstances ; le même droit appartient aux tiers. » | - [ ] |
+| [Art. 19 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_19) | Irresponsabilité : incapacité d'apprécier le caractère illicite de l'acte ou de se déterminer d'après cette appréciation | Ligne 21 conforme à l'al. 1. L'al. 2 (responsabilité restreinte) atténue seulement la peine. L'al. 3 confirme la ligne 23 : des mesures (art. 59 à 61, 63, 64, 67, 67b et 67e) peuvent être ordonnées malgré l'irresponsabilité. | - [ ] |
+| [Art. 122 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_122) | Cité en creux : les lésions « graves » sont exclues des lésions simples | La let. c vise « toute autre atteinte grave à l'intégrité corporelle ou à la santé ». Que la fracture du poignet reste une lésion simple est une question de jurisprudence, non tranchée par le texte : à confirmer par la relectrice, sinon choisir une blessure moins sévère. | - [ ] |
+| [Art. 123 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_123) | Lésions corporelles simples : atteinte au corps ou à la santé, sans gravité | Le texte dit « une autre atteinte à l'intégrité corporelle ou à la santé » (autre que celles de l'art. 122). Le ch. 1 précise que l'infraction est poursuivie **sur plainte** (sauf les cas du ch. 2). Le script ne le dit pas ; ce n'est pas faux, mais la réponse finale mentionne la plainte pour l'art. 125 seulement, ce qui peut laisser croire que l'art. 123 se poursuit d'office. Préciser dans la description. | - [ ] |
+| [Art. 125 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125) | Lésions corporelles par négligence, poursuivies sur plainte | Conforme : al. 1 sur plainte ; al. 2 : « Si la lésion est grave, l'auteur est poursuivi d'office. » | - [ ] |
+| [Art. 56 ss CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_56) | Le juge peut ordonner une mesure, par exemple un traitement (ligne 23) | Conforme avec l'art. 19 al. 3. Le traitement institutionnel des troubles mentaux est à l'[art. 59](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_59) (« grave trouble mental »). | - [ ] |
+
+Règles cantonales mentionnées : aucune (Lausanne n'est que le décor du cas).

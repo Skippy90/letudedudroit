@@ -10,3 +10,5 @@ node_modules/
 __pycache__/
 .venv/
 media/
+# Local secrets written by `elevenlabs onboard`
+/.env.local
