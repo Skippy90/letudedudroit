@@ -66,22 +66,40 @@ class Schemas(Scene):
         self.focus = None
 
     # ----- temps -----
+    # Manim arrondit le nombre d'images au-dessus pour une animation et au-dessous pour
+    # une attente : sur des centaines d'actions, l'écart avec la voix dépassait une seconde.
+    # L'horloge compte donc en images entières, et chaque durée est choisie pour que Manim
+    # écrive exactement ce nombre d'images.
+    def play(self, *animations, run_time=None, **kwargs):
+        if getattr(self, "_attente_en_cours", False):
+            # Appel interne de Scene.wait : la durée est déjà réglée par wait() ci-dessous.
+            return super().play(*animations, **kwargs)
+        images = max(1, round((1.0 if run_time is None else run_time) * config.frame_rate))
+        super().play(*animations, run_time=(images - 0.5) / config.frame_rate, **kwargs)
+        self.t += images / config.frame_rate
+
+    def wait(self, duree=1.0, **kwargs):
+        images = round(duree * config.frame_rate)
+        if images > 0:
+            self._attente_en_cours = True
+            try:
+                super().wait((images + 0.5) / config.frame_rate, **kwargs)
+            finally:
+                self._attente_en_cours = False
+            self.t += images / config.frame_rate
+
     def jouer(self, *animations, duree=DUREE_ANIM):
         animations = [a for a in animations if a is not None]
         if animations:
             self.play(*animations, run_time=duree)
-            self.t += duree
 
     def attendre_jusqua(self, instant):
         """Attend jusqu'à l'instant donné, en faisant respirer l'image si l'attente dépasse quatre secondes."""
         while instant - self.t > PLAN_FIXE_MAX and self.a_l_ecran(self.focus):
             self.wait(2.0)
-            self.t += 2.0
             self.play(self.focus.animate(rate_func=there_and_back).scale(1.04), run_time=1.2)
-            self.t += 1.2
         if instant > self.t:
             self.wait(instant - self.t)
-            self.t = instant
 
     def a_l_ecran(self, m):
         return m is not None and any(m is x or m in x.get_family() for x in self.mobjects)
@@ -168,7 +186,6 @@ class Schemas(Scene):
             if anims:
                 self.jouer(*anims, duree=0.3)
             self.play(AnimationGroup(*[FadeIn(g, shift=UP * 0.1) for g in groupes], lag_ratio=1.0), run_time=4.5)
-            self.t += 4.5
             return []
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
         nouveau.original_text = contenu
@@ -321,7 +338,6 @@ class Schemas(Scene):
         jetons = c.Jetons(depart)
         self.add(jetons)
         self.play(FadeIn(jetons), run_time=0.3)
-        self.t += 0.3
         self.focus = jetons
         return [jetons.animate.move_to(arrivee)]
 
@@ -330,7 +346,6 @@ class Schemas(Scene):
         self.play(FadeIn(icone, scale=0.7), run_time=0.35)
         self.play(icone.animate.rotate(-6.283), run_time=0.6)
         self.play(FadeOut(icone), run_time=0.25)
-        self.t += 1.2
         return []
 
     # ----- actions : l'infraction -----
@@ -340,7 +355,6 @@ class Schemas(Scene):
         self.focus = self.batiment
         etapes = self.batiment.construire(vide=self.batiment.vide)
         self.play(AnimationGroup(*etapes, lag_ratio=0.25), run_time=1.6)
-        self.t += 1.6
         return []
 
     def a_etage(self, n, etat):
@@ -365,7 +379,6 @@ class Schemas(Scene):
             self.questions_etages = {}
             # Le bâtiment se décale à gauche pour laisser la place au texte.
             self.play(self.batiment.animate.shift(LEFT * 3), run_time=0.5)
-            self.t += 0.5
         for ancienne in self.questions_etages.values():
             anims.append(FadeOut(ancienne))
         self.questions_etages = {}
@@ -391,7 +404,6 @@ class Schemas(Scene):
         self.play(fleche.animate.shift(RIGHT * 1.5).set_opacity(0), b.animate(rate_func=there_and_back).scale(1.1),
                   run_time=0.6)
         self.remove(fleche)
-        self.t += 1.1
         self.focus = b
         return []
 
@@ -495,7 +507,6 @@ class Schemas(Scene):
         self.focus = self.pyramide
         self.play(AnimationGroup(*[FadeIn(n, shift=UP * 0.15) for n in self.pyramide.niveaux], lag_ratio=0.3),
                   run_time=1.0)
-        self.t += 1.0
         return []
 
     def a_pyramide_niveau(self, n, etat):
@@ -538,7 +549,6 @@ class Schemas(Scene):
         # « casse » : la flèche part en arrière, puis se brise et devient grise.
         f = self.frise.fleche_retour(de, vers, c.TEXTE)
         self.play(Create(f), run_time=0.7)
-        self.t += 0.7
         x = self.frise.x((float(de) + float(vers)) / 2)
         croix = VGroup(Line([x - 0.3, c.Y_FRISE + 1.5, 0], [x + 0.3, c.Y_FRISE + 2.1, 0], color=c.TEXTE, stroke_width=8),
                        Line([x - 0.3, c.Y_FRISE + 2.1, 0], [x + 0.3, c.Y_FRISE + 1.5, 0], color=c.TEXTE, stroke_width=8))
