@@ -29,6 +29,7 @@ RACINE = Path(__file__).resolve().parents[2]
 SLUG = os.environ.get("SLUG", "")
 DUREE_ANIM = 0.7
 PLAN_FIXE_MAX = 4.0
+CREATIONS = {"cases", "liste", "colonnes", "livres", "frise"}
 
 config.background_color = c.FOND
 if os.environ.get("APERCU"):
@@ -39,7 +40,9 @@ else:
 
 def lire_moments(slug):
     """Renvoie [(instant en secondes, [actions])] trié, à partir de visuals.md et timings.json."""
-    timings = json.loads((RACINE / "voice" / slug / "timings.json").read_text(encoding="utf-8"))
+    # TIMINGS permet un aperçu avant la narration, avec des timings estimés (tools/timings_estimes.py).
+    fichier = Path(os.environ["TIMINGS"]) if os.environ.get("TIMINGS") else RACINE / "voice" / slug / "timings.json"
+    timings = json.loads(fichier.read_text(encoding="utf-8"))
     lignes = {l["ligne"]: l for l in timings["lignes"]}
     moments = []
     for ligne in (RACINE / "scripts" / slug / "visuals.md").read_text(encoding="utf-8").splitlines():
@@ -141,14 +144,13 @@ class Schemas(Scene):
             if any(a[0] == "scene-vide" for a in actions):
                 self.scene_vide()
                 actions = [a for a in actions if a[0] != "scene-vide"]
-            animations = []
-            for action in actions:
-                methode = getattr(self, "a_" + action[0].replace("-", "_"), None)
-                if methode is None:
-                    raise ValueError(f"{repere} : action inconnue « {action[0]} »")
-                resultat = methode(*action[1:])
-                animations += resultat if isinstance(resultat, list) else [resultat]
-            self.jouer(*animations)
+            # Un groupe créé et modifié au même moment (des cases aussitôt cochées) apparaît
+            # d'abord : sinon son animation d'apparition écrase les marques ajoutées.
+            creations = [a for a in actions if a[0] in CREATIONS]
+            if creations and len(creations) < len(actions):
+                self.jouer(*[x for a in creations for x in self.executer(a, repere)], duree=0.5)
+                actions = [a for a in actions if a[0] not in CREATIONS]
+            self.jouer(*[x for a in actions for x in self.executer(a, repere)])
             total = self.mots_visibles()
             if total > 12:
                 self.alertes.append(f"{repere} : {total} mots affichés (maximum 12)")
@@ -158,11 +160,18 @@ class Schemas(Scene):
         rapport.write_text("\n".join(self.alertes) + "\n" if self.alertes else "Aucune alerte.\n", encoding="utf-8")
         print("\n".join(self.alertes) or "Aucune alerte de charte.")
 
+    def executer(self, action, repere):
+        methode = getattr(self, "a_" + action[0].replace("-", "_"), None)
+        if methode is None:
+            raise ValueError(f"{repere} : action inconnue « {action[0]} »")
+        resultat = methode(*action[1:])
+        return resultat if isinstance(resultat, list) else [resultat]
+
     def scene_vide(self):
         garder = [self.article] if self.article is not None else []
         a_retirer = [m for m in self.mobjects if m not in garder]
         if a_retirer:
-            self.jouer(*[FadeOut(m) for m in a_retirer], duree=0.4)
+            self.jouer(*[FadeOut(m) for m in a_retirer], duree=0.3)
         article, t, alertes = self.article, self.t, self.alertes
         self.setup()
         self.article, self.t, self.alertes = article, t, alertes
@@ -343,9 +352,9 @@ class Schemas(Scene):
 
     def a_rembobiner(self):
         icone = c.Rembobinage()
-        self.play(FadeIn(icone, scale=0.7), run_time=0.35)
-        self.play(icone.animate.rotate(-6.283), run_time=0.6)
-        self.play(FadeOut(icone), run_time=0.25)
+        self.play(FadeIn(icone, scale=0.7), run_time=0.2)
+        self.play(icone.animate.rotate(-6.283), run_time=0.4)
+        self.play(FadeOut(icone), run_time=0.15)
         return []
 
     # ----- actions : l'infraction -----
