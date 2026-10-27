@@ -1,0 +1,763 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 346.852,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 7.57,
+   "phrases": [
+    {
+     "texte": "Kilian, dix-neuf ans, vit à La Chaux-de-Fonds.",
+     "debut": 0.0,
+     "fin": 2.485
+    },
+    {
+     "texte": "Il a besoin d'argent.",
+     "debut": 2.81,
+     "fin": 3.796
+    },
+    {
+     "texte": "Il décide de cambrioler le kiosque de son quartier, une nuit.",
+     "debut": 4.005,
+     "fin": 7.57
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 8.02,
+   "fin": 15.868,
+   "phrases": [
+    {
+     "texte": "Lundi, il achète un pied-de-biche.",
+     "debut": 8.02,
+     "fin": 9.97
+    },
+    {
+     "texte": "Mardi, il repère les lieux.",
+     "debut": 10.667,
+     "fin": 12.107
+    },
+    {
+     "texte": "Mercredi, à deux heures du matin, il se rend au kiosque.",
+     "debut": 12.548,
+     "fin": 15.868
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 16.318,
+   "fin": 24.956,
+   "phrases": [
+    {
+     "texte": "Il glisse le pied-de-biche dans la porte et commence à forcer.",
+     "debut": 16.318,
+     "fin": 19.267
+    },
+    {
+     "texte": "À cet instant, une patrouille de police passe.",
+     "debut": 19.871,
+     "fin": 22.309
+    },
+    {
+     "texte": "Kilian s'enfuit, les mains vides.",
+     "debut": 22.587,
+     "fin": 24.956
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 25.406,
+   "fin": 30.654,
+   "phrases": [
+    {
+     "texte": "Kilian n'a rien volé.",
+     "debut": 25.406,
+     "fin": 26.428
+    },
+    {
+     "texte": "Peut-il quand même être puni ?",
+     "debut": 26.753,
+     "fin": 28.204
+    },
+    {
+     "texte": "Et si oui, à partir de quel moment ?",
+     "debut": 28.587,
+     "fin": 30.654
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 31.104,
+   "fin": 39.184,
+   "phrases": [
+    {
+     "texte": "Toute infraction suit un chemin.",
+     "debut": 31.104,
+     "fin": 32.729
+    },
+    {
+     "texte": "D'abord l'idée.",
+     "debut": 33.113,
+     "fin": 34.041
+    },
+    {
+     "texte": "Puis la préparation.",
+     "debut": 34.645,
+     "fin": 35.748
+    },
+    {
+     "texte": "Puis le début de l'exécution.",
+     "debut": 36.027,
+     "fin": 37.513
+    },
+    {
+     "texte": "Enfin, le résultat.",
+     "debut": 37.687,
+     "fin": 39.185
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 39.634,
+   "fin": 45.95,
+   "phrases": [
+    {
+     "texte": "Quand le résultat est atteint, on dit que l'infraction est consommée.",
+     "debut": 39.634,
+     "fin": 43.071
+    },
+    {
+     "texte": "Kilian n'est jamais arrivé jusque-là.",
+     "debut": 43.396,
+     "fin": 45.95
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 46.4,
+   "fin": 50.626,
+   "phrases": [
+    {
+     "texte": "La question est donc : où commence la zone punissable sur ce chemin ?",
+     "debut": 46.4,
+     "fin": 50.626
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 51.076,
+   "fin": 55.813,
+   "phrases": [
+    {
+     "texte": "L'idée seule n'est jamais punie.",
+     "debut": 51.076,
+     "fin": 52.597
+    },
+    {
+     "texte": "On ne condamne pas quelqu'un pour ce qu'il pense.",
+     "debut": 53.038,
+     "fin": 55.813
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 56.263,
+   "fin": 62.904,
+   "phrases": [
+    {
+     "texte": "La préparation non plus, en principe.",
+     "debut": 56.263,
+     "fin": 58.434
+    },
+    {
+     "texte": "Acheter un pied-de-biche ou repérer les lieux n'est pas encore voler.",
+     "debut": 58.945,
+     "fin": 62.904
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 63.354,
+   "fin": 75.707,
+   "phrases": [
+    {
+     "texte": "Il existe des exceptions.",
+     "debut": 63.354,
+     "fin": 64.689
+    },
+    {
+     "texte": "L'article deux cent soixante bis du Code pénal punit certains actes préparatoires.",
+     "debut": 65.502,
+     "fin": 69.67
+    },
+    {
+     "texte": "Mais seulement pour des crimes très graves, comme le meurtre, le brigandage ou l'incendie intentionnel.",
+     "debut": 70.181,
+     "fin": 75.707
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 76.157,
+   "fin": 82.658,
+   "phrases": [
+    {
+     "texte": "Le vol n'est pas sur cette liste.",
+     "debut": 76.157,
+     "fin": 77.724
+    },
+    {
+     "texte": "Les achats et les repérages de Kilian ne sont donc pas punissables en eux-mêmes.",
+     "debut": 78.166,
+     "fin": 82.659
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 83.108,
+   "fin": 92.814,
+   "phrases": [
+    {
+     "texte": "Puis vient le moment où l'auteur passe à l'action.",
+     "debut": 83.108,
+     "fin": 85.523
+    },
+    {
+     "texte": "Le Tribunal fédéral parle du dernier pas décisif.",
+     "debut": 86.034,
+     "fin": 89.099
+    },
+    {
+     "texte": "Après lui, il n'y a en principe plus de retour en arrière.",
+     "debut": 89.377,
+     "fin": 92.814
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 93.264,
+   "fin": 101.809,
+   "phrases": [
+    {
+     "texte": "Ce seuil ne doit pas être placé trop tôt, ni trop loin de l'acte lui-même.",
+     "debut": 93.264,
+     "fin": 97.351
+    },
+    {
+     "texte": "Il faut un lien étroit, dans le temps et dans l'espace.",
+     "debut": 97.792,
+     "fin": 101.809
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 102.259,
+   "fin": 108.436,
+   "phrases": [
+    {
+     "texte": "Pour Kilian, forcer la porte du kiosque, c'est franchir ce seuil.",
+     "debut": 102.259,
+     "fin": 105.475
+    },
+    {
+     "texte": "À partir de là, on parle de tentative de vol.",
+     "debut": 105.754,
+     "fin": 108.436
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 108.886,
+   "fin": 119.149,
+   "phrases": [
+    {
+     "texte": "L'article vingt-deux du Code pénal règle la tentative.",
+     "debut": 108.886,
+     "fin": 111.812
+    },
+    {
+     "texte": "L'exécution d'un crime ou d'un délit n'est pas poursuivie jusqu'à son terme, ou le résultat ne se produit pas.",
+     "debut": 112.415,
+     "fin": 119.149
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 119.599,
+   "fin": 133.531,
+   "phrases": [
+    {
+     "texte": "Notez les deux situations du texte.",
+     "debut": 119.599,
+     "fin": 121.817
+    },
+    {
+     "texte": "Soit l'auteur s'arrête en route, comme Kilian surpris par la police.",
+     "debut": 122.42,
+     "fin": 126.24
+    },
+    {
+     "texte": "Soit il va jusqu'au bout, mais le résultat ne se produit pas.",
+     "debut": 126.681,
+     "fin": 129.758
+    },
+    {
+     "texte": "Par exemple, l'alarme bloque la caisse au dernier moment.",
+     "debut": 129.932,
+     "fin": 133.531
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 133.981,
+   "fin": 141.086,
+   "phrases": [
+    {
+     "texte": "Dans ce cas, l'auteur est punissable.",
+     "debut": 133.981,
+     "fin": 136.419
+    },
+    {
+     "texte": "Mais le juge peut atténuer sa peine, puisque le résultat n'a pas eu lieu.",
+     "debut": 136.802,
+     "fin": 141.086
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 141.536,
+   "fin": 153.982,
+   "phrases": [
+    {
+     "texte": "Rappelez-vous la vidéo trois.",
+     "debut": 141.536,
+     "fin": 143.01
+    },
+    {
+     "texte": "Pour une contravention, la tentative n'est punissable que si la loi le prévoit expressément.",
+     "debut": 143.521,
+     "fin": 148.804
+    },
+    {
+     "texte": "L'article vingt-deux vise, lui, les crimes et les délits.",
+     "debut": 149.315,
+     "fin": 153.982
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 154.432,
+   "fin": 161.723,
+   "phrases": [
+    {
+     "texte": "Et rappelez-vous la vidéo quatre.",
+     "debut": 154.432,
+     "fin": 155.976
+    },
+    {
+     "texte": "Il n'y a pas de tentative par négligence.",
+     "debut": 156.58,
+     "fin": 158.855
+    },
+    {
+     "texte": "Pour tenter, il faut vouloir le résultat.",
+     "debut": 159.18,
+     "fin": 161.723
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 162.173,
+   "fin": 170.44,
+   "phrases": [
+    {
+     "texte": "Changeons l'histoire.",
+     "debut": 162.173,
+     "fin": 163.218
+    },
+    {
+     "texte": "Kilian entre dans le kiosque, ouvre la caisse… et la trouve vide.",
+     "debut": 163.659,
+     "fin": 167.839
+    },
+    {
+     "texte": "Le patron l'avait vidée le soir même.",
+     "debut": 168.442,
+     "fin": 170.439
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 170.89,
+   "fin": 187.283,
+   "phrases": [
+    {
+     "texte": "Le vol ne pouvait pas réussir.",
+     "debut": 170.89,
+     "fin": 172.399
+    },
+    {
+     "texte": "Mais l'article vingt-deux le prévoit aussi : le résultat ne pouvait pas se produire.",
+     "debut": 173.212,
+     "fin": 177.995
+    },
+    {
+     "texte": "C'est encore une tentative punissable.",
+     "debut": 178.506,
+     "fin": 180.549
+    },
+    {
+     "texte": "Peu importe que le butin n'existe pas.",
+     "debut": 180.828,
+     "fin": 182.779
+    },
+    {
+     "texte": "Ce qui compte, c'est la décision de voler et le passage à l'acte.",
+     "debut": 183.475,
+     "fin": 187.283
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 187.733,
+   "fin": 197.578,
+   "phrases": [
+    {
+     "texte": "Il existe une seule exception.",
+     "debut": 187.733,
+     "fin": 189.138
+    },
+    {
+     "texte": "L'auteur n'est pas punissable si, par grave défaut d'intelligence, il ne voyait pas que son plan était absolument impossible.",
+     "debut": 189.521,
+     "fin": 197.578
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 198.028,
+   "fin": 207.037,
+   "phrases": [
+    {
+     "texte": "Par exemple, quelqu'un qui croit pouvoir ouvrir un coffre-fort en récitant une formule magique.",
+     "debut": 198.028,
+     "fin": 203.125
+    },
+    {
+     "texte": "Le moyen choisi ne pouvait absolument pas fonctionner.",
+     "debut": 203.636,
+     "fin": 207.037
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 207.487,
+   "fin": 218.958,
+   "phrases": [
+    {
+     "texte": "Dernière version.",
+     "debut": 207.487,
+     "fin": 208.474
+    },
+    {
+     "texte": "Kilian a commencé à forcer la porte.",
+     "debut": 208.799,
+     "fin": 210.761
+    },
+    {
+     "texte": "Personne ne passe.",
+     "debut": 210.97,
+     "fin": 211.922
+    },
+    {
+     "texte": "Mais soudain, il pense au kiosquier, qui le connaît depuis l'enfance.",
+     "debut": 212.363,
+     "fin": 216.16
+    },
+    {
+     "texte": "Il range son outil et rentre chez lui.",
+     "debut": 216.543,
+     "fin": 218.958
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 219.408,
+   "fin": 225.352,
+   "phrases": [
+    {
+     "texte": "Il a renoncé de lui-même.",
+     "debut": 219.408,
+     "fin": 220.801
+    },
+    {
+     "texte": "C'est le désistement, à l'article vingt-trois du Code pénal.",
+     "debut": 221.242,
+     "fin": 225.352
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 225.802,
+   "fin": 245.261,
+   "phrases": [
+    {
+     "texte": "Le juge peut alors atténuer la peine, ou même exempter Kilian de toute peine.",
+     "debut": 225.802,
+     "fin": 230.481
+    },
+    {
+     "texte": "C'est une façon d'encourager l'auteur à faire marche arrière.",
+     "debut": 230.632,
+     "fin": 234.37
+    },
+    {
+     "texte": "La règle vaut aussi quand ils sont plusieurs.",
+     "debut": 234.544,
+     "fin": 237.307
+    },
+    {
+     "texte": "Celui qui, de lui-même, aide à empêcher le résultat peut en profiter.",
+     "debut": 237.691,
+     "fin": 241.742
+    },
+    {
+     "texte": "La vidéo dix parlera de ces affaires à plusieurs.",
+     "debut": 242.067,
+     "fin": 245.26
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 245.711,
+   "fin": 255.881,
+   "phrases": [
+    {
+     "texte": "L'article vingt-trois vise aussi celui qui empêche lui-même le résultat.",
+     "debut": 245.711,
+     "fin": 250.576
+    },
+    {
+     "texte": "Par exemple, celui qui a allumé un feu et l'éteint avant qu'il ne se propage.",
+     "debut": 250.692,
+     "fin": 255.881
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 256.331,
+   "fin": 266.362,
+   "phrases": [
+    {
+     "texte": "Mais attention aux mots « de sa propre initiative ».",
+     "debut": 256.331,
+     "fin": 259.152
+    },
+    {
+     "texte": "Si Kilian s'arrête parce que la police arrive, ce n'est pas un désistement.",
+     "debut": 259.849,
+     "fin": 263.936
+    },
+    {
+     "texte": "C'est seulement une tentative ratée.",
+     "debut": 264.377,
+     "fin": 266.362
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 266.812,
+   "fin": 273.407,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 266.812,
+     "fin": 268.577
+    },
+    {
+     "texte": "On pense souvent : tant qu'il n'a rien pris, il n'y a pas d'infraction.",
+     "debut": 269.018,
+     "fin": 272.501
+    },
+    {
+     "texte": "C'est faux.",
+     "debut": 272.617,
+     "fin": 273.406
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 273.857,
+   "fin": 281.891,
+   "phrases": [
+    {
+     "texte": "Dès qu'il a commencé à forcer la porte, Kilian a commis une tentative de vol.",
+     "debut": 273.857,
+     "fin": 277.955
+    },
+    {
+     "texte": "Le vol n'est pas consommé, mais la tentative est punissable.",
+     "debut": 278.129,
+     "fin": 281.891
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 282.341,
+   "fin": 292.697,
+   "phrases": [
+    {
+     "texte": "Et ce qu'il a déjà fait reste acquis.",
+     "debut": 282.341,
+     "fin": 284.582
+    },
+    {
+     "texte": "Une porte abîmée peut constituer un dommage à la propriété, déjà consommé, même si Kilian renonce ensuite au vol.",
+     "debut": 285.023,
+     "fin": 292.697
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 293.147,
+   "fin": 307.822,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 293.147,
+     "fin": 293.832
+    },
+    {
+     "texte": "L'idée et la préparation sont en principe impunies.",
+     "debut": 294.645,
+     "fin": 297.942
+    },
+    {
+     "texte": "La tentative commence au dernier pas décisif.",
+     "debut": 298.383,
+     "fin": 300.81
+    },
+    {
+     "texte": "Elle est punissable pour les crimes et les délits.",
+     "debut": 301.053,
+     "fin": 303.503
+    },
+    {
+     "texte": "Et elle suppose toujours la volonté d'aller jusqu'au résultat.",
+     "debut": 304.014,
+     "fin": 307.822
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 308.272,
+   "fin": 321.693,
+   "phrases": [
+    {
+     "texte": "Et celui qui renonce de lui-même, ou empêche le résultat, peut voir sa peine atténuée, voire supprimée.",
+     "debut": 308.272,
+     "fin": 314.843
+    },
+    {
+     "texte": "Face à un cas, situez l'acte sur le chemin : idée, préparation, tentative ou résultat ?",
+     "debut": 315.087,
+     "fin": 321.693
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 322.143,
+   "fin": 331.663,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 322.143,
+     "fin": 323.2
+    },
+    {
+     "texte": "Mia met le feu à la poubelle de son voisin pour l'embêter.",
+     "debut": 323.896,
+     "fin": 326.764
+    },
+    {
+     "texte": "Puis, prise de peur, elle l'éteint elle-même avant que le feu ne gagne la haie.",
+     "debut": 326.915,
+     "fin": 331.663
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 332.113,
+   "fin": 338.8,
+   "phrases": [
+    {
+     "texte": "Qu'en dit l'article vingt-trois ?",
+     "debut": 332.113,
+     "fin": 333.518
+    },
+    {
+     "texte": "Et le geste de Mia efface-t-il tout ?",
+     "debut": 334.029,
+     "fin": 336.153
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 336.664,
+     "fin": 338.8
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 339.25,
+   "fin": 346.402,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 339.25,
+     "fin": 344.254
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 344.637,
+     "fin": 346.402
+    }
+   ]
+  }
+ ]
+}
