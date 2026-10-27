@@ -70,7 +70,7 @@ Personnages : Marc turquoise, Julien rose.
 | 20.1 | scene-vide ; titre "Troisième étage : la culpabilité" |
 | 20.2 | personnage marc "Marc" turquoise gauche |
 | 20.3 | sous-titre "Peut-on le lui reprocher ?" |
-| 21.1 | article "Art. 19 CP" ; bulle marc "Comprendre ? Se maîtriser ?" |
+| 21.1 | effacer-titres ; article "Art. 19 CP" ; bulle marc "Comprendre ? Se maîtriser ?" |
 | 21.1+4 | accent marc |
 | 22.1 | rembobiner ; bulle marc "Plus aucune prise" |
 | 22.2 | scene-vide ; batiment ; etage 1 vert ; etage 2 vert |
@@ -81,7 +81,7 @@ Personnages : Marc turquoise, Julien rose.
 | 24.1 | scene-vide ; article-retirer ; personnage marc "Marc" turquoise gauche ; bulle marc "En colère" |
 | 24.2 | batiment ; etage 1 vert ; etage 2 vert |
 | 24.3 | etage 3 vert |
-| 25.1 | scene-vide ; batiment ; etage 1 vert ; etage 2 vert ; etage 3 vert |
+| 25.1 | retirer marc ; accent batiment |
 | 25.2 | article "Art. 123 CP" |
 | 25.3 | titre "Peine" ambre |
 | 26.1 | scene-vide ; article-retirer ; batiment ; titre "La méthode" |
@@ -93,7 +93,8 @@ Personnages : Marc turquoise, Julien rose.
 | 27.1 | scene-vide ; titre "Une question pour finir" |
 | 27.2 | effacer-titres ; personnage marc "Marc" turquoise gauche ; personnage julien "Julien" rose droite |
 | 27.2+3 | deplacer marc centre-gauche ; basculer julien |
-| 27.3 | scene-vide ; batiment ; etage-question 1 ; etage-question 2 ; etage-question 3 ; titre "Quel étage pose problème ?" |
+| 27.2+6 | scene-vide ; batiment |
+| 27.3 | etage-question 1 ; etage-question 2 ; etage-question 3 ; titre "Quel étage pose problème ?" |
 | 27.4 | renvoi "vidéo 4" |
 | 28.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Script et articles sur GitHub" |
 | 28.2 | accent titre |

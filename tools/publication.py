@@ -53,7 +53,8 @@ def main(slug: str) -> None:
 
     # Articles : tableau « Articles cités » de l'audit (article avec lien, ce que le script lui fait dire).
     articles = []
-    bloc = audit.split("## Articles cités", 1)[1].split("\n## ", 1)[0]
+    # Le tableau des articles est sous « ## Articles cités », ou seul dans l'audit (vidéo 1).
+    bloc = audit.split("## Articles cités", 1)[-1].split("\n## ", 1)[0]
     for ligne in bloc.splitlines():
         m = re.match(r"\|\s*\[([^\]]+)\]\(([^)]+)\)([^|]*)\|([^|]+)\|", ligne)
         if m:
@@ -78,7 +79,8 @@ def main(slug: str) -> None:
     if arrets:
         lignes += ["", "Jurisprudence du Tribunal fédéral :", *[f"• {n}\n  {l}" for n, l in arrets]]
     if reponse:
-        lignes += ["", "Réponse à la question finale :", sans_markdown(reponse[1])]
+        texte_reponse = sans_markdown(reponse[1])
+        lignes += ["", "Réponse à la question finale :", texte_reponse[:1].upper() + texte_reponse[1:]]
     lignes += ["", "Chapitres :", *[f"{t} {nom}" for t, nom in chapitres]]
     lignes += [
         "",
