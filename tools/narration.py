@@ -82,6 +82,10 @@ def duree(fichier: Path) -> float:
 
 def main(slug: str) -> None:
     config = json.loads((RACINE / "voice/config.json").read_text(encoding="utf-8"))
+    # MODELE_ECO=1 : même voix, modèle « flash » d'ElevenLabs, deux fois moins cher en crédits.
+    # Pour une narration provisoire (avant un enregistrement humain), quand le crédit manque.
+    if os.environ.get("MODELE_ECO"):
+        config["modele"] = config.get("modele_eco", "eleven_flash_v2_5")
     if config["voice_id"].startswith("À"):
         sys.exit("Aucune voix fixée dans voice/config.json")
     blocs = lire_blocs(RACINE / "scripts" / slug / "tts.txt")

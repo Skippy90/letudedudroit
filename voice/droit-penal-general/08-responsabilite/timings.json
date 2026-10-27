@@ -1,0 +1,770 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 353.154,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 6.734,
+   "phrases": [
+    {
+     "texte": "Un soir d'été, dans un festival de musique près de Nyon.",
+     "debut": 0.0,
+     "fin": 3.17
+    },
+    {
+     "texte": "Théo, vingt-quatre ans, s'agite devant l'entrée.",
+     "debut": 3.68,
+     "fin": 6.734
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 7.184,
+   "fin": 17.679,
+   "phrases": [
+    {
+     "texte": "Un agent de sécurité lui demande de se calmer.",
+     "debut": 7.184,
+     "fin": 9.413
+    },
+    {
+     "texte": "Théo le pousse violemment.",
+     "debut": 9.622,
+     "fin": 10.864
+    },
+    {
+     "texte": "L'agent tombe et se blesse à l'épaule.",
+     "debut": 11.306,
+     "fin": 13.291
+    },
+    {
+     "texte": "Les témoins décrivent un regard étrange, des paroles sans suite.",
+     "debut": 13.895,
+     "fin": 17.679
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 18.129,
+   "fin": 27.51,
+   "phrases": [
+    {
+     "texte": "Le geste est typique.",
+     "debut": 18.129,
+     "fin": 19.22
+    },
+    {
+     "texte": "Il est illicite, car l'agent ne l'attaquait pas.",
+     "debut": 19.662,
+     "fin": 22.111
+    },
+    {
+     "texte": "Mais peut-on reprocher ce geste à Théo ?",
+     "debut": 22.808,
+     "fin": 24.886
+    },
+    {
+     "texte": "Cela dépend de ce qui se passait dans sa tête.",
+     "debut": 25.397,
+     "fin": 27.51
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 27.96,
+   "fin": 34.09,
+   "phrases": [
+    {
+     "texte": "Dans la vidéo un, on a gravi les trois étages de l'infraction.",
+     "debut": 27.96,
+     "fin": 31.408
+    },
+    {
+     "texte": "Le troisième, c'est la culpabilité.",
+     "debut": 31.733,
+     "fin": 34.09
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 34.54,
+   "fin": 41.831,
+   "phrases": [
+    {
+     "texte": "Pour être coupable, il faut d'abord être responsable.",
+     "debut": 34.54,
+     "fin": 37.64
+    },
+    {
+     "texte": "C'est-à-dire être capable, au moment d'agir, de répondre de ses actes.",
+     "debut": 37.965,
+     "fin": 41.831
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 42.281,
+   "fin": 51.569,
+   "phrases": [
+    {
+     "texte": "L'article dix-neuf du Code pénal en donne la mesure.",
+     "debut": 42.281,
+     "fin": 44.975
+    },
+    {
+     "texte": "Il prévoit trois situations : responsable, pas du tout responsable, ou partiellement responsable.",
+     "debut": 45.485,
+     "fin": 51.569
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 52.019,
+   "fin": 63.676,
+   "phrases": [
+    {
+     "texte": "Commençons par la version simple.",
+     "debut": 52.019,
+     "fin": 54.353
+    },
+    {
+     "texte": "Théo est sobre, en bonne santé, simplement énervé.",
+     "debut": 54.956,
+     "fin": 58.184
+    },
+    {
+     "texte": "Il comprend ce qu'il fait et pourrait se retenir.",
+     "debut": 58.625,
+     "fin": 60.994
+    },
+    {
+     "texte": "Il est responsable, et donc coupable.",
+     "debut": 61.237,
+     "fin": 63.675
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 64.126,
+   "fin": 71.602,
+   "phrases": [
+    {
+     "texte": "Selon l'article dix-neuf, l'auteur n'est pas punissable si, au moment d'agir, il lui manquait l'une de deux facultés.",
+     "debut": 64.126,
+     "fin": 71.603
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 72.052,
+   "fin": 80.087,
+   "phrases": [
+    {
+     "texte": "Première faculté : apprécier le caractère illicite de son acte.",
+     "debut": 72.052,
+     "fin": 75.918
+    },
+    {
+     "texte": "Autrement dit, comprendre que ce qu'on fait est interdit.",
+     "debut": 76.243,
+     "fin": 80.086
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 80.537,
+   "fin": 87.363,
+   "phrases": [
+    {
+     "texte": "Seconde faculté : se déterminer d'après cette appréciation.",
+     "debut": 80.537,
+     "fin": 83.904
+    },
+    {
+     "texte": "Autrement dit, être capable de se retenir.",
+     "debut": 84.287,
+     "fin": 87.364
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 87.813,
+   "fin": 103.045,
+   "phrases": [
+    {
+     "texte": "Il suffit qu'une seule de ces facultés manque complètement.",
+     "debut": 87.813,
+     "fin": 91.168
+    },
+    {
+     "texte": "Alors l'auteur est irresponsable, et il n'est pas punissable.",
+     "debut": 91.772,
+     "fin": 95.731
+    },
+    {
+     "texte": "Notez les mots « au moment d'agir ».",
+     "debut": 95.94,
+     "fin": 98.065
+    },
+    {
+     "texte": "On ne juge pas la personne en général, mais son état à l'instant de l'acte.",
+     "debut": 98.761,
+     "fin": 103.045
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 103.495,
+   "fin": 110.554,
+   "phrases": [
+    {
+     "texte": "Première variante.",
+     "debut": 103.495,
+     "fin": 104.517
+    },
+    {
+     "texte": "Théo traverse une grave crise psychotique.",
+     "debut": 105.028,
+     "fin": 107.338
+    },
+    {
+     "texte": "Il croit que l'agent est un démon venu l'emporter.",
+     "debut": 107.721,
+     "fin": 110.554
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 111.004,
+   "fin": 117.134,
+   "phrases": [
+    {
+     "texte": "Il ne comprend plus du tout ce qu'il fait.",
+     "debut": 111.004,
+     "fin": 112.722
+    },
+    {
+     "texte": "La première faculté manque.",
+     "debut": 113.047,
+     "fin": 114.533
+    },
+    {
+     "texte": "Théo est irresponsable.",
+     "debut": 114.975,
+     "fin": 117.134
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 117.584,
+   "fin": 124.643,
+   "phrases": [
+    {
+     "texte": "Seconde variante.",
+     "debut": 117.584,
+     "fin": 118.559
+    },
+    {
+     "texte": "Théo sait que c'est interdit.",
+     "debut": 118.838,
+     "fin": 120.196
+    },
+    {
+     "texte": "Mais une maladie lui retire toute maîtrise de ses gestes à ce moment-là.",
+     "debut": 120.707,
+     "fin": 124.643
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 125.093,
+   "fin": 131.363,
+   "phrases": [
+    {
+     "texte": "Cette fois, c'est la seconde faculté qui manque.",
+     "debut": 125.093,
+     "fin": 127.763
+    },
+    {
+     "texte": "Le résultat est le même : Théo est irresponsable.",
+     "debut": 128.042,
+     "fin": 131.362
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 131.813,
+   "fin": 142.447,
+   "phrases": [
+    {
+     "texte": "Ne confondez pas avec la vidéo sept.",
+     "debut": 131.813,
+     "fin": 133.752
+    },
+    {
+     "texte": "Dans l'erreur sur l'illicéité, l'auteur pourrait comprendre, mais il lui manque une information.",
+     "debut": 134.077,
+     "fin": 139.429
+    },
+    {
+     "texte": "Ici, c'est sa capacité même qui fait défaut.",
+     "debut": 139.673,
+     "fin": 142.448
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 142.897,
+   "fin": 149.492,
+   "phrases": [
+    {
+     "texte": "Entre les deux, il y a une zone grise.",
+     "debut": 142.897,
+     "fin": 145.126
+    },
+    {
+     "texte": "L'auteur comprend en partie, ou se maîtrise en partie seulement.",
+     "debut": 145.567,
+     "fin": 149.491
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 149.942,
+   "fin": 158.533,
+   "phrases": [
+    {
+     "texte": "C'est la responsabilité restreinte, à l'article dix-neuf, deuxième alinéa.",
+     "debut": 149.942,
+     "fin": 154.447
+    },
+    {
+     "texte": "L'auteur reste coupable.",
+     "debut": 154.888,
+     "fin": 156.293
+    },
+    {
+     "texte": "Mais le juge atténue sa peine.",
+     "debut": 156.618,
+     "fin": 158.533
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 158.983,
+   "fin": 164.51,
+   "phrases": [
+    {
+     "texte": "Comprenez bien la logique.",
+     "debut": 158.983,
+     "fin": 160.399
+    },
+    {
+     "texte": "On reproche moins à quelqu'un ce qu'il ne pouvait maîtriser qu'à moitié.",
+     "debut": 160.724,
+     "fin": 164.509
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 164.96,
+   "fin": 169.232,
+   "phrases": [
+    {
+     "texte": "Mais comment savoir si Théo était responsable ?",
+     "debut": 164.96,
+     "fin": 167.085
+    },
+    {
+     "texte": "Le juge n'est pas psychiatre.",
+     "debut": 167.595,
+     "fin": 169.232
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 169.682,
+   "fin": 181.06,
+   "phrases": [
+    {
+     "texte": "L'article vingt prévoit une expertise dès qu'il existe une raison sérieuse de douter de la responsabilité de l'auteur.",
+     "debut": 169.682,
+     "fin": 176.102
+    },
+    {
+     "texte": "Elle peut être ordonnée dès l'enquête, pas seulement par le juge du procès.",
+     "debut": 176.706,
+     "fin": 181.06
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 181.51,
+   "fin": 192.191,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral ajoute que le juge ne doit pas lever ses doutes tout seul.",
+     "debut": 181.51,
+     "fin": 185.899
+    },
+    {
+     "texte": "Il ne peut pas se contenter de lire des livres de psychiatrie.",
+     "debut": 186.34,
+     "fin": 189.811
+    },
+    {
+     "texte": "Il doit faire appel à un expert.",
+     "debut": 190.055,
+     "fin": 192.191
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 192.641,
+   "fin": 207.13,
+   "phrases": [
+    {
+     "texte": "Il précise aussi qu'un diagnostic ne suffit pas toujours à créer ce doute.",
+     "debut": 192.641,
+     "fin": 196.67
+    },
+    {
+     "texte": "Tout dépend du lien entre le trouble et l'acte.",
+     "debut": 196.913,
+     "fin": 199.526
+    },
+    {
+     "texte": "L'expert éclaire le juge sur la santé de l'auteur.",
+     "debut": 200.129,
+     "fin": 203.206
+    },
+    {
+     "texte": "C'est ensuite au juge d'en tirer les conséquences juridiques.",
+     "debut": 203.717,
+     "fin": 207.13
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 207.58,
+   "fin": 215.243,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 207.58,
+     "fin": 209.159
+    },
+    {
+     "texte": "On entend parfois : « J'avais trop bu, je ne savais plus ce que je faisais. »",
+     "debut": 209.6,
+     "fin": 213.478
+    },
+    {
+     "texte": "Est-ce une excuse ?",
+     "debut": 213.989,
+     "fin": 215.243
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 215.693,
+   "fin": 227.071,
+   "phrases": [
+    {
+     "texte": "Le quatrième alinéa de l'article dix-neuf répond.",
+     "debut": 215.693,
+     "fin": 218.514
+    },
+    {
+     "texte": "Si l'auteur pouvait éviter son état, et prévoir l'acte qu'il commettrait, les règles sur l'irresponsabilité ne s'appliquent pas.",
+     "debut": 218.955,
+     "fin": 227.071
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 227.521,
+   "fin": 234.858,
+   "phrases": [
+    {
+     "texte": "Théo s'est enivré en sachant qu'il devenait violent quand il boit ?",
+     "debut": 227.521,
+     "fin": 230.807
+    },
+    {
+     "texte": "Il est jugé comme s'il avait été pleinement responsable.",
+     "debut": 231.503,
+     "fin": 234.859
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 235.308,
+   "fin": 246.314,
+   "phrases": [
+    {
+     "texte": "Et s'il ne pouvait pas prévoir l'acte ?",
+     "debut": 235.308,
+     "fin": 237.015
+    },
+    {
+     "texte": "L'article deux cent soixante-trois prévoit alors une infraction particulière : l'acte commis en état d'irresponsabilité fautive.",
+     "debut": 237.526,
+     "fin": 246.314
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 246.764,
+   "fin": 255.727,
+   "phrases": [
+    {
+     "texte": "L'auteur est puni d'une peine pécuniaire.",
+     "debut": 246.764,
+     "fin": 249.202
+    },
+    {
+     "texte": "Et si l'acte commis n'est puni que d'une peine privative de liberté, la peine peut aller jusqu'à trois ans.",
+     "debut": 249.713,
+     "fin": 255.727
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 256.177,
+   "fin": 275.45,
+   "phrases": [
+    {
+     "texte": "Un cas à part : quelqu'un a glissé de la drogue dans le verre de Théo, à son insu.",
+     "debut": 256.177,
+     "fin": 261.065
+    },
+    {
+     "texte": "Son état n'est alors pas fautif.",
+     "debut": 261.576,
+     "fin": 263.224
+    },
+    {
+     "texte": "Ni le quatrième alinéa, ni l'article deux cent soixante-trois ne s'appliquent.",
+     "debut": 263.375,
+     "fin": 267.682
+    },
+    {
+     "texte": "Dans tous les autres cas, l'ivresse volontaire n'efface pas la faute.",
+     "debut": 268.124,
+     "fin": 271.595
+    },
+    {
+     "texte": "Elle la déplace seulement vers le moment où l'on a choisi de boire.",
+     "debut": 271.839,
+     "fin": 275.45
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 275.9,
+   "fin": 282.216,
+   "phrases": [
+    {
+     "texte": "Revenons à Théo en pleine crise psychotique.",
+     "debut": 275.9,
+     "fin": 278.187
+    },
+    {
+     "texte": "Il n'est pas punissable.",
+     "debut": 278.791,
+     "fin": 279.975
+    },
+    {
+     "texte": "Mais il n'est pas libre pour autant.",
+     "debut": 280.254,
+     "fin": 282.216
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 282.666,
+   "fin": 298.084,
+   "phrases": [
+    {
+     "texte": "L'article dix-neuf le dit expressément : des mesures peuvent être ordonnées, comme un traitement.",
+     "debut": 282.666,
+     "fin": 288.959
+    },
+    {
+     "texte": "Cela vaut aussi pour l'auteur à responsabilité restreinte.",
+     "debut": 289.469,
+     "fin": 292.743
+    },
+    {
+     "texte": "On l'avait annoncé dans la vidéo un.",
+     "debut": 293.185,
+     "fin": 295.309
+    },
+    {
+     "texte": "La vidéo douze les détaillera.",
+     "debut": 295.913,
+     "fin": 298.084
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 298.534,
+   "fin": 305.546,
+   "phrases": [
+    {
+     "texte": "Une peine punit une faute.",
+     "debut": 298.534,
+     "fin": 299.962
+    },
+    {
+     "texte": "Une mesure soigne ou protège, même sans faute.",
+     "debut": 300.287,
+     "fin": 303.178
+    },
+    {
+     "texte": "C'est la grande différence entre les deux.",
+     "debut": 303.619,
+     "fin": 305.546
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 305.996,
+   "fin": 312.916,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 305.996,
+     "fin": 306.542
+    },
+    {
+     "texte": "Pour être coupable, il faut pouvoir comprendre que l'acte est interdit, et pouvoir se retenir.",
+     "debut": 306.983,
+     "fin": 312.916
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 313.366,
+   "fin": 328.087,
+   "phrases": [
+    {
+     "texte": "S'il manque l'une de ces facultés : irresponsabilité, pas de peine.",
+     "debut": 313.366,
+     "fin": 317.546
+    },
+    {
+     "texte": "S'il en manque une partie : responsabilité restreinte, peine atténuée.",
+     "debut": 318.056,
+     "fin": 322.224
+    },
+    {
+     "texte": "Et en cas de doute sérieux : un expert.",
+     "debut": 322.666,
+     "fin": 324.941
+    },
+    {
+     "texte": "Quant à l'ivresse choisie, elle n'excuse pas.",
+     "debut": 325.452,
+     "fin": 328.087
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 328.537,
+   "fin": 338.057,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 328.537,
+     "fin": 329.907
+    },
+    {
+     "texte": "Zoé sait qu'elle devient agressive quand elle boit.",
+     "debut": 330.604,
+     "fin": 332.984
+    },
+    {
+     "texte": "Avant une soirée, elle boit pourtant énormément.",
+     "debut": 333.227,
+     "fin": 335.805
+    },
+    {
+     "texte": "Puis elle frappe une amie.",
+     "debut": 336.316,
+     "fin": 338.057
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 338.507,
+   "fin": 344.963,
+   "phrases": [
+    {
+     "texte": "Peut-elle invoquer son ivresse pour échapper à sa responsabilité ?",
+     "debut": 338.507,
+     "fin": 341.978
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 342.582,
+     "fin": 344.962
+    }
+   ]
+  },
+  {
+   "ligne": 37,
+   "debut": 345.413,
+   "fin": 352.704,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 345.413,
+     "fin": 350.603
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 351.044,
+     "fin": 352.704
+    }
+   ]
+  }
+ ]
+}

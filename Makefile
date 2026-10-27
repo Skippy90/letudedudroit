@@ -17,6 +17,7 @@ check:
 		test -f $(DIR)/$$f || (echo "Manque $(DIR)/$$f" && exit 1); done
 	@! grep -n "À VÉRIFIER" $(DIR)/script.md $(DIR)/audit.md || \
 		(echo "Mentions « À VÉRIFIER » restantes : vidéo non prête" && exit 1)
+	@$(PY) tools/verifier_visuels.py $(SLUG)
 
 # Manim a besoin des en-têtes de Pango (paquet libpango1.0-dev sous Ubuntu).
 installer:

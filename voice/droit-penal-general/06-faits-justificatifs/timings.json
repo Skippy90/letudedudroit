@@ -1,0 +1,829 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 360.555,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 6.78,
+   "phrases": [
+    {
+     "texte": "Vendredi soir, à la sortie d'un bar de Bienne.",
+     "debut": 0.0,
+     "fin": 2.345
+    },
+    {
+     "texte": "Kevin, très énervé, s'avance vers Yasmine, une bouteille à la main.",
+     "debut": 2.728,
+     "fin": 6.78
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 7.23,
+   "fin": 17.261,
+   "phrases": [
+    {
+     "texte": "Il lève la bouteille pour la frapper.",
+     "debut": 7.23,
+     "fin": 8.832
+    },
+    {
+     "texte": "Une bouteille en verre peut blesser gravement.",
+     "debut": 9.157,
+     "fin": 11.212
+    },
+    {
+     "texte": "Yasmine n'a qu'une seconde.",
+     "debut": 11.595,
+     "fin": 13.07
+    },
+    {
+     "texte": "Elle le repousse violemment.",
+     "debut": 13.348,
+     "fin": 14.73
+    },
+    {
+     "texte": "Kevin tombe et se casse le bras.",
+     "debut": 15.113,
+     "fin": 17.261
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 17.711,
+   "fin": 24.863,
+   "phrases": [
+    {
+     "texte": "Yasmine a blessé Kevin.",
+     "debut": 17.711,
+     "fin": 19.127
+    },
+    {
+     "texte": "Son geste correspond aux lésions corporelles.",
+     "debut": 19.371,
+     "fin": 21.763
+    },
+    {
+     "texte": "Mais doit-elle être punie pour s'être défendue ?",
+     "debut": 22.204,
+     "fin": 24.863
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 25.313,
+   "fin": 31.907,
+   "phrases": [
+    {
+     "texte": "Dans la vidéo un, on a vu les trois étages de l'infraction.",
+     "debut": 25.313,
+     "fin": 28.401
+    },
+    {
+     "texte": "Typicité, illicéité, culpabilité.",
+     "debut": 28.68,
+     "fin": 31.907
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 32.357,
+   "fin": 38.766,
+   "phrases": [
+    {
+     "texte": "Le geste de Yasmine franchit le premier étage.",
+     "debut": 32.357,
+     "fin": 34.9
+    },
+    {
+     "texte": "Elle a voulu repousser Kevin, et elle l'a blessé.",
+     "debut": 35.341,
+     "fin": 38.766
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 39.216,
+   "fin": 44.232,
+   "phrases": [
+    {
+     "texte": "Toute la question se joue au deuxième étage.",
+     "debut": 39.216,
+     "fin": 41.399
+    },
+    {
+     "texte": "Ce geste était-il malgré tout permis ?",
+     "debut": 41.782,
+     "fin": 44.232
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 44.682,
+   "fin": 52.251,
+   "phrases": [
+    {
+     "texte": "Les faits justificatifs servent à cela.",
+     "debut": 44.682,
+     "fin": 46.83
+    },
+    {
+     "texte": "Ils rendent licite un acte que la loi punit d'habitude.",
+     "debut": 47.271,
+     "fin": 50.139
+    },
+    {
+     "texte": "Aujourd'hui, nous en voyons deux.",
+     "debut": 50.382,
+     "fin": 52.252
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 52.701,
+   "fin": 61.014,
+   "phrases": [
+    {
+     "texte": "La légitime défense est à l'article quinze du Code pénal.",
+     "debut": 52.701,
+     "fin": 56.045
+    },
+    {
+     "texte": "Celui qui est attaqué de manière contraire au droit peut repousser l'attaque.",
+     "debut": 56.428,
+     "fin": 61.014
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 61.464,
+   "fin": 66.433,
+   "phrases": [
+    {
+     "texte": "La loi pose trois conditions.",
+     "debut": 61.464,
+     "fin": 62.95
+    },
+    {
+     "texte": "Il faut une attaque, ou la menace d'une attaque imminente.",
+     "debut": 63.391,
+     "fin": 66.433
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 66.883,
+   "fin": 73.571,
+   "phrases": [
+    {
+     "texte": "Cette attaque doit être contraire au droit.",
+     "debut": 66.883,
+     "fin": 69.112
+    },
+    {
+     "texte": "Et la défense doit utiliser des moyens proportionnés aux circonstances.",
+     "debut": 69.716,
+     "fin": 73.57
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 74.021,
+   "fin": 82.937,
+   "phrases": [
+    {
+     "texte": "Pour Yasmine, tout y est.",
+     "debut": 74.021,
+     "fin": 75.844
+    },
+    {
+     "texte": "Kevin levait une bouteille sur elle.",
+     "debut": 76.355,
+     "fin": 77.957
+    },
+    {
+     "texte": "Rien ne l'y autorisait.",
+     "debut": 78.201,
+     "fin": 79.443
+    },
+    {
+     "texte": "Et une poussée face à une bouteille, c'est mesuré.",
+     "debut": 79.826,
+     "fin": 82.937
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 83.387,
+   "fin": 90.121,
+   "phrases": [
+    {
+     "texte": "Son geste est justifié.",
+     "debut": 83.387,
+     "fin": 84.676
+    },
+    {
+     "texte": "L'illicéité tombe, et avec elle l'infraction.",
+     "debut": 85.279,
+     "fin": 88.414
+    },
+    {
+     "texte": "Yasmine n'est pas punie.",
+     "debut": 88.658,
+     "fin": 90.121
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 90.571,
+   "fin": 99.952,
+   "phrases": [
+    {
+     "texte": "Notez un détail de l'article quinze.",
+     "debut": 90.571,
+     "fin": 92.347
+    },
+    {
+     "texte": "Le même droit appartient aux tiers.",
+     "debut": 92.73,
+     "fin": 94.89
+    },
+    {
+     "texte": "Hugo, qui passait par là, aurait pu défendre Yasmine de la même façon.",
+     "debut": 95.401,
+     "fin": 99.952
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 100.402,
+   "fin": 113.405,
+   "phrases": [
+    {
+     "texte": "La légitime défense ne protège pas que le corps.",
+     "debut": 100.402,
+     "fin": 103.769
+    },
+    {
+     "texte": "Le Tribunal fédéral l'admet aussi pour défendre ses biens.",
+     "debut": 104.373,
+     "fin": 107.995
+    },
+    {
+     "texte": "Par exemple contre un voleur, tant qu'on se dispute encore l'objet, sur le moment.",
+     "debut": 108.506,
+     "fin": 113.405
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 113.855,
+   "fin": 123.143,
+   "phrases": [
+    {
+     "texte": "Et si Yasmine avait seulement cru être attaquée, à tort ?",
+     "debut": 113.855,
+     "fin": 117.547
+    },
+    {
+     "texte": "On parle de légitime défense putative.",
+     "debut": 118.058,
+     "fin": 120.136
+    },
+    {
+     "texte": "C'est une question d'erreur, l'objet de la vidéo sept.",
+     "debut": 120.287,
+     "fin": 123.143
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 123.593,
+   "fin": 129.862,
+   "phrases": [
+    {
+     "texte": "Changeons l'histoire.",
+     "debut": 123.593,
+     "fin": 124.522
+    },
+    {
+     "texte": "Kevin menace Yasmine, puis rentre chez lui.",
+     "debut": 124.905,
+     "fin": 127.355
+    },
+    {
+     "texte": "Le lendemain, elle va le frapper chez lui.",
+     "debut": 127.564,
+     "fin": 129.862
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 130.312,
+   "fin": 139.693,
+   "phrases": [
+    {
+     "texte": "Ici, plus de légitime défense.",
+     "debut": 130.312,
+     "fin": 132.669
+    },
+    {
+     "texte": "L'attaque est terminée, et aucune nouvelle attaque n'est imminente.",
+     "debut": 133.18,
+     "fin": 136.686
+    },
+    {
+     "texte": "Se venger n'est pas se défendre.",
+     "debut": 137.197,
+     "fin": 139.693
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 140.143,
+   "fin": 149.756,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral l'a jugé dans une affaire dramatique.",
+     "debut": 140.143,
+     "fin": 142.999
+    },
+    {
+     "texte": "Une femme avait tué son mari violent pendant qu'il dormait.",
+     "debut": 143.44,
+     "fin": 146.587
+    },
+    {
+     "texte": "Il ne l'attaquait pas à ce moment-là.",
+     "debut": 147.283,
+     "fin": 149.756
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 150.206,
+   "fin": 156.058,
+   "phrases": [
+    {
+     "texte": "Autre variante.",
+     "debut": 150.206,
+     "fin": 151.054
+    },
+    {
+     "texte": "Kevin lève la bouteille, mais Yasmine sort un couteau et le frappe à plusieurs reprises.",
+     "debut": 151.437,
+     "fin": 156.057
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 156.508,
+   "fin": 166.167,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral demande ici une grande retenue.",
+     "debut": 156.508,
+     "fin": 159.085
+    },
+    {
+     "texte": "Le couteau est en principe le dernier moyen de défense.",
+     "debut": 159.329,
+     "fin": 162.058
+    },
+    {
+     "texte": "Il peut être admis, par exemple face à plusieurs agresseurs.",
+     "debut": 162.301,
+     "fin": 166.167
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 166.617,
+   "fin": 174.047,
+   "phrases": [
+    {
+     "texte": "Si Yasmine va trop loin, elle dépasse les limites de la légitime défense.",
+     "debut": 166.617,
+     "fin": 170.402
+    },
+    {
+     "texte": "L'article seize prévoit alors que le juge atténue sa peine.",
+     "debut": 170.727,
+     "fin": 174.047
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 174.497,
+   "fin": 183.135,
+   "phrases": [
+    {
+     "texte": "Et si cet excès vient d'un état excusable d'excitation ou de saisissement ?",
+     "debut": 174.497,
+     "fin": 178.688
+    },
+    {
+     "texte": "Causé par l'attaque, il fait qu'elle n'agit pas de manière coupable.",
+     "debut": 179.385,
+     "fin": 183.135
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 183.585,
+   "fin": 191.991,
+   "phrases": [
+    {
+     "texte": "Remarquez où l'on se trouve.",
+     "debut": 183.585,
+     "fin": 184.967
+    },
+    {
+     "texte": "L'excès ne rend pas le geste licite.",
+     "debut": 185.57,
+     "fin": 187.695
+    },
+    {
+     "texte": "Il touche seulement le troisième étage, celui de la culpabilité.",
+     "debut": 188.206,
+     "fin": 191.991
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 192.441,
+   "fin": 199.314,
+   "phrases": [
+    {
+     "texte": "Second fait justificatif : l'état de nécessité.",
+     "debut": 192.441,
+     "fin": 195.564
+    },
+    {
+     "texte": "Ici, pas d'agresseur.",
+     "debut": 196.075,
+     "fin": 197.851
+    },
+    {
+     "texte": "Seulement un danger.",
+     "debut": 198.002,
+     "fin": 199.314
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 199.764,
+   "fin": 208.866,
+   "phrases": [
+    {
+     "texte": "Un après-midi de canicule, Hugo voit un bébé enfermé seul dans une voiture brûlante.",
+     "debut": 199.764,
+     "fin": 205.395
+    },
+    {
+     "texte": "Personne ne répond.",
+     "debut": 205.604,
+     "fin": 206.509
+    },
+    {
+     "texte": "Il brise la vitre pour le sortir.",
+     "debut": 207.02,
+     "fin": 208.866
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 209.316,
+   "fin": 217.861,
+   "phrases": [
+    {
+     "texte": "Briser la vitre d'autrui, c'est un dommage à la propriété.",
+     "debut": 209.316,
+     "fin": 212.404
+    },
+    {
+     "texte": "Mais l'article dix-sept du Code pénal rend ce geste licite, à trois conditions.",
+     "debut": 213.008,
+     "fin": 217.861
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 218.311,
+   "fin": 233.079,
+   "phrases": [
+    {
+     "texte": "Il faut un danger imminent.",
+     "debut": 218.311,
+     "fin": 219.913
+    },
+    {
+     "texte": "Selon le Tribunal fédéral, c'est un danger ni passé ni futur, mais actuel et concret.",
+     "debut": 220.296,
+     "fin": 226.194
+    },
+    {
+     "texte": "Il faut aussi qu'il soit impossible de l'écarter autrement.",
+     "debut": 226.473,
+     "fin": 229.944
+    },
+    {
+     "texte": "Et il faut sauvegarder des intérêts prépondérants.",
+     "debut": 230.223,
+     "fin": 233.079
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 233.529,
+   "fin": 238.405,
+   "phrases": [
+    {
+     "texte": "La vie d'un bébé pèse bien plus lourd qu'une vitre.",
+     "debut": 233.529,
+     "fin": 235.909
+    },
+    {
+     "texte": "Le geste de Hugo est justifié.",
+     "debut": 236.42,
+     "fin": 238.405
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 238.855,
+   "fin": 247.54,
+   "phrases": [
+    {
+     "texte": "Et quand les deux biens en jeu ont une valeur comparable ?",
+     "debut": 238.855,
+     "fin": 241.467
+    },
+    {
+     "texte": "L'acte n'est plus justifié.",
+     "debut": 241.85,
+     "fin": 243.348
+    },
+    {
+     "texte": "Mais l'article dix-huit prévoit que le juge atténue la peine.",
+     "debut": 243.859,
+     "fin": 247.539
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 247.99,
+   "fin": 258.764,
+   "phrases": [
+    {
+     "texte": "Parfois, on ne pouvait pas raisonnablement exiger de l'auteur qu'il sacrifie son bien.",
+     "debut": 247.99,
+     "fin": 253.342
+    },
+    {
+     "texte": "Alors, il n'agit même pas de manière coupable.",
+     "debut": 253.853,
+     "fin": 256.012
+    },
+    {
+     "texte": "Là encore, on bascule au troisième étage.",
+     "debut": 256.187,
+     "fin": 258.764
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 259.214,
+   "fin": 272.217,
+   "phrases": [
+    {
+     "texte": "Il existe d'autres faits justificatifs.",
+     "debut": 259.214,
+     "fin": 261.362
+    },
+    {
+     "texte": "Par exemple, l'article quatorze rend licite l'acte que la loi ordonne ou autorise.",
+     "debut": 261.803,
+     "fin": 267.631
+    },
+    {
+     "texte": "C'est le cas d'un policier qui procède à une arrestation dans les règles.",
+     "debut": 268.072,
+     "fin": 272.217
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 272.667,
+   "fin": 279.215,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 272.667,
+     "fin": 274.2
+    },
+    {
+     "texte": "On croit souvent que face à un agresseur, tout est permis.",
+     "debut": 274.71,
+     "fin": 277.915
+    },
+    {
+     "texte": "C'est faux.",
+     "debut": 278.426,
+     "fin": 279.215
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 279.665,
+   "fin": 291.46,
+   "phrases": [
+    {
+     "texte": "La défense doit rester proportionnée.",
+     "debut": 279.665,
+     "fin": 281.639
+    },
+    {
+     "texte": "Le juge regarde la gravité de l'attaque, les biens en jeu, et le moyen de défense utilisé.",
+     "debut": 282.08,
+     "fin": 287.339
+    },
+    {
+     "texte": "Il se place dans la situation de la victime, au moment de l'attaque.",
+     "debut": 287.78,
+     "fin": 291.461
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 291.91,
+   "fin": 306.446,
+   "phrases": [
+    {
+     "texte": "Et la légitime défense ne vaut que pendant l'attaque, ou face à une attaque imminente.",
+     "debut": 291.91,
+     "fin": 296.879
+    },
+    {
+     "texte": "Avant, c'est trop tôt.",
+     "debut": 297.576,
+     "fin": 298.586
+    },
+    {
+     "texte": "Après, c'est trop tard.",
+     "debut": 298.737,
+     "fin": 299.828
+    },
+    {
+     "texte": "Une défense trop tardive ou trop violente peut rester punissable, même si l'agresseur avait tort au départ.",
+     "debut": 300.002,
+     "fin": 306.446
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 306.896,
+   "fin": 315.673,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 306.896,
+     "fin": 307.523
+    },
+    {
+     "texte": "La légitime défense répond à une attaque contraire au droit, actuelle ou imminente, avec des moyens proportionnés.",
+     "debut": 307.848,
+     "fin": 313.908
+    },
+    {
+     "texte": "C'est l'article quinze.",
+     "debut": 314.292,
+     "fin": 315.673
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 316.123,
+   "fin": 324.065,
+   "phrases": [
+    {
+     "texte": "L'état de nécessité répond à un danger imminent, sans autre issue, pour sauver un intérêt plus important.",
+     "debut": 316.123,
+     "fin": 321.835
+    },
+    {
+     "texte": "C'est l'article dix-sept.",
+     "debut": 322.439,
+     "fin": 324.064
+    }
+   ]
+  },
+  {
+   "ligne": 37,
+   "debut": 324.515,
+   "fin": 336.914,
+   "phrases": [
+    {
+     "texte": "Les deux font tomber l'illicéité.",
+     "debut": 324.515,
+     "fin": 326.245
+    },
+    {
+     "texte": "Les articles seize et dix-huit, eux, ne jouent que sur la culpabilité.",
+     "debut": 326.756,
+     "fin": 331.156
+    },
+    {
+     "texte": "Face à un cas, demandez-vous d'abord : y avait-il une attaque, ou seulement un danger ?",
+     "debut": 331.597,
+     "fin": 336.914
+    }
+   ]
+  },
+  {
+   "ligne": 38,
+   "debut": 337.364,
+   "fin": 351.25,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 337.364,
+     "fin": 338.653
+    },
+    {
+     "texte": "Un voisin crie à Nadia qu'il la frappera un jour.",
+     "debut": 339.164,
+     "fin": 342.635
+    },
+    {
+     "texte": "Le lendemain, Nadia le frappe la première, pour prendre les devants.",
+     "debut": 343.018,
+     "fin": 346.269
+    },
+    {
+     "texte": "Est-ce de la légitime défense ?",
+     "debut": 346.71,
+     "fin": 348.486
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 348.997,
+     "fin": 351.25
+    }
+   ]
+  },
+  {
+   "ligne": 39,
+   "debut": 351.7,
+   "fin": 360.105,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 351.7,
+     "fin": 357.389
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 357.9,
+     "fin": 360.106
+    }
+   ]
+  }
+ ]
+}

@@ -181,9 +181,14 @@ class Cases(VGroup):
 
     def nouvelle_case(self, contenu):
         boite = RoundedRectangle(corner_radius=0.08, width=0.6, height=0.6, color=TEXTE, stroke_width=3)
-        etiquette = texte(contenu, T_CORPS).next_to(boite, RIGHT, buff=0.35)
+        etiquette = texte(contenu, T_CORPS)
+        # À droite du centre : la moitié gauche reste libre pour une silhouette et sa bulle.
+        # Un libellé trop long est réduit pour rester dans l'image.
+        if etiquette.width > 5.4:
+            etiquette.scale_to_fit_width(5.4)
+        etiquette.next_to(boite, RIGHT, buff=0.35)
         ligne = VGroup(boite, etiquette)
-        ligne.move_to([-2.0, 1.4 - 1.0 * len(self.lignes), 0], aligned_edge=LEFT)
+        ligne.move_to([0.3, 1.1 - 0.95 * len(self.lignes), 0], aligned_edge=LEFT)
         self.lignes.append(ligne)
         self.add(ligne)
         return ligne
@@ -226,7 +231,19 @@ class Frise(VGroup):
     def __init__(self):
         self.ligne = Arrow([-6.3, Y_FRISE, 0], [6.4, Y_FRISE, 0], color=TEXTE, stroke_width=4, buff=0,
                            max_tip_length_to_length_ratio=0.02)
+        self.etiquettes = []
         super().__init__(self.ligne)
+
+    def placer(self, etiquette, sens):
+        """Décale une étiquette d'un rang (vers le haut ou le bas) tant qu'elle touche une voisine."""
+        for _ in range(3):
+            if not any(abs(etiquette.get_x() - e.get_x()) < (etiquette.width + e.width) / 2 + 0.15
+                       and abs(etiquette.get_y() - e.get_y()) < (etiquette.height + e.height) / 2
+                       for e in self.etiquettes):
+                break
+            etiquette.shift(sens * (etiquette.height + 0.12))
+        self.etiquettes.append(etiquette)
+        return etiquette
 
     @staticmethod
     def x(fraction):
@@ -235,13 +252,13 @@ class Frise(VGroup):
     def repere(self, fraction, libelle):
         x = self.x(fraction)
         trait = Line([x, Y_FRISE - 0.35, 0], [x, Y_FRISE + 0.35, 0], color=ACCENT, stroke_width=6)
-        etiquette = texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15)
+        etiquette = self.placer(texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15), DOWN)
         return VGroup(trait, etiquette)
 
     def point(self, fraction, libelle):
         x = self.x(fraction)
         point = Dot([x, Y_FRISE, 0], radius=0.13, color=TEXTE)
-        etiquette = texte(libelle, T_PETIT).next_to(point, UP, buff=0.25)
+        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.25), UP)
         return VGroup(point, etiquette)
 
     def zone(self, a, b, etat):
@@ -266,7 +283,7 @@ class Bulle(VGroup):
         cote = personnage.vers_le_centre()
         tete = personnage.silhouette[0]
         # À côté de la tête, légèrement au-dessus, pour ne pas monter dans la zone des titres.
-        ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, cote, buff=0.75).shift(UP * 0.45)
+        ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, cote, buff=0.75)
         petites = VGroup(
             Circle(radius=0.07, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.5 + UP * 0.1),
             Circle(radius=0.11, color=TEXTE, fill_opacity=1).move_to(tete.get_center() + cote * 0.75 + UP * 0.28),
@@ -303,7 +320,12 @@ class Colonnes(VGroup):
     """Deux notions côte à côte, séparées par un trait."""
 
     def __init__(self, a, b):
-        self.mots = [texte(a, 56, gras=True).move_to([-3.2, 0.6, 0]), texte(b, 56, gras=True).move_to([3.2, 0.6, 0])]
+        self.mots = [texte(a, 56, gras=True), texte(b, 56, gras=True)]
+        for mot, x in zip(self.mots, (-3.5, 3.5)):
+            # Un libellé long est réduit pour ne pas toucher le trait central.
+            if mot.width > 6.0:
+                mot.scale_to_fit_width(6.0)
+            mot.move_to([x, 0.6, 0])
         separation = Line([0, 1.7, 0], [0, -0.5, 0], color=GRIS, stroke_width=3)
         super().__init__(self.mots[0], separation, self.mots[1])
 
