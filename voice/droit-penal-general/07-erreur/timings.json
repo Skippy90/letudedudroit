@@ -1,0 +1,763 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 331.852,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 5.805,
+   "phrases": [
+    {
+     "texte": "Un mardi soir, devant l'université de Genève.",
+     "debut": 0.0,
+     "fin": 2.763
+    },
+    {
+     "texte": "Élodie sort de son cours et rejoint le parking à vélos.",
+     "debut": 2.914,
+     "fin": 5.805
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 6.255,
+   "fin": 13.36,
+   "phrases": [
+    {
+     "texte": "Elle repère un vélo bleu, du même modèle que le sien, avec le même cadenas.",
+     "debut": 6.255,
+     "fin": 10.226
+    },
+    {
+     "texte": "Elle l'ouvre avec sa clé, et part avec.",
+     "debut": 10.736,
+     "fin": 13.36
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 13.81,
+   "fin": 22.169,
+   "phrases": [
+    {
+     "texte": "Mais ce n'était pas son vélo.",
+     "debut": 13.81,
+     "fin": 15.041
+    },
+    {
+     "texte": "Le sien était garé trois places plus loin.",
+     "debut": 15.424,
+     "fin": 17.444
+    },
+    {
+     "texte": "Le cadenas, bon marché, s'ouvrait avec n'importe quelle clé du même modèle.",
+     "debut": 17.885,
+     "fin": 22.169
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 22.619,
+   "fin": 30.421,
+   "phrases": [
+    {
+     "texte": "Le vrai propriétaire porte plainte.",
+     "debut": 22.619,
+     "fin": 24.21
+    },
+    {
+     "texte": "Élodie a emporté la chose d'autrui.",
+     "debut": 24.651,
+     "fin": 26.474
+    },
+    {
+     "texte": "A-t-elle commis un vol ?",
+     "debut": 26.799,
+     "fin": 27.867
+    },
+    {
+     "texte": "Elle se défend : je ne savais pas.",
+     "debut": 28.308,
+     "fin": 30.421
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 30.871,
+   "fin": 38.952,
+   "phrases": [
+    {
+     "texte": "« Je ne savais pas. »",
+     "debut": 30.871,
+     "fin": 32.566
+    },
+    {
+     "texte": "Cette phrase peut vouloir dire deux choses très différentes.",
+     "debut": 33.263,
+     "fin": 35.77
+    },
+    {
+     "texte": "Le droit pénal les traite séparément.",
+     "debut": 36.154,
+     "fin": 38.952
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 39.402,
+   "fin": 47.9,
+   "phrases": [
+    {
+     "texte": "Première possibilité : on s'est trompé sur les faits.",
+     "debut": 39.402,
+     "fin": 42.339
+    },
+    {
+     "texte": "On ne savait pas ce qu'on faisait vraiment.",
+     "debut": 42.722,
+     "fin": 44.789
+    },
+    {
+     "texte": "C'est l'erreur sur les faits, à l'article treize.",
+     "debut": 45.3,
+     "fin": 47.9
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 48.35,
+   "fin": 57.128,
+   "phrases": [
+    {
+     "texte": "Deuxième possibilité : on savait très bien ce qu'on faisait, mais on croyait avoir le droit.",
+     "debut": 48.35,
+     "fin": 53.853
+    },
+    {
+     "texte": "C'est l'erreur sur l'illicéité, à l'article vingt-et-un.",
+     "debut": 54.027,
+     "fin": 57.127
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 57.578,
+   "fin": 63.847,
+   "phrases": [
+    {
+     "texte": "Ces deux erreurs ne touchent pas le même étage de notre bâtiment.",
+     "debut": 57.578,
+     "fin": 60.457
+    },
+    {
+     "texte": "C'est ce qui rend la distinction si importante.",
+     "debut": 60.84,
+     "fin": 63.847
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 64.297,
+   "fin": 69.87,
+   "phrases": [
+    {
+     "texte": "Revenons à Élodie.",
+     "debut": 64.297,
+     "fin": 65.609
+    },
+    {
+     "texte": "Elle savait qu'elle prenait un vélo.",
+     "debut": 65.992,
+     "fin": 67.594
+    },
+    {
+     "texte": "Mais elle croyait que c'était le sien.",
+     "debut": 68.035,
+     "fin": 69.87
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 70.32,
+   "fin": 77.611,
+   "phrases": [
+    {
+     "texte": "Or le vol suppose de prendre la chose d'autrui, pour se l'approprier.",
+     "debut": 70.32,
+     "fin": 74.302
+    },
+    {
+     "texte": "Élodie, elle, croyait reprendre son propre bien.",
+     "debut": 74.685,
+     "fin": 77.611
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 78.061,
+   "fin": 89.206,
+   "phrases": [
+    {
+     "texte": "L'article treize règle ce cas.",
+     "debut": 78.061,
+     "fin": 79.988
+    },
+    {
+     "texte": "Celui qui agit sous l'influence d'une appréciation erronée des faits est jugé d'après cette appréciation.",
+     "debut": 80.592,
+     "fin": 86.072
+    },
+    {
+     "texte": "À une condition : qu'elle lui soit favorable.",
+     "debut": 86.513,
+     "fin": 89.207
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 89.656,
+   "fin": 105.167,
+   "phrases": [
+    {
+     "texte": "Autrement dit, on juge Élodie comme si le vélo était vraiment le sien.",
+     "debut": 89.656,
+     "fin": 93.534
+    },
+    {
+     "texte": "Et reprendre son propre vélo n'est pas un vol.",
+     "debut": 93.975,
+     "fin": 96.843
+    },
+    {
+     "texte": "Bien sûr, le juge ne la croit pas sur parole.",
+     "debut": 97.284,
+     "fin": 99.792
+    },
+    {
+     "texte": "Il vérifie si son erreur est plausible : même couleur, même modèle, même cadenas.",
+     "debut": 100.0,
+     "fin": 105.167
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 105.617,
+   "fin": 112.351,
+   "phrases": [
+    {
+     "texte": "Dans le bâtiment, on reste au premier étage.",
+     "debut": 105.617,
+     "fin": 107.858
+    },
+    {
+     "texte": "Il manque l'intention de prendre la chose d'autrui.",
+     "debut": 108.183,
+     "fin": 110.482
+    },
+    {
+     "texte": "C'est la typicité qui tombe.",
+     "debut": 110.691,
+     "fin": 112.351
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 112.801,
+   "fin": 121.718,
+   "phrases": [
+    {
+     "texte": "Mais l'article treize a un second alinéa.",
+     "debut": 112.801,
+     "fin": 115.553
+    },
+    {
+     "texte": "Si l'erreur pouvait être évitée avec un peu de prudence, l'auteur est puni pour négligence.",
+     "debut": 116.365,
+     "fin": 121.717
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 122.168,
+   "fin": 130.991,
+   "phrases": [
+    {
+     "texte": "À une condition : que la loi punisse aussi l'acte commis par négligence.",
+     "debut": 122.168,
+     "fin": 126.568
+    },
+    {
+     "texte": "Ce n'est pas le cas du vol.",
+     "debut": 127.172,
+     "fin": 128.6
+    },
+    {
+     "texte": "Élodie n'est donc pas punissable.",
+     "debut": 129.111,
+     "fin": 130.992
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 131.441,
+   "fin": 143.469,
+   "phrases": [
+    {
+     "texte": "Et l'erreur inverse ?",
+     "debut": 131.441,
+     "fin": 132.498
+    },
+    {
+     "texte": "Imaginons qu'Élodie croie voler un vélo, alors que c'est en réalité le sien.",
+     "debut": 133.008,
+     "fin": 137.269
+    },
+    {
+     "texte": "Elle se trompe en sa défaveur.",
+     "debut": 137.71,
+     "fin": 139.382
+    },
+    {
+     "texte": "C'est une autre question, celle de la tentative, dans la vidéo neuf.",
+     "debut": 139.765,
+     "fin": 143.469
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 143.919,
+   "fin": 152.696,
+   "phrases": [
+    {
+     "texte": "Vous reconnaissez peut-être un cas de la vidéo six.",
+     "debut": 143.919,
+     "fin": 146.624
+    },
+    {
+     "texte": "Celui qui croit, à tort, être attaqué est lui aussi jugé d'après ce qu'il croyait.",
+     "debut": 147.228,
+     "fin": 152.696
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 153.146,
+   "fin": 158.487,
+   "phrases": [
+    {
+     "texte": "Voici maintenant Arthur.",
+     "debut": 153.146,
+     "fin": 154.586
+    },
+    {
+     "texte": "Il sait parfaitement ce qu'il fait.",
+     "debut": 154.969,
+     "fin": 156.339
+    },
+    {
+     "texte": "Mais il pense que c'est permis.",
+     "debut": 156.942,
+     "fin": 158.487
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 158.937,
+   "fin": 167.668,
+   "phrases": [
+    {
+     "texte": "L'article vingt-et-un prévoit ce cas.",
+     "debut": 158.937,
+     "fin": 160.853
+    },
+    {
+     "texte": "Celui qui ne sait ni ne peut savoir que son comportement est illicite n'agit pas de manière coupable.",
+     "debut": 161.294,
+     "fin": 167.668
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 168.118,
+   "fin": 176.012,
+   "phrases": [
+    {
+     "texte": "Cette fois, on ne reste pas au premier étage.",
+     "debut": 168.118,
+     "fin": 170.394
+    },
+    {
+     "texte": "L'acte est typique et illicite.",
+     "debut": 170.637,
+     "fin": 172.507
+    },
+    {
+     "texte": "C'est la culpabilité, au troisième étage, qui peut tomber.",
+     "debut": 172.716,
+     "fin": 176.013
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 176.462,
+   "fin": 184.729,
+   "phrases": [
+    {
+     "texte": "Et si l'erreur était évitable ?",
+     "debut": 176.462,
+     "fin": 178.041
+    },
+    {
+     "texte": "L'article vingt-et-un répond : le juge atténue la peine.",
+     "debut": 178.552,
+     "fin": 181.547
+    },
+    {
+     "texte": "L'auteur reste coupable, mais moins.",
+     "debut": 181.988,
+     "fin": 184.728
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 185.179,
+   "fin": 194.281,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral est exigeant.",
+     "debut": 185.179,
+     "fin": 186.99
+    },
+    {
+     "texte": "Il faut que l'auteur se soit cru en droit d'agir.",
+     "debut": 187.199,
+     "fin": 189.777
+    },
+    {
+     "texte": "Penser que l'acte n'est pas puni, ou peu puni, ne suffit pas.",
+     "debut": 190.16,
+     "fin": 194.281
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 194.731,
+   "fin": 204.483,
+   "phrases": [
+    {
+     "texte": "Il va même plus loin.",
+     "debut": 194.731,
+     "fin": 195.741
+    },
+    {
+     "texte": "Un vague sentiment d'agir contre ce qui est juste suffit à exclure l'erreur.",
+     "debut": 196.182,
+     "fin": 200.42
+    },
+    {
+     "texte": "Pas besoin d'être juriste pour sentir qu'on fait quelque chose d'interdit.",
+     "debut": 200.803,
+     "fin": 204.483
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 204.933,
+   "fin": 215.011,
+   "phrases": [
+    {
+     "texte": "Un exemple réel.",
+     "debut": 204.933,
+     "fin": 206.071
+    },
+    {
+     "texte": "Un automobiliste avait décollé sa vignette d'autoroute de son support.",
+     "debut": 206.512,
+     "fin": 209.879
+    },
+    {
+     "texte": "Il l'avait recouverte d'un film adhésif transparent, puis collée sur son pare-brise.",
+     "debut": 210.39,
+     "fin": 215.01
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 215.461,
+   "fin": 222.055,
+   "phrases": [
+    {
+     "texte": "Devant le juge, il a plaidé l'erreur.",
+     "debut": 215.461,
+     "fin": 217.69
+    },
+    {
+     "texte": "Il pensait seulement risquer une amende et devoir racheter une vignette.",
+     "debut": 218.073,
+     "fin": 222.055
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 222.505,
+   "fin": 232.258,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral a refusé l'erreur.",
+     "debut": 222.505,
+     "fin": 224.827
+    },
+    {
+     "texte": "Il savait que la vignette devait être collée directement sur le pare-brise.",
+     "debut": 225.21,
+     "fin": 228.879
+    },
+    {
+     "texte": "Il savait donc qu'il faisait quelque chose d'illicite.",
+     "debut": 229.204,
+     "fin": 232.257
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 232.708,
+   "fin": 242.46,
+   "phrases": [
+    {
+     "texte": "Et peu importe qu'il ignore l'article exact qu'il violait, ou la peine prévue.",
+     "debut": 232.708,
+     "fin": 237.398
+    },
+    {
+     "texte": "Personne n'a besoin de connaître le numéro d'un article pour savoir qu'il fait mal.",
+     "debut": 238.095,
+     "fin": 242.46
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 242.91,
+   "fin": 250.015,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 242.91,
+     "fin": 244.361
+    },
+    {
+     "texte": "On répète souvent que nul n'est censé ignorer la loi.",
+     "debut": 244.872,
+     "fin": 247.6
+    },
+    {
+     "texte": "Comme si l'erreur ne comptait jamais.",
+     "debut": 248.204,
+     "fin": 250.015
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 250.465,
+   "fin": 260.171,
+   "phrases": [
+    {
+     "texte": "En droit pénal suisse, c'est plus nuancé.",
+     "debut": 250.465,
+     "fin": 252.659
+    },
+    {
+     "texte": "L'article vingt-et-un admet l'erreur sur l'illicéité.",
+     "debut": 252.984,
+     "fin": 255.945
+    },
+    {
+     "texte": "Mais seulement quand l'auteur ne pouvait vraiment pas savoir.",
+     "debut": 256.456,
+     "fin": 260.171
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 260.621,
+   "fin": 268.33,
+   "phrases": [
+    {
+     "texte": "Et à l'inverse, l'erreur sur les faits est souvent décisive.",
+     "debut": 260.621,
+     "fin": 264.185
+    },
+    {
+     "texte": "Comme pour Élodie, elle peut faire disparaître l'infraction intentionnelle.",
+     "debut": 264.359,
+     "fin": 268.33
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 268.78,
+   "fin": 280.715,
+   "phrases": [
+    {
+     "texte": "Le vrai réflexe est donc de se demander : sur quoi porte l'erreur ?",
+     "debut": 268.78,
+     "fin": 272.426
+    },
+    {
+     "texte": "Sur ce que je faisais ?",
+     "debut": 272.809,
+     "fin": 273.935
+    },
+    {
+     "texte": "Ou sur le droit d'agir ainsi ?",
+     "debut": 274.376,
+     "fin": 275.943
+    },
+    {
+     "texte": "La réponse change l'étage concerné, et souvent l'issue du procès.",
+     "debut": 276.64,
+     "fin": 280.715
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 281.165,
+   "fin": 290.639,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 281.165,
+     "fin": 281.804
+    },
+    {
+     "texte": "Se tromper sur les faits : on est jugé d'après ce qu'on croyait.",
+     "debut": 282.245,
+     "fin": 285.379
+    },
+    {
+     "texte": "Si l'erreur était évitable, on ne répond que d'une éventuelle infraction de négligence.",
+     "debut": 285.658,
+     "fin": 290.639
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 291.089,
+   "fin": 305.532,
+   "phrases": [
+    {
+     "texte": "Se tromper sur le droit : l'auteur n'est pas coupable s'il ne pouvait pas savoir.",
+     "debut": 291.089,
+     "fin": 295.617
+    },
+    {
+     "texte": "Si l'erreur était évitable, sa peine est seulement atténuée.",
+     "debut": 295.861,
+     "fin": 299.181
+    },
+    {
+     "texte": "Dans les deux cas, c'est au juge d'établir ce que l'auteur savait ou croyait, à partir des circonstances.",
+     "debut": 299.692,
+     "fin": 305.532
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 305.982,
+   "fin": 316.059,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 305.982,
+     "fin": 307.247
+    },
+    {
+     "texte": "Sam trouve un portefeuille dans la rue.",
+     "debut": 307.851,
+     "fin": 309.767
+    },
+    {
+     "texte": "Il sait qu'il appartient à quelqu'un d'autre.",
+     "debut": 310.045,
+     "fin": 311.996
+    },
+    {
+     "texte": "Mais il croit que trouvé, c'est gagné, et il le garde.",
+     "debut": 312.507,
+     "fin": 316.059
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 316.509,
+   "fin": 323.336,
+   "phrases": [
+    {
+     "texte": "Erreur sur les faits, ou erreur sur l'illicéité ?",
+     "debut": 316.509,
+     "fin": 319.249
+    },
+    {
+     "texte": "Et cette erreur l'excuse-t-elle ?",
+     "debut": 319.423,
+     "fin": 320.874
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 321.316,
+     "fin": 323.336
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 323.786,
+   "fin": 331.402,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 323.786,
+     "fin": 329.057
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 329.498,
+     "fin": 331.402
+    }
+   ]
+  }
+ ]
+}

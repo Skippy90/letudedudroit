@@ -1,0 +1,713 @@
+{
+ "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
+ "duree": 334.917,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.0,
+   "fin": 6.502,
+   "phrases": [
+    {
+     "texte": "Souvenez-vous d'Inès, dans la vidéo trois.",
+     "debut": 0.0,
+     "fin": 2.554
+    },
+    {
+     "texte": "Elle avait volé un téléphone tout neuf, un samedi soir à Neuchâtel.",
+     "debut": 2.833,
+     "fin": 6.502
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 6.952,
+   "fin": 14.707,
+   "phrases": [
+    {
+     "texte": "Elle a vingt ans.",
+     "debut": 6.952,
+     "fin": 7.823
+    },
+    {
+     "texte": "Elle est apprentie, elle n'a jamais été condamnée.",
+     "debut": 8.206,
+     "fin": 10.69
+    },
+    {
+     "texte": "Le juge a établi les trois étages : il y a bien eu un vol.",
+     "debut": 11.132,
+     "fin": 14.707
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 15.157,
+   "fin": 22.262,
+   "phrases": [
+    {
+     "texte": "Reste une question très concrète.",
+     "debut": 15.157,
+     "fin": 16.748
+    },
+    {
+     "texte": "Quelle peine pour Inès ?",
+     "debut": 17.189,
+     "fin": 18.454
+    },
+    {
+     "texte": "La prison ?",
+     "debut": 18.965,
+     "fin": 19.65
+    },
+    {
+     "texte": "Une somme d'argent ?",
+     "debut": 20.091,
+     "fin": 21.066
+    },
+    {
+     "texte": "Rien du tout ?",
+     "debut": 21.392,
+     "fin": 22.262
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 22.712,
+   "fin": 29.585,
+   "phrases": [
+    {
+     "texte": "Le Code pénal connaît trois peines principales.",
+     "debut": 22.712,
+     "fin": 25.069
+    },
+    {
+     "texte": "La peine privative de liberté, la peine pécuniaire et l'amende.",
+     "debut": 25.58,
+     "fin": 29.585
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 30.035,
+   "fin": 38.627,
+   "phrases": [
+    {
+     "texte": "Le juge travaille en deux temps.",
+     "debut": 30.035,
+     "fin": 31.637
+    },
+    {
+     "texte": "D'abord, il choisit le genre de peine.",
+     "debut": 32.148,
+     "fin": 33.855
+    },
+    {
+     "texte": "Ensuite, il en fixe la quotité, c'est-à-dire la durée ou le montant.",
+     "debut": 34.366,
+     "fin": 38.626
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 39.077,
+   "fin": 44.928,
+   "phrases": [
+    {
+     "texte": "Et une question vient en plus : la peine sera-t-elle exécutée, ou suspendue avec sursis ?",
+     "debut": 39.077,
+     "fin": 44.928
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 45.378,
+   "fin": 55.177,
+   "phrases": [
+    {
+     "texte": "La peine privative de liberté, c'est l'enfermement.",
+     "debut": 45.378,
+     "fin": 47.979
+    },
+    {
+     "texte": "Elle dure en principe de trois jours à vingt ans.",
+     "debut": 48.362,
+     "fin": 50.475
+    },
+    {
+     "texte": "Elle peut être prononcée à vie quand la loi le prévoit expressément.",
+     "debut": 50.986,
+     "fin": 55.177
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 55.627,
+   "fin": 64.218,
+   "phrases": [
+    {
+     "texte": "La peine pécuniaire, elle, se compte en jours-amende.",
+     "debut": 55.627,
+     "fin": 58.843
+    },
+    {
+     "texte": "Le juge fixe d'abord leur nombre, entre trois et cent quatre-vingts, selon la faute.",
+     "debut": 59.284,
+     "fin": 64.218
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 64.668,
+   "fin": 75.071,
+   "phrases": [
+    {
+     "texte": "Puis il fixe le montant d'un jour-amende, en général entre trente et trois mille francs.",
+     "debut": 64.668,
+     "fin": 69.695
+    },
+    {
+     "texte": "Ce montant dépend de la situation de l'auteur : son revenu, sa fortune, ses charges.",
+     "debut": 70.136,
+     "fin": 75.071
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 75.521,
+   "fin": 85.598,
+   "phrases": [
+    {
+     "texte": "Prenons un exemple.",
+     "debut": 75.521,
+     "fin": 76.485
+    },
+    {
+     "texte": "Trente jours-amende à cinquante francs, cela fait mille cinq cents francs.",
+     "debut": 76.659,
+     "fin": 80.525
+    },
+    {
+     "texte": "Pour une personne aisée, trente jours-amende à mille francs feront trente mille francs.",
+     "debut": 80.804,
+     "fin": 85.598
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 86.048,
+   "fin": 92.132,
+   "phrases": [
+    {
+     "texte": "Même faute, même nombre de jours, mais un sacrifice adapté à chacun.",
+     "debut": 86.048,
+     "fin": 90.077
+    },
+    {
+     "texte": "C'est toute l'idée du jour-amende.",
+     "debut": 90.32,
+     "fin": 92.132
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 92.582,
+   "fin": 99.966,
+   "phrases": [
+    {
+     "texte": "Enfin, l'amende punit les contraventions, vues dans la vidéo trois.",
+     "debut": 92.582,
+     "fin": 96.715
+    },
+    {
+     "texte": "Sauf exception, elle ne dépasse pas dix mille francs.",
+     "debut": 96.994,
+     "fin": 99.966
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 100.416,
+   "fin": 108.636,
+   "phrases": [
+    {
+     "texte": "Le juge fixe aussi une peine privative de liberté de substitution, d'un jour à trois mois.",
+     "debut": 100.416,
+     "fin": 104.967
+    },
+    {
+     "texte": "Elle s'applique si le condamné ne paie pas l'amende par sa faute.",
+     "debut": 105.478,
+     "fin": 108.636
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 109.086,
+   "fin": 116.795,
+   "phrases": [
+    {
+     "texte": "Pour Inès, le vol est puni d'une peine privative de liberté de cinq ans au plus.",
+     "debut": 109.086,
+     "fin": 113.8
+    },
+    {
+     "texte": "Ou d'une peine pécuniaire.",
+     "debut": 114.241,
+     "fin": 115.495
+    },
+    {
+     "texte": "Le juge a le choix.",
+     "debut": 115.646,
+     "fin": 116.795
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 117.245,
+   "fin": 129.737,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral lui demande de tenir compte de trois choses.",
+     "debut": 117.245,
+     "fin": 120.391
+    },
+    {
+     "texte": "La peine est-elle adaptée ?",
+     "debut": 120.832,
+     "fin": 122.818
+    },
+    {
+     "texte": "Quels seront ses effets sur l'auteur et sur sa vie sociale ?",
+     "debut": 123.143,
+     "fin": 126.057
+    },
+    {
+     "texte": "Et sera-t-elle efficace pour éviter de nouvelles infractions ?",
+     "debut": 126.44,
+     "fin": 129.737
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 130.187,
+   "fin": 138.964,
+   "phrases": [
+    {
+     "texte": "Et l'article quarante-et-un pose un cadre.",
+     "debut": 130.187,
+     "fin": 132.683
+    },
+    {
+     "texte": "Le juge ne peut préférer la peine privative de liberté à la peine pécuniaire que pour deux raisons.",
+     "debut": 133.194,
+     "fin": 138.964
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 139.414,
+   "fin": 151.21,
+   "phrases": [
+    {
+     "texte": "Soit elle paraît nécessaire pour détourner l'auteur d'autres crimes ou délits.",
+     "debut": 139.414,
+     "fin": 143.094
+    },
+    {
+     "texte": "Soit on peut craindre que la peine pécuniaire ne puisse pas être exécutée.",
+     "debut": 143.698,
+     "fin": 147.715
+    },
+    {
+     "texte": "Et le juge doit motiver ce choix en détail.",
+     "debut": 148.156,
+     "fin": 151.21
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 151.66,
+   "fin": 161.459,
+   "phrases": [
+    {
+     "texte": "Pour Inès, jeune, sans antécédents, avec un salaire d'apprentie, une peine pécuniaire paraît suffisante.",
+     "debut": 151.66,
+     "fin": 158.754
+    },
+    {
+     "texte": "Rien n'indique qu'elle ne pourrait pas la payer.",
+     "debut": 158.928,
+     "fin": 161.459
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 161.909,
+   "fin": 169.154,
+   "phrases": [
+    {
+     "texte": "Combien de jours-amende ?",
+     "debut": 161.909,
+     "fin": 163.116
+    },
+    {
+     "texte": "L'article quarante-sept donne la règle.",
+     "debut": 163.72,
+     "fin": 165.729
+    },
+    {
+     "texte": "Le juge fixe la peine d'après la culpabilité de l'auteur.",
+     "debut": 166.112,
+     "fin": 169.154
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 169.604,
+   "fin": 181.399,
+   "phrases": [
+    {
+     "texte": "Pour mesurer cette culpabilité, il regarde la gravité de l'atteinte et le caractère répréhensible de l'acte.",
+     "debut": 169.604,
+     "fin": 175.595
+    },
+    {
+     "texte": "Il regarde aussi les motivations de l'auteur, et ce qu'il aurait pu faire pour l'éviter.",
+     "debut": 175.978,
+     "fin": 181.4
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 181.849,
+   "fin": 189.837,
+   "phrases": [
+    {
+     "texte": "Il prend aussi en compte les antécédents de l'auteur et sa situation personnelle.",
+     "debut": 181.849,
+     "fin": 186.145
+    },
+    {
+     "texte": "Et il pense à l'effet de la peine sur son avenir.",
+     "debut": 186.748,
+     "fin": 189.837
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 190.287,
+   "fin": 199.807,
+   "phrases": [
+    {
+     "texte": "Le vol d'Inès est réfléchi, mais l'objet est d'une valeur moyenne.",
+     "debut": 190.287,
+     "fin": 193.828
+    },
+    {
+     "texte": "Elle n'a jamais été condamnée.",
+     "debut": 194.211,
+     "fin": 195.802
+    },
+    {
+     "texte": "Une condamnation trop lourde pourrait compromettre son apprentissage.",
+     "debut": 196.046,
+     "fin": 199.807
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 200.257,
+   "fin": 215.582,
+   "phrases": [
+    {
+     "texte": "Dernière étape : le sursis.",
+     "debut": 200.257,
+     "fin": 202.683
+    },
+    {
+     "texte": "Selon l'article quarante-deux, le juge suspend en règle générale l'exécution de la peine.",
+     "debut": 203.636,
+     "fin": 208.79
+    },
+    {
+     "texte": "Cela vaut pour une peine pécuniaire, ou pour une peine privative de liberté de deux ans au plus.",
+     "debut": 209.301,
+     "fin": 215.582
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 216.032,
+   "fin": 221.373,
+   "phrases": [
+    {
+     "texte": "Il le fait quand une peine ferme ne paraît pas nécessaire pour détourner l'auteur d'autres crimes ou délits.",
+     "debut": 216.032,
+     "fin": 221.373
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 221.823,
+   "fin": 229.671,
+   "phrases": [
+    {
+     "texte": "Le juge fixe alors un délai d'épreuve de deux à cinq ans.",
+     "debut": 221.823,
+     "fin": 224.911
+    },
+    {
+     "texte": "Si tout se passe bien pendant ce délai, la peine n'est jamais exécutée.",
+     "debut": 225.352,
+     "fin": 229.671
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 230.121,
+   "fin": 240.849,
+   "phrases": [
+    {
+     "texte": "Mais imaginons que la personne commette un nouveau crime ou délit pendant ce délai.",
+     "debut": 230.121,
+     "fin": 234.08
+    },
+    {
+     "texte": "Si une récidive est à craindre, le juge révoque le sursis.",
+     "debut": 234.521,
+     "fin": 238.225
+    },
+    {
+     "texte": "La peine doit alors être exécutée.",
+     "debut": 238.608,
+     "fin": 240.849
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 241.299,
+   "fin": 249.472,
+   "phrases": [
+    {
+     "texte": "Entre les deux, il existe le sursis partiel.",
+     "debut": 241.299,
+     "fin": 243.923
+    },
+    {
+     "texte": "Pour une peine privative de liberté d'un à trois ans, une partie seulement est exécutée.",
+     "debut": 244.132,
+     "fin": 249.472
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 249.922,
+   "fin": 257.074,
+   "phrases": [
+    {
+     "texte": "La partie à exécuter ne peut pas dépasser la moitié de la peine.",
+     "debut": 249.922,
+     "fin": 253.753
+    },
+    {
+     "texte": "Et chacune des deux parties doit durer au moins six mois.",
+     "debut": 254.136,
+     "fin": 257.074
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 257.524,
+   "fin": 267.044,
+   "phrases": [
+    {
+     "texte": "Pour Inès, le juge prononce une peine pécuniaire avec sursis, et un délai d'épreuve de deux ans.",
+     "debut": 257.524,
+     "fin": 263.05
+    },
+    {
+     "texte": "Si l'épreuve réussit, elle ne paiera pas ces jours-amende.",
+     "debut": 263.654,
+     "fin": 267.044
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 267.494,
+   "fin": 274.878,
+   "phrases": [
+    {
+     "texte": "Attention au piège classique.",
+     "debut": 267.494,
+     "fin": 268.968
+    },
+    {
+     "texte": "On entend souvent : « Il a eu du sursis, il n'a pas été puni. »",
+     "debut": 269.352,
+     "fin": 273.415
+    },
+    {
+     "texte": "C'est faux.",
+     "debut": 274.112,
+     "fin": 274.878
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 275.328,
+   "fin": 285.499,
+   "phrases": [
+    {
+     "texte": "Inès est bel et bien condamnée.",
+     "debut": 275.328,
+     "fin": 277.569
+    },
+    {
+     "texte": "La peine existe, elle est seulement suspendue.",
+     "debut": 278.08,
+     "fin": 280.715
+    },
+    {
+     "texte": "Et elle reste suspendue au-dessus d'elle pendant tout le délai d'épreuve.",
+     "debut": 281.319,
+     "fin": 285.498
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 285.949,
+   "fin": 294.029,
+   "phrases": [
+    {
+     "texte": "Le juge peut d'ailleurs ajouter au sursis une amende, qui elle doit être payée.",
+     "debut": 285.949,
+     "fin": 290.605
+    },
+    {
+     "texte": "C'est une façon de rendre la condamnation tout de suite sensible.",
+     "debut": 290.988,
+     "fin": 294.03
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 294.479,
+   "fin": 302.42,
+   "phrases": [
+    {
+     "texte": "Retenons.",
+     "debut": 294.479,
+     "fin": 295.129
+    },
+    {
+     "texte": "Trois peines : la privation de liberté, la peine pécuniaire en jours-amende, et l'amende pour les contraventions.",
+     "debut": 295.733,
+     "fin": 302.42
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 302.87,
+   "fin": 313.412,
+   "phrases": [
+    {
+     "texte": "Le juge choisit la peine, puis la fixe selon la culpabilité.",
+     "debut": 302.87,
+     "fin": 306.353
+    },
+    {
+     "texte": "Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle.",
+     "debut": 306.597,
+     "fin": 310.579
+    },
+    {
+     "texte": "Il suffit que le pronostic soit favorable.",
+     "debut": 311.02,
+     "fin": 313.412
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 313.862,
+   "fin": 327.005,
+   "phrases": [
+    {
+     "texte": "Une question pour finir.",
+     "debut": 313.862,
+     "fin": 315.069
+    },
+    {
+     "texte": "Hugo est condamné à une peine privative de liberté de deux ans.",
+     "debut": 315.511,
+     "fin": 319.516
+    },
+    {
+     "texte": "Peut-il obtenir le sursis complet ?",
+     "debut": 319.795,
+     "fin": 322.291
+    },
+    {
+     "texte": "Et si la peine était de trente mois ?",
+     "debut": 322.732,
+     "fin": 324.381
+    },
+    {
+     "texte": "Écrivez votre réponse en commentaire.",
+     "debut": 324.891,
+     "fin": 327.004
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 327.455,
+   "fin": 334.467,
+   "phrases": [
+    {
+     "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
+     "debut": 327.455,
+     "fin": 331.995
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 332.436,
+     "fin": 334.467
+    }
+   ]
+  }
+ ]
+}
