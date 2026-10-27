@@ -1,0 +1,12 @@
+# Secrets
+.env
+*.key
+# Rendus et audio lourds
+out/*.mp4
+voice/*.mp3
+voice/*.wav
+# Environnements
+node_modules/
+__pycache__/
+.venv/
+media/
