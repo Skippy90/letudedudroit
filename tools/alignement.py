@@ -54,6 +54,10 @@ SEUIL_PRISE = 0.7        # part minimale des mots d'une phrase pour reconnaître
 SEUIL_A_RELIRE = 0.9     # en dessous, la prise gardée est signalée dans montage.txt
 MARGE = 0.12             # secondes gardées avant et après chaque phrase
 FONDU = 0.015            # secondes de fondu à chaque coupe
+PORTE_AVANT, PORTE_APRES = 0.10, 0.15   # secondes gardées intactes avant et après chaque mot
+PORTE_FUSION = 0.35      # deux mots séparés de moins que cela : la pause entre eux reste intacte
+PORTE_ATTENUATION = 26   # dB retirés entre les mots
+PORTE_FONDU = 0.06       # secondes de fondu à l'ouverture et à la fermeture
 PAUSE_PHRASE = (0.25, 0.9)   # pause entre deux phrases d'une même ligne : bornes
 PAUSE_LIGNE = (0.45, 1.2)    # pause entre deux lignes : bornes
 PAUSE_COUPE = {"phrase": 0.35, "ligne": 0.6}  # pause imposée là où une reprise a été coupée
@@ -147,6 +151,32 @@ def isoler(monte: Path, dossier: Path, tmp: Path) -> Path:
     return isole
 
 
+def porte_sur_les_mots(x: np.ndarray, fr: int, instants: list[tuple[float, float]]) -> np.ndarray:
+    """Atténue tout ce qui n'est pas de la parole, d'après l'instant de chaque mot transcrit.
+
+    Pendant les mots, le son reste intact. Entre les mots (pauses, respirations bruyantes,
+    gargouillis, bruit de fond), il est abaissé de PORTE_ATTENUATION dB, avec des fondus doux.
+    Les micro-pauses à l'intérieur d'une phrase (moins de PORTE_FUSION s) ne sont pas touchées.
+    """
+    zones = []
+    for debut, fin in sorted(instants):
+        debut, fin = debut - PORTE_AVANT, fin + PORTE_APRES
+        if zones and debut - zones[-1][1] < PORTE_FUSION:
+            zones[-1][1] = max(zones[-1][1], fin)
+        else:
+            zones.append([debut, fin])
+    plancher = 10 ** (-PORTE_ATTENUATION / 20)
+    masque = np.full(len(x), plancher)
+    for debut, fin in zones:
+        masque[max(0, int(debut * fr)):min(len(x), int(fin * fr))] = 1.0
+    # Lissage : deux moyennes glissantes (somme cumulée), soit un fondu en S de PORTE_FONDU secondes.
+    n = max(1, int(PORTE_FONDU * fr / 2))
+    for _ in range(2):
+        c = np.concatenate([[0.0], np.cumsum(np.pad(masque, (n // 2, n - n // 2 - 1), mode="edge"))])
+        masque = (c[n:] - c[:-n]) / n
+    return x * masque
+
+
 def main(slug: str) -> None:
     dossier = RACINE / "voice" / slug
     sources = sorted(dossier.glob("enregistrement.*"))
@@ -169,7 +199,7 @@ def main(slug: str) -> None:
         urllib.request.urlretrieve(URL_MODELE, MODELE_BRUIT)
     # RNNoise travaille à 48 kHz ; on revient ensuite à la fréquence du reste du pipeline.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", "48000",
-                    "-af", "highpass=f=80" + (f",arnndn=m={MODELE_BRUIT}" if rnnoise else ""), "-ar", str(FREQ),
+                    "-af", "highpass=f=90,highpass=f=90" + (f",arnndn=m={MODELE_BRUIT}" if rnnoise else ""), "-ar", str(FREQ),
                     "-c:a", "pcm_s16le", str(brut)], check=True)
 
     transcription = dossier / "transcription.json"
@@ -245,6 +275,8 @@ def main(slug: str) -> None:
 
     # Montage.
     x, fr = sf.read(brut)
+    if reglages.get("porte", True):
+        x = porte_sur_les_mots(x, fr, instants)
     # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
     # (plus vivant ; les bruits de fond y restent), sinon silence numérique (plus propre, plus sec).
     naturelles = reglages.get("pauses", "naturelles") == "naturelles"
