@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Qu'est-ce qu'une infraction ? Les trois étages | Droit pénal suisse
 
-## Description (2477 caractères sur 5 000)
+## Description (2424 caractères sur 5 000)
 
 ```text
 Qu'est-ce qu'une infraction ? Les trois étages — expliqué simplement, à partir d'un cas concret.
@@ -34,14 +34,13 @@ Le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; le
 
 Chapitres :
 0:00 Le cas de départ
-0:39 La carte : trois étages
-1:08 Premier étage : la typicité
-2:22 Deuxième étage : l'illicéité
-3:27 Troisième étage : la culpabilité
-4:28 Conclusion et question
+0:40 La carte : trois étages
+1:11 Premier étage : la typicité
+2:29 Deuxième étage : l'illicéité
+3:45 Troisième étage : la culpabilité
+4:51 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/01-trois-etages
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```
