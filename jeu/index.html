@@ -1,0 +1,634 @@
+<title>Pris dans le Code</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Mise en page : un écran de jeu centré (scène dessinée en haut, carte de l'épreuve en dessous), une barre d'état fixe en haut.
+   Monde unique et sombre, celui des vidéos de « L'étude du droit » : fond noir, blanc cassé, ambre ; vert = condition remplie,
+   gris = condition manquante, rouge réservé au dommage. */
+:root {
+  --fond: #0B0B0B;
+  --surface: #18181A;
+  --surface-2: #232326;
+  --trait: #3A3A3F;
+  --texte: #F2EFE6;
+  --texte-doux: #B9B4A8;
+  --ambre: #E3A52F;
+  --vert: #4CAF7D;
+  --gris: #6B7280;
+  --rouge: #D9534F;
+  --marque: #DA291C;
+  --f-titre: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-texte: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-code: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  background: var(--fond); color: var(--texte); font-family: var(--f-texte); font-size: 1rem; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 40px;
+}
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--ambre); outline-offset: 2px; }
+
+/* Barre d'état */
+.barre {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--fond);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; padding-block: 12px;
+  border-bottom: 1px solid var(--trait); max-width: 960px; margin: 0 auto;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--fond); }
+.marque { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.01em; }
+.marque .pastille { width: 30px; height: 30px; border-radius: 7px; background: var(--marque); display: grid; place-items: center; flex: none; }
+.marque span { white-space: nowrap; }
+.xp { flex: 1 1 220px; min-width: 0; display: grid; gap: 4px; }
+.xp .ligne { display: flex; justify-content: space-between; gap: 8px; font-size: .82rem; color: var(--texte-doux); }
+.xp .ligne b { color: var(--texte); font-weight: 600; }
+.jauge { height: 8px; background: var(--surface-2); border-radius: 4px; overflow: hidden; }
+.jauge i { display: block; height: 100%; width: 0; background: var(--ambre); transition: width .6s ease; }
+.pages { display: flex; gap: 5px; align-items: center; font-size: .78rem; color: var(--texte-doux); }
+.page { width: 16px; height: 21px; border: 2px solid var(--texte); border-radius: 2px; position: relative; }
+.page.dechiree { border-color: var(--gris); opacity: .45; }
+.page.dechiree::after { content: ""; position: absolute; inset: 7px -3px auto; border-top: 2px solid var(--rouge); transform: rotate(-20deg); }
+
+main { max-width: 960px; margin: 0 auto; display: grid; gap: 20px; padding-top: 20px; }
+.ecran[hidden] { display: none; }
+
+h1, h2, h3 { font-family: var(--f-titre); text-wrap: balance; margin: 0; letter-spacing: -.02em; }
+h1 { font-size: clamp(2.2rem, 7vw, 4.2rem); font-weight: 900; line-height: 1; }
+h2 { font-size: clamp(1.4rem, 3.6vw, 2rem); font-weight: 800; line-height: 1.15; }
+h3 { font-size: 1.1rem; font-weight: 800; }
+p { margin: 0; max-width: 65ch; }
+.etiquette { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ambre); font-weight: 600; }
+.doux { color: var(--texte-doux); }
+.code { font-family: var(--f-code); font-weight: 600; }
+
+/* Accueil */
+.accueil { display: grid; gap: 22px; padding-block: 10px 0; }
+.accueil h1 em { font-style: normal; color: var(--ambre); }
+.recit { display: grid; gap: 12px; font-size: 1.08rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.bouton {
+  background: var(--ambre); color: #141006; border: 0; border-radius: 6px; padding: 12px 20px; font-weight: 800; cursor: pointer;
+}
+.bouton:hover { filter: brightness(1.08); }
+.bouton.second { background: transparent; color: var(--texte); border: 2px solid var(--trait); }
+.bouton.second:hover { border-color: var(--texte-doux); }
+.bouton:disabled { opacity: .4; cursor: not-allowed; }
+.mention { font-size: .82rem; color: var(--texte-doux); border-top: 1px solid var(--trait); padding-top: 14px; }
+
+/* Sommaire des cas */
+.sommaire { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.cas {
+  text-align: left; background: var(--surface); border: 2px solid var(--trait); border-radius: 8px; padding: 16px; cursor: pointer;
+  display: grid; gap: 8px; align-content: start; min-width: 0;
+}
+.cas:hover:not(:disabled) { border-color: var(--ambre); }
+.cas:disabled { cursor: not-allowed; opacity: .5; }
+.cas .haut { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.cas .num { font-family: var(--f-code); color: var(--texte-doux); font-size: .8rem; }
+.cas .etat { font-size: .75rem; font-weight: 600; border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
+.etat.libre { background: var(--vert); color: #06140c; }
+.etat.ouvert { background: var(--surface-2); color: var(--texte); }
+.etat.ferme { background: var(--surface-2); color: var(--gris); }
+.cas .articles { font-family: var(--f-code); font-size: .78rem; color: var(--ambre); }
+
+/* Scène d'un cas */
+.entete-cas { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 10px 20px; }
+.verrous { display: flex; gap: 6px; align-items: center; }
+.verrou { width: 26px; height: 26px; border-radius: 6px; border: 2px solid var(--trait); display: grid; place-items: center; transition: background .3s, border-color .3s; }
+.verrou.ouvert { background: var(--vert); border-color: var(--vert); }
+.verrou svg { width: 14px; height: 14px; }
+.scene { background: #000; border: 1px solid var(--trait); border-radius: 8px; overflow: hidden; }
+.scene svg { display: block; width: 100%; height: auto; max-width: 100%; }
+.carte { background: var(--surface); border: 1px solid var(--trait); border-radius: 8px; padding: clamp(16px, 3vw, 26px); display: grid; gap: 16px; }
+.question { font-size: clamp(1.1rem, 2.4vw, 1.3rem); font-weight: 600; line-height: 1.4; max-width: 70ch; }
+.choix { display: grid; gap: 10px; }
+.option {
+  text-align: left; background: var(--surface-2); border: 2px solid transparent; border-radius: 6px; padding: 12px 14px; cursor: pointer;
+  display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; min-width: 0;
+}
+.option:hover:not(:disabled) { border-color: var(--texte-doux); }
+.option .lettre { font-family: var(--f-code); color: var(--ambre); font-weight: 600; }
+.option.juste { border-color: var(--vert); background: rgba(76,175,125,.12); }
+.option.faux { border-color: var(--gris); opacity: .6; text-decoration: line-through; text-decoration-color: var(--gris); }
+.option:disabled { cursor: default; }
+.outils { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+.indice { background: var(--fond); border-left: 3px solid var(--ambre); padding: 12px 14px; border-radius: 0 6px 6px 0; font-size: .95rem; }
+.indice .code { color: var(--ambre); display: block; margin-bottom: 4px; }
+.retour { border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.retour.ok { background: rgba(76,175,125,.12); border: 1px solid var(--vert); }
+.retour.ko { background: rgba(107,114,128,.15); border: 1px solid var(--gris); }
+.retour b { font-weight: 800; }
+.gain { font-family: var(--f-code); color: var(--ambre); }
+
+/* Sortie et verdict */
+.verdict { display: grid; gap: 14px; justify-items: start; }
+.verdict .tampon { font-family: var(--f-code); font-weight: 600; border: 2px solid var(--vert); color: var(--vert); padding: 4px 10px; border-radius: 4px; transform: rotate(-2deg); }
+.verdict .tampon.ferme { border-color: var(--rouge); color: var(--rouge); }
+.bilan { display: flex; flex-wrap: wrap; gap: 10px 24px; font-variant-numeric: tabular-nums; }
+.bilan div { display: grid; }
+.bilan b { font-size: 1.6rem; font-weight: 900; }
+.bilan span { font-size: .78rem; color: var(--texte-doux); text-transform: uppercase; letter-spacing: .08em; }
+
+.aspiration { animation: aspire .9s ease-in both; }
+@keyframes aspire { from { transform: scale(1); opacity: 1; filter: blur(0); } to { transform: scale(.6) rotate(-6deg); opacity: 0; filter: blur(4px); } }
+.apparition { animation: apparait .5s ease-out both; }
+@keyframes apparait { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.secousse { animation: secoue .35s ease-in-out; }
+@keyframes secoue { 25% { transform: translateX(-6px); } 50% { transform: translateX(6px); } 75% { transform: translateX(-3px); } }
+@media (prefers-reduced-motion: reduce) { .aspiration, .apparition, .secousse { animation: none; } .jauge i { transition: none; } }
+@media (max-width: 520px) { .barre .marque span { display: none; } }
+</style>
+
+<header class="barre" aria-label="Progression">
+  <div class="marque">
+    <div class="pastille" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><rect x="5" y="11" width="14" height="3" rx="1" fill="#fff"/><rect x="5" y="15.5" width="14" height="3" rx="1" fill="#fff" opacity=".8"/><rect x="5" y="20" width="14" height="2.5" rx="1" fill="#fff" opacity=".6"/></svg>
+    </div>
+    <span>Pris dans le Code</span>
+  </div>
+  <div class="xp">
+    <div class="ligne"><b id="grade">Première année</b><span><span id="xp" class="code">0</span> XP · prochain grade à <span id="prochain" class="code">150</span></span></div>
+    <div class="jauge" role="progressbar" aria-label="Points d'expérience" aria-valuemin="0" aria-valuemax="100" id="jauge-role"><i id="jauge"></i></div>
+  </div>
+  <div class="pages" id="pages-zone" hidden aria-label="Pages restantes"><span>Pages</span><div class="page"></div><div class="page"></div><div class="page"></div></div>
+</header>
+
+<main>
+  <!-- Accueil -->
+  <section class="ecran accueil" id="ecran-accueil">
+    <p class="etiquette">Bibliothèque de la faculté de droit · 23 h 12</p>
+    <h1>Pris dans <em>le Code</em></h1>
+    <div class="scene" id="scene-accueil"></div>
+    <div class="recit">
+      <p>Tout le monde est parti. Sur ta table, un vieux Code pénal annoté que personne n'a jamais rendu. Tu l'ouvres pour réviser une dernière fois.</p>
+      <p>Les articles s'allument en ambre. La page se met à tourner toute seule et t'aspire. Tu atterris au milieu d'une affaire, avec des personnes réelles et une porte de sortie fermée à clé.</p>
+      <p>Chaque cas est une prison de papier. Tu n'en sors qu'en appliquant le droit correctement. Chaque bonne réponse ouvre un verrou. Chaque erreur déchire une page : à trois pages déchirées, le cas se referme et tout recommence.</p>
+    </div>
+    <div class="actions">
+      <button class="bouton" id="b-ouvrir">Ouvrir le Code</button>
+      <button class="bouton second" id="b-reprendre" hidden>Reprendre ma progression</button>
+    </div>
+    <p class="mention">Jeu pédagogique de la chaîne « L'étude du droit » sur le droit pénal suisse. Les cas et les règles reprennent les vidéos 1 à 6, dont les articles ont été vérifiés sur Fedlex. Le jeu ne remplace pas un conseil juridique.</p>
+  </section>
+
+  <!-- Sommaire -->
+  <section class="ecran" id="ecran-sommaire" hidden>
+    <div style="display:grid;gap:8px">
+      <p class="etiquette">Le sommaire du Code</p>
+      <h2>Choisis un cas pour t'en échapper</h2>
+      <p class="doux">Les six cas s'ouvrent dans l'ordre. Quand tu les as tous résolus, la dernière page s'ouvre : celle qui te ramène à la bibliothèque.</p>
+    </div>
+    <div class="sommaire" id="sommaire" style="margin-top:18px"></div>
+  </section>
+
+  <!-- Cas -->
+  <section class="ecran" id="ecran-cas" hidden>
+    <div style="display:grid;gap:14px">
+      <div class="entete-cas">
+        <div style="display:grid;gap:4px;min-width:0">
+          <p class="etiquette" id="cas-lieu"></p>
+          <h2 id="cas-titre"></h2>
+        </div>
+        <div class="verrous" id="verrous" aria-label="Verrous de la porte de sortie"></div>
+      </div>
+      <div class="scene" id="scene"></div>
+      <div class="carte" id="carte"></div>
+    </div>
+  </section>
+
+  <!-- Verdict -->
+  <section class="ecran" id="ecran-verdict" hidden>
+    <div class="carte verdict" id="verdict"></div>
+  </section>
+</main>
+
+<script>
+/* ===================== Contenu juridique =====================
+   Tout ce qui suit reprend les scripts et les réponses des vidéos 1 à 6 (scripts/droit-penal-general/01 à 06),
+   dont les articles ont été vérifiés sur Fedlex. Voir jeu/audit.md. */
+const C = { marc: "#5EC8C0", julien: "#E6A1C1", sami: "#7FB3E6", tom: "#F0C987", juge: "#5EC8C0", ines: "#E6A1C1", noah: "#5EC8C0",
+  yann: "#7FB3E6", leo: "#5EC8C0", adam: "#E6A1C1", clara: "#5EC8C0", timeo: "#E6A1C1", mael: "#7FB3E6", yasmine: "#5EC8C0",
+  kevin: "#E6A1C1", hugo: "#7FB3E6", nora: "#A78BFA", toi: "#A78BFA" };
+
+const CAS = [
+ { id: "escalier", titre: "L'escalier", lieu: "Lausanne · un soir d'hiver", video: 1, articles: "Art. 1, 12, 15, 19, 123 CP",
+   decor: "escalier",
+   intro: "Tu atterris dans une cage d'escalier. Marc rentre chez lui et croise son voisin Julien ; ils se détestent depuis des mois à cause d'une place de parc. Julien lance une remarque. Marc le pousse. Julien tombe et se casse le poignet : une fracture simple. En haut des marches, la porte de sortie est fermée.",
+   persos: [{ n: "Marc", c: C.marc, x: 300 }, { n: "Julien", c: C.julien, x: 420, chute: true, dommage: true }],
+   questions: [
+    { q: "Le juge doit dire si Marc a commis une infraction. Par quel étage commence-t-il ?",
+      o: ["Par la culpabilité : peut-on reprocher son geste à Marc ?", "Par l'illicéité : le geste était-il permis ?", "Par la typicité : la loi décrit-elle ce que Marc a fait ?"], r: 2,
+      code: ["Méthode des trois étages", "Typicité, illicéité, culpabilité. On commence toujours par le bas. Si un étage manque, on s'arrête là : pas d'infraction, pas de peine."],
+      ex: "On commence toujours par le bas. Si un étage manque, pas d'infraction, pas de peine." },
+    { q: "Quel article décrit ce que Marc a fait ?",
+      o: ["Art. 144 CP, le dommage à la propriété", "Art. 123 CP, les lésions corporelles simples", "Art. 15 CP, la légitime défense"], r: 1,
+      code: ["Art. 123 CP, en substance", "Celui qui fait du mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples."],
+      ex: "Un poignet cassé est une atteinte au corps, et la blessure n'est pas grave : Marc réalise les éléments objectifs des lésions corporelles simples." },
+    { q: "Marc a-t-il agi intentionnellement ?",
+      o: ["Non : il n'a pas visé le poignet, il n'y a donc pas d'intention.", "Oui : il l'a poussé volontairement dans un escalier, savait qu'une chute pouvait blesser et a accepté ce risque.", "Non : c'est une négligence, puisqu'il n'a pas voulu la fracture."], r: 1,
+      code: ["Art. 12 CP", "En principe, on ne punit un crime ou un délit que s'il a été commis intentionnellement. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement : c'est le dol éventuel."],
+      ex: "Accepter le risque d'une chute, c'est le dol éventuel. Pour le droit pénal, c'est de l'intention. Premier verrou franchi : le comportement est typique." },
+    { q: "Julien n'avait lancé qu'une remarque. Marc peut-il invoquer la légitime défense ?",
+      o: ["Oui : une provocation verbale suffit.", "Non : une remarque n'est pas une attaque qu'on repousse avec les mains.", "Oui, si la remarque était vraiment blessante."], r: 1,
+      code: ["Art. 15 CP, en substance", "Si quelqu'un vous attaque sans droit, ou menace de le faire de manière imminente, vous pouvez repousser l'attaque de manière proportionnée."],
+      ex: "Si Julien avait levé le poing, la poussée aurait pu être une défense. Ici, il a seulement parlé : pas de légitime défense. Le comportement est illicite." },
+    { q: "Ce soir-là, Marc était simplement en colère. Le troisième étage tombe-t-il ?",
+      o: ["Oui : la colère enlève la culpabilité.", "Non : la colère n'enlève pas la capacité de comprendre ce qu'on fait.", "Seulement si Julien ne porte pas plainte."], r: 1,
+      code: ["Art. 19 CP, en substance", "N'est pas punissable celui qui, au moment d'agir, n'était pas capable d'apprécier le caractère illicite de son acte ou de se déterminer d'après cette appréciation."],
+      ex: "La colère ne fait pas perdre la capacité de comprendre son acte. Le troisième étage est franchi." }],
+   verdict: "Les trois étages sont franchis : Marc a commis des lésions corporelles simples, au sens de l'article 123 du Code pénal. C'est seulement maintenant qu'on peut parler de peine." },
+
+ { id: "demenagement", titre: "Le déménagement", lieu: "Fribourg · samedi matin", video: 2, articles: "Art. 1, 2, 146, 307 CP",
+   decor: "appartement",
+   intro: "Tu tombes au milieu des cartons. Sami déménage ; son ami Tom avait promis de venir l'aider. À huit heures, Tom écrit : « Désolé, je suis malade. » En réalité, il passe la journée au lac. Sami est furieux : « Tu m'as menti. Je vais porter plainte ! » La porte d'entrée refuse de s'ouvrir.",
+   persos: [{ n: "Sami", c: C.sami, x: 330 }, { n: "Tom", c: C.tom, x: 470, bulle: "Au lac" }],
+   questions: [
+    { q: "Quelle règle décide si le mensonge de Tom peut être puni ?",
+      o: ["La morale : un mensonge est une faute.", "L'article premier du Code pénal : pas de peine sans loi.", "L'avis personnel du juge."], r: 1,
+      code: ["Art. 1 CP", "« Une peine ou une mesure ne peuvent être prononcées qu'en raison d'un acte expressément réprimé par la loi. »"],
+      ex: "Pas de loi, pas de peine : c'est le principe de la légalité. Il faut un texte, qui décrit l'acte, et qui existait déjà au moment de l'acte." },
+    { q: "Existe-t-il, dans le Code pénal, une infraction qui s'appelle simplement « mentir » ?",
+      o: ["Oui, pour tous les mensonges.", "Oui, mais seulement entre amis.", "Non : le Code pénal punit seulement certains mensonges, décrits avec précision."], r: 2,
+      code: ["Ce que dit la vidéo 2", "Le Code pénal ne punit pas le mensonge en général. Il punit certains mensonges, et pour chacun, la loi précise les conditions."],
+      ex: "Aucun texte ne décrit ce que Tom a fait. Le mensonge est blessant, mais la morale n'est pas la loi pénale." },
+    { q: "Variante : Tom ment devant un tribunal, comme témoin. Et maintenant ?",
+      o: ["Toujours rien : un mensonge reste un mensonge.", "Un article existe : l'article 307 punit le témoin qui fait une déposition fausse en justice.", "C'est une escroquerie, à l'article 146."], r: 1,
+      code: ["Art. 307 CP, en substance", "Le témoin qui fait une déposition fausse en justice est puni."],
+      ex: "Là, un texte décrit précisément l'acte : le faux témoignage." },
+    { q: "Retour au samedi. Le mensonge de Tom ressemble un peu à une escroquerie. Le juge peut-il le punir pour cette raison ?",
+      o: ["Oui, par analogie avec l'escroquerie.", "Oui, si le mensonge est vraiment choquant.", "Non : le juge peut interpréter un texte, mais pas y ajouter ce qui n'y est pas."], r: 2,
+      code: ["Art. 146 CP, selon la vidéo 2", "L'escroquerie suppose une tromperie astucieuse, une victime qui agit contre ses intérêts financiers et un auteur qui veut s'enrichir."],
+      ex: "Tom ne cherche pas d'argent. S'il manque un élément de la description, l'acte n'est pas réprimé, même s'il est proche, même s'il est choquant." },
+    { q: "L'an prochain, le Parlement vote une loi qui punit le mensonge entre amis. Peut-on punir Tom pour ce samedi ?",
+      o: ["Non : le Code pénal s'applique à celui qui agit après son entrée en vigueur.", "Oui : la loi est faite pour ce genre de cas.", "Oui, si la nouvelle loi est plus sévère."], r: 0,
+      code: ["Art. 2 CP, en substance", "Le Code pénal s'applique à celui qui agit après son entrée en vigueur. Exception en faveur de l'auteur : une loi nouvelle plus douce s'applique s'il est jugé après son entrée en vigueur."],
+      ex: "Une loi pénale ne remonte pas dans le passé contre l'auteur. Sinon, personne ne pourrait savoir à l'avance ce qui est permis." }],
+   verdict: "Pas d'infraction. Aucun texte ne réprime le mensonge de Tom. Mais pas d'infraction ne veut pas dire que Tom a bien agi : cela veut seulement dire que le droit pénal ne s'en occupe pas." },
+
+ { id: "rue", titre: "La même rue", lieu: "Neuchâtel · samedi soir", video: 3, articles: "Art. 10, 103, 126, 139, 144 CP",
+   decor: "rue",
+   intro: "Tu atterris sur un trottoir. Trois jeunes, trois histoires. Inès glisse dans sa poche le téléphone neuf d'une passante. Noah tague tout le mur d'une boulangerie : environ 2 000 francs de nettoyage. Yann gifle un ami, qui n'est pas blessé. La porte de la boulangerie est ta seule sortie.",
+   persos: [{ n: "Inès", c: C.ines, x: 230 }, { n: "Noah", c: C.noah, x: 420, tag: true }, { n: "Yann", c: C.yann, x: 590 }],
+   questions: [
+    { q: "Qu'est-ce qui range une infraction parmi les crimes, les délits ou les contraventions ?",
+      o: ["La peine prononcée par le juge.", "La peine dont l'infraction est passible, c'est-à-dire la plus lourde que la loi prévoit.", "La colère de la victime."], r: 1,
+      code: ["Art. 10 et 103 CP, selon la vidéo 3", "Crime : peine privative de liberté de plus de trois ans. Délit : trois ans au plus, ou peine pécuniaire. Contravention : amende."],
+      ex: "La méthode tient en deux gestes : trouver l'article qui décrit l'acte, puis lire la peine qu'il prévoit." },
+    { q: "Inès a volé le téléphone. Le vol est puni d'une peine privative de liberté de cinq ans au plus, ou d'une peine pécuniaire (art. 139 CP). C'est donc…",
+      o: ["un crime", "un délit", "une contravention"], r: 0,
+      code: ["Art. 10 CP", "Un crime est passible d'une peine privative de liberté de plus de trois ans."],
+      ex: "Cinq ans, c'est plus de trois ans : le vol est un crime." },
+    { q: "Noah a tagué le mur. Le dommage à la propriété (art. 144 CP) va jusqu'à trois ans de peine privative de liberté. C'est donc…",
+      o: ["un crime", "un délit", "une contravention"], r: 1,
+      code: ["Art. 10 CP", "Un délit est passible d'une peine privative de liberté de trois ans au plus, ou d'une peine pécuniaire."],
+      ex: "Trois ans au plus : c'est un délit. Si le dommage était considérable, la loi prévoirait jusqu'à cinq ans : ce serait alors un crime." },
+    { q: "Yann a giflé son ami sans le blesser : des voies de fait (art. 126 CP), punies d'une amende. C'est donc…",
+      o: ["un crime", "un délit", "une contravention"], r: 2,
+      code: ["Art. 103 CP", "Une contravention est une infraction passible d'une amende."],
+      ex: "Aucune peine privative de liberté n'est prévue : c'est une contravention. Ici, elle n'est poursuivie que si la victime porte plainte." },
+    { q: "Le juge ne prononce finalement qu'une peine pécuniaire contre Inès. Son vol devient-il un délit ?",
+      o: ["Oui : la peine prononcée décide de la catégorie.", "Non : ce qui compte, c'est la peine que la loi prévoit au maximum.", "Cela dépend du canton."], r: 1,
+      code: ["Art. 10 CP", "Le critère est la peine dont l'infraction est « passible » : la peine possible, pas celle que le juge choisit."],
+      ex: "C'est le piège classique. Son vol reste un crime." }],
+   verdict: "Un crime, un délit et une contravention, dans la même rue, le même soir. Et ce classement change des règles concrètes : la tentative, le sursis, la prescription." },
+
+ { id: "parc", titre: "Le ballon", lieu: "Sion · mercredi après-midi", video: 4, articles: "Art. 12, 125, 144 CP",
+   decor: "parc",
+   intro: "Tu atterris sur une pelouse. Léo joue au football. Il frappe le ballon de toutes ses forces ; le ballon part dans le groupe d'à côté et touche Adam en plein visage. Adam est blessé. Une seule question décide de tout : que se passait-il dans la tête de Léo ? Le Code te fait revivre la scène en cinq versions.",
+   persos: [{ n: "Léo", c: C.leo, x: 200, ballon: true }, { n: "Adam", c: C.adam, x: 560, dommage: true }],
+   questions: [
+    { q: "Version 1. Léo en veut à Adam. Il vise sa tête exprès pour lui faire mal. Quelle attitude ?",
+      o: ["Le dol direct : il sait ce qu'il fait et il veut le résultat.", "Le dol éventuel.", "La négligence consciente."], r: 0,
+      code: ["Art. 12 CP", "Agit intentionnellement celui qui commet l'acte avec conscience et volonté."],
+      ex: "Conscience et volonté : c'est l'intention au sens le plus simple. Les juristes parlent de dol direct." },
+    { q: "Version 2. Léo veut juste impressionner ses amis. Il voit le groupe et se dit : « Si je touche quelqu'un, tant pis. »",
+      o: ["Un accident.", "Le dol éventuel : il ne souhaite pas la blessure, mais il l'accepte.", "La négligence consciente."], r: 1,
+      code: ["Art. 12 CP, seconde phrase", "Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement."],
+      ex: "Il s'en accommode. Pour le droit pénal, c'est encore de l'intention : il serait puni comme s'il avait voulu la blessure." },
+    { q: "Version 3. Léo sait qu'un tir raté pourrait toucher quelqu'un, mais il est sûr de sa précision et compte bien que rien n'arrivera.",
+      o: ["Le dol éventuel.", "Aucune faute : il était sûr de lui.", "La négligence consciente : il a vu le risque, mais compté sur une issue heureuse."], r: 2,
+      code: ["Ce que dit la vidéo 4", "Ici, Léo n'accepte pas le résultat. Il fait confiance à son adresse, à tort."],
+      ex: "Ce n'est plus de l'intention. Les juristes parlent de négligence consciente." },
+    { q: "Version 4. Léo ne regarde même pas autour de lui. Le groupe était derrière la haie.",
+      o: ["La négligence : il aurait dû vérifier avant de frapper si fort.", "Un accident : il ne pouvait pas savoir.", "Le dol éventuel."], r: 0,
+      code: ["Art. 12 CP", "Agit par négligence celui qui, par une imprévoyance coupable, ne se rend pas compte des conséquences de son acte ou n'en tient pas compte. L'imprévoyance est coupable quand l'auteur n'a pas pris les précautions que les circonstances commandaient."],
+      ex: "Il ne s'est pas rendu compte du risque, mais il aurait dû. C'est une imprévoyance coupable." },
+    { q: "Version 5. Léo a regardé : le parc était vide. Le ballon rebondit sur un poteau et file vers Adam, qui arrivait en courant.",
+      o: ["Un accident : pas d'intention, pas d'imprévoyance coupable.", "La négligence consciente.", "Le dol éventuel."], r: 0,
+      code: ["Ce que dit la vidéo 4", "Léo a pris les précautions raisonnables."],
+      ex: "C'est un accident, pas une infraction." },
+    { q: "Dernière variante : par négligence, le ballon casse la vitre d'une voiture. Léo a-t-il commis une infraction ?",
+      o: ["Oui, un dommage à la propriété par négligence.", "Non : le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle.", "Oui, une contravention."], r: 1,
+      code: ["Art. 12 et 144 CP, selon la vidéo 4", "La négligence n'est punissable que si la loi le prévoit expressément. Pour les blessures, elle le prévoit (art. 125). Pour le dommage à la propriété, non."],
+      ex: "Pas d'infraction. Le propriétaire pourrait seulement réclamer réparation." }],
+   verdict: "Vouloir le résultat, c'est l'intention. L'accepter, encore l'intention. Espérer qu'il n'arrive pas, ou ne pas voir un risque qu'on aurait dû voir : la négligence, punie seulement si la loi le dit." },
+
+ { id: "piscine", titre: "Le grand bassin", lieu: "Yverdon · un dimanche d'été", video: 5, articles: "Art. 11, 128 CP",
+   decor: "piscine",
+   intro: "Tu atterris au bord d'un bassin. Clara, la surveillante de baignade, payée pour ce travail, regarde son téléphone. Elle ne voit pas le petit Timéo, huit ans, qui se débat dans l'eau. À deux mètres, un baigneur, Maël, voit tout et ne fait rien non plus. Un autre enfant sort Timéo de l'eau ; il passe deux jours à l'hôpital. La grille de la piscine est fermée.",
+   persos: [{ n: "Clara", c: C.clara, x: 160, tel: true }, { n: "Maël", c: C.mael, x: 330 }, { n: "Timéo", c: C.timeo, x: 560, eau: true }],
+   questions: [
+    { q: "Clara et Maël n'ont rien fait. Peut-on être coupable sans avoir agi ?",
+      o: ["Jamais : sans geste, pas d'infraction.", "Oui, si l'on avait une position de garant, c'est-à-dire une obligation d'agir.", "Oui, toute personne présente est responsable."], r: 1,
+      code: ["Art. 11 CP, en substance", "Un crime ou un délit peut aussi être commis par un comportement passif contraire à une obligation d'agir. Il faut une position de garant."],
+      ex: "Toute la question devient : qui avait l'obligation d'agir ?" },
+    { q: "Clara a été engagée pour surveiller le bassin et elle était à son poste. Est-elle garante ?",
+      o: ["Non : elle n'a rien fait de mal.", "Oui, par contrat : c'est la prise de poste effective qui compte.", "Seulement si elle connaissait Timéo."], r: 1,
+      code: ["Art. 11 CP, quatre sources", "La loi, un contrat, une communauté de risques librement acceptée, la création d'un risque."],
+      ex: "Le Tribunal fédéral précise que c'est la prise de poste effective qui compte, pas seulement la signature du contrat. Clara est garante." },
+    { q: "Et Maël, simple baigneur parmi d'autres ?",
+      o: ["Il est garant, puisqu'il a tout vu.", "Il n'est pas garant : aucune loi, aucun contrat, aucun risque créé par lui.", "Il est garant par communauté de risques."], r: 1,
+      code: ["Art. 11 CP", "La position de garant vient d'une source précise. Voir, ce n'est pas être garant."],
+      ex: "Maël n'est pas garant." },
+    { q: "Maël n'est pas garant. N'a-t-il donc rien à se reprocher devant la loi ?",
+      o: ["Si : il y a l'omission de prêter secours, une infraction qui vise tout le monde.", "Rien du tout, c'est une question de morale.", "Il répond des blessures de Timéo."], r: 0,
+      code: ["Art. 128 CP, en substance", "Est puni celui qui ne secourt pas une personne en danger de mort imminente, alors qu'on peut raisonnablement l'exiger de lui."],
+      ex: "Un enfant se noie à deux mètres de lui : on pouvait au moins exiger qu'il appelle à l'aide. Il ne répond pas des blessures, seulement de ne pas avoir porté secours." },
+    { q: "Pour que Clara réponde des blessures de Timéo comme si elle les avait causées, que faut-il encore ?",
+      o: ["Qu'elle ait voulu l'accident.", "Que Timéo porte plainte contre elle.", "Que l'accident aurait été évité si elle avait agi, et que son inaction mérite le même reproche qu'un geste."], r: 2,
+      code: ["Art. 11 CP", "Le juge raisonne par hypothèse ; l'article pose aussi une condition d'équivalence. Le juge peut atténuer la peine."],
+      ex: "Clara n'a pas voulu l'accident : on parlera plutôt de négligence, ici en principe sur plainte." }],
+   verdict: "Ne rien faire peut constituer un crime ou un délit, mais seulement pour celui qui avait une position de garant. Pour tous les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminente." },
+
+ { id: "bar", titre: "La sortie du bar", lieu: "Bienne · vendredi soir", video: 6, articles: "Art. 15, 16, 17 CP",
+   decor: "bar",
+   intro: "Tu atterris devant un bar. Kevin, très énervé, s'avance vers Yasmine, une bouteille en verre à la main, et la lève pour la frapper. Yasmine n'a qu'une seconde : elle le repousse violemment. Kevin tombe et se casse le bras. La porte du bar claque derrière toi.",
+   persos: [{ n: "Yasmine", c: C.yasmine, x: 300 }, { n: "Kevin", c: C.kevin, x: 440, bouteille: true, chute: true, dommage: true }],
+   questions: [
+    { q: "Yasmine a voulu repousser Kevin et elle l'a blessé : le premier étage est franchi. Où se joue la suite ?",
+      o: ["Au deuxième étage : ce geste était-il malgré tout permis ?", "Au troisième étage : Yasmine est-elle coupable ?", "Nulle part : une blessure suffit."], r: 0,
+      code: ["Les faits justificatifs", "Ils rendent licite un acte que la loi punit d'habitude."],
+      ex: "Toute la question se joue au deuxième étage, l'illicéité." },
+    { q: "Les conditions de la légitime défense sont-elles réunies pour Yasmine ?",
+      o: ["Non : Kevin n'avait pas encore frappé.", "Non : elle l'a blessé.", "Oui : une attaque imminente, contraire au droit, et une défense proportionnée."], r: 2,
+      code: ["Art. 15 CP", "Une attaque, ou la menace d'une attaque imminente, contraire au droit ; une défense avec des moyens proportionnés aux circonstances."],
+      ex: "Kevin levait une bouteille sur elle, rien ne l'y autorisait, et une poussée face à une bouteille, c'est mesuré. L'illicéité tombe, et avec elle l'infraction." },
+    { q: "Variante : Kevin menace Yasmine puis rentre chez lui. Le lendemain, elle va le frapper chez lui. Légitime défense ?",
+      o: ["Oui : il l'avait menacée.", "Non : l'attaque est terminée et aucune nouvelle attaque n'est imminente.", "Oui, si elle avait encore peur."], r: 1,
+      code: ["Art. 15 CP", "La légitime défense ne vaut que pendant l'attaque ou face à une attaque imminente. Avant, c'est trop tôt ; après, c'est trop tard."],
+      ex: "Se venger n'est pas se défendre." },
+    { q: "Un après-midi de canicule, Hugo voit un bébé enfermé seul dans une voiture brûlante. Personne ne répond. Il brise la vitre pour le sortir.",
+      o: ["Un dommage à la propriété punissable.", "L'état de nécessité : un danger imminent, pas d'autre issue, un intérêt prépondérant.", "La légitime défense."], r: 1,
+      code: ["Art. 17 CP", "L'acte est licite s'il faut écarter un danger imminent, impossible à détourner autrement, pour sauvegarder des intérêts prépondérants."],
+      ex: "Ici, pas d'agresseur : seulement un danger. La vie d'un bébé pèse bien plus lourd qu'une vitre. Le geste de Hugo est justifié." },
+    { q: "Si Yasmine va trop loin, mais que cet excès vient d'un état excusable d'excitation ou de saisissement causé par l'attaque : quel étage est touché ?",
+      o: ["Le deuxième : l'excès rend le geste licite.", "Le troisième : elle n'agit pas de manière coupable.", "Le premier : il n'y a plus d'infraction décrite."], r: 1,
+      code: ["Art. 16 CP", "En cas d'excès de légitime défense, le juge atténue la peine ; si l'excès provient d'un état excusable d'excitation ou de saisissement causé par l'attaque, l'auteur n'agit pas de manière coupable."],
+      ex: "L'excès ne rend pas le geste licite. Il touche seulement le troisième étage, celui de la culpabilité." }],
+   verdict: "Face à un cas, demande-toi d'abord : y avait-il une attaque ou seulement un danger ? La légitime défense (art. 15) et l'état de nécessité (art. 17) font tomber l'illicéité ; les articles 16 et 18 ne jouent que sur la culpabilité." }
+];
+
+const FINALE = { id: "finale", titre: "La dernière page", lieu: "Le Code · dernière page", video: 0, articles: "Art. 1, 2, 10, 11, 12, 15, 125 CP",
+  decor: "bibliotheque",
+  intro: "Les six cas sont résolus. Le Code tourne jusqu'à sa dernière page. Six questions y sont écrites, une par cas. Réponds juste et la page te rendra à la bibliothèque.",
+  persos: [{ n: "Toi", c: C.toi, x: 400 }],
+  questions: [
+   { q: "Même escalier, mais Marc bouscule Julien par inadvertance, sans le voir. Julien tombe. Quel étage pose problème ?",
+     o: ["Le premier : il n'y a pas d'intention ; reste la négligence de l'article 125, sur plainte, d'office si la lésion est grave.", "Le deuxième : la bousculade était permise.", "Le troisième : Marc n'est pas coupable."], r: 0,
+     code: ["Art. 12 et 125 CP", "Les lésions corporelles par négligence sont une infraction distincte."], ex: "Une bousculade par inadvertance n'est pas intentionnelle." },
+   { q: "Le 1er mars, Nora fait quelque chose de permis. Le 1er juin, une loi l'interdit et le punit. Le 1er juillet, elle recommence. Pour quelle date peut-elle être punie ?",
+     o: ["Pour les deux dates.", "Seulement pour le 1er juillet.", "Pour aucune."], r: 1,
+     code: ["Art. 1 et 2 CP", "Il faut un texte qui existait déjà au moment de l'acte."], ex: "Le 1er mars, aucun texte ne réprimait son comportement ; la loi ne remonte pas dans le passé." },
+   { q: "Une infraction n'est punie que d'une peine pécuniaire, sans peine privative de liberté. Crime, délit ou contravention ?",
+     o: ["Une contravention.", "Un délit.", "Un crime."], r: 1,
+     code: ["Art. 10, al. 3, et 103 CP", "Délit : peine privative de liberté de trois ans au plus « ou peine pécuniaire ». Seule l'amende fait une contravention."], ex: "La peine pécuniaire n'est pas une amende." },
+   { q: "Sofia roule bien trop vite dans une rue où jouent des enfants. Elle sait qu'elle pourrait en renverser un, mais elle est certaine de pouvoir freiner à temps.",
+     o: ["Le dol direct.", "En principe, la négligence consciente.", "Aucune faute."], r: 1,
+     code: ["Art. 12 CP", "Voir le risque mais compter qu'il ne se réalisera pas."], ex: "Le juge peut toutefois retenir le dol éventuel si les indices montrent qu'elle s'accommodait du résultat." },
+   { q: "Lucas allume un feu de camp en forêt et part sans l'éteindre. Le feu s'étend. Était-il garant ?",
+     o: ["Non : il n'a rien fait après.", "Oui, par la création d'un risque : il devait l'éteindre ou le surveiller.", "Oui, par contrat."], r: 1,
+     code: ["Art. 11, al. 2, let. d, CP", "Celui qui crée un danger doit empêcher qu'il ne fasse du mal."], ex: "Les dommages peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3." },
+   { q: "Un voisin crie à Nadia qu'il la frappera un jour. Le lendemain, Nadia le frappe la première pour prendre les devants. Légitime défense ?",
+     o: ["Oui : elle a été menacée.", "Non : une menace vague pour « un jour » n'est pas une attaque imminente.", "Oui, si elle avait peur."], r: 1,
+     code: ["Art. 15 CP", "Il faut une attaque en cours ou imminente."], ex: "Frapper le lendemain revient à prendre les devants, pas à se défendre." }],
+  verdict: "La dernière page se referme doucement. Tu rouvres les yeux à la bibliothèque, le vieux Code fermé devant toi. Retiens la méthode plus que les résultats : la loi décrit-elle l'acte ? Était-il malgré tout permis ? Peut-on le reprocher à la personne ?" };
+
+const GRADES = [[0, "Première année"], [150, "Deuxième année"], [350, "Master"], [550, "Stage d'avocat"], [800, "Brevet d'avocat"]];
+const XP_JUSTE = 20, XP_DEUXIEME = 10, BONUS_SANS_FAUTE = 30, PAGES = 3;
+
+/* ===================== État ===================== */
+let etat = { xp: 0, libres: [] };
+let partie = null; // { cas, i, pages, gagnes, essais, indice, fautes }
+const CLE = "pris-dans-le-code-v1";
+function charger() { try { const s = JSON.parse(localStorage.getItem(CLE) || "null"); if (s && typeof s.xp === "number") etat = s; } catch (e) {} }
+function sauver() { try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch (e) {} }
+
+/* ===================== Dessin des scènes (style des vidéos) ===================== */
+const T = "#F2EFE6", DIM = 'stroke="#F2EFE6" stroke-opacity=".35" stroke-width="2.5" fill="none"';
+function silhouette(p, sol) {
+  const x = p.x, c = p.c, y = sol;
+  const rot = p.chute ? ` transform="translate(0 -22) rotate(70 ${x} ${y})"` : "";
+  let s = `<g${rot}><circle cx="${x}" cy="${y - 92}" r="15" fill="${c}"/><rect x="${x - 24}" y="${y - 74}" width="48" height="74" rx="20" fill="${c}"/></g>`;
+  if (p.eau) s = `<g><circle cx="${x}" cy="${y - 92}" r="15" fill="${c}"/><rect x="${x - 24}" y="${y - 74}" width="48" height="30" rx="14" fill="${c}"/></g>`;
+  s += `<text x="${p.chute ? x - 34 : x}" y="${y + 24}" text-anchor="middle" fill="${T}" font-family="Inter, sans-serif" font-size="15">${p.n}</text>`;
+  if (p.dommage) s += `<path d="M${x + 30} ${y - (p.chute ? 30 : 70)} l-10 16 h8 l-8 16 l18 -20 h-8 l8 -12z" fill="#D9534F"/>`;
+  if (p.bulle) s += `<g><circle cx="${x + 26}" cy="${y - 112}" r="3" fill="${T}"/><circle cx="${x + 36}" cy="${y - 122}" r="5" fill="${T}"/><ellipse cx="${x + 82}" cy="${y - 140}" rx="46" ry="18" fill="${T}"/><text x="${x + 82}" y="${y - 135}" text-anchor="middle" fill="#0B0B0B" font-family="Inter, sans-serif" font-size="14">${p.bulle}</text></g>`;
+  if (p.ballon) s += `<circle cx="${x + 36}" cy="${y - 9}" r="9" fill="${T}"/>`;
+  if (p.tel) s += `<rect x="${x + 30}" y="${y - 72}" width="12" height="21" rx="2" fill="none" stroke="${T}" stroke-width="2"/><rect x="${x + 33}" y="${y - 68}" width="6" height="13" fill="#E3A52F" opacity=".6"/>`;
+  if (p.bouteille) s += `<g fill="none" stroke="#E3A52F" stroke-width="2.5"><rect x="${x + 34}" y="${y - 120}" width="11" height="22" rx="3"/><rect x="${x + 37}" y="${y - 130}" width="5" height="10"/></g>`;
+  if (p.tag) s += `<path d="M${x - 90} ${y - 170} q20 -24 40 0 t40 0 t40 0" fill="none" stroke="#E3A52F" stroke-width="5" stroke-linecap="round"/>`;
+  return s;
+}
+function decor(nom) {
+  const sol = 250;
+  const solLigne = `<line x1="0" y1="${sol}" x2="800" y2="${sol}" ${DIM}/>`;
+  const porte = (x) => `<rect x="${x}" y="${sol - 110}" width="56" height="110" ${DIM}/><circle cx="${x + 44}" cy="${sol - 55}" r="2.5" fill="${T}" fill-opacity=".4"/>`;
+  const fenetre = (x, y) => `<rect x="${x}" y="${y}" width="80" height="60" ${DIM}/><line x1="${x + 40}" y1="${y}" x2="${x + 40}" y2="${y + 60}" ${DIM}/><line x1="${x}" y1="${y + 30}" x2="${x + 80}" y2="${y + 30}" ${DIM}/>`;
+  if (nom === "escalier") {
+    let m = "", x = 470, y = sol;
+    for (let k = 0; k < 6; k++) { m += `<polyline points="${x},${y} ${x},${y - 22} ${x + 48},${y - 22}" ${DIM}/>`; x += 48; y -= 22; }
+    return `<line x1="0" y1="${sol}" x2="470" y2="${sol}" ${DIM}/>${m}${porte(40)}${fenetre(150, 60)}<rect x="700" y="${sol - 132 - 92}" width="50" height="92" fill="none" stroke="#E3A52F" stroke-width="3"/>`;
+  }
+  if (nom === "appartement") {
+    let cartons = "";
+    [[600, 0, 60, 40], [665, 0, 60, 40], [632, 40, 58, 36], [560, 0, 36, 28]].forEach(([x, y, l, h]) => cartons += `<rect x="${x}" y="${sol - y - h}" width="${l}" height="${h}" ${DIM}/>`);
+    return solLigne + `<rect x="40" y="${sol - 110}" width="56" height="110" fill="none" stroke="#E3A52F" stroke-width="3"/>` + fenetre(160, 50) + cartons;
+  }
+  if (nom === "rue" || nom === "bar") {
+    const enseigne = nom === "bar" ? "Bar" : "Boulangerie";
+    return solLigne + `<rect x="10" y="${sol - 150}" width="130" height="150" ${DIM}/><rect x="300" y="${sol - 160}" width="200" height="160" ${DIM}/><text x="400" y="${sol - 135}" text-anchor="middle" fill="${T}" fill-opacity=".45" font-family="Inter, sans-serif" font-size="16">${enseigne}</text><rect x="420" y="${sol - 70}" width="56" height="70" fill="none" stroke="#E3A52F" stroke-width="3"/><rect x="650" y="${sol - 130}" width="140" height="130" ${DIM}/><line x1="770" y1="${sol}" x2="770" y2="${sol - 150}" ${DIM}/><circle cx="755" cy="${sol - 145}" r="5" fill="#E3A52F" fill-opacity=".7"/>`;
+  }
+  if (nom === "parc") {
+    let haie = ""; for (let k = 0; k < 4; k++) haie += `<path d="M${640 + 28 * k} ${sol - 40} a14 14 0 0 1 28 0" ${DIM}/>`;
+    return solLigne + `<line x1="330" y1="${sol}" x2="330" y2="${sol - 70}" ${DIM}/><circle cx="330" cy="${sol - 110}" r="44" ${DIM}/><line x1="420" y1="${sol}" x2="420" y2="${sol - 100}" stroke="${T}" stroke-opacity=".5" stroke-width="3"/><rect x="640" y="${sol - 40}" width="112" height="40" ${DIM}/>${haie}<rect x="10" y="${sol - 110}" width="56" height="110" fill="none" stroke="#E3A52F" stroke-width="3"/>`;
+  }
+  if (nom === "piscine") {
+    return solLigne + `<line x1="60" y1="${sol}" x2="76" y2="${sol - 90}" ${DIM}/><line x1="110" y1="${sol}" x2="94" y2="${sol - 90}" ${DIM}/><line x1="70" y1="${sol - 90}" x2="104" y2="${sol - 90}" stroke="${T}" stroke-opacity=".5" stroke-width="3"/><line x1="70" y1="${sol - 90}" x2="70" y2="${sol - 120}" ${DIM}/><path d="M430 ${sol - 44} q12 -6 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0" ${DIM}/><rect x="740" y="${sol - 120}" width="50" height="120" fill="none" stroke="#E3A52F" stroke-width="3"/>`;
+  }
+  // bibliothèque (accueil et dernière page)
+  let rayons = "";
+  for (let r = 0; r < 3; r++) for (let k = 0; k < 9; k++) rayons += `<rect x="${30 + k * 18 + (k % 3) * 2}" y="${50 + r * 62 + (k % 2) * 6}" width="14" height="${50 - (k % 2) * 6}" ${DIM}/>`;
+  for (let r = 0; r < 3; r++) for (let k = 0; k < 9; k++) rayons += `<rect x="${600 + k * 18 + (k % 3) * 2}" y="${50 + r * 62 + (k % 2) * 6}" width="14" height="${50 - (k % 2) * 6}" ${DIM}/>`;
+  return solLigne + rayons + `<rect x="300" y="${sol - 60}" width="200" height="8" ${DIM}/><line x1="320" y1="${sol - 52}" x2="320" y2="${sol}" ${DIM}/><line x1="480" y1="${sol - 52}" x2="480" y2="${sol}" ${DIM}/>`;
+}
+function livreLumineux(x, y) {
+  return `<g class="livre"><path d="M${x - 70} ${y} q35 -14 70 0 q35 -14 70 0 v-46 q-35 -14 -70 0 q-35 -14 -70 0z" fill="#18181A" stroke="#F2EFE6" stroke-width="2"/><line x1="${x}" y1="${y}" x2="${x}" y2="${y - 46}" stroke="#F2EFE6" stroke-width="2"/>${[0, 1, 2, 3].map(k => `<line x1="${x - 58}" y1="${y - 36 + k * 9}" x2="${x - 12}" y2="${y - 36 + k * 9}" stroke="#E3A52F" stroke-width="2" opacity="${0.9 - k * 0.15}"/><line x1="${x + 12}" y1="${y - 36 + k * 9}" x2="${x + 58}" y2="${y - 36 + k * 9}" stroke="#E3A52F" stroke-width="2" opacity="${0.8 - k * 0.15}"/>`).join("")}<ellipse cx="${x}" cy="${y - 30}" rx="110" ry="50" fill="#E3A52F" opacity=".08"/></g>`;
+}
+function dessinerScene(cas) {
+  const sol = 250;
+  let svg = `<svg viewBox="0 0 800 300" role="img" aria-label="${cas.titre}, ${cas.lieu}">`;
+  svg += decor(cas.decor);
+  if (cas.decor === "bibliotheque") svg += livreLumineux(400, sol - 64);
+  if (cas.decor !== "bibliotheque") cas.persos.forEach(p => { svg += silhouette(p, sol); });
+  svg += `<text x="16" y="${sol + 40}" fill="#E3A52F" font-family="Inter, sans-serif" font-size="14">${cas.lieu}</text>`;
+  return svg + "</svg>";
+}
+
+/* ===================== Interface ===================== */
+const $ = (id) => document.getElementById(id);
+function grade(xp) { let g = GRADES[0]; for (const x of GRADES) if (xp >= x[0]) g = x; return g; }
+function majBarre() {
+  const g = grade(etat.xp), i = GRADES.indexOf(g), suiv = GRADES[i + 1];
+  $("grade").textContent = g[1]; $("xp").textContent = etat.xp;
+  $("prochain").textContent = suiv ? suiv[0] : "—";
+  const pct = suiv ? (etat.xp - g[0]) / (suiv[0] - g[0]) * 100 : 100;
+  $("jauge").style.width = Math.max(2, Math.min(100, pct)) + "%";
+  $("jauge-role").setAttribute("aria-valuenow", Math.round(pct));
+  const zone = $("pages-zone");
+  zone.hidden = !partie;
+  if (partie) zone.querySelectorAll(".page").forEach((p, k) => p.classList.toggle("dechiree", k >= partie.pages));
+}
+function montrer(id) { ["ecran-accueil", "ecran-sommaire", "ecran-cas", "ecran-verdict"].forEach(e => $(e).hidden = e !== id); window.scrollTo({ top: 0 }); majBarre(); }
+
+function sommaire() {
+  partie = null;
+  const s = $("sommaire"); s.innerHTML = "";
+  [...CAS, FINALE].forEach((cas, k) => {
+    const libre = etat.libres.includes(cas.id);
+    const ouvert = cas.id === "finale" ? CAS.every(c => etat.libres.includes(c.id)) : (k === 0 || etat.libres.includes(CAS[k - 1].id));
+    const b = document.createElement("button");
+    b.className = "cas"; b.disabled = !ouvert && !libre;
+    b.innerHTML = `<div class="haut"><span class="num">${cas.id === "finale" ? "Fin" : "Cas " + (k + 1)}${cas.video ? " · vidéo " + cas.video : ""}</span><span class="etat ${libre ? "libre" : ouvert ? "ouvert" : "ferme"}">${libre ? "Échappé" : ouvert ? "Ouvert" : "Fermé"}</span></div><h3>${cas.titre}</h3><p class="doux" style="font-size:.88rem">${cas.lieu}</p><p class="articles">${cas.articles}</p>`;
+    b.addEventListener("click", () => entrer(cas));
+    s.appendChild(b);
+  });
+  montrer("ecran-sommaire");
+}
+
+function entrer(cas) {
+  partie = { cas, i: -1, pages: PAGES, gagnes: 0, essais: 0, indice: false, fautes: 0 };
+  $("cas-lieu").textContent = cas.lieu + (cas.video ? " · d'après la vidéo " + cas.video : "");
+  $("cas-titre").textContent = cas.titre;
+  $("scene").innerHTML = dessinerScene(cas);
+  $("scene").classList.remove("apparition"); void $("scene").offsetWidth; $("scene").classList.add("apparition");
+  dessinerVerrous();
+  $("carte").innerHTML = `<p class="etiquette">Tu es dans le cas</p><p style="font-size:1.08rem">${cas.intro}</p><p class="doux">${cas.questions.length} verrous ferment la sortie. Tu as ${PAGES} pages.</p><div class="actions"><button class="bouton" id="b-commencer">Examiner le cas</button><button class="bouton second" id="b-retour">Revenir au sommaire</button></div>`;
+  $("b-commencer").addEventListener("click", suivante);
+  $("b-retour").addEventListener("click", sommaire);
+  montrer("ecran-cas");
+  $("b-commencer").focus();
+}
+function dessinerVerrous() {
+  const v = $("verrous"); v.innerHTML = "";
+  partie.cas.questions.forEach((_, k) => {
+    const d = document.createElement("div");
+    const ouvert = k < partie.i || (k === partie.i && partie.repondu && partie.juste);
+    d.className = "verrou" + (ouvert ? " ouvert" : "");
+    d.title = ouvert ? "Verrou ouvert" : "Verrou fermé";
+    d.innerHTML = ouvert ? `<svg viewBox="0 0 14 14"><path d="M2 7.5l3 3 7-7" fill="none" stroke="#06140c" stroke-width="2.4"/></svg>` : `<svg viewBox="0 0 14 14"><rect x="3" y="6" width="8" height="7" rx="1" fill="none" stroke="#B9B4A8" stroke-width="1.6"/><path d="M4.5 6V4.5a2.5 2.5 0 0 1 5 0V6" fill="none" stroke="#B9B4A8" stroke-width="1.6"/></svg>`;
+    v.appendChild(d);
+  });
+}
+
+function suivante() {
+  partie.i++; partie.essais = 0; partie.indice = false; partie.repondu = false; partie.juste = false;
+  if (partie.i >= partie.cas.questions.length) return sortir();
+  dessinerVerrous(); majBarre();
+  const q = partie.cas.questions[partie.i];
+  const carte = $("carte");
+  carte.innerHTML = `<p class="etiquette">Verrou ${partie.i + 1} sur ${partie.cas.questions.length}</p><p class="question">${q.q}</p><div class="choix" id="choix"></div><div id="zone-indice"></div><div id="zone-retour"></div><div class="outils"><button class="bouton second" id="b-indice">Consulter le Code (l'XP du verrou est divisée par deux)</button><button class="bouton" id="b-suite" hidden>Verrou suivant</button></div>`;
+  q.o.forEach((txt, k) => {
+    const b = document.createElement("button");
+    b.className = "option"; b.id = "opt-" + k;
+    b.innerHTML = `<span class="lettre">${"ABC"[k]}</span><span>${txt}</span>`;
+    b.addEventListener("click", () => repondre(k, b));
+    $("choix").appendChild(b);
+  });
+  $("b-indice").addEventListener("click", () => {
+    partie.indice = true; $("b-indice").disabled = true;
+    $("zone-indice").innerHTML = `<div class="indice apparition"><span class="code">${q.code[0]}</span>${q.code[1]}</div>`;
+  });
+  $("b-suite").addEventListener("click", suivante);
+  $("opt-0").focus();
+}
+
+function repondre(k, bouton) {
+  const q = partie.cas.questions[partie.i];
+  if (partie.repondu) return;
+  partie.essais++;
+  if (k === q.r) {
+    partie.repondu = true; partie.juste = true;
+    let gain = partie.essais === 1 ? XP_JUSTE : partie.essais === 2 ? XP_DEUXIEME : 0;
+    if (partie.indice) gain = Math.floor(gain / 2);
+    partie.gagnes += gain;
+    bouton.classList.add("juste");
+    document.querySelectorAll(".option").forEach(o => o.disabled = true);
+    $("b-indice").disabled = true;
+    $("zone-retour").innerHTML = `<div class="retour ok apparition"><b>Le verrou s'ouvre.</b><span>${q.ex}</span><span class="gain">+${gain} XP en jeu</span></div>`;
+    dessinerVerrous();
+    const fin = partie.i === partie.cas.questions.length - 1;
+    $("b-suite").textContent = fin ? "Franchir la porte" : "Verrou suivant";
+    $("b-suite").hidden = false; $("b-suite").focus();
+  } else {
+    partie.fautes++; partie.pages--;
+    bouton.classList.add("faux"); bouton.disabled = true;
+    $("carte").classList.remove("secousse"); void $("carte").offsetWidth; $("carte").classList.add("secousse");
+    majBarre();
+    if (partie.pages <= 0) return referme();
+    $("zone-retour").innerHTML = `<div class="retour ko apparition"><b>Une page se déchire.</b><span>Ce n'est pas ce que dit le droit. ${partie.pages === 1 ? "Il ne te reste qu'une page." : "Il te reste " + partie.pages + " pages."} Relis la question, ou consulte le Code.</span></div>`;
+  }
+}
+
+function referme() {
+  const cas = partie.cas;
+  $("verdict").innerHTML = `<span class="tampon ferme">Le cas se referme</span><h2>Trois pages déchirées</h2><p>Le Code te ramène au début de « ${cas.titre} ». Les XP gagnés dans ce cas sont perdus, mais rien d'autre : tu peux recommencer tout de suite.</p><div class="actions"><button class="bouton" id="b-rejouer">Recommencer le cas</button><button class="bouton second" id="b-sommaire">Revenir au sommaire</button></div>`;
+  $("b-rejouer").addEventListener("click", () => entrer(cas));
+  $("b-sommaire").addEventListener("click", sommaire);
+  partie = null; montrer("ecran-verdict"); $("b-rejouer").focus();
+}
+
+function sortir() {
+  const cas = partie.cas;
+  const sansFaute = partie.fautes === 0;
+  const dejaLibre = etat.libres.includes(cas.id);
+  let total = partie.gagnes + (sansFaute ? BONUS_SANS_FAUTE : 0);
+  // Rejouer un cas déjà résolu entraîne, mais ne rapporte plus d'XP.
+  if (dejaLibre) total = 0;
+  const avant = grade(etat.xp);
+  etat.xp += total;
+  if (!dejaLibre) etat.libres.push(cas.id);
+  sauver();
+  const apres = grade(etat.xp);
+  const promu = apres !== avant;
+  const finale = cas.id === "finale";
+  partie = null;
+  $("verdict").innerHTML = `<span class="tampon">${finale ? "Sorti du Code" : "Échappé du cas"}</span><h2>${finale ? "Retour à la bibliothèque" : "La porte s'ouvre"}</h2><p>${cas.verdict}</p>
+    <div class="bilan"><div><b class="code">+${total}</b><span>XP gagnés</span></div><div><b class="code">${etat.xp}</b><span>XP au total</span></div><div><b>${apres[1]}</b><span>Grade${promu ? " · nouveau" : ""}</span></div></div>
+    ${sansFaute && !dejaLibre ? `<p class="gain">Sans une seule page déchirée : +${BONUS_SANS_FAUTE} XP de bonus.</p>` : ""}${dejaLibre ? `<p class="doux">Ce cas était déjà résolu : il sert d'entraînement et ne rapporte plus d'XP.</p>` : ""}
+    <div class="actions"><button class="bouton" id="b-sommaire">${finale ? "Revoir le sommaire" : "Revenir au sommaire"}</button></div>`;
+  $("b-sommaire").addEventListener("click", sommaire);
+  montrer("ecran-verdict"); $("b-sommaire").focus();
+}
+
+/* ===================== Démarrage ===================== */
+function demarrer(donnees) {
+  charger();
+  if (donnees && donnees.etat) etat = donnees.etat;
+  $("scene-accueil").innerHTML = dessinerScene({ titre: "Bibliothèque", lieu: "Faculté de droit · 23 h 12", decor: "bibliotheque", persos: [], id: "accueil" });
+  $("b-reprendre").hidden = !(etat.xp > 0 || etat.libres.length);
+  $("b-ouvrir").addEventListener("click", () => {
+    const sc = $("scene-accueil");
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return sommaire();
+    sc.classList.add("aspiration"); setTimeout(() => { sc.classList.remove("aspiration"); sommaire(); }, 850);
+  });
+  $("b-reprendre").addEventListener("click", sommaire);
+  majBarre();
+  window.claude?.hot?.snapshot?.(() => ({ etat }));
+}
+window.claude?.hot?.ready ? window.claude.hot.ready(demarrer) : demarrer(window.claude?.hot?.data ?? {});
+</script>
