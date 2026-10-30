@@ -26,7 +26,7 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 6.1 | scene-vide ; article "Art. 56 CP" ; titre "Quand une mesure ?" |
 | 6.2 | effacer-titres ; case "Peine seule insuffisante" |
 | 7.1 | case "Traitement ou sécurité" |
-| 7.2 | case "Conditions d'une mesure précise" |
+| 7.2 | case "Conditions de la mesure" |
 | 8.1 | scene-vide ; titre "Proportionnée" |
 | 8.2 | colonnes "Atteinte" "Risque" |
 | 8.3 | colonne-accent 1 ; colonne-accent 2 |

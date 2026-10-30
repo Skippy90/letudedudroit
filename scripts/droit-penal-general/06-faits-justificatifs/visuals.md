@@ -32,7 +32,7 @@ Personnages : Yasmine turquoise, Kevin rose, Hugo bleu clair, Nadia violet.
 | 8.1 | scene-vide ; article "Art. 15 CP" ; batiment ; bouclier |
 | 8.2 | bouclier-repousser |
 | 9.1 | scene-vide ; titre "Trois conditions" |
-| 9.2 | case "Attaque, ou menace imminente" |
+| 9.2 | case "Attaque, menace imminente" |
 | 10.1 | case "Contraire au droit" |
 | 10.2 | case "Moyens proportionnés" |
 | 11.1 | effacer-titres ; titre "Pour Yasmine" |
