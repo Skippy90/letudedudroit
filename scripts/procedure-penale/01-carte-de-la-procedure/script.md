@@ -90,7 +90,7 @@ Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair)
 | 43 | Les autorités doivent engager la procédure sans délai, et la mener à terme sans retard injustifié. C'est le principe de célérité, à l'article cinq. | Bloc « Art. 5 CPP » ; le mot « Célérité » |
 | 44 | Et si le prévenu est en détention, la procédure doit être conduite en priorité. Chaque jour de détention compte. | Le mot « En priorité » |
 | 45 | Il existe aussi une limite dans le temps : la prescription. Passé un certain délai, l'État ne peut plus poursuivre. Pour un vol, ce délai est de quinze ans. | Une frise jusqu'au repère « 15 ans » |
-| 46 | C'est le Code pénal qui le prévoit, à l'article nonante-sept. On l'a vu dans la vidéo 12 de la playlist de droit pénal général. | Bloc « Art. 97 CP » ; « Droit pénal général, vidéo 12 » en petit |
+| 46 | C'est le Code pénal qui le prévoit, à l'article nonante-sept. On l'a vu dans la vidéo 12 de notre série de droit pénal général. | Bloc « Art. 97 CP » ; « Droit pénal général, vidéo 12 » en petit |
 
 ## Le piège classique
 

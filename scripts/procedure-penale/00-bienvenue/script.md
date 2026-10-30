@@ -20,7 +20,7 @@ Personnages du fil rouge, repris dans toute la série : Nina (silhouette rose), 
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 6 | Si vous avez suivi notre playlist de droit pénal général, vous connaissez la première moitié du problème. | Le bâtiment à trois étages ; « Droit pénal général » en petit |
+| 6 | Si vous avez suivi notre série de droit pénal général, vous connaissez la première moitié du problème. | Le bâtiment à trois étages ; « Droit pénal général » en petit |
 | 7 | Le Code pénal dit quels actes sont punissables, et avec quelles peines. Le vol, par exemple, est décrit dans le Code pénal. | Bloc « Code pénal » ; le mot « Quoi ? » |
 | 8 | Mais un article de loi ne suffit pas. Il faut encore établir les faits, désigner l'auteur, et le juger. C'est le rôle de la procédure pénale. | Deux colonnes « Code pénal : quoi ? » et « Procédure : comment ? » |
 | 9 | En Suisse, elle est réglée par un seul texte pour tout le pays : le Code de procédure pénale. C'est l'article premier de ce code. | Bloc « Art. 1 CPP » ; le livre « Code de procédure pénale » |
