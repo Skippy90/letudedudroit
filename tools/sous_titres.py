@@ -7,7 +7,7 @@ MOTS_MAX mots au plus ; l'instant de chaque morceau vient des mots reconnus dans
 (voice/<slug>/timings.json, champ « mots »). Sans instant par mot, la phrase est répartie
 à vitesse constante.
 
-Format ASS (lu par ffmpeg / libass) : police Inter, blanc cassé sur un bandeau bleu nuit
+Format ASS (lu par ffmpeg / libass) : police Inter, blanc cassé sur un bandeau noir
 semi-transparent, en bas de l'image, 54 px de haut sur 1080, à l'échelle des plus petits textes de la charte.
 """
 
@@ -28,7 +28,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Bas,Inter,54,&H00E6EFF2,&H00E6EFF2,&H402D1B0F,&H402D1B0F,0,0,0,0,100,100,0,0,3,8,0,2,80,80,18,1
+Style: Bas,Inter,54,&H00E6EFF2,&H00E6EFF2,&H400B0B0B,&H400B0B0B,0,0,0,0,100,100,0,0,3,8,0,2,80,80,18,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
