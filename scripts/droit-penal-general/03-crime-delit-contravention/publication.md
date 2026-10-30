@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Crime, délit ou contravention ? | Droit pénal suisse
 
-## Description (3331 caractères sur 5 000)
+## Description (3278 caractères sur 5 000)
 
 ```text
 Crime, délit ou contravention ? — expliqué simplement, à partir d'un cas concret.
@@ -42,15 +42,14 @@ C'est un délit. L'article 10, alinéa 3, du Code pénal range parmi les délits
 
 Chapitres :
 0:00 Le cas de départ
-0:38 La carte : trois catégories
-1:06 La règle : la peine prévue par la loi
-1:54 Les trois cas, un par un
-3:30 Pourquoi c'est important
-4:43 Le piège classique
-5:07 Conclusion et question
+0:42 La carte : trois catégories
+1:14 La règle : la peine prévue par la loi
+2:11 Les trois cas, un par un
+4:00 Pourquoi c'est important
+5:21 Le piège classique
+5:49 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/03-crime-delit-contravention
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```
