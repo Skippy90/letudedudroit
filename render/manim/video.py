@@ -149,6 +149,55 @@ class Schemas(Scene):
             textes += self.repere.libelles
         return sum(c.mots(t) for t in textes)
 
+    # ----- chevauchements -----
+    def elements_visibles(self):
+        """(nom, objet) de chaque élément affiché, hors décor (les décors sont en fond, au trait atténué)."""
+        el = [("titre", self.titre), ("sous-titre", self.sous_titre), ("article", self.article),
+              ("renvoi", self.renvoi), ("repère", getattr(self, "repere", None)),
+              ("livre", self.livre), ("pyramide", self.pyramide)]
+        if self.colonnes:
+            el += [(f"colonne {i}", m) for i, m in enumerate(self.colonnes.mots, 1)] + [("trait des colonnes", self.colonnes[1])]
+        for k, p in self.personnages.items():
+            el += [(k, p.silhouette), (f"nom de {k}", p.etiquette)]
+        el += [(f"parole de {k}", g) for k, g in self.paroles.items()]
+        el += [(f"bulle de {k}", g) for k, g in self.bulles.items()]
+        el += [(f"étiquette {k}", e) for k, e in self.etiquettes.items()]
+        el += [(f"picto {k}", e) for k, e in self.pictos.items()]
+        el += [(f"liste {i}", t) for i, t in enumerate(self.liste.elements, 1)] if self.liste else []
+        el += [(f"case {i}", l) for i, l in enumerate(self.cases.lignes, 1)] if self.cases else []
+        el += [(f"livre {i}", l) for i, l in enumerate(self.livres, 1)] if self.livres else []
+        el += [(f"frise {g[1].original_text}", g[1]) for g in self.frise_points]
+        el += [(f"mot barré {m.original_text}", m) for m in self.mots_barres]
+        if self.batiment:
+            el.append(("bâtiment", self.batiment))
+        return [(n, m) for n, m in el if m is not None and self.a_l_ecran(m) and m.get_family()[0].has_points()
+                or (m is not None and self.a_l_ecran(m) and len(m.get_family()) > 1)]
+
+    def voulu(self, na, nb):
+        """Contacts prévus par la charte : la bulle part de la tête, le nom s'inscrit sur le meuble."""
+        for k, p in self.personnages.items():
+            if {na, nb} in ({k, f"bulle de {k}"},) or ({na, nb} == {k, f"nom de {k}"} and getattr(p, "derriere_meuble", False)):
+                return True
+        return False
+
+    def chevauchements(self):
+        """Deux éléments à moins de 0,1 l'un de l'autre, ou un élément dans la bande des sous-titres."""
+        def boite(m):
+            return m.get_left()[0], m.get_right()[0], m.get_bottom()[1], m.get_top()[1]
+        el = self.elements_visibles()
+        alertes = []
+        for i, (na, a) in enumerate(el):
+            g, d, b, h = boite(a)
+            if b < -3.3:
+                alertes.append(f"{na} dans la bande des sous-titres")
+            for nb, bb in el[i + 1:]:
+                if a in bb.get_family() or bb in a.get_family() or self.voulu(na, nb):
+                    continue
+                g2, d2, b2, h2 = boite(bb)
+                if g < d2 + 0.1 and g2 < d + 0.1 and b < h2 + 0.1 and b2 < h + 0.1:
+                    alertes.append(f"{na} touche {nb}")
+        return alertes
+
     # ----- rendu -----
     def construct(self):
         moments, duree_totale = lire_moments(SLUG)
@@ -174,6 +223,7 @@ class Schemas(Scene):
             total = self.mots_visibles()
             if total > 12:
                 self.alertes.append(f"{repere} : {total} mots affichés (maximum 12)")
+            self.alertes += [f"{repere} : {x}" for x in self.chevauchements()]
         self.attendre_jusqua(duree_totale)
         rapport = RACINE / "out" / (SLUG.replace("/", "--") + "--alertes-visuels.txt")
         rapport.parent.mkdir(exist_ok=True)
@@ -190,6 +240,13 @@ class Schemas(Scene):
     def scene_vide(self):
         repere = getattr(self, "repere", None)
         garder = [m for m in (self.article, repere) if m is not None]
+        # Une silhouette derrière un meuble part d'abord, tant que le meuble la masque encore.
+        caches = [p.silhouette for p in self.personnages.values() if getattr(p, "derriere_meuble", False)]
+        if caches:
+            self.jouer(*[FadeOut(m) for m in caches], duree=0.2)
+            for p in self.personnages.values():
+                if getattr(p, "derriere_meuble", False):
+                    p.remove(p.silhouette)
         a_retirer = [m for m in self.mobjects if m not in garder]
         if a_retirer:
             self.jouer(*[FadeOut(m) for m in a_retirer], duree=0.3)
@@ -270,7 +327,8 @@ class Schemas(Scene):
         return [Create(trait), cible.animate.set_opacity(0.55)]
 
     def a_renvoi(self, contenu):
-        nouveau = c.texte(contenu, c.T_PETIT, c.GRIS).to_corner(DOWN + RIGHT, buff=0.4)
+        # En bas à droite, à hauteur du bloc d'article : au-dessus de la bande des sous-titres.
+        nouveau = c.texte(contenu, c.T_PETIT, c.GRIS).to_corner(DOWN + RIGHT, buff=0.4).set_y(c.Y_ARTICLE)
         nouveau.original_text = contenu
         anims = [FadeOut(self.renvoi)] if self.renvoi is not None else []
         self.renvoi = nouveau
@@ -340,7 +398,11 @@ class Schemas(Scene):
     def a_livres(self, *titres):
         self.livres = [c.Livre(t, x=-4.2 + 4.2 * i, largeur=1.8, hauteur=2.4, etiquette_dessous=True)
                        for i, t in enumerate(titres)]
-        self.focus = VGroup(*self.livres)
+        groupe = VGroup(*self.livres)
+        repere = getattr(self, "repere", None)
+        if repere is not None and groupe.get_right()[0] > repere.get_left()[0] - 0.2 and groupe.get_top()[1] > repere.get_bottom()[1] - 0.2:
+            groupe.shift(LEFT * (groupe.get_right()[0] - repere.get_left()[0] + 0.3))
+        self.focus = groupe
         return [FadeIn(l, shift=UP * 0.2) for l in self.livres]
 
     def a_livres_surligner(self, n):
@@ -416,6 +478,7 @@ class Schemas(Scene):
         meuble = self.decor.meuble_devant(p.silhouette.get_x()) if hasattr(self.decor, "meuble_devant") else None
         if meuble is not None:
             p.etiquette.move_to(meuble).set_z_index(2)
+            p.derriere_meuble = True
         return []
 
     def a_marcher(self, ident, n):
@@ -428,6 +491,7 @@ class Schemas(Scene):
             return [p.animate(run_time=1.2).shift(decalage)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
+        p.derriere_meuble = True
         return [p.silhouette.animate(run_time=1.2).shift(decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
 
     def a_pousser(self, ident, cible):
