@@ -1,6 +1,6 @@
 {
  "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 345.065,
+ "duree": 350.359,
  "lignes": [
   {
    "ligne": 1,
@@ -44,829 +44,834 @@
   {
    "ligne": 3,
    "debut": 12.974,
-   "fin": 19.151,
+   "fin": 18.269,
    "phrases": [
     {
-     "texte": "Noah tague un petit dessin sur le mur d'une boulangerie.",
+     "texte": "Noah tague tout le mur d'une boulangerie.",
      "debut": 12.974,
-     "fin": 15.993
+     "fin": 14.971
     },
     {
-     "texte": "Le nettoyage coûtera quelques dizaines de francs.",
-     "debut": 16.376,
-     "fin": 19.151
+     "texte": "Le nettoyage coûtera environ deux mille francs.",
+     "debut": 15.482,
+     "fin": 18.268
     }
    ]
   },
   {
    "ligne": 4,
-   "debut": 19.601,
-   "fin": 24.338,
+   "debut": 18.719,
+   "fin": 23.455,
    "phrases": [
     {
      "texte": "Yann se dispute avec un ami et lui donne une gifle.",
-     "debut": 19.601,
-     "fin": 22.376
+     "debut": 18.719,
+     "fin": 21.494
     },
     {
      "texte": "L'ami n'est pas blessé.",
-     "debut": 22.817,
-     "fin": 24.338
+     "debut": 21.935,
+     "fin": 23.456
     }
    ]
   },
   {
    "ligne": 5,
-   "debut": 24.788,
-   "fin": 34.726,
+   "debut": 23.905,
+   "fin": 33.844,
    "phrases": [
     {
      "texte": "Trois actes interdits.",
-     "debut": 24.788,
-     "fin": 26.007
+     "debut": 23.905,
+     "fin": 25.124
     },
     {
      "texte": "Mais ont-ils le même poids ?",
-     "debut": 26.518,
-     "fin": 27.841
+     "debut": 25.635,
+     "fin": 26.958
     },
     {
      "texte": "Lequel est un crime ?",
-     "debut": 27.992,
-     "fin": 29.014
+     "debut": 27.109,
+     "fin": 28.131
     },
     {
      "texte": "Lequel est un délit ?",
-     "debut": 29.188,
-     "fin": 30.256
+     "debut": 28.305,
+     "fin": 29.373
     },
     {
      "texte": "Lequel est une contravention ?",
-     "debut": 30.43,
-     "fin": 31.94
+     "debut": 29.547,
+     "fin": 31.057
     },
     {
      "texte": "Votre intuition vous trompe peut-être.",
-     "debut": 32.543,
-     "fin": 34.726
+     "debut": 31.66,
+     "fin": 33.843
     }
    ]
   },
   {
    "ligne": 6,
-   "debut": 35.176,
-   "fin": 41.074,
+   "debut": 34.294,
+   "fin": 40.191,
    "phrases": [
     {
      "texte": "Dans la vidéo un, on a vu ce qu'est une infraction.",
-     "debut": 35.176,
-     "fin": 38.044
+     "debut": 34.294,
+     "fin": 37.162
     },
     {
      "texte": "Un acte typique, illicite et coupable.",
-     "debut": 38.369,
-     "fin": 41.074
+     "debut": 37.487,
+     "fin": 40.192
     }
    ]
   },
   {
    "ligne": 7,
-   "debut": 41.524,
-   "fin": 46.911,
+   "debut": 40.641,
+   "fin": 46.028,
    "phrases": [
     {
      "texte": "Mais toutes les infractions ne se valent pas.",
-     "debut": 41.524,
-     "fin": 43.579
+     "debut": 40.641,
+     "fin": 42.696
     },
     {
      "texte": "Le Code pénal les range en trois catégories.",
-     "debut": 44.09,
-     "fin": 46.911
+     "debut": 43.207,
+     "fin": 46.028
     }
    ]
   },
   {
    "ligne": 8,
-   "debut": 47.361,
-   "fin": 53.119,
+   "debut": 46.478,
+   "fin": 52.237,
    "phrases": [
     {
      "texte": "Les crimes sont les plus graves.",
-     "debut": 47.361,
-     "fin": 48.859
+     "debut": 46.478,
+     "fin": 47.976
     },
     {
      "texte": "Viennent ensuite les délits.",
-     "debut": 49.242,
-     "fin": 50.577
+     "debut": 48.359,
+     "fin": 49.694
     },
     {
      "texte": "Les contraventions sont les moins graves.",
-     "debut": 51.088,
-     "fin": 53.12
+     "debut": 50.205,
+     "fin": 52.237
     }
    ]
   },
   {
    "ligne": 9,
-   "debut": 53.569,
-   "fin": 62.486,
+   "debut": 52.687,
+   "fin": 61.603,
    "phrases": [
     {
      "texte": "Ce classement ne dépend pas d'une impression.",
-     "debut": 53.569,
-     "fin": 55.949
+     "debut": 52.687,
+     "fin": 55.067
     },
     {
      "texte": "Il ne dépend pas non plus de la colère de la victime.",
-     "debut": 56.274,
-     "fin": 59.107
+     "debut": 55.392,
+     "fin": 58.225
     },
     {
      "texte": "Il obéit à une seule règle, écrite dans la loi.",
-     "debut": 59.316,
-     "fin": 62.485
+     "debut": 58.434,
+     "fin": 61.603
     }
    ]
   },
   {
    "ligne": 10,
-   "debut": 62.936,
-   "fin": 69.716,
+   "debut": 62.053,
+   "fin": 68.834,
    "phrases": [
     {
      "texte": "Cette règle se trouve à l'article dix du Code pénal.",
-     "debut": 62.936,
-     "fin": 66.14
+     "debut": 62.053,
+     "fin": 65.257
     },
     {
      "texte": "Le critère, c'est la peine dont l'infraction est passible.",
-     "debut": 66.419,
-     "fin": 69.716
+     "debut": 65.536,
+     "fin": 68.833
     }
    ]
   },
   {
    "ligne": 11,
-   "debut": 70.166,
-   "fin": 82.751,
+   "debut": 69.284,
+   "fin": 81.869,
    "phrases": [
     {
      "texte": "Autrement dit, on regarde la peine la plus lourde que la loi prévoit pour cette infraction.",
-     "debut": 70.166,
-     "fin": 75.367
+     "debut": 69.284,
+     "fin": 74.485
     },
     {
      "texte": "La méthode tient en deux gestes.",
-     "debut": 76.064,
-     "fin": 77.887
+     "debut": 75.182,
+     "fin": 77.005
     },
     {
      "texte": "On trouve l'article qui décrit l'acte.",
-     "debut": 78.061,
-     "fin": 80.243
+     "debut": 77.179,
+     "fin": 79.361
     },
     {
      "texte": "Puis on lit la peine qu'il prévoit.",
-     "debut": 80.754,
-     "fin": 82.751
+     "debut": 79.872,
+     "fin": 81.869
     }
    ]
   },
   {
    "ligne": 12,
-   "debut": 83.201,
-   "fin": 87.334,
+   "debut": 82.319,
+   "fin": 86.452,
    "phrases": [
     {
      "texte": "Un crime est passible d'une peine privative de liberté de plus de trois ans.",
-     "debut": 83.201,
-     "fin": 87.334
+     "debut": 82.319,
+     "fin": 86.452
     }
    ]
   },
   {
    "ligne": 13,
-   "debut": 87.784,
-   "fin": 94.332,
+   "debut": 86.902,
+   "fin": 93.45,
    "phrases": [
     {
      "texte": "Un délit est passible d'une peine privative de liberté de trois ans au plus, ou d'une peine pécuniaire.",
-     "debut": 87.784,
-     "fin": 94.332
+     "debut": 86.902,
+     "fin": 93.45
     }
    ]
   },
   {
    "ligne": 14,
-   "debut": 94.782,
-   "fin": 101.563,
+   "debut": 93.9,
+   "fin": 100.68,
    "phrases": [
     {
      "texte": "Et l'article cent trois ajoute la dernière catégorie.",
-     "debut": 94.782,
-     "fin": 97.743
+     "debut": 93.9,
+     "fin": 96.861
     },
     {
      "texte": "Une contravention est une infraction passible d'une amende.",
-     "debut": 98.346,
-     "fin": 101.562
+     "debut": 97.464,
+     "fin": 100.68
     }
    ]
   },
   {
    "ligne": 15,
-   "debut": 102.013,
-   "fin": 111.254,
+   "debut": 101.13,
+   "fin": 110.372,
    "phrases": [
     {
      "texte": "La peine privative de liberté, c'est l'enfermement.",
-     "debut": 102.013,
-     "fin": 104.869
+     "debut": 101.13,
+     "fin": 103.986
     },
     {
      "texte": "La peine pécuniaire se compte en jours-amende.",
-     "debut": 105.148,
-     "fin": 107.249
+     "debut": 104.265,
+     "fin": 106.366
     },
     {
      "texte": "L'amende est la plus légère.",
-     "debut": 107.423,
-     "fin": 108.816
+     "debut": 106.54,
+     "fin": 107.933
     },
     {
      "texte": "La vidéo onze les détaillera.",
-     "debut": 109.258,
-     "fin": 111.255
+     "debut": 108.375,
+     "fin": 110.372
     }
    ]
   },
   {
    "ligne": 16,
-   "debut": 111.704,
-   "fin": 119.088,
+   "debut": 110.822,
+   "fin": 118.206,
    "phrases": [
     {
      "texte": "Revenons à Inès.",
-     "debut": 111.704,
-     "fin": 112.61
+     "debut": 110.822,
+     "fin": 111.728
     },
     {
      "texte": "Prendre le téléphone d'autrui pour le garder, c'est un vol.",
-     "debut": 112.935,
-     "fin": 115.976
+     "debut": 112.053,
+     "fin": 115.094
     },
     {
      "texte": "C'est l'article cent trente-neuf du Code pénal.",
-     "debut": 116.302,
-     "fin": 119.088
+     "debut": 115.42,
+     "fin": 118.206
     }
    ]
   },
   {
    "ligne": 17,
-   "debut": 119.538,
-   "fin": 125.111,
+   "debut": 118.656,
+   "fin": 124.229,
    "phrases": [
     {
      "texte": "Le vol est puni d'une peine privative de liberté de cinq ans au plus, ou d'une peine pécuniaire.",
-     "debut": 119.538,
-     "fin": 125.111
+     "debut": 118.656,
+     "fin": 124.229
     }
    ]
   },
   {
    "ligne": 18,
-   "debut": 125.561,
-   "fin": 128.997,
+   "debut": 124.679,
+   "fin": 128.115,
    "phrases": [
     {
      "texte": "Cinq ans, c'est plus de trois ans.",
-     "debut": 125.561,
-     "fin": 127.035
+     "debut": 124.679,
+     "fin": 126.153
     },
     {
      "texte": "Le vol est donc un crime.",
-     "debut": 127.477,
-     "fin": 128.998
+     "debut": 126.595,
+     "fin": 128.116
     }
    ]
   },
   {
    "ligne": 19,
-   "debut": 129.447,
-   "fin": 139.85,
+   "debut": 128.565,
+   "fin": 138.968,
    "phrases": [
     {
      "texte": "Un détail compte pourtant : le téléphone est neuf.",
-     "debut": 129.447,
-     "fin": 132.28
+     "debut": 128.565,
+     "fin": 131.398
     },
     {
      "texte": "Si l'objet volé n'avait qu'une faible valeur, l'article cent soixante-douze ter prévoirait seulement une amende, sur plainte.",
-     "debut": 132.489,
-     "fin": 139.85
+     "debut": 131.607,
+     "fin": 138.968
     }
    ]
   },
   {
    "ligne": 20,
-   "debut": 140.3,
-   "fin": 146.755,
+   "debut": 139.418,
+   "fin": 145.873,
    "phrases": [
     {
      "texte": "Le même geste deviendrait alors une contravention.",
-     "debut": 140.3,
-     "fin": 142.947
+     "debut": 139.418,
+     "fin": 142.065
     },
     {
      "texte": "Encore une fois, c'est la peine prévue par la loi qui décide.",
-     "debut": 143.388,
-     "fin": 146.755
+     "debut": 142.506,
+     "fin": 145.873
     }
    ]
   },
   {
    "ligne": 21,
-   "debut": 147.205,
-   "fin": 153.614,
+   "debut": 146.323,
+   "fin": 152.732,
    "phrases": [
     {
      "texte": "Passons à Noah.",
-     "debut": 147.205,
-     "fin": 148.076
+     "debut": 146.323,
+     "fin": 147.194
     },
     {
      "texte": "Abîmer la chose d'autrui, c'est un dommage à la propriété.",
-     "debut": 148.517,
-     "fin": 151.536
+     "debut": 147.635,
+     "fin": 150.654
     },
     {
      "texte": "C'est l'article cent quarante-quatre.",
-     "debut": 151.686,
-     "fin": 153.614
+     "debut": 150.804,
+     "fin": 152.732
     }
    ]
   },
   {
    "ligne": 22,
-   "debut": 154.064,
-   "fin": 160.844,
+   "debut": 153.182,
+   "fin": 165.952,
    "phrases": [
     {
      "texte": "La peine prévue va jusqu'à trois ans de peine privative de liberté.",
-     "debut": 154.064,
-     "fin": 158.046
+     "debut": 153.182,
+     "fin": 157.199
     },
     {
      "texte": "Trois ans au plus : c'est un délit.",
-     "debut": 158.487,
-     "fin": 160.844
+     "debut": 157.443,
+     "fin": 159.544
+    },
+    {
+     "texte": "Un tout petit dommage, lui, relèverait de l'article cent soixante-douze ter : une simple amende.",
+     "debut": 159.985,
+     "fin": 165.953
     }
    ]
   },
   {
    "ligne": 23,
-   "debut": 161.294,
-   "fin": 168.074,
+   "debut": 166.402,
+   "fin": 173.183,
    "phrases": [
     {
      "texte": "Attention, si le dommage était considérable, la loi prévoirait jusqu'à cinq ans.",
-     "debut": 161.294,
-     "fin": 166.031
+     "debut": 166.402,
+     "fin": 171.139
     },
     {
      "texte": "Ce serait alors un crime.",
-     "debut": 166.542,
-     "fin": 168.074
+     "debut": 171.65,
+     "fin": 173.182
     }
    ]
   },
   {
    "ligne": 24,
-   "debut": 168.524,
-   "fin": 174.747,
+   "debut": 173.633,
+   "fin": 179.856,
    "phrases": [
     {
      "texte": "Reste Yann.",
-     "debut": 168.524,
-     "fin": 169.29
+     "debut": 173.633,
+     "fin": 174.399
     },
     {
      "texte": "Une gifle qui ne blesse pas, ce sont des voies de fait.",
-     "debut": 169.894,
-     "fin": 172.448
+     "debut": 175.003,
+     "fin": 177.557
     },
     {
      "texte": "C'est l'article cent vingt-six.",
-     "debut": 173.052,
-     "fin": 174.747
+     "debut": 178.161,
+     "fin": 179.856
     }
    ]
   },
   {
    "ligne": 25,
-   "debut": 175.197,
-   "fin": 189.687,
+   "debut": 180.306,
+   "fin": 194.981,
    "phrases": [
     {
      "texte": "Les voies de fait sont punies d'une amende.",
-     "debut": 175.197,
-     "fin": 178.436
+     "debut": 180.306,
+     "fin": 182.5
     },
     {
      "texte": "Aucune peine privative de liberté n'est prévue.",
-     "debut": 178.645,
-     "fin": 181.153
+     "debut": 183.104,
+     "fin": 185.635
     },
     {
      "texte": "C'est une contravention.",
-     "debut": 181.397,
-     "fin": 182.569
+     "debut": 185.809,
+     "fin": 186.982
     },
     {
-     "texte": "Notez aussi qu'elles ne sont poursuivies que si la victime porte plainte.",
-     "debut": 182.894,
-     "fin": 187.004
+     "texte": "Notez aussi qu'ici, elles ne sont poursuivies que si la victime porte plainte.",
+     "debut": 187.191,
+     "fin": 191.556
     },
     {
-     "texte": "C'est la même chose pour le tag de Noah.",
-     "debut": 187.446,
-     "fin": 189.686
+     "texte": "C'est aussi le cas pour le dommage causé par Noah.",
+     "debut": 191.997,
+     "fin": 194.981
     }
    ]
   },
   {
    "ligne": 26,
-   "debut": 190.137,
-   "fin": 201.05,
+   "debut": 195.431,
+   "fin": 206.344,
    "phrases": [
     {
      "texte": "Résultat : un crime, un délit et une contravention.",
-     "debut": 190.137,
-     "fin": 194.2
+     "debut": 195.431,
+     "fin": 199.494
     },
     {
      "texte": "Dans la même rue, le même soir.",
-     "debut": 194.584,
-     "fin": 196.395
+     "debut": 199.878,
+     "fin": 201.689
     },
     {
      "texte": "Trois gestes qui choquent, mais que la loi place à trois niveaux différents.",
-     "debut": 196.673,
-     "fin": 201.05
+     "debut": 201.967,
+     "fin": 206.344
     }
    ]
   },
   {
    "ligne": 27,
-   "debut": 201.5,
-   "fin": 206.655,
+   "debut": 206.794,
+   "fin": 211.949,
    "phrases": [
     {
      "texte": "Ce classement n'est pas qu'une étiquette.",
-     "debut": 201.5,
-     "fin": 203.776
+     "debut": 206.794,
+     "fin": 209.07
     },
     {
      "texte": "La loi traite chaque catégorie différemment.",
-     "debut": 204.101,
-     "fin": 206.655
+     "debut": 209.395,
+     "fin": 211.949
     }
    ]
   },
   {
    "ligne": 28,
-   "debut": 207.105,
-   "fin": 214.024,
+   "debut": 212.399,
+   "fin": 219.318,
    "phrases": [
     {
      "texte": "Premier exemple : la tentative.",
-     "debut": 207.105,
-     "fin": 209.23
+     "debut": 212.399,
+     "fin": 214.524
     },
     {
      "texte": "Imaginons que Yann ait seulement essayé de gifler son ami, sans le toucher.",
-     "debut": 209.613,
-     "fin": 214.025
+     "debut": 214.907,
+     "fin": 219.319
     }
    ]
   },
   {
    "ligne": 29,
-   "debut": 214.474,
-   "fin": 222.323,
+   "debut": 219.768,
+   "fin": 227.617,
    "phrases": [
     {
      "texte": "Pour une contravention, la tentative n'est punissable que si la loi le prévoit expressément.",
-     "debut": 214.474,
-     "fin": 220.279
+     "debut": 219.768,
+     "fin": 225.573
     },
     {
      "texte": "C'est l'article cent cinq.",
-     "debut": 220.72,
-     "fin": 222.322
+     "debut": 226.014,
+     "fin": 227.616
     }
    ]
   },
   {
    "ligne": 30,
-   "debut": 222.773,
-   "fin": 231.596,
+   "debut": 228.067,
+   "fin": 236.89,
    "phrases": [
     {
      "texte": "Rien de tel n'est prévu pour les voies de fait.",
-     "debut": 222.773,
-     "fin": 225.083
+     "debut": 228.067,
+     "fin": 230.377
     },
     {
      "texte": "Yann ne serait pas puni.",
-     "debut": 225.594,
-     "fin": 226.987
+     "debut": 230.888,
+     "fin": 232.281
     },
     {
      "texte": "Pour les crimes et les délits, c'est différent.",
-     "debut": 227.231,
-     "fin": 229.449
+     "debut": 232.525,
+     "fin": 234.743
     },
     {
      "texte": "La vidéo neuf y reviendra.",
-     "debut": 229.693,
-     "fin": 231.597
+     "debut": 234.987,
+     "fin": 236.891
     }
    ]
   },
   {
    "ligne": 31,
-   "debut": 232.046,
-   "fin": 241.381,
+   "debut": 237.34,
+   "fin": 246.675,
    "phrases": [
     {
      "texte": "Autre différence de l'article cent cinq : le sursis ne s'applique pas aux contraventions.",
-     "debut": 232.046,
-     "fin": 236.992
+     "debut": 237.34,
+     "fin": 242.286
     },
     {
      "texte": "Le sursis permet de ne pas exécuter la peine si l'auteur se tient tranquille.",
-     "debut": 237.433,
-     "fin": 241.38
+     "debut": 242.727,
+     "fin": 246.674
     }
    ]
   },
   {
    "ligne": 32,
-   "debut": 241.831,
-   "fin": 248.611,
+   "debut": 247.125,
+   "fin": 253.905,
    "phrases": [
     {
      "texte": "Et l'amende a un plafond.",
-     "debut": 241.831,
-     "fin": 243.224
+     "debut": 247.125,
+     "fin": 248.518
     },
     {
      "texte": "Sauf exception prévue par la loi, elle ne dépasse pas dix mille francs.",
-     "debut": 243.607,
-     "fin": 246.626
+     "debut": 248.901,
+     "fin": 251.92
     },
     {
      "texte": "C'est l'article cent six.",
-     "debut": 246.777,
-     "fin": 248.611
+     "debut": 252.071,
+     "fin": 253.905
     }
    ]
   },
   {
    "ligne": 33,
-   "debut": 249.061,
-   "fin": 255.702,
+   "debut": 254.355,
+   "fin": 260.996,
    "phrases": [
     {
      "texte": "Deuxième exemple : la prescription.",
-     "debut": 249.061,
-     "fin": 251.197
+     "debut": 254.355,
+     "fin": 256.491
     },
     {
      "texte": "C'est le délai après lequel on ne peut plus poursuivre l'auteur.",
-     "debut": 251.522,
-     "fin": 255.702
+     "debut": 256.816,
+     "fin": 260.996
     }
    ]
   },
   {
    "ligne": 34,
-   "debut": 256.152,
-   "fin": 260.656,
+   "debut": 261.446,
+   "fin": 265.951,
    "phrases": [
     {
      "texte": "Pour une contravention, ce délai est de trois ans.",
-     "debut": 256.152,
-     "fin": 258.753
+     "debut": 261.446,
+     "fin": 264.047
     },
     {
      "texte": "C'est l'article cent neuf.",
-     "debut": 259.136,
-     "fin": 260.657
+     "debut": 264.43,
+     "fin": 265.951
     }
    ]
   },
   {
    "ligne": 35,
-   "debut": 261.106,
-   "fin": 273.552,
+   "debut": 266.401,
+   "fin": 278.846,
    "phrases": [
     {
      "texte": "Pour le délit de Noah, il est de dix ans.",
-     "debut": 261.106,
-     "fin": 263.498
+     "debut": 266.401,
+     "fin": 268.793
     },
     {
      "texte": "Pour le vol d'Inès, il est de quinze ans.",
-     "debut": 263.939,
-     "fin": 265.994
+     "debut": 269.234,
+     "fin": 271.289
     },
     {
      "texte": "C'est l'article quatre-vingt-dix-sept.",
-     "debut": 266.435,
-     "fin": 268.594
+     "debut": 271.73,
+     "fin": 273.889
     },
     {
      "texte": "Plus l'infraction est grave, plus la justice garde longtemps le droit d'agir.",
-     "debut": 269.198,
-     "fin": 273.552
+     "debut": 274.493,
+     "fin": 278.847
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 274.002,
-   "fin": 280.086,
+   "debut": 279.296,
+   "fin": 285.38,
    "phrases": [
     {
      "texte": "Attention au piège classique.",
-     "debut": 274.002,
-     "fin": 275.372
+     "debut": 279.296,
+     "fin": 280.666
     },
     {
      "texte": "On croit souvent que la peine prononcée décide de la catégorie.",
-     "debut": 275.813,
-     "fin": 279.157
+     "debut": 281.107,
+     "fin": 284.451
     },
     {
      "texte": "C'est faux.",
-     "debut": 279.308,
-     "fin": 280.086
+     "debut": 284.602,
+     "fin": 285.38
     }
    ]
   },
   {
    "ligne": 37,
-   "debut": 280.536,
-   "fin": 285.923,
+   "debut": 285.83,
+   "fin": 291.217,
    "phrases": [
     {
      "texte": "Imaginons qu'Inès ne reçoive finalement qu'une peine pécuniaire.",
-     "debut": 280.536,
-     "fin": 283.961
+     "debut": 285.83,
+     "fin": 289.255
     },
     {
      "texte": "Son vol reste un crime.",
-     "debut": 284.402,
-     "fin": 285.923
+     "debut": 289.696,
+     "fin": 291.217
     }
    ]
   },
   {
    "ligne": 38,
-   "debut": 286.373,
-   "fin": 291.574,
+   "debut": 291.667,
+   "fin": 296.868,
    "phrases": [
     {
      "texte": "Ce qui compte, c'est la peine que la loi prévoit au maximum.",
-     "debut": 286.373,
-     "fin": 289.299
+     "debut": 291.667,
+     "fin": 294.593
     },
     {
      "texte": "Pas celle que le juge choisit.",
-     "debut": 289.74,
-     "fin": 291.574
+     "debut": 295.034,
+     "fin": 296.868
     }
    ]
   },
   {
    "ligne": 39,
-   "debut": 292.024,
-   "fin": 297.504,
+   "debut": 297.318,
+   "fin": 302.798,
    "phrases": [
     {
      "texte": "C'est tout le sens du mot « passible », à l'article dix.",
-     "debut": 292.024,
-     "fin": 295.194
+     "debut": 297.318,
+     "fin": 300.488
     },
     {
      "texte": "On regarde la peine possible.",
-     "debut": 295.89,
-     "fin": 297.504
+     "debut": 301.184,
+     "fin": 302.798
     }
    ]
   },
   {
    "ligne": 40,
-   "debut": 297.954,
-   "fin": 303.248,
+   "debut": 303.248,
+   "fin": 308.542,
    "phrases": [
     {
      "texte": "Retenons.",
-     "debut": 297.954,
-     "fin": 298.534
+     "debut": 303.248,
+     "fin": 303.828
     },
     {
      "texte": "Une peine privative de liberté de plus de trois ans est possible : c'est un crime.",
-     "debut": 298.918,
-     "fin": 303.248
+     "debut": 304.212,
+     "fin": 308.542
     }
    ]
   },
   {
    "ligne": 41,
-   "debut": 303.698,
-   "fin": 311.407,
+   "debut": 308.992,
+   "fin": 316.701,
    "phrases": [
     {
      "texte": "Trois ans au plus, ou une peine pécuniaire : c'est un délit.",
-     "debut": 303.698,
-     "fin": 307.843
+     "debut": 308.992,
+     "fin": 313.137
     },
     {
      "texte": "Une amende seulement : c'est une contravention.",
-     "debut": 308.354,
-     "fin": 311.407
+     "debut": 313.648,
+     "fin": 316.701
     }
    ]
   },
   {
    "ligne": 42,
-   "debut": 311.857,
-   "fin": 324.907,
+   "debut": 317.151,
+   "fin": 330.201,
    "phrases": [
     {
      "texte": "Et cette catégorie change des règles concrètes : la tentative, le sursis, la prescription.",
-     "debut": 311.857,
-     "fin": 317.65
+     "debut": 317.151,
+     "fin": 322.944
     },
     {
      "texte": "Face à une infraction, gardez le réflexe.",
-     "debut": 318.254,
-     "fin": 320.994
+     "debut": 323.548,
+     "fin": 326.288
     },
     {
      "texte": "Trouvez l'article, puis lisez la peine la plus lourde qu'il prévoit.",
-     "debut": 321.203,
-     "fin": 324.907
+     "debut": 326.497,
+     "fin": 330.201
     }
    ]
   },
   {
    "ligne": 43,
-   "debut": 325.357,
-   "fin": 336.549,
+   "debut": 330.651,
+   "fin": 341.843,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 325.357,
-     "fin": 326.46
+     "debut": 330.651,
+     "fin": 331.754
     },
     {
      "texte": "Une infraction n'est punie que d'une peine pécuniaire, sans peine privative de liberté.",
-     "debut": 326.901,
-     "fin": 331.592
+     "debut": 332.195,
+     "fin": 336.886
     },
     {
      "texte": "Crime, délit ou contravention ?",
-     "debut": 331.975,
-     "fin": 334.064
+     "debut": 337.269,
+     "fin": 339.358
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 334.448,
-     "fin": 336.549
+     "debut": 339.742,
+     "fin": 341.843
     }
    ]
   },
   {
    "ligne": 44,
-   "debut": 336.999,
-   "fin": 344.615,
+   "debut": 342.293,
+   "fin": 349.909,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 336.999,
-     "fin": 342.34
+     "debut": 342.293,
+     "fin": 347.634
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 342.781,
-     "fin": 344.615
+     "debut": 348.075,
+     "fin": 349.909
     }
    ]
   }

@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Avait-il le droit de se défendre ? | Droit pénal suisse
 
-## Description (2952 caractères sur 5 000)
+## Description (3126 caractères sur 5 000)
 
 ```text
 Avait-il le droit de se défendre ? — expliqué simplement, à partir d'un cas concret.
@@ -18,7 +18,7 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_16
 • Art. 17 CP : État de nécessité licite : danger imminent, impossible à détourner autrement, intérêts prépondérants
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_17
-• Art. 18 CP : Biens de valeur comparable : le juge atténue la peine ; si le sacrifice ne pouvait être raisonnablement exigé, l'auteur n'agit pas de manière coupable
+• Art. 18 CP : Biens de valeur comparable : l'acte n'est pas justifié ; le juge atténue la peine si l'on pouvait exiger de l'auteur qu'il renonce au bien menacé (al. 1) ; sinon, il n'est pas coupable (al. 2), ligne 29 corrigée après relecture ; si le sacrifice ne pouvait être raisonnablement exigé, l'auteur n'agit pas de manière coupable
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_18
 • Art. 14 CP : L'acte que la loi ordonne ou autorise est licite ; exemple d'une arrestation par un policier dans les règles
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_14
@@ -44,8 +44,8 @@ Chapitres :
 0:56 La légitime défense
 2:07 Les limites de la légitime défense
 3:16 L'état de nécessité
-4:23 Le piège classique
-5:10 Conclusion et question
+4:29 Le piège classique
+5:17 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/06-faits-justificatifs
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

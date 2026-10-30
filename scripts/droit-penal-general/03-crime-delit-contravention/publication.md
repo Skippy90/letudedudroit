@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Crime, délit ou contravention ? | Droit pénal suisse
 
-## Description (3132 caractères sur 5 000)
+## Description (3331 caractères sur 5 000)
 
 ```text
 Crime, délit ou contravention ? — expliqué simplement, à partir d'un cas concret.
@@ -20,11 +20,11 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_34
 • Art. 139 CP : Le vol est puni d'une peine privative de liberté de cinq ans au plus ou d'une peine pécuniaire ; c'est donc un crime
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139
-• Art. 172ter CP : Pour un objet de faible valeur, seulement une amende, sur plainte
+• Art. 172ter CP : Pour un objet de faible valeur, ou un tout petit dommage, seulement une amende, sur plainte
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_172_ter
 • Art. 144 CP : Le dommage à la propriété est puni de trois ans au plus (délit), sur plainte ; jusqu'à cinq ans si le dommage est considérable
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144
-• Art. 126 CP : Une gifle qui ne blesse pas : voies de fait, punies d'une amende, sur plainte
+• Art. 126 CP : Une gifle qui ne blesse pas : voies de fait, punies d'une amende ; « ici », sur plainte (lignes 24 et 25). L'al. 2 prévoit la poursuite d'office pour des actes répétés contre certaines personnes proches ; le script dit « ici » pour ne pas généraliser
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_126
 • Art. 105 CP : Pour une contravention, la tentative n'est punissable que si la loi le prévoit expressément ; le sursis ne s'applique pas
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_105
@@ -42,12 +42,12 @@ C'est un délit. L'article 10, alinéa 3, du Code pénal range parmi les délits
 
 Chapitres :
 0:00 Le cas de départ
-0:39 La carte : trois catégories
+0:38 La carte : trois catégories
 1:06 La règle : la peine prévue par la loi
-1:55 Les trois cas, un par un
-3:25 Pourquoi c'est important
-4:38 Le piège classique
-5:01 Conclusion et question
+1:54 Les trois cas, un par un
+3:30 Pourquoi c'est important
+4:43 Le piège classique
+5:07 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/03-crime-delit-contravention
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
