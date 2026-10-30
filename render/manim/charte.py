@@ -441,6 +441,28 @@ class Picto(VGroup):
             elements = [Vagues()]
         elif nom == "coche":
             elements = [Coche()]
+        elif nom == "feu":
+            # Feu de camp : flamme ambre sur deux bûches (le rouge reste réservé au dommage).
+            flamme = Polygon([0, 0.55, 0], [0.28, 0.05, 0], [0.12, -0.15, 0], [-0.12, -0.15, 0], [-0.28, 0.05, 0],
+                             color=ACCENT, fill_color=ACCENT, fill_opacity=0.85, stroke_width=0)
+            buches = VGroup(Line([-0.45, -0.3, 0], [0.45, -0.18, 0], color=TEXTE, stroke_width=6),
+                            Line([-0.45, -0.18, 0], [0.45, -0.3, 0], color=TEXTE, stroke_width=6))
+            elements = [flamme, buches]
+        elif nom == "bouteille":
+            corps = RoundedRectangle(corner_radius=0.08, width=0.3, height=0.55, color=ACCENT, stroke_width=4)
+            col = Rectangle(width=0.12, height=0.25, color=ACCENT, stroke_width=4).next_to(corps, UP, buff=0)
+            elements = [corps, col]
+        elif nom == "voiture":
+            caisse = RoundedRectangle(corner_radius=0.15, width=2.6, height=0.7, color=TEXTE, stroke_width=4)
+            toit = Polygon([-0.8, 0.35, 0], [0.7, 0.35, 0], [0.4, 0.95, 0], [-0.5, 0.95, 0],
+                           color=TEXTE, stroke_width=4)
+            roues = VGroup(Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([-0.8, -0.38, 0]),
+                           Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([0.8, -0.38, 0]))
+            elements = [caisse, toit, roues]
+        elif nom == "ballon":
+            balle = Circle(radius=0.2, color=TEXTE, fill_color=TEXTE, fill_opacity=1, stroke_width=0)
+            couture = Arc(radius=0.2, start_angle=-0.9, angle=1.8, color=FOND, stroke_width=3).shift(LEFT * 0.12)
+            elements = [balle, couture]
         else:
             raise ValueError(f"picto inconnu « {nom} »")
         super().__init__(*elements)
@@ -497,9 +519,9 @@ class Appartement(VGroup):
 
 
 class Rue(VGroup):
-    """Une rue le soir : trottoir, façades, la boulangerie et sa vitrine, un réverbère."""
+    """Une rue le soir : trottoir, façades, un commerce (boulangerie par défaut) et sa vitrine, un réverbère."""
 
-    def __init__(self):
+    def __init__(self, enseigne="Boulangerie"):
         sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
         facades = VGroup(
             Rectangle(width=3.0, height=3.4, **DECOR).move_to([-5.4, Y_SOL + 1.7, 0]),
@@ -507,7 +529,7 @@ class Rue(VGroup):
         self.mur = Rectangle(width=3.8, height=3.6, **DECOR).move_to([0.6, Y_SOL + 1.8, 0])
         vitrine = Rectangle(width=1.6, height=1.3, **DECOR).move_to([1.5, Y_SOL + 0.75, 0])
         store = Line([0.5, Y_SOL + 1.6, 0], [2.5, Y_SOL + 1.6, 0], **DECOR)
-        enseigne = texte("Boulangerie", T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
+        enseigne = texte(enseigne, T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
@@ -600,3 +622,69 @@ class RepereListe(VGroup):
         couleur = ETATS[etat]
         return [boite.animate.set_fill(couleur, opacity=1).set_stroke(couleur),
                 mot.animate.set_color(ACCENT if etat == "ambre" else GRIS if etat == "gris" else TEXTE)]
+
+
+class Parc(VGroup):
+    """Un parc : pelouse, un arbre, un poteau, une haie à droite.
+
+    La haie est au premier plan (z_index 1, comme les meubles du tribunal) : une silhouette placée
+    derrière (placer … 3) n'en dépasse que par le haut et son nom s'inscrit sur la haie."""
+
+    X_HAIE = 5.4
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        tronc = Line([-1.8, Y_SOL, 0], [-1.8, Y_SOL + 1.6, 0], **DECOR)
+        feuillage = Circle(radius=1.0, **DECOR).move_to([-1.8, Y_SOL + 2.4, 0])
+        self.poteau = Line([0.6, Y_SOL, 0], [0.6, Y_SOL + 2.3, 0], color=TEXTE, stroke_width=4, stroke_opacity=0.5)
+        bosses = VGroup(*[Arc(radius=0.3, start_angle=0, angle=3.1416, **DECOR).move_to(
+            [self.X_HAIE - 1.2 + 0.6 * k + 0.3, Y_SOL + 1.05, 0]) for k in range(4)])
+        corps = Rectangle(width=2.4, height=0.95, color=TEXTE, stroke_width=3, stroke_opacity=0.35,
+                          fill_color=FOND, fill_opacity=1).move_to([self.X_HAIE, Y_SOL + 0.475, 0])
+        self.haie = VGroup(corps, bosses)
+        self.meubles = [self.haie]
+        super().__init__(sol, tronc, feuillage, self.poteau, self.haie)
+        self.haie.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière la haie."""
+        if n == 3:
+            return [self.X_HAIE, Y_SOL, 0]
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        return self.haie if abs(self.haie.get_x() - x) < self.haie.width / 2 else None
+
+
+class Piscine(VGroup):
+    """Une piscine : la chaise haute de la surveillante à gauche, le bassin à droite.
+
+    Le bord du bassin est au premier plan (z_index 1) : une silhouette placée dans l'eau (placer … 2 à 4)
+    n'en dépasse que par la tête, et son nom s'inscrit sur le bord."""
+
+    X_BASSIN, L_BASSIN = 4.0, 5.6
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        pieds = VGroup(Line([-5.4, Y_SOL, 0], [-5.0, Y_SOL + 2.0, 0], **DECOR),
+                       Line([-4.2, Y_SOL, 0], [-4.6, Y_SOL + 2.0, 0], **DECOR))
+        siege = Line([-5.2, Y_SOL + 2.0, 0], [-4.4, Y_SOL + 2.0, 0], color=TEXTE, stroke_width=4, stroke_opacity=0.5)
+        dossier = Line([-5.2, Y_SOL + 2.0, 0], [-5.2, Y_SOL + 2.7, 0], **DECOR)
+        bord = Rectangle(width=self.L_BASSIN, height=1.0, color=TEXTE, stroke_width=3, stroke_opacity=0.45,
+                         fill_color=FOND, fill_opacity=1).move_to([self.X_BASSIN, Y_SOL + 0.5, 0])
+        from manim import VMobject
+        eau = VMobject(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
+        x0 = self.X_BASSIN - self.L_BASSIN / 2
+        eau.set_points_smoothly([[x0 + 0.35 * i, Y_SOL + 1.0 + 0.06 * (-1) ** i, 0]
+                                 for i in range(int(self.L_BASSIN / 0.35) + 1)])
+        self.bassin = VGroup(bord, eau)
+        self.meubles = [self.bassin]
+        super().__init__(sol, pieds, siege, dossier, self.bassin)
+        self.bassin.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; de 2 à 4, dans l'eau."""
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        return self.bassin if abs(self.bassin.get_x() - x) < self.bassin.width / 2 else None

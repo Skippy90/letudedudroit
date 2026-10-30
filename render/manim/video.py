@@ -163,6 +163,7 @@ class Schemas(Scene):
         el += [(f"bulle de {k}", g) for k, g in self.bulles.items()]
         el += [(f"étiquette {k}", e) for k, e in self.etiquettes.items()]
         el += [(f"picto {k}", e) for k, e in self.pictos.items()]
+        el += [("bouclier", self.bouclier)] if self.bouclier is not None else []
         el += [(f"liste {i}", t) for i, t in enumerate(self.liste.elements, 1)] if self.liste else []
         el += [(f"case {i}", l) for i, l in enumerate(self.cases.lignes, 1)] if self.cases else []
         el += [(f"livre {i}", l) for i, l in enumerate(self.livres, 1)] if self.livres else []
@@ -175,6 +176,10 @@ class Schemas(Scene):
 
     def voulu(self, na, nb):
         """Contacts prévus par la charte : la bulle part de la tête, le nom s'inscrit sur le meuble."""
+        # Le ballon part du pied d'une silhouette, ou la touche.
+        objet = next((n for n in ("picto ballon", "picto bouteille") if n in (na, nb)), None)
+        if objet and ({na, nb} - {objet}) & set(self.personnages):
+            return True
         for k, p in self.personnages.items():
             if {na, nb} in ({k, f"bulle de {k}"},) or ({na, nb} == {k, f"nom de {k}"} and getattr(p, "derriere_meuble", False)):
                 return True
@@ -268,6 +273,7 @@ class Schemas(Scene):
             nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
             if nouveau.width > self.largeur_titres():
                 nouveau.scale_to_fit_width(self.largeur_titres())
+            nouveau.set_x(self.x_titres(nouveau.width))
             nouveau.original_text = contenu
             groupes, i = [], 0
             for mot in contenu.split():
@@ -281,36 +287,54 @@ class Schemas(Scene):
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
         if nouveau.width > self.largeur_titres():
             nouveau.scale_to_fit_width(self.largeur_titres())
+        nouveau.set_x(self.x_titres(nouveau.width))
         nouveau.original_text = contenu
+        # L'ancien titre part d'abord : jamais deux titres superposés pendant le fondu.
+        if anims:
+            self.jouer(*anims, duree=0.25)
         self.titre = nouveau
         self.focus = nouveau
-        anims.append(FadeIn(nouveau, shift=DOWN * 0.2))
-        return anims
+        return [FadeIn(nouveau, shift=DOWN * 0.2)]
 
     def largeur_titres(self):
-        """Largeur maximale d'un titre centré : dans le cadre, et à gauche du repère permanent s'il est là."""
+        """Largeur maximale d'un titre : dans le cadre, et à gauche du repère permanent s'il est là."""
         repere = getattr(self, "repere", None)
         if repere is None:
             return 13.0
-        return min(13.0, 2 * (repere.get_left()[0] - 0.25))
+        return min(13.0, repere.get_left()[0] - 0.3 + 6.9)
+
+    def x_titres(self, largeur):
+        """Abscisse du centre d'un titre : au milieu de l'écran, ou décalé à gauche juste assez pour laisser le repère libre."""
+        repere = getattr(self, "repere", None)
+        if repere is None:
+            return 0.0
+        return min(0.0, repere.get_left()[0] - 0.3 - largeur / 2)
 
     def a_sous_titre(self, contenu):
         nouveau = c.texte(contenu, c.T_SOUS_TITRE).move_to([0, c.Y_SOUS_TITRE, 0])
         if nouveau.width > self.largeur_titres():
             nouveau.scale_to_fit_width(self.largeur_titres())
+        # Centré sous le titre s'il y en a un, sans jamais empiéter sur le repère.
+        x = self.titre.get_x() if self.titre is not None else 0.0
+        nouveau.set_x(min(x, self.x_titres(nouveau.width)) if getattr(self, "repere", None) is not None else x)
         nouveau.original_text = contenu
         anims = [FadeOut(self.sous_titre)] if self.sous_titre is not None else []
         anims += self.retirer_traits(self.sous_titre)
+        if anims:
+            self.jouer(*anims, duree=0.25)
         self.sous_titre = nouveau
         self.focus = nouveau
-        return anims + [FadeIn(nouveau, shift=DOWN * 0.15)]
+        return [FadeIn(nouveau, shift=DOWN * 0.15)]
 
     def a_effacer_titres(self):
         # Le trait d'un titre barré part avec le titre.
         anims = [FadeOut(m) for m in [self.titre, self.sous_titre] if m is not None]
         anims += self.retirer_traits(self.titre) + self.retirer_traits(self.sous_titre)
         self.titre = self.sous_titre = None
-        return anims
+        # Joué tout de suite : un titre qui suit dans le même moment ne se superpose pas au fondu.
+        if anims:
+            self.jouer(*anims, duree=0.25)
+        return []
 
     def retirer_traits(self, cible):
         """Le trait qui barre un titre part avec ce titre."""
@@ -424,11 +448,11 @@ class Schemas(Scene):
         return anims + [FadeIn(p, shift=UP * 0.2)]
 
     # ----- actions : décors, mouvements, repère -----
-    def a_decor(self, nom):
-        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "tribunal": c.Tribunal}
+    def a_decor(self, nom, *options):
+        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "tribunal": c.Tribunal, "parc": c.Parc, "piscine": c.Piscine}
         if nom not in decors:
             raise ValueError(f"décor inconnu « {nom} »")
-        self.decor = decors[nom]()
+        self.decor = decors[nom](*options)
         return [FadeIn(self.decor)]
 
     def a_decor_retirer(self):
@@ -446,16 +470,24 @@ class Schemas(Scene):
         self.focus = p
         return [FadeIn(p, scale=0.6)]
 
+    def a_picto_deplacer(self, nom, x, y, arc="0"):
+        """Déplace un pictogramme (le ballon qui part) ; arc > 0 : trajectoire en cloche."""
+        p = self.pictos[nom]
+        self.focus = p
+        return [p.animate(path_arc=-float(arc)).move_to([float(x), float(y), 0])]
+
     def a_picto_retirer(self, nom):
         return [FadeOut(self.pictos.pop(nom))]
 
     def a_etiquette(self, ident, contenu, x, y):
         e = c.Etiquette(contenu, [float(x), float(y), 0])
         e.contenu = contenu
-        anims = [FadeOut(self.etiquettes[ident])] if ident in self.etiquettes else []
+        # L'ancienne étiquette part d'abord : jamais deux textes superposés pendant le fondu.
+        if ident in self.etiquettes:
+            self.jouer(FadeOut(self.etiquettes[ident]), duree=0.25)
         self.etiquettes[ident] = e
         self.focus = e
-        return anims + [FadeIn(e, shift=UP * 0.15)]
+        return [FadeIn(e, shift=UP * 0.15)]
 
     def a_etiquette_retirer(self, ident):
         return [FadeOut(self.etiquettes.pop(ident))]
@@ -570,10 +602,11 @@ class Schemas(Scene):
     def a_bulle(self, ident, contenu):
         b = c.Bulle(self.personnages[ident], contenu)
         b.contenu = contenu
-        anims = [FadeOut(self.bulles[ident])] if ident in self.bulles else []
+        if ident in self.bulles:
+            self.jouer(FadeOut(self.bulles[ident]), duree=0.25)
         self.bulles[ident] = b
         self.focus = b
-        return anims + [FadeIn(b, scale=0.8)]
+        return [FadeIn(b, scale=0.8)]
 
     def a_jetons(self, de, vers):
         depart = self.personnages[de].silhouette.get_center()
@@ -632,9 +665,12 @@ class Schemas(Scene):
         self.focus = q
         return anims + [FadeIn(q, shift=LEFT * 0.2)]
 
-    def a_bouclier(self):
-        # À droite du bâtiment, à hauteur de l'illicéité ; sinon au centre de l'écran.
-        centre = self.batiment.etages[1][0].get_right() + RIGHT * 1.4 if self.batiment else [0, 0.6, 0]
+    def a_bouclier(self, x=None, y=None):
+        # Au point donné ; sinon à droite du bâtiment, à hauteur de l'illicéité, ou au centre de l'écran.
+        if x is not None:
+            centre = [float(x), float(y), 0]
+        else:
+            centre = self.batiment.etages[1][0].get_right() + RIGHT * 1.4 if self.batiment else [0, 0.6, 0]
         self.bouclier = c.Bouclier(centre)
         self.focus = self.bouclier
         return [FadeIn(self.bouclier, scale=0.6)]
@@ -703,11 +739,20 @@ class Schemas(Scene):
         self.focus = self.liste.elements[int(n) - 1]
         return anims
 
+    def sous_le_repere(self, groupe):
+        """Descend un groupe (des cases) qui toucherait le repère permanent."""
+        repere = getattr(self, "repere", None)
+        if repere is not None and groupe.get_right()[0] > repere.get_left()[0] - 0.15:
+            ecart = groupe.get_top()[1] - (repere.get_bottom()[1] - 0.25)
+            if ecart > 0:
+                groupe.shift(DOWN * ecart)
+
     def a_cases(self, *libelles):
         self.cases = c.Cases()
         for l in libelles:
             ligne = self.cases.nouvelle_case(l)
             ligne[1].original_text = l
+        self.sous_le_repere(self.cases)
         self.focus = self.cases
         return [FadeIn(self.cases, shift=UP * 0.2)]
 
@@ -717,6 +762,11 @@ class Schemas(Scene):
             self.add(self.cases)
         ligne = self.cases.nouvelle_case(libelle)
         ligne[1].original_text = libelle
+        # Alignée sous les cases déjà là (elles ont pu descendre sous le repère).
+        if len(self.cases.lignes) > 1:
+            ligne.set_y(self.cases.lignes[-2].get_y() - 0.95)
+        else:
+            self.sous_le_repere(ligne)
         self.focus = ligne
         return [FadeIn(ligne, shift=RIGHT * 0.2)]
 

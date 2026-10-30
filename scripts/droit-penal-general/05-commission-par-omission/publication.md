@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Coupable de n'avoir rien fait | Droit pénal suisse
 
-## Description (2787 caractères sur 5 000)
+## Description (2734 caractères sur 5 000)
 
 ```text
 Coupable de n'avoir rien fait — expliqué simplement, à partir d'un cas concret.
@@ -38,14 +38,13 @@ Oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre o
 
 Chapitres :
 0:00 Le cas de départ
-0:40 La carte : agir et ne pas agir
-1:14 La position de garant
-2:44 Clara et Maël
-3:57 Le piège classique
-4:50 Conclusion et question
+0:44 La carte : agir et ne pas agir
+1:22 La position de garant
+3:08 Clara et Maël
+4:36 Le piège classique
+5:31 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/05-commission-par-omission
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Avait-il le droit de se défendre ? | Droit pénal suisse
 
-## Description (3126 caractères sur 5 000)
+## Description (3073 caractères sur 5 000)
 
 ```text
 Avait-il le droit de se défendre ? — expliqué simplement, à partir d'un cas concret.
@@ -40,15 +40,14 @@ Non. La légitime défense suppose une attaque en cours ou « une attaque immine
 
 Chapitres :
 0:00 Le cas de départ
-0:29 La carte : retour au bâtiment
-0:56 La légitime défense
-2:07 Les limites de la légitime défense
-3:16 L'état de nécessité
-4:29 Le piège classique
-5:17 Conclusion et question
+0:35 La carte : retour au bâtiment
+1:07 La légitime défense
+2:26 Les limites de la légitime défense
+3:44 L'état de nécessité
+5:03 Le piège classique
+5:55 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/06-faits-justificatifs
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

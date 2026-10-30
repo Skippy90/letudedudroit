@@ -55,7 +55,7 @@ def main(slug: str, seconde: float, sortie: str | None = None) -> None:
         page.write_text(f"""<!doctype html><meta charset="utf-8"><style>
 body{{margin:0;width:1280px;height:720px;background:{fond};overflow:hidden;font-family:Inter,sans-serif;position:relative}}
 .scene{{position:absolute;left:250px;top:250px;width:1030px;height:470px;background:url(data:image/png;base64,{scene}) center 62%/1030px auto no-repeat}}
-.titre{{position:absolute;left:56px;top:34px;width:1100px;color:#F2EFE6;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-2px}}
+.titre{{position:absolute;left:56px;top:34px;width:1100px;color:#F2EFE6;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-2px;text-wrap:balance}}
 .titre b{{color:#E3A52F;font-weight:800}}
 .sous{{position:absolute;left:60px;color:#F2EFE6;opacity:.75;font-weight:600;font-size:32px}}
 .symbole{{position:absolute;left:44px;bottom:36px;width:120px;height:120px}}

@@ -46,18 +46,19 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `batiment vide` + `etage-nom N` | Bâtiment sans noms, puis chaque nom écrit à son tour |
 | `etage-question N` | Point d'interrogation à droite de l'étage N |
 | `question-etage N "…"` | Question écrite à droite de l'étage N (une seule à la fois ; le bâtiment se décale à gauche) |
-| `bouclier` / `bouclier-repousser` | Fait justificatif : bouclier à droite du bâtiment, qui repousse une flèche |
+| `bouclier` [`X Y`] / `bouclier-repousser` | Fait justificatif : bouclier à droite du bâtiment (ou au point X Y, à côté du personnage dont l'acte est justifié), qui repousse une flèche |
 | `fleche N` | Flèche qui monte jusqu'à l'étage N |
 | `liste "…" …` / `liste-ajouter "…"` / `liste-surligner N` | Liste à gauche |
 | `cases "…" …` / `case "…"` | Cases à cocher (toutes d'un coup, ou une par une) |
 | `cocher N vert\|gris\|question` | Condition remplie, manquante, ou en question |
 | `colonnes "A" "B"` / `colonne-accent N` / `colonne-eteindre N` | Deux notions opposées |
 | `pyramide` / `pyramide-niveau N COULEUR` / `retirer-pyramide` | Les autorités |
-| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) ; `decor tribunal` : salle d'audience, barre des témoins (`placer … -1`) et banc du juge sur l'estrade (`placer … 3`) ; une silhouette derrière un meuble n'en dépasse que par le haut et son nom s'inscrit sur le meuble |
+| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) ; `decor rue Bar` : même rue avec une autre enseigne ; `decor parc` : arbre, poteau, haie au premier plan (`placer … 3` : derrière la haie) ; `decor piscine` : chaise haute de la surveillante, bassin au premier plan (`placer … 2` à `4` : dans l'eau) ; `decor tribunal` : salle d'audience, barre des témoins (`placer … -1`) et banc du juge sur l'estrade (`placer … 3`) ; une silhouette derrière un meuble n'en dépasse que par le haut et son nom s'inscrit sur le meuble |
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert) |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage) |
+| `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
 | `repere-liste "…" "…"` / `repere-marquer N COULEUR` / `repere-retirer` | Pense-bête permanent en haut à droite : une case et un mot par élément (une liste à l'écran s'y range) ; `ambre` pour l'élément en cours, `gris` s'il manque, `vert` s'il est rempli, `neutre` pour effacer ; les titres se réduisent pour rester à sa gauche |

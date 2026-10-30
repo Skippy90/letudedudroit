@@ -6,118 +6,139 @@ Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Pl
 
 Personnages : Yasmine turquoise, Kevin rose, Hugo bleu clair, Nadia violet.
 
-Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : pas de bouteille, de couteau, de voiture ni de vitre dessinés ; ils sont nommés par le texte.
+Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, enseigne « Bar »), la bouteille de Kevin et la voiture du bébé sont des pictogrammes au trait, le fait justificatif est le bouclier de la charte, et le petit bâtiment en haut à droite suit l'étage en jeu (ambre : en examen ; vert : franchi ; gris : l'étage tombe).
+
+Écart assumé : le couteau n'est pas dessiné (ligne 19), il est nommé par une étiquette.
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | titre "Un bar, à Bienne" |
-| 1.2 | personnage yasmine "Yasmine" turquoise gauche ; personnage kevin "Kevin" rose droite ; deplacer kevin centre-droite |
-| 2.1 | bulle kevin "La frapper" |
-| 2.2 | effacer-titres ; titre "Une bouteille en verre" |
-| 2.3 | sous-titre "Une seconde pour réagir" |
-| 2.4 | effacer-bulle kevin ; deplacer yasmine centre-gauche |
-| 2.5 | basculer kevin ; dommage kevin |
-| 3.1 | scene-vide ; titre "Une blessure" |
-| 3.2 | sous-titre "Lésions corporelles" |
-| 3.3 | effacer-titres ; titre "Punie pour s'être défendue ?" |
+| 1.1 | decor rue Bar ; etiquette lieu "Bienne, vendredi soir" -3.6 1.7 |
+| 1.2@kevin | personnage kevin "Kevin" rose droite ; placer kevin 3 |
+| 1.2@yasmine | personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -1 |
+| 1.2@avance | marcher kevin 1 |
+| 1.2@bouteille | etiquette-retirer lieu ; picto bouteille 2.3 -0.9 |
+| 2.1@lève | picto-deplacer bouteille 2.0 0.3 |
+| 2.2@verre | etiquette danger "Peut blesser gravement" 1.6 1.7 |
+| 2.3@seconde | etiquette-retirer danger ; etiquette sec "Une seconde" -1.6 1.7 |
+| 2.4@repousse | pousser yasmine kevin |
+| 2.5@tombe | etiquette-retirer sec ; chute kevin 2 ; picto-deplacer bouteille 4.4 -2.0 |
+| 2.5@bras | dommage kevin |
+| 3.1 | titre "Yasmine a blessé Kevin" |
+| 3.2@lésions | sous-titre "Lésions corporelles" |
+| 3.3@punie | effacer-titres ; titre "Punie pour s'être défendue ?" ambre |
 | 4.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
-| 4.2 | accent batiment |
-| 5.1 | etage 1 vert |
-| 5.2 | titre "Typicité : franchie" |
-| 6.1 | etage 2 ambre ; titre "Était-ce permis ?" |
-| 6.2 | bouclier |
-| 7.1 | scene-vide ; titre "Les faits justificatifs" |
-| 7.2 | sous-titre "Un acte rendu licite" |
-| 7.3 | colonnes "Légitime défense" "État de nécessité" |
-| 8.1 | scene-vide ; article "Art. 15 CP" ; batiment ; bouclier |
-| 8.2 | bouclier-repousser |
-| 9.1 | scene-vide ; titre "Trois conditions" |
-| 9.2 | case "Attaque, menace imminente" |
-| 10.1 | case "Contraire au droit" |
-| 10.2 | case "Moyens proportionnés" |
-| 11.1 | effacer-titres ; titre "Pour Yasmine" |
-| 11.2 | cocher 1 vert |
-| 11.3 | cocher 2 vert |
-| 11.4 | cocher 3 vert |
-| 12.1 | scene-vide ; batiment ; etage 1 vert ; bouclier |
-| 12.2 | etage 2 gris ; titre "Infraction" ; barrer |
-| 12.3 | sous-titre "Yasmine n'est pas punie" |
-| 13.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; titre "Les tiers aussi" |
-| 13.2 | personnage hugo "Hugo" bleu_clair centre-gauche |
-| 13.3 | sous-titre "Hugo pouvait la défendre" |
-| 14.1 | scene-vide ; titre "Les biens aussi" |
-| 14.2 | personnage hugo "Hugo" bleu_clair gauche ; personnage kevin "Kevin" rose droite ; jetons hugo kevin |
-| 14.3 | sous-titre "Tant qu'on se dispute l'objet" |
-| 15.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; bulle yasmine "Il m'attaque ?" |
-| 15.2 | titre "Légitime défense putative" |
-| 15.3 | renvoi "vidéo 7" |
-| 16.1 | scene-vide ; rembobiner ; frise |
-| 16.2 | point 0.25 "La menace" |
-| 16.3 | point 0.75 "Le lendemain" |
-| 17.1 | titre "Plus de légitime défense" |
-| 17.2 | zone 0.3 1 gris |
-| 17.3 | effacer-titres ; titre "Se venger n'est pas se défendre" |
+| 5.1@premier | fleche 1 ; etage 1 vert |
+| 5.2@voulu | titre "Premier étage : franchi" |
+| 6.1@deuxième | etage 2 ambre ; repere-batiment ; repere-etage 1 vert ; repere-etage 2 ambre |
+| 6.2@permis | titre "Permis malgré tout ?" |
+| 7.1 | scene-vide ; titre "Les faits justificatifs" ; bouclier |
+| 7.2@licite | sous-titre "Ils rendent l'acte licite" |
+| 7.3@deux | sous-titre "Aujourd'hui : deux" |
+| 8.1@quinze | article "Art. 15 CP" ; titre "La légitime défense" |
+| 8.2@repousser | sous-titre "Repousser une attaque illicite" |
+| 9.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; titre "Trois conditions" |
+| 9.2@attaque | effacer-titres ; case "Attaque, même imminente" |
+| 10.1@contraire | case "Contraire au droit" |
+| 10.2@proportionnés | case "Défense proportionnée" |
+| 11.1@tout | accent yasmine |
+| 11.2@bouteille | cocher 1 vert |
+| 11.3@autorisait | cocher 2 vert |
+| 11.4@mesuré | cocher 3 vert |
+| 12.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; bouclier -2.6 0.6 ; titre "Justifié" ambre |
+| 12.2@illicéité | repere-etage 2 gris ; sous-titre "L'illicéité tombe" |
+| 12.3@punie | sous-titre "Yasmine n'est pas punie" |
+| 13.1 | scene-vide ; article-retirer ; decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -1 ; personnage kevin "Kevin" rose droite ; placer kevin 1 ; picto bouteille 2.3 -0.9 |
+| 13.2@tiers | personnage hugo "Hugo" bleu_clair gauche ; placer hugo -4 ; etiquette tiers "Un tiers aussi" -4.0 1.7 |
+| 13.3@hugo | marcher hugo -3 |
+| 13.3@défendre | accent hugo |
+| 14.1 | scene-vide ; titre "Pas que le corps" |
+| 14.2@biens | sous-titre "Aussi ses biens" |
+| 14.3@voleur | effacer-titres ; titre "Contre un voleur, sur le moment" |
+| 15.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche |
+| 15.1@cru | bulle yasmine "Attaquée ?" |
+| 15.2@putative | effacer-bulle yasmine ; titre "Légitime défense putative" |
+| 15.3@erreur | sous-titre "Une question d'erreur" ; renvoi "vidéo 7" |
+| 16.1 | scene-vide ; rembobiner |
+| 16.2 | decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 1 |
+| 16.2+1.5 | picto tension -0.8 0.6 |
+| 16.2@rentre | picto-retirer tension ; marcher kevin 4 |
+| 16.3@lendemain | etiquette lendemain "Le lendemain" -3.2 1.7 |
+| 16.3@frapper | marcher yasmine 2 |
+| 17.1@légitime | titre "Plus de légitime défense" |
+| 17.2@terminée | etiquette lendemain "Attaque terminée" -3.2 1.7 |
+| 17.3@venger | effacer-titres ; titre "Se venger n'est pas se défendre" ambre |
 | 18.1 | scene-vide ; titre "Une affaire dramatique" |
-| 18.2 | sous-titre "Un mari violent, endormi" |
-| 18.3 | effacer-titres ; titre "Pas d'attaque imminente" ambre |
-| 19.1 | scene-vide ; rembobiner ; titre "Autre variante" |
-| 19.2 | sous-titre "Un couteau" |
-| 20.1 | article "Art. 15 CP" ; effacer-titres ; titre "Une grande retenue" |
-| 20.2 | sous-titre "Le dernier moyen" |
-| 20.3 | effacer-titres ; titre "Plusieurs agresseurs ?" |
-| 21.1 | scene-vide ; article "Art. 16 CP" ; titre "L'excès" |
-| 21.2 | sous-titre "Peine atténuée" |
-| 22.1 | effacer-titres ; titre "Excitation, saisissement" |
-| 22.2 | sous-titre "Pas coupable" |
-| 23.1 | scene-vide ; batiment ; etage 1 vert |
-| 23.2 | etage 2 vert |
-| 23.3 | etage 3 gris |
-| 24.1 | scene-vide ; article-retirer ; titre "L'état de nécessité" |
-| 24.2 | sous-titre "Pas d'agresseur" |
-| 24.3 | effacer-titres ; titre "Seulement un danger" |
-| 25.1 | scene-vide ; personnage hugo "Hugo" bleu_clair gauche ; titre "Un bébé dans une voiture" |
-| 25.2 | sous-titre "Personne ne répond" |
-| 25.3 | effacer-titres ; titre "Il brise la vitre" |
-| 26.1 | article "Art. 144 CP" ; sous-titre "Un dommage à la propriété" |
-| 26.2 | scene-vide ; article "Art. 17 CP" ; titre "Rendu licite" |
-| 27.1 | effacer-titres ; case "Danger imminent" |
-| 27.2 | titre "Actuel et concret" |
-| 27.3 | case "Pas d'autre moyen" |
-| 27.4 | case "Intérêts prépondérants" |
-| 28.1 | scene-vide ; colonnes "La vie" "Une vitre" ; colonne-accent 1 ; colonne-eteindre 2 |
-| 28.2 | titre "Justifié" |
-| 29.1 | scene-vide ; colonnes "Un bien" "Un bien égal" |
-| 29.2 | titre "Pas justifié" |
-| 29.3 | article "Art. 18 CP" ; sous-titre "Peine atténuée" |
-| 29.4 | sous-titre "Sinon : pas coupable" |
-| 30.1 | scene-vide ; titre "Sacrifice non exigible" |
-| 30.2 | sous-titre "Pas coupable" |
-| 30.3 | batiment ; etage 3 ambre |
-| 31.1 | scene-vide ; titre "D'autres faits justificatifs" |
-| 31.2 | article "Art. 14 CP" ; sous-titre "Ordonné ou autorisé par la loi" |
-| 31.3 | effacer-titres ; titre "Une arrestation régulière" |
+| 18.2@tué | picto lune -4.6 1.2 ; sous-titre "Un mari violent, tué dans son sommeil" |
+| 18.3@attaquait | effacer-titres ; titre "Aucune attaque à ce moment" |
+| 19.1 | scene-vide ; rembobiner |
+| 19.2 | decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -1 ; personnage kevin "Kevin" rose droite ; placer kevin 1 ; picto bouteille 2.3 -0.9 |
+| 19.2@couteau | etiquette couteau "Un couteau" -1.6 1.7 |
+| 19.2@reprises | etiquette couteau "Plusieurs coups" -1.6 1.7 ; dommage kevin |
+| 20.1@retenue | titre "Une grande retenue" |
+| 20.2@dernier | sous-titre "Le dernier moyen" |
+| 20.3@plusieurs | sous-titre "Admis face à plusieurs agresseurs" |
+| 21.1 | scene-vide ; batiment ; fleche 1 ; etage 1 vert |
+| 21.1@limites | titre "Trop loin : un excès" |
+| 21.2@seize | article "Art. 16 CP" ; sous-titre "Peine atténuée" |
+| 22.1@excitation | sous-titre "Excitation ou saisissement excusable" |
+| 22.2@coupable | etage 3 gris ; repere-etage 3 gris |
+| 23.1 | effacer-titres ; titre "Où sommes-nous ?" |
+| 23.2@licite | etage 2 vert ; repere-etage 2 vert ; sous-titre "Pas licite pour autant" |
+| 23.3@troisième | etage 3 ambre ; repere-etage 3 ambre ; sous-titre "Seulement la culpabilité" |
+| 24.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "L'état de nécessité" |
+| 24.2@agresseur | sous-titre "Pas d'agresseur" |
+| 24.3@danger | sous-titre "Seulement un danger" |
+| 25.1 | scene-vide ; decor parc ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -3 ; picto voiture 2.4 -1.7 ; etiquette lieu "Canicule" -2.6 2.45 |
+| 25.1@bébé | etiquette bebe "Un bébé enfermé" 2.4 0.4 |
+| 25.2@personne | accent hugo |
+| 25.3@brise | marcher hugo 0 |
+| 25.3@sortir | etiquette bebe "Vitre brisée, bébé sauvé" 2.4 0.4 |
+| 26.1@dommage | etiquette lieu "Dommage à la propriété" -2.6 2.45 |
+| 26.2@dix | scene-vide ; article "Art. 17 CP" |
+| 26.2@licite | titre "Licite, à trois conditions" |
+| 27.1 | scene-vide ; personnage hugo "Hugo" bleu_clair gauche ; case "Danger imminent" |
+| 27.2@actuel | sous-titre "Actuel et concret" |
+| 27.3@impossible | case "Pas d'autre issue" |
+| 27.4@prépondérants | case "Intérêt prépondérant" |
+| 28.1@vie | cocher 1 vert ; cocher 2 vert ; cocher 3 vert |
+| 28.2@justifié | bouclier -2.4 0.6 ; repere-etage 2 gris ; effacer-titres ; titre "Justifié" ambre |
+| 29.1 | scene-vide ; colonnes "Bien sauvé" "Bien sacrifié" ; titre "Valeur comparable" |
+| 29.2@justifié | repere-etage 2 vert ; sous-titre "Plus justifié" |
+| 29.3@dix | article "Art. 18 CP" ; sous-titre "Peine atténuée" |
+| 29.4@coupable | sous-titre "Sinon : pas coupable" |
+| 30.1@sacrifie | effacer-titres ; titre "Sacrifice non exigible" |
+| 30.2@coupable | repere-etage 3 gris ; sous-titre "Pas coupable" |
+| 30.3@troisième | sous-titre "Troisième étage" |
+| 31.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "D'autres faits justificatifs" |
+| 31.2@quatorze | article "Art. 14 CP" ; sous-titre "Ce que la loi ordonne ou autorise" |
+| 31.3@policier | effacer-titres ; personnage policier "Un policier" bleu_clair gauche ; etiquette regles "Dans les règles" 1.4 1.2 ; bouclier -2.0 0.5 |
 | 32.1 | scene-vide ; article-retirer ; titre "Le piège classique" |
-| 32.2 | sous-titre "Tout est permis" |
-| 32.3 | barrer |
-| 33.1 | scene-vide ; colonnes "Attaque" "Défense" |
-| 33.2 | titre "Gravité, biens, moyen" |
-| 33.3 | sous-titre "Vu par la victime, sur le moment" |
-| 34.1 | scene-vide ; frise ; point 0.5 "L'attaque" ; zone 0.4 0.6 vert |
-| 34.2 | repere 0.25 "Trop tôt" |
-| 34.3 | repere 0.8 "Trop tard" |
-| 34.4 | titre "Peut rester punissable" |
+| 32.2@agresseur | sous-titre "Face à un agresseur, tout est permis" |
+| 32.3@faux | barrer |
+| 33.1@proportionnée | effacer-titres ; titre "Rester proportionné" |
+| 33.2@gravité | liste-ajouter "Gravité de l'attaque" |
+| 33.2@biens | liste-ajouter "Biens en jeu" |
+| 33.2@moyen | liste-ajouter "Moyen utilisé" |
+| 33.3@situation | effacer-titres ; sous-titre "Vu par la victime" |
+| 34.1 | scene-vide ; frise ; zone 0.35 0.65 vert |
+| 34.1@pendant | repere 0.35 "Attaque" |
+| 34.2@tôt | point 0.15 "Trop tôt" |
+| 34.3@tard | point 0.85 "Trop tard" |
+| 34.4@punissable | titre "Peut rester punissable" |
 | 35.1 | scene-vide ; titre "Retenons" |
-| 35.2 | case "Attaque contraire au droit" ; case "Actuelle ou imminente" ; case "Moyens proportionnés" |
-| 35.3 | article "Art. 15 CP" |
-| 36.1 | scene-vide ; titre "Danger imminent, sans autre issue" ; sous-titre "Intérêt plus important" |
-| 36.2 | article "Art. 17 CP" |
-| 37.1 | scene-vide ; article-retirer ; batiment ; etage 2 ambre |
-| 37.2 | etage 2 neutre ; etage 3 ambre |
-| 37.3 | titre "Attaque, ou danger ?" |
-| 38.1 | scene-vide ; titre "Une question pour finir" |
-| 38.2 | effacer-titres ; personnage nadia "Nadia" violet gauche ; frise ; point 0.3 "La menace" |
-| 38.3 | point 0.7 "Elle frappe" |
-| 38.4 | titre "Légitime défense ?" |
-| 38.5 | sous-titre "Votre réponse en commentaire" |
-| 39.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Script et articles sur GitHub" |
+| 35.2@légitime | effacer-titres ; liste-ajouter "Attaque : légitime défense" |
+| 35.3@quinze | article "Art. 15 CP" |
+| 36.1@danger | liste-ajouter "Danger : état de nécessité" |
+| 36.2@dix | article "Art. 17 CP" |
+| 37.1@illicéité | repere-etage 2 gris ; sous-titre "Plus d'illicéité" |
+| 37.2@culpabilité | article "Art. 16 et 18 CP" ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Culpabilité seulement" |
+| 37.3@attaque | effacer-titres ; titre "Attaque ou danger ?" ambre |
+| 38.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "Une question pour finir" |
+| 38.2 | effacer-titres ; decor escalier ; personnage nadia "Nadia" violet gauche ; placer nadia 0 ; personnage voisin "Un voisin" ambre_pale droite ; placer voisin 4 |
+| 38.2@frappera | parole voisin "Je te frapperai un jour !" |
+| 38.3@lendemain | effacer-parole voisin ; etiquette lendemain "Le lendemain" -2.6 2.45 |
+| 38.3@frappe | marcher nadia 2 ; pousser nadia voisin |
+| 38.4@légitime | titre "Légitime défense ?" ambre |
+| 38.5@commentaire | accent nadia |
+| 39.1 | scene-vide ; repere-retirer ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 39.2 | accent titre |
