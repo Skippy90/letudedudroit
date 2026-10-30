@@ -65,7 +65,7 @@ Personnages : Max turquoise, Jade rose, Lina violet, Noé bleu clair, Paul ambre
 | 21.1 | scene-vide ; article-retirer ; titre "Un cas réel" |
 | 21.2 | sous-titre "Vingt mille francs offerts" |
 | 21.3 | effacer-titres ; titre "Contre un CD-ROM" |
-| 22.1 | sous-titre "Il refuse et prévient" |
+| 22.1 | sous-titre "Décidé, puis il se ravise" |
 | 22.2 | effacer-titres ; titre "Aucun vol" |
 | 22.3 | article "Art. 24 CP" ; sous-titre "Tentative d'instigation à vol" |
 | 23.1 | scene-vide ; article-retirer ; personnage noe "Noé" bleu_clair gauche ; titre "Le sac prêté" |

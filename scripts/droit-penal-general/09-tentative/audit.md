@@ -34,6 +34,6 @@ La colonne « Vérifié » n'est cochée que par la relectrice.
 
 ## Réponse à la question finale
 
-Art. 23 al. 1 : atténuation ou exemption pour la tentative ; la poubelle brûlée peut rester un dommage à la propriété consommé (art. 144, sur plainte). La réponse ne qualifie pas l'infraction tentée (incendie intentionnel de l'art. 221 ou simple dommage) : à préciser par la relectrice si nécessaire.
+Question refaite après relecture (l'ancien cas de la poubelle ne montrait aucune tentative distincte). Mia pose sa clé contre la portière pour rayer la voiture : dernier pas décisif, tentative de dommage à la propriété (art. 22 et 144, délit sur plainte). Elle renonce de sa propre initiative : art. 23 al. 1, le juge « peut » atténuer la peine ou exempter de toute peine ; ce n'est pas automatique. Un dommage déjà causé resterait consommé.
 
 Règles cantonales mentionnées : aucune (La Chaux-de-Fonds n'est que le décor du cas).
