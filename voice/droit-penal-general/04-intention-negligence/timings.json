@@ -1,6 +1,6 @@
 {
  "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 347.93,
+ "duree": 350.484,
  "lignes": [
   {
    "ligne": 1,
@@ -648,212 +648,217 @@
   {
    "ligne": 35,
    "debut": 242.02,
-   "fin": 249.636,
+   "fin": 252.19,
    "phrases": [
     {
      "texte": "Pour les blessures, la loi le prévoit.",
      "debut": 242.02,
-     "fin": 244.214
+     "fin": 244.249
     },
     {
-     "texte": "L'article cent vingt-cinq punit les lésions corporelles par négligence, sur plainte.",
-     "debut": 244.655,
-     "fin": 249.636
+     "texte": "L'article cent vingt-cinq punit les lésions corporelles par négligence.",
+     "debut": 244.69,
+     "fin": 248.8
+    },
+    {
+     "texte": "En principe sur plainte, et d'office si la lésion est grave.",
+     "debut": 248.974,
+     "fin": 252.19
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 250.086,
-   "fin": 261.649,
+   "debut": 252.64,
+   "fin": 264.204,
    "phrases": [
     {
      "texte": "Mais imaginons que le ballon de Léo casse la vitre d'une voiture, par négligence.",
-     "debut": 250.086,
-     "fin": 254.916
+     "debut": 252.64,
+     "fin": 257.47
     },
     {
      "texte": "Le dommage à la propriété de l'article cent quarante-quatre n'existe que dans sa version intentionnelle.",
-     "debut": 255.427,
-     "fin": 261.65
+     "debut": 257.981,
+     "fin": 264.204
     }
    ]
   },
   {
    "ligne": 37,
-   "debut": 262.099,
-   "fin": 270.923,
+   "debut": 264.654,
+   "fin": 273.477,
    "phrases": [
     {
      "texte": "Pas de dommage à la propriété par négligence dans le Code pénal.",
-     "debut": 262.099,
-     "fin": 265.303
+     "debut": 264.654,
+     "fin": 267.858
     },
     {
      "texte": "Léo n'aurait pas commis d'infraction.",
-     "debut": 265.686,
-     "fin": 267.509
+     "debut": 268.241,
+     "fin": 270.064
     },
     {
      "texte": "Le propriétaire pourrait seulement lui réclamer réparation.",
-     "debut": 267.834,
-     "fin": 270.923
+     "debut": 270.389,
+     "fin": 273.478
     }
    ]
   },
   {
    "ligne": 38,
-   "debut": 271.373,
-   "fin": 277.967,
+   "debut": 273.927,
+   "fin": 280.522,
    "phrases": [
     {
      "texte": "Dans la vidéo un, Marc bousculait Julien par inadvertance, sans le voir.",
-     "debut": 271.373,
-     "fin": 275.727
+     "debut": 273.927,
+     "fin": 278.281
     },
     {
      "texte": "Quel étage posait problème ?",
-     "debut": 276.238,
-     "fin": 277.967
+     "debut": 278.792,
+     "fin": 280.521
     }
    ]
   },
   {
    "ligne": 39,
-   "debut": 278.417,
-   "fin": 287.52,
+   "debut": 280.972,
+   "fin": 290.074,
    "phrases": [
     {
      "texte": "Le premier.",
-     "debut": 278.417,
-     "fin": 279.09
+     "debut": 280.972,
+     "fin": 281.645
     },
     {
      "texte": "Marc n'a pas agi intentionnellement, donc les lésions corporelles intentionnelles de l'article cent vingt-trois ne sont pas réalisées.",
-     "debut": 279.787,
-     "fin": 287.519
+     "debut": 282.342,
+     "fin": 290.074
     }
    ]
   },
   {
    "ligne": 40,
-   "debut": 287.97,
-   "fin": 296.004,
+   "debut": 290.524,
+   "fin": 298.558,
    "phrases": [
     {
      "texte": "Il reste la négligence de l'article cent vingt-cinq, à une condition : une imprévoyance coupable, et une plainte de Julien.",
-     "debut": 287.97,
-     "fin": 296.004
+     "debut": 290.524,
+     "fin": 298.558
     }
    ]
   },
   {
    "ligne": 41,
-   "debut": 296.454,
-   "fin": 306.113,
+   "debut": 299.008,
+   "fin": 308.667,
    "phrases": [
     {
      "texte": "Retenons l'échelle.",
-     "debut": 296.454,
-     "fin": 297.545
+     "debut": 299.008,
+     "fin": 300.099
     },
     {
      "texte": "Vouloir le résultat : intention.",
-     "debut": 298.056,
-     "fin": 300.506
+     "debut": 300.61,
+     "fin": 303.06
     },
     {
      "texte": "Le tenir pour possible et l'accepter : encore l'intention, par dol éventuel.",
-     "debut": 301.11,
-     "fin": 306.113
+     "debut": 303.664,
+     "fin": 308.667
     }
    ]
   },
   {
    "ligne": 42,
-   "debut": 306.563,
-   "fin": 315.665,
+   "debut": 309.117,
+   "fin": 318.22,
    "phrases": [
     {
      "texte": "Voir le risque mais compter qu'il ne se réalisera pas : négligence consciente.",
-     "debut": 306.563,
-     "fin": 311.311
+     "debut": 309.117,
+     "fin": 313.865
     },
     {
      "texte": "Ne pas voir un risque qu'on aurait dû voir : négligence.",
-     "debut": 312.008,
-     "fin": 315.665
+     "debut": 314.562,
+     "fin": 318.219
     }
    ]
   },
   {
    "ligne": 43,
-   "debut": 316.115,
-   "fin": 323.221,
+   "debut": 318.67,
+   "fin": 325.775,
    "phrases": [
     {
      "texte": "Et la négligence n'est punie que si la loi le dit.",
-     "debut": 316.115,
-     "fin": 318.774
+     "debut": 318.67,
+     "fin": 321.329
     },
     {
      "texte": "Quand rien n'est prévu, seul le geste intentionnel est une infraction.",
-     "debut": 319.157,
-     "fin": 323.22
+     "debut": 321.712,
+     "fin": 325.775
     }
    ]
   },
   {
    "ligne": 44,
-   "debut": 323.671,
-   "fin": 339.553,
+   "debut": 326.225,
+   "fin": 342.107,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 323.671,
-     "fin": 324.902
+     "debut": 326.225,
+     "fin": 327.456
     },
     {
      "texte": "Sofia roule bien trop vite dans une rue où jouent des enfants.",
-     "debut": 325.285,
-     "fin": 329.093
+     "debut": 327.839,
+     "fin": 331.647
     },
     {
      "texte": "Elle sait qu'elle pourrait en renverser un.",
-     "debut": 329.604,
-     "fin": 331.659
+     "debut": 332.158,
+     "fin": 334.213
     },
     {
      "texte": "Mais elle est certaine de pouvoir freiner à temps.",
-     "debut": 332.042,
-     "fin": 334.236
+     "debut": 334.596,
+     "fin": 336.79
     },
     {
      "texte": "Intention ou négligence ?",
-     "debut": 334.561,
-     "fin": 336.43
+     "debut": 337.115,
+     "fin": 338.984
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 337.127,
-     "fin": 339.553
+     "debut": 339.681,
+     "fin": 342.107
     }
    ]
   },
   {
    "ligne": 45,
-   "debut": 340.003,
-   "fin": 347.48,
+   "debut": 342.557,
+   "fin": 350.034,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 340.003,
-     "fin": 344.984
+     "debut": 342.557,
+     "fin": 347.538
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 345.425,
-     "fin": 347.48
+     "debut": 347.979,
+     "fin": 350.034
     }
    ]
   }

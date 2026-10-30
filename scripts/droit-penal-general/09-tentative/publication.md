@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Il a essayé, mais… | Droit pénal suisse
 
-## Description (2826 caractères sur 5 000)
+## Description (2956 caractères sur 5 000)
 
 ```text
 Il a essayé, mais… — expliqué simplement, à partir d'un cas concret.
@@ -30,7 +30,7 @@ Jurisprudence du Tribunal fédéral :
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F131-IV-100%3Afr
 
 Réponse à la question finale :
-Mia a, de sa propre initiative, contribué à empêcher la consommation de l'infraction qu'elle avait commencée. L'article 23, alinéa 1, du Code pénal permet au juge d'atténuer sa peine ou de l'exempter de toute peine pour cette tentative. Mais ce désistement ne vaut que pour ce qui a été empêché : la poubelle déjà brûlée peut rester un dommage à la propriété consommé (article 144), poursuivi sur plainte.
+Non, pas forcément. Mia a franchi le dernier pas décisif : la clé posée contre la portière mène directement au dommage. C'est une tentative de dommage à la propriété (articles 22 et 144 du Code pénal), un délit poursuivi sur plainte. Elle renonce ensuite de sa propre initiative : c'est un désistement au sens de l'article 23, alinéa 1. Le juge peut alors atténuer sa peine ou l'exempter de toute peine, mais ce n'est pas automatique. Si une rayure avait déjà été faite, le désistement ne l'effacerait pas : le dommage serait consommé.
 
 Chapitres :
 0:00 Le cas de départ
@@ -39,7 +39,7 @@ Chapitres :
 1:27 Le seuil de la tentative
 2:46 La tentative impossible
 3:31 Le désistement
-4:30 Le piège classique
+4:31 Le piège classique
 4:57 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/09-tentative
