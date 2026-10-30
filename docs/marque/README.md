@@ -9,7 +9,7 @@ Le symbole est le bâtiment à trois étages des vidéos, réduit à l'essentiel
 | `symbole.svg`, `png/symbole-1024.png` | Symbole seul, coins arrondis | 1024 × 1024 |
 | `profil.svg`, `png/profil-800.png` | Photo de profil YouTube (rognée en cercle) | 800 × 800 |
 | `png/profil-1080.png` | Photo de profil Instagram, TikTok | 1080 × 1080 |
-| `banniere-youtube.svg`, `png/banniere-youtube-2560x1440.png` | Bannière YouTube ; tout le texte tient dans la zone visible partout (1546 × 423 au centre) | 2560 × 1440 |
+| `banniere-youtube.svg`, `png/banniere-youtube-2560x1440.png` | Bannière YouTube : symbole, nom et signature ; tout tient dans la zone visible partout (1546 × 423 au centre) | 2560 × 1440 |
 | `logo-horizontal.svg`, `png/logo-horizontal-1600x512.png` | Symbole + nom + signature : documents, présentations, site | 1600 × 512 |
 | `png/filigrane-150.png` | Filigrane YouTube (Studio → Personnalisation → Branding) | 150 × 150 |
 
@@ -21,7 +21,6 @@ Ouverture et fin des vidéos : le symbole s'y construit (étages de bas en haut,
 
 - Nom : **L'étude du droit** (apostrophe typographique ’ dans les visuels). Handle sans accent ni apostrophe : `letudedudroit`.
 - Signature : **Le droit suisse, une notion à la fois.**
-- Ligne de présentation : Droit pénal · Procédure pénale · Sources vérifiées.
 
 ## Couleurs (celles de la charte visuelle)
 
