@@ -342,3 +342,113 @@ class Colonnes(VGroup):
 
 def barre(mobject):
     return Line(mobject.get_left() + LEFT * 0.15, mobject.get_right() + RIGHT * 0.15, color=TEXTE, stroke_width=6)
+
+
+# ----- Décors, pictogrammes et repère permanent -----
+# Les décors sont dessinés au trait fin, en blanc cassé très atténué : ils situent la scène
+# sans jamais concurrencer les silhouettes ni les schémas.
+DECOR = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
+Y_SOL = -2.3
+
+
+class Escalier(VGroup):
+    """Cage d'escalier : sol, marches qui montent vers la droite, rampe, porte, fenêtre de nuit."""
+
+    MARCHE_L, MARCHE_H, N_MARCHES, X0 = 0.8, 0.42, 7, 0.6
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [self.X0, Y_SOL, 0], **DECOR)
+        points, x, y = [[self.X0, Y_SOL, 0]], self.X0, Y_SOL
+        for _ in range(self.N_MARCHES):
+            y += self.MARCHE_H
+            points.append([x, y, 0])
+            x += self.MARCHE_L
+            points.append([x, y, 0])
+        marches = VGroup(*[Line(a, b, **DECOR) for a, b in zip(points, points[1:])])
+        rampe = Line([self.X0 + 0.3, Y_SOL + 1.3, 0], [x - 0.2, y + 1.3, 0], **DECOR)
+        montants = VGroup(*[Line([self.X0 + 0.3 + k * 1.5, Y_SOL + self.MARCHE_H * (1 + 2 * k) - 0.02, 0],
+                                 [self.X0 + 0.3 + k * 1.5, Y_SOL + 1.3 + k * 1.5 * self.MARCHE_H / self.MARCHE_L, 0],
+                                 **DECOR) for k in range(4)])
+        porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
+        poignee = Dot([-5.35, Y_SOL + 1.2, 0], radius=0.05, color=TEXTE, fill_opacity=0.35)
+        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.3, 0])
+        croisillon = VGroup(Line(self.fenetre.get_top(), self.fenetre.get_bottom(), **DECOR),
+                            Line(self.fenetre.get_left(), self.fenetre.get_right(), **DECOR))
+        super().__init__(sol, marches, rampe, montants, porte, poignee, self.fenetre, croisillon)
+
+    def pied(self, n):
+        """Point où se tient un personnage sur la marche n (0 = sol, au pied de l'escalier ;
+        -1, -2, -3 : de plus en plus loin dans le hall, -3 étant devant la porte)."""
+        if n <= 0:
+            return [self.X0 - 0.6 + 1.6 * n, Y_SOL, 0]
+        return [self.X0 + (n - 0.5) * self.MARCHE_L, Y_SOL + n * self.MARCHE_H, 0]
+
+
+class Neige(VGroup):
+    """Flocons qui tombent derrière la fenêtre (soir d'hiver)."""
+
+    def __init__(self, fenetre, n=14):
+        import random
+        alea = random.Random(7)
+        self.zone = fenetre
+        flocons = [Dot([alea.uniform(fenetre.get_left()[0] + 0.1, fenetre.get_right()[0] - 0.1),
+                        alea.uniform(fenetre.get_bottom()[1] + 0.1, fenetre.get_top()[1] - 0.1), 0],
+                       radius=0.035, color=TEXTE, fill_opacity=0.8) for _ in range(n)]
+        super().__init__(*flocons)
+
+        def tomber(groupe, dt):
+            bas, haut = self.zone.get_bottom()[1] + 0.06, self.zone.get_top()[1] - 0.06
+            for f in groupe:
+                f.shift(DOWN * 0.25 * dt)
+                if f.get_center()[1] < bas:
+                    f.shift(UP * (haut - bas))
+        self.add_updater(tomber)
+
+
+class Picto(VGroup):
+    """Pictogrammes au trait, dans les couleurs de la charte."""
+
+    def __init__(self, nom, position):
+        if nom == "parking":
+            cadre = RoundedRectangle(corner_radius=0.12, width=0.9, height=0.9, color=TEXTE, stroke_width=4)
+            lettre = texte("P", T_SOUS_TITRE, TEXTE, gras=True).move_to(cadre)
+            elements = [cadre, lettre]
+        elif nom == "tension":
+            # Ligne brisée entre deux personnes : l'hostilité.
+            pts = [[-1.2 + 0.3 * k, 0.18 * (-1) ** k, 0] for k in range(9)]
+            elements = [VGroup(*[Line(a, b, color=ACCENT, stroke_width=5) for a, b in zip(pts, pts[1:])])]
+        elif nom == "lune":
+            disque = Circle(radius=0.28, color=TEXTE, fill_color=TEXTE, fill_opacity=0.7, stroke_width=0)
+            ombre = Circle(radius=0.26, color=FOND, fill_color=FOND, fill_opacity=1, stroke_width=0).shift(RIGHT * 0.14 + UP * 0.08)
+            elements = [disque, ombre]
+        else:
+            raise ValueError(f"picto inconnu « {nom} »")
+        super().__init__(*elements)
+        self.move_to(position)
+
+
+class Etiquette(VGroup):
+    """Mot-clé court, en ambre, posé près de ce dont il parle (« Lausanne », « Un soir d'hiver »)."""
+
+    def __init__(self, contenu, position):
+        mot = texte(contenu, T_PETIT, ACCENT)
+        super().__init__(mot)
+        self.move_to(position)
+
+
+class MiniBatiment(VGroup):
+    """Le bâtiment à trois étages en petit, en haut à droite : où en est le raisonnement."""
+
+    def __init__(self):
+        etages = []
+        for i in range(3):
+            cadre = Rectangle(width=1.0, height=0.3, color=TEXTE, stroke_width=2, fill_color=SURFACE, fill_opacity=1)
+            cadre.move_to([0, i * 0.3, 0])
+            etages.append(cadre)
+        toit = Polygon([-0.6, 0.75, 0], [0.6, 0.75, 0], [0, 1.0, 0], color=TEXTE, stroke_width=2)
+        super().__init__(*etages, toit)
+        self.etages = etages
+        self.move_to([6.35, 2.7, 0])
+
+    def colorer(self, n, etat):
+        return self.etages[n - 1].animate.set_fill(ETATS[etat], opacity=0.9)
