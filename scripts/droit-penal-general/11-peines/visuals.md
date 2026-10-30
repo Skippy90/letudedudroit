@@ -94,6 +94,7 @@ Personnages : Inès rose (comme dans la vidéo 3), Hugo bleu clair.
 | 34.1 | scene-vide ; cases "Choisir" "Fixer" "Sursis ?" |
 | 34.2 | cocher 3 vert ; titre "Deux ans au plus" |
 | 34.3 | sous-titre "Pronostic favorable" |
+| 34.4 | sous-titre "Antécédents : exigences plus fortes" |
 | 35.1 | scene-vide ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; personnage hugo "Hugo" bleu_clair gauche ; titre "Deux ans" |
 | 35.3 | sous-titre "Sursis complet ?" |

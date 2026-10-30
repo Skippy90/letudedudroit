@@ -1,605 +1,611 @@
 {
- "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 318.639,
+ "voix": "Enregistrement humain",
+ "source": "humaine",
+ "duree": 347.709,
  "lignes": [
   {
    "ligne": 1,
-   "debut": 0.0,
-   "fin": 12.028,
+   "debut": 0.12,
+   "fin": 11.52,
    "phrases": [
     {
      "texte": "Marc rentre chez lui, un soir d'hiver, à Lausanne.",
-     "debut": 0.0,
-     "fin": 3.042
+     "debut": 0.12,
+     "fin": 2.6
     },
     {
      "texte": "Dans la cage d'escalier, il croise son voisin, Julien.",
-     "debut": 3.425,
-     "fin": 6.432
+     "debut": 3.54,
+     "fin": 6.52
     },
     {
      "texte": "Les deux hommes se détestent depuis des mois à cause d'une histoire de place de parc.",
-     "debut": 6.815,
-     "fin": 12.028
+     "debut": 7.66,
+     "fin": 11.52
     }
    ]
   },
   {
    "ligne": 2,
-   "debut": 12.478,
-   "fin": 18.329,
+   "debut": 12.6,
+   "fin": 21.5,
    "phrases": [
     {
      "texte": "Julien lance une remarque.",
-     "debut": 12.478,
-     "fin": 13.72
+     "debut": 12.6,
+     "fin": 13.68
     },
     {
      "texte": "Marc le pousse.",
-     "debut": 14.231,
-     "fin": 15.055
+     "debut": 14.2,
+     "fin": 14.86
     },
     {
      "texte": "Julien tombe dans les escaliers et se casse le poignet.",
-     "debut": 15.439,
-     "fin": 18.329
+     "debut": 15.64,
+     "fin": 18.02
+    },
+    {
+     "texte": "Une fracture simple, qui guérira sans séquelle.",
+     "debut": 18.9,
+     "fin": 21.5
     }
    ]
   },
   {
    "ligne": 3,
-   "debut": 18.779,
-   "fin": 31.875,
+   "debut": 22.94,
+   "fin": 35.16,
    "phrases": [
     {
      "texte": "Alors, Marc a-t-il commis une infraction ?",
-     "debut": 18.779,
-     "fin": 21.391
+     "debut": 22.94,
+     "fin": 25.0
     },
     {
      "texte": "Vous avez sans doute une réponse instinctive.",
-     "debut": 21.995,
-     "fin": 24.271
+     "debut": 26.04,
+     "fin": 28.02
     },
     {
      "texte": "Gardez-la en tête : à la fin de cette vidéo, vous saurez exactement comment un juge suisse raisonne pour y répondre.",
-     "debut": 24.712,
-     "fin": 31.875
+     "debut": 28.86,
+     "fin": 35.16
     }
    ]
   },
   {
    "ligne": 4,
-   "debut": 32.325,
-   "fin": 41.799,
+   "debut": 36.0,
+   "fin": 45.38,
    "phrases": [
     {
      "texte": "En droit pénal suisse, une infraction n'est pas une seule chose.",
-     "debut": 32.325,
-     "fin": 35.402
+     "debut": 36.0,
+     "fin": 39.18
     },
     {
      "texte": "C'est une construction à trois étages, et il faut franchir les trois pour arriver à une condamnation.",
-     "debut": 35.843,
-     "fin": 41.799
+     "debut": 39.86,
+     "fin": 45.38
     }
    ]
   },
   {
    "ligne": 5,
-   "debut": 42.249,
-   "fin": 53.209,
+   "debut": 46.78,
+   "fin": 58.3,
    "phrases": [
     {
      "texte": "Le premier étage s'appelle la typicité.",
-     "debut": 42.249,
-     "fin": 44.571
+     "debut": 46.78,
+     "fin": 48.94
     },
     {
      "texte": "Le deuxième, l'illicéité.",
-     "debut": 44.78,
-     "fin": 46.614
+     "debut": 49.9,
+     "fin": 51.56
     },
     {
      "texte": "Le troisième, la culpabilité.",
-     "debut": 46.939,
-     "fin": 48.948
+     "debut": 52.4,
+     "fin": 54.18
     },
     {
      "texte": "Retenez ces trois mots : toute cette playlist tourne autour d'eux.",
-     "debut": 49.459,
-     "fin": 53.209
+     "debut": 55.3,
+     "fin": 58.3
     }
    ]
   },
   {
    "ligne": 6,
-   "debut": 53.659,
-   "fin": 60.532,
+   "debut": 59.14,
+   "fin": 66.6,
    "phrases": [
     {
      "texte": "Et l'ordre compte.",
-     "debut": 53.659,
-     "fin": 54.634
+     "debut": 59.14,
+     "fin": 60.02
     },
     {
      "texte": "On commence toujours par le bas.",
-     "debut": 55.017,
-     "fin": 56.469
+     "debut": 60.74,
+     "fin": 62.08
     },
     {
      "texte": "Si un étage manque, on s'arrête là : pas d'infraction, pas de peine.",
-     "debut": 56.678,
-     "fin": 60.532
+     "debut": 62.94,
+     "fin": 66.6
     }
    ]
   },
   {
    "ligne": 7,
-   "debut": 60.982,
-   "fin": 71.152,
+   "debut": 67.44,
+   "fin": 76.6,
    "phrases": [
     {
      "texte": "Premier étage : la typicité.",
-     "debut": 60.982,
-     "fin": 63.536
+     "debut": 67.44,
+     "fin": 69.24
     },
     {
      "texte": "La question est simple : est-ce que ce que Marc a fait correspond à la description d'une infraction écrite dans la loi ?",
-     "debut": 64.233,
-     "fin": 71.152
+     "debut": 70.14,
+     "fin": 76.6
     }
    ]
   },
   {
    "ligne": 8,
-   "debut": 71.602,
-   "fin": 81.169,
+   "debut": 77.44,
+   "fin": 86.56,
    "phrases": [
     {
      "texte": "C'est une règle fondamentale du droit pénal suisse : on ne peut être puni que pour un acte que la loi réprime expressément.",
-     "debut": 71.602,
-     "fin": 78.347
+     "debut": 77.44,
+     "fin": 83.9
     },
     {
      "texte": "C'est l'article premier du Code pénal.",
-     "debut": 78.731,
-     "fin": 81.169
+     "debut": 84.78,
+     "fin": 86.56
     }
    ]
   },
   {
    "ligne": 9,
-   "debut": 81.619,
-   "fin": 95.505,
+   "debut": 87.96,
+   "fin": 99.56,
    "phrases": [
     {
      "texte": "Ouvrons le Code pénal.",
-     "debut": 81.619,
-     "fin": 82.919
+     "debut": 87.96,
+     "fin": 89.14
     },
     {
-     "texte": "L'article cent vingt-trois du Code pénal dit, en substance, que celui qui fait du mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples.",
-     "debut": 83.36,
-     "fin": 95.505
+     "texte": "L'article cent vingt-trois dit, en substance, que celui qui fait du mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples.",
+     "debut": 90.1,
+     "fin": 99.56
     }
    ]
   },
   {
    "ligne": 10,
-   "debut": 95.955,
-   "fin": 105.521,
+   "debut": 100.92,
+   "fin": 111.32,
    "phrases": [
     {
      "texte": "Un poignet cassé, c'est une atteinte au corps.",
-     "debut": 95.955,
-     "fin": 98.416
+     "debut": 100.92,
+     "fin": 103.46
     },
     {
      "texte": "Le comportement de Marc correspond à la description.",
-     "debut": 99.02,
-     "fin": 101.714
+     "debut": 104.26,
+     "fin": 107.18
     },
     {
      "texte": "On dit qu'il réalise les éléments objectifs de l'infraction.",
-     "debut": 102.155,
-     "fin": 105.522
+     "debut": 107.98,
+     "fin": 111.32
     }
    ]
   },
   {
    "ligne": 11,
-   "debut": 105.971,
-   "fin": 116.281,
+   "debut": 112.16,
+   "fin": 122.96,
    "phrases": [
     {
      "texte": "Mais la typicité a aussi un côté intérieur.",
-     "debut": 105.971,
-     "fin": 108.456
+     "debut": 112.16,
+     "fin": 115.16
     },
     {
      "texte": "L'article douze du Code pénal dit qu'en principe, on ne punit un crime ou un délit que s'il a été commis intentionnellement.",
-     "debut": 109.059,
-     "fin": 116.281
+     "debut": 115.92,
+     "fin": 122.96
     }
    ]
   },
   {
    "ligne": 12,
-   "debut": 116.731,
-   "fin": 133.263,
+   "debut": 124.22,
+   "fin": 139.9,
    "phrases": [
     {
      "texte": "Marc a-t-il voulu blesser Julien ?",
-     "debut": 116.731,
-     "fin": 118.774
+     "debut": 124.22,
+     "fin": 125.92
     },
     {
      "texte": "Il l'a poussé volontairement, dans un escalier.",
-     "debut": 119.099,
-     "fin": 121.758
+     "debut": 126.98,
+     "fin": 129.04
     },
     {
-     "texte": "Même s'il n'a pas précisément voulu le poignet cassé, il a accepté le risque qu'une chute fasse mal.",
-     "debut": 122.083,
-     "fin": 127.586
+     "texte": "Il savait qu'une chute pouvait blesser, et il a accepté ce risque.",
+     "debut": 129.74,
+     "fin": 133.14
     },
     {
      "texte": "En droit pénal, on appelle ça le dol éventuel.",
-     "debut": 127.76,
-     "fin": 131.104
+     "debut": 133.96,
+     "fin": 137.2
     },
     {
      "texte": "On y reviendra dans la vidéo quatre.",
-     "debut": 131.383,
-     "fin": 133.264
+     "debut": 138.14,
+     "fin": 139.9
     }
    ]
   },
   {
    "ligne": 13,
-   "debut": 133.713,
-   "fin": 137.196,
+   "debut": 141.34,
+   "fin": 144.94,
    "phrases": [
     {
      "texte": "Premier étage franchi : le comportement de Marc est typique.",
-     "debut": 133.713,
-     "fin": 137.196
+     "debut": 141.34,
+     "fin": 144.94
     }
    ]
   },
   {
    "ligne": 14,
-   "debut": 137.646,
-   "fin": 146.052,
+   "debut": 145.88,
+   "fin": 154.04,
    "phrases": [
     {
      "texte": "Deuxième étage : l'illicéité.",
-     "debut": 137.646,
-     "fin": 139.945
+     "debut": 145.88,
+     "fin": 147.64
     },
     {
      "texte": "La question change : ce comportement, qui correspond à la loi, était-il malgré tout permis ?",
-     "debut": 140.456,
-     "fin": 146.052
+     "debut": 148.6,
+     "fin": 154.04
     }
    ]
   },
   {
    "ligne": 15,
-   "debut": 146.502,
-   "fin": 156.998,
+   "debut": 155.3,
+   "fin": 167.48,
    "phrases": [
     {
      "texte": "Ça paraît étrange : comment un acte décrit par le Code pénal pourrait-il être permis ?",
-     "debut": 146.502,
-     "fin": 151.053
+     "debut": 155.3,
+     "fin": 160.36
     },
     {
      "texte": "Parce que la loi prévoit des situations où il l'est.",
-     "debut": 151.436,
-     "fin": 153.921
+     "debut": 161.26,
+     "fin": 164.5
     },
     {
      "texte": "On les appelle les faits justificatifs.",
-     "debut": 154.13,
-     "fin": 156.997
+     "debut": 165.3,
+     "fin": 167.48
     }
    ]
   },
   {
    "ligne": 16,
-   "debut": 157.448,
-   "fin": 166.503,
+   "debut": 168.84,
+   "fin": 179.02,
    "phrases": [
     {
      "texte": "Le plus connu est la légitime défense, à l'article quinze du Code pénal.",
-     "debut": 157.448,
-     "fin": 161.964
+     "debut": 168.84,
+     "fin": 173.12
     },
     {
      "texte": "Si quelqu'un vous attaque sans droit, vous pouvez repousser l'attaque de manière proportionnée.",
-     "debut": 162.138,
-     "fin": 166.504
+     "debut": 174.06,
+     "fin": 179.02
     }
    ]
   },
   {
    "ligne": 17,
-   "debut": 166.953,
-   "fin": 176.148,
+   "debut": 180.42,
+   "fin": 191.4,
    "phrases": [
     {
      "texte": "Changeons une seule chose dans notre histoire.",
-     "debut": 166.953,
-     "fin": 169.321
+     "debut": 180.42,
+     "fin": 182.64
     },
     {
      "texte": "Imaginons que Julien ait levé le poing pour frapper Marc, et que Marc l'ait poussé pour éviter le coup.",
-     "debut": 169.832,
-     "fin": 176.148
+     "debut": 183.68,
+     "fin": 191.4
     }
    ]
   },
   {
    "ligne": 18,
-   "debut": 176.598,
-   "fin": 188.719,
+   "debut": 192.09,
+   "fin": 204.77,
    "phrases": [
     {
      "texte": "Le poignet est toujours cassé.",
-     "debut": 176.598,
-     "fin": 178.281
+     "debut": 192.09,
+     "fin": 193.21
     },
     {
      "texte": "Le premier étage est toujours franchi.",
-     "debut": 178.723,
-     "fin": 180.638
+     "debut": 193.97,
+     "fin": 195.79
     },
     {
      "texte": "Mais la poussée devient une défense contre une attaque.",
-     "debut": 181.079,
-     "fin": 183.75
+     "debut": 196.83,
+     "fin": 199.21
     },
     {
      "texte": "Elle est justifiée.",
-     "debut": 183.924,
-     "fin": 184.992
+     "debut": 199.73,
+     "fin": 200.75
     },
     {
      "texte": "L'illicéité tombe, et avec elle l'infraction.",
-     "debut": 185.503,
-     "fin": 188.719
+     "debut": 201.59,
+     "fin": 204.77
     }
    ]
   },
   {
    "ligne": 19,
-   "debut": 189.169,
-   "fin": 202.776,
+   "debut": 205.61,
+   "fin": 220.19,
    "phrases": [
     {
      "texte": "Dans notre version de départ, Julien a seulement parlé.",
-     "debut": 189.169,
-     "fin": 192.141
+     "debut": 205.61,
+     "fin": 208.79
     },
     {
      "texte": "Une remarque n'est pas une attaque qu'on repousse avec les mains.",
-     "debut": 192.524,
-     "fin": 195.311
+     "debut": 209.65,
+     "fin": 212.77
     },
     {
      "texte": "Pas de légitime défense.",
-     "debut": 195.914,
-     "fin": 197.331
+     "debut": 213.61,
+     "fin": 214.87
     },
     {
      "texte": "Deuxième étage franchi : le comportement de Marc est illicite.",
-     "debut": 198.027,
-     "fin": 202.776
+     "debut": 216.01,
+     "fin": 220.19
     }
    ]
   },
   {
    "ligne": 20,
-   "debut": 203.226,
-   "fin": 212.096,
+   "debut": 221.63,
+   "fin": 229.87,
    "phrases": [
     {
      "texte": "Troisième étage : la culpabilité.",
-     "debut": 203.226,
-     "fin": 205.606
+     "debut": 221.63,
+     "fin": 223.53
     },
     {
      "texte": "Cette fois, on ne regarde plus l'acte, on regarde la personne.",
-     "debut": 206.047,
-     "fin": 209.403
+     "debut": 224.43,
+     "fin": 227.71
     },
     {
      "texte": "Peut-on lui reprocher ce qu'elle a fait ?",
-     "debut": 210.006,
-     "fin": 212.096
+     "debut": 228.49,
+     "fin": 229.87
     }
    ]
   },
   {
    "ligne": 21,
-   "debut": 212.546,
-   "fin": 224.899,
+   "debut": 230.71,
+   "fin": 242.47,
    "phrases": [
     {
      "texte": "L'article dix-neuf du Code pénal dit que celui qui, au moment d'agir, n'était pas capable d'apprécier le caractère illicite de son acte, ou de se déterminer d'après cette appréciation, n'est pas punissable.",
-     "debut": 212.546,
-     "fin": 224.899
+     "debut": 230.71,
+     "fin": 242.47
     }
    ]
   },
   {
    "ligne": 22,
-   "debut": 225.349,
-   "fin": 241.464,
+   "debut": 243.91,
+   "fin": 261.15,
    "phrases": [
     {
      "texte": "Troisième variante de l'histoire : Marc souffre d'une maladie psychique grave et, ce soir-là, il n'avait plus aucune prise sur ses gestes.",
-     "debut": 225.349,
-     "fin": 234.405
+     "debut": 243.91,
+     "fin": 253.51
     },
     {
      "texte": "Son acte reste typique, il reste illicite, mais on ne peut pas le lui reprocher.",
-     "debut": 234.73,
-     "fin": 239.734
+     "debut": 254.65,
+     "fin": 259.19
     },
     {
      "texte": "Il n'est pas coupable.",
-     "debut": 240.117,
-     "fin": 241.464
+     "debut": 259.95,
+     "fin": 261.15
     }
    ]
   },
   {
    "ligne": 23,
-   "debut": 241.914,
-   "fin": 253.292,
+   "debut": 262.59,
+   "fin": 275.47,
    "phrases": [
     {
      "texte": "Attention au piège classique : « pas coupable » ne veut pas dire « rien ne se passe ».",
-     "debut": 241.914,
-     "fin": 246.57
+     "debut": 262.59,
+     "fin": 266.95
     },
     {
      "texte": "Dans ce cas, le juge peut ordonner une mesure, par exemple un traitement.",
-     "debut": 247.08,
-     "fin": 251.039
+     "debut": 268.07,
+     "fin": 272.47
     },
     {
      "texte": "C'est l'objet de la vidéo douze.",
-     "debut": 251.481,
-     "fin": 253.292
+     "debut": 273.47,
+     "fin": 275.47
     }
    ]
   },
   {
    "ligne": 24,
-   "debut": 253.742,
-   "fin": 263.448,
+   "debut": 276.91,
+   "fin": 285.89,
    "phrases": [
     {
      "texte": "Dans notre version de départ, Marc était simplement en colère.",
-     "debut": 253.742,
-     "fin": 257.329
+     "debut": 276.91,
+     "fin": 279.83
     },
     {
      "texte": "La colère n'enlève pas la capacité de comprendre ce qu'on fait.",
-     "debut": 257.713,
-     "fin": 260.998
+     "debut": 280.65,
+     "fin": 283.61
     },
     {
      "texte": "Troisième étage franchi.",
-     "debut": 261.602,
-     "fin": 263.448
+     "debut": 284.55,
+     "fin": 285.89
     }
    ]
   },
   {
    "ligne": 25,
-   "debut": 263.898,
-   "fin": 277.226,
+   "debut": 287.33,
+   "fin": 302.17,
    "phrases": [
     {
      "texte": "Les trois étages sont allumés.",
-     "debut": 263.898,
-     "fin": 265.361
+     "debut": 287.33,
+     "fin": 288.75
     },
     {
      "texte": "Marc a commis une infraction : des lésions corporelles simples, au sens de l'article cent vingt-trois du Code pénal.",
-     "debut": 265.872,
-     "fin": 272.466
+     "debut": 289.89,
+     "fin": 296.15
     },
     {
      "texte": "Et c'est seulement maintenant, les trois étages franchis, qu'on peut parler de peine.",
-     "debut": 272.907,
-     "fin": 277.226
+     "debut": 297.15,
+     "fin": 302.17
     }
    ]
   },
   {
    "ligne": 26,
-   "debut": 277.676,
-   "fin": 293.698,
+   "debut": 303.61,
+   "fin": 321.13,
    "phrases": [
     {
      "texte": "Retenez la méthode plus que le résultat.",
-     "debut": 277.676,
-     "fin": 279.731
+     "debut": 303.61,
+     "fin": 305.45
     },
     {
      "texte": "Face à n'importe quel cas, posez les trois questions dans l'ordre.",
-     "debut": 280.172,
-     "fin": 283.342
+     "debut": 306.33,
+     "fin": 309.07
     },
     {
      "texte": "Est-ce que la loi décrit ce comportement ?",
-     "debut": 283.853,
-     "fin": 285.931
+     "debut": 310.05,
+     "fin": 312.11
     },
     {
      "texte": "Était-il malgré tout permis ?",
-     "debut": 286.442,
-     "fin": 287.893
+     "debut": 312.93,
+     "fin": 314.47
     },
     {
      "texte": "Peut-on le reprocher à la personne ?",
-     "debut": 288.496,
-     "fin": 290.168
+     "debut": 315.41,
+     "fin": 317.33
     },
     {
      "texte": "Typicité, illicéité, culpabilité.",
-     "debut": 290.61,
-     "fin": 293.698
+     "debut": 318.31,
+     "fin": 321.13
     }
    ]
   },
   {
    "ligne": 27,
-   "debut": 294.148,
-   "fin": 311.191,
+   "debut": 322.57,
+   "fin": 339.809,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 294.148,
-     "fin": 295.286
+     "debut": 322.57,
+     "fin": 323.49
     },
     {
      "texte": "Même histoire, mais cette fois Marc ne pousse pas Julien : il le bouscule par inadvertance en passant, sans le voir, et Julien tombe.",
-     "debut": 295.797,
-     "fin": 304.028
+     "debut": 324.53,
+     "fin": 332.79
     },
     {
      "texte": "Quel étage pose problème ?",
-     "debut": 304.632,
-     "fin": 306.153
+     "debut": 333.689,
+     "fin": 334.869
     },
     {
      "texte": "Écrivez votre réponse en commentaire ; la réponse est dans la vidéo quatre.",
-     "debut": 306.756,
-     "fin": 311.191
+     "debut": 336.009,
+     "fin": 339.809
     }
    ]
   },
   {
    "ligne": 28,
-   "debut": 311.641,
-   "fin": 318.189,
+   "debut": 340.909,
+   "fin": 347.589,
    "phrases": [
     {
      "texte": "Le script complet et les articles cités sont dans la description, en accès libre.",
-     "debut": 311.641,
-     "fin": 316.018
+     "debut": 340.909,
+     "fin": 344.989
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 316.459,
-     "fin": 318.189
+     "debut": 346.069,
+     "fin": 347.589
     }
    ]
   }

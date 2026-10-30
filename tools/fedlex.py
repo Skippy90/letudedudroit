@@ -87,8 +87,13 @@ def article(source: str, numero: str) -> str | None:
     if not m:
         return None
     t = re.sub(r'<div class="footnotes">.*', "", m.group(1), flags=re.S)
+    # Numéros d'alinéa (« 1 ») suffixes (« 172ter », « 1er ») gardés ;
+    # les autres exposants sont des appels de note.
+    t = re.sub(r"<sup>(\d+[a-z]*)</sup>", r"\1 ", t)
+    t = re.sub(r"<sup>([a-z]+)</sup>", r"\1", t)
     t = re.sub(r"<sup>.*?</sup>", "", t, flags=re.S)
     t = re.sub(r"</p>|</h6>|<br\s*/?>|</dd>", "\n", t)
+    t = re.sub(r"</?(?:b|i|a|em|strong|span)\b[^>]*>", "", t)  # balises en ligne : « 193<i>a</i> » → « 193a »
     t = html.unescape(re.sub(r"<[^>]+>", " ", t))
     lignes = [" ".join(l.split()) for l in t.splitlines()]
     return "\n".join(l for l in lignes if l)

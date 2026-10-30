@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Était-il responsable ? | Droit pénal suisse
 
-## Description (2497 caractères sur 5 000)
+## Description (2545 caractères sur 5 000)
 
 ```text
 Était-il responsable ? — expliqué simplement, à partir d'un cas concret.
@@ -22,7 +22,7 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_19
 • Art. 20 CP : Expertise dès qu'il existe une raison sérieuse de douter de la responsabilité ; possible dès l'enquête
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_20
-• Art. 263 CP : Acte commis en état d'irresponsabilité fautive (ivresse ou intoxication dues à sa faute) : peine pécuniaire, ou jusqu'à trois ans si l'acte n'est puni que d'une peine privative de liberté
+• Art. 263 CP : Acte commis en état d'irresponsabilité fautive (ivresse ou intoxication dues à sa faute) : peine pécuniaire ; peine privative de liberté de trois ans au plus ou peine pécuniaire si l'acte n'est puni que d'une peine privative de liberté
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_263
 
 Jurisprudence du Tribunal fédéral :
@@ -36,11 +36,11 @@ Chapitres :
 0:00 Le cas de départ
 0:31 La carte : le troisième étage
 0:56 L'irresponsabilité
-2:15 La responsabilité restreinte
-2:48 Qui décide ? L'expert
-3:31 Le piège classique
-4:39 Irresponsable, mais pas libre
-5:09 Conclusion et question
+2:17 La responsabilité restreinte
+2:50 Qui décide ? L'expert
+3:32 Le piège classique
+4:44 Irresponsable, mais pas libre
+5:14 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/08-responsabilite
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

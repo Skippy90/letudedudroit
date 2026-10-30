@@ -26,7 +26,7 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 6.1 | scene-vide ; article "Art. 56 CP" ; titre "Quand une mesure ?" |
 | 6.2 | effacer-titres ; case "Peine seule insuffisante" |
 | 7.1 | case "Traitement ou sécurité" |
-| 7.2 | case "Conditions d'une mesure précise" |
+| 7.2 | case "Conditions de la mesure" |
 | 8.1 | scene-vide ; titre "Proportionnée" |
 | 8.2 | colonnes "Atteinte" "Risque" |
 | 8.3 | colonne-accent 1 ; colonne-accent 2 |
@@ -42,7 +42,7 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 13.2 | repere 0.8 "+ 5 ans" ; titre "Prolongeable" |
 | 14.1 | scene-vide ; article "Art. 63 CP" ; liste "1. Traitement institutionnel" "2. Traitement ambulatoire" ; liste-surligner 2 |
 | 14.2 | titre "Troubles et addictions" |
-| 14.3 | sous-titre "Soigné sans être enfermé" |
+| 14.3 | sous-titre "En principe, sans être enfermé" |
 | 15.1 | scene-vide ; article "Art. 64 CP" ; liste "1. Traitement institutionnel" "2. Traitement ambulatoire" "3. Internement" ; liste-surligner 3 |
 | 15.2 | titre "La plus lourde" |
 | 15.3 | sous-titre "Meurtre, viol, brigandage…" |
@@ -50,7 +50,7 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 16.2 | frise ; point 0.2 "Peine" ; zone 0 0.5 gris |
 | 16.3 | point 0.7 "Internement" ; zone 0.5 1 ambre |
 | 17.1 | scene-vide ; article "Art. 59 CP" ; personnage theo "Théo" turquoise gauche ; titre "Traitement institutionnel" |
-| 17.2 | sous-titre "Lié à sa crise" |
+| 17.2 | sous-titre "Lien, risque, soins utiles" |
 | 18.1 | scene-vide ; article-retirer ; personnage noah "Noah" turquoise gauche ; titre "Le tag de Noah" |
 | 18.2 | effacer-titres ; titre "La prescription" ambre |
 | 19.1 | scene-vide ; titre "Pourquoi ?" |
@@ -70,6 +70,9 @@ Personnages : Théo turquoise (vidéo 8), Noah turquoise (vidéo 3) — jamais �
 | 25.1 | scene-vide ; article "Art. 97 CP" ; titre "Une règle importante" |
 | 25.2 | sous-titre "Jugement de première instance" |
 | 25.3 | effacer-titres ; titre "La prescription s'arrête" |
+| 25.4 | scene-vide ; titre "Un autre délai : la plainte" |
+| 25.5 | sous-titre "Trois mois dès qu'on connaît l'auteur" |
+| 25.6 | article "Art. 31 CP" |
 | 26.1 | scene-vide ; article "Art. 101 CP" ; titre "Imprescriptible" ambre |
 | 26.2 | accent titre |
 | 27.1 | effacer-titres ; liste-ajouter "Génocide" ; liste-ajouter "Crimes contre l'humanité" ; liste-ajouter "Crimes de guerre" |

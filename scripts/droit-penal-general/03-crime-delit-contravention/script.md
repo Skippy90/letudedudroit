@@ -12,7 +12,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | --- | --- | --- |
 | 1 | Samedi soir, à Neuchâtel. Trois jeunes, trois histoires, dans la même rue. | Trois silhouettes de couleurs différentes apparaissent l'une après l'autre |
 | 2 | Inès glisse dans sa poche le téléphone d'une passante. C'est un modèle tout neuf. Elle s'éloigne et compte bien le garder. | La silhouette d'Inès ; une bulle de pensée « Le garder » |
-| 3 | Noah tague un petit dessin sur le mur d'une boulangerie. Le nettoyage coûtera quelques dizaines de francs. | La silhouette de Noah ; un éclair rouge sur le mur, symbole du dommage |
+| 3 | Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs. | La silhouette de Noah ; un éclair rouge sur le mur, symbole du dommage |
 | 4 | Yann se dispute avec un ami et lui donne une gifle. L'ami n'est pas blessé. | La silhouette de Yann ; le mot « Gifle » |
 | 5 | Trois actes interdits. Mais ont-ils le même poids ? Lequel est un crime ? Lequel est un délit ? Lequel est une contravention ? Votre intuition vous trompe peut-être. | Trois cases : « Crime ? », « Délit ? », « Contravention ? » |
 
@@ -46,10 +46,10 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | 19 | Un détail compte pourtant : le téléphone est neuf. Si l'objet volé n'avait qu'une faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
 | 20 | Le même geste deviendrait alors une contravention. Encore une fois, c'est la peine prévue par la loi qui décide. | La case « Contravention » clignote, puis on revient au téléphone neuf |
 | 21 | Passons à Noah. Abîmer la chose d'autrui, c'est un dommage à la propriété. C'est l'article 144. | La silhouette de Noah ; bloc « Art. 144 CP » |
-| 22 | La peine prévue va jusqu'à trois ans de peine privative de liberté. Trois ans au plus : c'est un délit. | Frise : un point « 3 ans » sur le repère ; la case « Délit » se coche |
+| 22 | La peine prévue va jusqu'à trois ans de peine privative de liberté. Trois ans au plus : c'est un délit. Un tout petit dommage, lui, relèverait de l'article 172 ter : une simple amende. | Frise : un point « 3 ans » sur le repère ; la case « Délit » se coche |
 | 23 | Attention, si le dommage était considérable, la loi prévoirait jusqu'à cinq ans. Ce serait alors un crime. | Le mot « Dommage considérable » ; le point glisse vers « 5 ans » puis revient |
 | 24 | Reste Yann. Une gifle qui ne blesse pas, ce sont des voies de fait. C'est l'article 126. | La silhouette de Yann ; bloc « Art. 126 CP » |
-| 25 | Les voies de fait sont punies d'une amende. Aucune peine privative de liberté n'est prévue. C'est une contravention. Notez aussi qu'elles ne sont poursuivies que si la victime porte plainte. C'est la même chose pour le tag de Noah. | La case « Contravention » se coche |
+| 25 | Les voies de fait sont punies d'une amende. Aucune peine privative de liberté n'est prévue. C'est une contravention. Notez aussi qu'ici, elles ne sont poursuivies que si la victime porte plainte. C'est aussi le cas pour le dommage causé par Noah. | La case « Contravention » se coche |
 | 26 | Résultat : un crime, un délit et une contravention. Dans la même rue, le même soir. Trois gestes qui choquent, mais que la loi place à trois niveaux différents. | Les trois cases cochées, les trois silhouettes côte à côte |
 
 ## Pourquoi c'est important

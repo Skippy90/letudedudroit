@@ -20,7 +20,7 @@ Personnages : Inès rose, Noah turquoise, Yann bleu clair.
 | 2.2 | bulle ines "Un téléphone neuf" |
 | 2.3 | bulle ines "Le garder" |
 | 3.1 | effacer-bulle ines ; accent noah ; titre "Un tag" |
-| 3.2 | sous-titre "Quelques dizaines de francs" |
+| 3.2 | sous-titre "Environ deux mille francs" |
 | 4.1 | effacer-titres ; accent yann ; titre "Une gifle" |
 | 4.2 | sous-titre "Personne n'est blessé" |
 | 5.1 | scene-vide ; titre "Trois actes interdits" |
@@ -68,6 +68,7 @@ Personnages : Inès rose, Noah turquoise, Yann bleu clair.
 | 21.3 | article "Art. 144 CP" |
 | 22.1 | frise ; repere 0.5 "3 ans" ; point 0.5 "Au plus" |
 | 22.2 | zone 0 0.5 vert ; titre "Un délit" |
+| 22.3 | sous-titre "Tout petit dommage : amende" |
 | 23.1 | point 0.83 "Considérable : 5 ans" |
 | 23.2 | sous-titre "Alors : un crime" |
 | 24.1 | scene-vide ; article-retirer ; personnage yann "Yann" bleu_clair gauche |

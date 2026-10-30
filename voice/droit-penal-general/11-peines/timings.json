@@ -1,6 +1,6 @@
 {
  "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 334.917,
+ "duree": 339.468,
  "lignes": [
   {
    "ligne": 1,
@@ -641,71 +641,76 @@
   {
    "ligne": 34,
    "debut": 302.87,
-   "fin": 313.412,
+   "fin": 317.963,
    "phrases": [
     {
      "texte": "Le juge choisit la peine, puis la fixe selon la culpabilité.",
      "debut": 302.87,
-     "fin": 306.353
+     "fin": 306.365
     },
     {
      "texte": "Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle.",
-     "debut": 306.597,
-     "fin": 310.579
+     "debut": 306.69,
+     "fin": 310.8
     },
     {
-     "texte": "Il suffit que le pronostic soit favorable.",
-     "debut": 311.02,
-     "fin": 313.412
+     "texte": "Il faut surtout un pronostic favorable.",
+     "debut": 311.043,
+     "fin": 313.296
+    },
+    {
+     "texte": "Avec certains antécédents, il faut des circonstances particulièrement favorables.",
+     "debut": 313.47,
+     "fin": 317.963
     }
    ]
   },
   {
    "ligne": 35,
-   "debut": 313.862,
-   "fin": 327.005,
+   "debut": 318.413,
+   "fin": 331.556,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 313.862,
-     "fin": 315.069
+     "debut": 318.413,
+     "fin": 319.62
     },
     {
      "texte": "Hugo est condamné à une peine privative de liberté de deux ans.",
-     "debut": 315.511,
-     "fin": 319.516
+     "debut": 320.062,
+     "fin": 324.067
     },
     {
      "texte": "Peut-il obtenir le sursis complet ?",
-     "debut": 319.795,
-     "fin": 322.291
+     "debut": 324.346,
+     "fin": 326.842
     },
     {
      "texte": "Et si la peine était de trente mois ?",
-     "debut": 322.732,
-     "fin": 324.381
+     "debut": 327.283,
+     "fin": 328.932
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 324.891,
-     "fin": 327.004
+     "debut": 329.442,
+     "fin": 331.555
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 327.455,
-   "fin": 334.467,
+   "debut": 332.006,
+   "fin": 339.018,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 327.455,
-     "fin": 331.995
+     "debut": 332.006,
+     "fin": 336.546
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 332.436,
-     "fin": 334.467
+     "debut": 336.987,
+     "fin": 339.018
     }
    ]
   }

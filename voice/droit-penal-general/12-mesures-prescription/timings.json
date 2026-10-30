@@ -1,6 +1,6 @@
 {
  "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 341.311,
+ "duree": 352.55,
  "lignes": [
   {
    "ligne": 1,
@@ -44,680 +44,695 @@
   {
    "ligne": 3,
    "debut": 19.337,
-   "fin": 29.414,
+   "fin": 29.321,
    "phrases": [
     {
      "texte": "La seconde histoire, c'est celle de Noah, dans la vidéo trois.",
      "debut": 19.337,
-     "fin": 22.739
+     "fin": 23.006
     },
     {
-     "texte": "Son petit tag sur le mur d'une boulangerie.",
-     "debut": 23.064,
-     "fin": 25.479
+     "texte": "Le grand tag qui couvrait le mur d'une boulangerie.",
+     "debut": 23.517,
+     "fin": 25.908
     },
     {
      "texte": "Imaginons qu'on ne découvre son auteur que onze ans plus tard.",
-     "debut": 25.804,
-     "fin": 29.414
+     "debut": 26.187,
+     "fin": 29.322
     }
    ]
   },
   {
    "ligne": 4,
-   "debut": 29.864,
-   "fin": 37.666,
+   "debut": 29.771,
+   "fin": 37.573,
    "phrases": [
     {
      "texte": "Peut-on encore le poursuivre après tout ce temps ?",
-     "debut": 29.864,
-     "fin": 32.267
+     "debut": 29.771,
+     "fin": 32.174
     },
     {
      "texte": "Deux questions, deux outils du droit pénal : la mesure et la prescription.",
-     "debut": 32.871,
-     "fin": 37.666
+     "debut": 32.778,
+     "fin": 37.573
     }
    ]
   },
   {
    "ligne": 5,
-   "debut": 38.116,
-   "fin": 46.568,
+   "debut": 38.023,
+   "fin": 46.475,
    "phrases": [
     {
      "texte": "On l'a vu dans la vidéo huit.",
-     "debut": 38.116,
-     "fin": 40.008
+     "debut": 38.023,
+     "fin": 39.915
     },
     {
      "texte": "Une peine répond à une faute.",
-     "debut": 40.45,
-     "fin": 41.912
+     "debut": 40.357,
+     "fin": 41.819
     },
     {
      "texte": "Une mesure, elle, répond à un danger ou à un besoin de soins.",
-     "debut": 42.296,
-     "fin": 46.568
+     "debut": 42.203,
+     "fin": 46.475
     }
    ]
   },
   {
    "ligne": 6,
-   "debut": 47.018,
-   "fin": 56.445,
+   "debut": 46.925,
+   "fin": 56.77,
    "phrases": [
     {
-     "texte": "L'article cinquante-six du Code pénal fixe les conditions.",
-     "debut": 47.018,
-     "fin": 50.547
+     "texte": "L'article cinquante-six du Code pénal pose trois conditions, toutes nécessaires.",
+     "debut": 46.925,
+     "fin": 51.859
     },
     {
-     "texte": "Une mesure est ordonnée quand une peine seule ne peut pas écarter le danger de nouvelles infractions.",
-     "debut": 51.151,
-     "fin": 56.445
+     "texte": "D'abord, une peine seule ne suffit pas à écarter le danger de nouvelles infractions.",
+     "debut": 52.184,
+     "fin": 56.77
     }
    ]
   },
   {
    "ligne": 7,
-   "debut": 56.895,
-   "fin": 65.069,
+   "debut": 57.22,
+   "fin": 65.719,
    "phrases": [
     {
-     "texte": "Ou quand l'auteur a besoin d'un traitement, ou que la sécurité publique l'exige.",
-     "debut": 56.895,
-     "fin": 60.958
+     "texte": "Ensuite, l'auteur a besoin d'un traitement, ou la sécurité publique l'exige.",
+     "debut": 57.22,
+     "fin": 61.725
     },
     {
-     "texte": "Et il faut que les conditions d'une mesure précise soient remplies.",
-     "debut": 61.284,
-     "fin": 65.068
+     "texte": "Enfin, les conditions d'une mesure précise doivent être remplies.",
+     "debut": 61.841,
+     "fin": 65.719
     }
    ]
   },
   {
    "ligne": 8,
-   "debut": 65.519,
-   "fin": 77.268,
+   "debut": 66.169,
+   "fin": 77.918,
    "phrases": [
     {
      "texte": "La mesure doit aussi rester proportionnée.",
-     "debut": 65.519,
-     "fin": 68.201
+     "debut": 66.169,
+     "fin": 68.851
     },
     {
      "texte": "L'atteinte qu'elle cause à la personne ne doit pas être excessive.",
-     "debut": 68.712,
-     "fin": 71.916
+     "debut": 69.362,
+     "fin": 72.566
     },
     {
      "texte": "On la compare au risque de récidive et à la gravité des infractions à craindre.",
-     "debut": 72.357,
-     "fin": 77.268
+     "debut": 73.007,
+     "fin": 77.918
     }
    ]
   },
   {
    "ligne": 9,
-   "debut": 77.718,
-   "fin": 86.867,
+   "debut": 78.368,
+   "fin": 87.517,
    "phrases": [
     {
      "texte": "Avant d'ordonner les principales mesures, le juge se fonde sur une expertise.",
-     "debut": 77.718,
-     "fin": 82.06
+     "debut": 78.368,
+     "fin": 82.71
     },
     {
      "texte": "Et une mesure dont les conditions ne sont plus remplies doit être levée.",
-     "debut": 82.443,
-     "fin": 86.867
+     "debut": 83.093,
+     "fin": 87.517
     }
    ]
   },
   {
    "ligne": 10,
-   "debut": 87.317,
-   "fin": 91.311,
+   "debut": 87.967,
+   "fin": 91.961,
    "phrases": [
     {
      "texte": "Le Code pénal prévoit plusieurs mesures.",
-     "debut": 87.317,
-     "fin": 89.384
+     "debut": 87.967,
+     "fin": 90.034
     },
     {
      "texte": "Voyons les trois principales.",
-     "debut": 89.825,
-     "fin": 91.311
+     "debut": 90.475,
+     "fin": 91.961
     }
    ]
   },
   {
    "ligne": 11,
-   "debut": 91.761,
-   "fin": 99.934,
+   "debut": 92.411,
+   "fin": 100.584,
    "phrases": [
     {
      "texte": "Premièrement, le traitement institutionnel, à l'article cinquante-neuf.",
-     "debut": 91.761,
-     "fin": 96.045
+     "debut": 92.411,
+     "fin": 96.695
     },
     {
      "texte": "Il s'adresse à l'auteur qui souffre d'un grave trouble mental.",
-     "debut": 96.556,
-     "fin": 99.934
+     "debut": 97.206,
+     "fin": 100.584
     }
    ]
   },
   {
    "ligne": 12,
-   "debut": 100.384,
-   "fin": 108.929,
+   "debut": 101.034,
+   "fin": 109.579,
    "phrases": [
     {
      "texte": "Il faut que l'infraction soit liée à ce trouble, et que le traitement puisse détourner l'auteur de nouvelles infractions.",
-     "debut": 100.384,
-     "fin": 106.084
+     "debut": 101.034,
+     "fin": 106.734
     },
     {
      "texte": "Il a lieu dans un établissement adapté.",
-     "debut": 106.595,
-     "fin": 108.929
+     "debut": 107.245,
+     "fin": 109.579
     }
    ]
   },
   {
    "ligne": 13,
-   "debut": 109.379,
-   "fin": 118.11,
+   "debut": 110.029,
+   "fin": 118.76,
    "phrases": [
     {
      "texte": "Il dure en règle générale cinq ans au plus.",
-     "debut": 109.379,
-     "fin": 112.189
+     "debut": 110.029,
+     "fin": 112.839
     },
     {
      "texte": "Mais le juge peut le prolonger, de cinq ans au plus à chaque fois, si le risque demeure.",
-     "debut": 112.63,
-     "fin": 118.11
+     "debut": 113.28,
+     "fin": 118.76
     }
    ]
   },
   {
    "ligne": 14,
-   "debut": 118.56,
-   "fin": 128.73,
+   "debut": 119.21,
+   "fin": 130.355,
    "phrases": [
     {
      "texte": "Deuxièmement, le traitement ambulatoire, à l'article soixante-trois.",
-     "debut": 118.56,
-     "fin": 122.345
+     "debut": 119.21,
+     "fin": 123.215
     },
     {
      "texte": "Il vise aussi les troubles mentaux, mais également les addictions.",
-     "debut": 122.728,
-     "fin": 126.072
+     "debut": 123.494,
+     "fin": 126.815
     },
     {
-     "texte": "L'auteur est soigné sans être enfermé.",
-     "debut": 126.582,
-     "fin": 128.73
+     "texte": "En principe, l'auteur est soigné sans être enfermé.",
+     "debut": 127.198,
+     "fin": 130.356
     }
    ]
   },
   {
    "ligne": 15,
-   "debut": 129.18,
-   "fin": 140.093,
+   "debut": 130.805,
+   "fin": 141.719,
    "phrases": [
     {
      "texte": "Troisièmement, l'internement, à l'article soixante-quatre.",
-     "debut": 129.18,
-     "fin": 132.698
+     "debut": 130.805,
+     "fin": 134.323
     },
     {
      "texte": "C'est la mesure la plus lourde.",
-     "debut": 133.394,
-     "fin": 134.846
+     "debut": 135.019,
+     "fin": 136.471
     },
     {
      "texte": "Elle est réservée aux infractions très graves, comme le meurtre, le viol ou le brigandage.",
-     "debut": 135.171,
-     "fin": 140.093
+     "debut": 136.796,
+     "fin": 141.718
     }
    ]
   },
   {
    "ligne": 16,
-   "debut": 140.543,
-   "fin": 150.667,
+   "debut": 142.169,
+   "fin": 152.293,
    "phrases": [
     {
      "texte": "Il faut en plus un risque sérieux que l'auteur recommence.",
-     "debut": 140.543,
-     "fin": 143.631
+     "debut": 142.169,
+     "fin": 145.257
     },
     {
      "texte": "La peine privative de liberté est exécutée d'abord.",
-     "debut": 144.014,
-     "fin": 147.196
+     "debut": 145.64,
+     "fin": 148.822
     },
     {
      "texte": "L'internement vient ensuite, pour protéger la société.",
-     "debut": 147.579,
-     "fin": 150.667
+     "debut": 149.205,
+     "fin": 152.293
     }
    ]
   },
   {
    "ligne": 17,
-   "debut": 151.117,
-   "fin": 162.959,
+   "debut": 152.743,
+   "fin": 164.399,
    "phrases": [
     {
-     "texte": "Pour Théo, le juge pourrait ordonner un traitement institutionnel, après une expertise psychiatrique.",
-     "debut": 151.117,
-     "fin": 156.922
+     "texte": "Pour Théo, le juge pourrait envisager un traitement institutionnel, après une expertise psychiatrique.",
+     "debut": 152.743,
+     "fin": 158.56
     },
     {
-     "texte": "Son acte est lié à sa crise psychotique, et des soins peuvent l'aider à ne pas recommencer.",
-     "debut": 157.305,
-     "fin": 162.959
+     "texte": "Il faudrait un acte lié à son trouble, un risque de récidive, et des soins utiles.",
+     "debut": 159.07,
+     "fin": 164.399
     }
    ]
   },
   {
    "ligne": 18,
-   "debut": 163.409,
-   "fin": 170.886,
+   "debut": 164.849,
+   "fin": 172.326,
    "phrases": [
     {
      "texte": "Passons à Noah et à son tag.",
-     "debut": 163.409,
-     "fin": 165.104
+     "debut": 164.849,
+     "fin": 166.544
     },
     {
      "texte": "La prescription, c'est l'écoulement d'un délai après lequel l'État ne peut plus poursuivre l'auteur.",
-     "debut": 165.348,
-     "fin": 170.886
+     "debut": 166.788,
+     "fin": 172.326
     }
    ]
   },
   {
    "ligne": 19,
-   "debut": 171.336,
-   "fin": 178.86,
+   "debut": 172.776,
+   "fin": 180.299,
    "phrases": [
     {
      "texte": "Pourquoi une telle règle ?",
-     "debut": 171.336,
-     "fin": 172.613
+     "debut": 172.776,
+     "fin": 174.053
     },
     {
      "texte": "Avec le temps, les preuves se perdent, les souvenirs s'effacent, et le besoin de punir diminue.",
-     "debut": 172.938,
-     "fin": 178.859
+     "debut": 174.378,
+     "fin": 180.299
     }
    ]
   },
   {
    "ligne": 20,
-   "debut": 179.31,
-   "fin": 189.433,
+   "debut": 180.749,
+   "fin": 190.873,
    "phrases": [
     {
      "texte": "L'article quatre-vingt-dix-sept du Code pénal fixe la durée selon la peine maximale prévue.",
-     "debut": 179.31,
-     "fin": 184.871
+     "debut": 180.749,
+     "fin": 186.31
     },
     {
      "texte": "Trente ans si la peine maximale est la privation de liberté à vie.",
-     "debut": 185.382,
-     "fin": 189.434
+     "debut": 186.821,
+     "fin": 190.873
     }
    ]
   },
   {
    "ligne": 21,
-   "debut": 189.883,
-   "fin": 198.382,
+   "debut": 191.323,
+   "fin": 199.822,
    "phrases": [
     {
      "texte": "Quinze ans si elle dépasse trois ans de peine privative de liberté.",
-     "debut": 189.883,
-     "fin": 193.726
+     "debut": 191.323,
+     "fin": 195.166
     },
     {
      "texte": "Dix ans si elle est de trois ans.",
-     "debut": 194.167,
-     "fin": 195.7
+     "debut": 195.607,
+     "fin": 197.14
     },
     {
      "texte": "Sept ans si c'est une autre peine.",
-     "debut": 196.21,
-     "fin": 198.381
+     "debut": 197.65,
+     "fin": 199.821
     }
    ]
   },
   {
    "ligne": 22,
-   "debut": 198.832,
-   "fin": 203.151,
+   "debut": 200.272,
+   "fin": 204.59,
    "phrases": [
     {
      "texte": "Et pour les contraventions, trois ans, comme on l'a vu dans la vidéo trois.",
-     "debut": 198.832,
-     "fin": 203.151
+     "debut": 200.272,
+     "fin": 204.591
     }
    ]
   },
   {
    "ligne": 23,
-   "debut": 203.601,
-   "fin": 209.22,
+   "debut": 205.04,
+   "fin": 210.66,
    "phrases": [
     {
      "texte": "Le délai court en principe dès le jour où l'auteur a agi.",
-     "debut": 203.601,
-     "fin": 207.072
+     "debut": 205.04,
+     "fin": 208.511
     },
     {
      "texte": "C'est l'article quatre-vingt-dix-huit.",
-     "debut": 207.351,
-     "fin": 209.22
+     "debut": 208.79,
+     "fin": 210.659
     }
    ]
   },
   {
    "ligne": 24,
-   "debut": 209.67,
-   "fin": 221.791,
+   "debut": 211.11,
+   "fin": 223.231,
    "phrases": [
     {
      "texte": "Le dommage à la propriété de Noah est puni de trois ans au plus.",
-     "debut": 209.67,
-     "fin": 213.803
+     "debut": 211.11,
+     "fin": 215.243
     },
     {
      "texte": "Le délai est donc de dix ans.",
-     "debut": 214.314,
-     "fin": 215.8
+     "debut": 215.754,
+     "fin": 217.24
     },
     {
      "texte": "Découvert onze ans plus tard, l'acte est prescrit.",
-     "debut": 216.241,
-     "fin": 219.306
+     "debut": 217.681,
+     "fin": 220.746
     },
     {
      "texte": "Noah ne peut plus être poursuivi.",
-     "debut": 219.91,
-     "fin": 221.791
+     "debut": 221.35,
+     "fin": 223.231
     }
    ]
   },
   {
    "ligne": 25,
-   "debut": 222.241,
-   "fin": 233.108,
+   "debut": 223.681,
+   "fin": 244.346,
    "phrases": [
     {
      "texte": "Mais attention à une règle importante.",
-     "debut": 222.241,
-     "fin": 223.982
+     "debut": 223.681,
+     "fin": 225.597
     },
     {
      "texte": "Si un jugement de première instance est rendu avant l'échéance, la prescription ne court plus.",
-     "debut": 224.133,
-     "fin": 229.242
+     "debut": 226.107,
+     "fin": 231.297
     },
     {
      "texte": "Un procès en appel ne peut donc pas la faire acquérir.",
-     "debut": 229.753,
-     "fin": 233.108
+     "debut": 231.808,
+     "fin": 234.908
+    },
+    {
+     "texte": "Autre délai à ne pas confondre : celui de la plainte.",
+     "debut": 235.604,
+     "fin": 239.158
+    },
+    {
+     "texte": "La victime a trois mois dès qu'elle connaît l'auteur.",
+     "debut": 239.761,
+     "fin": 242.397
+    },
+    {
+     "texte": "C'est l'article trente-et-un.",
+     "debut": 242.641,
+     "fin": 244.347
     }
    ]
   },
   {
    "ligne": 26,
-   "debut": 233.558,
-   "fin": 238.248,
+   "debut": 244.796,
+   "fin": 249.487,
    "phrases": [
     {
      "texte": "Certains crimes ne se prescrivent jamais.",
-     "debut": 233.558,
-     "fin": 235.427
+     "debut": 244.796,
+     "fin": 246.665
     },
     {
      "texte": "L'article cent un les énumère.",
-     "debut": 235.706,
-     "fin": 238.248
+     "debut": 246.944,
+     "fin": 249.486
     }
    ]
   },
   {
    "ligne": 27,
-   "debut": 238.698,
-   "fin": 248.079,
+   "debut": 249.937,
+   "fin": 259.318,
    "phrases": [
     {
      "texte": "Ce sont notamment le génocide, les crimes contre l'humanité et les crimes de guerre.",
-     "debut": 238.698,
-     "fin": 243.319
+     "debut": 249.937,
+     "fin": 254.558
     },
     {
      "texte": "S'y ajoutent certains crimes sexuels commis sur des enfants de moins de douze ans.",
-     "debut": 243.76,
-     "fin": 248.079
+     "debut": 254.999,
+     "fin": 259.318
     }
    ]
   },
   {
    "ligne": 28,
-   "debut": 248.529,
-   "fin": 254.659,
+   "debut": 259.768,
+   "fin": 265.898,
    "phrases": [
     {
      "texte": "Pour ces actes, la société considère que le temps ne doit jamais effacer la possibilité de juger.",
-     "debut": 248.529,
-     "fin": 254.659
+     "debut": 259.768,
+     "fin": 265.898
     }
    ]
   },
   {
    "ligne": 29,
-   "debut": 255.109,
-   "fin": 267.137,
+   "debut": 266.348,
+   "fin": 278.376,
    "phrases": [
     {
      "texte": "Il existe aussi une prescription de la peine elle-même, à l'article quatre-vingt-dix-neuf.",
-     "debut": 255.109,
-     "fin": 259.44
+     "debut": 266.348,
+     "fin": 270.679
     },
     {
      "texte": "Une peine prononcée doit être exécutée dans un certain délai.",
-     "debut": 259.765,
-     "fin": 263.758
+     "debut": 271.004,
+     "fin": 274.997
     },
     {
      "texte": "Par exemple cinq ans pour une peine pécuniaire.",
-     "debut": 264.2,
-     "fin": 267.137
+     "debut": 275.439,
+     "fin": 278.376
     }
    ]
   },
   {
    "ligne": 30,
-   "debut": 267.587,
-   "fin": 274.089,
+   "debut": 278.826,
+   "fin": 285.327,
    "phrases": [
     {
      "texte": "Attention au piège classique.",
-     "debut": 267.587,
-     "fin": 269.038
+     "debut": 278.826,
+     "fin": 280.277
     },
     {
      "texte": "On entend parfois : « C'est prescrit, donc il est innocent. »",
-     "debut": 269.212,
-     "fin": 272.904
+     "debut": 280.451,
+     "fin": 284.143
     },
     {
      "texte": "C'est faux.",
-     "debut": 273.287,
-     "fin": 274.089
+     "debut": 284.526,
+     "fin": 285.328
     }
    ]
   },
   {
    "ligne": 31,
-   "debut": 274.539,
-   "fin": 284.059,
+   "debut": 285.777,
+   "fin": 295.297,
    "phrases": [
     {
      "texte": "La prescription ne dit rien de la culpabilité.",
-     "debut": 274.539,
-     "fin": 277.047
+     "debut": 285.777,
+     "fin": 288.285
     },
     {
      "texte": "Le tag de Noah reste un acte illicite.",
-     "debut": 277.488,
-     "fin": 279.798
+     "debut": 288.726,
+     "fin": 291.036
     },
     {
      "texte": "Simplement, l'État a perdu le droit de le poursuivre pour cet acte.",
-     "debut": 280.181,
-     "fin": 284.059
+     "debut": 291.419,
+     "fin": 295.297
     }
    ]
   },
   {
    "ligne": 32,
-   "debut": 284.509,
-   "fin": 291.521,
+   "debut": 295.747,
+   "fin": 302.76,
    "phrases": [
     {
      "texte": "De même, une mesure n'est pas une peine déguisée.",
-     "debut": 284.509,
-     "fin": 287.005
+     "debut": 295.747,
+     "fin": 298.243
     },
     {
      "texte": "Elle peut être levée dès que le danger a disparu, et elle doit le faire.",
-     "debut": 287.284,
-     "fin": 291.521
+     "debut": 298.522,
+     "fin": 302.759
     }
    ]
   },
   {
    "ligne": 33,
-   "debut": 291.971,
-   "fin": 301.77,
+   "debut": 303.21,
+   "fin": 313.009,
    "phrases": [
     {
      "texte": "Retenons.",
-     "debut": 291.971,
-     "fin": 292.633
+     "debut": 303.21,
+     "fin": 303.872
     },
     {
      "texte": "Une mesure répond à un danger ou à un besoin de soins, même sans faute.",
-     "debut": 293.074,
-     "fin": 296.917
+     "debut": 304.313,
+     "fin": 308.156
     },
     {
      "texte": "Elle doit rester proportionnée, et prend fin quand ses conditions ne sont plus remplies.",
-     "debut": 297.091,
-     "fin": 301.77
+     "debut": 308.33,
+     "fin": 313.009
     }
    ]
   },
   {
    "ligne": 34,
-   "debut": 302.22,
-   "fin": 311.137,
+   "debut": 313.459,
+   "fin": 322.375,
    "phrases": [
     {
      "texte": "La prescription fixe la limite de temps pour poursuivre.",
-     "debut": 302.22,
-     "fin": 305.297
+     "debut": 313.459,
+     "fin": 316.536
     },
     {
      "texte": "Plus l'infraction est grave, plus le délai est long.",
-     "debut": 305.807,
-     "fin": 308.315
+     "debut": 317.046,
+     "fin": 319.554
     },
     {
      "texte": "Et quelques crimes ne se prescrivent jamais.",
-     "debut": 308.756,
-     "fin": 311.136
+     "debut": 319.995,
+     "fin": 322.375
     }
    ]
   },
   {
    "ligne": 35,
-   "debut": 311.587,
-   "fin": 321.896,
+   "debut": 322.825,
+   "fin": 333.135,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 311.587,
-     "fin": 312.609
+     "debut": 322.825,
+     "fin": 323.847
     },
     {
      "texte": "Lina vole un vélo de valeur.",
-     "debut": 312.934,
-     "fin": 314.594
+     "debut": 324.172,
+     "fin": 325.832
     },
     {
      "texte": "Les faits ne sont découverts que douze ans plus tard.",
-     "debut": 315.035,
-     "fin": 317.427
+     "debut": 326.273,
+     "fin": 328.665
     },
     {
      "texte": "Peut-on encore la poursuivre ?",
-     "debut": 317.868,
-     "fin": 319.296
+     "debut": 329.106,
+     "fin": 330.534
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 319.737,
-     "fin": 321.897
+     "debut": 330.975,
+     "fin": 333.135
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 322.346,
-   "fin": 332.377,
+   "debut": 333.585,
+   "fin": 343.616,
    "phrases": [
     {
      "texte": "C'était la dernière vidéo de cette playlist sur le droit pénal général.",
-     "debut": 322.346,
-     "fin": 325.678
+     "debut": 333.585,
+     "fin": 336.917
     },
     {
      "texte": "Vous savez maintenant comment un juge raisonne, du premier étage à la peine.",
-     "debut": 325.957,
-     "fin": 330.322
+     "debut": 337.196,
+     "fin": 341.561
     },
     {
      "texte": "Merci de nous avoir suivis jusqu'ici.",
-     "debut": 330.496,
-     "fin": 332.377
+     "debut": 341.735,
+     "fin": 343.616
     }
    ]
   },
   {
    "ligne": 37,
-   "debut": 332.827,
-   "fin": 340.861,
+   "debut": 344.066,
+   "fin": 352.1,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 332.827,
-     "fin": 338.214
+     "debut": 344.066,
+     "fin": 349.453
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 338.818,
-     "fin": 340.861
+     "debut": 350.057,
+     "fin": 352.1
     }
    ]
   }

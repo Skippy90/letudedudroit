@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Qu'est-ce qu'une infraction ? Les trois étages | Droit pénal suisse
 
-## Description (2397 caractères sur 5 000)
+## Description (2424 caractères sur 5 000)
 
 ```text
 Qu'est-ce qu'une infraction ? Les trois étages — expliqué simplement, à partir d'un cas concret.
@@ -24,24 +24,23 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_122
 • Art. 123 CP : Lésions corporelles simples : atteinte au corps ou à la santé, sans gravité
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_123
-• Art. 125 CP : Lésions corporelles par négligence, poursuivies sur plainte
+• Art. 125 CP : Lésions corporelles par négligence, poursuivies sur plainte, et d'office si la lésion est grave (réponse finale)
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125
 • Art. 56 ss CP : Le juge peut ordonner une mesure, par exemple un traitement
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_56
 
 Réponse à la question finale :
-Le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; les lésions corporelles simples par négligence sont une infraction distincte, prévue à l'article 125 du Code pénal, et elles ne sont poursuivies que sur plainte.
+Le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; les lésions corporelles simples par négligence sont une infraction distincte, prévue à l'article 125 du Code pénal ; elles sont poursuivies sur plainte, et d'office si la lésion est grave.
 
 Chapitres :
 0:00 Le cas de départ
-0:36 La carte : trois étages
-1:04 Premier étage : la typicité
-2:21 Deuxième étage : l'illicéité
-3:27 Troisième étage : la culpabilité
-4:27 Conclusion et question
+0:40 La carte : trois étages
+1:11 Premier étage : la typicité
+2:29 Deuxième étage : l'illicéité
+3:45 Troisième étage : la culpabilité
+4:51 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/01-trois-etages
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

@@ -78,7 +78,7 @@ Personnages : Inès (silhouette rose, reprise de la vidéo 3), Hugo (silhouette 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 33 | Retenons. Trois peines : la privation de liberté, la peine pécuniaire en jours-amende, et l'amende pour les contraventions. | La liste des trois peines |
-| 34 | Le juge choisit la peine, puis la fixe selon la culpabilité. Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle. Il suffit que le pronostic soit favorable. | Les trois cases « Choisir », « Fixer », « Sursis » |
+| 34 | Le juge choisit la peine, puis la fixe selon la culpabilité. Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle. Il faut surtout un pronostic favorable. Avec certains antécédents, il faut des circonstances particulièrement favorables. | Les trois cases « Choisir », « Fixer », « Sursis » |
 | 35 | Une question pour finir. Hugo est condamné à une peine privative de liberté de deux ans. Peut-il obtenir le sursis complet ? Et si la peine était de trente mois ? Écrivez votre réponse en commentaire. | La silhouette de Hugo ; une frise « 2 ans », « 30 mois » |
 | 36 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
