@@ -10,9 +10,11 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 - Chaque phrase de tts.txt est cherchée dans la transcription. Quand elle a été lue
   plusieurs fois, la dernière prise complète est gardée : les faux départs et les
   reprises sont coupés. Le titre lu au début est coupé aussi.
-- Le bruit de fond (appareil ménager, souffle) est atténué par RNNoise, un réseau de
-  neurones spécialisé dans la voix (filtre arnndn de ffmpeg). Le modèle est téléchargé
-  une fois dans .cache/rnnoise/ (dépôt GregorR/rnnoise-models, sur GitHub).
+- Par défaut, aucun débruitage : le son brut est gardé, avec ses pauses naturelles, et le
+  niveau est ajusté par un gain fixe. Sur demande (voice/<slug>/reglages.json) :
+  {"nettoyage": "rnnoise"} atténue le bruit de fond par RNNoise (filtre arnndn de ffmpeg,
+  modèle téléchargé une fois dans .cache/rnnoise/, dépôt GregorR/rnnoise-models) ;
+  {"pauses": "silence"} remplace les pauses par un silence numérique.
 - Option payante, vidéo par vidéo : si voice/<slug>/reglages.json contient
   {"isolation": true}, RNNoise n'est pas utilisé ; la narration montée passe par
   l'isolation de voix d'ElevenLabs (environ 1 000 crédits par minute). Le résultat est
@@ -159,12 +161,15 @@ def main(slug: str) -> None:
     reglages_f = dossier / "reglages.json"
     reglages = json.loads(reglages_f.read_text(encoding="utf-8")) if reglages_f.exists() else {}
     isolation = reglages.get("isolation", False)
-    if not MODELE_BRUIT.exists():
+    # Nettoyage du bruit : aucun par défaut (l'enregistrement brut sonne mieux que ses versions
+    # débruitées) ; "rnnoise" sur demande dans reglages.json.
+    rnnoise = reglages.get("nettoyage", "aucun") == "rnnoise" and not isolation
+    if rnnoise and not MODELE_BRUIT.exists():
         MODELE_BRUIT.parent.mkdir(parents=True, exist_ok=True)
         urllib.request.urlretrieve(URL_MODELE, MODELE_BRUIT)
     # RNNoise travaille à 48 kHz ; on revient ensuite à la fréquence du reste du pipeline.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", "48000",
-                    "-af", "highpass=f=80" + ("" if isolation else f",arnndn=m={MODELE_BRUIT}"), "-ar", str(FREQ),
+                    "-af", "highpass=f=80" + (f",arnndn=m={MODELE_BRUIT}" if rnnoise else ""), "-ar", str(FREQ),
                     "-c:a", "pcm_s16le", str(brut)], check=True)
 
     transcription = dossier / "transcription.json"
@@ -242,7 +247,7 @@ def main(slug: str) -> None:
     x, fr = sf.read(brut)
     # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
     # (plus vivant ; les bruits de fond y restent), sinon silence numérique (plus propre, plus sec).
-    naturelles = reglages.get("pauses") == "naturelles"
+    naturelles = reglages.get("pauses", "naturelles") == "naturelles"
     trame = int(0.5 * fr)
     blocs_calmes = [x[i:i + trame] for i in range(0, len(x) - trame, trame)]
     ambiance = min(blocs_calmes, key=lambda b: float((b ** 2).mean())) if blocs_calmes else np.zeros(trame)
@@ -291,8 +296,16 @@ def main(slug: str) -> None:
     sf.write(monte, np.concatenate(morceaux), fr, subtype="PCM_16")
     if isolation:
         monte = isoler(monte, dossier, tmp)
+    # Niveau : un gain fixe pour viser -16 LUFS. Pas de normalisation
+    # dynamique : elle fait « pomper » le bruit de fond entre les mots.
+    mesure = subprocess.run(["ffmpeg", "-i", str(monte), "-t", f"{t:.3f}", "-af", "ebur128", "-f", "null", "-"],
+                            capture_output=True, text=True).stderr
+    integre = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", mesure)[-1])
+    gain = -16 - integre
+    # Les rares crêtes isolées (consonnes, chocs) sont retenues par un limiteur doux à -1,5 dB.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-t", f"{t:.3f}",
-                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", str(FREQ), "-c:a", "pcm_s16le",
+                    "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:attack=5:release=80:level=disabled",
+                    "-ar", str(FREQ), "-c:a", "pcm_s16le",
                     str(dossier / "narration.wav")], check=True)
     for f in tmp.iterdir():
         f.unlink()
