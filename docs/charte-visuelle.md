@@ -45,3 +45,7 @@ Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur le
 3. Les schémas se construisent devant le spectateur ; on ne montre jamais un schéma déjà complet.
 4. Un renvoi à une autre vidéo s'affiche en petit, en bas à droite, sous la forme « vidéo N ».
 5. Les shorts reprennent les mêmes éléments en format vertical (1080 × 1920) : question en haut, réponse en une phrase au centre, article en bas.
+
+## Marque
+
+Symbole, bannière, photos de profil, filigrane, gabarit des miniatures et règles d'usage : `docs/marque/README.md`. Le symbole reprend le bâtiment à trois étages ; il se construit dans l'ouverture et la fin de chaque vidéo.
