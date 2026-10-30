@@ -437,6 +437,10 @@ class Picto(VGroup):
             disque = Circle(radius=0.28, color=TEXTE, fill_color=TEXTE, fill_opacity=0.7, stroke_width=0)
             ombre = Circle(radius=0.26, color=FOND, fill_color=FOND, fill_opacity=1, stroke_width=0).shift(RIGHT * 0.14 + UP * 0.08)
             elements = [disque, ombre]
+        elif nom == "vagues":
+            elements = [Vagues()]
+        elif nom == "coche":
+            elements = [Coche()]
         else:
             raise ValueError(f"picto inconnu « {nom} »")
         super().__init__(*elements)
@@ -512,3 +516,87 @@ class Rue(VGroup):
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
         return [1.6 * n, Y_SOL, 0]
+
+
+class Tribunal(VGroup):
+    """Salle d'audience : sol, estrade et banc du juge à droite, barre des témoins à gauche du centre.
+
+    Le banc et la barre sont au premier plan (z_index 1) : une silhouette placée derrière n'en dépasse
+    que par le haut, et son nom s'inscrit sur le meuble (voir Schemas.a_placer)."""
+
+    X_BANC, X_BARRE = 4.6, -1.6
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        mur = Rectangle(width=4.2, height=3.6, **DECOR).move_to([self.X_BANC, Y_SOL + 1.8, 0])
+        estrade = Line([self.X_BANC - 2.1, Y_SOL + 0.6, 0], [self.X_BANC + 2.1, Y_SOL + 0.6, 0], **DECOR)
+        porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
+        # Les meubles sont remplis du fond : ils masquent ce qui est derrière eux.
+        meuble = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.5, fill_color=FOND, fill_opacity=1)
+        self.banc = Rectangle(width=3.2, height=1.45, **meuble).move_to([self.X_BANC, Y_SOL + 0.725, 0])
+        self.barre = Rectangle(width=1.3, height=1.05, **meuble).move_to([self.X_BARRE, Y_SOL + 0.525, 0])
+        self.meubles = [self.banc, self.barre]
+        super().__init__(sol, mur, estrade, porte, self.banc, self.barre)
+        for m in self.meubles:
+            m.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière le banc du juge, sur l'estrade."""
+        if n == 3:
+            return [self.X_BANC, Y_SOL + 0.6, 0]
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        """Le meuble devant lequel se tient une silhouette d'abscisse x, s'il y en a un."""
+        return next((m for m in self.meubles if abs(m.get_x() - x) < m.width / 2), None)
+
+
+class Vagues(VGroup):
+    """Le lac : trois lignes ondulées."""
+
+    def __init__(self):
+        from manim import VMobject
+        lignes = []
+        for k in range(3):
+            v = VMobject(color=TEXTE if k else ACCENT, stroke_width=4)
+            v.set_points_smoothly([[-0.8 + 0.2 * i, 0.1 * (-1) ** i - 0.25 * k, 0] for i in range(9)])
+            lignes.append(v)
+        super().__init__(*lignes)
+
+
+class Coche(VGroup):
+    """Condition remplie : coche verte dans un rond."""
+
+    def __init__(self):
+        rond = Circle(radius=0.36, color=VERT, fill_color=VERT, fill_opacity=1, stroke_width=0)
+        signe = VGroup(Line([-0.17, 0, 0], [-0.04, -0.15, 0], color=FOND, stroke_width=7),
+                       Line([-0.04, -0.15, 0], [0.2, 0.17, 0], color=FOND, stroke_width=7)).move_to(rond)
+        super().__init__(rond, signe)
+
+
+class RepereListe(VGroup):
+    """Pense-bête permanent en haut à droite : une case et un mot par exigence ; il survit aux scene-vide."""
+
+    def __init__(self, *libelles):
+        self.lignes = []
+        for i, libelle in enumerate(libelles):
+            boite = RoundedRectangle(corner_radius=0.05, width=0.34, height=0.34, color=TEXTE, stroke_width=2.5)
+            mot = texte(libelle, T_PETIT).next_to(boite, RIGHT, buff=0.18)
+            ligne = VGroup(boite, mot)
+            ligne.move_to([0, -0.58 * i, 0], aligned_edge=LEFT)
+            self.lignes.append(ligne)
+        cadre_contenu = VGroup(*self.lignes)
+        fond = RoundedRectangle(corner_radius=0.12, width=cadre_contenu.width + 0.45,
+                                height=cadre_contenu.height + 0.4, stroke_width=0,
+                                fill_color=SURFACE, fill_opacity=0.9).move_to(cadre_contenu)
+        super().__init__(fond, *self.lignes)
+        self.libelles = list(libelles)
+        self.to_corner(UP + RIGHT, buff=0.3)
+
+    def marquer(self, n, etat):
+        boite, mot = self.lignes[n - 1]
+        if etat == "neutre":
+            return [boite.animate.set_fill(SURFACE, opacity=0).set_stroke(TEXTE), mot.animate.set_color(TEXTE)]
+        couleur = ETATS[etat]
+        return [boite.animate.set_fill(couleur, opacity=1).set_stroke(couleur),
+                mot.animate.set_color(ACCENT if etat == "ambre" else GRIS if etat == "gris" else TEXTE)]

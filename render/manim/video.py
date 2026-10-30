@@ -21,7 +21,7 @@ from pathlib import Path
 
 from manim import (
     DOWN, LEFT, RIGHT, UP, AnimationGroup, Create, FadeIn, FadeOut, GrowArrow, Indicate,
-    Line, Scene, Transform, VGroup, Write, config, there_and_back,
+    Line, ReplacementTransform, Scene, Transform, VGroup, Write, config, there_and_back,
 )
 
 import charte as c
@@ -30,7 +30,7 @@ RACINE = Path(__file__).resolve().parents[2]
 SLUG = os.environ.get("SLUG", "")
 DUREE_ANIM = 0.7
 PLAN_FIXE_MAX = 4.0
-CREATIONS = {"cases", "liste", "colonnes", "livres", "frise", "repere-batiment", "decor"}
+CREATIONS = {"cases", "liste", "colonnes", "livres", "frise", "repere-batiment", "repere-liste", "decor"}
 
 config.background_color = c.FOND
 if os.environ.get("APERCU"):
@@ -145,6 +145,8 @@ class Schemas(Scene):
         elif self.livre and len(self.livre) == 3:
             textes.append(self.livre[2].original_text)
         textes += [g[1].original_text for g in self.frise_points]
+        if isinstance(getattr(self, "repere", None), c.RepereListe):
+            textes += self.repere.libelles
         return sum(c.mots(t) for t in textes)
 
     # ----- rendu -----
@@ -207,6 +209,8 @@ class Schemas(Scene):
             # Le texte est rendu d'un seul tenant (ligne de base commune), puis découpé en mots :
             # les sous-objets de Text sont les caractères, espaces exclus.
             nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
+            if nouveau.width > self.largeur_titres():
+                nouveau.scale_to_fit_width(self.largeur_titres())
             nouveau.original_text = contenu
             groupes, i = [], 0
             for mot in contenu.split():
@@ -218,18 +222,25 @@ class Schemas(Scene):
             self.play(AnimationGroup(*[FadeIn(g, shift=UP * 0.1) for g in groupes], lag_ratio=1.0), run_time=4.5)
             return []
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
-        # Titre trop long : réduit pour rester dans le cadre, et à gauche du repère permanent s'il est là.
-        largeur_max = 11.0 if getattr(self, "repere", None) is not None else 13.0
-        if nouveau.width > largeur_max:
-            nouveau.scale_to_fit_width(largeur_max)
+        if nouveau.width > self.largeur_titres():
+            nouveau.scale_to_fit_width(self.largeur_titres())
         nouveau.original_text = contenu
         self.titre = nouveau
         self.focus = nouveau
         anims.append(FadeIn(nouveau, shift=DOWN * 0.2))
         return anims
 
+    def largeur_titres(self):
+        """Largeur maximale d'un titre centré : dans le cadre, et à gauche du repère permanent s'il est là."""
+        repere = getattr(self, "repere", None)
+        if repere is None:
+            return 13.0
+        return min(13.0, 2 * (repere.get_left()[0] - 0.25))
+
     def a_sous_titre(self, contenu):
         nouveau = c.texte(contenu, c.T_SOUS_TITRE).move_to([0, c.Y_SOUS_TITRE, 0])
+        if nouveau.width > self.largeur_titres():
+            nouveau.scale_to_fit_width(self.largeur_titres())
         nouveau.original_text = contenu
         anims = [FadeOut(self.sous_titre)] if self.sous_titre is not None else []
         anims += self.retirer_traits(self.sous_titre)
@@ -265,8 +276,9 @@ class Schemas(Scene):
         self.renvoi = nouveau
         return anims + [FadeIn(nouveau)]
 
-    def a_mot_barre(self, contenu):
-        mot = c.texte(contenu, 46).move_to([3.4, 1.0 - 1.2 * len(self.mots_barres), 0])
+    def a_mot_barre(self, contenu, x=3.4, y=None):
+        y = 1.0 - 1.2 * len(self.mots_barres) if y is None else float(y)
+        mot = c.texte(contenu, 46).move_to([float(x), y, 0])
         mot.original_text = contenu
         self.mots_barres.append(mot)
         self.add(mot)
@@ -309,6 +321,18 @@ class Schemas(Scene):
         self.focus = pages
         return [FadeOut(ancien), FadeIn(pages)]
 
+    def a_livre_chercher(self):
+        """On parcourt le livre ouvert : une bande ambre descend les lignes des deux pages, puis s'éteint."""
+        pages = self.livre
+        bande = c.Rectangle(width=2.1, height=0.3, stroke_width=0, fill_color=c.ACCENT, fill_opacity=0.35)
+        bande.move_to(pages[2][0].get_center())
+        self.play(FadeIn(bande), run_time=0.2)
+        for lignes in (pages[2], pages[3]):
+            for trait in lignes:
+                self.play(bande.animate.move_to(trait.get_center()), run_time=0.15)
+        self.focus = pages
+        return [bande.animate.set_fill(c.GRIS, opacity=0)]
+
     def a_livre_retirer(self):
         ancien, self.livre = self.livre, None
         return [FadeOut(ancien)]
@@ -339,7 +363,7 @@ class Schemas(Scene):
 
     # ----- actions : décors, mouvements, repère -----
     def a_decor(self, nom):
-        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue}
+        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "tribunal": c.Tribunal}
         if nom not in decors:
             raise ValueError(f"décor inconnu « {nom} »")
         self.decor = decors[nom]()
@@ -388,12 +412,23 @@ class Schemas(Scene):
             p.etiquette.next_to(p.silhouette, DOWN, buff=0.2)
             p.dans_decor = True
         p.shift(self.pieds_sur(p, n))
+        # Derrière un meuble (banc du juge, barre des témoins) : le nom s'inscrit sur le meuble, au premier plan.
+        meuble = self.decor.meuble_devant(p.silhouette.get_x()) if hasattr(self.decor, "meuble_devant") else None
+        if meuble is not None:
+            p.etiquette.move_to(meuble).set_z_index(2)
         return []
 
     def a_marcher(self, ident, n):
         p = self.personnages[ident]
         self.focus = p
-        return [p.animate(run_time=1.2).shift(self.pieds_sur(p, n))]
+        decalage = self.pieds_sur(p, n)
+        meuble = (self.decor.meuble_devant(p.silhouette.get_x() + decalage[0])
+                  if hasattr(self.decor, "meuble_devant") else None)
+        if meuble is None:
+            return [p.animate(run_time=1.2).shift(decalage)]
+        # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
+        p.etiquette.set_z_index(2)
+        return [p.silhouette.animate(run_time=1.2).shift(decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
 
     def a_pousser(self, ident, cible):
         a, b = self.personnages[ident], self.personnages[cible]
@@ -410,6 +445,22 @@ class Schemas(Scene):
     def a_repere_batiment(self):
         self.repere = c.MiniBatiment()
         return [FadeIn(self.repere)]
+
+    def a_repere_liste(self, *libelles):
+        """Pense-bête permanent en haut à droite. Si une liste est à l'écran, elle s'y range."""
+        self.repere = c.RepereListe(*libelles)
+        if self.liste is not None and self.a_l_ecran(self.liste):
+            ancienne, self.liste = self.liste, None
+            return [ReplacementTransform(ancienne, self.repere)]
+        return [FadeIn(self.repere, shift=LEFT * 0.2)]
+
+    def a_repere_marquer(self, n, etat):
+        self.focus = self.repere.lignes[int(n) - 1]
+        return self.repere.marquer(int(n), etat)
+
+    def a_repere_retirer(self):
+        ancien, self.repere = getattr(self, "repere", None), None
+        return [FadeOut(ancien)] if ancien is not None else []
 
     def a_repere_etage(self, n, etat):
         return [self.repere.colorer(int(n), etat)]

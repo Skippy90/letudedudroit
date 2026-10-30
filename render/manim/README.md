@@ -25,11 +25,11 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `effacer-titres` | Retire titre et sous-titre |
 | `barrer` | Barre le sous-titre, ou à défaut le titre |
 | `renvoi "vidéo N"` | Renvoi en petit, en bas à droite |
-| `mot-barre "…"` | Mot affiché à droite puis barré |
+| `mot-barre "…"` [`X Y`] | Mot affiché (à droite par défaut, ou au point X Y) puis barré |
 | `article "Art. N CP"` | Bloc d'article centré en bas (remplace le précédent) |
 | `article-retirer` | Retire le bloc d'article |
 | `article-etirer` / `article-reprendre` | Le bloc s'étire puis reprend sa taille (interprétation et ses limites) |
-| `livre` [`"titre"`] / `livre-ouvrir` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, retiré |
+| `livre` [`"titre"`] / `livre-ouvrir` / `livre-chercher` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, parcouru (une bande ambre descend les lignes des deux pages), retiré |
 | `livres "…" "…" "…"` | Plusieurs recueils côte à côte |
 | `livres-surligner N` | Met en avant le recueil N |
 | `personnage ID "Nom" COULEUR POSITION` | Silhouette ; couleurs : `bleu_clair`, `ambre_pale`, `rose`, `violet`, `turquoise` ; positions : `gauche`, `centre-gauche`, `centre`, `centre-droite`, `droite` |
@@ -53,13 +53,14 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `cocher N vert\|gris\|question` | Condition remplie, manquante, ou en question |
 | `colonnes "A" "B"` / `colonne-accent N` / `colonne-eteindre N` | Deux notions opposées |
 | `pyramide` / `pyramide-niveau N COULEUR` / `retirer-pyramide` | Les autorités |
-| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) |
+| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) ; `decor tribunal` : salle d'audience, barre des témoins (`placer … -1`) et banc du juge sur l'estrade (`placer … 3`) ; une silhouette derrière un meuble n'en dépasse que par le haut et son nom s'inscrit sur le meuble |
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag` |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert) |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
+| `repere-liste "…" "…"` / `repere-marquer N COULEUR` / `repere-retirer` | Pense-bête permanent en haut à droite : une case et un mot par élément (une liste à l'écran s'y range) ; `ambre` pour l'élément en cours, `gris` s'il manque, `vert` s'il est rempli, `neutre` pour effacer ; les titres se réduisent pour rester à sa gauche |
 | `frise` | Frise du temps |
 | `repere X "…"` | Repère (date d'entrée en vigueur…) à la fraction X de la frise (0 à 1) |
 | `point X "…"` | Événement sur la frise |
