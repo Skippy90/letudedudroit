@@ -6,17 +6,17 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Quand la justice ne poursuit plus | Droit pénal suisse
 
-## Description (3627 caractères sur 5 000)
+## Description (3846 caractères sur 5 000)
 
 ```text
 Quand la justice ne poursuit plus — expliqué simplement, à partir d'un cas concret.
 
 Articles cités (texte en vigueur vérifié sur Fedlex) :
-• Art. 56 CP : Conditions d'une mesure : peine seule insuffisante contre le danger, besoin de traitement ou sécurité publique, conditions d'une mesure précise ; proportionnalité ; expertise ; levée quand les conditions ne sont plus remplies
+• Art. 56 CP : Conditions d'une mesure, cumulatives (« toutes nécessaires ») : peine seule insuffisante contre le danger, besoin de traitement ou sécurité publique, conditions d'une mesure précise ; proportionnalité ; expertise ; levée quand les conditions ne sont plus remplies
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_56
 • Art. 59 CP : Traitement institutionnel : grave trouble mental, infraction liée au trouble, effet attendu ; établissement adapté ; cinq ans en règle générale, prolongeable de cinq ans au plus à chaque fois
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_59
-• Art. 63 CP : Traitement ambulatoire : troubles mentaux et addictions ; soins sans enfermement
+• Art. 63 CP : Traitement ambulatoire : troubles mentaux et addictions ; soins « en principe » sans enfermement
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_63
 • Art. 64 CP : Internement : mesure la plus lourde, pour des infractions très graves (meurtre, viol, brigandage…) et un risque sérieux de récidive ; la peine est exécutée d'abord
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_64
@@ -32,6 +32,8 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144
 • Art. 101 CP : Imprescriptibles : génocide, crimes contre l'humanité, crimes de guerre, certains crimes sexuels sur des enfants de moins de douze ans
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_101
+• Art. 31 CP : Le délai de plainte est un autre délai : trois mois dès que la victime connaît l'auteur
+  https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_31
 • Art. 99 CP : Prescription de la peine ; cinq ans pour une peine pécuniaire
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_99
 • Art. 139 CP et [art. 172ter CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_172_ter) : Vol : cinq ans au plus, donc quinze ans de prescription ; sauf faible valeur, contravention prescrite par trois ans (réponse finale)
@@ -44,10 +46,10 @@ Chapitres :
 0:00 Le cas de départ
 0:42 Première partie : la mesure
 1:31 Trois mesures principales
-2:47 Seconde partie : la prescription
-3:57 Ce qui ne se prescrit jamais
-4:31 Le piège classique
-4:55 Conclusion et question
+2:48 Seconde partie : la prescription
+4:08 Ce qui ne se prescrit jamais
+4:42 Le piège classique
+5:07 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/12-mesures-prescription
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
