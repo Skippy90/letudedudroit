@@ -18,10 +18,25 @@ Un vocabulaire graphique fixe remplace le visage : le spectateur doit reconnaît
 
 ## Couleurs et typographie
 
-- Fond sombre uni (bleu nuit) ; texte et traits en blanc cassé ; une couleur d'accent chaude (ambre) pour ce qui est important à l'instant ; vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
-- Valeurs de départ (à ajuster une fois rendues) : fond `#0F1B2D`, texte `#F2EFE6`, accent `#E3A52F`, vert `#4CAF7D`, gris `#6B7280`, rouge `#D9534F`.
+- Fond sombre uni (noir, adopté le 30 octobre 2026 à la place du bleu nuit) ; texte et traits en blanc cassé ; une couleur d'accent chaude (ambre) pour ce qui est important à l'instant ; vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
+- Valeurs de départ (à ajuster une fois rendues) : fond `#0B0B0B` (blocs `#1F1F22`), texte `#F2EFE6`, accent `#E3A52F`, vert `#4CAF7D`, gris `#6B7280`, rouge `#D9534F`.
 - Une seule famille de caractères, sans empattement, lisible sur téléphone : rien en dessous de l'équivalent de 28 points sur une image 1920 × 1080.
-- Jamais plus de douze mots affichés en même temps, hors bloc d'article.
+- Jamais plus de douze mots affichés en même temps, hors bloc d'article et hors sous-titres.
+
+## Style « scène » (adopté le 30 octobre 2026)
+
+Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
+
+| Élément | Représentation à l'écran |
+| --- | --- |
+| Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, et d'autres à venir : rue, poste de police, salle d'audience) ; il situe la scène sans concurrencer les silhouettes |
+| Ce qui se passe | Les silhouettes se déplacent dans le décor : marcher, pousser, tomber ; elles restent sans visage et sans bras |
+| Un mot-clé | Étiquette courte en ambre, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
+| Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée ambre de la tension entre deux personnes) |
+| Où en est le raisonnement | Petit bâtiment à trois étages en haut à droite, présent du moment où les trois étages sont posés jusqu'à la fin ; ses étages suivent le cas principal (ambre : étage en cours d'examen ; vert : franchi) |
+| Ce qui est dit | Sous-titres incrustés en bas de l'image, sept mots au plus, coupés de préférence à la ponctuation, calés sur la voix ; police Inter, blanc cassé, même échelle que les plus petits textes |
+
+Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur les marches ; leur nom garde sa taille.
 
 ## Règles d'animation
 
@@ -30,3 +45,7 @@ Un vocabulaire graphique fixe remplace le visage : le spectateur doit reconnaît
 3. Les schémas se construisent devant le spectateur ; on ne montre jamais un schéma déjà complet.
 4. Un renvoi à une autre vidéo s'affiche en petit, en bas à droite, sous la forme « vidéo N ».
 5. Les shorts reprennent les mêmes éléments en format vertical (1080 × 1920) : question en haut, réponse en une phrase au centre, article en bas.
+
+## Marque
+
+Symbole, bannière, photos de profil, filigrane, gabarit des miniatures et règles d'usage : `docs/marque/README.md`. Le symbole reprend le bâtiment à trois étages ; il se construit dans l'ouverture et la fin de chaque vidéo.

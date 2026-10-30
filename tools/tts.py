@@ -16,20 +16,16 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 UNITES = ["zéro", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze",
           "douze", "treize", "quatorze", "quinze", "seize", "dix-sept", "dix-huit", "dix-neuf"]
-DIZAINES = {2: "vingt", 3: "trente", 4: "quarante", 5: "cinquante", 6: "soixante"}
+# Usage romand : septante et nonante ; quatre-vingts reste majoritaire en Suisse romande.
+DIZAINES = {2: "vingt", 3: "trente", 4: "quarante", 5: "cinquante", 6: "soixante", 7: "septante", 9: "nonante"}
 
 
 def en_lettres(n: int) -> str:
-    """Nombres de 0 à 999, orthographe traditionnelle (traits d'union sous cent)."""
+    """Nombres de 0 à 999, à la manière romande (septante, nonante), traits d'union sous cent."""
     if n < 20:
         return UNITES[n]
     if n < 100:
         d, u = divmod(n, 10)
-        if d in (7, 9):  # soixante-dix, quatre-vingt-dix
-            base = "soixante" if d == 7 else "quatre-vingt"
-            reste = 10 + u
-            lien = "-et-" if d == 7 and u == 1 else "-"
-            return base + lien + UNITES[reste]
         if d == 8:
             return "quatre-vingts" if u == 0 else "quatre-vingt-" + UNITES[u]
         if u == 0:

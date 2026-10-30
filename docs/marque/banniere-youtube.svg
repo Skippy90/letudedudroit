@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <rect width="2560" height="1440" fill="#DA291C"/>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="5">
+    <path d="M2110 980 h75 v-60 h75 v-60 h75 v-60 h75 v-60 h75 v-60 h85"/>
+    <path d="M2130 860 L2560 610"/>
+    <rect x="180" y="620" width="170" height="330"/>
+    <line x1="0" y1="980" x2="2110" y2="980"/>
+  </g>
+  <g transform="translate(540 515) scale(0.78)"><path d="M112 200 L256 104 L400 200" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="150" y="216" width="212" height="52" rx="10" fill="#FFFFFF"/>
+  <rect x="150" y="284" width="212" height="52" rx="10" fill="#FFFFFF" fill-opacity="0.85"/>
+  <rect x="150" y="352" width="212" height="52" rx="10" fill="#FFFFFF" fill-opacity="0.7"/></g>
+  <text x="960" y="715" font-family="Inter, sans-serif" font-weight="800" font-size="132" fill="#FFFFFF" letter-spacing="-3">L’étude du droit</text>
+  <text x="966" y="800" font-family="Inter, sans-serif" font-weight="500" font-size="52" fill="#FFFFFF" fill-opacity="0.85">Le droit suisse, une notion à la fois</text>
+</svg>
