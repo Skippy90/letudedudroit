@@ -10,8 +10,9 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 - Chaque phrase de tts.txt est cherchée dans la transcription. Quand elle a été lue
   plusieurs fois, la dernière prise complète est gardée : les faux départs et les
   reprises sont coupés. Le titre lu au début est coupé aussi.
-- Le bruit de fond constant (appareil ménager, souffle) est atténué par soustraction
-  spectrale, à partir des passages les plus calmes de l'enregistrement.
+- Le bruit de fond (appareil ménager, souffle) est atténué par RNNoise, un réseau de
+  neurones spécialisé dans la voix (filtre arnndn de ffmpeg). Le modèle est téléchargé
+  une fois dans .cache/rnnoise/ (dépôt GregorR/rnnoise-models, sur GitHub).
 - Montage : les phrases gardées sont mises bout à bout, avec un court fondu à chaque
   coupe ; les pauses naturelles sont conservées quand deux phrases se suivent sans
   reprise, sinon remplacées par un silence de longueur fixe.
@@ -49,7 +50,9 @@ FONDU = 0.015            # secondes de fondu à chaque coupe
 PAUSE_PHRASE = (0.25, 0.9)   # pause entre deux phrases d'une même ligne : bornes
 PAUSE_LIGNE = (0.45, 1.2)    # pause entre deux lignes : bornes
 PAUSE_COUPE = {"phrase": 0.35, "ligne": 0.6}  # pause imposée là où une reprise a été coupée
-REDUCTION_BRUIT = 0.85   # part du bruit retirée (1 = tout ; trop fort, la voix devient métallique)
+MODELE_BRUIT = RACINE / ".cache/rnnoise/sh.rnnn"
+URL_MODELE = ("https://raw.githubusercontent.com/GregorR/rnnoise-models/master/"
+              "somnolent-hogwash-2018-09-01/sh.rnnn")
 
 
 def normaliser(mot: str) -> str:
@@ -110,15 +113,6 @@ def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, floa
     return retenues
 
 
-def echantillon_bruit(x: np.ndarray, fr: int) -> np.ndarray:
-    """Les 10 % de trames de 50 ms les plus calmes : du bruit de fond sans voix."""
-    t = int(0.05 * fr)
-    trames = x[:len(x) // t * t].reshape(-1, t)
-    energie = (trames ** 2).mean(axis=1)
-    calmes = trames[energie <= np.percentile(energie, 10)]
-    return calmes.reshape(-1)
-
-
 def main(slug: str) -> None:
     dossier = RACINE / "voice" / slug
     sources = sorted(dossier.glob("enregistrement.*"))
@@ -130,8 +124,13 @@ def main(slug: str) -> None:
     tmp = dossier / "tmp"
     tmp.mkdir(exist_ok=True)
     brut = tmp / "brut.wav"
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", str(FREQ),
-                    "-af", "highpass=f=80", "-c:a", "pcm_s16le", str(brut)], check=True)
+    if not MODELE_BRUIT.exists():
+        MODELE_BRUIT.parent.mkdir(parents=True, exist_ok=True)
+        urllib.request.urlretrieve(URL_MODELE, MODELE_BRUIT)
+    # RNNoise travaille à 48 kHz ; on revient ensuite à la fréquence du reste du pipeline.
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", "48000",
+                    "-af", f"highpass=f=80,arnndn=m={MODELE_BRUIT}", "-ar", str(FREQ),
+                    "-c:a", "pcm_s16le", str(brut)], check=True)
 
     transcription = dossier / "transcription.json"
     empreinte = f"{source.name}:{source.stat().st_size}"
@@ -188,9 +187,6 @@ def main(slug: str) -> None:
 
     # Montage.
     x, fr = sf.read(brut)
-    import noisereduce
-    x = noisereduce.reduce_noise(y=x, sr=fr, y_noise=echantillon_bruit(x, fr), stationary=True,
-                                 prop_decrease=REDUCTION_BRUIT, n_fft=2048)
     fondu = int(FONDU * fr)
     rampe = np.linspace(0, 1, fondu)
     morceaux, t, rapport = [], 0.0, []
