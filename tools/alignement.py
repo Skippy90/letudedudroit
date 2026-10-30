@@ -13,6 +13,10 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 - Le bruit de fond (appareil ménager, souffle) est atténué par RNNoise, un réseau de
   neurones spécialisé dans la voix (filtre arnndn de ffmpeg). Le modèle est téléchargé
   une fois dans .cache/rnnoise/ (dépôt GregorR/rnnoise-models, sur GitHub).
+- Option payante, vidéo par vidéo : si voice/<slug>/reglages.json contient
+  {"isolation": true}, RNNoise n'est pas utilisé ; la narration montée passe par
+  l'isolation de voix d'ElevenLabs (environ 1 000 crédits par minute). Le résultat est
+  gardé dans voice/<slug>/isole-<empreinte>.mp3 : relancer l'outil ne coûte rien.
 - Montage : les phrases gardées sont mises bout à bout, avec un court fondu à chaque
   coupe ; les pauses naturelles sont conservées quand deux phrases se suivent sans
   reprise, sinon remplacées par un silence de longueur fixe.
@@ -25,6 +29,7 @@ proxy de l'environnement ajoute l'en-tête xi-api-key lui-même.
 """
 
 import difflib
+import hashlib
 import json
 import os
 import re
@@ -113,6 +118,33 @@ def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, floa
     return retenues
 
 
+def isoler(monte: Path, dossier: Path, tmp: Path) -> Path:
+    """Isolation de voix ElevenLabs sur la narration montée, avec cache par empreinte."""
+    empreinte = hashlib.sha256(monte.read_bytes()).hexdigest()[:16]
+    cache = dossier / f"isole-{empreinte}.mp3"
+    if not cache.exists():
+        print("Isolation de la voix (ElevenLabs)…")
+        envoi = tmp / "isolation.mp3"
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-b:a", "192k", str(envoi)], check=True)
+        limite = uuid.uuid4().hex
+        corps = (f'--{limite}\r\nContent-Disposition: form-data; name="audio"; filename="{envoi.name}"\r\n'
+                 "Content-Type: audio/mpeg\r\n\r\n").encode() + envoi.read_bytes() + f"\r\n--{limite}--\r\n".encode()
+        entetes = {"Content-Type": f"multipart/form-data; boundary={limite}"}
+        if os.environ.get("ELEVENLABS_API_KEY"):
+            entetes["xi-api-key"] = os.environ["ELEVENLABS_API_KEY"]
+        requete = urllib.request.Request("https://api.elevenlabs.io/v1/audio-isolation", data=corps,
+                                         headers=entetes, method="POST")
+        with urllib.request.urlopen(requete, timeout=900) as reponse:
+            cache.write_bytes(reponse.read())
+        for ancien in dossier.glob("isole-*.mp3"):
+            if ancien != cache:
+                ancien.unlink()
+    isole = tmp / "isole.wav"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(cache), "-ac", "1", "-ar", str(FREQ),
+                    "-c:a", "pcm_s16le", str(isole)], check=True)
+    return isole
+
+
 def main(slug: str) -> None:
     dossier = RACINE / "voice" / slug
     sources = sorted(dossier.glob("enregistrement.*"))
@@ -124,12 +156,15 @@ def main(slug: str) -> None:
     tmp = dossier / "tmp"
     tmp.mkdir(exist_ok=True)
     brut = tmp / "brut.wav"
+    reglages_f = dossier / "reglages.json"
+    reglages = json.loads(reglages_f.read_text(encoding="utf-8")) if reglages_f.exists() else {}
+    isolation = reglages.get("isolation", False)
     if not MODELE_BRUIT.exists():
         MODELE_BRUIT.parent.mkdir(parents=True, exist_ok=True)
         urllib.request.urlretrieve(URL_MODELE, MODELE_BRUIT)
     # RNNoise travaille à 48 kHz ; on revient ensuite à la fréquence du reste du pipeline.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", "48000",
-                    "-af", f"highpass=f=80,arnndn=m={MODELE_BRUIT}", "-ar", str(FREQ),
+                    "-af", "highpass=f=80" + ("" if isolation else f",arnndn=m={MODELE_BRUIT}"), "-ar", str(FREQ),
                     "-c:a", "pcm_s16le", str(brut)], check=True)
 
     transcription = dossier / "transcription.json"
@@ -219,8 +254,11 @@ def main(slug: str) -> None:
                      f"reconnu : « {' '.join(entendus[i:j + 1])} »")
         rapport.append(note)
 
-    sf.write(tmp / "monte.wav", np.concatenate(morceaux), fr, subtype="PCM_16")
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(tmp / "monte.wav"),
+    monte = tmp / "monte.wav"
+    sf.write(monte, np.concatenate(morceaux), fr, subtype="PCM_16")
+    if isolation:
+        monte = isoler(monte, dossier, tmp)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-t", f"{t:.3f}",
                     "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", str(FREQ), "-c:a", "pcm_s16le",
                     str(dossier / "narration.wav")], check=True)
     for f in tmp.iterdir():
