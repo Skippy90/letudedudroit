@@ -4,7 +4,7 @@ Ce fichier pilote les schémas Manim (`render/manim/video.py`). Vocabulaire des 
 
 Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Plusieurs actions d'un même moment sont séparées par `;`.
 
-Personnages du fil rouge, mêmes couleurs dans toute la série : Nina rose, Tom turquoise, Malik bleu clair.
+Personnages du fil rouge, mêmes couleurs dans toute la série : Nina rose, Tom turquoise, Bastien bleu clair.
 
 Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : les mots « Qui ? », « Comment ? », « Avec quelles garanties ? » (ligne 5) et les étiquettes de rôle (ligne 15) s'affichent en titre et sous-titre ; la bannière de fin (ligne 26) est l'habillage Remotion.
 
@@ -16,15 +16,15 @@ Personnages du fil rouge, mêmes couleurs dans toute la série : Nina rose, Tom 
 | 2.1 | personnage tom "Tom" turquoise centre ; effacer-titres ; titre "Le voisin a vu" |
 | 2.2 | bulle tom "Un jeune homme, vers minuit" |
 | 2.3 | effacer-titres ; titre "Il faisait sombre" |
-| 3.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "Trois jours plus tard" |
+| 3.1 | scene-vide ; personnage bastien "Bastien" bleu_clair droite ; titre "Trois jours plus tard" |
 | 3.2 | sous-titre "Sur le scooter de Nina" |
-| 3.3 | effacer-titres ; personnage inconnu "Un inconnu" ambre_pale gauche ; jetons malik inconnu ; parole malik "Je l'ai acheté" |
-| 4.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "A-t-il volé ?" |
+| 3.3 | effacer-titres ; personnage inconnu "Un inconnu" ambre_pale gauche ; jetons bastien inconnu ; parole bastien "Je l'ai acheté" |
+| 4.1 | scene-vide ; personnage bastien "Bastien" bleu_clair droite ; titre "A-t-il volé ?" |
 | 4.2 | sous-titre "Peut-être" |
 | 4.3 | barrer |
 | 5.1 | scene-vide ; titre "Qui ?" ambre |
 | 5.2 | effacer-titres ; titre "Comment ?" ambre |
-| 5.3 | effacer-titres ; titre "Avec quelles garanties ?" ambre ; personnage malik "Malik" bleu_clair droite ; personnage nina "Nina" rose gauche |
+| 5.3 | effacer-titres ; titre "Avec quelles garanties ?" ambre ; personnage bastien "Bastien" bleu_clair droite ; personnage nina "Nina" rose gauche |
 | 5.4 | effacer-titres ; titre "La procédure pénale" |
 | 6.1 | scene-vide ; batiment ; renvoi "Droit pénal général" ; titre "La première moitié" |
 | 7.1 | scene-vide ; livre ; titre "Quoi ?" ambre |
@@ -46,12 +46,12 @@ Personnages du fil rouge, mêmes couleurs dans toute la série : Nina rose, Tom 
 | 13.1 | scene-vide ; colonnes "Trouver la vérité" "Protéger les droits" |
 | 13.2 | colonne-accent 2 |
 | 13.3 | titre "Tenir les deux ensemble" |
-| 14.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "Pensez à Malik" |
-| 14.2 | bulle malik "Je dis la vérité" |
+| 14.1 | scene-vide ; personnage bastien "Bastien" bleu_clair droite ; titre "Pensez à Bastien" |
+| 14.2 | bulle bastien "Je dis la vérité" |
 | 14.3 | effacer-titres ; titre "Présumé innocent" ambre |
-| 14.4 | effacer-bulle malik ; personnage nina "Nina" rose gauche ; sous-titre "Nina a aussi des droits" |
-| 15.1 | scene-vide ; personnage nina "Nina" rose gauche ; personnage tom "Tom" turquoise centre ; personnage malik "Malik" bleu_clair droite ; titre "Un rôle pour chacun" |
-| 15.2 | accent malik ; effacer-titres ; titre "Malik : le prévenu" |
+| 14.4 | effacer-bulle bastien ; personnage nina "Nina" rose gauche ; sous-titre "Nina a aussi des droits" |
+| 15.1 | scene-vide ; personnage nina "Nina" rose gauche ; personnage tom "Tom" turquoise centre ; personnage bastien "Bastien" bleu_clair droite ; titre "Un rôle pour chacun" |
+| 15.2 | accent bastien ; effacer-titres ; titre "Bastien : le prévenu" |
 | 15.3 | accent nina ; effacer-titres ; titre "Nina : la lésée" |
 | 15.4 | accent tom ; effacer-titres ; titre "Tom : un témoin" |
 | 15.5 | effacer-titres ; titre "Un sens juridique exact" ; renvoi "vidéos 4, 5 et 13" |

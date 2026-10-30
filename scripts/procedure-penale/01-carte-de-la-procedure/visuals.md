@@ -4,7 +4,7 @@ Ce fichier pilote les schémas Manim (`render/manim/video.py`). Vocabulaire des 
 
 Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Plusieurs actions d'un même moment sont séparées par `;`.
 
-Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procureure violet.
+Personnages du fil rouge : Nina rose, Tom turquoise, Bastien bleu clair ; la procureure violet.
 
 Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : la carte est une frise du temps à cinq repères (la charte n'a pas d'autre schéma d'étapes) ; dans les sections 1 à 5, l'étape en cours s'affiche en titre plutôt qu'en coloriant son repère ; le scooter n'est pas dessiné ; « Recours » (ligne 7) est un sous-titre.
 
@@ -12,8 +12,8 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | --- | --- |
 | 1.1 | titre "L'affaire du scooter" |
 | 1.2 | personnage nina "Nina" rose gauche ; dommage nina |
-| 1.3 | personnage malik "Malik" bleu_clair droite ; sous-titre "Contrôlé au guidon" |
-| 1.4 | effacer-titres ; parole malik "Je l'ai acheté" |
+| 1.3 | personnage bastien "Bastien" bleu_clair droite ; sous-titre "Contrôlé au guidon" |
+| 1.4 | effacer-titres ; parole bastien "Je l'ai acheté" |
 | 2.1 | scene-vide ; titre "Et maintenant ?" |
 | 2.2 | effacer-titres ; titre "Qui va enquêter ?" |
 | 2.3 | effacer-titres ; titre "Qui va décider ?" |
@@ -40,7 +40,7 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 11.3 | article "Art. 301 CPP" |
 | 12.1 | effacer-parole tom ; personnage nina "Nina" rose centre ; titre "Une plainte" |
 | 12.2 | effacer-titres ; parole nina "On m'a volé mon scooter" |
-| 13.1 | effacer-parole nina ; personnage malik "Malik" bleu_clair droite ; titre "L'initiative de la police" |
+| 13.1 | effacer-parole nina ; personnage bastien "Bastien" bleu_clair droite ; titre "L'initiative de la police" |
 | 13.2 | sous-titre "Un contrôle" ; article "Art. 15 CPP" |
 | 14.1 | scene-vide ; article-retirer ; titre "Une précision importante" |
 | 14.2 | effacer-titres ; colonnes "D'office" "Sur plainte" ; colonne-accent 1 |
@@ -55,8 +55,8 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 17.4 | article "Art. 306 CPP" |
 | 18.1 | scene-vide ; personnage nina "Nina" rose gauche ; titre "La police entend" |
 | 18.2 | personnage tom "Tom" turquoise centre ; bulle tom "Un jeune homme" |
-| 18.3 | personnage malik "Malik" bleu_clair droite ; accent malik |
-| 19.1 | scene-vide ; personnage malik "Malik" bleu_clair gauche ; titre "Malik : le prévenu" ambre |
+| 18.3 | personnage bastien "Bastien" bleu_clair droite ; accent bastien |
+| 19.1 | scene-vide ; personnage bastien "Bastien" bleu_clair gauche ; titre "Bastien : le prévenu" ambre |
 | 19.2 | article "Art. 111 CPP" |
 | 19.3 | sous-titre "Il a des droits" |
 | 19.4 | effacer-titres ; cases "Se taire" "Un avocat" ; cocher 1 vert ; cocher 2 vert |
@@ -83,13 +83,13 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 26.2 | effacer-titres ; cases "Entendre" "Réunir les preuves" "Mesures de contrainte" |
 | 27.1 | scene-vide ; colonnes "À charge" "À décharge" ; titre "Avec le même soin" |
 | 27.2 | article "Art. 6 CPP" |
-| 28.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; bulle malik "Je l'ai acheté" ; titre "Cela aussi doit être vérifié" |
+| 28.1 | scene-vide ; personnage bastien "Bastien" bleu_clair droite ; bulle bastien "Je l'ai acheté" ; titre "Cela aussi doit être vérifié" |
 | 29.1 | scene-vide ; article-retirer ; personnage nina "Nina" rose gauche ; titre "Et Nina ?" |
 | 29.2 | effacer-titres ; titre "Partie plaignante" ambre |
 | 29.3 | cases "Consulter le dossier" "Proposer des preuves" "Demander réparation" |
 | 29.4 | article "Art. 118 CPP" |
 | 29.5 | renvoi "vidéo 5" |
-| 30.1 | scene-vide ; personnage malik "Malik" bleu_clair gauche ; titre "Et une détention ?" |
+| 30.1 | scene-vide ; personnage bastien "Bastien" bleu_clair gauche ; titre "Et une détention ?" |
 | 30.2 | effacer-titres ; titre "Tribunal des mesures de contrainte" ; article "Art. 13 CPP" |
 | 30.3 | renvoi "vidéo 20" |
 | 31.1 | scene-vide ; article-retirer ; titre "Étape 4 : la clôture" |
@@ -146,8 +146,8 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 52.1 | scene-vide ; personnage procureure "La procureure" violet droite ; titre "Au centre de tout" |
 | 52.2 | liste "Classer" "Ordonnance pénale" "Accuser" |
 | 53.1 | scene-vide ; titre "Une question pour finir" |
-| 53.2 | effacer-titres ; personnage malik "Malik" bleu_clair gauche ; titre "Une ordonnance pénale" |
-| 53.3 | bulle malik "Au tiroir" |
+| 53.2 | effacer-titres ; personnage bastien "Bastien" bleu_clair gauche ; titre "Une ordonnance pénale" |
+| 53.3 | bulle bastien "Au tiroir" |
 | 54.1 | scene-vide ; frise ; point 0.1 "Notification" ; point 0.7 "2 semaines" ; questions |
 | 54.2 | titre "Encore un procès ?" |
 | 55.1 | scene-vide ; titre "Réponse dans la description" |

@@ -4,14 +4,14 @@ Matière : procédure pénale. Notion : les grandes étapes de la procédure pé
 
 Chaque ligne du tableau est une phrase ou un petit groupe de phrases à enregistrer d'un trait ; la colonne de droite dit ce qui apparaît à l'écran pendant qu'on l'entend. Les articles cités s'affichent en bas de l'image au moment où ils sont prononcés.
 
-Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair), Tom (silhouette turquoise).
+Personnages du fil rouge : Nina (silhouette rose), Bastien (silhouette bleu clair), Tom (silhouette turquoise).
 
 ## Le cas de départ
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 1 | Reprenons l'affaire du scooter. Nina se l'est fait voler devant chez elle. Trois jours plus tard, la police contrôle Malik au guidon. Malik dit l'avoir acheté à un inconnu. | Les silhouettes de Nina et de Malik ; le scooter entre les deux |
-| 2 | À partir de là, que va-t-il se passer ? Qui va enquêter ? Qui va décider si Malik est coupable ? Et combien de temps cela peut-il durer ? | Trois questions apparaissent l'une après l'autre |
+| 1 | Reprenons l'affaire du scooter. Nina se l'est fait voler devant chez elle. Trois jours plus tard, la police contrôle Bastien au guidon. Bastien dit l'avoir acheté à un inconnu. | Les silhouettes de Nina et de Bastien ; le scooter entre les deux |
+| 2 | À partir de là, que va-t-il se passer ? Qui va enquêter ? Qui va décider si Bastien est coupable ? Et combien de temps cela peut-il durer ? | Trois questions apparaissent l'une après l'autre |
 | 3 | Pour répondre, il faut une carte. Une vue d'ensemble de la procédure pénale, du début à la fin. C'est l'objet de cette vidéo. Les suivantes reprendront chaque étape en détail. | Le titre « La carte de la procédure » |
 
 ## La carte : cinq étapes
@@ -32,7 +32,7 @@ Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair)
 | 10 | Tout commence quand une autorité apprend qu'une infraction a peut-être été commise. | La frise ; le repère « 1. Signalement » en ambre |
 | 11 | Cela peut venir d'une dénonciation. N'importe qui peut dénoncer une infraction à la police ou au ministère public, par écrit ou oralement. C'est l'article trois cent un. | Bloc « Art. 301 CPP » ; la silhouette de Tom ; le mot « Dénonciation » |
 | 12 | Cela peut venir d'une plainte, déposée par la personne lésée. Nina, par exemple, se rend au poste pour signaler le vol de son scooter. | La silhouette de Nina ; le mot « Plainte » |
-| 13 | La police peut aussi agir de sa propre initiative, par exemple lors d'un contrôle. C'est ce qui arrive à Malik. | Bloc « Art. 15 CPP » ; la silhouette de Malik ; le mot « Contrôle de police » |
+| 13 | La police peut aussi agir de sa propre initiative, par exemple lors d'un contrôle. C'est ce qui arrive à Bastien. | Bloc « Art. 15 CPP » ; la silhouette de Bastien ; le mot « Contrôle de police » |
 | 14 | Une précision importante. En principe, les infractions sont poursuivies d'office : l'État agit même si personne ne porte plainte. C'est le cas du vol : même sans la plainte de Nina, l'État devrait poursuivre. | Deux colonnes « D'office » et « Sur plainte » ; « D'office » en ambre |
 | 15 | D'autres infractions ne sont poursuivies que sur plainte de la victime. On verra la différence en détail dans les vidéos 7 et 8. | « Sur plainte » en ambre ; « vidéos 7 et 8 » en petit |
 
@@ -42,8 +42,8 @@ Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair)
 | --- | --- | --- |
 | 16 | Deuxième étape : la police enquête. Elle établit les faits. | Le repère « 2. Police » en ambre |
 | 17 | Concrètement, elle met en sûreté les traces et les preuves. Elle identifie et interroge les lésés et les suspects. Et si nécessaire, elle arrête les suspects. C'est l'article trois cent six. | Bloc « Art. 306 CPP » ; trois cases : « Traces et preuves », « Interroger », « Arrêter » |
-| 18 | Dans notre affaire, la police entend Nina, qui décrit son scooter. Elle entend Tom, qui a vu un jeune homme partir. Et elle entend Malik. | Les trois silhouettes, chacune s'éclaire à son tour |
-| 19 | Dès que Malik est soupçonné, il a un statut : celui de prévenu. C'est l'article cent onze. Et ce statut lui donne des droits. Avant sa première audition, on doit lui dire qu'il peut se taire et demander un avocat. C'est l'article cent cinquante-huit. On y consacrera la vidéo 11. | La silhouette de Malik ; le mot « Prévenu » ; bloc « Art. 158 CPP » ; deux cases « Se taire », « Un avocat » ; « vidéo 11 » en petit |
+| 18 | Dans notre affaire, la police entend Nina, qui décrit son scooter. Elle entend Tom, qui a vu un jeune homme partir. Et elle entend Bastien. | Les trois silhouettes, chacune s'éclaire à son tour |
+| 19 | Dès que Bastien est soupçonné, il a un statut : celui de prévenu. C'est l'article cent onze. Et ce statut lui donne des droits. Avant sa première audition, on doit lui dire qu'il peut se taire et demander un avocat. C'est l'article cent cinquante-huit. On y consacrera la vidéo 11. | La silhouette de Bastien ; le mot « Prévenu » ; bloc « Art. 158 CPP » ; deux cases « Se taire », « Un avocat » ; « vidéo 11 » en petit |
 | 20 | Mais la police n'agit pas seule. Elle travaille sous la surveillance et les instructions du ministère public. C'est l'article quinze. | Bloc « Art. 15 CPP » ; le mot « Sous les instructions du procureur » |
 | 21 | Pour les infractions graves, elle doit l'informer sans retard. Et à la fin de ses investigations, elle lui transmet son rapport et le dossier. C'est l'article trois cent sept. | Bloc « Art. 307 CPP » ; le mot « Rapport au ministère public » |
 
@@ -56,10 +56,10 @@ Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair)
 | 24 | Le procureur ouvre une instruction quand il existe des soupçons suffisants qu'une infraction a été commise. C'est l'article trois cent neuf. | Bloc « Art. 309 CPP » ; le mot « Soupçons suffisants » |
 | 25 | À l'inverse, si les conditions ne sont manifestement pas réunies, il refuse d'aller plus loin. Il rend alors une ordonnance de non-entrée en matière. C'est l'article trois cent dix. | Bloc « Art. 310 CPP » ; le mot « Non-entrée en matière » |
 | 26 | Pendant l'instruction, le procureur établit les faits et les qualifie juridiquement. Il entend les personnes, réunit les preuves, et peut demander des mesures de contrainte. | Trois cases : « Entendre », « Prouver », « Mesures de contrainte » |
-| 27 | Attention : il doit chercher avec le même soin ce qui accuse Malik et ce qui le disculpe. C'est l'article six. | Bloc « Art. 6 CPP » ; deux colonnes « À charge » et « À décharge » de même taille |
-| 28 | Si Malik dit vrai, si quelqu'un lui a vraiment vendu ce scooter, le procureur doit aussi le vérifier. | La silhouette de Malik ; une bulle « Je l'ai acheté » |
+| 27 | Attention : il doit chercher avec le même soin ce qui accuse Bastien et ce qui le disculpe. C'est l'article six. | Bloc « Art. 6 CPP » ; deux colonnes « À charge » et « À décharge » de même taille |
+| 28 | Si Bastien dit vrai, si quelqu'un lui a vraiment vendu ce scooter, le procureur doit aussi le vérifier. | La silhouette de Bastien ; une bulle « Je l'ai acheté » |
 | 29 | Pendant ce temps, Nina peut aussi participer. En déposant plainte, elle est devenue partie plaignante. Elle peut consulter le dossier, proposer des preuves, et demander réparation de son dommage. C'est l'article cent dix-huit. On le verra dans la vidéo 5. | La silhouette de Nina ; le mot « Partie plaignante » ; bloc « Art. 118 CPP » ; trois cases ; « vidéo 5 » en petit |
-| 30 | Et si Malik devait être placé en détention, ce n'est pas le procureur qui l'ordonnerait. Ce serait un tribunal spécial, le tribunal des mesures de contrainte. On le verra dans la vidéo 20. | Bloc « Art. 13 CPP » ; le mot « Tribunal des mesures de contrainte » ; « vidéo 20 » en petit |
+| 30 | Et si Bastien devait être placé en détention, ce n'est pas le procureur qui l'ordonnerait. Ce serait un tribunal spécial, le tribunal des mesures de contrainte. On le verra dans la vidéo 20. | Bloc « Art. 13 CPP » ; le mot « Tribunal des mesures de contrainte » ; « vidéo 20 » en petit |
 
 ## Étape 4 : trois manières de clore l'enquête
 
@@ -107,8 +107,8 @@ Personnages du fil rouge : Nina (silhouette rose), Malik (silhouette bleu clair)
 | --- | --- | --- |
 | 51 | Retenons. Une affaire pénale traverse cinq étapes : signalement, enquête de police, instruction, clôture, et parfois jugement. | La frise complète, les cinq repères |
 | 52 | Le ministère public est au centre de tout. Il dirige l'enquête, puis choisit entre classer, condamner par ordonnance pénale, ou accuser devant le tribunal. | Liste : « Classer », « Ordonnance pénale », « Accuser » |
-| 53 | Une question pour finir. Malik reçoit une ordonnance pénale qui le condamne pour vol. Il la range dans un tiroir et ne fait rien. | La silhouette de Malik ; le mot « Ordonnance pénale » |
+| 53 | Une question pour finir. Bastien reçoit une ordonnance pénale qui le condamne pour vol. Il la range dans un tiroir et ne fait rien. | La silhouette de Bastien ; le mot « Ordonnance pénale » |
 | 54 | Deux semaines plus tard, peut-il encore demander à être jugé par un tribunal ? Écrivez votre réponse en commentaire. | Une frise : « Notification », « 2 semaines » ; un point d'interrogation |
 | 55 | La réponse est dans la description. Dans la prochaine vidéo, la vidéo 2, on découvre les grands principes qui encadrent toute la procédure. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : en principe, non. L'opposition doit être formée par écrit, devant le ministère public, dans les dix jours (article 354, alinéa 1, du Code de procédure pénale). Sans opposition valable, l'ordonnance pénale est assimilée à un jugement entré en force (article 354, alinéa 3). Deux semaines après la notification, le délai est dépassé : Malik ne peut plus obtenir un procès devant le tribunal par cette voie. Seules des voies exceptionnelles restent ouvertes, par exemple une restitution du délai si un empêchement non fautif l'a empêché d'agir (article 94), ou une révision en cas de faits nouveaux (articles 410 et suivants).
+**Réponse attendue à la question finale**, pour la description : en principe, non. L'opposition doit être formée par écrit, devant le ministère public, dans les dix jours (article 354, alinéa 1, du Code de procédure pénale). Sans opposition valable, l'ordonnance pénale est assimilée à un jugement entré en force (article 354, alinéa 3). Deux semaines après la notification, le délai est dépassé : Bastien ne peut plus obtenir un procès devant le tribunal par cette voie. Seules des voies exceptionnelles restent ouvertes, par exemple une restitution du délai si un empêchement non fautif l'a empêché d'agir (article 94), ou une révision en cas de faits nouveaux (articles 410 et suivants).

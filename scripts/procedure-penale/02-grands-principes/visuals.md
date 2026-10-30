@@ -4,20 +4,20 @@ Ce fichier pilote les schémas Manim (`render/manim/video.py`). Vocabulaire des 
 
 Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Plusieurs actions d'un même moment sont séparées par `;`.
 
-Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le policier ambre pâle.
+Personnages : Nina rose, Tom turquoise, Bastien bleu clair (fil rouge) ; le policier ambre pâle.
 
 Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte et sous douze mots : les six principes s'affichent en mots courts (« Dignité », « Vérité »…) ; les méthodes interdites (ligne 10) forment une liste sous le titre « Méthodes interdites », sans barrer chaque mot ; le mot « Doute sérieux » (ligne 33) est un titre au-dessus des deux colonnes.
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | personnage malik "Malik" bleu_clair droite ; titre "Au poste de police" |
+| 1.1 | personnage bastien "Bastien" bleu_clair droite ; titre "Au poste de police" |
 | 1.2 | sous-titre "Depuis deux heures" |
-| 1.3 | effacer-titres ; parole malik "Je l'ai acheté" |
-| 2.1 | effacer-parole malik ; personnage policier "Le policier" ambre_pale gauche ; parole policier "Avoue, et tu rentres ce soir" |
+| 1.3 | effacer-titres ; parole bastien "Je l'ai acheté" |
+| 2.1 | effacer-parole bastien ; personnage policier "Le policier" ambre_pale gauche ; parole policier "Avoue, et tu rentres ce soir" |
 | 2.1+3 | effacer-parole policier ; parole policier "Sinon, tu dors en cellule" |
-| 3.1 | effacer-parole policier ; bulle malik "Je suis fatigué" |
-| 3.2 | effacer-bulle malik ; parole malik "D'accord, j'avoue" |
-| 3.3 | effacer-parole malik ; titre "Cet aveu vaut-il quelque chose ?" |
+| 3.1 | effacer-parole policier ; bulle bastien "Je suis fatigué" |
+| 3.2 | effacer-bulle bastien ; parole bastien "D'accord, j'avoue" |
+| 3.3 | effacer-parole bastien ; titre "Cet aveu vaut-il quelque chose ?" |
 | 3.4 | effacer-titres ; titre "Avait-il le droit ?" |
 | 4.1 | scene-vide ; titre "Les grands principes" ambre |
 | 4.2 | sous-titre "Les règles de base" |
@@ -40,16 +40,16 @@ Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le polici
 | 10.3 | liste-ajouter "Promesses" ; liste-ajouter "Tromperie" |
 | 10.4 | article "Art. 140 CPP" |
 | 11.1 | sous-titre "Même avec son accord" |
-| 12.1 | scene-vide ; personnage policier "Le policier" ambre_pale gauche ; personnage malik "Malik" bleu_clair droite ; titre "Revenons au policier" |
+| 12.1 | scene-vide ; personnage policier "Le policier" ambre_pale gauche ; personnage bastien "Bastien" bleu_clair droite ; titre "Revenons au policier" |
 | 12.2 | effacer-titres ; parole policier "Avoue, et tu rentres" |
-| 12.3 | titre "Une promesse" |
-| 12.4 | effacer-parole policier ; parole policier "Sinon, la cellule" |
-| 12.5 | effacer-titres ; titre "Une menace" |
-| 12.6 | effacer-parole policier ; effacer-titres ; titre "Les deux sont interdites" ambre |
+| 12.3 | effacer-parole policier ; titre "Une promesse" |
+| 12.4 | effacer-titres ; parole policier "Sinon, la cellule" |
+| 12.5 | effacer-parole policier ; titre "Une menace" |
+| 12.6 | effacer-titres ; titre "Les deux sont interdites" ambre |
 | 13.1 | scene-vide ; titre "Aveu inexploitable" |
 | 13.2 | sous-titre "Preuves inexploitables" ; renvoi "vidéo 15" |
 | 14.1 | scene-vide ; article-retirer ; titre "Une autre garantie" |
-| 14.2 | personnage malik "Malik" bleu_clair droite ; effacer-titres ; titre "Pas obligé de s'accuser" |
+| 14.2 | personnage bastien "Bastien" bleu_clair gauche ; effacer-titres ; titre "Pas obligé de s'accuser" |
 | 14.3 | cases "Se taire" "Ne pas collaborer" ; cocher 1 vert ; cocher 2 vert |
 | 14.4 | article "Art. 113 CPP" |
 | 15.1 | scene-vide ; titre "Une limite" |
@@ -59,7 +59,7 @@ Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le polici
 | 16.2 | sous-titre "Tous les faits utiles" |
 | 16.3 | effacer-titres ; titre "La maxime de l'instruction" |
 | 16.4 | article "Art. 6 CPP" |
-| 17.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "Pas à Malik de prouver" |
+| 17.1 | scene-vide ; personnage bastien "Bastien" bleu_clair droite ; titre "Pas à Bastien de prouver" |
 | 17.2 | personnage nina "Nina" rose gauche ; sous-titre "Ni à Nina" |
 | 17.3 | effacer-titres ; titre "Le travail de l'État" |
 | 18.1 | scene-vide ; colonnes "À charge" "À décharge" ; titre "Avec un soin égal" |
@@ -74,7 +74,7 @@ Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le polici
 | 22.1 | effacer-titres ; titre "Faute et conséquences peu importantes" |
 | 22.2 | article "Art. 52 CP" |
 | 23.1 | scene-vide ; titre "Le dommage réparé" |
-| 23.2 | rembobiner ; personnage malik "Malik" bleu_clair droite ; personnage nina "Nina" rose gauche ; jetons malik nina |
+| 23.2 | rembobiner ; personnage bastien "Bastien" bleu_clair droite ; personnage nina "Nina" rose gauche ; jetons bastien nina |
 | 23.3 | article "Art. 53 CP" |
 | 24.1 | scene-vide ; titre "Conditions strictes" |
 | 24.2 | effacer-titres ; cases "Faits admis" "Peine modeste" "Intérêts faibles" ; cocher 1 vert |
@@ -104,12 +104,12 @@ Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le polici
 | 33.1 | scene-vide ; titre "Un doute sérieux" ambre |
 | 33.2 | colonnes "Simple probabilité" "Certitude absolue" ; colonne-eteindre 1 |
 | 33.3 | colonne-eteindre 2 |
-| 34.1 | scene-vide ; personnage tom "Tom" turquoise gauche ; personnage malik "Malik" bleu_clair droite ; bulle tom "Un jeune homme" |
+| 34.1 | scene-vide ; personnage tom "Tom" turquoise gauche ; personnage bastien "Bastien" bleu_clair droite ; bulle tom "Un jeune homme" |
 | 34.2 | titre "Doute sérieux : pas de vol retenu" |
 | 35.1 | scene-vide ; titre "Aussi hors du tribunal" |
 | 35.2 | sous-titre "L'information du public" |
 | 35.3 | article "Art. 74 CPP" |
-| 36.1 | personnage malik "Malik" bleu_clair droite ; effacer-titres ; titre "Le voleur" ; barrer |
+| 36.1 | personnage bastien "Bastien" bleu_clair droite ; effacer-titres ; titre "Le voleur" ; barrer |
 | 37.1 | scene-vide ; article-retirer ; titre "Principe 6 : pas deux fois" ambre |
 | 37.2 | sous-titre "Condamné ou acquitté, entré en force" |
 | 37.3 | effacer-titres ; titre "Plus de poursuite pour la même infraction" |
@@ -141,10 +141,10 @@ Personnages : Nina rose, Tom turquoise, Malik bleu clair (fil rouge) ; le polici
 | 46.2 | liste "1. Dignité" "2. Vérité" "3. Poursuivre" |
 | 46.3 | accent liste |
 | 46.4 | liste-ajouter "4. Accusation" ; liste-ajouter "5. Innocence" ; liste-ajouter "6. Pas deux fois" |
-| 47.1 | scene-vide ; personnage nina "Nina" rose gauche ; personnage tom "Tom" turquoise centre ; personnage malik "Malik" bleu_clair droite |
+| 47.1 | scene-vide ; personnage nina "Nina" rose gauche ; personnage tom "Tom" turquoise centre ; personnage bastien "Bastien" bleu_clair droite |
 | 47.2 | titre "La vérité, sans abus" |
 | 48.1 | scene-vide ; titre "Une question pour finir" |
-| 48.2 | effacer-titres ; personnage malik "Malik" bleu_clair droite ; titre "Acquitté" |
+| 48.2 | effacer-titres ; personnage bastien "Bastien" bleu_clair droite ; titre "Acquitté" |
 | 48.3 | sous-titre "Jugement entré en force" |
 | 49.1 | scene-vide ; frise ; point 0.1 "Acquittement" ; point 0.5 "6 mois" ; point 0.85 "Nouveau témoin" |
 | 49.2 | titre "Un nouveau procès ?" ; questions |
