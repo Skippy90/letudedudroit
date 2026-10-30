@@ -1,13 +1,13 @@
 # Marque — L'étude du droit
 
-Le symbole est le bâtiment à trois étages des vidéos, réduit à l'essentiel : un toit et trois étages. De bas en haut, vert (condition remplie), blanc cassé, ambre (l'étage en cours d'examen). Il dit en un coup d'œil ce que fait la chaîne : raisonner étage par étage.
+La marque est en blanc sur rouge suisse : le nom « L'étude du droit » et le symbole, le bâtiment à trois étages des vidéos réduit à un toit et trois étages (blanc, de plus en plus transparent vers le bas). Le rouge est réservé à la marque : les schémas des vidéos et les miniatures gardent le bleu nuit de la charte.
 
 ## Fichiers
 
 | Fichier | Usage | Taille |
 | --- | --- | --- |
-| `symbole.svg`, `png/symbole-1024.png` | Symbole seul, coins arrondis | 1024 × 1024 |
-| `profil.svg`, `png/profil-800.png` | Photo de profil YouTube (rognée en cercle) | 800 × 800 |
+| `symbole.svg`, `png/symbole-1024.png` | Symbole blanc sur pastille rouge, coins arrondis | 1024 × 1024 |
+| `profil.svg`, `png/profil-800.png` | Photo de profil YouTube : symbole et nom sur deux lignes, en blanc sur rouge (tient dans le cercle) | 800 × 800 |
 | `png/profil-1080.png` | Photo de profil Instagram, TikTok | 1080 × 1080 |
 | `banniere-youtube.svg`, `png/banniere-youtube-2560x1440.png` | Bannière YouTube : symbole, nom et signature ; tout tient dans la zone visible partout (1546 × 423 au centre) | 2560 × 1440 |
 | `logo-horizontal.svg`, `png/logo-horizontal-1600x512.png` | Symbole + nom + signature : documents, présentations, site | 1600 × 512 |
@@ -22,17 +22,16 @@ Ouverture et fin des vidéos : le symbole s'y construit (étages de bas en haut,
 - Nom : **L'étude du droit** (apostrophe typographique ’ dans les visuels). Handle sans accent ni apostrophe : `letudedudroit`.
 - Signature : **Le droit suisse, une notion à la fois.**
 
-## Couleurs (celles de la charte visuelle)
+## Couleurs
 
-| Nom | Valeur | Rôle dans la marque |
+| Nom | Valeur | Rôle |
 | --- | --- | --- |
-| Bleu nuit | `#0F1B2D` | Fond de tout |
-| Blanc cassé | `#F2EFE6` | Nom, toit, textes |
-| Ambre | `#E3A52F` | Signature, mot-clé du titre des miniatures, étage du haut |
-| Vert | `#4CAF7D` | Étage du bas |
-| Surface | `#1B2B44` | Blocs (articles, étages des vidéos) |
+| Rouge suisse | `#DA291C` | Fond de la marque : profil, bannière, logo, filigrane, ouverture et fin des vidéos |
+| Blanc | `#FFFFFF` | Nom, symbole, signature sur le rouge |
+| Bleu nuit | `#0F1B2D` | Schémas des vidéos et miniatures (charte visuelle) |
+| Ambre | `#E3A52F` | Dernier mot du titre des miniatures |
 
-Le rouge (`#D9534F`) reste réservé au dommage dans les vidéos : jamais dans la marque.
+Le rouge de la marque n'entre pas dans les schémas : là, le rouge (`#D9534F`) reste réservé au dommage. Ouverture et fin passent en douceur du rouge au bleu nuit des schémas. Pas de croix suisse ni d'armoiries : le rouge et le blanc suffisent, sans laisser croire à une chaîne officielle.
 
 ## Typographie
 
@@ -40,7 +39,7 @@ Inter, sans empattement : extra-gras (800) pour le nom et les titres, demi-gras 
 
 ## Règles
 
-- Le symbole sur fond bleu nuit uniquement ; jamais déformé, jamais recoloré.
+- Le symbole en blanc sur rouge (ou rouge sur blanc si le fond est clair) ; jamais déformé, jamais d'autres couleurs.
 - Marge autour du symbole : au moins la hauteur d'un étage.
 - Taille minimale : 48 px de côté (le filigrane fait 150 px).
-- Miniatures : la question en grand, le dernier mot en ambre ; la scène du cas en dessous ; le symbole en bas à gauche.
+- Miniatures : la question en grand, le dernier mot en ambre, sur bleu nuit ; la scène du cas en dessous ; la pastille rouge du symbole en bas à gauche.

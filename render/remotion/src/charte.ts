@@ -5,3 +5,6 @@ export const ACCENT = "#E3A52F";
 export const GRIS = "#6B7280";
 export const POLICE = "Inter, sans-serif";
 export const FPS = 30;
+
+// Rouge suisse : réservé à la marque (ouverture, fin, logo, bannière). Les schémas gardent le bleu nuit.
+export const ROUGE_MARQUE = "#DA291C";
