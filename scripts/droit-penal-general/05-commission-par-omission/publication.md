@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Coupable de n'avoir rien fait | Droit pénal suisse
 
-## Description (2752 caractères sur 5 000)
+## Description (2787 caractères sur 5 000)
 
 ```text
 Coupable de n'avoir rien fait — expliqué simplement, à partir d'un cas concret.
@@ -14,7 +14,7 @@ Coupable de n'avoir rien fait — expliqué simplement, à partir d'un cas concr
 Articles cités (texte en vigueur vérifié sur Fedlex) :
 • Art. 11 CP, al. 1 : Un crime ou un délit peut aussi être commis par un comportement passif contraire à une obligation d'agir
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
-• Art. 11 CP, al. 2 : Quatre sources de l'obligation : la loi, un contrat, une communauté de risques librement consentie, la création d'un risque
+• Art. 11 CP, al. 2 : Notamment quatre sources de l'obligation (« notamment en vertu ») : la loi, un contrat, une communauté de risques librement consentie, la création d'un risque
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
 • Art. 11 CP, al. 3 et 4 : Condition d'équivalence : même reproche qu'un comportement actif ; le juge peut atténuer la peine
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
@@ -40,9 +40,9 @@ Chapitres :
 0:00 Le cas de départ
 0:40 La carte : agir et ne pas agir
 1:14 La position de garant
-2:45 Clara et Maël
-3:55 Le piège classique
-4:48 Conclusion et question
+2:44 Clara et Maël
+3:57 Le piège classique
+4:50 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/05-commission-par-omission
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

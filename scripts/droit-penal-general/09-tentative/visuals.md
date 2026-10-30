@@ -41,7 +41,7 @@ Personnages : Kilian turquoise, Mia violet.
 | 11.2 | titre "Repérages : pas punissables" |
 | 12.1 | scene-vide ; article-retirer ; frise ; titre "Le passage à l'acte" |
 | 12.2 | effacer-titres ; titre "Dernier pas décisif" ambre ; repere 0.55 "Le seuil" |
-| 12.3 | sous-titre "Plus de retour en arrière" |
+| 12.3 | sous-titre "Il mène directement à l'infraction" |
 | 13.1 | zone 0.55 1 ambre |
 | 13.2 | effacer-titres ; titre "Lien étroit : temps et lieu" |
 | 14.1 | point 0.62 "Forcer la porte" |
@@ -104,10 +104,11 @@ Personnages : Kilian turquoise, Mia violet.
 | 33.1 | scene-vide ; article "Art. 23 CP" ; titre "Renoncer de soi-même" |
 | 33.2 | sous-titre "Idée, préparation, tentative, résultat ?" |
 | 34.1 | scene-vide ; article-retirer ; titre "Une question pour finir" |
-| 34.2 | effacer-titres ; personnage mia "Mia" violet gauche ; bulle mia "Embêter le voisin" ; frise ; point 0.3 "Le feu" |
-| 34.3 | point 0.6 "Elle l'éteint" |
+| 34.2 | effacer-titres ; personnage mia "Mia" violet gauche ; bulle mia "Rayer sa voiture" ; frise |
+| 34.3 | point 0.3 "La clé" |
+| 34.4 | point 0.6 "Elle repart" |
 | 35.1 | effacer-bulle mia ; article "Art. 23 CP" ; titre "Que dit l'article 23 ?" |
-| 35.2 | sous-titre "Tout est-il effacé ?" |
+| 35.2 | sous-titre "Forcément impunie ?" |
 | 35.3 | effacer-titres ; titre "Votre réponse en commentaire" |
 | 36.1 | scene-vide ; article-retirer ; titre "L'étude du droit" ; sous-titre "Script et articles sur GitHub" |
 | 36.2 | accent titre |

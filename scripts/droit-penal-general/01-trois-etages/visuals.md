@@ -19,6 +19,7 @@ Personnages : Marc turquoise, Julien rose.
 | 2.1 | effacer-titres ; effacer-bulle marc ; accent julien |
 | 2.2 | deplacer marc centre-gauche |
 | 2.3 | basculer julien ; dommage julien |
+| 2.4 | sous-titre "Fracture simple" |
 | 3.1 | titre "Infraction ?" |
 | 3.2 | sous-titre "Votre réponse instinctive ?" |
 | 3.3 | accent titre |

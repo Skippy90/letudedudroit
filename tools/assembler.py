@@ -40,7 +40,7 @@ def main(slug: str) -> None:
         "titre": m[2].strip(),
         "matiere": MATIERES.get(matiere, matiere),
         "numero": int(m[1]),
-        "narrationSynthetique": config_voix["source"] == "synthese",
+        "narrationSynthetique": timings.get("source", config_voix["source"]) == "synthese",
     }, ensure_ascii=False), encoding="utf-8")
 
     # 1. Habillage : ouverture et carte de fin, rendues par Remotion (muettes).

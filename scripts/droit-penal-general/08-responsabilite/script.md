@@ -32,7 +32,7 @@ Personnages : Théo (silhouette turquoise), l'agent de sécurité (silhouette bl
 | 10 | Seconde faculté : se déterminer d'après cette appréciation. Autrement dit, être capable de se retenir. | Case « Se retenir » |
 | 11 | Il suffit qu'une seule de ces facultés manque complètement. Alors l'auteur est irresponsable, et il n'est pas punissable. Notez les mots « au moment d'agir ». On ne juge pas la personne en général, mais son état à l'instant de l'acte. | Une case se coche en gris ; le mot « Irresponsable » |
 | 12 | Première variante. Théo traverse une grave crise psychotique. Il croit que l'agent est un démon venu l'emporter. | Rembobinage ; une bulle « Un démon » au-dessus de Théo |
-| 13 | Il ne comprend plus du tout ce qu'il fait. La première faculté manque. Théo est irresponsable. | La case « Comprendre » grise ; l'étage « Culpabilité » gris |
+| 13 | Supposons qu'au moment d'agir, il ne comprenne plus du tout ce qu'il fait. La première faculté manque. Théo est irresponsable. | La case « Comprendre » grise ; l'étage « Culpabilité » gris |
 | 14 | Seconde variante. Théo sait que c'est interdit. Mais une maladie lui retire toute maîtrise de ses gestes à ce moment-là. | Rembobinage ; une bulle « Je sais, mais… » |
 | 15 | Cette fois, c'est la seconde faculté qui manque. Le résultat est le même : Théo est irresponsable. | La case « Se retenir » grise |
 
@@ -62,14 +62,14 @@ Personnages : Théo (silhouette turquoise), l'agent de sécurité (silhouette bl
 | 25 | Le quatrième alinéa de l'article 19 répond. Si l'auteur pouvait éviter son état, et prévoir l'acte qu'il commettrait, les règles sur l'irresponsabilité ne s'appliquent pas. | Bloc « Art. 19 CP » ; une frise du temps : « Il boit », puis « Il frappe » |
 | 26 | Théo s'est enivré en sachant qu'il devenait violent quand il boit ? Il est jugé comme s'il avait été pleinement responsable. | Sur la frise, une flèche relie « Il boit » à « Il frappe » |
 | 27 | Et s'il ne pouvait pas prévoir l'acte ? L'article 263 prévoit alors une infraction particulière : l'acte commis en état d'irresponsabilité fautive. | Bloc « Art. 263 CP » |
-| 28 | L'auteur est puni d'une peine pécuniaire. Et si l'acte commis n'est puni que d'une peine privative de liberté, la peine peut aller jusqu'à trois ans. | Le mot « Ivresse fautive » ; « Peine pécuniaire » |
+| 28 | L'auteur est puni d'une peine pécuniaire. Et si l'acte commis n'est puni que d'une peine privative de liberté, il encourt jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire. | Le mot « Ivresse fautive » ; « Peine pécuniaire » |
 | 29 | Un cas à part : quelqu'un a glissé de la drogue dans le verre de Théo, à son insu. Son état n'est alors pas fautif. Ni le quatrième alinéa, ni l'article 263 ne s'appliquent. Dans tous les autres cas, l'ivresse volontaire n'efface pas la faute. Elle la déplace seulement vers le moment où l'on a choisi de boire. | La frise : le point « Il boit » en ambre |
 
 ## Irresponsable, mais pas libre
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 30 | Revenons à Théo en pleine crise psychotique. Il n'est pas punissable. Mais il n'est pas libre pour autant. | La silhouette de Théo |
+| 30 | Revenons à Théo en pleine crise psychotique. Il n'est pas punissable. Mais l'affaire ne s'arrête pas forcément là. | La silhouette de Théo |
 | 31 | L'article 19 le dit expressément : des mesures peuvent être ordonnées, comme un traitement. Cela vaut aussi pour l'auteur à responsabilité restreinte. On l'avait annoncé dans la vidéo 1. La vidéo 12 les détaillera. | Le mot « Mesure » ; « vidéo 12 » en petit |
 | 32 | Une peine punit une faute. Une mesure soigne ou protège, même sans faute. C'est la grande différence entre les deux. | Deux colonnes « Peine : la faute » et « Mesure : le danger » |
 

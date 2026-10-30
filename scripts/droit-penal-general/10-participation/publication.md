@@ -41,9 +41,9 @@ Chapitres :
 0:44 La carte : auteurs et participants
 1:10 Les coauteurs : Max et Jade
 2:02 L'instigatrice : Lina
-3:21 Le complice : Noé
-4:15 Le piège classique
-5:06 Conclusion et question
+3:22 Le complice : Noé
+4:17 Le piège classique
+5:07 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/10-participation
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

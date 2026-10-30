@@ -9,7 +9,7 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 1 | Marc rentre chez lui, un soir d'hiver, à Lausanne. Dans la cage d'escalier, il croise son voisin, Julien. Les deux hommes se détestent depuis des mois à cause d'une histoire de place de parc. | Deux silhouettes de couleurs différentes, Marc et Julien, face à face dans une cage d'escalier dessinée en trois traits |
-| 2 | Julien lance une remarque. Marc le pousse. Julien tombe dans les escaliers et se casse le poignet. | La silhouette de Julien bascule ; un éclair rouge sur le poignet |
+| 2 | Julien lance une remarque. Marc le pousse. Julien tombe dans les escaliers et se casse le poignet. Une fracture simple, qui guérira sans séquelle. | La silhouette de Julien bascule ; un éclair rouge sur le poignet |
 | 3 | Alors, Marc a-t-il commis une infraction ? Vous avez sans doute une réponse instinctive. Gardez-la en tête : à la fin de cette vidéo, vous saurez exactement comment un juge suisse raisonne pour y répondre. | Le texte « Infraction ? » apparaît au centre, avec un point d'interrogation qui pulse |
 
 ## La carte : trois étages
@@ -29,7 +29,7 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | 9 | Ouvrons le Code pénal. L'article 123 dit, en substance, que celui qui fait du mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples. | Le livre s'ouvre ; bloc « Art. 123 CP » ; le mot « lésions corporelles simples » apparaît |
 | 10 | Un poignet cassé, c'est une atteinte au corps. Le comportement de Marc correspond à la description. On dit qu'il réalise les éléments objectifs de l'infraction. | Une case « Atteinte au corps » se coche ; le poignet de Julien clignote |
 | 11 | Mais la typicité a aussi un côté intérieur. L'article 12 du Code pénal dit qu'en principe, on ne punit un crime ou un délit que s'il a été commis intentionnellement. | Bloc « Art. 12 CP » ; une bulle de pensée apparaît au-dessus de Marc |
-| 12 | Marc a-t-il voulu blesser Julien ? Il l'a poussé volontairement, dans un escalier. Même s'il n'a pas précisément voulu le poignet cassé, il a accepté le risque qu'une chute fasse mal. En droit pénal, on appelle ça le dol éventuel. On y reviendra dans la vidéo 4. | Dans la bulle de pensée : une poussée, puis une chute ; le mot « dol éventuel » apparaît avec « vidéo 4 » en petit |
+| 12 | Marc a-t-il voulu blesser Julien ? Il l'a poussé volontairement, dans un escalier. Il savait qu'une chute pouvait blesser, et il a accepté ce risque. En droit pénal, on appelle ça le dol éventuel. On y reviendra dans la vidéo 4. | Dans la bulle de pensée : une poussée, puis une chute ; le mot « dol éventuel » apparaît avec « vidéo 4 » en petit |
 | 13 | Premier étage franchi : le comportement de Marc est typique. | L'étage « Typicité » s'allume en vert ; la flèche monte |
 
 ## Deuxième étage : l'illicéité
@@ -62,4 +62,4 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | 27 | Une question pour finir. Même histoire, mais cette fois Marc ne pousse pas Julien : il le bouscule par inadvertance en passant, sans le voir, et Julien tombe. Quel étage pose problème ? Écrivez votre réponse en commentaire ; la réponse est dans la vidéo 4. | Le bâtiment avec un point d'interrogation sur chaque étage ; « vidéo 4 » en bas |
 | 28 | Le script complet et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description et la vidéo 4 : le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; les lésions corporelles simples par négligence sont une infraction distincte, prévue à l'article 125 du Code pénal, et elles ne sont poursuivies que sur plainte.
+**Réponse attendue à la question finale**, pour la description et la vidéo 4 : le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; les lésions corporelles simples par négligence sont une infraction distincte, prévue à l'article 125 du Code pénal ; elles sont poursuivies sur plainte, et d'office si la lésion est grave.

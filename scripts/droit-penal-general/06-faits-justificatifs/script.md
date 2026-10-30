@@ -58,7 +58,7 @@ Personnages : Yasmine (silhouette turquoise), Kevin (silhouette rose), Hugo (sil
 | 26 | Briser la vitre d'autrui, c'est un dommage à la propriété. Mais l'article 17 du Code pénal rend ce geste licite, à trois conditions. | Bloc « Art. 17 CP » ; une liste se prépare |
 | 27 | Il faut un danger imminent. Selon le Tribunal fédéral, c'est un danger ni passé ni futur, mais actuel et concret. Il faut aussi qu'il soit impossible de l'écarter autrement. Et il faut sauvegarder des intérêts prépondérants. | Liste : « Danger imminent », « Pas d'autre moyen », « Intérêts prépondérants » |
 | 28 | La vie d'un bébé pèse bien plus lourd qu'une vitre. Le geste de Hugo est justifié. | Deux colonnes « La vie » et « Une vitre » ; la première en ambre |
-| 29 | Et quand les deux biens en jeu ont une valeur comparable ? L'acte n'est plus justifié. Mais l'article 18 prévoit que le juge atténue la peine. | Bloc « Art. 18 CP » ; les deux colonnes de même taille |
+| 29 | Et quand les deux biens en jeu ont une valeur comparable ? L'acte n'est plus justifié. Selon l'article 18, le juge atténue la peine si l'on pouvait exiger de l'auteur qu'il renonce au bien menacé. Sinon, l'auteur n'est pas coupable. | Bloc « Art. 18 CP » ; les deux colonnes de même taille |
 | 30 | Parfois, on ne pouvait pas raisonnablement exiger de l'auteur qu'il sacrifie son bien. Alors, il n'agit même pas de manière coupable. Là encore, on bascule au troisième étage. | L'étage « Culpabilité » en ambre |
 
 ## Le piège classique

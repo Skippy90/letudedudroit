@@ -12,7 +12,7 @@ Personnages : Théo (silhouette turquoise, reprise de la vidéo 8), Noah (silhou
 | --- | --- | --- |
 | 1 | Deux histoires pour terminer cette playlist. La première, vous la connaissez. Théo, dans la vidéo 8, avait poussé un agent de sécurité en pleine crise psychotique. | La silhouette de Théo ; « vidéo 8 » en petit |
 | 2 | Il était irresponsable, donc pas punissable. Mais faut-il le laisser repartir comme si de rien n'était ? | Le bâtiment : l'étage « Culpabilité » gris |
-| 3 | La seconde histoire, c'est celle de Noah, dans la vidéo 3. Son petit tag sur le mur d'une boulangerie. Imaginons qu'on ne découvre son auteur que onze ans plus tard. | La silhouette de Noah ; une frise du temps |
+| 3 | La seconde histoire, c'est celle de Noah, dans la vidéo 3. Le grand tag qui couvrait le mur d'une boulangerie. Imaginons qu'on ne découvre son auteur que onze ans plus tard. | La silhouette de Noah ; une frise du temps |
 | 4 | Peut-on encore le poursuivre après tout ce temps ? Deux questions, deux outils du droit pénal : la mesure et la prescription. | Deux colonnes « Mesure » et « Prescription » |
 
 ## Première partie : la mesure
@@ -20,8 +20,8 @@ Personnages : Théo (silhouette turquoise, reprise de la vidéo 8), Noah (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 5 | On l'a vu dans la vidéo 8. Une peine répond à une faute. Une mesure, elle, répond à un danger ou à un besoin de soins. | Deux colonnes « Peine : la faute » et « Mesure : le danger » |
-| 6 | L'article 56 du Code pénal fixe les conditions. Une mesure est ordonnée quand une peine seule ne peut pas écarter le danger de nouvelles infractions. | Bloc « Art. 56 CP » ; le mot « Danger de récidive » |
-| 7 | Ou quand l'auteur a besoin d'un traitement, ou que la sécurité publique l'exige. Et il faut que les conditions d'une mesure précise soient remplies. | Le mot « Traitement » ; le mot « Sécurité publique » |
+| 6 | L'article 56 du Code pénal pose trois conditions, toutes nécessaires. D'abord, une peine seule ne suffit pas à écarter le danger de nouvelles infractions. | Bloc « Art. 56 CP » ; le mot « Danger de récidive » |
+| 7 | Ensuite, l'auteur a besoin d'un traitement, ou la sécurité publique l'exige. Enfin, les conditions d'une mesure précise doivent être remplies. | Le mot « Traitement » ; le mot « Sécurité publique » |
 | 8 | La mesure doit aussi rester proportionnée. L'atteinte qu'elle cause à la personne ne doit pas être excessive. On la compare au risque de récidive et à la gravité des infractions à craindre. | Deux colonnes « Atteinte » et « Risque », de même taille |
 | 9 | Avant d'ordonner les principales mesures, le juge se fonde sur une expertise. Et une mesure dont les conditions ne sont plus remplies doit être levée. | Les mots « Expertise » puis « Levée » |
 
@@ -33,10 +33,10 @@ Personnages : Théo (silhouette turquoise, reprise de la vidéo 8), Noah (silhou
 | 11 | Premièrement, le traitement institutionnel, à l'article 59. Il s'adresse à l'auteur qui souffre d'un grave trouble mental. | Bloc « Art. 59 CP » ; liste : « 1. Traitement institutionnel » |
 | 12 | Il faut que l'infraction soit liée à ce trouble, et que le traitement puisse détourner l'auteur de nouvelles infractions. Il a lieu dans un établissement adapté. | Deux cases « Lien avec le trouble » et « Effet attendu » |
 | 13 | Il dure en règle générale cinq ans au plus. Mais le juge peut le prolonger, de cinq ans au plus à chaque fois, si le risque demeure. | Une frise : « 5 ans », puis « + 5 ans » |
-| 14 | Deuxièmement, le traitement ambulatoire, à l'article 63. Il vise aussi les troubles mentaux, mais également les addictions. L'auteur est soigné sans être enfermé. | Bloc « Art. 63 CP » ; liste : « 2. Traitement ambulatoire » |
+| 14 | Deuxièmement, le traitement ambulatoire, à l'article 63. Il vise aussi les troubles mentaux, mais également les addictions. En principe, l'auteur est soigné sans être enfermé. | Bloc « Art. 63 CP » ; liste : « 2. Traitement ambulatoire » |
 | 15 | Troisièmement, l'internement, à l'article 64. C'est la mesure la plus lourde. Elle est réservée aux infractions très graves, comme le meurtre, le viol ou le brigandage. | Bloc « Art. 64 CP » ; liste : « 3. Internement » |
 | 16 | Il faut en plus un risque sérieux que l'auteur recommence. La peine privative de liberté est exécutée d'abord. L'internement vient ensuite, pour protéger la société. | Une frise : « Peine », puis « Internement » |
-| 17 | Pour Théo, le juge pourrait ordonner un traitement institutionnel, après une expertise psychiatrique. Son acte est lié à sa crise psychotique, et des soins peuvent l'aider à ne pas recommencer. | La silhouette de Théo ; la case « Traitement institutionnel » en ambre |
+| 17 | Pour Théo, le juge pourrait envisager un traitement institutionnel, après une expertise psychiatrique. Il faudrait un acte lié à son trouble, un risque de récidive, et des soins utiles. | La silhouette de Théo ; la case « Traitement institutionnel » en ambre |
 
 ## Seconde partie : la prescription
 
@@ -49,7 +49,7 @@ Personnages : Théo (silhouette turquoise, reprise de la vidéo 8), Noah (silhou
 | 22 | Et pour les contraventions, trois ans, comme on l'a vu dans la vidéo 3. | Repère « 3 ans » ; « vidéo 3 » en petit |
 | 23 | Le délai court en principe dès le jour où l'auteur a agi. C'est l'article 98. | Bloc « Art. 98 CP » ; le point « Le tag » au début de la frise |
 | 24 | Le dommage à la propriété de Noah est puni de trois ans au plus. Le délai est donc de dix ans. Découvert onze ans plus tard, l'acte est prescrit. Noah ne peut plus être poursuivi. | La frise : « Le tag », « 10 ans », « Découverte » ; la zone après dix ans en gris |
-| 25 | Mais attention à une règle importante. Si un jugement de première instance est rendu avant l'échéance, la prescription ne court plus. Un procès en appel ne peut donc pas la faire acquérir. | Le mot « Jugement de première instance » ; la frise s'arrête |
+| 25 | Mais attention à une règle importante. Si un jugement de première instance est rendu avant l'échéance, la prescription ne court plus. Un procès en appel ne peut donc pas la faire acquérir. Autre délai à ne pas confondre : celui de la plainte. La victime a trois mois dès qu'elle connaît l'auteur. C'est l'article 31. | Le mot « Jugement de première instance » ; la frise s'arrête |
 
 ## Ce qui ne se prescrit jamais
 

@@ -31,7 +31,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | --- | --- | --- |
 | 10 | Le Tribunal fédéral est net. N'importe quelle obligation ne suffit pas. Il faut que la personne ait été dans une position de garant. | Le titre « Position de garant » |
 | 11 | Un garant, c'est quelqu'un que sa situation oblige à protéger. Il protège un bien précis, comme la vie ou la santé d'une personne. | Le mot « Garant » ; la silhouette de Timéo |
-| 12 | L'article 11 donne quatre sources possibles de cette obligation. Les voici, une par une. | Une liste à quatre lignes se prépare |
+| 12 | L'article 11 cite notamment quatre sources de cette obligation. Les voici, une par une. | Une liste à quatre lignes se prépare |
 | 13 | Première source : la loi. Par exemple, le Code civil impose aux parents de protéger le développement de leur enfant. | Liste : « 1. La loi » |
 | 14 | Deuxième source : un contrat. C'est le cas d'une surveillante de baignade engagée pour veiller sur les nageurs. | Liste : « 2. Un contrat » ; la silhouette de Clara s'allume |
 | 15 | Troisième source : une communauté de risques librement acceptée. Par exemple, une cordée d'alpinistes qui partent ensemble en montagne. | Liste : « 3. Une communauté de risques » |
@@ -52,7 +52,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | 25 | Le juge raisonne par hypothèse. Il imagine que Clara a fait son travail, et se demande si Timéo aurait été sauvé à temps. | Une bulle de pensée au-dessus de Clara : « Si j'avais regardé » |
 | 26 | Ensuite, l'article 11 pose une condition d'équivalence. Son inaction doit mériter le même reproche qu'un geste qui aurait causé l'accident. | Bloc « Art. 11 CP » ; deux colonnes « Agir » et « Ne pas agir » de même taille |
 | 27 | Si ces conditions sont remplies, Clara répond des blessures de Timéo comme si elle les avait causées. Le juge peut toutefois atténuer sa peine. | Le mot « Peine atténuée possible » |
-| 28 | Et souvenez-vous de la vidéo 4. Clara n'a pas voulu l'accident. On parlera donc plutôt de négligence, punissable ici. Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle. Ce serait bien plus grave. | « vidéo 4 » en petit ; le mot « Négligence » |
+| 28 | Et souvenez-vous de la vidéo 4. Clara n'a pas voulu l'accident. On parlera donc plutôt de négligence, punissable ici, en principe sur plainte. Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle. Ce serait bien plus grave. | « vidéo 4 » en petit ; le mot « Négligence » |
 
 ## Le piège classique
 
@@ -69,7 +69,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 34 | Retenons. Ne rien faire peut constituer un crime ou un délit. Mais seulement pour celui qui avait une position de garant. | Le titre « Garant » ; la liste des quatre sources |
-| 35 | Cette position vient de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé. | La liste revient, ligne par ligne |
+| 35 | Elle vient notamment de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé. | La liste revient, ligne par ligne |
 | 36 | Pour les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminent. Face à un cas d'omission, posez toujours la même question. Cette personne devait-elle agir, et pourquoi ? | Bloc « Art. 128 CP » |
 | 37 | Une question pour finir. Lucas allume un feu de camp en forêt. Il part sans l'éteindre, et le feu s'étend. | La silhouette de Lucas ; une frise du temps |
 | 38 | Lucas était-il garant ? Et si oui, d'après laquelle des quatre sources ? Écrivez votre réponse en commentaire. | La liste des quatre sources, avec un point d'interrogation |
