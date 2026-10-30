@@ -190,20 +190,38 @@ def main(slug: str) -> None:
     # Phrases dans l'ordre, avec toutes leurs prises.
     phrases = [(b, p, t) for b, ph in enumerate(blocs) for p, t in enumerate(ph)]
     candidats = [prises(mots_texte(t), entendus) for _, _, t in phrases]
-    manquantes = [f"  ligne {b + 1} : {t}" for (b, _, t), c in zip(phrases, candidats) if not c]
-    if manquantes:
-        sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
     # En partant de la fin : pour chaque phrase, la dernière prise qui finit avant la prise
     # retenue pour la phrase suivante. Une reprise est toujours plus tardive qu'un faux départ.
+    # Une phrase non reconnue (lue autrement, ou mal transcrite) est laissée de côté pour l'instant.
     choix = [None] * len(phrases)
     limite = len(entendus)
     for k in range(len(phrases) - 1, -1, -1):
         avant = [c for c in candidats[k] if c[1] < limite]
         if not avant:
-            sys.exit(f"Ligne {phrases[k][0] + 1} : aucune prise avant la phrase suivante ; ordre de lecture à vérifier.")
+            if candidats[k]:
+                sys.exit(f"Ligne {phrases[k][0] + 1} : aucune prise avant la phrase suivante ; "
+                         "ordre de lecture à vérifier.")
+            continue
         choix[k] = avant[-1]
         limite = choix[k][0]
+
+    # Phrase non reconnue : on prend ce qui a été dit entre la phrase précédente et la suivante,
+    # à condition que ce soit court (une phrase lue autrement, pas un passage entier). Elle sera
+    # signalée à réécouter.
+    manquantes = []
+    for k, c in enumerate(choix):
+        if c is not None:
+            continue
+        n = len(mots_texte(phrases[k][2]))
+        debut_k = choix[k - 1][1] + 1 if k and choix[k - 1] else None
+        fin_k = choix[k + 1][0] - 1 if k + 1 < len(choix) and choix[k + 1] else None
+        if debut_k is not None and fin_k is not None and 0 <= fin_k - debut_k <= n + 4:
+            choix[k] = (debut_k, fin_k, 0.0, 0, 0)
+        else:
+            manquantes.append(f"  ligne {phrases[k][0] + 1} : {phrases[k][2]}")
+    if manquantes:
+        sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
     # Un mot mal reconnu au début ou à la fin d'une phrase (« séquelles », « alignés ») ne doit pas
     # être coupé : la prise est prolongée sur les mots qui la touchent, autant qu'il en manque.
@@ -222,6 +240,12 @@ def main(slug: str) -> None:
 
     # Montage.
     x, fr = sf.read(brut)
+    # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
+    # (plus vivant ; les bruits de fond y restent), sinon silence numérique (plus propre, plus sec).
+    naturelles = reglages.get("pauses") == "naturelles"
+    trame = int(0.5 * fr)
+    blocs_calmes = [x[i:i + trame] for i in range(0, len(x) - trame, trame)]
+    ambiance = min(blocs_calmes, key=lambda b: float((b ** 2).mean())) if blocs_calmes else np.zeros(trame)
     fondu = int(FONDU * fr)
     rampe = np.linspace(0, 1, fondu)
     morceaux, t, rapport = [], 0.0, []
@@ -236,7 +260,16 @@ def main(slug: str) -> None:
                 pause = min(max(debut - fin_prec - 2 * MARGE, bornes[0]), bornes[1])
             else:
                 pause = PAUSE_COUPE["phrase" if p else "ligne"]
-            morceaux.append(np.zeros(int(pause * fr)))
+            ecart = debut - fin_prec - 2 * MARGE
+            if naturelles and contigu and bornes[0] <= ecart <= bornes[1]:
+                # Pause d'origine gardée telle quelle : la respiration et l'ambiance restent.
+                morceaux.append(x[int((fin_prec + MARGE) * fr):int((debut - MARGE) * fr)].copy())
+            elif naturelles:
+                # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                n = int(pause * fr)
+                morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
+            else:
+                morceaux.append(np.zeros(int(pause * fr)))
             t += len(morceaux[-1]) / fr
         a, z = max(0, int((debut - MARGE) * fr)), min(len(x), int((fin + MARGE) * fr))
         seg = x[a:z].copy()
