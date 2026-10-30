@@ -25,10 +25,11 @@ installer:
 	$(PY) -m pip install -q -r render/manim/requirements.txt
 	cd render/remotion && npm ci --no-audit --no-fund
 
-# Narration ElevenLabs avec la voix de voice/config.json ; les lignes inchangées sont en cache.
-# Les timings par phrase viennent de l'alignement renvoyé par ElevenLabs.
+# Narration : enregistrement humain s'il y en a un (voice/$(SLUG)/enregistrement.*), aligné sur tts.txt ;
+# sinon synthèse ElevenLabs avec la voix de voice/config.json (lignes inchangées en cache).
 voice:
-	$(PY) tools/narration.py $(SLUG)
+	@if ls voice/$(SLUG)/enregistrement.* >/dev/null 2>&1; then $(PY) tools/alignement.py $(SLUG); \
+	else $(PY) tools/narration.py $(SLUG); fi
 
 # Schémas Manim pilotés par visuals.md et calés sur voice/$(SLUG)/timings.json.
 visuals:
