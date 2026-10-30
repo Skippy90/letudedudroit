@@ -1,0 +1,105 @@
+# Curriculum — Procédure pénale suisse (Code de procédure pénale, RS 312.0)
+# Chaîne autonome, distincte de la playlist de droit pénal général.
+# Une entrée par vidéo. "requiert" liste les vidéos à voir avant ; "articles" : CPP sauf mention.
+#
+# Fil rouge de toute la série : l'affaire du scooter de Nina.
+#   Nina (rose) se fait voler son scooter devant chez elle, un mardi soir.
+#   Tom (turquoise), son voisin, voit un jeune homme partir avec.
+#   Malik (bleu clair) est contrôlé trois jours plus tard au guidon du scooter.
+#   Il affirme l'avoir acheté 300 francs à un inconnu.
+# Chaque vidéo reprend l'affaire au stade de la procédure qu'elle explique ;
+# des variantes (rembobinage) servent aux notions que l'affaire ne couvre pas.
+#
+# Les listes d'articles des vidéos « planifie » sont provisoires : chacune est vérifiée sur Fedlex
+# au moment d'écrire le script.
+# Format : vidéo d'accueil de 5 à 6 minutes ; cours de 9 à 12 minutes
+# (1 300 à 1 800 mots) ; shorts de 45 à 90 secondes extraits des cours.
+matiere: procedure-penale
+recueil: "Code de procédure pénale suisse, RS 312.0"
+version_consultee: "2025-04-01 (en vigueur au 30 octobre 2026) ; comparée à la version du 2027-01-01"
+modules:
+  - id: M0
+    titre: "Introduction"
+    videos:
+      - id: "00"
+        slug: bienvenue
+        titre: "Bienvenue : à quoi sert la procédure pénale ?"
+        notion: "Le rôle de la procédure, le lien avec le droit pénal, le fil rouge et le plan du cours"
+        articles: ["1", "2", "CP 1"]
+        requiert: []
+        statut: script-redige
+      - id: "01"
+        slug: carte-de-la-procedure
+        titre: "De l'infraction au jugement : la carte de la procédure"
+        notion: "Les grandes étapes : signalement, investigation policière, instruction, clôture, jugement, recours"
+        articles: ["9", "15", "16", "299", "300", "301", "306", "308", "309", "319", "324", "351", "352", "398"]
+        requiert: ["00"]
+        statut: script-redige
+  - id: M1
+    titre: "Principes et acteurs"
+    videos:
+      - {id: "02", slug: grands-principes, titre: "Les grands principes du procès pénal", notion: "Dignité et procès équitable, maxime de l'instruction, poursuite obligatoire, accusation, présomption d'innocence, ne bis in idem", articles: ["3", "6", "7", "8", "9", "10", "11"], requiert: ["01"], statut: planifie}
+      - {id: "03", slug: autorites-penales, titre: "Police, procureur, tribunal : qui fait quoi ?", notion: "Autorités de poursuite et tribunaux ; organisation cantonale", articles: ["12", "13", "14", "15", "16", "17", "18", "19", "20", "21"], requiert: ["01"], statut: planifie}
+      - {id: "04", slug: les-parties, titre: "Qui sont les parties ?", notion: "Prévenu, partie plaignante, ministère public ; autres participants", articles: ["104", "105", "111", "118"], requiert: ["03"], statut: planifie}
+      - {id: "05", slug: victime-lese-partie-plaignante, titre: "Victime, lésé, partie plaignante", notion: "Trois statuts à ne pas confondre ; droits de la victime", articles: ["115", "116", "117", "118", "119", "120", "122"], requiert: ["04"], statut: planifie}
+      - {id: "06", slug: avocat-de-la-defense, titre: "L'avocat de la défense", notion: "Défense privée, défense obligatoire, défense d'office", articles: ["127", "128", "129", "130", "132"], requiert: ["04"], statut: planifie}
+  - id: M2
+    titre: "Ouvrir la procédure"
+    videos:
+      - {id: "07", slug: plainte-ou-denonciation, titre: "Plainte ou dénonciation ?", notion: "Qui peut signaler une infraction, sous quelle forme, dans quel délai", articles: ["301", "303", "304", "CP 30", "CP 31"], requiert: ["05"], statut: planifie}
+      - {id: "08", slug: retrait-de-plainte, titre: "D'office ou sur plainte ; retirer sa plainte", notion: "Infractions poursuivies d'office, sur plainte ; retrait et ses effets", articles: ["CP 30", "CP 32", "CP 33", "304", "316"], requiert: ["07"], statut: planifie}
+      - {id: "09", slug: investigation-policiere, titre: "L'enquête de police", notion: "Investigation policière et collaboration avec le ministère public", articles: ["306", "307"], requiert: ["07"], statut: planifie}
+      - {id: "10", slug: ouverture-ou-non-entree-en-matiere, titre: "Ouvrir une instruction, ou ne pas entrer en matière", notion: "Ouverture de l'instruction ; non-entrée en matière", articles: ["308", "309", "310"], requiert: ["09"], statut: planifie}
+  - id: M3
+    titre: "Droits et auditions"
+    videos:
+      - {id: "11", slug: droits-du-prevenu, titre: "Convoqué à la police : quels droits ?", notion: "Information des droits, droit de se taire, avocat de la première heure", articles: ["113", "143", "158", "159"], requiert: ["06"], statut: planifie}
+      - {id: "12", slug: audition, titre: "Comment se passe une audition ?", notion: "Règles générales d'audition, procès-verbal", articles: ["142", "143", "145", "147", "157", "160", "161"], requiert: ["11"], statut: planifie}
+      - {id: "13", slug: temoins, titre: "Témoin ou personne appelée à donner des renseignements ?", notion: "Statuts, obligation de témoigner, droit de refuser", articles: ["162", "163", "168", "169", "177", "178"], requiert: ["12"], statut: planifie}
+  - id: M4
+    titre: "Les preuves"
+    videos:
+      - {id: "14", slug: moyens-de-preuve, titre: "Prouver : les moyens de preuve", notion: "Moyens de preuve, libre appréciation, in dubio pro reo", articles: ["10", "139"], requiert: ["02"], statut: planifie}
+      - {id: "15", slug: preuves-inexploitables, titre: "Peut-on utiliser cette preuve ?", notion: "Preuves interdites et inexploitables", articles: ["140", "141"], requiert: ["14"], statut: planifie}
+      - {id: "16", slug: perquisition-sequestre, titre: "Perquisition, fouille, séquestre", notion: "Mesures de recherche de preuves", articles: ["241", "244", "246", "249", "263"], requiert: ["15"], statut: planifie}
+      - {id: "17", slug: surveillance, titre: "Écoutes et surveillance secrète", notion: "Surveillance de la correspondance, conditions et autorisation", articles: ["269", "272", "274"], requiert: ["16"], statut: planifie}
+  - id: M5
+    titre: "Mesures de contrainte et détention"
+    videos:
+      - {id: "18", slug: mesures-de-contrainte, titre: "Les mesures de contrainte : principes", notion: "Définition, conditions générales, proportionnalité", articles: ["196", "197", "198"], requiert: ["03"], statut: planifie}
+      - {id: "19", slug: arrestation-provisoire, titre: "Arrêté : que se passe-t-il ?", notion: "Arrestation provisoire, durée, information", articles: ["217", "219"], requiert: ["18"], statut: planifie}
+      - {id: "20", slug: detention-provisoire, titre: "La détention provisoire", notion: "Soupçons graves, risques de fuite, de collusion, de réitération ; tribunal des mesures de contrainte", articles: ["220", "221", "224", "225", "226"], requiert: ["19"], statut: planifie}
+      - {id: "21", slug: mesures-de-substitution, titre: "Libéré, mais sous conditions", notion: "Mesures de substitution ; demande de mise en liberté", articles: ["228", "237"], requiert: ["20"], statut: planifie}
+  - id: M6
+    titre: "Clore l'instruction"
+    videos:
+      - {id: "22", slug: classement, titre: "L'affaire est classée", notion: "Motifs de classement, effets, recours", articles: ["319", "320", "322"], requiert: ["10"], statut: planifie}
+      - {id: "23", slug: ordonnance-penale, titre: "Condamné sans procès ? L'ordonnance pénale", notion: "Conditions, contenu, notification", articles: ["352", "353"], requiert: ["22"], statut: planifie}
+      - {id: "24", slug: opposition, titre: "Faire opposition à une ordonnance pénale", notion: "Délai de dix jours, suite de la procédure, retrait", articles: ["354", "355", "356"], requiert: ["23"], statut: planifie}
+      - {id: "25", slug: mise-en-accusation, titre: "La mise en accusation", notion: "Acte d'accusation, maxime d'accusation", articles: ["9", "324", "325", "326"], requiert: ["22"], statut: planifie}
+      - {id: "26", slug: procedure-simplifiee, titre: "La procédure simplifiée", notion: "Accord sur la culpabilité et la peine", articles: ["358", "359", "360", "362"], requiert: ["25"], statut: planifie}
+  - id: M7
+    titre: "Le jugement"
+    videos:
+      - {id: "27", slug: debats, titre: "Le procès : les débats", notion: "Déroulement des débats de première instance", articles: ["328", "335", "340", "341", "343", "346", "347"], requiert: ["25"], statut: planifie}
+      - {id: "28", slug: jugement, titre: "Acquittement ou condamnation", notion: "Délibération, jugement, motivation", articles: ["348", "350", "351", "81", "84"], requiert: ["27"], statut: planifie}
+      - {id: "29", slug: frais-et-indemnites, titre: "Qui paie les frais ?", notion: "Frais de procédure, indemnités du prévenu acquitté", articles: ["422", "426", "429"], requiert: ["28"], statut: planifie}
+  - id: M8
+    titre: "Les recours"
+    videos:
+      - {id: "30", slug: voies-de-recours, titre: "Contester une décision : la carte des recours", notion: "Recours, appel, révision ; autorités", articles: ["379", "381", "382", "393", "398", "410"], requiert: ["28"], statut: planifie}
+      - {id: "31", slug: recours, titre: "Le recours", notion: "Décisions attaquables, délai, motifs", articles: ["393", "396", "397"], requiert: ["30"], statut: planifie}
+      - {id: "32", slug: appel, titre: "L'appel", notion: "Annonce, déclaration, pouvoir d'examen, interdiction de la reformatio in pejus", articles: ["391", "398", "399", "408"], requiert: ["30"], statut: planifie}
+      - {id: "33", slug: revision, titre: "La révision", notion: "Faits ou moyens de preuve nouveaux", articles: ["410", "411", "413"], requiert: ["30"], statut: planifie}
+      - {id: "34", slug: tribunal-federal, titre: "Jusqu'au Tribunal fédéral", notion: "Recours en matière pénale (LTF)", articles: ["LTF 78", "LTF 80", "LTF 95", "LTF 100"], requiert: ["30"], statut: planifie}
+  - id: M9
+    titre: "Procédures particulières"
+    videos:
+      - {id: "35", slug: defaut, titre: "Jugé en son absence : la procédure par défaut", notion: "Conditions et nouveau jugement", articles: ["366", "367", "368"], requiert: ["27"], statut: planifie}
+      - {id: "36", slug: mineurs, titre: "Et si l'auteur est mineur ?", notion: "Procédure pénale applicable aux mineurs (PPMin), principes", articles: ["PPMin 1", "PPMin 4"], requiert: ["03"], statut: planifie}
+  - id: M10
+    titre: "Révisions et cas pratiques"
+    videos:
+      - {id: "37", slug: cas-pratique-1, titre: "Cas pratique : l'affaire du scooter, du début à la fin", notion: "Révision des modules 1 à 6", articles: [], requiert: ["26"], statut: planifie}
+      - {id: "38", slug: cas-pratique-2, titre: "Cas pratique : une nuit en détention", notion: "Révision des modules 3 à 5", articles: [], requiert: ["21"], statut: planifie}
+      - {id: "39", slug: revision-generale, titre: "Révision générale : vingt questions", notion: "Synthèse du cours", articles: [], requiert: ["34"], statut: planifie}

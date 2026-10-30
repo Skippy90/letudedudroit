@@ -29,7 +29,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `article "Art. N CP"` | Bloc d'article centré en bas (remplace le précédent) |
 | `article-retirer` | Retire le bloc d'article |
 | `article-etirer` / `article-reprendre` | Le bloc s'étire puis reprend sa taille (interprétation et ses limites) |
-| `livre` / `livre-ouvrir` / `livre-retirer` | Le Code pénal fermé, ouvert, retiré |
+| `livre` [`"titre"`] / `livre-ouvrir` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, retiré |
 | `livres "…" "…" "…"` | Plusieurs recueils côte à côte |
 | `livres-surligner N` | Met en avant le recueil N |
 | `personnage ID "Nom" COULEUR POSITION` | Silhouette ; couleurs : `bleu_clair`, `ambre_pale`, `rose`, `violet`, `turquoise` ; positions : `gauche`, `centre-gauche`, `centre`, `centre-droite`, `droite` |

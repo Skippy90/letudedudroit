@@ -141,8 +141,18 @@ class Livre(VGroup):
             nom = texte(titre, T_PETIT).next_to(couverture, DOWN, buff=0.25)
         else:
             # Titre sur la couverture, décalé à droite du dos, sans jamais déborder.
-            nom = texte(titre, T_PETIT).move_to(couverture).shift(RIGHT * 0.12)
-            if nom.width > largeur - 0.6:
+            nom = texte(titre, T_PETIT)
+            if nom.width > largeur - 0.6:  # titre long : un mot par ligne (« Code de / procédure / pénale »)
+                lignes, courante = [], ""
+                for mot in titre.split():
+                    essai = f"{courante} {mot}".strip()
+                    if courante and texte(essai, T_PETIT).width > largeur - 0.6:
+                        lignes.append(courante)
+                        essai = mot
+                    courante = essai
+                nom = texte("\n".join(lignes + [courante]), T_PETIT)
+            nom.move_to(couverture).shift(RIGHT * 0.12)
+            if nom.width > largeur - 0.6 or nom.height > hauteur - 0.4:
                 raise ValueError(f"Titre trop long pour la couverture : {titre!r}")
         super().__init__(couverture, dos, nom)
         self.move_to([x, 0.4, 0])
