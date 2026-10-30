@@ -18,6 +18,8 @@ DEPOT = "https://github.com/Skippy90/letudedudroit"
 DUREE_OUVERTURE = 4  # secondes, doit correspondre à render/remotion/src/Video.tsx
 
 
+SUFFIXES = {"droit-penal-general": "Droit pénal suisse", "procedure-penale": "Procédure pénale suisse"}
+
 def horodatage(secondes: float) -> str:
     s = int(secondes)
     return f"{s // 60}:{s % 60:02d}"
@@ -98,7 +100,7 @@ def main(slug: str) -> None:
         f"# Publication — {titre}\n\n"
         "Fiche générée par `tools/publication.py`. À relire avant tout envoi ; "
         "l'upload YouTube se fait seulement sur instruction explicite.\n\n"
-        f"## Titre\n\n{titre} | Droit pénal suisse\n\n"
+        f"## Titre\n\n{titre} | {SUFFIXES.get(slug.split('/')[0], 'Droit suisse')}\n\n"
         f"## Description ({len(description)} caractères sur 5 000)\n\n```text\n{description}\n```\n",
         encoding="utf-8")
     print(f"Fiche : {sortie} ({len(description)} caractères)")

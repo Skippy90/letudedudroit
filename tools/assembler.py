@@ -16,7 +16,7 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 REMOTION = RACINE / "render" / "remotion"
 NAVIGATEUR = "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell"
-MATIERES = {"droit-penal-general": "Droit pénal général"}
+MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale"}
 DUREE_OUVERTURE, DUREE_FIN = 4, 6  # secondes, comme dans render/remotion/src/Video.tsx
 
 

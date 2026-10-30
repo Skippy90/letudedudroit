@@ -263,8 +263,8 @@ class Schemas(Scene):
         cadre = c.BlocArticle(self.article.libelle).cadre
         return [Transform(self.article.cadre, cadre)]
 
-    def a_livre(self):
-        self.livre = c.Livre()
+    def a_livre(self, titre="Code pénal"):
+        self.livre = c.Livre(titre)
         self.focus = self.livre
         return [FadeIn(self.livre, shift=UP * 0.2)]
 
