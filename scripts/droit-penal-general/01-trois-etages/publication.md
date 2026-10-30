@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Qu'est-ce qu'une infraction ? Les trois étages | Droit pénal suisse
 
-## Description (2424 caractères sur 5 000)
+## Description (2490 caractères sur 5 000)
 
 ```text
 Qu'est-ce qu'une infraction ? Les trois étages — expliqué simplement, à partir d'un cas concret.
@@ -20,9 +20,9 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_15
 • Art. 19 CP : Irresponsabilité : incapacité d'apprécier le caractère illicite de l'acte ou de se déterminer d'après cette appréciation
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_19
-• Art. 122 CP : Cité en creux : les lésions « graves » sont exclues des lésions simples
+• Art. 122 CP : Les lésions graves relèvent d'un autre article, plus sévère ; elles ne sont pas des lésions simples
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_122
-• Art. 123 CP : Lésions corporelles simples : atteinte au corps ou à la santé, sans gravité
+• Art. 123 CP : Lésions corporelles simples : atteinte au corps ou à la santé, sans gravité ; en principe poursuivies sur plainte
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_123
 • Art. 125 CP : Lésions corporelles par négligence, poursuivies sur plainte, et d'office si la lésion est grave (réponse finale)
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125
@@ -34,11 +34,11 @@ Le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; le
 
 Chapitres :
 0:00 Le cas de départ
-0:40 La carte : trois étages
-1:11 Premier étage : la typicité
-2:29 Deuxième étage : l'illicéité
-3:45 Troisième étage : la culpabilité
-4:51 Conclusion et question
+0:43 La carte : trois étages
+1:16 Premier étage : la typicité
+2:42 Deuxième étage : l'illicéité
+4:00 Troisième étage : la culpabilité
+5:08 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/01-trois-etages
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

@@ -10,9 +10,11 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 - Chaque phrase de tts.txt est cherchée dans la transcription. Quand elle a été lue
   plusieurs fois, la dernière prise complète est gardée : les faux départs et les
   reprises sont coupés. Le titre lu au début est coupé aussi.
-- Le bruit de fond (appareil ménager, souffle) est atténué par RNNoise, un réseau de
-  neurones spécialisé dans la voix (filtre arnndn de ffmpeg). Le modèle est téléchargé
-  une fois dans .cache/rnnoise/ (dépôt GregorR/rnnoise-models, sur GitHub).
+- Par défaut, aucun débruitage : le son brut est gardé, avec ses pauses naturelles, et le
+  niveau est ajusté par un gain fixe. Sur demande (voice/<slug>/reglages.json) :
+  {"nettoyage": "rnnoise"} atténue le bruit de fond par RNNoise (filtre arnndn de ffmpeg,
+  modèle téléchargé une fois dans .cache/rnnoise/, dépôt GregorR/rnnoise-models) ;
+  {"pauses": "silence"} remplace les pauses par un silence numérique.
 - Option payante, vidéo par vidéo : si voice/<slug>/reglages.json contient
   {"isolation": true}, RNNoise n'est pas utilisé ; la narration montée passe par
   l'isolation de voix d'ElevenLabs (environ 1 000 crédits par minute). Le résultat est
@@ -52,6 +54,10 @@ SEUIL_PRISE = 0.7        # part minimale des mots d'une phrase pour reconnaître
 SEUIL_A_RELIRE = 0.9     # en dessous, la prise gardée est signalée dans montage.txt
 MARGE = 0.12             # secondes gardées avant et après chaque phrase
 FONDU = 0.015            # secondes de fondu à chaque coupe
+PORTE_AVANT, PORTE_APRES = 0.10, 0.15   # secondes gardées intactes avant et après chaque mot
+PORTE_FUSION = 0.35      # deux mots séparés de moins que cela : la pause entre eux reste intacte
+PORTE_ATTENUATION = 26   # dB retirés entre les mots
+PORTE_FONDU = 0.06       # secondes de fondu à l'ouverture et à la fermeture
 PAUSE_PHRASE = (0.25, 0.9)   # pause entre deux phrases d'une même ligne : bornes
 PAUSE_LIGNE = (0.45, 1.2)    # pause entre deux lignes : bornes
 PAUSE_COUPE = {"phrase": 0.35, "ligne": 0.6}  # pause imposée là où une reprise a été coupée
@@ -145,6 +151,32 @@ def isoler(monte: Path, dossier: Path, tmp: Path) -> Path:
     return isole
 
 
+def porte_sur_les_mots(x: np.ndarray, fr: int, instants: list[tuple[float, float]]) -> np.ndarray:
+    """Atténue tout ce qui n'est pas de la parole, d'après l'instant de chaque mot transcrit.
+
+    Pendant les mots, le son reste intact. Entre les mots (pauses, respirations bruyantes,
+    gargouillis, bruit de fond), il est abaissé de PORTE_ATTENUATION dB, avec des fondus doux.
+    Les micro-pauses à l'intérieur d'une phrase (moins de PORTE_FUSION s) ne sont pas touchées.
+    """
+    zones = []
+    for debut, fin in sorted(instants):
+        debut, fin = debut - PORTE_AVANT, fin + PORTE_APRES
+        if zones and debut - zones[-1][1] < PORTE_FUSION:
+            zones[-1][1] = max(zones[-1][1], fin)
+        else:
+            zones.append([debut, fin])
+    plancher = 10 ** (-PORTE_ATTENUATION / 20)
+    masque = np.full(len(x), plancher)
+    for debut, fin in zones:
+        masque[max(0, int(debut * fr)):min(len(x), int(fin * fr))] = 1.0
+    # Lissage : deux moyennes glissantes (somme cumulée), soit un fondu en S de PORTE_FONDU secondes.
+    n = max(1, int(PORTE_FONDU * fr / 2))
+    for _ in range(2):
+        c = np.concatenate([[0.0], np.cumsum(np.pad(masque, (n // 2, n - n // 2 - 1), mode="edge"))])
+        masque = (c[n:] - c[:-n]) / n
+    return x * masque
+
+
 def main(slug: str) -> None:
     dossier = RACINE / "voice" / slug
     sources = sorted(dossier.glob("enregistrement.*"))
@@ -159,12 +191,15 @@ def main(slug: str) -> None:
     reglages_f = dossier / "reglages.json"
     reglages = json.loads(reglages_f.read_text(encoding="utf-8")) if reglages_f.exists() else {}
     isolation = reglages.get("isolation", False)
-    if not MODELE_BRUIT.exists():
+    # Nettoyage du bruit : aucun par défaut (l'enregistrement brut sonne mieux que ses versions
+    # débruitées) ; "rnnoise" sur demande dans reglages.json.
+    rnnoise = reglages.get("nettoyage", "aucun") == "rnnoise" and not isolation
+    if rnnoise and not MODELE_BRUIT.exists():
         MODELE_BRUIT.parent.mkdir(parents=True, exist_ok=True)
         urllib.request.urlretrieve(URL_MODELE, MODELE_BRUIT)
     # RNNoise travaille à 48 kHz ; on revient ensuite à la fréquence du reste du pipeline.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(source), "-ac", "1", "-ar", "48000",
-                    "-af", "highpass=f=80" + ("" if isolation else f",arnndn=m={MODELE_BRUIT}"), "-ar", str(FREQ),
+                    "-af", "highpass=f=90,highpass=f=90" + (f",arnndn=m={MODELE_BRUIT}" if rnnoise else ""), "-ar", str(FREQ),
                     "-c:a", "pcm_s16le", str(brut)], check=True)
 
     transcription = dossier / "transcription.json"
@@ -190,20 +225,38 @@ def main(slug: str) -> None:
     # Phrases dans l'ordre, avec toutes leurs prises.
     phrases = [(b, p, t) for b, ph in enumerate(blocs) for p, t in enumerate(ph)]
     candidats = [prises(mots_texte(t), entendus) for _, _, t in phrases]
-    manquantes = [f"  ligne {b + 1} : {t}" for (b, _, t), c in zip(phrases, candidats) if not c]
-    if manquantes:
-        sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
     # En partant de la fin : pour chaque phrase, la dernière prise qui finit avant la prise
     # retenue pour la phrase suivante. Une reprise est toujours plus tardive qu'un faux départ.
+    # Une phrase non reconnue (lue autrement, ou mal transcrite) est laissée de côté pour l'instant.
     choix = [None] * len(phrases)
     limite = len(entendus)
     for k in range(len(phrases) - 1, -1, -1):
         avant = [c for c in candidats[k] if c[1] < limite]
         if not avant:
-            sys.exit(f"Ligne {phrases[k][0] + 1} : aucune prise avant la phrase suivante ; ordre de lecture à vérifier.")
+            if candidats[k]:
+                sys.exit(f"Ligne {phrases[k][0] + 1} : aucune prise avant la phrase suivante ; "
+                         "ordre de lecture à vérifier.")
+            continue
         choix[k] = avant[-1]
         limite = choix[k][0]
+
+    # Phrase non reconnue : on prend ce qui a été dit entre la phrase précédente et la suivante,
+    # à condition que ce soit court (une phrase lue autrement, pas un passage entier). Elle sera
+    # signalée à réécouter.
+    manquantes = []
+    for k, c in enumerate(choix):
+        if c is not None:
+            continue
+        n = len(mots_texte(phrases[k][2]))
+        debut_k = choix[k - 1][1] + 1 if k and choix[k - 1] else None
+        fin_k = choix[k + 1][0] - 1 if k + 1 < len(choix) and choix[k + 1] else None
+        if debut_k is not None and fin_k is not None and 0 <= fin_k - debut_k <= n + 4:
+            choix[k] = (debut_k, fin_k, 0.0, 0, 0)
+        else:
+            manquantes.append(f"  ligne {phrases[k][0] + 1} : {phrases[k][2]}")
+    if manquantes:
+        sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
     # Un mot mal reconnu au début ou à la fin d'une phrase (« séquelles », « alignés ») ne doit pas
     # être coupé : la prise est prolongée sur les mots qui la touchent, autant qu'il en manque.
@@ -222,6 +275,14 @@ def main(slug: str) -> None:
 
     # Montage.
     x, fr = sf.read(brut)
+    if reglages.get("porte", True):
+        x = porte_sur_les_mots(x, fr, instants)
+    # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
+    # (plus vivant ; les bruits de fond y restent), sinon silence numérique (plus propre, plus sec).
+    naturelles = reglages.get("pauses", "naturelles") == "naturelles"
+    trame = int(0.5 * fr)
+    blocs_calmes = [x[i:i + trame] for i in range(0, len(x) - trame, trame)]
+    ambiance = min(blocs_calmes, key=lambda b: float((b ** 2).mean())) if blocs_calmes else np.zeros(trame)
     fondu = int(FONDU * fr)
     rampe = np.linspace(0, 1, fondu)
     morceaux, t, rapport = [], 0.0, []
@@ -236,14 +297,28 @@ def main(slug: str) -> None:
                 pause = min(max(debut - fin_prec - 2 * MARGE, bornes[0]), bornes[1])
             else:
                 pause = PAUSE_COUPE["phrase" if p else "ligne"]
-            morceaux.append(np.zeros(int(pause * fr)))
+            ecart = debut - fin_prec - 2 * MARGE
+            if naturelles and contigu and bornes[0] <= ecart <= bornes[1]:
+                # Pause d'origine gardée telle quelle : la respiration et l'ambiance restent.
+                morceaux.append(x[int((fin_prec + MARGE) * fr):int((debut - MARGE) * fr)].copy())
+            elif naturelles:
+                # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                n = int(pause * fr)
+                morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
+            else:
+                morceaux.append(np.zeros(int(pause * fr)))
             t += len(morceaux[-1]) / fr
         a, z = max(0, int((debut - MARGE) * fr)), min(len(x), int((fin + MARGE) * fr))
         seg = x[a:z].copy()
         seg[:fondu] *= rampe
         seg[-fondu:] *= rampe[::-1]
         morceaux.append(seg)
-        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3)})
+        # Instant de chaque mot reconnu, dans le temps de la narration montée
+        # (sert à caler un visuel sur un mot précis et aux sous-titres).
+        mots = [{"mot": entendus[w], "debut": round(t + instants[w][0] - a / fr, 3),
+                 "fin": round(t + instants[w][1] - a / fr, 3)} for w in range(i, j + 1)]
+        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3),
+                           "mots": mots})
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
         note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"
@@ -258,8 +333,16 @@ def main(slug: str) -> None:
     sf.write(monte, np.concatenate(morceaux), fr, subtype="PCM_16")
     if isolation:
         monte = isoler(monte, dossier, tmp)
+    # Niveau : un gain fixe pour viser -16 LUFS. Pas de normalisation
+    # dynamique : elle fait « pomper » le bruit de fond entre les mots.
+    mesure = subprocess.run(["ffmpeg", "-i", str(monte), "-t", f"{t:.3f}", "-af", "ebur128", "-f", "null", "-"],
+                            capture_output=True, text=True).stderr
+    integre = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", mesure)[-1])
+    gain = -16 - integre
+    # Les rares crêtes isolées (consonnes, chocs) sont retenues par un limiteur doux à -1,5 dB.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-t", f"{t:.3f}",
-                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", str(FREQ), "-c:a", "pcm_s16le",
+                    "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:attack=5:release=80:level=disabled",
+                    "-ar", str(FREQ), "-c:a", "pcm_s16le",
                     str(dossier / "narration.wav")], check=True)
     for f in tmp.iterdir():
         f.unlink()

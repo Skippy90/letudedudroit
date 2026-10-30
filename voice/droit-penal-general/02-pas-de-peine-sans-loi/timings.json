@@ -1,857 +1,858 @@
 {
- "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 339.678,
+ "voix": "Enregistrement humain",
+ "source": "humaine",
+ "duree": 391.109,
  "lignes": [
   {
    "ligne": 1,
-   "debut": 0.0,
-   "fin": 6.548,
+   "debut": 0.12,
+   "fin": 6.92,
    "phrases": [
     {
      "texte": "Samedi matin, à Fribourg.",
-     "debut": 0.0,
-     "fin": 1.486
+     "debut": 0.12,
+     "fin": 1.42
     },
     {
      "texte": "Sami déménage.",
-     "debut": 1.997,
-     "fin": 2.984
+     "debut": 2.2,
+     "fin": 2.88
     },
     {
      "texte": "Son ami Tom lui avait promis de venir l'aider à porter les cartons.",
-     "debut": 3.158,
-     "fin": 6.548
+     "debut": 3.74,
+     "fin": 6.92
     }
    ]
   },
   {
    "ligne": 2,
-   "debut": 6.998,
-   "fin": 14.336,
+   "debut": 7.76,
+   "fin": 15.12,
    "phrases": [
     {
      "texte": "À huit heures, Tom envoie un message : « Désolé, je suis malade. »",
-     "debut": 6.998,
-     "fin": 10.539
+     "debut": 7.76,
+     "fin": 11.48
     },
     {
      "texte": "En réalité, il part passer la journée au lac.",
-     "debut": 11.236,
-     "fin": 14.336
+     "debut": 12.44,
+     "fin": 15.12
     }
    ]
   },
   {
    "ligne": 3,
-   "debut": 14.786,
-   "fin": 19.801,
+   "debut": 15.96,
+   "fin": 22.62,
    "phrases": [
     {
      "texte": "Sami finit le déménagement avec sa sœur.",
-     "debut": 14.786,
-     "fin": 16.806
+     "debut": 15.96,
+     "fin": 18.24
     },
     {
      "texte": "Le soir, il apprend la vérité.",
-     "debut": 17.131,
-     "fin": 18.757
+     "debut": 19.12,
+     "fin": 20.92
     },
     {
      "texte": "Il est furieux.",
-     "debut": 18.815,
-     "fin": 19.802
+     "debut": 21.74,
+     "fin": 22.62
     }
    ]
   },
   {
    "ligne": 4,
-   "debut": 20.251,
-   "fin": 24.106,
+   "debut": 23.46,
+   "fin": 27.22,
    "phrases": [
     {
      "texte": "Il écrit à Tom : « Tu m'as menti. Je vais porter plainte ! »",
-     "debut": 20.251,
-     "fin": 24.106
+     "debut": 23.46,
+     "fin": 27.22
     }
    ]
   },
   {
    "ligne": 5,
-   "debut": 24.556,
-   "fin": 31.893,
+   "debut": 28.06,
+   "fin": 36.18,
    "phrases": [
     {
      "texte": "Alors, Tom a-t-il commis une infraction ?",
-     "debut": 24.556,
-     "fin": 26.774
+     "debut": 28.06,
+     "fin": 30.12
     },
     {
      "texte": "Mentir à un ami, est-ce puni par la loi ?",
-     "debut": 27.284,
-     "fin": 29.804
+     "debut": 31.0,
+     "fin": 33.44
     },
     {
      "texte": "Gardez votre réponse en tête.",
-     "debut": 30.129,
-     "fin": 31.894
+     "debut": 34.52,
+     "fin": 36.18
     }
    ]
   },
   {
    "ligne": 6,
-   "debut": 32.343,
-   "fin": 41.027,
+   "debut": 37.02,
+   "fin": 46.26,
    "phrases": [
     {
      "texte": "Dans la vidéo un, on a vu le premier étage de toute infraction : la typicité.",
-     "debut": 32.343,
-     "fin": 37.242
+     "debut": 37.02,
+     "fin": 41.98
     },
     {
      "texte": "La question était : la loi décrit-elle ce comportement ?",
-     "debut": 37.451,
-     "fin": 41.027
+     "debut": 43.12,
+     "fin": 46.26
     }
    ]
   },
   {
    "ligne": 7,
-   "debut": 41.477,
-   "fin": 49.047,
+   "debut": 47.7,
+   "fin": 55.1,
    "phrases": [
     {
      "texte": "Aujourd'hui, on regarde la règle qui fonde ce premier étage.",
-     "debut": 41.477,
-     "fin": 44.739
+     "debut": 47.7,
+     "fin": 50.68
     },
     {
      "texte": "C'est l'article premier du Code pénal.",
-     "debut": 44.983,
-     "fin": 46.829
+     "debut": 51.42,
+     "fin": 52.9
     },
     {
      "texte": "Il tient en une seule phrase.",
-     "debut": 47.073,
-     "fin": 49.047
+     "debut": 53.54,
+     "fin": 55.1
     }
    ]
   },
   {
    "ligne": 8,
-   "debut": 49.497,
-   "fin": 56.974,
+   "debut": 55.94,
+   "fin": 64.26,
    "phrases": [
     {
      "texte": "La voici.",
-     "debut": 49.497,
-     "fin": 50.17
+     "debut": 55.94,
+     "fin": 56.34
     },
     {
      "texte": "« Une peine ou une mesure ne peuvent être prononcées qu'en raison d'un acte expressément réprimé par la loi. »",
-     "debut": 50.612,
-     "fin": 56.974
+     "debut": 57.46,
+     "fin": 64.26
     }
    ]
   },
   {
    "ligne": 9,
-   "debut": 57.424,
-   "fin": 62.439,
+   "debut": 65.7,
+   "fin": 71.54,
    "phrases": [
     {
      "texte": "Autrement dit : pas de loi, pas de peine.",
-     "debut": 57.424,
-     "fin": 60.001
+     "debut": 65.7,
+     "fin": 67.94
     },
     {
      "texte": "On l'appelle le principe de la légalité.",
-     "debut": 60.118,
-     "fin": 62.44
+     "debut": 68.96,
+     "fin": 71.54
     }
    ]
   },
   {
    "ligne": 10,
-   "debut": 62.889,
-   "fin": 70.088,
+   "debut": 72.98,
+   "fin": 79.95,
    "phrases": [
     {
      "texte": "La règle vaut pour la peine, mais aussi pour la mesure, par exemple un traitement.",
-     "debut": 62.889,
-     "fin": 66.662
+     "debut": 72.98,
+     "fin": 77.28
     },
     {
      "texte": "Les mesures seront l'objet de la vidéo douze.",
-     "debut": 67.173,
-     "fin": 70.087
+     "debut": 77.87,
+     "fin": 79.95
     }
    ]
   },
   {
    "ligne": 11,
-   "debut": 70.538,
-   "fin": 79.036,
+   "debut": 81.39,
+   "fin": 90.59,
    "phrases": [
     {
      "texte": "De cette phrase, on tire trois exigences.",
-     "debut": 70.538,
-     "fin": 73.046
+     "debut": 81.39,
+     "fin": 83.51
     },
     {
      "texte": "Un texte.",
-     "debut": 73.139,
-     "fin": 73.94
+     "debut": 84.65,
+     "fin": 85.21
     },
     {
      "texte": "Un texte qui décrit l'acte.",
-     "debut": 74.381,
-     "fin": 75.971
+     "debut": 86.07,
+     "fin": 87.23
     },
     {
      "texte": "Un texte qui existait déjà au moment de l'acte.",
-     "debut": 76.413,
-     "fin": 79.037
+     "debut": 88.03,
+     "fin": 90.59
     }
    ]
   },
   {
    "ligne": 12,
-   "debut": 79.486,
-   "fin": 87.985,
+   "debut": 91.43,
+   "fin": 101.73,
    "phrases": [
     {
      "texte": "Première exigence : il faut un texte de loi.",
-     "debut": 79.486,
-     "fin": 81.924
+     "debut": 91.43,
+     "fin": 93.85
     },
     {
      "texte": "Pas l'avis personnel du juge.",
-     "debut": 82.249,
-     "fin": 83.782
+     "debut": 94.81,
+     "fin": 96.07
     },
     {
      "texte": "Pas la morale.",
-     "debut": 83.991,
-     "fin": 84.757
+     "debut": 96.99,
+     "fin": 97.77
     },
     {
      "texte": "Le juge pénal ne peut pas inventer une infraction.",
-     "debut": 85.198,
-     "fin": 87.985
+     "debut": 98.67,
+     "fin": 101.73
     }
    ]
   },
   {
    "ligne": 13,
-   "debut": 88.435,
-   "fin": 95.401,
+   "debut": 103.17,
+   "fin": 110.11,
    "phrases": [
     {
      "texte": "Cherchons donc un article qui punit le mensonge.",
-     "debut": 88.435,
-     "fin": 90.861
+     "debut": 103.17,
+     "fin": 105.57
     },
     {
      "texte": "On ne trouve aucune infraction qui s'appelle simplement « mentir ».",
-     "debut": 91.303,
-     "fin": 95.401
+     "debut": 106.45,
+     "fin": 110.11
     }
    ]
   },
   {
    "ligne": 14,
-   "debut": 95.851,
-   "fin": 102.724,
+   "debut": 110.95,
+   "fin": 117.65,
    "phrases": [
     {
      "texte": "Le mensonge de Tom est blessant.",
-     "debut": 95.851,
-     "fin": 97.534
+     "debut": 110.95,
+     "fin": 112.37
     },
     {
      "texte": "Il est même moralement condamnable.",
-     "debut": 98.138,
-     "fin": 99.961
+     "debut": 112.89,
+     "fin": 115.05
     },
     {
      "texte": "Mais la morale n'est pas la loi pénale.",
-     "debut": 100.286,
-     "fin": 102.724
+     "debut": 115.79,
+     "fin": 117.65
     }
    ]
   },
   {
    "ligne": 15,
-   "debut": 103.174,
-   "fin": 109.815,
+   "debut": 118.77,
+   "fin": 126.29,
    "phrases": [
     {
      "texte": "Premier constat : aucun texte ne décrit ce que Tom a fait.",
-     "debut": 103.174,
-     "fin": 106.448
+     "debut": 118.77,
+     "fin": 122.15
     },
     {
      "texte": "Le premier étage n'est pas franchi.",
-     "debut": 106.889,
-     "fin": 108.549
+     "debut": 122.99,
+     "fin": 124.75
     },
     {
      "texte": "Pas d'infraction.",
-     "debut": 108.7,
-     "fin": 109.815
+     "debut": 125.63,
+     "fin": 126.29
     }
    ]
   },
   {
    "ligne": 16,
-   "debut": 110.265,
-   "fin": 116.116,
+   "debut": 127.73,
+   "fin": 134.99,
    "phrases": [
     {
      "texte": "Deuxième exigence : le texte doit décrire l'acte.",
-     "debut": 110.265,
-     "fin": 113.435
+     "debut": 127.73,
+     "fin": 131.41
     },
     {
      "texte": "C'est tout le sens du mot « expressément ».",
-     "debut": 113.713,
-     "fin": 116.116
+     "debut": 132.33,
+     "fin": 134.99
     }
    ]
   },
   {
    "ligne": 17,
-   "debut": 116.566,
-   "fin": 125.575,
+   "debut": 136.43,
+   "fin": 146.63,
    "phrases": [
     {
      "texte": "Le Code pénal ne punit pas le mensonge en général.",
-     "debut": 116.566,
-     "fin": 119.016
+     "debut": 136.43,
+     "fin": 139.27
     },
     {
      "texte": "Il punit certains mensonges, décrits avec précision.",
-     "debut": 119.26,
-     "fin": 121.965
+     "debut": 139.99,
+     "fin": 142.91
     },
     {
      "texte": "Pour chacun, la loi précise les conditions.",
-     "debut": 122.475,
-     "fin": 125.575
+     "debut": 143.77,
+     "fin": 146.63
     }
    ]
   },
   {
    "ligne": 18,
-   "debut": 126.025,
-   "fin": 131.18,
+   "debut": 148.07,
+   "fin": 153.37,
    "phrases": [
     {
      "texte": "Changeons l'histoire.",
-     "debut": 126.025,
-     "fin": 126.954
+     "debut": 148.07,
+     "fin": 148.69
     },
     {
      "texte": "Imaginons que Tom mente cette fois devant un tribunal, comme témoin.",
-     "debut": 127.279,
-     "fin": 131.18
+     "debut": 149.81,
+     "fin": 153.37
     }
    ]
   },
   {
    "ligne": 19,
-   "debut": 131.63,
-   "fin": 138.828,
+   "debut": 154.47,
+   "fin": 162.729,
    "phrases": [
     {
      "texte": "Là, un article existe.",
-     "debut": 131.63,
-     "fin": 132.93
+     "debut": 154.47,
+     "fin": 156.089
     },
     {
      "texte": "L'article trois cent sept du Code pénal punit le témoin qui fait une déposition fausse en justice.",
-     "debut": 133.139,
-     "fin": 138.828
+     "debut": 157.229,
+     "fin": 162.729
     }
    ]
   },
   {
    "ligne": 20,
-   "debut": 139.278,
-   "fin": 144.48,
+   "debut": 163.889,
+   "fin": 170.329,
    "phrases": [
     {
      "texte": "Autre variante.",
-     "debut": 139.278,
-     "fin": 140.184
+     "debut": 163.889,
+     "fin": 164.569
     },
     {
      "texte": "Tom monte une mise en scène habile pour obtenir de l'argent de Sami.",
-     "debut": 140.787,
-     "fin": 144.479
+     "debut": 165.209,
+     "fin": 170.329
     }
    ]
   },
   {
    "ligne": 21,
-   "debut": 144.93,
-   "fin": 153.475,
+   "debut": 171.629,
+   "fin": 179.129,
    "phrases": [
     {
      "texte": "Là aussi, un article existe : l'escroquerie, à l'article cent quarante-six du Code pénal.",
-     "debut": 144.93,
-     "fin": 151.095
+     "debut": 171.629,
+     "fin": 177.269
     },
     {
      "texte": "Mais il ne suffit pas de mentir.",
-     "debut": 151.536,
-     "fin": 153.475
+     "debut": 178.089,
+     "fin": 179.129
     }
    ]
   },
   {
    "ligne": 22,
-   "debut": 153.925,
-   "fin": 161.959,
+   "debut": 179.869,
+   "fin": 188.509,
    "phrases": [
     {
      "texte": "Il faut une tromperie astucieuse.",
-     "debut": 153.925,
-     "fin": 155.91
+     "debut": 179.869,
+     "fin": 181.829
     },
     {
      "texte": "Il faut que la victime agisse contre ses intérêts financiers.",
-     "debut": 156.189,
-     "fin": 158.941
+     "debut": 182.569,
+     "fin": 185.689
     },
     {
      "texte": "Et il faut que l'auteur veuille s'enrichir.",
-     "debut": 159.324,
-     "fin": 161.959
+     "debut": 186.309,
+     "fin": 188.509
     }
    ]
   },
   {
    "ligne": 23,
-   "debut": 162.409,
-   "fin": 170.489,
+   "debut": 189.949,
+   "fin": 198.189,
    "phrases": [
     {
      "texte": "Dans notre histoire de départ, Tom ne parle pas à un tribunal.",
-     "debut": 162.409,
-     "fin": 166.287
+     "debut": 189.949,
+     "fin": 193.069
     },
     {
      "texte": "Il ne cherche pas d'argent non plus.",
-     "debut": 166.67,
-     "fin": 168.191
+     "debut": 193.829,
+     "fin": 195.049
     },
     {
      "texte": "Aucune de ces descriptions ne correspond.",
-     "debut": 168.365,
-     "fin": 170.49
+     "debut": 195.849,
+     "fin": 198.189
     }
    ]
   },
   {
    "ligne": 24,
-   "debut": 170.939,
-   "fin": 181.853,
+   "debut": 199.629,
+   "fin": 210.469,
    "phrases": [
     {
      "texte": "Le juge peut interpréter un texte, même largement.",
-     "debut": 170.939,
-     "fin": 173.574
+     "debut": 199.629,
+     "fin": 202.309
     },
     {
      "texte": "Mais il ne peut pas y ajouter ce qui n'y est pas.",
-     "debut": 174.085,
-     "fin": 176.698
+     "debut": 203.129,
+     "fin": 205.329
     },
     {
      "texte": "Il ne peut donc pas punir Tom parce que son mensonge ressemble à une escroquerie.",
-     "debut": 177.139,
-     "fin": 181.852
+     "debut": 206.249,
+     "fin": 210.469
     }
    ]
   },
   {
    "ligne": 25,
-   "debut": 182.303,
-   "fin": 189.222,
+   "debut": 211.868,
+   "fin": 218.329,
    "phrases": [
     {
      "texte": "S'il manque un élément de la description, l'acte n'est pas réprimé.",
-     "debut": 182.303,
-     "fin": 186.018
+     "debut": 211.868,
+     "fin": 215.129
     },
     {
      "texte": "Même s'il est proche.",
-     "debut": 186.459,
-     "fin": 187.527
+     "debut": 215.889,
+     "fin": 216.689
     },
     {
      "texte": "Même s'il est choquant.",
-     "debut": 188.038,
-     "fin": 189.223
+     "debut": 217.249,
+     "fin": 218.329
     }
    ]
   },
   {
    "ligne": 26,
-   "debut": 189.672,
-   "fin": 193.62,
+   "debut": 219.769,
+   "fin": 224.529,
    "phrases": [
     {
      "texte": "Troisième exigence : le texte doit exister au moment de l'acte.",
-     "debut": 189.672,
-     "fin": 193.619
+     "debut": 219.769,
+     "fin": 224.529
     }
    ]
   },
   {
    "ligne": 27,
-   "debut": 194.07,
-   "fin": 200.618,
+   "debut": 225.749,
+   "fin": 232.809,
    "phrases": [
     {
      "texte": "Imaginons une pure fiction.",
-     "debut": 194.07,
-     "fin": 195.603
+     "debut": 225.749,
+     "fin": 227.629
     },
     {
      "texte": "L'an prochain, le Parlement vote une loi qui punit le mensonge entre amis.",
-     "debut": 196.044,
-     "fin": 200.618
+     "debut": 228.449,
+     "fin": 232.809
     }
    ]
   },
   {
    "ligne": 28,
-   "debut": 201.068,
-   "fin": 206.269,
+   "debut": 234.249,
+   "fin": 240.729,
    "phrases": [
     {
      "texte": "Tom a menti ce samedi, bien avant cette nouvelle loi.",
-     "debut": 201.068,
-     "fin": 203.703
+     "debut": 234.249,
+     "fin": 237.029
     },
     {
      "texte": "Peut-on le punir avec elle ?",
-     "debut": 204.029,
-     "fin": 205.352
+     "debut": 238.169,
+     "fin": 239.469
     },
     {
      "texte": "Non.",
-     "debut": 205.735,
-     "fin": 206.269
+     "debut": 240.609,
+     "fin": 240.729
     }
    ]
   },
   {
    "ligne": 29,
-   "debut": 206.719,
-   "fin": 213.824,
+   "debut": 242.169,
+   "fin": 249.889,
    "phrases": [
     {
      "texte": "L'article deux du Code pénal pose la règle.",
-     "debut": 206.719,
-     "fin": 208.96
+     "debut": 242.169,
+     "fin": 244.209
     },
     {
      "texte": "Le Code pénal s'applique à celui qui agit après son entrée en vigueur.",
-     "debut": 209.401,
-     "fin": 213.824
+     "debut": 245.209,
+     "fin": 249.889
     }
    ]
   },
   {
    "ligne": 30,
-   "debut": 214.274,
-   "fin": 221.937,
+   "debut": 251.329,
+   "fin": 259.869,
    "phrases": [
     {
      "texte": "Une loi pénale ne remonte donc pas dans le passé contre l'auteur.",
-     "debut": 214.274,
-     "fin": 217.687
+     "debut": 251.329,
+     "fin": 255.009
     },
     {
      "texte": "Sinon, personne ne pourrait savoir à l'avance ce qui est permis.",
-     "debut": 217.861,
-     "fin": 221.937
+     "debut": 256.149,
+     "fin": 259.869
     }
    ]
   },
   {
    "ligne": 31,
-   "debut": 222.387,
-   "fin": 234.229,
+   "debut": 261.309,
+   "fin": 274.489,
    "phrases": [
     {
      "texte": "Il existe une exception, et elle joue en faveur de l'auteur.",
-     "debut": 222.387,
-     "fin": 225.893
+     "debut": 261.309,
+     "fin": 265.129
     },
     {
      "texte": "Imaginons que la nouvelle loi soit plus douce que l'ancienne.",
-     "debut": 226.404,
-     "fin": 229.179
+     "debut": 266.269,
+     "fin": 269.429
     },
     {
      "texte": "Si l'auteur est jugé après son entrée en vigueur, c'est elle qui s'applique.",
-     "debut": 229.783,
-     "fin": 234.229
+     "debut": 270.409,
+     "fin": 274.489
     }
    ]
   },
   {
    "ligne": 32,
-   "debut": 234.679,
-   "fin": 241.506,
+   "debut": 275.929,
+   "fin": 284.069,
    "phrases": [
     {
      "texte": "Attention au piège classique.",
-     "debut": 234.679,
-     "fin": 236.177
+     "debut": 275.929,
+     "fin": 277.969
     },
     {
      "texte": "On entend souvent : « Ce n'est pas dans le Code pénal, donc c'est permis. »",
-     "debut": 236.42,
-     "fin": 240.507
+     "debut": 279.049,
+     "fin": 282.509
     },
     {
      "texte": "C'est faux.",
-     "debut": 240.786,
-     "fin": 241.506
+     "debut": 283.649,
+     "fin": 284.069
     }
    ]
   },
   {
    "ligne": 33,
-   "debut": 241.956,
-   "fin": 253.426,
+   "debut": 285.509,
+   "fin": 296.429,
    "phrases": [
     {
      "texte": "D'autres lois fédérales contiennent aussi des infractions.",
-     "debut": 241.956,
-     "fin": 245.323
+     "debut": 285.509,
+     "fin": 288.069
     },
     {
      "texte": "L'article trois cent trente-trois du Code pénal le prévoit : ses règles générales s'appliquent aussi à ces infractions.",
-     "debut": 245.927,
-     "fin": 253.427
+     "debut": 289.009,
+     "fin": 296.429
     }
    ]
   },
   {
    "ligne": 34,
-   "debut": 253.876,
-   "fin": 263.071,
+   "debut": 297.269,
+   "fin": 307.469,
    "phrases": [
     {
      "texte": "Un exemple que tout le monde connaît : la loi sur la circulation routière.",
-     "debut": 253.876,
-     "fin": 257.754
+     "debut": 297.269,
+     "fin": 301.469
     },
     {
      "texte": "Son article quatre-vingt-dix punit celui qui viole les règles de la circulation.",
-     "debut": 258.265,
-     "fin": 263.071
+     "debut": 302.609,
+     "fin": 307.469
     }
    ]
   },
   {
    "ligne": 35,
-   "debut": 263.521,
-   "fin": 271.463,
+   "debut": 308.309,
+   "fin": 316.209,
    "phrases": [
     {
      "texte": "Et les cantons peuvent aussi punir certaines contraventions de police.",
-     "debut": 263.521,
-     "fin": 266.714
+     "debut": 308.309,
+     "fin": 311.309
     },
     {
      "texte": "C'est l'article trois cent trente-cinq du Code pénal qui le leur permet.",
-     "debut": 267.225,
-     "fin": 271.462
+     "debut": 312.149,
+     "fin": 316.209
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 271.913,
-   "fin": 278.786,
+   "debut": 317.649,
+   "fin": 324.869,
    "phrases": [
     {
      "texte": "Attention : ces règles-là sont cantonales.",
-     "debut": 271.913,
-     "fin": 274.781
+     "debut": 317.649,
+     "fin": 320.029
     },
     {
      "texte": "Ce qui est puni à Genève ne l'est pas forcément dans le canton de Vaud.",
-     "debut": 275.384,
-     "fin": 278.786
+     "debut": 320.869,
+     "fin": 324.869
     }
    ]
   },
   {
    "ligne": 37,
-   "debut": 279.236,
-   "fin": 285.644,
+   "debut": 326.309,
+   "fin": 332.429,
    "phrases": [
     {
      "texte": "Le principe reste le même partout : il faut un texte.",
-     "debut": 279.236,
-     "fin": 282.382
+     "debut": 326.309,
+     "fin": 329.349
     },
     {
      "texte": "Mais ce texte n'est pas toujours dans le Code pénal.",
-     "debut": 282.893,
-     "fin": 285.645
+     "debut": 330.109,
+     "fin": 332.429
     }
    ]
   },
   {
    "ligne": 38,
-   "debut": 286.094,
-   "fin": 295.243,
+   "debut": 333.869,
+   "fin": 343.309,
    "phrases": [
     {
      "texte": "Revenons à Sami.",
-     "debut": 286.094,
-     "fin": 287.22
+     "debut": 333.869,
+     "fin": 335.149
     },
     {
      "texte": "Il a le droit d'être déçu.",
-     "debut": 287.603,
-     "fin": 288.985
+     "debut": 336.069,
+     "fin": 337.089
     },
     {
      "texte": "Mais aucun texte ne réprime le mensonge de Tom.",
-     "debut": 289.426,
-     "fin": 292.271
+     "debut": 337.749,
+     "fin": 340.329
     },
     {
      "texte": "Le juge pénal ne peut pas le punir.",
-     "debut": 292.781,
-     "fin": 295.243
+     "debut": 341.169,
+     "fin": 343.309
     }
    ]
   },
   {
    "ligne": 39,
-   "debut": 295.693,
-   "fin": 301.498,
+   "debut": 344.149,
+   "fin": 350.329,
    "phrases": [
     {
      "texte": "Pas d'infraction ne veut pas dire que Tom a bien agi.",
-     "debut": 295.693,
-     "fin": 298.131
+     "debut": 344.149,
+     "fin": 346.489
     },
     {
      "texte": "Cela veut seulement dire que le droit pénal ne s'en occupe pas.",
-     "debut": 298.456,
-     "fin": 301.498
+     "debut": 347.249,
+     "fin": 350.329
     }
    ]
   },
   {
    "ligne": 40,
-   "debut": 301.948,
-   "fin": 311.375,
+   "debut": 351.169,
+   "fin": 359.849,
    "phrases": [
     {
      "texte": "Retenez les trois exigences de l'article premier.",
-     "debut": 301.948,
-     "fin": 304.642
+     "debut": 351.169,
+     "fin": 353.489
     },
     {
      "texte": "Un texte.",
-     "debut": 305.083,
-     "fin": 305.791
+     "debut": 354.189,
+     "fin": 354.729
     },
     {
      "texte": "Un texte qui décrit l'acte.",
-     "debut": 306.302,
-     "fin": 308.008
+     "debut": 355.429,
+     "fin": 356.429
     },
     {
      "texte": "Un texte qui existait déjà au moment de l'acte.",
-     "debut": 308.392,
-     "fin": 311.375
+     "debut": 357.209,
+     "fin": 359.849
     }
    ]
   },
   {
    "ligne": 41,
-   "debut": 311.825,
-   "fin": 316.33,
+   "debut": 361.289,
+   "fin": 365.929,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 311.825,
-     "fin": 312.928
+     "debut": 361.289,
+     "fin": 362.349
     },
     {
      "texte": "Le premier mars, Nora fait quelque chose de permis.",
-     "debut": 313.253,
-     "fin": 316.33
+     "debut": 363.249,
+     "fin": 365.929
     }
    ]
   },
   {
    "ligne": 42,
-   "debut": 316.78,
-   "fin": 324.35,
+   "debut": 367.369,
+   "fin": 374.769,
    "phrases": [
     {
      "texte": "Le premier juin, une nouvelle loi interdit ce comportement et le punit.",
-     "debut": 316.78,
-     "fin": 321.261
+     "debut": 367.369,
+     "fin": 371.369
     },
     {
      "texte": "Le premier juillet, Nora recommence.",
-     "debut": 321.865,
-     "fin": 324.35
+     "debut": 372.509,
+     "fin": 374.769
     }
    ]
   },
   {
    "ligne": 43,
-   "debut": 324.8,
-   "fin": 330.512,
+   "debut": 376.029,
+   "fin": 381.909,
    "phrases": [
     {
      "texte": "Peut-elle être punie ?",
-     "debut": 324.8,
-     "fin": 325.81
+     "debut": 376.029,
+     "fin": 376.769
     },
     {
      "texte": "Et si oui, pour quelle date ?",
-     "debut": 326.321,
-     "fin": 327.807
+     "debut": 377.629,
+     "fin": 378.869
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 328.318,
-     "fin": 330.512
+     "debut": 380.009,
+     "fin": 381.909
     }
    ]
   },
   {
    "ligne": 44,
-   "debut": 330.962,
-   "fin": 339.228,
+   "debut": 382.749,
+   "fin": 390.989,
    "phrases": [
     {
      "texte": "La réponse, le script complet et les articles cités sont dans la description, en accès libre.",
-     "debut": 330.962,
-     "fin": 336.953
+     "debut": 382.749,
+     "fin": 388.109
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 337.394,
-     "fin": 339.228
+     "debut": 389.249,
+     "fin": 390.989
     }
    ]
   }
