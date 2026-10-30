@@ -46,10 +46,14 @@ def main(slug: str, seconde: float, sortie: str | None = None) -> None:
                         str(RACINE / "render/manim/media" / slug / "schemas.mp4"), "-frames:v", "1", str(image)],
                        check=True)
         scene = base64.b64encode(image.read_bytes()).decode()
+        # Le fond reprend le noir exact de l'image (l'encodage vidéo le décale un peu) : pas de cadre visible.
+        pixel = subprocess.run(["ffmpeg", "-v", "error", "-i", str(image), "-vf", "crop=1:1:4:4", "-f", "rawvideo",
+                                "-pix_fmt", "rgb24", "-"], capture_output=True, check=True).stdout
+        fond = "#" + pixel[:3].hex()
         symbole = (RACINE / "docs/marque/symbole.svg").read_text(encoding="utf-8")
         page = Path(tmp) / "miniature.html"
         page.write_text(f"""<!doctype html><meta charset="utf-8"><style>
-body{{margin:0;width:1280px;height:720px;background:#0F1B2D;overflow:hidden;font-family:Inter,sans-serif;position:relative}}
+body{{margin:0;width:1280px;height:720px;background:{fond};overflow:hidden;font-family:Inter,sans-serif;position:relative}}
 .scene{{position:absolute;left:250px;top:250px;width:1030px;height:470px;background:url(data:image/png;base64,{scene}) center 62%/1030px auto no-repeat}}
 .titre{{position:absolute;left:56px;top:34px;width:1100px;color:#F2EFE6;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-2px}}
 .titre b{{color:#E3A52F;font-weight:800}}

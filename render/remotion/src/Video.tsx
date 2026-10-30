@@ -46,7 +46,7 @@ const Symbole: React.FC<{ taille: number; retard?: number }> = ({ taille, retard
   );
 };
 
-// Écran centré, avec un fondu vers le bleu nuit en sortie (ouverture) ou en entrée (fin),
+// Écran centré, avec un fondu vers le noir en sortie (ouverture) ou en entrée (fin),
 // pour que les raccords avec les schémas restent doux.
 const Ecran: React.FC<{ fondu: "sortie" | "entree"; children: React.ReactNode }> = ({ fondu, children }) => {
   const frame = useCurrentFrame();
@@ -54,7 +54,7 @@ const Ecran: React.FC<{ fondu: "sortie" | "entree"; children: React.ReactNode }>
   const opacite = fondu === "sortie"
     ? interpolate(frame, [durationInFrames - 12, durationInFrames - 1], [1, 0], { extrapolateLeft: "clamp" })
     : interpolate(frame, [0, 12], [0, 1], { extrapolateRight: "clamp" });
-  // Rouge de la marque, qui passe au bleu nuit des schémas au raccord (et l'inverse pour la fin).
+  // Rouge de la marque, qui passe au noir des schémas au raccord (et l'inverse pour la fin).
   const fond = fondu === "sortie"
     ? interpolateColors(frame, [durationInFrames - 14, durationInFrames - 1], [ROUGE_MARQUE, FOND])
     : interpolateColors(frame, [0, 14], [FOND, ROUGE_MARQUE]);

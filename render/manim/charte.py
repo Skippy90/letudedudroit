@@ -13,13 +13,13 @@ from manim import (
 )
 
 # Couleurs de la charte
-FOND = "#0F1B2D"
+FOND = "#0B0B0B"
 TEXTE = "#F2EFE6"
 ACCENT = "#E3A52F"
 VERT = "#4CAF7D"
 GRIS = "#6B7280"
 ROUGE = "#D9534F"
-SURFACE = "#1B2B44"  # fond des blocs, un cran plus clair que le fond
+SURFACE = "#1F1F22"  # fond des blocs, un cran plus clair que le fond
 
 # Une couleur fixe par personnage, choisie dans visuals.md
 COULEURS_PERSONNAGES = {

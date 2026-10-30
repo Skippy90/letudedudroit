@@ -18,8 +18,8 @@ Un vocabulaire graphique fixe remplace le visage : le spectateur doit reconnaît
 
 ## Couleurs et typographie
 
-- Fond sombre uni (bleu nuit) ; texte et traits en blanc cassé ; une couleur d'accent chaude (ambre) pour ce qui est important à l'instant ; vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
-- Valeurs de départ (à ajuster une fois rendues) : fond `#0F1B2D`, texte `#F2EFE6`, accent `#E3A52F`, vert `#4CAF7D`, gris `#6B7280`, rouge `#D9534F`.
+- Fond sombre uni (noir, adopté le 30 octobre 2026 à la place du bleu nuit) ; texte et traits en blanc cassé ; une couleur d'accent chaude (ambre) pour ce qui est important à l'instant ; vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
+- Valeurs de départ (à ajuster une fois rendues) : fond `#0B0B0B` (blocs `#1F1F22`), texte `#F2EFE6`, accent `#E3A52F`, vert `#4CAF7D`, gris `#6B7280`, rouge `#D9534F`.
 - Une seule famille de caractères, sans empattement, lisible sur téléphone : rien en dessous de l'équivalent de 28 points sur une image 1920 × 1080.
 - Jamais plus de douze mots affichés en même temps, hors bloc d'article et hors sous-titres.
 
