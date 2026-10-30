@@ -4,6 +4,7 @@ et une animation au moins pour chaque ligne du script.
 Usage : python tools/verifier_visuels.py <matiere>/<numero-slug>
 """
 
+import json
 import os
 import re
 import shlex
@@ -21,15 +22,22 @@ def main(slug: str) -> None:
     dossier = RACINE / "scripts" / slug
     blocs = [b.split("\n") for b in (dossier / "tts.txt").read_text(encoding="utf-8").strip().split("\n\n")]
     erreurs, couvertes = [], set()
+    fichier_t = RACINE / "voice" / slug / "timings.json"
+    timings = json.loads(fichier_t.read_text(encoding="utf-8")) if fichier_t.exists() else None
     for ligne in (dossier / "visuals.md").read_text(encoding="utf-8").splitlines():
-        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+[\d.]+|@[\w'-]+)?\s*\|(.*)\|\s*$", ligne)
+        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+[\d.]+|@([\w'-]+))?\s*\|(.*)\|\s*$", ligne)
         if not m:
             continue
-        n, p = int(m[1]), int(m[2])
+        n, p, mot = int(m[1]), int(m[2]), m[3]
+        # Un moment calé sur un mot : le mot doit avoir été prononcé (narration enregistrée).
+        if mot and timings and n <= len(timings["lignes"]) and p <= len(timings["lignes"][n - 1]["phrases"]):
+            reconnus = [w["mot"] for w in timings["lignes"][n - 1]["phrases"][p - 1].get("mots", [])]
+            if reconnus and mot.lower() not in reconnus:
+                erreurs.append(f"{n}.{p}@{mot} : ce mot n'est pas dans la narration ({' '.join(reconnus)})")
         couvertes.add(n)
         if n > len(blocs) or p > len(blocs[n - 1]):
             erreurs.append(f"{n}.{p} : cette phrase n'existe pas dans tts.txt")
-        for action in filter(str.strip, m[3].split(";")):
+        for action in filter(str.strip, m[4].split(";")):
             try:
                 nom = shlex.split(action)[0]
             except ValueError:

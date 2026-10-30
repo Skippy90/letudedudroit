@@ -218,8 +218,10 @@ class Schemas(Scene):
             self.play(AnimationGroup(*[FadeIn(g, shift=UP * 0.1) for g in groupes], lag_ratio=1.0), run_time=4.5)
             return []
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
-        if nouveau.width > 13.0:  # titre trop long : réduit pour rester dans le cadre
-            nouveau.scale_to_fit_width(13.0)
+        # Titre trop long : réduit pour rester dans le cadre, et à gauche du repère permanent s'il est là.
+        largeur_max = 11.0 if getattr(self, "repere", None) is not None else 13.0
+        if nouveau.width > largeur_max:
+            nouveau.scale_to_fit_width(largeur_max)
         nouveau.original_text = contenu
         self.titre = nouveau
         self.focus = nouveau
@@ -549,8 +551,9 @@ class Schemas(Scene):
         return [FadeOut(self.bulles.pop(ident))]
 
     def a_fleche(self, n):
-        haut = -2.6 + 1.05 * int(n) - 0.15
-        fleche = c.Arrow([-3.0, -2.6, 0], [-3.0, haut, 0], color=c.ACCENT, stroke_width=6, buff=0)
+        bas = c.Y_BATIMENT - 0.55
+        haut = bas + 1.05 * int(n) - 0.15
+        fleche = c.Arrow([-3.0, bas, 0], [-3.0, haut, 0], color=c.ACCENT, stroke_width=6, buff=0)
         return [GrowArrow(fleche)]
 
     # ----- actions : listes, cases, colonnes -----

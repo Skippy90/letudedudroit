@@ -39,7 +39,11 @@ T_TITRE, T_SOUS_TITRE, T_CORPS, T_PETIT = 58, 42, 40, 34
 X_POSITIONS = {"gauche": -4.5, "centre-gauche": -2.2, "centre": 0.0, "centre-droite": 2.2, "droite": 4.5}
 Y_TITRE, Y_SOUS_TITRE = 3.15, 2.35
 Y_PERSONNAGE = 0.6
-Y_FRISE = -1.9
+Y_FRISE = -1.5
+# Bloc d'article au-dessus du bandeau des sous-titres (bas de l'image, environ 70 px sur 1080).
+Y_ARTICLE = -2.85
+# Centre de l'étage du bas du bâtiment : son pied reste au-dessus du bloc d'article.
+Y_BATIMENT = -1.75
 
 
 def texte(contenu, taille=T_CORPS, couleur=TEXTE, gras=False):
@@ -79,7 +83,7 @@ class BlocArticle(VGroup):
                                  color=TEXTE, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
         etiquette.move_to(cadre)
         super().__init__(cadre, etiquette)
-        self.move_to([0, -3.35, 0])
+        self.move_to([0, Y_ARTICLE, 0])
         self.cadre, self.libelle = cadre, libelle
 
 
@@ -94,12 +98,12 @@ class Batiment(VGroup):
         for i, nom in enumerate(self.NOMS):
             cadre = Rectangle(width=4.6, height=1.05, color=TEXTE, stroke_width=3,
                               fill_color=SURFACE, fill_opacity=1)
-            cadre.move_to([0, -2.05 + i * 1.05, 0])
+            cadre.move_to([0, Y_BATIMENT + i * 1.05, 0])
             etiquette = texte(nom, T_CORPS).move_to(cadre)
             etage = VGroup(cadre, etiquette)
             self.etages.append(etage)
             groupe.append(etage)
-        sommet_etages = -2.05 + 2.5 * 1.05  # haut du troisième étage
+        sommet_etages = Y_BATIMENT + 2.5 * 1.05  # haut du troisième étage
         toit = Polygon([-2.6, sommet_etages, 0], [2.6, sommet_etages, 0], [0, sommet_etages + 0.8, 0],
                        color=TEXTE, stroke_width=3)
         super().__init__(*groupe, toit)

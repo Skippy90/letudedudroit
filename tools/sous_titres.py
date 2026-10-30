@@ -28,7 +28,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Bas,Inter,54,&H00E6EFF2,&H00E6EFF2,&H402D1B0F,&H402D1B0F,0,0,0,0,100,100,0,0,3,14,0,2,80,80,26,1
+Style: Bas,Inter,54,&H00E6EFF2,&H00E6EFF2,&H402D1B0F,&H402D1B0F,0,0,0,0,100,100,0,0,3,8,0,2,80,80,18,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
