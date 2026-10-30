@@ -456,3 +456,25 @@ class MiniBatiment(VGroup):
 
     def colorer(self, n, etat):
         return self.etages[n - 1].animate.set_fill(ETATS[etat], opacity=0.9)
+
+
+class Appartement(VGroup):
+    """Appartement en plein déménagement : sol, porte, fenêtre, piles de cartons."""
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
+        poignee = Dot([-5.35, Y_SOL + 1.2, 0], radius=0.05, color=TEXTE, fill_opacity=0.35)
+        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.3, 0])
+        croisillon = VGroup(Line(self.fenetre.get_top(), self.fenetre.get_bottom(), **DECOR),
+                            Line(self.fenetre.get_left(), self.fenetre.get_right(), **DECOR))
+        cartons = VGroup()
+        for x, y, l, h in [(4.4, 0, 1.4, 0.9), (5.9, 0, 1.4, 0.9), (5.15, 0.9, 1.3, 0.85), (3.0, 0, 1.0, 0.7)]:
+            boite = Rectangle(width=l, height=h, **DECOR).move_to([x, Y_SOL + y + h / 2, 0])
+            scotch = Line(boite.get_top(), boite.get_top() + DOWN * 0.3, **DECOR)
+            cartons.add(VGroup(boite, scotch))
+        super().__init__(sol, porte, poignee, self.fenetre, croisillon, cartons)
+
+    def pied(self, n):
+        """Point au sol, de -3 (devant la porte) à 2 (devant les cartons), tous les 1,6."""
+        return [1.6 * n, Y_SOL, 0]

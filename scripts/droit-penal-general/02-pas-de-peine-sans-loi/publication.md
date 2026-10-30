@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Pas de peine sans loi | Droit pénal suisse
 
-## Description (3025 caractères sur 5 000)
+## Description (2972 caractères sur 5 000)
 
 ```text
 Pas de peine sans loi — expliqué simplement, à partir d'un cas concret.
@@ -42,15 +42,14 @@ Nora ne peut être punie que pour l'acte du 1er juillet. Le 1er mars, aucun text
 
 Chapitres :
 0:00 Le cas de départ
-0:36 La règle : l'article premier
-1:23 Première exigence : un texte
-1:54 Deuxième exigence : un texte qui décrit l'acte
-3:13 Troisième exigence : un texte qui existait déjà
-3:58 Le piège classique
-4:50 Conclusion et question
+0:43 La règle : l'article premier
+1:38 Première exigence : un texte
+2:17 Deuxième exigence : un texte qui décrit l'acte
+3:51 Troisième exigence : un texte qui existait déjà
+4:42 Le piège classique
+5:35 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/02-pas-de-peine-sans-loi
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```
