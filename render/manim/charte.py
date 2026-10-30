@@ -421,6 +421,18 @@ class Picto(VGroup):
             # Ligne brisée entre deux personnes : l'hostilité.
             pts = [[-1.2 + 0.3 * k, 0.18 * (-1) ** k, 0] for k in range(9)]
             elements = [VGroup(*[Line(a, b, color=ACCENT, stroke_width=5) for a, b in zip(pts, pts[1:])])]
+        elif nom == "telephone":
+            corps = RoundedRectangle(corner_radius=0.06, width=0.32, height=0.56, color=TEXTE, stroke_width=4)
+            ecran = RoundedRectangle(corner_radius=0.03, width=0.22, height=0.38, color=ACCENT, stroke_width=0,
+                                     fill_color=ACCENT, fill_opacity=0.5)
+            elements = [corps, ecran]
+        elif nom == "tag":
+            # Gribouillis sur un mur : une courbe libre en ambre.
+            from manim import VMobject
+            trace = VMobject(color=ACCENT, stroke_width=7)
+            trace.set_points_smoothly([[-0.9, -0.1, 0], [-0.5, 0.35, 0], [-0.2, -0.25, 0], [0.15, 0.3, 0],
+                                       [0.45, -0.2, 0], [0.8, 0.25, 0], [1.0, 0.0, 0]])
+            elements = [trace]
         elif nom == "lune":
             disque = Circle(radius=0.28, color=TEXTE, fill_color=TEXTE, fill_opacity=0.7, stroke_width=0)
             ombre = Circle(radius=0.26, color=FOND, fill_color=FOND, fill_opacity=1, stroke_width=0).shift(RIGHT * 0.14 + UP * 0.08)
@@ -477,4 +489,26 @@ class Appartement(VGroup):
 
     def pied(self, n):
         """Point au sol, de -3 (devant la porte) à 2 (devant les cartons), tous les 1,6."""
+        return [1.6 * n, Y_SOL, 0]
+
+
+class Rue(VGroup):
+    """Une rue le soir : trottoir, façades, la boulangerie et sa vitrine, un réverbère."""
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        facades = VGroup(
+            Rectangle(width=3.0, height=3.4, **DECOR).move_to([-5.4, Y_SOL + 1.7, 0]),
+            Rectangle(width=3.6, height=3.0, **DECOR).move_to([4.6, Y_SOL + 1.5, 0]))
+        self.mur = Rectangle(width=3.8, height=3.6, **DECOR).move_to([0.6, Y_SOL + 1.8, 0])
+        vitrine = Rectangle(width=1.6, height=1.3, **DECOR).move_to([1.5, Y_SOL + 0.75, 0])
+        store = Line([0.5, Y_SOL + 1.6, 0], [2.5, Y_SOL + 1.6, 0], **DECOR)
+        enseigne = texte("Boulangerie", T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
+        reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
+                           Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
+                           Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
+        super().__init__(sol, facades, self.mur, vitrine, store, enseigne, reverbere)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
         return [1.6 * n, Y_SOL, 0]
