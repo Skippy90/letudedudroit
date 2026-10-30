@@ -13,6 +13,7 @@ Le moteur vérifie deux règles de la charte et les signale en fin de rendu :
 """
 
 import json
+import numpy as np
 import os
 import re
 import shlex
@@ -45,14 +46,24 @@ def lire_moments(slug):
     timings = json.loads(fichier.read_text(encoding="utf-8"))
     lignes = {l["ligne"]: l for l in timings["lignes"]}
     moments = []
-    for ligne in (RACINE / "scripts" / slug / "visuals.md").read_text(encoding="utf-8").splitlines():
-        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+([\d.]+))?\s*\|(.*)\|\s*$", ligne)
+    # VISUELS=<fichier> : un autre visuals.md pour la même narration (prototype d'un nouveau style).
+    visuels = Path(os.environ["VISUELS"]) if os.environ.get("VISUELS") else RACINE / "scripts" / slug / "visuals.md"
+    for ligne in visuels.read_text(encoding="utf-8").splitlines():
+        # « 2.3 », « 2.3+1.5 » (secondes après le début de la phrase) ou « 2.3@poignet »
+        # (au moment où ce mot est prononcé ; il faut une narration avec l'instant de chaque mot).
+        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+([\d.]+)|@([\w'-]+))?\s*\|(.*)\|\s*$", ligne)
         if not m:
             continue
-        n, p, decalage, actions = int(m[1]), int(m[2]), float(m[3] or 0), m[4]
+        n, p, decalage, mot, actions = int(m[1]), int(m[2]), float(m[3] or 0), m[4], m[5]
         phrase = lignes[n]["phrases"][p - 1]
-        moments.append((phrase["debut"] + decalage, [shlex.split(a) for a in actions.split(";") if a.strip()],
-                        f"{m[1]}.{m[2]}"))
+        instant = phrase["debut"] + decalage
+        if mot:
+            cible = mot.lower()
+            trouves = [w for w in phrase.get("mots", []) if w["mot"] == cible]
+            # Sans instant par mot (timings estimés, voix de synthèse), on prend le début de la phrase.
+            instant = trouves[0]["debut"] if trouves else phrase["debut"]
+        moments.append((instant, [shlex.split(a) for a in actions.split(";") if a.strip()],
+                        f"{m[1]}.{m[2]}" + (f"@{mot}" if mot else "")))
     return sorted(moments, key=lambda x: x[0]), timings["duree"]
 
 
@@ -66,6 +77,8 @@ class Schemas(Scene):
         self.frise = self.colonnes = self.livres = None
         self.frise_points, self.mots_barres, self.fleches_retour = [], [], []
         self.questions_etages, self.bouclier = {}, None
+        self.decor = self.neige = None
+        self.pictos, self.etiquettes = {}, {}
         self.focus = None
 
     # ----- temps -----
@@ -115,6 +128,7 @@ class Schemas(Scene):
                 textes.append(m.original_text)
         for p in self.personnages.values():
             textes.append(p.nom)
+        textes += [e.contenu for e in self.etiquettes.values()]
         for g in list(self.paroles.values()) + list(self.bulles.values()):
             textes.append(g.contenu)
         for groupe in [self.liste and self.liste.elements, self.cases and [l[1] for l in self.cases.lignes],
@@ -136,6 +150,10 @@ class Schemas(Scene):
     # ----- rendu -----
     def construct(self):
         moments, duree_totale = lire_moments(SLUG)
+        # FIN=<secondes> : rendu limité au début de la vidéo (prototypes, essais).
+        if os.environ.get("FIN"):
+            duree_totale = float(os.environ["FIN"])
+            moments = [m for m in moments if m[0] < duree_totale]
         for instant, actions, repere in moments:
             if self.t - instant > 0.5:
                 self.alertes.append(f"{repere} : animation en retard de {self.t - instant:.1f} s sur la voix")
@@ -168,13 +186,14 @@ class Schemas(Scene):
         return resultat if isinstance(resultat, list) else [resultat]
 
     def scene_vide(self):
-        garder = [self.article] if self.article is not None else []
+        repere = getattr(self, "repere", None)
+        garder = [m for m in (self.article, repere) if m is not None]
         a_retirer = [m for m in self.mobjects if m not in garder]
         if a_retirer:
             self.jouer(*[FadeOut(m) for m in a_retirer], duree=0.3)
         article, t, alertes = self.article, self.t, self.alertes
         self.setup()
-        self.article, self.t, self.alertes = article, t, alertes
+        self.article, self.t, self.alertes, self.repere = article, t, alertes, repere
         self.traits = []
         return []
 
@@ -315,6 +334,82 @@ class Schemas(Scene):
         self.personnages[ident] = p
         self.focus = p
         return anims + [FadeIn(p, shift=UP * 0.2)]
+
+    # ----- actions : décors, mouvements, repère -----
+    def a_decor(self, nom):
+        if nom != "escalier":
+            raise ValueError(f"décor inconnu « {nom} »")
+        self.decor = c.Escalier()
+        return [FadeIn(self.decor)]
+
+    def a_decor_retirer(self):
+        anims = [FadeOut(m) for m in (self.decor, self.neige) if m is not None]
+        self.decor = self.neige = None
+        return anims
+
+    def a_neige(self):
+        self.neige = c.Neige(self.decor.fenetre)
+        return [FadeIn(self.neige)]
+
+    def a_picto(self, nom, x, y):
+        p = c.Picto(nom, [float(x), float(y), 0])
+        self.pictos[nom] = p
+        self.focus = p
+        return [FadeIn(p, scale=0.6)]
+
+    def a_picto_retirer(self, nom):
+        return [FadeOut(self.pictos.pop(nom))]
+
+    def a_etiquette(self, ident, contenu, x, y):
+        e = c.Etiquette(contenu, [float(x), float(y), 0])
+        e.contenu = contenu
+        anims = [FadeOut(self.etiquettes[ident])] if ident in self.etiquettes else []
+        self.etiquettes[ident] = e
+        self.focus = e
+        return anims + [FadeIn(e, shift=UP * 0.15)]
+
+    def a_etiquette_retirer(self, ident):
+        return [FadeOut(self.etiquettes.pop(ident))]
+
+    def pieds_sur(self, p, n):
+        cible = np.array(self.decor.pied(int(n)))
+        return cible - p.silhouette.get_bottom()
+
+    def a_placer(self, ident, n):
+        """Pose le personnage sur la marche n du décor, sans animation (à jouer avec son apparition)."""
+        p = self.personnages[ident]
+        # Dans un décor, la silhouette est un peu plus petite pour tenir sur les marches ;
+        # le nom garde sa taille (lisibilité, 28 points au minimum).
+        if not getattr(p, "dans_decor", False):
+            p.silhouette.scale(0.8, about_edge=DOWN)
+            p.etiquette.next_to(p.silhouette, DOWN, buff=0.2)
+            p.dans_decor = True
+        p.shift(self.pieds_sur(p, n))
+        return []
+
+    def a_marcher(self, ident, n):
+        p = self.personnages[ident]
+        self.focus = p
+        return [p.animate(run_time=1.2).shift(self.pieds_sur(p, n))]
+
+    def a_pousser(self, ident, cible):
+        a, b = self.personnages[ident], self.personnages[cible]
+        sens = 1 if b.get_center()[0] > a.get_center()[0] else -1
+        self.focus = a
+        return [a.silhouette.animate(rate_func=there_and_back).shift(RIGHT * 0.45 * sens).rotate(-0.15 * sens)]
+
+    def a_chute(self, ident, n):
+        p = self.personnages[ident]
+        self.focus = p
+        decalage = self.pieds_sur(p, n)
+        return [p.silhouette.animate.shift(decalage).rotate(1.25), p.etiquette.animate.shift(decalage)]
+
+    def a_repere_batiment(self):
+        self.repere = c.MiniBatiment()
+        return [FadeIn(self.repere)]
+
+    def a_repere_etage(self, n, etat):
+        return [self.repere.colorer(int(n), etat)]
 
     def a_retirer(self, ident):
         p = self.personnages.pop(ident)

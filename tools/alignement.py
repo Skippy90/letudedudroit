@@ -313,7 +313,12 @@ def main(slug: str) -> None:
         seg[:fondu] *= rampe
         seg[-fondu:] *= rampe[::-1]
         morceaux.append(seg)
-        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3)})
+        # Instant de chaque mot reconnu, dans le temps de la narration montée
+        # (sert à caler un visuel sur un mot précis et aux sous-titres).
+        mots = [{"mot": entendus[w], "debut": round(t + instants[w][0] - a / fr, 3),
+                 "fin": round(t + instants[w][1] - a / fr, 3)} for w in range(i, j + 1)]
+        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3),
+                           "mots": mots})
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
         note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"

@@ -22,7 +22,7 @@ def main(slug: str) -> None:
     blocs = [b.split("\n") for b in (dossier / "tts.txt").read_text(encoding="utf-8").strip().split("\n\n")]
     erreurs, couvertes = [], set()
     for ligne in (dossier / "visuals.md").read_text(encoding="utf-8").splitlines():
-        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+[\d.]+)?\s*\|(.*)\|\s*$", ligne)
+        m = re.match(r"\|\s*(\d+)\.(\d+)(?:\+[\d.]+|@[\w'-]+)?\s*\|(.*)\|\s*$", ligne)
         if not m:
             continue
         n, p = int(m[1]), int(m[2])
