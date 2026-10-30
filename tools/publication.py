@@ -88,7 +88,7 @@ def main(slug: str) -> None:
         "Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant "
         "« L'étude du droit » et en partageant dans les mêmes conditions.",
     ]
-    if config_voix["source"] == "synthese":
+    if timings.get("source", config_voix["source"]) == "synthese":
         lignes.append("Narration synthétique (voix générée par ElevenLabs).")
     lignes.append("Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.")
     description = "\n".join(lignes)
