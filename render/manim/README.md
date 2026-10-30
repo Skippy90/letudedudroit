@@ -81,3 +81,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 - animation en retard de plus d'une demi-seconde sur la voix.
 
 Il évite aussi les plans fixes de plus de quatre secondes : le dernier élément animé « respire » légèrement.
+
+## Chevauchements
+
+Après chaque moment, le moteur vérifie qu'aucun élément affiché n'est à moins de 0,1 d'un autre (titres, article, repère, silhouettes et leurs noms, paroles, bulles, étiquettes, pictos, listes, cases, livres, frise) et que rien n'entre dans la bande des sous-titres. Les contacts voulus (une bulle et sa silhouette, un nom inscrit sur un meuble) sont exclus. Chaque contact est signalé dans `out/<slug>--alertes-visuels.txt`.

@@ -64,7 +64,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 13.2@mentir | sous-titre "Aucune infraction « mentir »" |
 | 14.1 | scene-vide ; personnage tom "Tom" ambre_pale centre |
 | 14.1@blessant | etiquette blessant "Blessant" -2.6 1.2 |
-| 14.2@moralement | etiquette morale "Moralement condamnable" 2.6 1.2 |
+| 14.2@moralement | etiquette morale "Moralement condamnable" 1.1 2.3 |
 | 14.3 | scene-vide ; colonnes "Morale" "Loi pénale" |
 | 14.3@loi | colonne-accent 1 ; colonne-eteindre 2 |
 | 15.1 | scene-vide ; batiment |
@@ -84,11 +84,11 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 18.2@témoin | marcher tom -1 |
 | 19.1@article | etiquette temoin "Témoin" -1.6 0.3 ; article "Art. 307 CP" |
 | 19.2@témoin | accent tom |
-| 19.2@déposition | etiquette-retirer temoin ; etiquette depo "Déposition fausse" -1.6 0.3 |
-| 19.2@justice | picto coche 0.7 0.3 |
+| 19.2@déposition | etiquette depo "Déposition fausse" -1.6 0.95 |
+| 19.2@justice | picto coche 1.0 0.95 |
 | 20.1 | scene-vide ; article-retirer ; rembobiner |
 | 20.2 | decor appartement ; personnage sami "Sami" bleu_clair gauche ; placer sami -2 ; personnage tom "Tom" ambre_pale droite ; placer tom 2 |
-| 20.2@scène | bulle tom "Un plan habile" |
+| 20.2@habile | bulle tom "Un plan habile" |
 | 20.2@argent | jetons sami tom |
 | 21.1@escroquerie | effacer-bulle tom ; etiquette escroc "Escroquerie" 3.2 0.5 |
 | 21.1@cent | article "Art. 146 CP" |
@@ -146,9 +146,9 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 37.2 | effacer-titres ; livres "Code pénal" "Circulation routière" "Autres lois" |
 | 38.1 | scene-vide ; decor appartement ; personnage sami "Sami" bleu_clair gauche ; placer sami -2 |
 | 38.2@déçu | bulle sami "Déçu" |
-| 38.3 | personnage tom "Tom" ambre_pale droite ; placer tom 2 |
+| 38.3 | personnage tom "Tom" ambre_pale droite ; placer tom 1 |
 | 38.3@réprime | etiquette constat "Aucun texte" 0.6 1.2 |
-| 38.4@punir | etiquette constat "Pas de peine" 0.6 1.2 |
+| 38.4@punir | etiquette peine "Pas de peine" 0.6 0.5 |
 | 39.1 | scene-vide ; colonnes "Morale" "Loi pénale" |
 | 39.1@bien | colonne-accent 1 |
 | 39.2@occupe | colonne-eteindre 2 |

@@ -39,7 +39,7 @@ T_TITRE, T_SOUS_TITRE, T_CORPS, T_PETIT = 58, 42, 40, 34
 X_POSITIONS = {"gauche": -4.5, "centre-gauche": -2.2, "centre": 0.0, "centre-droite": 2.2, "droite": 4.5}
 Y_TITRE, Y_SOUS_TITRE = 3.15, 2.35
 Y_PERSONNAGE = 0.6
-Y_FRISE = -1.5
+Y_FRISE = -1.3
 # Bloc d'article au-dessus du bandeau des sous-titres (bas de l'image, environ 70 px sur 1080).
 Y_ARTICLE = -2.85
 # Centre de l'étage du bas du bâtiment : son pied reste au-dessus du bloc d'article.
