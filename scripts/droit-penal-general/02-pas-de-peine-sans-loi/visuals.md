@@ -10,20 +10,23 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, Nora viol
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | titre "Samedi matin, à Fribourg" |
-| 1.2 | personnage sami "Sami" bleu_clair gauche |
-| 1.3 | personnage tom "Tom" ambre_pale droite |
-| 2.1 | effacer-titres ; parole tom "« Désolé, je suis malade. »" |
-| 2.2 | effacer-parole tom ; bulle tom "Le lac" |
-| 3.1 | retirer tom ; personnage soeur "Sa sœur" rose centre |
-| 3.2 | retirer soeur ; titre "Le soir" |
-| 3.3 | accent sami |
-| 4.1 | parole sami "« Je vais porter plainte ! »" |
-| 5.1 | effacer-parole sami ; titre "Infraction ?" pulse |
+| 1.1 | decor appartement ; etiquette lieu "Fribourg, samedi matin" -2.6 2.45 |
+| 1.2 | personnage sami "Sami" bleu_clair gauche ; placer sami -3 |
+| 1.2@déménage | marcher sami 1 |
+| 1.3@tom | etiquette-retirer lieu ; etiquette promesse "Tom a promis de venir" 0.2 1.4 |
+| 1.3@cartons | accent sami |
+| 2.1 | etiquette-retirer promesse ; personnage tom "Tom" ambre_pale droite ; placer tom -1 |
+| 2.1@message | parole tom "Désolé, je suis malade." |
+| 2.2@lac | effacer-parole tom ; bulle tom "Une journée au lac" |
+| 3.1 | retirer tom ; personnage soeur "Sa sœur" rose centre ; placer soeur -1 |
+| 3.2@vérité | etiquette verite "Tom était au lac" -0.8 1.4 |
+| 3.3@furieux | etiquette-retirer verite ; picto tension 0.8 1.6 |
+| 4.1 | picto-retirer tension ; retirer soeur ; parole sami "Tu m'as menti. Je porte plainte !" |
+| 5.1 | scene-vide ; titre "Infraction ?" ambre |
 | 5.2 | sous-titre "Mentir à un ami, est-ce puni ?" |
 | 5.3 | accent titre |
 | 6.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
-| 6.2 | etage 1 ambre ; titre "La loi décrit-elle l'acte ?" |
+| 6.2 | etage 1 ambre ; titre "La loi décrit-elle l'acte ?" ; repere-batiment ; repere-etage 1 ambre |
 | 7.1 | scene-vide ; titre "La règle du premier étage" |
 | 7.2 | livre ; article "Art. 1 CP" |
 | 7.3 | accent livre |
@@ -47,7 +50,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, Nora viol
 | 14.2 | colonnes "Morale" "Loi pénale" |
 | 14.3 | colonne-accent 1 ; colonne-eteindre 2 |
 | 15.1 | scene-vide ; batiment |
-| 15.2 | fleche 1 ; etage 1 gris |
+| 15.2 | fleche 1 ; etage 1 gris ; repere-etage 1 gris |
 | 15.3 | titre "Pas d'infraction" |
 | 16.1 | scene-vide ; liste "1. Un texte" "2. Qui décrit l'acte" "3. Qui existait déjà" ; liste-surligner 2 |
 | 16.2 | titre "« expressément »" ambre |
@@ -67,7 +70,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, Nora viol
 | 22.1 | scene-vide ; case "Tromperie astucieuse" |
 | 22.2 | case "Préjudice financier" |
 | 22.3 | case "Volonté de s'enrichir" |
-| 23.1 | rembobiner ; cocher 1 gris |
+| 23.1 | cocher 1 gris |
 | 23.2 | cocher 2 gris ; cocher 3 gris |
 | 23.3 | titre "Aucune description ne correspond" |
 | 24.1 | scene-vide ; personnage tom "Tom" ambre_pale droite ; article-etirer |

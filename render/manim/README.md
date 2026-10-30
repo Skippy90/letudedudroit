@@ -53,7 +53,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `cocher N vert\|gris\|question` | Condition remplie, manquante, ou en question |
 | `colonnes "A" "B"` / `colonne-accent N` / `colonne-eteindre N` | Deux notions opposées |
 | `pyramide` / `pyramide-niveau N COULEUR` / `retirer-pyramide` | Les autorités |
-| `decor escalier` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) |
+| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) |
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
