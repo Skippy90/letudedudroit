@@ -19,7 +19,7 @@ Personnages du fil rouge, mêmes couleurs dans toute la série : Nina rose, Tom 
 | 3.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "Trois jours plus tard" |
 | 3.2 | sous-titre "Sur le scooter de Nina" |
 | 3.3 | effacer-titres ; personnage inconnu "Un inconnu" ambre_pale gauche ; jetons malik inconnu ; parole malik "Je l'ai acheté" |
-| 4.1 | effacer-titres ; retirer inconnu ; titre "A-t-il volé ?" |
+| 4.1 | scene-vide ; personnage malik "Malik" bleu_clair droite ; titre "A-t-il volé ?" |
 | 4.2 | sous-titre "Peut-être" |
 | 4.3 | barrer |
 | 5.1 | scene-vide ; titre "Qui ?" ambre |

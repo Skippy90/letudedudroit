@@ -38,7 +38,7 @@ modules:
   - id: M1
     titre: "Principes et acteurs"
     videos:
-      - {id: "02", slug: grands-principes, titre: "Les grands principes du procès pénal", notion: "Dignité et procès équitable, maxime de l'instruction, poursuite obligatoire, accusation, présomption d'innocence, ne bis in idem", articles: ["3", "6", "7", "8", "9", "10", "11"], requiert: ["01"], statut: planifie}
+      - {id: "02", slug: grands-principes, titre: "Les grands principes du procès pénal", notion: "Dignité et procès équitable, maxime de l'instruction, poursuite obligatoire, accusation, présomption d'innocence, ne bis in idem", articles: ["3", "6", "7", "8", "9", "10", "11"], requiert: ["01"], statut: script-redige}
       - {id: "03", slug: autorites-penales, titre: "Police, procureur, tribunal : qui fait quoi ?", notion: "Autorités de poursuite et tribunaux ; organisation cantonale", articles: ["12", "13", "14", "15", "16", "17", "18", "19", "20", "21"], requiert: ["01"], statut: planifie}
       - {id: "04", slug: les-parties, titre: "Qui sont les parties ?", notion: "Prévenu, partie plaignante, ministère public ; autres participants", articles: ["104", "105", "111", "118"], requiert: ["03"], statut: planifie}
       - {id: "05", slug: victime-lese-partie-plaignante, titre: "Victime, lésé, partie plaignante", notion: "Trois statuts à ne pas confondre ; droits de la victime", articles: ["115", "116", "117", "118", "119", "120", "122"], requiert: ["04"], statut: planifie}
