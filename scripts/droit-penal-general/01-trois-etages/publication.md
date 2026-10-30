@@ -34,11 +34,11 @@ Le premier étage. Une bousculade par inadvertance n'est pas intentionnelle ; le
 
 Chapitres :
 0:00 Le cas de départ
-0:39 La carte : trois étages
-1:13 Premier étage : la typicité
-2:39 Deuxième étage : l'illicéité
-3:52 Troisième étage : la culpabilité
-4:58 Conclusion et question
+0:43 La carte : trois étages
+1:16 Premier étage : la typicité
+2:42 Deuxième étage : l'illicéité
+4:00 Troisième étage : la culpabilité
+5:08 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/01-trois-etages
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
