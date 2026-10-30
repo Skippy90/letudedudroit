@@ -30,7 +30,7 @@ RACINE = Path(__file__).resolve().parents[2]
 SLUG = os.environ.get("SLUG", "")
 DUREE_ANIM = 0.7
 PLAN_FIXE_MAX = 4.0
-CREATIONS = {"cases", "liste", "colonnes", "livres", "frise"}
+CREATIONS = {"cases", "liste", "colonnes", "livres", "frise", "repere-batiment", "decor"}
 
 config.background_color = c.FOND
 if os.environ.get("APERCU"):
@@ -339,9 +339,10 @@ class Schemas(Scene):
 
     # ----- actions : décors, mouvements, repère -----
     def a_decor(self, nom):
-        if nom != "escalier":
+        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue}
+        if nom not in decors:
             raise ValueError(f"décor inconnu « {nom} »")
-        self.decor = c.Escalier()
+        self.decor = decors[nom]()
         return [FadeIn(self.decor)]
 
     def a_decor_retirer(self):
@@ -436,7 +437,13 @@ class Schemas(Scene):
     def a_parole(self, ident, contenu):
         p = self.personnages[ident]
         g = c.texte(contenu, c.T_CORPS, gras=True).next_to(p.silhouette, UP, buff=0.4)
-        g.shift(p.vers_le_centre() * 1.2)
+        # Vers le centre de l'écran, d'après la place réelle du personnage (il a pu se déplacer),
+        # puis ramenée dans le cadre.
+        g.shift((LEFT if p.silhouette.get_center()[0] > 0 else RIGHT) * 1.2)
+        if g.get_right()[0] > 6.9:
+            g.shift(LEFT * (g.get_right()[0] - 6.9))
+        if g.get_left()[0] < -6.9:
+            g.shift(RIGHT * (-6.9 - g.get_left()[0]))
         g.contenu = contenu
         self.paroles[ident] = g
         self.focus = g

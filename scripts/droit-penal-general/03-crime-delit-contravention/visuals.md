@@ -4,7 +4,7 @@ Ce fichier pilote les schémas Manim (`render/manim/video.py`). Vocabulaire des 
 
 Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Plusieurs actions d'un même moment sont séparées par `;`.
 
-Personnages : Inès rose, Noah turquoise, Yann bleu clair.
+Personnages : Inès rose, Noah turquoise, Yann bleu clair ; la passante violet, l'ami de Yann ambre pâle (ouverture seulement).
 
 Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte :
 
@@ -14,15 +14,18 @@ Personnages : Inès rose, Noah turquoise, Yann bleu clair.
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | titre "Samedi soir, à Neuchâtel" |
-| 1.2 | personnage ines "Inès" rose gauche ; personnage noah "Noah" turquoise centre ; personnage yann "Yann" bleu_clair droite |
-| 2.1 | effacer-titres ; accent ines |
-| 2.2 | bulle ines "Un téléphone neuf" |
-| 2.3 | bulle ines "Le garder" |
-| 3.1 | effacer-bulle ines ; accent noah ; titre "Un tag" |
-| 3.2 | sous-titre "Environ deux mille francs" |
-| 4.1 | effacer-titres ; accent yann ; titre "Une gifle" |
-| 4.2 | sous-titre "Personne n'est blessé" |
+| 1.1 | decor rue ; etiquette lieu "Neuchâtel, samedi soir" -3.6 1.6 |
+| 1.2 | personnage ines "Inès" rose gauche ; placer ines -3 ; personnage noah "Noah" turquoise centre ; placer noah 1 ; personnage yann "Yann" bleu_clair droite ; placer yann 3 |
+| 2.1 | etiquette-retirer lieu ; personnage passante "Une passante" violet centre-gauche ; placer passante -1 ; accent ines |
+| 2.1@téléphone | picto telephone -1.0 -0.9 |
+| 2.2@neuf | etiquette neuf "Un modèle tout neuf" -3.8 1.2 |
+| 2.3@éloigne | picto-retirer telephone ; etiquette-retirer neuf ; marcher ines -4 ; bulle ines "Le garder" |
+| 3.1 | effacer-bulle ines ; retirer passante ; accent noah |
+| 3.1@mur | picto tag 1.3 0.4 |
+| 3.2@francs | etiquette prix "Environ 2 000 francs" 0.6 1.25 |
+| 4.1 | etiquette-retirer prix ; personnage ami "Un ami" ambre_pale droite ; placer ami 4 |
+| 4.1@gifle | pousser yann ami |
+| 4.2@blessé | etiquette blesse "Pas blessé" 5.6 1.0 |
 | 5.1 | scene-vide ; titre "Trois actes interdits" |
 | 5.2 | sous-titre "Le même poids ?" |
 | 5.3 | effacer-titres ; case "Crime ?" |
