@@ -13,7 +13,7 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 1.1 | titre "L'affaire du scooter" |
 | 1.2 | personnage nina "Nina" rose gauche ; dommage nina |
 | 1.3 | personnage malik "Malik" bleu_clair droite ; sous-titre "Contrôlé au guidon" |
-| 1.4 | parole malik "Je l'ai acheté" |
+| 1.4 | effacer-titres ; parole malik "Je l'ai acheté" |
 | 2.1 | scene-vide ; titre "Et maintenant ?" |
 | 2.2 | effacer-titres ; titre "Qui va enquêter ?" |
 | 2.3 | effacer-titres ; titre "Qui va décider ?" |
@@ -35,12 +35,12 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 8.3 | article "Art. 299 CPP" |
 | 9.1 | sous-titre "Avant le procès" |
 | 10.1 | scene-vide ; article-retirer ; titre "Étape 1 : le signalement" |
-| 11.1 | personnage tom "Tom" turquoise gauche ; sous-titre "Une dénonciation" |
-| 11.2 | parole tom "J'ai vu quelque chose" |
+| 11.1 | personnage tom "Tom" turquoise gauche ; effacer-titres ; titre "Une dénonciation" |
+| 11.2 | effacer-titres ; parole tom "J'ai vu quelque chose" |
 | 11.3 | article "Art. 301 CPP" |
-| 12.1 | personnage nina "Nina" rose centre ; effacer-titres ; titre "Une plainte" |
-| 12.2 | parole nina "On m'a volé mon scooter" ; effacer-parole tom |
-| 13.1 | personnage malik "Malik" bleu_clair droite ; effacer-parole nina ; effacer-titres ; titre "L'initiative de la police" |
+| 12.1 | effacer-parole tom ; personnage nina "Nina" rose centre ; titre "Une plainte" |
+| 12.2 | effacer-titres ; parole nina "On m'a volé mon scooter" |
+| 13.1 | effacer-parole nina ; personnage malik "Malik" bleu_clair droite ; titre "L'initiative de la police" |
 | 13.2 | sous-titre "Un contrôle" ; article "Art. 15 CPP" |
 | 14.1 | scene-vide ; article-retirer ; titre "Une précision importante" |
 | 14.2 | effacer-titres ; colonnes "D'office" "Sur plainte" ; colonne-accent 1 |
@@ -115,7 +115,7 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 39.2 | colonnes "Acquittement" "Condamnation" |
 | 39.3 | article "Art. 351 CPP" |
 | 40.1 | scene-vide ; article-retirer ; titre "Contester le jugement" |
-| 40.2 | pyramide ; pyramide-niveau 2 ambre ; sous-titre "L'appel" |
+| 40.2 | effacer-titres ; titre "L'appel" ; pyramide ; pyramide-niveau 2 ambre |
 | 40.3 | article "Art. 398 CPP" |
 | 41.1 | pyramide-niveau 3 ambre |
 | 41.2 | effacer-titres ; titre "Tout un module" |
@@ -130,11 +130,11 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 45.2 | point 0.05 "Le vol" |
 | 45.3 | repere 0.9 "15 ans" ; zone 0.05 0.9 ambre |
 | 46.1 | article "Art. 97 CP" |
-| 46.2 | renvoi "Droit pénal général, vidéo 12" |
+| 46.2 | sous-titre "Droit pénal général, vidéo 12" |
 | 47.1 | scene-vide ; article-retirer ; titre "Le piège classique" |
 | 47.2 | sous-titre "Toute affaire finit au tribunal" |
 | 48.1 | barrer |
-| 48.2 | effacer-titres ; titre "Classement ou ordonnance pénale" ; sous-titre "Sans procès" |
+| 48.2 | scene-vide ; titre "Classement ou ordonnance pénale" ; sous-titre "Sans procès" |
 | 49.1 | effacer-titres ; titre "Une vraie condamnation" ambre |
 | 49.2 | frise ; point 0.1 "Notification" ; repere 0.45 "10 jours" ; zone 0.1 0.45 ambre |
 | 49.3 | article "Art. 354 CPP" |
@@ -143,12 +143,12 @@ Personnages du fil rouge : Nina rose, Tom turquoise, Malik bleu clair ; la procu
 | 50.3 | renvoi "vidéos 23 et 24" |
 | 51.1 | scene-vide ; article-retirer ; titre "Retenons" |
 | 51.2 | frise ; repere 0.06 "Signalement" ; repere 0.28 "Police" ; repere 0.5 "Instruction" ; repere 0.72 "Clôture" ; repere 0.94 "Tribunal" |
-| 52.1 | scene-vide ; personnage procureure "La procureure" violet gauche ; titre "Au centre de tout" |
+| 52.1 | scene-vide ; personnage procureure "La procureure" violet droite ; titre "Au centre de tout" |
 | 52.2 | liste "Classer" "Ordonnance pénale" "Accuser" |
 | 53.1 | scene-vide ; titre "Une question pour finir" |
 | 53.2 | effacer-titres ; personnage malik "Malik" bleu_clair gauche ; titre "Une ordonnance pénale" |
 | 53.3 | bulle malik "Au tiroir" |
-| 54.1 | effacer-titres ; frise ; point 0.1 "Notification" ; point 0.7 "2 semaines" ; questions |
+| 54.1 | scene-vide ; frise ; point 0.1 "Notification" ; point 0.7 "2 semaines" ; questions |
 | 54.2 | titre "Encore un procès ?" |
 | 55.1 | scene-vide ; titre "Réponse dans la description" |
 | 55.2 | effacer-titres ; titre "Prochaine vidéo : les principes" ; renvoi "vidéo 2" |

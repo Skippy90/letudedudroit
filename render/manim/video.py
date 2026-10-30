@@ -175,12 +175,14 @@ class Schemas(Scene):
         article, t, alertes = self.article, self.t, self.alertes
         self.setup()
         self.article, self.t, self.alertes = article, t, alertes
+        self.traits = []
         return []
 
     # ----- actions : texte -----
     def a_titre(self, contenu, *options):
         couleur = c.ACCENT if "ambre" in options else c.TEXTE
         anims = [FadeOut(self.titre)] if self.titre is not None else []
+        anims += self.retirer_traits(self.titre)
         if "mot-a-mot" in options:
             # Les mots apparaissent un par un pendant la phrase (règle des quatre secondes).
             # Le texte est rendu d'un seul tenant (ligne de base commune), puis découpé en mots :
@@ -209,18 +211,29 @@ class Schemas(Scene):
         nouveau = c.texte(contenu, c.T_SOUS_TITRE).move_to([0, c.Y_SOUS_TITRE, 0])
         nouveau.original_text = contenu
         anims = [FadeOut(self.sous_titre)] if self.sous_titre is not None else []
+        anims += self.retirer_traits(self.sous_titre)
         self.sous_titre = nouveau
         self.focus = nouveau
         return anims + [FadeIn(nouveau, shift=DOWN * 0.15)]
 
     def a_effacer_titres(self):
+        # Le trait d'un titre barré part avec le titre.
         anims = [FadeOut(m) for m in [self.titre, self.sous_titre] if m is not None]
+        anims += self.retirer_traits(self.titre) + self.retirer_traits(self.sous_titre)
         self.titre = self.sous_titre = None
         return anims
+
+    def retirer_traits(self, cible):
+        """Le trait qui barre un titre part avec ce titre."""
+        traits = getattr(self, "traits", [])
+        partants = [t for c_, t in traits if c_ is cible and cible is not None]
+        self.traits = [(c_, t) for c_, t in traits if not (c_ is cible and cible is not None)]
+        return [FadeOut(t) for t in partants]
 
     def a_barrer(self):
         cible = self.sous_titre or self.titre
         trait = c.barre(cible)
+        self.traits = getattr(self, "traits", []) + [(cible, trait)]
         self.focus = cible
         return [Create(trait), cible.animate.set_opacity(0.55)]
 
