@@ -12,7 +12,7 @@ cd render/manim && SLUG=<slug> APERCU=1 ../../.venv/bin/python -m manim render v
 
 Un tableau à deux colonnes : `Moment` et `Actions`.
 
-- `Moment` : `ligne.phrase` du script (`12.3` = troisième phrase de la ligne 12), éventuellement suivi de `+secondes` (`19.2+1.5`).
+- `Moment` : `ligne.phrase` du script (`12.3` = troisième phrase de la ligne 12), éventuellement suivi de `+secondes` (`19.2+1.5`) ou de `@mot` (`2.3@poignet` : au moment où ce mot est prononcé ; il faut une narration enregistrée, dont `timings.json` donne l'instant de chaque mot).
 - `Actions` : une ou plusieurs actions séparées par `;`. Les textes vont entre guillemets droits.
 
 ## Actions
@@ -53,12 +53,24 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `cocher N vert\|gris\|question` | Condition remplie, manquante, ou en question |
 | `colonnes "A" "B"` / `colonne-accent N` / `colonne-eteindre N` | Deux notions opposées |
 | `pyramide` / `pyramide-niveau N COULEUR` / `retirer-pyramide` | Les autorités |
+| `decor escalier` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) |
+| `neige` | Flocons qui tombent derrière la fenêtre du décor |
+| `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
+| `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune` |
+| `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
+| `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
 | `frise` | Frise du temps |
 | `repere X "…"` | Repère (date d'entrée en vigueur…) à la fraction X de la frise (0 à 1) |
 | `point X "…"` | Événement sur la frise |
 | `zone A B vert\|gris` | Période colorée |
 | `fleche-retour DE VERS casse\|vert` | Flèche qui remonte le temps : brisée (non-rétroactivité) ou verte (loi plus favorable) |
 | `questions` | Point d'interrogation sur chaque événement de la frise |
+
+## Essais
+
+- `VISUELS=<fichier>` : rendre un autre `visuals.md` sur la même narration (prototype).
+- `FIN=<secondes>` : ne rendre que le début.
 
 ## Contrôles automatiques
 
