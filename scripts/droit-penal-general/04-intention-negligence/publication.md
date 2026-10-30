@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Le voulait-il vraiment ? | Droit pénal suisse
 
-## Description (2974 caractères sur 5 000)
+## Description (2921 caractères sur 5 000)
 
 ```text
 Le voulait-il vraiment ? — expliqué simplement, à partir d'un cas concret.
@@ -36,17 +36,16 @@ En principe, de la négligence consciente. Sofia voit le risque, mais compte qu'
 
 Chapitres :
 0:00 Le cas de départ
-0:27 La carte : ce qui se passe dans la tête
-0:57 Première version : l'intention directe
-1:20 Deuxième version : le dol éventuel
-2:00 Troisième et quatrième versions : la négligence
-3:13 Comment le juge le sait-il ?
-3:51 Le piège classique
-4:37 Réponse à la question de la vidéo 1
-5:03 Conclusion et question
+0:34 La carte : ce qui se passe dans la tête
+1:11 Première version : l'intention directe
+1:41 Deuxième version : le dol éventuel
+2:31 Troisième et quatrième versions : la négligence
+4:02 Comment le juge le sait-il ?
+4:42 Le piège classique
+5:32 Réponse à la question de la vidéo 1
+5:59 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/04-intention-negligence
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

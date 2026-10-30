@@ -29,7 +29,7 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 
 | Élément | Représentation à l'écran |
 | --- | --- |
-| Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, appartement, rue, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
+| Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, appartement, rue, parc, piscine, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
 | Ce qui se passe | Les silhouettes se déplacent dans le décor : marcher, pousser, tomber ; elles restent sans visage et sans bras |
 | Un mot-clé | Étiquette courte en ambre, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
 | Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée ambre de la tension entre deux personnes) |
