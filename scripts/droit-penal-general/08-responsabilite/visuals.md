@@ -89,7 +89,7 @@ Personnages : Théo turquoise, l'agent bleu clair, Zoé violet.
 | 29.5 | repere 0.25 "La faute" |
 | 30.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; bulle theo "Un démon" |
 | 30.2 | titre "Pas punissable" |
-| 30.3 | sous-titre "Mais pas libre" |
+| 30.3 | sous-titre "Une mesure reste possible" |
 | 31.1 | scene-vide ; article "Art. 19 CP" ; titre "Une mesure" |
 | 31.2 | sous-titre "Aussi si restreinte" |
 | 31.3 | renvoi "vidéo 1" |

@@ -74,7 +74,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 33 | Attention au piège classique. On croit souvent qu'une négligence est toujours punie, simplement moins sévèrement. C'est faux. | La phrase « La négligence est toujours punie » apparaît, puis se barre |
 | 34 | La négligence n'est punissable que si la loi le prévoit expressément pour l'infraction en cause. | Bloc « Art. 12 CP » ; le mot « Expressément » en ambre |
-| 35 | Pour les blessures, la loi le prévoit. L'article 125 punit les lésions corporelles par négligence, sur plainte. | Bloc « Art. 125 CP » ; une case « Blessure par négligence » cochée |
+| 35 | Pour les blessures, la loi le prévoit. L'article 125 punit les lésions corporelles par négligence. En principe sur plainte, et d'office si la lésion est grave. | Bloc « Art. 125 CP » ; une case « Blessure par négligence » cochée |
 | 36 | Mais imaginons que le ballon de Léo casse la vitre d'une voiture, par négligence. Le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle. | Rembobinage ; bloc « Art. 144 CP » ; une case « Vitre par négligence » grise |
 | 37 | Pas de dommage à la propriété par négligence dans le Code pénal. Léo n'aurait pas commis d'infraction. Le propriétaire pourrait seulement lui réclamer réparation. | Le mot « Pas d'infraction » |
 

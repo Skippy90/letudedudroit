@@ -36,7 +36,7 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 12 | Puis vient le moment où l'auteur passe à l'action. Le Tribunal fédéral parle du dernier pas décisif. Après lui, il n'y a en principe plus de retour en arrière. | Le mot « Dernier pas décisif » ; un repère sur la frise |
+| 12 | Puis vient le moment où l'auteur passe à l'action. Le Tribunal fédéral parle du dernier pas décisif. Selon le plan de l'auteur, ce pas mène directement à l'infraction. | Le mot « Dernier pas décisif » ; un repère sur la frise |
 | 13 | Ce seuil ne doit pas être placé trop tôt, ni trop loin de l'acte lui-même. Il faut un lien étroit, dans le temps et dans l'espace. | La zone ambre commence au repère |
 | 14 | Pour Kilian, forcer la porte du kiosque, c'est franchir ce seuil. À partir de là, on parle de tentative de vol. | Le point « Il force la porte » passe dans la zone ambre |
 | 15 | L'article 22 du Code pénal règle la tentative. L'exécution d'un crime ou d'un délit n'est pas poursuivie jusqu'à son terme, ou le résultat ne se produit pas. | Bloc « Art. 22 CP » |
@@ -78,8 +78,8 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 | --- | --- | --- |
 | 32 | Retenons. L'idée et la préparation sont en principe impunies. La tentative commence au dernier pas décisif. Elle est punissable pour les crimes et les délits. Et elle suppose toujours la volonté d'aller jusqu'au résultat. | La frise complète, la zone ambre à partir du repère |
 | 33 | Et celui qui renonce de lui-même, ou empêche le résultat, peut voir sa peine atténuée, voire supprimée. Face à un cas, situez l'acte sur le chemin : idée, préparation, tentative ou résultat ? | Bloc « Art. 23 CP » |
-| 34 | Une question pour finir. Mia met le feu à la poubelle de son voisin pour l'embêter. Puis, prise de peur, elle l'éteint elle-même avant que le feu ne gagne la haie. | La silhouette de Mia ; une frise « Le feu », « Elle l'éteint » |
-| 35 | Qu'en dit l'article 23 ? Et le geste de Mia efface-t-il tout ? Écrivez votre réponse en commentaire. | Bloc « Art. 23 CP » ; un point d'interrogation |
+| 34 | Une question pour finir. Mia veut rayer la voiture de son voisin. Elle pose déjà sa clé contre la portière. Puis, de sa propre initiative, elle renonce et repart. | La silhouette de Mia ; une frise « La clé », « Elle repart » |
+| 35 | Qu'en dit l'article 23 ? Mia échappe-t-elle forcément à toute peine ? Écrivez votre réponse en commentaire. | Bloc « Art. 23 CP » ; un point d'interrogation |
 | 36 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : Mia a, de sa propre initiative, contribué à empêcher la consommation de l'infraction qu'elle avait commencée. L'article 23, alinéa 1, du Code pénal permet au juge d'atténuer sa peine ou de l'exempter de toute peine pour cette tentative. Mais ce désistement ne vaut que pour ce qui a été empêché : la poubelle déjà brûlée peut rester un dommage à la propriété consommé (article 144), poursuivi sur plainte.
+**Réponse attendue à la question finale**, pour la description : non, pas forcément. Mia a franchi le dernier pas décisif : la clé posée contre la portière mène directement au dommage. C'est une tentative de dommage à la propriété (articles 22 et 144 du Code pénal), un délit poursuivi sur plainte. Elle renonce ensuite de sa propre initiative : c'est un désistement au sens de l'article 23, alinéa 1. Le juge peut alors atténuer sa peine ou l'exempter de toute peine, mais ce n'est pas automatique. Si une rayure avait déjà été faite, le désistement ne l'effacerait pas : le dommage serait consommé.

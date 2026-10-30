@@ -46,7 +46,7 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 | 19 | Et la sanction surprend souvent. Si l'infraction a été commise, l'instigateur encourt la même peine que l'auteur. | Le mot « Même peine que l'auteur » en ambre |
 | 20 | L'article 24 va même plus loin. Celui qui a seulement tenté de décider autrui à commettre un crime encourt la peine de la tentative. | Le deuxième alinéa de l'article 24 en ambre |
 | 21 | Un exemple réel jugé par le Tribunal fédéral. Un homme avait offert vingt mille francs à un informaticien. En échange, il voulait une copie d'un CD-ROM appartenant aux employeurs de l'informaticien. | Le mot « Vingt mille francs » ; des jetons |
-| 22 | L'informaticien a refusé et prévenu son employeur. Aucun vol n'a eu lieu. Mais l'homme a été condamné pour tentative d'instigation à vol. | Le mot « Tentative d'instigation » |
+| 22 | L'informaticien, d'abord décidé, s'est ravisé et a prévenu son employeur. Aucun vol n'a eu lieu. Mais l'homme a été condamné pour tentative d'instigation à vol. | Le mot « Tentative d'instigation » |
 
 ## Le complice : Noé
 

@@ -93,6 +93,7 @@ Personnages : Léo turquoise, Adam rose, Sofia violet.
 | 34.1 | scene-vide ; article "Art. 12 CP" ; titre "Seulement si la loi le prévoit" |
 | 35.1 | effacer-titres ; titre "Les blessures" |
 | 35.2 | article "Art. 125 CP" ; cases "Blessure par négligence" ; cocher 1 vert |
+| 35.3 | sous-titre "D'office si la lésion est grave" |
 | 36.1 | scene-vide ; rembobiner ; titre "Une vitre cassée" |
 | 36.2 | article "Art. 144 CP" ; cases "Vitre par négligence" ; cocher 1 gris |
 | 37.1 | sous-titre "Seulement intentionnel" |

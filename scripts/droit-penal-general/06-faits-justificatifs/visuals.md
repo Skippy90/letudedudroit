@@ -89,6 +89,7 @@ Personnages : Yasmine turquoise, Kevin rose, Hugo bleu clair, Nadia violet.
 | 29.1 | scene-vide ; colonnes "Un bien" "Un bien égal" |
 | 29.2 | titre "Pas justifié" |
 | 29.3 | article "Art. 18 CP" ; sous-titre "Peine atténuée" |
+| 29.4 | sous-titre "Sinon : pas coupable" |
 | 30.1 | scene-vide ; titre "Sacrifice non exigible" |
 | 30.2 | sous-titre "Pas coupable" |
 | 30.3 | batiment ; etage 3 ambre |
