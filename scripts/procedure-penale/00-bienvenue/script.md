@@ -4,7 +4,7 @@ Matière : procédure pénale. Notion : le rôle de la procédure, son lien avec
 
 Chaque ligne du tableau est une phrase ou un petit groupe de phrases à enregistrer d'un trait ; la colonne de droite dit ce qui apparaît à l'écran pendant qu'on l'entend. Les articles cités s'affichent en bas de l'image au moment où ils sont prononcés.
 
-Personnages du fil rouge, repris dans toute la série : Nina (silhouette rose), Malik (silhouette bleu clair), Tom (silhouette turquoise).
+Personnages du fil rouge, repris dans toute la série : Nina (silhouette rose), Bastien (silhouette bleu clair), Tom (silhouette turquoise).
 
 ## Le cas de départ
 
@@ -12,9 +12,9 @@ Personnages du fil rouge, repris dans toute la série : Nina (silhouette rose), 
 | --- | --- | --- |
 | 1 | Un mardi soir, dans une ville de Suisse romande. Nina gare son scooter devant son immeuble. Le lendemain matin, il a disparu. | La silhouette de Nina ; le mot « Le scooter a disparu » |
 | 2 | Son voisin Tom a vu quelque chose. Vers minuit, un jeune homme est parti avec le scooter. Il faisait sombre, Tom n'a pas bien vu son visage. | La silhouette de Tom ; une bulle « Un jeune homme, vers minuit » |
-| 3 | Trois jours plus tard, la police contrôle Malik. Il roule sur le scooter de Nina. Malik affirme l'avoir acheté trois cents francs à un inconnu. | La silhouette de Malik ; sa parole « Je l'ai acheté » ; des jetons |
-| 4 | Alors, Malik a-t-il volé ce scooter ? Peut-être. Mais la vraie question de ce cours est ailleurs. | Le titre « A-t-il volé ? » se barre |
-| 5 | Qui va chercher la vérité ? Comment ? Qui décide, et avec quelles garanties pour Malik et pour Nina ? C'est tout l'objet de la procédure pénale. | Trois mots apparaissent l'un après l'autre : « Qui ? », « Comment ? », « Avec quelles garanties ? » |
+| 3 | Trois jours plus tard, la police contrôle Bastien. Il roule sur le scooter de Nina. Bastien affirme l'avoir acheté trois cents francs à un inconnu. | La silhouette de Bastien ; sa parole « Je l'ai acheté » ; des jetons |
+| 4 | Alors, Bastien a-t-il volé ce scooter ? Peut-être. Mais la vraie question de ce cours est ailleurs. | Le titre « A-t-il volé ? » se barre |
+| 5 | Qui va chercher la vérité ? Comment ? Qui décide, et avec quelles garanties pour Bastien et pour Nina ? C'est tout l'objet de la procédure pénale. | Trois mots apparaissent l'un après l'autre : « Qui ? », « Comment ? », « Avec quelles garanties ? » |
 
 ## Droit pénal et procédure pénale
 
@@ -33,8 +33,8 @@ Personnages du fil rouge, repris dans toute la série : Nina (silhouette rose), 
 | --- | --- | --- |
 | 12 | Pourquoi tant de formes ? Parce qu'une procédure pénale peut aller très loin. On peut fouiller un appartement, saisir un téléphone, enfermer quelqu'un avant tout jugement. | Trois cases « Fouiller », « Saisir », « Enfermer » |
 | 13 | Ces pouvoirs sont nécessaires pour trouver la vérité. Mais ils peuvent aussi frapper un innocent. Les règles de procédure servent à tenir ces deux exigences ensemble. | Deux colonnes « Trouver la vérité » et « Protéger les droits » |
-| 14 | Pensez à Malik. Il dit peut-être la vérité. Tant qu'il n'est pas condamné, il est présumé innocent. Et Nina a, elle aussi, des droits dans cette procédure. | Les silhouettes de Malik et Nina ; le mot « Présumé innocent » |
-| 15 | Dans ce cours, chacun aura un rôle précis. Malik sera le prévenu, la personne soupçonnée. Nina sera la lésée, celle qui a subi le dommage. Tom sera un témoin. Ces mots ont un sens juridique exact : on les verra dans les vidéos 4, 5 et 13. | Les trois silhouettes ; sous chacune : « Prévenu », « Lésée », « Témoin » ; « vidéos 4, 5 et 13 » en petit |
+| 14 | Pensez à Bastien. Il dit peut-être la vérité. Tant qu'il n'est pas condamné, il est présumé innocent. Et Nina a, elle aussi, des droits dans cette procédure. | Les silhouettes de Bastien et Nina ; le mot « Présumé innocent » |
+| 15 | Dans ce cours, chacun aura un rôle précis. Bastien sera le prévenu, la personne soupçonnée. Nina sera la lésée, celle qui a subi le dommage. Tom sera un témoin. Ces mots ont un sens juridique exact : on les verra dans les vidéos 4, 5 et 13. | Les trois silhouettes ; sous chacune : « Prévenu », « Lésée », « Témoin » ; « vidéos 4, 5 et 13 » en petit |
 
 ## Le plan du cours
 
