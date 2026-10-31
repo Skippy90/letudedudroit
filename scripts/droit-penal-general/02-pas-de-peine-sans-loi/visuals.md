@@ -96,7 +96,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 22.1 | scene-vide ; personnage sami "Sami" bleu_clair gauche ; personnage tom "Tom" ambre_pale centre-gauche |
 | 22.1@tromperie | case "Tromperie astucieuse" |
 | 22.2@intérêts | case "Préjudice financier" ; jetons sami tom |
-| 22.3@enrichir | case "Volonté de s'enrichir" |
+| 22.3@enrichir | case "Dessein d'enrichissement" |
 | 23.1 | scene-vide ; article-retirer ; personnage tom "Tom" ambre_pale gauche ; cases "Tribunal" "Argent" |
 | 23.1@tom | bulle tom "Au lac" |
 | 23.1@tribunal | cocher 1 gris |
@@ -108,7 +108,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 24.2@ajouter | mot-barre "Ajouter" 4.6 0.4 |
 | 24.3 | scene-vide ; personnage tom "Tom" ambre_pale gauche ; picto pieces 3.0 0.4 ; etiquette e "Escroquerie ?" 3.0 1.3 ; arret "ATF 137 IV 99" |
 | 24.3@ressemble | titre "Ressembler ne suffit pas" |
-| 25.1 | scene-vide ; arret-retirer ; picto pieces -4.5 0.2 ; cases "Tromperie astucieuse" "Préjudice financier" "Volonté de s'enrichir" ; cocher 1 vert ; cocher 2 vert |
+| 25.1 | scene-vide ; arret-retirer ; picto pieces -4.5 0.2 ; cases "Tromperie astucieuse" "Préjudice financier" "Dessein d'enrichissement" ; cocher 1 vert ; cocher 2 vert |
 | 25.1@description | cocher 3 gris |
 | 25.2 | titre "Même proche" |
 | 25.3 | titre "Même choquant" |
@@ -159,7 +159,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 41.1 | scene-vide ; article-retirer ; repere-retirer ; titre "Une question pour finir" |
 | 41.2 | effacer-titres ; personnage nora "Nora" violet centre ; frise |
 | 41.2@nora | point 0.15 "1er mars" |
-| 42.1@juin | repere 0.5 "1er juin : nouvelle loi" |
+| 42.1@juin | repere 0.5 "1er juin : en vigueur" |
 | 42.2@juillet | point 0.8 "1er juillet" |
 | 43.1 | questions |
 | 43.2@date | accent frise |
