@@ -124,7 +124,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 33.2@biens | liste-ajouter "Biens en jeu" |
 | 33.2@moyen | liste-ajouter "Moyen utilisé" |
 | 33.3@situation | effacer-titres ; sous-titre "Vu par la victime" |
-| 34.1 | scene-vide ; frise ; zone 0.35 0.65 vert |
+| 34.1 | scene-vide ; arret-retirer ; frise ; zone 0.35 0.65 vert |
 | 34.1@pendant | repere 0.35 "Attaque" |
 | 34.2@tôt | point 0.15 "Trop tôt" |
 | 34.3@tard | point 0.85 "Trop tard" |
