@@ -5,7 +5,7 @@ DIR  := scripts/$(SLUG)
 PY   := .venv/bin/python
 MANIM_MEDIA := render/manim/media
 
-.PHONY: video check installer voice visuals assemble
+.PHONY: video check installer voice visuals assemble site
 
 video: check voice visuals assemble
 
@@ -42,3 +42,7 @@ visuals:
 # Habillage Remotion et rendu final dans out/.
 assemble:
 	$(PY) tools/assembler.py $(SLUG)
+
+# Site statique (site/public/) : une page par vidéo en ligne (site/site.json), fiches de cours en PDF.
+site:
+	$(PY) tools/construire_site.py
