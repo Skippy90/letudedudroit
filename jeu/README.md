@@ -17,6 +17,6 @@ C'est un jeu de plateforme en canvas : on déplace un avatar (flèches ou ZQSD/W
 
 - Le cas se referme : les bords se replient comme du papier avec le temps et à chaque erreur. Trois pages déchirées, ou le temps écoulé, et le niveau recommence.
 - Points d'expérience : 20 XP par verrou ouvert, 10 après une erreur sur ce verrou ; 30 XP de bonus sans faute. Un cas déjà résolu se rejoue sans XP.
-- Grades : Première année (0), Deuxième année (150), Master (350), Stage d'avocat (550), Brevet d'avocat (800). Progression dans le navigateur du joueur.
+- Grades : Première année (0), Deuxième année (150), Master (350), Stage d'avocat (550), Brevet d'avocat (760 ; 830 XP au maximum). Progression dans le navigateur du joueur.
 
 Un seul fichier, `index.html`, sans dépendance hormis les polices Google. Contenu juridique : uniquement des règles et des réponses déjà écrites et vérifiées dans les scripts des vidéos 1 à 6. Voir `audit.md`.
