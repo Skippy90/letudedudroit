@@ -165,7 +165,8 @@ class Schemas(Scene):
         for k, p in self.personnages.items():
             el += [(k, p.silhouette), (f"nom de {k}", p.etiquette)]
         el += [(f"parole de {k}", g) for k, g in self.paroles.items()]
-        el += [(f"bulle de {k}", g) for k, g in self.bulles.items()]
+        # La bulle elle-même (sans les petits ronds qui la relient à la tête) : elle ne doit pas couvrir sa silhouette.
+        el += [(f"bulle de {k}", g[1]) for k, g in self.bulles.items()]
         el += [(f"étiquette {k}", e) for k, e in self.etiquettes.items()]
         el += [(f"picto {k}", e) for k, e in self.pictos.items()]
         el += [("bouclier", self.bouclier)] if self.bouclier is not None else []
@@ -186,7 +187,7 @@ class Schemas(Scene):
         if objet and ({na, nb} - {objet}) & set(self.personnages):
             return True
         for k, p in self.personnages.items():
-            if {na, nb} in ({k, f"bulle de {k}"},) or ({na, nb} == {k, f"nom de {k}"} and getattr(p, "derriere_meuble", False)):
+            if {na, nb} == {k, f"nom de {k}"} and getattr(p, "derriere_meuble", False):
                 return True
         return False
 

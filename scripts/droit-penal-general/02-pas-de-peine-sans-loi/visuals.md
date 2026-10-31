@@ -22,8 +22,8 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 2.1@désolé | parole tom "Désolé, je suis malade." |
 | 2.2@réalité | effacer-parole tom ; picto-retirer telephone |
 | 2.2@part | marcher tom -3 |
-| 2.2@lac | bulle tom "Une journée au lac" |
-| 3.1 | retirer tom ; personnage soeur "Sa sœur" rose centre ; placer soeur -1 |
+| 2.2@lac | etiquette lac "Une journée au lac" -3.9 2.5 ; picto vagues -5.2 0.85 |
+| 3.1 | retirer tom ; etiquette-retirer lac ; picto-retirer vagues ; personnage soeur "Sa sœur" rose centre ; placer soeur -1 |
 | 3.1@déménagement | accent soeur |
 | 3.2@soir | picto lune -2.6 1.3 |
 | 3.2@vérité | etiquette verite "Tom était au lac" 1.1 1.4 |

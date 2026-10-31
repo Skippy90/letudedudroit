@@ -64,22 +64,33 @@ def main(slug: str) -> None:
             resume = re.sub(r"\s*\(lignes? [^)]*\)\s*$", "", sans_markdown(m[4]))
             articles.append(f"• {m[1]}{m[3].rstrip()} : {resume}\n  {m[2]}")
 
-    # Jurisprudence citée dans l'audit, sans doublon.
+    # Jurisprudence citée dans l'audit, sans doublon, avec ce qu'elle établit : la deuxième colonne de la
+    # première ligne de tableau où l'arrêt est cité (sa propre ligne, ou celle de l'article ou de l'affirmation
+    # qu'il appuie), et le considérant indiqué juste après le lien.
     arrets = []
     for numero, lien in re.findall(r"\[(ATF [^\]]+)\]\(([^)]+)\)", audit):
-        if numero not in [a[0] for a in arrets]:
-            arrets.append((numero, lien))
+        if numero in [a[0] for a in arrets]:
+            continue
+        resume, consid = "", ""
+        for ligne in audit.splitlines():
+            if ligne.startswith("|") and f"[{numero}]" in ligne:
+                colonnes = [c.strip() for c in ligne.strip().strip("|").split("|")]
+                if len(colonnes) > 1:
+                    resume = re.sub(r"\s*\(lignes? [^)]*\)\s*$", "", sans_markdown(colonnes[1]))
+                m = re.search(re.escape(f"[{numero}]") + r"\([^)]*\),?\s*(consid\. [0-9.a-z, et]+?)(?=\s*[:;|]|$)", ligne)
+                consid = m[1].rstrip(" ,") if m else ""
+                break
+        arrets.append((numero, lien, consid, resume))
 
     reponse = re.search(r"\*\*Réponse attendue à la question finale\*\*[^:]*:\s*(.+)", script)
 
     lignes = [
         f"{titre} — expliqué simplement, à partir d'un cas concret.",
         "",
-        "Articles cités (texte en vigueur vérifié sur Fedlex) :",
+        "Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :",
         *articles,
+        *[f"• {n}{', ' + c if c else ''}{' : ' + r if r else ''}\n  {l}" for n, l, c, r in arrets],
     ]
-    if arrets:
-        lignes += ["", "Jurisprudence du Tribunal fédéral :", *[f"• {n}\n  {l}" for n, l in arrets]]
     if reponse:
         texte_reponse = sans_markdown(reponse[1])
         lignes += ["", "Réponse à la question finale :", texte_reponse[:1].upper() + texte_reponse[1:]]

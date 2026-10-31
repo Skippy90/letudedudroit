@@ -314,7 +314,8 @@ class Bulle(VGroup):
         ellipse = Ellipse(width=max(2.2, etiquette.width + 0.8), height=1.1, color=TEXTE,
                           fill_color=TEXTE, fill_opacity=1)
         etiquette.move_to(ellipse)
-        cote = personnage.vers_le_centre()
+        # Vers le centre, d'après la place réelle de la silhouette (elle a pu marcher depuis sa position de départ).
+        cote = LEFT if personnage.silhouette.get_x() > 0 else RIGHT
         tete = personnage.silhouette[0]
         # À côté de la tête, légèrement au-dessus, pour ne pas monter dans la zone des titres.
         ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, cote, buff=0.75)
