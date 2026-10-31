@@ -16,6 +16,13 @@ from manim import (
 FOND = "#0B0B0B"
 TEXTE = "#F2EFE6"
 ACCENT = "#E3A52F"
+# Thème « marque » (THEME=marque) : l'accent devient le rouge suisse de la marque, et les mots-clés
+# s'écrivent en blanc sur une pastille rouge, comme le logo. Le thème par défaut garde l'ambre.
+import os as _os
+ROUGE_MARQUE = "#DA291C"
+MARQUE = _os.environ.get("THEME", "") == "marque"
+if MARQUE:
+    ACCENT = ROUGE_MARQUE
 VERT = "#4CAF7D"
 GRIS = "#6B7280"
 ROUGE = "#D9534F"
@@ -55,6 +62,21 @@ def avec_fond(mob, buff=0.08):
     fond = RoundedRectangle(corner_radius=0.06, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
                             stroke_width=0, fill_color=FOND, fill_opacity=0.85).move_to(mob)
     return VGroup(fond, mob)
+
+
+def pastille(mob, buff=0.08):
+    """Texte blanc sur pastille rouge (thème « marque »)."""
+    fond = RoundedRectangle(corner_radius=0.1, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
+                            stroke_width=0, fill_color=ROUGE_MARQUE, fill_opacity=1).move_to(mob)
+    return VGroup(fond, mob)
+
+
+def accent_texte(contenu, taille=None):
+    """Un mot-clé : ambre sur fond noir, ou blanc sur pastille rouge dans le thème « marque »."""
+    taille = taille or T_PETIT
+    if MARQUE:
+        return pastille(texte(contenu, taille, "#FFFFFF"))
+    return avec_fond(texte(contenu, taille, ACCENT))
 
 
 def mots(contenu: str) -> int:
@@ -287,7 +309,8 @@ class Frise(VGroup):
     def repere(self, fraction, libelle):
         x = self.x(fraction)
         trait = Line([x, self.y - 0.35, 0], [x, self.y + 0.35, 0], color=ACCENT, stroke_width=6)
-        etiquette = self.placer(texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15), DOWN)
+        etiquette = self.placer((accent_texte(libelle) if MARQUE else texte(libelle, T_PETIT, ACCENT))
+                                .next_to(trait, DOWN, buff=0.15), DOWN)
         return VGroup(trait, etiquette)
 
     def point(self, fraction, libelle):
@@ -534,7 +557,7 @@ class Etiquette(VGroup):
     """Mot-clé court, en ambre, posé près de ce dont il parle (« Lausanne », « Un soir d'hiver »)."""
 
     def __init__(self, contenu, position):
-        mot = avec_fond(texte(contenu, T_PETIT, ACCENT))
+        mot = accent_texte(contenu)
         super().__init__(*mot)
         self.move_to(position)
 
@@ -682,7 +705,7 @@ class RepereListe(VGroup):
             return [boite.animate.set_fill(SURFACE, opacity=0).set_stroke(TEXTE), mot.animate.set_color(TEXTE)]
         couleur = ETATS[etat]
         return [boite.animate.set_fill(couleur, opacity=1).set_stroke(couleur),
-                mot.animate.set_color(ACCENT if etat == "ambre" else GRIS if etat == "gris" else TEXTE)]
+                mot.animate.set_color(ACCENT if etat == "ambre" and not MARQUE else GRIS if etat == "gris" else TEXTE)]
 
 
 class Parc(VGroup):
