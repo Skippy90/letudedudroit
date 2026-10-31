@@ -185,16 +185,20 @@ const NIVEAUX = [
    emplacements: [
     { id: "typ1", label: "Typicité : l'acte", x: 1545, y: SOL - 70, l: 120, h: 70, accepte: "art123",
       ok: "Un poignet cassé est une atteinte au corps, et la blessure n'est pas grave : lésions corporelles simples (art. 123 CP).",
-      ko: { art144: "L'article 144 protège les choses. Ici, c'est le corps de Julien qui est atteint.", negl: "La typicité a deux faces : l'acte décrit par la loi, et ce qui se passe dans la tête. Celle-ci va dans l'autre case du rez-de-chaussée, et ce n'est pas la bonne pièce." } },
+      ko: { art144: "L'article 144 protège les choses. Ici, c'est le corps de Julien qui est atteint.", negl: "La typicité a deux faces : l'acte décrit par la loi, et ce qui se passe dans la tête. Celle-ci va dans l'autre case du rez-de-chaussée, et ce n'est pas la bonne pièce." },
+      defaut: "Ici, la question est : ce que Marc a fait correspond-il à la description d'une infraction écrite dans la loi ?" },
     { id: "typ2", label: "Typicité : la tête", x: 1685, y: SOL - 70, l: 120, h: 70, accepte: "dol",
       ok: "Accepter le risque d'une chute, c'est le dol éventuel : pour le droit pénal, c'est de l'intention (art. 12 CP). Premier étage franchi.",
-      ko: { negl: "Ne pas viser le poignet ne suffit pas : il savait qu'une chute pouvait blesser et a accepté ce risque. C'est le dol éventuel, donc de l'intention (art. 12 CP).", art123: "L'article 123 décrit l'acte, pas ce qui se passait dans la tête de Marc." } },
+      ko: { negl: "Ne pas viser le poignet ne suffit pas : il savait qu'une chute pouvait blesser et a accepté ce risque. C'est le dol éventuel, donc de l'intention (art. 12 CP).", art123: "L'article 123 décrit l'acte, pas ce qui se passait dans la tête de Marc." },
+      defaut: "Ici, la question est : Marc a-t-il voulu blesser Julien ?" },
     { id: "ill", label: "Illicéité : permis ?", x: 1610, y: SOL - 180, l: 140, h: 70, accepte: "remarque", apres: ["typ1", "typ2"],
       ok: "Une remarque n'est pas une attaque qu'on repousse avec les mains : pas de légitime défense (art. 15 CP). Le comportement est illicite.",
-      ko: { colere: "La colère concerne la personne : c'est l'étage du haut." } },
+      ko: { colere: "La colère concerne la personne : c'est l'étage du haut.", art144: "L'article 144 protège les choses. Ici, c'est le corps de Julien qui est atteint." },
+      defaut: "Ici, la question change : ce comportement, qui correspond à la loi, était-il malgré tout permis ?" },
     { id: "cul", label: "Culpabilité : reprochable ?", x: 1610, y: SOL - 290, l: 140, h: 70, accepte: "colere", apres: ["ill"],
       ok: "La colère n'enlève pas la capacité de comprendre ce qu'on fait (art. 19 CP). Troisième étage franchi.",
-      ko: { remarque: "La remarque de Julien se juge à l'étage de l'illicéité." } }],
+      ko: { remarque: "La remarque de Julien se juge à l'étage de l'illicéité." },
+      defaut: "Ici, on ne regarde plus l'acte, on regarde la personne : peut-on lui reprocher ce qu'elle a fait ?" }],
    ordre: "On commence toujours par le bas. Si un étage manque, on s'arrête là : pas d'infraction, pas de peine.",
    sortie: 2080,
    verdict: "Les trois étages sont franchis : Marc a commis des lésions corporelles simples, au sens de l'article 123 du Code pénal. C'est seulement maintenant qu'on peut parler de peine." },
@@ -355,7 +359,7 @@ const FINALE = { id: "finale", titre: "La dernière page", lieu: "Le Code · der
    { q: "Un voisin crie à Nadia qu'il la frappera un jour. Le lendemain, Nadia le frappe la première pour prendre les devants. Légitime défense ?", o: ["Oui : elle a été menacée.", "Non : une menace vague pour « un jour » n'est pas une attaque imminente (art. 15 CP).", "Oui, si elle avait peur."], r: 1 }],
   verdict: "La dernière page se referme doucement. Tu rouvres les yeux à la bibliothèque, le vieux Code fermé devant toi. Retiens la méthode plus que les résultats : la loi décrit-elle l'acte ? Était-il malgré tout permis ? Peut-on le reprocher à la personne ?" };
 
-const GRADES = [[0, "Première année"], [150, "Deuxième année"], [350, "Master"], [550, "Stage d'avocat"], [800, "Brevet d'avocat"]];
+const GRADES = [[0, "Première année"], [150, "Deuxième année"], [350, "Master"], [550, "Stage d'avocat"], [760, "Brevet d'avocat"]];
 const XP_JUSTE = 20, XP_APRES_ERREUR = 10, BONUS_SANS_FAUTE = 30, PAGES = 3;
 const REDUIT = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
