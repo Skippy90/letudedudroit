@@ -1,6 +1,6 @@
 # Marque — L'étude du droit
 
-La marque est en blanc sur rouge suisse : le nom « L'étude du droit » et le symbole, le bâtiment à trois étages des vidéos réduit à un toit et trois étages (blanc, de plus en plus transparent vers le bas). Le rouge est réservé à la marque : les schémas des vidéos et les miniatures sont sur fond noir.
+La marque est en blanc sur rouge suisse : le nom « L'étude du droit » et le symbole, le bâtiment à trois étages des vidéos réduit à un toit et trois étages (blanc, de plus en plus transparent vers le bas). Les schémas des vidéos et les miniatures sont sur fond noir ; depuis le 31 octobre 2026, le rouge de la marque y sert aussi d'accent (mots-clés en blanc sur pastille rouge).
 
 ## Fichiers
 
@@ -26,12 +26,12 @@ Ouverture et fin des vidéos : le symbole s'y construit (étages de bas en haut,
 
 | Nom | Valeur | Rôle |
 | --- | --- | --- |
-| Rouge suisse | `#DA291C` | Fond de la marque : profil, bannière, logo, filigrane, ouverture et fin des vidéos |
+| Rouge suisse | `#DA291C` | Fond de la marque : profil, bannière, logo, filigrane, ouverture et fin des vidéos ; accent des schémas et des miniatures |
 | Blanc | `#FFFFFF` | Nom, symbole, signature sur le rouge |
 | Noir | `#0B0B0B` | Fond des schémas des vidéos et des miniatures (charte visuelle) |
-| Ambre | `#E3A52F` | Dernier mot du titre des miniatures |
+| Ambre | `#E3A52F` | Le dommage dans les schémas (éclair) |
 
-Le rouge de la marque n'entre pas dans les schémas : là, le rouge (`#D9534F`) reste réservé au dommage. Ouverture et fin passent en douceur du rouge au noir des schémas. Pas de croix suisse ni d'armoiries : le rouge et le blanc suffisent, sans laisser croire à une chaîne officielle.
+Dans les schémas, le dommage passe en ambre pour ne pas se confondre avec le rouge de la marque. Ouverture et fin passent en douceur du rouge au noir des schémas. Pas de croix suisse ni d'armoiries : le rouge et le blanc suffisent, sans laisser croire à une chaîne officielle.
 
 ## Typographie
 
@@ -42,4 +42,4 @@ Inter, sans empattement : extra-gras (800) pour le nom et les titres, demi-gras 
 - Le symbole en blanc sur rouge (ou rouge sur blanc si le fond est clair) ; jamais déformé, jamais d'autres couleurs.
 - Marge autour du symbole : au moins la hauteur d'un étage.
 - Taille minimale : 48 px de côté (le filigrane fait 150 px).
-- Miniatures : la question en grand, le dernier mot en ambre, sur fond noir ; la scène du cas en dessous ; la pastille rouge du symbole en bas à gauche.
+- Miniatures : la question en grand, le dernier mot en blanc sur pastille rouge, sur fond noir ; la scène du cas en dessous ; la pastille rouge du symbole en bas à gauche.

@@ -14,7 +14,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | 2 | À huit heures, Tom envoie un message : « Désolé, je suis malade. » En réalité, il part passer la journée au lac. | Une bulle de message part de Tom ; Tom s'éloigne vers une ligne d'eau |
 | 3 | Sami finit le déménagement avec sa sœur. Le soir, il apprend la vérité. Il est furieux. | Sami seul au milieu des cartons ; un éclair ambre au-dessus de sa tête |
 | 4 | Il écrit à Tom : « Tu m'as menti. Je vais porter plainte ! » | Le texte « Porter plainte ? » apparaît au centre |
-| 5 | Alors, Tom a-t-il commis une infraction ? Mentir à un ami, est-ce puni par la loi ? Gardez votre réponse en tête. | « Infraction ? » au centre, avec un point d'interrogation qui pulse |
+| 5 | Alors, Tom a-t-il commis une infraction ? Mentir à un ami, est-ce puni par la loi ? Gardez vos réponses en tête. | « Infraction ? » au centre, avec un point d'interrogation qui pulse |
 
 ## La règle : l'article premier
 
@@ -33,7 +33,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | --- | --- | --- |
 | 12 | Première exigence : il faut un texte de loi. Pas l'avis personnel du juge. Pas la morale. Le juge pénal ne peut pas inventer une infraction. | Ligne « 1. Un texte » en grand ; deux mots barrés tour à tour : « Avis du juge », « Morale » |
 | 13 | Cherchons donc un article qui punit le mensonge. On ne trouve aucune infraction qui s'appelle simplement « mentir ». | Le livre se feuillette ; une loupe passe sur les pages et revient vide |
-| 14 | Le mensonge de Tom est blessant. Il est même moralement condamnable. Mais la morale n'est pas la loi pénale. | Silhouette de Tom ; le mot « Morale » à gauche, « Loi pénale » à droite, séparés par un trait |
+| 14 | Le mensonge de Tom est blessant. Il est même peut-être moralement condamnable. Mais la morale n'est pas la loi pénale. | Silhouette de Tom ; le mot « Morale » à gauche, « Loi pénale » à droite, séparés par un trait |
 | 15 | Premier constat : aucun texte ne décrit ce que Tom a fait. Le premier étage n'est pas franchi. Pas d'infraction. | Le bâtiment revient ; l'étage « Typicité » devient gris ; la flèche s'arrête |
 
 ## Deuxième exigence : un texte qui décrit l'acte
@@ -46,7 +46,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | 19 | Là, un article existe. L'article 307 du Code pénal punit le témoin qui fait une déposition fausse en justice. | Bloc « Art. 307 CP » ; une case « Témoin » et une case « Déposition fausse » se cochent en vert |
 | 20 | Autre variante. Tom monte une mise en scène habile pour obtenir de l'argent de Sami. | Rembobinage ; des jetons passent de la silhouette de Sami à celle de Tom |
 | 21 | Là aussi, un article existe : l'escroquerie, à l'article 146. Mais il ne suffit pas de mentir. | Bloc « Art. 146 CP » ; le mot « Escroquerie » |
-| 22 | Il faut une tromperie astucieuse. Il faut que la victime agisse contre ses intérêts financiers. Et il faut que l'auteur veuille s'enrichir. | Trois cases s'alignent : « Astuce », « Préjudice financier », « Volonté de s'enrichir » |
+| 22 | Il faut une tromperie astucieuse. Il faut que la victime agisse contre ses intérêts financiers, ou contre ceux d'un tiers. Et il faut que l'auteur veuille s'enrichir, ou enrichir quelqu'un d'autre. | Trois cases s'alignent : « Tromperie astucieuse », « Préjudice financier », « Dessein d'enrichissement » |
 | 23 | Dans notre histoire de départ, Tom ne parle pas à un tribunal. Il ne cherche pas d'argent non plus. Aucune de ces descriptions ne correspond. | Retour à la version de départ ; les cases restent vides, en gris |
 | 24 | Le juge peut interpréter un texte, même largement. Mais il ne peut pas y ajouter ce qui n'y est pas. Il ne peut donc pas punir Tom parce que son mensonge ressemble à une escroquerie. | Le bloc « Art. 146 CP » tente de s'étirer vers Tom, puis revient à sa taille |
 | 25 | S'il manque un élément de la description, l'acte n'est pas réprimé. Même s'il est proche. Même s'il est choquant. | Une case grise clignote ; les mots « Proche ? Choquant ? Pas suffisant » |
@@ -78,11 +78,11 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 38 | Revenons à Sami. Il a le droit d'être déçu. Mais aucun texte ne réprime le mensonge de Tom. Le juge pénal ne peut pas le punir. | Retour au cas de départ ; « Porter plainte ? » se barre doucement |
-| 39 | Pas d'infraction ne veut pas dire que Tom a bien agi. Cela veut seulement dire que le droit pénal ne s'en occupe pas. | Le mot « Morale » reste allumé ; « Loi pénale » s'éteint |
+| 39 | Pas d'infraction ne veut pas dire que Tom a bien agi. Cela veut dire que le droit pénal ne s'en occupe pas. | Le mot « Morale » reste allumé ; « Loi pénale » s'éteint |
 | 40 | Retenez les trois exigences de l'article premier. Un texte. Un texte qui décrit l'acte. Un texte qui existait déjà au moment de l'acte. | Les trois lignes reviennent, à côté du bloc « Art. 1 CP » |
 | 41 | Une question pour finir. Le premier mars, Nora fait quelque chose de permis. | La frise revient ; un point « 1er mars » et la silhouette de Nora |
-| 42 | Le premier juin, une nouvelle loi interdit ce comportement et le punit. Le premier juillet, Nora recommence. | Repère « 1er juin : nouvelle loi » ; puis point « 1er juillet » |
+| 42 | Le premier juin, une nouvelle loi entre en vigueur : elle interdit ce comportement et le punit. Le premier juillet, Nora recommence. | Repère « 1er juin : en vigueur » ; puis point « 1er juillet » |
 | 43 | Peut-elle être punie ? Et si oui, pour quelle date ? Écrivez votre réponse en commentaire. | Un point d'interrogation sur chaque date |
 | 44 | La réponse, le script complet et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : Nora ne peut être punie que pour l'acte du 1er juillet. Le 1er mars, aucun texte ne réprimait son comportement (art. 1 CP) ; la nouvelle loi ne peut pas s'appliquer à un acte commis avant son entrée en vigueur (art. 2 CP).
+**Réponse attendue à la question finale**, pour la description : Nora ne peut être punie que pour l'acte du 1er juillet, pour autant que son comportement ce jour-là réalise les conditions de la nouvelle infraction. Le 1er mars, aucun texte ne réprimait son comportement (art. 1 CP) ; la nouvelle loi, entrée en vigueur le 1er juin, ne peut pas s'appliquer à un acte commis avant cette date (art. 2 CP).

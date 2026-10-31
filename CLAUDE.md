@@ -39,7 +39,7 @@ out/               vidéos rendues, prêtes à publier
 
 ## Charte visuelle (résumé ; version complète dans docs/)
 
-- Fond noir, texte blanc cassé, accent ambre, vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
+- Fond noir, texte blanc cassé, accent rouge suisse de la marque (mots-clés en blanc sur pastille rouge), vert pour « condition remplie », gris pour « condition manquante », ambre pour le dommage.
 - Personnes : silhouettes sans visage, une couleur fixe par personnage. Loi : bloc « Art. N CP » centré en bas. Infraction : bâtiment à trois étages. Délais : frise horizontale. Autorités : pyramide à trois niveaux. Fait justificatif : bouclier. État d'esprit : bulle de pensée.
 - Chaque phrase fait apparaître ou bouger quelque chose. Aucun plan fixe de plus de quatre secondes. Jamais plus de douze mots affichés à la fois.
 - Police sans empattement, lisible sur téléphone, rien sous 28 points sur une image 1920 × 1080.

@@ -25,11 +25,11 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `effacer-titres` | Retire titre et sous-titre |
 | `barrer` | Barre le sous-titre, ou à défaut le titre |
 | `renvoi "vidéo N"` | Renvoi en petit, en bas à droite |
-| `mot-barre "…"` | Mot affiché à droite puis barré |
+| `mot-barre "…"` [`X Y`] | Mot affiché (à droite par défaut, ou au point X Y) puis barré |
 | `article "Art. N CP"` | Bloc d'article centré en bas (remplace le précédent) |
 | `article-retirer` | Retire le bloc d'article |
 | `article-etirer` / `article-reprendre` | Le bloc s'étire puis reprend sa taille (interprétation et ses limites) |
-| `livre` [`"titre"`] / `livre-ouvrir` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, retiré |
+| `livre` [`"titre"` [`X`]] / `livre-ouvrir` / `livre-chercher` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, parcouru (une bande ambre descend les lignes des deux pages), retiré |
 | `livres "…" "…" "…"` | Plusieurs recueils côte à côte |
 | `livres-surligner N` | Met en avant le recueil N |
 | `personnage ID "Nom" COULEUR POSITION` | Silhouette ; couleurs : `bleu_clair`, `ambre_pale`, `rose`, `violet`, `turquoise` ; positions : `gauche`, `centre-gauche`, `centre`, `centre-droite`, `droite` |
@@ -46,20 +46,22 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `batiment vide` + `etage-nom N` | Bâtiment sans noms, puis chaque nom écrit à son tour |
 | `etage-question N` | Point d'interrogation à droite de l'étage N |
 | `question-etage N "…"` | Question écrite à droite de l'étage N (une seule à la fois ; le bâtiment se décale à gauche) |
-| `bouclier` / `bouclier-repousser` | Fait justificatif : bouclier à droite du bâtiment, qui repousse une flèche |
+| `bouclier` [`X Y`] / `bouclier-repousser` | Fait justificatif : bouclier à droite du bâtiment (ou au point X Y, à côté du personnage dont l'acte est justifié), qui repousse une flèche |
 | `fleche N` | Flèche qui monte jusqu'à l'étage N |
 | `liste "…" …` / `liste-ajouter "…"` / `liste-surligner N` | Liste à gauche |
 | `cases "…" …` / `case "…"` | Cases à cocher (toutes d'un coup, ou une par une) |
 | `cocher N vert\|gris\|question` | Condition remplie, manquante, ou en question |
 | `colonnes "A" "B"` / `colonne-accent N` / `colonne-eteindre N` | Deux notions opposées |
 | `pyramide` / `pyramide-niveau N COULEUR` / `retirer-pyramide` | Les autorités |
-| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) |
+| `decor escalier` / `decor appartement` / `decor-retirer` | Décor au trait : cage d'escalier (sol, sept marches, rampe, porte, fenêtre) ; appartement en déménagement (porte, fenêtre, cartons ; `placer` de -3 à 2 le long du sol) ; `decor rue` : façades, boulangerie, réverbère (`placer` de -4 à 4) ; `decor rue Bar` : même rue avec une autre enseigne ; `decor parc` : arbre, poteau, haie au premier plan (`placer … 3` : derrière la haie) ; `decor piscine` : chaise haute de la surveillante, bassin au premier plan (`placer … 2` à `4` : dans l'eau) ; `decor tribunal` : salle d'audience, barre des témoins (`placer … -1`) et banc du juge sur l'estrade (`placer … 3`) ; une silhouette derrière un meuble n'en dépasse que par le haut et son nom s'inscrit sur le meuble |
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag` |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée) ; `NOM:2` pour un deuxième pictogramme du même type |
+| `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
+| `repere-liste "…" "…"` / `repere-marquer N COULEUR` / `repere-retirer` | Pense-bête permanent en haut à droite : une case et un mot par élément (une liste à l'écran s'y range) ; `ambre` pour l'élément en cours, `gris` s'il manque, `vert` s'il est rempli, `neutre` pour effacer ; les titres se réduisent pour rester à sa gauche |
 | `frise` | Frise du temps |
 | `repere X "…"` | Repère (date d'entrée en vigueur…) à la fraction X de la frise (0 à 1) |
 | `point X "…"` | Événement sur la frise |
@@ -80,3 +82,24 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 - animation en retard de plus d'une demi-seconde sur la voix.
 
 Il évite aussi les plans fixes de plus de quatre secondes : le dernier élément animé « respire » légèrement.
+
+## Chevauchements
+
+Après chaque moment, le moteur vérifie qu'aucun élément affiché n'est à moins de 0,1 d'un autre (titres, article, repère, silhouettes et leurs noms, paroles, bulles, étiquettes, pictos, listes, cases, livres, frise) et que rien n'entre dans la bande des sous-titres. Les contacts voulus (une bulle et sa silhouette, un nom inscrit sur un meuble) sont exclus. Chaque contact est signalé dans `out/<slug>--alertes-visuels.txt`.
+
+## Jurisprudence à l'écran
+
+`arret "ATF 135 IV 152"` / `arret-retirer` : bloc au cadre ambre, en bas, à côté du bloc d'article (les deux se centrent ensemble). Il survit aux `scene-vide`, comme l'article. Chaque arrêt affiché doit figurer dans l'audit de la vidéo.
+
+## Mise en page
+
+- `batiment X` [`petit`] : bâtiment décalé de X sur le côté (à côté d'une liste) ; `petit` le réduit à 85 %.
+- Les noms des personnages, les mots-clés et les paroles ont un fond noir : les traits du décor passent derrière eux.
+
+## Contrôles automatiques
+
+Le rapport `out/<slug>--alertes-visuels.txt` signale aussi les textes (titres, listes, cases, frise) posés sur un trait du décor, et chaque passage de plus de 5 s où l'écran ne montre que du texte (ni personnage, ni décor, ni schéma, ni pictogramme) ; sa dernière ligne donne le total de « texte seul ».
+
+## Grille de couleurs
+
+Par défaut (depuis le 31 octobre 2026), la grille de la marque : accent rouge suisse (`#DA291C`) ; mots-clés, libellés de repère de la frise et titres mis en avant en blanc sur une pastille rouge, comme le logo ; pense-bête et étages en cours en rouge ; dommage en ambre (`#E3A52F`). `THEME=ambre make visuals …` rend avec l'ancienne grille (accent ambre, dommage rouge `#D9534F`).
