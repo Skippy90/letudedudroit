@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Le voulait-il vraiment ? | Droit pénal suisse
 
-## Description (2921 caractères sur 5 000)
+## Description (3299 caractères sur 5 000)
 
 ```text
 Le voulait-il vraiment ? — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 12 CP, al. 1 : Sauf exception prévue par la loi, seul l'auteur qui agit intentionnellement est punissable ; la négligence n'est punie que si la loi le prévoit
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_12
 • Art. 12 CP, al. 2 : L'intention, c'est la conscience et la volonté ; celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement
@@ -24,11 +24,9 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125
 • Art. 144 CP : Le dommage à la propriété n'existe que dans sa version intentionnelle
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144
-
-Jurisprudence du Tribunal fédéral :
-• ATF 135 IV 152
+• ATF 135 IV 152, consid. 2.3.2 : Dol éventuel : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode ; indices : risque connu, gravité de l'imprudence, mobiles, manière d'agir
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F135-IV-152%3Afr
-• ATF 130 IV 58
+• ATF 130 IV 58, consid. 8.3 et 9.1.1 : Négligence consciente : l'auteur voit le risque mais compte qu'il ne se réalisera pas ; dol éventuel retenu dans une course de voitures mortelle, mais pas à la légère
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F130-IV-58%3Afr
 
 Réponse à la question finale :

@@ -14,7 +14,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | 2 | À huit heures, Tom envoie un message : « Désolé, je suis malade. » En réalité, il part passer la journée au lac. | Une bulle de message part de Tom ; Tom s'éloigne vers une ligne d'eau |
 | 3 | Sami finit le déménagement avec sa sœur. Le soir, il apprend la vérité. Il est furieux. | Sami seul au milieu des cartons ; un éclair ambre au-dessus de sa tête |
 | 4 | Il écrit à Tom : « Tu m'as menti. Je vais porter plainte ! » | Le texte « Porter plainte ? » apparaît au centre |
-| 5 | Alors, Tom a-t-il commis une infraction ? Mentir à un ami, est-ce puni par la loi ? Gardez votre réponse en tête. | « Infraction ? » au centre, avec un point d'interrogation qui pulse |
+| 5 | Alors, Tom a-t-il commis une infraction ? Mentir à un ami, est-ce puni par la loi ? Gardez vos réponses en tête. | « Infraction ? » au centre, avec un point d'interrogation qui pulse |
 
 ## La règle : l'article premier
 
@@ -33,7 +33,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | --- | --- | --- |
 | 12 | Première exigence : il faut un texte de loi. Pas l'avis personnel du juge. Pas la morale. Le juge pénal ne peut pas inventer une infraction. | Ligne « 1. Un texte » en grand ; deux mots barrés tour à tour : « Avis du juge », « Morale » |
 | 13 | Cherchons donc un article qui punit le mensonge. On ne trouve aucune infraction qui s'appelle simplement « mentir ». | Le livre se feuillette ; une loupe passe sur les pages et revient vide |
-| 14 | Le mensonge de Tom est blessant. Il est même moralement condamnable. Mais la morale n'est pas la loi pénale. | Silhouette de Tom ; le mot « Morale » à gauche, « Loi pénale » à droite, séparés par un trait |
+| 14 | Le mensonge de Tom est blessant. Il est même peut-être moralement condamnable. Mais la morale n'est pas la loi pénale. | Silhouette de Tom ; le mot « Morale » à gauche, « Loi pénale » à droite, séparés par un trait |
 | 15 | Premier constat : aucun texte ne décrit ce que Tom a fait. Le premier étage n'est pas franchi. Pas d'infraction. | Le bâtiment revient ; l'étage « Typicité » devient gris ; la flèche s'arrête |
 
 ## Deuxième exigence : un texte qui décrit l'acte
@@ -78,7 +78,7 @@ Personnages : Sami (silhouette bleu clair), Tom (silhouette ambre pâle), Nora (
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 38 | Revenons à Sami. Il a le droit d'être déçu. Mais aucun texte ne réprime le mensonge de Tom. Le juge pénal ne peut pas le punir. | Retour au cas de départ ; « Porter plainte ? » se barre doucement |
-| 39 | Pas d'infraction ne veut pas dire que Tom a bien agi. Cela veut seulement dire que le droit pénal ne s'en occupe pas. | Le mot « Morale » reste allumé ; « Loi pénale » s'éteint |
+| 39 | Pas d'infraction ne veut pas dire que Tom a bien agi. Cela veut dire que le droit pénal ne s'en occupe pas. | Le mot « Morale » reste allumé ; « Loi pénale » s'éteint |
 | 40 | Retenez les trois exigences de l'article premier. Un texte. Un texte qui décrit l'acte. Un texte qui existait déjà au moment de l'acte. | Les trois lignes reviennent, à côté du bloc « Art. 1 CP » |
 | 41 | Une question pour finir. Le premier mars, Nora fait quelque chose de permis. | La frise revient ; un point « 1er mars » et la silhouette de Nora |
 | 42 | Le premier juin, une nouvelle loi entre en vigueur : elle interdit ce comportement et le punit. Le premier juillet, Nora recommence. | Repère « 1er juin : en vigueur » ; puis point « 1er juillet » |
