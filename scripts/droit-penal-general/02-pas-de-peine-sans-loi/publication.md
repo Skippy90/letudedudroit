@@ -43,9 +43,9 @@ Chapitres :
 0:43 La règle : l'article premier
 1:38 Première exigence : un texte
 2:17 Deuxième exigence : un texte qui décrit l'acte
-3:51 Troisième exigence : un texte qui existait déjà
-4:42 Le piège classique
-5:35 Conclusion et question
+3:52 Troisième exigence : un texte qui existait déjà
+4:44 Le piège classique
+5:38 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/02-pas-de-peine-sans-loi
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

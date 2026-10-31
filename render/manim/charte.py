@@ -262,8 +262,9 @@ class Pyramide(VGroup):
 class Frise(VGroup):
     """Le temps : frise horizontale, les repères se dessinent en direct."""
 
-    def __init__(self):
-        self.ligne = Arrow([-6.3, Y_FRISE, 0], [6.4, Y_FRISE, 0], color=TEXTE, stroke_width=4, buff=0,
+    def __init__(self, y=Y_FRISE):
+        self.y = y
+        self.ligne = Arrow([-6.3, y, 0], [6.4, y, 0], color=TEXTE, stroke_width=4, buff=0,
                            max_tip_length_to_length_ratio=0.02)
         self.etiquettes = []
         super().__init__(self.ligne)
@@ -285,24 +286,25 @@ class Frise(VGroup):
 
     def repere(self, fraction, libelle):
         x = self.x(fraction)
-        trait = Line([x, Y_FRISE - 0.35, 0], [x, Y_FRISE + 0.35, 0], color=ACCENT, stroke_width=6)
+        trait = Line([x, self.y - 0.35, 0], [x, self.y + 0.35, 0], color=ACCENT, stroke_width=6)
         etiquette = self.placer(texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15), DOWN)
         return VGroup(trait, etiquette)
 
     def point(self, fraction, libelle):
         x = self.x(fraction)
-        point = Dot([x, Y_FRISE, 0], radius=0.13, color=TEXTE)
-        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.25), UP)
+        point = Dot([x, self.y, 0], radius=0.13, color=TEXTE)
+        # Au-dessus du trait d'un repère placé au même endroit (il monte de 0,35).
+        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.4), UP)
         return VGroup(point, etiquette)
 
     def zone(self, a, b, etat):
         xa, xb = self.x(a), self.x(b)
         return Rectangle(width=xb - xa, height=0.5, stroke_width=0, fill_color=ETATS[etat],
-                         fill_opacity=0.35).move_to([(xa + xb) / 2, Y_FRISE, 0])
+                         fill_opacity=0.35).move_to([(xa + xb) / 2, self.y, 0])
 
     def fleche_retour(self, de, vers, couleur):
         # Au-dessus des étiquettes des points, pour ne pas les masquer.
-        return CurvedArrow([self.x(de), Y_FRISE + 1.0, 0], [self.x(vers), Y_FRISE + 1.0, 0],
+        return CurvedArrow([self.x(de), self.y + 1.0, 0], [self.x(vers), self.y + 1.0, 0],
                            angle=0.9, color=couleur, stroke_width=5)
 
 

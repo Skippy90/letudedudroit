@@ -146,7 +146,7 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 38.2@juge | colonne-eteindre 2 |
 | 39.1@passible | article "Art. 10 CP" ; titre "« passible »" ambre |
 | 39.2@possible | sous-titre "La peine possible" |
-| 40.1 | scene-vide ; repere-retirer ; article-retirer ; titre "Retenons" ; frise ; repere 0.5 "3 ans" |
+| 40.1 | scene-vide ; repere-retirer ; article-retirer ; titre "Retenons" ; frise bas ; repere 0.5 "3 ans" |
 | 40.2@crime | effacer-titres ; liste-ajouter "Plus de 3 ans : crime" ; zone 0.5 1 ambre |
 | 41.1@délit | liste-ajouter "3 ans au plus : délit" ; zone 0 0.5 vert |
 | 41.2@contravention | liste-ajouter "Amende : contravention" |
