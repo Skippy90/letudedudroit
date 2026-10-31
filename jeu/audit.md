@@ -1,7 +1,7 @@
 # Audit — Jeu « Pris dans le Code »
 
 - Recueil : Code pénal suisse, RS 311.0, mêmes versions que les audits des vidéos 1 à 6 (état au 1er octobre 2026, consulté sur Fedlex en octobre 2026 ; voir `scripts/droit-penal-general/0N-*/audit.md`).
-- Le jeu n'ajoute aucune règle : chaque énoncé reprend une phrase d'un script déjà audité, ou la réponse de sa fiche de publication. Les textes « en substance » du bouton « Consulter le Code » sont les paraphrases des scripts, pas le texte légal.
+- Le jeu n'ajoute aucune règle : chaque énoncé reprend une phrase d'un script déjà audité, ou la réponse de sa fiche de publication. Les textes des pages du Code, des indices et des messages du jeu sont les paraphrases des scripts, pas le texte légal.
 - Jurisprudence : seulement ce que disent les scripts (prise de poste effective, vidéo 5 ; négligence consciente et dol éventuel, vidéo 4 ; menace « un jour », vidéo 6). Les ATF sont cités dans les audits des vidéos.
 
 La colonne « Vérifié » n'est cochée que par la relectrice.
@@ -19,15 +19,19 @@ La colonne « Vérifié » n'est cochée que par la relectrice.
 | [Art. 19 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_19) | Irresponsabilité ; la colère n'enlève pas la capacité de comprendre (cas 1) | Vidéo 1 | - [ ] |
 | [Art. 103 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_103) | Contravention : infraction passible d'une amende (cas 3, dernière page) | Vidéo 3 | - [ ] |
 | [Art. 123 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_123) | Lésions corporelles simples, en substance (cas 1) | Vidéo 1 | - [ ] |
-| [Art. 125 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125) | Lésions corporelles par négligence ; sur plainte, d'office si la lésion est grave (cas 4, dernière page) | Vidéo 4 ; réponse de la vidéo 1 | - [ ] |
+| [Art. 125 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125) | Lésions corporelles par négligence ; sur plainte, d'office si la lésion est grave (dernière page) | Vidéo 4 ; réponse de la vidéo 1 | - [ ] |
 | [Art. 126 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_126) | Voies de fait : amende ; ici sur plainte (cas 3) | Vidéo 3 | - [ ] |
 | [Art. 128 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_128) | Omission de prêter secours : danger de mort imminente, si on peut raisonnablement l'exiger (cas 5) | Vidéo 5 | - [ ] |
 | [Art. 139 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139) | Vol : cinq ans au plus ou peine pécuniaire, donc crime (cas 3) | Vidéo 3 | - [ ] |
-| [Art. 144 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144) | Dommage à la propriété : trois ans au plus, délit ; seulement intentionnel (cas 3, 4) | Vidéo 3 ; vidéo 4 | - [ ] |
+| [Art. 144 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144) | Dommage à la propriété : abîmer la chose d'autrui (fausse piste du cas 1) ; trois ans au plus, donc délit (cas 3) | Vidéo 3 ; vidéo 4 | - [ ] |
 | [Art. 146 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_146) | Escroquerie : tromperie astucieuse, actes préjudiciables aux intérêts financiers, dessein d'enrichissement (cas 2) | Vidéo 2 | - [ ] |
 | [Art. 307 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_307) | Le témoin qui fait une déposition fausse en justice est puni (cas 2) | Vidéo 2 | - [ ] |
 
 ## Points d'attention
+
+- Version jeu vidéo (niveaux à explorer) : les règles sont inchangées ; elles sont portées par les pièces à déposer et les messages de réussite ou d'erreur. Deux messages d'erreur sont des déductions directes des vidéos : au bar, « Ici, il y a un agresseur : ce n'est pas l'état de nécessité » et, le lendemain, « Il n'y a aucun danger à écarter : l'attaque est terminée ».
+- Niveau 6 : le bouclier de la légitime défense n'est accepté que pendant que Kevin lève la bouteille, illustration de « pendant l'attaque ou face à une attaque imminente » (vidéo 6).
+- Le cas de la vitre cassée par négligence (vidéo 4) n'est plus dans le jeu.
 
 - Cas 4, version 3 et dernière page (Sofia) : le jeu donne « en principe, la négligence consciente », comme la réponse de la vidéo 4, et rappelle que le juge peut retenir le dol éventuel selon les indices.
 - Cas 5, dernière question : « on parlera plutôt de négligence, ici en principe sur plainte » reprend la vidéo 5.
