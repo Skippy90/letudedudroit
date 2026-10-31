@@ -30,6 +30,8 @@ RACINE = Path(__file__).resolve().parents[2]
 SLUG = os.environ.get("SLUG", "")
 DUREE_ANIM = 0.7
 PLAN_FIXE_MAX = 4.0
+RETRAITS = {"effacer-titres", "retirer", "livre-retirer", "article-retirer", "arret-retirer", "etiquette-retirer", "picto-retirer",
+            "effacer-parole", "effacer-bulle", "repere-retirer", "decor-retirer", "retirer-pyramide"}
 CREATIONS = {"cases", "liste", "colonnes", "livres", "frise", "repere-batiment", "repere-liste", "decor"}
 
 config.background_color = c.FOND
@@ -279,6 +281,11 @@ class Schemas(Scene):
             if any(a[0] == "scene-vide" for a in actions):
                 self.scene_vide()
                 actions = [a for a in actions if a[0] != "scene-vide"]
+            # Ce qui part se retire d'abord : rien de nouveau n'apparaît par-dessus un élément sur le départ.
+            retraits = [a for a in actions if a[0] in RETRAITS]
+            if retraits and len(retraits) < len(actions):
+                self.jouer(*[x for a in retraits for x in self.executer(a, repere)], duree=0.3)
+                actions = [a for a in actions if a[0] not in RETRAITS]
             # Un groupe créé et modifié au même moment (des cases aussitôt cochées) apparaît
             # d'abord : sinon son animation d'apparition écrase les marques ajoutées.
             creations = [a for a in actions if a[0] in CREATIONS]
@@ -503,9 +510,11 @@ class Schemas(Scene):
         cadre = c.BlocArticle(self.article.libelle).cadre
         return [Transform(self.article.cadre, cadre)]
 
-    def a_livre(self, titre="Code pénal", x=None):
-        """Un recueil fermé ; au centre, ou à l'abscisse x (à côté d'une liste)."""
+    def a_livre(self, titre="Code pénal", x=None, y=None):
+        """Un recueil fermé ; au centre, ou au point x (à côté d'une liste), y (plus bas, sous deux lignes de titre)."""
         self.livre = c.Livre(titre, x=float(x) if x is not None else 0.0)
+        if y is not None:
+            self.livre.set_y(float(y))
         self.focus = self.livre
         return [FadeIn(self.livre, shift=UP * 0.2)]
 
@@ -696,7 +705,9 @@ class Schemas(Scene):
         if m is None:
             raise ValueError(f"accent : cible inconnue « {cible} »")
         self.focus = m
-        return [Indicate(m, color=c.ACCENT, scale_factor=1.08)]
+        # Une silhouette mise en avant s'éclaire en blanc : en rouge, elle se confondrait avec un accent ou un dommage.
+        couleur = c.TEXTE if cible in self.personnages else c.ACCENT
+        return [Indicate(m, color=couleur, scale_factor=1.08)]
 
     def a_parole(self, ident, contenu):
         p = self.personnages[ident]

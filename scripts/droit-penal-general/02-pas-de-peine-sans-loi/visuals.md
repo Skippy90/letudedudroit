@@ -104,7 +104,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 23.3 | effacer-bulle tom ; repere-marquer 2 gris ; titre "Aucune description ne correspond" |
 | 24.1 | scene-vide ; personnage juge "Juge" turquoise gauche ; livre |
 | 24.1@interpréter | livre-ouvrir ; arret "ATF 103 IV 129" |
-| 24.1@largement | etiquette interpreter "Interpréter" 0 2.2 |
+| 24.1@largement | etiquette interpreter "Interpréter" 0 2.45 |
 | 24.2@ajouter | mot-barre "Ajouter" 4.6 0.4 |
 | 24.3 | scene-vide ; personnage tom "Tom" ambre_pale gauche ; picto pieces 3.0 0.4 ; etiquette e "Escroquerie ?" 3.0 1.3 ; arret "ATF 137 IV 99" |
 | 24.3@ressemble | titre "Ressembler ne suffit pas" |
@@ -137,7 +137,7 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 34.1@circulation | livres-surligner 2 |
 | 34.2@nonante | article "Art. 90 LCR" |
 | 35.1 | scene-vide ; article-retirer ; colonnes "Genève" "Vaud" ; picto parlement -3.5 -0.5 ; picto parlement:2 3.5 -0.5 |
-| 35.1@punir | titre "Les cantons aussi" |
+| 35.1@contraventions | titre "Les cantons aussi" |
 | 35.2@article | article "Art. 335 CP" |
 | 36.1@cantonales | titre "Règles cantonales" ambre |
 | 36.2@genève | etiquette ge "Puni" -3.5 -1.6 |
@@ -164,5 +164,5 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 43.1 | questions |
 | 43.2@date | accent frise |
 | 43.3 | titre "Réponse en commentaire" |
-| 44.1 | scene-vide ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 44.1 | scene-vide ; livre "Code pénal" 0 0.1 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 44.2 | accent titre |
