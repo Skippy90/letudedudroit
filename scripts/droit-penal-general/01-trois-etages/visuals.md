@@ -45,9 +45,9 @@ Personnages : Marc turquoise, Julien rose.
 | 6.2@bas | fleche 1 ; etage 1 vert |
 | 6.3@manque | etage 2 gris |
 | 6.3@infraction | effacer-titres ; titre "Pas d'infraction, pas de peine" |
-| 7.1 | scene-vide ; titre "Premier étage : la typicité" ; repere-etage 1 ambre |
+| 7.1 | scene-vide ; batiment ; etage 1 ambre ; titre "Premier étage : la typicité" ; repere-etage 1 ambre |
 | 7.2 | sous-titre "La loi décrit-elle l'acte ?" |
-| 8.1 | effacer-titres ; livre |
+| 8.1 | scene-vide ; livre |
 | 8.1@réprime | titre "Seulement si la loi le prévoit" |
 | 8.2 | article "Art. 1 CP" |
 | 9.1 | effacer-titres ; livre-ouvrir |
@@ -55,7 +55,7 @@ Personnages : Marc turquoise, Julien rose.
 | 9.2@corps | titre "Une atteinte au corps ou à la santé" |
 | 9.2@lésions | effacer-titres ; titre "Lésions corporelles simples" |
 | 10.1 | scene-vide ; article-retirer ; decor escalier ; personnage julien "Julien" rose droite ; placer julien -1 ; dommage julien |
-| 10.2 | cases "Atteinte au corps" ; cocher 1 vert |
+| 10.2 | etiquette atteinte "Atteinte au corps" 2.4 1.6 ; picto coche 5.3 1.6 |
 | 10.3 | titre "Les éléments objectifs" |
 | 11.1 | scene-vide ; personnage marc "Marc" turquoise gauche ; titre "Le côté intérieur" |
 | 11.2 | article "Art. 12 CP" ; bulle marc "Intention ?" |
@@ -68,9 +68,9 @@ Personnages : Marc turquoise, Julien rose.
 | 12.5 | renvoi "vidéo 4" |
 | 13.1 | scene-vide ; article-retirer ; batiment ; fleche 1 ; etage 1 vert ; repere-etage 1 vert |
 | 13.1@typique | titre "Typique" ambre |
-| 14.1 | scene-vide ; titre "Deuxième étage : l'illicéité" ; repere-etage 2 ambre |
+| 14.1 | scene-vide ; batiment ; etage 1 vert ; etage 2 ambre ; titre "Deuxième étage : l'illicéité" ; repere-etage 2 ambre |
 | 14.2 | sous-titre "Était-ce malgré tout permis ?" |
-| 15.1 | effacer-titres ; batiment ; etage 1 vert |
+| 15.1 | effacer-titres |
 | 15.2 | bouclier |
 | 15.3 | titre "Les faits justificatifs" |
 | 16.1 | article "Art. 15 CP" ; sous-titre "La légitime défense" |
@@ -100,7 +100,7 @@ Personnages : Marc turquoise, Julien rose.
 | 21.1@déterminer | effacer-titres ; titre "Se maîtriser ?" |
 | 21.1@punissable | effacer-titres ; titre "Sinon : pas punissable" ambre |
 | 22.1 | scene-vide ; rembobiner ; personnage marc "Marc" turquoise gauche |
-| 22.1@maladie | etiquette etat "Maladie psychique grave" -0.5 1.6 |
+| 22.1@maladie | etiquette etat "Maladie psychique grave" 3.0 0.4 |
 | 22.1@gestes | bulle marc "Plus aucune prise" |
 | 22.2 | scene-vide ; batiment ; etage 1 vert ; etage 2 vert |
 | 22.3 | etage 3 gris |
@@ -109,7 +109,7 @@ Personnages : Marc turquoise, Julien rose.
 | 23.2 | effacer-titres ; titre "Une mesure reste possible" |
 | 23.3 | renvoi "vidéo 12" |
 | 24.1 | scene-vide ; article-retirer ; personnage marc "Marc" turquoise gauche ; bulle marc "En colère" |
-| 24.2 | batiment ; etage 1 vert ; etage 2 vert |
+| 24.2 | batiment 2.5 ; etage 1 vert ; etage 2 vert |
 | 24.3 | etage 3 vert ; repere-etage 3 vert |
 | 25.1 | retirer marc ; accent batiment |
 | 25.2@lésions | titre "Lésions corporelles simples" ; article "Art. 123 CP" |
@@ -121,10 +121,10 @@ Personnages : Marc turquoise, Julien rose.
 | 26.5 | question-etage 3 "Peut-on le reprocher ?" |
 | 26.6 | accent batiment |
 | 27.1 | scene-vide ; titre "Une question pour finir" |
-| 27.2 | effacer-titres ; decor escalier ; personnage marc "Marc" turquoise gauche ; placer marc 0 ; personnage julien "Julien" rose droite ; placer julien 3 |
-| 27.2@bouscule | marcher marc 4 ; etiquette geste "Sans le voir" -1.8 1.6 |
+| 27.2 | effacer-titres ; decor escalier ; personnage marc "Marc" turquoise gauche ; placer marc 0 ; personnage julien "Julien" rose droite ; placer julien 5 |
+| 27.2@bouscule | marcher marc 3 ; etiquette geste "Sans le voir" -1.8 1.6 |
 | 27.2@tombe | chute julien -1 |
 | 27.3 | scene-vide ; batiment ; etage-question 1 ; etage-question 2 ; etage-question 3 ; titre "Quel étage pose problème ?" |
 | 27.4 | renvoi "vidéo 4" |
-| 28.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Script et articles sur GitHub" |
+| 28.1 | scene-vide ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 28.2 | accent titre |

@@ -73,6 +73,7 @@ class Schemas(Scene):
         self.alertes = []
         self.personnages, self.paroles, self.bulles = {}, {}, {}
         self.titre = self.sous_titre = self.article = self.renvoi = None
+        self.arret = None
         self.batiment = self.livre = self.liste = self.cases = self.pyramide = None
         self.frise = self.colonnes = self.livres = None
         self.frise_points, self.mots_barres, self.fleches_retour = [], [], []
@@ -118,7 +119,11 @@ class Schemas(Scene):
             self.wait(instant - self.t)
 
     def a_l_ecran(self, m):
-        return m is not None and any(m is x or m in x.get_family() for x in self.mobjects)
+        """Vrai si l'objet, ou l'une de ses parties dessinées, est à l'écran (un groupe peut y être ajouté pièce par pièce)."""
+        if m is None:
+            return False
+        famille = {id(x) for top in self.mobjects for x in top.get_family()}
+        return id(m) in famille or any(id(x) in famille for x in m.family_members_with_points())
 
     # ----- règle des douze mots -----
     def mots_visibles(self):
@@ -152,7 +157,7 @@ class Schemas(Scene):
     # ----- chevauchements -----
     def elements_visibles(self):
         """(nom, objet) de chaque élément affiché, hors décor (les décors sont en fond, au trait atténué)."""
-        el = [("titre", self.titre), ("sous-titre", self.sous_titre), ("article", self.article),
+        el = [("titre", self.titre), ("sous-titre", self.sous_titre), ("article", self.article), ("arrêt", self.arret),
               ("renvoi", self.renvoi), ("repère", getattr(self, "repere", None)),
               ("livre", self.livre), ("pyramide", self.pyramide)]
         if self.colonnes:
@@ -184,6 +189,47 @@ class Schemas(Scene):
             if {na, nb} in ({k, f"bulle de {k}"},) or ({na, nb} == {k, f"nom de {k}"} and getattr(p, "derriere_meuble", False)):
                 return True
         return False
+
+    TEXTES = ("titre", "sous-titre", "article", "arrêt", "renvoi", "nom de ", "parole de ", "bulle de ", "étiquette ",
+              "liste ", "case ", "frise ", "mot barré ", "colonne ")
+
+    def textes_sur_decor(self):
+        """Un texte posé sur un trait du décor (façade, fenêtre, enseigne) : illisible, signalé."""
+        if self.decor is None or not self.a_l_ecran(self.decor):
+            return []
+        meubles = getattr(self.decor, "meubles", [])
+        points = []
+        for m in self.decor.family_members_with_points():
+            if any(m in mb.get_family() for mb in meubles):
+                continue
+            pts = m.get_anchors()
+            for a, b in zip(pts[:-1], pts[1:]):
+                for t in np.linspace(0, 1, 8):
+                    points.append(a + (b - a) * t)
+        if not points:
+            return []
+        pts = np.array(points)
+        for mb in meubles:
+            dedans = ((pts[:, 0] > mb.get_left()[0]) & (pts[:, 0] < mb.get_right()[0])
+                      & (pts[:, 1] > mb.get_bottom()[1]) & (pts[:, 1] < mb.get_top()[1]))
+            pts = pts[~dedans]
+        alertes = []
+        for nom, m in self.elements_visibles():
+            # Noms, mots-clés, paroles et bulles ont un fond opaque : ils passent devant le décor sans s'y mêler.
+            if not nom.startswith(self.TEXTES) or nom.startswith(("nom de ", "étiquette ", "parole de ", "bulle de ")):
+                continue
+            g, d, b, h = m.get_left()[0], m.get_right()[0], m.get_bottom()[1], m.get_top()[1]
+            dedans = (pts[:, 0] > g - 0.05) & (pts[:, 0] < d + 0.05) & (pts[:, 1] > b - 0.05) & (pts[:, 1] < h + 0.05)
+            if dedans.any():
+                alertes.append(f"{nom} sur le décor")
+        return alertes
+
+    def que_du_texte(self):
+        """Vrai si l'écran ne montre que du texte : ni personnage, ni décor, ni schéma, ni pictogramme."""
+        graphiques = [self.decor, self.batiment, self.frise, self.livre, self.pyramide, self.bouclier,
+                      self.livres and VGroup(*self.livres)]
+        graphiques += list(self.personnages.values()) + list(self.pictos.values())
+        return not any(m is not None and self.a_l_ecran(m) for m in graphiques)
 
     def chevauchements(self):
         """Deux éléments à moins de 0,1 l'un de l'autre, ou un élément dans la bande des sous-titres."""
@@ -228,11 +274,32 @@ class Schemas(Scene):
             total = self.mots_visibles()
             if total > 12:
                 self.alertes.append(f"{repere} : {total} mots affichés (maximum 12)")
-            self.alertes += [f"{repere} : {x}" for x in self.chevauchements()]
+            self.alertes += [f"{repere} : {x}" for x in self.chevauchements() + self.textes_sur_decor()]
+            self.pauvrete = getattr(self, "pauvrete", []) + [(instant, repere, self.que_du_texte())]
         self.attendre_jusqua(duree_totale)
         rapport = RACINE / "out" / (SLUG.replace("/", "--") + "--alertes-visuels.txt")
         rapport.parent.mkdir(exist_ok=True)
-        rapport.write_text("\n".join(self.alertes) + "\n" if self.alertes else "Aucune alerte.\n", encoding="utf-8")
+        # Passages où l'écran ne montre que du texte (la charte veut une image par idée) : signalés au-delà de 5 s.
+        pauvrete = getattr(self, "pauvrete", [])
+        bornes = [m[0] for m in pauvrete[1:]] + [duree_totale]
+        total = 0.0
+        for (debut, rep, texte_seul), fin in zip(pauvrete, bornes):
+            if texte_seul:
+                total += fin - debut
+        segments, courant = [], None
+        for (debut, rep, texte_seul), fin in zip(pauvrete, bornes):
+            if texte_seul:
+                courant = [courant[0], fin, courant[2]] if courant else [debut, fin, rep]
+            elif courant:
+                segments.append(courant); courant = None
+        if courant:
+            segments.append(courant)
+        for debut, fin, rep in segments:
+            if fin - debut > 5:
+                self.alertes.append(f"{rep} : que du texte pendant {fin - debut:.0f} s")
+        print(f"Texte seul : {total:.0f} s sur {duree_totale:.0f} s")
+        rapport.write_text(("\n".join(self.alertes) + "\n" if self.alertes else "Aucune alerte.\n")
+                           + f"Texte seul : {total:.0f} s sur {duree_totale:.0f} s\n", encoding="utf-8")
         print("\n".join(self.alertes) or "Aucune alerte de charte.")
 
     def executer(self, action, repere):
@@ -244,7 +311,7 @@ class Schemas(Scene):
 
     def scene_vide(self):
         repere = getattr(self, "repere", None)
-        garder = [m for m in (self.article, repere) if m is not None]
+        garder = [m for m in (self.article, getattr(self, "arret", None), repere) if m is not None]
         # Une silhouette derrière un meuble part d'abord, tant que le meuble la masque encore.
         caches = [p.silhouette for p in self.personnages.values() if getattr(p, "derriere_meuble", False)]
         if caches:
@@ -255,9 +322,11 @@ class Schemas(Scene):
         a_retirer = [m for m in self.mobjects if m not in garder]
         if a_retirer:
             self.jouer(*[FadeOut(m) for m in a_retirer], duree=0.3)
-        article, t, alertes = self.article, self.t, self.alertes
+        article, arret, t, alertes = self.article, getattr(self, "arret", None), self.t, self.alertes
+        pauvrete = getattr(self, "pauvrete", [])
         self.setup()
-        self.article, self.t, self.alertes, self.repere = article, t, alertes, repere
+        self.article, self.arret, self.t, self.alertes, self.repere = article, arret, t, alertes, repere
+        self.pauvrete = pauvrete
         self.traits = []
         return []
 
@@ -368,20 +437,45 @@ class Schemas(Scene):
         return [FadeIn(mot), Create(c.barre(mot))]
 
     # ----- actions : la loi -----
+    def placer_bas(self):
+        """Article et arrêt côte à côte, centrés en bas ; seul, chacun est centré. Renvoie les déplacements."""
+        blocs = [m for m in (self.article, self.arret) if m is not None]
+        largeur = sum(m.width for m in blocs) + 0.4 * (len(blocs) - 1)
+        x, anims = -largeur / 2, []
+        for m in blocs:
+            cible = x + m.width / 2
+            if self.a_l_ecran(m) and abs(m.get_x() - cible) > 0.01:
+                anims.append(m.animate.set_x(cible))
+            else:
+                m.set_x(cible)
+            x += m.width + 0.4
+        return anims
+
     def a_article(self, libelle):
         nouveau = c.BlocArticle(libelle)
-        if self.article is None:
-            self.article = nouveau
-            return [FadeIn(nouveau, shift=UP * 0.2)]
-        ancien = self.article
+        anciens = [FadeOut(self.article)] if self.article is not None else []
         self.article = nouveau
-        return [FadeOut(ancien), FadeIn(nouveau, shift=UP * 0.2)]
+        return anciens + self.placer_bas() + [FadeIn(nouveau, shift=UP * 0.2)]
+
+    def a_arret(self, libelle):
+        """Arrêt du Tribunal fédéral cité par la voix ou par l'audit : bloc ambre à côté de l'article."""
+        nouveau = c.BlocArret(libelle)
+        anciens = [FadeOut(self.arret)] if self.arret is not None else []
+        self.arret = nouveau
+        self.focus = nouveau
+        return anciens + self.placer_bas() + [FadeIn(nouveau, shift=UP * 0.2)]
+
+    def a_arret_retirer(self):
+        if self.arret is None:
+            return []
+        ancien, self.arret = self.arret, None
+        return [FadeOut(ancien)] + self.placer_bas()
 
     def a_article_retirer(self):
         if self.article is None:
             return []
         ancien, self.article = self.article, None
-        return [FadeOut(ancien)]
+        return [FadeOut(ancien)] + self.placer_bas()
 
     def a_article_etirer(self):
         self.focus = self.article
@@ -391,8 +485,9 @@ class Schemas(Scene):
         cadre = c.BlocArticle(self.article.libelle).cadre
         return [Transform(self.article.cadre, cadre)]
 
-    def a_livre(self, titre="Code pénal"):
-        self.livre = c.Livre(titre)
+    def a_livre(self, titre="Code pénal", x=None):
+        """Un recueil fermé ; au centre, ou à l'abscisse x (à côté d'une liste)."""
+        self.livre = c.Livre(titre, x=float(x) if x is not None else 0.0)
         self.focus = self.livre
         return [FadeIn(self.livre, shift=UP * 0.2)]
 
@@ -465,7 +560,8 @@ class Schemas(Scene):
         return [FadeIn(self.neige)]
 
     def a_picto(self, nom, x, y):
-        p = c.Picto(nom, [float(x), float(y), 0])
+        # « parlement:2 » : un deuxième pictogramme du même type, avec son propre nom.
+        p = c.Picto(nom.split(":")[0], [float(x), float(y), 0])
         self.pictos[nom] = p
         self.focus = p
         return [FadeIn(p, scale=0.6)]
@@ -583,7 +679,7 @@ class Schemas(Scene):
 
     def a_parole(self, ident, contenu):
         p = self.personnages[ident]
-        g = c.texte(contenu, c.T_CORPS, gras=True).next_to(p.silhouette, UP, buff=0.4)
+        g = c.avec_fond(c.texte(contenu, c.T_CORPS, gras=True)).next_to(p.silhouette, UP, buff=0.4)
         # Vers le centre de l'écran, d'après la place réelle du personnage (il a pu se déplacer),
         # puis ramenée dans le cadre.
         g.shift((LEFT if p.silhouette.get_center()[0] > 0 else RIGHT) * 1.2)
@@ -627,6 +723,13 @@ class Schemas(Scene):
     # ----- actions : l'infraction -----
     def a_batiment(self, *options):
         self.batiment = c.Batiment()
+        # « batiment 3.5 » : décalé sur le côté, à côté d'une liste.
+        decalage = next((float(o) for o in options if o.replace(".", "", 1).lstrip("-").isdigit()), None)
+        if decalage is not None:
+            self.batiment.shift(RIGHT * decalage)
+        # « petit » : réduit à 85 % (le corps des étages reste au-dessus du minimum de la charte), pied fixe.
+        if "petit" in options:
+            self.batiment.scale(0.85, about_point=[self.batiment.get_x(), c.Y_BATIMENT - 0.525, 0])
         self.batiment.vide = "vide" in options
         self.focus = self.batiment
         etapes = self.batiment.construire(vide=self.batiment.vide)
@@ -671,9 +774,10 @@ class Schemas(Scene):
             centre = [float(x), float(y), 0]
         else:
             centre = self.batiment.etages[1][0].get_right() + RIGHT * 1.4 if self.batiment else [0, 0.6, 0]
+        ancien = [FadeOut(self.bouclier)] if self.bouclier is not None and self.a_l_ecran(self.bouclier) else []
         self.bouclier = c.Bouclier(centre)
         self.focus = self.bouclier
-        return [FadeIn(self.bouclier, scale=0.6)]
+        return ancien + [FadeIn(self.bouclier, scale=0.6)]
 
     def a_bouclier_repousser(self):
         b = self.bouclier
@@ -711,7 +815,8 @@ class Schemas(Scene):
     def a_fleche(self, n):
         bas = c.Y_BATIMENT - 0.55
         haut = bas + 1.05 * int(n) - 0.15
-        fleche = c.Arrow([-3.0, bas, 0], [-3.0, haut, 0], color=c.ACCENT, stroke_width=6, buff=0)
+        x = self.batiment.get_left()[0] - 0.7 if self.batiment is not None else -3.0
+        fleche = c.Arrow([x, bas, 0], [x, haut, 0], color=c.ACCENT, stroke_width=6, buff=0)
         return [GrowArrow(fleche)]
 
     # ----- actions : listes, cases, colonnes -----

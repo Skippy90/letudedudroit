@@ -29,7 +29,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `article "Art. N CP"` | Bloc d'article centré en bas (remplace le précédent) |
 | `article-retirer` | Retire le bloc d'article |
 | `article-etirer` / `article-reprendre` | Le bloc s'étire puis reprend sa taille (interprétation et ses limites) |
-| `livre` [`"titre"`] / `livre-ouvrir` / `livre-chercher` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, parcouru (une bande ambre descend les lignes des deux pages), retiré |
+| `livre` [`"titre"` [`X`]] / `livre-ouvrir` / `livre-chercher` / `livre-retirer` | Un recueil fermé (« Code pénal » par défaut ; un titre long passe sur plusieurs lignes), ouvert, parcouru (une bande ambre descend les lignes des deux pages), retiré |
 | `livres "…" "…" "…"` | Plusieurs recueils côte à côte |
 | `livres-surligner N` | Met en avant le recueil N |
 | `personnage ID "Nom" COULEUR POSITION` | Silhouette ; couleurs : `bleu_clair`, `ambre_pale`, `rose`, `violet`, `turquoise` ; positions : `gauche`, `centre-gauche`, `centre`, `centre-droite`, `droite` |
@@ -57,7 +57,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage) |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée) ; `NOM:2` pour un deuxième pictogramme du même type |
 | `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
@@ -86,3 +86,16 @@ Il évite aussi les plans fixes de plus de quatre secondes : le dernier élémen
 ## Chevauchements
 
 Après chaque moment, le moteur vérifie qu'aucun élément affiché n'est à moins de 0,1 d'un autre (titres, article, repère, silhouettes et leurs noms, paroles, bulles, étiquettes, pictos, listes, cases, livres, frise) et que rien n'entre dans la bande des sous-titres. Les contacts voulus (une bulle et sa silhouette, un nom inscrit sur un meuble) sont exclus. Chaque contact est signalé dans `out/<slug>--alertes-visuels.txt`.
+
+## Jurisprudence à l'écran
+
+`arret "ATF 135 IV 152"` / `arret-retirer` : bloc au cadre ambre, en bas, à côté du bloc d'article (les deux se centrent ensemble). Il survit aux `scene-vide`, comme l'article. Chaque arrêt affiché doit figurer dans l'audit de la vidéo.
+
+## Mise en page
+
+- `batiment X` [`petit`] : bâtiment décalé de X sur le côté (à côté d'une liste) ; `petit` le réduit à 85 %.
+- Les noms des personnages, les mots-clés et les paroles ont un fond noir : les traits du décor passent derrière eux.
+
+## Contrôles automatiques
+
+Le rapport `out/<slug>--alertes-visuels.txt` signale aussi les textes (titres, listes, cases, frise) posés sur un trait du décor, et chaque passage de plus de 5 s où l'écran ne montre que du texte (ni personnage, ni décor, ni schéma, ni pictogramme) ; sa dernière ligne donne le total de « texte seul ».

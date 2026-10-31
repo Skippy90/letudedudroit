@@ -31,21 +31,21 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 5.1 | etiquette-retirer blesse ; titre "Trois actes interdits" |
 | 5.2@poids | sous-titre "Le même poids ?" |
 | 5.3@crime | effacer-titres ; etiquette q1 "Crime ?" -4.4 1.0 |
-| 5.4@délit | etiquette q2 "Délit ?" 0 1.0 |
+| 5.4@délit | etiquette q2 "Délit ?" -0.6 1.0 |
 | 5.5@contravention | etiquette q3 "Contravention ?" 4.4 1.0 |
 | 5.6@intuition | accent ines ; accent noah ; accent yann |
 | 6.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
 | 6.2@typique | etage 1 vert |
 | 6.2@illicite | etage 2 vert |
 | 6.2@coupable | etage 3 vert |
-| 7.1 | scene-vide ; titre "Pas toutes égales" |
+| 7.1 | scene-vide ; personnage ines "Inès" rose gauche ; personnage noah "Noah" turquoise centre ; personnage yann "Yann" bleu_clair droite ; titre "Pas toutes égales" |
 | 7.2@catégories | titre "Trois catégories" |
-| 8.1@crimes | liste-ajouter "1. Crime" |
+| 8.1@crimes | retirer ines ; retirer noah ; retirer yann ; liste-ajouter "1. Crime" ; livre "Code pénal" 3.8 |
 | 8.2@délits | liste-ajouter "2. Délit" |
 | 8.3@contraventions | liste-ajouter "3. Contravention" |
-| 9.1@impression | mot-barre "Impression" |
-| 9.2@colère | mot-barre "Colère" |
-| 9.3@règle | effacer-titres ; repere-liste "Crime" "Délit" "Contravention" |
+| 9.1@impression | mot-barre "Impression" -0.2 0.9 |
+| 9.2@colère | mot-barre "Colère" -0.2 -0.3 |
+| 9.3@règle | effacer-titres ; livre-retirer ; repere-liste "Crime" "Délit" "Contravention" |
 | 9.3@loi | titre "Une règle écrite" ambre |
 | 10.1 | scene-vide ; livre |
 | 10.1@dix | article "Art. 10 CP" |
@@ -61,9 +61,9 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 13.1@au | zone 0 0.5 vert ; titre "3 ans au plus : délit" |
 | 14.1@article | article "Art. 103 CP" |
 | 14.2@contravention | repere-marquer 2 neutre ; repere-marquer 3 ambre ; titre "Amende : contravention" |
-| 15.1 | scene-vide ; repere-marquer 3 neutre ; article-retirer ; liste-ajouter "Peine privative de liberté" |
-| 15.2@pécuniaire | liste-ajouter "Peine pécuniaire" |
-| 15.3@amende | liste-ajouter "Amende" ; liste-surligner 3 |
+| 15.1 | scene-vide ; repere-marquer 3 neutre ; article-retirer ; liste-ajouter "Peine privative de liberté" ; picto prison 2.6 1.0 |
+| 15.2@pécuniaire | liste-ajouter "Peine pécuniaire" ; picto pieces 2.6 -0.1 |
+| 15.3@amende | liste-ajouter "Amende" ; liste-surligner 3 ; picto pieces:2 2.6 -1.2 |
 | 15.4@onze | renvoi "vidéo 11" |
 | 16.1 | scene-vide ; decor rue ; personnage ines "Inès" rose gauche ; placer ines -3 |
 | 16.2@téléphone | marcher ines -2 ; picto telephone -2.35 -0.9 |
@@ -105,23 +105,23 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 26.1@contravention | etiquette c3 "Contravention" 4.8 0.0 ; repere-marquer 3 ambre |
 | 26.2@rue | etiquette lieu "Même rue" -2.6 2.45 |
 | 26.3@niveaux | accent ines ; accent noah ; accent yann |
-| 27.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Pas qu'une étiquette" |
+| 27.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; personnage ines "Inès" rose gauche ; personnage noah "Noah" turquoise centre-gauche ; personnage yann "Yann" bleu_clair centre ; titre "Pas qu'une étiquette" |
 | 27.2@différemment | sous-titre "Des règles différentes" |
-| 28.1@tentative | effacer-titres ; titre "1. La tentative" |
+| 28.1@tentative | retirer ines ; retirer noah ; retirer yann ; effacer-titres ; titre "1. La tentative" |
 | 28.2 | effacer-titres ; decor rue ; personnage yann "Yann" bleu_clair centre-droite ; placer yann 1 ; personnage ami "Un ami" ambre_pale droite ; placer ami 3 |
 | 28.2@essayé | bulle yann "Une gifle ?" |
 | 28.2@toucher | marcher yann 2 |
-| 29.1@contravention | effacer-bulle yann ; repere-marquer 3 ambre ; etiquette tentative "Tentative" 1.6 1.7 |
+| 29.1@contravention | effacer-bulle yann ; repere-marquer 3 ambre ; etiquette tentative "Tentative" 1.6 1.0 |
 | 29.1@expressément | etiquette loi "Seulement si prévu" -2.6 2.45 |
 | 29.2@article | article "Art. 105 CP" |
 | 30.1@rien | etiquette-retirer loi ; etiquette tentative "Rien pour les voies de fait" -0.8 1.7 |
 | 30.2@puni | scene-vide ; personnage yann "Yann" bleu_clair centre ; titre "Yann : pas puni" |
-| 30.3@crimes | retirer yann ; sous-titre "Crimes et délits : autrement" |
+| 30.3@crimes | sous-titre "Crimes et délits : autrement" |
 | 30.4@neuf | renvoi "vidéo 9" |
-| 31.1 | scene-vide ; titre "2. Pas de sursis" |
+| 31.1 | scene-vide ; titre "2. Pas de sursis" ; picto prison 0 0.2 |
 | 31.1@contraventions | sous-titre "pour les contraventions" |
-| 31.2@sursis | effacer-titres ; personnage yann "Yann" bleu_clair gauche ; bulle yann "Se tenir tranquille" ; renvoi "vidéo 11" |
-| 32.1 | scene-vide ; titre "3. Un plafond" |
+| 31.2@sursis | effacer-titres ; picto-retirer prison ; personnage yann "Yann" bleu_clair gauche ; bulle yann "Se tenir tranquille" ; renvoi "vidéo 11" |
+| 32.1 | scene-vide ; titre "3. Un plafond" ; picto pieces 0 0.3 |
 | 32.2@dix | sous-titre "Dix mille francs au plus" |
 | 32.3@article | article "Art. 106 CP" ; accent titre |
 | 33.1 | scene-vide ; article-retirer ; titre "La prescription" |
@@ -135,30 +135,30 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 35.2@ans | repere 0.75 "15 ans" ; point 0.75 "Inès" |
 | 35.3@article | article "Art. 97 CP" |
 | 35.4@grave | accent frise ; renvoi "vidéo 12" |
-| 36.1 | scene-vide ; repere-marquer 1 neutre ; article-retirer ; titre "Le piège classique" |
+| 36.1 | scene-vide ; repere-marquer 1 neutre ; article-retirer ; titre "Le piège classique" ; personnage juge "Juge" turquoise gauche |
 | 36.2@prononcée | sous-titre "La peine prononcée décide" |
 | 36.3@faux | barrer |
 | 37.1 | scene-vide ; rembobiner ; decor rue ; personnage ines "Inès" rose gauche ; placer ines -2 |
 | 37.1@pécuniaire | etiquette prononcee "Peine pécuniaire" -3.2 1.7 |
 | 37.2@crime | repere-marquer 1 ambre ; titre "Son vol reste un crime" |
-| 38.1 | scene-vide ; colonnes "Prévue" "Prononcée" |
+| 38.1 | scene-vide ; colonnes "Prévue" "Prononcée" ; picto parlement -3.5 -0.6 ; picto document 3.5 -0.6 |
 | 38.1@maximum | colonne-accent 1 |
 | 38.2@juge | colonne-eteindre 2 |
 | 39.1@passible | article "Art. 10 CP" ; titre "« passible »" ambre |
 | 39.2@possible | sous-titre "La peine possible" |
-| 40.1 | scene-vide ; repere-retirer ; article-retirer ; titre "Retenons" |
-| 40.2@crime | effacer-titres ; liste-ajouter "Plus de 3 ans : crime" |
-| 41.1@délit | liste-ajouter "3 ans au plus : délit" |
+| 40.1 | scene-vide ; repere-retirer ; article-retirer ; titre "Retenons" ; frise ; repere 0.5 "3 ans" |
+| 40.2@crime | effacer-titres ; liste-ajouter "Plus de 3 ans : crime" ; zone 0.5 1 ambre |
+| 41.1@délit | liste-ajouter "3 ans au plus : délit" ; zone 0 0.5 vert |
 | 41.2@contravention | liste-ajouter "Amende : contravention" |
-| 42.1 | scene-vide ; titre "La catégorie change" |
+| 42.1 | scene-vide ; titre "La catégorie change" ; personnage ines "Inès" rose gauche |
 | 42.1@tentative | effacer-titres ; case "Tentative" |
 | 42.1@sursis | case "Sursis" |
 | 42.1@prescription | case "Prescription" |
 | 42.2@réflexe | titre "Le réflexe" |
 | 42.3 | sous-titre "Trouver l'article, lire la peine" |
 | 43.1 | scene-vide ; titre "Une question pour finir" |
-| 43.2 | sous-titre "Seulement une peine pécuniaire" |
+| 43.2 | sous-titre "Seulement une peine pécuniaire" ; picto pieces -4.0 0.3 |
 | 43.3 | cases "Crime" "Délit" "Contravention" ; cocher 1 question ; cocher 2 question ; cocher 3 question |
 | 43.4@commentaire | accent cases |
-| 44.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 44.1 | scene-vide ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 44.2 | accent titre |

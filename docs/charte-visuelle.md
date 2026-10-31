@@ -35,6 +35,8 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 | Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée ambre de la tension entre deux personnes) |
 | Où en est le raisonnement | Petit bâtiment à trois étages en haut à droite, présent du moment où les trois étages sont posés jusqu'à la fin ; ses étages suivent le cas principal (ambre : étage en cours d'examen ; vert : franchi) |
 | Une liste de conditions qui structure toute la vidéo | Pense-bête en haut à droite, une case et un mot par condition (vidéo 2 : « Texte », « Précis », « Avant ») ; il remplace le petit bâtiment quand la vidéo ne suit pas les trois étages ; mêmes couleurs (ambre : condition examinée ; gris : elle manque dans le cas ; vert : remplie) |
+| Un arrêt du Tribunal fédéral | Bloc « ATF … » au cadre ambre, en bas, à côté du bloc d'article, affiché pendant qu'on parle de cette jurisprudence |
+| Une idée sans personnage | Pictogramme au trait plutôt qu'un écran de texte seul : prison (peine privative de liberté), pièces (argent), document (contrat), danger, édifice à colonnes (la loi votée), corde (cordée) |
 | Ce qui est dit | Sous-titres incrustés en bas de l'image, sept mots au plus, coupés de préférence à la ponctuation, calés sur la voix ; police Inter, blanc cassé, même échelle que les plus petits textes |
 
 Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur les marches ; leur nom garde sa taille.

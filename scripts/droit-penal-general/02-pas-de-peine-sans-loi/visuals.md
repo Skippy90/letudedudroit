@@ -42,23 +42,23 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 7.3@phrase | etiquette phrase "Une seule phrase" 0 2.35 |
 | 8.1 | etiquette-retirer phrase ; livre-ouvrir |
 | 8.2+1.2 | titre "expressément réprimé par la loi" mot-a-mot |
-| 9.1 | livre-retirer ; titre "Pas de loi, pas de peine" |
+| 9.1 | titre "Pas de loi, pas de peine" |
 | 9.2@légalité | sous-titre "Le principe de la légalité" |
-| 10.1 | effacer-titres ; colonnes "Peine" "Mesure" ; colonne-accent 1 |
+| 10.1 | effacer-titres ; livre-retirer ; colonnes "Peine" "Mesure" ; colonne-accent 1 ; picto prison -3.5 -0.6 |
 | 10.1@mesure | colonne-accent 2 |
 | 10.1@traitement | etiquette traitement "Par exemple, un traitement" 3.5 -0.4 |
 | 10.2@douze | renvoi "vidéo 12" |
-| 11.1 | scene-vide ; titre "Trois exigences" |
+| 11.1 | scene-vide ; titre "Trois exigences" ; livre "Code pénal" 3.0 |
 | 11.2@texte | liste-ajouter "1. Un texte" |
 | 11.3@décrit | liste-ajouter "2. Qui décrit l'acte" |
 | 11.4@existait | liste-ajouter "3. Qui existait déjà" |
-| 12.1 | effacer-titres ; repere-liste "Texte" "Précis" "Avant" |
-| 12.1@texte | repere-marquer 1 ambre ; titre "Un texte de loi" |
+| 12.1 | effacer-titres ; livre-retirer ; repere-liste "Texte" "Précis" "Avant" |
+| 12.1@texte | repere-marquer 1 ambre ; titre "Un texte de loi" ; picto parlement -4.0 0.2 |
 | 12.2@avis | mot-barre "L'avis du juge" 0 0.9 |
 | 12.3@morale | mot-barre "La morale" 0 -0.5 |
 | 12.4 | scene-vide ; personnage juge "Juge" turquoise centre |
-| 12.4@inventer | titre "Il n'invente pas d'infraction" |
-| 13.1 | scene-vide ; livre ; titre "Un article contre le mensonge ?" |
+| 12.4@inventer | titre "Il n'invente pas d'infraction" ; arret "ATF 103 IV 129" |
+| 13.1 | scene-vide ; arret-retirer ; livre ; titre "Un article contre le mensonge ?" |
 | 13.1@punit | livre-ouvrir |
 | 13.2 | livre-chercher |
 | 13.2@mentir | sous-titre "Aucune infraction « mentir »" |
@@ -84,8 +84,8 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 18.2@témoin | marcher tom -1 |
 | 19.1@article | etiquette temoin "Témoin" -1.6 0.3 ; article "Art. 307 CP" |
 | 19.2@témoin | accent tom |
-| 19.2@déposition | etiquette depo "Déposition fausse" -1.6 0.95 |
-| 19.2@justice | picto coche 1.0 0.95 |
+| 19.2@déposition | etiquette depo "Déposition fausse" -1.6 1.25 |
+| 19.2@justice | picto coche 1.0 1.25 |
 | 20.1 | scene-vide ; article-retirer ; rembobiner |
 | 20.2 | decor appartement ; personnage sami "Sami" bleu_clair gauche ; placer sami -2 ; personnage tom "Tom" ambre_pale droite ; placer tom 2 |
 | 20.2@habile | bulle tom "Un plan habile" |
@@ -103,19 +103,19 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 23.2@argent | cocher 2 gris |
 | 23.3 | effacer-bulle tom ; repere-marquer 2 gris ; titre "Aucune description ne correspond" |
 | 24.1 | scene-vide ; personnage juge "Juge" turquoise gauche ; livre |
-| 24.1@interpréter | livre-ouvrir |
+| 24.1@interpréter | livre-ouvrir ; arret "ATF 103 IV 129" |
 | 24.1@largement | etiquette interpreter "Interpréter" 0 2.2 |
 | 24.2@ajouter | mot-barre "Ajouter" 4.6 0.4 |
-| 24.3 | scene-vide ; colonnes "Mensonge de Tom" "Escroquerie" |
+| 24.3 | scene-vide ; personnage tom "Tom" ambre_pale gauche ; picto pieces 3.0 0.4 ; etiquette e "Escroquerie ?" 3.0 1.3 ; arret "ATF 137 IV 99" |
 | 24.3@ressemble | titre "Ressembler ne suffit pas" |
-| 25.1 | scene-vide ; cases "Tromperie astucieuse" "Préjudice financier" "Volonté de s'enrichir" ; cocher 1 vert ; cocher 2 vert |
+| 25.1 | scene-vide ; arret-retirer ; picto pieces -4.5 0.2 ; cases "Tromperie astucieuse" "Préjudice financier" "Volonté de s'enrichir" ; cocher 1 vert ; cocher 2 vert |
 | 25.1@description | cocher 3 gris |
 | 25.2 | titre "Même proche" |
 | 25.3 | titre "Même choquant" |
 | 26.1 | scene-vide ; repere-marquer 3 ambre ; titre "Exister au moment de l'acte" |
 | 26.1@moment | frise |
 | 27.1 | effacer-titres ; titre "Pure fiction" ambre |
-| 27.2@parlement | repere 0.65 "Nouvelle loi" |
+| 27.2@parlement | repere 0.65 "Nouvelle loi" ; picto parlement 4.2 0.6 |
 | 28.1@samedi | point 0.25 "Mensonge" |
 | 28.2 | fleche-retour 0.65 0.25 casse |
 | 28.3 | titre "Non" ambre ; repere-marquer 3 gris |
@@ -136,12 +136,12 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 33.2@générales | accent livres |
 | 34.1@circulation | livres-surligner 2 |
 | 34.2@nonante | article "Art. 90 LCR" |
-| 35.1 | scene-vide ; article-retirer ; colonnes "Genève" "Vaud" |
+| 35.1 | scene-vide ; article-retirer ; colonnes "Genève" "Vaud" ; picto parlement -3.5 -0.5 ; picto parlement:2 3.5 -0.5 |
 | 35.1@punir | titre "Les cantons aussi" |
 | 35.2@article | article "Art. 335 CP" |
 | 36.1@cantonales | titre "Règles cantonales" ambre |
-| 36.2@genève | etiquette ge "Puni" -3.5 -0.5 |
-| 36.2@vaud | etiquette vd "Pas forcément" 3.5 -0.5 |
+| 36.2@genève | etiquette ge "Puni" -3.5 -1.6 |
+| 36.2@vaud | etiquette vd "Pas forcément" 3.5 -1.6 |
 | 37.1 | scene-vide ; article-retirer ; titre "Partout : il faut un texte" |
 | 37.2 | effacer-titres ; livres "Code pénal" "Circulation routière" "Autres lois" |
 | 38.1 | scene-vide ; decor appartement ; personnage sami "Sami" bleu_clair gauche ; placer sami -2 |
@@ -149,10 +149,10 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 38.3 | personnage tom "Tom" ambre_pale droite ; placer tom 1 |
 | 38.3@réprime | etiquette constat "Aucun texte" 0.6 1.2 |
 | 38.4@punir | etiquette peine "Pas de peine" 0.6 0.5 |
-| 39.1 | scene-vide ; colonnes "Morale" "Loi pénale" |
-| 39.1@bien | colonne-accent 1 |
-| 39.2@occupe | colonne-eteindre 2 |
-| 40.1 | scene-vide ; article "Art. 1 CP" ; titre "Les trois exigences" ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre |
+| 39.1 | scene-vide ; decor appartement ; personnage sami "Sami" bleu_clair gauche ; placer sami -2 ; personnage tom "Tom" ambre_pale droite ; placer tom 1 |
+| 39.1@bien | etiquette bien "Pas bien agi" 1.6 1.7 |
+| 39.2@occupe | etiquette dp "Hors du droit pénal" -1.4 2.45 |
+| 40.1 | scene-vide ; article "Art. 1 CP" ; picto parlement 2.2 0.4 ; titre "Les trois exigences" ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre |
 | 40.2 | effacer-titres ; liste-ajouter "1. Un texte" ; repere-marquer 1 ambre |
 | 40.3@décrit | liste-ajouter "2. Qui décrit l'acte" ; repere-marquer 2 ambre |
 | 40.4@existait | liste-ajouter "3. Qui existait déjà" ; repere-marquer 3 ambre |
@@ -164,5 +164,5 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 43.1 | questions |
 | 43.2@date | accent frise |
 | 43.3 | titre "Réponse en commentaire" |
-| 44.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 44.1 | scene-vide ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 44.2 | accent titre |

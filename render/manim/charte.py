@@ -37,8 +37,8 @@ POLICE = "Inter"
 T_TITRE, T_SOUS_TITRE, T_CORPS, T_PETIT = 58, 42, 40, 34
 
 X_POSITIONS = {"gauche": -4.5, "centre-gauche": -2.2, "centre": 0.0, "centre-droite": 2.2, "droite": 4.5}
-Y_TITRE, Y_SOUS_TITRE = 3.15, 2.35
-Y_PERSONNAGE = 0.6
+Y_TITRE, Y_SOUS_TITRE = 3.15, 2.3
+Y_PERSONNAGE = 0.45
 Y_FRISE = -1.3
 # Bloc d'article au-dessus du bandeau des sous-titres (bas de l'image, environ 70 px sur 1080).
 Y_ARTICLE = -2.85
@@ -48,6 +48,13 @@ Y_BATIMENT = -1.75
 
 def texte(contenu, taille=T_CORPS, couleur=TEXTE, gras=False):
     return Text(contenu, font=POLICE, font_size=taille, color=couleur, weight="BOLD" if gras else "NORMAL")
+
+
+def avec_fond(mob, buff=0.08):
+    """Texte posé sur un fond noir légèrement transparent : les traits du décor ne le traversent pas."""
+    fond = RoundedRectangle(corner_radius=0.06, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
+                            stroke_width=0, fill_color=FOND, fill_opacity=0.85).move_to(mob)
+    return VGroup(fond, mob)
 
 
 def mots(contenu: str) -> int:
@@ -64,7 +71,7 @@ class Personnage(VGroup):
                                  fill_color=couleur, fill_opacity=1, stroke_width=0)
         corps.next_to(tete, DOWN, buff=0.08)
         silhouette = VGroup(tete, corps)
-        etiquette = texte(nom, T_PETIT).next_to(silhouette, DOWN, buff=0.2)
+        etiquette = avec_fond(texte(nom, T_PETIT)).next_to(silhouette, DOWN, buff=0.12)
         super().__init__(silhouette, etiquette)
         self.silhouette, self.etiquette, self.nom = silhouette, etiquette, nom
         self.move_to([X_POSITIONS[position], Y_PERSONNAGE - 0.2, 0])
@@ -81,6 +88,19 @@ class BlocArticle(VGroup):
         etiquette = texte(libelle, T_CORPS, gras=True)
         cadre = RoundedRectangle(corner_radius=0.12, width=etiquette.width + 0.9, height=0.85,
                                  color=TEXTE, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
+        etiquette.move_to(cadre)
+        super().__init__(cadre, etiquette)
+        self.move_to([0, Y_ARTICLE, 0])
+        self.cadre, self.libelle = cadre, libelle
+
+
+class BlocArret(VGroup):
+    """La jurisprudence : bloc « ATF … » au cadre ambre, en bas, à côté du bloc d'article."""
+
+    def __init__(self, libelle):
+        etiquette = texte(libelle, T_PETIT, TEXTE, gras=True)
+        cadre = RoundedRectangle(corner_radius=0.12, width=etiquette.width + 0.7, height=0.75,
+                                 color=ACCENT, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
         etiquette.move_to(cadre)
         super().__init__(cadre, etiquette)
         self.move_to([0, Y_ARTICLE, 0])
@@ -375,7 +395,7 @@ class Escalier(VGroup):
                                  **DECOR) for k in range(4)])
         porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
         poignee = Dot([-5.35, Y_SOL + 1.2, 0], radius=0.05, color=TEXTE, fill_opacity=0.35)
-        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.3, 0])
+        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.05, 0])
         croisillon = VGroup(Line(self.fenetre.get_top(), self.fenetre.get_bottom(), **DECOR),
                             Line(self.fenetre.get_left(), self.fenetre.get_right(), **DECOR))
         super().__init__(sol, marches, rampe, montants, porte, poignee, self.fenetre, croisillon)
@@ -448,6 +468,44 @@ class Picto(VGroup):
             buches = VGroup(Line([-0.45, -0.3, 0], [0.45, -0.18, 0], color=TEXTE, stroke_width=6),
                             Line([-0.45, -0.18, 0], [0.45, -0.3, 0], color=TEXTE, stroke_width=6))
             elements = [flamme, buches]
+        elif nom == "prison":
+            # Peine privative de liberté : une fenêtre à barreaux.
+            cadre = RoundedRectangle(corner_radius=0.08, width=1.1, height=1.1, color=TEXTE, stroke_width=4)
+            barreaux = VGroup(*[Line([-0.33 + 0.22 * k, 0.55, 0], [-0.33 + 0.22 * k, -0.55, 0], color=TEXTE, stroke_width=4)
+                                for k in range(4)])
+            elements = [cadre, barreaux]
+        elif nom == "pieces":
+            # Argent (peine pécuniaire, amende, réparation) : trois pièces empilées.
+            elements = [Ellipse(width=0.9, height=0.32, color=ACCENT, stroke_width=4, fill_color=SURFACE, fill_opacity=1)
+                        .shift(UP * 0.16 * k) for k in range(3)]
+        elif nom == "document":
+            # Un écrit (contrat, plainte) : feuille à lignes et signature.
+            feuille = Polygon([-0.4, 0.55, 0], [0.22, 0.55, 0], [0.4, 0.37, 0], [0.4, -0.55, 0], [-0.4, -0.55, 0],
+                              color=TEXTE, stroke_width=4)
+            lignes = VGroup(*[Line([-0.26, 0.3 - 0.18 * k, 0], [0.26, 0.3 - 0.18 * k, 0], color=GRIS, stroke_width=3)
+                              for k in range(3)])
+            from manim import VMobject
+            signature = VMobject(color=ACCENT, stroke_width=4)
+            signature.set_points_smoothly([[-0.25, -0.35, 0], [-0.1, -0.22, 0], [0.0, -0.38, 0], [0.12, -0.25, 0], [0.28, -0.33, 0]])
+            elements = [feuille, lignes, signature]
+        elif nom == "danger":
+            triangle = Polygon([0, 0.55, 0], [0.6, -0.45, 0], [-0.6, -0.45, 0], color=ACCENT, stroke_width=5)
+            point = VGroup(Line([0, 0.25, 0], [0, -0.12, 0], color=ACCENT, stroke_width=6),
+                           Dot([0, -0.27, 0], radius=0.05, color=ACCENT))
+            elements = [triangle, point]
+        elif nom == "parlement":
+            # La loi votée : un édifice à colonnes, générique.
+            fronton = Polygon([-0.75, 0.3, 0], [0.75, 0.3, 0], [0, 0.65, 0], color=TEXTE, stroke_width=4)
+            colonnes = VGroup(*[Line([-0.55 + 0.37 * k, 0.25, 0], [-0.55 + 0.37 * k, -0.4, 0], color=TEXTE, stroke_width=4)
+                                for k in range(4)])
+            socle = Line([-0.8, -0.48, 0], [0.8, -0.48, 0], color=TEXTE, stroke_width=5)
+            elements = [fronton, colonnes, socle]
+        elif nom == "corde":
+            # La cordée : une corde qui relie deux points d'ancrage.
+            from manim import VMobject
+            corde = VMobject(color=ACCENT, stroke_width=5)
+            corde.set_points_smoothly([[-0.8, 0.3, 0], [-0.4, -0.1, 0], [0, 0.2, 0], [0.4, -0.1, 0], [0.8, 0.3, 0]])
+            elements = [corde, Dot([-0.8, 0.3, 0], radius=0.08, color=TEXTE), Dot([0.8, 0.3, 0], radius=0.08, color=TEXTE)]
         elif nom == "bouteille":
             corps = RoundedRectangle(corner_radius=0.08, width=0.3, height=0.55, color=ACCENT, stroke_width=4)
             col = Rectangle(width=0.12, height=0.25, color=ACCENT, stroke_width=4).next_to(corps, UP, buff=0)
@@ -473,8 +531,8 @@ class Etiquette(VGroup):
     """Mot-clé court, en ambre, posé près de ce dont il parle (« Lausanne », « Un soir d'hiver »)."""
 
     def __init__(self, contenu, position):
-        mot = texte(contenu, T_PETIT, ACCENT)
-        super().__init__(mot)
+        mot = avec_fond(texte(contenu, T_PETIT, ACCENT))
+        super().__init__(*mot)
         self.move_to(position)
 
 
