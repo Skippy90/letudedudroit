@@ -157,10 +157,10 @@ Personnages : Sami bleu clair, Tom ambre pâle, la sœur de Sami rose, le juge t
 | 40.3@décrit | liste-ajouter "2. Qui décrit l'acte" ; repere-marquer 2 ambre |
 | 40.4@existait | liste-ajouter "3. Qui existait déjà" ; repere-marquer 3 ambre |
 | 41.1 | scene-vide ; article-retirer ; repere-retirer ; titre "Une question pour finir" |
-| 41.2 | effacer-titres ; personnage nora "Nora" violet centre ; frise |
+| 41.2 | effacer-titres ; personnage nora "Nora" violet centre-droite haut ; frise |
 | 41.2@nora | point 0.15 "1er mars" |
 | 42.1@juin | repere 0.5 "1er juin : en vigueur" |
-| 42.2@juillet | point 0.8 "1er juillet" |
+| 42.2@juillet | point 0.92 "1er juillet" |
 | 43.1 | questions |
 | 43.2@date | accent frise |
 | 43.3 | titre "Réponse en commentaire" |

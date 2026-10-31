@@ -174,6 +174,9 @@ class Schemas(Scene):
         el += [(f"case {i}", l) for i, l in enumerate(self.cases.lignes, 1)] if self.cases else []
         el += [(f"livre {i}", l) for i, l in enumerate(self.livres, 1)] if self.livres else []
         el += [(f"frise {g[1].original_text}", g[1]) for g in self.frise_points]
+        el += [(f"repère de frise {g[1].original_text}", g[0]) for g in self.frise_points]
+        if self.frise is not None:
+            el.append(("ligne de frise", self.frise.ligne))
         el += [(f"mot barré {m.original_text}", m) for m in self.mots_barres]
         if self.batiment:
             el.append(("bâtiment", self.batiment))
@@ -182,6 +185,17 @@ class Schemas(Scene):
 
     def voulu(self, na, nb):
         """Contacts prévus par la charte : la bulle part de la tête, le nom s'inscrit sur le meuble."""
+        # Un point et un repère posés au même endroit de la frise se croisent.
+        if na.startswith("repère de frise ") and nb.startswith("repère de frise "):
+            return True
+        # La ligne de frise porte ses repères et ses points.
+        if "ligne de frise" in (na, nb) and any(n.startswith("repère de frise ") for n in (na, nb)):
+            return True
+        # Le trait d'un repère de frise touche son propre libellé.
+        if {na, nb} and any(n.startswith("repère de frise ") for n in (na, nb)):
+            autre = nb if na.startswith("repère de frise ") else na
+            if autre == "frise " + (na if na.startswith("repère de frise ") else nb)[len("repère de frise "):]:
+                return True
         # Le ballon part du pied d'une silhouette, ou la touche.
         objet = next((n for n in ("picto ballon", "picto bouteille") if n in (na, nb)), None)
         if objet and ({na, nb} - {objet}) & set(self.personnages):
@@ -536,8 +550,11 @@ class Schemas(Scene):
         return anims
 
     # ----- actions : personnes -----
-    def a_personnage(self, ident, nom, couleur, position):
+    def a_personnage(self, ident, nom, couleur, position, *options):
         p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position)
+        # « haut » : un peu plus haut, pour laisser la place à une frise en dessous.
+        if "haut" in options:
+            p.shift(UP * 0.45)
         anims = [FadeOut(self.personnages[ident])] if ident in self.personnages else []
         self.personnages[ident] = p
         self.focus = p
@@ -914,8 +931,9 @@ class Schemas(Scene):
         return [forme.animate.set_fill(c.ETATS[etat], opacity=0.85)]
 
     # ----- actions : le temps -----
-    def a_frise(self):
-        self.frise = c.Frise()
+    def a_frise(self, *options):
+        # « bas » : plus bas, sous une liste.
+        self.frise = c.Frise(c.Y_FRISE - 0.45 if "bas" in options else c.Y_FRISE)
         self.focus = self.frise
         return [GrowArrow(self.frise.ligne)]
 
@@ -950,8 +968,8 @@ class Schemas(Scene):
         f = self.frise.fleche_retour(de, vers, c.TEXTE)
         self.play(Create(f), run_time=0.7)
         x = self.frise.x((float(de) + float(vers)) / 2)
-        croix = VGroup(Line([x - 0.3, c.Y_FRISE + 1.5, 0], [x + 0.3, c.Y_FRISE + 2.1, 0], color=c.TEXTE, stroke_width=8),
-                       Line([x - 0.3, c.Y_FRISE + 2.1, 0], [x + 0.3, c.Y_FRISE + 1.5, 0], color=c.TEXTE, stroke_width=8))
+        croix = VGroup(Line([x - 0.3, self.frise.y + 1.5, 0], [x + 0.3, self.frise.y + 2.1, 0], color=c.TEXTE, stroke_width=8),
+                       Line([x - 0.3, self.frise.y + 2.1, 0], [x + 0.3, self.frise.y + 1.5, 0], color=c.TEXTE, stroke_width=8))
         self.focus = croix
         self.fleches_retour = [f, croix]
         return [f.animate.set_color(c.GRIS), Create(croix)]
