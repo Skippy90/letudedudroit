@@ -408,6 +408,9 @@ class Schemas(Scene):
         nouveau = c.texte(contenu, c.T_SOUS_TITRE).move_to([0, c.Y_SOUS_TITRE, 0])
         if nouveau.width > self.largeur_titres():
             nouveau.scale_to_fit_width(self.largeur_titres())
+        # Sous un titre sur pastille (plus haut qu'un titre simple), le sous-titre descend d'autant.
+        if self.titre is not None and nouveau.get_top()[1] > self.titre.get_bottom()[1] - 0.12:
+            nouveau.shift(DOWN * (nouveau.get_top()[1] - self.titre.get_bottom()[1] + 0.12))
         # Centré sous le titre s'il y en a un, sans jamais empiéter sur le repère.
         x = self.titre.get_x() if self.titre is not None else 0.0
         nouveau.set_x(min(x, self.x_titres(nouveau.width)) if getattr(self, "repere", None) is not None else x)
