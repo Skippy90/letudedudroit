@@ -26,10 +26,10 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | --- | --- | --- |
 | 7 | Premier étage : la typicité. La question est simple : est-ce que ce que Marc a fait correspond à la description d'une infraction écrite dans la loi ? | Zoom sur le premier étage ; le mot « Typicité » en grand |
 | 8 | C'est une règle fondamentale du droit pénal suisse : on ne peut être puni que pour un acte que la loi réprime expressément. C'est l'article 1 du Code pénal. | Bloc « Art. 1 CP » en bas de l'écran ; un livre fermé avec « Code pénal » dessus |
-| 9 | Ouvrons le Code pénal. L'article 123 dit, en substance, que celui qui fait du mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples. | Le livre s'ouvre ; bloc « Art. 123 CP » ; le mot « lésions corporelles simples » apparaît |
+| 9 | Ouvrons le Code pénal. L'article 123 dit, en substance, que celui qui fait mal au corps ou à la santé d'une personne, sans que la blessure soit grave, commet des lésions corporelles simples. | Le livre s'ouvre ; bloc « Art. 123 CP » ; le mot « lésions corporelles simples » apparaît |
 | 10 | Un poignet cassé, c'est une atteinte au corps. Le comportement de Marc correspond à la description. On dit qu'il réalise les éléments objectifs de l'infraction. | Une case « Atteinte au corps » se coche ; le poignet de Julien clignote |
-| 11 | Mais la typicité a aussi un côté intérieur. L'article 12 du Code pénal dit qu'en principe, on ne punit un crime ou un délit que s'il a été commis intentionnellement. | Bloc « Art. 12 CP » ; une bulle de pensée apparaît au-dessus de Marc |
-| 12 | Marc a-t-il voulu blesser Julien ? Il l'a poussé volontairement, dans un escalier. Il savait qu'une chute pouvait blesser, et il a accepté ce risque. En droit pénal, on appelle ça le dol éventuel. On y reviendra dans la vidéo 4. | Dans la bulle de pensée : une poussée, puis une chute ; le mot « dol éventuel » apparaît avec « vidéo 4 » en petit |
+| 11 | Mais la typicité a aussi un côté intérieur. L'article 12 du Code pénal dit : en principe, on ne punit un crime ou un délit que s'il a été commis intentionnellement. | Bloc « Art. 12 CP » ; une bulle de pensée apparaît au-dessus de Marc |
+| 12 | Marc a-t-il voulu blesser Julien ? Il l'a poussé volontairement, dans les escaliers. Il savait qu'une chute pouvait blesser, et il a accepté ce risque. En droit pénal, on appelle ça le dol éventuel. On y reviendra dans la vidéo 4. | Dans la bulle de pensée : une poussée, puis une chute ; le mot « dol éventuel » apparaît avec « vidéo 4 » en petit |
 | 13 | Premier étage franchi : le comportement de Marc est typique. | L'étage « Typicité » s'allume en vert ; la flèche monte |
 
 ## Deuxième étage : l'illicéité
@@ -39,7 +39,7 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | 14 | Deuxième étage : l'illicéité. La question change : ce comportement, qui correspond à la loi, était-il malgré tout permis ? | Zoom sur le deuxième étage ; « Illicéité » en grand |
 | 15 | Ça paraît étrange : comment un acte décrit par le Code pénal pourrait-il être permis ? Parce que la loi prévoit des situations où il l'est. On les appelle les faits justificatifs. | Un bouclier se dessine à côté de l'étage |
 | 16 | Le plus connu est la légitime défense, à l'article 15 du Code pénal. Si quelqu'un vous attaque sans droit, vous pouvez repousser l'attaque de manière proportionnée. | Bloc « Art. 15 CP » ; le bouclier s'anime, repousse une flèche |
-| 17 | Changeons une seule chose dans notre histoire. Imaginons que Julien ait levé le poing pour frapper Marc, et que Marc l'ait poussé pour éviter le coup. | Rembobinage ; la silhouette de Julien lève le poing en premier |
+| 17 | Changeons une seule chose dans notre histoire. Imaginons que Julien ait levé le poing pour frapper Marc, et que Marc l'ait repoussé pour éviter le coup. | Rembobinage ; la silhouette de Julien lève le poing en premier |
 | 18 | Le poignet est toujours cassé. Le premier étage est toujours franchi. Mais la poussée devient une défense contre une attaque. Elle est justifiée. L'illicéité tombe, et avec elle l'infraction. | L'étage « Illicéité » devient gris ; la flèche s'arrête ; le mot « Infraction » se barre |
 | 19 | Dans notre version de départ, Julien a seulement parlé. Une remarque n'est pas une attaque qu'on repousse avec les mains. Pas de légitime défense. Deuxième étage franchi : le comportement de Marc est illicite. | Retour à la version de départ ; l'étage « Illicéité » s'allume en vert ; la flèche monte |
 
@@ -49,7 +49,7 @@ Source : `docs/script-reference-video-01.md`, recopié sans modification du text
 | --- | --- | --- |
 | 20 | Troisième étage : la culpabilité. Cette fois, on ne regarde plus l'acte, on regarde la personne. Peut-on lui reprocher ce qu'elle a fait ? | Zoom sur le troisième étage ; « Culpabilité » en grand ; la silhouette de Marc seule à l'écran |
 | 21 | L'article 19 du Code pénal dit que celui qui, au moment d'agir, n'était pas capable d'apprécier le caractère illicite de son acte, ou de se déterminer d'après cette appréciation, n'est pas punissable. | Bloc « Art. 19 CP » ; une balance se dessine dans la tête de Marc |
-| 22 | Troisième variante de l'histoire : Marc souffre d'une maladie psychique grave et, ce soir-là, il n'avait plus aucune prise sur ses gestes. Son acte reste typique, il reste illicite, mais on ne peut pas le lui reprocher. Il n'est pas coupable. | La balance se brise ; l'étage « Culpabilité » devient gris |
+| 22 | Troisième variante de l'histoire : Marc souffre d'une maladie psychique grave et, ce soir-là, il n'avait plus aucune prise sur ses gestes. Son acte reste typique, il reste illicite, mais on ne peut pas le lui reprocher. Il n'est donc pas coupable. | La balance se brise ; l'étage « Culpabilité » devient gris |
 | 23 | Attention au piège classique : « pas coupable » ne veut pas dire « rien ne se passe ». Dans ce cas, le juge peut ordonner une mesure, par exemple un traitement. C'est l'objet de la vidéo 12. | Le mot « Mesure » apparaît à côté de l'étage gris, avec « vidéo 12 » en petit |
 | 24 | Dans notre version de départ, Marc était simplement en colère. La colère n'enlève pas la capacité de comprendre ce qu'on fait. Troisième étage franchi. | L'étage « Culpabilité » s'allume en vert |
 

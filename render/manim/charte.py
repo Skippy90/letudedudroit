@@ -16,9 +16,17 @@ from manim import (
 FOND = "#0B0B0B"
 TEXTE = "#F2EFE6"
 ACCENT = "#E3A52F"
+# Grille de la marque (adoptée le 31 octobre 2026) : l'accent est le rouge suisse de la marque, les mots-clés
+# s'écrivent en blanc sur une pastille rouge, comme le logo ; l'ambre, libéré, devient la couleur du dommage.
+# THEME=ambre rend avec l'ancienne grille (accent ambre, dommage rouge).
+import os as _os
+ROUGE_MARQUE = "#DA291C"
+MARQUE = _os.environ.get("THEME", "marque") != "ambre"
 VERT = "#4CAF7D"
 GRIS = "#6B7280"
-ROUGE = "#D9534F"
+ROUGE = "#D9534F"  # dommage, dans l'ancienne grille (THEME=ambre)
+if MARQUE:
+    ACCENT, ROUGE = ROUGE_MARQUE, "#E3A52F"  # accent rouge suisse ; dommage ambre
 SURFACE = "#1F1F22"  # fond des blocs, un cran plus clair que le fond
 
 # Une couleur fixe par personnage, choisie dans visuals.md
@@ -37,9 +45,9 @@ POLICE = "Inter"
 T_TITRE, T_SOUS_TITRE, T_CORPS, T_PETIT = 58, 42, 40, 34
 
 X_POSITIONS = {"gauche": -4.5, "centre-gauche": -2.2, "centre": 0.0, "centre-droite": 2.2, "droite": 4.5}
-Y_TITRE, Y_SOUS_TITRE = 3.15, 2.35
-Y_PERSONNAGE = 0.6
-Y_FRISE = -1.5
+Y_TITRE, Y_SOUS_TITRE = 3.15, 2.3
+Y_PERSONNAGE = 0.45
+Y_FRISE = -1.3
 # Bloc d'article au-dessus du bandeau des sous-titres (bas de l'image, environ 70 px sur 1080).
 Y_ARTICLE = -2.85
 # Centre de l'étage du bas du bâtiment : son pied reste au-dessus du bloc d'article.
@@ -48,6 +56,28 @@ Y_BATIMENT = -1.75
 
 def texte(contenu, taille=T_CORPS, couleur=TEXTE, gras=False):
     return Text(contenu, font=POLICE, font_size=taille, color=couleur, weight="BOLD" if gras else "NORMAL")
+
+
+def avec_fond(mob, buff=0.08):
+    """Texte posé sur un fond noir légèrement transparent : les traits du décor ne le traversent pas."""
+    fond = RoundedRectangle(corner_radius=0.06, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
+                            stroke_width=0, fill_color=FOND, fill_opacity=0.85).move_to(mob)
+    return VGroup(fond, mob)
+
+
+def pastille(mob, buff=0.08):
+    """Texte blanc sur pastille rouge (thème « marque »)."""
+    fond = RoundedRectangle(corner_radius=0.1, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
+                            stroke_width=0, fill_color=ROUGE_MARQUE, fill_opacity=1).move_to(mob)
+    return VGroup(fond, mob)
+
+
+def accent_texte(contenu, taille=None):
+    """Un mot-clé : ambre sur fond noir, ou blanc sur pastille rouge dans le thème « marque »."""
+    taille = taille or T_PETIT
+    if MARQUE:
+        return pastille(texte(contenu, taille, "#FFFFFF"))
+    return avec_fond(texte(contenu, taille, ACCENT))
 
 
 def mots(contenu: str) -> int:
@@ -64,7 +94,7 @@ class Personnage(VGroup):
                                  fill_color=couleur, fill_opacity=1, stroke_width=0)
         corps.next_to(tete, DOWN, buff=0.08)
         silhouette = VGroup(tete, corps)
-        etiquette = texte(nom, T_PETIT).next_to(silhouette, DOWN, buff=0.2)
+        etiquette = avec_fond(texte(nom, T_PETIT)).next_to(silhouette, DOWN, buff=0.12)
         super().__init__(silhouette, etiquette)
         self.silhouette, self.etiquette, self.nom = silhouette, etiquette, nom
         self.move_to([X_POSITIONS[position], Y_PERSONNAGE - 0.2, 0])
@@ -81,6 +111,19 @@ class BlocArticle(VGroup):
         etiquette = texte(libelle, T_CORPS, gras=True)
         cadre = RoundedRectangle(corner_radius=0.12, width=etiquette.width + 0.9, height=0.85,
                                  color=TEXTE, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
+        etiquette.move_to(cadre)
+        super().__init__(cadre, etiquette)
+        self.move_to([0, Y_ARTICLE, 0])
+        self.cadre, self.libelle = cadre, libelle
+
+
+class BlocArret(VGroup):
+    """La jurisprudence : bloc « ATF … » au cadre ambre, en bas, à côté du bloc d'article."""
+
+    def __init__(self, libelle):
+        etiquette = texte(libelle, T_PETIT, TEXTE, gras=True)
+        cadre = RoundedRectangle(corner_radius=0.12, width=etiquette.width + 0.7, height=0.75,
+                                 color=ACCENT, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
         etiquette.move_to(cadre)
         super().__init__(cadre, etiquette)
         self.move_to([0, Y_ARTICLE, 0])
@@ -242,8 +285,9 @@ class Pyramide(VGroup):
 class Frise(VGroup):
     """Le temps : frise horizontale, les repères se dessinent en direct."""
 
-    def __init__(self):
-        self.ligne = Arrow([-6.3, Y_FRISE, 0], [6.4, Y_FRISE, 0], color=TEXTE, stroke_width=4, buff=0,
+    def __init__(self, y=Y_FRISE):
+        self.y = y
+        self.ligne = Arrow([-6.3, y, 0], [6.4, y, 0], color=TEXTE, stroke_width=4, buff=0,
                            max_tip_length_to_length_ratio=0.02)
         self.etiquettes = []
         super().__init__(self.ligne)
@@ -265,24 +309,26 @@ class Frise(VGroup):
 
     def repere(self, fraction, libelle):
         x = self.x(fraction)
-        trait = Line([x, Y_FRISE - 0.35, 0], [x, Y_FRISE + 0.35, 0], color=ACCENT, stroke_width=6)
-        etiquette = self.placer(texte(libelle, T_PETIT, ACCENT).next_to(trait, DOWN, buff=0.15), DOWN)
+        trait = Line([x, self.y - 0.35, 0], [x, self.y + 0.35, 0], color=ACCENT, stroke_width=6)
+        etiquette = self.placer((accent_texte(libelle) if MARQUE else texte(libelle, T_PETIT, ACCENT))
+                                .next_to(trait, DOWN, buff=0.15), DOWN)
         return VGroup(trait, etiquette)
 
     def point(self, fraction, libelle):
         x = self.x(fraction)
-        point = Dot([x, Y_FRISE, 0], radius=0.13, color=TEXTE)
-        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.25), UP)
+        point = Dot([x, self.y, 0], radius=0.13, color=TEXTE)
+        # Au-dessus du trait d'un repère placé au même endroit (il monte de 0,35).
+        etiquette = self.placer(texte(libelle, T_PETIT).next_to(point, UP, buff=0.4), UP)
         return VGroup(point, etiquette)
 
     def zone(self, a, b, etat):
         xa, xb = self.x(a), self.x(b)
         return Rectangle(width=xb - xa, height=0.5, stroke_width=0, fill_color=ETATS[etat],
-                         fill_opacity=0.35).move_to([(xa + xb) / 2, Y_FRISE, 0])
+                         fill_opacity=0.35).move_to([(xa + xb) / 2, self.y, 0])
 
     def fleche_retour(self, de, vers, couleur):
         # Au-dessus des étiquettes des points, pour ne pas les masquer.
-        return CurvedArrow([self.x(de), Y_FRISE + 1.0, 0], [self.x(vers), Y_FRISE + 1.0, 0],
+        return CurvedArrow([self.x(de), self.y + 1.0, 0], [self.x(vers), self.y + 1.0, 0],
                            angle=0.9, color=couleur, stroke_width=5)
 
 
@@ -294,7 +340,8 @@ class Bulle(VGroup):
         ellipse = Ellipse(width=max(2.2, etiquette.width + 0.8), height=1.1, color=TEXTE,
                           fill_color=TEXTE, fill_opacity=1)
         etiquette.move_to(ellipse)
-        cote = personnage.vers_le_centre()
+        # Vers le centre, d'après la place réelle de la silhouette (elle a pu marcher depuis sa position de départ).
+        cote = LEFT if personnage.silhouette.get_x() > 0 else RIGHT
         tete = personnage.silhouette[0]
         # À côté de la tête, légèrement au-dessus, pour ne pas monter dans la zone des titres.
         ellipse_groupe = VGroup(ellipse, etiquette).next_to(tete, cote, buff=0.75)
@@ -375,7 +422,7 @@ class Escalier(VGroup):
                                  **DECOR) for k in range(4)])
         porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
         poignee = Dot([-5.35, Y_SOL + 1.2, 0], radius=0.05, color=TEXTE, fill_opacity=0.35)
-        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.3, 0])
+        self.fenetre = Rectangle(width=1.8, height=1.4, **DECOR).move_to([-2.6, 1.05, 0])
         croisillon = VGroup(Line(self.fenetre.get_top(), self.fenetre.get_bottom(), **DECOR),
                             Line(self.fenetre.get_left(), self.fenetre.get_right(), **DECOR))
         super().__init__(sol, marches, rampe, montants, porte, poignee, self.fenetre, croisillon)
@@ -437,6 +484,70 @@ class Picto(VGroup):
             disque = Circle(radius=0.28, color=TEXTE, fill_color=TEXTE, fill_opacity=0.7, stroke_width=0)
             ombre = Circle(radius=0.26, color=FOND, fill_color=FOND, fill_opacity=1, stroke_width=0).shift(RIGHT * 0.14 + UP * 0.08)
             elements = [disque, ombre]
+        elif nom == "vagues":
+            elements = [Vagues()]
+        elif nom == "coche":
+            elements = [Coche()]
+        elif nom == "feu":
+            # Feu de camp : flamme ambre sur deux bûches (le rouge reste réservé au dommage).
+            flamme = Polygon([0, 0.55, 0], [0.28, 0.05, 0], [0.12, -0.15, 0], [-0.12, -0.15, 0], [-0.28, 0.05, 0],
+                             color=ACCENT, fill_color=ACCENT, fill_opacity=0.85, stroke_width=0)
+            buches = VGroup(Line([-0.45, -0.3, 0], [0.45, -0.18, 0], color=TEXTE, stroke_width=6),
+                            Line([-0.45, -0.18, 0], [0.45, -0.3, 0], color=TEXTE, stroke_width=6))
+            elements = [flamme, buches]
+        elif nom == "prison":
+            # Peine privative de liberté : une fenêtre à barreaux.
+            cadre = RoundedRectangle(corner_radius=0.08, width=1.1, height=1.1, color=TEXTE, stroke_width=4)
+            barreaux = VGroup(*[Line([-0.33 + 0.22 * k, 0.55, 0], [-0.33 + 0.22 * k, -0.55, 0], color=TEXTE, stroke_width=4)
+                                for k in range(4)])
+            elements = [cadre, barreaux]
+        elif nom == "pieces":
+            # Argent (peine pécuniaire, amende, réparation) : trois pièces empilées.
+            elements = [Ellipse(width=0.9, height=0.32, color=ACCENT, stroke_width=4, fill_color=SURFACE, fill_opacity=1)
+                        .shift(UP * 0.16 * k) for k in range(3)]
+        elif nom == "document":
+            # Un écrit (contrat, plainte) : feuille à lignes et signature.
+            feuille = Polygon([-0.4, 0.55, 0], [0.22, 0.55, 0], [0.4, 0.37, 0], [0.4, -0.55, 0], [-0.4, -0.55, 0],
+                              color=TEXTE, stroke_width=4)
+            lignes = VGroup(*[Line([-0.26, 0.3 - 0.18 * k, 0], [0.26, 0.3 - 0.18 * k, 0], color=GRIS, stroke_width=3)
+                              for k in range(3)])
+            from manim import VMobject
+            signature = VMobject(color=ACCENT, stroke_width=4)
+            signature.set_points_smoothly([[-0.25, -0.35, 0], [-0.1, -0.22, 0], [0.0, -0.38, 0], [0.12, -0.25, 0], [0.28, -0.33, 0]])
+            elements = [feuille, lignes, signature]
+        elif nom == "danger":
+            triangle = Polygon([0, 0.55, 0], [0.6, -0.45, 0], [-0.6, -0.45, 0], color=ACCENT, stroke_width=5)
+            point = VGroup(Line([0, 0.25, 0], [0, -0.12, 0], color=ACCENT, stroke_width=6),
+                           Dot([0, -0.27, 0], radius=0.05, color=ACCENT))
+            elements = [triangle, point]
+        elif nom == "parlement":
+            # La loi votée : un édifice à colonnes, générique.
+            fronton = Polygon([-0.75, 0.3, 0], [0.75, 0.3, 0], [0, 0.65, 0], color=TEXTE, stroke_width=4)
+            colonnes = VGroup(*[Line([-0.55 + 0.37 * k, 0.25, 0], [-0.55 + 0.37 * k, -0.4, 0], color=TEXTE, stroke_width=4)
+                                for k in range(4)])
+            socle = Line([-0.8, -0.48, 0], [0.8, -0.48, 0], color=TEXTE, stroke_width=5)
+            elements = [fronton, colonnes, socle]
+        elif nom == "corde":
+            # La cordée : une corde qui relie deux points d'ancrage.
+            from manim import VMobject
+            corde = VMobject(color=ACCENT, stroke_width=5)
+            corde.set_points_smoothly([[-0.8, 0.3, 0], [-0.4, -0.1, 0], [0, 0.2, 0], [0.4, -0.1, 0], [0.8, 0.3, 0]])
+            elements = [corde, Dot([-0.8, 0.3, 0], radius=0.08, color=TEXTE), Dot([0.8, 0.3, 0], radius=0.08, color=TEXTE)]
+        elif nom == "bouteille":
+            corps = RoundedRectangle(corner_radius=0.08, width=0.3, height=0.55, color=ACCENT, stroke_width=4)
+            col = Rectangle(width=0.12, height=0.25, color=ACCENT, stroke_width=4).next_to(corps, UP, buff=0)
+            elements = [corps, col]
+        elif nom == "voiture":
+            caisse = RoundedRectangle(corner_radius=0.15, width=2.6, height=0.7, color=TEXTE, stroke_width=4)
+            toit = Polygon([-0.8, 0.35, 0], [0.7, 0.35, 0], [0.4, 0.95, 0], [-0.5, 0.95, 0],
+                           color=TEXTE, stroke_width=4)
+            roues = VGroup(Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([-0.8, -0.38, 0]),
+                           Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([0.8, -0.38, 0]))
+            elements = [caisse, toit, roues]
+        elif nom == "ballon":
+            balle = Circle(radius=0.2, color=TEXTE, fill_color=TEXTE, fill_opacity=1, stroke_width=0)
+            couture = Arc(radius=0.2, start_angle=-0.9, angle=1.8, color=FOND, stroke_width=3).shift(LEFT * 0.12)
+            elements = [balle, couture]
         else:
             raise ValueError(f"picto inconnu « {nom} »")
         super().__init__(*elements)
@@ -447,8 +558,8 @@ class Etiquette(VGroup):
     """Mot-clé court, en ambre, posé près de ce dont il parle (« Lausanne », « Un soir d'hiver »)."""
 
     def __init__(self, contenu, position):
-        mot = texte(contenu, T_PETIT, ACCENT)
-        super().__init__(mot)
+        mot = accent_texte(contenu)
+        super().__init__(*mot)
         self.move_to(position)
 
 
@@ -493,9 +604,9 @@ class Appartement(VGroup):
 
 
 class Rue(VGroup):
-    """Une rue le soir : trottoir, façades, la boulangerie et sa vitrine, un réverbère."""
+    """Une rue le soir : trottoir, façades, un commerce (boulangerie par défaut) et sa vitrine, un réverbère."""
 
-    def __init__(self):
+    def __init__(self, enseigne="Boulangerie"):
         sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
         facades = VGroup(
             Rectangle(width=3.0, height=3.4, **DECOR).move_to([-5.4, Y_SOL + 1.7, 0]),
@@ -503,7 +614,7 @@ class Rue(VGroup):
         self.mur = Rectangle(width=3.8, height=3.6, **DECOR).move_to([0.6, Y_SOL + 1.8, 0])
         vitrine = Rectangle(width=1.6, height=1.3, **DECOR).move_to([1.5, Y_SOL + 0.75, 0])
         store = Line([0.5, Y_SOL + 1.6, 0], [2.5, Y_SOL + 1.6, 0], **DECOR)
-        enseigne = texte("Boulangerie", T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
+        enseigne = texte(enseigne, T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
@@ -512,3 +623,153 @@ class Rue(VGroup):
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
         return [1.6 * n, Y_SOL, 0]
+
+
+class Tribunal(VGroup):
+    """Salle d'audience : sol, estrade et banc du juge à droite, barre des témoins à gauche du centre.
+
+    Le banc et la barre sont au premier plan (z_index 1) : une silhouette placée derrière n'en dépasse
+    que par le haut, et son nom s'inscrit sur le meuble (voir Schemas.a_placer)."""
+
+    X_BANC, X_BARRE = 4.6, -1.6
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        mur = Rectangle(width=4.2, height=3.6, **DECOR).move_to([self.X_BANC, Y_SOL + 1.8, 0])
+        estrade = Line([self.X_BANC - 2.1, Y_SOL + 0.6, 0], [self.X_BANC + 2.1, Y_SOL + 0.6, 0], **DECOR)
+        porte = Rectangle(width=1.3, height=2.5, **DECOR).move_to([-5.8, Y_SOL + 1.25, 0])
+        # Les meubles sont remplis du fond : ils masquent ce qui est derrière eux.
+        meuble = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.5, fill_color=FOND, fill_opacity=1)
+        self.banc = Rectangle(width=3.2, height=1.45, **meuble).move_to([self.X_BANC, Y_SOL + 0.725, 0])
+        self.barre = Rectangle(width=1.3, height=1.05, **meuble).move_to([self.X_BARRE, Y_SOL + 0.525, 0])
+        self.meubles = [self.banc, self.barre]
+        super().__init__(sol, mur, estrade, porte, self.banc, self.barre)
+        for m in self.meubles:
+            m.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière le banc du juge, sur l'estrade."""
+        if n == 3:
+            return [self.X_BANC, Y_SOL + 0.6, 0]
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        """Le meuble devant lequel se tient une silhouette d'abscisse x, s'il y en a un."""
+        return next((m for m in self.meubles if abs(m.get_x() - x) < m.width / 2), None)
+
+
+class Vagues(VGroup):
+    """Le lac : trois lignes ondulées."""
+
+    def __init__(self):
+        from manim import VMobject
+        lignes = []
+        for k in range(3):
+            v = VMobject(color=TEXTE if k else ACCENT, stroke_width=4)
+            v.set_points_smoothly([[-0.8 + 0.2 * i, 0.1 * (-1) ** i - 0.25 * k, 0] for i in range(9)])
+            lignes.append(v)
+        super().__init__(*lignes)
+
+
+class Coche(VGroup):
+    """Condition remplie : coche verte dans un rond."""
+
+    def __init__(self):
+        rond = Circle(radius=0.36, color=VERT, fill_color=VERT, fill_opacity=1, stroke_width=0)
+        signe = VGroup(Line([-0.17, 0, 0], [-0.04, -0.15, 0], color=FOND, stroke_width=7),
+                       Line([-0.04, -0.15, 0], [0.2, 0.17, 0], color=FOND, stroke_width=7)).move_to(rond)
+        super().__init__(rond, signe)
+
+
+class RepereListe(VGroup):
+    """Pense-bête permanent en haut à droite : une case et un mot par exigence ; il survit aux scene-vide."""
+
+    def __init__(self, *libelles):
+        self.lignes = []
+        for i, libelle in enumerate(libelles):
+            boite = RoundedRectangle(corner_radius=0.05, width=0.34, height=0.34, color=TEXTE, stroke_width=2.5)
+            mot = texte(libelle, T_PETIT).next_to(boite, RIGHT, buff=0.18)
+            ligne = VGroup(boite, mot)
+            ligne.move_to([0, -0.58 * i, 0], aligned_edge=LEFT)
+            self.lignes.append(ligne)
+        cadre_contenu = VGroup(*self.lignes)
+        fond = RoundedRectangle(corner_radius=0.12, width=cadre_contenu.width + 0.45,
+                                height=cadre_contenu.height + 0.4, stroke_width=0,
+                                fill_color=SURFACE, fill_opacity=0.9).move_to(cadre_contenu)
+        super().__init__(fond, *self.lignes)
+        self.libelles = list(libelles)
+        self.to_corner(UP + RIGHT, buff=0.3)
+
+    def marquer(self, n, etat):
+        boite, mot = self.lignes[n - 1]
+        if etat == "neutre":
+            return [boite.animate.set_fill(SURFACE, opacity=0).set_stroke(TEXTE), mot.animate.set_color(TEXTE)]
+        couleur = ETATS[etat]
+        return [boite.animate.set_fill(couleur, opacity=1).set_stroke(couleur),
+                mot.animate.set_color(ACCENT if etat == "ambre" and not MARQUE else GRIS if etat == "gris" else TEXTE)]
+
+
+class Parc(VGroup):
+    """Un parc : pelouse, un arbre, un poteau, une haie à droite.
+
+    La haie est au premier plan (z_index 1, comme les meubles du tribunal) : une silhouette placée
+    derrière (placer … 3) n'en dépasse que par le haut et son nom s'inscrit sur la haie."""
+
+    X_HAIE = 5.4
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        tronc = Line([-1.8, Y_SOL, 0], [-1.8, Y_SOL + 1.6, 0], **DECOR)
+        feuillage = Circle(radius=1.0, **DECOR).move_to([-1.8, Y_SOL + 2.4, 0])
+        self.poteau = Line([0.6, Y_SOL, 0], [0.6, Y_SOL + 2.3, 0], color=TEXTE, stroke_width=4, stroke_opacity=0.5)
+        bosses = VGroup(*[Arc(radius=0.3, start_angle=0, angle=3.1416, **DECOR).move_to(
+            [self.X_HAIE - 1.2 + 0.6 * k + 0.3, Y_SOL + 1.05, 0]) for k in range(4)])
+        corps = Rectangle(width=2.4, height=0.95, color=TEXTE, stroke_width=3, stroke_opacity=0.35,
+                          fill_color=FOND, fill_opacity=1).move_to([self.X_HAIE, Y_SOL + 0.475, 0])
+        self.haie = VGroup(corps, bosses)
+        self.meubles = [self.haie]
+        super().__init__(sol, tronc, feuillage, self.poteau, self.haie)
+        self.haie.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière la haie."""
+        if n == 3:
+            return [self.X_HAIE, Y_SOL, 0]
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        return self.haie if abs(self.haie.get_x() - x) < self.haie.width / 2 else None
+
+
+class Piscine(VGroup):
+    """Une piscine : la chaise haute de la surveillante à gauche, le bassin à droite.
+
+    Le bord du bassin est au premier plan (z_index 1) : une silhouette placée dans l'eau (placer … 2 à 4)
+    n'en dépasse que par la tête, et son nom s'inscrit sur le bord."""
+
+    X_BASSIN, L_BASSIN = 4.0, 5.6
+
+    def __init__(self):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        pieds = VGroup(Line([-5.4, Y_SOL, 0], [-5.0, Y_SOL + 2.0, 0], **DECOR),
+                       Line([-4.2, Y_SOL, 0], [-4.6, Y_SOL + 2.0, 0], **DECOR))
+        siege = Line([-5.2, Y_SOL + 2.0, 0], [-4.4, Y_SOL + 2.0, 0], color=TEXTE, stroke_width=4, stroke_opacity=0.5)
+        dossier = Line([-5.2, Y_SOL + 2.0, 0], [-5.2, Y_SOL + 2.7, 0], **DECOR)
+        bord = Rectangle(width=self.L_BASSIN, height=1.0, color=TEXTE, stroke_width=3, stroke_opacity=0.45,
+                         fill_color=FOND, fill_opacity=1).move_to([self.X_BASSIN, Y_SOL + 0.5, 0])
+        from manim import VMobject
+        eau = VMobject(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
+        x0 = self.X_BASSIN - self.L_BASSIN / 2
+        eau.set_points_smoothly([[x0 + 0.35 * i, Y_SOL + 1.0 + 0.06 * (-1) ** i, 0]
+                                 for i in range(int(self.L_BASSIN / 0.35) + 1)])
+        self.bassin = VGroup(bord, eau)
+        self.meubles = [self.bassin]
+        super().__init__(sol, pieds, siege, dossier, self.bassin)
+        self.bassin.set_z_index(1)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 à 4 ; de 2 à 4, dans l'eau."""
+        return [1.6 * n, Y_SOL, 0]
+
+    def meuble_devant(self, x):
+        return self.bassin if abs(self.bassin.get_x() - x) < self.bassin.width / 2 else None

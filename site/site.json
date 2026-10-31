@@ -1,0 +1,44 @@
+{
+  "nom": "L’étude du droit",
+  "signature": "Le droit suisse, une notion à la fois.",
+  "adresse": "",
+  "youtube": "https://www.youtube.com/@letudedudroit",
+  "instagram": "https://www.instagram.com/letudedudroit",
+  "github": "https://github.com/Skippy90/letudedudroit",
+  "inscription": {
+    "action": "",
+    "note": "Laisser « action » vide tant que le service d'envoi (lettre d'information) n'est pas choisi : le formulaire s'affiche alors fermé."
+  },
+  "videos": {
+    "droit-penal-general/01-trois-etages": {
+      "youtube": "",
+      "en_ligne": true,
+      "scene": 9.0
+    },
+    "droit-penal-general/02-pas-de-peine-sans-loi": {
+      "youtube": "",
+      "en_ligne": true,
+      "scene": 12.8
+    },
+    "droit-penal-general/03-crime-delit-contravention": {
+      "youtube": "",
+      "en_ligne": false,
+      "scene": 9.5
+    },
+    "droit-penal-general/04-intention-negligence": {
+      "youtube": "",
+      "en_ligne": false,
+      "scene": 14.5
+    },
+    "droit-penal-general/05-commission-par-omission": {
+      "youtube": "",
+      "en_ligne": false,
+      "scene": 18.5
+    },
+    "droit-penal-general/06-faits-justificatifs": {
+      "youtube": "",
+      "en_ligne": false,
+      "scene": 13.0
+    }
+  }
+}

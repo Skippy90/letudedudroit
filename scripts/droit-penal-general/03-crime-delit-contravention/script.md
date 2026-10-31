@@ -40,7 +40,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 16 | Revenons à Inès. Prendre le téléphone d'autrui pour le garder, c'est un vol. C'est l'article 139 du Code pénal. | La silhouette d'Inès ; bloc « Art. 139 CP » |
+| 16 | Revenons-en à Inès. Prendre le téléphone d'autrui pour le garder, c'est du vol. C'est l'article 139 du Code pénal. | La silhouette d'Inès ; bloc « Art. 139 CP » |
 | 17 | Le vol est puni d'une peine privative de liberté de cinq ans au plus, ou d'une peine pécuniaire. | Frise : un point « 5 ans » au-delà du repère « 3 ans » |
 | 18 | Cinq ans, c'est plus de trois ans. Le vol est donc un crime. | La case « Crime » se coche en vert |
 | 19 | Un détail compte pourtant : le téléphone est neuf. Si l'objet volé n'avait qu'une faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
