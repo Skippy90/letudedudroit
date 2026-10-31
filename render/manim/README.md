@@ -99,3 +99,7 @@ Après chaque moment, le moteur vérifie qu'aucun élément affiché n'est à mo
 ## Contrôles automatiques
 
 Le rapport `out/<slug>--alertes-visuels.txt` signale aussi les textes (titres, listes, cases, frise) posés sur un trait du décor, et chaque passage de plus de 5 s où l'écran ne montre que du texte (ni personnage, ni décor, ni schéma, ni pictogramme) ; sa dernière ligne donne le total de « texte seul ».
+
+## Thème « marque » (essai)
+
+`THEME=marque make visuals assemble SLUG=…` : l'accent ambre devient le rouge suisse de la marque (`#DA291C`) ; les mots-clés, les libellés de repère de la frise et les titres mis en avant s'écrivent en blanc sur une pastille rouge, comme le logo ; le pense-bête et les étages en cours passent en rouge. Le rouge du dommage (`#D9534F`) ne change pas : avec ce thème, il se distingue surtout par sa forme (l'éclair). Sans `THEME`, la charte reste celle de `docs/charte-visuelle.md`.
