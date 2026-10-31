@@ -103,3 +103,11 @@ Le rapport `out/<slug>--alertes-visuels.txt` signale aussi les textes (titres, l
 ## Grille de couleurs
 
 Par défaut (depuis le 31 octobre 2026), la grille de la marque : accent rouge suisse (`#DA291C`) ; mots-clés, libellés de repère de la frise et titres mis en avant en blanc sur une pastille rouge, comme le logo ; pense-bête et étages en cours en rouge ; dommage en ambre (`#E3A52F`). `THEME=ambre make visuals …` rend avec l'ancienne grille (accent ambre, dommage rouge `#D9534F`).
+
+## Shorts
+
+`make shorts SLUG=…` tire des shorts verticaux (1080 × 1920) de la vidéo déjà rendue, selon `scripts/<slug>/shorts.json` :
+identifiant, accroche, lignes du script (`de` … `a`). Le short reprend tel quel l'extrait audité (schémas et narration) ;
+seule l'accroche est nouvelle et doit être validée par la relectrice. Mise en page : bandeau rouge avec l'accroche,
+scène 16:9 au centre, grands sous-titres (quatre mots), barre de progression rouge, rappel de la vidéo complète.
+Sortie : `out/shorts/<matiere>--<numero-slug>--<id>.mp4`.

@@ -5,7 +5,7 @@ DIR  := scripts/$(SLUG)
 PY   := .venv/bin/python
 MANIM_MEDIA := render/manim/media
 
-.PHONY: video check installer voice visuals assemble
+.PHONY: video check installer voice visuals assemble shorts
 
 video: check voice visuals assemble
 
@@ -42,3 +42,7 @@ visuals:
 # Habillage Remotion et rendu final dans out/.
 assemble:
 	$(PY) tools/assembler.py $(SLUG)
+
+# Shorts verticaux (1080 × 1920) décrits dans scripts/$(SLUG)/shorts.json, tirés de la vidéo déjà rendue.
+shorts:
+	$(PY) tools/short.py $(SLUG)
