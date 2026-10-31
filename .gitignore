@@ -18,6 +18,7 @@ voice/**/*.wav
 render/manim/media/
 render/remotion/public/
 out/*.txt
+out/*.pdf
 .cache/
 voice/**/*.m4a
 voice/**/isole-*.mp3
