@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Pas de peine sans loi | Droit pénal suisse
 
-## Description (3417 caractères sur 5 000)
+## Description (3586 caractères sur 5 000)
 
 ```text
 Pas de peine sans loi — expliqué simplement, à partir d'un cas concret.
@@ -18,7 +18,7 @@ Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fé
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_2
 • Art. 2 CP, al. 2 : Exception en faveur de l'auteur : si la nouvelle loi est plus favorable et qu'il est jugé après son entrée en vigueur, elle s'applique
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_2
-• Art. 146 CP : L'escroquerie suppose une tromperie astucieuse, un acte de la victime contre ses intérêts financiers et la volonté de l'auteur de s'enrichir
+• Art. 146 CP : L'escroquerie suppose une tromperie astucieuse, un acte de la victime préjudiciable à ses intérêts financiers ou à ceux d'un tiers, et le dessein de l'auteur de s'enrichir ou d'enrichir un tiers
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_146
 • Art. 307 CP : Punit le témoin qui fait une déposition fausse en justice
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_307
@@ -36,7 +36,7 @@ Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fé
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F137-IV-99%3Afr
 
 Réponse à la question finale :
-Nora ne peut être punie que pour l'acte du 1er juillet. Le 1er mars, aucun texte ne réprimait son comportement (art. 1 CP) ; la nouvelle loi ne peut pas s'appliquer à un acte commis avant son entrée en vigueur (art. 2 CP).
+Nora ne peut être punie que pour l'acte du 1er juillet, pour autant que son comportement ce jour-là réalise les conditions de la nouvelle infraction. Le 1er mars, aucun texte ne réprimait son comportement (art. 1 CP) ; la nouvelle loi, entrée en vigueur le 1er juin, ne peut pas s'appliquer à un acte commis avant cette date (art. 2 CP).
 
 Chapitres :
 0:00 Le cas de départ
