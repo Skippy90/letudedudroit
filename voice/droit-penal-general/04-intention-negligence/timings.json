@@ -1,7 +1,7 @@
 {
  "voix": "Enregistrement humain",
  "source": "humaine",
- "duree": 410.811,
+ "duree": 412.121,
  "lignes": [
   {
    "ligne": 1,
@@ -450,7 +450,7 @@
    "fin": 38.68,
    "phrases": [
     {
-     "texte": "Dans la vidéo un, on a vu que la typicité a deux faces.",
+     "texte": "Dans la vidéo numéro un, on a vu que la typicité a deux faces.",
      "debut": 30.26,
      "fin": 35.02,
      "mots": [
@@ -1518,7 +1518,7 @@
      ]
     },
     {
-     "texte": "Il se dit : si je touche quelqu'un, tant pis.",
+     "texte": "Et se dit : si je touche quelqu'un, tant pis.",
      "debut": 107.84,
      "fin": 110.841,
      "mots": [
@@ -2993,7 +2993,7 @@
      ]
     },
     {
-     "texte": "Il vise celui qui ne se rend pas compte des conséquences de son acte.",
+     "texte": "Il y a celui qui ne se rend pas compte des conséquences de son acte.",
      "debut": 206.071,
      "fin": 209.011,
      "mots": [
@@ -4296,7 +4296,7 @@
      ]
     },
     {
-     "texte": "L'article cent vingt-cinq punit les lésions corporelles par négligence.",
+     "texte": "L'article cent vingt-cinq du Code pénal punit les lésions corporelles par négligence.",
      "debut": 296.401,
      "fin": 301.241,
      "mots": [
@@ -5549,7 +5549,7 @@
   {
    "ligne": 44,
    "debut": 385.881,
-   "fin": 402.431,
+   "fin": 403.741,
    "phrases": [
     {
      "texte": "Une question pour finir.",
@@ -5580,216 +5580,221 @@
     },
     {
      "texte": "Sofia roule bien trop vite dans une rue où jouent des enfants.",
-     "debut": 387.411,
-     "fin": 390.531,
+     "debut": 387.741,
+     "fin": 391.841,
      "mots": [
       {
+       "mot": "sophia",
+       "debut": 387.741,
+       "fin": 388.121
+      },
+      {
        "mot": "roule",
-       "debut": 387.411,
-       "fin": 387.591
+       "debut": 388.721,
+       "fin": 388.901
       },
       {
        "mot": "bien",
-       "debut": 387.651,
-       "fin": 387.831
+       "debut": 388.961,
+       "fin": 389.141
       },
       {
        "mot": "trop",
-       "debut": 387.891,
-       "fin": 388.071
+       "debut": 389.201,
+       "fin": 389.381
       },
       {
        "mot": "vite",
-       "debut": 388.111,
-       "fin": 388.551
+       "debut": 389.421,
+       "fin": 389.861
       },
       {
        "mot": "dans",
-       "debut": 388.611,
-       "fin": 388.791
+       "debut": 389.921,
+       "fin": 390.101
       },
       {
        "mot": "une",
-       "debut": 388.851,
-       "fin": 389.051
+       "debut": 390.161,
+       "fin": 390.361
       },
       {
        "mot": "rue",
-       "debut": 389.131,
-       "fin": 389.371
+       "debut": 390.441,
+       "fin": 390.681
       },
       {
        "mot": "où",
-       "debut": 389.431,
-       "fin": 389.531
+       "debut": 390.741,
+       "fin": 390.841
       },
       {
        "mot": "jouent",
-       "debut": 389.591,
-       "fin": 389.951
+       "debut": 390.901,
+       "fin": 391.261
       },
       {
        "mot": "des",
-       "debut": 390.011,
-       "fin": 390.111
+       "debut": 391.321,
+       "fin": 391.421
       },
       {
        "mot": "enfants",
-       "debut": 390.171,
-       "fin": 390.531
+       "debut": 391.481,
+       "fin": 391.841
       }
      ]
     },
     {
      "texte": "Elle sait qu'elle pourrait en renverser un.",
-     "debut": 391.671,
-     "fin": 393.231,
+     "debut": 392.981,
+     "fin": 394.541,
      "mots": [
       {
        "mot": "elle",
-       "debut": 391.671,
-       "fin": 391.771
+       "debut": 392.981,
+       "fin": 393.081
       },
       {
        "mot": "sait",
-       "debut": 391.831,
-       "fin": 391.931
+       "debut": 393.141,
+       "fin": 393.241
       },
       {
        "mot": "qu",
-       "debut": 391.951,
-       "fin": 392.111
+       "debut": 393.261,
+       "fin": 393.421
       },
       {
        "mot": "elle",
-       "debut": 391.951,
-       "fin": 392.111
+       "debut": 393.261,
+       "fin": 393.421
       },
       {
        "mot": "pourrait",
-       "debut": 392.151,
-       "fin": 392.371
+       "debut": 393.461,
+       "fin": 393.681
       },
       {
        "mot": "en",
-       "debut": 392.411,
-       "fin": 392.531
+       "debut": 393.721,
+       "fin": 393.841
       },
       {
        "mot": "renverser",
-       "debut": 392.591,
-       "fin": 393.091
+       "debut": 393.901,
+       "fin": 394.401
       },
       {
        "mot": "un",
-       "debut": 393.131,
-       "fin": 393.231
+       "debut": 394.441,
+       "fin": 394.541
       }
      ]
     },
     {
      "texte": "Mais elle est certaine de pouvoir freiner à temps.",
-     "debut": 394.371,
-     "fin": 396.731,
+     "debut": 395.681,
+     "fin": 398.041,
      "mots": [
       {
        "mot": "mais",
-       "debut": 394.371,
-       "fin": 394.471
+       "debut": 395.681,
+       "fin": 395.781
       },
       {
        "mot": "elle",
-       "debut": 394.491,
-       "fin": 394.571
+       "debut": 395.801,
+       "fin": 395.881
       },
       {
        "mot": "est",
-       "debut": 394.591,
-       "fin": 394.691
+       "debut": 395.901,
+       "fin": 396.001
       },
       {
        "mot": "certaine",
-       "debut": 394.871,
-       "fin": 395.531
+       "debut": 396.181,
+       "fin": 396.841
       },
       {
        "mot": "de",
-       "debut": 395.571,
-       "fin": 395.671
+       "debut": 396.881,
+       "fin": 396.981
       },
       {
        "mot": "pouvoir",
-       "debut": 395.731,
-       "fin": 396.071
+       "debut": 397.041,
+       "fin": 397.381
       },
       {
        "mot": "freiner",
-       "debut": 396.131,
-       "fin": 396.371
+       "debut": 397.441,
+       "fin": 397.681
       },
       {
        "mot": "à",
-       "debut": 396.431,
-       "fin": 396.451
+       "debut": 397.741,
+       "fin": 397.761
       },
       {
        "mot": "temps",
-       "debut": 396.531,
-       "fin": 396.731
+       "debut": 397.841,
+       "fin": 398.041
       }
      ]
     },
     {
      "texte": "Intention ou négligence ?",
-     "debut": 397.791,
-     "fin": 399.511,
+     "debut": 399.101,
+     "fin": 400.821,
      "mots": [
       {
        "mot": "intention",
-       "debut": 397.791,
-       "fin": 398.251
+       "debut": 399.101,
+       "fin": 399.561
       },
       {
        "mot": "ou",
-       "debut": 398.891,
-       "fin": 398.931
+       "debut": 400.201,
+       "fin": 400.241
       },
       {
        "mot": "négligence",
-       "debut": 398.991,
-       "fin": 399.511
+       "debut": 400.301,
+       "fin": 400.821
       }
      ]
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 400.651,
-     "fin": 402.431,
+     "debut": 401.961,
+     "fin": 403.741,
      "mots": [
       {
        "mot": "écrivez",
-       "debut": 400.651,
-       "fin": 401.011
+       "debut": 401.961,
+       "fin": 402.321
       },
       {
        "mot": "votre",
-       "debut": 401.051,
-       "fin": 401.211
+       "debut": 402.361,
+       "fin": 402.521
       },
       {
        "mot": "réponse",
-       "debut": 401.231,
-       "fin": 401.591
+       "debut": 402.541,
+       "fin": 402.901
       },
       {
        "mot": "en",
-       "debut": 401.791,
-       "fin": 401.871
+       "debut": 403.101,
+       "fin": 403.181
       },
       {
        "mot": "commentaire",
-       "debut": 401.911,
-       "fin": 402.431
+       "debut": 403.221,
+       "fin": 403.741
       }
      ]
     }
@@ -5797,130 +5802,130 @@
   },
   {
    "ligne": 45,
-   "debut": 403.531,
-   "fin": 410.691,
+   "debut": 404.841,
+   "fin": 412.001,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 403.531,
-     "fin": 408.291,
+     "debut": 404.841,
+     "fin": 409.601,
      "mots": [
       {
        "mot": "la",
-       "debut": 403.531,
-       "fin": 403.591
+       "debut": 404.841,
+       "fin": 404.901
       },
       {
        "mot": "réponse",
-       "debut": 403.651,
-       "fin": 404.071
+       "debut": 404.961,
+       "fin": 405.381
       },
       {
        "mot": "le",
-       "debut": 404.471,
-       "fin": 404.551
+       "debut": 405.781,
+       "fin": 405.861
       },
       {
        "mot": "script",
-       "debut": 404.591,
-       "fin": 404.971
+       "debut": 405.901,
+       "fin": 406.281
       },
       {
        "mot": "et",
-       "debut": 405.291,
-       "fin": 405.351
+       "debut": 406.601,
+       "fin": 406.661
       },
       {
        "mot": "les",
-       "debut": 405.371,
-       "fin": 405.491
+       "debut": 406.681,
+       "fin": 406.801
       },
       {
        "mot": "articles",
-       "debut": 405.551,
-       "fin": 405.811
+       "debut": 406.861,
+       "fin": 407.121
       },
       {
        "mot": "cités",
-       "debut": 405.871,
-       "fin": 406.251
+       "debut": 407.181,
+       "fin": 407.561
       },
       {
        "mot": "sont",
-       "debut": 406.311,
-       "fin": 406.431
+       "debut": 407.621,
+       "fin": 407.741
       },
       {
        "mot": "dans",
-       "debut": 406.451,
-       "fin": 406.531
+       "debut": 407.761,
+       "fin": 407.841
       },
       {
        "mot": "la",
-       "debut": 406.571,
-       "fin": 406.631
+       "debut": 407.881,
+       "fin": 407.941
       },
       {
        "mot": "description",
-       "debut": 406.671,
-       "fin": 407.171
+       "debut": 407.981,
+       "fin": 408.481
       },
       {
        "mot": "en",
-       "debut": 407.651,
-       "fin": 407.731
+       "debut": 408.961,
+       "fin": 409.041
       },
       {
        "mot": "accès",
-       "debut": 407.791,
-       "fin": 407.971
+       "debut": 409.101,
+       "fin": 409.281
       },
       {
        "mot": "libre",
-       "debut": 408.011,
-       "fin": 408.291
+       "debut": 409.321,
+       "fin": 409.601
       }
      ]
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 409.331,
-     "fin": 410.691,
+     "debut": 410.641,
+     "fin": 412.001,
      "mots": [
       {
        "mot": "à",
-       "debut": 409.331,
-       "fin": 409.391
+       "debut": 410.641,
+       "fin": 410.701
       },
       {
        "mot": "bientôt",
-       "debut": 409.431,
-       "fin": 409.691
+       "debut": 410.741,
+       "fin": 411.001
       },
       {
        "mot": "sur",
-       "debut": 409.731,
-       "fin": 409.851
+       "debut": 411.041,
+       "fin": 411.161
       },
       {
        "mot": "l",
-       "debut": 409.891,
-       "fin": 410.231
+       "debut": 411.201,
+       "fin": 411.541
       },
       {
        "mot": "etude",
-       "debut": 409.891,
-       "fin": 410.231
+       "debut": 411.201,
+       "fin": 411.541
       },
       {
        "mot": "du",
-       "debut": 410.271,
-       "fin": 410.331
+       "debut": 411.581,
+       "fin": 411.641
       },
       {
        "mot": "droit",
-       "debut": 410.391,
-       "fin": 410.691
+       "debut": 411.701,
+       "fin": 412.001
       }
      ]
     }

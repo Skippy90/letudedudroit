@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Qu'est-ce qu'une infraction ? Les trois étages | Droit pénal suisse
 
-## Description (2490 caractères sur 5 000)
+## Description (2530 caractères sur 5 000)
 
 ```text
 Qu'est-ce qu'une infraction ? Les trois étages — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 1 CP : Pas de peine sans une loi qui réprime expressément le comportement
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_1
 • Art. 12 CP : Les crimes et délits ne sont punis qu'intentionnellement, sauf disposition expresse ; l'intention inclut le fait de tenir pour possible et d'accepter (dol éventuel)
