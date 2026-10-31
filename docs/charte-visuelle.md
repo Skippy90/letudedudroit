@@ -18,8 +18,8 @@ Un vocabulaire graphique fixe remplace le visage : le spectateur doit reconnaît
 
 ## Couleurs et typographie
 
-- Fond sombre uni (noir, adopté le 30 octobre 2026 à la place du bleu nuit) ; texte et traits en blanc cassé ; une couleur d'accent chaude (ambre) pour ce qui est important à l'instant ; vert pour « condition remplie », gris pour « condition manquante », rouge réservé au dommage.
-- Valeurs de départ (à ajuster une fois rendues) : fond `#0B0B0B` (blocs `#1F1F22`), texte `#F2EFE6`, accent `#E3A52F`, vert `#4CAF7D`, gris `#6B7280`, rouge `#D9534F`.
+- Fond sombre uni (noir, adopté le 30 octobre 2026 à la place du bleu nuit) ; texte et traits en blanc cassé ; le rouge suisse de la marque comme accent, pour ce qui est important à l'instant (les mots-clés s'écrivent en blanc sur une pastille rouge, comme le logo) ; vert pour « condition remplie », gris pour « condition manquante », ambre pour le dommage. Grille adoptée le 31 octobre 2026 ; l'ancienne (accent ambre, dommage rouge) reste disponible avec `THEME=ambre`.
+- Valeurs de départ (à ajuster une fois rendues) : fond `#0B0B0B` (blocs `#1F1F22`), texte `#F2EFE6`, accent rouge suisse `#DA291C`, vert `#4CAF7D`, gris `#6B7280`, dommage ambre `#E3A52F`.
 - Une seule famille de caractères, sans empattement, lisible sur téléphone : rien en dessous de l'équivalent de 28 points sur une image 1920 × 1080.
 - Jamais plus de douze mots affichés en même temps, hors bloc d'article et hors sous-titres.
 
@@ -31,11 +31,11 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 | --- | --- |
 | Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, appartement, rue, parc, piscine, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
 | Ce qui se passe | Les silhouettes se déplacent dans le décor : marcher, pousser, tomber ; elles restent sans visage et sans bras |
-| Un mot-clé | Étiquette courte en ambre, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
-| Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée ambre de la tension entre deux personnes) |
-| Où en est le raisonnement | Petit bâtiment à trois étages en haut à droite, présent du moment où les trois étages sont posés jusqu'à la fin ; ses étages suivent le cas principal (ambre : étage en cours d'examen ; vert : franchi) |
-| Une liste de conditions qui structure toute la vidéo | Pense-bête en haut à droite, une case et un mot par condition (vidéo 2 : « Texte », « Précis », « Avant ») ; il remplace le petit bâtiment quand la vidéo ne suit pas les trois étages ; mêmes couleurs (ambre : condition examinée ; gris : elle manque dans le cas ; vert : remplie) |
-| Un arrêt du Tribunal fédéral | Bloc « ATF … » au cadre ambre, en bas, à côté du bloc d'article, affiché pendant qu'on parle de cette jurisprudence |
+| Un mot-clé | Étiquette courte en blanc sur pastille rouge, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
+| Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée rouge de la tension entre deux personnes) |
+| Où en est le raisonnement | Petit bâtiment à trois étages en haut à droite, présent du moment où les trois étages sont posés jusqu'à la fin ; ses étages suivent le cas principal (rouge : étage en cours d'examen ; vert : franchi) |
+| Une liste de conditions qui structure toute la vidéo | Pense-bête en haut à droite, une case et un mot par condition (vidéo 2 : « Texte », « Précis », « Avant ») ; il remplace le petit bâtiment quand la vidéo ne suit pas les trois étages ; mêmes couleurs (rouge : condition examinée ; gris : elle manque dans le cas ; vert : remplie) |
+| Un arrêt du Tribunal fédéral | Bloc « ATF … » au cadre rouge, en bas, à côté du bloc d'article, affiché pendant qu'on parle de cette jurisprudence |
 | Une idée sans personnage | Pictogramme au trait plutôt qu'un écran de texte seul : prison (peine privative de liberté), pièces (argent), document (contrat), danger, édifice à colonnes (la loi votée), corde (cordée) |
 | Ce qui est dit | Sous-titres incrustés en bas de l'image, sept mots au plus, coupés de préférence à la ponctuation, calés sur la voix ; police Inter, blanc cassé, même échelle que les plus petits textes |
 

@@ -16,16 +16,17 @@ from manim import (
 FOND = "#0B0B0B"
 TEXTE = "#F2EFE6"
 ACCENT = "#E3A52F"
-# Thème « marque » (THEME=marque) : l'accent devient le rouge suisse de la marque, et les mots-clés
-# s'écrivent en blanc sur une pastille rouge, comme le logo. Le thème par défaut garde l'ambre.
+# Grille de la marque (adoptée le 31 octobre 2026) : l'accent est le rouge suisse de la marque, les mots-clés
+# s'écrivent en blanc sur une pastille rouge, comme le logo ; l'ambre, libéré, devient la couleur du dommage.
+# THEME=ambre rend avec l'ancienne grille (accent ambre, dommage rouge).
 import os as _os
 ROUGE_MARQUE = "#DA291C"
-MARQUE = _os.environ.get("THEME", "") == "marque"
-if MARQUE:
-    ACCENT = ROUGE_MARQUE
+MARQUE = _os.environ.get("THEME", "marque") != "ambre"
 VERT = "#4CAF7D"
 GRIS = "#6B7280"
-ROUGE = "#D9534F"
+ROUGE = "#D9534F"  # dommage, dans l'ancienne grille (THEME=ambre)
+if MARQUE:
+    ACCENT, ROUGE = ROUGE_MARQUE, "#E3A52F"  # accent rouge suisse ; dommage ambre
 SURFACE = "#1F1F22"  # fond des blocs, un cran plus clair que le fond
 
 # Une couleur fixe par personnage, choisie dans visuals.md
