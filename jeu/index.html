@@ -220,7 +220,7 @@ const NIVEAUX = [
       ok: "L'article 307 punit le témoin qui fait une déposition fausse en justice : là, un texte décrit précisément l'acte.",
       defaut: "Cette porte ne s'ouvre que pour le témoin qui fait une déposition fausse en justice." },
     { id: "p146", label: "Art. 146 CP", porte: true, x: 1330, y: SOL - 110, l: 70, h: 110, accepte: "escroc",
-      ok: "Un article existe : l'escroquerie. Mais il ne suffit pas de mentir : il faut une tromperie astucieuse, une victime qui agit contre ses intérêts financiers, un auteur qui veut s'enrichir.",
+      ok: "Un article existe : l'escroquerie. Mais il ne suffit pas de mentir : il faut une tromperie astucieuse, une victime qui agit contre ses intérêts financiers ou contre ceux d'un tiers, un auteur qui veut s'enrichir ou enrichir un tiers.",
       ko: { samedi: "Le mensonge du samedi ressemble peut-être à une escroquerie, mais Tom ne cherche pas d'argent. Le juge peut interpréter un texte, pas y ajouter ce qui n'y est pas." },
       defaut: "L'escroquerie suppose une tromperie astucieuse pour obtenir de l'argent." },
     { id: "aucun", label: "Aucun texte", porte: true, x: 1510, y: SOL - 110, l: 70, h: 110, accepte: "samedi",
@@ -352,7 +352,7 @@ const FINALE = { id: "finale", titre: "La dernière page", lieu: "Le Code · der
   intro: "Les six cas sont résolus. Le Code s'ouvre à sa dernière page, et les réponses se mettent à tomber. Lis la question en bas, puis attrape la page A, B ou C qui porte la bonne réponse. Une mauvaise page en déchire une des tiennes.",
   questions: [
    { q: "Même escalier, mais Marc bouscule Julien par inadvertance, sans le voir. Quel étage pose problème ?", o: ["Le premier : pas d'intention ; reste la négligence de l'article 125, sur plainte, d'office si la lésion est grave.", "Le deuxième : la bousculade était permise.", "Le troisième : Marc n'est pas coupable."], r: 0 },
-   { q: "Le 1er mars, Nora fait quelque chose de permis. Le 1er juin, une loi l'interdit et le punit. Le 1er juillet, elle recommence. Pour quelle date peut-elle être punie ?", o: ["Pour les deux dates.", "Seulement pour le 1er juillet (art. 1 et 2 CP).", "Pour aucune."], r: 1 },
+   { q: "Le 1er mars, Nora fait quelque chose de permis. Le 1er juin, une loi qui l'interdit et le punit entre en vigueur. Le 1er juillet, elle recommence. Pour quelle date peut-elle être punie ?", o: ["Pour les deux dates.", "Seulement pour le 1er juillet, si son comportement réalise les conditions de la nouvelle infraction (art. 1 et 2 CP).", "Pour aucune."], r: 1 },
    { q: "Une infraction n'est punie que d'une peine pécuniaire, sans peine privative de liberté. Crime, délit ou contravention ?", o: ["Une contravention.", "Un délit : seule l'amende fait une contravention (art. 10, al. 3, et 103 CP).", "Un crime."], r: 1 },
    { q: "Sofia roule bien trop vite dans une rue où jouent des enfants. Elle sait qu'elle pourrait en renverser un, mais elle est certaine de pouvoir freiner à temps.", o: ["Le dol direct.", "En principe, la négligence consciente ; le juge peut retenir le dol éventuel selon les indices.", "Aucune faute."], r: 1 },
    { q: "Lucas allume un feu de camp en forêt et part sans l'éteindre. Le feu s'étend. Était-il garant ?", o: ["Non : il n'a rien fait après.", "Oui, par la création d'un risque (art. 11, al. 2, let. d, CP).", "Oui, par contrat."], r: 1 },

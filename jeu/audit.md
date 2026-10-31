@@ -24,7 +24,7 @@ La colonne « Vérifié » n'est cochée que par la relectrice.
 | [Art. 128 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_128) | Omission de prêter secours : danger de mort imminente, si on peut raisonnablement l'exiger (cas 5) | Vidéo 5 | - [ ] |
 | [Art. 139 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139) | Vol : cinq ans au plus ou peine pécuniaire, donc crime (cas 3) | Vidéo 3 | - [ ] |
 | [Art. 144 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_144) | Dommage à la propriété : abîmer la chose d'autrui (fausse piste du cas 1) ; trois ans au plus, donc délit (cas 3) | Vidéo 3 ; vidéo 4 | - [ ] |
-| [Art. 146 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_146) | Escroquerie : tromperie astucieuse, actes préjudiciables aux intérêts financiers, dessein d'enrichissement (cas 2) | Vidéo 2 | - [ ] |
+| [Art. 146 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_146) | Escroquerie : tromperie astucieuse, actes préjudiciables aux intérêts financiers de la victime ou d'un tiers, dessein de s'enrichir ou d'enrichir un tiers (cas 2 ; corrigé le 31 octobre 2026 après la relecture externe de la vidéo 2) | Vidéo 2 | - [ ] |
 | [Art. 307 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_307) | Le témoin qui fait une déposition fausse en justice est puni (cas 2) | Vidéo 2 | - [ ] |
 
 ## Points d'attention
