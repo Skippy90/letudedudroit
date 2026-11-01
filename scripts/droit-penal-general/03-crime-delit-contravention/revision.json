@@ -56,9 +56,9 @@
     },
     {
       "id": "v03-05",
-      "q": "Inès vole un téléphone tout neuf pour le garder. Quelle catégorie ?",
-      "r": "Un crime. Le vol est puni de cinq ans au plus, et cinq ans, c'est plus de trois ans.",
-      "source": "lignes 16 à 18 ; art. 139 CP",
+      "q": "Inès vole un téléphone neuf qu'elle sait valoir environ neuf cents francs. Quelle catégorie ?",
+      "r": "Un crime. Le vol est puni de cinq ans au plus, et cinq ans, c'est plus de trois ans. Elle ne visait pas un objet de faible valeur.",
+      "source": "lignes 16 à 19 ; art. 139 et 172ter CP",
       "notion": "Les trois catégories"
     },
     {
@@ -70,9 +70,9 @@
     },
     {
       "id": "v03-07",
-      "q": "Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs. Quelle catégorie ?",
-      "r": "Un délit. Le dommage à la propriété est puni de trois ans au plus.",
-      "source": "lignes 21 et 22 ; art. 144 CP",
+      "q": "Noah tague tout le mur d'une boulangerie : il envisage un nettoyage d'environ deux mille francs. Quelle catégorie ?",
+      "r": "Un délit. Le dommage à la propriété est puni de trois ans au plus. Le dommage visé n'est pas de moindre importance.",
+      "source": "lignes 3, 21 et 22 ; art. 144 et 172ter CP",
       "notion": "Les trois catégories"
     },
     {
@@ -113,7 +113,7 @@
   ],
   "variantes": {
     "base": {
-      "faits": "Dans la même rue, Inès vole un téléphone neuf, Noah tague tout le mur d'une boulangerie, et Yann gifle un ami sans le blesser.",
+      "faits": "Dans la même rue, Inès vole un téléphone neuf d'environ neuf cents francs, Noah tague tout le mur d'une boulangerie, et Yann gifle un ami sans le blesser.",
       "qualification": "Un crime pour Inès, un délit pour Noah, une contravention pour Yann.",
       "source": "ligne 26 ; art. 139, 144 et 126 CP"
     },
