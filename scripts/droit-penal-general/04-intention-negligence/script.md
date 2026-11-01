@@ -38,7 +38,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 13 | Deuxième version. Léo ne vise personne. Il veut juste impressionner ses amis avec un tir puissant. | Rembobinage ; la bulle « Impressionner » |
-| 14 | Mais il voit le groupe juste à côté, et se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
+| 14 | Mais il voit le groupe juste à côté, et il se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
 | 15 | Il ne souhaite pas la blessure. Mais il l'accepte, pour le cas où elle arriverait. | Le mot « Accepter » en ambre |
 | 16 | L'article 12 le prévoit dans une seconde phrase. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement. | Bloc « Art. 12 CP » ; « Possible + accepté » |
 | 17 | C'est le dol éventuel. Le Tribunal fédéral le résume ainsi : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode. | Le mot « Dol éventuel » |
