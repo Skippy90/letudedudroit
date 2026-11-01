@@ -290,6 +290,10 @@ class Schemas(Scene):
             if any(a[0] == "scene-vide" for a in actions):
                 self.scene_vide()
                 actions = [a for a in actions if a[0] != "scene-vide"]
+            # Le rembobinage se joue sur l'écran libéré, avant que le décor revienne : jamais par-dessus.
+            if any(a[0] == "rembobiner" for a in actions):
+                self.executer(("rembobiner",), repere)
+                actions = [a for a in actions if a[0] != "rembobiner"]
             # Ce qui part se retire d'abord : rien de nouveau n'apparaît par-dessus un élément sur le départ.
             retraits = [a for a in actions if a[0] in RETRAITS]
             if retraits and len(retraits) < len(actions):
