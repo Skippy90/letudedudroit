@@ -47,9 +47,8 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 12.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; bouclier -2.6 0.6 ; titre "Justifié" ambre |
 | 12.2@illicéité | repere-etage 2 gris ; sous-titre "L'illicéité tombe" |
 | 12.3@punie | sous-titre "Yasmine n'est pas punie" |
-| 13.1 | scene-vide ; article "Art. 15 CP" ; decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -1 ; personnage kevin "Kevin" rose droite ; placer kevin 1 ; picto bouteille 2.3 -0.9 |
-| 13.2@tiers | personnage hugo "Hugo" bleu_clair gauche ; placer hugo -4 ; etiquette tiers "Un tiers aussi" -4.0 1.7 |
-| 13.3@hugo | marcher hugo -3 |
+| 13.1 | scene-vide ; article "Art. 15 CP" ; decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 2 ; picto bouteille 3.9 -0.9 |
+| 13.2@tiers | article-retirer ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -4 ; etiquette tiers "Un tiers aussi" -4.0 1.7 |
 | 13.3@défendre | accent hugo |
 | 14.1 | scene-vide ; titre "Pas que le corps" ; personnage yasmine "Yasmine" turquoise gauche |
 | 14.2@fédéral | arret "ATF 107 IV 12" |
