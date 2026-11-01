@@ -21,6 +21,12 @@ MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale":
 DUREE_OUVERTURE, DUREE_FIN = 4, 6  # secondes, comme dans render/remotion/src/Video.tsx
 
 
+# Texture de l'image (adoptée le 1er novembre 2026), appliquée avant les sous-titres pour qu'ils restent nets :
+# halo doux autour des éléments clairs (blanc, rouge de la marque), vignette légère, grain fin animé.
+# Les couleurs de la charte ne bougent pas (mélange en RVB). TEXTURE=0 rend sans.
+TEXTURE = (",format=gbrp,split[t1][t2];[t2]curves=all='0/0 0.6/0.03 1/1',gblur=sigma=16[t3];"
+           "[t1][t3]blend=all_mode=screen:all_opacity=0.35,vignette=angle=PI/8,noise=alls=6:allf=t,format=yuv420p")
+
 # Bruitages de l'ouverture, calés sur l'animation de render/remotion/src/Video.tsx : les trois barres
 # traversent l'écran (0 s), les étages du logo s'empilent (0,55 s, puis toutes les 0,15 s), le titre arrive (1,3 s).
 # Fabriqués en code (tools/bande_annonce.py) : aucune licence à gérer.
@@ -94,6 +100,7 @@ def main(slug: str) -> None:
     # Sous-titres incrustés, calés mot à mot, décalés de la durée de l'ouverture.
     # SOUS_TITRES=0 pour une version sans sous-titres.
     incruster = os.environ.get("SOUS_TITRES", "1") != "0"
+    texture = os.environ.get("TEXTURE", "1") != "0"
     filtre_st = ""
     if incruster:
         ass = travail / "sous-titres.ass"
@@ -106,7 +113,7 @@ def main(slug: str) -> None:
         "-i", str(voix / "narration.wav"), "-i", str(bruitages(travail, DUREE_OUVERTURE + timings["duree"])),
         "-filter_complex",
         "[0:v]setsar=1,fps=30[a];[1:v]setsar=1,fps=30[b];[2:v]setsar=1,fps=30[c];"
-        f"[a][b][c]concat=n=3:v=1:a=0{filtre_st}[v];[3:a]adelay={delai}:all=1,apad[n];"
+        f"[a][b][c]concat=n=3:v=1:a=0{TEXTURE if texture else ''}{filtre_st}[v];[3:a]adelay={delai}:all=1,apad[n];"
         "[4:a]volume=0.45,apad[o];[n][o]amix=inputs=2:normalize=0[s]",
         "-map", "[v]", "-map", "[s]", "-t", f"{duree:.3f}",
         "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p",

@@ -41,6 +41,18 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 
 Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur les marches ; leur nom garde sa taille.
 
+## Texture de l'image (adoptée le 1er novembre 2026)
+
+Appliquée au montage (`tools/assembler.py`), sur toute la vidéo sauf les sous-titres, qui restent nets :
+halo doux autour des éléments clairs (blanc, rouge de la marque), vignette légère sur les bords, grain fin animé.
+Les couleurs de la charte ne changent pas. `TEXTURE=0` rend sans texture.
+
+## Ouverture et carte de fin
+
+Ouverture (4 s) : les trois barres du logo traversent l'écran, le logo se construit, puis le titre de la vidéo.
+Fin (6 s) : logo, bouton « S'abonner » cliqué, vidéo suivante annoncée (si son script existe), GitHub et licence ;
+le bas de l'écran reste libre pour l'écran de fin YouTube. Bruitages synthétisés en code, sans licence à gérer.
+
 ## Règles d'animation
 
 1. Chaque phrase du script fait apparaître ou bouger quelque chose ; aucun plan fixe de plus de quatre secondes.
