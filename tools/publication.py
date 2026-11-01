@@ -61,7 +61,7 @@ def main(slug: str) -> None:
         m = re.match(r"\|\s*\[([^\]]+)\]\(([^)]+)\)([^|]*)\|([^|]+)\|", ligne)
         if m:
             # Les renvois internes aux lignes du script (« (ligne 19) ») restent dans l'audit.
-            resume = re.sub(r"\s*\(lignes? [^)]*\)\s*$", "", sans_markdown(m[4]))
+            resume = re.sub(r"\s*\(lignes? [^)]*\)", "", sans_markdown(m[4]))
             articles.append(f"• {m[1]}{m[3].rstrip()} : {resume}\n  {m[2]}")
 
     # Jurisprudence citée dans l'audit, sans doublon, avec ce qu'elle établit : la deuxième colonne de la
@@ -76,7 +76,7 @@ def main(slug: str) -> None:
             if ligne.startswith("|") and f"[{numero}]" in ligne:
                 colonnes = [c.strip() for c in ligne.strip().strip("|").split("|")]
                 if len(colonnes) > 1:
-                    resume = re.sub(r"\s*\(lignes? [^)]*\)\s*$", "", sans_markdown(colonnes[1]))
+                    resume = re.sub(r"\s*\(lignes? [^)]*\)", "", sans_markdown(colonnes[1]))
                 m = re.search(re.escape(f"[{numero}]") + r"\([^)]*\),?\s*(consid\. [0-9.a-z, et]+?)(?=\s*[:;|]|$)", ligne)
                 consid = m[1].rstrip(" ,") if m else ""
                 break

@@ -25,6 +25,7 @@ RECUEILS = {
     "cpp": ("2010/267", "Code de procédure pénale, RS 312.0"),
     "dpmin": ("2006/551", "Droit pénal des mineurs, RS 311.1"),
     "cc": ("24/233_245_233", "Code civil suisse, RS 210"),
+    "co": ("27/317_321_377", "Code des obligations, RS 220"),
 }
 
 

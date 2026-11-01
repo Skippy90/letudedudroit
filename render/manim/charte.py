@@ -544,6 +544,19 @@ class Picto(VGroup):
             roues = VGroup(Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([-0.8, -0.38, 0]),
                            Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([0.8, -0.38, 0]))
             elements = [caisse, toit, roues]
+        elif nom == "velo":
+            # Vélo au trait : deux roues, cadre en triangle, selle et guidon.
+            r1 = Circle(radius=0.42, color=TEXTE, stroke_width=4).move_to([-0.6, 0, 0])
+            r2 = Circle(radius=0.42, color=TEXTE, stroke_width=4).move_to([0.6, 0, 0])
+            cadre = Polygon([-0.6, 0, 0], [-0.1, 0, 0], [0.4, 0.55, 0], [-0.25, 0.55, 0], color=TEXTE, stroke_width=4)
+            fourche = Line([0.6, 0, 0], [0.45, 0.7, 0], color=TEXTE, stroke_width=4)
+            selle = Line([-0.4, 0.68, 0], [-0.1, 0.68, 0], color=TEXTE, stroke_width=6)
+            guidon = Line([0.35, 0.78, 0], [0.6, 0.78, 0], color=TEXTE, stroke_width=6)
+            elements = [r1, r2, cadre, fourche, selle, guidon]
+        elif nom == "portefeuille":
+            corps = RoundedRectangle(corner_radius=0.1, width=0.9, height=0.6, color=TEXTE, stroke_width=4)
+            rabat = RoundedRectangle(corner_radius=0.06, width=0.35, height=0.24, color=ACCENT, stroke_width=4).move_to([0.32, 0, 0])
+            elements = [corps, rabat]
         elif nom == "ballon":
             balle = Circle(radius=0.2, color=TEXTE, fill_color=TEXTE, fill_opacity=1, stroke_width=0)
             couture = Arc(radius=0.2, start_angle=-0.9, angle=1.8, color=FOND, stroke_width=3).shift(LEFT * 0.12)
@@ -618,6 +631,7 @@ class Rue(VGroup):
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
+        self.textes = [enseigne]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
         super().__init__(sol, facades, self.mur, vitrine, store, enseigne, reverbere)
 
     def pied(self, n):

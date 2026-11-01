@@ -5,7 +5,7 @@ DIR  := scripts/$(SLUG)
 PY   := .venv/bin/python
 MANIM_MEDIA := render/manim/media
 
-.PHONY: video check installer voice visuals assemble
+.PHONY: video check installer voice visuals assemble shorts paquet bande-annonce
 
 video: check voice visuals assemble
 
@@ -41,4 +41,19 @@ visuals:
 
 # Habillage Remotion et rendu final dans out/.
 assemble:
+	$(PY) tools/verifier_articles.py $(SLUG)
 	$(PY) tools/assembler.py $(SLUG)
+
+# Shorts verticaux (1080 × 1920) décrits dans scripts/$(SLUG)/shorts.json, tirés de la vidéo déjà rendue.
+shorts:
+	$(PY) tools/short.py $(SLUG)
+
+# Paquet d'upload YouTube (vidéo, miniature, description, réglages, consignes) : out/upload/<numero-slug>.zip.
+# Mots-clés propres à la vidéo : TAGS="crime délit …". Rien n'est envoyé à YouTube.
+paquet:
+	$(PY) tools/publication.py $(SLUG)
+	$(PY) tools/paquet_youtube.py $(SLUG) $(TAGS)
+
+# Bande-annonce de la chaîne (10 s, en code, bruitages synthétisés) : out/bande-annonce.mp4.
+bande-annonce:
+	$(PY) tools/bande_annonce.py

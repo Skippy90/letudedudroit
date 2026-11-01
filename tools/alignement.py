@@ -109,6 +109,10 @@ def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, floa
                  if b.size]
         if not blocs or blocs[0].b != 0:
             continue
+        # Une prise commence par au moins deux mots attendus à la suite : un mot isolé de la phrase
+        # précédente (« vouloir le résultat » devant « le tenir pour possible ») ne fait pas un début.
+        if n >= 3 and blocs[0].size < 2:
+            continue
         part = sum(b.size for b in blocs) / n
         if part >= SEUIL_PRISE:
             queue = n - (blocs[-1].a + blocs[-1].size)

@@ -12,8 +12,8 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 1 | Mercredi après-midi, dans un parc de Sion. Léo joue au football avec des amis. | La silhouette de Léo |
 | 2 | Il frappe le ballon de toutes ses forces. Le ballon part dans le groupe d'à côté et touche Adam en plein visage. | La silhouette d'Adam ; un éclair rouge |
-| 3 | Adam est blessé. Une chose est sûre : le geste de Léo a causé la blessure. | Le mot « Blessure » |
-| 4 | Mais une question décide de tout. Léo voulait-il blesser Adam ? Ou est-ce arrivé malgré lui ? | Une bulle de pensée au-dessus de Léo, avec un point d'interrogation |
+| 3 | Adam est blessé : il a le nez cassé. Une chose est sûre : le geste de Léo a causé la blessure. | Le mot « Blessure » |
+| 4 | Mais une question est essentielle. Léo voulait-il blesser Adam ? Ou est-ce arrivé malgré lui ? | Une bulle de pensée au-dessus de Léo, avec un point d'interrogation |
 
 ## La carte : ce qui se passe dans la tête
 
@@ -21,7 +21,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 5 | Dans la vidéo numéro 1, on a vu que la typicité a deux faces. Le geste, et ce qui se passe dans la tête de l'auteur. | Le bâtiment ; l'étage « Typicité » en ambre ; « vidéo 1 » en petit |
 | 6 | Cette face intérieure se règle à l'article 12 du Code pénal. Il distingue deux grandes attitudes : l'intention et la négligence. | Bloc « Art. 12 CP » ; deux colonnes « Intention » et « Négligence » |
-| 7 | Et la différence est énorme. Sauf exception prévue par la loi, seul l'auteur qui agit intentionnellement est punissable. | Le mot « Intention » en ambre |
+| 7 | Et la différence est énorme. Pour un crime ou un délit, seul l'auteur qui agit intentionnellement est punissable. Sauf si la loi prévoit expressément le contraire. | Le mot « Intention » en ambre |
 | 8 | Voyons cinq versions de l'histoire de Léo. Du geste le plus voulu au plus involontaire. | Une liste de cinq lignes se prépare |
 
 ## Première version : l'intention directe
@@ -38,11 +38,11 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 13 | Deuxième version. Léo ne vise personne. Il veut juste impressionner ses amis avec un tir puissant. | Rembobinage ; la bulle « Impressionner » |
-| 14 | Mais il voit le groupe juste à côté, et se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
+| 14 | Mais il voit le groupe juste à côté, et il se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
 | 15 | Il ne souhaite pas la blessure. Mais il l'accepte, pour le cas où elle arriverait. | Le mot « Accepter » en ambre |
 | 16 | L'article 12 le prévoit dans une seconde phrase. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement. | Bloc « Art. 12 CP » ; « Possible + accepté » |
 | 17 | C'est le dol éventuel. Le Tribunal fédéral le résume ainsi : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode. | Le mot « Dol éventuel » |
-| 18 | Pour le droit pénal, c'est encore de l'intention. Léo serait puni comme s'il avait voulu la blessure. | La case « Intention » se coche |
+| 18 | Pour le droit pénal, c'est encore de l'intention. Léo pourrait être puni comme s'il avait voulu la blessure. | La case « Intention » se coche |
 
 ## Troisième et quatrième versions : la négligence
 
@@ -54,7 +54,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | 22 | Les juristes parlent de négligence consciente. Il a vu le risque, mais il a compté sur une issue heureuse. | Le mot « Négligence consciente » |
 | 23 | Quatrième version. Léo ne regarde même pas autour de lui. Il ne voit pas le groupe derrière la haie. | Rembobinage ; Léo seul, une haie entre lui et le groupe |
 | 24 | Il ne s'est pas rendu compte du risque. Mais il aurait dû vérifier avant de frapper si fort. | Le mot « Aurait dû vérifier » |
-| 25 | L'article 12 appelle cela une imprévoyance coupable. C'est le fait de ne pas prendre les précautions que les circonstances commandaient. | Bloc « Art. 12 CP » ; le mot « Négligence » |
+| 25 | L'article 12 appelle cela une imprévoyance coupable. C'est le fait de ne pas prendre les précautions commandées par les circonstances et par sa situation personnelle. | Bloc « Art. 12 CP » ; le mot « Négligence » |
 | 26 | Le texte couvre d'ailleurs nos deux versions. Il y a celui qui ne se rend pas compte des conséquences de son acte. Et celui qui n'en tient pas compte. | Deux lignes : « Ne pas se rendre compte », « Ne pas en tenir compte » |
 | 27 | Cinquième version. Léo a regardé, le parc était vide. Mais le ballon rebondit sur un poteau et file vers Adam, qui arrivait en courant. | Rembobinage ; le ballon dévie |
 | 28 | Léo a pris les précautions raisonnables. Pas d'intention, pas d'imprévoyance coupable. C'est un accident, pas une infraction. | Les deux cases « Intention » et « Négligence » grises |
@@ -73,10 +73,10 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 33 | Attention au piège classique. On croit souvent qu'une négligence est toujours punie, simplement moins sévèrement. C'est faux. | La phrase « La négligence est toujours punie » apparaît, puis se barre |
-| 34 | La négligence n'est punissable que si la loi le prévoit expressément pour l'infraction en cause. | Bloc « Art. 12 CP » ; le mot « Expressément » en ambre |
+| 34 | Pour un crime ou un délit, la négligence n'est punissable que si la loi le prévoit expressément. Attention : dans d'autres lois, comme celle sur la circulation routière, la négligence est en principe punissable. | Bloc « Art. 12 CP » ; le mot « Expressément » en ambre |
 | 35 | Pour les blessures, la loi le prévoit. L'article 125 du Code pénal punit les lésions corporelles par négligence. En principe sur plainte, et d'office si la lésion est grave. | Bloc « Art. 125 CP » ; une case « Blessure par négligence » cochée |
 | 36 | Mais imaginons que le ballon de Léo casse la vitre d'une voiture, par négligence. Le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle. | Rembobinage ; bloc « Art. 144 CP » ; une case « Vitre par négligence » grise |
-| 37 | Pas de dommage à la propriété par négligence dans le Code pénal. Léo n'aurait pas commis d'infraction. Le propriétaire pourrait seulement lui réclamer réparation. | Le mot « Pas d'infraction » |
+| 37 | Pas de dommage à la propriété par négligence dans le Code pénal. Léo n'aurait pas commis d'infraction. La réparation du dommage resterait une question de droit civil. | Le mot « Pas d'infraction » |
 
 ## Réponse à la question de la vidéo 1
 
@@ -84,7 +84,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 38 | Dans la vidéo 1, Marc bousculait Julien par inadvertance, sans le voir. Quel étage posait problème ? | Le bâtiment ; « vidéo 1 » en petit |
 | 39 | Le premier. Marc n'a pas agi intentionnellement, donc les lésions corporelles intentionnelles de l'article 123 ne sont pas réalisées. | L'étage « Typicité » devient gris ; bloc « Art. 123 CP » |
-| 40 | Il reste la négligence de l'article 125, à une condition : une imprévoyance coupable, et une plainte de Julien. | Bloc « Art. 125 CP » ; le mot « Imprévoyance coupable ? » |
+| 40 | Il reste la négligence de l'article 125. Il faut une imprévoyance coupable. Et, si la blessure n'est pas grave, une plainte de Julien. | Bloc « Art. 125 CP » ; le mot « Imprévoyance coupable ? » |
 
 ## Conclusion et question
 
@@ -92,8 +92,8 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 41 | Retenons l'échelle. Vouloir le résultat : intention. Le tenir pour possible et l'accepter : encore l'intention, par dol éventuel. | Une liste : « Vouloir », « Accepter » |
 | 42 | Voir le risque mais compter qu'il ne se réalisera pas : négligence consciente. Ne pas voir un risque qu'on aurait dû voir : négligence. | La liste se complète : « Compter sur la chance », « Ne pas voir » |
-| 43 | Et la négligence n'est punie que si la loi le dit. Quand rien n'est prévu, seul le geste intentionnel est une infraction. | Le mot « Si la loi le dit » en ambre |
-| 44 | Une question pour finir. Sofia roule bien trop vite dans une rue où jouent des enfants. Elle sait qu'elle pourrait en renverser un. Mais elle est certaine de pouvoir freiner à temps. Intention ou négligence ? Écrivez votre réponse en commentaire. | La silhouette de Sofia ; deux cases « Intention ? » et « Négligence ? » |
+| 43 | Et pour un crime ou un délit, la négligence n'est punie que si la loi le dit. Quand rien n'est prévu, seul le geste intentionnel est une infraction. | Le mot « Si la loi le dit » en ambre |
+| 44 | Une question pour finir. Sofia roule bien trop vite dans une rue où jouent des enfants. Elle sait qu'elle pourrait en renverser un. Mais elle est certaine de pouvoir freiner à temps. Elle n'y parvient pas : un enfant se casse le bras. Intention ou négligence ? Écrivez votre réponse en commentaire. | La silhouette de Sofia ; deux cases « Intention ? » et « Négligence ? » |
 | 45 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : en principe, de la négligence consciente. Sofia voit le risque, mais compte qu'il ne se réalisera pas (ATF 130 IV 58, consid. 8.3). Le juge peut toutefois retenir le dol éventuel si les indices montrent qu'elle s'accommodait du résultat : risque très élevé et connu, imprudence grave, manière d'agir (ATF 135 IV 152, consid. 2.3.2). Le Tribunal fédéral se montre prudent avant de retenir le dol éventuel dans la circulation routière (ATF 130 IV 58, consid. 9).
+**Réponse attendue à la question finale**, pour la description : en principe, de la négligence consciente. Sofia voit le risque, mais compte sincèrement qu'il ne se réalisera pas : elle ne l'accepte pas (art. 12, al. 3, CP ; ATF 130 IV 58, consid. 8.3). Elle répond donc des lésions corporelles par négligence de l'article 125 du Code pénal, poursuivies d'office si la lésion est grave. Le juge peut toutefois retenir le dol éventuel si les indices montrent qu'elle s'accommodait du résultat : risque très élevé et connu, imprudence grave, manière d'agir (ATF 135 IV 152, consid. 2.3.2). Le Tribunal fédéral se montre prudent avant de retenir le dol éventuel dans la circulation routière (ATF 130 IV 58, consid. 9). Indépendamment de l'accident, son excès de vitesse viole les règles de la circulation (art. 90 LCR) ; dans cette loi, la négligence est aussi punissable (art. 100, ch. 1, LCR).

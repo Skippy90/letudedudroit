@@ -11,7 +11,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 1 | Samedi soir, à Neuchâtel. Trois jeunes, trois histoires, dans la même rue. | Trois silhouettes de couleurs différentes apparaissent l'une après l'autre |
-| 2 | Inès glisse dans sa poche le téléphone d'une passante. C'est un modèle tout neuf. Elle s'éloigne et compte bien le garder. | La silhouette d'Inès ; une bulle de pensée « Le garder » |
+| 2 | Inès glisse dans sa poche le téléphone d'une passante. C'est un modèle tout neuf. Elle s'éloigne et compte bien le garder. | La silhouette d'Inès ; étiquette « Tout neuf : environ 900 francs » ; une bulle de pensée « Le garder » |
 | 3 | Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs. | La silhouette de Noah ; un éclair rouge sur le mur, symbole du dommage |
 | 4 | Yann se dispute avec un ami et lui donne une gifle. L'ami n'est pas blessé. | La silhouette de Yann ; le mot « Gifle » |
 | 5 | Trois actes interdits. Mais ont-ils le même poids ? Lequel est un crime ? Lequel est un délit ? Lequel est une contravention ? Votre intuition vous trompe peut-être. | Trois cases : « Crime ? », « Délit ? », « Contravention ? » |
@@ -43,7 +43,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | 16 | Revenons-en à Inès. Prendre le téléphone d'autrui pour le garder, c'est du vol. C'est l'article 139 du Code pénal. | La silhouette d'Inès ; bloc « Art. 139 CP » |
 | 17 | Le vol est puni d'une peine privative de liberté de cinq ans au plus, ou d'une peine pécuniaire. | Frise : un point « 5 ans » au-delà du repère « 3 ans » |
 | 18 | Cinq ans, c'est plus de trois ans. Le vol est donc un crime. | La case « Crime » se coche en vert |
-| 19 | Un détail compte pourtant : le téléphone est neuf. Si l'objet volé n'avait qu'une faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
+| 19 | Un détail compte pourtant : le téléphone est neuf. Si Inès n'avait visé qu'un objet de faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
 | 20 | Le même geste deviendrait alors une contravention. Encore une fois, c'est la peine prévue par la loi qui décide. | La case « Contravention » clignote, puis on revient au téléphone neuf |
 | 21 | Passons à Noah. Abîmer la chose d'autrui, c'est un dommage à la propriété. C'est l'article 144. | La silhouette de Noah ; bloc « Art. 144 CP » |
 | 22 | La peine prévue va jusqu'à trois ans de peine privative de liberté. Trois ans au plus : c'est un délit. Un tout petit dommage, lui, relèverait de l'article 172 ter : une simple amende. | Frise : un point « 3 ans » sur le repère ; la case « Délit » se coche |
@@ -64,7 +64,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | 32 | Et l'amende a un plafond. Sauf exception prévue par la loi, elle ne dépasse pas dix mille francs. C'est l'article 106. | Bloc « Art. 106 CP » ; des jetons s'empilent jusqu'à une limite |
 | 33 | Deuxième exemple : la prescription. C'est le délai après lequel on ne peut plus poursuivre l'auteur. | Une frise du temps se dessine |
 | 34 | Pour une contravention, ce délai est de trois ans. C'est l'article 109. | Bloc « Art. 109 CP » ; repère « 3 ans » |
-| 35 | Pour le délit de Noah, il est de dix ans. Pour le vol d'Inès, il est de quinze ans. C'est l'article 97. Plus l'infraction est grave, plus la justice garde longtemps le droit d'agir. | Bloc « Art. 97 CP » ; repères « 10 ans » et « 15 ans » ; « vidéo 12 » en petit |
+| 35 | Pour le délit de Noah, il est de dix ans. Pour le vol d'Inès, il est de quinze ans. C'est l'article 97. Plus l'infraction est grave, plus la justice garde longtemps le droit d'agir. | Bloc « Art. 97 CP » dès « Noah » (le bloc « Art. 109 CP » s'efface) ; repères « 10 ans » et « 15 ans » ; « vidéo 12 » en petit |
 
 ## Le piège classique
 
