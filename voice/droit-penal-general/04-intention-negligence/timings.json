@@ -1,10 +1,12 @@
 {
  "voix": "Enregistrement humain",
  "source": "humaine",
- "duree": 429.521,
+ "duree": 415.924,
  "lignes": [
   {
    "ligne": 1,
+   "debut": 0.12,
+   "fin": 5.48,
    "phrases": [
     {
      "texte": "Mercredi après-midi, dans un parc de Sion.",
@@ -19,6267 +21,6270 @@
       {
        "mot": "après",
        "debut": 0.54,
-       "fin": 1.12
+       "fin": 1.18
       },
       {
        "mot": "midi",
        "debut": 0.54,
-       "fin": 1.12
+       "fin": 1.18
       },
       {
        "mot": "dans",
-       "debut": 1.62,
-       "fin": 1.78
+       "debut": 1.52,
+       "fin": 1.68
       },
       {
        "mot": "un",
-       "debut": 1.82,
-       "fin": 1.94
+       "debut": 1.7,
+       "fin": 1.84
       },
       {
        "mot": "parc",
-       "debut": 1.98,
-       "fin": 2.16
+       "debut": 1.88,
+       "fin": 2.12
       },
       {
        "mot": "de",
-       "debut": 2.2,
-       "fin": 2.32
+       "debut": 2.18,
+       "fin": 2.3
       },
       {
        "mot": "sion",
-       "debut": 2.38,
+       "debut": 2.34,
        "fin": 2.56
       }
      ]
     },
     {
      "texte": "Léo joue au football avec des amis.",
-     "debut": 3.42,
-     "fin": 5.5,
+     "debut": 3.28,
+     "fin": 5.48,
      "mots": [
       {
        "mot": "léo",
-       "debut": 3.42,
-       "fin": 3.68
+       "debut": 3.28,
+       "fin": 3.52
       },
       {
        "mot": "joue",
-       "debut": 3.74,
-       "fin": 3.86
+       "debut": 3.76,
+       "fin": 3.84
       },
       {
        "mot": "au",
-       "debut": 3.88,
-       "fin": 3.94
+       "debut": 3.86,
+       "fin": 3.92
       },
       {
        "mot": "football",
-       "debut": 4.02,
-       "fin": 4.44
+       "debut": 4.0,
+       "fin": 4.42
       },
       {
        "mot": "avec",
-       "debut": 4.84,
-       "fin": 5.04
+       "debut": 4.82,
+       "fin": 4.98
       },
       {
        "mot": "des",
-       "debut": 5.06,
-       "fin": 5.2
+       "debut": 5.02,
+       "fin": 5.14
       },
       {
        "mot": "amis",
-       "debut": 5.24,
-       "fin": 5.5
+       "debut": 5.18,
+       "fin": 5.48
       }
      ]
     }
-   ],
-   "debut": 0.12,
-   "fin": 5.5
+   ]
   },
   {
    "ligne": 2,
+   "debut": 6.34,
+   "fin": 12.36,
    "phrases": [
     {
      "texte": "Il frappe le ballon de toutes ses forces.",
-     "debut": 6.56,
-     "fin": 8.68,
+     "debut": 6.34,
+     "fin": 7.94,
      "mots": [
       {
        "mot": "il",
-       "debut": 6.56,
-       "fin": 6.66
+       "debut": 6.34,
+       "fin": 6.42
       },
       {
        "mot": "frappe",
-       "debut": 6.7,
-       "fin": 6.92
+       "debut": 6.48,
+       "fin": 6.68
       },
       {
        "mot": "le",
-       "debut": 6.96,
-       "fin": 7.04
+       "debut": 6.72,
+       "fin": 6.78
       },
       {
        "mot": "ballon",
-       "debut": 7.08,
-       "fin": 7.38
+       "debut": 6.82,
+       "fin": 7.12
       },
       {
        "mot": "de",
-       "debut": 7.72,
-       "fin": 7.82
+       "debut": 7.16,
+       "fin": 7.24
       },
       {
        "mot": "toutes",
-       "debut": 7.88,
-       "fin": 8.06
+       "debut": 7.26,
+       "fin": 7.42
       },
       {
        "mot": "ses",
-       "debut": 8.1,
-       "fin": 8.24
+       "debut": 7.46,
+       "fin": 7.58
       },
       {
        "mot": "forces",
-       "debut": 8.28,
-       "fin": 8.68
+       "debut": 7.64,
+       "fin": 7.94
       }
      ]
     },
     {
      "texte": "Le ballon part dans le groupe d'à côté et touche Adam en plein visage.",
-     "debut": 9.62,
-     "fin": 14.04,
+     "debut": 8.64,
+     "fin": 12.36,
      "mots": [
       {
        "mot": "le",
-       "debut": 9.62,
-       "fin": 9.72
+       "debut": 8.64,
+       "fin": 8.72
       },
       {
        "mot": "ballon",
-       "debut": 9.74,
-       "fin": 10.0
+       "debut": 8.74,
+       "fin": 8.94
       },
       {
        "mot": "part",
-       "debut": 10.14,
-       "fin": 10.28
+       "debut": 9.04,
+       "fin": 9.18
       },
       {
        "mot": "dans",
-       "debut": 10.32,
-       "fin": 10.42
+       "debut": 9.2,
+       "fin": 9.3
       },
       {
        "mot": "le",
-       "debut": 10.46,
-       "fin": 10.56
+       "debut": 9.34,
+       "fin": 9.42
       },
       {
        "mot": "groupe",
-       "debut": 10.6,
-       "fin": 10.8
+       "debut": 9.46,
+       "fin": 9.66
       },
       {
        "mot": "d",
-       "debut": 10.84,
-       "fin": 10.96
+       "debut": 9.68,
+       "fin": 9.8
       },
       {
        "mot": "à",
-       "debut": 10.84,
-       "fin": 10.96
+       "debut": 9.68,
+       "fin": 9.8
       },
       {
        "mot": "côté",
-       "debut": 11.0,
-       "fin": 11.3
+       "debut": 9.84,
+       "fin": 10.14
       },
       {
        "mot": "et",
-       "debut": 11.82,
-       "fin": 11.92
+       "debut": 10.6,
+       "fin": 10.68
       },
       {
        "mot": "touche",
-       "debut": 11.98,
-       "fin": 12.34
+       "debut": 10.74,
+       "fin": 11.02
       },
       {
        "mot": "adam",
-       "debut": 12.42,
-       "fin": 12.72
+       "debut": 11.08,
+       "fin": 11.34
       },
       {
        "mot": "en",
-       "debut": 13.24,
-       "fin": 13.32
+       "debut": 11.64,
+       "fin": 11.74
       },
       {
        "mot": "plein",
-       "debut": 13.4,
-       "fin": 13.56
+       "debut": 11.78,
+       "fin": 11.92
       },
       {
        "mot": "visage",
-       "debut": 13.6,
-       "fin": 14.04
+       "debut": 11.96,
+       "fin": 12.36
       }
      ]
     }
-   ],
-   "debut": 6.56,
-   "fin": 14.04
+   ]
   },
   {
    "ligne": 3,
+   "debut": 13.5,
+   "fin": 19.88,
    "phrases": [
     {
      "texte": "Adam est blessé : il a le nez cassé.",
-     "debut": 15.4,
-     "fin": 17.6,
+     "debut": 13.5,
+     "fin": 15.66,
      "mots": [
       {
        "mot": "adam",
-       "debut": 15.4,
-       "fin": 15.68
+       "debut": 13.5,
+       "fin": 13.72
       },
       {
        "mot": "est",
-       "debut": 15.74,
-       "fin": 15.84
+       "debut": 13.76,
+       "fin": 13.84
       },
       {
        "mot": "blessé",
-       "debut": 15.88,
-       "fin": 16.28
+       "debut": 13.88,
+       "fin": 14.2
       },
       {
        "mot": "il",
-       "debut": 16.78,
-       "fin": 16.84
+       "debut": 14.74,
+       "fin": 14.8
       },
       {
        "mot": "a",
-       "debut": 16.88,
-       "fin": 16.94
+       "debut": 14.84,
+       "fin": 14.879
       },
       {
        "mot": "le",
-       "debut": 16.96,
-       "fin": 17.06
+       "debut": 14.92,
+       "fin": 15.019
       },
       {
        "mot": "nez",
-       "debut": 17.1,
-       "fin": 17.22
+       "debut": 15.12,
+       "fin": 15.26
       },
       {
        "mot": "cassé",
-       "debut": 17.26,
-       "fin": 17.6
+       "debut": 15.3,
+       "fin": 15.66
       }
      ]
     },
     {
      "texte": "Une chose est sûre : le geste de Léo a causé la blessure.",
-     "debut": 18.76,
-     "fin": 22.14,
+     "debut": 16.68,
+     "fin": 19.88,
      "mots": [
       {
        "mot": "une",
-       "debut": 18.76,
-       "fin": 18.84
+       "debut": 16.68,
+       "fin": 16.76
       },
       {
        "mot": "chose",
-       "debut": 18.86,
-       "fin": 19.04
+       "debut": 16.78,
+       "fin": 16.96
       },
       {
        "mot": "est",
-       "debut": 19.06,
-       "fin": 19.14
+       "debut": 17.0,
+       "fin": 17.1
       },
       {
        "mot": "sûre",
-       "debut": 19.24,
-       "fin": 19.44
+       "debut": 17.2,
+       "fin": 17.44
       },
       {
        "mot": "le",
-       "debut": 20.04,
-       "fin": 20.12
+       "debut": 17.96,
+       "fin": 18.04
       },
       {
        "mot": "geste",
-       "debut": 20.16,
-       "fin": 20.38
+       "debut": 18.08,
+       "fin": 18.26
       },
       {
        "mot": "de",
-       "debut": 20.44,
-       "fin": 20.54
+       "debut": 18.32,
+       "fin": 18.4
       },
       {
        "mot": "léo",
-       "debut": 20.58,
-       "fin": 20.86
+       "debut": 18.44,
+       "fin": 18.7
       },
       {
        "mot": "a",
-       "debut": 21.22,
-       "fin": 21.26
+       "debut": 19.0,
+       "fin": 19.06
       },
       {
        "mot": "causé",
-       "debut": 21.34,
-       "fin": 21.58
+       "debut": 19.12,
+       "fin": 19.34
       },
       {
        "mot": "la",
-       "debut": 21.62,
-       "fin": 21.68
+       "debut": 19.38,
+       "fin": 19.46
       },
       {
        "mot": "blessure",
-       "debut": 21.74,
-       "fin": 22.14
+       "debut": 19.48,
+       "fin": 19.88
       }
      ]
     }
-   ],
-   "debut": 15.4,
-   "fin": 22.14
+   ]
   },
   {
    "ligne": 4,
+   "debut": 21.12,
+   "fin": 26.88,
    "phrases": [
     {
      "texte": "Mais une question est essentielle.",
-     "debut": 23.64,
-     "fin": 25.3,
+     "debut": 21.12,
+     "fin": 22.56,
      "mots": [
       {
        "mot": "mais",
-       "debut": 23.64,
-       "fin": 23.74
+       "debut": 21.12,
+       "fin": 21.24
       },
       {
        "mot": "une",
-       "debut": 23.76,
-       "fin": 23.88
+       "debut": 21.26,
+       "fin": 21.36
       },
       {
        "mot": "question",
-       "debut": 23.92,
-       "fin": 24.32
+       "debut": 21.4,
+       "fin": 21.8
       },
       {
        "mot": "est",
-       "debut": 24.58,
-       "fin": 24.7
+       "debut": 21.84,
+       "fin": 21.94
       },
       {
        "mot": "essentielle",
-       "debut": 24.74,
-       "fin": 25.3
+       "debut": 21.98,
+       "fin": 22.56
       }
      ]
     },
     {
      "texte": "Léo voulait-il blesser Adam ?",
-     "debut": 26.36,
-     "fin": 28.54,
+     "debut": 23.26,
+     "fin": 24.64,
      "mots": [
       {
        "mot": "léo",
-       "debut": 26.36,
-       "fin": 26.6
+       "debut": 23.26,
+       "fin": 23.46
       },
       {
        "mot": "voulait",
-       "debut": 26.92,
-       "fin": 27.4
+       "debut": 23.5,
+       "fin": 23.94
       },
       {
        "mot": "il",
-       "debut": 26.92,
-       "fin": 27.4
+       "debut": 23.5,
+       "fin": 23.94
       },
       {
        "mot": "blesser",
-       "debut": 27.56,
-       "fin": 27.96
+       "debut": 23.98,
+       "fin": 24.32
       },
       {
        "mot": "adam",
-       "debut": 28.2,
-       "fin": 28.54
+       "debut": 24.38,
+       "fin": 24.64
       }
      ]
     },
     {
      "texte": "Ou est-ce arrivé malgré lui ?",
-     "debut": 29.24,
-     "fin": 30.92,
+     "debut": 25.36,
+     "fin": 26.88,
      "mots": [
       {
        "mot": "ou",
-       "debut": 29.24,
-       "fin": 29.32
+       "debut": 25.36,
+       "fin": 25.42
       },
       {
        "mot": "est",
-       "debut": 29.46,
-       "fin": 29.76
+       "debut": 25.56,
+       "fin": 25.94
       },
       {
        "mot": "ce",
-       "debut": 29.46,
-       "fin": 29.76
+       "debut": 25.56,
+       "fin": 25.94
       },
       {
        "mot": "arrivé",
-       "debut": 29.84,
-       "fin": 30.28
+       "debut": 26.02,
+       "fin": 26.38
       },
       {
        "mot": "malgré",
-       "debut": 30.42,
-       "fin": 30.74
+       "debut": 26.44,
+       "fin": 26.72
       },
       {
        "mot": "lui",
-       "debut": 30.78,
-       "fin": 30.92
+       "debut": 26.76,
+       "fin": 26.88
       }
      ]
     }
-   ],
-   "debut": 23.64,
-   "fin": 30.92
+   ]
   },
   {
    "ligne": 5,
+   "debut": 28.22,
+   "fin": 36.78,
    "phrases": [
     {
      "texte": "Dans la vidéo numéro un, on a vu que la typicité a deux faces.",
-     "debut": 32.26,
-     "fin": 37.02,
+     "debut": 28.22,
+     "fin": 32.72,
      "mots": [
       {
        "mot": "dans",
-       "debut": 32.26,
-       "fin": 32.34
+       "debut": 28.22,
+       "fin": 28.32
       },
       {
        "mot": "la",
-       "debut": 32.4,
-       "fin": 32.5
+       "debut": 28.36,
+       "fin": 28.46
       },
       {
        "mot": "vidéo",
-       "debut": 32.52,
-       "fin": 32.86
+       "debut": 28.5,
+       "fin": 28.78
       },
       {
        "mot": "numéro",
-       "debut": 32.9,
-       "fin": 33.34
+       "debut": 28.82,
+       "fin": 29.18
       },
       {
        "mot": "un",
-       "debut": 33.44,
-       "fin": 33.68
+       "debut": 29.36,
+       "fin": 29.64
       },
       {
        "mot": "on",
-       "debut": 34.4,
-       "fin": 34.48
+       "debut": 30.28,
+       "fin": 30.38
       },
       {
        "mot": "a",
-       "debut": 34.54,
-       "fin": 34.62
+       "debut": 30.44,
+       "fin": 30.58
       },
       {
        "mot": "vu",
-       "debut": 34.66,
-       "fin": 34.8
+       "debut": 30.62,
+       "fin": 30.78
       },
       {
        "mot": "que",
-       "debut": 35.0,
-       "fin": 35.06
+       "debut": 30.959,
+       "fin": 31.04
       },
       {
        "mot": "la",
-       "debut": 35.12,
-       "fin": 35.24
+       "debut": 31.08,
+       "fin": 31.2
       },
       {
        "mot": "typicité",
-       "debut": 35.28,
-       "fin": 35.96
+       "debut": 31.239,
+       "fin": 32.06
       },
       {
        "mot": "a",
-       "debut": 36.3,
-       "fin": 36.34
+       "debut": 32.12,
+       "fin": 32.2
       },
       {
        "mot": "deux",
-       "debut": 36.44,
-       "fin": 36.58
+       "debut": 32.24,
+       "fin": 32.38
       },
       {
        "mot": "faces",
-       "debut": 36.64,
-       "fin": 37.02
+       "debut": 32.44,
+       "fin": 32.72
       }
      ]
     },
     {
      "texte": "Le geste, et ce qui se passe dans la tête de l'auteur.",
-     "debut": 37.82,
-     "fin": 40.68,
+     "debut": 33.66,
+     "fin": 36.78,
      "mots": [
       {
        "mot": "le",
-       "debut": 37.82,
-       "fin": 37.9
+       "debut": 33.66,
+       "fin": 33.76
       },
       {
        "mot": "geste",
-       "debut": 37.98,
-       "fin": 38.36
+       "debut": 33.8,
+       "fin": 34.22
       },
       {
        "mot": "et",
-       "debut": 38.8,
-       "fin": 38.86
+       "debut": 34.74,
+       "fin": 34.82
       },
       {
        "mot": "ce",
-       "debut": 38.9,
-       "fin": 39.0
+       "debut": 34.88,
+       "fin": 34.98
       },
       {
        "mot": "qui",
-       "debut": 39.02,
-       "fin": 39.12
+       "debut": 35.02,
+       "fin": 35.12
       },
       {
        "mot": "se",
-       "debut": 39.14,
-       "fin": 39.28
+       "debut": 35.18,
+       "fin": 35.32
       },
       {
        "mot": "passe",
-       "debut": 39.4,
-       "fin": 39.64
+       "debut": 35.36,
+       "fin": 35.7
       },
       {
        "mot": "dans",
-       "debut": 39.68,
-       "fin": 39.78
+       "debut": 35.76,
+       "fin": 35.88
       },
       {
        "mot": "la",
-       "debut": 39.82,
-       "fin": 39.92
+       "debut": 35.92,
+       "fin": 36.02
       },
       {
        "mot": "tête",
-       "debut": 39.96,
-       "fin": 40.12
+       "debut": 36.08,
+       "fin": 36.24
       },
       {
        "mot": "de",
-       "debut": 40.16,
-       "fin": 40.24
+       "debut": 36.28,
+       "fin": 36.34
       },
       {
        "mot": "l",
-       "debut": 40.26,
-       "fin": 40.68
+       "debut": 36.36,
+       "fin": 36.78
       },
       {
        "mot": "auteur",
-       "debut": 40.26,
-       "fin": 40.68
+       "debut": 36.36,
+       "fin": 36.78
       }
      ]
     }
-   ],
-   "debut": 32.26,
-   "fin": 40.68
+   ]
   },
   {
    "ligne": 6,
+   "debut": 38.22,
+   "fin": 46.86,
    "phrases": [
     {
      "texte": "Cette face intérieure se règle à l'article douze du Code pénal.",
-     "debut": 41.52,
-     "fin": 45.24,
+     "debut": 38.22,
+     "fin": 41.54,
      "mots": [
       {
        "mot": "cette",
-       "debut": 41.52,
-       "fin": 41.72
+       "debut": 38.22,
+       "fin": 38.4
       },
       {
        "mot": "face",
-       "debut": 41.8,
-       "fin": 42.0
+       "debut": 38.46,
+       "fin": 38.64
       },
       {
-       "mot": "intérieure",
-       "debut": 42.06,
-       "fin": 42.56
+       "mot": "antérieure",
+       "debut": 38.7,
+       "fin": 39.28
       },
       {
        "mot": "se",
-       "debut": 43.04,
-       "fin": 43.12
+       "debut": 39.56,
+       "fin": 39.66
       },
       {
        "mot": "règle",
-       "debut": 43.22,
-       "fin": 43.42
+       "debut": 39.7,
+       "fin": 39.92
       },
       {
        "mot": "à",
-       "debut": 43.66,
-       "fin": 43.7
+       "debut": 40.0,
+       "fin": 40.04
       },
       {
        "mot": "l",
-       "debut": 43.74,
-       "fin": 44.2
+       "debut": 40.08,
+       "fin": 40.54
       },
       {
        "mot": "article",
-       "debut": 43.74,
-       "fin": 44.2
+       "debut": 40.08,
+       "fin": 40.54
       },
       {
        "mot": "douze",
-       "debut": 44.28,
-       "fin": 44.54
+       "debut": 40.6,
+       "fin": 40.82
       },
       {
        "mot": "du",
-       "debut": 44.58,
-       "fin": 44.64
+       "debut": 40.86,
+       "fin": 40.94
       },
       {
        "mot": "code",
-       "debut": 44.7,
-       "fin": 44.86
+       "debut": 40.98,
+       "fin": 41.14
       },
       {
        "mot": "pénal",
-       "debut": 44.9,
-       "fin": 45.24
+       "debut": 41.18,
+       "fin": 41.54
       }
      ]
     },
     {
      "texte": "Il distingue deux grandes attitudes : l'intention et la négligence.",
-     "debut": 46.38,
-     "fin": 50.72,
+     "debut": 42.4,
+     "fin": 46.86,
      "mots": [
       {
        "mot": "il",
-       "debut": 46.38,
-       "fin": 46.48
+       "debut": 42.4,
+       "fin": 42.48
       },
       {
        "mot": "distingue",
-       "debut": 46.5,
-       "fin": 46.86
+       "debut": 42.52,
+       "fin": 42.96
       },
       {
        "mot": "deux",
-       "debut": 47.06,
-       "fin": 47.2
+       "debut": 43.02,
+       "fin": 43.14
       },
       {
        "mot": "grandes",
-       "debut": 47.24,
-       "fin": 47.48
+       "debut": 43.18,
+       "fin": 43.4
       },
       {
        "mot": "attitudes",
-       "debut": 47.54,
-       "fin": 47.94
+       "debut": 43.46,
+       "fin": 43.96
       },
       {
        "mot": "l",
-       "debut": 48.86,
-       "fin": 49.4
+       "debut": 44.96,
+       "fin": 45.5
       },
       {
        "mot": "intention",
-       "debut": 48.86,
-       "fin": 49.4
+       "debut": 44.96,
+       "fin": 45.5
       },
       {
        "mot": "et",
-       "debut": 49.94,
-       "fin": 50.02
+       "debut": 46.04,
+       "fin": 46.1
       },
       {
        "mot": "la",
-       "debut": 50.06,
-       "fin": 50.12
+       "debut": 46.14,
+       "fin": 46.22
       },
       {
        "mot": "négligence",
-       "debut": 50.18,
-       "fin": 50.72
+       "debut": 46.26,
+       "fin": 46.86
       }
      ]
     }
-   ],
-   "debut": 41.52,
-   "fin": 50.72
+   ]
   },
   {
    "ligne": 7,
+   "debut": 47.92,
+   "fin": 58.52,
    "phrases": [
     {
      "texte": "Et la différence est énorme.",
-     "debut": 52.16,
-     "fin": 53.981,
+     "debut": 47.92,
+     "fin": 49.22,
      "mots": [
       {
        "mot": "et",
-       "debut": 52.16,
-       "fin": 52.221
+       "debut": 47.92,
+       "fin": 47.96
       },
       {
        "mot": "la",
-       "debut": 52.261,
-       "fin": 52.361
+       "debut": 48.0,
+       "fin": 48.08
       },
       {
        "mot": "différence",
-       "debut": 52.401,
-       "fin": 52.981
+       "debut": 48.12,
+       "fin": 48.6
       },
       {
        "mot": "est",
-       "debut": 53.221,
-       "fin": 53.421
+       "debut": 48.64,
+       "fin": 48.76
       },
       {
        "mot": "énorme",
-       "debut": 53.481,
-       "fin": 53.981
+       "debut": 48.82,
+       "fin": 49.22
       }
      ]
     },
     {
      "texte": "Pour un crime ou un délit, seul l'auteur qui agit intentionnellement est punissable.",
-     "debut": 54.881,
-     "fin": 59.441,
+     "debut": 50.02,
+     "fin": 54.86,
      "mots": [
       {
        "mot": "pour",
-       "debut": 54.881,
-       "fin": 54.981
+       "debut": 50.02,
+       "fin": 50.16
       },
       {
        "mot": "un",
-       "debut": 55.021,
-       "fin": 55.101
+       "debut": 50.2,
+       "fin": 50.28
       },
       {
        "mot": "crime",
-       "debut": 55.141,
-       "fin": 55.361
+       "debut": 50.34,
+       "fin": 50.72
       },
       {
        "mot": "ou",
-       "debut": 55.401,
-       "fin": 55.481
+       "debut": 50.78,
+       "fin": 50.86
       },
       {
        "mot": "un",
-       "debut": 55.521,
-       "fin": 55.601
+       "debut": 50.9,
+       "fin": 50.98
       },
       {
        "mot": "délit",
-       "debut": 55.661,
-       "fin": 55.941
+       "debut": 51.02,
+       "fin": 51.32
       },
       {
        "mot": "seul",
-       "debut": 56.501,
-       "fin": 56.661
+       "debut": 52.08,
+       "fin": 52.2
       },
       {
        "mot": "l",
-       "debut": 56.701,
-       "fin": 57.021
+       "debut": 52.24,
+       "fin": 52.58
       },
       {
        "mot": "auteur",
-       "debut": 56.701,
-       "fin": 57.021
+       "debut": 52.24,
+       "fin": 52.58
       },
       {
        "mot": "qui",
-       "debut": 57.101,
-       "fin": 57.161
+       "debut": 52.62,
+       "fin": 52.72
       },
       {
        "mot": "agit",
-       "debut": 57.241,
-       "fin": 57.601
+       "debut": 52.8,
+       "fin": 53.14
       },
       {
        "mot": "intentionnellement",
-       "debut": 57.661,
-       "fin": 58.381
+       "debut": 53.22,
+       "fin": 54.14
       },
       {
        "mot": "est",
-       "debut": 58.761,
-       "fin": 58.841
+       "debut": 54.2,
+       "fin": 54.28
       },
       {
        "mot": "punissable",
-       "debut": 58.881,
-       "fin": 59.441
+       "debut": 54.34,
+       "fin": 54.86
       }
      ]
     },
     {
      "texte": "Sauf si la loi prévoit expressément le contraire.",
-     "debut": 60.071,
-     "fin": 63.411,
+     "debut": 55.88,
+     "fin": 58.52,
      "mots": [
       {
        "mot": "sauf",
-       "debut": 60.071,
-       "fin": 60.431
+       "debut": 55.88,
+       "fin": 56.06
       },
       {
        "mot": "si",
-       "debut": 60.511,
-       "fin": 60.611
+       "debut": 56.14,
+       "fin": 56.24
       },
       {
        "mot": "la",
-       "debut": 60.651,
-       "fin": 60.751
+       "debut": 56.3,
+       "fin": 56.38
       },
       {
        "mot": "loi",
-       "debut": 60.791,
-       "fin": 61.011
+       "debut": 56.42,
+       "fin": 56.74
       },
       {
        "mot": "prévoit",
-       "debut": 61.411,
-       "fin": 61.891
+       "debut": 56.8,
+       "fin": 57.26
       },
       {
        "mot": "expressément",
-       "debut": 61.971,
-       "fin": 62.711
+       "debut": 57.34,
+       "fin": 57.88
       },
       {
        "mot": "le",
-       "debut": 62.771,
-       "fin": 62.871
+       "debut": 57.92,
+       "fin": 57.98
       },
       {
        "mot": "contraire",
-       "debut": 62.891,
-       "fin": 63.411
+       "debut": 58.02,
+       "fin": 58.52
       }
      ]
     }
-   ],
-   "debut": 52.16,
-   "fin": 63.411
+   ]
   },
   {
    "ligne": 8,
+   "debut": 59.86,
+   "fin": 64.52,
    "phrases": [
     {
      "texte": "Voyons cinq versions de l'histoire de Léo.",
-     "debut": 64.911,
-     "fin": 67.111,
+     "debut": 59.86,
+     "fin": 61.44,
      "mots": [
       {
        "mot": "voyons",
-       "debut": 64.911,
-       "fin": 65.351
+       "debut": 59.86,
+       "fin": 60.12
       },
       {
        "mot": "cinq",
-       "debut": 65.431,
-       "fin": 65.631
+       "debut": 60.18,
+       "fin": 60.32
       },
       {
        "mot": "versions",
-       "debut": 65.671,
-       "fin": 66.211
+       "debut": 60.36,
+       "fin": 60.66
       },
       {
        "mot": "de",
-       "debut": 66.271,
-       "fin": 66.331
+       "debut": 60.7,
+       "fin": 60.76
       },
       {
        "mot": "l",
-       "debut": 66.371,
-       "fin": 66.751
+       "debut": 60.78,
+       "fin": 61.12
       },
       {
        "mot": "histoire",
-       "debut": 66.371,
-       "fin": 66.751
+       "debut": 60.78,
+       "fin": 61.12
       },
       {
        "mot": "de",
-       "debut": 66.791,
-       "fin": 66.871
+       "debut": 61.16,
+       "fin": 61.22
       },
       {
        "mot": "léo",
-       "debut": 66.911,
-       "fin": 67.111
+       "debut": 61.26,
+       "fin": 61.44
       }
      ]
     },
     {
      "texte": "Du geste le plus voulu au plus involontaire.",
-     "debut": 68.251,
-     "fin": 70.731,
+     "debut": 62.419,
+     "fin": 64.52,
      "mots": [
       {
        "mot": "du",
-       "debut": 68.251,
-       "fin": 68.351
+       "debut": 62.419,
+       "fin": 62.499
       },
       {
        "mot": "geste",
-       "debut": 68.391,
-       "fin": 68.571
+       "debut": 62.54,
+       "fin": 62.68
       },
       {
        "mot": "le",
-       "debut": 68.611,
-       "fin": 68.671
+       "debut": 62.719,
+       "fin": 62.8
       },
       {
        "mot": "plus",
-       "debut": 68.751,
-       "fin": 68.911
+       "debut": 62.859,
+       "fin": 62.98
       },
       {
        "mot": "voulu",
-       "debut": 68.951,
-       "fin": 69.211
+       "debut": 63.02,
+       "fin": 63.499
       },
       {
        "mot": "au",
-       "debut": 69.671,
-       "fin": 69.791
+       "debut": 63.58,
+       "fin": 63.66
       },
       {
        "mot": "plus",
-       "debut": 69.851,
-       "fin": 70.011
+       "debut": 63.719,
+       "fin": 63.859
       },
       {
        "mot": "involontaire",
-       "debut": 70.071,
-       "fin": 70.731
+       "debut": 63.9,
+       "fin": 64.52
       }
      ]
     }
-   ],
-   "debut": 64.911,
-   "fin": 70.731
+   ]
   },
   {
    "ligne": 9,
+   "debut": 65.58,
+   "fin": 72.1,
    "phrases": [
     {
      "texte": "Première version.",
-     "debut": 72.171,
-     "fin": 72.891,
+     "debut": 65.58,
+     "fin": 66.24,
      "mots": [
       {
        "mot": "première",
-       "debut": 72.171,
-       "fin": 72.491
+       "debut": 65.58,
+       "fin": 65.86
       },
       {
        "mot": "version",
-       "debut": 72.531,
-       "fin": 72.891
+       "debut": 65.9,
+       "fin": 66.24
       }
      ]
     },
     {
      "texte": "Léo en veut à Adam.",
-     "debut": 73.731,
-     "fin": 75.631,
+     "debut": 67.1,
+     "fin": 68.5,
      "mots": [
       {
        "mot": "léo",
-       "debut": 73.731,
-       "fin": 73.971
+       "debut": 67.1,
+       "fin": 67.66
       },
       {
        "mot": "en",
-       "debut": 74.491,
-       "fin": 74.611
+       "debut": 67.7,
+       "fin": 67.84
       },
       {
        "mot": "veut",
-       "debut": 74.691,
-       "fin": 74.831
+       "debut": 67.88,
+       "fin": 68.0
       },
       {
        "mot": "à",
-       "debut": 75.191,
-       "fin": 75.271
+       "debut": 68.06,
+       "fin": 68.1
       },
       {
        "mot": "adam",
-       "debut": 75.351,
-       "fin": 75.631
+       "debut": 68.18,
+       "fin": 68.5
       }
      ]
     },
     {
      "texte": "Il vise sa tête, exprès, pour lui faire mal.",
-     "debut": 76.511,
-     "fin": 78.951,
+     "debut": 69.52,
+     "fin": 72.1,
      "mots": [
       {
        "mot": "il",
-       "debut": 76.511,
-       "fin": 76.591
+       "debut": 69.52,
+       "fin": 69.6
       },
       {
        "mot": "vise",
-       "debut": 76.611,
-       "fin": 76.771
+       "debut": 69.62,
+       "fin": 69.76
       },
       {
        "mot": "sa",
-       "debut": 76.831,
-       "fin": 76.951
+       "debut": 69.82,
+       "fin": 69.94
       },
       {
        "mot": "tête",
-       "debut": 76.991,
-       "fin": 77.271
+       "debut": 70.0,
+       "fin": 70.56
       },
       {
        "mot": "exprès",
-       "debut": 77.711,
-       "fin": 78.151
+       "debut": 70.64,
+       "fin": 71.34
       },
       {
        "mot": "pour",
-       "debut": 78.211,
-       "fin": 78.291
+       "debut": 71.42,
+       "fin": 71.5
       },
       {
        "mot": "lui",
-       "debut": 78.331,
-       "fin": 78.451
+       "debut": 71.54,
+       "fin": 71.62
       },
       {
        "mot": "faire",
-       "debut": 78.511,
-       "fin": 78.651
+       "debut": 71.68,
+       "fin": 71.8
       },
       {
        "mot": "mal",
-       "debut": 78.691,
-       "fin": 78.951
+       "debut": 71.86,
+       "fin": 72.1
       }
      ]
     }
-   ],
-   "debut": 72.171,
-   "fin": 78.951
+   ]
   },
   {
    "ligne": 10,
+   "debut": 73.48,
+   "fin": 79.94,
    "phrases": [
     {
      "texte": "Selon l'article douze, agit intentionnellement celui qui commet l'acte avec conscience et volonté.",
-     "debut": 79.791,
-     "fin": 86.111,
+     "debut": 73.48,
+     "fin": 79.94,
      "mots": [
       {
        "mot": "selon",
-       "debut": 79.791,
-       "fin": 80.011
+       "debut": 73.48,
+       "fin": 73.7
       },
       {
        "mot": "l",
-       "debut": 80.051,
-       "fin": 80.511
+       "debut": 73.74,
+       "fin": 74.16
       },
       {
        "mot": "article",
-       "debut": 80.051,
-       "fin": 80.511
+       "debut": 73.74,
+       "fin": 74.16
       },
       {
        "mot": "douze",
-       "debut": 80.551,
-       "fin": 80.831
+       "debut": 74.22,
+       "fin": 74.46
       },
       {
        "mot": "agit",
-       "debut": 81.591,
-       "fin": 82.051
+       "debut": 75.42,
+       "fin": 75.86
       },
       {
        "mot": "intentionnellement",
-       "debut": 82.131,
-       "fin": 82.851
+       "debut": 75.94,
+       "fin": 76.92
       },
       {
        "mot": "celui",
-       "debut": 83.111,
-       "fin": 83.311
+       "debut": 77.02,
+       "fin": 77.22
       },
       {
        "mot": "qui",
-       "debut": 83.371,
-       "fin": 83.491
+       "debut": 77.26,
+       "fin": 77.38
       },
       {
        "mot": "commet",
-       "debut": 83.551,
-       "fin": 83.811
+       "debut": 77.44,
+       "fin": 77.66
       },
       {
        "mot": "l",
-       "debut": 83.871,
-       "fin": 84.331
+       "debut": 77.74,
+       "fin": 78.16
       },
       {
        "mot": "acte",
-       "debut": 83.871,
-       "fin": 84.331
+       "debut": 77.74,
+       "fin": 78.16
       },
       {
        "mot": "avec",
-       "debut": 84.431,
-       "fin": 84.691
+       "debut": 78.28,
+       "fin": 78.48
       },
       {
        "mot": "conscience",
-       "debut": 84.751,
-       "fin": 85.251
+       "debut": 78.54,
+       "fin": 79.32
       },
       {
        "mot": "et",
-       "debut": 85.571,
-       "fin": 85.631
+       "debut": 79.4,
+       "fin": 79.46
       },
       {
        "mot": "volonté",
-       "debut": 85.671,
-       "fin": 86.111
+       "debut": 79.5,
+       "fin": 79.94
       }
      ]
     }
-   ],
-   "debut": 79.791,
-   "fin": 86.111
+   ]
   },
   {
    "ligne": 11,
+   "debut": 81.22,
+   "fin": 86.9,
    "phrases": [
     {
      "texte": "Léo sait ce qu'il fait : c'est la conscience.",
-     "debut": 87.551,
-     "fin": 90.091,
+     "debut": 81.22,
+     "fin": 83.54,
      "mots": [
       {
        "mot": "léo",
-       "debut": 87.551,
-       "fin": 87.891
+       "debut": 81.22,
+       "fin": 81.46
       },
       {
        "mot": "sait",
-       "debut": 87.971,
-       "fin": 88.091
+       "debut": 81.52,
+       "fin": 81.62
       },
       {
        "mot": "ce",
-       "debut": 88.131,
-       "fin": 88.211
+       "debut": 81.66,
+       "fin": 81.78
       },
       {
        "mot": "qu",
-       "debut": 88.251,
-       "fin": 88.431
+       "debut": 81.8,
+       "fin": 81.98
       },
       {
        "mot": "il",
-       "debut": 88.251,
-       "fin": 88.431
+       "debut": 81.8,
+       "fin": 81.98
       },
       {
        "mot": "fait",
-       "debut": 88.491,
-       "fin": 88.631
+       "debut": 82.02,
+       "fin": 82.14
       },
       {
        "mot": "c",
-       "debut": 89.291,
-       "fin": 89.371
+       "debut": 82.78,
+       "fin": 82.88
       },
       {
        "mot": "est",
-       "debut": 89.291,
-       "fin": 89.371
+       "debut": 82.78,
+       "fin": 82.88
       },
       {
        "mot": "la",
-       "debut": 89.411,
-       "fin": 89.491
+       "debut": 82.9,
+       "fin": 82.98
       },
       {
        "mot": "conscience",
-       "debut": 89.551,
-       "fin": 90.091
+       "debut": 83.02,
+       "fin": 83.54
       }
      ]
     },
     {
      "texte": "Et il veut le résultat : c'est la volonté.",
-     "debut": 91.091,
-     "fin": 94.151,
+     "debut": 84.56,
+     "fin": 86.9,
      "mots": [
       {
        "mot": "et",
-       "debut": 91.091,
-       "fin": 91.171
+       "debut": 84.56,
+       "fin": 84.6
       },
       {
        "mot": "il",
-       "debut": 91.211,
-       "fin": 91.331
+       "debut": 84.64,
+       "fin": 84.74
       },
       {
        "mot": "veut",
-       "debut": 91.411,
-       "fin": 91.811
+       "debut": 84.76,
+       "fin": 84.84
       },
       {
        "mot": "le",
-       "debut": 91.891,
-       "fin": 91.971
+       "debut": 84.86,
+       "fin": 84.9
       },
       {
        "mot": "résultat",
-       "debut": 92.011,
-       "fin": 92.491
+       "debut": 84.94,
+       "fin": 85.4
       },
       {
        "mot": "c",
-       "debut": 93.371,
-       "fin": 93.451
+       "debut": 86.2,
+       "fin": 86.3
       },
       {
        "mot": "est",
-       "debut": 93.371,
-       "fin": 93.451
+       "debut": 86.2,
+       "fin": 86.3
       },
       {
        "mot": "la",
-       "debut": 93.491,
-       "fin": 93.591
+       "debut": 86.32,
+       "fin": 86.4
       },
       {
        "mot": "volonté",
-       "debut": 93.651,
-       "fin": 94.151
+       "debut": 86.44,
+       "fin": 86.9
       }
      ]
     }
-   ],
-   "debut": 87.551,
-   "fin": 94.151
+   ]
   },
   {
    "ligne": 12,
+   "debut": 88.12,
+   "fin": 92.68,
    "phrases": [
     {
      "texte": "C'est l'intention au sens le plus simple.",
-     "debut": 95.591,
-     "fin": 97.871,
+     "debut": 88.12,
+     "fin": 89.98,
      "mots": [
       {
        "mot": "c",
-       "debut": 95.591,
-       "fin": 95.691
+       "debut": 88.12,
+       "fin": 88.2
       },
       {
        "mot": "est",
-       "debut": 95.591,
-       "fin": 95.691
+       "debut": 88.12,
+       "fin": 88.2
       },
       {
        "mot": "l",
-       "debut": 95.711,
-       "fin": 96.331
+       "debut": 88.24,
+       "fin": 88.92
       },
       {
        "mot": "intention",
-       "debut": 95.711,
-       "fin": 96.331
+       "debut": 88.24,
+       "fin": 88.92
       },
       {
        "mot": "au",
-       "debut": 96.831,
-       "fin": 96.911
+       "debut": 88.98,
+       "fin": 89.06
       },
       {
        "mot": "sens",
-       "debut": 96.971,
-       "fin": 97.191
+       "debut": 89.12,
+       "fin": 89.32
       },
       {
        "mot": "le",
-       "debut": 97.231,
-       "fin": 97.311
+       "debut": 89.36,
+       "fin": 89.44
       },
       {
        "mot": "plus",
-       "debut": 97.351,
-       "fin": 97.451
+       "debut": 89.46,
+       "fin": 89.58
       },
       {
        "mot": "simple",
-       "debut": 97.511,
-       "fin": 97.871
+       "debut": 89.64,
+       "fin": 89.98
       }
      ]
     },
     {
      "texte": "Les juristes parlent de dol direct.",
-     "debut": 98.651,
-     "fin": 100.911,
+     "debut": 90.5,
+     "fin": 92.68,
      "mots": [
       {
        "mot": "les",
-       "debut": 98.651,
-       "fin": 98.771
+       "debut": 90.5,
+       "fin": 90.6
       },
       {
        "mot": "juristes",
-       "debut": 98.831,
-       "fin": 99.511
+       "debut": 90.64,
+       "fin": 91.18
       },
       {
        "mot": "parlent",
-       "debut": 99.571,
-       "fin": 99.771
+       "debut": 91.22,
+       "fin": 91.52
       },
       {
        "mot": "de",
-       "debut": 99.811,
-       "fin": 99.971
+       "debut": 91.56,
+       "fin": 91.66
       },
       {
        "mot": "dol",
-       "debut": 100.031,
-       "fin": 100.231
+       "debut": 91.72,
+       "fin": 92.08
       },
       {
        "mot": "direct",
-       "debut": 100.451,
-       "fin": 100.911
+       "debut": 92.14,
+       "fin": 92.68
       }
      ]
     }
-   ],
-   "debut": 95.591,
-   "fin": 100.911
+   ]
   },
   {
    "ligne": 13,
+   "debut": 94.1,
+   "fin": 100.88,
    "phrases": [
     {
      "texte": "Deuxième version.",
-     "debut": 102.351,
-     "fin": 103.011,
+     "debut": 94.1,
+     "fin": 94.76,
      "mots": [
       {
        "mot": "deuxième",
-       "debut": 102.351,
-       "fin": 102.631
+       "debut": 94.1,
+       "fin": 94.38
       },
       {
        "mot": "version",
-       "debut": 102.671,
-       "fin": 103.011
+       "debut": 94.42,
+       "fin": 94.76
       }
      ]
     },
     {
      "texte": "Léo ne vise personne.",
-     "debut": 103.871,
-     "fin": 105.131,
+     "debut": 95.72,
+     "fin": 96.9,
      "mots": [
       {
        "mot": "léo",
-       "debut": 103.871,
-       "fin": 104.151
+       "debut": 95.72,
+       "fin": 95.96
       },
       {
        "mot": "ne",
-       "debut": 104.211,
-       "fin": 104.271
+       "debut": 96.0,
+       "fin": 96.08
       },
       {
        "mot": "vise",
-       "debut": 104.311,
-       "fin": 104.571
+       "debut": 96.12,
+       "fin": 96.32
       },
       {
        "mot": "personne",
-       "debut": 104.631,
-       "fin": 105.131
+       "debut": 96.38,
+       "fin": 96.9
       }
      ]
     },
     {
      "texte": "Il veut juste impressionner ses amis avec un tir puissant.",
-     "debut": 105.731,
-     "fin": 108.831,
+     "debut": 97.82,
+     "fin": 100.88,
      "mots": [
       {
        "mot": "il",
-       "debut": 105.731,
-       "fin": 105.811
+       "debut": 97.82,
+       "fin": 97.88
       },
       {
        "mot": "veut",
-       "debut": 105.851,
-       "fin": 105.951
+       "debut": 97.92,
+       "fin": 98.02
       },
       {
        "mot": "juste",
-       "debut": 106.011,
-       "fin": 106.291
+       "debut": 98.08,
+       "fin": 98.38
       },
       {
        "mot": "impressionner",
-       "debut": 106.351,
-       "fin": 106.911
+       "debut": 98.46,
+       "fin": 98.96
       },
       {
        "mot": "ses",
-       "debut": 106.991,
-       "fin": 107.151
+       "debut": 99.0,
+       "fin": 99.16
       },
       {
        "mot": "amis",
-       "debut": 107.231,
-       "fin": 107.631
+       "debut": 99.24,
+       "fin": 99.66
       },
       {
        "mot": "avec",
-       "debut": 107.731,
-       "fin": 107.931
+       "debut": 99.78,
+       "fin": 99.94
       },
       {
        "mot": "un",
-       "debut": 107.991,
-       "fin": 108.091
+       "debut": 100.02,
+       "fin": 100.14
       },
       {
        "mot": "tir",
-       "debut": 108.151,
-       "fin": 108.311
+       "debut": 100.22,
+       "fin": 100.42
       },
       {
        "mot": "puissant",
-       "debut": 108.371,
-       "fin": 108.831
+       "debut": 100.46,
+       "fin": 100.88
       }
      ]
     }
-   ],
-   "debut": 102.351,
-   "fin": 108.831
+   ]
   },
   {
    "ligne": 14,
+   "debut": 102.08,
+   "fin": 107.81,
    "phrases": [
     {
      "texte": "Mais il voit le groupe juste à côté.",
-     "debut": 110.011,
-     "fin": 111.651,
+     "debut": 102.08,
+     "fin": 103.82,
      "mots": [
       {
        "mot": "mais",
-       "debut": 110.011,
-       "fin": 110.091
+       "debut": 102.08,
+       "fin": 102.16
       },
       {
        "mot": "il",
-       "debut": 110.131,
-       "fin": 110.251
+       "debut": 102.18,
+       "fin": 102.24
       },
       {
        "mot": "voit",
-       "debut": 110.291,
-       "fin": 110.411
+       "debut": 102.28,
+       "fin": 102.38
       },
       {
        "mot": "le",
-       "debut": 110.451,
-       "fin": 110.551
+       "debut": 102.42,
+       "fin": 102.5
       },
       {
        "mot": "groupe",
-       "debut": 110.591,
-       "fin": 110.971
+       "debut": 102.56,
+       "fin": 102.78
       },
       {
        "mot": "juste",
-       "debut": 111.071,
-       "fin": 111.231
+       "debut": 102.82,
+       "fin": 102.96
       },
       {
        "mot": "à",
-       "debut": 111.271,
-       "fin": 111.311
+       "debut": 103.02,
+       "fin": 103.06
       },
       {
        "mot": "côté",
-       "debut": 111.351,
-       "fin": 111.651
+       "debut": 103.1,
+       "fin": 103.82
       }
      ]
     },
     {
      "texte": "Et il se dit : si je touche quelqu'un, tant pis.",
-     "debut": 112.73,
-     "fin": 115.731,
+     "debut": 104.31,
+     "fin": 107.81,
      "mots": [
       {
        "mot": "et",
-       "debut": 112.73,
-       "fin": 112.831
+       "debut": 104.31,
+       "fin": 104.35
       },
       {
        "mot": "il",
-       "debut": 112.831,
-       "fin": 112.891
+       "debut": 104.39,
+       "fin": 104.45
       },
       {
        "mot": "se",
-       "debut": 112.891,
-       "fin": 113.01
+       "debut": 104.51,
+       "fin": 104.63
       },
       {
        "mot": "dit",
-       "debut": 113.07,
-       "fin": 113.211
+       "debut": 104.67,
+       "fin": 104.79
       },
       {
        "mot": "si",
-       "debut": 113.911,
-       "fin": 114.01
+       "debut": 105.99,
+       "fin": 106.07
       },
       {
        "mot": "je",
-       "debut": 114.051,
-       "fin": 114.131
+       "debut": 106.15,
+       "fin": 106.21
       },
       {
        "mot": "touche",
-       "debut": 114.171,
-       "fin": 114.331
+       "debut": 106.27,
+       "fin": 106.45
       },
       {
        "mot": "quelqu",
-       "debut": 114.371,
-       "fin": 114.691
+       "debut": 106.49,
+       "fin": 106.89
       },
       {
        "mot": "un",
-       "debut": 114.371,
-       "fin": 114.691
+       "debut": 106.49,
+       "fin": 106.89
       },
       {
        "mot": "tant",
-       "debut": 115.371,
-       "fin": 115.471
+       "debut": 107.47,
+       "fin": 107.59
       },
       {
        "mot": "pis",
-       "debut": 115.511,
-       "fin": 115.731
+       "debut": 107.63,
+       "fin": 107.81
       }
      ]
     }
-   ],
-   "debut": 110.011,
-   "fin": 115.731
+   ]
   },
   {
    "ligne": 15,
+   "debut": 108.85,
+   "fin": 113.76,
    "phrases": [
     {
      "texte": "Il ne souhaite pas la blessure.",
-     "debut": 116.571,
-     "fin": 117.771,
+     "debut": 108.85,
+     "fin": 109.91,
      "mots": [
       {
        "mot": "il",
-       "debut": 116.571,
-       "fin": 116.631
+       "debut": 108.85,
+       "fin": 108.89
       },
       {
        "mot": "ne",
-       "debut": 116.671,
-       "fin": 116.751
+       "debut": 108.93,
+       "fin": 109.01
       },
       {
        "mot": "souhaite",
-       "debut": 116.791,
-       "fin": 116.991
+       "debut": 109.05,
+       "fin": 109.25
       },
       {
        "mot": "pas",
-       "debut": 117.051,
-       "fin": 117.151
+       "debut": 109.29,
+       "fin": 109.37
       },
       {
        "mot": "la",
-       "debut": 117.191,
-       "fin": 117.291
+       "debut": 109.41,
+       "fin": 109.47
       },
       {
        "mot": "blessure",
-       "debut": 117.331,
-       "fin": 117.771
+       "debut": 109.51,
+       "fin": 109.91
       }
      ]
     },
     {
      "texte": "Mais il l'accepte, pour le cas où elle arriverait.",
-     "debut": 118.391,
-     "fin": 121.131,
+     "debut": 110.5,
+     "fin": 113.76,
      "mots": [
       {
        "mot": "mais",
-       "debut": 118.391,
-       "fin": 118.491
+       "debut": 110.5,
+       "fin": 110.6
       },
       {
        "mot": "il",
-       "debut": 118.511,
-       "fin": 118.591
+       "debut": 110.64,
+       "fin": 110.9
       },
       {
        "mot": "l",
-       "debut": 118.631,
-       "fin": 119.191
+       "debut": 110.96,
+       "fin": 111.5
       },
       {
        "mot": "accepte",
-       "debut": 118.631,
-       "fin": 119.191
+       "debut": 110.96,
+       "fin": 111.5
       },
       {
        "mot": "pour",
-       "debut": 119.631,
-       "fin": 119.731
+       "debut": 112.22,
+       "fin": 112.32
       },
       {
        "mot": "le",
-       "debut": 119.771,
-       "fin": 119.871
+       "debut": 112.36,
+       "fin": 112.46
       },
       {
        "mot": "cas",
-       "debut": 119.951,
-       "fin": 120.371
+       "debut": 112.52,
+       "fin": 113.02
       },
       {
        "mot": "où",
-       "debut": 120.431,
-       "fin": 120.491
+       "debut": 113.08,
+       "fin": 113.14
       },
       {
        "mot": "elle",
-       "debut": 120.531,
-       "fin": 120.631
+       "debut": 113.18,
+       "fin": 113.28
       },
       {
        "mot": "arriverait",
-       "debut": 120.671,
-       "fin": 121.131
+       "debut": 113.34,
+       "fin": 113.76
       }
      ]
     }
-   ],
-   "debut": 116.571,
-   "fin": 121.131
+   ]
   },
   {
    "ligne": 16,
+   "debut": 115.2,
+   "fin": 122.94,
    "phrases": [
     {
      "texte": "L'article douze le prévoit dans une seconde phrase.",
-     "debut": 122.551,
-     "fin": 125.071,
+     "debut": 115.2,
+     "fin": 117.46,
      "mots": [
       {
        "mot": "l",
-       "debut": 122.551,
-       "fin": 122.991
+       "debut": 115.2,
+       "fin": 115.64
       },
       {
        "mot": "article",
-       "debut": 122.551,
-       "fin": 122.991
+       "debut": 115.2,
+       "fin": 115.64
       },
       {
        "mot": "douze",
-       "debut": 123.051,
-       "fin": 123.511
+       "debut": 115.7,
+       "fin": 115.92
       },
       {
        "mot": "le",
-       "debut": 123.591,
-       "fin": 123.651
+       "debut": 115.96,
+       "fin": 116.06
       },
       {
        "mot": "prévoit",
-       "debut": 123.711,
-       "fin": 123.991
+       "debut": 116.1,
+       "fin": 116.44
       },
       {
        "mot": "dans",
-       "debut": 124.051,
-       "fin": 124.191
+       "debut": 116.48,
+       "fin": 116.62
       },
       {
        "mot": "une",
-       "debut": 124.231,
-       "fin": 124.351
+       "debut": 116.66,
+       "fin": 116.78
       },
       {
        "mot": "seconde",
-       "debut": 124.431,
-       "fin": 124.731
+       "debut": 116.82,
+       "fin": 117.12
       },
       {
        "mot": "phrase",
-       "debut": 124.771,
-       "fin": 125.071
+       "debut": 117.14,
+       "fin": 117.46
       }
      ]
     },
     {
      "texte": "Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement.",
-     "debut": 125.931,
-     "fin": 131.731,
+     "debut": 118.24,
+     "fin": 122.94,
      "mots": [
       {
        "mot": "celui",
-       "debut": 125.931,
-       "fin": 126.431
+       "debut": 118.24,
+       "fin": 118.48
       },
       {
        "mot": "qui",
-       "debut": 126.471,
-       "fin": 126.591
+       "debut": 118.52,
+       "fin": 118.62
       },
       {
        "mot": "tient",
-       "debut": 126.651,
-       "fin": 126.791
+       "debut": 118.68,
+       "fin": 118.8
       },
       {
        "mot": "le",
-       "debut": 126.831,
-       "fin": 126.911
+       "debut": 118.84,
+       "fin": 118.92
       },
       {
        "mot": "résultat",
-       "debut": 126.951,
-       "fin": 127.591
+       "debut": 118.98,
+       "fin": 119.44
       },
       {
        "mot": "pour",
-       "debut": 127.651,
-       "fin": 127.791
+       "debut": 119.5,
+       "fin": 119.62
       },
       {
        "mot": "possible",
-       "debut": 127.831,
-       "fin": 128.551
+       "debut": 119.66,
+       "fin": 120.34
       },
       {
        "mot": "et",
-       "debut": 128.631,
-       "fin": 128.691
+       "debut": 120.4,
+       "fin": 120.46
       },
       {
        "mot": "l",
-       "debut": 128.731,
-       "fin": 129.251
+       "debut": 120.5,
+       "fin": 121.18
       },
       {
        "mot": "accepte",
-       "debut": 128.731,
-       "fin": 129.251
+       "debut": 120.5,
+       "fin": 121.18
       },
       {
        "mot": "agit",
-       "debut": 129.811,
-       "fin": 130.171
+       "debut": 121.3,
+       "fin": 121.5
       },
       {
        "mot": "déjà",
-       "debut": 130.231,
-       "fin": 130.831
+       "debut": 121.58,
+       "fin": 122.1
       },
       {
        "mot": "intentionnellement",
-       "debut": 130.931,
-       "fin": 131.731
+       "debut": 122.16,
+       "fin": 122.94
       }
      ]
     }
-   ],
-   "debut": 122.551,
-   "fin": 131.731
+   ]
   },
   {
    "ligne": 17,
+   "debut": 124.02,
+   "fin": 132.59,
    "phrases": [
     {
      "texte": "C'est le dol éventuel.",
-     "debut": 132.871,
-     "fin": 134.371,
+     "debut": 124.02,
+     "fin": 125.2,
      "mots": [
       {
        "mot": "c",
-       "debut": 132.871,
-       "fin": 132.951
+       "debut": 124.02,
+       "fin": 124.119
       },
       {
        "mot": "est",
-       "debut": 132.871,
-       "fin": 132.951
+       "debut": 124.02,
+       "fin": 124.119
       },
       {
        "mot": "le",
-       "debut": 132.991,
-       "fin": 133.071
+       "debut": 124.16,
+       "fin": 124.239
       },
       {
        "mot": "dol",
-       "debut": 133.251,
-       "fin": 133.651
+       "debut": 124.36,
+       "fin": 124.52
       },
       {
        "mot": "éventuel",
-       "debut": 133.751,
-       "fin": 134.371
+       "debut": 124.58,
+       "fin": 125.2
       }
      ]
     },
     {
      "texte": "Le Tribunal fédéral le résume ainsi : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode.",
-     "debut": 135.471,
-     "fin": 143.471,
+     "debut": 125.79,
+     "fin": 132.59,
      "mots": [
       {
        "mot": "le",
-       "debut": 135.471,
-       "fin": 135.551
+       "debut": 125.79,
+       "fin": 125.87
       },
       {
        "mot": "tribunal",
-       "debut": 135.591,
-       "fin": 136.031
+       "debut": 125.91,
+       "fin": 126.35
       },
       {
        "mot": "fédéral",
-       "debut": 136.091,
-       "fin": 136.711
+       "debut": 126.41,
+       "fin": 126.85
       },
       {
        "mot": "le",
-       "debut": 136.791,
-       "fin": 136.851
+       "debut": 126.89,
+       "fin": 126.95
       },
       {
        "mot": "résume",
-       "debut": 136.891,
-       "fin": 137.371
+       "debut": 126.99,
+       "fin": 127.27
       },
       {
        "mot": "ainsi",
-       "debut": 137.431,
-       "fin": 137.691
+       "debut": 127.33,
+       "fin": 127.57
       },
       {
        "mot": "l",
-       "debut": 138.711,
-       "fin": 139.311
+       "debut": 128.35,
+       "fin": 128.67
       },
       {
        "mot": "auteur",
-       "debut": 138.711,
-       "fin": 139.311
+       "debut": 128.35,
+       "fin": 128.67
       },
       {
        "mot": "envisage",
-       "debut": 139.391,
-       "fin": 139.811
+       "debut": 128.73,
+       "fin": 129.13
       },
       {
        "mot": "le",
-       "debut": 139.871,
-       "fin": 139.931
+       "debut": 129.17,
+       "fin": 129.23
       },
       {
        "mot": "résultat",
-       "debut": 139.971,
-       "fin": 140.471
+       "debut": 129.27,
+       "fin": 129.75
       },
       {
        "mot": "et",
-       "debut": 141.031,
-       "fin": 141.091
+       "debut": 130.37,
+       "fin": 130.43
       },
       {
        "mot": "agit",
-       "debut": 141.171,
-       "fin": 141.371
+       "debut": 130.53,
+       "fin": 130.73
       },
       {
        "mot": "quand",
-       "debut": 141.411,
-       "fin": 141.551
+       "debut": 130.77,
+       "fin": 130.89
       },
       {
        "mot": "même",
-       "debut": 141.611,
-       "fin": 142.051
+       "debut": 130.95,
+       "fin": 131.45
       },
       {
        "mot": "parce",
-       "debut": 142.091,
-       "fin": 142.291
+       "debut": 131.49,
+       "fin": 131.73
       },
       {
        "mot": "qu",
-       "debut": 142.311,
-       "fin": 142.631
+       "debut": 131.75,
+       "fin": 131.89
       },
       {
        "mot": "il",
-       "debut": 142.311,
-       "fin": 142.631
+       "debut": 131.75,
+       "fin": 131.89
       },
       {
        "mot": "s",
-       "debut": 142.711,
-       "fin": 142.891
+       "debut": 131.93,
+       "fin": 132.05
       },
       {
        "mot": "en",
-       "debut": 142.711,
-       "fin": 142.891
+       "debut": 131.93,
+       "fin": 132.05
       },
       {
        "mot": "accommode",
-       "debut": 142.951,
-       "fin": 143.471
+       "debut": 132.13,
+       "fin": 132.59
       }
      ]
     }
-   ],
-   "debut": 132.871,
-   "fin": 143.471
+   ]
   },
   {
    "ligne": 18,
+   "debut": 134.03,
+   "fin": 140.41,
    "phrases": [
     {
      "texte": "Pour le droit pénal, c'est encore de l'intention.",
-     "debut": 144.911,
-     "fin": 147.291,
+     "debut": 134.03,
+     "fin": 136.63,
      "mots": [
       {
        "mot": "pour",
-       "debut": 144.911,
-       "fin": 144.991
+       "debut": 134.03,
+       "fin": 134.13
       },
       {
        "mot": "le",
-       "debut": 145.031,
-       "fin": 145.091
+       "debut": 134.17,
+       "fin": 134.23
       },
       {
        "mot": "droit",
-       "debut": 145.131,
-       "fin": 145.311
+       "debut": 134.27,
+       "fin": 134.41
       },
       {
        "mot": "pénal",
-       "debut": 145.351,
-       "fin": 145.731
+       "debut": 134.45,
+       "fin": 134.91
       },
       {
        "mot": "c",
-       "debut": 146.251,
-       "fin": 146.351
+       "debut": 135.43,
+       "fin": 135.53
       },
       {
        "mot": "est",
-       "debut": 146.251,
-       "fin": 146.351
+       "debut": 135.43,
+       "fin": 135.53
       },
       {
        "mot": "encore",
-       "debut": 146.371,
-       "fin": 146.631
+       "debut": 135.57,
+       "fin": 135.91
       },
       {
        "mot": "de",
-       "debut": 146.671,
-       "fin": 146.731
+       "debut": 135.97,
+       "fin": 136.03
       },
       {
        "mot": "l",
-       "debut": 146.771,
-       "fin": 147.291
+       "debut": 136.07,
+       "fin": 136.63
       },
       {
        "mot": "intention",
-       "debut": 146.771,
-       "fin": 147.291
+       "debut": 136.07,
+       "fin": 136.63
       }
      ]
     },
     {
      "texte": "Léo pourrait être puni comme s'il avait voulu la blessure.",
-     "debut": 148.311,
-     "fin": 150.991,
+     "debut": 137.45,
+     "fin": 140.41,
      "mots": [
       {
        "mot": "léo",
-       "debut": 148.311,
-       "fin": 148.551
+       "debut": 137.45,
+       "fin": 137.79
       },
       {
        "mot": "pourrait",
-       "debut": 148.611,
-       "fin": 148.831
+       "debut": 137.85,
+       "fin": 138.03
       },
       {
        "mot": "être",
-       "debut": 148.851,
-       "fin": 148.991
+       "debut": 138.05,
+       "fin": 138.27
       },
       {
        "mot": "puni",
-       "debut": 149.051,
-       "fin": 149.471
+       "debut": 138.35,
+       "fin": 138.63
       },
       {
        "mot": "comme",
-       "debut": 149.531,
-       "fin": 149.691
+       "debut": 139.09,
+       "fin": 139.21
       },
       {
        "mot": "s",
-       "debut": 149.731,
-       "fin": 149.851
+       "debut": 139.25,
+       "fin": 139.35
       },
       {
        "mot": "il",
-       "debut": 149.731,
-       "fin": 149.851
+       "debut": 139.25,
+       "fin": 139.35
       },
       {
        "mot": "avait",
-       "debut": 149.891,
-       "fin": 150.091
+       "debut": 139.39,
+       "fin": 139.57
       },
       {
        "mot": "voulu",
-       "debut": 150.151,
-       "fin": 150.351
+       "debut": 139.61,
+       "fin": 139.81
       },
       {
        "mot": "la",
-       "debut": 150.411,
-       "fin": 150.491
+       "debut": 139.85,
+       "fin": 139.93
       },
       {
        "mot": "blessure",
-       "debut": 150.531,
-       "fin": 150.991
+       "debut": 139.97,
+       "fin": 140.41
       }
      ]
     }
-   ],
-   "debut": 144.911,
-   "fin": 150.991
+   ]
   },
   {
    "ligne": 19,
+   "debut": 141.85,
+   "fin": 147.57,
    "phrases": [
     {
      "texte": "Troisième version.",
-     "debut": 152.551,
-     "fin": 153.251,
+     "debut": 141.85,
+     "fin": 142.61,
      "mots": [
       {
        "mot": "troisième",
-       "debut": 152.551,
-       "fin": 152.891
+       "debut": 141.85,
+       "fin": 142.21
       },
       {
        "mot": "version",
-       "debut": 152.931,
-       "fin": 153.251
+       "debut": 142.25,
+       "fin": 142.61
       }
      ]
     },
     {
      "texte": "Léo voit le groupe.",
-     "debut": 154.311,
-     "fin": 155.231,
+     "debut": 143.69,
+     "fin": 144.55,
      "mots": [
       {
        "mot": "léo",
-       "debut": 154.311,
-       "fin": 154.571
+       "debut": 143.69,
+       "fin": 143.93
       },
       {
        "mot": "voit",
-       "debut": 154.611,
-       "fin": 154.731
+       "debut": 143.95,
+       "fin": 144.05
       },
       {
        "mot": "le",
-       "debut": 154.771,
-       "fin": 154.851
+       "debut": 144.07,
+       "fin": 144.17
       },
       {
        "mot": "groupe",
-       "debut": 154.911,
-       "fin": 155.231
+       "debut": 144.23,
+       "fin": 144.55
       }
      ]
     },
     {
      "texte": "Il sait qu'un tir raté pourrait toucher quelqu'un.",
-     "debut": 156.011,
-     "fin": 157.971,
+     "debut": 145.35,
+     "fin": 147.57,
      "mots": [
       {
        "mot": "il",
-       "debut": 156.011,
-       "fin": 156.071
+       "debut": 145.35,
+       "fin": 145.39
       },
       {
        "mot": "sait",
-       "debut": 156.111,
-       "fin": 156.211
+       "debut": 145.43,
+       "fin": 145.53
       },
       {
        "mot": "qu",
-       "debut": 156.231,
-       "fin": 156.371
+       "debut": 145.55,
+       "fin": 145.77
       },
       {
        "mot": "un",
-       "debut": 156.231,
-       "fin": 156.371
+       "debut": 145.55,
+       "fin": 145.77
       },
       {
        "mot": "tir",
-       "debut": 156.431,
-       "fin": 156.591
+       "debut": 145.87,
+       "fin": 146.07
       },
       {
        "mot": "raté",
-       "debut": 156.631,
-       "fin": 157.151
+       "debut": 146.15,
+       "fin": 146.65
       },
       {
        "mot": "pourrait",
-       "debut": 157.211,
-       "fin": 157.391
+       "debut": 146.73,
+       "fin": 146.91
       },
       {
        "mot": "toucher",
-       "debut": 157.451,
-       "fin": 157.671
+       "debut": 146.95,
+       "fin": 147.17
       },
       {
        "mot": "quelqu",
-       "debut": 157.711,
-       "fin": 157.971
+       "debut": 147.21,
+       "fin": 147.57
       },
       {
        "mot": "un",
-       "debut": 157.711,
-       "fin": 157.971
+       "debut": 147.21,
+       "fin": 147.57
       }
      ]
     }
-   ],
-   "debut": 152.551,
-   "fin": 157.971
+   ]
   },
   {
    "ligne": 20,
+   "debut": 148.75,
+   "fin": 155.85,
    "phrases": [
     {
      "texte": "Mais il est sûr de sa précision.",
-     "debut": 159.171,
-     "fin": 160.491,
+     "debut": 148.75,
+     "fin": 150.23,
      "mots": [
       {
        "mot": "mais",
-       "debut": 159.171,
-       "fin": 159.251
+       "debut": 148.75,
+       "fin": 148.81
       },
       {
        "mot": "il",
-       "debut": 159.271,
-       "fin": 159.331
+       "debut": 148.85,
+       "fin": 148.89
       },
       {
        "mot": "est",
-       "debut": 159.351,
-       "fin": 159.451
+       "debut": 148.91,
+       "fin": 149.03
       },
       {
        "mot": "sûr",
-       "debut": 159.551,
-       "fin": 159.711
+       "debut": 149.19,
+       "fin": 149.41
       },
       {
        "mot": "de",
-       "debut": 159.751,
-       "fin": 159.811
+       "debut": 149.45,
+       "fin": 149.51
       },
       {
        "mot": "sa",
-       "debut": 159.851,
-       "fin": 159.951
+       "debut": 149.55,
+       "fin": 149.65
       },
       {
        "mot": "précision",
-       "debut": 159.971,
-       "fin": 160.491
+       "debut": 149.69,
+       "fin": 150.23
       }
      ]
     },
     {
      "texte": "Il compte bien que rien n'arrivera.",
-     "debut": 161.081,
-     "fin": 163.141,
+     "debut": 151.09,
+     "fin": 152.65,
      "mots": [
       {
        "mot": "il",
-       "debut": 161.081,
-       "fin": 161.161
+       "debut": 151.09,
+       "fin": 151.17
       },
       {
        "mot": "compte",
-       "debut": 161.221,
-       "fin": 161.381
+       "debut": 151.21,
+       "fin": 151.39
       },
       {
        "mot": "bien",
-       "debut": 161.441,
-       "fin": 161.681
+       "debut": 151.45,
+       "fin": 151.73
       },
       {
        "mot": "que",
-       "debut": 162.241,
-       "fin": 162.361
+       "debut": 151.77,
+       "fin": 151.89
       },
       {
        "mot": "rien",
-       "debut": 162.401,
-       "fin": 162.581
+       "debut": 151.95,
+       "fin": 152.17
       },
       {
        "mot": "n",
-       "debut": 162.621,
-       "fin": 163.141
+       "debut": 152.19,
+       "fin": 152.65
       },
       {
        "mot": "arrivera",
-       "debut": 162.621,
-       "fin": 163.141
+       "debut": 152.19,
+       "fin": 152.65
       }
      ]
     },
     {
      "texte": "Et pourtant, le ballon touche Adam.",
-     "debut": 163.981,
-     "fin": 166.481,
+     "debut": 153.59,
+     "fin": 155.85,
      "mots": [
       {
        "mot": "et",
-       "debut": 163.981,
-       "fin": 164.061
+       "debut": 153.59,
+       "fin": 153.67
       },
       {
        "mot": "pourtant",
-       "debut": 164.101,
-       "fin": 164.421
+       "debut": 153.71,
+       "fin": 154.01
       },
       {
        "mot": "le",
-       "debut": 165.481,
-       "fin": 165.561
+       "debut": 154.79,
+       "fin": 154.87
       },
       {
        "mot": "ballon",
-       "debut": 165.601,
-       "fin": 165.921
+       "debut": 154.93,
+       "fin": 155.27
       },
       {
        "mot": "touche",
-       "debut": 165.981,
-       "fin": 166.141
+       "debut": 155.33,
+       "fin": 155.49
       },
       {
        "mot": "adam",
-       "debut": 166.201,
-       "fin": 166.481
+       "debut": 155.55,
+       "fin": 155.85
       }
      ]
     }
-   ],
-   "debut": 159.171,
-   "fin": 166.481
+   ]
   },
   {
    "ligne": 21,
+   "debut": 157.29,
+   "fin": 164.91,
    "phrases": [
     {
      "texte": "Ici, Léo n'accepte pas le résultat.",
-     "debut": 167.721,
-     "fin": 170.241,
+     "debut": 157.29,
+     "fin": 159.45,
      "mots": [
       {
        "mot": "ici",
-       "debut": 167.721,
-       "fin": 168.061
+       "debut": 157.29,
+       "fin": 157.57
       },
       {
        "mot": "léo",
-       "debut": 168.661,
-       "fin": 168.881
+       "debut": 158.05,
+       "fin": 158.21
       },
       {
        "mot": "n",
-       "debut": 168.901,
-       "fin": 169.421
+       "debut": 158.25,
+       "fin": 158.61
       },
       {
        "mot": "accepte",
-       "debut": 168.901,
-       "fin": 169.421
+       "debut": 158.25,
+       "fin": 158.61
       },
       {
        "mot": "pas",
-       "debut": 169.461,
-       "fin": 169.561
+       "debut": 158.67,
+       "fin": 158.75
       },
       {
        "mot": "le",
-       "debut": 169.601,
-       "fin": 169.661
+       "debut": 158.77,
+       "fin": 158.83
       },
       {
        "mot": "résultat",
-       "debut": 169.701,
-       "fin": 170.241
+       "debut": 158.87,
+       "fin": 159.45
       }
      ]
     },
     {
      "texte": "Il fait confiance à son adresse, à tort.",
-     "debut": 170.941,
-     "fin": 173.221,
+     "debut": 160.33,
+     "fin": 162.55,
      "mots": [
       {
        "mot": "il",
-       "debut": 170.941,
-       "fin": 170.981
+       "debut": 160.33,
+       "fin": 160.37
       },
       {
        "mot": "fait",
-       "debut": 171.021,
-       "fin": 171.161
+       "debut": 160.41,
+       "fin": 160.51
       },
       {
        "mot": "confiance",
-       "debut": 171.221,
-       "fin": 171.801
+       "debut": 160.55,
+       "fin": 160.93
       },
       {
        "mot": "à",
-       "debut": 171.861,
-       "fin": 171.901
+       "debut": 160.99,
+       "fin": 161.01
       },
       {
        "mot": "son",
-       "debut": 171.961,
-       "fin": 172.081
+       "debut": 161.05,
+       "fin": 161.17
       },
       {
        "mot": "adresse",
-       "debut": 172.141,
-       "fin": 172.521
+       "debut": 161.25,
+       "fin": 161.67
       },
       {
        "mot": "à",
-       "debut": 172.841,
-       "fin": 172.901
+       "debut": 162.11,
+       "fin": 162.19
       },
       {
        "mot": "tort",
-       "debut": 172.961,
-       "fin": 173.221
+       "debut": 162.25,
+       "fin": 162.55
       }
      ]
     },
     {
      "texte": "Ce n'est plus de l'intention.",
-     "debut": 174.081,
-     "fin": 175.261,
+     "debut": 163.69,
+     "fin": 164.91,
      "mots": [
       {
        "mot": "ce",
-       "debut": 174.081,
-       "fin": 174.161
+       "debut": 163.69,
+       "fin": 163.77
       },
       {
        "mot": "n",
-       "debut": 174.201,
-       "fin": 174.321
+       "debut": 163.81,
+       "fin": 163.95
       },
       {
        "mot": "est",
-       "debut": 174.201,
-       "fin": 174.321
+       "debut": 163.81,
+       "fin": 163.95
       },
       {
        "mot": "plus",
-       "debut": 174.381,
-       "fin": 174.501
+       "debut": 164.01,
+       "fin": 164.13
       },
       {
        "mot": "de",
-       "debut": 174.541,
-       "fin": 174.601
+       "debut": 164.17,
+       "fin": 164.23
       },
       {
        "mot": "l",
-       "debut": 174.641,
-       "fin": 175.261
+       "debut": 164.27,
+       "fin": 164.91
       },
       {
        "mot": "intention",
-       "debut": 174.641,
-       "fin": 175.261
+       "debut": 164.27,
+       "fin": 164.91
       }
      ]
     }
-   ],
-   "debut": 167.721,
-   "fin": 175.261
+   ]
   },
   {
    "ligne": 22,
+   "debut": 166.15,
+   "fin": 172.19,
    "phrases": [
     {
      "texte": "Les juristes parlent de négligence consciente.",
-     "debut": 176.101,
-     "fin": 178.541,
+     "debut": 166.15,
+     "fin": 168.09,
      "mots": [
       {
        "mot": "les",
-       "debut": 176.101,
-       "fin": 176.221
+       "debut": 166.15,
+       "fin": 166.25
       },
       {
        "mot": "juristes",
-       "debut": 176.261,
-       "fin": 176.861
+       "debut": 166.29,
+       "fin": 166.71
       },
       {
        "mot": "parlent",
-       "debut": 176.901,
-       "fin": 177.081
+       "debut": 166.77,
+       "fin": 166.99
       },
       {
        "mot": "de",
-       "debut": 177.121,
-       "fin": 177.221
+       "debut": 167.03,
+       "fin": 167.09
       },
       {
        "mot": "négligence",
-       "debut": 177.301,
-       "fin": 177.821
+       "debut": 167.13,
+       "fin": 167.57
       },
       {
        "mot": "consciente",
-       "debut": 178.001,
-       "fin": 178.541
+       "debut": 167.61,
+       "fin": 168.09
       }
      ]
     },
     {
      "texte": "Il a vu le risque, mais il a compté sur une issue heureuse.",
-     "debut": 179.681,
-     "fin": 183.301,
+     "debut": 168.99,
+     "fin": 172.19,
      "mots": [
       {
        "mot": "il",
-       "debut": 179.681,
-       "fin": 179.741
+       "debut": 168.99,
+       "fin": 169.05
       },
       {
        "mot": "a",
-       "debut": 179.801,
-       "fin": 179.861
+       "debut": 169.11,
+       "fin": 169.19
       },
       {
        "mot": "vu",
-       "debut": 179.901,
-       "fin": 179.981
+       "debut": 169.23,
+       "fin": 169.29
       },
       {
        "mot": "le",
-       "debut": 180.021,
-       "fin": 180.101
+       "debut": 169.31,
+       "fin": 169.37
       },
       {
        "mot": "risque",
-       "debut": 180.141,
-       "fin": 180.541
+       "debut": 169.41,
+       "fin": 169.75
       },
       {
        "mot": "mais",
-       "debut": 181.101,
-       "fin": 181.181
+       "debut": 170.35,
+       "fin": 170.41
       },
       {
        "mot": "il",
-       "debut": 181.221,
-       "fin": 181.261
+       "debut": 170.43,
+       "fin": 170.49
       },
       {
        "mot": "a",
-       "debut": 181.321,
-       "fin": 181.381
+       "debut": 170.53,
+       "fin": 170.57
       },
       {
        "mot": "compté",
-       "debut": 181.441,
-       "fin": 181.961
+       "debut": 170.61,
+       "fin": 171.17
       },
       {
        "mot": "sur",
-       "debut": 182.061,
-       "fin": 182.201
+       "debut": 171.27,
+       "fin": 171.41
       },
       {
        "mot": "une",
-       "debut": 182.241,
-       "fin": 182.341
+       "debut": 171.47,
+       "fin": 171.53
       },
       {
        "mot": "issue",
-       "debut": 182.401,
-       "fin": 182.861
+       "debut": 171.59,
+       "fin": 171.79
       },
       {
        "mot": "heureuse",
-       "debut": 182.901,
-       "fin": 183.301
+       "debut": 171.81,
+       "fin": 172.19
       }
      ]
     }
-   ],
-   "debut": 176.101,
-   "fin": 183.301
+   ]
   },
   {
    "ligne": 23,
+   "debut": 173.63,
+   "fin": 179.49,
    "phrases": [
     {
      "texte": "Quatrième version.",
-     "debut": 184.741,
-     "fin": 185.441,
+     "debut": 173.63,
+     "fin": 174.37,
      "mots": [
       {
        "mot": "quatrième",
-       "debut": 184.741,
-       "fin": 185.121
+       "debut": 173.63,
+       "fin": 174.01
       },
       {
        "mot": "version",
-       "debut": 185.161,
-       "fin": 185.441
+       "debut": 174.05,
+       "fin": 174.37
       }
      ]
     },
     {
      "texte": "Léo ne regarde même pas autour de lui.",
-     "debut": 186.501,
-     "fin": 188.201,
+     "debut": 175.39,
+     "fin": 176.89,
      "mots": [
       {
        "mot": "léo",
-       "debut": 186.501,
-       "fin": 186.681
+       "debut": 175.39,
+       "fin": 175.53
       },
       {
        "mot": "ne",
-       "debut": 186.721,
-       "fin": 186.801
+       "debut": 175.57,
+       "fin": 175.63
       },
       {
        "mot": "regarde",
-       "debut": 186.841,
-       "fin": 187.161
+       "debut": 175.67,
+       "fin": 175.93
       },
       {
        "mot": "même",
-       "debut": 187.221,
-       "fin": 187.401
+       "debut": 175.99,
+       "fin": 176.19
       },
       {
        "mot": "pas",
-       "debut": 187.461,
-       "fin": 187.581
+       "debut": 176.23,
+       "fin": 176.31
       },
       {
        "mot": "autour",
-       "debut": 187.601,
-       "fin": 187.841
+       "debut": 176.35,
+       "fin": 176.55
       },
       {
        "mot": "de",
-       "debut": 187.881,
-       "fin": 187.941
+       "debut": 176.59,
+       "fin": 176.65
       },
       {
        "mot": "lui",
-       "debut": 187.981,
-       "fin": 188.201
+       "debut": 176.69,
+       "fin": 176.89
       }
      ]
     },
     {
      "texte": "Il ne voit pas le groupe derrière la haie.",
-     "debut": 189.341,
-     "fin": 191.241,
+     "debut": 177.75,
+     "fin": 179.49,
      "mots": [
       {
        "mot": "il",
-       "debut": 189.341,
-       "fin": 189.421
+       "debut": 177.75,
+       "fin": 177.81
       },
       {
        "mot": "ne",
-       "debut": 189.461,
-       "fin": 189.561
+       "debut": 177.85,
+       "fin": 177.93
       },
       {
        "mot": "voit",
-       "debut": 189.621,
-       "fin": 190.041
+       "debut": 177.95,
+       "fin": 178.09
       },
       {
        "mot": "pas",
-       "debut": 190.081,
-       "fin": 190.181
+       "debut": 178.13,
+       "fin": 178.23
       },
       {
        "mot": "le",
-       "debut": 190.221,
-       "fin": 190.321
+       "debut": 178.27,
+       "fin": 178.33
       },
       {
        "mot": "groupe",
-       "debut": 190.361,
-       "fin": 190.601
+       "debut": 178.39,
+       "fin": 178.71
       },
       {
        "mot": "derrière",
-       "debut": 190.661,
-       "fin": 190.921
+       "debut": 178.77,
+       "fin": 178.99
       },
       {
        "mot": "la",
-       "debut": 190.961,
-       "fin": 191.041
+       "debut": 179.03,
+       "fin": 179.21
       },
       {
        "mot": "haie",
-       "debut": 191.081,
-       "fin": 191.241
+       "debut": 179.25,
+       "fin": 179.49
       }
      ]
     }
-   ],
-   "debut": 184.741,
-   "fin": 191.241
+   ]
   },
   {
    "ligne": 24,
+   "debut": 180.65,
+   "fin": 185.03,
    "phrases": [
     {
      "texte": "Il ne s'est pas rendu compte du risque.",
-     "debut": 192.681,
-     "fin": 194.041,
+     "debut": 180.65,
+     "fin": 181.99,
      "mots": [
       {
        "mot": "il",
-       "debut": 192.681,
-       "fin": 192.721
+       "debut": 180.65,
+       "fin": 180.69
       },
       {
        "mot": "ne",
-       "debut": 192.761,
-       "fin": 192.841
+       "debut": 180.71,
+       "fin": 180.77
       },
       {
        "mot": "s",
-       "debut": 192.881,
-       "fin": 192.981
+       "debut": 180.81,
+       "fin": 180.91
       },
       {
        "mot": "est",
-       "debut": 192.881,
-       "fin": 192.981
+       "debut": 180.81,
+       "fin": 180.91
       },
       {
        "mot": "pas",
-       "debut": 193.021,
-       "fin": 193.101
+       "debut": 180.95,
+       "fin": 181.03
       },
       {
        "mot": "rendu",
-       "debut": 193.141,
-       "fin": 193.361
+       "debut": 181.07,
+       "fin": 181.31
       },
       {
        "mot": "compte",
-       "debut": 193.421,
-       "fin": 193.561
+       "debut": 181.35,
+       "fin": 181.49
       },
       {
        "mot": "du",
-       "debut": 193.601,
-       "fin": 193.661
+       "debut": 181.53,
+       "fin": 181.59
       },
       {
        "mot": "risque",
-       "debut": 193.701,
-       "fin": 194.041
+       "debut": 181.65,
+       "fin": 181.99
       }
      ]
     },
     {
      "texte": "Mais il aurait dû vérifier avant de frapper si fort.",
-     "debut": 194.821,
-     "fin": 197.321,
+     "debut": 182.69,
+     "fin": 185.03,
      "mots": [
       {
        "mot": "mais",
-       "debut": 194.821,
-       "fin": 194.921
+       "debut": 182.69,
+       "fin": 182.77
       },
       {
        "mot": "il",
-       "debut": 194.961,
-       "fin": 195.021
+       "debut": 182.79,
+       "fin": 182.85
       },
       {
        "mot": "aurait",
-       "debut": 195.061,
-       "fin": 195.241
+       "debut": 182.89,
+       "fin": 183.07
       },
       {
        "mot": "dû",
-       "debut": 195.281,
-       "fin": 195.381
+       "debut": 183.11,
+       "fin": 183.21
       },
       {
        "mot": "vérifier",
-       "debut": 195.441,
-       "fin": 196.141
+       "debut": 183.25,
+       "fin": 183.89
       },
       {
        "mot": "avant",
-       "debut": 196.241,
-       "fin": 196.421
+       "debut": 184.01,
+       "fin": 184.15
       },
       {
        "mot": "de",
-       "debut": 196.461,
-       "fin": 196.541
+       "debut": 184.19,
+       "fin": 184.25
       },
       {
        "mot": "frapper",
-       "debut": 196.581,
-       "fin": 196.881
+       "debut": 184.29,
+       "fin": 184.53
       },
       {
        "mot": "si",
-       "debut": 196.941,
-       "fin": 197.061
+       "debut": 184.59,
+       "fin": 184.71
       },
       {
        "mot": "fort",
-       "debut": 197.121,
-       "fin": 197.321
+       "debut": 184.77,
+       "fin": 185.03
       }
      ]
     }
-   ],
-   "debut": 192.681,
-   "fin": 197.321
+   ]
   },
   {
    "ligne": 25,
+   "debut": 186.23,
+   "fin": 195.41,
    "phrases": [
     {
      "texte": "L'article douze appelle cela une imprévoyance coupable.",
-     "debut": 198.661,
-     "fin": 201.881,
+     "debut": 186.23,
+     "fin": 189.01,
      "mots": [
       {
        "mot": "l",
-       "debut": 198.661,
-       "fin": 199.081
+       "debut": 186.23,
+       "fin": 186.63
       },
       {
        "mot": "article",
-       "debut": 198.661,
-       "fin": 199.081
+       "debut": 186.23,
+       "fin": 186.63
       },
       {
        "mot": "douze",
-       "debut": 199.121,
-       "fin": 199.621
+       "debut": 186.71,
+       "fin": 187.01
       },
       {
        "mot": "appelle",
-       "debut": 199.701,
-       "fin": 199.901
+       "debut": 187.11,
+       "fin": 187.29
       },
       {
        "mot": "cela",
-       "debut": 199.961,
-       "fin": 200.441
+       "debut": 187.35,
+       "fin": 187.65
       },
       {
        "mot": "une",
-       "debut": 200.521,
-       "fin": 200.641
+       "debut": 187.73,
+       "fin": 187.83
       },
       {
        "mot": "imprévoyance",
-       "debut": 200.701,
-       "fin": 201.381
+       "debut": 187.89,
+       "fin": 188.51
       },
       {
        "mot": "coupable",
-       "debut": 201.441,
-       "fin": 201.881
+       "debut": 188.55,
+       "fin": 189.01
       }
      ]
     },
     {
      "texte": "C'est le fait de ne pas prendre les précautions commandées par les circonstances et par sa situation personnelle.",
-     "debut": 202.821,
-     "fin": 208.281,
+     "debut": 189.77,
+     "fin": 195.41,
      "mots": [
       {
        "mot": "c",
-       "debut": 202.821,
-       "fin": 202.921
+       "debut": 189.77,
+       "fin": 189.85
       },
       {
        "mot": "est",
-       "debut": 202.821,
-       "fin": 202.921
+       "debut": 189.77,
+       "fin": 189.85
       },
       {
        "mot": "le",
-       "debut": 202.961,
-       "fin": 203.081
+       "debut": 189.89,
+       "fin": 189.97
       },
       {
        "mot": "fait",
-       "debut": 203.161,
-       "fin": 203.301
+       "debut": 190.01,
+       "fin": 190.09
       },
       {
        "mot": "de",
-       "debut": 203.361,
-       "fin": 203.421
+       "debut": 190.13,
+       "fin": 190.19
       },
       {
        "mot": "ne",
-       "debut": 203.461,
-       "fin": 203.561
+       "debut": 190.23,
+       "fin": 190.29
       },
       {
        "mot": "pas",
-       "debut": 203.601,
-       "fin": 203.741
+       "debut": 190.33,
+       "fin": 190.47
       },
       {
        "mot": "prendre",
-       "debut": 203.801,
-       "fin": 204.061
+       "debut": 190.53,
+       "fin": 190.89
       },
       {
        "mot": "les",
-       "debut": 204.081,
-       "fin": 204.181
+       "debut": 190.93,
+       "fin": 191.01
       },
       {
        "mot": "précautions",
-       "debut": 204.221,
-       "fin": 204.761
+       "debut": 191.05,
+       "fin": 191.51
       },
       {
        "mot": "commandées",
-       "debut": 204.821,
-       "fin": 205.301
+       "debut": 191.57,
+       "fin": 192.27
       },
       {
        "mot": "par",
-       "debut": 205.341,
-       "fin": 205.441
+       "debut": 192.33,
+       "fin": 192.41
       },
       {
        "mot": "les",
-       "debut": 205.501,
-       "fin": 205.581
+       "debut": 192.45,
+       "fin": 192.55
       },
       {
        "mot": "circonstances",
-       "debut": 205.621,
-       "fin": 206.581
+       "debut": 192.61,
+       "fin": 193.25
       },
       {
        "mot": "et",
-       "debut": 206.641,
-       "fin": 206.741
+       "debut": 193.91,
+       "fin": 194.01
       },
       {
        "mot": "par",
-       "debut": 206.781,
-       "fin": 206.901
+       "debut": 194.05,
+       "fin": 194.15
       },
       {
        "mot": "sa",
-       "debut": 206.941,
-       "fin": 207.041
+       "debut": 194.19,
+       "fin": 194.31
       },
       {
        "mot": "situation",
-       "debut": 207.081,
-       "fin": 207.661
+       "debut": 194.35,
+       "fin": 194.81
       },
       {
        "mot": "personnelle",
-       "debut": 207.721,
-       "fin": 208.281
+       "debut": 194.85,
+       "fin": 195.41
       }
      ]
     }
-   ],
-   "debut": 198.661,
-   "fin": 208.281
+   ]
   },
   {
    "ligne": 26,
+   "debut": 196.85,
+   "fin": 204.53,
    "phrases": [
     {
      "texte": "Le texte couvre d'ailleurs nos deux versions.",
-     "debut": 209.841,
-     "fin": 212.001,
+     "debut": 196.85,
+     "fin": 198.83,
      "mots": [
       {
        "mot": "le",
-       "debut": 209.841,
-       "fin": 209.921
+       "debut": 196.85,
+       "fin": 196.93
       },
       {
        "mot": "texte",
-       "debut": 209.981,
-       "fin": 210.241
+       "debut": 196.97,
+       "fin": 197.25
       },
       {
        "mot": "couvre",
-       "debut": 210.281,
-       "fin": 210.501
+       "debut": 197.31,
+       "fin": 197.55
       },
       {
        "mot": "d",
-       "debut": 210.521,
-       "fin": 210.941
+       "debut": 197.57,
+       "fin": 198.05
       },
       {
        "mot": "ailleurs",
-       "debut": 210.521,
-       "fin": 210.941
+       "debut": 197.57,
+       "fin": 198.05
       },
       {
        "mot": "nos",
-       "debut": 211.241,
-       "fin": 211.321
+       "debut": 198.11,
+       "fin": 198.21
       },
       {
        "mot": "deux",
-       "debut": 211.361,
-       "fin": 211.461
+       "debut": 198.25,
+       "fin": 198.37
       },
       {
        "mot": "versions",
-       "debut": 211.501,
-       "fin": 212.001
+       "debut": 198.41,
+       "fin": 198.83
       }
      ]
     },
     {
      "texte": "Il y a celui qui ne se rend pas compte des conséquences de son acte.",
-     "debut": 212.841,
-     "fin": 215.781,
+     "debut": 199.77,
+     "fin": 202.27,
      "mots": [
       {
        "mot": "il",
-       "debut": 212.841,
-       "fin": 212.901
+       "debut": 199.77,
+       "fin": 199.81
       },
       {
        "mot": "y",
-       "debut": 212.961,
-       "fin": 213.021
+       "debut": 199.85,
+       "fin": 199.87
+      },
+      {
+       "mot": "a",
+       "debut": 199.89,
+       "fin": 199.95
       },
       {
        "mot": "celui",
-       "debut": 213.101,
-       "fin": 213.401
+       "debut": 200.01,
+       "fin": 200.25
       },
       {
        "mot": "qui",
-       "debut": 213.441,
-       "fin": 213.521
+       "debut": 200.27,
+       "fin": 200.35
       },
       {
        "mot": "ne",
-       "debut": 213.561,
-       "fin": 213.601
+       "debut": 200.37,
+       "fin": 200.43
       },
       {
        "mot": "se",
-       "debut": 213.661,
-       "fin": 213.761
+       "debut": 200.47,
+       "fin": 200.55
       },
       {
        "mot": "rend",
-       "debut": 213.801,
-       "fin": 213.941
+       "debut": 200.59,
+       "fin": 200.73
       },
       {
        "mot": "pas",
-       "debut": 214.001,
-       "fin": 214.101
+       "debut": 200.77,
+       "fin": 200.87
       },
       {
        "mot": "compte",
-       "debut": 214.161,
-       "fin": 214.421
+       "debut": 200.93,
+       "fin": 201.05
       },
       {
        "mot": "des",
-       "debut": 214.461,
-       "fin": 214.541
+       "debut": 201.09,
+       "fin": 201.17
       },
       {
        "mot": "conséquences",
-       "debut": 214.581,
-       "fin": 215.141
+       "debut": 201.21,
+       "fin": 201.67
       },
       {
        "mot": "de",
-       "debut": 215.181,
-       "fin": 215.241
+       "debut": 201.69,
+       "fin": 201.77
       },
       {
        "mot": "son",
-       "debut": 215.281,
-       "fin": 215.461
+       "debut": 201.83,
+       "fin": 201.97
       },
       {
        "mot": "acte",
-       "debut": 215.541,
-       "fin": 215.781
+       "debut": 202.05,
+       "fin": 202.27
       }
      ]
     },
     {
      "texte": "Et celui qui n'en tient pas compte.",
-     "debut": 216.321,
-     "fin": 217.801,
+     "debut": 202.87,
+     "fin": 204.53,
      "mots": [
       {
        "mot": "et",
-       "debut": 216.321,
-       "fin": 216.381
+       "debut": 202.87,
+       "fin": 202.95
       },
       {
        "mot": "celui",
-       "debut": 216.441,
-       "fin": 216.881
+       "debut": 203.01,
+       "fin": 203.31
       },
       {
        "mot": "qui",
-       "debut": 216.941,
-       "fin": 217.021
+       "debut": 203.71,
+       "fin": 203.79
       },
       {
        "mot": "n",
-       "debut": 217.061,
-       "fin": 217.161
+       "debut": 203.81,
+       "fin": 203.93
       },
       {
        "mot": "en",
-       "debut": 217.061,
-       "fin": 217.161
+       "debut": 203.81,
+       "fin": 203.93
       },
       {
        "mot": "tient",
-       "debut": 217.201,
-       "fin": 217.341
+       "debut": 203.97,
+       "fin": 204.11
       },
       {
        "mot": "pas",
-       "debut": 217.381,
-       "fin": 217.461
+       "debut": 204.13,
+       "fin": 204.21
       },
       {
        "mot": "compte",
-       "debut": 217.501,
-       "fin": 217.801
+       "debut": 204.25,
+       "fin": 204.53
       }
      ]
     }
-   ],
-   "debut": 209.841,
-   "fin": 217.801
+   ]
   },
   {
    "ligne": 27,
+   "debut": 205.37,
+   "fin": 214.75,
    "phrases": [
     {
      "texte": "Cinquième version.",
-     "debut": 219.241,
-     "fin": 219.901,
+     "debut": 205.37,
+     "fin": 206.01,
      "mots": [
       {
        "mot": "cinquième",
-       "debut": 219.241,
-       "fin": 219.561
+       "debut": 205.37,
+       "fin": 205.67
       },
       {
        "mot": "version",
-       "debut": 219.601,
-       "fin": 219.901
+       "debut": 205.71,
+       "fin": 206.01
       }
      ]
     },
     {
      "texte": "Léo a regardé, le parc était vide.",
-     "debut": 220.981,
-     "fin": 223.061,
+     "debut": 206.91,
+     "fin": 209.11,
      "mots": [
       {
        "mot": "léo",
-       "debut": 220.981,
-       "fin": 221.141
+       "debut": 206.91,
+       "fin": 207.11
       },
       {
        "mot": "a",
-       "debut": 221.181,
-       "fin": 221.221
+       "debut": 207.15,
+       "fin": 207.19
       },
       {
        "mot": "regardé",
-       "debut": 221.281,
-       "fin": 221.78
+       "debut": 207.23,
+       "fin": 207.71
       },
       {
        "mot": "le",
-       "debut": 222.261,
-       "fin": 222.361
+       "debut": 208.15,
+       "fin": 208.21
       },
       {
        "mot": "parc",
-       "debut": 222.4,
-       "fin": 222.561
+       "debut": 208.35,
+       "fin": 208.65
       },
       {
        "mot": "était",
-       "debut": 222.621,
-       "fin": 222.821
+       "debut": 208.71,
+       "fin": 208.89
       },
       {
        "mot": "vide",
-       "debut": 222.881,
-       "fin": 223.061
+       "debut": 208.93,
+       "fin": 209.11
       }
      ]
     },
     {
      "texte": "Mais le ballon rebondit sur un poteau et file vers Adam, qui arrivait en courant.",
-     "debut": 223.9,
-     "fin": 228.801,
+     "debut": 210.15,
+     "fin": 214.75,
      "mots": [
       {
        "mot": "mais",
-       "debut": 223.9,
-       "fin": 223.981
+       "debut": 210.15,
+       "fin": 210.23
       },
       {
        "mot": "le",
-       "debut": 224.02,
-       "fin": 224.121
+       "debut": 210.27,
+       "fin": 210.35
       },
       {
        "mot": "ballon",
-       "debut": 224.181,
-       "fin": 224.421
+       "debut": 210.39,
+       "fin": 210.59
       },
       {
        "mot": "rebondit",
-       "debut": 224.481,
-       "fin": 225.121
+       "debut": 210.65,
+       "fin": 211.07
       },
       {
        "mot": "sur",
-       "debut": 225.261,
-       "fin": 225.4
+       "debut": 211.13,
+       "fin": 211.27
       },
       {
        "mot": "un",
-       "debut": 225.46,
-       "fin": 225.601
+       "debut": 211.31,
+       "fin": 211.41
       },
       {
        "mot": "poteau",
-       "debut": 225.661,
-       "fin": 225.981
+       "debut": 211.45,
+       "fin": 211.75
       },
       {
        "mot": "et",
-       "debut": 226.661,
-       "fin": 226.761
+       "debut": 212.15,
+       "fin": 212.23
       },
       {
        "mot": "file",
-       "debut": 226.84,
-       "fin": 227.001
+       "debut": 212.29,
+       "fin": 212.43
       },
       {
        "mot": "vers",
-       "debut": 227.041,
-       "fin": 227.201
+       "debut": 212.47,
+       "fin": 212.61
       },
       {
        "mot": "adam",
-       "debut": 227.261,
-       "fin": 227.46
+       "debut": 212.65,
+       "fin": 212.87
       },
       {
        "mot": "qui",
-       "debut": 227.841,
-       "fin": 227.941
+       "debut": 213.39,
+       "fin": 213.47
       },
       {
        "mot": "arrivait",
-       "debut": 228.001,
-       "fin": 228.321
+       "debut": 213.75,
+       "fin": 214.27
       },
       {
        "mot": "en",
-       "debut": 228.361,
-       "fin": 228.461
+       "debut": 214.31,
+       "fin": 214.41
       },
       {
        "mot": "courant",
-       "debut": 228.501,
-       "fin": 228.801
+       "debut": 214.45,
+       "fin": 214.75
       }
      ]
     }
-   ],
-   "debut": 219.241,
-   "fin": 228.801
+   ]
   },
   {
    "ligne": 28,
+   "debut": 215.59,
+   "fin": 222.91,
    "phrases": [
     {
      "texte": "Léo a pris les précautions raisonnables.",
-     "debut": 230.21,
-     "fin": 232.37,
+     "debut": 215.59,
+     "fin": 217.29,
      "mots": [
       {
        "mot": "léo",
-       "debut": 230.21,
-       "fin": 230.59
+       "debut": 215.59,
+       "fin": 215.81
       },
       {
        "mot": "a",
-       "debut": 230.67,
-       "fin": 230.71
+       "debut": 215.85,
+       "fin": 215.89
       },
       {
        "mot": "pris",
-       "debut": 230.77,
-       "fin": 230.91
+       "debut": 215.95,
+       "fin": 216.09
       },
       {
        "mot": "les",
-       "debut": 230.95,
-       "fin": 231.07
+       "debut": 216.13,
+       "fin": 216.29
       },
       {
        "mot": "précautions",
-       "debut": 231.11,
-       "fin": 231.69
+       "debut": 216.33,
+       "fin": 216.71
       },
       {
        "mot": "raisonnables",
-       "debut": 231.75,
-       "fin": 232.37
+       "debut": 216.75,
+       "fin": 217.29
       }
      ]
     },
     {
      "texte": "Pas d'intention, pas d'imprévoyance coupable.",
-     "debut": 233.101,
-     "fin": 235.441,
+     "debut": 218.11,
+     "fin": 220.35,
      "mots": [
       {
        "mot": "pas",
-       "debut": 233.101,
-       "fin": 233.181
+       "debut": 218.11,
+       "fin": 218.19
       },
       {
        "mot": "d",
-       "debut": 233.221,
-       "fin": 233.701
+       "debut": 218.21,
+       "fin": 218.73
       },
       {
        "mot": "intention",
-       "debut": 233.221,
-       "fin": 233.701
+       "debut": 218.21,
+       "fin": 218.73
       },
       {
        "mot": "pas",
-       "debut": 234.281,
-       "fin": 234.361
+       "debut": 219.23,
+       "fin": 219.29
       },
       {
        "mot": "d",
-       "debut": 234.401,
-       "fin": 235.001
+       "debut": 219.33,
+       "fin": 219.91
       },
       {
        "mot": "imprévoyance",
-       "debut": 234.401,
-       "fin": 235.001
+       "debut": 219.33,
+       "fin": 219.91
       },
       {
        "mot": "coupable",
-       "debut": 235.021,
-       "fin": 235.441
+       "debut": 219.95,
+       "fin": 220.35
       }
      ]
     },
     {
      "texte": "C'est un accident, pas une infraction.",
-     "debut": 236.031,
-     "fin": 238.111,
+     "debut": 220.97,
+     "fin": 222.91,
      "mots": [
       {
        "mot": "c",
-       "debut": 236.031,
-       "fin": 236.171
+       "debut": 220.97,
+       "fin": 221.09
       },
       {
        "mot": "est",
-       "debut": 236.031,
-       "fin": 236.171
+       "debut": 220.97,
+       "fin": 221.09
       },
       {
        "mot": "un",
-       "debut": 236.211,
-       "fin": 236.291
+       "debut": 221.11,
+       "fin": 221.17
       },
       {
        "mot": "accident",
-       "debut": 236.351,
-       "fin": 236.771
+       "debut": 221.23,
+       "fin": 221.63
       },
       {
        "mot": "pas",
-       "debut": 237.291,
-       "fin": 237.371
+       "debut": 222.21,
+       "fin": 222.31
       },
       {
        "mot": "une",
-       "debut": 237.451,
-       "fin": 237.511
+       "debut": 222.35,
+       "fin": 222.43
       },
       {
        "mot": "infraction",
-       "debut": 237.551,
-       "fin": 238.111
+       "debut": 222.47,
+       "fin": 222.91
       }
      ]
     }
-   ],
-   "debut": 230.21,
-   "fin": 238.111
+   ]
   },
   {
    "ligne": 29,
+   "debut": 224.35,
+   "fin": 231.05,
    "phrases": [
     {
      "texte": "Vous vous demandez peut-être comment un juge peut lire dans la tête de Léo.",
-     "debut": 239.551,
-     "fin": 242.971,
+     "debut": 224.35,
+     "fin": 228.11,
      "mots": [
       {
        "mot": "vous",
-       "debut": 239.551,
-       "fin": 239.631
+       "debut": 224.35,
+       "fin": 224.451
       },
       {
        "mot": "vous",
-       "debut": 239.671,
-       "fin": 239.771
+       "debut": 224.471,
+       "fin": 224.571
       },
       {
        "mot": "demandez",
-       "debut": 239.811,
-       "fin": 240.191
+       "debut": 224.631,
+       "fin": 224.971
       },
       {
        "mot": "peut",
-       "debut": 240.231,
-       "fin": 240.711
+       "debut": 225.011,
+       "fin": 225.491
       },
       {
        "mot": "être",
-       "debut": 240.231,
-       "fin": 240.711
+       "debut": 225.011,
+       "fin": 225.491
       },
       {
        "mot": "comment",
-       "debut": 240.771,
-       "fin": 241.031
+       "debut": 225.55,
+       "fin": 225.79
       },
       {
        "mot": "un",
-       "debut": 241.091,
-       "fin": 241.171
+       "debut": 225.85,
+       "fin": 225.951
       },
       {
        "mot": "juge",
-       "debut": 241.291,
-       "fin": 241.471
+       "debut": 226.091,
+       "fin": 226.431
       },
       {
        "mot": "peut",
-       "debut": 241.511,
-       "fin": 241.631
+       "debut": 226.67,
+       "fin": 226.771
       },
       {
        "mot": "lire",
-       "debut": 241.691,
-       "fin": 242.031
+       "debut": 226.811,
+       "fin": 227.191
       },
       {
        "mot": "dans",
-       "debut": 242.071,
-       "fin": 242.171
+       "debut": 227.251,
+       "fin": 227.35
       },
       {
        "mot": "la",
-       "debut": 242.211,
-       "fin": 242.291
+       "debut": 227.391,
+       "fin": 227.511
       },
       {
        "mot": "tête",
-       "debut": 242.351,
-       "fin": 242.531
+       "debut": 227.55,
+       "fin": 227.711
       },
       {
        "mot": "de",
-       "debut": 242.571,
-       "fin": 242.651
+       "debut": 227.73,
+       "fin": 227.811
       },
       {
        "mot": "léo",
-       "debut": 242.691,
-       "fin": 242.971
+       "debut": 227.85,
+       "fin": 228.11
       }
      ]
     },
     {
      "texte": "Il ne le peut pas.",
-     "debut": 244.111,
-     "fin": 244.671,
+     "debut": 229.25,
+     "fin": 229.91,
      "mots": [
       {
        "mot": "il",
-       "debut": 244.111,
-       "fin": 244.151
+       "debut": 229.25,
+       "fin": 229.31
       },
       {
        "mot": "ne",
-       "debut": 244.211,
-       "fin": 244.271
+       "debut": 229.37,
+       "fin": 229.43
       },
       {
        "mot": "le",
-       "debut": 244.291,
-       "fin": 244.351
+       "debut": 229.47,
+       "fin": 229.489
       },
       {
        "mot": "peut",
-       "debut": 244.391,
-       "fin": 244.511
+       "debut": 229.57,
+       "fin": 229.69
       },
       {
        "mot": "pas",
-       "debut": 244.571,
-       "fin": 244.671
+       "debut": 229.71,
+       "fin": 229.91
       }
      ]
     },
     {
      "texte": "Il déduit.",
-     "debut": 245.451,
-     "fin": 245.911,
+     "debut": 230.59,
+     "fin": 231.05,
      "mots": [
       {
        "mot": "il",
-       "debut": 245.451,
-       "fin": 245.511
+       "debut": 230.59,
+       "fin": 230.67
       },
       {
        "mot": "déduit",
-       "debut": 245.571,
-       "fin": 245.911
+       "debut": 230.71,
+       "fin": 231.05
       }
      ]
     }
-   ],
-   "debut": 239.551,
-   "fin": 245.911
+   ]
   },
   {
    "ligne": 30,
+   "debut": 232.49,
+   "fin": 240.43,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral cite des indices.",
-     "debut": 247.231,
-     "fin": 249.271,
+     "debut": 232.49,
+     "fin": 234.27,
      "mots": [
       {
        "mot": "le",
-       "debut": 247.231,
-       "fin": 247.291
+       "debut": 232.49,
+       "fin": 232.55
       },
       {
        "mot": "tribunal",
-       "debut": 247.331,
-       "fin": 247.731
+       "debut": 232.59,
+       "fin": 232.97
       },
       {
        "mot": "fédéral",
-       "debut": 247.811,
-       "fin": 248.251
+       "debut": 233.03,
+       "fin": 233.49
       },
       {
        "mot": "cite",
-       "debut": 248.471,
-       "fin": 248.671
+       "debut": 233.57,
+       "fin": 233.75
       },
       {
        "mot": "des",
-       "debut": 248.711,
-       "fin": 248.811
+       "debut": 233.79,
+       "fin": 233.91
       },
       {
        "mot": "indices",
-       "debut": 248.851,
-       "fin": 249.271
+       "debut": 233.93,
+       "fin": 234.27
       }
      ]
     },
     {
      "texte": "Le risque était-il grand, et Léo le connaissait-il ?",
-     "debut": 250.011,
-     "fin": 252.991,
+     "debut": 235.09,
+     "fin": 237.79,
      "mots": [
       {
        "mot": "le",
-       "debut": 250.011,
-       "fin": 250.071
+       "debut": 235.09,
+       "fin": 235.17
       },
       {
        "mot": "risque",
-       "debut": 250.111,
-       "fin": 250.371
+       "debut": 235.21,
+       "fin": 235.49
       },
       {
        "mot": "était",
-       "debut": 250.431,
-       "fin": 250.751
+       "debut": 235.77,
+       "fin": 236.09
       },
       {
        "mot": "il",
-       "debut": 250.431,
-       "fin": 250.751
+       "debut": 235.77,
+       "fin": 236.09
       },
       {
        "mot": "grand",
-       "debut": 250.851,
-       "fin": 251.031
+       "debut": 236.15,
+       "fin": 236.31
       },
       {
        "mot": "et",
-       "debut": 251.671,
-       "fin": 251.731
+       "debut": 236.83,
+       "fin": 236.89
       },
       {
        "mot": "léo",
-       "debut": 251.771,
-       "fin": 252.051
+       "debut": 236.93,
+       "fin": 237.11
       },
       {
        "mot": "le",
-       "debut": 252.251,
-       "fin": 252.331
+       "debut": 237.15,
+       "fin": 237.21
       },
       {
        "mot": "connaissait",
-       "debut": 252.371,
-       "fin": 252.991
+       "debut": 237.25,
+       "fin": 237.79
       },
       {
        "mot": "il",
-       "debut": 252.371,
-       "fin": 252.991
+       "debut": 237.25,
+       "fin": 237.79
       }
      ]
     },
     {
      "texte": "Son imprudence était-elle grave ?",
-     "debut": 254.011,
-     "fin": 255.751,
+     "debut": 238.93,
+     "fin": 240.43,
      "mots": [
       {
        "mot": "son",
-       "debut": 254.011,
-       "fin": 254.151
+       "debut": 238.93,
+       "fin": 239.03
       },
       {
        "mot": "imprudence",
-       "debut": 254.211,
-       "fin": 254.771
+       "debut": 239.09,
+       "fin": 239.61
       },
       {
        "mot": "était",
-       "debut": 255.031,
-       "fin": 255.411
+       "debut": 239.83,
+       "fin": 240.15
       },
       {
        "mot": "elle",
-       "debut": 255.031,
-       "fin": 255.411
+       "debut": 239.83,
+       "fin": 240.15
       },
       {
        "mot": "grave",
-       "debut": 255.451,
-       "fin": 255.751
+       "debut": 240.19,
+       "fin": 240.43
       }
      ]
     }
-   ],
-   "debut": 247.231,
-   "fin": 255.751
+   ]
   },
   {
    "ligne": 31,
+   "debut": 241.87,
+   "fin": 249.63,
    "phrases": [
     {
      "texte": "Quels étaient ses mobiles ?",
-     "debut": 256.931,
-     "fin": 257.911,
+     "debut": 241.87,
+     "fin": 242.81,
      "mots": [
       {
-       "mot": "quelles",
-       "debut": 256.931,
-       "fin": 257.151
+       "mot": "quels",
+       "debut": 241.87,
+       "fin": 242.05
       },
       {
        "mot": "étaient",
-       "debut": 257.211,
-       "fin": 257.411
+       "debut": 242.09,
+       "fin": 242.27
       },
       {
        "mot": "ses",
-       "debut": 257.451,
-       "fin": 257.551
+       "debut": 242.31,
+       "fin": 242.39
       },
       {
        "mot": "mobiles",
-       "debut": 257.591,
-       "fin": 257.911
+       "debut": 242.43,
+       "fin": 242.81
       }
      ]
     },
     {
      "texte": "Et comment a-t-il agi ?",
-     "debut": 258.531,
-     "fin": 259.391,
+     "debut": 243.63,
+     "fin": 244.45,
      "mots": [
       {
        "mot": "et",
-       "debut": 258.531,
-       "fin": 258.591
+       "debut": 243.63,
+       "fin": 243.71
       },
       {
        "mot": "comment",
-       "debut": 258.631,
-       "fin": 258.851
+       "debut": 243.75,
+       "fin": 243.95
       },
       {
        "mot": "a",
-       "debut": 258.891,
-       "fin": 259.111
+       "debut": 243.97,
+       "fin": 244.17
       },
       {
        "mot": "t",
-       "debut": 258.891,
-       "fin": 259.111
+       "debut": 243.97,
+       "fin": 244.17
       },
       {
        "mot": "il",
-       "debut": 258.891,
-       "fin": 259.111
+       "debut": 243.97,
+       "fin": 244.17
       },
       {
        "mot": "agi",
-       "debut": 259.151,
-       "fin": 259.391
+       "debut": 244.23,
+       "fin": 244.45
       }
      ]
     },
     {
      "texte": "C'est en pesant ces indices que le juge choisit entre intention et négligence.",
-     "debut": 260.331,
-     "fin": 264.851,
+     "debut": 245.59,
+     "fin": 249.63,
      "mots": [
       {
        "mot": "c",
-       "debut": 260.331,
-       "fin": 260.431
+       "debut": 245.59,
+       "fin": 245.69
       },
       {
        "mot": "est",
-       "debut": 260.331,
-       "fin": 260.431
+       "debut": 245.59,
+       "fin": 245.69
       },
       {
        "mot": "en",
-       "debut": 260.451,
-       "fin": 260.631
+       "debut": 245.71,
+       "fin": 245.81
       },
       {
        "mot": "pesant",
-       "debut": 260.671,
-       "fin": 260.931
+       "debut": 245.85,
+       "fin": 246.07
       },
       {
        "mot": "ces",
-       "debut": 260.971,
-       "fin": 261.111
+       "debut": 246.11,
+       "fin": 246.23
       },
       {
        "mot": "indices",
-       "debut": 261.151,
-       "fin": 261.531
+       "debut": 246.29,
+       "fin": 246.87
       },
       {
        "mot": "que",
-       "debut": 261.711,
-       "fin": 261.791
+       "debut": 246.91,
+       "fin": 246.99
       },
       {
        "mot": "le",
-       "debut": 261.851,
-       "fin": 261.971
+       "debut": 247.03,
+       "fin": 247.13
       },
       {
        "mot": "juge",
-       "debut": 262.051,
-       "fin": 262.231
+       "debut": 247.17,
+       "fin": 247.31
       },
       {
        "mot": "choisit",
-       "debut": 262.271,
-       "fin": 262.671
+       "debut": 247.33,
+       "fin": 247.75
       },
       {
        "mot": "entre",
-       "debut": 263.031,
-       "fin": 263.331
+       "debut": 247.93,
+       "fin": 248.17
       },
       {
        "mot": "intention",
-       "debut": 263.391,
-       "fin": 263.871
+       "debut": 248.23,
+       "fin": 248.65
       },
       {
        "mot": "et",
-       "debut": 264.151,
-       "fin": 264.211
+       "debut": 248.99,
+       "fin": 249.05
       },
       {
        "mot": "négligence",
-       "debut": 264.251,
-       "fin": 264.851
+       "debut": 249.09,
+       "fin": 249.63
       }
      ]
     }
-   ],
-   "debut": 256.931,
-   "fin": 264.851
+   ]
   },
   {
    "ligne": 32,
+   "debut": 250.47,
+   "fin": 262.68,
    "phrases": [
     {
      "texte": "La frontière peut surprendre.",
-     "debut": 265.691,
-     "fin": 266.891,
+     "debut": 250.47,
+     "fin": 251.65,
      "mots": [
       {
        "mot": "la",
-       "debut": 265.691,
-       "fin": 265.791
+       "debut": 250.47,
+       "fin": 250.55
       },
       {
        "mot": "frontière",
-       "debut": 265.831,
-       "fin": 266.231
+       "debut": 250.59,
+       "fin": 250.95
       },
       {
        "mot": "peut",
-       "debut": 266.271,
-       "fin": 266.371
+       "debut": 250.99,
+       "fin": 251.09
       },
       {
        "mot": "surprendre",
-       "debut": 266.431,
-       "fin": 266.891
+       "debut": 251.13,
+       "fin": 251.65
       }
      ]
     },
     {
      "texte": "Dans une affaire de course de voitures mortelle, le Tribunal fédéral a retenu le dol éventuel contre un conducteur.",
-     "debut": 267.551,
-     "fin": 274.011,
+     "debut": 252.24,
+     "fin": 258.28,
      "mots": [
       {
        "mot": "dans",
-       "debut": 267.551,
-       "fin": 267.671
+       "debut": 252.24,
+       "fin": 252.38
       },
       {
        "mot": "une",
-       "debut": 267.711,
-       "fin": 267.791
+       "debut": 252.42,
+       "fin": 252.48
       },
       {
        "mot": "affaire",
-       "debut": 267.851,
-       "fin": 268.091
+       "debut": 252.54,
+       "fin": 252.76
       },
       {
        "mot": "de",
-       "debut": 268.131,
-       "fin": 268.251
+       "debut": 252.8,
+       "fin": 252.88
       },
       {
        "mot": "course",
-       "debut": 268.311,
-       "fin": 268.511
+       "debut": 252.92,
+       "fin": 253.08
       },
       {
        "mot": "de",
-       "debut": 268.551,
-       "fin": 268.651
+       "debut": 253.1,
+       "fin": 253.18
       },
       {
        "mot": "voiture",
-       "debut": 268.671,
-       "fin": 268.991
+       "debut": 253.22,
+       "fin": 253.54
       },
       {
        "mot": "mortelle",
-       "debut": 269.051,
-       "fin": 269.451
+       "debut": 253.58,
+       "fin": 254.06
       },
       {
        "mot": "le",
-       "debut": 270.031,
-       "fin": 270.111
+       "debut": 254.6,
+       "fin": 254.66
       },
       {
        "mot": "tribunal",
-       "debut": 270.151,
-       "fin": 270.571
+       "debut": 254.7,
+       "fin": 255.1
       },
       {
        "mot": "fédéral",
-       "debut": 270.631,
-       "fin": 271.131
+       "debut": 255.2,
+       "fin": 255.86
       },
       {
        "mot": "a",
-       "debut": 271.451,
-       "fin": 271.511
+       "debut": 255.94,
+       "fin": 255.98
       },
       {
        "mot": "retenu",
-       "debut": 271.551,
-       "fin": 271.991
+       "debut": 256.04,
+       "fin": 256.44
       },
       {
        "mot": "le",
-       "debut": 272.031,
-       "fin": 272.131
+       "debut": 256.48,
+       "fin": 256.58
       },
       {
        "mot": "dol",
-       "debut": 272.191,
-       "fin": 272.331
+       "debut": 256.62,
+       "fin": 256.74
       },
       {
        "mot": "éventuel",
-       "debut": 272.391,
-       "fin": 272.911
+       "debut": 256.8,
+       "fin": 257.36
       },
       {
        "mot": "contre",
-       "debut": 273.071,
-       "fin": 273.291
+       "debut": 257.44,
+       "fin": 257.64
       },
       {
        "mot": "un",
-       "debut": 273.331,
-       "fin": 273.391
+       "debut": 257.66,
+       "fin": 257.72
       },
       {
        "mot": "conducteur",
-       "debut": 273.431,
-       "fin": 274.011
+       "debut": 257.76,
+       "fin": 258.28
       }
      ]
     },
     {
      "texte": "Il a aussi rappelé qu'on ne doit pas le retenir à la légère.",
-     "debut": 274.871,
-     "fin": 278.511,
+     "debut": 259.3,
+     "fin": 262.68,
      "mots": [
       {
        "mot": "il",
-       "debut": 274.871,
-       "fin": 274.931
+       "debut": 259.3,
+       "fin": 259.36
       },
       {
        "mot": "a",
-       "debut": 274.971,
-       "fin": 275.031
+       "debut": 259.4,
+       "fin": 259.48
       },
       {
        "mot": "aussi",
-       "debut": 275.051,
-       "fin": 275.311
+       "debut": 259.52,
+       "fin": 259.76
       },
       {
        "mot": "rappelé",
-       "debut": 275.371,
-       "fin": 275.671
+       "debut": 259.82,
+       "fin": 260.16
       },
       {
        "mot": "qu",
-       "debut": 275.911,
-       "fin": 276.031
+       "debut": 260.62,
+       "fin": 260.72
       },
       {
        "mot": "on",
-       "debut": 275.911,
-       "fin": 276.031
+       "debut": 260.62,
+       "fin": 260.72
       },
       {
        "mot": "ne",
-       "debut": 276.071,
-       "fin": 276.151
+       "debut": 260.76,
+       "fin": 260.84
       },
       {
        "mot": "doit",
-       "debut": 276.171,
-       "fin": 276.391
+       "debut": 260.88,
+       "fin": 261.02
       },
       {
        "mot": "pas",
-       "debut": 276.431,
-       "fin": 276.551
+       "debut": 261.06,
+       "fin": 261.16
       },
       {
        "mot": "le",
-       "debut": 276.851,
-       "fin": 276.971
+       "debut": 261.2,
+       "fin": 261.28
       },
       {
        "mot": "retenir",
-       "debut": 277.011,
-       "fin": 277.471
+       "debut": 261.32,
+       "fin": 262.0
       },
       {
        "mot": "à",
-       "debut": 277.931,
-       "fin": 277.971
+       "debut": 262.08,
+       "fin": 262.12
       },
       {
        "mot": "la",
-       "debut": 278.011,
-       "fin": 278.091
+       "debut": 262.16,
+       "fin": 262.24
       },
       {
        "mot": "légère",
-       "debut": 278.131,
-       "fin": 278.511
+       "debut": 262.3,
+       "fin": 262.68
       }
      ]
     }
-   ],
-   "debut": 265.691,
-   "fin": 278.511
+   ]
   },
   {
    "ligne": 33,
+   "debut": 264.12,
+   "fin": 271.64,
    "phrases": [
     {
      "texte": "Attention au piège classique.",
-     "debut": 279.951,
-     "fin": 281.391,
+     "debut": 264.12,
+     "fin": 265.48,
      "mots": [
       {
        "mot": "attention",
-       "debut": 279.951,
-       "fin": 280.411
+       "debut": 264.12,
+       "fin": 264.66
       },
       {
        "mot": "au",
-       "debut": 280.591,
-       "fin": 280.651
+       "debut": 264.7,
+       "fin": 264.76
       },
       {
        "mot": "piège",
-       "debut": 280.731,
-       "fin": 280.951
+       "debut": 264.84,
+       "fin": 265.04
       },
       {
        "mot": "classique",
-       "debut": 280.991,
-       "fin": 281.391
+       "debut": 265.08,
+       "fin": 265.48
       }
      ]
     },
     {
      "texte": "On croit souvent qu'une négligence est toujours punie, simplement moins sévèrement.",
-     "debut": 282.191,
-     "fin": 286.231,
+     "debut": 266.44,
+     "fin": 270.58,
      "mots": [
       {
        "mot": "on",
-       "debut": 282.191,
-       "fin": 282.271
+       "debut": 266.44,
+       "fin": 266.5
       },
       {
        "mot": "croit",
-       "debut": 282.291,
-       "fin": 282.431
+       "debut": 266.54,
+       "fin": 266.68
       },
       {
        "mot": "souvent",
-       "debut": 282.491,
-       "fin": 282.731
+       "debut": 266.72,
+       "fin": 266.94
       },
       {
        "mot": "qu",
-       "debut": 282.771,
-       "fin": 282.951
+       "debut": 266.96,
+       "fin": 267.16
       },
       {
        "mot": "une",
-       "debut": 282.771,
-       "fin": 282.951
+       "debut": 266.96,
+       "fin": 267.16
       },
       {
        "mot": "négligence",
-       "debut": 282.991,
-       "fin": 283.771
+       "debut": 267.2,
+       "fin": 267.82
       },
       {
        "mot": "est",
-       "debut": 283.811,
-       "fin": 283.911
+       "debut": 267.86,
+       "fin": 267.96
       },
       {
        "mot": "toujours",
-       "debut": 283.971,
-       "fin": 284.251
+       "debut": 268.02,
+       "fin": 268.3
       },
       {
        "mot": "punie",
-       "debut": 284.291,
-       "fin": 284.551
+       "debut": 268.36,
+       "fin": 268.62
       },
       {
        "mot": "simplement",
-       "debut": 284.911,
-       "fin": 285.351
+       "debut": 269.3,
+       "fin": 269.74
       },
       {
        "mot": "moins",
-       "debut": 285.611,
-       "fin": 285.731
+       "debut": 269.86,
+       "fin": 270.06
       },
       {
        "mot": "sévèrement",
-       "debut": 285.791,
-       "fin": 286.231
+       "debut": 270.14,
+       "fin": 270.58
       }
      ]
     },
     {
      "texte": "C'est faux.",
-     "debut": 287.031,
-     "fin": 287.511,
+     "debut": 271.32,
+     "fin": 271.64,
      "mots": [
       {
        "mot": "c",
-       "debut": 287.031,
-       "fin": 287.151
+       "debut": 271.32,
+       "fin": 271.42
       },
       {
        "mot": "est",
-       "debut": 287.031,
-       "fin": 287.151
+       "debut": 271.32,
+       "fin": 271.42
       },
       {
        "mot": "faux",
-       "debut": 287.231,
-       "fin": 287.511
+       "debut": 271.48,
+       "fin": 271.64
       }
      ]
     }
-   ],
-   "debut": 279.951,
-   "fin": 287.511
+   ]
   },
   {
    "ligne": 34,
+   "debut": 273.08,
+   "fin": 285.49,
    "phrases": [
     {
      "texte": "Pour un crime ou un délit, la négligence n'est punissable que si la loi le prévoit expressément.",
-     "debut": 288.931,
-     "fin": 294.771,
+     "debut": 273.08,
+     "fin": 278.28,
      "mots": [
       {
        "mot": "pour",
-       "debut": 288.931,
-       "fin": 289.031
+       "debut": 273.08,
+       "fin": 273.18
       },
       {
        "mot": "un",
-       "debut": 289.071,
-       "fin": 289.171
+       "debut": 273.22,
+       "fin": 273.32
       },
       {
        "mot": "crime",
-       "debut": 289.231,
-       "fin": 289.631
+       "debut": 273.34,
+       "fin": 273.54
       },
       {
        "mot": "ou",
-       "debut": 289.691,
-       "fin": 289.771
+       "debut": 273.56,
+       "fin": 273.64
       },
       {
        "mot": "un",
-       "debut": 289.831,
-       "fin": 289.891
+       "debut": 273.68,
+       "fin": 273.76
       },
       {
        "mot": "délit",
-       "debut": 289.951,
-       "fin": 290.211
+       "debut": 273.8,
+       "fin": 274.08
       },
       {
        "mot": "la",
-       "debut": 290.951,
-       "fin": 291.051
+       "debut": 274.9,
+       "fin": 274.96
       },
       {
        "mot": "négligence",
-       "debut": 291.111,
-       "fin": 291.711
+       "debut": 275.0,
+       "fin": 275.48
       },
       {
        "mot": "n",
-       "debut": 291.751,
-       "fin": 291.871
+       "debut": 275.52,
+       "fin": 275.64
       },
       {
        "mot": "est",
-       "debut": 291.751,
-       "fin": 291.871
+       "debut": 275.52,
+       "fin": 275.64
       },
       {
        "mot": "punissable",
-       "debut": 291.911,
-       "fin": 292.511
+       "debut": 275.68,
+       "fin": 276.26
       },
       {
        "mot": "que",
-       "debut": 292.551,
-       "fin": 292.671
+       "debut": 276.32,
+       "fin": 276.44
       },
       {
        "mot": "si",
-       "debut": 292.751,
-       "fin": 292.831
+       "debut": 276.48,
+       "fin": 276.58
       },
       {
        "mot": "la",
-       "debut": 292.891,
-       "fin": 292.971
+       "debut": 276.64,
+       "fin": 276.72
       },
       {
        "mot": "loi",
-       "debut": 293.011,
-       "fin": 293.151
+       "debut": 276.76,
+       "fin": 276.92
       },
       {
        "mot": "le",
-       "debut": 293.191,
-       "fin": 293.271
+       "debut": 276.96,
+       "fin": 277.02
       },
       {
        "mot": "prévoit",
-       "debut": 293.331,
-       "fin": 293.891
+       "debut": 277.06,
+       "fin": 277.4
       },
       {
        "mot": "expressément",
-       "debut": 293.991,
-       "fin": 294.771
+       "debut": 277.64,
+       "fin": 278.28
       }
      ]
     },
     {
      "texte": "Attention : dans d'autres lois, comme celle sur la circulation routière, la négligence est en principe punissable.",
-     "debut": 295.401,
-     "fin": 302.201,
+     "debut": 278.87,
+     "fin": 285.49,
      "mots": [
       {
        "mot": "attention",
-       "debut": 295.401,
-       "fin": 295.801
+       "debut": 278.87,
+       "fin": 279.29
       },
       {
        "mot": "dans",
-       "debut": 296.561,
-       "fin": 296.681
+       "debut": 279.91,
+       "fin": 279.99
       },
       {
        "mot": "d",
-       "debut": 296.701,
-       "fin": 297.001
+       "debut": 280.03,
+       "fin": 280.29
       },
       {
        "mot": "autres",
-       "debut": 296.701,
-       "fin": 297.001
+       "debut": 280.03,
+       "fin": 280.29
       },
       {
        "mot": "lois",
-       "debut": 297.041,
-       "fin": 297.241
+       "debut": 280.33,
+       "fin": 280.51
       },
       {
        "mot": "comme",
-       "debut": 297.681,
-       "fin": 297.821
+       "debut": 281.17,
+       "fin": 281.29
       },
       {
        "mot": "celle",
-       "debut": 297.881,
-       "fin": 298.001
+       "debut": 281.35,
+       "fin": 281.49
       },
       {
        "mot": "sur",
-       "debut": 298.061,
-       "fin": 298.141
+       "debut": 281.53,
+       "fin": 281.63
       },
       {
        "mot": "la",
-       "debut": 298.181,
-       "fin": 298.281
+       "debut": 281.67,
+       "fin": 281.77
       },
       {
        "mot": "circulation",
-       "debut": 298.341,
-       "fin": 298.921
+       "debut": 281.81,
+       "fin": 282.35
       },
       {
        "mot": "routière",
-       "debut": 298.961,
-       "fin": 299.341
+       "debut": 282.43,
+       "fin": 282.81
       },
       {
        "mot": "la",
-       "debut": 300.001,
-       "fin": 300.081
+       "debut": 283.51,
+       "fin": 283.59
       },
       {
        "mot": "négligence",
-       "debut": 300.181,
-       "fin": 300.761
+       "debut": 283.63,
+       "fin": 284.25
       },
       {
        "mot": "est",
-       "debut": 300.821,
-       "fin": 300.901
+       "debut": 284.31,
+       "fin": 284.39
       },
       {
        "mot": "en",
-       "debut": 300.941,
-       "fin": 301.021
+       "debut": 284.41,
+       "fin": 284.49
       },
       {
        "mot": "principe",
-       "debut": 301.061,
-       "fin": 301.541
+       "debut": 284.53,
+       "fin": 284.87
       },
       {
        "mot": "punissable",
-       "debut": 301.581,
-       "fin": 302.201
+       "debut": 284.91,
+       "fin": 285.49
       }
      ]
     }
-   ],
-   "debut": 288.931,
-   "fin": 302.201
+   ]
   },
   {
    "ligne": 35,
+   "debut": 286.93,
+   "fin": 298.97,
    "phrases": [
     {
      "texte": "Pour les blessures, la loi le prévoit.",
-     "debut": 303.621,
-     "fin": 305.321,
+     "debut": 286.93,
+     "fin": 288.99,
      "mots": [
       {
        "mot": "pour",
-       "debut": 303.621,
-       "fin": 303.721
+       "debut": 286.93,
+       "fin": 287.03
       },
       {
        "mot": "les",
-       "debut": 303.741,
-       "fin": 303.841
+       "debut": 287.05,
+       "fin": 287.13
       },
       {
        "mot": "blessures",
-       "debut": 303.881,
-       "fin": 304.261
+       "debut": 287.17,
+       "fin": 287.71
       },
       {
        "mot": "la",
-       "debut": 304.561,
-       "fin": 304.621
+       "debut": 288.21,
+       "fin": 288.29
       },
       {
        "mot": "loi",
-       "debut": 304.661,
-       "fin": 304.761
+       "debut": 288.31,
+       "fin": 288.41
       },
       {
        "mot": "le",
-       "debut": 304.801,
-       "fin": 304.861
+       "debut": 288.45,
+       "fin": 288.53
       },
       {
        "mot": "prévoit",
-       "debut": 304.901,
-       "fin": 305.321
+       "debut": 288.59,
+       "fin": 288.99
       }
      ]
     },
     {
      "texte": "L'article cent vingt-cinq du Code pénal punit les lésions corporelles par négligence.",
-     "debut": 306.101,
-     "fin": 310.941,
+     "debut": 289.99,
+     "fin": 294.27,
      "mots": [
       {
        "mot": "l",
-       "debut": 306.101,
-       "fin": 306.561
+       "debut": 289.99,
+       "fin": 290.41
       },
       {
        "mot": "article",
-       "debut": 306.101,
-       "fin": 306.561
+       "debut": 289.99,
+       "fin": 290.41
       },
       {
        "mot": "cent",
-       "debut": 306.641,
-       "fin": 307.301
+       "debut": 290.49,
+       "fin": 290.63
       },
       {
        "mot": "vingt",
-       "debut": 306.641,
-       "fin": 307.301
+       "debut": 290.67,
+       "fin": 291.27
       },
       {
        "mot": "cinq",
-       "debut": 306.641,
-       "fin": 307.301
+       "debut": 290.67,
+       "fin": 291.27
       },
       {
        "mot": "du",
-       "debut": 308.081,
-       "fin": 308.161
+       "debut": 291.31,
+       "fin": 291.39
       },
       {
        "mot": "code",
-       "debut": 308.201,
-       "fin": 308.361
+       "debut": 291.43,
+       "fin": 291.57
       },
       {
        "mot": "pénal",
-       "debut": 308.401,
-       "fin": 308.721
+       "debut": 291.61,
+       "fin": 292.19
       },
       {
        "mot": "punit",
-       "debut": 309.081,
-       "fin": 309.321
+       "debut": 292.25,
+       "fin": 292.47
       },
       {
        "mot": "les",
-       "debut": 309.361,
-       "fin": 309.441
+       "debut": 292.51,
+       "fin": 292.61
       },
       {
        "mot": "lésions",
-       "debut": 309.481,
-       "fin": 309.721
+       "debut": 292.65,
+       "fin": 292.91
       },
       {
        "mot": "corporelles",
-       "debut": 309.761,
-       "fin": 310.241
+       "debut": 292.95,
+       "fin": 293.55
       },
       {
        "mot": "par",
-       "debut": 310.281,
-       "fin": 310.381
+       "debut": 293.61,
+       "fin": 293.71
       },
       {
        "mot": "négligence",
-       "debut": 310.421,
-       "fin": 310.941
+       "debut": 293.75,
+       "fin": 294.27
       }
      ]
     },
     {
      "texte": "En principe sur plainte, et d'office si la lésion est grave.",
-     "debut": 311.801,
-     "fin": 314.961,
+     "debut": 295.21,
+     "fin": 298.97,
      "mots": [
       {
        "mot": "en",
-       "debut": 311.801,
-       "fin": 311.881
+       "debut": 295.21,
+       "fin": 295.27
       },
       {
        "mot": "principe",
-       "debut": 311.921,
-       "fin": 312.301
+       "debut": 295.31,
+       "fin": 295.69
       },
       {
        "mot": "sur",
-       "debut": 312.341,
-       "fin": 312.481
+       "debut": 295.73,
+       "fin": 295.89
       },
       {
        "mot": "plainte",
-       "debut": 312.521,
-       "fin": 312.821
+       "debut": 295.95,
+       "fin": 296.27
       },
       {
        "mot": "et",
-       "debut": 313.121,
-       "fin": 313.181
+       "debut": 296.87,
+       "fin": 296.95
       },
       {
        "mot": "d",
-       "debut": 313.221,
-       "fin": 313.761
+       "debut": 296.97,
+       "fin": 297.41
       },
       {
        "mot": "office",
-       "debut": 313.221,
-       "fin": 313.761
+       "debut": 296.97,
+       "fin": 297.41
       },
       {
        "mot": "si",
-       "debut": 313.841,
-       "fin": 313.921
+       "debut": 297.75,
+       "fin": 297.83
       },
       {
        "mot": "la",
-       "debut": 313.961,
-       "fin": 314.041
+       "debut": 297.87,
+       "fin": 297.95
       },
       {
        "mot": "lésion",
-       "debut": 314.081,
-       "fin": 314.521
+       "debut": 297.99,
+       "fin": 298.47
       },
       {
        "mot": "est",
-       "debut": 314.561,
-       "fin": 314.621
+       "debut": 298.51,
+       "fin": 298.59
       },
       {
        "mot": "grave",
-       "debut": 314.661,
-       "fin": 314.961
+       "debut": 298.63,
+       "fin": 298.97
       }
      ]
     }
-   ],
-   "debut": 303.621,
-   "fin": 314.961
+   ]
   },
   {
    "ligne": 36,
+   "debut": 300.41,
+   "fin": 312.654,
    "phrases": [
     {
      "texte": "Mais imaginons que le ballon de Léo casse la vitre d'une voiture, par négligence.",
-     "debut": 316.401,
-     "fin": 320.801,
+     "debut": 300.41,
+     "fin": 305.27,
      "mots": [
       {
        "mot": "mais",
-       "debut": 316.401,
-       "fin": 316.601
+       "debut": 300.41,
+       "fin": 300.63
       },
       {
        "mot": "imaginons",
-       "debut": 316.681,
-       "fin": 317.281
+       "debut": 300.73,
+       "fin": 301.19
       },
       {
        "mot": "que",
-       "debut": 317.321,
-       "fin": 317.381
+       "debut": 301.23,
+       "fin": 301.31
       },
       {
        "mot": "le",
-       "debut": 317.421,
-       "fin": 317.521
+       "debut": 301.35,
+       "fin": 301.41
       },
       {
        "mot": "ballon",
-       "debut": 317.561,
-       "fin": 317.841
+       "debut": 301.45,
+       "fin": 301.75
       },
       {
        "mot": "de",
-       "debut": 317.881,
-       "fin": 317.961
+       "debut": 302.17,
+       "fin": 302.27
       },
       {
        "mot": "léo",
-       "debut": 318.001,
-       "fin": 318.261
+       "debut": 302.31,
+       "fin": 302.77
       },
       {
        "mot": "casse",
-       "debut": 318.561,
-       "fin": 318.781
+       "debut": 302.83,
+       "fin": 303.03
       },
       {
        "mot": "la",
-       "debut": 318.821,
-       "fin": 318.941
+       "debut": 303.09,
+       "fin": 303.19
       },
       {
        "mot": "vitre",
-       "debut": 318.961,
-       "fin": 319.141
+       "debut": 303.23,
+       "fin": 303.49
       },
       {
        "mot": "d",
-       "debut": 319.181,
-       "fin": 319.501
+       "debut": 303.55,
+       "fin": 303.71
       },
       {
        "mot": "une",
-       "debut": 319.181,
-       "fin": 319.501
+       "debut": 303.55,
+       "fin": 303.71
       },
       {
        "mot": "voiture",
-       "debut": 319.541,
-       "fin": 319.981
+       "debut": 303.73,
+       "fin": 304.13
       },
       {
        "mot": "par",
-       "debut": 320.021,
-       "fin": 320.161
+       "debut": 304.61,
+       "fin": 304.71
       },
       {
        "mot": "négligence",
-       "debut": 320.201,
-       "fin": 320.801
+       "debut": 304.77,
+       "fin": 305.27
       }
      ]
     },
     {
      "texte": "Le dommage à la propriété de l'article cent quarante-quatre n'existe que dans sa version intentionnelle.",
-     "debut": 321.741,
-     "fin": 327.141,
+     "debut": 306.314,
+     "fin": 312.654,
      "mots": [
       {
        "mot": "le",
-       "debut": 321.741,
-       "fin": 321.821
+       "debut": 306.314,
+       "fin": 306.394
       },
       {
        "mot": "dommage",
-       "debut": 321.881,
-       "fin": 322.321
+       "debut": 306.434,
+       "fin": 306.754
       },
       {
        "mot": "à",
-       "debut": 322.381,
-       "fin": 322.421
+       "debut": 306.794,
+       "fin": 306.834
       },
       {
        "mot": "la",
-       "debut": 322.461,
-       "fin": 322.521
+       "debut": 306.874,
+       "fin": 306.934
       },
       {
        "mot": "propriété",
-       "debut": 322.581,
-       "fin": 323.161
+       "debut": 306.994,
+       "fin": 307.614
       },
       {
        "mot": "de",
-       "debut": 323.201,
-       "fin": 323.281
+       "debut": 307.654,
+       "fin": 307.694
       },
       {
        "mot": "l",
-       "debut": 323.321,
-       "fin": 323.821
+       "debut": 307.734,
+       "fin": 308.294
       },
       {
        "mot": "article",
-       "debut": 323.321,
-       "fin": 323.821
+       "debut": 307.734,
+       "fin": 308.294
       },
       {
        "mot": "cent",
-       "debut": 323.901,
-       "fin": 324.821
+       "debut": 308.374,
+       "fin": 308.534
       },
       {
        "mot": "quarante",
-       "debut": 323.901,
-       "fin": 324.821
+       "debut": 308.574,
+       "fin": 309.374
       },
       {
        "mot": "quatre",
-       "debut": 323.901,
-       "fin": 324.821
+       "debut": 308.574,
+       "fin": 309.374
       },
       {
        "mot": "n",
-       "debut": 325.141,
-       "fin": 325.601
+       "debut": 310.394,
+       "fin": 310.934
       },
       {
        "mot": "existe",
-       "debut": 325.141,
-       "fin": 325.601
+       "debut": 310.394,
+       "fin": 310.934
       },
       {
        "mot": "que",
-       "debut": 325.641,
-       "fin": 325.701
+       "debut": 310.994,
+       "fin": 311.094
       },
       {
        "mot": "dans",
-       "debut": 325.741,
-       "fin": 325.841
+       "debut": 311.134,
+       "fin": 311.234
       },
       {
        "mot": "sa",
-       "debut": 325.881,
-       "fin": 325.981
+       "debut": 311.274,
+       "fin": 311.394
       },
       {
        "mot": "version",
-       "debut": 326.021,
-       "fin": 326.341
+       "debut": 311.414,
+       "fin": 311.754
       },
       {
        "mot": "intentionnelle",
-       "debut": 326.561,
-       "fin": 327.141
+       "debut": 312.014,
+       "fin": 312.654
       }
      ]
     }
-   ],
-   "debut": 316.401,
-   "fin": 327.141
+   ]
   },
   {
    "ligne": 37,
+   "debut": 314.054,
+   "fin": 324.834,
    "phrases": [
     {
      "texte": "Pas de dommage à la propriété par négligence dans le Code pénal.",
-     "debut": 328.181,
-     "fin": 331.021,
+     "debut": 314.054,
+     "fin": 317.294,
      "mots": [
       {
        "mot": "pas",
-       "debut": 328.181,
-       "fin": 328.281
+       "debut": 314.054,
+       "fin": 314.134
       },
       {
        "mot": "de",
-       "debut": 328.321,
-       "fin": 328.421
+       "debut": 314.194,
+       "fin": 314.274
       },
       {
        "mot": "dommage",
-       "debut": 328.461,
-       "fin": 328.761
+       "debut": 314.314,
+       "fin": 314.814
       },
       {
        "mot": "à",
-       "debut": 328.801,
-       "fin": 328.821
+       "debut": 314.874,
+       "fin": 314.894
       },
       {
        "mot": "la",
-       "debut": 328.861,
-       "fin": 328.941
+       "debut": 314.934,
+       "fin": 315.014
       },
       {
        "mot": "propriété",
-       "debut": 328.981,
-       "fin": 329.581
+       "debut": 315.054,
+       "fin": 315.674
       },
       {
        "mot": "par",
-       "debut": 329.641,
-       "fin": 329.741
+       "debut": 315.734,
+       "fin": 315.814
       },
       {
        "mot": "négligence",
-       "debut": 329.781,
-       "fin": 330.201
+       "debut": 315.854,
+       "fin": 316.414
       },
       {
        "mot": "dans",
-       "debut": 330.241,
-       "fin": 330.321
+       "debut": 316.554,
+       "fin": 316.634
       },
       {
        "mot": "le",
-       "debut": 330.361,
-       "fin": 330.441
+       "debut": 316.674,
+       "fin": 316.734
       },
       {
        "mot": "code",
-       "debut": 330.481,
-       "fin": 330.641
+       "debut": 316.774,
+       "fin": 316.914
       },
       {
        "mot": "pénal",
-       "debut": 330.661,
-       "fin": 331.021
+       "debut": 316.954,
+       "fin": 317.294
       }
      ]
     },
     {
      "texte": "Léo n'aurait pas commis d'infraction.",
-     "debut": 331.841,
-     "fin": 333.681,
+     "debut": 318.254,
+     "fin": 320.074,
      "mots": [
       {
        "mot": "léo",
-       "debut": 331.841,
-       "fin": 332.061
+       "debut": 318.254,
+       "fin": 318.414
       },
       {
        "mot": "n",
-       "debut": 332.321,
-       "fin": 332.541
+       "debut": 318.434,
+       "fin": 318.694
       },
       {
        "mot": "aurait",
-       "debut": 332.321,
-       "fin": 332.541
+       "debut": 318.434,
+       "fin": 318.694
       },
       {
        "mot": "pas",
-       "debut": 332.581,
-       "fin": 332.701
+       "debut": 318.754,
+       "fin": 318.854
       },
       {
        "mot": "commis",
-       "debut": 332.741,
-       "fin": 333.121
+       "debut": 318.914,
+       "fin": 319.434
       },
       {
        "mot": "d",
-       "debut": 333.141,
-       "fin": 333.681
+       "debut": 319.474,
+       "fin": 320.074
       },
       {
        "mot": "infraction",
-       "debut": 333.141,
-       "fin": 333.681
+       "debut": 319.474,
+       "fin": 320.074
       }
      ]
     },
     {
      "texte": "La réparation du dommage resterait une question de droit civil.",
-     "debut": 334.541,
-     "fin": 338.261,
+     "debut": 321.154,
+     "fin": 324.834,
      "mots": [
       {
        "mot": "la",
-       "debut": 334.541,
-       "fin": 334.621
+       "debut": 321.154,
+       "fin": 321.234
       },
       {
        "mot": "réparation",
-       "debut": 334.661,
-       "fin": 335.161
+       "debut": 321.274,
+       "fin": 321.894
       },
       {
        "mot": "du",
-       "debut": 335.221,
-       "fin": 335.301
+       "debut": 321.934,
+       "fin": 322.014
       },
       {
        "mot": "dommage",
-       "debut": 335.341,
-       "fin": 335.941
+       "debut": 322.054,
+       "fin": 322.454
       },
       {
        "mot": "resterait",
-       "debut": 336.001,
-       "fin": 336.641
+       "debut": 322.914,
+       "fin": 323.474
       },
       {
        "mot": "une",
-       "debut": 336.721,
-       "fin": 336.901
+       "debut": 323.534,
+       "fin": 323.614
       },
       {
        "mot": "question",
-       "debut": 336.961,
-       "fin": 337.401
+       "debut": 323.654,
+       "fin": 323.954
       },
       {
        "mot": "de",
-       "debut": 337.441,
-       "fin": 337.521
+       "debut": 323.994,
+       "fin": 324.074
       },
       {
        "mot": "droit",
-       "debut": 337.561,
-       "fin": 337.741
+       "debut": 324.114,
+       "fin": 324.374
       },
       {
        "mot": "civil",
-       "debut": 337.801,
-       "fin": 338.261
+       "debut": 324.474,
+       "fin": 324.834
       }
      ]
     }
-   ],
-   "debut": 328.181,
-   "fin": 338.261
+   ]
   },
   {
    "ligne": 38,
+   "debut": 325.674,
+   "fin": 333.254,
    "phrases": [
     {
      "texte": "Dans la vidéo un, Marc bousculait Julien par inadvertance, sans le voir.",
-     "debut": 339.221,
-     "fin": 344.741,
+     "debut": 325.674,
+     "fin": 330.954,
      "mots": [
       {
        "mot": "dans",
-       "debut": 339.221,
-       "fin": 339.321
+       "debut": 325.674,
+       "fin": 325.774
       },
       {
        "mot": "la",
-       "debut": 339.361,
-       "fin": 339.461
+       "debut": 325.814,
+       "fin": 325.894
       },
       {
        "mot": "vidéo",
-       "debut": 339.501,
-       "fin": 340.001
+       "debut": 325.934,
+       "fin": 326.374
       },
       {
        "mot": "une",
-       "debut": 340.101,
-       "fin": 340.241
+       "debut": 326.474,
+       "fin": 326.634
       },
       {
        "mot": "marc",
-       "debut": 341.161,
-       "fin": 341.481
+       "debut": 327.554,
+       "fin": 327.914
       },
       {
        "mot": "bousculait",
-       "debut": 341.821,
-       "fin": 342.301
+       "debut": 327.974,
+       "fin": 328.434
       },
       {
        "mot": "julien",
-       "debut": 342.361,
-       "fin": 342.721
+       "debut": 328.514,
+       "fin": 329.014
       },
       {
        "mot": "par",
-       "debut": 343.041,
-       "fin": 343.161
+       "debut": 329.074,
+       "fin": 329.194
       },
       {
        "mot": "inadvertance",
-       "debut": 343.221,
-       "fin": 343.901
+       "debut": 329.234,
+       "fin": 329.994
       },
       {
        "mot": "sans",
-       "debut": 344.201,
-       "fin": 344.321
+       "debut": 330.434,
+       "fin": 330.534
       },
       {
        "mot": "le",
-       "debut": 344.361,
-       "fin": 344.441
+       "debut": 330.574,
+       "fin": 330.654
       },
       {
        "mot": "voir",
-       "debut": 344.461,
-       "fin": 344.741
+       "debut": 330.694,
+       "fin": 330.954
       }
      ]
     },
     {
      "texte": "Quel étage posait problème ?",
-     "debut": 345.621,
-     "fin": 346.921,
+     "debut": 332.074,
+     "fin": 333.254,
      "mots": [
       {
        "mot": "quel",
-       "debut": 345.621,
-       "fin": 345.741
+       "debut": 332.074,
+       "fin": 332.194
       },
       {
        "mot": "étage",
-       "debut": 345.801,
-       "fin": 346.221
+       "debut": 332.274,
+       "fin": 332.574
       },
       {
        "mot": "posait",
-       "debut": 346.281,
-       "fin": 346.521
+       "debut": 332.634,
+       "fin": 332.874
       },
       {
        "mot": "problème",
-       "debut": 346.561,
-       "fin": 346.921
+       "debut": 332.914,
+       "fin": 333.254
       }
      ]
     }
-   ],
-   "debut": 339.221,
-   "fin": 346.921
+   ]
   },
   {
    "ligne": 39,
+   "debut": 334.634,
+   "fin": 342.934,
    "phrases": [
     {
      "texte": "Le premier.",
-     "debut": 348.001,
-     "fin": 348.481,
+     "debut": 334.634,
+     "fin": 335.154,
      "mots": [
       {
        "mot": "le",
-       "debut": 348.001,
-       "fin": 348.101
+       "debut": 334.634,
+       "fin": 334.714
       },
       {
        "mot": "premier",
-       "debut": 348.141,
-       "fin": 348.481
+       "debut": 334.754,
+       "fin": 335.154
       }
      ]
     },
     {
      "texte": "Marc n'a pas agi intentionnellement, donc les lésions corporelles intentionnelles de l'article cent vingt-trois ne sont pas réalisées.",
-     "debut": 349.541,
-     "fin": 356.341,
+     "debut": 335.874,
+     "fin": 342.934,
      "mots": [
       {
        "mot": "marc",
-       "debut": 349.541,
-       "fin": 349.781
+       "debut": 335.874,
+       "fin": 336.034
       },
       {
        "mot": "n",
-       "debut": 350.041,
-       "fin": 350.141
+       "debut": 336.074,
+       "fin": 336.194
       },
       {
        "mot": "a",
-       "debut": 350.041,
-       "fin": 350.141
+       "debut": 336.074,
+       "fin": 336.194
       },
       {
        "mot": "pas",
-       "debut": 350.181,
-       "fin": 350.301
+       "debut": 336.234,
+       "fin": 336.374
       },
       {
        "mot": "agi",
-       "debut": 350.381,
-       "fin": 350.701
+       "debut": 336.454,
+       "fin": 336.814
       },
       {
        "mot": "intentionnellement",
-       "debut": 350.781,
-       "fin": 351.421
+       "debut": 336.894,
+       "fin": 337.614
       },
       {
        "mot": "donc",
-       "debut": 352.041,
-       "fin": 352.181
+       "debut": 338.334,
+       "fin": 338.474
       },
       {
        "mot": "les",
-       "debut": 352.221,
-       "fin": 352.301
+       "debut": 338.514,
+       "fin": 338.614
       },
       {
        "mot": "lésions",
-       "debut": 352.341,
-       "fin": 352.581
+       "debut": 338.654,
+       "fin": 338.914
       },
       {
        "mot": "corporelles",
-       "debut": 352.621,
-       "fin": 353.201
+       "debut": 338.954,
+       "fin": 339.674
       },
       {
        "mot": "intentionnelles",
-       "debut": 353.261,
-       "fin": 353.861
+       "debut": 339.754,
+       "fin": 340.374
       },
       {
        "mot": "de",
-       "debut": 353.901,
-       "fin": 353.961
+       "debut": 340.414,
+       "fin": 340.494
       },
       {
        "mot": "l",
-       "debut": 354.001,
-       "fin": 354.421
+       "debut": 340.534,
+       "fin": 341.034
       },
       {
        "mot": "article",
-       "debut": 354.001,
-       "fin": 354.421
+       "debut": 340.534,
+       "fin": 341.034
       },
       {
        "mot": "cent",
-       "debut": 354.501,
-       "fin": 355.101
+       "debut": 341.114,
+       "fin": 341.234
       },
       {
        "mot": "vingt",
-       "debut": 354.501,
-       "fin": 355.101
+       "debut": 341.254,
+       "fin": 341.954
       },
       {
        "mot": "trois",
-       "debut": 354.501,
-       "fin": 355.101
+       "debut": 341.254,
+       "fin": 341.954
       },
       {
        "mot": "ne",
-       "debut": 355.421,
-       "fin": 355.501
+       "debut": 341.994,
+       "fin": 342.074
       },
       {
        "mot": "sont",
-       "debut": 355.541,
-       "fin": 355.661
+       "debut": 342.114,
+       "fin": 342.254
       },
       {
        "mot": "pas",
-       "debut": 355.701,
-       "fin": 355.801
+       "debut": 342.294,
+       "fin": 342.374
       },
       {
        "mot": "réalisées",
-       "debut": 355.841,
-       "fin": 356.341
+       "debut": 342.414,
+       "fin": 342.934
       }
      ]
     }
-   ],
-   "debut": 348.001,
-   "fin": 356.341
+   ]
   },
   {
    "ligne": 40,
+   "debut": 344.374,
+   "fin": 353.334,
    "phrases": [
     {
      "texte": "Il reste la négligence de l'article cent vingt-cinq.",
-     "debut": 357.821,
-     "fin": 360.081,
+     "debut": 344.374,
+     "fin": 346.634,
      "mots": [
       {
        "mot": "il",
-       "debut": 357.821,
-       "fin": 357.901
+       "debut": 344.374,
+       "fin": 344.434
       },
       {
        "mot": "reste",
-       "debut": 357.941,
-       "fin": 358.081
+       "debut": 344.474,
+       "fin": 344.634
       },
       {
        "mot": "la",
-       "debut": 358.101,
-       "fin": 358.161
+       "debut": 344.654,
+       "fin": 344.734
       },
       {
        "mot": "négligence",
-       "debut": 358.201,
-       "fin": 358.581
+       "debut": 344.774,
+       "fin": 345.214
       },
       {
        "mot": "de",
-       "debut": 358.641,
-       "fin": 358.701
+       "debut": 345.254,
+       "fin": 345.314
       },
       {
        "mot": "l",
-       "debut": 358.741,
-       "fin": 359.241
+       "debut": 345.374,
+       "fin": 345.874
       },
       {
        "mot": "article",
-       "debut": 358.741,
-       "fin": 359.241
+       "debut": 345.374,
+       "fin": 345.874
       },
       {
        "mot": "cent",
-       "debut": 359.341,
-       "fin": 359.481
+       "debut": 345.954,
+       "fin": 346.074
       },
       {
        "mot": "vingt",
-       "debut": 359.521,
-       "fin": 360.081
+       "debut": 346.094,
+       "fin": 346.634
       },
       {
        "mot": "cinq",
-       "debut": 359.521,
-       "fin": 360.081
+       "debut": 346.094,
+       "fin": 346.634
       }
      ]
     },
     {
      "texte": "Il faut une imprévoyance coupable.",
-     "debut": 360.711,
-     "fin": 362.331,
+     "debut": 347.494,
+     "fin": 349.274,
      "mots": [
       {
        "mot": "il",
-       "debut": 360.711,
-       "fin": 360.811
+       "debut": 347.494,
+       "fin": 347.554
       },
       {
        "mot": "faut",
-       "debut": 360.871,
-       "fin": 361.091
+       "debut": 347.614,
+       "fin": 347.834
       },
       {
        "mot": "une",
-       "debut": 361.151,
-       "fin": 361.251
+       "debut": 347.894,
+       "fin": 347.974
       },
       {
        "mot": "imprévoyance",
-       "debut": 361.331,
-       "fin": 361.911
+       "debut": 348.034,
+       "fin": 348.754
       },
       {
        "mot": "coupable",
-       "debut": 361.951,
-       "fin": 362.331
+       "debut": 348.814,
+       "fin": 349.274
       }
      ]
     },
     {
      "texte": "Et, si la blessure n'est pas grave, une plainte de Julien.",
-     "debut": 362.961,
-     "fin": 365.721,
+     "debut": 350.334,
+     "fin": 353.334,
      "mots": [
       {
        "mot": "et",
-       "debut": 362.961,
-       "fin": 363.021
+       "debut": 350.334,
+       "fin": 350.394
       },
       {
        "mot": "si",
-       "debut": 363.081,
-       "fin": 363.161
+       "debut": 350.454,
+       "fin": 350.514
       },
       {
        "mot": "la",
-       "debut": 363.201,
-       "fin": 363.281
+       "debut": 350.574,
+       "fin": 350.634
       },
       {
        "mot": "blessure",
-       "debut": 363.321,
-       "fin": 363.681
+       "debut": 350.674,
+       "fin": 350.994
       },
       {
        "mot": "n",
-       "debut": 363.721,
-       "fin": 363.841
+       "debut": 351.034,
+       "fin": 351.134
       },
       {
        "mot": "est",
-       "debut": 363.721,
-       "fin": 363.841
+       "debut": 351.034,
+       "fin": 351.134
       },
       {
        "mot": "pas",
-       "debut": 363.881,
-       "fin": 363.981
+       "debut": 351.174,
+       "fin": 351.294
       },
       {
        "mot": "grave",
-       "debut": 364.041,
-       "fin": 364.301
+       "debut": 351.334,
+       "fin": 351.654
       },
       {
        "mot": "une",
-       "debut": 364.661,
-       "fin": 364.781
+       "debut": 352.294,
+       "fin": 352.414
       },
       {
        "mot": "plainte",
-       "debut": 364.821,
-       "fin": 365.141
+       "debut": 352.454,
+       "fin": 352.794
       },
       {
        "mot": "de",
-       "debut": 365.201,
-       "fin": 365.281
+       "debut": 352.854,
+       "fin": 352.934
       },
       {
        "mot": "julien",
-       "debut": 365.321,
-       "fin": 365.721
+       "debut": 352.974,
+       "fin": 353.334
       }
      ]
     }
-   ],
-   "debut": 357.821,
-   "fin": 365.721
+   ]
   },
   {
    "ligne": 41,
+   "debut": 354.774,
+   "fin": 364.714,
    "phrases": [
     {
      "texte": "Retenons l'échelle.",
-     "debut": 367.281,
-     "fin": 368.201,
+     "debut": 354.774,
+     "fin": 355.554,
      "mots": [
       {
        "mot": "retenons",
-       "debut": 367.281,
-       "fin": 367.681
+       "debut": 354.774,
+       "fin": 355.114
       },
       {
        "mot": "l",
-       "debut": 367.721,
-       "fin": 368.201
+       "debut": 355.154,
+       "fin": 355.554
       },
       {
        "mot": "échelle",
-       "debut": 367.721,
-       "fin": 368.201
+       "debut": 355.154,
+       "fin": 355.554
       }
      ]
     },
     {
      "texte": "Vouloir le résultat : intention.",
-     "debut": 368.861,
-     "fin": 370.981,
+     "debut": 356.314,
+     "fin": 358.614,
      "mots": [
       {
        "mot": "vouloir",
-       "debut": 368.861,
-       "fin": 369.101
+       "debut": 356.314,
+       "fin": 356.514
       },
       {
        "mot": "le",
-       "debut": 369.141,
-       "fin": 369.201
+       "debut": 356.554,
+       "fin": 356.634
       },
       {
        "mot": "résultat",
-       "debut": 369.241,
-       "fin": 369.761
+       "debut": 356.674,
+       "fin": 357.214
       },
       {
        "mot": "intention",
-       "debut": 370.421,
-       "fin": 370.981
+       "debut": 358.074,
+       "fin": 358.614
       }
      ]
     },
     {
      "texte": "Le tenir pour possible et l'accepter : encore l'intention, par dol éventuel.",
-     "debut": 372.061,
-     "fin": 377.161,
+     "debut": 359.514,
+     "fin": 364.714,
      "mots": [
       {
-       "mot": "le",
-       "debut": 372.061,
-       "fin": 372.14
+       "mot": "la",
+       "debut": 359.514,
+       "fin": 359.594
       },
       {
        "mot": "tenir",
-       "debut": 372.181,
-       "fin": 372.501
+       "debut": 359.634,
+       "fin": 359.894
       },
       {
        "mot": "pour",
-       "debut": 372.541,
-       "fin": 372.701
+       "debut": 359.934,
+       "fin": 360.074
       },
       {
        "mot": "possible",
-       "debut": 372.781,
-       "fin": 373.461
+       "debut": 360.114,
+       "fin": 360.734
       },
       {
        "mot": "et",
-       "debut": 373.521,
-       "fin": 373.581
+       "debut": 360.814,
+       "fin": 360.854
       },
       {
        "mot": "l",
-       "debut": 373.621,
-       "fin": 374.121
+       "debut": 360.914,
+       "fin": 361.434
       },
       {
        "mot": "accepter",
-       "debut": 373.621,
-       "fin": 374.121
+       "debut": 360.914,
+       "fin": 361.434
       },
       {
        "mot": "encore",
-       "debut": 375.001,
-       "fin": 375.261
+       "debut": 362.454,
+       "fin": 362.694
       },
       {
        "mot": "l",
-       "debut": 375.301,
-       "fin": 375.741
+       "debut": 362.714,
+       "fin": 363.194
       },
       {
        "mot": "intention",
-       "debut": 375.301,
-       "fin": 375.741
+       "debut": 362.714,
+       "fin": 363.194
       },
       {
        "mot": "pardon",
-       "debut": 376.261,
-       "fin": 376.561
+       "debut": 363.734,
+       "fin": 364.114
       },
       {
        "mot": "éventuel",
-       "debut": 376.621,
-       "fin": 377.161
+       "debut": 364.194,
+       "fin": 364.714
       }
      ]
     }
-   ],
-   "debut": 367.281,
-   "fin": 377.161
+   ]
   },
   {
    "ligne": 42,
+   "debut": 366.154,
+   "fin": 375.674,
    "phrases": [
     {
      "texte": "Voir le risque mais compter qu'il ne se réalisera pas : négligence consciente.",
-     "debut": 378.601,
-     "fin": 383.801,
+     "debut": 366.154,
+     "fin": 371.214,
      "mots": [
       {
        "mot": "voir",
-       "debut": 378.601,
-       "fin": 378.721
+       "debut": 366.154,
+       "fin": 366.274
       },
       {
        "mot": "le",
-       "debut": 378.781,
-       "fin": 378.861
+       "debut": 366.314,
+       "fin": 366.394
       },
       {
        "mot": "risque",
-       "debut": 378.901,
-       "fin": 379.241
+       "debut": 366.454,
+       "fin": 366.734
       },
       {
        "mot": "mais",
-       "debut": 379.721,
-       "fin": 379.821
+       "debut": 367.254,
+       "fin": 367.354
       },
       {
        "mot": "compter",
-       "debut": 379.881,
-       "fin": 380.601
+       "debut": 367.394,
+       "fin": 367.734
       },
       {
        "mot": "qu",
-       "debut": 380.661,
-       "fin": 380.841
+       "debut": 367.794,
+       "fin": 367.934
       },
       {
        "mot": "il",
-       "debut": 380.661,
-       "fin": 380.841
+       "debut": 367.794,
+       "fin": 367.934
       },
       {
        "mot": "ne",
-       "debut": 380.881,
-       "fin": 380.981
+       "debut": 367.994,
+       "fin": 368.094
       },
       {
        "mot": "se",
-       "debut": 381.041,
-       "fin": 381.141
+       "debut": 368.134,
+       "fin": 368.254
       },
       {
        "mot": "réalisera",
-       "debut": 381.201,
-       "fin": 381.661
+       "debut": 368.294,
+       "fin": 368.754
       },
       {
        "mot": "pas",
-       "debut": 381.721,
-       "fin": 381.841
+       "debut": 368.814,
+       "fin": 368.914
       },
       {
        "mot": "négligence",
-       "debut": 382.881,
-       "fin": 383.281
+       "debut": 370.174,
+       "fin": 370.634
       },
       {
        "mot": "consciente",
-       "debut": 383.321,
-       "fin": 383.801
+       "debut": 370.674,
+       "fin": 371.214
       }
      ]
     },
     {
      "texte": "Ne pas voir un risque qu'on aurait dû voir : négligence.",
-     "debut": 384.861,
-     "fin": 388.021,
+     "debut": 372.354,
+     "fin": 375.674,
      "mots": [
       {
        "mot": "ne",
-       "debut": 384.861,
-       "fin": 384.941
+       "debut": 372.354,
+       "fin": 372.414
       },
       {
        "mot": "pas",
-       "debut": 384.981,
-       "fin": 385.081
+       "debut": 372.454,
+       "fin": 372.554
       },
       {
        "mot": "voir",
-       "debut": 385.101,
-       "fin": 385.241
+       "debut": 372.594,
+       "fin": 372.754
       },
       {
        "mot": "un",
-       "debut": 385.281,
-       "fin": 385.361
+       "debut": 372.794,
+       "fin": 372.854
       },
       {
        "mot": "risque",
-       "debut": 385.401,
-       "fin": 385.641
+       "debut": 372.894,
+       "fin": 373.134
       },
       {
        "mot": "qu",
-       "debut": 385.681,
-       "fin": 385.841
+       "debut": 373.174,
+       "fin": 373.314
       },
       {
        "mot": "on",
-       "debut": 385.681,
-       "fin": 385.841
+       "debut": 373.174,
+       "fin": 373.314
       },
       {
        "mot": "aurait",
-       "debut": 385.881,
-       "fin": 386.101
+       "debut": 373.354,
+       "fin": 373.594
       },
       {
        "mot": "dû",
-       "debut": 386.161,
-       "fin": 386.281
+       "debut": 373.654,
+       "fin": 373.794
       },
       {
        "mot": "voir",
-       "debut": 386.301,
-       "fin": 386.541
+       "debut": 373.834,
+       "fin": 374.114
       },
       {
        "mot": "négligence",
-       "debut": 387.521,
-       "fin": 388.021
+       "debut": 375.014,
+       "fin": 375.674
       }
      ]
     }
-   ],
-   "debut": 378.601,
-   "fin": 388.021
+   ]
   },
   {
    "ligne": 43,
+   "debut": 377.114,
+   "fin": 386.234,
    "phrases": [
     {
      "texte": "Et pour un crime ou un délit, la négligence n'est punie que si la loi le dit.",
-     "debut": 389.321,
-     "fin": 393.421,
+     "debut": 377.114,
+     "fin": 381.414,
      "mots": [
       {
        "mot": "et",
-       "debut": 389.321,
-       "fin": 389.401
+       "debut": 377.114,
+       "fin": 377.194
       },
       {
        "mot": "pour",
-       "debut": 389.441,
-       "fin": 389.521
+       "debut": 377.254,
+       "fin": 377.354
       },
       {
        "mot": "un",
-       "debut": 389.601,
-       "fin": 389.681
+       "debut": 377.414,
+       "fin": 377.494
       },
       {
        "mot": "crime",
-       "debut": 389.721,
-       "fin": 389.921
+       "debut": 377.554,
+       "fin": 377.754
       },
       {
        "mot": "ou",
-       "debut": 389.96,
-       "fin": 390.04
+       "debut": 377.794,
+       "fin": 377.854
       },
       {
        "mot": "un",
-       "debut": 390.081,
-       "fin": 390.141
+       "debut": 377.914,
+       "fin": 377.974
       },
       {
        "mot": "délit",
-       "debut": 390.18,
-       "fin": 390.441
+       "debut": 378.014,
+       "fin": 378.314
       },
       {
        "mot": "la",
-       "debut": 391.201,
-       "fin": 391.281
+       "debut": 379.194,
+       "fin": 379.274
       },
       {
        "mot": "négligence",
-       "debut": 391.341,
-       "fin": 391.821
+       "debut": 379.314,
+       "fin": 379.734
       },
       {
        "mot": "n",
-       "debut": 391.881,
-       "fin": 391.961
+       "debut": 379.774,
+       "fin": 379.894
       },
       {
        "mot": "est",
-       "debut": 391.881,
-       "fin": 391.961
+       "debut": 379.774,
+       "fin": 379.894
       },
       {
        "mot": "punie",
-       "debut": 392.001,
-       "fin": 392.481
+       "debut": 379.954,
+       "fin": 380.354
       },
       {
        "mot": "que",
-       "debut": 392.541,
-       "fin": 392.641
+       "debut": 380.414,
+       "fin": 380.534
       },
       {
        "mot": "si",
-       "debut": 392.701,
-       "fin": 392.781
+       "debut": 380.594,
+       "fin": 380.654
       },
       {
        "mot": "la",
-       "debut": 392.841,
-       "fin": 392.901
+       "debut": 380.694,
+       "fin": 380.774
       },
       {
        "mot": "loi",
-       "debut": 392.941,
-       "fin": 393.061
+       "debut": 380.814,
+       "fin": 381.014
       },
       {
        "mot": "le",
-       "debut": 393.101,
-       "fin": 393.201
+       "debut": 381.074,
+       "fin": 381.174
       },
       {
        "mot": "dit",
-       "debut": 393.241,
-       "fin": 393.421
+       "debut": 381.234,
+       "fin": 381.414
       }
      ]
     },
     {
      "texte": "Quand rien n'est prévu, seul le geste intentionnel est une infraction.",
-     "debut": 394.341,
-     "fin": 398.021,
+     "debut": 382.274,
+     "fin": 386.234,
      "mots": [
       {
        "mot": "quand",
-       "debut": 394.341,
-       "fin": 394.421
+       "debut": 382.274,
+       "fin": 382.354
       },
       {
        "mot": "rien",
-       "debut": 394.461,
-       "fin": 394.601
+       "debut": 382.394,
+       "fin": 382.554
       },
       {
        "mot": "n",
-       "debut": 394.621,
-       "fin": 394.721
+       "debut": 382.594,
+       "fin": 382.694
       },
       {
        "mot": "est",
-       "debut": 394.621,
-       "fin": 394.721
+       "debut": 382.594,
+       "fin": 382.694
       },
       {
        "mot": "prévu",
-       "debut": 394.761,
-       "fin": 395.121
+       "debut": 382.734,
+       "fin": 383.034
       },
       {
        "mot": "seul",
-       "debut": 395.541,
-       "fin": 395.661
+       "debut": 383.754,
+       "fin": 383.894
       },
       {
        "mot": "le",
-       "debut": 395.701,
-       "fin": 395.801
+       "debut": 383.934,
+       "fin": 384.014
       },
       {
        "mot": "geste",
-       "debut": 395.841,
-       "fin": 396.201
+       "debut": 384.074,
+       "fin": 384.414
       },
       {
        "mot": "intentionnel",
-       "debut": 396.261,
-       "fin": 397.241
+       "debut": 384.494,
+       "fin": 385.454
       },
       {
        "mot": "est",
-       "debut": 397.301,
-       "fin": 397.401
+       "debut": 385.514,
+       "fin": 385.614
       },
       {
        "mot": "une",
-       "debut": 397.421,
-       "fin": 397.501
+       "debut": 385.634,
+       "fin": 385.714
       },
       {
        "mot": "infraction",
-       "debut": 397.521,
-       "fin": 398.021
+       "debut": 385.754,
+       "fin": 386.234
       }
      ]
     }
-   ],
-   "debut": 389.321,
-   "fin": 398.021
+   ]
   },
   {
    "ligne": 44,
+   "debut": 387.674,
+   "fin": 407.444,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 399.461,
-     "fin": 400.401,
+     "debut": 387.674,
+     "fin": 388.574,
      "mots": [
       {
        "mot": "une",
-       "debut": 399.461,
-       "fin": 399.561
+       "debut": 387.674,
+       "fin": 387.754
       },
       {
        "mot": "question",
-       "debut": 399.601,
-       "fin": 399.861
+       "debut": 387.794,
+       "fin": 388.034
       },
       {
        "mot": "pour",
-       "debut": 399.901,
-       "fin": 400.021
+       "debut": 388.074,
+       "fin": 388.194
       },
       {
        "mot": "finir",
-       "debut": 400.081,
-       "fin": 400.401
+       "debut": 388.254,
+       "fin": 388.574
       }
      ]
     },
     {
      "texte": "Sofia roule bien trop vite dans une rue où jouent des enfants.",
-     "debut": 401.321,
-     "fin": 405.421,
+     "debut": 389.614,
+     "fin": 392.494,
      "mots": [
       {
        "mot": "sophia",
-       "debut": 401.321,
-       "fin": 401.701
+       "debut": 389.614,
+       "fin": 389.894
       },
       {
        "mot": "roule",
-       "debut": 402.301,
-       "fin": 402.481
+       "debut": 389.934,
+       "fin": 390.094
       },
       {
        "mot": "bien",
-       "debut": 402.541,
-       "fin": 402.721
+       "debut": 390.134,
+       "fin": 390.254
       },
       {
        "mot": "trop",
-       "debut": 402.781,
-       "fin": 402.961
+       "debut": 390.314,
+       "fin": 390.474
       },
       {
        "mot": "vite",
-       "debut": 403.001,
-       "fin": 403.441
+       "debut": 390.534,
+       "fin": 390.914
       },
       {
        "mot": "dans",
-       "debut": 403.501,
-       "fin": 403.681
+       "debut": 390.974,
+       "fin": 391.114
       },
       {
        "mot": "une",
-       "debut": 403.741,
-       "fin": 403.941
+       "debut": 391.174,
+       "fin": 391.314
       },
       {
        "mot": "rue",
-       "debut": 404.021,
-       "fin": 404.261
+       "debut": 391.374,
+       "fin": 391.614
       },
       {
        "mot": "où",
-       "debut": 404.321,
-       "fin": 404.421
+       "debut": 391.674,
+       "fin": 391.754
       },
       {
        "mot": "jouent",
-       "debut": 404.481,
-       "fin": 404.841
+       "debut": 391.814,
+       "fin": 391.934
       },
       {
        "mot": "des",
-       "debut": 404.901,
-       "fin": 405.001
+       "debut": 391.974,
+       "fin": 392.094
       },
       {
        "mot": "enfants",
-       "debut": 405.061,
-       "fin": 405.421
+       "debut": 392.154,
+       "fin": 392.494
       }
      ]
     },
     {
      "texte": "Elle sait qu'elle pourrait en renverser un.",
-     "debut": 406.561,
-     "fin": 408.121,
+     "debut": 393.084,
+     "fin": 394.884,
      "mots": [
       {
        "mot": "elle",
-       "debut": 406.561,
-       "fin": 406.661
+       "debut": 393.084,
+       "fin": 393.224
       },
       {
        "mot": "sait",
-       "debut": 406.721,
-       "fin": 406.821
+       "debut": 393.304,
+       "fin": 393.484
       },
       {
        "mot": "qu",
-       "debut": 406.841,
-       "fin": 407.001
+       "debut": 393.724,
+       "fin": 393.884
       },
       {
        "mot": "elle",
-       "debut": 406.841,
-       "fin": 407.001
+       "debut": 393.724,
+       "fin": 393.884
       },
       {
        "mot": "pourrait",
-       "debut": 407.041,
-       "fin": 407.261
+       "debut": 393.944,
+       "fin": 394.184
       },
       {
        "mot": "en",
-       "debut": 407.301,
-       "fin": 407.421
+       "debut": 394.224,
+       "fin": 394.304
       },
       {
        "mot": "renverser",
-       "debut": 407.481,
-       "fin": 407.981
+       "debut": 394.324,
+       "fin": 394.744
       },
       {
        "mot": "un",
-       "debut": 408.021,
-       "fin": 408.121
+       "debut": 394.804,
+       "fin": 394.884
       }
      ]
     },
     {
      "texte": "Mais elle est certaine de pouvoir freiner à temps.",
-     "debut": 409.261,
-     "fin": 411.621,
+     "debut": 395.824,
+     "fin": 398.384,
      "mots": [
       {
        "mot": "mais",
-       "debut": 409.261,
-       "fin": 409.361
+       "debut": 395.824,
+       "fin": 395.904
       },
       {
        "mot": "elle",
-       "debut": 409.381,
-       "fin": 409.461
+       "debut": 395.904,
+       "fin": 395.964
       },
       {
        "mot": "est",
-       "debut": 409.481,
-       "fin": 409.581
+       "debut": 395.984,
+       "fin": 396.104
       },
       {
        "mot": "certaine",
-       "debut": 409.761,
-       "fin": 410.421
+       "debut": 396.184,
+       "fin": 396.744
       },
       {
        "mot": "de",
-       "debut": 410.461,
-       "fin": 410.561
+       "debut": 397.384,
+       "fin": 397.484
       },
       {
        "mot": "pouvoir",
-       "debut": 410.621,
-       "fin": 410.961
+       "debut": 397.544,
+       "fin": 397.804
       },
       {
        "mot": "freiner",
-       "debut": 411.021,
-       "fin": 411.261
+       "debut": 397.844,
+       "fin": 398.084
       },
       {
        "mot": "à",
-       "debut": 411.321,
-       "fin": 411.341
+       "debut": 398.124,
+       "fin": 398.164
       },
       {
        "mot": "temps",
-       "debut": 411.421,
-       "fin": 411.621
+       "debut": 398.204,
+       "fin": 398.384
       }
      ]
     },
     {
      "texte": "Elle n'y parvient pas : un enfant se casse le bras.",
-     "debut": 412.281,
-     "fin": 415.321,
+     "debut": 399.384,
+     "fin": 402.024,
      "mots": [
       {
        "mot": "elle",
-       "debut": 412.281,
-       "fin": 412.441
+       "debut": 399.384,
+       "fin": 399.464
       },
       {
        "mot": "n",
-       "debut": 412.481,
-       "fin": 412.601
+       "debut": 399.484,
+       "fin": 399.584
       },
       {
        "mot": "y",
-       "debut": 412.481,
-       "fin": 412.601
+       "debut": 399.484,
+       "fin": 399.584
       },
       {
        "mot": "parvient",
-       "debut": 412.661,
-       "fin": 413.001
+       "debut": 399.624,
+       "fin": 399.904
       },
       {
        "mot": "pas",
-       "debut": 413.061,
-       "fin": 413.161
+       "debut": 399.944,
+       "fin": 400.084
       },
       {
        "mot": "un",
-       "debut": 413.961,
-       "fin": 414.041
+       "debut": 401.104,
+       "fin": 401.184
       },
       {
        "mot": "enfant",
-       "debut": 414.081,
-       "fin": 414.501
+       "debut": 401.224,
+       "fin": 401.404
       },
       {
        "mot": "se",
-       "debut": 414.581,
-       "fin": 414.701
+       "debut": 401.444,
+       "fin": 401.504
       },
       {
        "mot": "casse",
-       "debut": 414.741,
-       "fin": 414.941
+       "debut": 401.544,
+       "fin": 401.704
       },
       {
        "mot": "le",
-       "debut": 415.001,
-       "fin": 415.061
+       "debut": 401.724,
+       "fin": 401.784
       },
       {
        "mot": "bras",
-       "debut": 415.101,
-       "fin": 415.321
+       "debut": 401.824,
+       "fin": 402.024
       }
      ]
     },
     {
      "texte": "Intention ou négligence ?",
-     "debut": 416.501,
-     "fin": 418.221,
+     "debut": 403.164,
+     "fin": 404.624,
      "mots": [
       {
        "mot": "intention",
-       "debut": 416.501,
-       "fin": 416.961
+       "debut": 403.164,
+       "fin": 403.664
       },
       {
        "mot": "ou",
-       "debut": 417.601,
-       "fin": 417.641
+       "debut": 404.024,
+       "fin": 404.084
       },
       {
        "mot": "négligence",
-       "debut": 417.701,
-       "fin": 418.221
+       "debut": 404.144,
+       "fin": 404.624
       }
      ]
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 419.361,
-     "fin": 421.141,
+     "debut": 405.764,
+     "fin": 407.444,
      "mots": [
       {
        "mot": "écrivez",
-       "debut": 419.361,
-       "fin": 419.721
+       "debut": 405.764,
+       "fin": 406.104
       },
       {
        "mot": "votre",
-       "debut": 419.761,
-       "fin": 419.921
+       "debut": 406.144,
+       "fin": 406.304
       },
       {
        "mot": "réponse",
-       "debut": 419.941,
-       "fin": 420.301
+       "debut": 406.304,
+       "fin": 406.644
       },
       {
        "mot": "en",
-       "debut": 420.501,
-       "fin": 420.581
+       "debut": 406.884,
+       "fin": 406.944
       },
       {
        "mot": "commentaire",
-       "debut": 420.621,
-       "fin": 421.141
+       "debut": 406.984,
+       "fin": 407.444
       }
      ]
     }
-   ],
-   "debut": 399.461,
-   "fin": 421.141
+   ]
   },
   {
    "ligne": 45,
+   "debut": 408.884,
+   "fin": 415.804,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 422.241,
-     "fin": 427.001,
+     "debut": 408.884,
+     "fin": 413.464,
      "mots": [
       {
        "mot": "la",
-       "debut": 422.241,
-       "fin": 422.301
+       "debut": 408.884,
+       "fin": 408.924
       },
       {
        "mot": "réponse",
-       "debut": 422.361,
-       "fin": 422.781
+       "debut": 408.984,
+       "fin": 409.484
       },
       {
        "mot": "le",
-       "debut": 423.181,
-       "fin": 423.261
+       "debut": 409.844,
+       "fin": 409.924
       },
       {
        "mot": "script",
-       "debut": 423.301,
-       "fin": 423.681
+       "debut": 409.964,
+       "fin": 410.384
       },
       {
        "mot": "et",
-       "debut": 424.001,
-       "fin": 424.061
+       "debut": 410.744,
+       "fin": 410.804
       },
       {
        "mot": "les",
-       "debut": 424.081,
-       "fin": 424.201
+       "debut": 410.824,
+       "fin": 410.964
       },
       {
        "mot": "articles",
-       "debut": 424.261,
-       "fin": 424.521
+       "debut": 411.004,
+       "fin": 411.264
       },
       {
        "mot": "cités",
-       "debut": 424.581,
-       "fin": 424.961
+       "debut": 411.304,
+       "fin": 411.584
       },
       {
        "mot": "sont",
-       "debut": 425.021,
-       "fin": 425.141
+       "debut": 411.644,
+       "fin": 411.744
       },
       {
        "mot": "dans",
-       "debut": 425.161,
-       "fin": 425.241
+       "debut": 411.764,
+       "fin": 411.844
       },
       {
        "mot": "la",
-       "debut": 425.281,
-       "fin": 425.341
+       "debut": 411.884,
+       "fin": 411.964
       },
       {
        "mot": "description",
-       "debut": 425.381,
-       "fin": 425.881
+       "debut": 411.984,
+       "fin": 412.564
       },
       {
        "mot": "en",
-       "debut": 426.361,
-       "fin": 426.441
+       "debut": 412.884,
+       "fin": 412.964
       },
       {
        "mot": "accès",
-       "debut": 426.501,
-       "fin": 426.681
+       "debut": 412.984,
+       "fin": 413.204
       },
       {
        "mot": "libre",
-       "debut": 426.721,
-       "fin": 427.001
+       "debut": 413.244,
+       "fin": 413.464
       }
      ]
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 428.041,
-     "fin": 429.401,
+     "debut": 414.604,
+     "fin": 415.804,
      "mots": [
       {
        "mot": "à",
-       "debut": 428.041,
-       "fin": 428.101
+       "debut": 414.604,
+       "fin": 414.644
       },
       {
        "mot": "bientôt",
-       "debut": 428.141,
-       "fin": 428.401
+       "debut": 414.684,
+       "fin": 414.964
       },
       {
        "mot": "sur",
-       "debut": 428.441,
-       "fin": 428.561
+       "debut": 415.004,
+       "fin": 415.104
       },
       {
        "mot": "l",
-       "debut": 428.601,
-       "fin": 428.941
+       "debut": 415.124,
+       "fin": 415.424
       },
       {
-       "mot": "etude",
-       "debut": 428.601,
-       "fin": 428.941
+       "mot": "étude",
+       "debut": 415.124,
+       "fin": 415.424
       },
       {
        "mot": "du",
-       "debut": 428.981,
-       "fin": 429.041
+       "debut": 415.444,
+       "fin": 415.544
       },
       {
        "mot": "droit",
-       "debut": 429.101,
-       "fin": 429.401
+       "debut": 415.584,
+       "fin": 415.804
       }
      ]
     }
-   ],
-   "debut": 422.241,
-   "fin": 429.401
+   ]
   }
  ]
 }
