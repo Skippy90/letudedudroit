@@ -1,6 +1,6 @@
 # Liste d'e-mails — proposition de mise en place
 
-**Statut : proposition à valider.** Les points juridiques (nLPD, LCD) sont à vérifier sur Fedlex avant l'ouverture ; les prix et conditions des services sont à vérifier sur leurs sites.
+**Statut : service choisi le 2 novembre 2026 : MailerLite.** Le reste est une proposition à valider. Les points juridiques (nLPD, LCD) sont à vérifier sur Fedlex avant l'ouverture ; les prix et conditions des services sont à vérifier sur leurs sites.
 
 ## But
 
@@ -27,7 +27,7 @@ Transformer un spectateur de passage en lecteur fidèle : la fiche du cours grat
 | Brevo | Société française, offre gratuite, automatisations | Moins pratique pour vendre des produits |
 | Infomaniak Newsletter | Données en Suisse, cohérent si le site est aussi chez Infomaniak | Payant dès le départ |
 
-Recommandation : MailerLite tant que la liste est petite ; Infomaniak si l'hébergement suisse devient un argument de la marque.
+**Décision (2.11.2026) : MailerLite.** À mentionner dans la politique de confidentialité : sous-traitant et pays de stockage des données (À VÉRIFIER dans les conditions de MailerLite au moment de l'ouverture).
 
 ## Exigences légales à vérifier avant l'ouverture
 
