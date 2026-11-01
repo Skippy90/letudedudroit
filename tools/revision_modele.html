@@ -232,8 +232,9 @@ function vueCarte() {
   const profondeur = n => prof[n] ?? (prof[n] = (g[n] || []).length ? 1 + Math.max(...g[n].map(profondeur)) : 0);
   const nums = D.videos.map(v => v.num); nums.forEach(profondeur);
   const rangs = {}; nums.forEach(n => (rangs[prof[n]] = rangs[prof[n]] || []).push(n));
-  const W = 720, LC = 132, HC = 64, GAPY = 46, pos = {};
   const niveaux = Object.keys(rangs).map(Number).sort((a, b) => a - b);
+  const LC = 128, HC = 64, GAPY = 54, pos = {};
+  const W = Math.max(...niveaux.map(k => rangs[k].length)) * (LC + 16) + 24;
   niveaux.forEach((k, i) => { const r = rangs[k]; r.forEach((n, j) => pos[n] = { x: (W / (r.length + 1)) * (j + 1), y: 30 + i * (HC + GAPY) }); });
   const H = 30 + niveaux.length * (HC + GAPY);
   const NS = "http://www.w3.org/2000/svg", svg = document.createElementNS(NS, "svg");
@@ -249,7 +250,7 @@ function vueCarte() {
     r.setAttribute("fill", col("--surface")); r.setAttribute("stroke", c); r.setAttribute("stroke-width", "3");
     const t1 = document.createElementNS(NS, "text"); t1.setAttribute("x", p.x); t1.setAttribute("y", p.y - 6); t1.setAttribute("text-anchor", "middle"); t1.setAttribute("fill", c); t1.setAttribute("font-size", "12"); t1.setAttribute("font-weight", "700"); t1.textContent = `VIDÉO ${+v.num} · ${Math.round(mt * 100)} %`;
     const t2 = document.createElementNS(NS, "text"); t2.setAttribute("x", p.x); t2.setAttribute("y", p.y + 14); t2.setAttribute("text-anchor", "middle"); t2.setAttribute("fill", col("--texte")); t2.setAttribute("font-size", "13");
-    const court = (v.notions && v.notions[0]) || v.titre; t2.textContent = court.length > 18 ? court.slice(0, 17) + "…" : court;
+    const court = (v.notions && v.notions[0]) || v.titre; t2.textContent = court.length > 16 ? court.slice(0, 15) + "…" : court;
     const tt = document.createElementNS(NS, "title"); tt.textContent = v.titre;
     a.append(r, t1, t2, tt); svg.append(a);
   });

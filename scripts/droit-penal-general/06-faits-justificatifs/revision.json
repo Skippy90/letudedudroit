@@ -1,0 +1,215 @@
+{
+  "video": 6,
+  "slug": "06-faits-justificatifs",
+  "titre": "Avait-il le droit de se défendre ?",
+  "notions": [
+    "Faits justificatifs",
+    "Légitime défense",
+    "Excès de légitime défense",
+    "État de nécessité"
+  ],
+  "a_vous": [
+    {
+      "ligne": 17,
+      "pause": "Kevin a menacé Yasmine, puis il est rentré chez lui. Le lendemain, elle va le frapper. Selon vous, est-ce de la légitime défense ?",
+      "pourquoi": "Le spectateur découvre par lui-même que la défense est liée au moment de l'attaque."
+    },
+    {
+      "ligne": 23,
+      "pause": "Yasmine va trop loin, sous le coup du saisissement. Selon vous, son geste devient-il licite ?",
+      "pourquoi": "Le spectateur doit situer l'excès dans le bâtiment avant d'entendre la réponse."
+    },
+    {
+      "ligne": 28,
+      "pause": "La vie d'un bébé contre la vitre d'une voiture. Selon vous, Hugo avait-il le droit de briser la vitre ?",
+      "pourquoi": "La pesée des intérêts est plus parlante quand le spectateur l'a faite lui-même."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v06-01",
+      "q": "À quoi servent les faits justificatifs ?",
+      "r": "Ils rendent licite un acte que la loi punit d'habitude.",
+      "source": "ligne 7",
+      "notion": "Faits justificatifs"
+    },
+    {
+      "id": "v06-02",
+      "q": "Quelles sont les trois conditions de la légitime défense ?",
+      "r": "Une attaque ou la menace d'une attaque imminente. Une attaque contraire au droit. Une défense par des moyens proportionnés aux circonstances.",
+      "source": "ligne 9 ; art. 15 CP",
+      "notion": "Légitime défense"
+    },
+    {
+      "id": "v06-03",
+      "q": "Kevin lève une bouteille sur Yasmine, qui le repousse violemment. Yasmine est-elle punie ?",
+      "r": "Non. Les trois conditions sont remplies. Son geste est justifié : l'illicéité tombe, et avec elle l'infraction.",
+      "source": "ligne 12 ; art. 15 CP",
+      "notion": "Légitime défense"
+    },
+    {
+      "id": "v06-04",
+      "q": "Hugo passait par là. Aurait-il pu défendre Yasmine ?",
+      "r": "Oui. Le droit de légitime défense appartient aussi aux tiers.",
+      "source": "ligne 13 ; art. 15 CP",
+      "notion": "Légitime défense"
+    },
+    {
+      "id": "v06-05",
+      "q": "Kevin menace Yasmine, puis rentre chez lui. Le lendemain, elle va le frapper. Légitime défense ?",
+      "r": "Non. L'attaque est terminée, et aucune nouvelle attaque n'est imminente. Se venger n'est pas se défendre.",
+      "source": "ligne 17 ; art. 15 CP",
+      "notion": "Légitime défense"
+    },
+    {
+      "id": "v06-06",
+      "q": "Que dit le Tribunal fédéral de l'usage d'un couteau pour se défendre ?",
+      "r": "Il demande une grande retenue. Le couteau est en principe le dernier moyen de défense.",
+      "source": "ligne 20 ; ATF 136 IV 49",
+      "notion": "Légitime défense"
+    },
+    {
+      "id": "v06-07",
+      "q": "Que prévoit l'article 16 quand la défense dépasse ses limites ?",
+      "r": "Le juge atténue la peine. Si l'excès vient d'un état excusable d'excitation ou de saisissement causé par l'attaque, l'auteur n'agit pas de manière coupable.",
+      "source": "ligne 21 ; art. 16 CP",
+      "notion": "Excès de légitime défense"
+    },
+    {
+      "id": "v06-08",
+      "q": "L'excès de légitime défense rend-il le geste licite ?",
+      "r": "Non. Il touche seulement le troisième étage, celui de la culpabilité.",
+      "source": "ligne 23 ; art. 16 CP",
+      "notion": "Excès de légitime défense"
+    },
+    {
+      "id": "v06-09",
+      "q": "Quelles sont les trois conditions de l'état de nécessité licite ?",
+      "r": "Un danger imminent, impossible à écarter autrement. Et la sauvegarde d'intérêts prépondérants.",
+      "source": "ligne 27 ; art. 17 CP",
+      "notion": "État de nécessité"
+    },
+    {
+      "id": "v06-10",
+      "q": "Qu'est-ce qu'un danger imminent, selon le Tribunal fédéral ?",
+      "r": "Un danger ni passé ni futur, mais actuel et concret.",
+      "source": "ligne 27 ; ATF 122 IV 1",
+      "notion": "État de nécessité"
+    },
+    {
+      "id": "v06-11",
+      "q": "Hugo brise la vitre d'une voiture brûlante pour sortir un bébé. Son geste est-il justifié ?",
+      "r": "Oui. La vie d'un bébé pèse bien plus lourd qu'une vitre.",
+      "source": "ligne 28 ; art. 17 CP",
+      "notion": "État de nécessité"
+    },
+    {
+      "id": "v06-12",
+      "q": "Et quand les deux biens en jeu ont une valeur comparable ?",
+      "r": "L'acte n'est plus justifié. Le juge atténue la peine si l'on pouvait exiger que l'auteur renonce au bien menacé. Sinon, l'auteur n'est pas coupable.",
+      "source": "ligne 29 ; art. 18 CP",
+      "notion": "État de nécessité"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Kevin lève une bouteille pour frapper Yasmine. Elle le repousse violemment ; il tombe et se casse le bras.",
+      "qualification": "Légitime défense : le geste de Yasmine est justifié, elle n'est pas punie.",
+      "source": "ligne 12"
+    },
+    "changements": [
+      {
+        "fait": "Yasmine a seulement cru être attaquée, à tort.",
+        "qualification": "Légitime défense putative : c'est une question d'erreur.",
+        "pourquoi": "Il n'y a pas d'attaque réelle. Le cas relève de l'erreur, traitée dans la vidéo 7.",
+        "source": "ligne 15"
+      },
+      {
+        "fait": "Kevin menace Yasmine, puis rentre chez lui. Elle va le frapper le lendemain.",
+        "qualification": "Pas de légitime défense.",
+        "pourquoi": "L'attaque est terminée, et aucune nouvelle attaque n'est imminente. Se venger n'est pas se défendre.",
+        "source": "ligne 17 ; art. 15 CP"
+      },
+      {
+        "fait": "Yasmine sort un couteau et frappe Kevin à plusieurs reprises.",
+        "qualification": "Si elle va trop loin, c'est un excès de légitime défense : le juge atténue sa peine.",
+        "pourquoi": "Le couteau est en principe le dernier moyen de défense. Le Tribunal fédéral demande une grande retenue.",
+        "source": "ligne 21 ; art. 16 CP ; ATF 136 IV 49"
+      },
+      {
+        "fait": "L'excès vient d'un état excusable d'excitation ou de saisissement, causé par l'attaque.",
+        "qualification": "Yasmine n'agit pas de manière coupable. Son geste ne devient pas licite pour autant.",
+        "pourquoi": "L'excès touche seulement le troisième étage, celui de la culpabilité.",
+        "source": "ligne 23 ; art. 16 CP"
+      },
+      {
+        "fait": "C'est Hugo, un passant, qui repousse Kevin pour défendre Yasmine.",
+        "qualification": "Légitime défense, comme pour Yasmine.",
+        "pourquoi": "Le même droit appartient aux tiers.",
+        "source": "ligne 13 ; art. 15 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Un après-midi de canicule, Hugo voit un bébé enfermé seul dans une voiture brûlante. Personne ne répond. Il brise la vitre pour le sortir.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quel fait justificatif faut-il examiner ?",
+        "choix": [
+          "La légitime défense, car quelqu'un a mis le bébé en danger.",
+          "L'acte autorisé par la loi, car Hugo est un simple citoyen.",
+          "L'état de nécessité : il n'y a pas d'agresseur, seulement un danger."
+        ],
+        "bon": 2,
+        "note": "Sans attaque, seule la piste du danger reste : c'est l'article 17 (lignes 24 et 26)."
+      },
+      {
+        "nom": "Application",
+        "q": "Les conditions de l'article 17 sont-elles remplies ?",
+        "choix": [
+          "Oui : danger imminent, aucune autre issue, et la vie du bébé pèse plus lourd que la vitre.",
+          "Non : la vie du bébé et la vitre ont une valeur comparable.",
+          "Non : un danger n'est jamais imminent sans agresseur."
+        ],
+        "bon": 0,
+        "note": "Personne ne répond, et la vie d'un bébé pèse bien plus lourd qu'une vitre (lignes 25 et 28)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Que faut-il conclure ?",
+        "choix": [
+          "Hugo commet un dommage à la propriété et doit être puni.",
+          "Le geste de Hugo est licite : il est justifié par l'état de nécessité.",
+          "Hugo n'est pas coupable, mais son geste reste illicite."
+        ],
+        "bon": 1,
+        "note": "L'état de nécessité fait tomber l'illicéité, pas seulement la culpabilité (lignes 28 et 37)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Kevin lève une bouteille sur Yasmine.",
+        "Rien ne l'y autorise : l'attaque est contraire au droit.",
+        "L'attaque est en cours au moment où Yasmine réagit.",
+        "Face à un agresseur, tout est permis : la question des moyens ne se pose pas."
+      ],
+      "faux": 3,
+      "explication": "La défense doit rester proportionnée. Le juge regarde la gravité de l'attaque, les biens en jeu et le moyen de défense utilisé.",
+      "source": "ligne 33 ; art. 15 CP ; ATF 136 IV 49"
+    },
+    {
+      "copie": [
+        "Yasmine dépasse les limites de la légitime défense.",
+        "Son excès vient d'un état excusable de saisissement, causé par l'attaque.",
+        "Son geste devient donc licite.",
+        "Elle n'agit pas de manière coupable."
+      ],
+      "faux": 2,
+      "explication": "L'excès ne rend pas le geste licite. Il touche seulement le troisième étage, celui de la culpabilité.",
+      "source": "ligne 23 ; art. 16 CP"
+    }
+  ]
+}

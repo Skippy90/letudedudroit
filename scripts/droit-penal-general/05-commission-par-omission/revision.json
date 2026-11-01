@@ -30,7 +30,7 @@
       "id": "v05-01",
       "q": "Qu'est-ce qu'une omission, en droit pénal ?",
       "r": "C'est le fait de ne pas agir, alors qu'on aurait dû.",
-      "source": "ligne 7 ; art. 11 CP",
+      "source": "ligne 7",
       "notion": "Commission par omission"
     },
     {
@@ -121,7 +121,7 @@
       {
         "fait": "Clara a vu Timéo et l'a laissé couler exprès.",
         "qualification": "Omission intentionnelle.",
-        "pourquoi": "Clara aurait voulu le résultat. Ce serait bien plus grave.",
+        "pourquoi": "Elle aurait agi exprès. Ce serait bien plus grave.",
         "source": "ligne 28 ; art. 11 CP"
       },
       {
@@ -161,13 +161,13 @@
           "Non, car personne ne lui avait confié la forêt."
         ],
         "bon": 1,
-        "note": "En allumant le feu, Lucas a créé un risque. Il devait l'éteindre ou le surveiller (réponse attendue ; art. 11 al. 2 let. d CP)."
+        "note": "En allumant le feu, Lucas a créé un risque. Il devait l'éteindre ou le surveiller (réponse attendue : article 11, alinéa 2, lettre d)."
       },
       {
         "nom": "Conclusion",
         "q": "Que peut-on conclure ?",
         "choix": [
-          "Les dommages de l'incendie peuvent lui être imputés comme s'il les avait causés, aux conditions de l'article 11, alinéa 3.",
+          "Les dommages de l'incendie peuvent lui être imputés comme s'il les avait causés (article 11, alinéa 3).",
           "Il répond seulement de l'omission de prêter secours.",
           "Il ne répond de rien, faute de geste."
         ],
