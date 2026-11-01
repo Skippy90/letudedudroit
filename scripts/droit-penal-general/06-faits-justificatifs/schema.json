@@ -1,0 +1,76 @@
+{
+  "video": 6,
+  "slug": "06-faits-justificatifs",
+  "titre": "Avait-il le droit de se défendre ?",
+  "accroche": "Se défendre, est-ce toujours permis ?",
+  "panneaux": [
+    {
+      "type": "conditions",
+      "titre": "Légitime défense",
+      "conditions": [
+        {
+          "label": "Attaque actuelle ou imminente",
+          "detail": "Pendant l'attaque ou juste avant ; se venger n'est pas se défendre.",
+          "source": "lignes 9, 16, 17 et 34 ; art. 15 CP"
+        },
+        {
+          "label": "Contraire au droit",
+          "detail": "Rien n'autorisait l'agresseur à attaquer.",
+          "source": "lignes 10 et 11 ; art. 15 CP"
+        },
+        {
+          "label": "Moyens proportionnés",
+          "detail": "Gravité de l'attaque, biens en jeu, moyen de défense utilisé.",
+          "source": "lignes 10 et 33 ; art. 15 CP"
+        }
+      ],
+      "alors": {
+        "label": "Geste licite : pas d'infraction",
+        "couleur": "vert",
+        "source": "ligne 12 ; art. 15 CP"
+      },
+      "sinon": {
+        "label": "Pas de légitime défense",
+        "couleur": "gris",
+        "source": "lignes 17 et 34 ; art. 15 CP"
+      }
+    },
+    {
+      "type": "conditions",
+      "titre": "État de nécessité",
+      "conditions": [
+        {
+          "label": "Danger imminent",
+          "detail": "Ni passé ni futur : actuel et concret.",
+          "source": "ligne 27 ; art. 17 CP"
+        },
+        {
+          "label": "Pas d'autre moyen",
+          "detail": "Impossible d'écarter le danger autrement.",
+          "source": "ligne 27 ; art. 17 CP"
+        },
+        {
+          "label": "Intérêts prépondérants",
+          "detail": "Le bien sauvé pèse plus lourd, comme une vie face à une vitre.",
+          "source": "lignes 27 et 28 ; art. 17 CP"
+        }
+      ],
+      "alors": {
+        "label": "Geste licite",
+        "couleur": "vert",
+        "source": "lignes 26 et 28 ; art. 17 CP"
+      },
+      "sinon": {
+        "label": "Pas d'état de nécessité licite",
+        "couleur": "gris",
+        "source": "lignes 26 et 29 ; art. 17 CP"
+      }
+    }
+  ],
+  "piege": {
+    "faux": "Face à un agresseur, tout est permis.",
+    "vrai": "La défense reste proportionnée, et seulement pendant une attaque en cours ou imminente.",
+    "source": "lignes 32 à 34"
+  },
+  "a_retenir": "Légitime défense et état de nécessité font tomber l'illicéité ; les articles 16 et 18 jouent sur la culpabilité."
+}

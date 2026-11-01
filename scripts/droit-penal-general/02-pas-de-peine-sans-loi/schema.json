@@ -1,0 +1,75 @@
+{
+  "video": 2,
+  "slug": "02-pas-de-peine-sans-loi",
+  "titre": "Pas de peine sans loi",
+  "accroche": "Mentir à un ami, est-ce puni par la loi ?",
+  "panneaux": [
+    {
+      "type": "conditions",
+      "titre": "Les trois exigences de l'article premier",
+      "conditions": [
+        {
+          "label": "Un texte",
+          "detail": "Une loi, pas l'avis du juge ni la morale.",
+          "source": "lignes 12 à 15 ; art. 1 CP"
+        },
+        {
+          "label": "Qui décrit l'acte",
+          "detail": "Tous les éléments de la description ; ressembler ne suffit pas.",
+          "source": "lignes 16 à 25 ; art. 1 CP"
+        },
+        {
+          "label": "Qui existait déjà",
+          "detail": "En vigueur au moment de l'acte.",
+          "source": "lignes 26 à 30 ; art. 2 CP"
+        }
+      ],
+      "alors": {
+        "label": "Acte réprimé par la loi",
+        "couleur": "vert",
+        "source": "ligne 8 ; art. 1 CP"
+      },
+      "sinon": {
+        "label": "Pas de peine, pas de mesure",
+        "couleur": "gris",
+        "source": "lignes 9, 10 et 25 ; art. 1 CP"
+      }
+    },
+    {
+      "type": "frise",
+      "titre": "Pas de retour dans le passé",
+      "points": [
+        {
+          "label": "Acte avant la loi",
+          "detail": "La loi nouvelle ne remonte pas dans le passé contre l'auteur.",
+          "couleur": "gris",
+          "source": "lignes 28 et 30 ; art. 2 al. 1 CP"
+        },
+        {
+          "label": "Entrée en vigueur",
+          "detail": "Le texte s'applique à celui qui agit après.",
+          "couleur": "ambre",
+          "source": "ligne 29 ; art. 2 al. 1 CP"
+        },
+        {
+          "label": "Acte après la loi",
+          "detail": "Le texte existait déjà : troisième exigence remplie.",
+          "couleur": "vert",
+          "source": "lignes 26 et 29 ; art. 2 al. 1 CP"
+        },
+        {
+          "label": "Jugement",
+          "detail": "Loi nouvelle plus douce : elle s'applique aussi à l'acte d'avant.",
+          "couleur": "ambre",
+          "source": "ligne 31 ; art. 2 al. 2 CP"
+        }
+      ]
+    }
+  ],
+  "piege": {
+    "faux": "Pas dans le Code pénal, donc c'est permis.",
+    "vrai": "D'autres lois fédérales, et des lois cantonales, prévoient aussi des infractions.",
+    "source": "lignes 32 à 37"
+  },
+  "a_retenir": "Pas de loi, pas de peine : un texte, qui décrit l'acte, qui existait déjà."
+}

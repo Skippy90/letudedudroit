@@ -1,0 +1,38 @@
+{
+  "video": 1,
+  "slug": "01-trois-etages",
+  "titre": "Qu'est-ce qu'une infraction ? Les trois étages",
+  "accroche": "Quand un acte devient-il une infraction ?",
+  "panneaux": [
+    {
+      "type": "etages",
+      "titre": "Trois étages, de bas en haut",
+      "items": [
+        {
+          "label": "Typicité",
+          "detail": "La loi décrit-elle ce comportement ? Le geste et l'intention.",
+          "couleur": "vert",
+          "source": "lignes 7 à 13 ; art. 1, 12 et 123 CP"
+        },
+        {
+          "label": "Illicéité",
+          "detail": "Était-il malgré tout permis ? Un fait justificatif l'efface.",
+          "couleur": "vert",
+          "source": "lignes 14 à 19 ; art. 15 CP"
+        },
+        {
+          "label": "Culpabilité",
+          "detail": "Peut-on le reprocher à la personne ?",
+          "couleur": "vert",
+          "source": "lignes 20 à 24 ; art. 19 CP"
+        }
+      ]
+    }
+  ],
+  "piege": {
+    "faux": "Pas coupable, donc rien ne se passe.",
+    "vrai": "Le juge peut ordonner une mesure, par exemple un traitement.",
+    "source": "ligne 23"
+  },
+  "a_retenir": "Trois étages, dans l'ordre : si un étage manque, pas d'infraction, pas de peine."
+}

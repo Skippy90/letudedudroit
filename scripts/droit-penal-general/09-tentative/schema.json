@@ -1,0 +1,88 @@
+{
+  "video": 9,
+  "slug": "09-tentative",
+  "titre": "Il a essayé, mais…",
+  "a_relire": true,
+  "accroche": "Peut-on être puni sans avoir rien volé ?",
+  "panneaux": [
+    {
+      "type": "frise",
+      "titre": "Le chemin du crime",
+      "points": [
+        {
+          "label": "Idée",
+          "detail": "Jamais punie : on ne condamne pas quelqu'un pour ce qu'il pense.",
+          "couleur": "gris",
+          "source": "ligne 8"
+        },
+        {
+          "label": "Préparation",
+          "detail": "Impunie en principe ; exceptions pour certains crimes très graves.",
+          "couleur": "gris",
+          "source": "lignes 9-11 ; art. 260bis CP"
+        },
+        {
+          "label": "Tentative",
+          "detail": "Dès le dernier pas décisif : punissable, le juge peut atténuer.",
+          "couleur": "vert",
+          "source": "lignes 12-17 ; art. 22 CP ; ATF 131 IV 100"
+        },
+        {
+          "label": "Résultat",
+          "detail": "Le résultat est atteint : l'infraction est consommée.",
+          "couleur": "rouge",
+          "source": "ligne 6"
+        }
+      ]
+    },
+    {
+      "type": "arbre",
+      "titre": "Tentative ou désistement ?",
+      "questions": [
+        {
+          "q": "L'auteur a-t-il franchi le dernier pas décisif ?",
+          "oui": {
+            "suite": 1
+          },
+          "non": {
+            "resultat": "Pas de tentative"
+          },
+          "source": "lignes 12-14 ; ATF 131 IV 100"
+        },
+        {
+          "q": "A-t-il renoncé, ou empêché le résultat, de sa propre initiative ?",
+          "oui": {
+            "resultat": "Désistement"
+          },
+          "non": {
+            "resultat": "Tentative punissable"
+          },
+          "source": "lignes 25-28 ; art. 23 CP"
+        }
+      ],
+      "resultats": {
+        "Pas de tentative": {
+          "couleur": "gris",
+          "detail": "Idée ou préparation : en principe impunies.",
+          "source": "lignes 8-9, 32"
+        },
+        "Tentative punissable": {
+          "couleur": "vert",
+          "detail": "Arrêté par la police : tentative ratée, pas désistement.",
+          "source": "lignes 17, 28 ; art. 22 CP"
+        },
+        "Désistement": {
+          "couleur": "ambre",
+          "detail": "Le juge peut atténuer la peine, ou exempter de toute peine.",
+          "source": "ligne 26 ; art. 23 CP"
+        }
+      }
+    }
+  ],
+  "piege": {
+    "faux": "Tant qu'il n'a rien pris, il n'y a pas d'infraction.",
+    "vrai": "Dès qu'il force la porte, Kilian commet une tentative de vol punissable.",
+    "source": "lignes 29-30"
+  },
+  "a_retenir": "Face à un cas, situez l'acte sur le chemin : idée, préparation, tentative ou résultat."
+}
