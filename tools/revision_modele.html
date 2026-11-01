@@ -1,0 +1,274 @@
+<title>Réviser le droit pénal</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Mise en page : une carte des notions en accueil (graphe des prérequis), une page par vidéo qui enchaîne les formats dans l'ordre d'étude, une révision mélangée. Charte de la chaîne : fond noir, rouge de la marque, vert = maîtrisé, ambre = en cours, gris = pas commencé. */
+:root {
+  --fond: #0B0B0B; --surface: #18181B; --surface2: #222226; --trait: #2E2E33; --texte: #F2EFE6; --doux: #A9A49A;
+  --marque: #DA291C; --vert: #4CAF7D; --gris: #6B7280; --ambre: #E3A52F;
+  --f-texte: "Inter", "Helvetica Neue", Arial, sans-serif; --f-mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+body { background: var(--fond); color: var(--texte); font-family: var(--f-texte); font-size: 17px; line-height: 1.6; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--fond); }
+.page { max-width: 46rem; margin: 0 auto; padding-block: 20px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 24px; }
+header.haut { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--fond); padding-block: 10px; z-index: 5; border-bottom: 1px solid var(--trait); }
+.marque { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; color: var(--texte); text-decoration: none; }
+.marque i { width: 24px; height: 24px; border-radius: 6px; background: var(--marque); display: inline-block; }
+nav.liens { display: flex; gap: 8px; flex-wrap: wrap; }
+nav.liens a { font: 600 14px var(--f-texte); color: var(--texte); background: var(--surface); border: 1px solid var(--trait); border-radius: 999px; padding: 6px 14px; text-decoration: none; }
+nav.liens a.actif { background: var(--texte); color: var(--fond); }
+.compte { font-family: var(--f-mono); font-size: 12px; margin-left: 6px; background: var(--marque); color: #fff; border-radius: 999px; padding: 0 7px; }
+h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.12; margin: 0; font-weight: 800; letter-spacing: -0.4px; text-wrap: balance; }
+h1 em { font-style: normal; background: var(--marque); color: #fff; padding: 0 .2em; border-radius: 6px; }
+h2 { font-size: 21px; margin: 0; text-wrap: balance; }
+.chapeau { color: var(--doux); margin: 0; }
+.etiq { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--doux); }
+.format { display: grid; gap: 12px; }
+.format > header { display: grid; gap: 2px; }
+.format > header .etiq { color: var(--ambre); }
+p { margin: 0; }
+.carte { border: 1px solid var(--trait); background: var(--surface); border-radius: 12px; padding: 16px 18px; display: grid; gap: 12px; min-width: 0; }
+.q { font-weight: 600; }
+.r { border-left: 3px solid var(--vert); padding-left: 12px; }
+.source { font-family: var(--f-mono); font-size: 12px; color: var(--doux); }
+.actions, .choix { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { font: 600 15px var(--f-texte); border-radius: 8px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--trait); background: transparent; color: var(--texte); text-align: left; }
+.btn.plein { background: var(--texte); color: var(--fond); border-color: var(--texte); }
+.btn.su, .btn.bon { border-color: var(--vert); color: var(--vert); }
+.btn.revoir { border-color: var(--gris); color: var(--doux); }
+.btn.mauvais { border-color: var(--marque); color: var(--marque); }
+.btn:focus-visible, a:focus-visible, .mot:focus-visible, .var:focus-visible { outline: 2px solid var(--ambre); outline-offset: 2px; }
+.etat { font-size: 14px; color: var(--doux); }
+.etat.ok { color: var(--vert); }
+.avous { border: 1px dashed var(--ambre); border-radius: 12px; padding: 14px 16px; display: grid; gap: 6px; }
+.avous b { color: var(--ambre); font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.vars { display: grid; gap: 8px; }
+.var { display: grid; gap: 4px; text-align: left; border: 1px solid var(--trait); background: var(--surface2); border-radius: 10px; padding: 10px 12px; color: var(--texte); font: inherit; cursor: pointer; }
+.var[aria-pressed="true"] { border-color: var(--ambre); }
+.resultat { border-radius: 10px; padding: 12px 14px; background: var(--surface2); display: grid; gap: 6px; }
+.resultat .qualif { font-weight: 800; font-size: 19px; }
+.copie { font-size: 18px; line-height: 2; }
+.mot { cursor: pointer; border-radius: 4px; padding: 1px 2px; background: none; border: none; color: inherit; font: inherit; }
+.mot:hover { background: var(--trait); }
+.mot.faux { background: var(--marque); color: #fff; }
+.mot.essai { text-decoration: line-through; color: var(--gris); }
+.etape { display: grid; gap: 8px; }
+.etape b { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ambre); }
+.avert { font-size: 14px; color: var(--ambre); border: 1px solid var(--ambre); border-radius: 8px; padding: 8px 12px; }
+.graphe { overflow-x: auto; }
+.graphe svg { display: block; max-width: 100%; height: auto; }
+.graphe a text { font-family: var(--f-texte); }
+.legende { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--doux); }
+.legende span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+#vue { display: grid; gap: 30px; min-width: 0; }
+footer { color: var(--doux); font-size: 14px; border-top: 1px solid var(--trait); padding-top: 16px; }
+@media (prefers-reduced-motion: no-preference) { .r, .resultat { animation: entre .25s ease-out; } @keyframes entre { from { opacity: .3; transform: translateY(4px); } } }
+</style>
+
+<div class="page">
+  <header class="haut">
+    <a class="marque" href="#carte"><i></i>L'étude du droit · Réviser</a>
+    <nav class="liens" aria-label="Sections">
+      <a href="#carte" id="lien-carte">Carte des notions</a>
+      <a href="#melange" id="lien-melange">Révision du jour<span class="compte" id="compte">0</span></a>
+    </nav>
+  </header>
+  <main id="vue"></main>
+  <footer>Chaque réponse reprend une affirmation vérifiée dans l'audit de la vidéo (Fedlex, arrêts du Tribunal fédéral) ; la ligne du script est indiquée. Votre progression reste dans ce navigateur.</footer>
+</div>
+
+<script>
+const D = /*DONNEES*/null;
+const PALIERS = [1, 3, 7, 21, 60], JOUR = 86400000;
+const lire = () => { try { return JSON.parse(localStorage.getItem("revision-ledroit") || "{}"); } catch (e) { return {}; } };
+let suivi = lire();
+const ecrire = () => { try { localStorage.setItem("revision-ledroit", JSON.stringify(suivi)); } catch (e) {} };
+const toutes = D.videos.flatMap(v => (v.cartes || []).map(c => ({ ...c, num: v.num, titre: v.titre })));
+const due = id => suivi[id] && suivi[id].quand <= Date.now();
+const maitrise = v => { const c = v.cartes || []; if (!c.length) return 0; return c.filter(x => suivi[x.id] && suivi[x.id].palier >= 2).length / c.length; };
+const vu = v => (v.cartes || []).some(x => suivi[x.id]);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const melanger = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
+
+function etatTexte(id) {
+  const s = suivi[id]; if (!s) return "";
+  const j = Math.max(0, Math.round((s.quand - Date.now()) / JOUR));
+  return j === 0 ? "À revoir aujourd'hui" : `Revient dans ${j} jour${j > 1 ? "s" : ""}`;
+}
+function noter(id, su) {
+  const p = suivi[id] ? suivi[id].palier : -1;
+  const palier = su ? Math.min(p + 1, PALIERS.length - 1) : 0;
+  suivi[id] = { palier, quand: Date.now() + PALIERS[palier] * JOUR };
+  ecrire(); compter();
+}
+function compter() { document.getElementById("compte").textContent = toutes.filter(c => due(c.id)).length; }
+
+function blocCarte(c, avecVideo) {
+  const b = el("div", "carte");
+  b.append(el("span", "etiq", (avecVideo ? `Vidéo ${+c.num} · ` : "") + (c.notion || "question")), el("p", "q", c.q));
+  const actions = el("div", "actions"), etat = el("p", "etat", etatTexte(c.id));
+  const voir = el("button", "btn plein", "Voir la réponse"); voir.type = "button";
+  voir.addEventListener("click", () => {
+    const r = el("p", "r", c.r); b.insertBefore(r, actions); b.insertBefore(el("p", "source", c.source), actions);
+    actions.innerHTML = "";
+    [["Je savais", "su", true], ["À revoir", "revoir", false]].forEach(([t, k, s]) => {
+      const x = el("button", "btn " + k, t); x.type = "button";
+      x.addEventListener("click", () => { noter(c.id, s); actions.remove(); etat.textContent = (s ? "Noté. " : "On la reverra demain. ") + etatTexte(c.id); etat.classList.toggle("ok", s); });
+      actions.append(x);
+    });
+  });
+  actions.append(voir); b.append(actions, etat);
+  return b;
+}
+
+function blocErreur(e) {
+  const b = el("div", "carte");
+  b.append(el("span", "etiq", "Copie d'étudiant · cliquez sur le passage faux"));
+  const copie = el("p", "copie"), etat = el("p", "etat");
+  e.copie.forEach((m, i) => {
+    const x = el("button", "mot", m); x.type = "button";
+    x.addEventListener("click", () => {
+      if (i === e.faux) { x.classList.add("faux"); etat.textContent = e.explication; etat.classList.add("ok"); b.append(el("p", "source", e.source)); }
+      else { x.classList.add("essai"); etat.textContent = "Ce passage est juste. Cherchez le raisonnement qui ne tient pas."; }
+    });
+    copie.append(x, " ");
+  });
+  b.append(copie, etat); return b;
+}
+
+function blocVariantes(v) {
+  const b = el("div", "carte");
+  b.append(el("span", "etiq", "Le cas de départ"), el("p", null, v.base.faits));
+  const res = el("div", "resultat");
+  const montrer = (q, why, src) => { res.innerHTML = ""; res.append(el("span", "etiq", "Résultat"), el("p", "qualif", q)); if (why) res.append(el("p", null, why)); res.append(el("p", "source", src)); };
+  montrer(v.base.qualification, "", v.base.source);
+  const liste = el("div", "vars");
+  const boutons = [];
+  v.changements.forEach(ch => {
+    const x = el("button", "var"); x.type = "button"; x.setAttribute("aria-pressed", "false");
+    x.append(el("span", "etiq", "Et si…"), el("span", null, ch.fait));
+    x.addEventListener("click", () => {
+      const actif = x.getAttribute("aria-pressed") === "true";
+      boutons.forEach(y => y.setAttribute("aria-pressed", "false"));
+      if (actif) montrer(v.base.qualification, "", v.base.source);
+      else { x.setAttribute("aria-pressed", "true"); montrer(ch.qualification, ch.pourquoi, ch.source); }
+    });
+    boutons.push(x); liste.append(x);
+  });
+  b.append(el("span", "etiq", "Changez un seul fait"), liste, res); return b;
+}
+
+function blocFondu(f) {
+  const b = el("div", "carte");
+  b.append(el("span", "etiq", "Faits → règle → application → conclusion"));
+  const faits = el("div", "etape"); faits.append(el("b", null, "Faits"), el("p", null, f.faits)); b.append(faits);
+  let n = 0;
+  const suite = () => {
+    const s = f.etapes[n]; if (!s) return;
+    const e = el("div", "etape"); e.append(el("b", null, s.nom), el("p", null, s.q));
+    const ch = el("div", "choix"), msg = el("p", "etat");
+    s.choix.forEach((t, i) => {
+      const x = el("button", "btn", t); x.type = "button";
+      x.addEventListener("click", () => {
+        if (i === s.bon) { x.classList.add("bon"); ch.querySelectorAll("button").forEach(y => y.disabled = true); msg.textContent = s.note || "Juste."; msg.classList.add("ok"); n++; suite(); }
+        else { x.classList.add("mauvais"); msg.textContent = "Pas tout à fait. Relisez les faits."; }
+      });
+      ch.append(x);
+    });
+    e.append(ch, msg); b.append(e);
+  };
+  suite(); return b;
+}
+
+function format(numero, nom, intro) {
+  const s = el("section", "format"); const h = el("header");
+  h.append(el("span", "etiq", numero), el("h2", null, nom)); if (intro) h.append(el("p", "chapeau", intro));
+  s.append(h); return s;
+}
+
+function vueVideo(v) {
+  const m = document.getElementById("vue"); m.innerHTML = "";
+  const h = el("header", "format");
+  h.append(el("span", "etiq", `Vidéo ${+v.num} · ${(v.notions || []).join(" · ")}`));
+  const t = el("h1"); t.textContent = v.titre; h.append(t);
+  if (v.a_relire) h.append(el("p", "avert", "Contenu en attente de la relecture juridique : à utiliser avec prudence."));
+  m.append(h);
+
+  if ((v.a_vous || []).length) {
+    const s = format("Format 1", "À vous d'abord", "Avant de regarder la vidéo, répondez de tête. Vous retiendrez mieux la règle si vous l'avez d'abord cherchée.");
+    v.a_vous.forEach(a => { const b = el("div", "avous"); b.append(el("b", null, `Ligne ${a.ligne}`), el("p", "q", a.pause)); s.append(b); });
+    m.append(s);
+  }
+  const s2 = format("Format 2", "Fiche vivante", "Répondez, puis dites honnêtement si vous saviez. Chaque carte revient le lendemain, puis après 3, 7 et 21 jours.");
+  (v.cartes || []).forEach(c => s2.append(blocCarte(c, false))); m.append(s2);
+  if (v.variantes) { const s = format("Format 3", "Machine à variantes", "Un seul fait change, et la qualification aussi."); s.append(blocVariantes(v.variantes)); m.append(s); }
+  if (v.fondu) { const s = format("Format 4", "Le cas pratique, pas à pas", "La méthode de l'examen, une étape à la fois."); s.append(blocFondu(v.fondu)); m.append(s); }
+  if ((v.erreurs || []).length) { const s = format("Format 5", "Trouvez l'erreur", "Une copie d'étudiant contient le piège classique. Où est-il ?"); v.erreurs.forEach(e => s.append(blocErreur(e))); m.append(s); }
+  const fin = el("p", "chapeau"); fin.innerHTML = 'Format 6 : la <a href="#melange">révision du jour</a> mélange toutes les vidéos. Format 7 : la <a href="#carte">carte des notions</a>.';
+  m.append(fin); window.scrollTo(0, 0);
+}
+
+function vueMelange() {
+  const m = document.getElementById("vue"); m.innerHTML = "";
+  const s = format("Format 6", "Révision du jour", "Toutes les vidéos mélangées : à l'examen, on ne vous dit pas d'avance quelle notion est testée.");
+  const ids = melanger(toutes.filter(c => due(c.id)));
+  if (!ids.length) {
+    s.append(el("p", "chapeau", Object.keys(suivi).length ? "Rien à revoir aujourd'hui. Voici trois cartes au hasard pour garder la main." : "Commencez par une vidéo sur la carte des notions : ses cartes reviendront ici le moment venu."));
+    melanger(toutes).slice(0, 3).forEach(c => s.append(blocCarte(c, true)));
+  } else ids.forEach(c => s.append(blocCarte(c, true)));
+  const erreurs = D.videos.flatMap(v => v.erreurs || []);
+  if (erreurs.length) { s.append(el("span", "etiq", "Et une copie à corriger")); s.append(blocErreur(melanger(erreurs)[0])); }
+  m.append(s);
+}
+
+function vueCarte() {
+  const m = document.getElementById("vue"); m.innerHTML = "";
+  const h = el("header", "format");
+  const t = el("h1"); t.innerHTML = "Le droit pénal, <em>notion</em> par notion"; h.append(t);
+  h.append(el("p", "chapeau", "Chaque case est une vidéo. Une flèche relie une notion à celles qui en ont besoin : commencez par le haut. Une case devient verte quand ses cartes sont acquises."));
+  m.append(h);
+  const g = D.graphe, prof = {};
+  const profondeur = n => prof[n] ?? (prof[n] = (g[n] || []).length ? 1 + Math.max(...g[n].map(profondeur)) : 0);
+  const nums = D.videos.map(v => v.num); nums.forEach(profondeur);
+  const rangs = {}; nums.forEach(n => (rangs[prof[n]] = rangs[prof[n]] || []).push(n));
+  const W = 720, LC = 132, HC = 64, GAPY = 46, pos = {};
+  const niveaux = Object.keys(rangs).map(Number).sort((a, b) => a - b);
+  niveaux.forEach((k, i) => { const r = rangs[k]; r.forEach((n, j) => pos[n] = { x: (W / (r.length + 1)) * (j + 1), y: 30 + i * (HC + GAPY) }); });
+  const H = 30 + niveaux.length * (HC + GAPY);
+  const NS = "http://www.w3.org/2000/svg", svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img"); svg.setAttribute("aria-label", "Carte des notions du droit pénal général");
+  const css = getComputedStyle(document.documentElement), col = k => css.getPropertyValue(k).trim();
+  nums.forEach(n => (g[n] || []).forEach(p => { if (!pos[p]) return;
+    const l = document.createElementNS(NS, "line"); l.setAttribute("x1", pos[p].x); l.setAttribute("y1", pos[p].y + HC / 2); l.setAttribute("x2", pos[n].x); l.setAttribute("y2", pos[n].y - HC / 2);
+    l.setAttribute("stroke", col("--trait")); l.setAttribute("stroke-width", "2"); svg.append(l); }));
+  D.videos.forEach(v => {
+    const p = pos[v.num], mt = maitrise(v), c = mt >= .8 ? col("--vert") : vu(v) ? col("--ambre") : col("--gris");
+    const a = document.createElementNS(NS, "a"); a.setAttribute("href", "#v" + v.num);
+    const r = document.createElementNS(NS, "rect"); r.setAttribute("x", p.x - LC / 2); r.setAttribute("y", p.y - HC / 2); r.setAttribute("width", LC); r.setAttribute("height", HC); r.setAttribute("rx", "10");
+    r.setAttribute("fill", col("--surface")); r.setAttribute("stroke", c); r.setAttribute("stroke-width", "3");
+    const t1 = document.createElementNS(NS, "text"); t1.setAttribute("x", p.x); t1.setAttribute("y", p.y - 6); t1.setAttribute("text-anchor", "middle"); t1.setAttribute("fill", c); t1.setAttribute("font-size", "12"); t1.setAttribute("font-weight", "700"); t1.textContent = `VIDÉO ${+v.num} · ${Math.round(mt * 100)} %`;
+    const t2 = document.createElementNS(NS, "text"); t2.setAttribute("x", p.x); t2.setAttribute("y", p.y + 14); t2.setAttribute("text-anchor", "middle"); t2.setAttribute("fill", col("--texte")); t2.setAttribute("font-size", "13");
+    const court = (v.notions && v.notions[0]) || v.titre; t2.textContent = court.length > 18 ? court.slice(0, 17) + "…" : court;
+    const tt = document.createElementNS(NS, "title"); tt.textContent = v.titre;
+    a.append(r, t1, t2, tt); svg.append(a);
+  });
+  const box = el("div", "graphe"); box.append(svg); m.append(box);
+  const leg = el("div", "legende");
+  [["Pas commencée", "--gris"], ["En cours", "--ambre"], ["Acquise (80 % des cartes)", "--vert"]].forEach(([t, k]) => { const s = el("span", null, t); s.style.setProperty("--c", `var(${k})`); leg.append(s); });
+  m.append(leg);
+  const liste = el("div", "format"); liste.append(el("span", "etiq", "Toutes les vidéos"));
+  D.videos.forEach(v => { const a = el("a", "btn", `Vidéo ${+v.num} — ${v.titre}`); a.href = "#v" + v.num; a.style.textDecoration = "none"; liste.append(a); });
+  m.append(liste);
+}
+
+function route() {
+  const h = (location.hash || "#carte").slice(1);
+  document.getElementById("lien-carte").classList.toggle("actif", h === "carte");
+  document.getElementById("lien-melange").classList.toggle("actif", h === "melange");
+  const v = D.videos.find(x => "v" + x.num === h);
+  if (v) vueVideo(v); else if (h === "melange") vueMelange(); else vueCarte();
+}
+window.addEventListener("hashchange", route);
+compter(); route();
+</script>
