@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Avait-il le droit de se défendre ? | Droit pénal suisse
 
-## Description (3630 caractères sur 5 000)
+## Description (3878 caractères sur 5 000)
 
 ```text
 Avait-il le droit de se défendre ? — expliqué simplement, à partir d'un cas concret.
@@ -18,7 +18,7 @@ Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fé
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_16
 • Art. 17 CP : État de nécessité licite : danger imminent, impossible à détourner autrement, intérêts prépondérants
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_17
-• Art. 18 CP : Biens de valeur comparable : l'acte n'est pas justifié ; il faut toujours un danger imminent, impossible à écarter autrement, qui menace un bien essentiel ; le juge atténue la peine si l'on pouvait exiger de l'auteur qu'il renonce au bien menacé (al. 1) ; sinon, il n'est pas coupable (al. 2) ; si le sacrifice ne pouvait être raisonnablement exigé, l'auteur n'agit pas de manière coupable
+• Art. 18 CP : Biens de valeur comparable : l'acte n'est pas justifié ; il faut toujours un danger imminent, impossible à écarter autrement, qui menace un bien essentiel ; le juge atténue la peine si l'on pouvait exiger de l'auteur qu'il renonce au bien menacé (al. 1) ; sinon, il n'est pas coupable (al. 2) ; si le sacrifice ne pouvait être raisonnablement exigé, l'auteur n'agit pas de manière coupable ; les art. 16 et 18 peuvent atténuer la peine ou exclure la culpabilité, selon leurs conditions
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_18
 • Art. 14 CP : L'acte que la loi ordonne ou autorise est licite ; exemple d'une arrestation par un policier dans les règles
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_14

@@ -6,25 +6,25 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Quelle peine ? | Droit pénal suisse
 
-## Description (3694 caractères sur 5 000)
+## Description (4561 caractères sur 5 000)
 
 ```text
 Quelle peine ? — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 40 CP : Peine privative de liberté de trois jours à vingt ans, à vie si la loi le prévoit expressément
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_40
-• Art. 34 CP : Peine pécuniaire : de trois à cent quatre-vingts jours-amende selon la faute ; montant en général de trente à trois mille francs selon la situation (revenu, fortune, charges)
+• Art. 34 CP : Peine pécuniaire : de trois à cent quatre-vingts jours-amende selon la faute ; montant en général de trente à trois mille francs selon la situation (revenu, fortune, charges) ; exceptionnellement dix francs
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_34
 • Art. 106 CP : Amende des contraventions, dix mille francs au plus sauf exception ; peine privative de liberté de substitution d'un jour à trois mois si l'amende n'est pas payée par la faute du condamné
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_106
 • Art. 139 CP : Le vol est puni de cinq ans au plus ou d'une peine pécuniaire
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139
-• Art. 41 CP : Le juge ne peut préférer la peine privative de liberté à la peine pécuniaire que pour détourner l'auteur d'autres crimes ou délits, ou si la peine pécuniaire ne peut être exécutée ; il motive ce choix en détail
+• Art. 41 CP : Le juge ne peut préférer la peine privative de liberté à la peine pécuniaire que pour détourner l'auteur d'autres crimes ou délits, ou si la peine pécuniaire ne peut être exécutée ; il motive ce choix en détail ; ce cadre vaut quand une peine pécuniaire est possible
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_41
 • Art. 47 CP : Fixation d'après la culpabilité ; gravité de l'atteinte, caractère répréhensible, motivations, évitabilité ; antécédents, situation personnelle, effet sur l'avenir
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_47
-• Art. 42 CP : Le juge suspend en règle générale une peine pécuniaire ou une peine privative de liberté de deux ans au plus, quand une peine ferme n'est pas nécessaire pour détourner l'auteur d'autres crimes ou délits ; il peut ajouter une amende
+• Art. 42 CP : Le juge suspend en règle générale une peine pécuniaire ou une peine privative de liberté de deux ans au plus, quand une peine ferme n'est pas nécessaire pour détourner l'auteur d'autres crimes ou délits ; il peut ajouter une amende ; antécédents : condamnation à plus de six mois de privation de liberté dans les cinq ans avant l'acte, sursis seulement en cas de circonstances particulièrement favorables ; sursis refusable faute d'effort raisonnable de réparer le dommage
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_42
 • Art. 43 CP : Sursis partiel pour une peine privative de liberté d'un à trois ans ; partie à exécuter : la moitié au plus ; chaque partie : six mois au moins
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_43
@@ -34,13 +34,11 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_45
 • Art. 46 CP : Nouveau crime ou délit pendant le délai d'épreuve et récidive à craindre : révocation
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_46
-
-Jurisprudence du Tribunal fédéral :
-• ATF 147 IV 241
+• ATF 147 IV 241 : Le juge choisit d'abord le genre de peine, puis la quotité ; il tient compte de l'adéquation de la peine, de ses effets sur l'auteur et sa situation sociale, et de son efficacité préventive
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F147-IV-241%3Afr
 
 Réponse à la question finale :
-Pour deux ans, oui, le sursis complet est possible, puisque l'article 42 vise les peines privatives de liberté « de deux ans au plus », si le pronostic est favorable. Pour trente mois, le sursis complet n'est plus possible ; mais le sursis partiel de l'article 43 l'est, puisqu'il vise les peines d'un à trois ans. La partie à exécuter ne peut alors pas dépasser quinze mois, et chaque partie doit durer au moins six mois.
+Pour deux ans, le sursis complet est possible, puisque l'article 42 vise les peines privatives de liberté « de deux ans au plus ». Il n'est pas automatique : il faut un pronostic favorable, et le juge tient compte des antécédents et de la réparation du dommage. Hugo n'a jamais été condamné et il a réparé le dommage : si le pronostic est favorable, le juge lui accorde en règle générale le sursis. Pour trente mois, le sursis complet n'est plus possible. Le sursis partiel de l'article 43 est alors envisageable, puisqu'il vise les peines d'un à trois ans. Il n'est pas automatique non plus : le juge décide, en tenant compte de la faute de Hugo. S'il l'accorde, la partie à exécuter ne peut pas dépasser quinze mois, et chaque partie doit durer au moins six mois.
 
 Chapitres :
 0:00 Le cas de départ

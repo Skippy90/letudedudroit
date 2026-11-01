@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Coupable de n'avoir rien fait | Droit pénal suisse
 
-## Description (2734 caractères sur 5 000)
+## Description (3541 caractères sur 5 000)
 
 ```text
 Coupable de n'avoir rien fait — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 11 CP, al. 1 : Un crime ou un délit peut aussi être commis par un comportement passif contraire à une obligation d'agir ; pour répondre d'une omission comme d'un acte, il faut une position de garant
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
 • Art. 11 CP, al. 2 : Notamment quatre sources de l'obligation (« notamment en vertu ») : la loi, un contrat, une communauté de risques librement consentie, la création d'un risque
@@ -24,13 +24,11 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_128
 • Art. 302 CC, al. 1 : Le Code civil impose aux parents de protéger le développement de leur enfant
   https://www.fedlex.admin.ch/eli/cc/24/233_245_233/fr#art_302
-
-Jurisprudence du Tribunal fédéral :
-• ATF 134 IV 255
+• ATF 134 IV 255, consid. 4.2.1 : N'importe quelle obligation ne suffit pas, il faut une position de garant ; devoir de protection et devoir de surveillance ; le fonctionnaire qui a fait installer une palplanche dans le Rhône devait agir, notamment la faire retirer
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F134-IV-255%3Afr
-• ATF 117 IV 130
+• ATF 117 IV 130, consid. 2a : Causalité de l'omission : le juge se demande, par hypothèse, si l'acte omis aurait évité le résultat
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F117-IV-130%3Afr
-• ATF 141 IV 249
+• ATF 141 IV 249, consid. 1.4.1 : Pour un contrat, c'est la prise de poste effective qui compte, pas la seule signature
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F141-IV-249%3Afr
 
 Réponse à la question finale :
