@@ -19,7 +19,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 5 | Dans la vidéo 1, on a vu que la typicité a deux faces. Le geste, et ce qui se passe dans la tête de l'auteur. | Le bâtiment ; l'étage « Typicité » en ambre ; « vidéo 1 » en petit |
+| 5 | Dans la vidéo numéro 1, on a vu que la typicité a deux faces. Le geste, et ce qui se passe dans la tête de l'auteur. | Le bâtiment ; l'étage « Typicité » en ambre ; « vidéo 1 » en petit |
 | 6 | Cette face intérieure se règle à l'article 12 du Code pénal. Il distingue deux grandes attitudes : l'intention et la négligence. | Bloc « Art. 12 CP » ; deux colonnes « Intention » et « Négligence » |
 | 7 | Et la différence est énorme. Sauf exception prévue par la loi, seul l'auteur qui agit intentionnellement est punissable. | Le mot « Intention » en ambre |
 | 8 | Voyons cinq versions de l'histoire de Léo. Du geste le plus voulu au plus involontaire. | Une liste de cinq lignes se prépare |
@@ -38,7 +38,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 13 | Deuxième version. Léo ne vise personne. Il veut juste impressionner ses amis avec un tir puissant. | Rembobinage ; la bulle « Impressionner » |
-| 14 | Mais il voit le groupe juste à côté. Il se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
+| 14 | Mais il voit le groupe juste à côté, et se dit : si je touche quelqu'un, tant pis. | La bulle devient « Tant pis » |
 | 15 | Il ne souhaite pas la blessure. Mais il l'accepte, pour le cas où elle arriverait. | Le mot « Accepter » en ambre |
 | 16 | L'article 12 le prévoit dans une seconde phrase. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement. | Bloc « Art. 12 CP » ; « Possible + accepté » |
 | 17 | C'est le dol éventuel. Le Tribunal fédéral le résume ainsi : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode. | Le mot « Dol éventuel » |
@@ -55,7 +55,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | 23 | Quatrième version. Léo ne regarde même pas autour de lui. Il ne voit pas le groupe derrière la haie. | Rembobinage ; Léo seul, une haie entre lui et le groupe |
 | 24 | Il ne s'est pas rendu compte du risque. Mais il aurait dû vérifier avant de frapper si fort. | Le mot « Aurait dû vérifier » |
 | 25 | L'article 12 appelle cela une imprévoyance coupable. C'est le fait de ne pas prendre les précautions que les circonstances commandaient. | Bloc « Art. 12 CP » ; le mot « Négligence » |
-| 26 | Le texte couvre d'ailleurs nos deux versions. Il vise celui qui ne se rend pas compte des conséquences de son acte. Et celui qui n'en tient pas compte. | Deux lignes : « Ne pas se rendre compte », « Ne pas en tenir compte » |
+| 26 | Le texte couvre d'ailleurs nos deux versions. Il y a celui qui ne se rend pas compte des conséquences de son acte. Et celui qui n'en tient pas compte. | Deux lignes : « Ne pas se rendre compte », « Ne pas en tenir compte » |
 | 27 | Cinquième version. Léo a regardé, le parc était vide. Mais le ballon rebondit sur un poteau et file vers Adam, qui arrivait en courant. | Rembobinage ; le ballon dévie |
 | 28 | Léo a pris les précautions raisonnables. Pas d'intention, pas d'imprévoyance coupable. C'est un accident, pas une infraction. | Les deux cases « Intention » et « Négligence » grises |
 
@@ -74,7 +74,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 33 | Attention au piège classique. On croit souvent qu'une négligence est toujours punie, simplement moins sévèrement. C'est faux. | La phrase « La négligence est toujours punie » apparaît, puis se barre |
 | 34 | La négligence n'est punissable que si la loi le prévoit expressément pour l'infraction en cause. | Bloc « Art. 12 CP » ; le mot « Expressément » en ambre |
-| 35 | Pour les blessures, la loi le prévoit. L'article 125 punit les lésions corporelles par négligence. En principe sur plainte, et d'office si la lésion est grave. | Bloc « Art. 125 CP » ; une case « Blessure par négligence » cochée |
+| 35 | Pour les blessures, la loi le prévoit. L'article 125 du Code pénal punit les lésions corporelles par négligence. En principe sur plainte, et d'office si la lésion est grave. | Bloc « Art. 125 CP » ; une case « Blessure par négligence » cochée |
 | 36 | Mais imaginons que le ballon de Léo casse la vitre d'une voiture, par négligence. Le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle. | Rembobinage ; bloc « Art. 144 CP » ; une case « Vitre par négligence » grise |
 | 37 | Pas de dommage à la propriété par négligence dans le Code pénal. Léo n'aurait pas commis d'infraction. Le propriétaire pourrait seulement lui réclamer réparation. | Le mot « Pas d'infraction » |
 

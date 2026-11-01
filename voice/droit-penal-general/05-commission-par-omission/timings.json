@@ -1,762 +1,5707 @@
 {
- "voix": "Peter - Clear, Engaging and Professional (bibliothèque ElevenLabs, fr-CH)",
- "duree": 336.267,
+ "voix": "Enregistrement humain",
+ "source": "humaine",
+ "duree": 385.829,
  "lignes": [
   {
    "ligne": 1,
-   "debut": 0.0,
-   "fin": 7.43,
+   "debut": 0.12,
+   "fin": 7.26,
    "phrases": [
     {
      "texte": "Un dimanche d'été, à la piscine d'Yverdon.",
-     "debut": 0.0,
-     "fin": 2.589
+     "debut": 0.12,
+     "fin": 2.46,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 0.12,
+       "fin": 0.2
+      },
+      {
+       "mot": "dimanche",
+       "debut": 0.24,
+       "fin": 0.54
+      },
+      {
+       "mot": "d",
+       "debut": 0.56,
+       "fin": 0.96
+      },
+      {
+       "mot": "été",
+       "debut": 0.56,
+       "fin": 0.96
+      },
+      {
+       "mot": "à",
+       "debut": 1.44,
+       "fin": 1.48
+      },
+      {
+       "mot": "la",
+       "debut": 1.52,
+       "fin": 1.58
+      },
+      {
+       "mot": "piscine",
+       "debut": 1.64,
+       "fin": 1.92
+      },
+      {
+       "mot": "du",
+       "debut": 1.96,
+       "fin": 2.06
+      },
+      {
+       "mot": "verdun",
+       "debut": 2.18,
+       "fin": 2.46
+      }
+     ]
     },
     {
      "texte": "Clara est la surveillante de baignade.",
-     "debut": 2.798,
-     "fin": 4.644
+     "debut": 3.05,
+     "fin": 4.79,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 3.05,
+       "fin": 3.39
+      },
+      {
+       "mot": "est",
+       "debut": 3.65,
+       "fin": 3.71
+      },
+      {
+       "mot": "la",
+       "debut": 3.75,
+       "fin": 3.85
+      },
+      {
+       "mot": "surveillante",
+       "debut": 3.87,
+       "fin": 4.27
+      },
+      {
+       "mot": "de",
+       "debut": 4.29,
+       "fin": 4.37
+      },
+      {
+       "mot": "baignade",
+       "debut": 4.39,
+       "fin": 4.79
+      }
+     ]
     },
     {
      "texte": "C'est son travail, et elle est payée pour cela.",
-     "debut": 4.853,
-     "fin": 7.43
+     "debut": 5.28,
+     "fin": 7.26,
+     "mots": [
+      {
+       "mot": "c",
+       "debut": 5.28,
+       "fin": 5.36
+      },
+      {
+       "mot": "est",
+       "debut": 5.28,
+       "fin": 5.36
+      },
+      {
+       "mot": "son",
+       "debut": 5.4,
+       "fin": 5.5
+      },
+      {
+       "mot": "travail",
+       "debut": 5.54,
+       "fin": 6.02
+      },
+      {
+       "mot": "et",
+       "debut": 6.28,
+       "fin": 6.34
+      },
+      {
+       "mot": "elle",
+       "debut": 6.36,
+       "fin": 6.42
+      },
+      {
+       "mot": "est",
+       "debut": 6.44,
+       "fin": 6.52
+      },
+      {
+       "mot": "payée",
+       "debut": 6.56,
+       "fin": 6.76
+      },
+      {
+       "mot": "pour",
+       "debut": 6.82,
+       "fin": 6.94
+      },
+      {
+       "mot": "cela",
+       "debut": 6.98,
+       "fin": 7.26
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 2,
-   "debut": 7.88,
-   "fin": 15.218,
+   "debut": 8.34,
+   "fin": 15.56,
    "phrases": [
     {
      "texte": "Au bord du grand bassin, elle regarde son téléphone.",
-     "debut": 7.88,
-     "fin": 10.504
+     "debut": 8.34,
+     "fin": 11.2,
+     "mots": [
+      {
+       "mot": "au",
+       "debut": 8.34,
+       "fin": 8.4
+      },
+      {
+       "mot": "bord",
+       "debut": 8.44,
+       "fin": 8.58
+      },
+      {
+       "mot": "du",
+       "debut": 8.62,
+       "fin": 8.7
+      },
+      {
+       "mot": "grand",
+       "debut": 8.72,
+       "fin": 8.88
+      },
+      {
+       "mot": "bassin",
+       "debut": 8.92,
+       "fin": 9.24
+      },
+      {
+       "mot": "elle",
+       "debut": 9.96,
+       "fin": 10.08
+      },
+      {
+       "mot": "regarde",
+       "debut": 10.14,
+       "fin": 10.5
+      },
+      {
+       "mot": "son",
+       "debut": 10.56,
+       "fin": 10.68
+      },
+      {
+       "mot": "téléphone",
+       "debut": 10.72,
+       "fin": 11.2
+      }
+     ]
     },
     {
      "texte": "Elle ne voit pas le petit Timéo, huit ans, qui se débat dans l'eau.",
-     "debut": 10.748,
-     "fin": 15.218
+     "debut": 12.2,
+     "fin": 15.56,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 12.2,
+       "fin": 12.28
+      },
+      {
+       "mot": "ne",
+       "debut": 12.3,
+       "fin": 12.38
+      },
+      {
+       "mot": "voit",
+       "debut": 12.4,
+       "fin": 12.58
+      },
+      {
+       "mot": "pas",
+       "debut": 12.62,
+       "fin": 12.74
+      },
+      {
+       "mot": "le",
+       "debut": 12.78,
+       "fin": 12.86
+      },
+      {
+       "mot": "petit",
+       "debut": 12.9,
+       "fin": 13.1
+      },
+      {
+       "mot": "timéo",
+       "debut": 13.16,
+       "fin": 13.56
+      },
+      {
+       "mot": "huit",
+       "debut": 13.9,
+       "fin": 14.08
+      },
+      {
+       "mot": "ans",
+       "debut": 14.1,
+       "fin": 14.22
+      },
+      {
+       "mot": "qui",
+       "debut": 14.76,
+       "fin": 14.86
+      },
+      {
+       "mot": "se",
+       "debut": 14.9,
+       "fin": 15.0
+      },
+      {
+       "mot": "débat",
+       "debut": 15.04,
+       "fin": 15.24
+      },
+      {
+       "mot": "dans",
+       "debut": 15.26,
+       "fin": 15.36
+      },
+      {
+       "mot": "l",
+       "debut": 15.38,
+       "fin": 15.56
+      },
+      {
+       "mot": "eau",
+       "debut": 15.38,
+       "fin": 15.56
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 3,
-   "debut": 15.668,
-   "fin": 20.544,
+   "debut": 16.8,
+   "fin": 21.46,
    "phrases": [
     {
      "texte": "À deux mètres, un autre baigneur, Maël, voit tout.",
-     "debut": 15.668,
-     "fin": 18.756
+     "debut": 16.8,
+     "fin": 19.56,
+     "mots": [
+      {
+       "mot": "à",
+       "debut": 16.8,
+       "fin": 16.84
+      },
+      {
+       "mot": "deux",
+       "debut": 16.92,
+       "fin": 17.02
+      },
+      {
+       "mot": "mètres",
+       "debut": 17.06,
+       "fin": 17.34
+      },
+      {
+       "mot": "un",
+       "debut": 17.78,
+       "fin": 17.84
+      },
+      {
+       "mot": "autre",
+       "debut": 17.88,
+       "fin": 18.12
+      },
+      {
+       "mot": "baigneur",
+       "debut": 18.16,
+       "fin": 18.48
+      },
+      {
+       "mot": "maël",
+       "debut": 18.76,
+       "fin": 19.0
+      },
+      {
+       "mot": "voit",
+       "debut": 19.24,
+       "fin": 19.36
+      },
+      {
+       "mot": "tout",
+       "debut": 19.4,
+       "fin": 19.56
+      }
+     ]
     },
     {
      "texte": "Lui non plus ne fait rien.",
-     "debut": 19.197,
-     "fin": 20.544
+     "debut": 20.6,
+     "fin": 21.46,
+     "mots": [
+      {
+       "mot": "lui",
+       "debut": 20.6,
+       "fin": 20.68
+      },
+      {
+       "mot": "non",
+       "debut": 20.7,
+       "fin": 20.82
+      },
+      {
+       "mot": "plus",
+       "debut": 20.86,
+       "fin": 21.0
+      },
+      {
+       "mot": "ne",
+       "debut": 21.02,
+       "fin": 21.1
+      },
+      {
+       "mot": "fait",
+       "debut": 21.14,
+       "fin": 21.22
+      },
+      {
+       "mot": "rien",
+       "debut": 21.26,
+       "fin": 21.46
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 4,
-   "debut": 20.994,
-   "fin": 27.821,
+   "debut": 22.72,
+   "fin": 29.42,
    "phrases": [
     {
      "texte": "Timéo est sorti de l'eau à temps par un autre enfant.",
-     "debut": 20.994,
-     "fin": 23.571
+     "debut": 22.72,
+     "fin": 25.44,
+     "mots": [
+      {
+       "mot": "timéo",
+       "debut": 22.72,
+       "fin": 23.08
+      },
+      {
+       "mot": "est",
+       "debut": 23.34,
+       "fin": 23.42
+      },
+      {
+       "mot": "sorti",
+       "debut": 23.48,
+       "fin": 23.76
+      },
+      {
+       "mot": "de",
+       "debut": 23.8,
+       "fin": 23.88
+      },
+      {
+       "mot": "l",
+       "debut": 23.9,
+       "fin": 24.14
+      },
+      {
+       "mot": "eau",
+       "debut": 23.9,
+       "fin": 24.14
+      },
+      {
+       "mot": "à",
+       "debut": 24.2,
+       "fin": 24.24
+      },
+      {
+       "mot": "temps",
+       "debut": 24.34,
+       "fin": 24.68
+      },
+      {
+       "mot": "par",
+       "debut": 24.74,
+       "fin": 24.84
+      },
+      {
+       "mot": "un",
+       "debut": 24.88,
+       "fin": 24.96
+      },
+      {
+       "mot": "autre",
+       "debut": 24.98,
+       "fin": 25.14
+      },
+      {
+       "mot": "enfant",
+       "debut": 25.16,
+       "fin": 25.44
+      }
+     ]
     },
     {
      "texte": "Mais il a avalé beaucoup d'eau et doit passer deux jours à l'hôpital.",
-     "debut": 24.175,
-     "fin": 27.821
+     "debut": 26.22,
+     "fin": 29.42,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 26.22,
+       "fin": 26.28
+      },
+      {
+       "mot": "il",
+       "debut": 26.32,
+       "fin": 26.38
+      },
+      {
+       "mot": "a",
+       "debut": 26.42,
+       "fin": 26.46
+      },
+      {
+       "mot": "avalé",
+       "debut": 26.5,
+       "fin": 26.78
+      },
+      {
+       "mot": "beaucoup",
+       "debut": 26.9,
+       "fin": 27.14
+      },
+      {
+       "mot": "d",
+       "debut": 27.2,
+       "fin": 27.32
+      },
+      {
+       "mot": "eau",
+       "debut": 27.2,
+       "fin": 27.32
+      },
+      {
+       "mot": "et",
+       "debut": 27.66,
+       "fin": 27.72
+      },
+      {
+       "mot": "doit",
+       "debut": 27.74,
+       "fin": 27.88
+      },
+      {
+       "mot": "passer",
+       "debut": 27.92,
+       "fin": 28.28
+      },
+      {
+       "mot": "deux",
+       "debut": 28.34,
+       "fin": 28.44
+      },
+      {
+       "mot": "jours",
+       "debut": 28.48,
+       "fin": 28.8
+      },
+      {
+       "mot": "à",
+       "debut": 28.86,
+       "fin": 28.9
+      },
+      {
+       "mot": "l",
+       "debut": 28.92,
+       "fin": 29.42
+      },
+      {
+       "mot": "hôpital",
+       "debut": 28.92,
+       "fin": 29.42
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 5,
-   "debut": 28.271,
-   "fin": 36.026,
+   "debut": 30.46,
+   "fin": 38.8,
    "phrases": [
     {
      "texte": "Clara et Maël n'ont rien fait.",
-     "debut": 28.271,
-     "fin": 30.105
+     "debut": 30.46,
+     "fin": 32.06,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 30.46,
+       "fin": 30.78
+      },
+      {
+       "mot": "et",
+       "debut": 31.04,
+       "fin": 31.1
+      },
+      {
+       "mot": "maël",
+       "debut": 31.16,
+       "fin": 31.42
+      },
+      {
+       "mot": "n",
+       "debut": 31.44,
+       "fin": 31.56
+      },
+      {
+       "mot": "ont",
+       "debut": 31.44,
+       "fin": 31.56
+      },
+      {
+       "mot": "rien",
+       "debut": 31.6,
+       "fin": 31.8
+      },
+      {
+       "mot": "fait",
+       "debut": 31.86,
+       "fin": 32.06
+      }
+     ]
     },
     {
      "texte": "Aucun geste, aucune poussée, rien.",
-     "debut": 30.489,
-     "fin": 33.066
+     "debut": 33.0,
+     "fin": 35.54,
+     "mots": [
+      {
+       "mot": "aucun",
+       "debut": 33.0,
+       "fin": 33.24
+      },
+      {
+       "mot": "geste",
+       "debut": 33.32,
+       "fin": 33.74
+      },
+      {
+       "mot": "aucune",
+       "debut": 34.16,
+       "fin": 34.46
+      },
+      {
+       "mot": "poussée",
+       "debut": 34.5,
+       "fin": 34.84
+      },
+      {
+       "mot": "rien",
+       "debut": 35.34,
+       "fin": 35.54
+      }
+     ]
     },
     {
      "texte": "Peut-on être coupable sans avoir rien fait ?",
-     "debut": 33.507,
-     "fin": 36.026
+     "debut": 36.68,
+     "fin": 38.8,
+     "mots": [
+      {
+       "mot": "peut",
+       "debut": 36.68,
+       "fin": 36.9
+      },
+      {
+       "mot": "on",
+       "debut": 36.68,
+       "fin": 36.9
+      },
+      {
+       "mot": "être",
+       "debut": 36.94,
+       "fin": 37.06
+      },
+      {
+       "mot": "coupable",
+       "debut": 37.1,
+       "fin": 37.56
+      },
+      {
+       "mot": "sans",
+       "debut": 38.06,
+       "fin": 38.22
+      },
+      {
+       "mot": "avoir",
+       "debut": 38.26,
+       "fin": 38.42
+      },
+      {
+       "mot": "rien",
+       "debut": 38.46,
+       "fin": 38.62
+      },
+      {
+       "mot": "fait",
+       "debut": 38.68,
+       "fin": 38.8
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 6,
-   "debut": 36.476,
-   "fin": 41.677,
+   "debut": 40.06,
+   "fin": 45.08,
    "phrases": [
     {
      "texte": "Jusqu'ici, nos cas parlaient d'actes.",
-     "debut": 36.476,
-     "fin": 38.694
+     "debut": 40.06,
+     "fin": 41.82,
+     "mots": [
+      {
+       "mot": "jusqu",
+       "debut": 40.06,
+       "fin": 40.58
+      },
+      {
+       "mot": "ici",
+       "debut": 40.06,
+       "fin": 40.58
+      },
+      {
+       "mot": "nos",
+       "debut": 40.86,
+       "fin": 40.96
+      },
+      {
+       "mot": "cas",
+       "debut": 41.0,
+       "fin": 41.14
+      },
+      {
+       "mot": "parlaient",
+       "debut": 41.2,
+       "fin": 41.44
+      },
+      {
+       "mot": "d",
+       "debut": 41.48,
+       "fin": 41.82
+      },
+      {
+       "mot": "acte",
+       "debut": 41.48,
+       "fin": 41.82
+      }
+     ]
     },
     {
      "texte": "Marc poussait Julien, Léo frappait un ballon.",
-     "debut": 39.135,
-     "fin": 41.677
+     "debut": 42.44,
+     "fin": 45.08,
+     "mots": [
+      {
+       "mot": "marc",
+       "debut": 42.44,
+       "fin": 42.7
+      },
+      {
+       "mot": "poussait",
+       "debut": 42.74,
+       "fin": 43.04
+      },
+      {
+       "mot": "julien",
+       "debut": 43.08,
+       "fin": 43.46
+      },
+      {
+       "mot": "léo",
+       "debut": 43.8,
+       "fin": 44.0
+      },
+      {
+       "mot": "frappait",
+       "debut": 44.04,
+       "fin": 44.44
+      },
+      {
+       "mot": "un",
+       "debut": 44.7,
+       "fin": 44.78
+      },
+      {
+       "mot": "ballon",
+       "debut": 44.82,
+       "fin": 45.08
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 7,
-   "debut": 42.127,
-   "fin": 54.155,
+   "debut": 45.92,
+   "fin": 58.2,
    "phrases": [
     {
      "texte": "Mais le droit pénal connaît aussi l'omission.",
-     "debut": 42.127,
-     "fin": 44.345
+     "debut": 45.92,
+     "fin": 47.92,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 45.92,
+       "fin": 46.0
+      },
+      {
+       "mot": "le",
+       "debut": 46.04,
+       "fin": 46.1
+      },
+      {
+       "mot": "droit",
+       "debut": 46.14,
+       "fin": 46.32
+      },
+      {
+       "mot": "pénal",
+       "debut": 46.36,
+       "fin": 46.68
+      },
+      {
+       "mot": "connaît",
+       "debut": 46.9,
+       "fin": 47.12
+      },
+      {
+       "mot": "aussi",
+       "debut": 47.16,
+       "fin": 47.38
+      },
+      {
+       "mot": "l",
+       "debut": 47.4,
+       "fin": 47.92
+      },
+      {
+       "mot": "omission",
+       "debut": 47.4,
+       "fin": 47.92
+      }
+     ]
     },
     {
      "texte": "C'est le fait de ne pas agir, alors qu'on aurait dû.",
-     "debut": 44.948,
-     "fin": 47.886
+     "debut": 48.7,
+     "fin": 51.22,
+     "mots": [
+      {
+       "mot": "c",
+       "debut": 48.7,
+       "fin": 48.78
+      },
+      {
+       "mot": "est",
+       "debut": 48.7,
+       "fin": 48.78
+      },
+      {
+       "mot": "le",
+       "debut": 48.82,
+       "fin": 48.92
+      },
+      {
+       "mot": "fait",
+       "debut": 48.98,
+       "fin": 49.08
+      },
+      {
+       "mot": "de",
+       "debut": 49.119,
+       "fin": 49.18
+      },
+      {
+       "mot": "ne",
+       "debut": 49.22,
+       "fin": 49.3
+      },
+      {
+       "mot": "pas",
+       "debut": 49.42,
+       "fin": 49.52
+      },
+      {
+       "mot": "agir",
+       "debut": 49.6,
+       "fin": 49.92
+      },
+      {
+       "mot": "alors",
+       "debut": 50.339,
+       "fin": 50.58
+      },
+      {
+       "mot": "qu",
+       "debut": 50.6,
+       "fin": 50.76
+      },
+      {
+       "mot": "on",
+       "debut": 50.6,
+       "fin": 50.76
+      },
+      {
+       "mot": "aurait",
+       "debut": 50.8,
+       "fin": 51.02
+      },
+      {
+       "mot": "dû",
+       "debut": 51.06,
+       "fin": 51.22
+      }
+     ]
     },
     {
      "texte": "Une piscine, une crèche, une montagne : bien des drames viennent d'un geste qui n'a pas été fait.",
-     "debut": 48.396,
-     "fin": 54.155
+     "debut": 52.36,
+     "fin": 58.2,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 52.36,
+       "fin": 52.46
+      },
+      {
+       "mot": "piscine",
+       "debut": 52.5,
+       "fin": 52.94
+      },
+      {
+       "mot": "une",
+       "debut": 53.38,
+       "fin": 53.48
+      },
+      {
+       "mot": "crèche",
+       "debut": 53.54,
+       "fin": 53.94
+      },
+      {
+       "mot": "une",
+       "debut": 54.36,
+       "fin": 54.46
+      },
+      {
+       "mot": "montagne",
+       "debut": 54.5,
+       "fin": 54.9
+      },
+      {
+       "mot": "bien",
+       "debut": 55.72,
+       "fin": 55.86
+      },
+      {
+       "mot": "des",
+       "debut": 55.9,
+       "fin": 56.0
+      },
+      {
+       "mot": "drames",
+       "debut": 56.04,
+       "fin": 56.48
+      },
+      {
+       "mot": "viennent",
+       "debut": 56.54,
+       "fin": 56.7
+      },
+      {
+       "mot": "d",
+       "debut": 56.72,
+       "fin": 56.86
+      },
+      {
+       "mot": "un",
+       "debut": 56.72,
+       "fin": 56.86
+      },
+      {
+       "mot": "geste",
+       "debut": 56.9,
+       "fin": 57.26
+      },
+      {
+       "mot": "qui",
+       "debut": 57.3,
+       "fin": 57.38
+      },
+      {
+       "mot": "n",
+       "debut": 57.4,
+       "fin": 57.5
+      },
+      {
+       "mot": "a",
+       "debut": 57.4,
+       "fin": 57.5
+      },
+      {
+       "mot": "pas",
+       "debut": 57.58,
+       "fin": 57.68
+      },
+      {
+       "mot": "été",
+       "debut": 57.72,
+       "fin": 57.94
+      },
+      {
+       "mot": "fait",
+       "debut": 58.0,
+       "fin": 58.2
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 8,
-   "debut": 54.605,
-   "fin": 63.94,
+   "debut": 59.64,
+   "fin": 69.54,
    "phrases": [
     {
      "texte": "L'article onze du Code pénal le dit clairement.",
-     "debut": 54.605,
-     "fin": 57.333
+     "debut": 59.64,
+     "fin": 61.94,
+     "mots": [
+      {
+       "mot": "l",
+       "debut": 59.64,
+       "fin": 59.98
+      },
+      {
+       "mot": "article",
+       "debut": 59.64,
+       "fin": 59.98
+      },
+      {
+       "mot": "onze",
+       "debut": 60.22,
+       "fin": 60.44
+      },
+      {
+       "mot": "du",
+       "debut": 60.46,
+       "fin": 60.54
+      },
+      {
+       "mot": "code",
+       "debut": 60.58,
+       "fin": 60.72
+      },
+      {
+       "mot": "pénal",
+       "debut": 60.76,
+       "fin": 61.14
+      },
+      {
+       "mot": "le",
+       "debut": 61.38,
+       "fin": 61.46
+      },
+      {
+       "mot": "dit",
+       "debut": 61.48,
+       "fin": 61.6
+      },
+      {
+       "mot": "clairement",
+       "debut": 61.64,
+       "fin": 61.94
+      }
+     ]
     },
     {
-     "texte": "Un crime ou un délit peut aussi être commis par un comportement passif, contraire à une obligation d'agir.",
-     "debut": 57.844,
-     "fin": 63.939
+     "texte": "Un crime ou un délit peut être aussi commis par un comportement passif, contraire à une obligation d'agir.",
+     "debut": 63.04,
+     "fin": 69.54,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 63.04,
+       "fin": 63.1
+      },
+      {
+       "mot": "crime",
+       "debut": 63.16,
+       "fin": 63.44
+      },
+      {
+       "mot": "ou",
+       "debut": 63.68,
+       "fin": 63.76
+      },
+      {
+       "mot": "un",
+       "debut": 63.8,
+       "fin": 63.88
+      },
+      {
+       "mot": "délit",
+       "debut": 63.92,
+       "fin": 64.22
+      },
+      {
+       "mot": "peut",
+       "debut": 64.48,
+       "fin": 64.56
+      },
+      {
+       "mot": "être",
+       "debut": 64.6,
+       "fin": 64.86
+      },
+      {
+       "mot": "aussi",
+       "debut": 64.9,
+       "fin": 65.16
+      },
+      {
+       "mot": "commis",
+       "debut": 65.2,
+       "fin": 65.46
+      },
+      {
+       "mot": "par",
+       "debut": 65.7,
+       "fin": 65.8
+      },
+      {
+       "mot": "un",
+       "debut": 65.84,
+       "fin": 65.94
+      },
+      {
+       "mot": "comportement",
+       "debut": 65.98,
+       "fin": 66.5
+      },
+      {
+       "mot": "passif",
+       "debut": 66.66,
+       "fin": 67.06
+      },
+      {
+       "mot": "contraire",
+       "debut": 67.64,
+       "fin": 68.12
+      },
+      {
+       "mot": "à",
+       "debut": 68.3,
+       "fin": 68.34
+      },
+      {
+       "mot": "une",
+       "debut": 68.38,
+       "fin": 68.46
+      },
+      {
+       "mot": "obligation",
+       "debut": 68.5,
+       "fin": 69.02
+      },
+      {
+       "mot": "d",
+       "debut": 69.14,
+       "fin": 69.54
+      },
+      {
+       "mot": "agir",
+       "debut": 69.14,
+       "fin": 69.54
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 9,
-   "debut": 64.39,
-   "fin": 70.148,
+   "debut": 70.58,
+   "fin": 77.3,
    "phrases": [
     {
      "texte": "Toute la question devient alors : qui avait l'obligation d'agir ?",
-     "debut": 64.39,
-     "fin": 68.001
+     "debut": 70.58,
+     "fin": 74.04,
+     "mots": [
+      {
+       "mot": "toute",
+       "debut": 70.58,
+       "fin": 70.7
+      },
+      {
+       "mot": "la",
+       "debut": 70.72,
+       "fin": 70.8
+      },
+      {
+       "mot": "question",
+       "debut": 70.84,
+       "fin": 71.14
+      },
+      {
+       "mot": "devient",
+       "debut": 71.18,
+       "fin": 71.48
+      },
+      {
+       "mot": "alors",
+       "debut": 71.54,
+       "fin": 71.76
+      },
+      {
+       "mot": "qui",
+       "debut": 72.48,
+       "fin": 72.6
+      },
+      {
+       "mot": "avait",
+       "debut": 72.96,
+       "fin": 73.12
+      },
+      {
+       "mot": "l",
+       "debut": 73.16,
+       "fin": 73.68
+      },
+      {
+       "mot": "obligation",
+       "debut": 73.16,
+       "fin": 73.68
+      },
+      {
+       "mot": "d",
+       "debut": 73.72,
+       "fin": 74.04
+      },
+      {
+       "mot": "agir",
+       "debut": 73.72,
+       "fin": 74.04
+      }
+     ]
     },
     {
      "texte": "Clara ?",
-     "debut": 68.094,
-     "fin": 68.697
+     "debut": 74.96,
+     "fin": 75.3,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 74.96,
+       "fin": 75.3
+      }
+     ]
     },
     {
      "texte": "Maël ?",
-     "debut": 68.871,
-     "fin": 69.336
+     "debut": 75.9,
+     "fin": 76.22,
+     "mots": [
+      {
+       "mot": "maël",
+       "debut": 75.9,
+       "fin": 76.22
+      }
+     ]
     },
     {
      "texte": "Les deux ?",
-     "debut": 69.464,
-     "fin": 70.149
+     "debut": 77.06,
+     "fin": 77.3,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 77.06,
+       "fin": 77.16
+      },
+      {
+       "mot": "deux",
+       "debut": 77.2,
+       "fin": 77.3
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 10,
-   "debut": 70.598,
-   "fin": 77.982,
+   "debut": 78.74,
+   "fin": 87.38,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral est net.",
-     "debut": 70.598,
-     "fin": 72.258
+     "debut": 78.74,
+     "fin": 80.4,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 78.74,
+       "fin": 78.8
+      },
+      {
+       "mot": "tribunal",
+       "debut": 78.86,
+       "fin": 79.26
+      },
+      {
+       "mot": "fédéral",
+       "debut": 79.34,
+       "fin": 79.8
+      },
+      {
+       "mot": "est",
+       "debut": 80.0,
+       "fin": 80.08
+      },
+      {
+       "mot": "net",
+       "debut": 80.14,
+       "fin": 80.4
+      }
+     ]
     },
     {
      "texte": "N'importe quelle obligation ne suffit pas.",
-     "debut": 72.862,
-     "fin": 74.72
+     "debut": 81.32,
+     "fin": 83.08,
+     "mots": [
+      {
+       "mot": "n",
+       "debut": 81.32,
+       "fin": 81.64
+      },
+      {
+       "mot": "importe",
+       "debut": 81.32,
+       "fin": 81.64
+      },
+      {
+       "mot": "quelle",
+       "debut": 81.68,
+       "fin": 81.8
+      },
+      {
+       "mot": "obligation",
+       "debut": 81.84,
+       "fin": 82.34
+      },
+      {
+       "mot": "ne",
+       "debut": 82.44,
+       "fin": 82.5
+      },
+      {
+       "mot": "suffit",
+       "debut": 82.56,
+       "fin": 82.86
+      },
+      {
+       "mot": "pas",
+       "debut": 82.92,
+       "fin": 83.08
+      }
+     ]
     },
     {
      "texte": "Il faut que la personne ait été dans une position de garant.",
-     "debut": 74.998,
-     "fin": 77.982
+     "debut": 83.92,
+     "fin": 87.38,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 83.92,
+       "fin": 84.02
+      },
+      {
+       "mot": "faut",
+       "debut": 84.06,
+       "fin": 84.18
+      },
+      {
+       "mot": "que",
+       "debut": 84.2,
+       "fin": 84.26
+      },
+      {
+       "mot": "la",
+       "debut": 84.32,
+       "fin": 84.42
+      },
+      {
+       "mot": "personne",
+       "debut": 84.48,
+       "fin": 84.92
+      },
+      {
+       "mot": "ait",
+       "debut": 85.12,
+       "fin": 85.22
+      },
+      {
+       "mot": "été",
+       "debut": 85.28,
+       "fin": 85.74
+      },
+      {
+       "mot": "dans",
+       "debut": 85.78,
+       "fin": 85.9
+      },
+      {
+       "mot": "une",
+       "debut": 85.94,
+       "fin": 86.08
+      },
+      {
+       "mot": "position",
+       "debut": 86.12,
+       "fin": 86.6
+      },
+      {
+       "mot": "de",
+       "debut": 86.88,
+       "fin": 86.96
+      },
+      {
+       "mot": "garant",
+       "debut": 87.0,
+       "fin": 87.38
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 11,
-   "debut": 78.432,
-   "fin": 86.792,
+   "debut": 88.82,
+   "fin": 97.62,
    "phrases": [
     {
      "texte": "Un garant, c'est quelqu'un que sa situation oblige à protéger.",
-     "debut": 78.432,
-     "fin": 82.321
+     "debut": 88.82,
+     "fin": 92.58,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 88.82,
+       "fin": 88.88
+      },
+      {
+       "mot": "garant",
+       "debut": 88.92,
+       "fin": 89.18
+      },
+      {
+       "mot": "c",
+       "debut": 89.64,
+       "fin": 89.76
+      },
+      {
+       "mot": "est",
+       "debut": 89.64,
+       "fin": 89.76
+      },
+      {
+       "mot": "quelqu",
+       "debut": 89.8,
+       "fin": 90.14
+      },
+      {
+       "mot": "un",
+       "debut": 89.8,
+       "fin": 90.14
+      },
+      {
+       "mot": "que",
+       "debut": 90.38,
+       "fin": 90.48
+      },
+      {
+       "mot": "sa",
+       "debut": 90.52,
+       "fin": 90.64
+      },
+      {
+       "mot": "situation",
+       "debut": 90.7,
+       "fin": 91.26
+      },
+      {
+       "mot": "oblige",
+       "debut": 91.52,
+       "fin": 92.0
+      },
+      {
+       "mot": "à",
+       "debut": 92.06,
+       "fin": 92.1
+      },
+      {
+       "mot": "protéger",
+       "debut": 92.14,
+       "fin": 92.58
+      }
+     ]
     },
     {
      "texte": "Il protège un bien précis, comme la vie ou la santé d'une personne.",
-     "debut": 82.704,
-     "fin": 86.791
+     "debut": 93.72,
+     "fin": 97.62,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 93.72,
+       "fin": 93.8
+      },
+      {
+       "mot": "protège",
+       "debut": 93.84,
+       "fin": 94.28
+      },
+      {
+       "mot": "un",
+       "debut": 94.42,
+       "fin": 94.48
+      },
+      {
+       "mot": "bien",
+       "debut": 94.52,
+       "fin": 94.66
+      },
+      {
+       "mot": "précis",
+       "debut": 94.7,
+       "fin": 95.04
+      },
+      {
+       "mot": "comme",
+       "debut": 95.72,
+       "fin": 95.86
+      },
+      {
+       "mot": "la",
+       "debut": 95.9,
+       "fin": 96.0
+      },
+      {
+       "mot": "vie",
+       "debut": 96.02,
+       "fin": 96.16
+      },
+      {
+       "mot": "ou",
+       "debut": 96.42,
+       "fin": 96.48
+      },
+      {
+       "mot": "la",
+       "debut": 96.52,
+       "fin": 96.62
+      },
+      {
+       "mot": "santé",
+       "debut": 96.64,
+       "fin": 96.96
+      },
+      {
+       "mot": "d",
+       "debut": 97.0,
+       "fin": 97.16
+      },
+      {
+       "mot": "une",
+       "debut": 97.0,
+       "fin": 97.16
+      },
+      {
+       "mot": "personne",
+       "debut": 97.18,
+       "fin": 97.62
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 12,
-   "debut": 87.242,
-   "fin": 92.536,
+   "debut": 98.94,
+   "fin": 105.08,
    "phrases": [
     {
      "texte": "L'article onze cite notamment quatre sources de cette obligation.",
-     "debut": 87.242,
-     "fin": 90.528
+     "debut": 98.94,
+     "fin": 102.58,
+     "mots": [
+      {
+       "mot": "l",
+       "debut": 98.94,
+       "fin": 99.28
+      },
+      {
+       "mot": "article",
+       "debut": 98.94,
+       "fin": 99.28
+      },
+      {
+       "mot": "onze",
+       "debut": 99.52,
+       "fin": 99.82
+      },
+      {
+       "mot": "cite",
+       "debut": 100.14,
+       "fin": 100.3
+      },
+      {
+       "mot": "notamment",
+       "debut": 100.34,
+       "fin": 100.7
+      },
+      {
+       "mot": "quatre",
+       "debut": 100.96,
+       "fin": 101.16
+      },
+      {
+       "mot": "sources",
+       "debut": 101.24,
+       "fin": 101.7
+      },
+      {
+       "mot": "de",
+       "debut": 101.74,
+       "fin": 101.82
+      },
+      {
+       "mot": "cette",
+       "debut": 101.86,
+       "fin": 101.98
+      },
+      {
+       "mot": "obligation",
+       "debut": 102.02,
+       "fin": 102.58
+      }
+     ]
     },
     {
      "texte": "Les voici, une par une.",
-     "debut": 90.911,
-     "fin": 92.536
+     "debut": 103.44,
+     "fin": 105.08,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 103.44,
+       "fin": 103.54
+      },
+      {
+       "mot": "voici",
+       "debut": 103.56,
+       "fin": 103.9
+      },
+      {
+       "mot": "une",
+       "debut": 104.52,
+       "fin": 104.66
+      },
+      {
+       "mot": "par",
+       "debut": 104.7,
+       "fin": 104.84
+      },
+      {
+       "mot": "une",
+       "debut": 104.88,
+       "fin": 105.08
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 13,
-   "debut": 92.986,
-   "fin": 99.58,
+   "debut": 106.52,
+   "fin": 114.019,
    "phrases": [
     {
      "texte": "Première source : la loi.",
-     "debut": 92.986,
-     "fin": 94.553
+     "debut": 106.52,
+     "fin": 108.02,
+     "mots": [
+      {
+       "mot": "première",
+       "debut": 106.52,
+       "fin": 106.82
+      },
+      {
+       "mot": "source",
+       "debut": 106.92,
+       "fin": 107.26
+      },
+      {
+       "mot": "la",
+       "debut": 107.68,
+       "fin": 107.74
+      },
+      {
+       "mot": "loi",
+       "debut": 107.8,
+       "fin": 108.02
+      }
+     ]
     },
     {
      "texte": "Par exemple, le Code civil impose aux parents de protéger le développement de leur enfant.",
-     "debut": 94.936,
-     "fin": 99.58
+     "debut": 108.94,
+     "fin": 114.019,
+     "mots": [
+      {
+       "mot": "par",
+       "debut": 108.94,
+       "fin": 109.04
+      },
+      {
+       "mot": "exemple",
+       "debut": 109.12,
+       "fin": 109.46
+      },
+      {
+       "mot": "le",
+       "debut": 110.22,
+       "fin": 110.3
+      },
+      {
+       "mot": "code",
+       "debut": 110.34,
+       "fin": 110.5
+      },
+      {
+       "mot": "civil",
+       "debut": 110.56,
+       "fin": 110.9
+      },
+      {
+       "mot": "impose",
+       "debut": 111.12,
+       "fin": 111.4
+      },
+      {
+       "mot": "aux",
+       "debut": 111.42,
+       "fin": 111.519
+      },
+      {
+       "mot": "parents",
+       "debut": 111.56,
+       "fin": 112.04
+      },
+      {
+       "mot": "de",
+       "debut": 112.1,
+       "fin": 112.2
+      },
+      {
+       "mot": "protéger",
+       "debut": 112.239,
+       "fin": 112.82
+      },
+      {
+       "mot": "le",
+       "debut": 112.88,
+       "fin": 112.98
+      },
+      {
+       "mot": "développement",
+       "debut": 113.019,
+       "fin": 113.44
+      },
+      {
+       "mot": "de",
+       "debut": 113.459,
+       "fin": 113.519
+      },
+      {
+       "mot": "leur",
+       "debut": 113.54,
+       "fin": 113.64
+      },
+      {
+       "mot": "enfant",
+       "debut": 113.679,
+       "fin": 114.019
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 14,
-   "debut": 100.03,
-   "fin": 106.764,
+   "debut": 115.459,
+   "fin": 122.339,
    "phrases": [
     {
      "texte": "Deuxième source : un contrat.",
-     "debut": 100.03,
-     "fin": 102.155
+     "debut": 115.459,
+     "fin": 117.359,
+     "mots": [
+      {
+       "mot": "deuxième",
+       "debut": 115.459,
+       "fin": 115.739
+      },
+      {
+       "mot": "source",
+       "debut": 115.819,
+       "fin": 116.119
+      },
+      {
+       "mot": "un",
+       "debut": 116.879,
+       "fin": 116.979
+      },
+      {
+       "mot": "contrat",
+       "debut": 117.019,
+       "fin": 117.359
+      }
+     ]
     },
     {
      "texte": "C'est le cas d'une surveillante de baignade engagée pour veiller sur les nageurs.",
-     "debut": 102.665,
-     "fin": 106.764
+     "debut": 118.359,
+     "fin": 122.339,
+     "mots": [
+      {
+       "mot": "c",
+       "debut": 118.359,
+       "fin": 118.459
+      },
+      {
+       "mot": "est",
+       "debut": 118.359,
+       "fin": 118.459
+      },
+      {
+       "mot": "le",
+       "debut": 118.499,
+       "fin": 118.579
+      },
+      {
+       "mot": "cas",
+       "debut": 118.619,
+       "fin": 118.719
+      },
+      {
+       "mot": "d",
+       "debut": 118.759,
+       "fin": 118.899
+      },
+      {
+       "mot": "une",
+       "debut": 118.759,
+       "fin": 118.899
+      },
+      {
+       "mot": "surveillante",
+       "debut": 118.959,
+       "fin": 119.679
+      },
+      {
+       "mot": "de",
+       "debut": 119.739,
+       "fin": 119.799
+      },
+      {
+       "mot": "baignade",
+       "debut": 119.839,
+       "fin": 120.299
+      },
+      {
+       "mot": "engagée",
+       "debut": 120.659,
+       "fin": 121.099
+      },
+      {
+       "mot": "pour",
+       "debut": 121.139,
+       "fin": 121.239
+      },
+      {
+       "mot": "veiller",
+       "debut": 121.359,
+       "fin": 121.639
+      },
+      {
+       "mot": "sur",
+       "debut": 121.699,
+       "fin": 121.819
+      },
+      {
+       "mot": "les",
+       "debut": 121.839,
+       "fin": 121.919
+      },
+      {
+       "mot": "nageurs",
+       "debut": 121.959,
+       "fin": 122.339
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 15,
-   "debut": 107.214,
-   "fin": 115.759,
+   "debut": 123.599,
+   "fin": 132.899,
    "phrases": [
     {
      "texte": "Troisième source : une communauté de risques librement acceptée.",
-     "debut": 107.214,
-     "fin": 111.138
+     "debut": 123.599,
+     "fin": 127.599,
+     "mots": [
+      {
+       "mot": "troisième",
+       "debut": 123.599,
+       "fin": 123.919
+      },
+      {
+       "mot": "source",
+       "debut": 123.999,
+       "fin": 124.319
+      },
+      {
+       "mot": "une",
+       "debut": 125.079,
+       "fin": 125.199
+      },
+      {
+       "mot": "communauté",
+       "debut": 125.219,
+       "fin": 125.659
+      },
+      {
+       "mot": "de",
+       "debut": 125.699,
+       "fin": 125.779
+      },
+      {
+       "mot": "risques",
+       "debut": 125.819,
+       "fin": 126.139
+      },
+      {
+       "mot": "librement",
+       "debut": 126.379,
+       "fin": 126.839
+      },
+      {
+       "mot": "acceptée",
+       "debut": 127.119,
+       "fin": 127.599
+      }
+     ]
     },
     {
      "texte": "Par exemple, une cordée d'alpinistes qui partent ensemble en montagne.",
-     "debut": 111.521,
-     "fin": 115.759
+     "debut": 128.519,
+     "fin": 132.899,
+     "mots": [
+      {
+       "mot": "par",
+       "debut": 128.519,
+       "fin": 128.639
+      },
+      {
+       "mot": "exemple",
+       "debut": 128.699,
+       "fin": 129.099
+      },
+      {
+       "mot": "une",
+       "debut": 129.799,
+       "fin": 129.959
+      },
+      {
+       "mot": "cordée",
+       "debut": 129.979,
+       "fin": 130.219
+      },
+      {
+       "mot": "d",
+       "debut": 130.239,
+       "fin": 131.059
+      },
+      {
+       "mot": "alpinistes",
+       "debut": 130.239,
+       "fin": 131.059
+      },
+      {
+       "mot": "qui",
+       "debut": 131.119,
+       "fin": 131.239
+      },
+      {
+       "mot": "partent",
+       "debut": 131.299,
+       "fin": 131.659
+      },
+      {
+       "mot": "ensemble",
+       "debut": 131.719,
+       "fin": 132.119
+      },
+      {
+       "mot": "en",
+       "debut": 132.339,
+       "fin": 132.419
+      },
+      {
+       "mot": "montagne",
+       "debut": 132.459,
+       "fin": 132.899
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 16,
-   "debut": 116.209,
-   "fin": 123.453,
+   "debut": 133.739,
+   "fin": 140.459,
    "phrases": [
     {
      "texte": "Quatrième source : la création d'un risque.",
-     "debut": 116.209,
-     "fin": 118.937
+     "debut": 133.739,
+     "fin": 136.019,
+     "mots": [
+      {
+       "mot": "quatrième",
+       "debut": 133.739,
+       "fin": 134.099
+      },
+      {
+       "mot": "source",
+       "debut": 134.179,
+       "fin": 134.459
+      },
+      {
+       "mot": "la",
+       "debut": 134.839,
+       "fin": 134.899
+      },
+      {
+       "mot": "création",
+       "debut": 134.979,
+       "fin": 135.399
+      },
+      {
+       "mot": "d",
+       "debut": 135.579,
+       "fin": 135.679
+      },
+      {
+       "mot": "un",
+       "debut": 135.579,
+       "fin": 135.679
+      },
+      {
+       "mot": "risque",
+       "debut": 135.719,
+       "fin": 136.019
+      }
+     ]
     },
     {
      "texte": "Celui qui crée un danger doit empêcher qu'il ne fasse du mal.",
-     "debut": 119.448,
-     "fin": 123.454
+     "debut": 136.899,
+     "fin": 140.459,
+     "mots": [
+      {
+       "mot": "celui",
+       "debut": 136.899,
+       "fin": 137.119
+      },
+      {
+       "mot": "qui",
+       "debut": 137.159,
+       "fin": 137.279
+      },
+      {
+       "mot": "crée",
+       "debut": 137.319,
+       "fin": 137.459
+      },
+      {
+       "mot": "un",
+       "debut": 137.499,
+       "fin": 137.559
+      },
+      {
+       "mot": "danger",
+       "debut": 137.619,
+       "fin": 137.959
+      },
+      {
+       "mot": "doit",
+       "debut": 138.219,
+       "fin": 138.519
+      },
+      {
+       "mot": "empêcher",
+       "debut": 138.559,
+       "fin": 139.079
+      },
+      {
+       "mot": "qu",
+       "debut": 139.279,
+       "fin": 139.399
+      },
+      {
+       "mot": "il",
+       "debut": 139.279,
+       "fin": 139.399
+      },
+      {
+       "mot": "ne",
+       "debut": 139.439,
+       "fin": 139.519
+      },
+      {
+       "mot": "fasse",
+       "debut": 139.619,
+       "fin": 139.979
+      },
+      {
+       "mot": "du",
+       "debut": 140.019,
+       "fin": 140.119
+      },
+      {
+       "mot": "mal",
+       "debut": 140.159,
+       "fin": 140.459
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 17,
-   "debut": 123.903,
-   "fin": 132.356,
+   "debut": 141.899,
+   "fin": 150.019,
    "phrases": [
     {
      "texte": "Un exemple réel jugé par le Tribunal fédéral.",
-     "debut": 123.903,
-     "fin": 127.165
+     "debut": 141.899,
+     "fin": 144.619,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 141.899,
+       "fin": 141.979
+      },
+      {
+       "mot": "exemple",
+       "debut": 142.059,
+       "fin": 142.419
+      },
+      {
+       "mot": "réel",
+       "debut": 142.519,
+       "fin": 142.799
+      },
+      {
+       "mot": "jugé",
+       "debut": 143.039,
+       "fin": 143.359
+      },
+      {
+       "mot": "par",
+       "debut": 143.399,
+       "fin": 143.479
+      },
+      {
+       "mot": "le",
+       "debut": 143.519,
+       "fin": 143.599
+      },
+      {
+       "mot": "tribunal",
+       "debut": 143.639,
+       "fin": 144.079
+      },
+      {
+       "mot": "fédéral",
+       "debut": 144.179,
+       "fin": 144.619
+      }
+     ]
     },
     {
      "texte": "Pour des travaux, un fonctionnaire avait fait planter une plaque métallique dans le Rhône.",
-     "debut": 127.607,
-     "fin": 132.355
+     "debut": 145.379,
+     "fin": 150.019,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 145.379,
+       "fin": 145.479
+      },
+      {
+       "mot": "des",
+       "debut": 145.499,
+       "fin": 145.619
+      },
+      {
+       "mot": "travaux",
+       "debut": 145.659,
+       "fin": 145.999
+      },
+      {
+       "mot": "un",
+       "debut": 146.519,
+       "fin": 146.619
+      },
+      {
+       "mot": "fonctionnaire",
+       "debut": 146.679,
+       "fin": 147.359
+      },
+      {
+       "mot": "avait",
+       "debut": 147.439,
+       "fin": 147.579
+      },
+      {
+       "mot": "fait",
+       "debut": 147.639,
+       "fin": 147.779
+      },
+      {
+       "mot": "planter",
+       "debut": 147.819,
+       "fin": 148.179
+      },
+      {
+       "mot": "une",
+       "debut": 148.419,
+       "fin": 148.599
+      },
+      {
+       "mot": "plaque",
+       "debut": 148.639,
+       "fin": 148.899
+      },
+      {
+       "mot": "métallique",
+       "debut": 148.959,
+       "fin": 149.439
+      },
+      {
+       "mot": "dans",
+       "debut": 149.479,
+       "fin": 149.579
+      },
+      {
+       "mot": "le",
+       "debut": 149.619,
+       "fin": 149.699
+      },
+      {
+       "mot": "rhône",
+       "debut": 149.739,
+       "fin": 150.019
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 18,
-   "debut": 132.806,
-   "fin": 141.954,
+   "debut": 151.319,
+   "fin": 161.879,
    "phrases": [
     {
      "texte": "En créant cet obstacle pour les bateaux, il avait créé un risque.",
-     "debut": 132.806,
-     "fin": 136.765
+     "debut": 151.319,
+     "fin": 154.719,
+     "mots": [
+      {
+       "mot": "en",
+       "debut": 151.319,
+       "fin": 151.419
+      },
+      {
+       "mot": "créant",
+       "debut": 151.459,
+       "fin": 151.699
+      },
+      {
+       "mot": "cet",
+       "debut": 151.739,
+       "fin": 151.879
+      },
+      {
+       "mot": "obstacle",
+       "debut": 151.919,
+       "fin": 152.359
+      },
+      {
+       "mot": "pour",
+       "debut": 152.539,
+       "fin": 152.619
+      },
+      {
+       "mot": "les",
+       "debut": 152.659,
+       "fin": 152.739
+      },
+      {
+       "mot": "bateaux",
+       "debut": 152.779,
+       "fin": 153.139
+      },
+      {
+       "mot": "il",
+       "debut": 153.759,
+       "fin": 153.819
+      },
+      {
+       "mot": "avait",
+       "debut": 153.859,
+       "fin": 154.039
+      },
+      {
+       "mot": "créé",
+       "debut": 154.079,
+       "fin": 154.259
+      },
+      {
+       "mot": "un",
+       "debut": 154.299,
+       "fin": 154.359
+      },
+      {
+       "mot": "risque",
+       "debut": 154.459,
+       "fin": 154.719
+      }
+     ]
     },
     {
      "texte": "Il devait agir pour éviter l'accident, notamment faire retirer la plaque.",
-     "debut": 136.881,
-     "fin": 140.399
+     "debut": 155.839,
+     "fin": 160.139,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 155.839,
+       "fin": 155.899
+      },
+      {
+       "mot": "devait",
+       "debut": 155.939,
+       "fin": 156.159
+      },
+      {
+       "mot": "agir",
+       "debut": 156.239,
+       "fin": 156.619
+      },
+      {
+       "mot": "pour",
+       "debut": 156.859,
+       "fin": 157.079
+      },
+      {
+       "mot": "éviter",
+       "debut": 157.159,
+       "fin": 157.479
+      },
+      {
+       "mot": "l",
+       "debut": 157.519,
+       "fin": 157.959
+      },
+      {
+       "mot": "accident",
+       "debut": 157.519,
+       "fin": 157.959
+      },
+      {
+       "mot": "notamment",
+       "debut": 158.499,
+       "fin": 158.999
+      },
+      {
+       "mot": "faire",
+       "debut": 159.079,
+       "fin": 159.259
+      },
+      {
+       "mot": "retirer",
+       "debut": 159.339,
+       "fin": 159.719
+      },
+      {
+       "mot": "la",
+       "debut": 159.759,
+       "fin": 159.839
+      },
+      {
+       "mot": "plaque",
+       "debut": 159.859,
+       "fin": 160.139
+      }
+     ]
     },
     {
      "texte": "Il était garant.",
-     "debut": 140.84,
-     "fin": 141.955
+     "debut": 160.839,
+     "fin": 161.879,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 160.839,
+       "fin": 160.919
+      },
+      {
+       "mot": "était",
+       "debut": 160.999,
+       "fin": 161.199
+      },
+      {
+       "mot": "garant",
+       "debut": 161.539,
+       "fin": 161.879
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 19,
-   "debut": 142.404,
-   "fin": 150.671,
+   "debut": 163.319,
+   "fin": 171.919,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral distingue deux sortes de devoirs.",
-     "debut": 142.404,
-     "fin": 145.098
+     "debut": 163.319,
+     "fin": 166.179,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 163.319,
+       "fin": 163.399
+      },
+      {
+       "mot": "tribunal",
+       "debut": 163.419,
+       "fin": 163.839
+      },
+      {
+       "mot": "fédéral",
+       "debut": 163.899,
+       "fin": 164.379
+      },
+      {
+       "mot": "distingue",
+       "debut": 164.619,
+       "fin": 164.919
+      },
+      {
+       "mot": "deux",
+       "debut": 165.119,
+       "fin": 165.239
+      },
+      {
+       "mot": "sortes",
+       "debut": 165.339,
+       "fin": 165.659
+      },
+      {
+       "mot": "de",
+       "debut": 165.719,
+       "fin": 165.799
+      },
+      {
+       "mot": "devoirs",
+       "debut": 165.839,
+       "fin": 166.179
+      }
+     ]
     },
     {
      "texte": "Le devoir de protection : veiller sur une personne ou un bien précis, quoi qu'il arrive.",
-     "debut": 145.608,
-     "fin": 150.67
+     "debut": 166.999,
+     "fin": 171.919,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 166.999,
+       "fin": 167.059
+      },
+      {
+       "mot": "devoir",
+       "debut": 167.119,
+       "fin": 167.379
+      },
+      {
+       "mot": "de",
+       "debut": 167.659,
+       "fin": 167.759
+      },
+      {
+       "mot": "protection",
+       "debut": 167.799,
+       "fin": 168.399
+      },
+      {
+       "mot": "veiller",
+       "debut": 169.179,
+       "fin": 169.419
+      },
+      {
+       "mot": "sur",
+       "debut": 169.479,
+       "fin": 169.559
+      },
+      {
+       "mot": "une",
+       "debut": 169.599,
+       "fin": 169.719
+      },
+      {
+       "mot": "personne",
+       "debut": 169.779,
+       "fin": 170.219
+      },
+      {
+       "mot": "ou",
+       "debut": 170.279,
+       "fin": 170.379
+      },
+      {
+       "mot": "un",
+       "debut": 170.419,
+       "fin": 170.479
+      },
+      {
+       "mot": "bien",
+       "debut": 170.539,
+       "fin": 170.679
+      },
+      {
+       "mot": "précis",
+       "debut": 170.719,
+       "fin": 171.359
+      },
+      {
+       "mot": "quoi",
+       "debut": 171.399,
+       "fin": 171.499
+      },
+      {
+       "mot": "qu",
+       "debut": 171.519,
+       "fin": 171.639
+      },
+      {
+       "mot": "il",
+       "debut": 171.519,
+       "fin": 171.639
+      },
+      {
+       "mot": "arrive",
+       "debut": 171.699,
+       "fin": 171.919
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 20,
-   "debut": 151.121,
-   "fin": 160.316,
+   "debut": 172.899,
+   "fin": 182.919,
    "phrases": [
     {
      "texte": "Et le devoir de surveillance : maîtriser une source de danger, pour qu'elle ne blesse personne.",
-     "debut": 151.121,
-     "fin": 156.287
+     "debut": 172.899,
+     "fin": 178.299,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 172.899,
+       "fin": 172.959
+      },
+      {
+       "mot": "le",
+       "debut": 172.999,
+       "fin": 173.079
+      },
+      {
+       "mot": "devoir",
+       "debut": 173.119,
+       "fin": 173.379
+      },
+      {
+       "mot": "de",
+       "debut": 173.399,
+       "fin": 173.479
+      },
+      {
+       "mot": "surveillance",
+       "debut": 173.519,
+       "fin": 174.019
+      },
+      {
+       "mot": "maîtriser",
+       "debut": 174.899,
+       "fin": 175.639
+      },
+      {
+       "mot": "une",
+       "debut": 175.699,
+       "fin": 175.799
+      },
+      {
+       "mot": "source",
+       "debut": 175.859,
+       "fin": 176.059
+      },
+      {
+       "mot": "de",
+       "debut": 176.079,
+       "fin": 176.159
+      },
+      {
+       "mot": "danger",
+       "debut": 176.199,
+       "fin": 176.519
+      },
+      {
+       "mot": "pour",
+       "debut": 176.899,
+       "fin": 177.019
+      },
+      {
+       "mot": "qu",
+       "debut": 177.059,
+       "fin": 177.199
+      },
+      {
+       "mot": "elle",
+       "debut": 177.059,
+       "fin": 177.199
+      },
+      {
+       "mot": "ne",
+       "debut": 177.239,
+       "fin": 177.339
+      },
+      {
+       "mot": "blesse",
+       "debut": 177.379,
+       "fin": 177.759
+      },
+      {
+       "mot": "personne",
+       "debut": 177.819,
+       "fin": 178.299
+      }
+     ]
     },
     {
      "texte": "Clara protège.",
-     "debut": 156.891,
-     "fin": 157.866
+     "debut": 179.439,
+     "fin": 180.199,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 179.439,
+       "fin": 179.699
+      },
+      {
+       "mot": "protège",
+       "debut": 179.759,
+       "fin": 180.199
+      }
+     ]
     },
     {
      "texte": "Le fonctionnaire surveille son obstacle.",
-     "debut": 158.191,
-     "fin": 160.316
+     "debut": 180.879,
+     "fin": 182.919,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 180.879,
+       "fin": 180.959
+      },
+      {
+       "mot": "fonctionnaire",
+       "debut": 181.019,
+       "fin": 181.619
+      },
+      {
+       "mot": "surveille",
+       "debut": 181.719,
+       "fin": 182.199
+      },
+      {
+       "mot": "son",
+       "debut": 182.279,
+       "fin": 182.399
+      },
+      {
+       "mot": "obstacle",
+       "debut": 182.459,
+       "fin": 182.919
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 21,
-   "debut": 160.766,
-   "fin": 166.478,
+   "debut": 184.359,
+   "fin": 191.239,
    "phrases": [
     {
      "texte": "Revenons à la piscine.",
-     "debut": 160.766,
-     "fin": 161.962
+     "debut": 184.359,
+     "fin": 185.779,
+     "mots": [
+      {
+       "mot": "revenons",
+       "debut": 184.359,
+       "fin": 185.039
+      },
+      {
+       "mot": "à",
+       "debut": 185.119,
+       "fin": 185.159
+      },
+      {
+       "mot": "la",
+       "debut": 185.199,
+       "fin": 185.279
+      },
+      {
+       "mot": "piscine",
+       "debut": 185.319,
+       "fin": 185.779
+      }
+     ]
     },
     {
      "texte": "Clara a été engagée pour surveiller le bassin, et elle était à son poste.",
-     "debut": 162.345,
-     "fin": 166.478
+     "debut": 186.779,
+     "fin": 191.239,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 186.779,
+       "fin": 187.339
+      },
+      {
+       "mot": "a",
+       "debut": 187.399,
+       "fin": 187.439
+      },
+      {
+       "mot": "été",
+       "debut": 187.519,
+       "fin": 187.719
+      },
+      {
+       "mot": "engagée",
+       "debut": 187.739,
+       "fin": 188.199
+      },
+      {
+       "mot": "pour",
+       "debut": 188.259,
+       "fin": 188.379
+      },
+      {
+       "mot": "surveiller",
+       "debut": 188.439,
+       "fin": 188.819
+      },
+      {
+       "mot": "le",
+       "debut": 188.879,
+       "fin": 188.959
+      },
+      {
+       "mot": "bassin",
+       "debut": 188.999,
+       "fin": 189.319
+      },
+      {
+       "mot": "et",
+       "debut": 189.879,
+       "fin": 189.939
+      },
+      {
+       "mot": "elle",
+       "debut": 189.959,
+       "fin": 190.059
+      },
+      {
+       "mot": "était",
+       "debut": 190.119,
+       "fin": 190.579
+      },
+      {
+       "mot": "à",
+       "debut": 190.639,
+       "fin": 190.699
+      },
+      {
+       "mot": "son",
+       "debut": 190.739,
+       "fin": 190.879
+      },
+      {
+       "mot": "poste",
+       "debut": 190.919,
+       "fin": 191.239
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 22,
-   "debut": 166.928,
-   "fin": 174.451,
+   "debut": 192.599,
+   "fin": 201.439,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral précise que c'est cette prise de poste effective qui compte, pas seulement la signature du contrat.",
-     "debut": 166.928,
-     "fin": 173.058
+     "debut": 192.599,
+     "fin": 199.199,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 192.599,
+       "fin": 192.679
+      },
+      {
+       "mot": "tribunal",
+       "debut": 192.699,
+       "fin": 193.139
+      },
+      {
+       "mot": "fédéral",
+       "debut": 193.179,
+       "fin": 193.659
+      },
+      {
+       "mot": "précise",
+       "debut": 194.139,
+       "fin": 194.419
+      },
+      {
+       "mot": "que",
+       "debut": 194.439,
+       "fin": 194.519
+      },
+      {
+       "mot": "c",
+       "debut": 194.539,
+       "fin": 194.619
+      },
+      {
+       "mot": "est",
+       "debut": 194.539,
+       "fin": 194.619
+      },
+      {
+       "mot": "cette",
+       "debut": 194.659,
+       "fin": 194.819
+      },
+      {
+       "mot": "prise",
+       "debut": 194.859,
+       "fin": 195.079
+      },
+      {
+       "mot": "de",
+       "debut": 195.119,
+       "fin": 195.239
+      },
+      {
+       "mot": "poste",
+       "debut": 195.299,
+       "fin": 195.619
+      },
+      {
+       "mot": "effective",
+       "debut": 195.899,
+       "fin": 196.419
+      },
+      {
+       "mot": "qui",
+       "debut": 196.459,
+       "fin": 196.579
+      },
+      {
+       "mot": "compte",
+       "debut": 196.619,
+       "fin": 196.919
+      },
+      {
+       "mot": "pas",
+       "debut": 197.439,
+       "fin": 197.559
+      },
+      {
+       "mot": "seulement",
+       "debut": 197.619,
+       "fin": 198.059
+      },
+      {
+       "mot": "la",
+       "debut": 198.119,
+       "fin": 198.219
+      },
+      {
+       "mot": "signature",
+       "debut": 198.259,
+       "fin": 198.699
+      },
+      {
+       "mot": "du",
+       "debut": 198.719,
+       "fin": 198.799
+      },
+      {
+       "mot": "contrat",
+       "debut": 198.839,
+       "fin": 199.199
+      }
+     ]
     },
     {
      "texte": "Clara est garante.",
-     "debut": 173.209,
-     "fin": 174.451
+     "debut": 200.199,
+     "fin": 201.439,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 200.199,
+       "fin": 200.479
+      },
+      {
+       "mot": "est",
+       "debut": 200.919,
+       "fin": 200.999
+      },
+      {
+       "mot": "garante",
+       "debut": 201.039,
+       "fin": 201.439
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 23,
-   "debut": 174.901,
-   "fin": 182.331,
+   "debut": 202.879,
+   "fin": 211.379,
    "phrases": [
     {
      "texte": "Maël, lui, n'est qu'un baigneur parmi d'autres.",
-     "debut": 174.901,
-     "fin": 177.49
+     "debut": 202.879,
+     "fin": 205.339,
+     "mots": [
+      {
+       "mot": "maël",
+       "debut": 202.879,
+       "fin": 203.199
+      },
+      {
+       "mot": "lui",
+       "debut": 203.539,
+       "fin": 203.699
+      },
+      {
+       "mot": "n",
+       "debut": 203.959,
+       "fin": 204.059
+      },
+      {
+       "mot": "est",
+       "debut": 203.959,
+       "fin": 204.059
+      },
+      {
+       "mot": "qu",
+       "debut": 204.079,
+       "fin": 204.279
+      },
+      {
+       "mot": "un",
+       "debut": 204.079,
+       "fin": 204.279
+      },
+      {
+       "mot": "baigneur",
+       "debut": 204.319,
+       "fin": 204.699
+      },
+      {
+       "mot": "parmi",
+       "debut": 204.839,
+       "fin": 205.059
+      },
+      {
+       "mot": "d",
+       "debut": 205.099,
+       "fin": 205.339
+      },
+      {
+       "mot": "autres",
+       "debut": 205.099,
+       "fin": 205.339
+      }
+     ]
     },
     {
      "texte": "Aucune loi, aucun contrat, aucun risque créé par lui.",
-     "debut": 177.815,
-     "fin": 180.927
+     "debut": 205.979,
+     "fin": 209.799,
+     "mots": [
+      {
+       "mot": "aucune",
+       "debut": 205.979,
+       "fin": 206.259
+      },
+      {
+       "mot": "loi",
+       "debut": 206.299,
+       "fin": 206.499
+      },
+      {
+       "mot": "aucun",
+       "debut": 207.059,
+       "fin": 207.279
+      },
+      {
+       "mot": "contrat",
+       "debut": 207.319,
+       "fin": 207.699
+      },
+      {
+       "mot": "aucun",
+       "debut": 208.599,
+       "fin": 208.839
+      },
+      {
+       "mot": "risque",
+       "debut": 208.879,
+       "fin": 209.179
+      },
+      {
+       "mot": "créé",
+       "debut": 209.239,
+       "fin": 209.439
+      },
+      {
+       "mot": "par",
+       "debut": 209.479,
+       "fin": 209.599
+      },
+      {
+       "mot": "lui",
+       "debut": 209.659,
+       "fin": 209.799
+      }
+     ]
     },
     {
      "texte": "Il n'est pas garant.",
-     "debut": 181.17,
-     "fin": 182.331
+     "debut": 210.559,
+     "fin": 211.379,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 210.559,
+       "fin": 210.639
+      },
+      {
+       "mot": "n",
+       "debut": 210.659,
+       "fin": 210.819
+      },
+      {
+       "mot": "est",
+       "debut": 210.659,
+       "fin": 210.819
+      },
+      {
+       "mot": "pas",
+       "debut": 210.859,
+       "fin": 210.999
+      },
+      {
+       "mot": "garant",
+       "debut": 211.039,
+       "fin": 211.379
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 24,
-   "debut": 182.781,
-   "fin": 189.097,
+   "debut": 212.699,
+   "fin": 220.319,
    "phrases": [
     {
      "texte": "Pour Clara, il faut encore deux conditions.",
-     "debut": 182.781,
-     "fin": 185.3
+     "debut": 212.699,
+     "fin": 215.239,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 212.699,
+       "fin": 212.799
+      },
+      {
+       "mot": "clara",
+       "debut": 212.839,
+       "fin": 213.219
+      },
+      {
+       "mot": "il",
+       "debut": 213.879,
+       "fin": 213.979
+      },
+      {
+       "mot": "faut",
+       "debut": 214.039,
+       "fin": 214.159
+      },
+      {
+       "mot": "encore",
+       "debut": 214.179,
+       "fin": 214.479
+      },
+      {
+       "mot": "deux",
+       "debut": 214.599,
+       "fin": 214.699
+      },
+      {
+       "mot": "conditions",
+       "debut": 214.719,
+       "fin": 215.239
+      }
+     ]
     },
     {
      "texte": "D'abord, si elle avait agi, l'accident aurait-il été évité ?",
-     "debut": 185.683,
-     "fin": 189.097
+     "debut": 216.239,
+     "fin": 220.319,
+     "mots": [
+      {
+       "mot": "d",
+       "debut": 216.239,
+       "fin": 216.599
+      },
+      {
+       "mot": "abord",
+       "debut": 216.239,
+       "fin": 216.599
+      },
+      {
+       "mot": "si",
+       "debut": 217.099,
+       "fin": 217.179
+      },
+      {
+       "mot": "elle",
+       "debut": 217.199,
+       "fin": 217.279
+      },
+      {
+       "mot": "avait",
+       "debut": 217.339,
+       "fin": 217.559
+      },
+      {
+       "mot": "agi",
+       "debut": 217.639,
+       "fin": 217.879
+      },
+      {
+       "mot": "l",
+       "debut": 218.259,
+       "fin": 218.819
+      },
+      {
+       "mot": "accident",
+       "debut": 218.259,
+       "fin": 218.819
+      },
+      {
+       "mot": "aurait",
+       "debut": 219.139,
+       "fin": 219.519
+      },
+      {
+       "mot": "il",
+       "debut": 219.139,
+       "fin": 219.519
+      },
+      {
+       "mot": "été",
+       "debut": 219.579,
+       "fin": 219.919
+      },
+      {
+       "mot": "évité",
+       "debut": 219.999,
+       "fin": 220.319
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 25,
-   "debut": 189.547,
-   "fin": 196.606,
+   "debut": 221.759,
+   "fin": 230.039,
    "phrases": [
     {
      "texte": "Le juge raisonne par hypothèse.",
-     "debut": 189.547,
-     "fin": 191.068
+     "debut": 221.759,
+     "fin": 223.339,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 221.759,
+       "fin": 221.859
+      },
+      {
+       "mot": "juge",
+       "debut": 221.919,
+       "fin": 222.179
+      },
+      {
+       "mot": "raisonne",
+       "debut": 222.219,
+       "fin": 222.579
+      },
+      {
+       "mot": "par",
+       "debut": 222.699,
+       "fin": 222.819
+      },
+      {
+       "mot": "hypothèse",
+       "debut": 222.839,
+       "fin": 223.339
+      }
+     ]
     },
     {
      "texte": "Il imagine que Clara a fait son travail, et se demande si Timéo aurait été sauvé à temps.",
-     "debut": 191.393,
-     "fin": 196.606
+     "debut": 224.479,
+     "fin": 230.039,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 224.479,
+       "fin": 224.539
+      },
+      {
+       "mot": "imagine",
+       "debut": 224.619,
+       "fin": 225.019
+      },
+      {
+       "mot": "que",
+       "debut": 225.039,
+       "fin": 225.159
+      },
+      {
+       "mot": "clara",
+       "debut": 225.199,
+       "fin": 225.579
+      },
+      {
+       "mot": "a",
+       "debut": 225.859,
+       "fin": 225.919
+      },
+      {
+       "mot": "fait",
+       "debut": 225.959,
+       "fin": 226.059
+      },
+      {
+       "mot": "son",
+       "debut": 226.099,
+       "fin": 226.219
+      },
+      {
+       "mot": "travail",
+       "debut": 226.259,
+       "fin": 226.639
+      },
+      {
+       "mot": "et",
+       "debut": 227.159,
+       "fin": 227.219
+      },
+      {
+       "mot": "se",
+       "debut": 227.259,
+       "fin": 227.359
+      },
+      {
+       "mot": "demande",
+       "debut": 227.419,
+       "fin": 227.819
+      },
+      {
+       "mot": "si",
+       "debut": 227.879,
+       "fin": 227.959
+      },
+      {
+       "mot": "timéo",
+       "debut": 228.039,
+       "fin": 228.439
+      },
+      {
+       "mot": "aurait",
+       "debut": 228.659,
+       "fin": 228.839
+      },
+      {
+       "mot": "été",
+       "debut": 228.879,
+       "fin": 229.118
+      },
+      {
+       "mot": "sauvé",
+       "debut": 229.199,
+       "fin": 229.639
+      },
+      {
+       "mot": "à",
+       "debut": 229.699,
+       "fin": 229.779
+      },
+      {
+       "mot": "temps",
+       "debut": 229.839,
+       "fin": 230.039
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 26,
-   "debut": 197.056,
-   "fin": 206.344,
+   "debut": 231.479,
+   "fin": 241.059,
    "phrases": [
     {
      "texte": "Ensuite, l'article onze pose une condition d'équivalence.",
-     "debut": 197.056,
-     "fin": 200.934
+     "debut": 231.479,
+     "fin": 235.279,
+     "mots": [
+      {
+       "mot": "ensuite",
+       "debut": 231.479,
+       "fin": 231.859
+      },
+      {
+       "mot": "l",
+       "debut": 232.338,
+       "fin": 232.658
+      },
+      {
+       "mot": "article",
+       "debut": 232.338,
+       "fin": 232.658
+      },
+      {
+       "mot": "onze",
+       "debut": 232.859,
+       "fin": 233.139
+      },
+      {
+       "mot": "pose",
+       "debut": 233.439,
+       "fin": 233.778
+      },
+      {
+       "mot": "une",
+       "debut": 233.859,
+       "fin": 233.979
+      },
+      {
+       "mot": "condition",
+       "debut": 234.039,
+       "fin": 234.479
+      },
+      {
+       "mot": "d",
+       "debut": 234.579,
+       "fin": 235.279
+      },
+      {
+       "mot": "équivalence",
+       "debut": 234.579,
+       "fin": 235.279
+      }
+     ]
     },
     {
      "texte": "Son inaction doit mériter le même reproche qu'un geste qui aurait causé l'accident.",
-     "debut": 201.537,
-     "fin": 206.344
+     "debut": 236.119,
+     "fin": 241.059,
+     "mots": [
+      {
+       "mot": "son",
+       "debut": 236.119,
+       "fin": 236.239
+      },
+      {
+       "mot": "inaction",
+       "debut": 236.299,
+       "fin": 236.739
+      },
+      {
+       "mot": "doit",
+       "debut": 236.899,
+       "fin": 237.019
+      },
+      {
+       "mot": "mériter",
+       "debut": 237.059,
+       "fin": 237.499
+      },
+      {
+       "mot": "la",
+       "debut": 237.879,
+       "fin": 238.019
+      },
+      {
+       "mot": "même",
+       "debut": 238.079,
+       "fin": 238.379
+      },
+      {
+       "mot": "approche",
+       "debut": 238.439,
+       "fin": 238.859
+      },
+      {
+       "mot": "qu",
+       "debut": 239.119,
+       "fin": 239.259
+      },
+      {
+       "mot": "un",
+       "debut": 239.119,
+       "fin": 239.259
+      },
+      {
+       "mot": "geste",
+       "debut": 239.299,
+       "fin": 239.619
+      },
+      {
+       "mot": "qui",
+       "debut": 239.659,
+       "fin": 239.719
+      },
+      {
+       "mot": "aurait",
+       "debut": 239.759,
+       "fin": 240.179
+      },
+      {
+       "mot": "causé",
+       "debut": 240.239,
+       "fin": 240.479
+      },
+      {
+       "mot": "l",
+       "debut": 240.519,
+       "fin": 241.059
+      },
+      {
+       "mot": "accident",
+       "debut": 240.519,
+       "fin": 241.059
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 27,
-   "debut": 206.794,
-   "fin": 214.689,
+   "debut": 241.899,
+   "fin": 250.759,
    "phrases": [
     {
      "texte": "Si ces conditions sont remplies, Clara répond des blessures de Timéo comme si elle les avait causées.",
-     "debut": 206.794,
-     "fin": 211.705
+     "debut": 241.899,
+     "fin": 247.499,
+     "mots": [
+      {
+       "mot": "si",
+       "debut": 241.899,
+       "fin": 241.979
+      },
+      {
+       "mot": "ces",
+       "debut": 242.039,
+       "fin": 242.139
+      },
+      {
+       "mot": "conditions",
+       "debut": 242.159,
+       "fin": 242.599
+      },
+      {
+       "mot": "sont",
+       "debut": 242.659,
+       "fin": 242.779
+      },
+      {
+       "mot": "remplies",
+       "debut": 242.819,
+       "fin": 243.119
+      },
+      {
+       "mot": "clara",
+       "debut": 243.699,
+       "fin": 244.039
+      },
+      {
+       "mot": "répond",
+       "debut": 244.279,
+       "fin": 244.519
+      },
+      {
+       "mot": "des",
+       "debut": 244.559,
+       "fin": 244.659
+      },
+      {
+       "mot": "blessures",
+       "debut": 244.679,
+       "fin": 245.039
+      },
+      {
+       "mot": "de",
+       "debut": 245.059,
+       "fin": 245.179
+      },
+      {
+       "mot": "timéo",
+       "debut": 245.219,
+       "fin": 245.659
+      },
+      {
+       "mot": "comme",
+       "debut": 246.159,
+       "fin": 246.339
+      },
+      {
+       "mot": "si",
+       "debut": 246.399,
+       "fin": 246.519
+      },
+      {
+       "mot": "elle",
+       "debut": 246.559,
+       "fin": 246.659
+      },
+      {
+       "mot": "les",
+       "debut": 246.699,
+       "fin": 246.819
+      },
+      {
+       "mot": "avait",
+       "debut": 246.899,
+       "fin": 247.139
+      },
+      {
+       "mot": "causées",
+       "debut": 247.179,
+       "fin": 247.499
+      }
+     ]
     },
     {
      "texte": "Le juge peut toutefois atténuer sa peine.",
-     "debut": 212.216,
-     "fin": 214.689
+     "debut": 248.459,
+     "fin": 250.759,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 248.459,
+       "fin": 248.599
+      },
+      {
+       "mot": "juge",
+       "debut": 248.659,
+       "fin": 248.859
+      },
+      {
+       "mot": "peut",
+       "debut": 249.079,
+       "fin": 249.199
+      },
+      {
+       "mot": "toutefois",
+       "debut": 249.239,
+       "fin": 249.839
+      },
+      {
+       "mot": "atténuer",
+       "debut": 249.919,
+       "fin": 250.339
+      },
+      {
+       "mot": "sa",
+       "debut": 250.379,
+       "fin": 250.459
+      },
+      {
+       "mot": "peine",
+       "debut": 250.539,
+       "fin": 250.759
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 28,
-   "debut": 215.139,
-   "fin": 232.693,
+   "debut": 252.179,
+   "fin": 270.839,
    "phrases": [
     {
      "texte": "Et souvenez-vous de la vidéo quatre.",
-     "debut": 215.139,
-     "fin": 216.764
+     "debut": 252.179,
+     "fin": 253.999,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 252.179,
+       "fin": 252.259
+      },
+      {
+       "mot": "souvenez",
+       "debut": 252.299,
+       "fin": 253.039
+      },
+      {
+       "mot": "vous",
+       "debut": 252.299,
+       "fin": 253.039
+      },
+      {
+       "mot": "de",
+       "debut": 253.099,
+       "fin": 253.159
+      },
+      {
+       "mot": "la",
+       "debut": 253.199,
+       "fin": 253.299
+      },
+      {
+       "mot": "vidéo",
+       "debut": 253.319,
+       "fin": 253.639
+      },
+      {
+       "mot": "quatre",
+       "debut": 253.679,
+       "fin": 253.999
+      }
+     ]
     },
     {
      "texte": "Clara n'a pas voulu l'accident.",
-     "debut": 217.206,
-     "fin": 218.599
+     "debut": 254.659,
+     "fin": 256.019,
+     "mots": [
+      {
+       "mot": "clara",
+       "debut": 254.659,
+       "fin": 254.939
+      },
+      {
+       "mot": "n",
+       "debut": 254.979,
+       "fin": 255.059
+      },
+      {
+       "mot": "a",
+       "debut": 254.979,
+       "fin": 255.059
+      },
+      {
+       "mot": "pas",
+       "debut": 255.119,
+       "fin": 255.259
+      },
+      {
+       "mot": "voulu",
+       "debut": 255.299,
+       "fin": 255.499
+      },
+      {
+       "mot": "l",
+       "debut": 255.519,
+       "fin": 256.019
+      },
+      {
+       "mot": "accident",
+       "debut": 255.519,
+       "fin": 256.019
+      }
+     ]
     },
     {
      "texte": "On parlera donc plutôt de négligence, punissable ici, en principe sur plainte.",
-     "debut": 219.11,
-     "fin": 224.485
+     "debut": 257.159,
+     "fin": 261.599,
+     "mots": [
+      {
+       "mot": "on",
+       "debut": 257.159,
+       "fin": 257.179
+      },
+      {
+       "mot": "parlera",
+       "debut": 257.279,
+       "fin": 257.699
+      },
+      {
+       "mot": "donc",
+       "debut": 257.759,
+       "fin": 257.959
+      },
+      {
+       "mot": "plutôt",
+       "debut": 257.979,
+       "fin": 258.239
+      },
+      {
+       "mot": "de",
+       "debut": 258.279,
+       "fin": 258.359
+      },
+      {
+       "mot": "négligence",
+       "debut": 258.419,
+       "fin": 258.959
+      },
+      {
+       "mot": "punissable",
+       "debut": 259.299,
+       "fin": 259.739
+      },
+      {
+       "mot": "ici",
+       "debut": 259.899,
+       "fin": 260.179
+      },
+      {
+       "mot": "en",
+       "debut": 260.639,
+       "fin": 260.719
+      },
+      {
+       "mot": "principe",
+       "debut": 260.759,
+       "fin": 261.139
+      },
+      {
+       "mot": "sur",
+       "debut": 261.179,
+       "fin": 261.319
+      },
+      {
+       "mot": "plainte",
+       "debut": 261.339,
+       "fin": 261.599
+      }
+     ]
     },
     {
      "texte": "Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle.",
-     "debut": 224.601,
-     "fin": 231.045
+     "debut": 262.739,
+     "fin": 268.899,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 262.739,
+       "fin": 262.859
+      },
+      {
+       "mot": "si",
+       "debut": 262.899,
+       "fin": 262.979
+      },
+      {
+       "mot": "clara",
+       "debut": 263.039,
+       "fin": 263.359
+      },
+      {
+       "mot": "avait",
+       "debut": 263.619,
+       "fin": 263.799
+      },
+      {
+       "mot": "vu",
+       "debut": 263.839,
+       "fin": 263.959
+      },
+      {
+       "mot": "timéo",
+       "debut": 263.999,
+       "fin": 264.399
+      },
+      {
+       "mot": "et",
+       "debut": 264.799,
+       "fin": 264.859
+      },
+      {
+       "mot": "l",
+       "debut": 264.899,
+       "fin": 265.099
+      },
+      {
+       "mot": "avait",
+       "debut": 264.899,
+       "fin": 265.099
+      },
+      {
+       "mot": "laissé",
+       "debut": 265.139,
+       "fin": 265.399
+      },
+      {
+       "mot": "couler",
+       "debut": 265.439,
+       "fin": 265.679
+      },
+      {
+       "mot": "exprès",
+       "debut": 265.939,
+       "fin": 266.319
+      },
+      {
+       "mot": "l",
+       "debut": 267.119,
+       "fin": 267.599
+      },
+      {
+       "mot": "omission",
+       "debut": 267.119,
+       "fin": 267.599
+      },
+      {
+       "mot": "serait",
+       "debut": 267.819,
+       "fin": 268.039
+      },
+      {
+       "mot": "intentionnelle",
+       "debut": 268.299,
+       "fin": 268.899
+      }
+     ]
     },
     {
      "texte": "Ce serait bien plus grave.",
-     "debut": 231.37,
-     "fin": 232.693
+     "debut": 269.759,
+     "fin": 270.839,
+     "mots": [
+      {
+       "mot": "ce",
+       "debut": 269.759,
+       "fin": 269.859
+      },
+      {
+       "mot": "serait",
+       "debut": 269.919,
+       "fin": 270.159
+      },
+      {
+       "mot": "bien",
+       "debut": 270.219,
+       "fin": 270.359
+      },
+      {
+       "mot": "plus",
+       "debut": 270.399,
+       "fin": 270.499
+      },
+      {
+       "mot": "grave",
+       "debut": 270.519,
+       "fin": 270.839
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 29,
-   "debut": 233.143,
-   "fin": 241.502,
+   "debut": 272.019,
+   "fin": 280.159,
    "phrases": [
     {
      "texte": "Attention au piège classique.",
-     "debut": 233.143,
-     "fin": 234.722
+     "debut": 272.019,
+     "fin": 273.439,
+     "mots": [
+      {
+       "mot": "attention",
+       "debut": 272.019,
+       "fin": 272.439
+      },
+      {
+       "mot": "au",
+       "debut": 272.659,
+       "fin": 272.719
+      },
+      {
+       "mot": "piège",
+       "debut": 272.779,
+       "fin": 272.999
+      },
+      {
+       "mot": "classique",
+       "debut": 273.019,
+       "fin": 273.439
+      }
+     ]
     },
     {
      "texte": "On croit souvent que Maël, qui n'est pas garant, n'a rien à se reprocher devant la loi.",
-     "debut": 235.163,
-     "fin": 239.819
+     "debut": 274.379,
+     "fin": 278.399,
+     "mots": [
+      {
+       "mot": "on",
+       "debut": 274.379,
+       "fin": 274.459
+      },
+      {
+       "mot": "croit",
+       "debut": 274.479,
+       "fin": 274.639
+      },
+      {
+       "mot": "souvent",
+       "debut": 274.699,
+       "fin": 274.959
+      },
+      {
+       "mot": "que",
+       "debut": 274.979,
+       "fin": 275.099
+      },
+      {
+       "mot": "maël",
+       "debut": 275.139,
+       "fin": 275.459
+      },
+      {
+       "mot": "qui",
+       "debut": 275.679,
+       "fin": 275.779
+      },
+      {
+       "mot": "n",
+       "debut": 275.799,
+       "fin": 275.939
+      },
+      {
+       "mot": "est",
+       "debut": 275.799,
+       "fin": 275.939
+      },
+      {
+       "mot": "pas",
+       "debut": 275.979,
+       "fin": 276.079
+      },
+      {
+       "mot": "garant",
+       "debut": 276.119,
+       "fin": 276.379
+      },
+      {
+       "mot": "n",
+       "debut": 276.759,
+       "fin": 276.839
+      },
+      {
+       "mot": "a",
+       "debut": 276.759,
+       "fin": 276.839
+      },
+      {
+       "mot": "rien",
+       "debut": 276.899,
+       "fin": 277.079
+      },
+      {
+       "mot": "à",
+       "debut": 277.139,
+       "fin": 277.199
+      },
+      {
+       "mot": "se",
+       "debut": 277.239,
+       "fin": 277.319
+      },
+      {
+       "mot": "reprocher",
+       "debut": 277.359,
+       "fin": 277.779
+      },
+      {
+       "mot": "devant",
+       "debut": 277.819,
+       "fin": 278.039
+      },
+      {
+       "mot": "la",
+       "debut": 278.079,
+       "fin": 278.139
+      },
+      {
+       "mot": "loi",
+       "debut": 278.179,
+       "fin": 278.399
+      }
+     ]
     },
     {
      "texte": "C'est plus subtil.",
-     "debut": 240.33,
-     "fin": 241.502
+     "debut": 279.459,
+     "fin": 280.159,
+     "mots": [
+      {
+       "mot": "c",
+       "debut": 279.459,
+       "fin": 279.579
+      },
+      {
+       "mot": "est",
+       "debut": 279.459,
+       "fin": 279.579
+      },
+      {
+       "mot": "plus",
+       "debut": 279.619,
+       "fin": 279.739
+      },
+      {
+       "mot": "subtil",
+       "debut": 279.779,
+       "fin": 280.159
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 30,
-   "debut": 241.952,
-   "fin": 249.986,
+   "debut": 281.339,
+   "fin": 289.479,
    "phrases": [
     {
      "texte": "Il existe une infraction à part, qui vise tout le monde.",
-     "debut": 241.952,
-     "fin": 244.982
+     "debut": 281.339,
+     "fin": 284.299,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 281.339,
+       "fin": 281.419
+      },
+      {
+       "mot": "existe",
+       "debut": 281.479,
+       "fin": 281.979
+      },
+      {
+       "mot": "une",
+       "debut": 282.019,
+       "fin": 282.139
+      },
+      {
+       "mot": "infraction",
+       "debut": 282.179,
+       "fin": 282.619
+      },
+      {
+       "mot": "à",
+       "debut": 282.699,
+       "fin": 282.779
+      },
+      {
+       "mot": "part",
+       "debut": 282.839,
+       "fin": 283.079
+      },
+      {
+       "mot": "qui",
+       "debut": 283.339,
+       "fin": 283.459
+      },
+      {
+       "mot": "vise",
+       "debut": 283.499,
+       "fin": 283.839
+      },
+      {
+       "mot": "tout",
+       "debut": 283.899,
+       "fin": 283.979
+      },
+      {
+       "mot": "le",
+       "debut": 283.999,
+       "fin": 284.039
+      },
+      {
+       "mot": "monde",
+       "debut": 284.079,
+       "fin": 284.299
+      }
+     ]
     },
     {
      "texte": "C'est l'omission de prêter secours, à l'article cent vingt-huit du Code pénal.",
-     "debut": 245.261,
-     "fin": 249.986
+     "debut": 284.959,
+     "fin": 289.479,
+     "mots": [
+      {
+       "mot": "c",
+       "debut": 284.959,
+       "fin": 285.079
+      },
+      {
+       "mot": "est",
+       "debut": 284.959,
+       "fin": 285.079
+      },
+      {
+       "mot": "l",
+       "debut": 285.119,
+       "fin": 285.579
+      },
+      {
+       "mot": "omission",
+       "debut": 285.119,
+       "fin": 285.579
+      },
+      {
+       "mot": "de",
+       "debut": 285.619,
+       "fin": 285.719
+      },
+      {
+       "mot": "prêter",
+       "debut": 285.759,
+       "fin": 286.039
+      },
+      {
+       "mot": "secours",
+       "debut": 286.099,
+       "fin": 286.519
+      },
+      {
+       "mot": "à",
+       "debut": 287.019,
+       "fin": 287.059
+      },
+      {
+       "mot": "l",
+       "debut": 287.099,
+       "fin": 287.559
+      },
+      {
+       "mot": "article",
+       "debut": 287.099,
+       "fin": 287.559
+      },
+      {
+       "mot": "cent",
+       "debut": 287.639,
+       "fin": 287.779
+      },
+      {
+       "mot": "vingt",
+       "debut": 287.819,
+       "fin": 288.319
+      },
+      {
+       "mot": "huit",
+       "debut": 287.819,
+       "fin": 288.319
+      },
+      {
+       "mot": "du",
+       "debut": 288.739,
+       "fin": 288.839
+      },
+      {
+       "mot": "code",
+       "debut": 288.879,
+       "fin": 289.039
+      },
+      {
+       "mot": "pénal",
+       "debut": 289.079,
+       "fin": 289.479
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 31,
-   "debut": 250.436,
-   "fin": 263.997,
+   "debut": 290.319,
+   "fin": 303.599,
    "phrases": [
     {
      "texte": "Elle punit celui qui ne secourt pas une personne en danger de mort imminent.",
-     "debut": 250.436,
-     "fin": 254.291
+     "debut": 290.319,
+     "fin": 294.539,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 290.319,
+       "fin": 290.399
+      },
+      {
+       "mot": "punit",
+       "debut": 290.499,
+       "fin": 290.719
+      },
+      {
+       "mot": "celui",
+       "debut": 290.779,
+       "fin": 291.079
+      },
+      {
+       "mot": "qui",
+       "debut": 291.259,
+       "fin": 291.319
+      },
+      {
+       "mot": "ne",
+       "debut": 291.399,
+       "fin": 291.479
+      },
+      {
+       "mot": "secourt",
+       "debut": 291.599,
+       "fin": 291.979
+      },
+      {
+       "mot": "pas",
+       "debut": 292.019,
+       "fin": 292.319
+      },
+      {
+       "mot": "une",
+       "debut": 292.379,
+       "fin": 292.499
+      },
+      {
+       "mot": "personne",
+       "debut": 292.539,
+       "fin": 292.939
+      },
+      {
+       "mot": "en",
+       "debut": 293.139,
+       "fin": 293.219
+      },
+      {
+       "mot": "danger",
+       "debut": 293.259,
+       "fin": 293.539
+      },
+      {
+       "mot": "de",
+       "debut": 293.579,
+       "fin": 293.659
+      },
+      {
+       "mot": "mort",
+       "debut": 293.699,
+       "fin": 293.879
+      },
+      {
+       "mot": "imminente",
+       "debut": 294.119,
+       "fin": 294.539
+      }
+     ]
     },
     {
      "texte": "Il faut qu'on puisse raisonnablement l'exiger de lui.",
-     "debut": 254.801,
-     "fin": 257.982
+     "debut": 295.519,
+     "fin": 297.859,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 295.519,
+       "fin": 295.579
+      },
+      {
+       "mot": "faut",
+       "debut": 295.599,
+       "fin": 295.699
+      },
+      {
+       "mot": "qu",
+       "debut": 295.719,
+       "fin": 295.819
+      },
+      {
+       "mot": "on",
+       "debut": 295.719,
+       "fin": 295.819
+      },
+      {
+       "mot": "puisse",
+       "debut": 295.899,
+       "fin": 296.199
+      },
+      {
+       "mot": "raisonnablement",
+       "debut": 296.279,
+       "fin": 296.979
+      },
+      {
+       "mot": "l",
+       "debut": 297.119,
+       "fin": 297.559
+      },
+      {
+       "mot": "exiger",
+       "debut": 297.119,
+       "fin": 297.559
+      },
+      {
+       "mot": "de",
+       "debut": 297.599,
+       "fin": 297.659
+      },
+      {
+       "mot": "lui",
+       "debut": 297.699,
+       "fin": 297.859
+      }
+     ]
     },
     {
      "texte": "Elle vise aussi celui qui laisse sans secours une personne qu'il a lui-même blessée.",
-     "debut": 258.366,
-     "fin": 263.996
+     "debut": 298.959,
+     "fin": 303.599,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 298.959,
+       "fin": 299.039
+      },
+      {
+       "mot": "vise",
+       "debut": 299.059,
+       "fin": 299.199
+      },
+      {
+       "mot": "aussi",
+       "debut": 299.239,
+       "fin": 299.499
+      },
+      {
+       "mot": "celui",
+       "debut": 299.559,
+       "fin": 299.819
+      },
+      {
+       "mot": "qui",
+       "debut": 299.879,
+       "fin": 299.979
+      },
+      {
+       "mot": "laisse",
+       "debut": 300.019,
+       "fin": 300.259
+      },
+      {
+       "mot": "sans",
+       "debut": 300.319,
+       "fin": 300.459
+      },
+      {
+       "mot": "secours",
+       "debut": 300.499,
+       "fin": 300.839
+      },
+      {
+       "mot": "une",
+       "debut": 301.219,
+       "fin": 301.339
+      },
+      {
+       "mot": "personne",
+       "debut": 301.379,
+       "fin": 301.779
+      },
+      {
+       "mot": "qui",
+       "debut": 302.339,
+       "fin": 302.439
+      },
+      {
+       "mot": "l",
+       "debut": 302.479,
+       "fin": 302.599
+      },
+      {
+       "mot": "a",
+       "debut": 302.479,
+       "fin": 302.599
+      },
+      {
+       "mot": "lui",
+       "debut": 302.799,
+       "fin": 303.159
+      },
+      {
+       "mot": "même",
+       "debut": 302.799,
+       "fin": 303.159
+      },
+      {
+       "mot": "blessée",
+       "debut": 303.239,
+       "fin": 303.599
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 32,
-   "debut": 264.447,
-   "fin": 271.645,
+   "debut": 305.039,
+   "fin": 311.619,
    "phrases": [
     {
      "texte": "Un enfant se noie à deux mètres de Maël, dans une piscine.",
-     "debut": 264.447,
-     "fin": 267.942
+     "debut": 305.039,
+     "fin": 308.059,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 305.039,
+       "fin": 305.099
+      },
+      {
+       "mot": "enfant",
+       "debut": 305.159,
+       "fin": 305.419
+      },
+      {
+       "mot": "se",
+       "debut": 305.479,
+       "fin": 305.559
+      },
+      {
+       "mot": "noie",
+       "debut": 305.619,
+       "fin": 305.979
+      },
+      {
+       "mot": "à",
+       "debut": 306.059,
+       "fin": 306.099
+      },
+      {
+       "mot": "deux",
+       "debut": 306.139,
+       "fin": 306.239
+      },
+      {
+       "mot": "mètres",
+       "debut": 306.259,
+       "fin": 306.419
+      },
+      {
+       "mot": "de",
+       "debut": 306.459,
+       "fin": 306.559
+      },
+      {
+       "mot": "maël",
+       "debut": 306.599,
+       "fin": 306.959
+      },
+      {
+       "mot": "dans",
+       "debut": 307.259,
+       "fin": 307.399
+      },
+      {
+       "mot": "une",
+       "debut": 307.439,
+       "fin": 307.579
+      },
+      {
+       "mot": "piscine",
+       "debut": 307.619,
+       "fin": 308.059
+      }
+     ]
     },
     {
      "texte": "On pouvait au moins exiger de lui qu'il appelle à l'aide.",
-     "debut": 268.452,
-     "fin": 271.645
+     "debut": 308.979,
+     "fin": 311.619,
+     "mots": [
+      {
+       "mot": "on",
+       "debut": 308.979,
+       "fin": 309.059
+      },
+      {
+       "mot": "pouvait",
+       "debut": 309.099,
+       "fin": 309.299
+      },
+      {
+       "mot": "au",
+       "debut": 309.339,
+       "fin": 309.379
+      },
+      {
+       "mot": "moins",
+       "debut": 309.459,
+       "fin": 309.699
+      },
+      {
+       "mot": "exiger",
+       "debut": 309.779,
+       "fin": 310.139
+      },
+      {
+       "mot": "de",
+       "debut": 310.179,
+       "fin": 310.239
+      },
+      {
+       "mot": "lui",
+       "debut": 310.279,
+       "fin": 310.439
+      },
+      {
+       "mot": "qu",
+       "debut": 310.619,
+       "fin": 310.739
+      },
+      {
+       "mot": "il",
+       "debut": 310.619,
+       "fin": 310.739
+      },
+      {
+       "mot": "appelle",
+       "debut": 310.799,
+       "fin": 311.259
+      },
+      {
+       "mot": "à",
+       "debut": 311.319,
+       "fin": 311.379
+      },
+      {
+       "mot": "l",
+       "debut": 311.399,
+       "fin": 311.619
+      },
+      {
+       "mot": "aide",
+       "debut": 311.399,
+       "fin": 311.619
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 33,
-   "debut": 272.095,
-   "fin": 285.702,
+   "debut": 312.719,
+   "fin": 325.919,
    "phrases": [
     {
      "texte": "La différence est importante.",
-     "debut": 272.095,
-     "fin": 273.511
+     "debut": 312.719,
+     "fin": 313.899,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 312.719,
+       "fin": 312.799
+      },
+      {
+       "mot": "différence",
+       "debut": 312.839,
+       "fin": 313.199
+      },
+      {
+       "mot": "est",
+       "debut": 313.239,
+       "fin": 313.319
+      },
+      {
+       "mot": "importante",
+       "debut": 313.359,
+       "fin": 313.899
+      }
+     ]
     },
     {
      "texte": "Maël ne répond pas des blessures de Timéo.",
-     "debut": 274.208,
-     "fin": 276.658
+     "debut": 314.459,
+     "fin": 316.259,
+     "mots": [
+      {
+       "mot": "maël",
+       "debut": 314.459,
+       "fin": 314.639
+      },
+      {
+       "mot": "ne",
+       "debut": 314.659,
+       "fin": 314.739
+      },
+      {
+       "mot": "répond",
+       "debut": 314.779,
+       "fin": 315.099
+      },
+      {
+       "mot": "pas",
+       "debut": 315.139,
+       "fin": 315.279
+      },
+      {
+       "mot": "des",
+       "debut": 315.319,
+       "fin": 315.399
+      },
+      {
+       "mot": "blessures",
+       "debut": 315.419,
+       "fin": 315.719
+      },
+      {
+       "mot": "de",
+       "debut": 315.759,
+       "fin": 315.839
+      },
+      {
+       "mot": "timéo",
+       "debut": 315.879,
+       "fin": 316.259
+      }
+     ]
     },
     {
      "texte": "Il répond seulement de ne pas avoir porté secours.",
-     "debut": 277.169,
-     "fin": 279.665
+     "debut": 317.059,
+     "fin": 319.739,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 317.059,
+       "fin": 317.139
+      },
+      {
+       "mot": "répond",
+       "debut": 317.179,
+       "fin": 317.499
+      },
+      {
+       "mot": "seulement",
+       "debut": 317.579,
+       "fin": 318.119
+      },
+      {
+       "mot": "de",
+       "debut": 318.159,
+       "fin": 318.239
+      },
+      {
+       "mot": "ne",
+       "debut": 318.259,
+       "fin": 318.339
+      },
+      {
+       "mot": "pas",
+       "debut": 318.479,
+       "fin": 318.739
+      },
+      {
+       "mot": "avoir",
+       "debut": 318.819,
+       "fin": 319.079
+      },
+      {
+       "mot": "porté",
+       "debut": 319.099,
+       "fin": 319.339
+      },
+      {
+       "mot": "secours",
+       "debut": 319.399,
+       "fin": 319.739
+      }
+     ]
     },
     {
      "texte": "Il encourt tout de même jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire.",
-     "debut": 280.361,
-     "fin": 285.702
+     "debut": 320.599,
+     "fin": 325.919,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 320.599,
+       "fin": 320.659
+      },
+      {
+       "mot": "encourt",
+       "debut": 320.699,
+       "fin": 320.939
+      },
+      {
+       "mot": "tout",
+       "debut": 320.979,
+       "fin": 321.059
+      },
+      {
+       "mot": "de",
+       "debut": 321.099,
+       "fin": 321.159
+      },
+      {
+       "mot": "même",
+       "debut": 321.199,
+       "fin": 321.559
+      },
+      {
+       "mot": "jusqu",
+       "debut": 321.619,
+       "fin": 321.919
+      },
+      {
+       "mot": "à",
+       "debut": 321.619,
+       "fin": 321.919
+      },
+      {
+       "mot": "trois",
+       "debut": 321.979,
+       "fin": 322.299
+      },
+      {
+       "mot": "ans",
+       "debut": 322.319,
+       "fin": 322.499
+      },
+      {
+       "mot": "de",
+       "debut": 322.559,
+       "fin": 322.659
+      },
+      {
+       "mot": "peine",
+       "debut": 322.719,
+       "fin": 322.899
+      },
+      {
+       "mot": "privative",
+       "debut": 322.939,
+       "fin": 323.399
+      },
+      {
+       "mot": "de",
+       "debut": 323.439,
+       "fin": 323.499
+      },
+      {
+       "mot": "liberté",
+       "debut": 323.539,
+       "fin": 323.979
+      },
+      {
+       "mot": "ou",
+       "debut": 324.559,
+       "fin": 324.659
+      },
+      {
+       "mot": "une",
+       "debut": 324.859,
+       "fin": 325.019
+      },
+      {
+       "mot": "peine",
+       "debut": 325.059,
+       "fin": 325.339
+      },
+      {
+       "mot": "pécuniaire",
+       "debut": 325.379,
+       "fin": 325.919
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 34,
-   "debut": 286.152,
-   "fin": 293.489,
+   "debut": 327.359,
+   "fin": 335.159,
    "phrases": [
     {
      "texte": "Retenons.",
-     "debut": 286.152,
-     "fin": 286.767
+     "debut": 327.359,
+     "fin": 327.739,
+     "mots": [
+      {
+       "mot": "retenons",
+       "debut": 327.359,
+       "fin": 327.739
+      }
+     ]
     },
     {
      "texte": "Ne rien faire peut constituer un crime ou un délit.",
-     "debut": 287.464,
-     "fin": 289.972
+     "debut": 328.819,
+     "fin": 331.479,
+     "mots": [
+      {
+       "mot": "ne",
+       "debut": 328.819,
+       "fin": 328.879
+      },
+      {
+       "mot": "rien",
+       "debut": 328.919,
+       "fin": 329.139
+      },
+      {
+       "mot": "faire",
+       "debut": 329.219,
+       "fin": 329.459
+      },
+      {
+       "mot": "peut",
+       "debut": 329.599,
+       "fin": 329.719
+      },
+      {
+       "mot": "constituer",
+       "debut": 329.759,
+       "fin": 330.479
+      },
+      {
+       "mot": "un",
+       "debut": 330.519,
+       "fin": 330.599
+      },
+      {
+       "mot": "crime",
+       "debut": 330.639,
+       "fin": 330.899
+      },
+      {
+       "mot": "ou",
+       "debut": 331.039,
+       "fin": 331.119
+      },
+      {
+       "mot": "un",
+       "debut": 331.159,
+       "fin": 331.219
+      },
+      {
+       "mot": "délit",
+       "debut": 331.259,
+       "fin": 331.479
+      }
+     ]
     },
     {
      "texte": "Mais seulement pour celui qui avait une position de garant.",
-     "debut": 290.413,
-     "fin": 293.49
+     "debut": 332.179,
+     "fin": 335.159,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 332.179,
+       "fin": 332.299
+      },
+      {
+       "mot": "seulement",
+       "debut": 332.379,
+       "fin": 332.759
+      },
+      {
+       "mot": "pour",
+       "debut": 332.799,
+       "fin": 332.919
+      },
+      {
+       "mot": "celui",
+       "debut": 332.959,
+       "fin": 333.239
+      },
+      {
+       "mot": "qui",
+       "debut": 333.479,
+       "fin": 333.539
+      },
+      {
+       "mot": "avait",
+       "debut": 333.619,
+       "fin": 333.879
+      },
+      {
+       "mot": "une",
+       "debut": 333.899,
+       "fin": 334.039
+      },
+      {
+       "mot": "position",
+       "debut": 334.079,
+       "fin": 334.499
+      },
+      {
+       "mot": "de",
+       "debut": 334.719,
+       "fin": 334.799
+      },
+      {
+       "mot": "garant",
+       "debut": 334.839,
+       "fin": 335.159
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 35,
-   "debut": 293.939,
-   "fin": 300.534,
+   "debut": 336.439,
+   "fin": 343.039,
    "phrases": [
     {
      "texte": "Elle vient notamment de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé.",
-     "debut": 293.939,
-     "fin": 300.533
+     "debut": 336.439,
+     "fin": 343.039,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 336.439,
+       "fin": 336.539
+      },
+      {
+       "mot": "vient",
+       "debut": 336.559,
+       "fin": 336.699
+      },
+      {
+       "mot": "notamment",
+       "debut": 336.739,
+       "fin": 337.119
+      },
+      {
+       "mot": "de",
+       "debut": 337.159,
+       "fin": 337.219
+      },
+      {
+       "mot": "la",
+       "debut": 337.259,
+       "fin": 337.339
+      },
+      {
+       "mot": "loi",
+       "debut": 337.379,
+       "fin": 337.579
+      },
+      {
+       "mot": "d",
+       "debut": 338.139,
+       "fin": 338.259
+      },
+      {
+       "mot": "un",
+       "debut": 338.139,
+       "fin": 338.259
+      },
+      {
+       "mot": "contrat",
+       "debut": 338.299,
+       "fin": 338.679
+      },
+      {
+       "mot": "d",
+       "debut": 339.119,
+       "fin": 339.279
+      },
+      {
+       "mot": "une",
+       "debut": 339.119,
+       "fin": 339.279
+      },
+      {
+       "mot": "communauté",
+       "debut": 339.319,
+       "fin": 339.799
+      },
+      {
+       "mot": "de",
+       "debut": 339.839,
+       "fin": 339.919
+      },
+      {
+       "mot": "risques",
+       "debut": 339.979,
+       "fin": 340.279
+      },
+      {
+       "mot": "ou",
+       "debut": 341.039,
+       "fin": 341.079
+      },
+      {
+       "mot": "d",
+       "debut": 341.119,
+       "fin": 341.239
+      },
+      {
+       "mot": "un",
+       "debut": 341.119,
+       "fin": 341.239
+      },
+      {
+       "mot": "risque",
+       "debut": 341.279,
+       "fin": 341.579
+      },
+      {
+       "mot": "qu",
+       "debut": 341.779,
+       "fin": 341.939
+      },
+      {
+       "mot": "on",
+       "debut": 341.779,
+       "fin": 341.939
+      },
+      {
+       "mot": "a",
+       "debut": 342.019,
+       "fin": 342.119
+      },
+      {
+       "mot": "soi",
+       "debut": 342.279,
+       "fin": 342.619
+      },
+      {
+       "mot": "même",
+       "debut": 342.279,
+       "fin": 342.619
+      },
+      {
+       "mot": "créé",
+       "debut": 342.739,
+       "fin": 343.039
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 36,
-   "debut": 300.984,
-   "fin": 313.708,
+   "debut": 344.479,
+   "fin": 358.659,
    "phrases": [
     {
      "texte": "Pour les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminent.",
-     "debut": 300.984,
-     "fin": 307.033
+     "debut": 344.479,
+     "fin": 351.619,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 344.479,
+       "fin": 344.579
+      },
+      {
+       "mot": "les",
+       "debut": 344.619,
+       "fin": 344.739
+      },
+      {
+       "mot": "autres",
+       "debut": 344.779,
+       "fin": 344.999
+      },
+      {
+       "mot": "il",
+       "debut": 345.459,
+       "fin": 345.559
+      },
+      {
+       "mot": "reste",
+       "debut": 345.599,
+       "fin": 345.899
+      },
+      {
+       "mot": "une",
+       "debut": 345.939,
+       "fin": 346.019
+      },
+      {
+       "mot": "obligation",
+       "debut": 346.079,
+       "fin": 346.559
+      },
+      {
+       "mot": "minimale",
+       "debut": 346.699,
+       "fin": 347.139
+      },
+      {
+       "mot": "porter",
+       "debut": 348.019,
+       "fin": 348.279
+      },
+      {
+       "mot": "secours",
+       "debut": 348.339,
+       "fin": 348.779
+      },
+      {
+       "mot": "à",
+       "debut": 349.119,
+       "fin": 349.179
+      },
+      {
+       "mot": "une",
+       "debut": 349.199,
+       "fin": 349.359
+      },
+      {
+       "mot": "personne",
+       "debut": 349.399,
+       "fin": 349.839
+      },
+      {
+       "mot": "en",
+       "debut": 350.039,
+       "fin": 350.099
+      },
+      {
+       "mot": "danger",
+       "debut": 350.139,
+       "fin": 350.599
+      },
+      {
+       "mot": "de",
+       "debut": 350.639,
+       "fin": 350.719
+      },
+      {
+       "mot": "mort",
+       "debut": 350.799,
+       "fin": 350.979
+      },
+      {
+       "mot": "imminente",
+       "debut": 351.179,
+       "fin": 351.619
+      }
+     ]
     },
     {
      "texte": "Face à un cas d'omission, posez toujours la même question.",
-     "debut": 307.637,
-     "fin": 310.806
+     "debut": 352.759,
+     "fin": 355.399,
+     "mots": [
+      {
+       "mot": "face",
+       "debut": 352.759,
+       "fin": 352.919
+      },
+      {
+       "mot": "à",
+       "debut": 352.959,
+       "fin": 353.019
+      },
+      {
+       "mot": "un",
+       "debut": 353.059,
+       "fin": 353.119
+      },
+      {
+       "mot": "cas",
+       "debut": 353.159,
+       "fin": 353.259
+      },
+      {
+       "mot": "d",
+       "debut": 353.279,
+       "fin": 353.759
+      },
+      {
+       "mot": "omission",
+       "debut": 353.279,
+       "fin": 353.759
+      },
+      {
+       "mot": "posez",
+       "debut": 354.119,
+       "fin": 354.339
+      },
+      {
+       "mot": "toujours",
+       "debut": 354.379,
+       "fin": 354.679
+      },
+      {
+       "mot": "la",
+       "debut": 354.719,
+       "fin": 354.799
+      },
+      {
+       "mot": "même",
+       "debut": 354.839,
+       "fin": 354.959
+      },
+      {
+       "mot": "question",
+       "debut": 355.059,
+       "fin": 355.399
+      }
+     ]
     },
     {
      "texte": "Cette personne devait-elle agir, et pourquoi ?",
-     "debut": 311.131,
-     "fin": 313.709
+     "debut": 356.259,
+     "fin": 358.659,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 356.259,
+       "fin": 356.399
+      },
+      {
+       "mot": "personne",
+       "debut": 356.439,
+       "fin": 356.839
+      },
+      {
+       "mot": "devait",
+       "debut": 356.879,
+       "fin": 357.219
+      },
+      {
+       "mot": "elle",
+       "debut": 356.879,
+       "fin": 357.219
+      },
+      {
+       "mot": "agir",
+       "debut": 357.279,
+       "fin": 357.599
+      },
+      {
+       "mot": "et",
+       "debut": 358.199,
+       "fin": 358.279
+      },
+      {
+       "mot": "pourquoi",
+       "debut": 358.319,
+       "fin": 358.659
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 37,
-   "debut": 314.158,
-   "fin": 320.521,
+   "debut": 360.099,
+   "fin": 367.089,
    "phrases": [
     {
      "texte": "Une question pour finir.",
-     "debut": 314.158,
-     "fin": 315.331
+     "debut": 360.099,
+     "fin": 360.879,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 360.099,
+       "fin": 360.179
+      },
+      {
+       "mot": "question",
+       "debut": 360.219,
+       "fin": 360.479
+      },
+      {
+       "mot": "pour",
+       "debut": 360.499,
+       "fin": 360.599
+      },
+      {
+       "mot": "finir",
+       "debut": 360.659,
+       "fin": 360.879
+      }
+     ]
     },
     {
      "texte": "Lucas allume un feu de camp en forêt.",
-     "debut": 315.841,
-     "fin": 317.78
+     "debut": 361.469,
+     "fin": 364.229,
+     "mots": [
+      {
+       "mot": "lucas",
+       "debut": 361.469,
+       "fin": 361.789
+      },
+      {
+       "mot": "allume",
+       "debut": 362.309,
+       "fin": 362.789
+      },
+      {
+       "mot": "un",
+       "debut": 362.849,
+       "fin": 362.969
+      },
+      {
+       "mot": "feu",
+       "debut": 363.029,
+       "fin": 363.149
+      },
+      {
+       "mot": "de",
+       "debut": 363.189,
+       "fin": 363.349
+      },
+      {
+       "mot": "camp",
+       "debut": 363.389,
+       "fin": 363.589
+      },
+      {
+       "mot": "en",
+       "debut": 363.829,
+       "fin": 363.909
+      },
+      {
+       "mot": "forêt",
+       "debut": 363.969,
+       "fin": 364.229
+      }
+     ]
     },
     {
      "texte": "Il part sans l'éteindre, et le feu s'étend.",
-     "debut": 318.024,
-     "fin": 320.52
+     "debut": 365.089,
+     "fin": 367.089,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 365.089,
+       "fin": 365.209
+      },
+      {
+       "mot": "part",
+       "debut": 365.249,
+       "fin": 365.409
+      },
+      {
+       "mot": "sans",
+       "debut": 365.469,
+       "fin": 365.569
+      },
+      {
+       "mot": "l",
+       "debut": 365.589,
+       "fin": 366.009
+      },
+      {
+       "mot": "éteindre",
+       "debut": 365.589,
+       "fin": 366.009
+      },
+      {
+       "mot": "et",
+       "debut": 366.369,
+       "fin": 366.449
+      },
+      {
+       "mot": "le",
+       "debut": 366.469,
+       "fin": 366.529
+      },
+      {
+       "mot": "feu",
+       "debut": 366.609,
+       "fin": 366.689
+      },
+      {
+       "mot": "s",
+       "debut": 366.769,
+       "fin": 367.089
+      },
+      {
+       "mot": "étend",
+       "debut": 366.769,
+       "fin": 367.089
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 38,
-   "debut": 320.971,
-   "fin": 328.076,
+   "debut": 368.529,
+   "fin": 377.229,
    "phrases": [
     {
      "texte": "Lucas était-il garant ?",
-     "debut": 320.971,
-     "fin": 322.364
+     "debut": 368.529,
+     "fin": 370.089,
+     "mots": [
+      {
+       "mot": "lucas",
+       "debut": 368.529,
+       "fin": 368.849
+      },
+      {
+       "mot": "était",
+       "debut": 369.409,
+       "fin": 369.809
+      },
+      {
+       "mot": "il",
+       "debut": 369.409,
+       "fin": 369.809
+      },
+      {
+       "mot": "garant",
+       "debut": 369.849,
+       "fin": 370.089
+      }
+     ]
     },
     {
-     "texte": "Et si oui, d'après laquelle des quatre sources ?",
-     "debut": 322.747,
-     "fin": 325.58
+     "texte": "Et si oui, d'après laquelle de ces quatre sources ?",
+     "debut": 370.989,
+     "fin": 374.149,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 370.989,
+       "fin": 371.069
+      },
+      {
+       "mot": "si",
+       "debut": 371.109,
+       "fin": 371.209
+      },
+      {
+       "mot": "oui",
+       "debut": 371.269,
+       "fin": 371.409
+      },
+      {
+       "mot": "d",
+       "debut": 372.009,
+       "fin": 372.329
+      },
+      {
+       "mot": "après",
+       "debut": 372.009,
+       "fin": 372.329
+      },
+      {
+       "mot": "laquelle",
+       "debut": 372.369,
+       "fin": 372.769
+      },
+      {
+       "mot": "de",
+       "debut": 373.029,
+       "fin": 373.129
+      },
+      {
+       "mot": "ces",
+       "debut": 373.189,
+       "fin": 373.489
+      },
+      {
+       "mot": "quatre",
+       "debut": 373.529,
+       "fin": 373.789
+      },
+      {
+       "mot": "sources",
+       "debut": 373.849,
+       "fin": 374.149
+      }
+     ]
     },
     {
      "texte": "Écrivez votre réponse en commentaire.",
-     "debut": 325.963,
-     "fin": 328.076
+     "debut": 375.289,
+     "fin": 377.229,
+     "mots": [
+      {
+       "mot": "écrivez",
+       "debut": 375.289,
+       "fin": 375.709
+      },
+      {
+       "mot": "votre",
+       "debut": 375.749,
+       "fin": 375.909
+      },
+      {
+       "mot": "réponse",
+       "debut": 375.929,
+       "fin": 376.309
+      },
+      {
+       "mot": "en",
+       "debut": 376.669,
+       "fin": 376.749
+      },
+      {
+       "mot": "commentaire",
+       "debut": 376.789,
+       "fin": 377.229
+      }
+     ]
     }
    ]
   },
   {
    "ligne": 39,
-   "debut": 328.526,
-   "fin": 335.817,
+   "debut": 378.069,
+   "fin": 385.709,
    "phrases": [
     {
      "texte": "La réponse, le script et les articles cités sont dans la description, en accès libre.",
-     "debut": 328.526,
-     "fin": 333.356
+     "debut": 378.069,
+     "fin": 383.029,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 378.069,
+       "fin": 378.149
+      },
+      {
+       "mot": "réponse",
+       "debut": 378.189,
+       "fin": 378.669
+      },
+      {
+       "mot": "le",
+       "debut": 379.089,
+       "fin": 379.149
+      },
+      {
+       "mot": "script",
+       "debut": 379.209,
+       "fin": 379.609
+      },
+      {
+       "mot": "et",
+       "debut": 379.949,
+       "fin": 379.989
+      },
+      {
+       "mot": "les",
+       "debut": 380.029,
+       "fin": 380.149
+      },
+      {
+       "mot": "articles",
+       "debut": 380.209,
+       "fin": 380.509
+      },
+      {
+       "mot": "cités",
+       "debut": 380.549,
+       "fin": 380.829
+      },
+      {
+       "mot": "sont",
+       "debut": 381.189,
+       "fin": 381.289
+      },
+      {
+       "mot": "dans",
+       "debut": 381.309,
+       "fin": 381.389
+      },
+      {
+       "mot": "la",
+       "debut": 381.429,
+       "fin": 381.489
+      },
+      {
+       "mot": "description",
+       "debut": 381.509,
+       "fin": 382.069
+      },
+      {
+       "mot": "en",
+       "debut": 382.429,
+       "fin": 382.509
+      },
+      {
+       "mot": "accès",
+       "debut": 382.549,
+       "fin": 382.789
+      },
+      {
+       "mot": "libre",
+       "debut": 382.829,
+       "fin": 383.029
+      }
+     ]
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 333.797,
-     "fin": 335.817
+     "debut": 384.109,
+     "fin": 385.709,
+     "mots": [
+      {
+       "mot": "à",
+       "debut": 384.109,
+       "fin": 384.169
+      },
+      {
+       "mot": "bientôt",
+       "debut": 384.209,
+       "fin": 384.509
+      },
+      {
+       "mot": "sur",
+       "debut": 384.789,
+       "fin": 384.929
+      },
+      {
+       "mot": "l",
+       "debut": 384.969,
+       "fin": 385.309
+      },
+      {
+       "mot": "etude",
+       "debut": 384.969,
+       "fin": 385.309
+      },
+      {
+       "mot": "du",
+       "debut": 385.329,
+       "fin": 385.409
+      },
+      {
+       "mot": "droit",
+       "debut": 385.449,
+       "fin": 385.709
+      }
+     ]
     }
    ]
   }

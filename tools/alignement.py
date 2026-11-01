@@ -260,16 +260,17 @@ def main(slug: str) -> None:
 
     # Un mot mal reconnu au début ou à la fin d'une phrase (« séquelles », « alignés ») ne doit pas
     # être coupé : la prise est prolongée sur les mots qui la touchent, autant qu'il en manque.
-    def touche(a: int, b: int) -> bool:
-        return instants[b][0] - instants[a][1] < 0.5
+    def touche(a: int, b: int, limite: float = 0.5) -> bool:
+        return instants[b][0] - instants[a][1] < limite
     for k, (i, j, part, tete, queue) in enumerate(choix):
         apres = choix[k + 1][0] if k + 1 < len(choix) else len(entendus)
         for _ in range(queue + 1 if queue else 0):
             if j + 1 < apres and touche(j, j + 1):
                 j += 1
         avant = choix[k - 1][1] if k else -1
+        # Au début, la lectrice marque souvent un temps après le premier mot (« Sofia… roule ») : jusqu'à 1 s.
         for _ in range(tete):
-            if i - 1 > avant and touche(i - 1, i):
+            if i - 1 > avant and touche(i - 1, i, 1.0):
                 i -= 1
         choix[k] = (i, j, part, tete, queue)
 

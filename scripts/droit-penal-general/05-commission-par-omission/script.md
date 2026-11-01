@@ -22,7 +22,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | --- | --- | --- |
 | 6 | Jusqu'ici, nos cas parlaient d'actes. Marc poussait Julien, Léo frappait un ballon. | Rembobinage ; « vidéo 1 » et « vidéo 4 » en petit |
 | 7 | Mais le droit pénal connaît aussi l'omission. C'est le fait de ne pas agir, alors qu'on aurait dû. Une piscine, une crèche, une montagne : bien des drames viennent d'un geste qui n'a pas été fait. | Deux colonnes « Agir » et « Ne pas agir » |
-| 8 | L'article 11 du Code pénal le dit clairement. Un crime ou un délit peut aussi être commis par un comportement passif, contraire à une obligation d'agir. | Bloc « Art. 11 CP » ; la colonne « Ne pas agir » en ambre |
+| 8 | L'article 11 du Code pénal le dit clairement. Un crime ou un délit peut être aussi commis par un comportement passif, contraire à une obligation d'agir. | Bloc « Art. 11 CP » ; la colonne « Ne pas agir » en ambre |
 | 9 | Toute la question devient alors : qui avait l'obligation d'agir ? Clara ? Maël ? Les deux ? | Deux cases « Clara ? » et « Maël ? » |
 
 ## La position de garant
@@ -72,7 +72,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | 35 | Elle vient notamment de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé. | La liste revient, ligne par ligne |
 | 36 | Pour les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminent. Face à un cas d'omission, posez toujours la même question. Cette personne devait-elle agir, et pourquoi ? | Bloc « Art. 128 CP » |
 | 37 | Une question pour finir. Lucas allume un feu de camp en forêt. Il part sans l'éteindre, et le feu s'étend. | La silhouette de Lucas ; une frise du temps |
-| 38 | Lucas était-il garant ? Et si oui, d'après laquelle des quatre sources ? Écrivez votre réponse en commentaire. | La liste des quatre sources, avec un point d'interrogation |
+| 38 | Lucas était-il garant ? Et si oui, d'après laquelle de ces quatre sources ? Écrivez votre réponse en commentaire. | La liste des quatre sources, avec un point d'interrogation |
 | 39 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
 **Réponse attendue à la question finale**, pour la description : oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre ou le surveiller (article 11, alinéa 2, lettre d, du Code pénal). S'il ne l'a pas fait, les dommages causés par l'incendie peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3.
