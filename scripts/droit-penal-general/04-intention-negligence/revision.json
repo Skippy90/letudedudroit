@@ -1,0 +1,209 @@
+{
+  "video": 4,
+  "slug": "04-intention-negligence",
+  "titre": "Le voulait-il vraiment ?",
+  "notions": [
+    "Intention",
+    "Dol éventuel",
+    "Négligence",
+    "Punissabilité de la négligence"
+  ],
+  "a_vous": [
+    {
+      "ligne": 16,
+      "pause": "Léo ne souhaite pas la blessure, mais il l'accepte. Selon vous, agit-il encore intentionnellement ?",
+      "pourquoi": "Le spectateur se prononce avant d'apprendre que le dol éventuel reste de l'intention."
+    },
+    {
+      "ligne": 21,
+      "pause": "Léo voit le risque, mais il compte que rien n'arrivera. Est-ce encore de l'intention, selon vous ?",
+      "pourquoi": "La frontière entre dol éventuel et négligence consciente se comprend mieux après un pari."
+    },
+    {
+      "ligne": 33,
+      "pause": "Selon vous, une négligence est-elle toujours punie, simplement moins sévèrement ?",
+      "pourquoi": "Le spectateur formule le piège classique avant de le voir corrigé."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v04-01",
+      "q": "Quelles sont les deux grandes attitudes que distingue l'article 12 du Code pénal ?",
+      "r": "L'intention et la négligence.",
+      "source": "ligne 6 ; art. 12 CP",
+      "notion": "Intention"
+    },
+    {
+      "id": "v04-02",
+      "q": "Selon l'article 12, qui agit intentionnellement ?",
+      "r": "Celui qui commet l'acte avec conscience et volonté.",
+      "source": "ligne 10 ; art. 12 al. 2 CP",
+      "notion": "Intention"
+    },
+    {
+      "id": "v04-03",
+      "q": "Léo vise la tête d'Adam, exprès, pour lui faire mal. Comment appelle-t-on son intention ?",
+      "r": "Le dol direct. Léo sait ce qu'il fait, et il veut le résultat.",
+      "source": "ligne 12 ; art. 12 al. 2 CP",
+      "notion": "Intention"
+    },
+    {
+      "id": "v04-04",
+      "q": "Qu'est-ce que le dol éventuel ?",
+      "r": "L'auteur tient le résultat pour possible et l'accepte. C'est encore de l'intention.",
+      "source": "ligne 16 ; art. 12 al. 2 CP",
+      "notion": "Dol éventuel"
+    },
+    {
+      "id": "v04-05",
+      "q": "Comment le Tribunal fédéral résume-t-il le dol éventuel ?",
+      "r": "L'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode.",
+      "source": "ligne 17 ; ATF 135 IV 152",
+      "notion": "Dol éventuel"
+    },
+    {
+      "id": "v04-06",
+      "q": "Qu'est-ce que la négligence consciente ?",
+      "r": "L'auteur voit le risque, mais il compte sur une issue heureuse. Il n'accepte pas le résultat.",
+      "source": "ligne 22 ; ATF 130 IV 58",
+      "notion": "Négligence"
+    },
+    {
+      "id": "v04-07",
+      "q": "Quand l'imprévoyance est-elle coupable ?",
+      "r": "Quand l'auteur ne prend pas les précautions commandées par les circonstances et par sa situation personnelle.",
+      "source": "ligne 25 ; art. 12 al. 3 CP",
+      "notion": "Négligence"
+    },
+    {
+      "id": "v04-08",
+      "q": "Léo a regardé, le parc était vide. Le ballon rebondit sur un poteau et touche Adam. Infraction ?",
+      "r": "Non. Il n'y a ni intention ni imprévoyance coupable. C'est un accident.",
+      "source": "ligne 28 ; art. 12 CP",
+      "notion": "Négligence"
+    },
+    {
+      "id": "v04-09",
+      "q": "Quels indices le juge pèse-t-il pour choisir entre intention et négligence ?",
+      "r": "Le risque et sa connaissance par l'auteur, la gravité de l'imprudence, les mobiles et la manière d'agir.",
+      "source": "ligne 30 ; ATF 135 IV 152",
+      "notion": "Dol éventuel"
+    },
+    {
+      "id": "v04-10",
+      "q": "Pour un crime ou un délit, quand la négligence est-elle punissable ?",
+      "r": "Seulement si la loi le prévoit expressément.",
+      "source": "ligne 34 ; art. 12 al. 1 CP",
+      "notion": "Punissabilité de la négligence"
+    },
+    {
+      "id": "v04-11",
+      "q": "Léo blesse Adam par négligence. Peut-il être puni ?",
+      "r": "Oui. L'article 125 du Code pénal punit les lésions corporelles par négligence. En principe sur plainte, d'office si la lésion est grave.",
+      "source": "ligne 35 ; art. 125 CP",
+      "notion": "Punissabilité de la négligence"
+    },
+    {
+      "id": "v04-12",
+      "q": "Le ballon de Léo casse la vitre d'une voiture, par négligence. Est-ce une infraction ?",
+      "r": "Non. Le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle.",
+      "source": "ligne 36 ; art. 144 CP",
+      "notion": "Punissabilité de la négligence"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Léo en veut à Adam. Il vise sa tête, exprès, pour lui faire mal.",
+      "qualification": "Intention : dol direct.",
+      "source": "ligne 9"
+    },
+    "changements": [
+      {
+        "fait": "Léo ne vise personne. Il voit le groupe et se dit : si je touche quelqu'un, tant pis.",
+        "qualification": "Dol éventuel : c'est encore de l'intention.",
+        "pourquoi": "Il ne souhaite pas la blessure. Mais il l'accepte, pour le cas où elle arriverait.",
+        "source": "ligne 16 ; art. 12 al. 2 CP"
+      },
+      {
+        "fait": "Léo voit le risque, mais il est sûr de sa précision. Il compte que rien n'arrivera.",
+        "qualification": "Négligence consciente.",
+        "pourquoi": "Léo n'accepte pas le résultat. Il fait confiance à son adresse, à tort.",
+        "source": "ligne 22 ; art. 12 al. 3 CP ; ATF 130 IV 58"
+      },
+      {
+        "fait": "Léo ne regarde pas autour de lui. Il ne voit pas le groupe derrière la haie.",
+        "qualification": "Négligence : imprévoyance coupable.",
+        "pourquoi": "Il ne s'est pas rendu compte du risque. Mais il aurait dû vérifier avant de frapper si fort.",
+        "source": "ligne 25 ; art. 12 al. 3 CP"
+      },
+      {
+        "fait": "Léo a regardé, le parc était vide. Le ballon rebondit sur un poteau.",
+        "qualification": "Pas d'infraction : c'est un accident.",
+        "pourquoi": "Léo a pris les précautions raisonnables. Il n'y a ni intention ni imprévoyance coupable.",
+        "source": "ligne 28 ; art. 12 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Dans la vidéo 1, Marc bouscule Julien par inadvertance, sans le voir. Julien est blessé.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle faut-il poser d'abord ?",
+        "choix": [
+          "Pour un crime ou un délit, seul l'acte intentionnel est punissable, sauf disposition expresse de la loi.",
+          "Toute blessure causée est punissable, qu'elle soit voulue ou non.",
+          "La négligence est toujours punie, simplement moins sévèrement."
+        ],
+        "bon": 0,
+        "note": "C'est l'article 12, alinéa 1, du Code pénal (lignes 7 et 34)."
+      },
+      {
+        "nom": "Application",
+        "q": "Marc a-t-il commis les lésions corporelles intentionnelles de l'article 123 ?",
+        "choix": [
+          "Oui, car son geste a causé la blessure.",
+          "Oui, par dol éventuel.",
+          "Non, car il n'a pas agi intentionnellement."
+        ],
+        "bon": 2,
+        "note": "Marc ne voyait pas Julien : l'article 123 n'est pas réalisé (ligne 39)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Que reste-t-il à examiner ?",
+        "choix": [
+          "Rien : sans intention, aucune infraction n'est possible.",
+          "Les lésions corporelles par négligence de l'article 125, s'il y a imprévoyance coupable.",
+          "Les lésions corporelles par négligence, toujours sur plainte de Julien."
+        ],
+        "bon": 1,
+        "note": "Il faut une imprévoyance coupable. La plainte de Julien n'est nécessaire que si la blessure n'est pas grave (ligne 40 ; art. 125 CP)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Le ballon de Léo casse la vitre d'une voiture, par négligence.",
+        "Léo ne voulait pas ce résultat : ce n'est pas de l'intention.",
+        "La négligence est toujours punie, simplement moins sévèrement.",
+        "La réparation du dommage resterait une question de droit civil."
+      ],
+      "faux": 2,
+      "explication": "Pour un crime ou un délit, la négligence n'est punie que si la loi le prévoit expressément. Le dommage à la propriété de l'article 144 n'existe que dans sa version intentionnelle.",
+      "source": "ligne 34 ; art. 12 al. 1 CP ; art. 144 CP"
+    },
+    {
+      "copie": [
+        "Léo veut impressionner ses amis avec un tir puissant.",
+        "Il voit le groupe et se dit : si je touche quelqu'un, tant pis.",
+        "Il ne souhaite pas la blessure, mais il l'accepte.",
+        "Ce n'est donc pas de l'intention, mais de la négligence."
+      ],
+      "faux": 3,
+      "explication": "Tenir le résultat pour possible et l'accepter, c'est le dol éventuel. Pour le droit pénal, c'est encore de l'intention.",
+      "source": "ligne 16 ; art. 12 al. 2 CP"
+    }
+  ]
+}

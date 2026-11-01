@@ -1,0 +1,217 @@
+{
+  "video": 8,
+  "slug": "08-responsabilite",
+  "titre": "Était-il responsable ?",
+  "a_relire": true,
+  "notions": [
+    "Responsabilité",
+    "Irresponsabilité",
+    "Responsabilité restreinte",
+    "Expertise",
+    "Irresponsabilité fautive"
+  ],
+  "a_vous": [
+    {
+      "ligne": 8,
+      "pause": "Selon vous, que faut-il pouvoir faire, au moment d'agir, pour répondre de ses actes ?",
+      "pourquoi": "Le spectateur cherche lui-même les deux facultés avant que l'art. 19 les nomme."
+    },
+    {
+      "ligne": 22,
+      "pause": "Selon vous, le juge peut-il décider seul si Théo était responsable ?",
+      "pourquoi": "On fait deviner le rôle de l'expert avant la règle du Tribunal fédéral."
+    },
+    {
+      "ligne": 25,
+      "pause": "Selon vous, « j'avais trop bu » est-il une excuse ?",
+      "pourquoi": "Le piège classique devient une question, avant la réponse du quatrième alinéa."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v08-01",
+      "q": "Que veut dire être responsable ?",
+      "r": "Être capable, au moment d'agir, de répondre de ses actes.",
+      "source": "ligne 5 ; art. 19 CP",
+      "notion": "Responsabilité"
+    },
+    {
+      "id": "v08-02",
+      "q": "Quelles sont les deux facultés de l'art. 19 ?",
+      "r": "Apprécier le caractère illicite de son acte. Et se déterminer d'après cette appréciation.",
+      "source": "lignes 9 et 10 ; art. 19 CP",
+      "notion": "Responsabilité"
+    },
+    {
+      "id": "v08-03",
+      "q": "Faut-il que les deux facultés manquent pour être irresponsable ?",
+      "r": "Non. Il suffit qu'une seule manque complètement. L'auteur n'est alors pas punissable.",
+      "source": "ligne 11 ; art. 19 CP",
+      "notion": "Irresponsabilité"
+    },
+    {
+      "id": "v08-04",
+      "q": "À quel moment juge-t-on l'état de l'auteur ?",
+      "r": "Au moment d'agir. On ne juge pas la personne en général.",
+      "source": "ligne 11 ; art. 19 CP",
+      "notion": "Irresponsabilité"
+    },
+    {
+      "id": "v08-05",
+      "q": "En pleine crise, Théo ne comprend plus du tout ce qu'il fait. Est-il punissable ?",
+      "r": "Non. La première faculté manque : Théo est irresponsable.",
+      "source": "ligne 13 ; art. 19 CP",
+      "notion": "Irresponsabilité"
+    },
+    {
+      "id": "v08-06",
+      "q": "Théo sait que c'est interdit, mais une maladie lui retire toute maîtrise. Résultat ?",
+      "r": "La seconde faculté manque. Théo est aussi irresponsable.",
+      "source": "ligne 15 ; art. 19 CP",
+      "notion": "Irresponsabilité"
+    },
+    {
+      "id": "v08-07",
+      "q": "Qu'entraîne la responsabilité restreinte ?",
+      "r": "L'auteur reste coupable. Mais le juge atténue sa peine.",
+      "source": "ligne 18 ; art. 19 CP",
+      "notion": "Responsabilité restreinte"
+    },
+    {
+      "id": "v08-08",
+      "q": "Quand faut-il une expertise ?",
+      "r": "Dès qu'il existe une raison sérieuse de douter de la responsabilité. Elle peut être ordonnée dès l'enquête.",
+      "source": "ligne 21 ; art. 20 CP",
+      "notion": "Expertise"
+    },
+    {
+      "id": "v08-09",
+      "q": "Le juge peut-il lever ses doutes en lisant des livres de psychiatrie ?",
+      "r": "Non. Il doit faire appel à un expert.",
+      "source": "ligne 22 ; ATF 133 IV 145",
+      "notion": "Expertise"
+    },
+    {
+      "id": "v08-10",
+      "q": "Théo s'enivre en sachant qu'il devient violent quand il boit. Comment est-il jugé ?",
+      "r": "Comme s'il avait été pleinement responsable. Il pouvait éviter son état et prévoir l'acte.",
+      "source": "lignes 25 et 26 ; art. 19 CP",
+      "notion": "Irresponsabilité fautive"
+    },
+    {
+      "id": "v08-11",
+      "q": "Et si l'auteur, fautivement ivre, ne pouvait pas prévoir l'acte ?",
+      "r": "L'art. 263 prévoit une infraction particulière : l'acte commis en état d'irresponsabilité fautive.",
+      "source": "ligne 27 ; art. 263 CP",
+      "notion": "Irresponsabilité fautive"
+    },
+    {
+      "id": "v08-12",
+      "q": "Théo est irresponsable. L'affaire s'arrête-t-elle forcément là ?",
+      "r": "Non. Des mesures peuvent être ordonnées, comme un traitement.",
+      "source": "ligne 31 ; art. 19 CP",
+      "notion": "Irresponsabilité"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Théo, sobre et en bonne santé, est simplement énervé. Il pousse violemment un agent de sécurité, qui se blesse.",
+      "qualification": "Théo comprend ce qu'il fait et pourrait se retenir : il est responsable, et donc coupable.",
+      "source": "ligne 7"
+    },
+    "changements": [
+      {
+        "fait": "Théo traverse une grave crise psychotique et ne comprend plus du tout ce qu'il fait.",
+        "qualification": "Théo est irresponsable.",
+        "pourquoi": "La première faculté manque : comprendre que l'acte est interdit.",
+        "source": "ligne 13 ; art. 19 CP"
+      },
+      {
+        "fait": "Théo sait que c'est interdit, mais une maladie lui retire toute maîtrise de ses gestes.",
+        "qualification": "Théo est irresponsable.",
+        "pourquoi": "Cette fois, c'est la seconde faculté qui manque : se retenir.",
+        "source": "ligne 15 ; art. 19 CP"
+      },
+      {
+        "fait": "Théo comprend en partie, ou se maîtrise en partie seulement.",
+        "qualification": "Responsabilité restreinte : Théo reste coupable, avec une peine atténuée.",
+        "pourquoi": "On reproche moins ce qu'on ne pouvait maîtriser qu'à moitié.",
+        "source": "lignes 17 à 19 ; art. 19 CP"
+      },
+      {
+        "fait": "Théo s'est enivré en sachant qu'il devient violent quand il boit.",
+        "qualification": "Théo est jugé comme pleinement responsable.",
+        "pourquoi": "Il pouvait éviter son état et prévoir l'acte. Les règles sur l'irresponsabilité ne s'appliquent pas.",
+        "source": "lignes 25 et 26 ; art. 19 CP"
+      },
+      {
+        "fait": "Quelqu'un a glissé de la drogue dans le verre de Théo, à son insu.",
+        "qualification": "Son état n'est pas fautif.",
+        "pourquoi": "Ni le quatrième alinéa de l'art. 19, ni l'art. 263 ne s'appliquent.",
+        "source": "ligne 29 ; art. 19 et 263 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Zoé sait qu'elle devient agressive quand elle boit. Avant une soirée, elle boit pourtant énormément. Puis elle frappe une amie.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle faut-il examiner ?",
+        "choix": [
+          "L'art. 20 : l'expertise",
+          "L'art. 21 : l'erreur sur l'illicéité",
+          "L'art. 19, quatrième alinéa : l'état évitable"
+        ],
+        "bon": 2,
+        "note": "Ce texte vise l'auteur qui pouvait éviter son état et prévoir l'acte (ligne 25 ; art. 19 CP)."
+      },
+      {
+        "nom": "Application",
+        "q": "Les conditions de cette règle sont-elles remplies ?",
+        "choix": [
+          "Oui : elle pouvait éviter son état et prévoir l'acte",
+          "Non : ivre, elle ne savait plus ce qu'elle faisait",
+          "Non : il faudrait une drogue glissée à son insu"
+        ],
+        "bon": 0,
+        "note": "Zoé savait qu'elle devient agressive quand elle boit (ligne 35 et réponse attendue ; art. 19 CP)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Comment Zoé est-elle jugée ?",
+        "choix": [
+          "Comme une personne irresponsable",
+          "Comme une personne pleinement responsable",
+          "Avec une peine forcément atténuée"
+        ],
+        "bon": 1,
+        "note": "Les règles sur l'irresponsabilité et la responsabilité restreinte ne s'appliquent pas (réponse attendue ; art. 19 CP)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Zoé a beaucoup bu avant de frapper son amie.",
+        "Elle savait qu'elle devient agressive quand elle boit.",
+        "Ivre, elle ne savait plus ce qu'elle faisait : elle est donc irresponsable.",
+        "Il faut regarder le moment où elle a choisi de boire."
+      ],
+      "faux": 2,
+      "explication": "C'est le piège classique. Elle pouvait éviter son état et prévoir l'acte : les règles sur l'irresponsabilité ne s'appliquent pas.",
+      "source": "lignes 24 à 26 ; art. 19 CP"
+    },
+    {
+      "copie": [
+        "Théo traverse une grave crise psychotique.",
+        "Il ne comprend plus du tout ce qu'il fait.",
+        "Il lui manque une information : c'est une erreur sur l'illicéité.",
+        "Il est irresponsable et n'est pas punissable."
+      ],
+      "faux": 2,
+      "explication": "Dans l'erreur sur l'illicéité, l'auteur pourrait comprendre, mais il manque une information. Ici, c'est sa capacité même qui fait défaut.",
+      "source": "lignes 13 et 16 ; art. 19 CP"
+    }
+  ]
+}

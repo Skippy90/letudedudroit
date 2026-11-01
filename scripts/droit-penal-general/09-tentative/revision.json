@@ -1,0 +1,216 @@
+{
+  "video": 9,
+  "slug": "09-tentative",
+  "titre": "Il a essayé, mais…",
+  "a_relire": true,
+  "notions": [
+    "Chemin du crime",
+    "Tentative",
+    "Tentative impossible",
+    "Désistement"
+  ],
+  "a_vous": [
+    {
+      "ligne": 9,
+      "pause": "Selon vous, acheter un pied-de-biche et repérer les lieux, est-ce déjà punissable ?",
+      "pourquoi": "Le spectateur situe lui-même la préparation sur le chemin du crime."
+    },
+    {
+      "ligne": 21,
+      "pause": "Selon vous, la caisse vide sauve-t-elle Kilian ?",
+      "pourquoi": "L'intuition dit souvent non punissable ; la règle de l'art. 22 surprend davantage après."
+    },
+    {
+      "ligne": 28,
+      "pause": "Selon vous, s'arrêter parce que la police arrive, est-ce renoncer de soi-même ?",
+      "pourquoi": "On fait réfléchir aux mots « de sa propre initiative » avant de les expliquer."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v09-01",
+      "q": "Quelles sont les étapes du chemin d'une infraction ?",
+      "r": "L'idée, la préparation, le début de l'exécution, puis le résultat.",
+      "source": "ligne 5",
+      "notion": "Chemin du crime"
+    },
+    {
+      "id": "v09-02",
+      "q": "Quand dit-on qu'une infraction est consommée ?",
+      "r": "Quand le résultat est atteint.",
+      "source": "ligne 6",
+      "notion": "Chemin du crime"
+    },
+    {
+      "id": "v09-03",
+      "q": "L'idée seule est-elle punie ?",
+      "r": "Jamais. On ne condamne pas quelqu'un pour ce qu'il pense.",
+      "source": "ligne 8",
+      "notion": "Chemin du crime"
+    },
+    {
+      "id": "v09-04",
+      "q": "La préparation est-elle punie ?",
+      "r": "En principe non. L'art. 260bis punit certains actes préparatoires, seulement pour des crimes très graves.",
+      "source": "lignes 9 et 10 ; art. 260bis CP",
+      "notion": "Chemin du crime"
+    },
+    {
+      "id": "v09-05",
+      "q": "Les achats et repérages de Kilian sont-ils punissables en eux-mêmes ?",
+      "r": "Non. Le vol n'est pas sur la liste de l'art. 260bis.",
+      "source": "ligne 11 ; art. 260bis CP",
+      "notion": "Chemin du crime"
+    },
+    {
+      "id": "v09-06",
+      "q": "Où commence la tentative ?",
+      "r": "Au dernier pas décisif. Selon le plan de l'auteur, ce pas mène directement à l'infraction.",
+      "source": "ligne 12 ; ATF 131 IV 100",
+      "notion": "Tentative"
+    },
+    {
+      "id": "v09-07",
+      "q": "Kilian commence à forcer la porte du kiosque. Qu'a-t-il commis ?",
+      "r": "Une tentative de vol, punissable. Le juge peut atténuer sa peine.",
+      "source": "lignes 14 et 17 ; art. 22 CP",
+      "notion": "Tentative"
+    },
+    {
+      "id": "v09-08",
+      "q": "Quelles sont les deux situations de tentative de l'art. 22 ?",
+      "r": "L'auteur s'arrête en route. Ou il va jusqu'au bout, mais le résultat ne se produit pas.",
+      "source": "lignes 15 et 16 ; art. 22 CP",
+      "notion": "Tentative"
+    },
+    {
+      "id": "v09-09",
+      "q": "Peut-on tenter une infraction par négligence ?",
+      "r": "Non. Pour tenter, il faut vouloir le résultat.",
+      "source": "ligne 19",
+      "notion": "Tentative"
+    },
+    {
+      "id": "v09-10",
+      "q": "Kilian ouvre la caisse et la trouve vide. Est-ce encore une tentative ?",
+      "r": "Oui, une tentative punissable. Le résultat ne pouvait pas se produire, mais cela ne change rien.",
+      "source": "ligne 21 ; art. 22 CP",
+      "notion": "Tentative impossible"
+    },
+    {
+      "id": "v09-11",
+      "q": "Kilian renonce de lui-même et rentre chez lui. Que peut faire le juge ?",
+      "r": "Atténuer la peine, ou même l'exempter de toute peine. C'est le désistement.",
+      "source": "lignes 25 et 26 ; art. 23 CP",
+      "notion": "Désistement"
+    },
+    {
+      "id": "v09-12",
+      "q": "Kilian s'arrête parce que la police arrive. Est-ce un désistement ?",
+      "r": "Non. Il n'a pas renoncé de sa propre initiative. C'est seulement une tentative ratée.",
+      "source": "ligne 28 ; art. 23 CP",
+      "notion": "Désistement"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Kilian force la porte du kiosque avec un pied-de-biche. Une patrouille passe, et il s'enfuit les mains vides.",
+      "qualification": "Tentative de vol, punissable ; le juge peut atténuer la peine.",
+      "source": "lignes 14 et 17"
+    },
+    "changements": [
+      {
+        "fait": "Kilian s'en tient à l'achat du pied-de-biche et au repérage des lieux.",
+        "qualification": "Pas punissable : ce n'est que de la préparation.",
+        "pourquoi": "Le vol n'est pas sur la liste des actes préparatoires punis.",
+        "source": "lignes 9 à 11 ; art. 260bis CP"
+      },
+      {
+        "fait": "Kilian va jusqu'au bout, mais l'alarme bloque la caisse au dernier moment.",
+        "qualification": "Toujours une tentative.",
+        "pourquoi": "L'art. 22 vise aussi le cas où le résultat ne se produit pas.",
+        "source": "ligne 16 ; art. 22 CP"
+      },
+      {
+        "fait": "Kilian ouvre la caisse, mais le patron l'avait vidée le soir même.",
+        "qualification": "Tentative punissable.",
+        "pourquoi": "Le résultat ne pouvait pas se produire. Ce qui compte, c'est la décision de voler et le passage à l'acte.",
+        "source": "ligne 21 ; art. 22 CP"
+      },
+      {
+        "fait": "L'auteur croit ouvrir un coffre-fort avec une formule magique, par grave défaut d'intelligence.",
+        "qualification": "Pas punissable.",
+        "pourquoi": "Il ne voyait pas que son plan était absolument impossible.",
+        "source": "lignes 22 et 23 ; art. 22 CP"
+      },
+      {
+        "fait": "Personne ne passe ; Kilian pense au kiosquier et renonce de lui-même.",
+        "qualification": "Désistement : le juge peut atténuer la peine ou l'exempter.",
+        "pourquoi": "Il a renoncé de sa propre initiative.",
+        "source": "lignes 24 à 26 ; art. 23 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Mia veut rayer la voiture de son voisin. Elle pose déjà sa clé contre la portière. Puis, de sa propre initiative, elle renonce et repart.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelles règles faut-il examiner ?",
+        "choix": [
+          "L'art. 260bis : les actes préparatoires",
+          "Les art. 22 et 23 : la tentative et le désistement",
+          "L'art. 19 : la responsabilité"
+        ],
+        "bon": 1,
+        "note": "Mia a commencé à agir, puis elle a renoncé (lignes 33 à 35 et réponse attendue ; art. 22 et 23 CP)."
+      },
+      {
+        "nom": "Application",
+        "q": "Où se situe la clé posée contre la portière ?",
+        "choix": [
+          "Dans l'idée",
+          "Dans la préparation",
+          "Au dernier pas décisif"
+        ],
+        "bon": 2,
+        "note": "Ce geste mène directement au dommage : c'est une tentative de dommage à la propriété (réponse attendue ; art. 22 et 144 CP)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Mia échappe-t-elle forcément à toute peine ?",
+        "choix": [
+          "Non : le juge peut atténuer ou exempter, sans automatisme",
+          "Oui : le désistement exempte toujours de toute peine",
+          "Non : renoncer de soi-même ne change rien"
+        ],
+        "bon": 0,
+        "note": "L'art. 23 dit que le juge « peut » atténuer la peine ou exempter. Ce n'est pas automatique (réponse attendue ; art. 23 CP)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Kilian a commencé à forcer la porte du kiosque.",
+        "La police passe, et il s'enfuit les mains vides.",
+        "Il n'a rien pris : il n'y a donc pas d'infraction.",
+        "Le vol n'est pas consommé."
+      ],
+      "faux": 2,
+      "explication": "C'est le piège classique. Dès qu'il a commencé à forcer la porte, Kilian a commis une tentative de vol, punissable.",
+      "source": "lignes 29 et 30 ; art. 22 CP"
+    },
+    {
+      "copie": [
+        "Kilian commence à forcer la porte du kiosque.",
+        "Il s'arrête parce que la police arrive.",
+        "Il a donc renoncé : c'est un désistement au sens de l'art. 23.",
+        "C'est en tout cas une tentative de vol."
+      ],
+      "faux": 2,
+      "explication": "S'arrêter à cause de la police, ce n'est pas renoncer de sa propre initiative. C'est seulement une tentative ratée.",
+      "source": "ligne 28 ; art. 23 CP"
+    }
+  ]
+}

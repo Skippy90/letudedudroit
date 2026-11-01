@@ -1,0 +1,210 @@
+{
+  "video": 7,
+  "slug": "07-erreur",
+  "titre": "Je ne savais pas",
+  "a_relire": true,
+  "notions": [
+    "Erreur sur les faits",
+    "Erreur sur l'illicéité",
+    "Erreur évitable",
+    "Se croire en droit"
+  ],
+  "a_vous": [
+    {
+      "ligne": 11,
+      "pause": "Selon vous, Élodie a-t-elle volé, alors qu'elle croyait reprendre son propre vélo ?",
+      "pourquoi": "Le spectateur doit d'abord sentir que l'erreur sur les faits change la qualification."
+    },
+    {
+      "ligne": 19,
+      "pause": "Selon vous, Arthur est-il coupable s'il ne pouvait pas savoir que c'était interdit ?",
+      "pourquoi": "On fait deviner que l'erreur sur le droit touche un autre étage que celle d'Élodie."
+    },
+    {
+      "ligne": 26,
+      "pause": "Selon vous, le Tribunal fédéral a-t-il admis l'erreur de l'automobiliste ?",
+      "pourquoi": "Le spectateur teste son intuition avant de découvrir l'exigence du Tribunal fédéral."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v07-01",
+      "q": "Qu'est-ce que l'erreur sur les faits ?",
+      "r": "On ne savait pas ce qu'on faisait vraiment. Elle est réglée à l'art. 13.",
+      "source": "ligne 6 ; art. 13 CP",
+      "notion": "Erreur sur les faits"
+    },
+    {
+      "id": "v07-02",
+      "q": "Qu'est-ce que l'erreur sur l'illicéité ?",
+      "r": "On savait ce qu'on faisait, mais on croyait avoir le droit. Elle est réglée à l'art. 21.",
+      "source": "ligne 7 ; art. 21 CP",
+      "notion": "Erreur sur l'illicéité"
+    },
+    {
+      "id": "v07-03",
+      "q": "Comment juge-t-on celui qui se trompe sur les faits ?",
+      "r": "D'après son appréciation erronée des faits, si elle lui est favorable.",
+      "source": "ligne 11 ; art. 13 CP",
+      "notion": "Erreur sur les faits"
+    },
+    {
+      "id": "v07-04",
+      "q": "Élodie croyait reprendre son vélo. A-t-elle commis un vol ?",
+      "r": "Non. On la juge comme si le vélo était le sien. Reprendre son propre vélo n'est pas un vol.",
+      "source": "ligne 12 ; art. 13 et 139 CP",
+      "notion": "Erreur sur les faits"
+    },
+    {
+      "id": "v07-05",
+      "q": "Quel étage tombe dans le cas d'Élodie ?",
+      "r": "La typicité, au premier étage. Il manque l'intention de prendre la chose d'autrui.",
+      "source": "ligne 13 ; art. 13 CP",
+      "notion": "Erreur sur les faits"
+    },
+    {
+      "id": "v07-06",
+      "q": "Que se passe-t-il si l'erreur sur les faits pouvait être évitée ?",
+      "r": "L'auteur est puni pour négligence. À condition que la loi punisse aussi l'acte commis par négligence.",
+      "source": "lignes 14 et 15 ; art. 13 CP",
+      "notion": "Erreur évitable"
+    },
+    {
+      "id": "v07-07",
+      "q": "Pourquoi Élodie n'est-elle pas punissable, même si son erreur était évitable ?",
+      "r": "Parce que le vol n'est pas puni lorsqu'il est commis par négligence.",
+      "source": "ligne 15 ; art. 13 et 139 CP",
+      "notion": "Erreur évitable"
+    },
+    {
+      "id": "v07-08",
+      "q": "Arthur ne sait ni ne peut savoir que son acte est illicite. Est-il coupable ?",
+      "r": "Non, il n'agit pas de manière coupable. C'est la culpabilité, au troisième étage, qui tombe.",
+      "source": "lignes 19 et 20 ; art. 21 CP",
+      "notion": "Erreur sur l'illicéité"
+    },
+    {
+      "id": "v07-09",
+      "q": "Que fait le juge si l'erreur sur l'illicéité était évitable ?",
+      "r": "Il atténue la peine. L'auteur reste coupable, mais moins.",
+      "source": "ligne 21 ; art. 21 CP",
+      "notion": "Erreur évitable"
+    },
+    {
+      "id": "v07-10",
+      "q": "Suffit-il de penser que l'acte n'est pas puni, ou peu puni ?",
+      "r": "Non. Il faut que l'auteur se soit cru en droit d'agir.",
+      "source": "ligne 22 ; ATF 141 IV 336",
+      "notion": "Se croire en droit"
+    },
+    {
+      "id": "v07-11",
+      "q": "Qu'est-ce qui suffit à exclure l'erreur sur l'illicéité ?",
+      "r": "Un vague sentiment d'agir contre ce qui est juste.",
+      "source": "ligne 23 ; ATF 104 IV 217",
+      "notion": "Se croire en droit"
+    },
+    {
+      "id": "v07-12",
+      "q": "L'automobiliste ignorait l'article exact et la peine. Cela change-t-il quelque chose ?",
+      "r": "Non. Il savait que la vignette devait être collée directement sur le pare-brise. Il savait donc agir de manière illicite.",
+      "source": "lignes 26 et 27 ; ATF 141 IV 336",
+      "notion": "Se croire en droit"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Arthur sait parfaitement ce qu'il fait. Il pense que c'est permis, et il ne pouvait pas savoir que c'était illicite.",
+      "qualification": "Erreur sur l'illicéité : Arthur n'agit pas de manière coupable.",
+      "source": "lignes 18 à 20 ; art. 21 CP"
+    },
+    "changements": [
+      {
+        "fait": "Arthur aurait pu éviter son erreur.",
+        "qualification": "Arthur reste coupable, mais le juge atténue la peine.",
+        "pourquoi": "L'art. 21 prévoit une peine atténuée pour l'erreur évitable.",
+        "source": "ligne 21 ; art. 21 CP"
+      },
+      {
+        "fait": "Arthur pense seulement que son acte n'est pas puni, ou peu puni.",
+        "qualification": "Pas d'erreur sur l'illicéité.",
+        "pourquoi": "Il faut s'être cru en droit d'agir. Penser que l'acte n'est pas puni ne suffit pas.",
+        "source": "ligne 22 ; ATF 141 IV 336"
+      },
+      {
+        "fait": "Arthur a le vague sentiment d'agir contre ce qui est juste.",
+        "qualification": "L'erreur est exclue.",
+        "pourquoi": "Pour le Tribunal fédéral, un vague sentiment suffit à exclure l'erreur.",
+        "source": "ligne 23 ; ATF 104 IV 217"
+      },
+      {
+        "fait": "Arthur sait que c'est interdit, mais ignore le numéro de l'article et la peine.",
+        "qualification": "Pas d'erreur sur l'illicéité.",
+        "pourquoi": "Peu importe d'ignorer l'article exact ou la peine prévue.",
+        "source": "ligne 27 ; ATF 141 IV 336"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Élodie repère un vélo bleu, du même modèle que le sien, avec le même cadenas. Elle l'ouvre avec sa clé et part avec. Ce n'était pas son vélo.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle s'applique à l'erreur d'Élodie ?",
+        "choix": [
+          "L'art. 21 : l'erreur sur l'illicéité",
+          "L'art. 13 : l'erreur sur les faits",
+          "Aucune : l'erreur ne compte jamais"
+        ],
+        "bon": 1,
+        "note": "Élodie se trompe sur ce qu'elle fait : elle croit que le vélo est le sien (lignes 9 à 11 ; art. 13 CP)."
+      },
+      {
+        "nom": "Application",
+        "q": "Qu'est-ce qui manque pour le vol ?",
+        "choix": [
+          "La culpabilité, au troisième étage",
+          "L'illicéité, au deuxième étage",
+          "L'intention de prendre la chose d'autrui"
+        ],
+        "bon": 2,
+        "note": "Elle est jugée d'après ce qu'elle croyait. La typicité tombe, au premier étage (lignes 12 et 13 ; art. 13 et 139 CP)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Élodie est-elle punissable ?",
+        "choix": [
+          "Non, même si son erreur était évitable",
+          "Oui, pour vol par négligence",
+          "Oui, mais avec une peine atténuée"
+        ],
+        "bon": 0,
+        "note": "L'erreur évitable mène à la négligence. Or le vol n'est pas puni par négligence (lignes 14 et 15 ; art. 13 CP)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Arthur sait ce qu'il fait, mais croit que c'est permis.",
+        "C'est une erreur sur l'illicéité, à l'art. 21.",
+        "Cette erreur ne compte jamais, car nul n'est censé ignorer la loi.",
+        "Si l'erreur était évitable, la peine est atténuée."
+      ],
+      "faux": 2,
+      "explication": "C'est le piège classique. L'art. 21 admet l'erreur sur l'illicéité, quand l'auteur ne pouvait vraiment pas savoir.",
+      "source": "lignes 28 et 29 ; art. 21 CP"
+    },
+    {
+      "copie": [
+        "Élodie croyait reprendre son propre vélo.",
+        "C'est une erreur sur les faits, à l'art. 13.",
+        "C'est donc la culpabilité, au troisième étage, qui tombe.",
+        "Élodie n'a pas commis de vol."
+      ],
+      "faux": 2,
+      "explication": "L'erreur sur les faits touche le premier étage : c'est la typicité qui tombe. La culpabilité concerne l'erreur sur l'illicéité.",
+      "source": "lignes 13 et 20 ; art. 13 et 21 CP"
+    }
+  ]
+}

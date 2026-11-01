@@ -1,0 +1,215 @@
+{
+  "video": 3,
+  "slug": "03-crime-delit-contravention",
+  "titre": "Crime, délit ou contravention ?",
+  "notions": [
+    "Les trois catégories",
+    "La peine prévue par la loi",
+    "Faible valeur",
+    "Conséquences de la catégorie"
+  ],
+  "a_vous": [
+    {
+      "ligne": 18,
+      "pause": "Le vol est puni de cinq ans au plus. Selon vous, est-ce un crime ou un délit ?",
+      "pourquoi": "Le spectateur applique lui-même le seuil de trois ans avant d'entendre le résultat."
+    },
+    {
+      "ligne": 25,
+      "pause": "Les voies de fait sont punies d'une amende. Selon vous, dans quelle catégorie tombent-elles ?",
+      "pourquoi": "Le spectateur relie l'amende à la contravention avant que la case se coche."
+    },
+    {
+      "ligne": 37,
+      "pause": "Inès ne reçoit qu'une peine pécuniaire. Selon vous, son vol reste-t-il un crime ?",
+      "pourquoi": "Le spectateur se confronte au piège classique avant sa correction."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v03-01",
+      "q": "Qu'est-ce qui décide si une infraction est un crime, un délit ou une contravention ?",
+      "r": "La peine dont l'infraction est passible. On regarde la peine la plus lourde que la loi prévoit.",
+      "source": "lignes 10 et 11 ; art. 10 CP",
+      "notion": "La peine prévue par la loi"
+    },
+    {
+      "id": "v03-02",
+      "q": "Quelle peine fait d'une infraction un crime ?",
+      "r": "Une peine privative de liberté de plus de trois ans.",
+      "source": "ligne 12 ; art. 10 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-03",
+      "q": "Quelle peine fait d'une infraction un délit ?",
+      "r": "Une peine privative de liberté de trois ans au plus, ou une peine pécuniaire.",
+      "source": "ligne 13 ; art. 10 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-04",
+      "q": "Qu'est-ce qu'une contravention ?",
+      "r": "Une infraction passible d'une amende.",
+      "source": "ligne 14 ; art. 103 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-05",
+      "q": "Inès vole un téléphone tout neuf pour le garder. Quelle catégorie ?",
+      "r": "Un crime. Le vol est puni de cinq ans au plus, et cinq ans, c'est plus de trois ans.",
+      "source": "lignes 16 à 18 ; art. 139 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-06",
+      "q": "Et si Inès n'avait visé qu'un objet de faible valeur ?",
+      "r": "L'article 172 ter prévoirait seulement une amende, sur plainte. Le même geste deviendrait une contravention.",
+      "source": "lignes 19 et 20 ; art. 172ter CP",
+      "notion": "Faible valeur"
+    },
+    {
+      "id": "v03-07",
+      "q": "Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs. Quelle catégorie ?",
+      "r": "Un délit. Le dommage à la propriété est puni de trois ans au plus.",
+      "source": "lignes 21 et 22 ; art. 144 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-08",
+      "q": "Et si le dommage causé par Noah était considérable ?",
+      "r": "La loi prévoirait jusqu'à cinq ans. Ce serait alors un crime.",
+      "source": "ligne 23 ; art. 144 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-09",
+      "q": "Yann gifle un ami sans le blesser. Quelle catégorie ?",
+      "r": "Une contravention. Les voies de fait sont punies d'une amende, sans peine privative de liberté.",
+      "source": "lignes 24 et 25 ; art. 126 CP",
+      "notion": "Les trois catégories"
+    },
+    {
+      "id": "v03-10",
+      "q": "Yann a seulement essayé de gifler son ami, sans le toucher. Est-il puni ?",
+      "r": "Non. Pour une contravention, la tentative n'est punissable que si la loi le prévoit expressément. Rien de tel n'est prévu pour les voies de fait.",
+      "source": "lignes 28 à 30 ; art. 105 CP",
+      "notion": "Conséquences de la catégorie"
+    },
+    {
+      "id": "v03-11",
+      "q": "Quel est le montant maximum d'une amende ?",
+      "r": "Dix mille francs, sauf exception prévue par la loi.",
+      "source": "ligne 32 ; art. 106 CP",
+      "notion": "Conséquences de la catégorie"
+    },
+    {
+      "id": "v03-12",
+      "q": "Après combien de temps une contravention est-elle prescrite ? Et le délit de Noah, le vol d'Inès ?",
+      "r": "Trois ans pour une contravention. Dix ans pour le délit de Noah, quinze ans pour le vol d'Inès.",
+      "source": "lignes 34 et 35 ; art. 109 et 97 CP",
+      "notion": "Conséquences de la catégorie"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Dans la même rue, Inès vole un téléphone neuf, Noah tague tout le mur d'une boulangerie, et Yann gifle un ami sans le blesser.",
+      "qualification": "Un crime pour Inès, un délit pour Noah, une contravention pour Yann.",
+      "source": "ligne 26 ; art. 139, 144 et 126 CP"
+    },
+    "changements": [
+      {
+        "fait": "Inès n'a visé qu'un objet de faible valeur.",
+        "qualification": "Une contravention.",
+        "pourquoi": "L'article 172 ter prévoit seulement une amende, sur plainte. C'est la peine prévue par la loi qui décide.",
+        "source": "lignes 19 et 20 ; art. 172ter CP"
+      },
+      {
+        "fait": "Inès ne reçoit finalement qu'une peine pécuniaire.",
+        "qualification": "Son vol reste un crime.",
+        "pourquoi": "Ce qui compte, c'est la peine que la loi prévoit au maximum. Pas celle que le juge choisit.",
+        "source": "lignes 37 et 38 ; art. 10 CP"
+      },
+      {
+        "fait": "Le dommage causé par Noah est considérable.",
+        "qualification": "Un crime.",
+        "pourquoi": "Pour un dommage considérable, la loi prévoit jusqu'à cinq ans.",
+        "source": "ligne 23 ; art. 144 CP"
+      },
+      {
+        "fait": "Le dommage causé par Noah est tout petit.",
+        "qualification": "Une contravention.",
+        "pourquoi": "Un tout petit dommage relève de l'article 172 ter, qui prévoit une simple amende.",
+        "source": "ligne 22 ; art. 172ter CP"
+      },
+      {
+        "fait": "Yann a seulement essayé de gifler son ami, sans le toucher.",
+        "qualification": "Yann ne serait pas puni.",
+        "pourquoi": "Pour une contravention, la tentative n'est punissable que si la loi le prévoit expressément. Rien de tel n'est prévu pour les voies de fait.",
+        "source": "lignes 28 à 30 ; art. 105 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quel critère classe une infraction en crime, délit ou contravention ?",
+        "choix": [
+          "La peine que le juge prononcera",
+          "La peine la plus lourde que la loi prévoit",
+          "La colère de la victime"
+        ],
+        "bon": 1,
+        "note": "Le critère est la peine dont l'infraction est passible (lignes 9 à 11 ; art. 10 CP)."
+      },
+      {
+        "nom": "Application",
+        "q": "Quelle peine la loi prévoit-elle pour le dommage causé par Noah ?",
+        "choix": [
+          "Une amende seulement",
+          "Jusqu'à cinq ans de peine privative de liberté",
+          "Jusqu'à trois ans de peine privative de liberté"
+        ],
+        "bon": 2,
+        "note": "Le dommage à la propriété est puni de trois ans au plus. Ici, il n'est ni tout petit ni considérable (lignes 21 à 23 ; art. 144 CP)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Quelle est la catégorie de l'infraction de Noah ?",
+        "choix": [
+          "Un délit",
+          "Un crime",
+          "Une contravention"
+        ],
+        "bon": 0,
+        "note": "Trois ans au plus : c'est un délit (ligne 22)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Inès a volé un téléphone neuf.",
+        "Le vol est puni de cinq ans au plus.",
+        "Le juge ne prononce qu'une peine pécuniaire,",
+        "donc son vol devient un délit."
+      ],
+      "faux": 3,
+      "explication": "La peine prononcée ne décide pas de la catégorie. Ce qui compte, c'est la peine que la loi prévoit au maximum : le vol reste un crime.",
+      "source": "lignes 36 à 38 ; art. 10 CP"
+    },
+    {
+      "copie": [
+        "Une infraction punie seulement d'une amende",
+        "est une contravention.",
+        "Une infraction punie seulement d'une peine pécuniaire",
+        "est aussi une contravention."
+      ],
+      "faux": 3,
+      "explication": "La peine pécuniaire n'est pas une amende. Une infraction punie d'une peine pécuniaire est un délit.",
+      "source": "lignes 13 et 14 ; art. 10 et 103 CP"
+    }
+  ]
+}
