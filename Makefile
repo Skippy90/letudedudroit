@@ -5,7 +5,7 @@ DIR  := scripts/$(SLUG)
 PY   := .venv/bin/python
 MANIM_MEDIA := render/manim/media
 
-.PHONY: video check installer voice visuals assemble shorts paquet
+.PHONY: video check installer voice visuals assemble shorts paquet bande-annonce
 
 video: check voice visuals assemble
 
@@ -53,3 +53,7 @@ shorts:
 paquet:
 	$(PY) tools/publication.py $(SLUG)
 	$(PY) tools/paquet_youtube.py $(SLUG) $(TAGS)
+
+# Bande-annonce de la chaîne (10 s, en code, bruitages synthétisés) : out/bande-annonce.mp4.
+bande-annonce:
+	$(PY) tools/bande_annonce.py
