@@ -2,7 +2,6 @@
   "video": 7,
   "slug": "07-erreur",
   "titre": "Je ne savais pas",
-  "a_relire": true,
   "accroche": "« Je ne savais pas » : est-ce une excuse ?",
   "panneaux": [
     {
@@ -20,7 +19,7 @@
           "source": "lignes 6 à 7, 31 ; art. 13 et 21 CP"
         },
         {
-          "q": "L'erreur pouvait-elle être évitée avec un peu de prudence ?",
+          "q": "L'erreur pouvait-elle être évitée en prenant les précautions voulues ?",
           "oui": {
             "suite": 2
           },
@@ -32,7 +31,7 @@
         {
           "q": "La loi punit-elle aussi cet acte commis par négligence ?",
           "oui": {
-            "resultat": "Puni pour négligence"
+            "resultat": "Punissable pour négligence"
           },
           "non": {
             "resultat": "Pas punissable"
@@ -40,7 +39,7 @@
           "source": "ligne 15 ; art. 13 al. 2 CP"
         },
         {
-          "q": "Avait-il au moins un vague sentiment d'agir contre ce qui est juste ?",
+          "q": "Avait-il au moins un vague sentiment d'agir de manière illicite ?",
           "oui": {
             "resultat": "Pas d'erreur retenue"
           },
@@ -66,7 +65,7 @@
           "detail": "Comme Élodie : l'intention manque, la typicité tombe.",
           "source": "lignes 11 à 13 ; art. 13 al. 1 CP"
         },
-        "Puni pour négligence": {
+        "Punissable pour négligence": {
           "couleur": "ambre",
           "detail": "Seulement si la loi réprime l'acte par négligence.",
           "source": "lignes 14 à 15, 32 ; art. 13 al. 2 CP"
@@ -78,7 +77,7 @@
         },
         "Pas d'erreur retenue": {
           "couleur": "vert",
-          "detail": "Il savait agir de manière illicite, comme l'automobiliste à la vignette.",
+          "detail": "Ce sentiment peut suffire à exclure l'erreur, comme pour l'automobiliste à la vignette.",
           "source": "lignes 23 à 26 ; ATF 104 IV 217 ; ATF 141 IV 336"
         },
         "Peine atténuée": {

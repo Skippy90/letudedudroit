@@ -49,14 +49,15 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 13.2 | etage 1 gris ; renvoi "vidéo 4" |
 | 13.3 | titre "La typicité tombe" |
 | 14.1 | scene-vide ; article "Art. 13 CP" ; titre "Second alinéa" ; personnage elodie "Élodie" turquoise gauche |
-| 14.2 | sous-titre "Erreur évitable : négligence" |
+| 14.2 | sous-titre "Précautions voulues ? Sinon, négligence" |
 | 15.1 | effacer-titres ; retirer elodie ; titre "Si la loi la punit" |
 | 15.2 | case "Vol par négligence" ; cocher 1 gris ; article "Art. 139 CP" |
 | 15.3 | sous-titre "Pas punissable" |
 | 16.1 | scene-vide ; rembobiner ; article-retirer ; decor rue Université ; personnage elodie "Élodie" turquoise gauche ; placer elodie -2 ; picto velo -5.2 -1.85 ; titre "L'erreur inverse" |
 | 16.2 | bulle elodie "Je le vole" |
 | 16.3 | etiquette sien "C'était le sien" 0.6 1.7 |
-| 16.4 | renvoi "vidéo 9" ; effacer-titres ; titre "La tentative" |
+| 16.4 | effacer-titres ; titre "Tentative impossible ?" |
+| 16.5 | renvoi "vidéo 9" ; sous-titre "La tentative : vidéo 9" |
 | 17.1 | scene-vide ; renvoi "vidéo 6" ; personnage elodie "Élodie" turquoise gauche ; bulle elodie "Il m'attaque ?" ; bouclier 3.5 0.3 |
 | 17.2 | titre "Jugée d'après sa croyance" |
 | 18.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 ambre ; personnage arthur "Arthur" bleu_clair gauche |
@@ -74,7 +75,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 22.2 | sous-titre "Se croire en droit" |
 | 22.3 | effacer-titres ; mot-barre "Pas puni ?" |
 | 23.1 | scene-vide ; titre "Plus loin encore" ; arret "ATF 104 IV 217" ; personnage arthur "Arthur" bleu_clair gauche |
-| 23.2 | sous-titre "Un vague sentiment suffit" |
+| 23.2 | sous-titre "Un vague sentiment peut suffire" |
 | 23.3 | effacer-titres ; titre "Pas besoin d'être juriste" |
 | 24.1 | scene-vide ; rembobiner ; arret "ATF 141 IV 336" ; personnage auto "L'automobiliste" rose gauche ; picto voiture 4.2 0.2 ; titre "Un cas réel" |
 | 24.2 | etiquette vignette "Vignette décollée" 4.2 1.7 |
@@ -109,6 +110,6 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 34.3 | etiquette autrui "À quelqu'un d'autre" 0.6 1.7 |
 | 34.4 | bulle sam "Trouvé, c'est gagné" |
 | 35.1 | etiquette-retirer autrui ; titre "Faits ou droit ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre |
-| 35.2 | effacer-titres ; titre "Une excuse ?" |
+| 35.2 | effacer-titres ; titre "Évitable ? Quels faits ?" |
 | 35.3 | accent sam |
 | 36.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |

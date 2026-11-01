@@ -37,8 +37,8 @@
     {
       "id": "v09-02",
       "q": "Quand dit-on qu'une infraction est consommée ?",
-      "r": "Quand le résultat est atteint.",
-      "source": "ligne 6",
+      "r": "Quand tous ses éléments prévus par la loi sont réalisés. Souvent, cela suppose un résultat.",
+      "source": "ligne 6 ; art. 22 CP",
       "notion": "Chemin du crime"
     },
     {
@@ -72,8 +72,8 @@
     {
       "id": "v09-07",
       "q": "Kilian commence à forcer la porte du kiosque. Qu'a-t-il commis ?",
-      "r": "Une tentative de vol, punissable. Le juge peut atténuer sa peine.",
-      "source": "lignes 14 et 17 ; art. 22 CP",
+      "r": "Une tentative de vol, punissable : selon son plan, forcer la porte mène directement au vol. Le juge peut atténuer sa peine.",
+      "source": "lignes 14 et 17 ; art. 22 CP ; ATF 131 IV 100",
       "notion": "Tentative"
     },
     {
@@ -138,13 +138,13 @@
         "source": "ligne 21 ; art. 22 CP"
       },
       {
-        "fait": "L'auteur croit ouvrir un coffre-fort avec une formule magique, par grave défaut d'intelligence.",
+        "fait": "Quelqu'un croit ouvrir un coffre-fort avec une formule magique, par grave défaut d'intelligence.",
         "qualification": "Pas punissable.",
         "pourquoi": "Il ne voyait pas que son plan était absolument impossible.",
         "source": "lignes 22 et 23 ; art. 22 CP"
       },
       {
-        "fait": "Personne ne passe ; Kilian pense au kiosquier et renonce de lui-même.",
+        "fait": "Kilian pense au kiosquier et renonce de lui-même, alors que personne ne passe.",
         "qualification": "Désistement : le juge peut atténuer la peine ou l'exempter.",
         "pourquoi": "Il a renoncé de sa propre initiative.",
         "source": "lignes 24 à 26 ; art. 23 CP"
@@ -152,7 +152,7 @@
     ]
   },
   "fondu": {
-    "faits": "Mia veut rayer la voiture de son voisin. Elle pose déjà sa clé contre la portière. Puis, de sa propre initiative, elle renonce et repart.",
+    "faits": "Mia veut rayer la voiture de son voisin. Elle appuie sa clé sur la portière et commence à griffer. Puis, de sa propre initiative, elle s'arrête avant d'abîmer la peinture. La portière ne garde aucune trace.",
     "etapes": [
       {
         "nom": "Règle",
@@ -163,18 +163,18 @@
           "L'art. 19 : la responsabilité"
         ],
         "bon": 1,
-        "note": "Mia a commencé à agir, puis elle a renoncé (lignes 33 à 35 et réponse attendue ; art. 22 et 23 CP)."
+        "note": "Mia a commencé à agir, puis elle s'est arrêtée (lignes 34 et 35 et réponse attendue ; art. 22 et 23 CP)."
       },
       {
         "nom": "Application",
-        "q": "Où se situe la clé posée contre la portière ?",
+        "q": "Où se situe le geste de Mia, qui commence à griffer la portière ?",
         "choix": [
           "Dans l'idée",
           "Dans la préparation",
           "Au dernier pas décisif"
         ],
         "bon": 2,
-        "note": "Ce geste mène directement au dommage : c'est une tentative de dommage à la propriété (réponse attendue ; art. 22 et 144 CP)."
+        "note": "Griffer la portière, c'est commencer le dommage lui-même : c'est une tentative de dommage à la propriété (réponse attendue ; art. 22 et 144 CP)."
       },
       {
         "nom": "Conclusion",
@@ -185,7 +185,7 @@
           "Non : renoncer de soi-même ne change rien"
         ],
         "bon": 0,
-        "note": "L'art. 23 dit que le juge « peut » atténuer la peine ou exempter. Ce n'est pas automatique (réponse attendue ; art. 23 CP)."
+        "note": "Elle s'arrête de sa propre initiative, avant tout dommage. L'art. 23 dit que le juge « peut » atténuer la peine ou exempter. Ce n'est pas automatique (réponse attendue ; art. 23 CP)."
       }
     ]
   },

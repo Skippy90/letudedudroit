@@ -18,7 +18,7 @@
     {
       "ligne": 19,
       "pause": "Selon vous, Lina encourt-elle une peine plus légère que Max ?",
-      "pourquoi": "La même peine pour l'instigateur surprend souvent."
+      "pourquoi": "Que l'instigateur encoure la peine applicable à l'auteur surprend souvent."
     },
     {
       "ligne": 28,
@@ -72,7 +72,7 @@
     {
       "id": "v10-07",
       "q": "Le vol a été commis. Quelle peine encourt Lina, l'instigatrice ?",
-      "r": "La même peine que l'auteur.",
+      "r": "La peine applicable à l'auteur : les mêmes limites légales. Le juge fixe ensuite sa peine selon sa faute.",
       "source": "ligne 19 ; art. 24 CP",
       "notion": "Instigation"
     },
@@ -86,7 +86,7 @@
     {
       "id": "v10-09",
       "q": "Quelles sont les deux conditions de la complicité, selon le Tribunal fédéral ?",
-      "r": "Une contribution réelle : sans l'aide, les choses ne se seraient pas passées de la même manière. Et l'intention d'aider à un acte déterminé.",
+      "r": "Une contribution réelle, qui facilite l'infraction : sans l'aide, les choses ne se seraient pas passées de la même manière. Et l'intention d'aider à un acte déterminé.",
       "source": "lignes 25 et 26 ; ATF 132 IV 49",
       "notion": "Complicité"
     },
@@ -100,7 +100,7 @@
     {
       "id": "v10-11",
       "q": "Quelle peine encourt Noé, qui a prêté son sac ?",
-      "r": "Il est complice du vol. Sa peine est atténuée.",
+      "r": "Son sac a servi à cacher l'ordinateur : il a facilité le vol, en le sachant. Il est complice, et sa peine est atténuée.",
       "source": "lignes 27 et 28 ; art. 25 CP",
       "notion": "Complicité"
     },
@@ -114,7 +114,7 @@
   ],
   "variantes": {
     "base": {
-      "faits": "Lina convainc Max de voler un ordinateur. Max et Jade organisent et commettent le vol ensemble ; Noé prête le sac en connaissance de cause.",
+      "faits": "Lina convainc Max de voler un ordinateur. Max et Jade organisent et commettent le vol ensemble ; Noé prête, en connaissance de cause, le sac qui sert à cacher l'ordinateur.",
       "qualification": "Max et Jade sont coauteurs. Lina est instigatrice. Noé est complice.",
       "source": "lignes 13, 16 et 27"
     },
@@ -152,7 +152,7 @@
     ]
   },
   "fondu": {
-    "faits": "Paul prête sa voiture à un ami. Il sait que l'ami va s'en servir pour cambrioler une maison. Le cambriolage a lieu.",
+    "faits": "Paul prête sa voiture à un ami. Il sait que l'ami va s'en servir pour cambrioler une maison. L'ami y charge ses outils et se rend jusqu'à la maison. Le cambriolage a lieu.",
     "etapes": [
       {
         "nom": "Règle",
@@ -174,18 +174,18 @@
           "Oui : il a aidé, et il savait à quoi servirait la voiture"
         ],
         "bon": 2,
-        "note": "Il faut une contribution réelle et l'intention. Paul savait à quoi servirait sa voiture."
+        "note": "Il faut une contribution réelle et l'intention. La voiture transporte les outils et conduit l'ami jusqu'à la maison : elle facilite concrètement le cambriolage. Et Paul savait à quoi elle servirait."
       },
       {
         "nom": "Conclusion",
         "q": "Quelle peine encourt Paul ?",
         "choix": [
           "Une peine atténuée, comme complice",
-          "La même peine que l'auteur, comme instigateur",
+          "La peine applicable à l'auteur, comme instigateur",
           "Aucune peine, car il n'a pas agi lui-même"
         ],
         "bon": 0,
-        "note": "Paul est complice. L'article 25 prévoit que la peine du complice est atténuée."
+        "note": "Paul est, selon toute vraisemblance, complice. L'article 25 prévoit que la peine du complice est atténuée."
       }
     ]
   },
@@ -204,12 +204,12 @@
     {
       "copie": [
         "Lina a convaincu Max en lui promettant de racheter l'ordinateur.",
-        "Restée chez elle, Lina encourt une peine plus légère que Max.",
+        "Restée chez elle, Lina bénéficie forcément d'une peine atténuée.",
         "Elle a fait naître chez Max la décision de voler.",
         "Elle est donc instigatrice au sens de l'article 24 du Code pénal."
       ],
       "faux": 1,
-      "explication": "Si l'infraction a été commise, l'instigateur encourt la même peine que l'auteur.",
+      "explication": "Si l'infraction a été commise, l'instigateur encourt la peine applicable à l'auteur. Seul le complice bénéficie d'une peine atténuée.",
       "source": "lignes 19 et 30 ; art. 24 CP"
     }
   ]

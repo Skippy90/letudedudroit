@@ -2,7 +2,6 @@
   "video": 7,
   "slug": "07-erreur",
   "titre": "Je ne savais pas",
-  "a_relire": true,
   "notions": [
     "Erreur sur les faits",
     "Erreur sur l'illicéité",
@@ -65,7 +64,7 @@
     {
       "id": "v07-06",
       "q": "Que se passe-t-il si l'erreur sur les faits pouvait être évitée ?",
-      "r": "L'auteur est puni pour négligence. À condition que la loi punisse aussi l'acte commis par négligence.",
+      "r": "L'auteur peut être puni pour négligence, s'il pouvait l'éviter en prenant les précautions voulues. À condition que la loi punisse aussi l'acte commis par négligence.",
       "source": "lignes 14 et 15 ; art. 13 CP",
       "notion": "Erreur évitable"
     },
@@ -99,8 +98,8 @@
     },
     {
       "id": "v07-11",
-      "q": "Qu'est-ce qui suffit à exclure l'erreur sur l'illicéité ?",
-      "r": "Un vague sentiment d'agir contre ce qui est juste.",
+      "q": "Qu'est-ce qui peut déjà exclure l'erreur sur l'illicéité ?",
+      "r": "Un vague sentiment d'agir de manière illicite.",
       "source": "ligne 23 ; ATF 104 IV 217",
       "notion": "Se croire en droit"
     },
@@ -114,13 +113,19 @@
   ],
   "variantes": {
     "base": {
-      "faits": "Arthur sait parfaitement ce qu'il fait. Il pense que c'est permis, et il ne pouvait pas savoir que c'était illicite.",
-      "qualification": "Erreur sur l'illicéité : Arthur n'agit pas de manière coupable.",
-      "source": "lignes 18 à 20 ; art. 21 CP"
+      "faits": "Arthur sait parfaitement ce qu'il fait. Mais il pense que c'est permis.",
+      "qualification": "Erreur sur l'illicéité. Sans éléments sur les vérifications possibles, on ne peut pas trancher l'évitabilité de l'erreur.",
+      "source": "lignes 18 et 19 ; art. 21 CP"
     },
     "changements": [
       {
-        "fait": "Arthur aurait pu éviter son erreur.",
+        "fait": "Arthur ne pouvait vraiment pas savoir que son acte était illicite.",
+        "qualification": "Arthur n'agit pas de manière coupable.",
+        "pourquoi": "Erreur inévitable : c'est la culpabilité, au troisième étage, qui tombe.",
+        "source": "lignes 19 et 20 ; art. 21 CP"
+      },
+      {
+        "fait": "Arthur pouvait éviter son erreur.",
         "qualification": "Arthur reste coupable, mais le juge atténue la peine.",
         "pourquoi": "L'art. 21 prévoit une peine atténuée pour l'erreur évitable.",
         "source": "ligne 21 ; art. 21 CP"
@@ -132,9 +137,9 @@
         "source": "ligne 22 ; ATF 141 IV 336"
       },
       {
-        "fait": "Arthur a le vague sentiment d'agir contre ce qui est juste.",
-        "qualification": "L'erreur est exclue.",
-        "pourquoi": "Pour le Tribunal fédéral, un vague sentiment suffit à exclure l'erreur.",
+        "fait": "Arthur a le vague sentiment d'agir de manière illicite.",
+        "qualification": "L'erreur sur l'illicéité peut être exclue.",
+        "pourquoi": "Pour le Tribunal fédéral, un vague sentiment d'agir de manière illicite peut déjà exclure l'erreur.",
         "source": "ligne 23 ; ATF 104 IV 217"
       },
       {

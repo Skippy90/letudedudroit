@@ -2,7 +2,6 @@
   "video": 8,
   "slug": "08-responsabilite",
   "titre": "Était-il responsable ?",
-  "a_relire": true,
   "accroche": "Peut-on punir quelqu'un qui ne se maîtrisait pas ?",
   "panneaux": [
     {
@@ -12,7 +11,7 @@
       "items": [
         {
           "label": "Responsable",
-          "detail": "Il comprend l'interdit et peut se retenir : il est coupable.",
+          "detail": "Il comprend l'interdit et peut se retenir : il est responsable. Les autres conditions restent à examiner.",
           "couleur": "vert",
           "source": "lignes 7, 33 ; art. 19 CP"
         },
@@ -58,12 +57,12 @@
       "resultats": {
         "Pleinement responsable": {
           "couleur": "vert",
-          "detail": "Les règles sur l'irresponsabilité ne s'appliquent pas.",
+          "detail": "État évitable et acte prévisible : les règles sur l'irresponsabilité ne s'appliquent pas.",
           "source": "lignes 25 à 26 ; art. 19 al. 4 CP"
         },
         "Ivresse fautive": {
           "couleur": "ambre",
-          "detail": "Infraction particulière : acte commis en état d'irresponsabilité fautive.",
+          "detail": "Article 263 possible : irresponsabilité complète due à sa faute, pour un crime ou un délit.",
           "source": "lignes 27 à 28 ; art. 263 CP"
         },
         "État non fautif": {
@@ -76,8 +75,8 @@
   ],
   "piege": {
     "faux": "« J'avais trop bu » : l'ivresse excuse l'acte.",
-    "vrai": "Ivresse évitable et acte prévisible : il est jugé comme pleinement responsable.",
-    "source": "lignes 24 à 26"
+    "vrai": "L'ivresse n'excuse pas si l'état était évitable et l'acte prévisible : deux conditions à vérifier.",
+    "source": "lignes 24 à 26, 29"
   },
   "a_retenir": "Pour être coupable, il faut pouvoir comprendre l'interdit et se retenir, au moment d'agir."
 }

@@ -48,12 +48,12 @@
         },
         "Instigateur": {
           "couleur": "vert",
-          "detail": "Si l'infraction est commise, même peine que l'auteur.",
+          "detail": "Si l'infraction est commise, encourt la peine applicable à l'auteur.",
           "source": "ligne 19 ; art. 24 al. 1 CP"
         },
         "Complice": {
           "couleur": "ambre",
-          "detail": "Aide intentionnelle à un crime ou un délit : peine atténuée.",
+          "detail": "Aide intentionnelle et réelle à un crime ou un délit : peine atténuée.",
           "source": "lignes 24, 28 ; art. 25 CP"
         },
         "Pas complice": {

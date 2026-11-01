@@ -67,7 +67,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 18.4 | scene-vide ; rembobiner ; decor rue Électronique ; personnage max "Max" turquoise gauche ; placer max -3 ; bulle max "Déjà décidé" ; personnage lina "Lina" violet droite ; placer lina 4 |
 | 18.5 | mot-barre "Instigation" 0.6 1.9 |
 | 19.1 | scene-vide ; arret-retirer ; personnage lina "Lina" violet gauche ; titre "La sanction" ; repere-marquer 2 vert |
-| 19.2 | sous-titre "Même peine que l'auteur" ; picto prison 2.2 0.0 |
+| 19.2 | sous-titre "La peine de l'auteur" ; picto prison 2.2 0.0 |
+| 19.3 | sous-titre "Mêmes limites légales" ; accent lina |
+| 19.4 | sous-titre "Peine fixée pour chacun" |
 | 20.1 | effacer-titres ; article "Art. 24 CP" ; titre "Plus loin encore" |
 | 20.2 | effacer-titres ; titre "Tenter de décider, punissable" ; etiquette al2 "Alinéa 2" 0 -1.6 |
 | 21.1 | scene-vide ; arret "ATF 128 IV 11" ; personnage homme "Un homme" ambre_pale gauche ; titre "Un cas réel" |
@@ -85,13 +87,16 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 24.3 | etiquette sac "Le complice" -4.8 1.0 |
 | 25.1 | scene-vide ; arret "ATF 132 IV 49" ; personnage noe "Noé" bleu_clair gauche ; titre "Deux conditions" |
 | 25.2 | case "Contribution causale" |
+| 25.3 | sous-titre "Sans l'aide, autre déroulement" ; accent noe |
 | 26.1 | effacer-titres ; case "Sait et accepte" |
 | 26.2 | bulle noe "Pour un vol" ; accent cases |
 | 26.3 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; renvoi "vidéo 4" ; titre "Le dol éventuel suffit" |
 | 26.4 | effacer-titres ; titre "Les grands traits suffisent" ; picto document 2.2 0.0 |
-| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Noé savait" |
-| 27.2 | cocher 1 vert ; cocher 2 vert |
-| 27.3 | effacer-titres ; titre "Complice du vol" ; repere-marquer 3 vert |
+| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Le sac cache l'ordinateur" |
+| 27.2 | effacer-titres ; titre "Vol facilité" ; cocher 1 vert |
+| 27.3 | effacer-titres ; titre "Noé savait" ; cocher 2 vert |
+| 27.4 | accent cases |
+| 27.5 | effacer-titres ; titre "Complice du vol" ; repere-marquer 3 vert |
 | 28.1 | scene-vide ; arret-retirer ; personnage noe "Noé" bleu_clair gauche ; titre "Plus doux" |
 | 28.2 | article "Art. 25 CP" ; picto prison 2.0 -0.2 ; etiquette att "Peine atténuée" 2.0 1.1 |
 | 29.1 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Le piège classique" ; personnage max "Max" turquoise centre |
@@ -111,14 +116,17 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 32.5 | effacer-titres ; etiquette-retirer acc ; article "Art. 105 CP" ; titre "Contravention" ; sous-titre "Si la loi le prévoit" |
 | 32.6 | renvoi "vidéo 3" ; accent noe |
 | 33.1 | scene-vide ; article-retirer ; arret-retirer ; titre "Retenons" |
-| 33.2 | personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; etiquette r "Chacun est auteur" -3.35 -2.0 ; repere-marquer 1 vert |
-| 33.3 | retirer max ; retirer jade ; personnage lina "Lina" violet centre ; etiquette r "Même peine" 0 -2.0 ; repere-marquer 2 vert |
+| 33.2 | personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; etiquette r "Rôle déterminant" -3.35 -2.0 |
+| 33.3 | etiquette r "Chacun est auteur" -3.35 -2.0 ; repere-marquer 1 vert |
+| 33.4 | retirer max ; retirer jade ; personnage lina "Lina" violet centre ; etiquette r "Fait naître la décision" 0 -2.0 |
+| 33.5 | etiquette r "Peine de l'auteur" 0 -2.0 ; repere-marquer 2 vert |
 | 34.1 | retirer lina ; personnage noe "Noé" bleu_clair centre ; etiquette r "Peine atténuée" 0 -2.0 ; repere-marquer 3 vert |
 | 34.2 | etiquette-retirer r ; effacer-titres ; titre "Quel rôle, et quand ?" ; retirer noe ; personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; personnage lina "Lina" violet centre ; personnage noe "Noé" bleu_clair centre-droite |
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
 | 35.3 | bulle paul "Pour un cambriolage" |
-| 35.4 | effacer-bulle paul ; retirer ami ; picto-deplacer voiture 5.6 -1.5 ; etiquette cambr "Cambriolage commis" 0.6 1.7 |
+| 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; retirer ami ; picto-deplacer voiture 5.6 -1.5 |
+| 35.5 | etiquette cambr "Cambriolage commis" 0.6 1.7 |
 | 36.1 | etiquette-retirer cambr ; titre "Quel rôle ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre ; repere-marquer 3 ambre |
 | 36.2 | effacer-titres ; titre "Quelle peine ?" |
 | 36.3 | sous-titre "Votre réponse en commentaire" ; accent paul |
