@@ -28,9 +28,11 @@ def main(slug: str, tags_video: list[str]) -> None:
     titre = re.search(r"## Titre\s+(.+)", pub).group(1).strip()
     description = re.search(r"```text\n(.*?)```", pub, re.S).group(1).rstrip()
     # Garde-fous : rien d'interne ni d'illisible pour YouTube.
-    for interdit in ("À VÉRIFIER", "(ligne", "le script dit", "<", ">"):
+    for interdit in ("À VÉRIFIER", "(ligne", "le script dit", "relecture", "<", ">"):
         if interdit in description:
             sys.exit(f"Description refusée : contient « {interdit} »")
+    if re.search(r"\blignes? \d", description):
+        sys.exit("Description refusée : une note interne (« ligne N ») est restée")
     if len(description) > 5000 or len(titre) > 100:
         sys.exit("Titre ou description trop long pour YouTube")
     question = ""
