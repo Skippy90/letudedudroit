@@ -32,8 +32,8 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 6.2@négligence | liste-ajouter "Négligence" |
 | 7.1@énorme | accent liste |
 | 7.2@intentionnellement | liste-surligner 1 ; titre "Punissable en principe" |
-| 7.3@contraire | sous-titre "Crimes et délits, sauf exception" |
-| 8.1 | effacer-titres ; effacer-bulle leo ; repere-liste "Intention" "Négligence" |
+| 7.3@contraire | effacer-bulle leo ; sous-titre "Crimes et délits, sauf exception" |
+| 8.1 | effacer-titres ; repere-liste "Intention" "Négligence" |
 | 8.1@versions | titre "Cinq versions" |
 | 8.2@voulu | sous-titre "Du plus voulu au plus involontaire" |
 | 9.1 | scene-vide ; article-retirer ; decor parc ; personnage leo "Léo" turquoise gauche ; placer leo -3 ; personnage adam "Adam" rose droite ; placer adam 2 ; picto ballon -4.1 -2.1 ; titre "Version 1" |
