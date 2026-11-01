@@ -43,7 +43,7 @@ Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur le
 
 ## Texture de l'image (adoptée le 1er novembre 2026)
 
-Appliquée au montage (`tools/assembler.py`), sur toute la vidéo sauf les sous-titres, qui restent nets :
+Appliquée au montage (`tools/assembler.py`), sur les schémas seulement (l'ouverture et la fin gardent le rouge exact) ; les sous-titres restent nets :
 halo doux autour des éléments clairs (blanc, rouge de la marque), vignette légère sur les bords, grain fin animé.
 Les couleurs de la charte ne changent pas. `TEXTURE=0` rend sans texture.
 

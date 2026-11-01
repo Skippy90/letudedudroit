@@ -21,7 +21,8 @@ MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale":
 DUREE_OUVERTURE, DUREE_FIN = 4, 6  # secondes, comme dans render/remotion/src/Video.tsx
 
 
-# Texture de l'image (adoptée le 1er novembre 2026), appliquée avant les sous-titres pour qu'ils restent nets :
+# Texture de l'image (adoptée le 1er novembre 2026), sur les schémas seulement (l'ouverture et la fin gardent le
+# rouge exact de la marque), avant les sous-titres pour qu'ils restent nets :
 # halo doux autour des éléments clairs (blanc, rouge de la marque), vignette légère, grain fin animé.
 # Les couleurs de la charte ne bougent pas (mélange en RVB). TEXTURE=0 rend sans.
 TEXTURE = (",format=gbrp,split[t1][t2];[t2]curves=all='0/0 0.6/0.03 1/1',gblur=sigma=16[t3];"
@@ -112,8 +113,9 @@ def main(slug: str) -> None:
         "-i", str(travail / "ouverture.mp4"), "-i", str(schemas), "-i", str(travail / "fin.mp4"),
         "-i", str(voix / "narration.wav"), "-i", str(bruitages(travail, DUREE_OUVERTURE + timings["duree"])),
         "-filter_complex",
-        "[0:v]setsar=1,fps=30[a];[1:v]setsar=1,fps=30[b];[2:v]setsar=1,fps=30[c];"
-        f"[a][b][c]concat=n=3:v=1:a=0{TEXTURE if texture else ''}{filtre_st}[v];[3:a]adelay={delai}:all=1,apad[n];"
+        "[0:v]setsar=1,fps=30[a];"
+        f"[1:v]setsar=1,fps=30{TEXTURE if texture else ''}[b];[2:v]setsar=1,fps=30[c];"
+        f"[a][b][c]concat=n=3:v=1:a=0{filtre_st}[v];[3:a]adelay={delai}:all=1,apad[n];"
         "[4:a]volume=0.45,apad[o];[n][o]amix=inputs=2:normalize=0[s]",
         "-map", "[v]", "-map", "[s]", "-t", f"{duree:.3f}",
         "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p",
