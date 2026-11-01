@@ -20,7 +20,7 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 1.2 | personnage ines "Inès" rose gauche ; placer ines -3 ; personnage noah "Noah" turquoise centre ; placer noah 1 ; personnage yann "Yann" bleu_clair droite ; placer yann 3 |
 | 2.1 | etiquette-retirer lieu ; personnage passante "Une passante" violet centre-gauche ; placer passante -1 ; accent ines |
 | 2.1@téléphone | picto telephone -0.75 -0.9 |
-| 2.2@neuf | etiquette neuf "Un modèle tout neuf" -3.8 1.7 |
+| 2.2@neuf | etiquette neuf "Tout neuf : environ 900 francs" -3.4 1.7 |
 | 2.3@éloigne | picto-retirer telephone ; etiquette-retirer neuf ; retirer passante ; marcher ines -4 ; bulle ines "Le garder" |
 | 3.1 | effacer-bulle ines ; accent noah |
 | 3.1@mur | picto tag -0.3 -0.1 |
@@ -129,11 +129,10 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 34.1@contravention | repere-marquer 3 ambre |
 | 34.1@ans | repere 0.15 "3 ans" ; point 0.15 "Yann" |
 | 34.2@article | article "Art. 109 CP" |
-| 35.1@noah | repere-marquer 3 neutre ; repere-marquer 2 ambre |
+| 35.1@noah | repere-marquer 3 neutre ; repere-marquer 2 ambre ; article "Art. 97 CP" |
 | 35.1@ans | repere 0.5 "10 ans" ; point 0.5 "Noah" |
 | 35.2@inès | repere-marquer 2 neutre ; repere-marquer 1 ambre |
 | 35.2@ans | repere 0.75 "15 ans" ; point 0.75 "Inès" |
-| 35.3@article | article "Art. 97 CP" |
 | 35.4@grave | accent frise ; renvoi "vidéo 12" |
 | 36.1 | scene-vide ; repere-marquer 1 neutre ; article-retirer ; titre "Le piège classique" ; personnage juge "Juge" turquoise gauche |
 | 36.2@prononcée | sous-titre "La peine prononcée décide" |

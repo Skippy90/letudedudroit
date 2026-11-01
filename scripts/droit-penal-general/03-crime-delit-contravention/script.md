@@ -11,7 +11,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 1 | Samedi soir, à Neuchâtel. Trois jeunes, trois histoires, dans la même rue. | Trois silhouettes de couleurs différentes apparaissent l'une après l'autre |
-| 2 | Inès glisse dans sa poche le téléphone d'une passante. C'est un modèle tout neuf. Elle s'éloigne et compte bien le garder. | La silhouette d'Inès ; une bulle de pensée « Le garder » |
+| 2 | Inès glisse dans sa poche le téléphone d'une passante. C'est un modèle tout neuf. Elle s'éloigne et compte bien le garder. | La silhouette d'Inès ; étiquette « Tout neuf : environ 900 francs » ; une bulle de pensée « Le garder » |
 | 3 | Noah tague tout le mur d'une boulangerie. Le nettoyage coûtera environ deux mille francs. | La silhouette de Noah ; un éclair rouge sur le mur, symbole du dommage |
 | 4 | Yann se dispute avec un ami et lui donne une gifle. L'ami n'est pas blessé. | La silhouette de Yann ; le mot « Gifle » |
 | 5 | Trois actes interdits. Mais ont-ils le même poids ? Lequel est un crime ? Lequel est un délit ? Lequel est une contravention ? Votre intuition vous trompe peut-être. | Trois cases : « Crime ? », « Délit ? », « Contravention ? » |
@@ -64,7 +64,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | 32 | Et l'amende a un plafond. Sauf exception prévue par la loi, elle ne dépasse pas dix mille francs. C'est l'article 106. | Bloc « Art. 106 CP » ; des jetons s'empilent jusqu'à une limite |
 | 33 | Deuxième exemple : la prescription. C'est le délai après lequel on ne peut plus poursuivre l'auteur. | Une frise du temps se dessine |
 | 34 | Pour une contravention, ce délai est de trois ans. C'est l'article 109. | Bloc « Art. 109 CP » ; repère « 3 ans » |
-| 35 | Pour le délit de Noah, il est de dix ans. Pour le vol d'Inès, il est de quinze ans. C'est l'article 97. Plus l'infraction est grave, plus la justice garde longtemps le droit d'agir. | Bloc « Art. 97 CP » ; repères « 10 ans » et « 15 ans » ; « vidéo 12 » en petit |
+| 35 | Pour le délit de Noah, il est de dix ans. Pour le vol d'Inès, il est de quinze ans. C'est l'article 97. Plus l'infraction est grave, plus la justice garde longtemps le droit d'agir. | Bloc « Art. 97 CP » dès « Noah » (le bloc « Art. 109 CP » s'efface) ; repères « 10 ans » et « 15 ans » ; « vidéo 12 » en petit |
 
 ## Le piège classique
 
