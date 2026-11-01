@@ -31,7 +31,9 @@ def nombre(mots: list[str]) -> str | None:
     for m in mots:
         for p in m.lower().split("-"):
             if p == "et":
-                continue
+                if courant >= 20 and courant % 10 == 0:  # « vingt et un », pas « seize et dix-huit »
+                    continue
+                return f"{total + courant}{suffixe}" if lu else None
             if p in UNITES:
                 courant += UNITES[p]
                 lu = True
