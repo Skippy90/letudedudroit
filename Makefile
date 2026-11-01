@@ -41,6 +41,7 @@ visuals:
 
 # Habillage Remotion et rendu final dans out/.
 assemble:
+	$(PY) tools/verifier_articles.py $(SLUG)
 	$(PY) tools/assembler.py $(SLUG)
 
 # Shorts verticaux (1080 × 1920) décrits dans scripts/$(SLUG)/shorts.json, tirés de la vidéo déjà rendue.

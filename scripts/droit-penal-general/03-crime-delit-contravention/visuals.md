@@ -87,7 +87,8 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 22.1@trois | point 0.5 "Au plus" ; zone 0 0.5 vert |
 | 22.2@délit | repere-marquer 2 ambre ; titre "Un délit" |
 | 22.3@dommage | sous-titre "Tout petit dommage : amende" |
-| 23.1@considérable | effacer-titres ; point 0.83 "Considérable : 5 ans" |
+| 22.3@article | article "Art. 172ter CP" |
+| 23.1@considérable | effacer-titres ; article "Art. 144 CP" ; point 0.83 "Considérable : 5 ans" |
 | 23.2@crime | titre "Alors : un crime" |
 | 24.1 | scene-vide ; repere-marquer 2 neutre ; article-retirer ; decor rue ; personnage yann "Yann" bleu_clair centre ; placer yann 2 ; personnage ami "Un ami" ambre_pale droite ; placer ami 3 |
 | 24.2@gifle | pousser yann ami |
