@@ -4,110 +4,128 @@ Ce fichier pilote les schémas Manim (`render/manim/video.py`). Vocabulaire des 
 
 Colonne « Moment » : `ligne.phrase` du script, éventuellement `+secondes`. Plusieurs actions d'un même moment sont séparées par `;`.
 
-Personnages : Théo turquoise, l'agent bleu clair, Zoé violet.
+Personnages : Théo turquoise, l'agent bleu clair, le juge rose, l'expert ambre pâle, un inconnu ambre pâle, Zoé violet, son amie rose.
 
-Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : la justice est représentée par la pyramide des autorités (ligne 20) ; pas d'échelle dessinée, les trois situations sont une liste (lignes 6 et 17).
+Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entrée du festival (décor rue, enseigne « Festival ») et chaque variante s'y rejoue après le rembobinage ; l'expertise se joue dans la salle d'audience (décor tribunal) ; un pense-bête « Comprendre / Se retenir » en haut à droite suit les deux facultés de l'article 19 (ambre : examinée ; gris : elle manque ; vert : présente).
+
+Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : le juge est une silhouette dans la salle d'audience plutôt que la pyramide (ligne 20) ; pas d'échelle dessinée, les trois situations sont une liste (lignes 6, 17 et 34) ; le traitement et le verre drogué n'ont pas de pictogramme propre : ils sont nommés par une étiquette (lignes 29 et 31), le verre est la bouteille.
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | titre "Un festival, près de Nyon" |
-| 1.2 | personnage theo "Théo" turquoise gauche |
-| 2.1 | personnage agent "L'agent" bleu_clair droite |
-| 2.2 | deplacer theo centre-gauche |
-| 2.3 | basculer agent ; dommage agent |
-| 2.4 | effacer-titres ; titre "Un regard étrange" |
-| 3.1 | scene-vide ; batiment ; etage 1 vert |
-| 3.2 | etage 2 vert |
+| 1.1 | decor rue Festival ; etiquette lieu "Près de Nyon, un soir" -3.6 1.7 |
+| 1.2 | personnage theo "Théo" turquoise gauche ; placer theo -3 ; etiquette lieu "Il s'agite" -3.6 1.7 |
+| 2.1 | etiquette-retirer lieu ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; etiquette calme "« Calmez-vous »" 3.4 1.7 |
+| 2.2 | etiquette-retirer calme ; marcher theo 1 |
+| 2.2+0.8 | pousser theo agent |
+| 2.3 | chute agent 3 |
+| 2.3+0.9 | dommage agent ; etiquette blesse "Épaule blessée" 4.4 1.7 |
+| 2.4 | etiquette-retirer blesse ; etiquette regard "Un regard étrange" 0.6 1.7 |
+| 2.4+2 | etiquette regard "Des paroles sans suite" 0.6 1.7 |
+| 3.1 | scene-vide ; batiment |
+| 3.2 | etage 1 vert |
+| 3.2+1.2 | etage 2 vert |
 | 3.3 | etage-question 3 |
-| 3.4 | titre "Que se passait-il dans sa tête ?" |
-| 4.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
+| 3.4 | personnage theo "Théo" turquoise gauche ; titre "Que se passait-il dans sa tête ?" |
+| 4.1 | scene-vide ; batiment ; renvoi "vidéo 1" ; etage 1 vert ; etage 2 vert |
 | 4.2 | etage 3 ambre |
-| 5.1 | titre "Être responsable" |
-| 5.2 | sous-titre "Au moment d'agir" |
-| 6.1 | scene-vide ; article "Art. 19 CP" ; titre "Trois situations" |
-| 6.2 | liste-ajouter "Responsable" ; liste-ajouter "Pas du tout responsable" ; liste-ajouter "Partiellement responsable" |
-| 7.1 | scene-vide ; article-retirer ; rembobiner ; personnage theo "Théo" turquoise gauche |
-| 7.2 | bulle theo "Sobre, énervé" |
-| 7.3 | titre "Il comprend, il pourrait se retenir" |
-| 7.4 | effacer-titres ; batiment ; etage 1 vert ; etage 2 vert ; etage 3 vert |
-| 8.1 | scene-vide ; article "Art. 19 CP" ; titre "Deux facultés" |
-| 9.1 | case "Comprendre l'interdit" |
-| 9.2 | accent cases |
+| 5.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; titre "Être responsable" |
+| 5.2 | bulle theo "Je réponds de mes actes" |
+| 6.1 | scene-vide ; article "Art. 19 CP" ; titre "Trois situations" ; livre "Code pénal" 3.8 |
+| 6.2 | livre-ouvrir ; liste-ajouter "Responsable" |
+| 6.2+2 | liste-ajouter "Pas du tout" |
+| 6.2+4 | liste-ajouter "En partie" |
+| 7.1 | scene-vide ; article-retirer ; rembobiner ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "La version simple" |
+| 7.2 | picto tension -0.8 -0.2 ; etiquette etat "Sobre, juste énervé" -3.6 1.7 |
+| 7.3 | etiquette-retirer etat ; picto-retirer tension ; bulle theo "Je comprends" |
+| 7.3+1.3 | bulle theo "Je pourrais me retenir" |
+| 7.4 | effacer-bulle theo ; etiquette coupable "Responsable, donc coupable" 0.6 1.7 |
+| 8.1 | scene-vide ; article "Art. 19 CP" ; titre "Deux facultés" ; personnage theo "Théo" turquoise gauche |
+| 9.1 | case "Comprendre" |
+| 9.2 | bulle theo "Interdit" |
 | 10.1 | case "Se retenir" |
-| 10.2 | accent cases |
-| 11.1 | titre "Une seule manque" |
-| 11.2 | sous-titre "Irresponsable" |
-| 11.3 | effacer-titres ; titre "« au moment d'agir »" ambre |
-| 11.4 | sous-titre "L'état à l'instant de l'acte" |
-| 12.1 | scene-vide ; rembobiner ; personnage theo "Théo" turquoise gauche ; titre "Variante 1" |
-| 12.2 | sous-titre "Une crise psychotique" |
-| 12.3 | bulle theo "Un démon" |
-| 13.1 | scene-vide ; cases "Comprendre l'interdit" "Se retenir" |
-| 13.2 | cocher 1 gris |
-| 13.3 | titre "Irresponsable" |
-| 14.1 | scene-vide ; rembobiner ; personnage theo "Théo" turquoise gauche ; titre "Variante 2" |
-| 14.2 | bulle theo "Je sais, mais…" |
-| 14.3 | sous-titre "Plus aucune maîtrise" |
-| 15.1 | scene-vide ; cases "Comprendre l'interdit" "Se retenir" ; cocher 2 gris |
-| 15.2 | titre "Irresponsable aussi" |
-| 16.1 | scene-vide ; renvoi "vidéo 7" ; colonnes "Information" "Capacité" |
-| 16.2 | colonne-accent 1 ; titre "Erreur sur l'illicéité" |
-| 16.3 | colonne-eteindre 1 ; colonne-accent 2 ; titre "Ici : la capacité" |
-| 17.1 | scene-vide ; titre "Une zone grise" |
-| 17.2 | liste "Responsable" "Restreinte" "Irresponsable" ; liste-surligner 2 |
+| 10.2 | bulle theo "Je m'arrête" |
+| 11.1 | effacer-bulle theo ; effacer-titres ; titre "Une seule suffit" ; cocher 1 gris |
+| 11.2 | sous-titre "Irresponsable, pas punissable" |
+| 11.3 | scene-vide ; article-retirer ; repere-liste "Comprendre" "Se retenir" ; personnage theo "Théo" turquoise gauche ; titre "« au moment d'agir »" ambre |
+| 11.4 | sous-titre "L'état à l'instant de l'acte" ; accent theo |
+| 12.1 | scene-vide ; rembobiner ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 1" |
+| 12.2 | etiquette crise "Crise psychotique" -3.6 1.7 |
+| 12.3 | etiquette-retirer crise ; bulle theo "Un démon !" |
+| 13.1 | repere-marquer 1 ambre ; effacer-titres ; titre "Il ne comprend plus" |
+| 13.2 | repere-marquer 1 gris |
+| 13.3 | etiquette irr "Irresponsable" 0.6 1.7 |
+| 14.1 | scene-vide ; rembobiner ; repere-marquer 1 neutre ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 2" |
+| 14.2 | bulle theo "C'est interdit, je sais" ; repere-marquer 1 vert |
+| 14.3 | effacer-bulle theo ; etiquette maitrise "Plus aucune maîtrise" 0.6 1.7 |
+| 14.3+1.5 | marcher theo 1 |
+| 15.1 | pousser theo agent ; repere-marquer 2 ambre |
+| 15.1+1.5 | repere-marquer 2 gris |
+| 15.2 | etiquette maitrise "Irresponsable aussi" 0.6 1.7 |
+| 16.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; renvoi "vidéo 7" ; colonnes "Information" "Capacité" |
+| 16.2 | colonne-accent 1 ; picto document -3.5 -1.3 |
+| 16.3 | colonne-eteindre 1 ; colonne-accent 2 ; etiquette cap "Sa capacité même" 3.5 -1.3 |
+| 17.1 | scene-vide ; personnage theo "Théo" turquoise droite ; titre "Une zone grise" |
+| 17.2 | liste "Responsable" "Restreinte" "Irresponsable" ; liste-surligner 2 ; repere-marquer 1 ambre ; repere-marquer 2 ambre |
 | 18.1 | article "Art. 19 CP" ; effacer-titres ; titre "Responsabilité restreinte" |
 | 18.2 | sous-titre "Toujours coupable" |
-| 18.3 | effacer-titres ; titre "Peine atténuée" ambre |
-| 19.1 | scene-vide ; colonnes "Comprendre" "Se retenir" |
-| 19.2 | colonne-eteindre 2 ; titre "Moins de reproche" |
-| 20.1 | scene-vide ; article-retirer ; pyramide ; titre "Comment savoir ?" |
-| 20.2 | effacer-titres ; titre "Le juge n'est pas psychiatre" |
-| 21.1 | scene-vide ; article "Art. 20 CP" ; titre "Une expertise" |
-| 21.2 | sous-titre "Dès l'enquête" |
-| 22.1 | effacer-titres ; titre "Pas seul" |
-| 22.2 | mot-barre "Livres de psychiatrie" |
-| 22.3 | sous-titre "Un expert" |
-| 23.1 | scene-vide ; titre "Un diagnostic ne suffit pas" |
-| 23.2 | sous-titre "Le lien avec l'acte" |
-| 23.3 | effacer-titres ; titre "L'expert éclaire" |
-| 23.4 | sous-titre "Le juge décide" |
-| 24.1 | scene-vide ; article-retirer ; titre "Le piège classique" |
-| 24.2 | sous-titre "« J'avais trop bu »" |
-| 24.3 | effacer-titres ; titre "Une excuse ?" |
-| 25.1 | scene-vide ; article "Art. 19 CP" ; titre "Quatrième alinéa" |
-| 25.2 | frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
+| 18.3 | sous-titre "Peine atténuée" ; picto prison 1.6 -0.6 |
+| 19.1 | scene-vide ; article-retirer ; personnage theo "Théo" turquoise centre ; titre "La logique" |
+| 19.2 | bulle theo "À moitié maîtrisé" ; effacer-titres ; titre "Moins de reproche" |
+| 20.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; decor tribunal ; personnage theo "Théo" turquoise gauche ; placer theo -1 ; personnage juge "Le juge" rose droite ; placer juge 3 ; titre "Comment savoir ?" |
+| 20.2 | bulle juge "Pas psychiatre…" |
+| 21.1 | effacer-bulle juge ; effacer-titres ; article "Art. 20 CP" ; etiquette expertise "Une expertise" 1.0 1.7 |
+| 21.2 | etiquette enquete "Dès l'enquête" -4.4 1.7 |
+| 22.1 | etiquette-retirer enquete ; etiquette-retirer expertise ; article-retirer ; arret "ATF 133 IV 145" ; titre "Pas tout seul" |
+| 22.2 | effacer-titres ; livre "Psychiatrie" 1.2 -0.6 |
+| 22.2+1.8 | etiquette livres "Lire ne suffit pas" 1.2 1.6 |
+| 22.3 | livre-retirer ; etiquette-retirer livres ; personnage expert "L'expert" ambre_pale gauche ; placer expert -3 ; effacer-titres ; titre "Un expert" ambre |
+| 23.1 | effacer-titres ; etiquette diag "Diagnostic insuffisant" -3.6 1.7 |
+| 23.2 | etiquette diag "Le lien avec l'acte" -3.6 1.7 |
+| 23.3 | etiquette-retirer diag ; parole expert "Sa santé" |
+| 23.4 | effacer-parole expert ; etiquette juge "Le juge décide" 4.6 1.8 |
+| 24.1 | scene-vide ; article-retirer ; arret-retirer ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; picto bouteille -3.5 -1.0 ; titre "Le piège classique" |
+| 24.2 | parole theo "J'avais trop bu" |
+| 24.2+2 | parole theo "Je ne savais plus" |
+| 24.3 | effacer-parole theo ; effacer-titres ; titre "Une excuse ?" ambre |
+| 25.1 | scene-vide ; article "Art. 19 CP" ; titre "Quatrième alinéa" ; picto bouteille -4.4 0.6 |
+| 25.2 | frise ; point 0.25 "Il boit" |
+| 25.2+3 | point 0.7 "Il frappe" |
 | 26.1 | fleche-retour 0.7 0.25 vert |
-| 26.2 | titre "Pleinement responsable" |
-| 27.1 | scene-vide ; titre "Pas prévisible ?" |
-| 27.2 | article "Art. 263 CP" ; sous-titre "Irresponsabilité fautive" |
-| 28.1 | effacer-titres ; titre "Peine pécuniaire" |
-| 28.2 | sous-titre "Ou jusqu'à trois ans" |
-| 29.1 | scene-vide ; article-retirer ; titre "Un verre drogué" |
-| 29.2 | sous-titre "Pas de faute" |
-| 29.3 | effacer-titres ; titre "Ni l'alinéa 4, ni l'article 263" |
-| 29.4 | scene-vide ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
+| 26.2 | effacer-titres ; titre "Pleinement responsable" ambre ; repere-marquer 1 vert ; repere-marquer 2 vert |
+| 27.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; personnage theo "Théo" turquoise gauche ; titre "Pas prévisible ?" ; bulle theo "Imprévisible" |
+| 27.2 | effacer-bulle theo ; article "Art. 263 CP" ; sous-titre "Irresponsabilité fautive" ; picto bouteille 0 0.3 |
+| 28.1 | effacer-titres ; titre "Peine pécuniaire" ; picto pieces 3.0 0.3 |
+| 28.2 | picto-retirer bouteille ; picto prison 0 0.3 ; sous-titre "Seule peine : la prison ?" |
+| 28.2+4 | sous-titre "Trois ans au plus" |
+| 29.1 | scene-vide ; article-retirer ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -2 ; personnage inconnu "Un inconnu" ambre_pale droite ; placer inconnu 3 ; picto bouteille -1.9 -1.0 |
+| 29.1+2.5 | etiquette insu "Drogué, à son insu" 0.6 1.7 |
+| 29.2 | etiquette insu "Pas fautif" 0.6 1.7 |
+| 29.3 | article "Art. 263 CP" ; titre "Ni l'alinéa 4, ni 263" |
+| 29.4 | scene-vide ; article-retirer ; titre "L'ivresse choisie" ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
 | 29.5 | repere 0.25 "La faute" |
-| 30.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; bulle theo "Un démon" |
+| 30.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; bulle theo "Un démon !" ; repere-marquer 1 gris |
 | 30.2 | titre "Pas punissable" |
-| 30.3 | sous-titre "Une mesure reste possible" |
-| 31.1 | scene-vide ; article "Art. 19 CP" ; titre "Une mesure" |
-| 31.2 | sous-titre "Aussi si restreinte" |
+| 30.3 | effacer-bulle theo ; sous-titre "Pas forcément la fin" |
+| 31.1 | scene-vide ; article "Art. 19 CP" ; personnage theo "Théo" turquoise gauche ; etiquette mesure "Une mesure" 0 1.0 |
+| 31.1+3 | etiquette soin "Un traitement" 0 -0.2 |
+| 31.2 | repere-marquer 1 ambre ; repere-marquer 2 ambre ; etiquette soin "Aussi si restreinte" 0 -0.2 |
 | 31.3 | renvoi "vidéo 1" |
 | 31.4 | renvoi "vidéo 12" |
-| 32.1 | scene-vide ; article-retirer ; colonnes "Peine : la faute" "Mesure : le danger" ; colonne-accent 1 |
-| 32.2 | colonne-accent 2 |
+| 32.1 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; colonnes "Peine : la faute" "Mesure : le danger" ; colonne-accent 1 ; picto prison -3.5 -1.3 |
+| 32.2 | colonne-accent 2 ; picto danger 3.5 -1.3 |
 | 32.3 | titre "La grande différence" |
-| 33.1 | scene-vide ; titre "Retenons" |
-| 33.2 | cases "Comprendre l'interdit" "Se retenir" ; cocher 1 vert ; cocher 2 vert |
-| 34.1 | scene-vide ; liste "Responsable" "Restreinte" "Irresponsable" ; liste-surligner 3 |
-| 34.2 | liste-surligner 2 |
-| 34.3 | article "Art. 20 CP" ; titre "Un expert" |
-| 34.4 | sous-titre "L'ivresse choisie n'excuse pas" |
-| 35.1 | scene-vide ; article-retirer ; titre "Une question pour finir" |
-| 35.2 | effacer-titres ; personnage zoe "Zoé" violet gauche ; bulle zoe "Agressive si je bois" |
-| 35.3 | frise ; point 0.25 "Elle boit" |
-| 35.4 | point 0.7 "Elle frappe" |
-| 36.1 | effacer-bulle zoe ; titre "Son ivresse l'excuse-t-elle ?" ; questions |
-| 36.2 | effacer-titres ; titre "Votre réponse en commentaire" |
-| 37.1 | scene-vide ; titre "L'étude du droit" ; sous-titre "Script et articles sur GitHub" |
+| 33.1 | scene-vide ; titre "Retenons" ; personnage theo "Théo" turquoise gauche |
+| 33.2 | cases "Comprendre" "Se retenir" ; cocher 1 vert ; cocher 2 vert ; repere-marquer 1 vert ; repere-marquer 2 vert |
+| 34.1 | scene-vide ; personnage theo "Théo" turquoise droite ; repere-marquer 1 gris ; liste-ajouter "Pas de peine" |
+| 34.2 | repere-marquer 1 ambre ; repere-marquer 2 ambre ; liste-ajouter "Peine atténuée" |
+| 34.3 | article "Art. 20 CP" ; liste-ajouter "Un expert" |
+| 34.4 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; picto bouteille 0 0.3 ; titre "L'ivresse choisie n'excuse pas" |
+| 35.1 | scene-vide ; titre "Une question pour finir" |
+| 35.2 | effacer-titres ; decor rue Festival ; personnage zoe "Zoé" violet gauche ; placer zoe -2 ; bulle zoe "Agressive si je bois" |
+| 35.3 | effacer-bulle zoe ; picto bouteille -1.9 -1.0 ; personnage amie "Une amie" rose droite ; placer amie 1 ; etiquette soiree "Elle boit énormément" 0.6 1.7 |
+| 35.4 | etiquette-retirer soiree ; marcher zoe -1 |
+| 35.4+1.2 | pousser zoe amie ; dommage amie |
+| 36.1 | titre "Son ivresse l'excuse-t-elle ?" ambre ; repere-marquer 1 ambre ; repere-marquer 2 ambre |
+| 36.2 | effacer-titres ; titre "Votre réponse en commentaire" ; accent zoe |
+| 37.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 37.2 | accent titre |
