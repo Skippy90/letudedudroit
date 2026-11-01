@@ -34,7 +34,10 @@ def nombre(mots: list[str]) -> str | None:
                 if courant >= 20 and courant % 10 == 0:  # « vingt et un », pas « seize et dix-huit »
                     continue
                 return f"{total + courant}{suffixe}" if lu else None
-            if p in UNITES:
+            if p == "vingt" and courant % 100 == 4:  # « quatre-vingt » : 4 × 20
+                courant += 76
+                lu = True
+            elif p in UNITES:
                 courant += UNITES[p]
                 lu = True
             elif p == "cent":

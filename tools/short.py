@@ -29,6 +29,14 @@ Y_PROGRES = 1700
 MOTS = 4                              # mots par sous-titre, en grand
 
 
+def typographie(t: str) -> str:
+    """Accroche prête pour l'affichage : pas de coupure avant « : ? ! » ni à l'intérieur des guillemets et des traits d'union."""
+    t = html.escape(t).replace("-", "\u2011")
+    for a, b in ((" :", "\u00a0:"), (" ?", "\u00a0?"), (" !", "\u00a0!"), ("« ", "«\u00a0"), (" »", "\u00a0»")):
+        t = t.replace(a, b)
+    return t
+
+
 def fond(titre_video: str, numero: str, accroche: str, sortie: Path) -> None:
     """Le cadre fixe du short (bandeau, accroche, pied), rendu en PNG par Chromium."""
     symbole = (RACINE / "docs/marque/symbole.svg").read_text(encoding="utf-8")
@@ -41,7 +49,7 @@ h1{{margin:auto 0;font-size:84px;line-height:1.08;font-weight:900;letter-spacing
 .bas{{position:absolute;left:64px;right:64px;top:{Y_PROGRES + 40}px;color:#F2EFE6}}
 .bas p{{margin:0;font-size:30px;opacity:.75;font-weight:600}}.bas b{{display:block;font-size:40px;font-weight:800;margin-top:6px}}
 .rail{{position:absolute;left:0;right:0;top:{Y_PROGRES}px;height:10px;background:#2C2C31}}
-</style><div class="haut"><div class="marque">{symbole}<span>L’étude du droit</span></div><h1>{html.escape(accroche).replace('-', '\u2011')}</h1></div>
+</style><div class="haut"><div class="marque">{symbole}<span>L’étude du droit</span></div><h1>{typographie(accroche)}</h1></div>
 <div class="rail"></div><div class="bas"><p>Vidéo complète sur la chaîne · vidéo {numero}</p><b>{html.escape(titre_video)}</b></div>""",
                     encoding="utf-8")
     js = ("const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();"
