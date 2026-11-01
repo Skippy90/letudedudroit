@@ -1,0 +1,205 @@
+{
+  "video": 11,
+  "slug": "11-peines",
+  "titre": "Quelle peine ?",
+  "a_relire": true,
+  "notions": [
+    "Les trois peines",
+    "Jour-amende",
+    "Choix et fixation de la peine",
+    "Sursis"
+  ],
+  "a_vous": [
+    {
+      "ligne": 9,
+      "pause": "Selon vous, deux personnes qui commettent la même faute doivent-elles payer la même somme ?",
+      "pourquoi": "Le spectateur découvre ensuite que le montant dépend de la situation de chacun."
+    },
+    {
+      "ligne": 18,
+      "pause": "Selon vous, quelle peine convient à Inès : la prison ou une peine pécuniaire ?",
+      "pourquoi": "Il applique lui-même les critères avant d'entendre la réponse."
+    },
+    {
+      "ligne": 31,
+      "pause": "Selon vous, Inès, condamnée avec sursis, a-t-elle été punie ?",
+      "pourquoi": "C'est le piège classique de la vidéo."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v11-01",
+      "q": "Quelles sont les trois peines principales du Code pénal ?",
+      "r": "La peine privative de liberté, la peine pécuniaire et l'amende.",
+      "source": "ligne 4",
+      "notion": "Les trois peines"
+    },
+    {
+      "id": "v11-02",
+      "q": "En quels deux temps le juge travaille-t-il ?",
+      "r": "Il choisit d'abord le genre de peine. Ensuite, il en fixe la durée ou le montant.",
+      "source": "ligne 5 ; ATF 147 IV 241",
+      "notion": "Choix et fixation de la peine"
+    },
+    {
+      "id": "v11-03",
+      "q": "Combien dure en principe une peine privative de liberté ?",
+      "r": "De trois jours à vingt ans. Elle peut être à vie quand la loi le prévoit expressément.",
+      "source": "ligne 7 ; art. 40 CP",
+      "notion": "Les trois peines"
+    },
+    {
+      "id": "v11-04",
+      "q": "Entre combien de jours-amende le juge choisit-il, et selon quoi ?",
+      "r": "Entre trois et cent quatre-vingts jours-amende, selon la faute.",
+      "source": "ligne 8 ; art. 34 CP",
+      "notion": "Jour-amende"
+    },
+    {
+      "id": "v11-05",
+      "q": "De quoi dépend le montant d'un jour-amende ?",
+      "r": "De la situation de l'auteur : son revenu, sa fortune, ses charges. Il est en général de trente à trois mille francs.",
+      "source": "ligne 9 ; art. 34 CP",
+      "notion": "Jour-amende"
+    },
+    {
+      "id": "v11-06",
+      "q": "Combien font trente jours-amende à cinquante francs ?",
+      "r": "Mille cinq cents francs.",
+      "source": "ligne 10 ; art. 34 CP",
+      "notion": "Jour-amende"
+    },
+    {
+      "id": "v11-07",
+      "q": "Que punit l'amende, et quel est son plafond ?",
+      "r": "Elle punit les contraventions. Sauf exception, elle ne dépasse pas dix mille francs.",
+      "source": "ligne 12 ; art. 106 CP",
+      "notion": "Les trois peines"
+    },
+    {
+      "id": "v11-08",
+      "q": "Pour quelles deux raisons le juge peut-il préférer la peine privative de liberté à la peine pécuniaire ?",
+      "r": "Pour détourner l'auteur d'autres crimes ou délits. Ou si l'on peut craindre que la peine pécuniaire ne soit pas exécutée.",
+      "source": "ligne 17 ; art. 41 CP",
+      "notion": "Choix et fixation de la peine"
+    },
+    {
+      "id": "v11-09",
+      "q": "Pourquoi une peine pécuniaire paraît-elle suffisante pour Inès ?",
+      "r": "Elle est jeune, sans antécédents, avec un salaire d'apprentie. Rien n'indique qu'elle ne pourrait pas payer.",
+      "source": "ligne 18 ; art. 41 CP",
+      "notion": "Choix et fixation de la peine"
+    },
+    {
+      "id": "v11-10",
+      "q": "D'après quoi le juge fixe-t-il la peine, selon l'article 47 ?",
+      "r": "D'après la culpabilité de l'auteur.",
+      "source": "ligne 19 ; art. 47 CP",
+      "notion": "Choix et fixation de la peine"
+    },
+    {
+      "id": "v11-11",
+      "q": "Quand le juge suspend-il en règle générale une peine ?",
+      "r": "Pour une peine pécuniaire ou une peine privative de liberté de deux ans au plus. Il faut qu'une peine ferme ne paraisse pas nécessaire.",
+      "source": "lignes 23 et 24 ; art. 42 CP",
+      "notion": "Sursis"
+    },
+    {
+      "id": "v11-12",
+      "q": "Dans le sursis partiel, quelles sont les limites de la partie exécutée ?",
+      "r": "Elle ne peut pas dépasser la moitié de la peine. Chacune des deux parties dure au moins six mois.",
+      "source": "ligne 28 ; art. 43 CP",
+      "notion": "Sursis"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Inès, vingt ans, apprentie sans antécédents, a volé un téléphone.",
+      "qualification": "Peine pécuniaire avec sursis, et délai d'épreuve de deux ans.",
+      "source": "ligne 29"
+    },
+    "changements": [
+      {
+        "fait": "Inès ne commet aucune nouvelle infraction pendant le délai d'épreuve.",
+        "qualification": "Elle ne paiera pas ces jours-amende.",
+        "pourquoi": "Si l'épreuve réussit, la peine n'est jamais exécutée.",
+        "source": "lignes 25 et 29 ; art. 45 CP"
+      },
+      {
+        "fait": "Inès commet un nouveau délit pendant le délai d'épreuve, et une récidive est à craindre.",
+        "qualification": "Le juge révoque le sursis : la peine doit être exécutée.",
+        "pourquoi": "Un nouveau crime ou délit pendant le délai, avec un risque de récidive, entraîne la révocation.",
+        "source": "ligne 26 ; art. 46 CP"
+      },
+      {
+        "fait": "Le juge ajoute au sursis une amende.",
+        "qualification": "La peine pécuniaire reste suspendue, mais l'amende doit être payée.",
+        "pourquoi": "C'est une façon de rendre la condamnation tout de suite sensible.",
+        "source": "ligne 32 ; art. 42 CP"
+      },
+      {
+        "fait": "On peut craindre qu'une peine pécuniaire ne puisse pas être exécutée.",
+        "qualification": "Le juge peut préférer la peine privative de liberté, en motivant ce choix en détail.",
+        "pourquoi": "C'est l'une des deux raisons prévues par l'article 41.",
+        "source": "ligne 17 ; art. 41 CP"
+      },
+      {
+        "fait": "La peine prononcée est une peine privative de liberté de trente mois.",
+        "qualification": "Le sursis complet n'est plus possible ; le sursis partiel l'est.",
+        "pourquoi": "Le sursis complet vise les peines de deux ans au plus. Le sursis partiel vise les peines d'un à trois ans.",
+        "source": "lignes 23 et 27, réponse à la question finale ; art. 42 et 43 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Hugo est condamné à une peine privative de liberté de trente mois. Peut-il obtenir le sursis ?",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quel sursis vise les peines privatives de liberté d'un à trois ans ?",
+        "choix": [
+          "Le sursis complet de l'article 42",
+          "Le sursis partiel de l'article 43",
+          "Aucun sursis n'est possible"
+        ],
+        "bon": 1,
+        "note": "L'article 43 prévoit le sursis partiel pour une peine privative de liberté d'un à trois ans."
+      },
+      {
+        "nom": "Application",
+        "q": "Pourquoi Hugo ne peut-il pas obtenir le sursis complet ?",
+        "choix": [
+          "Parce qu'il a des antécédents",
+          "Parce que le sursis ne vaut que pour la peine pécuniaire",
+          "Parce que trente mois dépassent deux ans"
+        ],
+        "bon": 2,
+        "note": "Le sursis complet vise les peines privatives de liberté de deux ans au plus."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Avec un sursis partiel, quelle partie de la peine Hugo peut-il devoir exécuter au plus ?",
+        "choix": [
+          "Quinze mois, chaque partie durant au moins six mois",
+          "Trente mois",
+          "Six mois au plus"
+        ],
+        "bon": 0,
+        "note": "La partie à exécuter ne peut pas dépasser la moitié de la peine, soit quinze mois."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Inès a commis un vol.",
+        "Le juge prononce une peine pécuniaire avec sursis.",
+        "Avec le sursis, Inès n'a donc pas été punie.",
+        "Le délai d'épreuve est de deux ans."
+      ],
+      "faux": 2,
+      "explication": "Inès est bel et bien condamnée. La peine existe, elle est seulement suspendue pendant le délai d'épreuve.",
+      "source": "lignes 30 et 31 ; art. 42 CP"
+    }
+  ]
+}
