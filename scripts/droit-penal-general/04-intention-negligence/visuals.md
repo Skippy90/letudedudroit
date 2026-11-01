@@ -32,6 +32,7 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 6.2@négligence | liste-ajouter "Négligence" |
 | 7.1@énorme | accent liste |
 | 7.2@intentionnellement | liste-surligner 1 ; titre "Punissable en principe" |
+| 7.3@contraire | sous-titre "Crimes et délits, sauf exception" |
 | 8.1 | effacer-titres ; effacer-bulle leo ; repere-liste "Intention" "Négligence" |
 | 8.1@versions | titre "Cinq versions" |
 | 8.2@voulu | sous-titre "Du plus voulu au plus involontaire" |
@@ -111,6 +112,7 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 33.3 | barrer |
 | 34.1 | scene-vide ; repere-marquer 2 ambre ; livre ; article "Art. 12 CP" |
 | 34.1@expressément | livre-ouvrir ; titre "Seulement si la loi le prévoit" |
+| 34.2@circulation | sous-titre "Autres lois : souvent l'inverse" ; picto voiture 4.6 0.4 ; article "Art. 333 CP" |
 | 35.1 | scene-vide ; decor parc ; personnage adam "Adam" rose droite ; placer adam 2 ; dommage adam ; titre "Les blessures" |
 | 35.2@cent | article "Art. 125 CP" |
 | 35.2@négligence | etiquette blessure "Lésions par négligence" -2.8 1.1 ; picto coche 0.9 1.1 |
@@ -121,13 +123,13 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 36.2@intentionnelle | etiquette version "Intentionnel seulement" -2.6 2.45 |
 | 37.1 | scene-vide ; picto voiture -4.0 0.4 ; case "Dommage par négligence" ; cocher 1 gris |
 | 37.2@infraction | titre "Pas d'infraction" |
-| 37.3@réparation | sous-titre "Seulement une réparation" ; picto pieces -4.0 -1.2 |
+| 37.3@réparation | sous-titre "Réparation : droit civil" ; picto pieces -4.0 -1.2 |
 | 38.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; batiment ; renvoi "vidéo 1" |
 | 38.2@étage | titre "Quel étage ?" |
 | 39.1 | fleche 1 ; etage 1 gris |
 | 39.2@intentionnellement | article "Art. 123 CP" ; sous-titre "Pas d'intention" |
 | 40.1 | article "Art. 125 CP" ; repere-marquer 2 ambre ; effacer-titres ; titre "Imprévoyance coupable ?" |
-| 40.1@plainte | sous-titre "Et plainte de Julien" |
+| 40.3@plainte | sous-titre "Plainte, sauf lésion grave" |
 | 41.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; titre "L'échelle" ; personnage leo "Léo" turquoise droite |
 | 41.2@vouloir | effacer-titres ; liste-ajouter "Vouloir : intention" ; repere-marquer 1 ambre ; bulle leo "Je le veux" |
 | 41.3@possible | liste-ajouter "Accepter : dol éventuel" ; bulle leo "Tant pis" |
@@ -139,7 +141,8 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 44.2 | effacer-titres ; decor rue ; personnage sofia "Sofia" violet gauche ; placer sofia -2 ; etiquette vite "Bien trop vite" -3.2 1.7 |
 | 44.3@renverser | bulle sofia "Un risque" |
 | 44.4@freiner | bulle sofia "Je freinerai" |
-| 44.5 | etiquette-retirer vite ; titre "Intention ou négligence ?" ambre |
-| 44.6@commentaire | accent sofia |
+| 44.5@bras | effacer-bulle sofia ; etiquette blesse "Un enfant blessé" 1.6 1.7 |
+| 44.6 | etiquette-retirer vite ; titre "Intention ou négligence ?" ambre |
+| 44.7@commentaire | accent sofia |
 | 45.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 45.2 | accent titre |
