@@ -42,14 +42,14 @@ En principe, de la négligence consciente. Sofia voit le risque, mais compte sin
 
 Chapitres :
 0:00 Le cas de départ
-0:36 La carte : ce qui se passe dans la tête
-1:16 Première version : l'intention directe
-1:46 Deuxième version : le dol éventuel
-2:36 Troisième et quatrième versions : la négligence
-4:03 Comment le juge le sait-il ?
-4:43 Le piège classique
-5:43 Réponse à la question de la vidéo 1
-6:11 Conclusion et question
+0:32 La carte : ce qui se passe dans la tête
+1:09 Première version : l'intention directe
+1:38 Deuxième version : le dol éventuel
+2:25 Troisième et quatrième versions : la négligence
+3:48 Comment le juge le sait-il ?
+4:28 Le piège classique
+5:29 Réponse à la question de la vidéo 1
+5:58 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/04-intention-negligence
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
