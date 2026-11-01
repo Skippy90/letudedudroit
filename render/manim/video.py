@@ -239,6 +239,15 @@ class Schemas(Scene):
             dedans = (pts[:, 0] > g - 0.05) & (pts[:, 0] < d + 0.05) & (pts[:, 1] > b - 0.05) & (pts[:, 1] < h + 0.05)
             if dedans.any():
                 alertes.append(f"{nom} sur le décor")
+        # Le texte du décor (l'enseigne) ne doit être couvert par rien : étiquette, pictogramme, personnage.
+        for t in getattr(self.decor, "textes", []):
+            tg, td, tb, th = t.get_left()[0], t.get_right()[0], t.get_bottom()[1], t.get_top()[1]
+            for nom, m in self.elements_visibles():
+                if m is self.decor or t in m.get_family():
+                    continue
+                g, d, b, h = m.get_left()[0], m.get_right()[0], m.get_bottom()[1], m.get_top()[1]
+                if g < td + 0.05 and d > tg - 0.05 and b < th + 0.05 and h > tb - 0.05:
+                    alertes.append(f"{nom} sur l'enseigne")
         return alertes
 
     def que_du_texte(self):

@@ -23,16 +23,16 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 2.2@neuf | etiquette neuf "Un modèle tout neuf" -3.8 1.7 |
 | 2.3@éloigne | picto-retirer telephone ; etiquette-retirer neuf ; retirer passante ; marcher ines -4 ; bulle ines "Le garder" |
 | 3.1 | effacer-bulle ines ; accent noah |
-| 3.1@mur | picto tag 1.3 0.4 |
+| 3.1@mur | picto tag -0.3 -0.1 |
 | 3.2@francs | etiquette prix "Environ 2 000 francs" 0.6 1.7 |
 | 4.1 | etiquette-retirer prix ; personnage ami "Un ami" ambre_pale droite ; placer ami 4 |
 | 4.1@gifle | pousser yann ami |
-| 4.2@blessé | etiquette blesse "Pas blessé" 5.6 1.0 |
+| 4.2@blessé | etiquette blesse "Pas blessé" 5.0 1.5 |
 | 5.1 | etiquette-retirer blesse ; titre "Trois actes interdits" |
 | 5.2@poids | sous-titre "Le même poids ?" |
-| 5.3@crime | effacer-titres ; etiquette q1 "Crime ?" -4.4 1.0 |
-| 5.4@délit | etiquette q2 "Délit ?" -0.6 1.0 |
-| 5.5@contravention | etiquette q3 "Contravention ?" 4.4 1.0 |
+| 5.3@crime | effacer-titres ; etiquette q1 "Crime ?" -4.4 1.75 |
+| 5.4@délit | etiquette q2 "Délit ?" 0.6 1.75 |
+| 5.5@contravention | etiquette q3 "Contravention ?" 4.4 1.75 |
 | 5.6@intuition | accent ines ; accent noah ; accent yann |
 | 6.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
 | 6.2@typique | etage 1 vert |
@@ -80,7 +80,7 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 19.2@amende | etiquette amende "Amende, sur plainte" -0.1 1.7 |
 | 20.1@contravention | repere-marquer 3 ambre ; titre "Alors : contravention" |
 | 20.2@prévue | accent titre |
-| 21.1 | scene-vide ; repere-marquer 3 neutre ; article-retirer ; decor rue ; personnage noah "Noah" turquoise centre ; placer noah 2 ; picto tag 1.3 0.4 |
+| 21.1 | scene-vide ; repere-marquer 3 neutre ; article-retirer ; decor rue ; personnage noah "Noah" turquoise centre ; placer noah 2 ; picto tag -0.3 -0.1 |
 | 21.2@dommage | etiquette dommage "Dommage à la propriété" -2.6 1.7 |
 | 21.3@article | article "Art. 144 CP" |
 | 22.1 | scene-vide ; frise ; repere 0.5 "3 ans" |
@@ -111,7 +111,7 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 28.2 | effacer-titres ; decor rue ; personnage yann "Yann" bleu_clair centre-droite ; placer yann 1 ; personnage ami "Un ami" ambre_pale droite ; placer ami 3 |
 | 28.2@essayé | bulle yann "Une gifle ?" |
 | 28.2@toucher | marcher yann 2 |
-| 29.1@contravention | effacer-bulle yann ; repere-marquer 3 ambre ; etiquette tentative "Tentative" 1.6 1.0 |
+| 29.1@contravention | effacer-bulle yann ; repere-marquer 3 ambre ; etiquette tentative "Tentative" 0.6 1.75 |
 | 29.1@expressément | etiquette loi "Seulement si prévu" -2.6 2.45 |
 | 29.2@article | article "Art. 105 CP" |
 | 30.1@rien | etiquette-retirer loi ; etiquette tentative "Rien pour les voies de fait" -0.8 1.7 |
@@ -160,5 +160,5 @@ Style « scène » : les trois cas se jouent dans la rue, chaque personnage revi
 | 43.2 | sous-titre "Seulement une peine pécuniaire" ; picto pieces -4.0 0.3 |
 | 43.3 | cases "Crime" "Délit" "Contravention" ; cocher 1 question ; cocher 2 question ; cocher 3 question |
 | 43.4@commentaire | accent cases |
-| 44.1 | scene-vide ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 44.1 | scene-vide ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 44.2 | accent titre |

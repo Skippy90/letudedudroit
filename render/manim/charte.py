@@ -618,6 +618,7 @@ class Rue(VGroup):
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
+        self.textes = [enseigne]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
         super().__init__(sol, facades, self.mur, vitrine, store, enseigne, reverbere)
 
     def pied(self, n):
