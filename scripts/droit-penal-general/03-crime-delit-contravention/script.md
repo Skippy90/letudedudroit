@@ -43,7 +43,7 @@ Personnages : Inès (silhouette rose), Noah (silhouette turquoise), Yann (silhou
 | 16 | Revenons-en à Inès. Prendre le téléphone d'autrui pour le garder, c'est du vol. C'est l'article 139 du Code pénal. | La silhouette d'Inès ; bloc « Art. 139 CP » |
 | 17 | Le vol est puni d'une peine privative de liberté de cinq ans au plus, ou d'une peine pécuniaire. | Frise : un point « 5 ans » au-delà du repère « 3 ans » |
 | 18 | Cinq ans, c'est plus de trois ans. Le vol est donc un crime. | La case « Crime » se coche en vert |
-| 19 | Un détail compte pourtant : le téléphone est neuf. Si l'objet volé n'avait qu'une faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
+| 19 | Un détail compte pourtant : le téléphone est neuf. Si Inès n'avait visé qu'un objet de faible valeur, l'article 172 ter prévoirait seulement une amende, sur plainte. | Rembobinage ; bloc « Art. 172ter CP » ; le mot « Faible valeur » |
 | 20 | Le même geste deviendrait alors une contravention. Encore une fois, c'est la peine prévue par la loi qui décide. | La case « Contravention » clignote, puis on revient au téléphone neuf |
 | 21 | Passons à Noah. Abîmer la chose d'autrui, c'est un dommage à la propriété. C'est l'article 144. | La silhouette de Noah ; bloc « Art. 144 CP » |
 | 22 | La peine prévue va jusqu'à trois ans de peine privative de liberté. Trois ans au plus : c'est un délit. Un tout petit dommage, lui, relèverait de l'article 172 ter : une simple amende. | Frise : un point « 3 ans » sur le repère ; la case « Délit » se coche |
