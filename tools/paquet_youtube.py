@@ -52,7 +52,7 @@ def main(slug: str, tags_video: list[str]) -> None:
     shutil.copy(video, sortie / "video.mp4")
     shutil.copy(dossier / "miniature.png", sortie / "miniature.png")
     (sortie / "description.txt").write_text(description + "\n", encoding="utf-8")
-    commentaire = (question + " Réponds en commentaire 👇 (réponse dans la description)").strip()
+    commentaire = (question + " Répondez en commentaire 👇 (réponse dans la description)").strip()
     reglages = {
         "video_file": "video.mp4",
         "thumbnail_file": "miniature.png",
