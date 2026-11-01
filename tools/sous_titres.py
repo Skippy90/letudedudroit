@@ -71,6 +71,20 @@ def morceaux(mots: list[str]) -> list[tuple[int, int]]:
     return final
 
 
+def chiffres_des_renvois(mots: list[str]) -> list[str]:
+    """« la vidéo un », « la vidéo numéro un » : à l'écran, « la vidéo 1 ». Le chiffre se lit pareil, que la voix
+    dise « un » ou « une » (tts.txt garde les lettres pour la synthèse vocale)."""
+    nombres = {"un": "1", "une": "1", "deux": "2", "trois": "3", "quatre": "4", "cinq": "5", "six": "6", "sept": "7",
+               "huit": "8", "neuf": "9", "dix": "10", "onze": "11", "douze": "12"}
+    sortie = list(mots)
+    for i, m in enumerate(mots):
+        nu = m.rstrip(",.;:!?")
+        avant = [x.lower() for x in mots[max(0, i - 2):i]]
+        if nu.lower() in nombres and avant and (avant[-1] == "vidéo" or avant[-2:] == ["vidéo", "numéro"]):
+            sortie[i] = nombres[nu.lower()] + m[len(nu):]
+    return sortie
+
+
 def main(slug: str, sortie: str, decalage: float = 0.0) -> None:
     timings = json.loads((RACINE / "voice" / slug / "timings.json").read_text(encoding="utf-8"))
     lignes, evenements = [ENTETE], []
@@ -83,6 +97,7 @@ def main(slug: str, sortie: str, decalage: float = 0.0) -> None:
             pieces = [len(mots_texte(w)) for w in mots]
             exact = sum(pieces) == len(reconnus)
             rang = [sum(pieces[:i]) for i in range(len(mots) + 1)]
+            mots = chiffres_des_renvois(mots)
             for a, b in morceaux(mots):
                 if reconnus:
                     m = len(reconnus)

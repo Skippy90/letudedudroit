@@ -239,6 +239,15 @@ class Schemas(Scene):
             dedans = (pts[:, 0] > g - 0.05) & (pts[:, 0] < d + 0.05) & (pts[:, 1] > b - 0.05) & (pts[:, 1] < h + 0.05)
             if dedans.any():
                 alertes.append(f"{nom} sur le décor")
+        # Le texte du décor (l'enseigne) ne doit être couvert par rien : étiquette, pictogramme, personnage.
+        for t in getattr(self.decor, "textes", []):
+            tg, td, tb, th = t.get_left()[0], t.get_right()[0], t.get_bottom()[1], t.get_top()[1]
+            for nom, m in self.elements_visibles():
+                if m is self.decor or t in m.get_family():
+                    continue
+                g, d, b, h = m.get_left()[0], m.get_right()[0], m.get_bottom()[1], m.get_top()[1]
+                if g < td + 0.05 and d > tg - 0.05 and b < th + 0.05 and h > tb - 0.05:
+                    alertes.append(f"{nom} sur l'enseigne")
         return alertes
 
     def que_du_texte(self):
@@ -281,6 +290,10 @@ class Schemas(Scene):
             if any(a[0] == "scene-vide" for a in actions):
                 self.scene_vide()
                 actions = [a for a in actions if a[0] != "scene-vide"]
+            # Le rembobinage se joue sur l'écran libéré, avant que le décor revienne : jamais par-dessus.
+            if any(a[0] == "rembobiner" for a in actions):
+                self.executer(("rembobiner",), repere)
+                actions = [a for a in actions if a[0] != "rembobiner"]
             # Ce qui part se retire d'abord : rien de nouveau n'apparaît par-dessus un élément sur le départ.
             retraits = [a for a in actions if a[0] in RETRAITS]
             if retraits and len(retraits) < len(actions):
@@ -649,6 +662,12 @@ class Schemas(Scene):
         meuble = (self.decor.meuble_devant(p.silhouette.get_x() + decalage[0])
                   if hasattr(self.decor, "meuble_devant") else None)
         if meuble is None:
+            if getattr(p, "derriere_meuble", False):
+                # Il sort de derrière un meuble : son nom revient sous lui, au lieu de garder son décalage sur le meuble.
+                p.derriere_meuble = False
+                cible = p.silhouette.get_bottom() + decalage + DOWN * (0.2 + p.etiquette.height / 2)
+                return [p.silhouette.animate(run_time=1.2).shift(decalage),
+                        p.etiquette.animate(run_time=1.2).move_to(cible)]
             return [p.animate(run_time=1.2).shift(decalage)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
@@ -723,6 +742,9 @@ class Schemas(Scene):
         if g.get_left()[0] < -6.9:
             g.shift(RIGHT * (-6.9 - g.get_left()[0]))
         g.contenu = contenu
+        # Une nouvelle réplique remplace la précédente : l'ancienne part d'abord, jamais deux superposées.
+        if ident in self.paroles:
+            self.jouer(FadeOut(self.paroles.pop(ident)), duree=0.25)
         self.paroles[ident] = g
         self.focus = g
         return [FadeIn(g, shift=UP * 0.1)]

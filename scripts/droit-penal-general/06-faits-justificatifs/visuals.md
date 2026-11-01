@@ -47,9 +47,8 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 12.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; bouclier -2.6 0.6 ; titre "Justifié" ambre |
 | 12.2@illicéité | repere-etage 2 gris ; sous-titre "L'illicéité tombe" |
 | 12.3@punie | sous-titre "Yasmine n'est pas punie" |
-| 13.1 | scene-vide ; article-retirer ; decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -1 ; personnage kevin "Kevin" rose droite ; placer kevin 1 ; picto bouteille 2.3 -0.9 |
-| 13.2@tiers | personnage hugo "Hugo" bleu_clair gauche ; placer hugo -4 ; etiquette tiers "Un tiers aussi" -4.0 1.7 |
-| 13.3@hugo | marcher hugo -3 |
+| 13.1 | scene-vide ; article "Art. 15 CP" ; decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 2 ; picto bouteille 3.9 -0.9 |
+| 13.2@tiers | article-retirer ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -4 ; etiquette tiers "Un tiers aussi" -4.0 1.7 |
 | 13.3@défendre | accent hugo |
 | 14.1 | scene-vide ; titre "Pas que le corps" ; personnage yasmine "Yasmine" turquoise gauche |
 | 14.2@fédéral | arret "ATF 107 IV 12" |
@@ -61,7 +60,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 15.3@erreur | sous-titre "Une question d'erreur" ; renvoi "vidéo 7" |
 | 16.1 | scene-vide ; rembobiner |
 | 16.2 | decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 1 |
-| 16.2+1.5 | picto tension -0.8 0.6 |
+| 16.2+1.5 | picto tension -0.8 -0.2 |
 | 16.2@rentre | picto-retirer tension ; marcher kevin 4 |
 | 16.3@lendemain | etiquette lendemain "Le lendemain" -3.2 1.7 |
 | 16.3@frapper | marcher yasmine 2 |
@@ -135,7 +134,8 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 36.1@danger | liste-ajouter "Danger : état de nécessité" |
 | 36.2@dix | article "Art. 17 CP" |
 | 37.1@illicéité | etage 2 gris ; repere-etage 2 gris ; sous-titre "Plus d'illicéité" |
-| 37.2@culpabilité | article "Art. 16 et 18 CP" ; etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Culpabilité seulement" |
+| 37.2@articles | article "Art. 16 et 18 CP" |
+| 37.2@culpabilité | etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Culpabilité seulement" |
 | 37.3@attaque | effacer-titres ; titre "Attaque ? Danger ?" ambre |
 | 38.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "Une question pour finir" |
 | 38.2 | effacer-titres ; decor escalier ; personnage nadia "Nadia" violet gauche ; placer nadia 0 ; personnage voisin "Un voisin" ambre_pale droite ; placer voisin 4 |

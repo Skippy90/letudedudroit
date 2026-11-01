@@ -17,9 +17,9 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 2.1@ballon | etiquette-retirer lieu ; picto-deplacer ballon -1.0 -1.2 0.6 |
 | 2.2@groupe | etiquette groupe "Le groupe d'à côté" 3.2 1.7 |
 | 2.2@touche | picto-deplacer ballon 2.7 -0.6 0.5 ; dommage adam |
-| 3.1@blessé | etiquette-retirer groupe ; etiquette blesse "Blessé" 3.2 1.7 |
+| 3.1@blessé | etiquette-retirer groupe ; etiquette blesse "Nez cassé" 3.2 1.7 |
 | 3.2@geste | etiquette cause "Le tir de Léo" -3.2 1.7 |
-| 4.1 | etiquette-retirer cause ; etiquette-retirer blesse ; titre "Une question décide de tout" |
+| 4.1 | etiquette-retirer cause ; etiquette-retirer blesse ; titre "Une question essentielle" |
 | 4.2@blesser | bulle leo "Blesser Adam ?" |
 | 4.3@malgré | sous-titre "Ou malgré lui ?" |
 | 5.1 | scene-vide ; batiment ; renvoi "vidéo 1" |
@@ -32,7 +32,8 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 6.2@négligence | liste-ajouter "Négligence" |
 | 7.1@énorme | accent liste |
 | 7.2@intentionnellement | liste-surligner 1 ; titre "Punissable en principe" |
-| 8.1 | effacer-titres ; effacer-bulle leo ; repere-liste "Intention" "Négligence" |
+| 7.3@contraire | effacer-bulle leo ; sous-titre "Crimes et délits, sauf exception" |
+| 8.1 | effacer-titres ; repere-liste "Intention" "Négligence" |
 | 8.1@versions | titre "Cinq versions" |
 | 8.2@voulu | sous-titre "Du plus voulu au plus involontaire" |
 | 9.1 | scene-vide ; article-retirer ; decor parc ; personnage leo "Léo" turquoise gauche ; placer leo -3 ; personnage adam "Adam" rose droite ; placer adam 2 ; picto ballon -4.1 -2.1 ; titre "Version 1" |
@@ -106,11 +107,12 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 32.1 | scene-vide ; titre "Une frontière délicate" ; picto voiture 0 0.2 |
 | 32.2@voiture | sous-titre "Course mortelle : dol éventuel" ; repere-marquer 1 ambre ; arret "ATF 130 IV 58" |
 | 32.3@légère | effacer-titres ; titre "Pas à la légère" ambre |
-| 33.1 | scene-vide ; arret-retirer ; repere-marquer 1 neutre ; titre "Le piège classique" ; livre |
+| 33.1 | scene-vide ; arret-retirer ; repere-marquer 1 neutre ; titre "Le piège classique" ; livre "Code pénal" 0 -0.5 |
 | 33.2@négligence | sous-titre "Négligence toujours punie" |
 | 33.3 | barrer |
 | 34.1 | scene-vide ; repere-marquer 2 ambre ; livre ; article "Art. 12 CP" |
 | 34.1@expressément | livre-ouvrir ; titre "Seulement si la loi le prévoit" |
+| 34.2@circulation | sous-titre "Autres lois : souvent l'inverse" ; picto voiture 4.6 0.4 ; article "Art. 333 CP" |
 | 35.1 | scene-vide ; decor parc ; personnage adam "Adam" rose droite ; placer adam 2 ; dommage adam ; titre "Les blessures" |
 | 35.2@cent | article "Art. 125 CP" |
 | 35.2@négligence | etiquette blessure "Lésions par négligence" -2.8 1.1 ; picto coche 0.9 1.1 |
@@ -121,25 +123,26 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 36.2@intentionnelle | etiquette version "Intentionnel seulement" -2.6 2.45 |
 | 37.1 | scene-vide ; picto voiture -4.0 0.4 ; case "Dommage par négligence" ; cocher 1 gris |
 | 37.2@infraction | titre "Pas d'infraction" |
-| 37.3@réparation | sous-titre "Seulement une réparation" ; picto pieces -4.0 -1.2 |
+| 37.3@réparation | sous-titre "Réparation : droit civil" ; picto pieces -4.0 -1.2 |
 | 38.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; batiment ; renvoi "vidéo 1" |
 | 38.2@étage | titre "Quel étage ?" |
 | 39.1 | fleche 1 ; etage 1 gris |
 | 39.2@intentionnellement | article "Art. 123 CP" ; sous-titre "Pas d'intention" |
 | 40.1 | article "Art. 125 CP" ; repere-marquer 2 ambre ; effacer-titres ; titre "Imprévoyance coupable ?" |
-| 40.1@plainte | sous-titre "Et plainte de Julien" |
+| 40.3@plainte | sous-titre "Plainte, sauf lésion grave" |
 | 41.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; titre "L'échelle" ; personnage leo "Léo" turquoise droite |
 | 41.2@vouloir | effacer-titres ; liste-ajouter "Vouloir : intention" ; repere-marquer 1 ambre ; bulle leo "Je le veux" |
 | 41.3@possible | liste-ajouter "Accepter : dol éventuel" ; bulle leo "Tant pis" |
 | 42.1@risque | liste-ajouter "Espérer : négligence" ; repere-marquer 2 ambre ; bulle leo "Rien n'arrivera" |
 | 42.2@voir | liste-ajouter "Ignorer : négligence" ; bulle leo "?" |
-| 43.1 | scene-vide ; repere-marquer 1 neutre ; titre "Si la loi le dit" ambre ; livre |
+| 43.1 | scene-vide ; repere-marquer 1 neutre ; titre "Si la loi le dit" ambre ; livre "Code pénal" 0 -0.5 |
 | 43.2@intentionnel | sous-titre "Sinon, seul l'intentionnel" ; repere-marquer 2 neutre ; repere-marquer 1 ambre |
 | 44.1 | scene-vide ; repere-marquer 1 neutre ; titre "Une question pour finir" |
 | 44.2 | effacer-titres ; decor rue ; personnage sofia "Sofia" violet gauche ; placer sofia -2 ; etiquette vite "Bien trop vite" -3.2 1.7 |
 | 44.3@renverser | bulle sofia "Un risque" |
 | 44.4@freiner | bulle sofia "Je freinerai" |
-| 44.5 | etiquette-retirer vite ; titre "Intention ou négligence ?" ambre |
-| 44.6@commentaire | accent sofia |
-| 45.1 | scene-vide ; repere-retirer ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 44.5@bras | effacer-bulle sofia ; etiquette blesse "Un enfant blessé" 1.6 1.7 |
+| 44.6 | etiquette-retirer vite ; titre "Intention ou négligence ?" ambre |
+| 44.7@commentaire | accent sofia |
+| 45.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 45.2 | accent titre |

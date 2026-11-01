@@ -57,7 +57,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée) ; `NOM:2` pour un deuxième pictogramme du même type |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée), `velo`, `portefeuille` ; `NOM:2` pour un deuxième pictogramme du même type |
 | `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
@@ -103,3 +103,11 @@ Le rapport `out/<slug>--alertes-visuels.txt` signale aussi les textes (titres, l
 ## Grille de couleurs
 
 Par défaut (depuis le 31 octobre 2026), la grille de la marque : accent rouge suisse (`#DA291C`) ; mots-clés, libellés de repère de la frise et titres mis en avant en blanc sur une pastille rouge, comme le logo ; pense-bête et étages en cours en rouge ; dommage en ambre (`#E3A52F`). `THEME=ambre make visuals …` rend avec l'ancienne grille (accent ambre, dommage rouge `#D9534F`).
+
+## Shorts
+
+`make shorts SLUG=…` tire des shorts verticaux (1080 × 1920) de la vidéo déjà rendue, selon `scripts/<slug>/shorts.json` :
+identifiant, accroche, lignes du script (`de` … `a`). Le short reprend tel quel l'extrait audité (schémas et narration) ;
+seule l'accroche est nouvelle et doit être validée par la relectrice. Mise en page : bandeau rouge avec l'accroche,
+scène 16:9 au centre, grands sous-titres (quatre mots), barre de progression rouge, rappel de la vidéo complète.
+Sortie : `out/shorts/<matiere>--<numero-slug>--<id>.mp4`.
