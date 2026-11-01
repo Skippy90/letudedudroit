@@ -13,13 +13,13 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | Moment | Actions |
 | --- | --- |
 | 1.1 | decor rue Électronique ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
-| 1.2 | etiquette ordi "L'ordinateur" 0.9 -1.55 |
-| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 2 |
+| 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 |
+| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 |
 | 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 |
 | 2.2 | etiquette-retirer idee ; parole lina "Je te le rachète" ; jetons lina max |
-| 3.1 | effacer-parole lina ; etiquette ensemble "Organisé à deux" 1.6 1.7 |
+| 3.1 | effacer-parole lina ; etiquette-retirer ordi ; etiquette ensemble "Organisé à deux" 1.6 1.7 |
 | 3.2 | personnage vendeur "Vendeur" ambre_pale droite ; placer vendeur 3 ; etiquette-retirer ensemble ; etiquette q "Des questions" 4.0 1.7 |
-| 3.3 | etiquette-retirer q ; etiquette-retirer ordi ; etiquette sac "Dans un sac" -1.6 1.7 |
+| 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 |
 | 3.4 | etiquette-retirer sac ; etiquette ensemble "Partager la revente" 1.6 1.7 ; picto pieces -1.6 1.0 |
 | 3.5 | etiquette-retirer ensemble ; etiquette rien "Il ne voit rien" 4.8 1.0 |
 | 4.1 | etiquette-retirer rien ; picto-retirer pieces ; etiquette noe "Le sac de Noé" -4.8 1.7 ; accent noe |
@@ -27,7 +27,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 5.1 | retirer vendeur ; etiquette-retirer noe ; etiquette sac "Une seule main" -1.6 1.7 |
 | 5.2 | etiquette-retirer sac ; titre "Qui répond du vol ?" |
 | 5.3 | sous-titre "Et comment ?" |
-| 6.1 | effacer-titres ; marcher jade 1 ; titre "Deux familles" |
+| 6.1 | effacer-titres ; titre "Deux familles" |
 | 6.2 | etiquette auteurs "Auteurs" 0 1.7 |
 | 6.3 | etiquette part "Participants" -5.4 1.7 |
 | 7.1 | effacer-titres ; etiquette auteurs "Seul ou coauteurs" 0 1.7 |

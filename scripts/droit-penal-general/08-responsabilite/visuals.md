@@ -15,7 +15,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 1.1 | decor rue Festival ; etiquette lieu "Près de Nyon, un soir" -3.6 1.7 |
 | 1.2 | personnage theo "Théo" turquoise gauche ; placer theo -3 ; etiquette lieu "Il s'agite" -3.6 1.7 |
 | 2.1 | etiquette-retirer lieu ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; etiquette calme "« Calmez-vous »" 3.4 1.7 |
-| 2.2 | etiquette-retirer calme ; marcher theo 1 |
+| 2.2 | etiquette-retirer calme ; marcher theo 0 |
 | 2.2+0.8 | pousser theo agent |
 | 2.3 | chute agent 3 |
 | 2.3+0.9 | dommage agent ; etiquette blesse "Épaule blessée" 4.4 1.7 |
@@ -57,7 +57,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 14.1 | scene-vide ; rembobiner ; repere-marquer 1 neutre ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 2" |
 | 14.2 | bulle theo "C'est interdit, je sais" ; repere-marquer 1 vert |
 | 14.3 | effacer-bulle theo ; etiquette maitrise "Plus aucune maîtrise" 0.6 1.7 |
-| 14.3+1.5 | marcher theo 1 |
+| 14.3+1.5 | marcher theo 0 |
 | 15.1 | pousser theo agent ; repere-marquer 2 ambre |
 | 15.1+1.5 | repere-marquer 2 gris |
 | 15.2 | etiquette maitrise "Irresponsable aussi" 0.6 1.7 |
@@ -85,7 +85,8 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 23.4 | effacer-parole expert ; etiquette juge "Le juge décide" 4.6 1.8 |
 | 24.1 | scene-vide ; article-retirer ; arret-retirer ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; picto bouteille -3.5 -1.0 ; titre "Le piège classique" |
 | 24.2 | parole theo "J'avais trop bu" |
-| 24.2+2 | parole theo "Je ne savais plus" |
+| 24.2+1.8 | effacer-parole theo |
+| 24.2+2.1 | parole theo "Je ne savais plus" |
 | 24.3 | effacer-parole theo ; effacer-titres ; titre "Une excuse ?" ambre |
 | 25.1 | scene-vide ; article "Art. 19 CP" ; titre "Quatrième alinéa" ; picto bouteille -4.4 0.6 |
 | 25.2 | frise ; point 0.25 "Il boit" |
