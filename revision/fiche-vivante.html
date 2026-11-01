@@ -1,0 +1,256 @@
+<title>Fiche vivante</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Mise en page : une colonne de lecture, questions insérées dans le texte (médium mnémonique), révision mélangée en onglet. Charte de la chaîne : fond noir, rouge de la marque, vert = su, gris = à revoir. */
+:root {
+  --fond: #0B0B0B; --surface: #1A1A1D; --trait: #2E2E33; --texte: #F2EFE6; --doux: #A9A49A;
+  --marque: #DA291C; --vert: #4CAF7D; --gris: #6B7280; --ambre: #E3A52F;
+  --f-texte: "Inter", "Helvetica Neue", Arial, sans-serif; --f-mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+body { background: var(--fond); color: var(--texte); font-family: var(--f-texte); font-size: 17px; line-height: 1.6; }
+.page { max-width: 44rem; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 28px; }
+header { display: grid; gap: 10px; }
+.marque { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; }
+.marque i { width: 26px; height: 26px; border-radius: 6px; background: var(--marque); display: inline-block; }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.1; margin: 0; font-weight: 800; letter-spacing: -0.5px; text-wrap: balance; }
+h1 em { font-style: normal; background: var(--marque); color: #fff; padding: 0 .2em; border-radius: 6px; }
+.chapeau { color: var(--doux); margin: 0; max-width: 38rem; }
+.proto { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ambre); }
+nav { display: flex; gap: 8px; flex-wrap: wrap; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--fond); padding-block: 10px; z-index: 5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--fond); }
+nav button { font: 600 15px var(--f-texte); color: var(--texte); background: var(--surface); border: 1px solid var(--trait); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+nav button[aria-pressed="true"] { background: var(--texte); color: var(--fond); border-color: var(--texte); }
+nav .compte { font-family: var(--f-mono); font-size: 12px; margin-left: 6px; background: var(--marque); color: #fff; border-radius: 999px; padding: 1px 7px; }
+section { display: grid; gap: 18px; }
+h2 { font-size: 24px; margin: 8px 0 0; text-wrap: balance; }
+h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--doux); margin: 10px 0 0; }
+p { margin: 0; }
+.art { font-family: var(--f-mono); font-size: 13px; border: 1px solid var(--texte); border-radius: 5px; padding: 0 6px; white-space: nowrap; }
+.carte { border: 1px solid var(--trait); background: var(--surface); border-radius: 12px; padding: 16px 18px; display: grid; gap: 12px; }
+.carte .q { font-weight: 600; }
+.carte .etiq { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--doux); }
+.carte .r { border-left: 3px solid var(--vert); padding-left: 12px; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { font: 600 15px var(--f-texte); border-radius: 8px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--trait); background: transparent; color: var(--texte); }
+.btn.voir { background: var(--texte); color: var(--fond); border-color: var(--texte); }
+.btn.su { border-color: var(--vert); color: var(--vert); }
+.btn.revoir { border-color: var(--gris); color: var(--doux); }
+.btn:focus-visible, nav button:focus-visible, .mot:focus-visible { outline: 2px solid var(--ambre); outline-offset: 2px; }
+.etat { font-size: 14px; color: var(--doux); }
+.etat.ok { color: var(--vert); }
+.erreur p.copie { font-size: 18px; line-height: 2; }
+.mot { cursor: pointer; border-radius: 4px; padding: 1px 2px; background: none; border: none; color: inherit; font: inherit; }
+.mot:hover { background: var(--trait); }
+.mot.faux { background: var(--marque); color: #fff; }
+.mot.essai { text-decoration: line-through; color: var(--gris); }
+.etapes { display: grid; gap: 12px; }
+.etape { display: grid; gap: 8px; }
+.etape b { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ambre); }
+.choix { display: flex; gap: 8px; flex-wrap: wrap; }
+.choix .btn.bon { border-color: var(--vert); color: var(--vert); }
+.choix .btn.mauvais { border-color: var(--marque); color: var(--marque); }
+.vide { color: var(--doux); }
+footer { color: var(--doux); font-size: 14px; border-top: 1px solid var(--trait); padding-top: 16px; }
+@media (prefers-reduced-motion: no-preference) { .r { animation: entre .25s ease-out; } @keyframes entre { from { opacity: .3; transform: translateY(4px); } } }
+</style>
+
+<div class="page">
+  <header>
+    <div class="marque"><i></i>L'étude du droit</div>
+    <span class="proto">Prototype · contenu à valider par la relectrice</span>
+    <h1>La fiche <em>vivante</em></h1>
+    <p class="chapeau">Lisez la fiche, répondez aux questions au fil du texte. Chaque question revient ensuite au bon moment : le lendemain, puis après 3, 7 et 21 jours. Se tester retient mieux que relire.</p>
+  </header>
+
+  <nav aria-label="Fiches">
+    <button id="tab-v3" data-vue="v3" aria-pressed="true">Vidéo 3</button>
+    <button id="tab-v4" data-vue="v4" aria-pressed="false">Vidéo 4</button>
+    <button id="tab-rev" data-vue="rev" aria-pressed="false">Révision du jour<span class="compte" id="compte">0</span></button>
+  </nav>
+
+  <section id="v3">
+    <h2>Crime, délit ou contravention ?</h2>
+    <p>Samedi soir, à Neuchâtel. Inès glisse dans sa poche le téléphone neuf d'une passante, environ 900 francs. Noah tague tout le mur d'une boulangerie : 2 000 francs de nettoyage. Yann gifle un ami, sans le blesser.</p>
+    <h3>La règle</h3>
+    <p>Le Code pénal range les infractions en trois catégories. Le critère est la peine que la loi prévoit pour l'infraction <span class="art">Art. 10 CP</span> <span class="art">Art. 103 CP</span>.</p>
+    <div data-carte="v3-critere"></div>
+    <div data-carte="v3-crime"></div>
+    <div data-carte="v3-delit"></div>
+    <h3>Les trois cas</h3>
+    <p>Le vol est puni d'une peine privative de liberté de cinq ans au plus <span class="art">Art. 139 CP</span>. Le dommage à la propriété, de trois ans au plus <span class="art">Art. 144 CP</span>. Les voies de fait, d'une amende <span class="art">Art. 126 CP</span>.</p>
+    <div data-carte="v3-ines"></div>
+    <div data-carte="v3-faible"></div>
+    <h3>Pourquoi c'est important</h3>
+    <p>La catégorie change des règles concrètes : la tentative, le sursis, la prescription.</p>
+    <div data-carte="v3-prescription"></div>
+    <h3>Trouvez l'erreur</h3>
+    <div data-erreur="v3"></div>
+  </section>
+
+  <section id="v4" hidden>
+    <h2>Le voulait-il vraiment ?</h2>
+    <p>Mercredi après-midi, dans un parc de Sion. Léo frappe le ballon de toutes ses forces ; il touche Adam en plein visage. Adam a le nez cassé. Mais Léo le voulait-il ?</p>
+    <h3>Intention et dol éventuel</h3>
+    <p>Agit intentionnellement celui qui agit avec conscience et volonté. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement <span class="art">Art. 12 CP</span>.</p>
+    <div data-carte="v4-intention"></div>
+    <div data-carte="v4-dol"></div>
+    <h3>La négligence</h3>
+    <p>Agit par négligence celui qui, par une imprévoyance coupable, ne se rend pas compte des conséquences de son acte ou n'en tient pas compte <span class="art">Art. 12 CP</span>.</p>
+    <div data-carte="v4-consciente"></div>
+    <div data-carte="v4-punie"></div>
+    <div data-carte="v4-autres"></div>
+    <div data-carte="v4-125"></div>
+    <h3>Le cas pratique, pas à pas</h3>
+    <div data-fondu="v4"></div>
+    <h3>Trouvez l'erreur</h3>
+    <div data-erreur="v4"></div>
+  </section>
+
+  <section id="rev" hidden>
+    <h2>Révision du jour</h2>
+    <p class="chapeau">Les questions dues aujourd'hui, toutes vidéos mélangées : à l'examen, on ne vous dit pas d'avance quelle notion est testée.</p>
+    <div id="pile" class="etapes"></div>
+  </section>
+
+  <footer>Chaque réponse reprend une affirmation vérifiée dans l'audit de la vidéo (Fedlex, arrêts du Tribunal fédéral). Votre progression reste dans ce navigateur.</footer>
+</div>
+
+<script>
+const CARTES = {
+  "v3-critere": { v: "Vidéo 3", q: "Qu'est-ce qui décide si une infraction est un crime, un délit ou une contravention ?", r: "La peine que la loi prévoit pour l'infraction, pas celle que le juge prononce (art. 10 et 103 CP)." },
+  "v3-crime": { v: "Vidéo 3", q: "Quelle peine fait d'une infraction un crime ?", r: "Une peine privative de liberté de plus de trois ans (art. 10 CP)." },
+  "v3-delit": { v: "Vidéo 3", q: "Une infraction punie seulement d'une peine pécuniaire : crime, délit ou contravention ?", r: "Un délit : la peine pécuniaire n'est pas une amende. Seule l'amende fait une contravention (art. 10 et 103 CP)." },
+  "v3-ines": { v: "Vidéo 3", q: "Le vol du téléphone neuf d'Inès : quelle catégorie ?", r: "Un crime : le vol est puni de cinq ans au plus, plus de trois ans (art. 139 CP)." },
+  "v3-faible": { v: "Vidéo 3", q: "Et si Inès n'avait visé qu'un objet de faible valeur ?", r: "L'article 172ter prévoirait seulement une amende, sur plainte : une contravention." },
+  "v3-prescription": { v: "Vidéo 3", q: "Après combien de temps une contravention est-elle prescrite ?", r: "Trois ans (art. 109 CP). Le délit de Noah : dix ans ; le crime d'Inès : quinze ans (art. 97 CP)." },
+  "v4-intention": { v: "Vidéo 4", q: "Quels sont les deux éléments de l'intention ?", r: "La conscience et la volonté (art. 12, al. 2, CP)." },
+  "v4-dol": { v: "Vidéo 4", q: "Léo voit le groupe et se dit : « si je touche quelqu'un, tant pis ». Intention ou négligence ?", r: "Intention, par dol éventuel : il tient le résultat pour possible et l'accepte (art. 12, al. 2, CP ; ATF 135 IV 152)." },
+  "v4-consciente": { v: "Vidéo 4", q: "Léo voit le risque mais compte bien que rien n'arrivera. Comment s'appelle cette attitude ?", r: "La négligence consciente : il voit le risque mais compte qu'il ne se réalisera pas (ATF 130 IV 58)." },
+  "v4-punie": { v: "Vidéo 4", q: "Un crime ou un délit commis par négligence est-il toujours punissable ?", r: "Non. Seulement si la loi le prévoit expressément (art. 12, al. 1, CP)." },
+  "v4-autres": { v: "Vidéo 4", q: "Et pour les contraventions prévues par d'autres lois fédérales, comme la circulation routière ?", r: "C'est l'inverse : elles sont en principe punissables même par négligence (art. 333, al. 7, CP ; art. 100 LCR)." },
+  "v4-125": { v: "Vidéo 4", q: "Les lésions corporelles par négligence sont-elles poursuivies d'office ?", r: "En principe sur plainte ; d'office si la lésion est grave (art. 125 CP)." },
+};
+const ERREURS = {
+  v3: { copie: ["Le juge", "a condamné Inès", "à une peine pécuniaire,", "donc elle a commis", "un délit."], faux: 3,
+        explication: "La catégorie dépend de la peine prévue par la loi, pas de la peine prononcée. Le vol reste un crime, même si le juge prononce une peine pécuniaire." },
+  v4: { copie: ["Léo a été", "négligent :", "il a cassé la vitre d'une voiture,", "il est donc forcément", "punissable."], faux: 3,
+        explication: "La négligence n'est punie que si la loi le prévoit expressément. Le dommage à la propriété (art. 144 CP) n'existe que dans sa version intentionnelle : la réparation reste une question de droit civil." },
+};
+const FONDU = [
+  { nom: "Faits", texte: "Léo veut impressionner ses amis. Il voit le groupe juste à côté et se dit : si je touche quelqu'un, tant pis. Le ballon blesse Adam." },
+  { nom: "Règle", q: "Quelle règle s'applique ?", choix: ["Art. 12, al. 2, 2e phrase CP : tenir pour possible et accepter", "Art. 12, al. 3 CP : imprévoyance coupable", "Art. 144 CP : dommage à la propriété"], bon: 0 },
+  { nom: "Application", q: "Léo accepte-t-il le résultat ?", choix: ["Oui : « tant pis » montre qu'il s'en accommode", "Non : il ne souhaite pas la blessure"], bon: 0,
+    note: "Ne pas souhaiter la blessure ne suffit pas : accepter le risque, c'est déjà de l'intention." },
+  { nom: "Conclusion", q: "Conclusion ?", choix: ["Intention, par dol éventuel", "Négligence consciente", "Accident, pas d'infraction"], bon: 0 },
+];
+
+const PALIERS = [1, 3, 7, 21, 60];
+const JOUR = 86400000;
+const lire = () => { try { return JSON.parse(localStorage.getItem("fiche-vivante") || "{}"); } catch (e) { return {}; } };
+let suivi = lire();
+const ecrire = () => { try { localStorage.setItem("fiche-vivante", JSON.stringify(suivi)); } catch (e) {} };
+const due = id => suivi[id] && suivi[id].quand <= Date.now();
+const etatTexte = id => {
+  const s = suivi[id]; if (!s) return "";
+  const j = Math.max(0, Math.round((s.quand - Date.now()) / JOUR));
+  return j === 0 ? "À revoir aujourd'hui" : `Revient dans ${j} jour${j > 1 ? "s" : ""}`;
+};
+
+function carte(id, conteneur, apres) {
+  const c = CARTES[id];
+  conteneur.innerHTML = "";
+  const el = document.createElement("div"); el.className = "carte";
+  el.innerHTML = `<span class="etiq">${c.v} · question</span><p class="q"></p><div class="actions"><button class="btn voir" type="button">Voir la réponse</button></div><p class="etat"></p>`;
+  el.querySelector(".q").textContent = c.q;
+  const etat = el.querySelector(".etat"); etat.textContent = etatTexte(id);
+  el.querySelector(".voir").addEventListener("click", ev => {
+    ev.target.remove();
+    const r = document.createElement("p"); r.className = "r"; r.textContent = c.r;
+    el.insertBefore(r, el.querySelector(".actions"));
+    const a = el.querySelector(".actions");
+    a.innerHTML = `<button class="btn su" type="button">Je savais</button><button class="btn revoir" type="button">À revoir</button>`;
+    a.querySelector(".su").addEventListener("click", () => noter(id, true, etat, a, apres));
+    a.querySelector(".revoir").addEventListener("click", () => noter(id, false, etat, a, apres));
+  });
+  conteneur.appendChild(el);
+}
+function noter(id, su, etat, actions, apres) {
+  const p = suivi[id] ? suivi[id].palier : -1;
+  const palier = su ? Math.min(p + 1, PALIERS.length - 1) : 0;
+  suivi[id] = { palier, quand: Date.now() + PALIERS[palier] * JOUR };
+  ecrire();
+  actions.remove();
+  etat.textContent = (su ? "Noté. " : "On la reverra demain. ") + etatTexte(id);
+  etat.classList.toggle("ok", su);
+  compter();
+  if (apres) apres();
+}
+
+function erreur(cle, conteneur) {
+  const e = ERREURS[cle];
+  const el = document.createElement("div"); el.className = "carte erreur";
+  el.innerHTML = `<span class="etiq">Copie d'étudiant · cliquez sur le passage faux</span><p class="copie"></p><p class="etat"></p>`;
+  const copie = el.querySelector(".copie"), etat = el.querySelector(".etat");
+  e.copie.forEach((morceau, i) => {
+    const b = document.createElement("button"); b.className = "mot"; b.type = "button"; b.textContent = morceau;
+    b.addEventListener("click", () => {
+      if (i === e.faux) { b.classList.add("faux"); etat.textContent = e.explication; etat.classList.add("ok"); }
+      else { b.classList.add("essai"); etat.textContent = "Ce passage est juste. Cherchez le raisonnement qui ne tient pas."; }
+    });
+    copie.appendChild(b); copie.append(" ");
+  });
+  conteneur.appendChild(el);
+}
+
+function fondu(conteneur) {
+  const el = document.createElement("div"); el.className = "carte etapes";
+  el.innerHTML = `<span class="etiq">Faits → règle → application → conclusion</span>`;
+  let n = 0;
+  const suite = () => {
+    const s = FONDU[n]; if (!s) return;
+    const e = document.createElement("div"); e.className = "etape";
+    e.innerHTML = `<b>${s.nom}</b>`;
+    if (s.texte) { const p = document.createElement("p"); p.textContent = s.texte; e.appendChild(p); el.appendChild(e); n++; suite(); return; }
+    const q = document.createElement("p"); q.textContent = s.q; e.appendChild(q);
+    const ch = document.createElement("div"); ch.className = "choix";
+    const msg = document.createElement("p"); msg.className = "etat";
+    s.choix.forEach((t, i) => {
+      const b = document.createElement("button"); b.className = "btn"; b.type = "button"; b.textContent = t;
+      b.addEventListener("click", () => {
+        if (i === s.bon) { b.classList.add("bon"); ch.querySelectorAll("button").forEach(x => x.disabled = true); msg.textContent = s.note || "Juste."; msg.classList.add("ok"); n++; suite(); }
+        else { b.classList.add("mauvais"); msg.textContent = "Pas tout à fait. Relisez les faits."; }
+      });
+      ch.appendChild(b);
+    });
+    e.append(ch, msg); el.appendChild(e);
+  };
+  conteneur.appendChild(el); suite();
+}
+
+function compter() {
+  const n = Object.keys(CARTES).filter(due).length;
+  document.getElementById("compte").textContent = n;
+}
+function pile() {
+  const p = document.getElementById("pile"); p.innerHTML = "";
+  const ids = Object.keys(CARTES).filter(due).sort(() => Math.random() - .5);
+  if (!ids.length) {
+    const vides = Object.keys(suivi).length === 0;
+    p.innerHTML = `<p class="vide">${vides ? "Répondez d'abord aux questions des fiches : elles reviendront ici le moment venu." : "Rien à revoir aujourd'hui. Revenez demain."}</p>`;
+    return;
+  }
+  ids.forEach(id => { const d = document.createElement("div"); p.appendChild(d); carte(id, d); });
+}
+
+document.querySelectorAll("[data-carte]").forEach(d => carte(d.dataset.carte, d));
+document.querySelectorAll("[data-erreur]").forEach(d => erreur(d.dataset.erreur, d));
+document.querySelectorAll("[data-fondu]").forEach(d => fondu(d));
+document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll("nav button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  ["v3", "v4", "rev"].forEach(v => document.getElementById(v).hidden = v !== b.dataset.vue);
+  if (b.dataset.vue === "rev") pile();
+}));
+compter();
+</script>
