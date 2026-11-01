@@ -12,8 +12,8 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | --- | --- | --- |
 | 1 | Mercredi après-midi, dans un parc de Sion. Léo joue au football avec des amis. | La silhouette de Léo |
 | 2 | Il frappe le ballon de toutes ses forces. Le ballon part dans le groupe d'à côté et touche Adam en plein visage. | La silhouette d'Adam ; un éclair rouge |
-| 3 | Adam est blessé. Une chose est sûre : le geste de Léo a causé la blessure. | Le mot « Blessure » |
-| 4 | Mais une question décide de tout. Léo voulait-il blesser Adam ? Ou est-ce arrivé malgré lui ? | Une bulle de pensée au-dessus de Léo, avec un point d'interrogation |
+| 3 | Adam est blessé : il a le nez cassé. Une chose est sûre : le geste de Léo a causé la blessure. | Le mot « Blessure » |
+| 4 | Mais une question est essentielle. Léo voulait-il blesser Adam ? Ou est-ce arrivé malgré lui ? | Une bulle de pensée au-dessus de Léo, avec un point d'interrogation |
 
 ## La carte : ce qui se passe dans la tête
 
@@ -42,7 +42,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | 15 | Il ne souhaite pas la blessure. Mais il l'accepte, pour le cas où elle arriverait. | Le mot « Accepter » en ambre |
 | 16 | L'article 12 le prévoit dans une seconde phrase. Celui qui tient le résultat pour possible et l'accepte agit déjà intentionnellement. | Bloc « Art. 12 CP » ; « Possible + accepté » |
 | 17 | C'est le dol éventuel. Le Tribunal fédéral le résume ainsi : l'auteur envisage le résultat et agit quand même, parce qu'il s'en accommode. | Le mot « Dol éventuel » |
-| 18 | Pour le droit pénal, c'est encore de l'intention. Léo serait puni comme s'il avait voulu la blessure. | La case « Intention » se coche |
+| 18 | Pour le droit pénal, c'est encore de l'intention. Léo pourrait être puni comme s'il avait voulu la blessure. | La case « Intention » se coche |
 
 ## Troisième et quatrième versions : la négligence
 
@@ -54,7 +54,7 @@ Personnages : Léo (silhouette turquoise), Adam (silhouette rose), Sofia (silhou
 | 22 | Les juristes parlent de négligence consciente. Il a vu le risque, mais il a compté sur une issue heureuse. | Le mot « Négligence consciente » |
 | 23 | Quatrième version. Léo ne regarde même pas autour de lui. Il ne voit pas le groupe derrière la haie. | Rembobinage ; Léo seul, une haie entre lui et le groupe |
 | 24 | Il ne s'est pas rendu compte du risque. Mais il aurait dû vérifier avant de frapper si fort. | Le mot « Aurait dû vérifier » |
-| 25 | L'article 12 appelle cela une imprévoyance coupable. C'est le fait de ne pas prendre les précautions que les circonstances commandaient. | Bloc « Art. 12 CP » ; le mot « Négligence » |
+| 25 | L'article 12 appelle cela une imprévoyance coupable. C'est le fait de ne pas prendre les précautions commandées par les circonstances et par sa situation personnelle. | Bloc « Art. 12 CP » ; le mot « Négligence » |
 | 26 | Le texte couvre d'ailleurs nos deux versions. Il y a celui qui ne se rend pas compte des conséquences de son acte. Et celui qui n'en tient pas compte. | Deux lignes : « Ne pas se rendre compte », « Ne pas en tenir compte » |
 | 27 | Cinquième version. Léo a regardé, le parc était vide. Mais le ballon rebondit sur un poteau et file vers Adam, qui arrivait en courant. | Rembobinage ; le ballon dévie |
 | 28 | Léo a pris les précautions raisonnables. Pas d'intention, pas d'imprévoyance coupable. C'est un accident, pas une infraction. | Les deux cases « Intention » et « Négligence » grises |

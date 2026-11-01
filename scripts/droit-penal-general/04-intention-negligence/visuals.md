@@ -17,9 +17,9 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 2.1@ballon | etiquette-retirer lieu ; picto-deplacer ballon -1.0 -1.2 0.6 |
 | 2.2@groupe | etiquette groupe "Le groupe d'à côté" 3.2 1.7 |
 | 2.2@touche | picto-deplacer ballon 2.7 -0.6 0.5 ; dommage adam |
-| 3.1@blessé | etiquette-retirer groupe ; etiquette blesse "Blessé" 3.2 1.7 |
+| 3.1@blessé | etiquette-retirer groupe ; etiquette blesse "Nez cassé" 3.2 1.7 |
 | 3.2@geste | etiquette cause "Le tir de Léo" -3.2 1.7 |
-| 4.1 | etiquette-retirer cause ; etiquette-retirer blesse ; titre "Une question décide de tout" |
+| 4.1 | etiquette-retirer cause ; etiquette-retirer blesse ; titre "Une question essentielle" |
 | 4.2@blesser | bulle leo "Blesser Adam ?" |
 | 4.3@malgré | sous-titre "Ou malgré lui ?" |
 | 5.1 | scene-vide ; batiment ; renvoi "vidéo 1" |

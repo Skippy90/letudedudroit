@@ -24,6 +24,14 @@ La colonne « Vérifié » n'est cochée que par la relectrice.
 | [Art. 90 LCR](https://www.fedlex.admin.ch/eli/cc/1959/679_705_685/fr#art_90) | L'excès de vitesse de Sofia viole les règles de la circulation (réponse finale seulement) | Al. 1 : violation simple, amende ; al. 2 et 3 : violation grave ou excès particulièrement important. Le script ne précise pas la vitesse : la réponse ne choisit pas l'alinéa. | - [ ] |
 | [Art. 41 CO](https://www.fedlex.admin.ch/eli/cc/27/317_321_377/fr#art_41), al. 1 | La réparation du dommage est une question de droit civil (ligne 37) | Texte exact (état au 1er octobre 2026) : « Celui qui cause, d'une manière illicite, un dommage à autrui, soit intentionnellement, soit par négligence ou imprudence, est tenu de le réparer. » Le script ne dit pas que Léo devra réparer : les conditions (illicéité, faute, capacité de discernement d'un mineur) ne sont pas traitées. | - [ ] |
 
+## Autres précisions après relecture externe (1.11.2026)
+
+- Ligne 3 : « Adam est blessé : il a le nez cassé » — une atteinte constatée, pour ne pas laisser croire à de simples voies de fait (art. 126 CP).
+- Ligne 4 : « une question est essentielle » au lieu de « décide de tout » : la volonté ne règle pas à elle seule la typicité, l'illicéité et la culpabilité.
+- Ligne 18 : « pourrait être puni » au lieu de « serait puni » : le dol éventuel remplit l'élément subjectif, pas toute l'infraction.
+- Ligne 25 : reprend le texte de l'art. 12, al. 3 : « précautions commandées par les circonstances et par sa situation personnelle ».
+- Non repris : les arrêts TF 6B_910/2025 et 7B_147/2025 proposés par la relecture externe n'ont pas été ouverts sur bger.ch ; ils ne sont pas cités.
+
 ## Jurisprudence citée
 
 | Arrêt | Ce que le script lui fait dire | Point d'attention à la relecture | Vérifié |
