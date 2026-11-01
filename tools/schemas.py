@@ -101,7 +101,11 @@ def panneau(p):
 
 def bandeau(s, taille):
     return (f"<div class='bandeau' style='padding:{taille[0]}'>{SYMBOLE.replace('<svg ', f'<svg width=\"{taille[1]}\" height=\"{taille[1]}\" ', 1)}"
-            f"<div><p>L'étude du droit · Droit pénal général · Vidéo {s['video']}</p><h1 style='font-size:{taille[2]}'>{e(s['titre'])}</h1></div></div>")
+            f"<div><p>L'étude du droit · Droit pénal général · {etiquette(s)}</p><h1 style='font-size:{taille[2]}'>{e(s['titre'])}</h1></div></div>")
+
+
+def etiquette(s):
+    return f"Vidéo {s['video']}" if isinstance(s['video'], int) else str(s['video'])
 
 
 def piege(s):
@@ -136,14 +140,15 @@ def diapos(s):
                   f"<div style='font-size:30px;font-weight:700;opacity:.9'>Le schéma en {len(s.get('panneaux', [])) + 2} images →</div></div></div>"]
     for p in s.get("panneaux", []):
         out.append(base + f"<div class='page sombre' style='position:relative'><div class='corps'>{avert(s)}{panneau(p)}</div>"
-                          f"<div class='pied2'><span>L'étude du droit</span><span>Vidéo {n}</span></div></div>")
+                          f"<div class='pied2'><span>L'étude du droit</span><span>{etiquette(s)}</span></div></div>")
     out.append(base + f"<div class='page sombre' style='position:relative'><div class='corps'><h2>Attention</h2>{piege(s)}"
                       f"<div class='retenir'>À retenir : {e(s.get('a_retenir', ''))}</div></div>"
-                      f"<div class='pied2'><span>L'étude du droit</span><span>Vidéo {n}</span></div></div>")
+                      f"<div class='pied2'><span>L'étude du droit</span><span>{etiquette(s)}</span></div></div>")
     out.append(base + f"<div class='page sombre' style='position:relative;align-content:center'><div class='corps' style='gap:26px;text-align:center;justify-items:center'>"
-                      f"{SYMBOLE.replace('<svg ', '<svg width=\"120\" height=\"120\" ', 1)}"
-                      f"<div style='font-size:52px;font-weight:900'>La vidéo complète</div>"
-                      f"<div style='font-size:32px'>« {e(s['titre'])} »<br>sur la chaîne L'étude du droit</div>"
+                      f"{SYMBOLE.replace('<svg ', '<svg width=\"120\" height=\"120\" ', 1)}" +
+                      (f"<div style='font-size:52px;font-weight:900'>La vidéo complète</div>"
+                       f"<div style='font-size:32px'>« {e(s['titre'])} »<br>sur la chaîne L'étude du droit</div>" if isinstance(s['video'], int) else
+                       f"<div style='font-size:52px;font-weight:900'>Une notion par vidéo</div><div style='font-size:32px'>sur la chaîne L'étude du droit</div>") +
                       f"<div style='font-size:26px;color:var(--doux)'>Fiche du cours gratuite · articles vérifiés</div></div></div>")
     return out
 
