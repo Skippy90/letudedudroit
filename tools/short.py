@@ -62,6 +62,7 @@ def sous_titres_short(timings: dict, debut: float, fin: float, sortie: Path) -> 
             pieces = [len(mots_texte(w)) for w in mots]
             exact = sum(pieces) == len(reconnus)
             rang = [sum(pieces[:i]) for i in range(len(mots) + 1)]
+            mots = sous_titres.chiffres_des_renvois(mots)
             for a, b in sous_titres.morceaux(mots):
                 if reconnus and exact:
                     d, f = reconnus[rang[a]]["debut"], reconnus[max(rang[a], rang[b] - 1)]["fin"]
