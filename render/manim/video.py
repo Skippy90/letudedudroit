@@ -742,6 +742,9 @@ class Schemas(Scene):
         if g.get_left()[0] < -6.9:
             g.shift(RIGHT * (-6.9 - g.get_left()[0]))
         g.contenu = contenu
+        # Une nouvelle réplique remplace la précédente : l'ancienne part d'abord, jamais deux superposées.
+        if ident in self.paroles:
+            self.jouer(FadeOut(self.paroles.pop(ident)), duree=0.25)
         self.paroles[ident] = g
         self.focus = g
         return [FadeIn(g, shift=UP * 0.1)]
