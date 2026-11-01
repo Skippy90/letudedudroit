@@ -17,7 +17,7 @@
           "non": {
             "suite": 3
           },
-          "source": "lignes 6-7, 31 ; art. 13 et 21 CP"
+          "source": "lignes 6 à 7, 31 ; art. 13 et 21 CP"
         },
         {
           "q": "L'erreur pouvait-elle être évitée avec un peu de prudence ?",
@@ -64,12 +64,12 @@
         "Jugé d'après sa croyance": {
           "couleur": "gris",
           "detail": "Comme Élodie : l'intention manque, la typicité tombe.",
-          "source": "lignes 11-13 ; art. 13 al. 1 CP"
+          "source": "lignes 11 à 13 ; art. 13 al. 1 CP"
         },
         "Puni pour négligence": {
           "couleur": "ambre",
           "detail": "Seulement si la loi réprime l'acte par négligence.",
-          "source": "lignes 14-15, 32 ; art. 13 al. 2 CP"
+          "source": "lignes 14 à 15, 32 ; art. 13 al. 2 CP"
         },
         "Pas punissable": {
           "couleur": "gris",
@@ -79,7 +79,7 @@
         "Pas d'erreur retenue": {
           "couleur": "vert",
           "detail": "Il savait agir de manière illicite, comme l'automobiliste à la vignette.",
-          "source": "lignes 23-26 ; ATF 104 IV 217 ; ATF 141 IV 336"
+          "source": "lignes 23 à 26 ; ATF 104 IV 217 ; ATF 141 IV 336"
         },
         "Peine atténuée": {
           "couleur": "ambre",
@@ -89,7 +89,7 @@
         "Pas coupable": {
           "couleur": "gris",
           "detail": "Il ne savait ni ne pouvait savoir : la culpabilité tombe.",
-          "source": "lignes 19-20 ; art. 21 CP"
+          "source": "lignes 19 à 20 ; art. 21 CP"
         }
       }
     }
@@ -97,7 +97,7 @@
   "piege": {
     "faux": "Nul n'est censé ignorer la loi : l'erreur ne compte jamais.",
     "vrai": "L'article 21 admet l'erreur sur le droit ; l'erreur sur les faits est souvent décisive.",
-    "source": "lignes 28-30"
+    "source": "lignes 28 à 30"
   },
   "a_retenir": "Demandez-vous sur quoi porte l'erreur : les faits ou le droit d'agir. L'étage concerné change."
 }

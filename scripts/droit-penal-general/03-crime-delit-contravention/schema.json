@@ -10,14 +10,22 @@
       "questions": [
         {
           "q": "La loi prévoit-elle plus de trois ans de peine privative de liberté ?",
-          "oui": {"resultat": "Crime"},
-          "non": {"suite": 1},
+          "oui": {
+            "resultat": "Crime"
+          },
+          "non": {
+            "suite": 1
+          },
           "source": "ligne 12 ; art. 10 al. 2 CP"
         },
         {
           "q": "Prévoit-elle trois ans au plus, ou une peine pécuniaire ?",
-          "oui": {"resultat": "Délit"},
-          "non": {"resultat": "Contravention"},
+          "oui": {
+            "resultat": "Délit"
+          },
+          "non": {
+            "resultat": "Contravention"
+          },
           "source": "lignes 13 et 14 ; art. 10 al. 3 et 103 CP"
         }
       ],

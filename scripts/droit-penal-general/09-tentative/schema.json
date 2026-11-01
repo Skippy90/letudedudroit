@@ -19,13 +19,13 @@
           "label": "Préparation",
           "detail": "Impunie en principe ; exceptions pour certains crimes très graves.",
           "couleur": "gris",
-          "source": "lignes 9-11 ; art. 260bis CP"
+          "source": "lignes 9 à 11 ; art. 260bis CP"
         },
         {
           "label": "Tentative",
           "detail": "Dès le dernier pas décisif : punissable, le juge peut atténuer.",
           "couleur": "vert",
-          "source": "lignes 12-17 ; art. 22 CP ; ATF 131 IV 100"
+          "source": "lignes 12 à 17 ; art. 22 CP ; ATF 131 IV 100"
         },
         {
           "label": "Résultat",
@@ -47,7 +47,7 @@
           "non": {
             "resultat": "Pas de tentative"
           },
-          "source": "lignes 12-14 ; ATF 131 IV 100"
+          "source": "lignes 12 à 14 ; ATF 131 IV 100"
         },
         {
           "q": "A-t-il renoncé, ou empêché le résultat, de sa propre initiative ?",
@@ -57,14 +57,14 @@
           "non": {
             "resultat": "Tentative punissable"
           },
-          "source": "lignes 25-28 ; art. 23 CP"
+          "source": "lignes 25 à 28 ; art. 23 CP"
         }
       ],
       "resultats": {
         "Pas de tentative": {
           "couleur": "gris",
           "detail": "Idée ou préparation : en principe impunies.",
-          "source": "lignes 8-9, 32"
+          "source": "lignes 8 à 9, 32"
         },
         "Tentative punissable": {
           "couleur": "vert",
@@ -82,7 +82,7 @@
   "piege": {
     "faux": "Tant qu'il n'a rien pris, il n'y a pas d'infraction.",
     "vrai": "Dès qu'il force la porte, Kilian commet une tentative de vol punissable.",
-    "source": "lignes 29-30"
+    "source": "lignes 29 à 30"
   },
   "a_retenir": "Face à un cas, situez l'acte sur le chemin : idée, préparation, tentative ou résultat."
 }

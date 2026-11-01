@@ -13,25 +13,25 @@
           "label": "Choisir le genre",
           "detail": "Liberté, pécuniaire ou amende ; prison seulement pour deux raisons.",
           "couleur": "ambre",
-          "source": "lignes 4-5, 15-17 ; art. 41 CP ; ATF 147 IV 241"
+          "source": "lignes 4 à 5, 15 à 17 ; art. 41 CP ; ATF 147 IV 241"
         },
         {
           "label": "Fixer la quotité",
           "detail": "Durée ou montant, d'après la culpabilité de l'auteur.",
           "couleur": "ambre",
-          "source": "lignes 5, 19-21 ; art. 47 CP"
+          "source": "lignes 5, 19 à 21 ; art. 47 CP"
         },
         {
           "label": "Sursis ?",
           "detail": "En règle générale, si une peine ferme n'est pas nécessaire.",
           "couleur": "ambre",
-          "source": "lignes 23-24 ; art. 42 CP"
+          "source": "lignes 23 à 24 ; art. 42 CP"
         },
         {
           "label": "Délai d'épreuve",
           "detail": "Deux à cinq ans ; récidive à craindre : sursis révoqué.",
           "couleur": "ambre",
-          "source": "lignes 25-26 ; art. 44 et 46 CP"
+          "source": "lignes 25 à 26 ; art. 44 et 46 CP"
         },
         {
           "label": "Épreuve réussie",
@@ -64,14 +64,14 @@
       "sinon": {
         "label": "Pas de sursis complet",
         "couleur": "gris",
-        "source": "lignes 23-24 ; réponse finale ; art. 42 CP"
+        "source": "lignes 23 à 24 ; réponse finale ; art. 42 CP"
       }
     }
   ],
   "piege": {
     "faux": "Il a eu du sursis, il n'a pas été puni.",
     "vrai": "Il est condamné : la peine existe, suspendue pendant tout le délai d'épreuve.",
-    "source": "lignes 30-31"
+    "source": "lignes 30 à 31"
   },
   "a_retenir": "Le juge choisit la peine, la fixe selon la culpabilité, puis décide du sursis."
 }

@@ -47,14 +47,22 @@
       "questions": [
         {
           "q": "L'auteur a-t-il agi intentionnellement, même par dol éventuel ?",
-          "oui": {"resultat": "Intention retenue"},
-          "non": {"suite": 1},
+          "oui": {
+            "resultat": "Intention retenue"
+          },
+          "non": {
+            "suite": 1
+          },
           "source": "lignes 7 et 18 ; art. 12 al. 1 CP"
         },
         {
           "q": "La loi punit-elle expressément cet acte commis par négligence ?",
-          "oui": {"resultat": "Négligence punissable"},
-          "non": {"resultat": "Pas d'infraction"},
+          "oui": {
+            "resultat": "Négligence punissable"
+          },
+          "non": {
+            "resultat": "Pas d'infraction"
+          },
           "source": "lignes 34 à 37 ; art. 12 al. 1 CP"
         }
       ],

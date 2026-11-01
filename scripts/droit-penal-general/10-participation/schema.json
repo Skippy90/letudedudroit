@@ -17,7 +17,7 @@
           "non": {
             "suite": 1
           },
-          "source": "lignes 10-11 ; ATF 135 IV 152"
+          "source": "lignes 10 à 11 ; ATF 135 IV 152"
         },
         {
           "q": "A-t-il suscité chez l'auteur, pas encore décidé, la décision d'agir ?",
@@ -27,7 +27,7 @@
           "non": {
             "suite": 2
           },
-          "source": "lignes 16-18 ; art. 24 CP ; ATF 128 IV 11"
+          "source": "lignes 16 à 18 ; art. 24 CP ; ATF 128 IV 11"
         },
         {
           "q": "A-t-il aidé réellement, en sachant et acceptant l'acte visé ?",
@@ -37,7 +37,7 @@
           "non": {
             "resultat": "Pas complice"
           },
-          "source": "lignes 24-26 ; art. 25 CP ; ATF 132 IV 49"
+          "source": "lignes 24 à 26 ; art. 25 CP ; ATF 132 IV 49"
         }
       ],
       "resultats": {
@@ -59,7 +59,7 @@
         "Pas complice": {
           "couleur": "gris",
           "detail": "Sans contribution réelle et sans intention, pas de complicité.",
-          "source": "lignes 25-27 ; ATF 132 IV 49"
+          "source": "lignes 25 à 27 ; ATF 132 IV 49"
         }
       }
     }
@@ -67,7 +67,7 @@
   "piege": {
     "faux": "Seul celui qui commet le geste est vraiment coupable.",
     "vrai": "Jade et Lina encourent la peine de l'auteur ; seul le complice a une peine atténuée.",
-    "source": "lignes 29-30"
+    "source": "lignes 29 à 30"
   },
   "a_retenir": "Ce qui compte n'est pas qui tient l'objet, mais le rôle joué par chacun."
 }

@@ -10,26 +10,42 @@
       "questions": [
         {
           "q": "Était-elle garante : loi, contrat, communauté de risques, risque créé ?",
-          "oui": {"suite": 1},
-          "non": {"suite": 3},
+          "oui": {
+            "suite": 1
+          },
+          "non": {
+            "suite": 3
+          },
           "source": "lignes 10 à 16 et 21 à 23 ; art. 11 al. 2 CP"
         },
         {
           "q": "Si elle avait agi, le résultat aurait-il été évité ?",
-          "oui": {"suite": 2},
-          "non": {"resultat": "Ne répond pas du résultat"},
+          "oui": {
+            "suite": 2
+          },
+          "non": {
+            "resultat": "Ne répond pas du résultat"
+          },
           "source": "lignes 24 et 25 ; art. 11 CP"
         },
         {
           "q": "Son inaction mérite-t-elle le même reproche qu'un geste actif ?",
-          "oui": {"resultat": "Répond du résultat"},
-          "non": {"resultat": "Ne répond pas du résultat"},
+          "oui": {
+            "resultat": "Répond du résultat"
+          },
+          "non": {
+            "resultat": "Ne répond pas du résultat"
+          },
           "source": "ligne 26 ; art. 11 al. 3 CP"
         },
         {
           "q": "Personne en danger de mort imminent, secours raisonnablement exigible ?",
-          "oui": {"resultat": "Omission de prêter secours"},
-          "non": {"resultat": "Ne répond pas du résultat"},
+          "oui": {
+            "resultat": "Omission de prêter secours"
+          },
+          "non": {
+            "resultat": "Ne répond pas du résultat"
+          },
           "source": "lignes 30 à 32 ; art. 128 CP"
         }
       ],

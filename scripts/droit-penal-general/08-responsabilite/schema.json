@@ -20,13 +20,13 @@
           "label": "Responsabilité restreinte",
           "detail": "Faculté seulement partielle : reste coupable, le juge atténue la peine.",
           "couleur": "ambre",
-          "source": "lignes 17-18 ; art. 19 al. 2 CP"
+          "source": "lignes 17 à 18 ; art. 19 al. 2 CP"
         },
         {
           "label": "Irresponsable",
           "detail": "Une faculté manque complètement au moment d'agir : pas punissable.",
           "couleur": "gris",
-          "source": "lignes 8-11 ; art. 19 al. 1 CP"
+          "source": "lignes 8 à 11 ; art. 19 al. 1 CP"
         }
       ]
     },
@@ -52,19 +52,19 @@
           "non": {
             "resultat": "Ivresse fautive"
           },
-          "source": "lignes 25-27 ; art. 19 al. 4 et 263 CP"
+          "source": "lignes 25 à 27 ; art. 19 al. 4 et 263 CP"
         }
       ],
       "resultats": {
         "Pleinement responsable": {
           "couleur": "vert",
           "detail": "Les règles sur l'irresponsabilité ne s'appliquent pas.",
-          "source": "lignes 25-26 ; art. 19 al. 4 CP"
+          "source": "lignes 25 à 26 ; art. 19 al. 4 CP"
         },
         "Ivresse fautive": {
           "couleur": "ambre",
           "detail": "Infraction particulière : acte commis en état d'irresponsabilité fautive.",
-          "source": "lignes 27-28 ; art. 263 CP"
+          "source": "lignes 27 à 28 ; art. 263 CP"
         },
         "État non fautif": {
           "couleur": "gris",
@@ -77,7 +77,7 @@
   "piege": {
     "faux": "« J'avais trop bu » : l'ivresse excuse l'acte.",
     "vrai": "Ivresse évitable et acte prévisible : il est jugé comme pleinement responsable.",
-    "source": "lignes 24-26"
+    "source": "lignes 24 à 26"
   },
   "a_retenir": "Pour être coupable, il faut pouvoir comprendre l'interdit et se retenir, au moment d'agir."
 }

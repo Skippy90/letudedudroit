@@ -22,7 +22,7 @@
         {
           "label": "Conditions de la mesure précise",
           "detail": "Par exemple traitement institutionnel, ambulatoire ou internement.",
-          "source": "lignes 7, 11-16 ; art. 56, 59, 63 et 64 CP"
+          "source": "lignes 7, 11 à 16 ; art. 56, 59, 63 et 64 CP"
         },
         {
           "label": "Mesure proportionnée",
@@ -33,7 +33,7 @@
       "alors": {
         "label": "Mesure possible",
         "couleur": "vert",
-        "source": "lignes 6-8 ; art. 56 CP"
+        "source": "lignes 6 à 8 ; art. 56 CP"
       },
       "sinon": {
         "label": "Pas de mesure",
@@ -85,7 +85,7 @@
           "label": "Jamais",
           "detail": "Notamment génocide, crimes contre l'humanité, crimes de guerre.",
           "couleur": "rouge",
-          "source": "lignes 26-27 ; art. 101 CP"
+          "source": "lignes 26 à 27 ; art. 101 CP"
         }
       ]
     }
@@ -93,7 +93,7 @@
   "piege": {
     "faux": "C'est prescrit, donc il est innocent.",
     "vrai": "La prescription ne dit rien de la culpabilité : l'État perd seulement le droit de poursuivre.",
-    "source": "lignes 30-31"
+    "source": "lignes 30 à 31"
   },
   "a_retenir": "Une mesure répond à un danger ; la prescription limite le temps pour poursuivre."
 }
