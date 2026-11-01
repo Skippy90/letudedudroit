@@ -195,6 +195,11 @@ function vueVideo(v) {
   if (v.a_relire) h.append(el("p", "avert", "Contenu en attente de la relecture juridique : à utiliser avec prudence."));
   m.append(h);
 
+  if (v.schema) {
+    const s = format("Schéma", "La notion en un coup d'œil", "Le raisonnement de la vidéo résumé sur une page.");
+    const img = el("img"); img.src = v.schema; img.alt = "Schéma-résumé : " + v.titre; img.style.cssText = "width:100%;border-radius:10px;display:block";
+    s.append(img); m.append(s);
+  }
   if ((v.a_vous || []).length) {
     const s = format("Format 1", "À vous d'abord", "Avant de regarder la vidéo, répondez de tête. Vous retiendrez mieux la règle si vous l'avez d'abord cherchée.");
     v.a_vous.forEach(a => { const b = el("div", "avous"); b.append(el("b", null, `Ligne ${a.ligne}`), el("p", "q", a.pause)); s.append(b); });

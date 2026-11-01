@@ -10,6 +10,7 @@ Formats (docs/pedagogie/nouvelles-facons-d-etudier.md) :
 3. machine à variantes ; 4. cas pratique en fondu ; 5. trouvez l'erreur ; 6. révision mélangée ; 7. graphe des notions.
 """
 
+import base64
 import json
 import re
 from pathlib import Path
@@ -31,6 +32,10 @@ def main() -> None:
     for f in sorted((RACINE / "scripts" / MATIERE).glob("*/revision.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
         d["num"] = f.parent.name[:2]
+        # Schéma-résumé (tools/schemas.py) : image intégrée à la page de la vidéo.
+        png = RACINE / "out" / "schemas" / f"{f.parent.name}.png"
+        if png.exists():
+            d["schema"] = "data:image/png;base64," + base64.b64encode(png.read_bytes()).decode()
         videos.append(d)
     donnees = {"videos": videos, "graphe": prerequis()}
     modele = (RACINE / "tools" / "revision_modele.html").read_text(encoding="utf-8")
