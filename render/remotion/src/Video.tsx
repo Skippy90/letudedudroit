@@ -8,6 +8,7 @@ export type VideoProps = {
   matiere: string;
   numero: number;
   narrationSynthetique: boolean;
+  suivante?: string; // titre de la vidéo suivante, annoncé sur la carte de fin
 };
 
 export const DUREE_OUVERTURE = 4; // secondes, reprise par tools/assembler.py et tools/publication.py
@@ -113,21 +114,57 @@ export const Ouverture: React.FC<VideoProps> = ({ titre, matiere, numero }) => (
   </Ecran>
 );
 
-export const Fin: React.FC<VideoProps> = ({ narrationSynthetique }) => (
+// « S'abonner » : bouton blanc, un curseur vient cliquer (2,7 s, repris par tools/assembler.py pour le clic),
+// le bouton devient « Abonné ✓ ».
+const BoutonAbonner: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const clic = 2.7 * fps;
+  const abonne = frame >= clic;
+  const enfonce = interpolate(frame, [clic - 3, clic, clic + 4], [1, 0.92, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const arrivee = spring({ frame: frame - 1.9 * fps, fps, config: { damping: 200 } });
+  const depart = interpolate(frame, [clic + 0.5 * fps, clic + 0.9 * fps], [1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <div style={{ position: "relative", transform: `scale(${enfonce})` }}>
+      <div style={{
+        padding: "18px 44px", borderRadius: 16, fontSize: 46, fontWeight: 800,
+        backgroundColor: abonne ? FOND : BLANC, color: abonne ? BLANC : ROUGE_MARQUE,
+      }}>
+        {abonne ? "Abonné ✓" : "S’abonner"}
+      </div>
+      <svg width={46} height={70} viewBox="0 0 0.5 0.8" style={{
+        position: "absolute", right: -18, bottom: -46, opacity: arrivee * depart,
+        transform: `translate(${(1 - arrivee) * 420}px, ${(1 - arrivee) * 260}px)`,
+      }}>
+        <path d="M0 0 L0 0.62 L0.16 0.48 L0.3 0.78 L0.4 0.73 L0.27 0.44 L0.47 0.44 Z" fill={BLANC}
+          stroke={FOND} strokeWidth={0.03} />
+      </svg>
+    </div>
+  );
+};
+
+export const Fin: React.FC<VideoProps> = ({ narrationSynthetique, suivante }) => (
   <Ecran fondu="entree">
-    <Symbole taille={190} retard={0.2} />
-    <Apparition retard={0.9}>
-      <div style={{ fontSize: 76, fontWeight: 800 }}>L’étude du droit</div>
+    <Symbole taille={150} retard={0.2} />
+    <Apparition retard={0.7}>
+      <div style={{ fontSize: 72, fontWeight: 800 }}>L’étude du droit</div>
     </Apparition>
-    <Apparition retard={1.3}>
+    <Apparition retard={1.0}>
       <div style={{ fontSize: 44, fontWeight: 500, opacity: 0.9 }}>Le droit suisse, une notion à la fois</div>
     </Apparition>
-    <Apparition retard={1.9}>
-      <div style={{ fontSize: 40 }}>Script et sources sur GitHub</div>
+    <Apparition retard={1.5}>
+      <BoutonAbonner />
     </Apparition>
-    <Apparition retard={2.4}>
-      <div style={{ fontSize: 36, opacity: 0.8 }}>
-        Licence CC BY-SA 4.0{narrationSynthetique ? " · Narration synthétique" : ""}
+    {suivante ? (
+      <Apparition retard={3.1}>
+        <div style={{ fontSize: 40, fontWeight: 600 }}>Vidéo suivante : {suivante.replace(/'/g, "’")}</div>
+      </Apparition>
+    ) : null}
+    <Apparition retard={3.5}>
+      <div style={{ fontSize: 34, opacity: 0.85 }}>
+        Script et sources sur GitHub · Licence CC BY-SA 4.0{narrationSynthetique ? " · Narration synthétique" : ""}
       </div>
     </Apparition>
   </Ecran>

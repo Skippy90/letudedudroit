@@ -24,21 +24,36 @@ DUREE_OUVERTURE, DUREE_FIN = 4, 6  # secondes, comme dans render/remotion/src/Vi
 # Bruitages de l'ouverture, calés sur l'animation de render/remotion/src/Video.tsx : les trois barres
 # traversent l'écran (0 s), les étages du logo s'empilent (0,55 s, puis toutes les 0,15 s), le titre arrive (1,3 s).
 # Fabriqués en code (tools/bande_annonce.py) : aucune licence à gérer.
+# Carte de fin : les étages du logo (0,2 s), le clic sur « S'abonner » (2,7 s).
+REPERES_FIN = [("pop", 0.25), ("pop", 0.4), ("pop", 0.55), ("clic", 2.7)]
 REPERES_OUVERTURE = [("glisse", 0.0), ("pop", 0.6), ("pop", 0.75), ("pop", 0.9), ("tombe", 1.35)]
 
 
-def bruitages_ouverture(travail: Path) -> Path:
+def bruitages(travail: Path, debut_fin: float) -> Path:
+    """Piste des bruitages : ouverture à 0 s, carte de fin à debut_fin."""
     import numpy as np
     import soundfile as sf
     from bande_annonce import FR, son
-    piste = np.zeros(int(DUREE_OUVERTURE * FR))
-    for nom, t in REPERES_OUVERTURE:
+    piste = np.zeros(int((debut_fin + DUREE_FIN) * FR))
+    for nom, t in REPERES_OUVERTURE + [(n, debut_fin + t) for n, t in REPERES_FIN]:
         x = son(nom)
         i = int(t * FR)
         piste[i:i + len(x)] += x[: len(piste) - i]
-    sortie = travail / "ouverture-sons.wav"
+    sortie = travail / "bruitages.wav"
     sf.write(sortie, np.tanh(piste), FR)
     return sortie
+
+
+def video_suivante(matiere: str, numero: int) -> str:
+    """Titre de la vidéo suivante du curriculum, annoncé sur la carte de fin, si son script existe déjà."""
+    fichier = RACINE / "curriculum" / f"{matiere}.yaml"
+    if not fichier.exists():
+        return ""
+    entrees = re.findall(r'id:\s*"?(\d+)"?[^\n]*?(?:\n[^\n]*?)*?titre:\s*"([^"]+)"', fichier.read_text(encoding="utf-8"))
+    for ident, titre in entrees:
+        if int(ident) == numero + 1 and list((RACINE / "scripts" / matiere).glob(f"{ident}-*/script.md")):
+            return titre
+    return ""
 
 
 def main(slug: str) -> None:
@@ -62,6 +77,7 @@ def main(slug: str) -> None:
         "matiere": MATIERES.get(matiere, matiere),
         "numero": int(m[1]),
         "narrationSynthetique": timings.get("source", config_voix["source"]) == "synthese",
+        "suivante": video_suivante(matiere, int(m[1])),
     }, ensure_ascii=False), encoding="utf-8")
 
     # 1. Habillage : ouverture et carte de fin, rendues par Remotion (muettes).
@@ -87,7 +103,7 @@ def main(slug: str) -> None:
     subprocess.run([
         "ffmpeg", "-y", "-v", "error",
         "-i", str(travail / "ouverture.mp4"), "-i", str(schemas), "-i", str(travail / "fin.mp4"),
-        "-i", str(voix / "narration.wav"), "-i", str(bruitages_ouverture(travail)),
+        "-i", str(voix / "narration.wav"), "-i", str(bruitages(travail, DUREE_OUVERTURE + timings["duree"])),
         "-filter_complex",
         "[0:v]setsar=1,fps=30[a];[1:v]setsar=1,fps=30[b];[2:v]setsar=1,fps=30[c];"
         f"[a][b][c]concat=n=3:v=1:a=0{filtre_st}[v];[3:a]adelay={delai}:all=1,apad[n];"
