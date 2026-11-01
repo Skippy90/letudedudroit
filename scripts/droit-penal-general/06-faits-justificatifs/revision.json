@@ -43,7 +43,7 @@
     {
       "id": "v06-03",
       "q": "Kevin lève une bouteille sur Yasmine, qui le repousse violemment. Yasmine est-elle punie ?",
-      "r": "Non. Les trois conditions sont remplies. Son geste est justifié : l'illicéité tombe, et avec elle l'infraction.",
+      "r": "Non. Dans ces circonstances, les trois conditions sont remplies : face à une bouteille levée, une poussée reste proportionnée. Son geste est justifié : l'illicéité tombe, et avec elle l'infraction.",
       "source": "ligne 12 ; art. 15 CP",
       "notion": "Légitime défense"
     },
@@ -64,7 +64,7 @@
     {
       "id": "v06-06",
       "q": "Que dit le Tribunal fédéral de l'usage d'un couteau pour se défendre ?",
-      "r": "Il demande une grande retenue. Le couteau est en principe le dernier moyen de défense.",
+      "r": "Il demande une grande retenue. Le couteau est en principe le dernier moyen de défense. Son usage dépend de la gravité de l'attaque et des autres moyens possibles.",
       "source": "ligne 20 ; ATF 136 IV 49",
       "notion": "Légitime défense"
     },
@@ -78,8 +78,8 @@
     {
       "id": "v06-08",
       "q": "L'excès de légitime défense rend-il le geste licite ?",
-      "r": "Non. Il touche seulement le troisième étage, celui de la culpabilité.",
-      "source": "ligne 23 ; art. 16 CP",
+      "r": "Non. L'excès reste illicite. Le juge atténue la peine. Seul un excès dû à un état excusable d'excitation ou de saisissement, causé par l'attaque, exclut la culpabilité.",
+      "source": "ligne 23 ; art. 16 al. 1 et 2 CP",
       "notion": "Excès de légitime défense"
     },
     {
@@ -106,7 +106,7 @@
     {
       "id": "v06-12",
       "q": "Et quand les deux biens en jeu ont une valeur comparable ?",
-      "r": "L'acte n'est plus justifié. Le juge atténue la peine si l'on pouvait exiger que l'auteur renonce au bien menacé. Sinon, l'auteur n'est pas coupable.",
+      "r": "L'acte n'est plus justifié. L'article 18 exige encore un danger imminent, impossible à détourner autrement, qui menace un bien essentiel. Puis on examine le sacrifice exigible : le juge atténue la peine si l'on pouvait exiger que l'auteur renonce au bien menacé. Sinon, l'auteur n'est pas coupable.",
       "source": "ligne 29 ; art. 18 CP",
       "notion": "État de nécessité"
     }
@@ -133,17 +133,17 @@
       {
         "fait": "Yasmine sort un couteau et frappe Kevin à plusieurs reprises.",
         "qualification": "Si elle va trop loin, c'est un excès de légitime défense : le juge atténue sa peine.",
-        "pourquoi": "Le couteau est en principe le dernier moyen de défense. Le Tribunal fédéral demande une grande retenue.",
+        "pourquoi": "Le couteau est en principe le dernier moyen de défense. Le Tribunal fédéral demande une grande retenue : son usage dépend de la gravité de l'attaque et des autres moyens possibles.",
         "source": "ligne 21 ; art. 16 CP ; ATF 136 IV 49"
       },
       {
-        "fait": "L'excès vient d'un état excusable d'excitation ou de saisissement, causé par l'attaque.",
+        "fait": "l'excès de Yasmine vient d'un état excusable d'excitation ou de saisissement, causé par l'attaque.",
         "qualification": "Yasmine n'agit pas de manière coupable. Son geste ne devient pas licite pour autant.",
-        "pourquoi": "L'excès touche seulement le troisième étage, celui de la culpabilité.",
-        "source": "ligne 23 ; art. 16 CP"
+        "pourquoi": "Sans cet état excusable, le juge atténuerait seulement la peine. Avec lui, l'étage de la culpabilité tombe ; l'excès reste illicite.",
+        "source": "lignes 22 et 23 ; art. 16 al. 2 CP"
       },
       {
-        "fait": "C'est Hugo, un passant, qui repousse Kevin pour défendre Yasmine.",
+        "fait": "Hugo, un passant, repousse Kevin pour défendre Yasmine.",
         "qualification": "Légitime défense, comme pour Yasmine.",
         "pourquoi": "Le même droit appartient aux tiers.",
         "source": "ligne 13 ; art. 15 CP"
@@ -208,7 +208,7 @@
         "Elle n'agit pas de manière coupable."
       ],
       "faux": 2,
-      "explication": "L'excès ne rend pas le geste licite. Il touche seulement le troisième étage, celui de la culpabilité.",
+      "explication": "L'excès ne rend pas le geste licite. Selon les cas, la peine est atténuée, ou la culpabilité est exclue, comme ici avec un saisissement excusable.",
       "source": "ligne 23 ; art. 16 CP"
     }
   ]

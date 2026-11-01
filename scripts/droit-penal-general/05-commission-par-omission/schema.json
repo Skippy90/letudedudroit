@@ -39,7 +39,7 @@
           "source": "ligne 26 ; art. 11 al. 3 CP"
         },
         {
-          "q": "Personne en danger de mort imminent, secours raisonnablement exigible ?",
+          "q": "Sa propre victime, ou une personne en danger de mort imminent qu'il a reconnu ; secours raisonnablement exigible ?",
           "oui": {
             "resultat": "Omission de prêter secours"
           },
@@ -52,8 +52,8 @@
       "resultats": {
         "Répond du résultat": {
           "couleur": "vert",
-          "detail": "Comme si elle l'avait causé ; le juge peut atténuer la peine.",
-          "source": "ligne 27 ; art. 11 al. 3 et 4 CP"
+          "detail": "Comme si elle l'avait causé, si sa faute et les autres éléments de l'infraction sont établis ; le juge peut atténuer la peine.",
+          "source": "lignes 27 et 28 ; art. 11 al. 3 et 4 CP"
         },
         "Omission de prêter secours": {
           "couleur": "ambre",
@@ -70,8 +70,8 @@
   ],
   "piege": {
     "faux": "Celui qui n'est pas garant n'a rien à craindre.",
-    "vrai": "Chacun doit secourir une personne en danger de mort imminent, si c'est exigible.",
+    "vrai": "Chacun doit secourir sa propre victime ou une personne en danger de mort imminent, si c'est raisonnablement exigible.",
     "source": "lignes 29 à 33"
   },
-  "a_retenir": "Seul le garant répond du résultat comme s'il l'avait causé ; les autres doivent porter secours."
+  "a_retenir": "Seul le garant peut répondre du résultat comme s'il l'avait causé ; les autres ont un devoir de secours limité (article 128)."
 }

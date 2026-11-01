@@ -48,11 +48,11 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | 21 | Revenons à la piscine. Clara a été engagée pour surveiller le bassin, et elle était à son poste. | La silhouette de Clara ; la case « Clara ? » |
 | 22 | Le Tribunal fédéral précise que c'est cette prise de poste effective qui compte, pas seulement la signature du contrat. Clara est garante. | La case « Clara » se coche en vert |
 | 23 | Maël, lui, n'est qu'un baigneur parmi d'autres. Aucune loi, aucun contrat, aucun risque créé par lui. Il n'est pas garant. | La case « Maël » se coche en gris |
-| 24 | Pour Clara, il faut encore deux conditions. D'abord, si elle avait agi, l'accident aurait-il été évité ? | Une frise du temps ; rembobinage |
+| 24 | Pour Clara, l'omission pose encore deux conditions. D'abord, si elle avait agi, l'accident aurait-il été évité ? | Une frise du temps ; rembobinage |
 | 25 | Le juge raisonne par hypothèse. Il imagine que Clara a fait son travail, et se demande si Timéo aurait été sauvé à temps. | Une bulle de pensée au-dessus de Clara : « Si j'avais regardé » |
 | 26 | Ensuite, l'article 11 pose une condition d'équivalence. Son inaction doit mériter le même reproche qu'un geste qui aurait causé l'accident. | Bloc « Art. 11 CP » ; deux colonnes « Agir » et « Ne pas agir » de même taille |
-| 27 | Si ces conditions sont remplies, Clara répond des blessures de Timéo comme si elle les avait causées. Le juge peut toutefois atténuer sa peine. | Le mot « Peine atténuée possible » |
-| 28 | Et souvenez-vous de la vidéo 4. Clara n'a pas voulu l'accident. On parlera donc plutôt de négligence, punissable ici, en principe sur plainte. Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle. Ce serait bien plus grave. | « vidéo 4 » en petit ; le mot « Négligence » |
+| 27 | Si ces conditions sont remplies, Clara pourrait répondre des blessures de Timéo, comme si elle les avait causées. Le juge peut toutefois atténuer sa peine. | Le mot « Peine atténuée possible » |
+| 28 | Et souvenez-vous de la vidéo 4. Clara n'a pas voulu l'accident. On parlera donc plutôt de lésions corporelles par négligence, si une imprévoyance coupable est établie. Elles se poursuivent sur plainte, sauf si la lésion est grave. Mais si Clara avait vu Timéo et l'avait laissé couler exprès, l'omission serait intentionnelle. Ce serait bien plus grave. | « vidéo 4 » en petit ; le mot « Négligence » |
 
 ## Le piège classique
 
@@ -61,18 +61,18 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | 29 | Attention au piège classique. On croit souvent que Maël, qui n'est pas garant, n'a rien à se reprocher devant la loi. C'est plus subtil. | La phrase « Maël n'a rien à craindre » apparaît, puis se met en question |
 | 30 | Il existe une infraction à part, qui vise tout le monde. C'est l'omission de prêter secours, à l'article 128 du Code pénal. | Bloc « Art. 128 CP » |
 | 31 | Elle punit celui qui ne secourt pas une personne en danger de mort imminent. Il faut qu'on puisse raisonnablement l'exiger de lui. Elle vise aussi celui qui laisse sans secours une personne qu'il a lui-même blessée. | Les mots « Danger de mort imminent » et « Raisonnablement exigible » |
-| 32 | Un enfant se noie à deux mètres de Maël, dans une piscine. On pouvait au moins exiger de lui qu'il appelle à l'aide. | La silhouette de Maël ; la case « Maël » devient une question |
-| 33 | La différence est importante. Maël ne répond pas des blessures de Timéo. Il répond seulement de ne pas avoir porté secours. Il encourt tout de même jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire. | Deux colonnes : « Clara : les blessures », « Maël : le secours » |
+| 32 | Un enfant se noie à deux mètres de Maël, dans une piscine. On pouvait au moins exiger de lui qu'il appelle à l'aide. Encore faut-il qu'il ait compris que cet enfant risquait de mourir. | La silhouette de Maël ; la case « Maël » devient une question |
+| 33 | La différence est importante. Maël ne répond pas des blessures de Timéo. Il pourrait seulement répondre de ne pas avoir porté secours. Il encourt tout de même jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire. | Deux colonnes : « Clara : les blessures », « Maël : le secours » |
 
 ## Conclusion et question
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 34 | Retenons. Ne rien faire peut constituer un crime ou un délit. Mais seulement pour celui qui avait une position de garant. | Le titre « Garant » ; la liste des quatre sources |
+| 34 | Retenons. Ne rien faire peut constituer un crime ou un délit. Pour en répondre comme d'un acte, il faut une position de garant. | Le titre « Garant » ; la liste des quatre sources |
 | 35 | Elle vient notamment de la loi, d'un contrat, d'une communauté de risques ou d'un risque qu'on a soi-même créé. | La liste revient, ligne par ligne |
-| 36 | Pour les autres, il reste une obligation minimale : porter secours à une personne en danger de mort imminent. Face à un cas d'omission, posez toujours la même question. Cette personne devait-elle agir, et pourquoi ? | Bloc « Art. 128 CP » |
+| 36 | Pour les autres, le devoir est limité : secourir sa victime, ou une personne en danger de mort imminent. Face à un cas d'omission, posez toujours la même question. Cette personne devait-elle agir, et pourquoi ? | Bloc « Art. 128 CP » |
 | 37 | Une question pour finir. Lucas allume un feu de camp en forêt. Il part sans l'éteindre, et le feu s'étend. | La silhouette de Lucas ; une frise du temps |
 | 38 | Lucas était-il garant ? Et si oui, d'après laquelle de ces quatre sources ? Écrivez votre réponse en commentaire. | La liste des quatre sources, avec un point d'interrogation |
 | 39 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre ou le surveiller (article 11, alinéa 2, lettre d, du Code pénal). S'il ne l'a pas fait, les dommages causés par l'incendie peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3.
+**Réponse attendue à la question finale**, pour la description : oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre ou le surveiller (article 11, alinéa 2, lettre d, du Code pénal). S'il ne l'a pas fait, les dommages causés par l'incendie peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3. Il faut encore établir le résultat, le lien de causalité, sa faute (intention ou négligence) et les autres conditions de l'infraction en cause : on ne peut pas les présumer.

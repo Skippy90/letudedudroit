@@ -43,7 +43,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 11.1@tout | accent yasmine |
 | 11.2@bouteille | cocher 1 vert |
 | 11.3@autorisait | cocher 2 vert |
-| 11.4@mesuré | cocher 3 vert |
+| 11.4@proportionnée | cocher 3 vert |
 | 12.1 | scene-vide ; personnage yasmine "Yasmine" turquoise gauche ; bouclier -2.6 0.6 ; titre "Justifié" ambre |
 | 12.2@illicéité | repere-etage 2 gris ; sous-titre "L'illicéité tombe" |
 | 12.3@punie | sous-titre "Yasmine n'est pas punie" |
@@ -78,7 +78,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 20.1@fédéral | arret "ATF 136 IV 49" |
 | 20.1@retenue | titre "Une grande retenue" |
 | 20.2@dernier | sous-titre "Le dernier moyen" |
-| 20.3@plusieurs | sous-titre "Admis face à plusieurs agresseurs" |
+| 20.3@gravité | sous-titre "Selon la gravité et les autres moyens" |
 | 21.1 | scene-vide ; arret-retirer ; batiment ; fleche 1 ; etage 1 vert |
 | 21.1@limites | titre "Trop loin : un excès" |
 | 21.2@seize | article "Art. 16 CP" ; sous-titre "Peine atténuée" |
@@ -86,7 +86,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 22.2@coupable | etage 3 gris ; repere-etage 3 gris |
 | 23.1 | effacer-titres ; titre "Où sommes-nous ?" |
 | 23.2@licite | etage 2 vert ; repere-etage 2 vert ; sous-titre "Pas licite pour autant" |
-| 23.3@troisième | etage 3 ambre ; repere-etage 3 ambre ; sous-titre "Seulement la culpabilité" |
+| 23.3@atténuée | etage 3 ambre ; repere-etage 3 ambre ; sous-titre "Peine atténuée, ou pas coupable" |
 | 24.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "L'état de nécessité" ; picto danger 0 0.3 |
 | 24.2@agresseur | sous-titre "Pas d'agresseur" |
 | 24.3@danger | sous-titre "Seulement un danger" |
@@ -107,8 +107,9 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 28.2@justifié | bouclier -2.4 0.6 ; repere-etage 2 gris ; effacer-titres ; titre "Justifié" ambre |
 | 29.1 | scene-vide ; batiment ; fleche 1 ; etage 1 vert ; titre "Valeur comparable" |
 | 29.2@justifié | etage 2 vert ; repere-etage 2 vert ; sous-titre "Plus justifié" |
-| 29.3@dix | article "Art. 18 CP" ; etage 3 ambre ; sous-titre "Peine atténuée" |
-| 29.4@coupable | sous-titre "Sinon : pas coupable" |
+| 29.3@danger | sous-titre "Danger imminent, sans autre issue" |
+| 29.4@dix | article "Art. 18 CP" ; etage 3 ambre ; sous-titre "Peine atténuée" |
+| 29.5@coupable | sous-titre "Sinon : pas coupable" |
 | 30.1@sacrifie | effacer-titres ; titre "Sacrifice non exigible" |
 | 30.2@coupable | etage 3 gris ; repere-etage 3 gris ; sous-titre "Pas coupable" |
 | 30.3@troisième | sous-titre "Troisième étage" |
@@ -135,7 +136,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 36.2@dix | article "Art. 17 CP" |
 | 37.1@illicéité | etage 2 gris ; repere-etage 2 gris ; sous-titre "Plus d'illicéité" |
 | 37.2@articles | article "Art. 16 et 18 CP" |
-| 37.2@culpabilité | etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Culpabilité seulement" |
+| 37.2@culpabilité | etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Peine atténuée ou pas coupable" |
 | 37.3@attaque | effacer-titres ; titre "Attaque ? Danger ?" ambre |
 | 38.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "Une question pour finir" |
 | 38.2 | effacer-titres ; decor escalier ; personnage nadia "Nadia" violet gauche ; placer nadia 0 ; personnage voisin "Un voisin" ambre_pale droite ; placer voisin 4 |

@@ -92,8 +92,8 @@
     {
       "id": "v05-10",
       "q": "Si les conditions sont remplies, de quoi Clara répond-elle ?",
-      "r": "Des blessures de Timéo, comme si elle les avait causées. Le juge peut toutefois atténuer sa peine.",
-      "source": "ligne 27 ; art. 11 al. 3 et 4 CP",
+      "r": "Elle pourrait répondre des blessures de Timéo, comme si elle les avait causées. Il faut encore établir sa faute, ici plutôt une négligence. Le juge peut toutefois atténuer sa peine.",
+      "source": "lignes 27 et 28 ; art. 11 al. 3 et 4 CP",
       "notion": "Conditions de l'omission"
     },
     {
@@ -106,7 +106,7 @@
     {
       "id": "v05-12",
       "q": "Maël répond-il des blessures de Timéo ?",
-      "r": "Non. Il répond seulement de ne pas avoir porté secours. Il encourt jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire.",
+      "r": "Non. Il pourrait seulement répondre de ne pas avoir porté secours, s'il a compris que l'enfant risquait de mourir. Il encourt jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire.",
       "source": "ligne 33 ; art. 128 CP",
       "notion": "Omission de prêter secours"
     }
@@ -114,8 +114,8 @@
   "variantes": {
     "base": {
       "faits": "Clara, surveillante de baignade engagée et à son poste, regarde son téléphone. Elle ne voit pas Timéo se débattre dans l'eau.",
-      "qualification": "Clara est garante par contrat. Si les conditions sont remplies, elle répond des blessures de Timéo, plutôt par négligence.",
-      "source": "ligne 27"
+      "qualification": "Clara est garante par contrat. Si les conditions de l'omission et des lésions par négligence sont établies, elle pourrait répondre des blessures de Timéo.",
+      "source": "lignes 27 et 28"
     },
     "changements": [
       {
@@ -125,13 +125,13 @@
         "source": "ligne 28 ; art. 11 CP"
       },
       {
-        "fait": "Celui qui ne fait rien est Maël, un simple baigneur.",
-        "qualification": "Maël n'est pas garant. Il répond seulement de l'omission de prêter secours.",
-        "pourquoi": "Aucune loi, aucun contrat, aucun risque créé par lui. Mais on pouvait au moins exiger qu'il appelle à l'aide.",
+        "fait": "Maël, un simple baigneur, voit Timéo se débattre et ne fait rien.",
+        "qualification": "Maël n'est pas garant. Il ne serait punissable que si les conditions de l'omission de prêter secours sont réunies.",
+        "pourquoi": "Aucune loi, aucun contrat, aucun risque créé par lui. Mais on pouvait au moins exiger qu'il appelle à l'aide, s'il a compris que l'enfant risquait de mourir.",
         "source": "ligne 33 ; art. 128 CP"
       },
       {
-        "fait": "Même si Clara avait fait son travail, Timéo n'aurait pas été sauvé à temps.",
+        "fait": "Timéo n'aurait pas été sauvé à temps, même si Clara avait fait son travail.",
         "qualification": "Clara ne répond pas des blessures comme si elle les avait causées.",
         "pourquoi": "Une des deux conditions manque : son action n'aurait pas évité l'accident.",
         "source": "ligne 24 ; ATF 117 IV 130"
@@ -167,12 +167,12 @@
         "nom": "Conclusion",
         "q": "Que peut-on conclure ?",
         "choix": [
-          "Les dommages de l'incendie peuvent lui être imputés comme s'il les avait causés (article 11, alinéa 3).",
+          "Les dommages de l'incendie peuvent lui être imputés comme s'il les avait causés, si les conditions de l'article 11, alinéa 3, et de l'infraction en cause sont établies.",
           "Il répond seulement de l'omission de prêter secours.",
           "Il ne répond de rien, faute de geste."
         ],
         "bon": 0,
-        "note": "Il faut encore les conditions de l'article 11, alinéa 3 (réponse attendue)."
+        "note": "Il faut encore les conditions de l'article 11, alinéa 3, puis le résultat, le lien de causalité et la faute de Lucas : on ne peut pas les présumer (réponse attendue)."
       }
     ]
   },
@@ -185,7 +185,7 @@
         "Clara peut répondre des blessures de Timéo, aux conditions de l'article 11."
       ],
       "faux": 2,
-      "explication": "L'omission de prêter secours vise tout le monde. Un enfant se noyait à deux mètres de Maël : on pouvait au moins exiger qu'il appelle à l'aide.",
+      "explication": "L'omission de prêter secours vise tout le monde. Un enfant se noyait à deux mètres de Maël : on pouvait au moins exiger qu'il appelle à l'aide, s'il a compris que l'enfant risquait de mourir.",
       "source": "ligne 30 ; art. 128 CP"
     },
     {
@@ -196,7 +196,7 @@
         "On pouvait au moins exiger de lui qu'il appelle à l'aide."
       ],
       "faux": 1,
-      "explication": "Sans position de garant, Maël ne répond pas des blessures. Il répond seulement de ne pas avoir porté secours.",
+      "explication": "Sans position de garant, Maël ne répond pas des blessures. Il pourrait seulement répondre de ne pas avoir porté secours, si les conditions de l'article 128 sont réunies.",
       "source": "ligne 33 ; art. 128 CP"
     }
   ]

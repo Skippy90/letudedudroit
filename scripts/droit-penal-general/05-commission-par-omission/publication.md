@@ -12,13 +12,13 @@ Coupable de n'avoir rien fait | Droit pénal suisse
 Coupable de n'avoir rien fait — expliqué simplement, à partir d'un cas concret.
 
 Articles cités (texte en vigueur vérifié sur Fedlex) :
-• Art. 11 CP, al. 1 : Un crime ou un délit peut aussi être commis par un comportement passif contraire à une obligation d'agir
+• Art. 11 CP, al. 1 : Un crime ou un délit peut aussi être commis par un comportement passif contraire à une obligation d'agir ; pour répondre d'une omission comme d'un acte, il faut une position de garant
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
 • Art. 11 CP, al. 2 : Notamment quatre sources de l'obligation (« notamment en vertu ») : la loi, un contrat, une communauté de risques librement consentie, la création d'un risque
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
 • Art. 11 CP, al. 3 et 4 : Condition d'équivalence : même reproche qu'un comportement actif ; le juge peut atténuer la peine
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_11
-• Art. 125 CP : Les blessures par négligence sont punissables
+• Art. 125 CP : Lésions corporelles par négligence, si une imprévoyance coupable est établie ; poursuite sur plainte, sauf si la lésion est grave
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_125
 • Art. 128 CP : Omission de prêter secours : vise tout le monde, en cas de danger de mort imminent, si l'on peut raisonnablement l'exiger ; vise aussi celui qui ne secourt pas la personne qu'il a blessée ; jusqu'à trois ans
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_128
@@ -34,7 +34,7 @@ Jurisprudence du Tribunal fédéral :
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F141-IV-249%3Afr
 
 Réponse à la question finale :
-Oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre ou le surveiller (article 11, alinéa 2, lettre d, du Code pénal). S'il ne l'a pas fait, les dommages causés par l'incendie peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3.
+Oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre ou le surveiller (article 11, alinéa 2, lettre d, du Code pénal). S'il ne l'a pas fait, les dommages causés par l'incendie peuvent lui être imputés comme s'il les avait causés par un acte, aux conditions de l'article 11, alinéa 3. Il faut encore établir le résultat, le lien de causalité, sa faute (intention ou négligence) et les autres conditions de l'infraction en cause : on ne peut pas les présumer.
 
 Chapitres :
 0:00 Le cas de départ
