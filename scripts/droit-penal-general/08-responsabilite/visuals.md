@@ -124,7 +124,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 35.1 | scene-vide ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor rue Festival ; personnage zoe "Zoé" violet gauche ; placer zoe -2 ; bulle zoe "Agressive si je bois" |
 | 35.3 | effacer-bulle zoe ; picto bouteille -1.9 -1.0 ; personnage amie "Une amie" rose droite ; placer amie 1 ; etiquette soiree "Elle boit énormément" 0.6 1.7 |
-| 35.4 | etiquette-retirer soiree ; marcher zoe -1 |
+| 35.4 | etiquette-retirer soiree ; picto-retirer bouteille ; marcher zoe -1 |
 | 35.4+1.2 | pousser zoe amie ; dommage amie |
 | 36.1 | titre "Son ivresse l'excuse-t-elle ?" ambre ; repere-marquer 1 ambre ; repere-marquer 2 ambre |
 | 36.2 | effacer-titres ; titre "Votre réponse en commentaire" ; accent zoe |
