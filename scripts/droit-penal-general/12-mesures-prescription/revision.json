@@ -58,8 +58,8 @@
     {
       "id": "v12-05",
       "q": "À qui s'adresse le traitement institutionnel de l'article 59 ?",
-      "r": "À l'auteur qui souffre d'un grave trouble mental. L'infraction doit être liée au trouble, et le traitement doit pouvoir le détourner de nouvelles infractions.",
-      "source": "lignes 11 et 12 ; art. 59 CP",
+      "r": "À l'auteur qui souffre d'un grave trouble mental. L'infraction doit être liée au trouble, et le traitement doit pouvoir le détourner de nouvelles infractions. La privation de liberté qu'il entraîne ne dépasse en général pas cinq ans, mais la mesure peut être prolongée.",
+      "source": "lignes 11 à 13 ; art. 59 CP",
       "notion": "Mesures principales"
     },
     {
@@ -85,9 +85,9 @@
     },
     {
       "id": "v12-09",
-      "q": "Le tag de Noah est découvert onze ans plus tard. Peut-il encore être poursuivi ?",
-      "r": "Non. Le dommage à la propriété est puni de trois ans au plus : le délai est de dix ans.",
-      "source": "ligne 24 ; art. 144 et 97 CP",
+      "q": "Noah savait que son tag coûterait environ deux mille francs à nettoyer. Découvert onze ans plus tard, peut-il encore être poursuivi ?",
+      "r": "Non. Il ne visait pas un dommage de moindre importance. Le dommage à la propriété simple est puni de trois ans au plus : le délai est de dix ans.",
+      "source": "ligne 24 ; art. 144, 172ter et 97 CP",
       "notion": "Prescription de l'action pénale"
     },
     {
@@ -114,8 +114,8 @@
   ],
   "variantes": {
     "base": {
-      "faits": "Noah a couvert le mur d'une boulangerie d'un grand tag. On ne découvre son auteur que onze ans plus tard.",
-      "qualification": "Dommage à la propriété, prescrit par dix ans : Noah ne peut plus être poursuivi.",
+      "faits": "Noah a couvert le mur d'une boulangerie d'un grand tag, en sachant que le nettoyage coûterait environ deux mille francs. On ne découvre son auteur que onze ans plus tard.",
+      "qualification": "Dommage à la propriété simple, prescrit par dix ans : Noah ne peut plus être poursuivi.",
       "source": "ligne 24"
     },
     "changements": [
@@ -126,15 +126,15 @@
         "source": "ligne 25 ; art. 97 CP"
       },
       {
-        "fait": "L'acte de Noah n'est qu'une contravention.",
-        "qualification": "La prescription est de trois ans.",
-        "pourquoi": "Pour les contraventions, le délai est de trois ans.",
-        "source": "ligne 22 ; art. 109 CP"
+        "fait": "Noah ne visait qu'un dommage de moindre importance.",
+        "qualification": "C'est une contravention : la prescription est de trois ans.",
+        "pourquoi": "L'article 172 ter en fait une contravention, punie d'une amende. Pour les contraventions, le délai est de trois ans.",
+        "source": "ligne 22 ; art. 172ter et 109 CP ; vidéo 3"
       },
       {
-        "fait": "L'acte est un vol, puni de cinq ans au plus, découvert douze ans plus tard.",
-        "qualification": "La poursuite reste possible, sauf si l'objet est d'une faible valeur.",
-        "pourquoi": "Au-delà de trois ans de peine maximale, le délai est de quinze ans. C'est la question finale sur Lina.",
+        "fait": "L'acte est un vol simple, puni de cinq ans au plus. L'auteur sait que l'objet vaut mille francs. Les faits sont découverts douze ans plus tard.",
+        "qualification": "La poursuite reste possible : le délai est de quinze ans.",
+        "pourquoi": "Au-delà de trois ans de peine maximale, le délai est de quinze ans. L'auteur ne visait pas une faible valeur : l'article 172 ter ne s'applique pas. C'est la question finale sur Lina.",
         "source": "ligne 21, réponse à la question finale ; art. 97, 139 et 172ter CP"
       },
       {
@@ -146,7 +146,7 @@
     ]
   },
   "fondu": {
-    "faits": "Lina vole un vélo de valeur. Les faits ne sont découverts que douze ans plus tard. Peut-on encore la poursuivre ?",
+    "faits": "Lina vole un vélo, en sachant qu'il vaut mille francs. C'est un vol simple. Les faits ne sont découverts que douze ans plus tard. Peut-on encore la poursuivre ?",
     "etapes": [
       {
         "nom": "Règle",
@@ -175,35 +175,35 @@
         "q": "Douze ans après les faits, Lina peut-elle être poursuivie ?",
         "choix": [
           "Non, l'acte est prescrit",
-          "Oui, sauf si le vélo est d'une faible valeur",
+          "Oui : elle ne visait pas une faible valeur, et douze ans, c'est moins que quinze",
           "Oui, car le vol ne se prescrit jamais"
         ],
         "bon": 1,
-        "note": "Douze ans, c'est moins que quinze. Une faible valeur ferait de l'acte une contravention, prescrite par trois ans."
+        "note": "Douze ans, c'est moins que quinze. Lina savait que le vélo valait mille francs : l'article 172 ter, qui en ferait une contravention prescrite par trois ans, ne s'applique pas."
       }
     ]
   },
   "erreurs": [
     {
       "copie": [
-        "Le tag de Noah est un dommage à la propriété, puni de trois ans au plus.",
+        "Noah visait un dommage d'environ deux mille francs : c'est un dommage à la propriété simple, puni de trois ans au plus.",
         "Le délai de prescription est donc de dix ans.",
         "Découvert onze ans plus tard, l'acte est prescrit.",
         "Noah est donc innocent : son tag n'était pas illicite."
       ],
       "faux": 3,
-      "explication": "La prescription ne dit rien de la culpabilité. Le tag reste illicite ; l'État a seulement perdu le droit de poursuivre.",
+      "explication": "La prescription ne dit rien de la culpabilité, et elle ne rend pas l'acte licite. L'État a seulement perdu le droit de poursuivre.",
       "source": "lignes 30 et 31 ; art. 97 CP"
     },
     {
       "copie": [
         "Théo était irresponsable : il n'est pas punissable.",
-        "Le juge peut envisager un traitement institutionnel, après une expertise psychiatrique.",
-        "Cette mesure est une peine déguisée : elle dure jusqu'au bout, même si le danger a disparu.",
+        "Le juge peut envisager un traitement institutionnel, si une expertise psychiatrique en confirme les conditions.",
+        "Cette mesure est une peine déguisée : elle dure jusqu'au bout, même si ses conditions ne sont plus réunies.",
         "Elle doit rester proportionnée au risque de récidive."
       ],
       "faux": 2,
-      "explication": "Une mesure n'est pas une peine déguisée. Elle peut et doit être levée dès que le danger a disparu.",
+      "explication": "Une mesure n'est pas une peine déguisée. Elle doit être levée dès que ses conditions légales ne sont plus réunies.",
       "source": "lignes 9 et 32 ; art. 56 CP"
     }
   ]

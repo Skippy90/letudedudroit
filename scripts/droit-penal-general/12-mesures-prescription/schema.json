@@ -21,7 +21,7 @@
         },
         {
           "label": "Conditions de la mesure précise",
-          "detail": "Par exemple traitement institutionnel, ambulatoire ou internement.",
+          "detail": "Traitement institutionnel, ambulatoire ou internement : chacun a ses propres conditions.",
           "source": "lignes 7, 11 à 16 ; art. 56, 59, 63 et 64 CP"
         },
         {
@@ -65,7 +65,7 @@
         },
         {
           "label": "10 ans",
-          "detail": "Peine maximale de trois ans, comme le tag de Noah.",
+          "detail": "Peine maximale de trois ans, comme le dommage à la propriété simple de Noah.",
           "couleur": "ambre",
           "source": "lignes 21, 24 ; art. 97 et 144 CP"
         },
@@ -92,7 +92,7 @@
   ],
   "piege": {
     "faux": "C'est prescrit, donc il est innocent.",
-    "vrai": "La prescription ne dit rien de la culpabilité : l'État perd seulement le droit de poursuivre.",
+    "vrai": "La prescription ne dit rien de la culpabilité et ne rend pas l'acte licite : l'État perd seulement le droit de poursuivre.",
     "source": "lignes 30 à 31"
   },
   "a_retenir": "Une mesure répond à un danger ; la prescription limite le temps pour poursuivre."

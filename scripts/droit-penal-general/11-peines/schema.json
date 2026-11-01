@@ -11,7 +11,7 @@
       "points": [
         {
           "label": "Choisir le genre",
-          "detail": "Liberté, pécuniaire ou amende ; prison seulement pour deux raisons.",
+          "detail": "Liberté, pécuniaire ou amende ; à la place de la pécuniaire, prison pour deux raisons seulement.",
           "couleur": "ambre",
           "source": "lignes 4 à 5, 15 à 17 ; art. 41 CP ; ATF 147 IV 241"
         },
@@ -23,7 +23,7 @@
         },
         {
           "label": "Sursis ?",
-          "detail": "En règle générale, si une peine ferme n'est pas nécessaire.",
+          "detail": "En règle générale, si une peine ferme n'est pas nécessaire ; antécédents et réparation comptent.",
           "couleur": "ambre",
           "source": "lignes 23 à 24 ; art. 42 CP"
         },
@@ -54,6 +54,11 @@
           "label": "Pronostic favorable",
           "detail": "Une peine ferme ne paraît pas nécessaire pour éviter la récidive.",
           "source": "lignes 24, 34 ; art. 42 CP"
+        },
+        {
+          "label": "Antécédents et réparation",
+          "detail": "Plus de six mois de privation de liberté dans les cinq ans : circonstances particulièrement favorables. Sursis refusable sans effort de réparer.",
+          "source": "lignes 24, 34 ; art. 42 al. 2 et 3 CP"
         }
       ],
       "alors": {

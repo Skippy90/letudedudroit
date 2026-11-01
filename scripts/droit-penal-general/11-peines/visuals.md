@@ -8,7 +8,7 @@ Personnages : Inès rose (comme dans la vidéo 3), le juge violet, une personne 
 
 Style « scène » (repris le 1er novembre 2026) : le vol se rappelle devant le magasin (décor rue, enseigne « Téléphones »), puis le cas se juge au tribunal (Inès à la barre, le juge sur l'estrade). Les trois peines sont des pictogrammes au trait : la prison pour la peine privative de liberté, les pièces pour la peine pécuniaire et l'amende. Un pense-bête « Choisir / Fixer / Sursis » en haut à droite suit les trois questions du juge (ambre : en cours ; vert : réglée). L'arrêt du Tribunal fédéral s'affiche à côté de l'article quand on en parle (ligne 15).
 
-Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : les calculs de jours-amende (ligne 10) et les critères (lignes 15, 22) sont des étiquettes près des personnages, sans signe de multiplication ; le choix de la peine (ligne 18) est montré par les jetons qu'Inès peut payer plutôt que par deux colonnes ; la question finale (ligne 35) se joue au tribunal, avec un rembobinage pour les trente mois, au lieu d'une frise.
+Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : les calculs de jours-amende (ligne 10) et les critères (lignes 15, 22) sont des étiquettes près des personnages, sans signe de multiplication ; le choix de la peine (ligne 18) est montré par les jetons qu'Inès peut payer plutôt que par deux colonnes ; la question finale (ligne 35) se joue au tribunal (le profil de Hugo en étiquette), avec un rembobinage pour les trente mois, au lieu d'une frise.
 
 | Moment | Actions |
 | --- | --- |
@@ -41,9 +41,11 @@ Style « scène » (repris le 1er novembre 2026) : le vol se rappelle devant le 
 | 8.1 | scene-vide ; article "Art. 34 CP" ; picto pieces 0 0.6 ; titre "Les jours-amende" |
 | 8.2 | etiquette nombre "Nombre : la faute" -3.8 0.6 |
 | 8.2+2.5 | etiquette fourchette "3 à 180" -3.8 -0.6 |
-| 9.1 | effacer-titres ; etiquette montant "30 à 3000 francs" 3.8 -0.6 |
-| 9.2 | etiquette situation "Montant : la situation" 3.8 0.6 |
-| 9.2+2.5 | picto portefeuille 3.8 -1.7 |
+| 9.1 | effacer-titres ; etiquette montant "Montant d'un jour" 3.8 -0.6 |
+| 9.2 | etiquette montant "30 à 3000 francs" 3.8 -0.6 |
+| 9.3 | etiquette montant "Exception : 10 francs" 3.8 -0.6 |
+| 9.4 | etiquette situation "Montant : la situation" 3.8 0.6 |
+| 9.4+2.5 | picto portefeuille 3.8 -1.7 |
 | 10.1 | scene-vide ; article-retirer ; titre "30 jours-amende" ; personnage ines "Inès" rose gauche |
 | 10.2 | etiquette j1 "À 50 francs" -2.3 1.2 ; picto pieces -2.3 -0.2 |
 | 10.2+2.2 | etiquette j1 "1500 francs" -2.3 1.2 |
@@ -96,6 +98,10 @@ Style « scène » (repris le 1er novembre 2026) : le vol se rappelle devant le 
 | 23.3 | etiquette-retirer regle ; picto pieces 3.6 0.4 ; sous-titre "Pécuniaire, ou 2 ans au plus" |
 | 24.1 | effacer-titres ; titre "Pronostic favorable" |
 | 24.1+2.5 | picto coche -2.6 1.2 |
+| 24.2 | sous-titre "Les antécédents" |
+| 24.3 | sous-titre "Plus de 6 mois, dans les 5 ans" |
+| 24.4 | sous-titre "Circonstances particulièrement favorables" |
+| 24.5 | sous-titre "Réparer le dommage" |
 | 25.1 | scene-vide ; article "Art. 44 CP" ; titre "Délai d'épreuve" ; frise ; point 0.1 "Jugement" |
 | 25.1+1.5 | zone 0.1 0.6 vert ; sous-titre "2 à 5 ans" |
 | 25.2 | point 0.6 "Fin" ; picto prison 4.6 0.6 ; etiquette jamais "Jamais exécutée" 4.6 -0.6 |
@@ -127,10 +133,11 @@ Style « scène » (repris le 1er novembre 2026) : le vol se rappelle devant le 
 | 34.1+2 | repere-marquer 1 vert ; repere-marquer 2 ambre |
 | 34.2 | repere-marquer 2 vert ; repere-marquer 3 ambre ; effacer-titres ; titre "Sursis : la règle" ; sous-titre "Jusqu'à 2 ans" |
 | 34.3 | sous-titre "Pronostic favorable" ; picto coche -2.6 0.6 |
-| 34.4 | sous-titre "Antécédents : exigences plus fortes" |
+| 34.4 | sous-titre "Antécédents, réparation du dommage" |
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor tribunal ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -1 ; picto prison -4.4 0.6 ; etiquette duree "2 ans" -1.6 0.6 |
-| 35.3 | titre "Sursis complet ?" ; repere-marquer 3 ambre |
-| 35.4 | scene-vide ; rembobiner ; decor tribunal ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -1 ; picto prison -4.4 0.6 ; etiquette duree "30 mois" -1.6 0.6 ; titre "Et 30 mois ?" |
-| 35.5 | effacer-titres ; titre "Réponse en commentaire" ; accent hugo |
+| 35.3 | etiquette profil "Jamais condamné, dommage réparé" 2.6 0.6 |
+| 35.4 | titre "Sursis complet ?" ; repere-marquer 3 ambre |
+| 35.5 | scene-vide ; rembobiner ; decor tribunal ; personnage hugo "Hugo" bleu_clair gauche ; placer hugo -1 ; picto prison -4.4 0.6 ; etiquette duree "30 mois" -1.6 0.6 ; etiquette profil "Jamais condamné, dommage réparé" 2.6 0.6 ; titre "Et 30 mois ?" |
+| 35.6 | effacer-titres ; titre "Réponse en commentaire" ; accent hugo |
 | 36.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
