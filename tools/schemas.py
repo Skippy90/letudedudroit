@@ -71,7 +71,7 @@ def panneau(p):
                 return (f"<div class='branche'><b>{nom}</b><div class='res' style='background:{coul(r.get('couleur'))}'>{e(b['resultat'])}"
                         f"<small>{e(r.get('detail', ''))}</small></div><span class='src'>{e(pub(r.get('source', '')))}</span></div>")
             return f"<div class='branche'><b>{nom}</b><span class='suite'>↓ question {b.get('suite', 0) + 1}</span></div>"
-        for i, q in enumerate(p.get("questions", [])):
+        for i, q in enumerate(p.get("questions", []), start=p.get("_decalage", 0)):
             h.append(f"<div class='q'>{i + 1}. {e(q['q'])} <span class='src'>{e(pub(q.get('source', '')))}</span></div>")
             h.append(f"<div class='branches'>{branche('Oui', q.get('oui', {}))}{branche('Non', q.get('non', {}))}</div>")
     elif t in ("echelle", "etages"):
@@ -137,8 +137,23 @@ def diapos(s):
     out = [base + f"<div class='page sombre' style='position:relative;background:#DA291C;color:#fff;align-content:center'>"
                   f"<div class='corps' style='gap:28px'>{SYMBOLE.replace('<svg ', '<svg width=\"110\" height=\"110\" ', 1)}"
                   f"<div style='font-size:76px;font-weight:900;line-height:1.05;letter-spacing:-1px'>{e(s.get('accroche', s['titre']))}</div>"
-                  f"<div style='font-size:30px;font-weight:700;opacity:.9'>Le schéma en {len(s.get('panneaux', [])) + 2} images →</div></div></div>"]
+                  f"<div style='font-size:30px;font-weight:700;opacity:.9'>Le schéma, image par image →</div></div></div>"]
+    morceaux = []
     for p in s.get("panneaux", []):
+        # Lisible sur un téléphone : au plus 2 questions d'arbre, ou 4 éléments, par diapo.
+        cle, n_max = {"arbre": ("questions", 2), "echelle": ("items", 4), "etages": ("items", 4), "frise": ("points", 4),
+                      "conditions": ("conditions", 4)}.get(p.get("type"), (None, 0))
+        liste = p.get(cle, []) if cle else []
+        if cle and len(liste) > n_max and p["type"] != "conditions":
+            for k in range(0, len(liste), n_max):
+                q = dict(p)
+                q[cle] = liste[k:k + n_max]
+                q["titre"] = p.get("titre", "") + (" (suite)" if k else "")
+                q["_decalage"] = k
+                morceaux.append(q)
+        else:
+            morceaux.append(p)
+    for p in morceaux:
         out.append(base + f"<div class='page sombre' style='position:relative'><div class='corps'>{avert(s)}{panneau(p)}</div>"
                           f"<div class='pied2'><span>L'étude du droit</span><span>{etiquette(s)}</span></div></div>")
     out.append(base + f"<div class='page sombre' style='position:relative'><div class='corps'><h2>Attention</h2>{piege(s)}"
@@ -162,6 +177,9 @@ def rendre(pages, cibles, pdf=None):
             fichiers.append(f.as_uri())
         js = ("const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();const a=JSON.parse(process.argv[1]);"
               "for(const [u,c,w,h,pdf] of a){const p=await b.newPage({viewport:{width:w,height:h}});await p.goto(u);await p.waitForTimeout(150);"
+              # Le contenu doit tenir sur une page A4 ou une diapo : on réduit le corps du texte jusqu'à ce qu'il tienne.
+              "await p.evaluate((H)=>{const c=document.querySelector('.corps');if(!c)return;let fs=parseFloat(getComputedStyle(c).fontSize);"
+              "const trop=()=>c.getBoundingClientRect().bottom>H-(H===1080?90:20);while(trop()&&fs>9){fs-=0.5;c.style.fontSize=fs+'px';}},h);"
               "if(pdf){await p.pdf({path:pdf,format:'A4',printBackground:true});}"
               "await p.screenshot({path:c,fullPage:true});await p.close();}await b.close()})()")
         travaux = [[u, str(c), w, hh, str(pdf) if (pdf and i == 0) else ""] for i, (u, (c, w, hh)) in enumerate(zip(fichiers, cibles))]
