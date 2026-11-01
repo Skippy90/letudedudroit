@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Crime, délit ou contravention ? | Droit pénal suisse
 
-## Description (3278 caractères sur 5 000)
+## Description (3318 caractères sur 5 000)
 
 ```text
 Crime, délit ou contravention ? — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 10 CP : Le classement dépend de la peine dont l'infraction est passible : crime au-delà de trois ans de peine privative de liberté, délit jusqu'à trois ans ou peine pécuniaire
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_10
 • Art. 103 CP : Une contravention est une infraction passible d'une amende
