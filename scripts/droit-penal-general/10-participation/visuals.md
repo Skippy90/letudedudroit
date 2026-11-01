@@ -16,11 +16,12 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 |
 | 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 |
 | 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 |
-| 2.2 | etiquette-retirer idee ; parole lina "Je te le rachète" ; jetons lina max |
+| 2.2 | etiquette-retirer idee ; parole lina "Je te le rachète" ; picto pieces -6.4 1.3 |
+| 2.2+2 | picto-deplacer pieces -1.6 1.0 0.6 |
 | 3.1 | effacer-parole lina ; etiquette-retirer ordi ; etiquette ensemble "Organisé à deux" 1.6 1.7 |
 | 3.2 | personnage vendeur "Vendeur" ambre_pale droite ; placer vendeur 3 ; etiquette-retirer ensemble ; etiquette q "Des questions" 4.0 1.7 |
 | 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 |
-| 3.4 | etiquette-retirer sac ; etiquette ensemble "Partager la revente" 1.6 1.7 ; picto pieces -1.6 1.0 |
+| 3.4 | etiquette-retirer sac ; etiquette ensemble "Partager la revente" 1.6 1.7 ; accent max |
 | 3.5 | etiquette-retirer ensemble ; etiquette rien "Il ne voit rien" 4.8 1.0 |
 | 4.1 | etiquette-retirer rien ; picto-retirer pieces ; etiquette noe "Le sac de Noé" -4.8 1.7 ; accent noe |
 | 4.1+2.5 | etiquette noe "Il savait pourquoi" -4.8 1.7 |
@@ -115,9 +116,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 34.1 | retirer lina ; personnage noe "Noé" bleu_clair centre ; etiquette r "Peine atténuée" 0 -2.0 ; repere-marquer 3 vert |
 | 34.2 | etiquette-retirer r ; effacer-titres ; titre "Quel rôle, et quand ?" ; retirer noe ; personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; personnage lina "Lina" violet centre ; personnage noe "Noé" bleu_clair centre-droite |
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
-| 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.67 |
+| 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
 | 35.3 | bulle paul "Pour un cambriolage" |
-| 35.4 | effacer-bulle paul ; retirer ami ; picto-deplacer voiture 5.6 -1.67 ; etiquette cambr "Cambriolage commis" 0.6 1.7 |
+| 35.4 | effacer-bulle paul ; retirer ami ; picto-deplacer voiture 5.6 -1.5 ; etiquette cambr "Cambriolage commis" 0.6 1.7 |
 | 36.1 | etiquette-retirer cambr ; titre "Quel rôle ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre ; repere-marquer 3 ambre |
 | 36.2 | effacer-titres ; titre "Quelle peine ?" |
 | 36.3 | sous-titre "Votre réponse en commentaire" ; accent paul |
