@@ -106,7 +106,7 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 32.1 | scene-vide ; titre "Une frontière délicate" ; picto voiture 0 0.2 |
 | 32.2@voiture | sous-titre "Course mortelle : dol éventuel" ; repere-marquer 1 ambre ; arret "ATF 130 IV 58" |
 | 32.3@légère | effacer-titres ; titre "Pas à la légère" ambre |
-| 33.1 | scene-vide ; arret-retirer ; repere-marquer 1 neutre ; titre "Le piège classique" ; livre |
+| 33.1 | scene-vide ; arret-retirer ; repere-marquer 1 neutre ; titre "Le piège classique" ; livre "Code pénal" 0 -0.5 |
 | 33.2@négligence | sous-titre "Négligence toujours punie" |
 | 33.3 | barrer |
 | 34.1 | scene-vide ; repere-marquer 2 ambre ; livre ; article "Art. 12 CP" |
@@ -133,7 +133,7 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 41.3@possible | liste-ajouter "Accepter : dol éventuel" ; bulle leo "Tant pis" |
 | 42.1@risque | liste-ajouter "Espérer : négligence" ; repere-marquer 2 ambre ; bulle leo "Rien n'arrivera" |
 | 42.2@voir | liste-ajouter "Ignorer : négligence" ; bulle leo "?" |
-| 43.1 | scene-vide ; repere-marquer 1 neutre ; titre "Si la loi le dit" ambre ; livre |
+| 43.1 | scene-vide ; repere-marquer 1 neutre ; titre "Si la loi le dit" ambre ; livre "Code pénal" 0 -0.5 |
 | 43.2@intentionnel | sous-titre "Sinon, seul l'intentionnel" ; repere-marquer 2 neutre ; repere-marquer 1 ambre |
 | 44.1 | scene-vide ; repere-marquer 1 neutre ; titre "Une question pour finir" |
 | 44.2 | effacer-titres ; decor rue ; personnage sofia "Sofia" violet gauche ; placer sofia -2 ; etiquette vite "Bien trop vite" -3.2 1.7 |
@@ -141,5 +141,5 @@ Style « scène » : chaque version de l'histoire se rejoue dans le parc (arbre,
 | 44.4@freiner | bulle sofia "Je freinerai" |
 | 44.5 | etiquette-retirer vite ; titre "Intention ou négligence ?" ambre |
 | 44.6@commentaire | accent sofia |
-| 45.1 | scene-vide ; repere-retirer ; livre ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
+| 45.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 45.2 | accent titre |

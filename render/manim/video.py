@@ -662,6 +662,12 @@ class Schemas(Scene):
         meuble = (self.decor.meuble_devant(p.silhouette.get_x() + decalage[0])
                   if hasattr(self.decor, "meuble_devant") else None)
         if meuble is None:
+            if getattr(p, "derriere_meuble", False):
+                # Il sort de derrière un meuble : son nom revient sous lui, au lieu de garder son décalage sur le meuble.
+                p.derriere_meuble = False
+                cible = p.silhouette.get_bottom() + decalage + DOWN * (0.2 + p.etiquette.height / 2)
+                return [p.silhouette.animate(run_time=1.2).shift(decalage),
+                        p.etiquette.animate(run_time=1.2).move_to(cible)]
             return [p.animate(run_time=1.2).shift(decalage)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
