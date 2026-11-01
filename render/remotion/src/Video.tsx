@@ -46,6 +46,29 @@ const Symbole: React.FC<{ taille: number; retard?: number }> = ({ taille, retard
   );
 };
 
+// Les trois barres du logo traversent l'écran, décalées, puis le logo se construit à leur place.
+// Les instants (0 ; 0,08 ; 0,16 s, sur 0,55 s) sont repris par tools/assembler.py pour les bruitages.
+const Balayage: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps, width } = useVideoConfig();
+  return (
+    <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", pointerEvents: "none" }}>
+      {[0, 1, 2].map((n) => {
+        const debut = 0.08 * n * fps;
+        const x = interpolate(frame, [debut, debut + 0.55 * fps], [-1.1, 1.1],
+          { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return (
+          <div key={n} style={{
+            position: "absolute", top: `calc(50% + ${(n - 1) * 120 - 45}px)`, left: 0, width: width * 0.9,
+            height: 90, borderRadius: 18, backgroundColor: BLANC, opacity: [1, 0.85, 0.7][n],
+            transform: `translateX(${x * width}px)`,
+          }} />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
 // Écran centré, avec un fondu vers le noir en sortie (ouverture) ou en entrée (fin),
 // pour que les raccords avec les schémas restent doux.
 const Ecran: React.FC<{ fondu: "sortie" | "entree"; children: React.ReactNode }> = ({ fondu, children }) => {
@@ -74,14 +97,15 @@ const Ecran: React.FC<{ fondu: "sortie" | "entree"; children: React.ReactNode }>
 
 export const Ouverture: React.FC<VideoProps> = ({ titre, matiere, numero }) => (
   <Ecran fondu="sortie">
-    <Symbole taille={150} />
-    <Apparition retard={0.4}>
+    <Balayage />
+    <Symbole taille={150} retard={0.55} />
+    <Apparition retard={0.95}>
       <div style={{ fontSize: 48, fontWeight: 800 }}>L’étude du droit</div>
     </Apparition>
-    <Apparition retard={0.8}>
+    <Apparition retard={1.3}>
       <div style={{ fontSize: 88, fontWeight: 800, maxWidth: 1600, letterSpacing: -1 }}>{titre.replace(/'/g, "’")}</div>
     </Apparition>
-    <Apparition retard={1.5}>
+    <Apparition retard={1.8}>
       <div style={{ fontSize: 40, opacity: 0.85 }}>
         {matiere} · vidéo {numero}
       </div>
