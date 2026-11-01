@@ -24,9 +24,10 @@ DUREE_OUVERTURE, DUREE_FIN = 4, 6  # secondes, comme dans render/remotion/src/Vi
 # Texture de l'image (adoptée le 1er novembre 2026), sur les schémas seulement (l'ouverture et la fin gardent le
 # rouge exact de la marque), avant les sous-titres pour qu'ils restent nets :
 # halo doux autour des éléments clairs (blanc, rouge de la marque), vignette légère, grain fin animé.
-# Les couleurs de la charte ne bougent pas (mélange en RVB). TEXTURE=0 rend sans.
+# Les couleurs de la charte ne bougent pas (mélange en RVB). Grain à 3 : au-delà, le fichier explose (6 → 3,5 Go
+# pour 7 min, le grain animé ne se compresse pas). TEXTURE=0 rend sans.
 TEXTURE = (",format=gbrp,split[t1][t2];[t2]curves=all='0/0 0.6/0.03 1/1',gblur=sigma=16[t3];"
-           "[t1][t3]blend=all_mode=screen:all_opacity=0.35,vignette=angle=PI/8,noise=alls=6:allf=t,format=yuv420p")
+           "[t1][t3]blend=all_mode=screen:all_opacity=0.35,vignette=angle=PI/8,noise=alls=3:allf=t,format=yuv420p")
 
 # Bruitages de l'ouverture, calés sur l'animation de render/remotion/src/Video.tsx : les trois barres
 # traversent l'écran (0 s), les étages du logo s'empilent (0,55 s, puis toutes les 0,15 s), le titre arrive (1,3 s).
