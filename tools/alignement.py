@@ -19,6 +19,9 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
   {"isolation": true}, RNNoise n'est pas utilisé ; la narration montée passe par
   l'isolation de voix d'ElevenLabs (environ 1 000 crédits par minute). Le résultat est
   gardé dans voice/<slug>/isole-<empreinte>.mp3 : relancer l'outil ne coûte rien.
+- Retouches : une phrase réenregistrée à part est ajoutée à la fin de l'enregistrement
+  (lecture complète, une seconde de silence, puis les retouches, au même niveau sonore).
+  Toute prise située après la dernière phrase de la lecture remplace la prise d'origine.
 - Montage : les phrases gardées sont mises bout à bout, avec un court fondu à chaque
   coupe ; les pauses naturelles sont conservées quand deux phrases se suivent sans
   reprise, sinon remplacées par un silence de longueur fixe.
@@ -275,6 +278,17 @@ def main(slug: str) -> None:
     if manquantes:
         sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
+    # Retouches : phrases réenregistrées à part et ajoutées après la lecture complète
+    # (enregistrement = lecture + retouches mises bout à bout). Une prise située après la
+    # dernière phrase de la lecture remplace la prise d'origine.
+    fin_lecture = choix[-1][1]
+    retouches = []
+    for k in range(len(phrases)):
+        tardives = [c for c in candidats[k] if c[0] > fin_lecture]
+        if tardives:
+            choix[k] = tardives[-1]
+            retouches.append(k)
+
     # Un mot mal reconnu au début ou à la fin d'une phrase (« séquelles », « alignés ») ne doit pas
     # être coupé : la prise est prolongée sur les mots qui la touchent, autant qu'il en manque.
     def touche(a: int, b: int, limite: float = 0.5) -> bool:
@@ -340,7 +354,9 @@ def main(slug: str) -> None:
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
         note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"
-        if reprises:
+        if k in retouches:
+            note += " (retouche enregistrée à part)"
+        elif reprises:
             note += f" ({reprises} prise(s) précédente(s) coupée(s))"
         if part < SEUIL_A_RELIRE:
             note += (f" — À RÉÉCOUTER, {part:.0%} des mots reconnus. Attendu : « {texte} » ; "
