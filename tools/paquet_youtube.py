@@ -17,6 +17,10 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 
 TAGS = ["droit suisse", "droit pénal", "code pénal suisse", "étudiant en droit", "Suisse romande", "L'étude du droit"]
+# Séries nouvelles : mise en ligne non répertoriée, contrôle sur YouTube, puis publique.
+NON_REPERTORIE = {"arrets"}
+CONTROLE = ("0. Mise en ligne **non répertoriée**. Regarder la vidéo sur YouTube : voix, sous-titres, incrustations, "
+            "chapitres et liens de la description. Rendre la vidéo publique seulement si tout est conforme.\n")
 PLAYLISTS = {"droit-penal-general": "Droit pénal général", "arrets": "Les arrêts du Tribunal fédéral", "procedure-penale": "Procédure pénale"}
 
 
@@ -68,7 +72,7 @@ def main(slug: str, tags_video: list[str]) -> None:
         "altered_or_synthetic_content": False,
         "license": "youtube (licence standard ; la CC BY-SA 4.0 est indiquée dans la description, YouTube ne proposant que CC BY)",
         "embeddable": True,
-        "privacy_status": "public",
+        "privacy_status": "unlisted, puis public après contrôle" if matiere in NON_REPERTORIE else "public",
         "playlist": f"{playlist} (créer si absente ; vidéos dans l'ordre des numéros)",
         "pinned_comment": commentaire,
         "chapters": "dans la description (premier à 0:00)",
@@ -98,11 +102,11 @@ Consignes pour l'agent qui publie. Tout est validé par la chaîne ; ne rien ré
 | Langue de la vidéo et de l'audio | Français |
 | Licence | Licence YouTube standard (la CC BY-SA 4.0 est mentionnée dans la description) |
 | Intégration autorisée | Oui |
-| Visibilité | Public |
+| Visibilité | {"**Non répertoriée** d'abord ; publique seulement après le contrôle ci-dessous" if matiere in NON_REPERTORIE else "Public"} |
 | Tags | {", ".join(reglages["tags"])} |
 
 ## Après la mise en ligne
-1. Publier puis **épingler** ce commentaire :
+{CONTROLE if matiere in NON_REPERTORIE else ""}1. Publier puis **épingler** ce commentaire :
    > {commentaire}
 2. Vérifier que les chapitres apparaissent dans la barre de lecture.
 3. Renvoyer le lien de la vidéo (pour le site et les vidéos suivantes).

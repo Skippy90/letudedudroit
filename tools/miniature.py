@@ -7,6 +7,8 @@ Usage : python tools/miniature.py <matiere>/<numero-slug> <seconde> [sortie.png]
 - En dessous, l'image des schémas à la seconde donnée (render/manim/media/<slug>/schemas.mp4) :
   choisir un moment où la scène du cas est lisible (personnages, décor).
 - Le symbole de la chaîne en bas à gauche.
+- Titre trop long pour trois lignes ? Un titre court dans scripts/<slug>/miniature.txt (une ligne) remplace la question.
+  La scène commence toujours sous le titre : rien ne se chevauche.
 Sortie par défaut : scripts/<slug>/miniature.png. Rendu par Chromium (Playwright).
 """
 
@@ -34,8 +36,11 @@ def decouper_titre(ligne: str) -> tuple[str, str]:
 def main(slug: str, seconde: float, sortie: str | None = None) -> None:
     dossier = RACINE / "scripts" / slug
     question, suite = decouper_titre((dossier / "script.md").read_text(encoding="utf-8").splitlines()[0])
+    court = dossier / "miniature.txt"
+    if court.exists():
+        question, suite = court.read_text(encoding="utf-8").strip(), ""
     # Espace insécable devant « ? » (le dernier mot garde son point d'interrogation) ; apostrophes typographiques.
-    mots = question.replace(" ?", "\u00a0?").replace("'", "\u2019").split(" ")
+    mots = question.replace(" ?", "\u00a0?").replace(" :", "\u00a0:").replace("'", "\u2019").split(" ")
     dernier = mots.pop()
     matiere = MATIERES.get(slug.split("/")[0], "Droit suisse")
     sous_titre = " · ".join(x for x in (suite.replace("'", "\u2019"), matiere) if x)
@@ -54,7 +59,7 @@ def main(slug: str, seconde: float, sortie: str | None = None) -> None:
         page = Path(tmp) / "miniature.html"
         page.write_text(f"""<!doctype html><meta charset="utf-8"><style>
 body{{margin:0;width:1280px;height:720px;background:{fond};overflow:hidden;font-family:Inter,sans-serif;position:relative}}
-.scene{{position:absolute;left:250px;top:250px;width:1030px;height:470px;background:url(data:image/png;base64,{scene}) center 62%/1030px auto no-repeat}}
+.scene{{position:absolute;left:250px;top:250px;width:1030px;bottom:0;background:url(data:image/png;base64,{scene}) center bottom/contain no-repeat}}
 .titre{{position:absolute;left:56px;top:34px;width:1100px;color:#F2EFE6;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-2px;text-wrap:balance}}
 .titre b{{color:#FFFFFF;background:#DA291C;font-weight:800;padding:0 .14em;border-radius:.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
 .sous{{position:absolute;left:60px;color:#F2EFE6;opacity:.75;font-weight:600;font-size:32px}}
@@ -62,7 +67,8 @@ body{{margin:0;width:1280px;height:720px;background:{fond};overflow:hidden;font-
 .symbole svg{{width:120px;height:120px}}
 </style><div class="scene"></div><div class="titre" id="t">{html.escape(' '.join(mots))} <b>{html.escape(dernier)}</b></div>
 <div class="sous" id="s">{html.escape(sous_titre)}</div><div class="symbole">{symbole}</div>
-<script>const t=document.getElementById('t');document.getElementById('s').style.top=(t.offsetTop+t.offsetHeight+14)+'px'</script>""",
+<script>const t=document.getElementById('t'),s=document.getElementById('s');s.style.top=(t.offsetTop+t.offsetHeight+14)+'px';
+document.querySelector('.scene').style.top=Math.max(250,s.offsetTop+s.offsetHeight+12)+'px'</script>""",
                         encoding="utf-8")
         cible = Path(sortie) if sortie else dossier / "miniature.png"
         script = ("const {chromium}=require('playwright');(async()=>{const b=await chromium.launch();"
