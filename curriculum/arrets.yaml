@@ -1,0 +1,12 @@
+# Curriculum — Les arrêts du Tribunal fédéral (série « L'arrêt en cinq minutes »)
+# Une entrée par arrêt. "requiert" renvoie aux vidéos de droit pénal général à voir avant.
+matiere: arrets
+recueil: "Arrêts publiés du Tribunal fédéral (ATF), lus sur search.bger.ch"
+videos:
+  - id: 01
+    slug: atf-130-iv-58
+    titre: "Une course de voitures, deux morts : meurtre ?"
+    notion: "Dol éventuel ou négligence consciente (ATF 130 IV 58)"
+    articles: ["12", "111", "117"]
+    requiert: ["droit-penal-general/04"]
+    statut: script-redige

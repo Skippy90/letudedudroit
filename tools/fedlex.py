@@ -26,6 +26,7 @@ RECUEILS = {
     "dpmin": ("2006/551", "Droit pénal des mineurs, RS 311.1"),
     "cc": ("24/233_245_233", "Code civil suisse, RS 210"),
     "co": ("27/317_321_377", "Code des obligations, RS 220"),
+    "ocr": ("1962/1364_1409_1420", "Ordonnance sur les règles de la circulation routière, RS 741.11"),
     "lda": ("1993/1798_1798_1798", "Loi sur le droit d'auteur, RS 231.1"),
 }
 
@@ -85,7 +86,8 @@ def derniere_version(recueil: str, date: str) -> str:
 
 
 def article(source: str, numero: str) -> str | None:
-    m = re.search(r'<article id="art_%s">(.*?)</article>' % re.escape(numero.replace(" ", "_")), source, re.S)
+    ident = re.sub(r"(\d)\s*([a-z]+)$", r"\1_\2", numero.strip()).replace(" ", "_")  # « 4a », « 172ter » → art_4_a, art_172_ter
+    m = re.search(r'<article id="art_%s">(.*?)</article>' % re.escape(ident), source, re.S)
     if not m:
         return None
     t = re.sub(r'<div class="footnotes">.*', "", m.group(1), flags=re.S)
