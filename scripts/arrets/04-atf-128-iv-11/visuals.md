@@ -65,7 +65,7 @@ Style « scène » : les faits se jouent dans une rue de Genève (décor rue, en
 | 27.1 | scene-vide ; titre "Et les données ?" ; personnage z "Z." turquoise gauche |
 | 27.2 | article "Art. 143 CP" ; mot-barre "Soustraction de données" 2.4 -0.4 |
 | 27.3 | etiquette acces "Accès autorisé" -1.6 1.4 |
-| 27.4 | sous-titre "Remettre la copie : non" |
+| 27.4 | effacer-titres ; etiquette-retirer acces ; titre "Remettre la copie : non" |
 | 28.1 | scene-vide ; article-retirer ; personnage x "X." bleu_clair gauche ; personnage z "Z." turquoise centre-droite ; picto document 0.6 -0.6 ; etiquette copie "Remettre la copie" -1.2 1.7 |
 | 28.1+2 | picto-deplacer document -3.2 -0.6 0.4 |
 | 29.1 | scene-vide ; repere-marquer 3 ambre ; titre "Si l'auteur n'agit pas ?" ; personnage z "Z." turquoise gauche |

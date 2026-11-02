@@ -36,7 +36,7 @@ Style « scène » : une rue d'Évian (décor rue), la traversée du lac en bate
 | 11.3 | effacer-titres ; titre "Juge suisse compétent ?" |
 | 12.2 | effacer-titres ; etiquette but "Utilisation en Suisse" -3.6 0.4 |
 | 12.3 | etiquette-retirer but ; titre "Rattaché à la Suisse" ; repere-marquer 1 vert |
-| 12.4 | article "Art. 8 CP" ; sous-titre "Par analogie : alinéa 2" |
+| 12.4 | effacer-titres ; article "Art. 8 CP" ; titre "Par analogie : alinéa 2" |
 | 13.1 | scene-vide ; article-retirer ; repere-marquer 2 ambre ; titre "Falsification ?" ; picto voiture -3.0 -0.8 |
 | 13.2 | sous-titre "Loi de l'époque" |
 | 13.3 | etiquette valable "Plus valable" 1.0 0.4 |
