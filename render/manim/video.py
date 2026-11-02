@@ -763,8 +763,11 @@ class Schemas(Scene):
 
     def a_jetons(self, de, vers):
         depart = self.personnages[de].silhouette.get_center()
-        arrivee = self.personnages[vers].silhouette.get_center()
+        # Les jetons s'arrêtent aux pieds de celui qui les reçoit, du côté de celui qui les donne : jamais sur le corps.
+        cible = self.personnages[vers].silhouette
+        cote = 1 if depart[0] > cible.get_x() else -1
         jetons = c.Jetons(depart)
+        arrivee = cible.get_bottom() + RIGHT * cote * (cible.width / 2 + jetons.width / 2 + 0.15) + UP * jetons.height / 2
         self.add(jetons)
         self.play(FadeIn(jetons), run_time=0.3)
         self.focus = jetons
