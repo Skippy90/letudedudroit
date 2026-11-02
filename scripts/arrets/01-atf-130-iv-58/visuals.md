@@ -20,8 +20,9 @@ Style « scène » : la course se joue dans une rue de village (décor rue, ense
 | 5.2 | etiquette vitesse "120–140 km/h" 4.2 1.7 |
 | 6.1 | etiquette limite "Limite : 50 km/h" 4.2 1.0 |
 | 7.1 | scene-vide ; picto voiture 0 0.3 |
-| 7.2 | picto danger 2.2 0.3 |
-| 7.3 | scene-vide |
+| 7.2 | picto-deplacer voiture 0.6 0.3 |
+| 7.3 | picto danger 2.8 0.3 |
+| 7.4 | scene-vide |
 | 8.1 | titre "Meurtre ?" ; arret "ATF 130 IV 58" |
 | 8.2 | personnage premier "Le 1er" turquoise gauche ; personnage second "Le 2e" bleu_clair droite |
 | 9.1 | effacer-titres ; titre "Un accident ?" |
@@ -30,7 +31,8 @@ Style « scène » : la course se joue dans une rue de village (décor rue, ense
 | 10.2 | colonne-accent 1 ; article "Art. 111 CP" ; picto prison -3.5 -1.2 |
 | 11.1 | colonne-accent 2 ; article "Art. 117 CP" ; picto pieces 3.5 -1.2 |
 | 12.1 | scene-vide ; article-retirer ; personnage premier "Le 1er" turquoise gauche |
-| 12.2 | bulle premier "Accepter la mort ?" |
+| 12.2 | bulle premier "Accepter le risque ?" |
+| 12.3 | personnage second "Le 2e" bleu_clair droite ; accent second |
 | 13.1 | scene-vide ; repere-liste "Négligence" "Dol éventuel" ; titre "Tribunal fédéral" ; arret "ATF 130 IV 58" ; personnage juge "Le juge" violet droite |
 | 13.2 | sous-titre "Les deux connaissent le risque" |
 | 14.1 | scene-vide ; titre "La volonté" |
@@ -56,10 +58,12 @@ Style « scène » : la course se joue dans une rue de village (décor rue, ense
 | 24.2 | accent premier |
 | 25.1 | etiquette-retirer but ; titre "Dol éventuel confirmé" |
 | 26.1 | personnage second "Le 2e" bleu_clair droite ; accent second |
-| 26.2 | sous-titre "Pas d'accident causé" |
-| 26.3 | effacer-titres ; titre "Mais la même course" |
-| 27.1 | effacer-titres ; titre "Coauteur" ; renvoi "vidéo 10" |
-| 27.2 | sous-titre "Un duel sur la route" |
+| 26.2 | sous-titre "Pas heurté les victimes" |
+| 26.3 | effacer-titres ; titre "Vitesse maintenue" |
+| 26.4 | effacer-titres ; titre "Dépassement empêché" |
+| 27.1 | effacer-titres ; titre "Levé le pied : trop tard" |
+| 27.2 | effacer-titres ; titre "Participation déterminante" ; sous-titre "Un duel sur la route" |
+| 27.3 | effacer-titres ; titre "Coauteur" ; renvoi "vidéo 10" |
 | 28.1 | scene-vide ; titre "Pas tout excès de vitesse" ; picto voiture 0 0.3 |
 | 29.1 | effacer-titres ; titre "Le Tribunal fédéral le dit" |
 | 29.2 | sous-titre "Le conducteur risque sa vie" |
