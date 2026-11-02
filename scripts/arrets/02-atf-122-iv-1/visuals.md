@@ -44,11 +44,12 @@ Style « scène » : les faits se jouent dans une cage d'escalier d'immeuble, la
 | 18.1 | etiquette dort "Vingt minutes" -4.5 2.6 |
 | 18.2 | mot-barre "Cru à une attaque" 2.6 -0.8 |
 | 19.1 | scene-vide ; article-retirer ; titre "Le Tribunal fédéral continue" ; personnage juge "Le juge" violet droite |
-| 19.2 | bouclier -3.0 0.2 ; sous-titre "Un autre fait justificatif" |
+| 19.2 | bouclier -3.0 0.2 ; sous-titre "L'examen continue" |
 | 19.3 | effacer-titres ; titre "L'état de nécessité" ambre |
+| 19.4 | sous-titre "Licite, ou excusé" |
 | 20.1 | scene-vide ; colonnes "Attaque" "Danger" ; picto danger 0 -1.4 |
-| 20.2 | colonne-accent 1 ; titre "Une agression" |
-| 20.3 | colonne-accent 2 ; effacer-titres ; titre "Un risque d'agression" |
+| 20.2 | colonne-accent 1 ; titre "Agression en cours ou imminente" |
+| 20.3 | colonne-accent 2 ; effacer-titres ; titre "Risque d'une nouvelle agression" |
 | 21.1 | effacer-titres ; titre "Un danger imminent" |
 | 21.2 | sous-titre "Ni passé ni futur : actuel et concret" |
 | 22.1 | scene-vide ; frise ; titre "Un danger peut durer" |
@@ -74,8 +75,9 @@ Style « scène » : les faits se jouent dans une cage d'escalier d'immeuble, la
 | 32.2 | retirer-pyramide ; effacer-titres ; titre "La suite n'est pas publiée" ; accent juge |
 | 33.1 | scene-vide ; titre "Aujourd'hui, dans la loi" ; livre "Code pénal" -3.6 |
 | 33.2 | article "Art. 17 CP" ; bouclier 3.4 0 ; sous-titre "Licite : intérêts prépondérants" |
-| 34.1 | article "Art. 18 CP" ; effacer-titres ; titre "Sinon : peine atténuée" |
-| 34.2 | sous-titre "Ou pas de culpabilité" ; accent livre |
+| 34.1 | article "Art. 18 CP" ; effacer-titres ; titre "Sinon : article 18" ; sous-titre "Danger imminent, sans autre issue" |
+| 34.2 | effacer-titres ; titre "Sacrifice exigible : peine atténuée" |
+| 34.3 | sous-titre "Sinon : pas de culpabilité" ; accent livre |
 | 35.1 | scene-vide ; article-retirer ; arret "ATF 122 IV 1" ; colonnes "Attaque" "Danger" ; picto danger 0 -1.4 ; titre "Attaque ou danger" |
 | 35.2 | renvoi "vidéo 6" ; colonne-accent 2 ; effacer-titres ; titre "Le danger imminent, défini" |
 | 36.1 | scene-vide ; titre "Une limite claire" ; personnage juge "Le juge" violet gauche |

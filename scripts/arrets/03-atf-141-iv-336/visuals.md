@@ -32,11 +32,11 @@ Style « scène » : une rue d'Évian (décor rue), la traversée du lac en bate
 | 10.1 | bulle x "Au pire, une amende" |
 | 10.2 | effacer-titres ; titre "Erreur sur l'illicéité ?" ambre |
 | 11.1 | scene-vide ; repere-liste "Lieu" "Falsification" "Intention" "Erreur" ; repere-marquer 1 ambre ; titre "D'abord, d'autres questions" ; personnage juge "Le juge" violet centre-droite |
-| 11.2 | effacer-titres ; titre "Tout fait en France" ; picto voiture -3.6 -1.2 |
+| 11.2 | effacer-titres ; titre "Modifiée en France" ; picto voiture -3.6 -1.2 |
 | 11.3 | effacer-titres ; titre "Juge suisse compétent ?" |
-| 12.2 | effacer-titres ; etiquette but "Pour les routes suisses" -3.6 0.4 |
+| 12.2 | effacer-titres ; etiquette but "Utilisation en Suisse" -3.6 0.4 |
 | 12.3 | etiquette-retirer but ; titre "Rattaché à la Suisse" ; repere-marquer 1 vert |
-| 12.4 | article "Art. 8 CP" |
+| 12.4 | article "Art. 8 CP" ; sous-titre "Par analogie : alinéa 2" |
 | 13.1 | scene-vide ; article-retirer ; repere-marquer 2 ambre ; titre "Falsification ?" ; picto voiture -3.0 -0.8 |
 | 13.2 | sous-titre "Loi de l'époque" |
 | 13.3 | etiquette valable "Plus valable" 1.0 0.4 |
@@ -82,7 +82,9 @@ Style « scène » : une rue d'Évian (décor rue), la traversée du lac en bate
 | 31.3 | liste-ajouter "Ignorer la peine : insuffisant" |
 | 32.1 | renvoi "vidéo 7" ; accent livre |
 | 33.1 | scene-vide ; article-retirer ; titre "Une question pour finir" ; personnage x "X." turquoise gauche |
-| 33.2 | effacer-titres ; titre "Une amende : pourquoi pas d'erreur ?" ambre ; bulle x "Au pire, une amende" |
-| 33.3 | accent x |
+| 33.2 | effacer-titres ; titre "Seulement une amende ?" ambre ; bulle x "Au pire, une amende" |
+| 33.3 | effacer-titres ; titre "Pourquoi pas d'erreur ?" ambre |
+| 33.4 | effacer-titres ; titre "Que savait-il de la pose ?" ambre |
+| 33.5 | accent x |
 | 34.1 | scene-vide ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 34.2 | accent titre |

@@ -75,12 +75,14 @@ Style « scène » : l'arrêt ne dit pas où l'agression a eu lieu ; les faits s
 | 32.1 | cocher 2 gris ; effacer-titres ; titre "Pas de lésions en plus" |
 | 32.2 | sous-titre "Reformatio in pejus" ; accent x |
 | 33.1 | scene-vide ; article "Art. 134 CP" ; titre "Agression confirmée" ; personnage juge "Le juge" violet droite |
-| 33.2 | sous-titre "Recours rejeté sur ce point" ; accent juge |
+| 33.2 | effacer-titres ; titre "Recours partiellement admis" |
+| 33.3 | sous-titre "Sursis pour toute la peine" ; accent juge |
+| 33.4 | effacer-titres ; titre "Renvoi : délai d'épreuve" |
 | 34.1 | scene-vide ; article-retirer ; titre "La course de voitures" ; picto voiture 0 0.3 ; renvoi "vidéo 1" |
 | 35.1 | scene-vide ; titre "Des coups portés ensemble" ; personnage x "X." turquoise centre-gauche ; personnage comparse "Le comparse" bleu_clair gauche |
 | 35.2 | etiquette demeler "Inutile de démêler" 2.6 0.4 |
 | 36.1 | scene-vide ; colonnes "Agression" "Lésions" ; colonne-accent 2 ; picto prison:2 3.5 -1.2 |
-| 36.2 | colonne-accent 1 ; picto prison -3.5 -1.2 ; titre "Danger plus grave : les deux" |
+| 36.2 | colonne-accent 1 ; picto prison -3.5 -1.2 ; titre "Autre personne, ou danger plus grave" |
 | 37.1 | scene-vide ; arret-retirer ; titre "Le piège classique" ; personnage x "X." turquoise centre-gauche ; personnage comparse "Le comparse" bleu_clair gauche ; etiquette piege "Personne ne répond ?" 2.6 0.4 |
 | 38.1 | etiquette-retirer piege ; mot-barre "Personne ne répond" |
 | 38.2 | effacer-titres ; titre "Action commune" |

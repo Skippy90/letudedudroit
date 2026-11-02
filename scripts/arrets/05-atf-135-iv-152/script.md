@@ -54,7 +54,7 @@ Personnages : X., le recourant (silhouette turquoise, « X. » à l'écran), son
 | 30 | Des coups en bande, à la tête d'une personne à terre et sans défense. Cela peut causer des lésions graves, voire la mort. | Y. ; pictogramme danger ; titre « Lésions graves, voire la mort » |
 | 31 | Surtout avec une bouteille. En théorie, X. répond donc d'agression et de lésions corporelles. | Pictogramme bouteille ; deux cases cochées : « Agression », « Lésions corporelles » |
 | 32 | Mais le Tribunal fédéral n'ajoute pas les lésions. Un principe l'en empêche : le recours de X. ne peut pas se retourner contre lui. | La seconde case devient grise ; « Reformatio in pejus » |
-| 33 | La condamnation pour agression est donc confirmée. Sur ce point, le recours est rejeté. | Bloc « Art. 134 CP » ; titre « Agression confirmée » |
+| 33 | Sur la qualification d'agression, X. n'obtient donc pas gain de cause. Mais son recours est partiellement admis sur un autre point. Le Tribunal fédéral estime que le sursis peut lui être accordé pour toute sa peine. L'affaire est renvoyée pour fixer le délai d'épreuve et les règles de conduite. | Bloc « Art. 134 CP » ; titre « Agression confirmée » ; puis « Sursis complet » |
 
 ## Pourquoi cet arrêt compte
 
@@ -62,7 +62,7 @@ Personnages : X., le recourant (silhouette turquoise, « X. » à l'écran), son
 | --- | --- | --- |
 | 34 | Cet arrêt reprend la coactivité de la course de voitures, vidéo 1 de la série des arrêts. | Renvoi « vidéo 1 » ; pictogramme voiture |
 | 35 | Il l'applique à des coups portés ensemble. Inutile, alors, de démêler les coups. | Étiquette « Inutile de démêler » |
-| 36 | Et l'agression n'est pas toujours absorbée par les lésions. Quand le danger dépasse la blessure, les deux comptent. | Colonnes « Agression » et « Lésions » allumées ; titre « Danger plus grave : les deux » |
+| 36 | Et l'agression n'est pas toujours absorbée par les lésions. Elle s'ajoute si une autre personne a été mise en danger, ou si le danger dépassait la blessure. | Colonnes « Agression » et « Lésions » allumées ; titre « Danger plus grave : les deux » |
 
 ## Le piège classique
 
@@ -76,7 +76,7 @@ Personnages : X., le recourant (silhouette turquoise, « X. » à l'écran), son
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 39 | Retenons. Est coauteur celui qui participe de façon déterminante. La décision commune peut résulter des actes. | Liste : « Rôle déterminant », « Décision par actes » |
-| 40 | L'intention se déduit des indices. Et l'agression s'ajoute aux lésions quand le danger dépasse la blessure. | Liste : « Indices », « Concours » |
+| 40 | L'intention se déduit des indices. Et l'agression peut s'ajouter aux lésions : autre personne mise en danger, ou danger plus grave que la blessure. | Liste : « Indices », « Concours » |
 | 41 | Une question pour finir. Pourquoi les juges n'avaient-ils pas besoin de savoir qui avait donné quel coup ? Écrivez votre réponse en commentaire. | Titre « Pourquoi ignorer qui a frappé ? » |
 | 42 | La réponse et le lien vers l'arrêt sont dans la description. À bientôt sur L'étude du droit. | Logo de la chaîne |
 

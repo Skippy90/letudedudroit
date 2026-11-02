@@ -38,8 +38,8 @@ Personnages : l'épouse (silhouette turquoise, « L'épouse » à l'écran), le 
 | 16 | Elle suppose une attaque, ou la menace d'une attaque imminente. Aujourd'hui, c'est l'article 15 du Code pénal. | Bloc « Art. 15 CP » |
 | 17 | Or, quand elle a tiré, son mari dormait. Il ne l'attaquait pas. Il ne la menaçait pas d'une attaque imminente. | Le mari endormi ; étiquette « Pas d'attaque » |
 | 18 | Et elle a réfléchi vingt minutes avant de tirer. Elle ne peut donc pas soutenir avoir cru à une attaque. | Le mot « Cru à une attaque » se barre |
-| 19 | Mais le Tribunal fédéral ne s'arrête pas là. La légitime défense n'est pas le seul fait justificatif. Il y a aussi l'état de nécessité. | Titre « État de nécessité » |
-| 20 | La différence tient en deux mots. Une attaque, c'est une agression. Un danger, c'est un risque d'agression. | Deux colonnes « Attaque » et « Danger » |
+| 19 | Mais le Tribunal fédéral ne s'arrête pas là. Sans légitime défense, l'examen n'est pas fini. Il reste l'état de nécessité. Selon les cas, il rend l'acte licite, ou il l'excuse. | Titre « État de nécessité » |
+| 20 | La différence tient en deux mots. Ici, l'attaque serait une agression en cours ou imminente. Le danger, c'est le risque qu'une nouvelle agression arrive. | Deux colonnes « Attaque » et « Danger » |
 | 21 | Pour l'état de nécessité, le danger doit être imminent. C'est-à-dire ni passé ni futur, mais actuel et concret. | Sous-titre « Ni passé ni futur » |
 | 22 | Mais un danger peut durer. Le Tribunal fédéral s'inspire ici de la doctrine allemande, qui parle de danger permanent. | Titre « Un danger permanent » |
 | 23 | Elle cite l'exemple du tyran domestique. Le péril peut se concrétiser à tout moment. | Picto danger |
@@ -53,7 +53,7 @@ Personnages : l'épouse (silhouette turquoise, « L'épouse » à l'écran), le 
 | 31 | Le Tribunal fédéral annule l'arrêt cantonal. Il renvoie l'affaire aux juges cantonaux, pour une nouvelle décision. | Pyramide : le niveau du haut, puis retour au niveau cantonal |
 | 32 | Ils devront examiner un état de nécessité excusable, peut-être seulement cru à tort. L'arrêt publié ne dit pas la suite. | Titre « Renvoi » |
 | 33 | Aujourd'hui, cette distinction est écrite dans la loi. L'article 17 rend licite l'acte qui sauvegarde des intérêts prépondérants. | Bloc « Art. 17 CP » ; bouclier |
-| 34 | Sinon, l'article 18 peut atténuer la peine, ou exclure la culpabilité. Elle tombe si l'on ne pouvait pas raisonnablement exiger le sacrifice du bien menacé. | Bloc « Art. 18 CP » |
+| 34 | Sinon, l'article 18 s'applique, toujours face à un danger imminent et impossible à détourner autrement. Le juge atténue la peine si l'on pouvait raisonnablement exiger le sacrifice du bien menacé. Si on ne le pouvait pas, l'auteur n'est pas coupable. | Bloc « Art. 18 CP » |
 
 ## Pourquoi cet arrêt compte
 

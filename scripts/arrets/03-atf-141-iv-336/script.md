@@ -32,8 +32,8 @@ Point d'attention (relectrice) : la loi sur la vignette autoroutière (RS 741.71
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 11 | Le Tribunal fédéral règle d'abord d'autres questions. La première : tout a été fait en France. La justice suisse est-elle compétente ? | Bloc « ATF 141 IV 336, consid. 1 » ; titre « Fait en France ? » |
-| 12 | Oui. L'automobiliste voulait utiliser la vignette sur les routes suisses, comme si elle était intacte. Pour le Tribunal fédéral, cela suffit pour rattacher l'acte à la Suisse. Il s'appuie sur l'article 8 du Code pénal, qui fixe le lieu de l'infraction. | Bloc « Art. 8 CP » ; titre « Rattaché à la Suisse » |
+| 11 | Le Tribunal fédéral règle d'abord d'autres questions. La première : la vignette a été modifiée en France. La justice suisse est-elle compétente ? | Bloc « ATF 141 IV 336, consid. 1 » ; titre « Modifiée en France ? » |
+| 12 | Oui. L'automobiliste voulait utiliser la vignette en Suisse, comme si elle était intacte. Pour le Tribunal fédéral, cela suffit pour rattacher l'acte à la Suisse. Il raisonne par analogie avec l'article 8, alinéa 2, du Code pénal. | Bloc « Art. 8 CP » ; titre « Rattaché à la Suisse » |
 | 13 | Deuxième question : y a-t-il vraiment falsification ? À l'époque, la loi sur la vignette était claire. Une vignette détachée de son support sans être collée directement sur le véhicule n'était plus valable. | Titre « Falsification ? » ; étiquette « Plus valable » |
 | 14 | En la recouvrant de film, puis en la collant, il lui a donné faussement une apparence de validité. Et le bricolage n'était pas grossier. | Étiquette « Fausse apparence de validité » |
 | 15 | Troisième question : l'intention. L'automobiliste dit qu'il voulait seulement protéger son pare-brise. Il voulait pouvoir décoller la vignette sans grattoir ni produit agressif. | Bulle « Protéger mon pare-brise » |
@@ -69,7 +69,7 @@ Point d'attention (relectrice) : la loi sur la vignette autoroutière (RS 741.71
 | --- | --- | --- |
 | 31 | Retenons. L'erreur sur l'illicéité suppose de se croire en droit d'agir. Ignorer la peine ou l'article exact ne suffit pas. | Bloc « Art. 21 CP » ; liste « Se croire en droit » |
 | 32 | Les deux formes d'erreur sont expliquées dans la vidéo 7 de droit pénal général. | Renvoi « vidéo 7 » |
-| 33 | Une question pour finir. Pourquoi le fait de penser risquer seulement une amende empêche-t-il ici l'erreur sur l'illicéité ? Écrivez votre réponse en commentaire. | Titre « Une question pour finir » |
+| 33 | Une question pour finir. L'automobiliste pensait ne risquer qu'une amende. Pourquoi n'est-ce pas une erreur sur l'illicéité ? Et que savait-il de la pose de la vignette ? Écrivez votre réponse en commentaire. | Titre « Une question pour finir » |
 | 34 | La réponse et le lien vers l'arrêt sont dans la description. À bientôt sur L'étude du droit. | Logo de la chaîne |
 
-**Réponse attendue à la question finale**, pour la description : parce que l'erreur sur l'illicéité suppose que l'auteur se soit cru en droit d'agir. Il ne suffit pas qu'il ait pensé que son comportement n'était pas punissable, ni qu'il ait cru à l'absence d'une sanction. Ici, l'automobiliste savait que la vignette devait être collée directement sur le pare-brise. Il pensait seulement risquer une amende et devoir racheter une vignette. Au vu de ces faits, le Tribunal fédéral retient qu'il était conscient du caractère illicite de son comportement. Peu importe qu'il n'ait connu exactement ni la disposition violée, ni la sanction prévue (ATF 141 IV 336, consid. 2.4.3 ; article 21 du Code pénal).
+**Réponse attendue à la question finale**, pour la description : parce qu'il savait que la vignette devait être collée directement sur le pare-brise. Il avait donc conscience du caractère illicite de la manipulation. L'erreur sur l'illicéité suppose de s'être cru en droit d'agir : penser que le comportement n'est pas punissable, ou ne risquer qu'une amende, ne suffit pas ; ignorer la disposition précise ou sous-estimer la sanction non plus (ATF 141 IV 336, consid. 2.4.3 ; art. 21 CP).
