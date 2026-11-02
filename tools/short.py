@@ -107,6 +107,8 @@ def main(slug: str, ident: str | None = None) -> None:
     titre = (dossier / "script.md").read_text(encoding="utf-8").splitlines()[0]
     titre = titre.split("—", 1)[-1].strip()
     numero = slug.split("/")[1][:2].lstrip("0")
+    if slug.startswith("arrets/"):
+        numero = f"{numero} de la série des arrêts"
     sortie_dossier = RACINE / "out" / "shorts"
     sortie_dossier.mkdir(parents=True, exist_ok=True)
     for s in config["shorts"]:
