@@ -71,10 +71,21 @@ def normaliser(mot: str) -> str:
     return re.sub(r"[^\w']", "", mot).strip("'")
 
 
+def nombre_en_lettres(n: int) -> str:
+    """La transcription écrit « 1999 » : on le compare à « mille neuf cent nonante-neuf »."""
+    if n < 1000:
+        return en_lettres(n)
+    if n < 10000:
+        m, r = divmod(n, 1000)
+        tete = "mille" if m == 1 else en_lettres(m) + " mille"
+        return tete if r == 0 else f"{tete} {en_lettres(r)}"
+    return str(n)
+
+
 def mots_texte(texte: str) -> list[str]:
     # « l'article », « trente-et-un » : la reconnaissance vocale les coupe à sa façon,
     # on compare donc après avoir séparé apostrophes et traits d'union.
-    texte = re.sub(r"\d+", lambda d: en_lettres(int(d.group())) if int(d.group()) < 1000 else d.group(), texte)
+    texte = re.sub(r"\d+", lambda d: nombre_en_lettres(int(d.group())), texte)
     return [m for m in (normaliser(x) for x in re.split(r"[\s'’\-]+", texte)) if m]
 
 
@@ -118,10 +129,12 @@ def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, floa
             queue = n - (blocs[-1].a + blocs[-1].size)
             trouvees.append((i, i + blocs[-1].b + blocs[-1].size - 1, part, blocs[0].a, queue))
     # Une même lecture peut être trouvée à partir de deux mots voisins : on garde la meilleure.
+    # À égalité, le départ le plus tardif : « Le piège classique. Le piège classique, c'est… »
+    # (titre lu, puis phrase reprise) ne doit pas garder le titre.
     retenues = []
     for p in trouvees:
         if retenues and p[0] <= retenues[-1][1]:
-            if p[2] > retenues[-1][2]:
+            if p[2] >= retenues[-1][2]:
                 retenues[-1] = p
         else:
             retenues.append(p)

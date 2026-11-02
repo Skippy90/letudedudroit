@@ -14,9 +14,9 @@ Personnages : le premier conducteur (silhouette turquoise, « Le 1er » à l'éc
 | 2 | Deux voitures du même modèle se suivent. Les deux conducteurs ne se connaissent pas. Chacun a des passagers. | Deux voitures ; deux silhouettes |
 | 3 | Le premier se sent provoqué par le second, qui le suit de très près. Il accélère. L'autre le poursuit. | Les voitures accélèrent ; étiquette « Provocation » |
 | 4 | Sans rien convenir, ils se lancent dans une course. Le second dépasse le premier, puis d'autres voitures. | Étiquette « Une course improvisée » |
-| 5 | Juste avant un village, le premier tente à son tour de dépasser. Les deux voitures entrent dans le village à environ cent vingt à cent quarante kilomètres à l'heure. | Étiquette « 120–140 km/h » |
+| 5 | Juste avant un village, le premier tente à son tour de dépasser. Les deux voitures pénètrent dans le village à environ cent vingt à cent quarante kilomètres à l'heure. | Étiquette « 120–140 km/h » |
 | 6 | Dans le village, la vitesse est limitée à cinquante. | Étiquette « Limite : 50 km/h » |
-| 7 | Il essaie de se rabattre avant un virage à gauche sans visibilité. Il perd le contrôle. Sa voiture heurte un mur, puis fauche deux jeunes piétons sur le trottoir. Ils meurent. | Un éclair ambre ; écran qui s'assombrit |
+| 7 | Alors qu'il essaie de se rabattre avant un virage à gauche sans visibilité, le premier perd le contrôle. Sa voiture heurte un mur, puis fauche deux jeunes piétons sur le trottoir. Ils meurent. | Un éclair ambre ; écran qui s'assombrit |
 
 ## La question
 
@@ -26,7 +26,7 @@ Personnages : le premier conducteur (silhouette turquoise, « Le 1er » à l'éc
 | 9 | Leur argument : un accident, une suite de circonstances malheureuses. Donc au plus un homicide par négligence. | Deux colonnes « Meurtre » et « Négligence » |
 | 10 | La différence est immense. En droit suisse actuel, le meurtre est puni de cinq ans de privation de liberté au moins. | Bloc « Art. 111 CP » |
 | 11 | L'homicide par négligence, lui, est puni de trois ans au plus, ou d'une peine pécuniaire. | Bloc « Art. 117 CP » |
-| 12 | Première question : leur intention. Ont-ils accepté le risque de tuer quelqu'un ? Et pour le second, une autre question : répond-il d'un accident qu'il n'a pas directement provoqué ? | Une bulle de pensée au-dessus du premier conducteur ; le second conducteur apparaît |
+| 12 | La première question concerne donc leur intention. Ont-ils accepté le risque de tuer quelqu'un ? Et pour le second conducteur, une question s'ajoute : peut-il répondre d'un accident qu'il n'a pas directement provoqué ? | Une bulle de pensée au-dessus du premier conducteur ; le second conducteur apparaît |
 
 ## La réponse du Tribunal fédéral
 
@@ -42,11 +42,11 @@ Personnages : le premier conducteur (silhouette turquoise, « Le 1er » à l'éc
 | 20 | Puis le Tribunal fédéral regarde ce cas précis. Dépasser à cent vingt, cent quarante kilomètres à l'heure, à l'entrée d'un village. | Retour à la route ; les deux voitures |
 | 21 | La vitesse autorisée est dépassée de jusqu'à nonante kilomètres à l'heure. On ne peut plus compter sérieusement sur son habileté. | Étiquette « + 90 km/h » |
 | 22 | Il ne reste qu'un espoir : que tout se passe bien. Le résultat est laissé au hasard. | Bulle « Pourvu que ça passe » |
-| 23 | Et c'est une idée clé de l'arrêt. Un simple espoir d'éviter le pire n'écarte pas le dol éventuel. Une véritable confiance que rien n'arrivera, même imprudente, l'exclut. | Deux mots : « Espoir » barré en rouge, « Confiance » en gris |
+| 23 | Et c'est une idée clé de l'arrêt. Un simple espoir d'éviter le pire n'écarte pas le dol éventuel. Une véritable confiance dans l'absence de résultat, même imprudente, peut en revanche l'exclure. | Deux mots : « Espoir » barré en rouge, « Confiance » en gris |
 | 24 | Le Tribunal fédéral note aussi le but de la course : gagner, ne pas perdre la face. Ce but a été placé au-dessus de la vie des autres. | Étiquette « Ne pas perdre la face » |
 | 25 | Il confirme donc le meurtre par dol éventuel, pour le premier conducteur. | La case « Dol éventuel » se coche |
-| 26 | Et le second ? Il n'a pas directement heurté les victimes. Mais quand le premier a voulu le dépasser, il a gardé sa vitesse, très excessive, jusqu'au village. Il a ainsi empêché son rival de finir son dépassement avant le village. | Le second conducteur s'allume ; étiquette « Dépassement empêché » |
-| 27 | Il n'a levé un peu le pied qu'une fois dans le village. Pour le Tribunal fédéral, il a participé activement, et de façon déterminante, à ce duel sur la route. Il est coauteur du meurtre par dol éventuel. | Étiquette « Coauteur » ; renvoi « vidéo 10 » |
+| 26 | Et le second ? Il n'a pas directement heurté les victimes. Mais pendant que le premier tentait de le dépasser, il a maintenu une vitesse très excessive jusqu'à l'entrée du village. Il a ainsi empêché son rival de terminer son dépassement avant la localité. | Le second conducteur s'allume ; étiquette « Dépassement empêché » |
+| 27 | Il n'a légèrement levé le pied qu'après l'entrée dans le village. Pour le Tribunal fédéral, sa participation active et déterminante à ce duel routier justifie de le considérer comme coauteur du meurtre par dol éventuel. | Étiquette « Coauteur » ; renvoi « vidéo 10 » |
 
 ## Pourquoi cet arrêt compte
 

@@ -20,9 +20,8 @@ Style « scène » : la course se joue dans une rue de village (décor rue, ense
 | 5.2 | etiquette vitesse "120–140 km/h" 4.2 1.7 |
 | 6.1 | etiquette limite "Limite : 50 km/h" 4.2 1.0 |
 | 7.1 | scene-vide ; picto voiture 0 0.3 |
-| 7.2 | picto-deplacer voiture 0.6 0.3 |
-| 7.3 | picto danger 2.8 0.3 |
-| 7.4 | scene-vide |
+| 7.2 | picto danger 2.2 0.3 |
+| 7.3 | scene-vide |
 | 8.1 | titre "Meurtre ?" ; arret "ATF 130 IV 58" |
 | 8.2 | personnage premier "Le 1er" turquoise gauche ; personnage second "Le 2e" bleu_clair droite |
 | 9.1 | effacer-titres ; titre "Un accident ?" |
@@ -62,8 +61,8 @@ Style « scène » : la course se joue dans une rue de village (décor rue, ense
 | 26.3 | effacer-titres ; titre "Vitesse maintenue" |
 | 26.4 | effacer-titres ; titre "Dépassement empêché" |
 | 27.1 | effacer-titres ; titre "Levé le pied : trop tard" |
-| 27.2 | effacer-titres ; titre "Participation déterminante" ; sous-titre "Un duel sur la route" |
-| 27.3 | effacer-titres ; titre "Coauteur" ; renvoi "vidéo 10" |
+| 27.2 | effacer-titres ; titre "Coauteur" ; renvoi "vidéo 10" |
+| 27.2@duel | sous-titre "Participation déterminante" |
 | 28.1 | scene-vide ; titre "Pas tout excès de vitesse" ; picto voiture 0 0.3 |
 | 29.1 | effacer-titres ; titre "Le Tribunal fédéral le dit" |
 | 29.2 | sous-titre "Le conducteur risque sa vie" |
