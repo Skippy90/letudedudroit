@@ -109,11 +109,18 @@ def transcrire(fichier: Path) -> dict:
         return json.load(reponse)
 
 
+def son(mot: str) -> str:
+    """Forme comparée à l'oreille : les finales muettes tombent (« elle s'ajoute » = « elles s'ajoutent »)."""
+    return re.sub(r"(ent|es|e|s|x|t)$", "", mot) if len(mot) > 3 else mot
+
+
 def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, float, int, int]]:
     """Toutes les lectures d'une phrase dans la transcription.
 
     Chaque prise : (premier mot, dernier mot, part retrouvée, mots attendus manquants au début, à la fin).
+    Les mots sont comparés par leur son : la transcription choisit parfois l'homophone (accord, pluriel).
     """
+    attendu, entendus = [son(m) for m in attendu], [son(m) for m in entendus]
     n, trouvees = len(attendu), []
     for i in range(len(entendus)):
         if entendus[i] not in attendu[:3]:
