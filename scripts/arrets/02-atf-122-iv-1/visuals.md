@@ -46,7 +46,7 @@ Style « scène » : les faits se jouent dans une cage d'escalier d'immeuble, la
 | 19.1 | scene-vide ; article-retirer ; titre "Le Tribunal fédéral continue" ; personnage juge "Le juge" violet droite |
 | 19.2 | bouclier -3.0 0.2 ; sous-titre "L'examen continue" |
 | 19.3 | effacer-titres ; titre "L'état de nécessité" ambre |
-| 19.4 | sous-titre "Licite, ou excusé" |
+| 19.4 | sous-titre "Licite, excusé, ou peine atténuée" |
 | 20.1 | scene-vide ; colonnes "Attaque" "Danger" ; picto danger 0 -1.4 |
 | 20.2 | colonne-accent 1 ; titre "Agression en cours ou imminente" |
 | 20.3 | colonne-accent 2 ; effacer-titres ; titre "Risque d'une nouvelle agression" |

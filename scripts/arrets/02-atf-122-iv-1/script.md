@@ -38,7 +38,7 @@ Personnages : l'épouse (silhouette turquoise, « L'épouse » à l'écran), le 
 | 16 | Elle suppose une attaque, ou la menace d'une attaque imminente. Aujourd'hui, c'est l'article 15 du Code pénal. | Bloc « Art. 15 CP » |
 | 17 | Or, quand elle a tiré, son mari dormait. Il ne l'attaquait pas. Il ne la menaçait pas d'une attaque imminente. | Le mari endormi ; étiquette « Pas d'attaque » |
 | 18 | Et elle a réfléchi vingt minutes avant de tirer. Elle ne peut donc pas soutenir avoir cru à une attaque. | Le mot « Cru à une attaque » se barre |
-| 19 | Mais le Tribunal fédéral ne s'arrête pas là. Sans légitime défense, l'examen n'est pas fini. Il reste l'état de nécessité. Selon les cas, il rend l'acte licite, ou il l'excuse. | Titre « État de nécessité » |
+| 19 | Mais le Tribunal fédéral ne s'arrête pas là. Sans légitime défense, l'examen n'est pas fini. Il reste l'état de nécessité. Selon les conditions, il peut rendre l'acte licite, exclure la culpabilité, ou atténuer la peine. | Titre « État de nécessité » |
 | 20 | La différence tient en deux mots. Ici, l'attaque serait une agression en cours ou imminente. Le danger, c'est le risque qu'une nouvelle agression arrive. | Deux colonnes « Attaque » et « Danger » |
 | 21 | Pour l'état de nécessité, le danger doit être imminent. C'est-à-dire ni passé ni futur, mais actuel et concret. | Sous-titre « Ni passé ni futur » |
 | 22 | Mais un danger peut durer. Le Tribunal fédéral s'inspire ici de la doctrine allemande, qui parle de danger permanent. | Titre « Un danger permanent » |
