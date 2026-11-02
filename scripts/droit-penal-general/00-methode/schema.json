@@ -2,16 +2,30 @@
   "video": "Méthode",
   "slug": "00-methode",
   "titre": "Résoudre un cas de droit pénal",
-  "a_relire": true,
   "accroche": "Un cas pratique de droit pénal : par où commencer ?",
   "panneaux": [
     {
       "type": "etages",
       "titre": "1. Y a-t-il une infraction ? Les trois étages, dans l'ordre",
       "items": [
-        {"label": "Typicité", "detail": "Un article décrit l'acte ; intention ou négligence punissable.", "couleur": "vert", "source": "vidéos 1 et 4 ; art. 12 CP"},
-        {"label": "Illicéité", "detail": "Un fait justificatif rend-il l'acte licite ? Légitime défense, état de nécessité.", "couleur": "ambre", "source": "vidéo 6 ; art. 15 et 17 CP"},
-        {"label": "Culpabilité", "detail": "Peut-on reprocher l'acte ? Responsabilité, erreur sur l'illicéité.", "couleur": "rouge", "source": "vidéos 7 et 8 ; art. 19 et 21 CP"}
+        {
+          "label": "Typicité",
+          "detail": "Un article décrit l'acte ; intention ou négligence punissable.",
+          "couleur": "vert",
+          "source": "vidéos 1 et 4 ; art. 12 CP"
+        },
+        {
+          "label": "Illicéité",
+          "detail": "Un fait justificatif rend-il l'acte licite ? Légitime défense, état de nécessité.",
+          "couleur": "ambre",
+          "source": "vidéo 6 ; art. 15 et 17 CP"
+        },
+        {
+          "label": "Culpabilité",
+          "detail": "Peut-on reprocher l'acte ? Responsabilité, erreur sur l'illicéité.",
+          "couleur": "rouge",
+          "source": "vidéos 7 et 8 ; art. 19 et 21 CP"
+        }
       ]
     },
     {
@@ -19,13 +33,37 @@
       "titre": "2. Ensuite, selon le cas",
       "sens": "Dans cet ordre",
       "items": [
-        {"label": "Acte inachevé ?", "detail": "La tentative : l'auteur a commencé l'exécution.", "couleur": "ambre", "source": "vidéo 9 ; art. 22 CP"},
-        {"label": "Plusieurs personnes ?", "detail": "Coauteur, instigateur ou complice.", "couleur": "ambre", "source": "vidéo 10 ; art. 24 et 25 CP"},
-        {"label": "Quelle catégorie ?", "detail": "La peine prévue par la loi : crime, délit ou contravention.", "couleur": "gris", "source": "vidéo 3 ; art. 10 et 103 CP"},
-        {"label": "Quelle peine ?", "detail": "Le juge la fixe d'après la culpabilité de l'auteur.", "couleur": "gris", "source": "vidéo 11 ; art. 47 CP"}
+        {
+          "label": "Acte inachevé ?",
+          "detail": "La tentative : l'auteur a commencé l'exécution.",
+          "couleur": "ambre",
+          "source": "vidéo 9 ; art. 22 CP"
+        },
+        {
+          "label": "Plusieurs personnes ?",
+          "detail": "Coauteur, instigateur ou complice.",
+          "couleur": "ambre",
+          "source": "vidéo 10 ; art. 24 et 25 CP"
+        },
+        {
+          "label": "Quelle catégorie ?",
+          "detail": "La peine prévue par la loi : crime, délit ou contravention.",
+          "couleur": "gris",
+          "source": "vidéo 3 ; art. 10 et 103 CP"
+        },
+        {
+          "label": "Quelle peine ?",
+          "detail": "Le juge la fixe d'après la culpabilité de l'auteur.",
+          "couleur": "gris",
+          "source": "vidéo 11 ; art. 47 CP"
+        }
       ]
     }
   ],
-  "piege": {"faux": "Commencer par la peine ou par l'émotion du cas.", "vrai": "D'abord l'article, puis les trois étages dans l'ordre.", "source": "vidéos 1 et 3"},
+  "piege": {
+    "faux": "Commencer par la peine ou par l'émotion du cas.",
+    "vrai": "D'abord l'article, puis les trois étages dans l'ordre.",
+    "source": "vidéos 1 et 3"
+  },
   "a_retenir": "Un étage manque : on s'arrête. Pas d'infraction, pas de peine."
 }

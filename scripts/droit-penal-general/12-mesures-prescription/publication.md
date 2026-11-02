@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Quand la justice ne poursuit plus | Droit pénal suisse
 
-## Description (4511 caractères sur 5 000)
+## Description (4518 caractères sur 5 000)
 
 ```text
 Quand la justice ne poursuit plus — expliqué simplement, à partir d'un cas concret.
@@ -40,7 +40,7 @@ Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fé
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139
 
 Réponse à la question finale :
-Oui, si c'est un vol simple. Le vol est puni d'une peine privative de liberté de cinq ans au plus (article 139 du Code pénal), soit plus de trois ans. L'action pénale se prescrit donc par quinze ans (article 97, alinéa 1, lettre b). Douze ans après les faits, Lina peut encore être poursuivie. L'article 172 ter, qui ferait de l'acte une contravention prescrite par trois ans, ne s'applique pas : il ne concerne que l'acte qui vise un élément patrimonial de faible valeur. Ce qui compte est ce que Lina visait, et elle savait que le vélo valait mille francs. Le seuil de la faible valeur n'est pas fixé par le Code, mais par la jurisprudence ; mille francs le dépassent (À VÉRIFIER : seuil jurisprudentiel exact).
+Oui, si c'est un vol simple. Le vol est puni d'une peine privative de liberté de cinq ans au plus (article 139 du Code pénal), soit plus de trois ans. L'action pénale se prescrit donc par quinze ans (article 97, alinéa 1, lettre b). Douze ans après les faits, Lina peut encore être poursuivie. L'article 172 ter, qui ferait de l'acte une contravention prescrite par trois ans, ne s'applique pas : il ne concerne que l'acte qui vise un élément patrimonial de faible valeur. Ce qui compte est ce que Lina visait, et elle savait que le vélo valait mille francs. Le seuil de la faible valeur n'est pas fixé par le Code, mais par la jurisprudence : trois cents francs (ATF 121 IV 261, consid. 2d) ; mille francs le dépassent.
 
 Chapitres :
 0:00 Le cas de départ
