@@ -19,7 +19,7 @@ import tempfile
 from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
-MATIERES = {"droit-penal-general": "Droit pénal suisse", "procedure-penale": "Procédure pénale suisse"}
+MATIERES = {"droit-penal-general": "Droit pénal suisse", "arrets": "Droit pénal suisse", "procedure-penale": "Procédure pénale suisse"}
 
 
 def decouper_titre(ligne: str) -> tuple[str, str]:

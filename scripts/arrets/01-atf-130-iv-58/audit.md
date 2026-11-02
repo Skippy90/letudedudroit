@@ -10,6 +10,15 @@
 
 La colonne « Vérifié » n'est cochée que par la relectrice.
 
+## Articles cités
+
+| Article ou arrêt | Ce que le script lui fait dire | Vérifié |
+| --- | --- | --- |
+| [ATF 130 IV 58](https://search.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F130-IV-58%3Ade), consid. 8.3, 8.4 et 9 | Course de voitures mortelle : frontière entre dol éventuel et négligence consciente ; dol éventuel retenu pour les deux conducteurs, le second comme coauteur | - [ ] |
+| [Art. 12 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_12), al. 2 | Le dol éventuel : tenir pour possible la réalisation de l'infraction et l'accepter au cas où elle se produirait | - [ ] |
+| [Art. 111 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_111) | Meurtre : peine privative de liberté de cinq ans au moins | - [ ] |
+| [Art. 117 CP](https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_117) | Homicide par négligence : peine privative de liberté de trois ans au plus ou peine pécuniaire | - [ ] |
+
 ## Faits (consid. 3)
 
 | Lignes | Ce que dit le script | Texte de l'arrêt | Vérifié |
