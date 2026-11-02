@@ -543,12 +543,14 @@ class Picto(VGroup):
             col = Rectangle(width=0.12, height=0.25, color=ACCENT, stroke_width=4).next_to(corps, UP, buff=0)
             elements = [corps, col]
         elif nom == "voiture":
-            caisse = RoundedRectangle(corner_radius=0.15, width=2.6, height=0.7, color=TEXTE, stroke_width=4)
+            # Remplie de la couleur du fond : le décor (immeubles, rue) ne se voit pas à travers.
+            plein = dict(fill_color=FOND, fill_opacity=1)
+            caisse = RoundedRectangle(corner_radius=0.15, width=2.6, height=0.7, color=TEXTE, stroke_width=4, **plein)
             toit = Polygon([-0.8, 0.35, 0], [0.7, 0.35, 0], [0.4, 0.95, 0], [-0.5, 0.95, 0],
-                           color=TEXTE, stroke_width=4)
-            roues = VGroup(Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([-0.8, -0.38, 0]),
-                           Circle(radius=0.25, color=TEXTE, stroke_width=4).move_to([0.8, -0.38, 0]))
-            elements = [caisse, toit, roues]
+                           color=TEXTE, stroke_width=4, **plein)
+            roues = VGroup(Circle(radius=0.25, color=TEXTE, stroke_width=4, **plein).move_to([-0.8, -0.38, 0]),
+                           Circle(radius=0.25, color=TEXTE, stroke_width=4, **plein).move_to([0.8, -0.38, 0]))
+            elements = [toit, caisse, roues]
         elif nom == "velo":
             # Vélo au trait : deux roues, cadre en triangle, selle et guidon.
             r1 = Circle(radius=0.42, color=TEXTE, stroke_width=4).move_to([-0.6, 0, 0])

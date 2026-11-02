@@ -1,0 +1,81 @@
+{
+  "video": 11,
+  "slug": "11-peines",
+  "titre": "Quelle peine ?",
+  "accroche": "Le sursis, est-ce vraiment ne pas être puni ?",
+  "panneaux": [
+    {
+      "type": "frise",
+      "titre": "Le juge, étape par étape",
+      "points": [
+        {
+          "label": "Choisir le genre",
+          "detail": "Liberté, pécuniaire ou amende ; à la place de la pécuniaire, prison pour deux raisons seulement.",
+          "couleur": "ambre",
+          "source": "lignes 4 à 5, 15 à 17 ; art. 41 CP ; ATF 147 IV 241"
+        },
+        {
+          "label": "Fixer la quotité",
+          "detail": "Durée ou montant, d'après la culpabilité de l'auteur.",
+          "couleur": "ambre",
+          "source": "lignes 5, 19 à 21 ; art. 47 CP"
+        },
+        {
+          "label": "Sursis ?",
+          "detail": "En règle générale, si une peine ferme n'est pas nécessaire ; antécédents et réparation comptent.",
+          "couleur": "ambre",
+          "source": "lignes 23 à 24 ; art. 42 CP"
+        },
+        {
+          "label": "Délai d'épreuve",
+          "detail": "Deux à cinq ans ; récidive à craindre : sursis révoqué.",
+          "couleur": "ambre",
+          "source": "lignes 25 à 26 ; art. 44 et 46 CP"
+        },
+        {
+          "label": "Épreuve réussie",
+          "detail": "La peine n'est jamais exécutée.",
+          "couleur": "vert",
+          "source": "ligne 25 ; art. 45 CP"
+        }
+      ]
+    },
+    {
+      "type": "conditions",
+      "titre": "Le sursis complet",
+      "conditions": [
+        {
+          "label": "Peine pécuniaire, ou deux ans",
+          "detail": "Ou peine privative de liberté de deux ans au plus.",
+          "source": "ligne 23 ; art. 42 CP"
+        },
+        {
+          "label": "Pronostic favorable",
+          "detail": "Une peine ferme ne paraît pas nécessaire pour éviter la récidive.",
+          "source": "lignes 24, 34 ; art. 42 CP"
+        },
+        {
+          "label": "Antécédents et réparation",
+          "detail": "Plus de six mois de privation de liberté dans les cinq ans : circonstances particulièrement favorables. Sursis refusable sans effort de réparer.",
+          "source": "lignes 24, 34 ; art. 42 al. 2 et 3 CP"
+        }
+      ],
+      "alors": {
+        "label": "Sursis en règle générale",
+        "couleur": "vert",
+        "source": "ligne 23 ; art. 42 al. 1 CP"
+      },
+      "sinon": {
+        "label": "Pas de sursis complet",
+        "couleur": "gris",
+        "source": "lignes 23 à 24 ; réponse finale ; art. 42 CP"
+      }
+    }
+  ],
+  "piege": {
+    "faux": "Il a eu du sursis, il n'a pas été puni.",
+    "vrai": "Il est condamné : la peine existe, suspendue pendant tout le délai d'épreuve.",
+    "source": "lignes 30 à 31"
+  },
+  "a_retenir": "Le juge choisit la peine, la fixe selon la culpabilité, puis décide du sursis."
+}

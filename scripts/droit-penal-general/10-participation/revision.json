@@ -1,0 +1,215 @@
+{
+  "video": 10,
+  "slug": "10-participation",
+  "titre": "Ils étaient plusieurs",
+  "notions": [
+    "Coactivité",
+    "Instigation",
+    "Complicité",
+    "Caractère accessoire"
+  ],
+  "a_vous": [
+    {
+      "ligne": 13,
+      "pause": "Selon vous, Jade répond-elle du vol, alors qu'elle n'a pas touché l'ordinateur ?",
+      "pourquoi": "Le spectateur croit souvent que seul celui qui fait le geste est l'auteur."
+    },
+    {
+      "ligne": 19,
+      "pause": "Selon vous, Lina encourt-elle une peine plus légère que Max ?",
+      "pourquoi": "Que l'instigateur encoure la peine applicable à l'auteur surprend souvent."
+    },
+    {
+      "ligne": 28,
+      "pause": "Selon vous, Noé encourt-il la même peine que Max ?",
+      "pourquoi": "C'est la seule différence de peine entre les quatre personnages."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v10-01",
+      "q": "Quelles sont les deux familles de personnes qui jouent un rôle dans une infraction ?",
+      "r": "Les auteurs, qui commettent l'infraction. Les participants, qui y contribuent sans la commettre eux-mêmes.",
+      "source": "ligne 6",
+      "notion": "Coactivité"
+    },
+    {
+      "id": "v10-02",
+      "q": "Qui est coauteur, selon le Tribunal fédéral ?",
+      "r": "Celui qui collabore avec d'autres, intentionnellement et de manière déterminante. Il prend part à la décision, à l'organisation ou à l'exécution.",
+      "source": "ligne 10 ; ATF 135 IV 152",
+      "notion": "Coactivité"
+    },
+    {
+      "id": "v10-03",
+      "q": "Jade n'a pas touché l'ordinateur. Pourquoi est-elle coauteure du vol ?",
+      "r": "Elle a décidé avec Max et ils se sont partagé les rôles. Sans elle pour occuper le vendeur, le plan ne tenait pas.",
+      "source": "lignes 12 et 13 ; ATF 135 IV 152 ; art. 139 CP",
+      "notion": "Coactivité"
+    },
+    {
+      "id": "v10-04",
+      "q": "La décision commune des coauteurs doit-elle être exprimée en mots ?",
+      "r": "Non. Elle peut résulter de leurs actes.",
+      "source": "ligne 14 ; ATF 135 IV 152",
+      "notion": "Coactivité"
+    },
+    {
+      "id": "v10-05",
+      "q": "Qui est l'instigateur, selon l'article 24 du Code pénal ?",
+      "r": "Celui qui a intentionnellement décidé autrui à commettre un crime ou un délit.",
+      "source": "ligne 16 ; art. 24 CP",
+      "notion": "Instigation"
+    },
+    {
+      "id": "v10-06",
+      "q": "Si Max était déjà décidé à voler avant de parler à Lina, Lina est-elle instigatrice ?",
+      "r": "Non. On ne peut pas décider quelqu'un qui l'est déjà.",
+      "source": "ligne 18 ; ATF 128 IV 11",
+      "notion": "Instigation"
+    },
+    {
+      "id": "v10-07",
+      "q": "Le vol a été commis. Quelle peine encourt Lina, l'instigatrice ?",
+      "r": "La peine applicable à l'auteur : les mêmes limites légales. Le juge fixe ensuite sa peine selon sa faute.",
+      "source": "ligne 19 ; art. 24 CP",
+      "notion": "Instigation"
+    },
+    {
+      "id": "v10-08",
+      "q": "Que risque celui qui a seulement tenté de décider autrui à commettre un crime ?",
+      "r": "Il encourt la peine de la tentative.",
+      "source": "ligne 20 ; art. 24 CP",
+      "notion": "Instigation"
+    },
+    {
+      "id": "v10-09",
+      "q": "Quelles sont les deux conditions de la complicité, selon le Tribunal fédéral ?",
+      "r": "Une contribution réelle, qui facilite l'infraction : sans l'aide, les choses ne se seraient pas passées de la même manière. Et l'intention d'aider à un acte déterminé.",
+      "source": "lignes 25 et 26 ; ATF 132 IV 49",
+      "notion": "Complicité"
+    },
+    {
+      "id": "v10-10",
+      "q": "Le dol éventuel suffit-il pour la complicité ?",
+      "r": "Oui. Le complice doit savoir qu'il aide à un acte déterminé, et le vouloir ou au moins l'accepter.",
+      "source": "ligne 26 ; ATF 132 IV 49",
+      "notion": "Complicité"
+    },
+    {
+      "id": "v10-11",
+      "q": "Quelle peine encourt Noé, qui a prêté son sac ?",
+      "r": "Son sac a servi à cacher l'ordinateur : il a facilité le vol, en le sachant. Il est complice, et sa peine est atténuée.",
+      "source": "lignes 27 et 28 ; art. 25 CP",
+      "notion": "Complicité"
+    },
+    {
+      "id": "v10-12",
+      "q": "Que veut dire que l'instigation et la complicité sont accessoires ?",
+      "r": "Elles dépendent de l'acte de l'auteur principal.",
+      "source": "ligne 32 ; ATF 144 IV 265",
+      "notion": "Caractère accessoire"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Lina convainc Max de voler un ordinateur. Max et Jade organisent et commettent le vol ensemble ; Noé prête, en connaissance de cause, le sac qui sert à cacher l'ordinateur.",
+      "qualification": "Max et Jade sont coauteurs. Lina est instigatrice. Noé est complice.",
+      "source": "lignes 13, 16 et 27"
+    },
+    "changements": [
+      {
+        "fait": "Max et Jade ne se sont jamais mis d'accord en mots, mais leurs actes montrent un plan commun.",
+        "qualification": "Ils restent coauteurs.",
+        "pourquoi": "La décision commune n'a pas besoin d'être exprimée en mots. Elle peut résulter des actes.",
+        "source": "ligne 14 ; ATF 135 IV 152"
+      },
+      {
+        "fait": "Max était déjà décidé à voler avant de parler à Lina.",
+        "qualification": "Lina n'est pas instigatrice.",
+        "pourquoi": "On ne peut pas décider quelqu'un qui l'est déjà.",
+        "source": "ligne 18 ; ATF 128 IV 11"
+      },
+      {
+        "fait": "Lina a seulement créé une occasion, sans influencer la volonté de Max.",
+        "qualification": "Il n'y a pas d'instigation.",
+        "pourquoi": "Créer une simple occasion ne suffit pas. Il faut une influence directe sur la volonté de l'autre.",
+        "source": "ligne 18 ; ATF 128 IV 11"
+      },
+      {
+        "fait": "Max se ravise : aucun vol n'a lieu.",
+        "qualification": "Lina a tenté de décider Max à commettre un crime : elle encourt la peine de la tentative.",
+        "pourquoi": "L'article 24 punit aussi la tentative d'instigation à un crime. C'est le cas jugé du CD-ROM.",
+        "source": "lignes 20 à 22 ; art. 24 CP ; ATF 128 IV 11"
+      },
+      {
+        "fait": "Noé ne connaît pas tous les détails du plan, mais il sait que son sac servira au vol.",
+        "qualification": "Il reste complice.",
+        "pourquoi": "Le complice n'a pas besoin de connaître tous les détails du plan.",
+        "source": "ligne 26 ; ATF 132 IV 49"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Paul prête sa voiture à un ami. Il sait que l'ami va s'en servir pour cambrioler une maison. L'ami y charge ses outils et se rend jusqu'à la maison. Le cambriolage a lieu.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle vise celui qui prête intentionnellement assistance à l'auteur d'un crime ou d'un délit ?",
+        "choix": [
+          "L'instigation, à l'article 24 du Code pénal",
+          "La complicité, à l'article 25 du Code pénal",
+          "La coactivité, précisée par le Tribunal fédéral"
+        ],
+        "bon": 1,
+        "note": "L'article 25 vise celui qui a intentionnellement prêté assistance à l'auteur. C'est le complice."
+      },
+      {
+        "nom": "Application",
+        "q": "Les conditions de la complicité sont-elles remplies pour Paul ?",
+        "choix": [
+          "Non, car il n'a pas participé au cambriolage",
+          "Non, car il n'a pas eu l'idée du cambriolage",
+          "Oui : il a aidé, et il savait à quoi servirait la voiture"
+        ],
+        "bon": 2,
+        "note": "Il faut une contribution réelle et l'intention. La voiture transporte les outils et conduit l'ami jusqu'à la maison : elle facilite concrètement le cambriolage. Et Paul savait à quoi elle servirait."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Quelle peine encourt Paul ?",
+        "choix": [
+          "Une peine atténuée, comme complice",
+          "La peine applicable à l'auteur, comme instigateur",
+          "Aucune peine, car il n'a pas agi lui-même"
+        ],
+        "bon": 0,
+        "note": "Paul est, selon toute vraisemblance, complice. L'article 25 prévoit que la peine du complice est atténuée."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Max a glissé l'ordinateur dans le sac.",
+        "Il a décidé et organisé le vol avec Jade.",
+        "Jade n'a pas touché l'ordinateur : elle a seulement un peu aidé, sa peine est atténuée.",
+        "Noé a prêté le sac en connaissance de cause : il est complice."
+      ],
+      "faux": 2,
+      "explication": "Jade est coauteure : elle répond comme Max. Seul le complice bénéficie d'une peine atténuée.",
+      "source": "lignes 29 et 30 ; ATF 135 IV 152 ; art. 25 CP"
+    },
+    {
+      "copie": [
+        "Lina a convaincu Max en lui promettant de racheter l'ordinateur.",
+        "Restée chez elle, Lina bénéficie forcément d'une peine atténuée.",
+        "Elle a fait naître chez Max la décision de voler.",
+        "Elle est donc instigatrice au sens de l'article 24 du Code pénal."
+      ],
+      "faux": 1,
+      "explication": "Si l'infraction a été commise, l'instigateur encourt la peine applicable à l'auteur. Seul le complice bénéficie d'une peine atténuée.",
+      "source": "lignes 19 et 30 ; art. 24 CP"
+    }
+  ]
+}

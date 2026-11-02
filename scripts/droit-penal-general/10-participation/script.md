@@ -43,10 +43,10 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 | 16 | L'article 24 du Code pénal vise celui qui a intentionnellement décidé autrui à commettre un crime ou un délit. On l'appelle l'instigateur. | Bloc « Art. 24 CP » ; le mot « Instigatrice » |
 | 17 | L'instigation, c'est susciter chez autrui la décision d'agir. Une simple demande, une suggestion ou une promesse peuvent suffire. | Une bulle « Je te le rachète » |
 | 18 | Créer une simple occasion ne suffit pas. Il faut une influence directe sur la volonté de l'autre. Et il y a une autre limite. Si Max était déjà décidé à voler avant de parler à Lina, il n'y a pas d'instigation. On ne peut pas décider quelqu'un qui l'est déjà. | Rembobinage ; une bulle « Déjà décidé » au-dessus de Max ; « Instigation » barré |
-| 19 | Et la sanction surprend souvent. Si l'infraction a été commise, l'instigateur encourt la même peine que l'auteur. | Le mot « Même peine que l'auteur » en ambre |
+| 19 | Et la sanction surprend souvent. Si l'infraction a été commise, l'instigateur encourt la peine applicable à l'auteur. Ce sont les mêmes limites de peine, fixées par la loi. Le juge fixe ensuite la peine de chacun, selon sa faute. | Le mot « La peine de l'auteur » en ambre ; puis « Mêmes limites légales », « Peine fixée pour chacun » |
 | 20 | L'article 24 va même plus loin. Celui qui a seulement tenté de décider autrui à commettre un crime encourt la peine de la tentative. | Le deuxième alinéa de l'article 24 en ambre |
-| 21 | Un exemple réel jugé par le Tribunal fédéral. Un homme avait offert vingt mille francs à un informaticien. En échange, il voulait une copie d'un CD-ROM appartenant aux employeurs de l'informaticien. | Le mot « Vingt mille francs » ; des jetons |
-| 22 | L'informaticien, d'abord décidé, s'est ravisé et a prévenu son employeur. Aucun vol n'a eu lieu. Mais l'homme a été condamné pour tentative d'instigation à vol. | Le mot « Tentative d'instigation » |
+| 21 | Un exemple réel jugé par le Tribunal fédéral. Un homme avait offert vingt mille francs à un informaticien. En échange, il voulait une copie d'un CD-ROM. | Le mot « Vingt mille francs » ; des jetons |
+| 22 | L'informaticien, d'abord décidé, s'est ravisé et a prévenu ceux pour qui il travaillait. Aucun vol n'a eu lieu. Mais l'homme a été condamné pour tentative d'instigation à vol. | Le mot « Tentative d'instigation » |
 
 ## Le complice : Noé
 
@@ -54,9 +54,9 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 | --- | --- | --- |
 | 23 | Reste Noé, qui a prêté son sac. Il n'a pas eu l'idée, il n'a pas organisé le vol. Il a seulement aidé. | La silhouette de Noé ; le mot « Le sac » |
 | 24 | L'article 25 du Code pénal vise celui qui a intentionnellement prêté assistance à l'auteur. L'aide porte sur un crime ou un délit. C'est le complice. | Bloc « Art. 25 CP » ; le mot « Complice » |
-| 25 | Le Tribunal fédéral demande deux choses. D'abord, une contribution réelle : sans l'aide, les choses ne se seraient pas passées de la même manière. | Une case « Contribution causale » |
+| 25 | Le Tribunal fédéral demande deux choses. D'abord, une contribution réelle, qui facilite l'infraction. Sans l'aide, les choses ne se seraient pas passées de la même manière. | Une case « Contribution causale » |
 | 26 | Ensuite, l'intention. Le complice doit savoir qu'il aide à un acte déterminé, et le vouloir, ou au moins l'accepter. Le dol éventuel de la vidéo 4 suffit donc. Il n'a pas besoin de connaître tous les détails du plan. | Une case « Il sait et il accepte » |
-| 27 | Noé savait à quoi servirait son sac. Les deux conditions sont remplies. Il est complice du vol. | Les deux cases se cochent |
+| 27 | Le sac de Noé a servi à cacher l'ordinateur. Il a concrètement facilité le vol. Et Noé savait à quoi servirait son sac. Les deux conditions sont remplies. Il est complice du vol. | Le mot « Le sac cache l'ordinateur » ; les deux cases se cochent |
 | 28 | Et pour lui, la loi est plus douce. L'article 25 prévoit que la peine du complice est atténuée. | Le mot « Peine atténuée » |
 
 ## Le piège classique
@@ -64,7 +64,7 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 29 | Attention au piège classique. On croit souvent que seul celui qui a commis le geste est vraiment coupable. Les autres auraient juste « un peu aidé ». C'est faux. | La phrase « Seul celui qui vole est coupable » apparaît, puis se barre |
-| 30 | Jade, qui n'a pas touché l'ordinateur, répond comme Max. Lina, restée chez elle, encourt la même peine. Seul le complice bénéficie d'une peine atténuée. | Un tableau : Max, Jade, Lina « Peine de l'auteur » ; Noé « Peine atténuée » |
+| 30 | Jade, qui n'a pas touché l'ordinateur, répond comme Max. Lina, restée chez elle, encourt la peine applicable à l'auteur. Seul Noé, le complice, bénéficie d'une peine atténuée. | Un tableau : Max, Jade, Lina « Peine de l'auteur » ; Noé « Peine atténuée » |
 | 31 | Ce qui compte, ce n'est pas qui tient l'objet. C'est le rôle que chacun a joué dans la décision et dans l'exécution. | Le mot « Le rôle » en ambre |
 | 32 | Une dernière précision. L'instigation et la complicité dépendent de l'acte de l'auteur principal. On dit qu'elles sont accessoires. Sans infraction commise ou tentée, il n'y a pas de complice. Et pour une contravention, la complicité n'est punissable que si la loi le prévoit. On l'a vu dans la vidéo 3. | Le mot « Accessoire » ; une flèche des participants vers l'auteur |
 
@@ -72,10 +72,10 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
-| 33 | Retenons. Les coauteurs décident et agissent ensemble, de façon essentielle : chacun est auteur. L'instigateur fait naître la décision chez l'auteur : même peine. | Liste : « Coauteur : auteur », « Instigateur : même peine » |
+| 33 | Retenons. Les coauteurs participent de façon déterminante à la décision, à l'organisation ou à l'exécution. Chacun est auteur. L'instigateur fait naître la décision chez l'auteur. Il encourt la peine applicable à l'auteur. | Liste : « Coauteur : auteur », « Instigateur : peine de l'auteur » |
 | 34 | Le complice aide intentionnellement : sa peine est atténuée. Face à un cas, demandez-vous quel rôle chacun a joué, et à quel moment. | Liste : « Complice : peine atténuée » |
-| 35 | Une question pour finir. Paul prête sa voiture à un ami. Il sait que l'ami va s'en servir pour cambrioler une maison. Le cambriolage a lieu. | La silhouette de Paul ; le mot « La voiture » |
+| 35 | Une question pour finir. Paul prête sa voiture à un ami. Il sait que l'ami va s'en servir pour cambrioler une maison. L'ami y charge ses outils et se rend jusqu'à la maison. Le cambriolage a lieu. | La silhouette de Paul ; le mot « La voiture » ; le mot « Les outils, le trajet » |
 | 36 | Quel est le rôle de Paul ? Et quelle peine encourt-il ? Écrivez votre réponse en commentaire. | Trois cases « Coauteur ? », « Instigateur ? », « Complice ? » |
 | 37 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : Paul est complice. Il n'a pas fait naître la décision de son ami, qui était déjà décidé, et il n'a pas pris part au cambriolage de façon essentielle. Il a intentionnellement prêté assistance, en sachant à quoi servirait la voiture (article 25 du Code pénal ; ATF 132 IV 49, consid. 1.1). Sa peine est atténuée.
+**Réponse attendue à la question finale**, pour la description : Paul est, selon toute vraisemblance, complice. Sa voiture a transporté les outils et conduit l'ami jusqu'à la maison : elle a concrètement facilité le cambriolage. Rien n'indique que Paul ait fait naître la décision de son ami, ni qu'il ait pris part au cambriolage de façon déterminante. Il a intentionnellement prêté assistance, en sachant à quoi servirait la voiture (article 25 du Code pénal ; ATF 132 IV 49, consid. 1.1). Sa peine est atténuée.

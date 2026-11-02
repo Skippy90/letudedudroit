@@ -1,0 +1,82 @@
+{
+  "video": 8,
+  "slug": "08-responsabilite",
+  "titre": "Était-il responsable ?",
+  "accroche": "Peut-on punir quelqu'un qui ne se maîtrisait pas ?",
+  "panneaux": [
+    {
+      "type": "echelle",
+      "titre": "Les trois situations de l'article 19",
+      "sens": "Responsable → Irresponsable",
+      "items": [
+        {
+          "label": "Responsable",
+          "detail": "Il comprend l'interdit et peut se retenir : il est responsable. Les autres conditions restent à examiner.",
+          "couleur": "vert",
+          "source": "lignes 7, 33 ; art. 19 CP"
+        },
+        {
+          "label": "Responsabilité restreinte",
+          "detail": "Faculté seulement partielle : reste coupable, le juge atténue la peine.",
+          "couleur": "ambre",
+          "source": "lignes 17 à 18 ; art. 19 al. 2 CP"
+        },
+        {
+          "label": "Irresponsable",
+          "detail": "Une faculté manque complètement au moment d'agir : pas punissable.",
+          "couleur": "gris",
+          "source": "lignes 8 à 11 ; art. 19 al. 1 CP"
+        }
+      ]
+    },
+    {
+      "type": "arbre",
+      "titre": "Et l'ivresse ?",
+      "questions": [
+        {
+          "q": "L'auteur pouvait-il éviter son état ?",
+          "oui": {
+            "suite": 1
+          },
+          "non": {
+            "resultat": "État non fautif"
+          },
+          "source": "lignes 25, 29 ; art. 19 al. 4 CP"
+        },
+        {
+          "q": "Pouvait-il prévoir l'acte commis dans cet état ?",
+          "oui": {
+            "resultat": "Pleinement responsable"
+          },
+          "non": {
+            "resultat": "Ivresse fautive"
+          },
+          "source": "lignes 25 à 27 ; art. 19 al. 4 et 263 CP"
+        }
+      ],
+      "resultats": {
+        "Pleinement responsable": {
+          "couleur": "vert",
+          "detail": "État évitable et acte prévisible : les règles sur l'irresponsabilité ne s'appliquent pas.",
+          "source": "lignes 25 à 26 ; art. 19 al. 4 CP"
+        },
+        "Ivresse fautive": {
+          "couleur": "ambre",
+          "detail": "Article 263 possible : irresponsabilité complète due à sa faute, pour un crime ou un délit.",
+          "source": "lignes 27 à 28 ; art. 263 CP"
+        },
+        "État non fautif": {
+          "couleur": "gris",
+          "detail": "Drogué à son insu : ni l'alinéa 4 ni l'article 263.",
+          "source": "ligne 29 ; art. 19 al. 4 et 263 CP"
+        }
+      }
+    }
+  ],
+  "piege": {
+    "faux": "« J'avais trop bu » : l'ivresse excuse l'acte.",
+    "vrai": "L'ivresse n'excuse pas si l'état était évitable et l'acte prévisible : deux conditions à vérifier.",
+    "source": "lignes 24 à 26, 29"
+  },
+  "a_retenir": "Pour être coupable, il faut pouvoir comprendre l'interdit et se retenir, au moment d'agir."
+}

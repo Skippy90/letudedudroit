@@ -17,7 +17,7 @@ from pathlib import Path
 RACINE = Path(__file__).resolve().parent.parent
 
 TAGS = ["droit suisse", "droit pénal", "code pénal suisse", "étudiant en droit", "Suisse romande", "L'étude du droit"]
-PLAYLISTS = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale"}
+PLAYLISTS = {"droit-penal-general": "Droit pénal général", "arrets": "Les arrêts du Tribunal fédéral", "procedure-penale": "Procédure pénale"}
 
 
 def main(slug: str, tags_video: list[str]) -> None:

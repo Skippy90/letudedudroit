@@ -1,0 +1,203 @@
+{
+  "video": 1,
+  "slug": "01-trois-etages",
+  "titre": "Qu'est-ce qu'une infraction ? Les trois étages",
+  "notions": [
+    "Les trois étages",
+    "Typicité",
+    "Illicéité",
+    "Culpabilité"
+  ],
+  "a_vous": [
+    {
+      "ligne": 6,
+      "pause": "Selon vous, que se passe-t-il si un seul des trois étages manque ?",
+      "pourquoi": "Le spectateur prédit la règle de l'arrêt avant de l'entendre : pas d'infraction, pas de peine."
+    },
+    {
+      "ligne": 18,
+      "pause": "Julien a levé le poing le premier. Selon vous, la poussée de Marc est-elle encore une infraction ?",
+      "pourquoi": "Le spectateur devine le rôle de la légitime défense avant que l'étage de l'illicéité tombe."
+    },
+    {
+      "ligne": 22,
+      "pause": "Marc n'a plus aucune prise sur ses gestes. Selon vous, peut-on encore le lui reprocher ?",
+      "pourquoi": "Le spectateur distingue seul l'acte et la personne avant que la culpabilité tombe."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v01-01",
+      "q": "Quels sont les trois étages d'une infraction, dans l'ordre ?",
+      "r": "La typicité, puis l'illicéité, puis la culpabilité.",
+      "source": "ligne 5",
+      "notion": "Les trois étages"
+    },
+    {
+      "id": "v01-02",
+      "q": "Que se passe-t-il si un étage manque ?",
+      "r": "On s'arrête là. Pas d'infraction, pas de peine.",
+      "source": "ligne 6",
+      "notion": "Les trois étages"
+    },
+    {
+      "id": "v01-03",
+      "q": "Quelle question pose la typicité ?",
+      "r": "Ce que la personne a fait correspond-il à la description d'une infraction écrite dans la loi ?",
+      "source": "lignes 7 et 8 ; art. 1 CP",
+      "notion": "Typicité"
+    },
+    {
+      "id": "v01-04",
+      "q": "Un crime ou un délit commis sans intention est-il punissable ?",
+      "r": "En principe non. Il faut l'intention, sauf si la loi prévoit expressément le contraire.",
+      "source": "ligne 11 ; art. 12 CP",
+      "notion": "Typicité"
+    },
+    {
+      "id": "v01-05",
+      "q": "Marc savait qu'une chute pouvait blesser Julien, et il a accepté ce risque. Comment s'appelle cette attitude ?",
+      "r": "Le dol éventuel. C'est une forme d'intention.",
+      "source": "ligne 12 ; art. 12 CP",
+      "notion": "Typicité"
+    },
+    {
+      "id": "v01-06",
+      "q": "Qu'est-ce qu'un fait justificatif ?",
+      "r": "Une situation prévue par la loi où un acte décrit par le Code pénal est permis.",
+      "source": "ligne 15",
+      "notion": "Illicéité"
+    },
+    {
+      "id": "v01-07",
+      "q": "Que permet la légitime défense ?",
+      "r": "Si quelqu'un vous attaque sans droit, vous pouvez repousser l'attaque de manière proportionnée.",
+      "source": "ligne 16 ; art. 15 CP",
+      "notion": "Illicéité"
+    },
+    {
+      "id": "v01-08",
+      "q": "Julien a seulement lancé une remarque. Marc peut-il invoquer la légitime défense ?",
+      "r": "Non. Une remarque n'est pas une attaque qu'on repousse avec les mains. La poussée est illicite.",
+      "source": "ligne 19 ; art. 15 CP",
+      "notion": "Illicéité"
+    },
+    {
+      "id": "v01-09",
+      "q": "Au troisième étage, que regarde-t-on ?",
+      "r": "On ne regarde plus l'acte, mais la personne. Peut-on lui reprocher ce qu'elle a fait ?",
+      "source": "ligne 20",
+      "notion": "Culpabilité"
+    },
+    {
+      "id": "v01-10",
+      "q": "Selon l'article 19, qui n'est pas punissable ?",
+      "r": "Celui qui, au moment d'agir, ne pouvait pas apprécier le caractère illicite de son acte. Ou celui qui ne pouvait pas se déterminer d'après cette appréciation.",
+      "source": "ligne 21 ; art. 19 CP",
+      "notion": "Culpabilité"
+    },
+    {
+      "id": "v01-11",
+      "q": "Marc n'est pas coupable à cause d'une maladie psychique grave. Rien ne se passe-t-il pour lui ?",
+      "r": "Si. Le juge peut ordonner une mesure, par exemple un traitement.",
+      "source": "ligne 23 ; art. 19 et 56 ss CP",
+      "notion": "Culpabilité"
+    },
+    {
+      "id": "v01-12",
+      "q": "Marc était simplement en colère. La colère l'empêche-t-elle d'être coupable ?",
+      "r": "Non. La colère n'enlève pas la capacité de comprendre ce qu'on fait.",
+      "source": "ligne 24",
+      "notion": "Culpabilité"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Julien lance une remarque. Marc le pousse, et Julien tombe dans les escaliers et se casse le poignet.",
+      "qualification": "Si Marc a voulu ou accepté la blessure, sans justification ni excuse, les trois étages sont franchis : lésions corporelles simples.",
+      "source": "lignes 25 et 27 ; art. 12 et 123 CP"
+    },
+    "changements": [
+      {
+        "fait": "Julien a levé le poing pour frapper Marc, et Marc l'a repoussé pour éviter le coup.",
+        "qualification": "Pas d'infraction : la poussée est justifiée par la légitime défense.",
+        "pourquoi": "Le premier étage reste franchi. Mais la poussée devient une défense contre une attaque, et l'illicéité tombe.",
+        "source": "lignes 17 et 18 ; art. 15 CP"
+      },
+      {
+        "fait": "Marc souffre d'une maladie psychique grave et n'a plus aucune prise sur ses gestes.",
+        "qualification": "Marc n'est pas coupable. Le juge peut toutefois ordonner une mesure.",
+        "pourquoi": "L'acte reste typique et illicite. Mais on ne peut pas le reprocher à Marc.",
+        "source": "lignes 22 et 23 ; art. 19 CP"
+      },
+      {
+        "fait": "Marc ne pousse pas Julien : il le bouscule par inadvertance, sans le voir.",
+        "qualification": "Le premier étage pose problème : l'acte n'est pas intentionnel.",
+        "pourquoi": "Les lésions corporelles simples supposent l'intention. Les lésions par négligence sont une infraction distincte, à l'article 125.",
+        "source": "ligne 27 et réponse attendue ; art. 12 et 125 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Julien lance une remarque dans la cage d'escalier. Marc le pousse. Julien tombe et se casse le poignet.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Au deuxième étage, quelle règle faut-il examiner ?",
+        "choix": [
+          "L'article 19 : la capacité d'apprécier son acte",
+          "L'article 15 : la légitime défense contre une attaque sans droit",
+          "L'article 1 : pas de peine sans loi"
+        ],
+        "bon": 1,
+        "note": "L'illicéité tombe si un fait justificatif existe. Le plus connu est la légitime défense (ligne 16)."
+      },
+      {
+        "nom": "Application",
+        "q": "La remarque de Julien est-elle une attaque que Marc pouvait repousser ?",
+        "choix": [
+          "Oui, toute provocation est une attaque",
+          "Oui, puisque Marc était en colère",
+          "Non, une remarque n'est pas une attaque qu'on repousse avec les mains"
+        ],
+        "bon": 2,
+        "note": "Julien a seulement parlé. Il n'y a pas d'attaque à repousser (ligne 19)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Que conclure pour le deuxième étage ?",
+        "choix": [
+          "Pas de légitime défense : le comportement de Marc est illicite",
+          "L'illicéité tombe, et avec elle l'infraction",
+          "Marc n'est pas coupable"
+        ],
+        "bon": 0,
+        "note": "Le deuxième étage est franchi. On passe ensuite à la culpabilité (lignes 19 et 20)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Marc souffre d'une maladie psychique grave.",
+        "Son acte reste typique et illicite.",
+        "Mais on ne peut pas le lui reprocher.",
+        "Donc rien ne se passe pour lui."
+      ],
+      "faux": 3,
+      "explication": "« Pas coupable » ne veut pas dire « rien ne se passe ». Le juge peut ordonner une mesure, par exemple un traitement.",
+      "source": "ligne 23"
+    },
+    {
+      "copie": [
+        "Face à un cas,",
+        "on commence par la culpabilité,",
+        "puis on examine les autres étages.",
+        "Si un étage manque, il n'y a pas d'infraction."
+      ],
+      "faux": 1,
+      "explication": "L'ordre compte : on commence toujours par le bas, c'est-à-dire par la typicité.",
+      "source": "lignes 5 et 6"
+    }
+  ]
+}

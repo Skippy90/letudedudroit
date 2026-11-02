@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Était-il responsable ? | Droit pénal suisse
 
-## Description (2545 caractères sur 5 000)
+## Description (3410 caractères sur 5 000)
 
 ```text
 Était-il responsable ? — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 19 CP, al. 1 : L'auteur n'est pas punissable si, au moment d'agir, il ne pouvait pas apprécier le caractère illicite de son acte ou se déterminer d'après cette appréciation
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_19
 • Art. 19 CP, al. 2 : Responsabilité restreinte : le juge atténue la peine
@@ -24,13 +24,11 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_20
 • Art. 263 CP : Acte commis en état d'irresponsabilité fautive (ivresse ou intoxication dues à sa faute) : peine pécuniaire ; peine privative de liberté de trois ans au plus ou peine pécuniaire si l'acte n'est puni que d'une peine privative de liberté
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_263
-
-Jurisprudence du Tribunal fédéral :
-• ATF 133 IV 145
+• ATF 133 IV 145, consid. 3.3 et 3.6 : Le juge ne doit pas lever ses doutes seul, par exemple en lisant de la littérature psychiatrique ; il doit faire appel à un expert ; un diagnostic ne suffit pas toujours à créer un doute sérieux
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F133-IV-145%3Afr
 
 Réponse à la question finale :
-Non. Zoé pouvait éviter son état d'ivresse et prévoir qu'elle deviendrait violente. Selon l'article 19, alinéa 4, du Code pénal, les règles sur l'irresponsabilité et la responsabilité restreinte ne s'appliquent alors pas : elle est jugée comme une personne pleinement responsable.
+En principe non, mais tout dépend de deux conditions cumulatives. Selon l'article 19, alinéa 4, du Code pénal, Zoé ne peut pas invoquer son ivresse si elle pouvait éviter son état et prévoir les violences commises dans cet état. Elle sait qu'elle devient agressive quand elle boit, et elle boit pourtant énormément : ces faits plaident pour un état évitable et un acte prévisible, mais il faut les établir. Si ces deux conditions sont remplies, les règles sur l'irresponsabilité et la responsabilité restreinte ne s'appliquent pas : elle est jugée comme si elle avait été responsable. La question ne se pose d'ailleurs que si l'ivresse l'a vraiment rendue irresponsable, ou partiellement responsable, au moment de frapper. Si elle ne pouvait pas prévoir ces violences, l'article 263 du Code pénal peut entrer en jeu, à condition qu'elle ait été complètement irresponsable par sa faute et que l'acte soit un crime ou un délit.
 
 Chapitres :
 0:00 Le cas de départ

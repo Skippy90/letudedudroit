@@ -6,12 +6,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Ils étaient plusieurs | Droit pénal suisse
 
-## Description (2625 caractères sur 5 000)
+## Description (3615 caractères sur 5 000)
 
 ```text
 Ils étaient plusieurs — expliqué simplement, à partir d'un cas concret.
 
-Articles cités (texte en vigueur vérifié sur Fedlex) :
+Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • Art. 24 CP, al. 1 : L'instigateur décide intentionnellement autrui à commettre un crime ou un délit ; si l'infraction est commise, il encourt la peine de l'auteur
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_24
 • Art. 24 CP, al. 2 : La tentative d'instigation à un crime est punie de la peine de la tentative
@@ -22,19 +22,17 @@ Articles cités (texte en vigueur vérifié sur Fedlex) :
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_139
 • Art. 105 CP, al. 2 : Pour une contravention, la complicité n'est punissable que si la loi le prévoit
   https://www.fedlex.admin.ch/eli/cc/54/757_781_799/fr#art_105
-
-Jurisprudence du Tribunal fédéral :
-• ATF 135 IV 152
+• ATF 135 IV 152, consid. 2.3.1 : Coauteur : collabore intentionnellement et de manière déterminante à la décision, à l'organisation ou à l'exécution ; apparaît comme l'un des participants principaux ; contribution essentielle ; décision commune pouvant résulter d'actes concluants
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F135-IV-152%3Afr
-• ATF 128 IV 11
+• ATF 128 IV 11, consid. 2a : Instigation : susciter la décision d'agir ; une demande, une suggestion suffisent ; créer une occasion ne suffit pas ; pas d'instigation si l'auteur était déjà décidé ; affaire du CD-ROM et des 20 000 francs, condamnation pour tentative d'instigation à vol
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F128-IV-11%3Afr
-• ATF 132 IV 49
+• ATF 132 IV 49, consid. 1.1 : Complice : contribution causale (les événements ne se seraient pas déroulés de la même manière) ; savoir et vouloir ou accepter ; connaître les principaux traits ; le dol éventuel suffit
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F132-IV-49%3Afr
-• ATF 144 IV 265
+• ATF 144 IV 265, consid. 2 : Instigation et complicité ont un caractère accessoire par rapport à l'acte de l'auteur principal
   https://www.bger.ch/ext/eurospider/live/fr/php/clir/http/index.php?lang=fr&type=show_document&highlight_docid=atf%3A%2F%2F144-IV-265%3Afr
 
 Réponse à la question finale :
-Paul est complice. Il n'a pas fait naître la décision de son ami, qui était déjà décidé, et il n'a pas pris part au cambriolage de façon essentielle. Il a intentionnellement prêté assistance, en sachant à quoi servirait la voiture (article 25 du Code pénal ; ATF 132 IV 49, consid. 1.1). Sa peine est atténuée.
+Paul est, selon toute vraisemblance, complice. Sa voiture a transporté les outils et conduit l'ami jusqu'à la maison : elle a concrètement facilité le cambriolage. Rien n'indique que Paul ait fait naître la décision de son ami, ni qu'il ait pris part au cambriolage de façon déterminante. Il a intentionnellement prêté assistance, en sachant à quoi servirait la voiture (article 25 du Code pénal ; ATF 132 IV 49, consid. 1.1). Sa peine est atténuée.
 
 Chapitres :
 0:00 Le cas de départ

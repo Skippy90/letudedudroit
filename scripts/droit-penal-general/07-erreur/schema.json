@@ -1,0 +1,102 @@
+{
+  "video": 7,
+  "slug": "07-erreur",
+  "titre": "Je ne savais pas",
+  "accroche": "« Je ne savais pas » : est-ce une excuse ?",
+  "panneaux": [
+    {
+      "type": "arbre",
+      "titre": "Sur quoi porte l'erreur ?",
+      "questions": [
+        {
+          "q": "L'erreur porte-t-elle sur les faits, sur ce qu'on faisait ?",
+          "oui": {
+            "suite": 1
+          },
+          "non": {
+            "suite": 3
+          },
+          "source": "lignes 6 à 7, 31 ; art. 13 et 21 CP"
+        },
+        {
+          "q": "L'erreur pouvait-elle être évitée en prenant les précautions voulues ?",
+          "oui": {
+            "suite": 2
+          },
+          "non": {
+            "resultat": "Jugé d'après sa croyance"
+          },
+          "source": "ligne 14 ; art. 13 al. 2 CP"
+        },
+        {
+          "q": "La loi punit-elle aussi cet acte commis par négligence ?",
+          "oui": {
+            "resultat": "Punissable pour négligence"
+          },
+          "non": {
+            "resultat": "Pas punissable"
+          },
+          "source": "ligne 15 ; art. 13 al. 2 CP"
+        },
+        {
+          "q": "Avait-il au moins un vague sentiment d'agir de manière illicite ?",
+          "oui": {
+            "resultat": "Pas d'erreur retenue"
+          },
+          "non": {
+            "suite": 4
+          },
+          "source": "ligne 23 ; ATF 104 IV 217"
+        },
+        {
+          "q": "Pouvait-il éviter l'erreur sur le caractère illicite de son acte ?",
+          "oui": {
+            "resultat": "Peine atténuée"
+          },
+          "non": {
+            "resultat": "Pas coupable"
+          },
+          "source": "lignes 19, 21 ; art. 21 CP"
+        }
+      ],
+      "resultats": {
+        "Jugé d'après sa croyance": {
+          "couleur": "gris",
+          "detail": "Comme Élodie : l'intention manque, la typicité tombe.",
+          "source": "lignes 11 à 13 ; art. 13 al. 1 CP"
+        },
+        "Punissable pour négligence": {
+          "couleur": "ambre",
+          "detail": "Seulement si la loi réprime l'acte par négligence.",
+          "source": "lignes 14 à 15, 32 ; art. 13 al. 2 CP"
+        },
+        "Pas punissable": {
+          "couleur": "gris",
+          "detail": "Le vol n'existe pas par négligence : Élodie n'est pas punissable.",
+          "source": "ligne 15 ; art. 13 al. 2 et 139 CP"
+        },
+        "Pas d'erreur retenue": {
+          "couleur": "vert",
+          "detail": "Ce sentiment peut suffire à exclure l'erreur, comme pour l'automobiliste à la vignette.",
+          "source": "lignes 23 à 26 ; ATF 104 IV 217 ; ATF 141 IV 336"
+        },
+        "Peine atténuée": {
+          "couleur": "ambre",
+          "detail": "Erreur évitable : l'auteur reste coupable, mais moins.",
+          "source": "ligne 21 ; art. 21 CP"
+        },
+        "Pas coupable": {
+          "couleur": "gris",
+          "detail": "Il ne savait ni ne pouvait savoir : la culpabilité tombe.",
+          "source": "lignes 19 à 20 ; art. 21 CP"
+        }
+      }
+    }
+  ],
+  "piege": {
+    "faux": "Nul n'est censé ignorer la loi : l'erreur ne compte jamais.",
+    "vrai": "L'article 21 admet l'erreur sur le droit ; l'erreur sur les faits est souvent décisive.",
+    "source": "lignes 28 à 30"
+  },
+  "a_retenir": "Demandez-vous sur quoi porte l'erreur : les faits ou le droit d'agir. L'étage concerné change."
+}
