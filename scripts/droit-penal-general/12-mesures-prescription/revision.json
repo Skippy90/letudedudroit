@@ -1,0 +1,209 @@
+{
+  "video": 12,
+  "slug": "12-mesures-prescription",
+  "titre": "Quand la justice ne poursuit plus",
+  "notions": [
+    "Peine et mesure",
+    "Mesures principales",
+    "Prescription de l'action pénale",
+    "Imprescriptibilité"
+  ],
+  "a_vous": [
+    {
+      "ligne": 5,
+      "pause": "Selon vous, une peine et une mesure répondent-elles à la même chose ?",
+      "pourquoi": "La distinction entre faute et danger est la clé de la première partie."
+    },
+    {
+      "ligne": 24,
+      "pause": "Selon vous, Noah peut-il encore être poursuivi onze ans après son tag ?",
+      "pourquoi": "Le spectateur calcule lui-même le délai avant la réponse."
+    },
+    {
+      "ligne": 31,
+      "pause": "Selon vous, un acte prescrit est-il un acte innocent ?",
+      "pourquoi": "C'est le piège classique de la vidéo."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v12-01",
+      "q": "À quoi répond une peine, et à quoi répond une mesure ?",
+      "r": "Une peine répond à une faute. Une mesure répond à un danger ou à un besoin de soins.",
+      "source": "ligne 5",
+      "notion": "Peine et mesure"
+    },
+    {
+      "id": "v12-02",
+      "q": "Quelles sont les trois conditions d'une mesure, selon l'article 56 ?",
+      "r": "Une peine seule ne suffit pas contre le danger. L'auteur a besoin d'un traitement, ou la sécurité publique l'exige. Les conditions de la mesure précise sont remplies.",
+      "source": "lignes 6 et 7 ; art. 56 CP",
+      "notion": "Peine et mesure"
+    },
+    {
+      "id": "v12-03",
+      "q": "À quoi compare-t-on l'atteinte causée par une mesure ?",
+      "r": "Au risque de récidive et à la gravité des infractions à craindre. L'atteinte ne doit pas être excessive.",
+      "source": "ligne 8 ; art. 56 CP",
+      "notion": "Peine et mesure"
+    },
+    {
+      "id": "v12-04",
+      "q": "Que se passe-t-il quand les conditions d'une mesure ne sont plus remplies ?",
+      "r": "La mesure doit être levée.",
+      "source": "ligne 9 ; art. 56 CP",
+      "notion": "Peine et mesure"
+    },
+    {
+      "id": "v12-05",
+      "q": "À qui s'adresse le traitement institutionnel de l'article 59 ?",
+      "r": "À l'auteur qui souffre d'un grave trouble mental. L'infraction doit être liée au trouble, et le traitement doit pouvoir le détourner de nouvelles infractions. La privation de liberté qu'il entraîne ne dépasse en général pas cinq ans, mais la mesure peut être prolongée.",
+      "source": "lignes 11 à 13 ; art. 59 CP",
+      "notion": "Mesures principales"
+    },
+    {
+      "id": "v12-06",
+      "q": "Dans l'internement, qu'est-ce qui vient en premier ?",
+      "r": "La peine privative de liberté est exécutée d'abord. L'internement vient ensuite.",
+      "source": "ligne 16 ; art. 64 CP",
+      "notion": "Mesures principales"
+    },
+    {
+      "id": "v12-07",
+      "q": "Selon l'article 97, quels sont les délais de prescription de l'action pénale ?",
+      "r": "Trente ans si la peine maximale est la privation de liberté à vie. Quinze ans au-delà de trois ans, dix ans pour trois ans, sept ans pour une autre peine.",
+      "source": "lignes 20 et 21 ; art. 97 CP",
+      "notion": "Prescription de l'action pénale"
+    },
+    {
+      "id": "v12-08",
+      "q": "Quand le délai de prescription commence-t-il en principe à courir ?",
+      "r": "Dès le jour où l'auteur a agi.",
+      "source": "ligne 23 ; art. 98 CP",
+      "notion": "Prescription de l'action pénale"
+    },
+    {
+      "id": "v12-09",
+      "q": "Noah savait que son tag coûterait environ deux mille francs à nettoyer. Découvert onze ans plus tard, peut-il encore être poursuivi ?",
+      "r": "Non. Il ne visait pas un dommage de moindre importance. Le dommage à la propriété simple est puni de trois ans au plus : le délai est de dix ans.",
+      "source": "ligne 24 ; art. 144, 172ter et 97 CP",
+      "notion": "Prescription de l'action pénale"
+    },
+    {
+      "id": "v12-10",
+      "q": "Que se passe-t-il si un jugement de première instance est rendu avant l'échéance ?",
+      "r": "La prescription ne court plus. Un procès en appel ne peut donc pas la faire acquérir.",
+      "source": "ligne 25 ; art. 97 CP",
+      "notion": "Prescription de l'action pénale"
+    },
+    {
+      "id": "v12-11",
+      "q": "De combien de temps dispose la victime pour porter plainte ?",
+      "r": "Trois mois dès qu'elle connaît l'auteur. C'est un autre délai que la prescription.",
+      "source": "ligne 25 ; art. 31 CP",
+      "notion": "Prescription de l'action pénale"
+    },
+    {
+      "id": "v12-12",
+      "q": "Citez des crimes qui ne se prescrivent jamais.",
+      "r": "Notamment le génocide, les crimes contre l'humanité et les crimes de guerre. Et certains crimes sexuels sur des enfants de moins de douze ans.",
+      "source": "lignes 26 et 27 ; art. 101 CP",
+      "notion": "Imprescriptibilité"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Noah a couvert le mur d'une boulangerie d'un grand tag, en sachant que le nettoyage coûterait environ deux mille francs. On ne découvre son auteur que onze ans plus tard.",
+      "qualification": "Dommage à la propriété simple, prescrit par dix ans : Noah ne peut plus être poursuivi.",
+      "source": "ligne 24"
+    },
+    "changements": [
+      {
+        "fait": "Un jugement de première instance est rendu avant la fin des dix ans.",
+        "qualification": "La prescription ne court plus.",
+        "pourquoi": "Un procès en appel ne peut donc pas la faire acquérir.",
+        "source": "ligne 25 ; art. 97 CP"
+      },
+      {
+        "fait": "Noah ne visait qu'un dommage de moindre importance.",
+        "qualification": "C'est une contravention : la prescription est de trois ans.",
+        "pourquoi": "L'article 172 ter en fait une contravention, punie d'une amende. Pour les contraventions, le délai est de trois ans.",
+        "source": "ligne 22 ; art. 172ter et 109 CP ; vidéo 3"
+      },
+      {
+        "fait": "L'acte est un vol simple, puni de cinq ans au plus. L'auteur sait que l'objet vaut mille francs. Les faits sont découverts douze ans plus tard.",
+        "qualification": "La poursuite reste possible : le délai est de quinze ans.",
+        "pourquoi": "Au-delà de trois ans de peine maximale, le délai est de quinze ans. L'auteur ne visait pas une faible valeur : l'article 172 ter ne s'applique pas. C'est la question finale sur Lina.",
+        "source": "ligne 21, réponse à la question finale ; art. 97, 139 et 172ter CP"
+      },
+      {
+        "fait": "L'acte est un crime de guerre.",
+        "qualification": "Il ne se prescrit jamais.",
+        "pourquoi": "L'article 101 énumère les crimes imprescriptibles, dont les crimes de guerre.",
+        "source": "lignes 26 et 27 ; art. 101 CP"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Lina vole un vélo, en sachant qu'il vaut mille francs. C'est un vol simple. Les faits ne sont découverts que douze ans plus tard. Peut-on encore la poursuivre ?",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quel est le délai de prescription si la peine maximale dépasse trois ans de privation de liberté ?",
+        "choix": [
+          "Sept ans",
+          "Dix ans",
+          "Quinze ans"
+        ],
+        "bon": 2,
+        "note": "L'article 97 prévoit quinze ans si la peine maximale dépasse trois ans de peine privative de liberté."
+      },
+      {
+        "nom": "Application",
+        "q": "Le vol est puni de cinq ans au plus. Quel délai s'applique ?",
+        "choix": [
+          "Quinze ans, car cinq ans dépassent trois ans",
+          "Dix ans, comme pour le tag de Noah",
+          "Trois ans, comme pour une contravention"
+        ],
+        "bon": 0,
+        "note": "Cinq ans, c'est plus de trois ans : le délai est de quinze ans."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Douze ans après les faits, Lina peut-elle être poursuivie ?",
+        "choix": [
+          "Non, l'acte est prescrit",
+          "Oui : elle ne visait pas une faible valeur, et douze ans, c'est moins que quinze",
+          "Oui, car le vol ne se prescrit jamais"
+        ],
+        "bon": 1,
+        "note": "Douze ans, c'est moins que quinze. Lina savait que le vélo valait mille francs : l'article 172 ter, qui en ferait une contravention prescrite par trois ans, ne s'applique pas."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Noah visait un dommage d'environ deux mille francs : c'est un dommage à la propriété simple, puni de trois ans au plus.",
+        "Le délai de prescription est donc de dix ans.",
+        "Découvert onze ans plus tard, l'acte est prescrit.",
+        "Noah est donc innocent : son tag n'était pas illicite."
+      ],
+      "faux": 3,
+      "explication": "La prescription ne dit rien de la culpabilité, et elle ne rend pas l'acte licite. L'État a seulement perdu le droit de poursuivre.",
+      "source": "lignes 30 et 31 ; art. 97 CP"
+    },
+    {
+      "copie": [
+        "Théo était irresponsable : il n'est pas punissable.",
+        "Le juge peut envisager un traitement institutionnel, si une expertise psychiatrique en confirme les conditions.",
+        "Cette mesure est une peine déguisée : elle dure jusqu'au bout, même si ses conditions ne sont plus réunies.",
+        "Elle doit rester proportionnée au risque de récidive."
+      ],
+      "faux": 2,
+      "explication": "Une mesure n'est pas une peine déguisée. Elle doit être levée dès que ses conditions légales ne sont plus réunies.",
+      "source": "lignes 9 et 32 ; art. 56 CP"
+    }
+  ]
+}

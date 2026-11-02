@@ -27,8 +27,8 @@ Personnages : Inès (silhouette rose, reprise de la vidéo 3), Hugo (silhouette 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 7 | La peine privative de liberté, c'est l'enfermement. Elle dure en principe de trois jours à vingt ans. Elle peut être prononcée à vie quand la loi le prévoit expressément. | Bloc « Art. 40 CP » ; une frise de « 3 jours » à « 20 ans » |
-| 8 | La peine pécuniaire, elle, se compte en jours-amende. Le juge fixe d'abord leur nombre, entre trois et cent quatre-vingts, selon la faute. | Bloc « Art. 34 CP » ; le mot « Nombre : la faute » |
-| 9 | Puis il fixe le montant d'un jour-amende, en général entre trente et trois mille francs. Ce montant dépend de la situation de l'auteur : son revenu, sa fortune, ses charges. | Le mot « Montant : la situation » |
+| 8 | La peine pécuniaire, elle, se compte en jours-amende. Le juge fixe d'abord leur nombre, en principe entre trois et cent quatre-vingts, selon la faute. | Bloc « Art. 34 CP » ; le mot « Nombre : la faute » |
+| 9 | Puis il fixe le montant d'un jour-amende. En règle générale, il vaut entre trente et trois mille francs. Exceptionnellement, il peut descendre à dix francs. Ce montant dépend de la situation de l'auteur : son revenu, sa fortune, ses charges. | Le mot « Montant : la situation » ; « Exception : 10 francs » |
 | 10 | Prenons un exemple. Trente jours-amende à cinquante francs, cela fait mille cinq cents francs. Pour une personne aisée, trente jours-amende à mille francs feront trente mille francs. | Deux colonnes : « 30 × 50 » et « 30 × 1000 » |
 | 11 | Même faute, même nombre de jours, mais un sacrifice adapté à chacun. C'est toute l'idée du jour-amende. | Le mot « Même faute, même effort » |
 | 12 | Enfin, l'amende punit les contraventions, vues dans la vidéo 3. Sauf exception, elle ne dépasse pas dix mille francs. | Bloc « Art. 106 CP » ; « vidéo 3 » en petit |
@@ -40,8 +40,8 @@ Personnages : Inès (silhouette rose, reprise de la vidéo 3), Hugo (silhouette 
 | --- | --- | --- |
 | 14 | Pour Inès, le vol est puni d'une peine privative de liberté de cinq ans au plus. Ou d'une peine pécuniaire. Le juge a le choix. | Bloc « Art. 139 CP » ; deux colonnes « Liberté » et « Pécuniaire » |
 | 15 | Le Tribunal fédéral lui demande de tenir compte de trois choses. La peine est-elle adaptée ? Quels seront ses effets sur l'auteur et sur sa vie sociale ? Et sera-t-elle efficace pour éviter de nouvelles infractions ? | Trois mots : « Adéquation », « Effets », « Prévention » |
-| 16 | Et l'article 41 pose un cadre. Le juge ne peut préférer la peine privative de liberté à la peine pécuniaire que pour deux raisons. | Bloc « Art. 41 CP » |
-| 17 | Soit elle paraît nécessaire pour détourner l'auteur d'autres crimes ou délits. Soit on peut craindre que la peine pécuniaire ne puisse pas être exécutée. Et le juge doit motiver ce choix en détail. | Deux cases « Détourner de récidiver » et « Paiement impossible » |
+| 16 | Et l'article 41 pose un cadre, quand une peine pécuniaire est possible. Le juge ne peut alors préférer la peine privative de liberté que pour deux raisons. | Bloc « Art. 41 CP » |
+| 17 | Soit elle paraît justifiée pour détourner l'auteur d'autres crimes ou délits. Soit on peut craindre que la peine pécuniaire ne puisse pas être exécutée. Et le juge doit motiver ce choix en détail. | Deux cases « Détourner de récidiver » et « Paiement impossible » |
 | 18 | Pour Inès, jeune, sans antécédents, avec un salaire d'apprentie, une peine pécuniaire paraît suffisante. Rien n'indique qu'elle ne pourrait pas la payer. | La colonne « Pécuniaire » en ambre |
 
 ## Fixer la peine
@@ -58,10 +58,10 @@ Personnages : Inès (silhouette rose, reprise de la vidéo 3), Hugo (silhouette 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 23 | Dernière étape : le sursis. Selon l'article 42, le juge suspend en règle générale l'exécution de la peine. Cela vaut pour une peine pécuniaire, ou pour une peine privative de liberté de deux ans au plus. | Bloc « Art. 42 CP » ; le mot « Sursis » |
-| 24 | Il le fait quand une peine ferme ne paraît pas nécessaire pour détourner l'auteur d'autres crimes ou délits. | Le mot « Pronostic favorable » |
+| 24 | Il le fait quand une peine ferme ne paraît pas nécessaire pour détourner l'auteur d'autres crimes ou délits. Les antécédents comptent aussi. Prenons quelqu'un déjà condamné à plus de six mois de privation de liberté, dans les cinq ans avant l'acte. Pour lui, le sursis exige des circonstances particulièrement favorables. Enfin, le juge peut refuser le sursis si l'auteur n'a pas fait l'effort raisonnable de réparer le dommage. | Le mot « Pronostic favorable » ; puis « Antécédents », « Circonstances particulièrement favorables », « Réparer le dommage » |
 | 25 | Le juge fixe alors un délai d'épreuve de deux à cinq ans. Si tout se passe bien pendant ce délai, la peine n'est jamais exécutée. | Bloc « Art. 44 CP » ; une frise « Jugement », « Délai d'épreuve », « Fin » ; une zone verte |
 | 26 | Mais imaginons que la personne commette un nouveau crime ou délit pendant ce délai. Si une récidive est à craindre, le juge révoque le sursis. La peine doit alors être exécutée. | Bloc « Art. 46 CP » ; un point « Nouvelle infraction » ; la zone devient grise |
-| 27 | Entre les deux, il existe le sursis partiel. Pour une peine privative de liberté d'un à trois ans, une partie seulement est exécutée. | Bloc « Art. 43 CP » ; deux colonnes « Exécutée » et « Suspendue » |
+| 27 | Entre les deux, il existe le sursis partiel. Pour une peine privative de liberté d'un à trois ans, le juge peut n'en faire exécuter qu'une partie. | Bloc « Art. 43 CP » ; deux colonnes « Exécutée » et « Suspendue » |
 | 28 | La partie à exécuter ne peut pas dépasser la moitié de la peine. Et chacune des deux parties doit durer au moins six mois. | Les deux colonnes ; « Moitié au plus », « Six mois au moins » |
 | 29 | Pour Inès, le juge prononce une peine pécuniaire avec sursis, et un délai d'épreuve de deux ans. Si l'épreuve réussit, elle ne paiera pas ces jours-amende. | Le mot « Peine pécuniaire avec sursis » |
 
@@ -78,8 +78,8 @@ Personnages : Inès (silhouette rose, reprise de la vidéo 3), Hugo (silhouette 
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 33 | Retenons. Trois peines : la privation de liberté, la peine pécuniaire en jours-amende, et l'amende pour les contraventions. | La liste des trois peines |
-| 34 | Le juge choisit la peine, puis la fixe selon la culpabilité. Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle. Il faut surtout un pronostic favorable. Avec certains antécédents, il faut des circonstances particulièrement favorables. | Les trois cases « Choisir », « Fixer », « Sursis » |
-| 35 | Une question pour finir. Hugo est condamné à une peine privative de liberté de deux ans. Peut-il obtenir le sursis complet ? Et si la peine était de trente mois ? Écrivez votre réponse en commentaire. | La silhouette de Hugo ; une frise « 2 ans », « 30 mois » |
+| 34 | Le juge choisit la peine, puis la fixe selon la culpabilité. Pour une peine pécuniaire, ou de deux ans au plus, le sursis est la règle. Il faut surtout un pronostic favorable. Les antécédents et l'effort de réparer le dommage comptent aussi. | Les trois cases « Choisir », « Fixer », « Sursis » |
+| 35 | Une question pour finir. Hugo est condamné à une peine privative de liberté de deux ans. Il n'a jamais été condamné, et il a réparé le dommage. Le sursis complet est-il possible ? Et si la peine était de trente mois ? Écrivez votre réponse en commentaire. | La silhouette de Hugo ; « Jamais condamné, dommage réparé » ; une frise « 2 ans », « 30 mois » |
 | 36 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : pour deux ans, oui, le sursis complet est possible, puisque l'article 42 vise les peines privatives de liberté « de deux ans au plus », si le pronostic est favorable. Pour trente mois, le sursis complet n'est plus possible ; mais le sursis partiel de l'article 43 l'est, puisqu'il vise les peines d'un à trois ans. La partie à exécuter ne peut alors pas dépasser quinze mois, et chaque partie doit durer au moins six mois.
+**Réponse attendue à la question finale**, pour la description : pour deux ans, le sursis complet est possible, puisque l'article 42 vise les peines privatives de liberté « de deux ans au plus ». Il n'est pas automatique : il faut un pronostic favorable, et le juge tient compte des antécédents et de la réparation du dommage. Hugo n'a jamais été condamné et il a réparé le dommage : si le pronostic est favorable, le juge lui accorde en règle générale le sursis. Pour trente mois, le sursis complet n'est plus possible. Le sursis partiel de l'article 43 est alors envisageable, puisqu'il vise les peines d'un à trois ans. Il n'est pas automatique non plus : le juge décide, en tenant compte de la faute de Hugo. S'il l'accorde, la partie à exécuter ne peut pas dépasser quinze mois, et chaque partie doit durer au moins six mois.

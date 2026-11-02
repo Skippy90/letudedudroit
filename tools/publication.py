@@ -18,7 +18,7 @@ DEPOT = "https://github.com/Skippy90/letudedudroit"
 DUREE_OUVERTURE = 4  # secondes, doit correspondre à render/remotion/src/Video.tsx
 
 
-SUFFIXES = {"droit-penal-general": "Droit pénal suisse", "procedure-penale": "Procédure pénale suisse"}
+SUFFIXES = {"droit-penal-general": "Droit pénal suisse", "arrets": "Droit pénal suisse", "procedure-penale": "Procédure pénale suisse"}
 
 def horodatage(secondes: float) -> str:
     s = int(secondes)
@@ -69,7 +69,8 @@ def main(slug: str) -> None:
     # qu'il appuie), et le considérant indiqué juste après le lien.
     arrets = []
     for numero, lien in re.findall(r"\[(ATF [^\]]+)\]\(([^)]+)\)", audit):
-        if numero in [a[0] for a in arrets]:
+        # Déjà dans le tableau « Articles cités » (série des arrêts) ou déjà vu : pas de doublon.
+        if numero in [a[0] for a in arrets] or any(a.startswith(f"• {numero}") for a in articles):
             continue
         resume, consid = "", ""
         for ligne in audit.splitlines():

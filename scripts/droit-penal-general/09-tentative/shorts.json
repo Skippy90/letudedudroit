@@ -1,0 +1,17 @@
+{
+  "note": "Extraits de la vidéo, lignes du script incluses (de « de » à « a »). Seule l'accroche est propre au short : à valider par la relectrice. Durées à contrôler après l'enregistrement.",
+  "shorts": [
+    {
+      "id": "kiosque",
+      "accroche": "Il n'a rien volé : peut-il être puni ?",
+      "de": 1,
+      "a": 4
+    },
+    {
+      "id": "piege",
+      "accroche": "Rien pris, donc pas d'infraction ?",
+      "de": 29,
+      "a": 31
+    }
+  ]
+}

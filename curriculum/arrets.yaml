@@ -1,0 +1,40 @@
+# Curriculum — Les arrêts du Tribunal fédéral (série « L'arrêt en cinq minutes »)
+# Une entrée par arrêt. "requiert" renvoie aux vidéos de droit pénal général à voir avant.
+matiere: arrets
+recueil: "Arrêts publiés du Tribunal fédéral (ATF), lus sur search.bger.ch"
+videos:
+  - id: 01
+    slug: atf-130-iv-58
+    titre: "Une course de voitures, deux morts : meurtre ?"
+    notion: "Dol éventuel ou négligence consciente (ATF 130 IV 58)"
+    articles: ["12", "111", "117"]
+    requiert: ["droit-penal-general/04"]
+    statut: enregistre
+  - id: 02
+    slug: atf-122-iv-1
+    titre: "Un mari violent, tué pendant son sommeil : légitime défense ?"
+    notion: "Légitime défense ou état de nécessité face à un danger permanent (ATF 122 IV 1)"
+    articles: ["15", "16", "17", "18", "113"]
+    requiert: ["droit-penal-general/06"]
+    statut: script-redige
+  - id: 03
+    slug: atf-141-iv-336
+    titre: "Une vignette sous film adhésif : « Je ne savais pas » ?"
+    notion: "Erreur sur l'illicéité ; compétence territoriale (ATF 141 IV 336)"
+    articles: ["8", "21", "245"]
+    requiert: ["droit-penal-general/04", "droit-penal-general/07"]
+    statut: script-redige
+  - id: 04
+    slug: atf-128-iv-11
+    titre: "Vingt mille francs pour un CD-ROM : qui a décidé qui ?"
+    notion: "Instigation et tentative d'instigation (ATF 128 IV 11)"
+    articles: ["24", "139", "143"]
+    requiert: ["droit-penal-general/09", "droit-penal-general/10"]
+    statut: script-redige
+  - id: 05
+    slug: atf-135-iv-152
+    titre: "Deux contre un : faut-il savoir qui a frappé ?"
+    notion: "Coactivité, dol éventuel et concours agression / lésions corporelles (ATF 135 IV 152)"
+    articles: ["12", "123", "134"]
+    requiert: ["droit-penal-general/04", "droit-penal-general/10", "arrets/01"]
+    statut: script-redige

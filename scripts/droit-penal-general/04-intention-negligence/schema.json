@@ -1,0 +1,94 @@
+{
+  "video": 4,
+  "slug": "04-intention-negligence",
+  "titre": "Le voulait-il vraiment ?",
+  "accroche": "Accident ou intention : où passe la frontière ?",
+  "panneaux": [
+    {
+      "type": "echelle",
+      "titre": "Ce qui se passe dans la tête",
+      "sens": "le plus voulu → le plus involontaire",
+      "items": [
+        {
+          "label": "Dol direct",
+          "detail": "Conscience et volonté : il veut le résultat.",
+          "couleur": "vert",
+          "source": "lignes 9 à 12 ; art. 12 al. 2 CP"
+        },
+        {
+          "label": "Dol éventuel",
+          "detail": "Tient le résultat pour possible et l'accepte : encore l'intention.",
+          "couleur": "vert",
+          "source": "lignes 13 à 18 ; art. 12 al. 2 CP"
+        },
+        {
+          "label": "Négligence consciente",
+          "detail": "Voit le risque, mais compte qu'il ne se réalisera pas.",
+          "couleur": "ambre",
+          "source": "lignes 19 à 22 ; art. 12 al. 3 CP"
+        },
+        {
+          "label": "Négligence",
+          "detail": "Ne voit pas un risque qu'il aurait dû voir.",
+          "couleur": "ambre",
+          "source": "lignes 23 à 26 ; art. 12 al. 3 CP"
+        },
+        {
+          "label": "Accident",
+          "detail": "Précautions raisonnables prises : ni intention, ni négligence.",
+          "couleur": "gris",
+          "source": "lignes 27 et 28"
+        }
+      ]
+    },
+    {
+      "type": "arbre",
+      "titre": "Crime ou délit du Code pénal",
+      "questions": [
+        {
+          "q": "L'auteur a-t-il agi intentionnellement, même par dol éventuel ?",
+          "oui": {
+            "resultat": "Intention retenue"
+          },
+          "non": {
+            "suite": 1
+          },
+          "source": "lignes 7 et 18 ; art. 12 al. 1 CP"
+        },
+        {
+          "q": "La loi punit-elle expressément cet acte commis par négligence ?",
+          "oui": {
+            "resultat": "Négligence punissable"
+          },
+          "non": {
+            "resultat": "Pas d'infraction"
+          },
+          "source": "lignes 34 à 37 ; art. 12 al. 1 CP"
+        }
+      ],
+      "resultats": {
+        "Intention retenue": {
+          "couleur": "vert",
+          "detail": "La face intérieure de la typicité est remplie.",
+          "source": "lignes 5, 6 et 18 ; art. 12 CP"
+        },
+        "Négligence punissable": {
+          "couleur": "ambre",
+          "detail": "Exemple : lésions corporelles par négligence.",
+          "source": "ligne 35 ; art. 125 CP"
+        },
+        "Pas d'infraction": {
+          "couleur": "gris",
+          "detail": "Exemple : vitre cassée par négligence ; reste le droit civil.",
+          "source": "lignes 36 et 37 ; art. 144 CP"
+        }
+      }
+    }
+  ],
+  "piege": {
+    "faux": "La négligence est toujours punie, simplement moins sévèrement.",
+    "vrai": "Pour un crime ou un délit, la négligence n'est punie que si la loi le prévoit.",
+    "source": "lignes 33 à 37"
+  },
+  "a_retenir": "Vouloir ou accepter le résultat, c'est l'intention ; la négligence n'est punie que si la loi le dit."
+}

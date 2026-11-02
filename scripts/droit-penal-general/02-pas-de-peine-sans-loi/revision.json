@@ -1,0 +1,209 @@
+{
+  "video": 2,
+  "slug": "02-pas-de-peine-sans-loi",
+  "titre": "Pas de peine sans loi",
+  "notions": [
+    "Principe de la légalité",
+    "Un texte qui décrit l'acte",
+    "Non-rétroactivité",
+    "Infractions hors du Code pénal"
+  ],
+  "a_vous": [
+    {
+      "ligne": 19,
+      "pause": "Tom ment cette fois devant un tribunal, comme témoin. Selon vous, un article le punit-il ?",
+      "pourquoi": "Le spectateur découvre que la loi ne punit pas le mensonge en général, mais certains mensonges précis."
+    },
+    {
+      "ligne": 28,
+      "pause": "La nouvelle loi arrive après le mensonge de Tom. Selon vous, peut-on le punir avec elle ?",
+      "pourquoi": "Le spectateur prédit la non-rétroactivité avant que l'article 2 soit cité."
+    },
+    {
+      "ligne": 32,
+      "pause": "« Ce n'est pas dans le Code pénal, donc c'est permis. » Selon vous, est-ce vrai ?",
+      "pourquoi": "Le spectateur s'engage sur le piège classique avant sa correction."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v02-01",
+      "q": "Que dit l'article premier du Code pénal ?",
+      "r": "« Une peine ou une mesure ne peuvent être prononcées qu'en raison d'un acte expressément réprimé par la loi. » C'est le principe de la légalité.",
+      "source": "lignes 8 et 9 ; art. 1 CP",
+      "notion": "Principe de la légalité"
+    },
+    {
+      "id": "v02-02",
+      "q": "Le principe de la légalité vaut-il seulement pour la peine ?",
+      "r": "Non. Il vaut aussi pour la mesure, par exemple un traitement.",
+      "source": "ligne 10 ; art. 1 CP",
+      "notion": "Principe de la légalité"
+    },
+    {
+      "id": "v02-03",
+      "q": "Quelles sont les trois exigences tirées de l'article premier ?",
+      "r": "Un texte. Un texte qui décrit l'acte. Un texte qui existait déjà au moment de l'acte.",
+      "source": "ligne 11 ; art. 1 CP",
+      "notion": "Principe de la légalité"
+    },
+    {
+      "id": "v02-04",
+      "q": "Le juge pénal peut-il punir un acte sur la base de la morale ou de son avis personnel ?",
+      "r": "Non. Il faut un texte de loi. Le juge pénal ne peut pas inventer une infraction.",
+      "source": "ligne 12 ; art. 1 CP ; ATF 103 IV 129",
+      "notion": "Principe de la légalité"
+    },
+    {
+      "id": "v02-05",
+      "q": "Tom ment à Sami pour passer la journée au lac. A-t-il commis une infraction ?",
+      "r": "Non. Aucun texte ne décrit ce que Tom a fait. Le premier étage n'est pas franchi.",
+      "source": "ligne 15 ; art. 1 CP",
+      "notion": "Un texte qui décrit l'acte"
+    },
+    {
+      "id": "v02-06",
+      "q": "Tom ment devant un tribunal, comme témoin. Un article existe-t-il ?",
+      "r": "Oui. L'article 307 punit le témoin qui fait une déposition fausse en justice.",
+      "source": "ligne 19 ; art. 307 CP",
+      "notion": "Un texte qui décrit l'acte"
+    },
+    {
+      "id": "v02-07",
+      "q": "Mentir suffit-il pour qu'il y ait escroquerie ?",
+      "r": "Non. Il faut une tromperie astucieuse et un acte de la victime contre ses intérêts financiers ou ceux d'un tiers. Il faut aussi le dessein de s'enrichir ou d'enrichir un tiers.",
+      "source": "lignes 21 et 22 ; art. 146 CP",
+      "notion": "Un texte qui décrit l'acte"
+    },
+    {
+      "id": "v02-08",
+      "q": "Le juge peut-il interpréter un texte pénal largement ?",
+      "r": "Oui, même largement. Mais il ne peut pas y ajouter ce qui n'y est pas.",
+      "source": "ligne 24 ; ATF 103 IV 129 ; ATF 137 IV 99",
+      "notion": "Un texte qui décrit l'acte"
+    },
+    {
+      "id": "v02-09",
+      "q": "Une loi pénale votée après l'acte peut-elle punir cet acte ?",
+      "r": "Non. Une loi pénale ne remonte pas dans le passé contre l'auteur.",
+      "source": "lignes 28 à 30 ; art. 2 CP ; ATF 147 IV 241",
+      "notion": "Non-rétroactivité"
+    },
+    {
+      "id": "v02-10",
+      "q": "Quelle exception existe en faveur de l'auteur ?",
+      "r": "Si la nouvelle loi est plus douce et que l'auteur est jugé après son entrée en vigueur, c'est elle qui s'applique.",
+      "source": "ligne 31 ; art. 2 CP ; ATF 147 IV 241",
+      "notion": "Non-rétroactivité"
+    },
+    {
+      "id": "v02-11",
+      "q": "Toutes les infractions se trouvent-elles dans le Code pénal ?",
+      "r": "Non. D'autres lois fédérales en contiennent, comme la loi sur la circulation routière. Les règles générales du Code pénal s'y appliquent.",
+      "source": "lignes 33 et 34 ; art. 333 CP ; art. 90 de la loi sur la circulation routière",
+      "notion": "Infractions hors du Code pénal"
+    },
+    {
+      "id": "v02-12",
+      "q": "Ce qui est puni à Genève l'est-il forcément dans le canton de Vaud ?",
+      "r": "Pas forcément. Les cantons peuvent punir certaines contraventions de police, et ces règles sont cantonales.",
+      "source": "lignes 35 et 36 ; art. 335 CP",
+      "notion": "Infractions hors du Code pénal"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Tom avait promis d'aider Sami à déménager. Il prétend être malade et passe la journée au lac.",
+      "qualification": "Pas d'infraction : aucun texte ne réprime ce mensonge.",
+      "source": "lignes 15 et 38 ; art. 1 CP"
+    },
+    "changements": [
+      {
+        "fait": "Tom ment devant un tribunal, comme témoin.",
+        "qualification": "Un article existe : l'article 307 punit le témoin qui fait une déposition fausse en justice.",
+        "pourquoi": "Le Code pénal ne punit pas le mensonge en général. Il punit certains mensonges décrits avec précision.",
+        "source": "lignes 17 à 19 ; art. 307 CP"
+      },
+      {
+        "fait": "Tom monte une mise en scène habile pour obtenir de l'argent de Sami.",
+        "qualification": "L'escroquerie entre en jeu, mais seulement si toutes ses conditions sont réunies.",
+        "pourquoi": "Il ne suffit pas de mentir. Il faut une tromperie astucieuse, un préjudice financier et un dessein d'enrichissement.",
+        "source": "lignes 20 à 22 ; art. 146 CP"
+      },
+      {
+        "fait": "L'an prochain, une loi fictive punit le mensonge entre amis.",
+        "qualification": "Tom ne peut pas être puni avec cette loi.",
+        "pourquoi": "Tom a menti avant son entrée en vigueur. Une loi pénale ne remonte pas dans le passé contre l'auteur.",
+        "source": "lignes 27 à 30 ; art. 2 CP ; ATF 147 IV 241"
+      },
+      {
+        "fait": "La nouvelle loi est plus douce que l'ancienne, et l'auteur est jugé après son entrée en vigueur.",
+        "qualification": "C'est la nouvelle loi, plus douce, qui s'applique.",
+        "pourquoi": "L'exception joue en faveur de l'auteur.",
+        "source": "ligne 31 ; art. 2 CP ; ATF 147 IV 241"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Le premier mars, Nora fait quelque chose de permis. Le premier juin, une nouvelle loi entre en vigueur et punit ce comportement. Le premier juillet, Nora recommence.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle décide à quels actes la nouvelle loi s'applique ?",
+        "choix": [
+          "Une loi nouvelle s'applique à tous les actes, même antérieurs",
+          "L'article 333 : les infractions des autres lois fédérales",
+          "Les articles 1 et 2 : il faut un texte qui existait déjà au moment de l'acte"
+        ],
+        "bon": 2,
+        "note": "La troisième exigence de l'article premier, et la non-rétroactivité de l'article 2 (lignes 26 à 30)."
+      },
+      {
+        "nom": "Application",
+        "q": "Quel acte a été commis alors que la loi était déjà en vigueur ?",
+        "choix": [
+          "L'acte du premier juillet",
+          "L'acte du premier mars",
+          "Les deux actes"
+        ],
+        "bon": 0,
+        "note": "La loi est entrée en vigueur le premier juin. Le premier mars, aucun texte ne réprimait ce comportement."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Nora peut-elle être punie ?",
+        "choix": [
+          "Oui, pour les deux dates",
+          "Oui, seulement pour le premier juillet, si les conditions de la nouvelle infraction sont réalisées",
+          "Non, pour aucune des deux dates"
+        ],
+        "bon": 1,
+        "note": "La loi ne remonte pas dans le passé contre l'auteur (réponse attendue ; art. 1 et 2 CP ; ATF 147 IV 241)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Pour punir un acte,",
+        "il faut un texte de loi.",
+        "Si ce texte n'est pas dans le Code pénal,",
+        "alors l'acte est permis."
+      ],
+      "faux": 3,
+      "explication": "D'autres lois fédérales contiennent aussi des infractions, comme la loi sur la circulation routière. Les cantons peuvent aussi punir certaines contraventions de police.",
+      "source": "lignes 32 à 35 ; art. 333 et 335 CP"
+    },
+    {
+      "copie": [
+        "Le juge peut interpréter un texte, même largement.",
+        "Mais si un élément de la description manque,",
+        "il peut punir l'acte quand même, s'il est choquant.",
+        "Il ne peut pas inventer une infraction."
+      ],
+      "faux": 2,
+      "explication": "S'il manque un élément de la description, l'acte n'est pas réprimé. Même s'il est proche, même s'il est choquant.",
+      "source": "lignes 24 et 25 ; ATF 103 IV 129"
+    }
+  ]
+}

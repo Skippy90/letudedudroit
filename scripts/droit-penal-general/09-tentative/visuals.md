@@ -29,8 +29,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 5.3 | point 0.35 "Préparation" ; repere-marquer 1 neutre ; repere-marquer 2 ambre |
 | 5.4 | point 0.6 "Exécution" ; repere-marquer 2 neutre ; repere-marquer 3 ambre |
 | 5.5 | point 0.85 "Résultat" ; repere-marquer 3 neutre ; repere-marquer 4 ambre |
-| 6.1 | effacer-titres ; titre "Consommée" |
-| 6.2 | zone 0.75 1 gris ; repere-marquer 4 gris ; sous-titre "Jamais atteint" |
+| 6.1 | effacer-titres ; titre "Consommée" ; sous-titre "Tous les éléments réunis" |
+| 6.2 | sous-titre "Souvent : un résultat" ; accent frise |
+| 6.3 | zone 0.75 1 gris ; repere-marquer 4 gris ; sous-titre "Jamais atteint" |
 | 7.1 | effacer-titres ; titre "Où commence le punissable ?" ; questions |
 | 8.1 | scene-vide ; repere-marquer 1 ambre ; titre "L'idée seule" ; personnage kilian "Kilian" turquoise gauche ; bulle kilian "Le kiosque" |
 | 8.2 | etiquette jamais "Jamais punie" 2.0 0.3 ; repere-marquer 1 gris |
@@ -48,7 +49,8 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 13.1 | zone 0.55 1 ambre ; effacer-titres ; titre "Ni trop tôt, ni trop loin" |
 | 13.2 | effacer-titres ; titre "Lien étroit" ; sous-titre "Temps et lieu" |
 | 14.1 | scene-vide ; arret-retirer ; decor rue Kiosque ; personnage kilian "Kilian" turquoise gauche ; placer kilian 0 ; etiquette force "Il force la porte" 0 1.7 |
-| 14.2 | etiquette force "Tentative de vol" 0 1.7 ; accent kilian |
+| 14.2 | etiquette force "Le seuil est franchi" 0 1.7 |
+| 14.3 | etiquette force "Tentative de vol" 0 1.7 ; accent kilian |
 | 15.1 | scene-vide ; article "Art. 22 CP" ; titre "La tentative" ; personnage kilian "Kilian" turquoise gauche |
 | 15.2 | sous-titre "Pas jusqu'au bout" |
 | 15.2+3.5 | sous-titre "Ou pas de résultat" |
@@ -90,9 +92,10 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 26.3 | effacer-titres ; titre "Aussi à plusieurs" ; personnage complice "Un complice" ambre_pale centre-droite |
 | 26.4 | effacer-titres ; titre "Aider à l'empêcher" ; accent complice |
 | 26.5 | renvoi "vidéo 10" |
-| 27.1 | scene-vide ; article "Art. 23 CP" ; titre "Empêcher le résultat" ; personnage auteur "L'auteur" rose gauche ; picto feu 3.0 0.0 |
+| 27.1 | scene-vide ; article "Art. 23 CP" ; titre "Empêcher la consommation" ; personnage auteur "L'auteur" rose gauche ; picto feu 3.0 0.0 |
 | 27.2 | sous-titre "Il éteint le feu" |
 | 27.2+2.5 | picto-retirer feu ; picto coche 3.0 0.0 |
+| 27.3 | sous-titre "Selon l'infraction et les faits" ; accent auteur |
 | 28.1 | scene-vide ; article-retirer ; decor rue Kiosque ; personnage kilian "Kilian" turquoise gauche ; placer kilian 0 ; titre "« De sa propre initiative »" ambre |
 | 28.2 | picto voiture 4.4 -1.9 ; etiquette police "La police" 4.4 -0.6 |
 | 28.2+2 | effacer-titres ; marcher kilian -3 ; mot-barre "Désistement" 0.2 2.0 |
@@ -115,8 +118,10 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 33.2 | effacer-titres ; picto-retirer prison ; titre "Où est l'acte ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre ; repere-marquer 3 ambre ; repere-marquer 4 ambre |
 | 34.1 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; repere-marquer 4 neutre ; titre "Une question pour finir" |
 | 34.2 | effacer-titres ; decor rue ; personnage mia "Mia" violet gauche ; placer mia -3 ; picto voiture 4.0 -1.6 ; bulle mia "Rayer sa voiture" |
-| 34.3 | effacer-bulle mia ; marcher mia 1 ; etiquette cle "Clé contre la portière" -0.4 1.7 |
-| 34.4 | etiquette cle "De sa propre initiative" -0.4 1.7 ; marcher mia -3 |
+| 34.3 | effacer-bulle mia ; marcher mia 1 ; etiquette cle "Elle commence à griffer" -0.4 1.7 |
+| 34.4 | etiquette cle "De sa propre initiative" -0.4 1.7 ; accent mia |
+| 34.5 | etiquette cle "Elle repart" -0.4 1.7 ; marcher mia -3 |
+| 34.6 | etiquette cle "Aucune trace" -0.4 1.7 |
 | 35.1 | etiquette-retirer cle ; article "Art. 23 CP" ; titre "Que dit l'article 23 ?" |
 | 35.2 | sous-titre "Forcément impunie ?" ; repere-marquer 3 ambre |
 | 35.3 | effacer-titres ; titre "Votre réponse en commentaire" ; accent mia |

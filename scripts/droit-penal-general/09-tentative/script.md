@@ -20,7 +20,7 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 5 | Toute infraction suit un chemin. D'abord l'idée. Puis la préparation. Puis le début de l'exécution. Enfin, le résultat. | La frise : « Idée », « Préparation », « Exécution », « Résultat » |
-| 6 | Quand le résultat est atteint, on dit que l'infraction est consommée. Kilian n'est jamais arrivé jusque-là. | Le point « Résultat » en gris |
+| 6 | On dit que l'infraction est consommée quand tous ses éléments prévus par la loi sont réalisés. Souvent, cela suppose un résultat, comme un objet abîmé. Kilian n'est jamais arrivé jusque-là. | Le mot « Consommée » ; le mot « Tous les éléments réunis » ; le point « Résultat » en gris |
 | 7 | La question est donc : où commence la zone punissable sur ce chemin ? | Une zone ambre se dessine, avec un point d'interrogation à son début |
 
 ## L'idée et la préparation
@@ -38,7 +38,7 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 | --- | --- | --- |
 | 12 | Puis vient le moment où l'auteur passe à l'action. Le Tribunal fédéral parle du dernier pas décisif. Selon le plan de l'auteur, ce pas mène directement à l'infraction. | Le mot « Dernier pas décisif » ; un repère sur la frise |
 | 13 | Ce seuil ne doit pas être placé trop tôt, ni trop loin de l'acte lui-même. Il faut un lien étroit, dans le temps et dans l'espace. | La zone ambre commence au repère |
-| 14 | Pour Kilian, forcer la porte du kiosque, c'est franchir ce seuil. À partir de là, on parle de tentative de vol. | Le point « Il force la porte » passe dans la zone ambre |
+| 14 | Selon le plan de Kilian, forcer la porte mène directement au vol dans le kiosque. C'est donc franchir ce seuil. À partir de là, on parle de tentative de vol. | Le point « Il force la porte » passe dans la zone ambre |
 | 15 | L'article 22 du Code pénal règle la tentative. L'exécution d'un crime ou d'un délit n'est pas poursuivie jusqu'à son terme, ou le résultat ne se produit pas. | Bloc « Art. 22 CP » |
 | 16 | Notez les deux situations du texte. Soit l'auteur s'arrête en route, comme Kilian surpris par la police. Soit il va jusqu'au bout, mais le résultat ne se produit pas. Par exemple, l'alarme bloque la caisse au dernier moment. | Deux colonnes « Arrêté en route » et « Résultat manqué » |
 | 17 | Dans ce cas, l'auteur est punissable. Mais le juge peut atténuer sa peine, puisque le résultat n'a pas eu lieu. | Le mot « Peine atténuée possible » |
@@ -61,7 +61,7 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 | 24 | Dernière version. Kilian a commencé à forcer la porte. Personne ne passe. Mais soudain, il pense au kiosquier, qui le connaît depuis l'enfance. Il range son outil et rentre chez lui. | Rembobinage ; une bulle « Le kiosquier » |
 | 25 | Il a renoncé de lui-même. C'est le désistement, à l'article 23 du Code pénal. | Bloc « Art. 23 CP » ; le mot « De sa propre initiative » |
 | 26 | Le juge peut alors atténuer la peine, ou même exempter Kilian de toute peine. C'est une façon d'encourager l'auteur à faire marche arrière. La règle vaut aussi quand ils sont plusieurs. Celui qui, de lui-même, aide à empêcher le résultat peut en profiter. La vidéo 10 parlera de ces affaires à plusieurs. | Le mot « Exemption possible » |
-| 27 | L'article 23 vise aussi celui qui empêche lui-même le résultat. Par exemple, celui qui a allumé un feu et l'éteint avant qu'il ne se propage. | Le mot « Empêcher le résultat » |
+| 27 | L'article 23 vise aussi celui qui contribue à empêcher la consommation de l'infraction. Par exemple, quelqu'un entreprend un incendie, puis l'empêche lui-même de se produire. Il peut alors bénéficier de l'article 23, selon l'infraction visée et les faits. | Le mot « Empêcher la consommation » ; le mot « Selon l'infraction et les faits » |
 | 28 | Mais attention aux mots « de sa propre initiative ». Si Kilian s'arrête parce que la police arrive, ce n'est pas un désistement. C'est seulement une tentative ratée. | Le mot « Police » ; « Désistement » barré |
 
 ## Le piège classique
@@ -78,8 +78,8 @@ Personnages : Kilian (silhouette turquoise), le kiosquier (silhouette bleu clair
 | --- | --- | --- |
 | 32 | Retenons. L'idée et la préparation sont en principe impunies. La tentative commence au dernier pas décisif. Elle est punissable pour les crimes et les délits. Et elle suppose toujours la volonté d'aller jusqu'au résultat. | La frise complète, la zone ambre à partir du repère |
 | 33 | Et celui qui renonce de lui-même, ou empêche le résultat, peut voir sa peine atténuée, voire supprimée. Face à un cas, situez l'acte sur le chemin : idée, préparation, tentative ou résultat ? | Bloc « Art. 23 CP » |
-| 34 | Une question pour finir. Mia veut rayer la voiture de son voisin. Elle pose déjà sa clé contre la portière. Puis, de sa propre initiative, elle renonce et repart. | La silhouette de Mia ; une frise « La clé », « Elle repart » |
+| 34 | Une question pour finir. Mia veut rayer la voiture de son voisin. Elle appuie sa clé sur la portière et commence à griffer. Puis, de sa propre initiative, elle s'arrête avant d'abîmer la peinture. Elle repart. La portière ne garde aucune trace. | La silhouette de Mia ; les mots « Elle commence à griffer », « De sa propre initiative », « Aucune trace » |
 | 35 | Qu'en dit l'article 23 ? Mia échappe-t-elle forcément à toute peine ? Écrivez votre réponse en commentaire. | Bloc « Art. 23 CP » ; un point d'interrogation |
 | 36 | La réponse, le script et les articles cités sont dans la description, en accès libre. À bientôt sur L'étude du droit. | Logo de la chaîne ; lien GitHub stylisé |
 
-**Réponse attendue à la question finale**, pour la description : non, pas forcément. Mia a franchi le dernier pas décisif : la clé posée contre la portière mène directement au dommage. C'est une tentative de dommage à la propriété (articles 22 et 144 du Code pénal), un délit poursuivi sur plainte. Elle renonce ensuite de sa propre initiative : c'est un désistement au sens de l'article 23, alinéa 1. Le juge peut alors atténuer sa peine ou l'exempter de toute peine, mais ce n'est pas automatique. Si une rayure avait déjà été faite, le désistement ne l'effacerait pas : le dommage serait consommé.
+**Réponse attendue à la question finale**, pour la description : non, pas forcément. En commençant à griffer la portière, Mia passe à l'exécution : c'est le dernier pas décisif. C'est une tentative de dommage à la propriété (articles 22 et 144 du Code pénal), un délit poursuivi sur plainte. Elle s'arrête ensuite de sa propre initiative, avant tout dommage : c'est un désistement au sens de l'article 23, alinéa 1. Le juge peut alors atténuer sa peine ou l'exempter de toute peine, mais ce n'est pas automatique. Si la peinture avait déjà été rayée, le désistement ne l'effacerait pas : le dommage serait consommé.

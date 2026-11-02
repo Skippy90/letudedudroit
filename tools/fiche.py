@@ -66,6 +66,12 @@ def main(slug: str, sortie: str | None = None) -> None:
               "const p=await b.newPage();await p.goto(process.argv[1]);"
               "await p.pdf({path:process.argv[2],format:'A4',printBackground:true});await b.close()})()")
         subprocess.run(["node", "-e", js, p.as_uri(), str(cible.resolve())], check=True)
+        # Le schéma-résumé de la vidéo (tools/schemas.py), s'il existe, devient la dernière page de la fiche.
+        schema = RACINE / "out" / "schemas" / (slug.split("/")[1] + ".pdf")
+        if schema.exists():
+            texte = Path(tmp) / "texte.pdf"
+            cible.replace(texte)
+            subprocess.run(["pdfunite", str(texte), str(schema), str(cible)], check=True)
     print(f"Fiche : {cible}")
 
 

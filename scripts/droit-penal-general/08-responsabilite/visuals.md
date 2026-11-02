@@ -38,7 +38,8 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 7.2 | picto tension -0.8 -0.2 ; etiquette etat "Sobre, juste énervé" -3.6 1.7 |
 | 7.3 | etiquette-retirer etat ; picto-retirer tension ; bulle theo "Je comprends" |
 | 7.3+1.3 | bulle theo "Je pourrais me retenir" |
-| 7.4 | effacer-bulle theo ; etiquette coupable "Responsable, donc coupable" 0.6 1.7 |
+| 7.4 | effacer-bulle theo ; etiquette coupable "Responsable" 0.6 1.7 |
+| 7.5 | etiquette coupable "Autres conditions à examiner" 0.6 1.7 |
 | 8.1 | scene-vide ; article "Art. 19 CP" ; titre "Deux facultés" ; personnage theo "Théo" turquoise gauche |
 | 9.1 | case "Comprendre" |
 | 9.2 | bulle theo "Interdit" |
@@ -51,7 +52,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 12.1 | scene-vide ; rembobiner ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 1" |
 | 12.2 | etiquette crise "Crise psychotique" -3.6 1.7 |
 | 12.3 | etiquette-retirer crise ; bulle theo "Un démon !" |
-| 13.1 | repere-marquer 1 ambre ; effacer-titres ; titre "Il ne comprend plus" |
+| 13.1 | repere-marquer 1 ambre ; effacer-titres ; titre "Il ne voit plus l'interdit" |
 | 13.2 | repere-marquer 1 gris |
 | 13.3 | etiquette irr "Irresponsable" 0.6 1.7 |
 | 14.1 | scene-vide ; rembobiner ; repere-marquer 1 neutre ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 2" |
@@ -92,9 +93,12 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 25.2 | frise ; point 0.25 "Il boit" |
 | 25.2+3 | point 0.7 "Il frappe" |
 | 26.1 | fleche-retour 0.7 0.25 vert |
-| 26.2 | effacer-titres ; titre "Pleinement responsable" ambre ; repere-marquer 1 vert ; repere-marquer 2 vert |
+| 26.2 | article "Art. 19 CP" ; effacer-titres ; titre "Évitable et prévisible ?" |
+| 26.3 | effacer-titres ; titre "Alors, pleinement responsable" ambre ; repere-marquer 1 vert ; repere-marquer 2 vert |
 | 27.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; personnage theo "Théo" turquoise gauche ; titre "Pas prévisible ?" ; bulle theo "Imprévisible" |
 | 27.2 | effacer-bulle theo ; article "Art. 263 CP" ; sous-titre "Irresponsabilité fautive" ; picto bouteille 0 0.3 |
+| 27.3 | sous-titre "Totalement irresponsable, par sa faute" |
+| 27.4 | sous-titre "Un crime ou un délit" |
 | 28.1 | effacer-titres ; titre "Peine pécuniaire" ; picto pieces 3.0 0.3 |
 | 28.2 | picto-retirer bouteille ; picto prison 0 0.3 ; sous-titre "Seule peine : la prison ?" |
 | 28.2+4 | sous-titre "Trois ans au plus" |
@@ -102,8 +106,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 29.1+2.5 | etiquette insu "Drogué, à son insu" 0.6 1.7 |
 | 29.2 | etiquette insu "Pas fautif" 0.6 1.7 |
 | 29.3 | article "Art. 263 CP" ; titre "Ni l'alinéa 4, ni 263" |
-| 29.4 | scene-vide ; article-retirer ; titre "L'ivresse choisie" ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
-| 29.5 | repere 0.25 "La faute" |
+| 29.4 | scene-vide ; article-retirer ; titre "L'ivresse volontaire ne suffit pas" ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
+| 29.5 | sous-titre "Les conditions de chaque règle" |
+| 29.6 | repere 0.25 "La faute" |
 | 30.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; bulle theo "Un démon !" ; repere-marquer 1 gris |
 | 30.2 | titre "Pas punissable" |
 | 30.3 | effacer-bulle theo ; sous-titre "Pas forcément la fin" |
@@ -120,13 +125,15 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 34.1 | scene-vide ; personnage theo "Théo" turquoise droite ; repere-marquer 1 gris ; liste-ajouter "Pas de peine" |
 | 34.2 | repere-marquer 1 ambre ; repere-marquer 2 ambre ; liste-ajouter "Peine atténuée" |
 | 34.3 | article "Art. 20 CP" ; liste-ajouter "Un expert" |
-| 34.4 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; picto bouteille 0 0.3 ; titre "L'ivresse choisie n'excuse pas" |
+| 34.4 | scene-vide ; article-retirer ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; picto bouteille 0 0.3 ; titre "Ivresse volontaire : pas d'automatisme" |
+| 34.5 | sous-titre "Plusieurs conditions à examiner" |
 | 35.1 | scene-vide ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor rue Festival ; personnage zoe "Zoé" violet gauche ; placer zoe -2 ; bulle zoe "Agressive si je bois" |
 | 35.3 | effacer-bulle zoe ; picto bouteille -1.9 -1.0 ; personnage amie "Une amie" rose droite ; placer amie 1 ; etiquette soiree "Elle boit énormément" 0.6 1.7 |
 | 35.4 | etiquette-retirer soiree ; picto-retirer bouteille ; marcher zoe -1 |
 | 35.4+1.2 | pousser zoe amie ; dommage amie |
 | 36.1 | titre "Son ivresse l'excuse-t-elle ?" ambre ; repere-marquer 1 ambre ; repere-marquer 2 ambre |
-| 36.2 | effacer-titres ; titre "Votre réponse en commentaire" ; accent zoe |
+| 36.2 | effacer-titres ; titre "Que faut-il vérifier ?" ambre |
+| 36.3 | effacer-titres ; titre "Votre réponse en commentaire" ; accent zoe |
 | 37.1 | scene-vide ; repere-retirer ; livre "Code pénal" 0 -0.5 ; titre "L'étude du droit" ; sous-titre "Tout est dans la description" |
 | 37.2 | accent titre |

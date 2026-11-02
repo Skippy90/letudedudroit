@@ -1,0 +1,203 @@
+{
+  "video": 5,
+  "slug": "05-commission-par-omission",
+  "titre": "Coupable de n'avoir rien fait",
+  "notions": [
+    "Commission par omission",
+    "Position de garant",
+    "Conditions de l'omission",
+    "Omission de prêter secours"
+  ],
+  "a_vous": [
+    {
+      "ligne": 10,
+      "pause": "Selon vous, n'importe quelle obligation d'agir suffit-elle pour punir celui qui n'a rien fait ?",
+      "pourquoi": "Le spectateur mesure son intuition avant de découvrir l'exigence d'une position de garant."
+    },
+    {
+      "ligne": 23,
+      "pause": "Maël n'est qu'un baigneur parmi d'autres. Selon vous, est-il garant ?",
+      "pourquoi": "Le spectateur applique lui-même les quatre sources avant d'entendre la réponse."
+    },
+    {
+      "ligne": 30,
+      "pause": "Maël n'est pas garant. Selon vous, n'a-t-il donc rien à se reprocher devant la loi ?",
+      "pourquoi": "Le spectateur tombe dans le piège classique, ou l'évite, avant de découvrir l'article 128."
+    }
+  ],
+  "cartes": [
+    {
+      "id": "v05-01",
+      "q": "Qu'est-ce qu'une omission, en droit pénal ?",
+      "r": "C'est le fait de ne pas agir, alors qu'on aurait dû.",
+      "source": "ligne 7",
+      "notion": "Commission par omission"
+    },
+    {
+      "id": "v05-02",
+      "q": "Que dit l'article 11 du Code pénal sur le comportement passif ?",
+      "r": "Un crime ou un délit peut aussi être commis par un comportement passif, contraire à une obligation d'agir.",
+      "source": "ligne 8 ; art. 11 al. 1 CP",
+      "notion": "Commission par omission"
+    },
+    {
+      "id": "v05-03",
+      "q": "N'importe quelle obligation d'agir suffit-elle ?",
+      "r": "Non. Il faut que la personne ait été dans une position de garant.",
+      "source": "ligne 10 ; ATF 134 IV 255",
+      "notion": "Position de garant"
+    },
+    {
+      "id": "v05-04",
+      "q": "Qu'est-ce qu'un garant ?",
+      "r": "Quelqu'un que sa situation oblige à protéger un bien précis, comme la vie ou la santé d'une personne.",
+      "source": "ligne 11",
+      "notion": "Position de garant"
+    },
+    {
+      "id": "v05-05",
+      "q": "Quelles sont les quatre sources de l'obligation d'agir citées par l'article 11 ?",
+      "r": "La loi, un contrat, une communauté de risques librement acceptée et la création d'un risque. La loi dit « notamment » : la liste n'est pas fermée.",
+      "source": "ligne 12 ; art. 11 al. 2 CP",
+      "notion": "Position de garant"
+    },
+    {
+      "id": "v05-06",
+      "q": "Un fonctionnaire a fait planter une plaque métallique dans le Rhône. Pourquoi était-il garant ?",
+      "r": "En créant cet obstacle pour les bateaux, il avait créé un risque. Il devait agir, notamment faire retirer la plaque.",
+      "source": "ligne 18 ; ATF 134 IV 255",
+      "notion": "Position de garant"
+    },
+    {
+      "id": "v05-07",
+      "q": "Clara a été engagée comme surveillante et elle était à son poste. Est-elle garante ?",
+      "r": "Oui, par contrat. C'est la prise de poste effective qui compte, pas seulement la signature du contrat.",
+      "source": "ligne 22 ; ATF 141 IV 249",
+      "notion": "Position de garant"
+    },
+    {
+      "id": "v05-08",
+      "q": "Comment le juge vérifie-t-il que l'inaction de Clara a causé l'accident ?",
+      "r": "Il raisonne par hypothèse. Il imagine que Clara a fait son travail, et se demande si Timéo aurait été sauvé à temps.",
+      "source": "ligne 25 ; ATF 117 IV 130",
+      "notion": "Conditions de l'omission"
+    },
+    {
+      "id": "v05-09",
+      "q": "Qu'exige la condition d'équivalence de l'article 11 ?",
+      "r": "L'inaction doit mériter le même reproche qu'un geste qui aurait causé le résultat.",
+      "source": "ligne 26 ; art. 11 al. 3 CP",
+      "notion": "Conditions de l'omission"
+    },
+    {
+      "id": "v05-10",
+      "q": "Si les conditions sont remplies, de quoi Clara répond-elle ?",
+      "r": "Elle pourrait répondre des blessures de Timéo, comme si elle les avait causées. Il faut encore établir sa faute, ici plutôt une négligence. Le juge peut toutefois atténuer sa peine.",
+      "source": "lignes 27 et 28 ; art. 11 al. 3 et 4 CP",
+      "notion": "Conditions de l'omission"
+    },
+    {
+      "id": "v05-11",
+      "q": "Que punit l'omission de prêter secours ?",
+      "r": "Le fait de ne pas secourir une personne en danger de mort imminent, quand on peut raisonnablement l'exiger. Elle vise aussi celui qui laisse sans secours une personne qu'il a blessée.",
+      "source": "ligne 31 ; art. 128 CP",
+      "notion": "Omission de prêter secours"
+    },
+    {
+      "id": "v05-12",
+      "q": "Maël répond-il des blessures de Timéo ?",
+      "r": "Non. Il pourrait seulement répondre de ne pas avoir porté secours, s'il a compris que l'enfant risquait de mourir. Il encourt jusqu'à trois ans de peine privative de liberté, ou une peine pécuniaire.",
+      "source": "ligne 33 ; art. 128 CP",
+      "notion": "Omission de prêter secours"
+    }
+  ],
+  "variantes": {
+    "base": {
+      "faits": "Clara, surveillante de baignade engagée et à son poste, regarde son téléphone. Elle ne voit pas Timéo se débattre dans l'eau.",
+      "qualification": "Clara est garante par contrat. Si les conditions de l'omission et des lésions par négligence sont établies, elle pourrait répondre des blessures de Timéo.",
+      "source": "lignes 27 et 28"
+    },
+    "changements": [
+      {
+        "fait": "Clara a vu Timéo et l'a laissé couler exprès.",
+        "qualification": "Omission intentionnelle.",
+        "pourquoi": "Elle aurait agi exprès. Ce serait bien plus grave.",
+        "source": "ligne 28 ; art. 11 CP"
+      },
+      {
+        "fait": "Maël, un simple baigneur, voit Timéo se débattre et ne fait rien.",
+        "qualification": "Maël n'est pas garant. Il ne serait punissable que si les conditions de l'omission de prêter secours sont réunies.",
+        "pourquoi": "Aucune loi, aucun contrat, aucun risque créé par lui. Mais on pouvait au moins exiger qu'il appelle à l'aide, s'il a compris que l'enfant risquait de mourir.",
+        "source": "ligne 33 ; art. 128 CP"
+      },
+      {
+        "fait": "Timéo n'aurait pas été sauvé à temps, même si Clara avait fait son travail.",
+        "qualification": "Clara ne répond pas des blessures comme si elle les avait causées.",
+        "pourquoi": "Une des deux conditions manque : son action n'aurait pas évité l'accident.",
+        "source": "ligne 24 ; ATF 117 IV 130"
+      }
+    ]
+  },
+  "fondu": {
+    "faits": "Lucas allume un feu de camp en forêt. Il part sans l'éteindre, et le feu s'étend.",
+    "etapes": [
+      {
+        "nom": "Règle",
+        "q": "Quelle règle permet de punir quelqu'un qui n'a rien fait ?",
+        "choix": [
+          "Seul un geste actif peut constituer un crime ou un délit.",
+          "Toute personne présente répond du dommage qu'elle n'a pas empêché.",
+          "Un crime ou un délit peut être commis par omission, par celui qui avait une position de garant."
+        ],
+        "bon": 2,
+        "note": "C'est l'article 11 du Code pénal (lignes 8 et 34)."
+      },
+      {
+        "nom": "Application",
+        "q": "Lucas était-il garant, et d'après quelle source ?",
+        "choix": [
+          "Oui, par un contrat.",
+          "Oui, par la création d'un risque : il a allumé le feu.",
+          "Non, car personne ne lui avait confié la forêt."
+        ],
+        "bon": 1,
+        "note": "En allumant le feu, Lucas a créé un risque. Il devait l'éteindre ou le surveiller (réponse attendue : article 11, alinéa 2, lettre d)."
+      },
+      {
+        "nom": "Conclusion",
+        "q": "Que peut-on conclure ?",
+        "choix": [
+          "Les dommages de l'incendie peuvent lui être imputés comme s'il les avait causés, si les conditions de l'article 11, alinéa 3, et de l'infraction en cause sont établies.",
+          "Il répond seulement de l'omission de prêter secours.",
+          "Il ne répond de rien, faute de geste."
+        ],
+        "bon": 0,
+        "note": "Il faut encore les conditions de l'article 11, alinéa 3, puis le résultat, le lien de causalité et la faute de Lucas : on ne peut pas les présumer (réponse attendue)."
+      }
+    ]
+  },
+  "erreurs": [
+    {
+      "copie": [
+        "Clara est garante par contrat : elle était à son poste.",
+        "Maël n'est qu'un baigneur parmi d'autres : il n'est pas garant.",
+        "Maël n'a donc rien à se reprocher devant la loi.",
+        "Clara peut répondre des blessures de Timéo, aux conditions de l'article 11."
+      ],
+      "faux": 2,
+      "explication": "L'omission de prêter secours vise tout le monde. Un enfant se noyait à deux mètres de Maël : on pouvait au moins exiger qu'il appelle à l'aide, s'il a compris que l'enfant risquait de mourir.",
+      "source": "ligne 30 ; art. 128 CP"
+    },
+    {
+      "copie": [
+        "Maël n'est pas garant.",
+        "Il répond donc des blessures de Timéo, comme Clara.",
+        "Un enfant se noyait à deux mètres de lui.",
+        "On pouvait au moins exiger de lui qu'il appelle à l'aide."
+      ],
+      "faux": 1,
+      "explication": "Sans position de garant, Maël ne répond pas des blessures. Il pourrait seulement répondre de ne pas avoir porté secours, si les conditions de l'article 128 sont réunies.",
+      "source": "ligne 33 ; art. 128 CP"
+    }
+  ]
+}

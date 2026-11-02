@@ -8,7 +8,7 @@ Personnages : Théo turquoise (vidéo 8), l'agent de sécurité bleu clair (vid�
 
 Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entrée du festival (décor rue, enseigne « Festival »), Noah devant la boulangerie et son tag (décor rue) ; un pense-bête « Mesure / Prescription » en haut à droite s'allume sur l'outil dont on parle ; les délais se dessinent sur la frise.
 
-Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : pas de barrière dessinée devant le bâtiment (ligne 31) ; le bâtiment reste, l'étiquette « Plus de poursuite » s'affiche. L'établissement, l'expertise et le délai n'ont pas de pictogramme : ils sont nommés par une étiquette (l'expertise par le pictogramme `document`).
+Écarts assumés avec la colonne « À l'écran » du script, pour rester dans la charte : pas de barrière dessinée devant le bâtiment (ligne 31) ; le bâtiment reste, sans étage coloré (la prescription ne dit rien des trois étages), et l'étiquette « Plus de poursuite » s'affiche. L'établissement, l'expertise et le délai n'ont pas de pictogramme : ils sont nommés par une étiquette (l'expertise par le pictogramme `document`).
 
 | Moment | Actions |
 | --- | --- |
@@ -58,13 +58,15 @@ Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entré
 | 15.2 | etiquette lourde "La plus lourde" 3.8 1.5 |
 | 15.3 | etiquette lourde "Meurtre, viol, brigandage" 3.9 -1.2 |
 | 16.1 | scene-vide ; personnage auteur "L'auteur" ambre_pale gauche haut ; picto danger 3.4 0.6 ; etiquette serieux "Risque sérieux" 1.0 1.7 |
-| 16.2 | retirer auteur ; frise ; point 0.25 "Peine" ; zone 0 0.5 gris |
-| 16.3 | point 0.75 "Internement" ; zone 0.5 1 ambre |
+| 16.2 | article "Art. 64 CP" ; etiquette serieux "Des conditions précises" 1.0 1.7 |
+| 16.3 | retirer auteur ; frise ; point 0.25 "Peine" ; zone 0 0.5 gris |
+| 16.4 | point 0.75 "Internement" ; zone 0.5 1 ambre |
 | 17.1 | scene-vide ; article-retirer ; personnage theo "Théo" turquoise gauche ; personnage expert "L'expert" bleu_clair droite ; titre "Traitement institutionnel ?" |
-| 17.1+3 | picto document 0 0.2 |
-| 17.2 | effacer-titres ; picto-retirer document ; retirer expert ; case "Acte lié au trouble" |
-| 17.2+1.8 | case "Risque de récidive" |
-| 17.2+3.6 | case "Soins utiles" |
+| 17.2 | sous-titre "Une crise ne suffit pas" |
+| 17.3 | picto document 0 0.2 |
+| 17.3+2 | effacer-titres ; picto-retirer document ; retirer expert ; case "Grave trouble lié à l'acte" |
+| 17.3+3.5 | case "Risque de récidive" |
+| 17.3+5 | case "Soins utiles" |
 | 18.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 ambre ; decor rue ; personnage noah "Noah" turquoise gauche ; placer noah -2 ; picto tag -0.3 -0.1 |
 | 18.2 | etiquette presc "La prescription" -3.2 1.7 |
 | 18.2+2.5 | etiquette delai "Un délai écoulé" 3.6 1.7 |
@@ -81,11 +83,13 @@ Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entré
 | 22.1 | repere 0.1 "3 ans" ; renvoi "vidéo 3" |
 | 23.1 | effacer-titres ; titre "Dès l'acte" ; point 0.02 "Le tag" |
 | 23.2 | article "Art. 98 CP" |
-| 24.1 | scene-vide ; article "Art. 144 CP" ; decor rue ; personnage noah "Noah" turquoise gauche ; placer noah -2 ; picto tag -0.3 -0.1 ; etiquette max "Trois ans au plus" 3.6 1.7 |
-| 24.2 | etiquette max "Délai : dix ans" 3.6 1.7 |
-| 24.3 | scene-vide ; frise ; point 0.05 "Le tag" ; repere 0.6 "10 ans" ; zone 0.6 1 gris ; point 0.7 "Découverte" |
-| 24.3+1.5 | titre "Prescrit" ambre |
-| 24.4 | sous-titre "Plus de poursuite" ; accent frise |
+| 24.1 | scene-vide ; decor rue ; personnage noah "Noah" turquoise gauche ; placer noah -2 ; picto tag -0.3 -0.1 ; etiquette max "Environ 2000 francs" 3.6 1.7 |
+| 24.2 | etiquette max "Pas de moindre importance" 3.6 1.7 |
+| 24.3 | article "Art. 144 CP" ; etiquette max "Trois ans au plus" 3.6 1.7 |
+| 24.4 | etiquette max "Délai : dix ans" 3.6 1.7 |
+| 24.5 | scene-vide ; frise ; point 0.05 "Le tag" ; repere 0.6 "10 ans" ; zone 0.6 1 gris ; point 0.7 "Découverte" |
+| 24.5+1.5 | titre "Prescrit" ambre |
+| 24.6 | sous-titre "Plus de poursuite" ; accent frise |
 | 25.1 | scene-vide ; article "Art. 97 CP" ; decor tribunal ; personnage juge "Le juge" bleu_clair droite ; placer juge 3 ; etiquette regle "Règle importante" -3.6 1.7 |
 | 25.2 | etiquette regle "Jugement de première instance" -2.4 1.7 |
 | 25.2+2.5 | etiquette stop "Le délai s'arrête" 3.6 1.7 |
@@ -104,11 +108,11 @@ Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entré
 | 30.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; titre "Le piège classique" ; personnage noah "Noah" turquoise gauche |
 | 30.2 | sous-titre "« Prescrit, donc innocent »" |
 | 30.3 | barrer |
-| 31.1 | scene-vide ; repere-marquer 2 ambre ; batiment ; etage 1 vert ; etage 2 vert ; etage 3 vert |
-| 31.2 | titre "Toujours illicite" |
+| 31.1 | scene-vide ; repere-marquer 2 ambre ; batiment |
+| 31.2 | titre "Pas rendu licite" |
 | 31.3 | effacer-titres ; titre "Plus de poursuite" ambre |
 | 32.1 | scene-vide ; repere-marquer 2 neutre ; repere-marquer 1 ambre ; personnage theo "Théo" turquoise gauche ; mot-barre "Peine déguisée" |
-| 32.2 | etiquette levee "Levée dès que possible" 3.8 -0.9 |
+| 32.2 | etiquette levee "Conditions tombées : levée" 3.4 -0.9 |
 | 32.2+2.5 | deplacer theo centre |
 | 33.1 | scene-vide ; titre "Retenons" ; personnage theo "Théo" turquoise gauche |
 | 33.2 | article "Art. 56 CP" ; picto danger 3.4 0.2 ; etiquette soins "Danger ou soins" 3.4 1.5 |
@@ -117,7 +121,7 @@ Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entré
 | 34.2 | titre "Plus grave, plus long" ; picto prison 4.9 0.5 |
 | 34.3 | effacer-titres ; titre "Certains crimes : jamais" ; zone 0.95 1 vert |
 | 35.1 | scene-vide ; repere-marquer 2 neutre ; article-retirer ; titre "Une question pour finir" |
-| 35.2 | effacer-titres ; decor rue ; personnage lina "Lina" violet gauche ; placer lina -2 ; picto velo 1.0 -1.85 ; etiquette valeur "Un vélo de valeur" 3.6 1.7 |
+| 35.2 | effacer-titres ; decor rue ; personnage lina "Lina" violet gauche ; placer lina -2 ; picto velo 1.0 -1.85 ; etiquette valeur "Vélo à 1000 francs" 3.6 1.7 |
 | 35.2+1 | marcher lina -4 ; picto-deplacer velo -4.6 -1.85 |
 | 35.3 | etiquette valeur "Découvert douze ans après" 2.4 1.7 |
 | 35.4 | repere-marquer 2 ambre ; titre "Encore poursuivable ?" ambre |

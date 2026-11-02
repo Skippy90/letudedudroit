@@ -1,0 +1,98 @@
+{
+  "video": 12,
+  "slug": "12-mesures-prescription",
+  "titre": "Quand la justice ne poursuit plus",
+  "accroche": "Onze ans après, peut-on encore être poursuivi ?",
+  "panneaux": [
+    {
+      "type": "conditions",
+      "titre": "Ordonner une mesure",
+      "conditions": [
+        {
+          "label": "Peine seule insuffisante",
+          "detail": "Elle ne suffit pas à écarter le danger de nouvelles infractions.",
+          "source": "ligne 6 ; art. 56 CP"
+        },
+        {
+          "label": "Traitement ou sécurité publique",
+          "detail": "L'auteur a besoin d'un traitement, ou la sécurité publique l'exige.",
+          "source": "ligne 7 ; art. 56 CP"
+        },
+        {
+          "label": "Conditions de la mesure précise",
+          "detail": "Traitement institutionnel, ambulatoire ou internement : chacun a ses propres conditions.",
+          "source": "lignes 7, 11 à 16 ; art. 56, 59, 63 et 64 CP"
+        },
+        {
+          "label": "Mesure proportionnée",
+          "detail": "Atteinte comparée au risque de récidive et à la gravité.",
+          "source": "ligne 8 ; art. 56 CP"
+        }
+      ],
+      "alors": {
+        "label": "Mesure possible",
+        "couleur": "vert",
+        "source": "lignes 6 à 8 ; art. 56 CP"
+      },
+      "sinon": {
+        "label": "Pas de mesure",
+        "couleur": "gris",
+        "source": "lignes 6, 9 ; art. 56 CP"
+      }
+    },
+    {
+      "type": "frise",
+      "titre": "Délais de prescription de l'action pénale",
+      "points": [
+        {
+          "label": "Jour de l'acte",
+          "detail": "Le délai court en principe dès ce jour.",
+          "couleur": "ambre",
+          "source": "ligne 23 ; art. 98 CP"
+        },
+        {
+          "label": "3 ans",
+          "detail": "Contraventions.",
+          "couleur": "ambre",
+          "source": "ligne 22 ; art. 109 CP"
+        },
+        {
+          "label": "7 ans",
+          "detail": "Peine maximale autre que la privation de liberté.",
+          "couleur": "ambre",
+          "source": "ligne 21 ; art. 97 CP"
+        },
+        {
+          "label": "10 ans",
+          "detail": "Peine maximale de trois ans, comme le dommage à la propriété simple de Noah.",
+          "couleur": "ambre",
+          "source": "lignes 21, 24 ; art. 97 et 144 CP"
+        },
+        {
+          "label": "15 ans",
+          "detail": "Peine maximale de plus de trois ans de privation de liberté.",
+          "couleur": "ambre",
+          "source": "ligne 21 ; art. 97 CP"
+        },
+        {
+          "label": "30 ans",
+          "detail": "Peine maximale : privation de liberté à vie.",
+          "couleur": "rouge",
+          "source": "ligne 20 ; art. 97 CP"
+        },
+        {
+          "label": "Jamais",
+          "detail": "Notamment génocide, crimes contre l'humanité, crimes de guerre.",
+          "couleur": "rouge",
+          "source": "lignes 26 à 27 ; art. 101 CP"
+        }
+      ]
+    }
+  ],
+  "piege": {
+    "faux": "C'est prescrit, donc il est innocent.",
+    "vrai": "La prescription ne dit rien de la culpabilité et ne rend pas l'acte licite : l'État perd seulement le droit de poursuivre.",
+    "source": "lignes 30 à 31"
+  },
+  "a_retenir": "Une mesure répond à un danger ; la prescription limite le temps pour poursuivre."
+}

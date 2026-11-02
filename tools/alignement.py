@@ -19,6 +19,9 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
   {"isolation": true}, RNNoise n'est pas utilisé ; la narration montée passe par
   l'isolation de voix d'ElevenLabs (environ 1 000 crédits par minute). Le résultat est
   gardé dans voice/<slug>/isole-<empreinte>.mp3 : relancer l'outil ne coûte rien.
+- Retouches : une phrase réenregistrée à part est ajoutée à la fin de l'enregistrement
+  (lecture complète, une seconde de silence, puis les retouches, au même niveau sonore).
+  Toute prise située après la dernière phrase de la lecture remplace la prise d'origine.
 - Montage : les phrases gardées sont mises bout à bout, avec un court fondu à chaque
   coupe ; les pauses naturelles sont conservées quand deux phrases se suivent sans
   reprise, sinon remplacées par un silence de longueur fixe.
@@ -71,10 +74,21 @@ def normaliser(mot: str) -> str:
     return re.sub(r"[^\w']", "", mot).strip("'")
 
 
+def nombre_en_lettres(n: int) -> str:
+    """La transcription écrit « 1999 » : on le compare à « mille neuf cent nonante-neuf »."""
+    if n < 1000:
+        return en_lettres(n)
+    if n < 10000:
+        m, r = divmod(n, 1000)
+        tete = "mille" if m == 1 else en_lettres(m) + " mille"
+        return tete if r == 0 else f"{tete} {en_lettres(r)}"
+    return str(n)
+
+
 def mots_texte(texte: str) -> list[str]:
     # « l'article », « trente-et-un » : la reconnaissance vocale les coupe à sa façon,
     # on compare donc après avoir séparé apostrophes et traits d'union.
-    texte = re.sub(r"\d+", lambda d: en_lettres(int(d.group())) if int(d.group()) < 1000 else d.group(), texte)
+    texte = re.sub(r"\d+", lambda d: nombre_en_lettres(int(d.group())), texte)
     return [m for m in (normaliser(x) for x in re.split(r"[\s'’\-]+", texte)) if m]
 
 
@@ -95,11 +109,18 @@ def transcrire(fichier: Path) -> dict:
         return json.load(reponse)
 
 
+def son(mot: str) -> str:
+    """Forme comparée à l'oreille : les finales muettes tombent (« elle s'ajoute » = « elles s'ajoutent »)."""
+    return re.sub(r"(ent|es|e|s|x|t)$", "", mot) if len(mot) > 3 else mot
+
+
 def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, float, int, int]]:
     """Toutes les lectures d'une phrase dans la transcription.
 
     Chaque prise : (premier mot, dernier mot, part retrouvée, mots attendus manquants au début, à la fin).
+    Les mots sont comparés par leur son : la transcription choisit parfois l'homophone (accord, pluriel).
     """
+    attendu, entendus = [son(m) for m in attendu], [son(m) for m in entendus]
     n, trouvees = len(attendu), []
     for i in range(len(entendus)):
         if entendus[i] not in attendu[:3]:
@@ -118,10 +139,12 @@ def prises(attendu: list[str], entendus: list[str]) -> list[tuple[int, int, floa
             queue = n - (blocs[-1].a + blocs[-1].size)
             trouvees.append((i, i + blocs[-1].b + blocs[-1].size - 1, part, blocs[0].a, queue))
     # Une même lecture peut être trouvée à partir de deux mots voisins : on garde la meilleure.
+    # À égalité, le départ le plus tardif : « Le piège classique. Le piège classique, c'est… »
+    # (titre lu, puis phrase reprise) ne doit pas garder le titre.
     retenues = []
     for p in trouvees:
         if retenues and p[0] <= retenues[-1][1]:
-            if p[2] > retenues[-1][2]:
+            if p[2] >= retenues[-1][2]:
                 retenues[-1] = p
         else:
             retenues.append(p)
@@ -262,6 +285,17 @@ def main(slug: str) -> None:
     if manquantes:
         sys.exit("Phrases introuvables dans l'enregistrement :\n" + "\n".join(manquantes))
 
+    # Retouches : phrases réenregistrées à part et ajoutées après la lecture complète
+    # (enregistrement = lecture + retouches mises bout à bout). Une prise située après la
+    # dernière phrase de la lecture remplace la prise d'origine.
+    fin_lecture = choix[-1][1]
+    retouches = []
+    for k in range(len(phrases)):
+        tardives = [c for c in candidats[k] if c[0] > fin_lecture]
+        if tardives:
+            choix[k] = tardives[-1]
+            retouches.append(k)
+
     # Un mot mal reconnu au début ou à la fin d'une phrase (« séquelles », « alignés ») ne doit pas
     # être coupé : la prise est prolongée sur les mots qui la touchent, autant qu'il en manque.
     def touche(a: int, b: int, limite: float = 0.5) -> bool:
@@ -327,7 +361,9 @@ def main(slug: str) -> None:
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
         note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"
-        if reprises:
+        if k in retouches:
+            note += " (retouche enregistrée à part)"
+        elif reprises:
             note += f" ({reprises} prise(s) précédente(s) coupée(s))"
         if part < SEUIL_A_RELIRE:
             note += (f" — À RÉÉCOUTER, {part:.0%} des mots reconnus. Attendu : « {texte} » ; "
