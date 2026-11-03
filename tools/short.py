@@ -74,7 +74,9 @@ def sous_titres_short(timings: dict, debut: float, fin: float, sortie: Path) -> 
             # sinon les rangs ne correspondent plus aux mots reconnus dans la voix.
             for a, b in sous_titres.morceaux(mots):
                 if reconnus and exact:
-                    d, f = reconnus[rang[a]]["debut"], reconnus[max(rang[a], rang[b] - 1)]["fin"]
+                    # Un morceau fait d'un seul signe (« ? », « : ») n'a pas de mot à lui : on reste sur le dernier mot.
+                    i = min(rang[a], len(reconnus) - 1)
+                    d, f = reconnus[i]["debut"], reconnus[min(max(i, rang[b] - 1), len(reconnus) - 1)]["fin"]
                 else:
                     duree = phrase["fin"] - phrase["debut"]
                     d, f = phrase["debut"] + duree * a / len(mots), phrase["debut"] + duree * b / len(mots)
