@@ -261,6 +261,10 @@ def main(slug: str) -> None:
     for k in range(len(phrases) - 1, -1, -1):
         avant = [c for c in candidats[k] if c[1] < limite]
         if not avant:
+            # Une prise qui déborde sur la phrase suivante (un mot commun, « un », a été pris pour la fin) :
+            # on la coupe juste avant la suivante.
+            avant = [(c[0], limite - 1, c[2], c[3], 0) for c in candidats[k] if c[0] < limite - 1]
+        if not avant:
             if candidats[k]:
                 sys.exit(f"Ligne {phrases[k][0] + 1} : aucune prise avant la phrase suivante ; "
                          "ordre de lecture à vérifier.")
