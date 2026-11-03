@@ -39,6 +39,13 @@ def main(slug: str) -> None:
     debuts = {l["ligne"]: l["debut"] for l in timings["lignes"]}
 
     titre = re.match(r"#\s*Vidéo\s+\d+\s*[—-]\s*(.+)", script.splitlines()[0])[1].strip()
+    # Série des arrêts : le numéro de l'ATF ouvre le titre et la description (c'est ce que les gens cherchent).
+    m_atf = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])
+    atf = f"ATF {m_atf[1]} {m_atf[2].upper()} {m_atf[3]}" if m_atf else ""
+    titre_youtube = f"{atf} — {titre}" if atf else titre
+    titre_complet = f"{titre_youtube} | {SUFFIXES.get(slug.split('/')[0], 'Droit suisse')}"
+    if len(titre_complet) > 100:  # limite YouTube : le numéro de l'ATF prime sur la mention de la matière
+        titre_complet = titre_youtube
 
     # Chapitres : chaque section ## du script commence à sa première ligne numérotée.
     # YouTube exige un premier chapitre à 0:00 et au moins 10 s par chapitre :
@@ -86,7 +93,8 @@ def main(slug: str) -> None:
     reponse = re.search(r"\*\*Réponse attendue à la question finale\*\*[^:]*:\s*(.+)", script)
 
     lignes = [
-        f"{titre} — expliqué simplement, à partir d'un cas concret.",
+        (f"{atf} : {titre[:1].lower() + titre[1:]} L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits." if atf
+         else f"{titre} — expliqué simplement, à partir d'un cas concret."),
         "",
         "Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :",
         *articles,
@@ -112,7 +120,7 @@ def main(slug: str) -> None:
         f"# Publication — {titre}\n\n"
         "Fiche générée par `tools/publication.py`. À relire avant tout envoi ; "
         "l'upload YouTube se fait seulement sur instruction explicite.\n\n"
-        f"## Titre\n\n{titre} | {SUFFIXES.get(slug.split('/')[0], 'Droit suisse')}\n\n"
+        f"## Titre\n\n{titre_complet}\n\n"
         f"## Description ({len(description)} caractères sur 5 000)\n\n```text\n{description}\n```\n",
         encoding="utf-8")
     print(f"Fiche : {sortie} ({len(description)} caractères)")

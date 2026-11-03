@@ -268,14 +268,19 @@ class Pyramide(VGroup):
 
     NOMS = ["Première instance", "Recours cantonal", "Tribunal fédéral"]
 
+    LARGEURS = [6.4, 5.5, 4.6, 3.7]  # bords des niveaux, de la base au sommet : chaque nom tient dans son niveau
+    MARGE = 0.35                      # espace minimal entre le nom et les bords obliques
+
     def __init__(self):
         niveaux = []
         for i, nom in enumerate(self.NOMS):
-            bas, haut = 5.2 - 1.5 * i, 5.2 - 1.5 * (i + 1)
+            bas, haut = self.LARGEURS[i], self.LARGEURS[i + 1]
             y0, y1 = -1.6 + 1.1 * i, -1.6 + 1.1 * (i + 1)
             forme = Polygon([-bas / 2, y0, 0], [bas / 2, y0, 0], [haut / 2, y1, 0], [-haut / 2, y1, 0],
                             color=TEXTE, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
-            etiquette = texte(nom, 30 if i < 2 else 28).move_to(forme).shift(DOWN * 0.05)
+            etiquette = texte(nom, 30).move_to(forme).shift(DOWN * 0.05)
+            # Le nom ne doit jamais toucher les bords : largeur disponible au niveau du texte (bord haut, le plus étroit).
+            assert etiquette.width + 2 * self.MARGE <= haut + (bas - haut) * 0.25, f"« {nom} » déborde de la pyramide"
             niveaux.append(VGroup(forme, etiquette))
         super().__init__(*niveaux)
         self.niveaux = niveaux

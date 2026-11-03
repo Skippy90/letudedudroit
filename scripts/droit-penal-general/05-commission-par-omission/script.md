@@ -35,7 +35,7 @@ Personnages : Clara (silhouette turquoise), Timéo (silhouette rose), Maël (sil
 | 13 | Première source : la loi. Par exemple, le Code civil impose aux parents de protéger le développement de leur enfant. | Liste : « 1. La loi » |
 | 14 | Deuxième source : un contrat. C'est le cas d'une surveillante de baignade engagée pour veiller sur les nageurs. | Liste : « 2. Un contrat » ; la silhouette de Clara s'allume |
 | 15 | Troisième source : une communauté de risques librement acceptée. Par exemple, une cordée d'alpinistes qui partent ensemble en montagne. | Liste : « 3. Une communauté de risques » |
-| 16 | Quatrième source : la création d'un risque. Celui qui crée un danger doit empêcher qu'il ne fasse du mal. | Liste : « 4. La création d'un risque » |
+| 16 | Quatrième source : la création de risques. Celui qui crée un danger doit empêcher qu'il ne fasse du mal. | Liste : « 4. La création d'un risque » |
 | 17 | Un exemple réel jugé par le Tribunal fédéral. Pour des travaux, un fonctionnaire avait fait planter une plaque métallique dans le Rhône. | Le mot « Le Rhône » ; un obstacle dans l'eau, symbolisé par une barre |
 | 18 | En créant cet obstacle pour les bateaux, il avait créé un risque. Il devait agir pour éviter l'accident, notamment faire retirer la plaque. Il était garant. | La quatrième ligne de la liste en ambre |
 | 19 | Le Tribunal fédéral distingue deux sortes de devoirs. Le devoir de protection : veiller sur une personne ou un bien précis, quoi qu'il arrive. | Deux colonnes « Protéger » et « Surveiller » |

@@ -4,12 +4,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ## Titre
 
-Une course de voitures, deux morts : meurtre ? | Droit pénal suisse
+ATF 130 IV 58 — Une course de voitures, deux morts : meurtre ? | Droit pénal suisse
 
-## Description (2043 caractères sur 5 000)
+## Description (2078 caractères sur 5 000)
 
 ```text
-Une course de voitures, deux morts : meurtre ? — expliqué simplement, à partir d'un cas concret.
+ATF 130 IV 58 : une course de voitures, deux morts : meurtre ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
 
 Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • ATF 130 IV 58, consid. 8.3, 8.4 et 9 : Course de voitures mortelle : frontière entre dol éventuel et négligence consciente ; dol éventuel retenu pour les deux conducteurs, le second comme coauteur
