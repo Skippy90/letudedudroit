@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Je ne savais pas | Droit pénal suisse
 
-## Description (3213 caractères sur 5 000)
+## Description (3160 caractères sur 5 000)
 
 ```text
 Je ne savais pas — expliqué simplement, à partir d'un cas concret.
@@ -30,14 +30,13 @@ C'est une erreur sur l'illicéité, car Sam sait que le portefeuille est à autr
 
 Chapitres :
 0:00 Le cas de départ
-0:34 La carte : deux sortes d'erreur
-1:08 L'erreur sur les faits
-2:37 L'erreur sur l'illicéité
-4:06 Le piège classique
-4:45 Conclusion et question
+0:41 La carte : deux sortes d'erreur
+1:15 L'erreur sur les faits
+2:56 L'erreur sur l'illicéité
+4:34 Le piège classique
+5:16 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/07-erreur
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```
