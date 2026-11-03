@@ -33,8 +33,7 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 7.1@omission | effacer-titres ; retirer marc ; retirer julien ; picto-retirer ballon ; personnage clara "Clara" turquoise centre ; picto telephone 0.95 0.2 ; titre "L'omission" ambre |
 | 7.2@agir | sous-titre "Ne pas agir alors qu'on aurait dû" |
 | 7.3@piscine | sous-titre "Piscine, crèche, montagne" ; picto vagues 3.5 0.2 |
-| 8.1 | effacer-titres ; retirer clara ; picto-retirer telephone ; picto-retirer vagues ; livre |
-| 8.1@onze | article "Art. 11 CP" |
+| 8.1 | effacer-titres ; retirer clara ; picto-retirer telephone ; picto-retirer vagues ; livre ; article "Art. 11 CP" |
 | 8.2@passif | livre-ouvrir ; titre "Un comportement passif" |
 | 8.2@obligation | sous-titre "contraire à une obligation d'agir" |
 | 9.1 | scene-vide ; article-retirer ; decor piscine ; personnage clara "Clara" turquoise gauche ; placer clara -2 ; personnage mael "Maël" bleu_clair centre ; placer mael 0 ; personnage timeo "Timéo" rose droite ; placer timeo 3 |
@@ -42,8 +41,7 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 9.2 | accent clara |
 | 9.3 | accent mael |
 | 9.4 | accent clara ; accent mael |
-| 10.1 | scene-vide ; titre "Le Tribunal fédéral" ; personnage clara "Clara" turquoise gauche |
-| 10.1@fédéral | arret "ATF 134 IV 255" |
+| 10.1 | scene-vide ; titre "Le Tribunal fédéral" ; personnage clara "Clara" turquoise gauche ; arret "ATF 134 IV 255" |
 | 10.2@obligation | sous-titre "Pas n'importe quelle obligation" |
 | 10.3@garant | effacer-titres ; titre "Une position de garant" ambre |
 | 11.1@garant | personnage clara "Clara" turquoise gauche ; etiquette oblige "Obligée de protéger" -0.9 1.0 |
@@ -70,7 +68,7 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 20.1@surveillance | colonne-accent 2 ; picto danger 3.5 -1.4 |
 | 20.2@clara | etiquette c1 "Clara" -3.5 -0.4 |
 | 20.3@fonctionnaire | etiquette c2 "Le fonctionnaire" 3.5 -0.4 |
-| 21.1 | scene-vide ; arret-retirer ; decor piscine ; personnage clara "Clara" turquoise gauche ; placer clara -2 ; picto telephone -2.3 -0.9 |
+| 21.1 | scene-vide ; arret-retirer ; article-retirer ; decor piscine ; personnage clara "Clara" turquoise gauche ; placer clara -2 ; picto telephone -2.3 -0.9 |
 | 21.2@engagée | repere-marquer 2 ambre ; etiquette c "Engagée" -3.2 1.7 |
 | 21.2@poste | etiquette c "À son poste" -3.2 1.7 |
 | 22.1@prise | etiquette c "Prise de poste effective" -3.2 1.7 ; arret "ATF 141 IV 249" |
@@ -87,12 +85,12 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 26.1@équivalence | effacer-titres ; arret-retirer ; article "Art. 11 CP" ; case "Équivalence" |
 | 26.2@geste | titre "Comme un geste" |
 | 27.1@remplies | cocher 1 vert ; cocher 2 vert |
-| 27.1@blessures | titre "Clara pourrait répondre des blessures" |
+| 27.1@blessures | titre "Clara pourrait répondre" |
 | 27.2@atténuer | effacer-titres ; sous-titre "Peine atténuable" |
-| 28.1 | scene-vide ; renvoi "vidéo 4" ; colonnes "Négligence" "Intention" ; picto telephone -3.5 -1.4 |
+| 28.1 | scene-vide ; article-retirer ; renvoi "vidéo 4" ; colonnes "Négligence" "Intention" ; picto telephone -3.5 -1.4 |
 | 28.3@négligence | colonne-accent 1 |
-| 28.4@plainte | etiquette p "Sur plainte, sauf lésion grave" -3.5 -0.4 |
-| 28.5@exprès | colonne-accent 2 |
+| 28.4@plainte | etiquette p "Sur plainte, sauf si grave" -3.5 -0.4 |
+| 28.5@exprès | etiquette-retirer p ; colonne-accent 2 |
 | 28.6@grave | etiquette g "Bien plus grave" 3.5 -0.4 |
 | 29.1 | scene-vide ; titre "Le piège classique" |
 | 29.2@maël | effacer-titres ; personnage mael "Maël" bleu_clair gauche ; sous-titre "Pas garant, rien à se reprocher" |
@@ -106,19 +104,19 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 32.1 | scene-vide ; article-retirer ; decor piscine ; personnage mael "Maël" bleu_clair centre ; placer mael 0 ; personnage timeo "Timéo" rose droite ; placer timeo 2 |
 | 32.1+2.5 | accent timeo |
 | 32.2@aide | etiquette aide "Au moins appeler à l'aide" -2.2 1.7 |
-| 32.3@compris | etiquette aide "S'il a compris le danger de mort" -2.2 1.7 |
+| 32.3@compris | etiquette aide "S'il a compris le danger" -2.2 1.7 |
 | 33.1 | scene-vide ; personnage mael "Maël" bleu_clair gauche |
 | 33.2@blessures | case "Les blessures" ; cocher 1 gris |
 | 33.3@secours | case "Secours omis" ; cocher 2 vert |
 | 33.4@trois | sous-titre "3 ans au plus" |
-| 34.1 | scene-vide ; article-retirer ; titre "Retenons" ; picto vagues 2.2 -1.0 |
+| 34.1 | scene-vide ; article-retirer ; titre "Retenons" ; picto vagues 4.6 -2.2 |
 | 34.2@crime | effacer-titres ; liste-ajouter "Omission punissable" |
-| 34.3@garant | liste-ajouter "Comme un acte : le garant" |
+| 34.3@garant | liste-ajouter "Garant : comme un acte" |
 | 35.1@loi | repere-marquer 1 ambre |
 | 35.1@contrat | repere-marquer 2 ambre |
 | 35.1@communauté | repere-marquer 3 ambre |
 | 35.1@risque | repere-marquer 4 ambre |
-| 36.1@secourir | liste-ajouter "Sinon : un devoir de secours limité" |
+| 36.1@secourir | liste-ajouter "Autres : secourir" |
 | 36.2 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; repere-marquer 4 neutre ; titre "Devait-il agir ?" ; personnage mael "Maël" bleu_clair centre |
 | 36.3@pourquoi | sous-titre "Et pourquoi ?" |
 | 37.1 | scene-vide ; titre "Une question pour finir" |
