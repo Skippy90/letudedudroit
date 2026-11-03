@@ -44,6 +44,10 @@ def main(slug: str, seconde: float, sortie: str | None = None) -> None:
     dernier = mots.pop()
     matiere = MATIERES.get(slug.split("/")[0], "Droit suisse")
     sous_titre = " · ".join(x for x in (suite.replace("'", "\u2019"), matiere) if x)
+    # Série des arrêts : le numéro de l'ATF bien visible sous le titre.
+    m_atf = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])
+    if m_atf:
+        sous_titre = f"ATF {m_atf[1]} {m_atf[2].upper()} {m_atf[3]} · {matiere}"
 
     with tempfile.TemporaryDirectory() as tmp:
         image = Path(tmp) / "scene.png"
@@ -62,7 +66,7 @@ body{{margin:0;width:1280px;height:720px;background:{fond};overflow:hidden;font-
 .scene{{position:absolute;left:250px;top:250px;width:1030px;bottom:0;background:url(data:image/png;base64,{scene}) center bottom/contain no-repeat}}
 .titre{{position:absolute;left:56px;top:34px;width:1100px;color:#F2EFE6;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-2px;text-wrap:balance}}
 .titre b{{color:#FFFFFF;background:#DA291C;font-weight:800;padding:0 .14em;border-radius:.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone}}
-.sous{{position:absolute;left:60px;color:#F2EFE6;opacity:.75;font-weight:600;font-size:32px}}
+.sous{{position:absolute;left:60px;color:#F2EFE6;opacity:{".95" if m_atf else ".75"};font-weight:{800 if m_atf else 600};font-size:{44 if m_atf else 32}px}}
 .symbole{{position:absolute;left:44px;bottom:36px;width:120px;height:120px}}
 .symbole svg{{width:120px;height:120px}}
 </style><div class="scene"></div><div class="titre" id="t">{html.escape(' '.join(mots))} <b>{html.escape(dernier)}</b></div>

@@ -4,12 +4,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ## Titre
 
-Un mari violent, tué pendant son sommeil : légitime défense ? | Droit pénal suisse
+ATF 122 IV 1 — Un mari violent, tué pendant son sommeil : légitime défense ? | Droit pénal suisse
 
-## Description (2958 caractères sur 5 000)
+## Description (2992 caractères sur 5 000)
 
 ```text
-Un mari violent, tué pendant son sommeil : légitime défense ? — expliqué simplement, à partir d'un cas concret.
+ATF 122 IV 1 : un mari violent, tué pendant son sommeil : légitime défense ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
 
 Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • ATF 122 IV 1, consid. 2a, 2b, 3, 4 et 5 : Épouse qui tue son mari violent pendant son sommeil : pas de légitime défense, faute d'attaque imminente ; un danger durable et imminent, impossible à détourner autrement, entre en considération ; vies de valeur comparable : acte au mieux excusé, pas licite ; arrêt cantonal annulé et renvoi pour examiner un état de nécessité excusable, peut-être putatif

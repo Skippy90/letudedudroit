@@ -53,6 +53,8 @@ def textes(accroche: str, serie: str, numero: str, titre: str) -> dict[str, str]
 
 
 def main() -> None:
+    prog_f = RACINE / "docs" / "strategie" / "programmation.json"
+    dates = json.loads(prog_f.read_text(encoding="utf-8")).get("shorts", {}) if prog_f.exists() else {}
     sortie_shorts = RACINE / "out" / "shorts"
     sortie_shorts.mkdir(parents=True, exist_ok=True)
     rangs = []
@@ -63,6 +65,8 @@ def main() -> None:
         titre = script.splitlines()[0].split("—", 1)[-1].strip()
         numero = video[:2].lstrip("0")
         lignes = lignes_du_script(script)
+        m_atf = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", video)
+        atf = f" (ATF {m_atf[1]} {m_atf[2].upper()} {m_atf[3]})" if m_atf else ""
         for s in json.loads(config.read_text(encoding="utf-8"))["shorts"]:
             fichier = sortie_shorts / f"{matiere}--{video}--{s['id']}.mp4"
             if fichier.exists():
@@ -74,7 +78,8 @@ def main() -> None:
                 "serie": SERIES.get(matiere, matiere), "video": numero, "titre_video": titre, "id": s["id"],
                 "accroche": s["accroche"], "lignes": f"{s['de']}–{s['a']}", "duree_s": round(duree),
                 "statut": statut, "fichier": fichier.name if fichier.exists() else "",
-                **textes(s["accroche"], SERIES.get(matiere, matiere), numero, titre),
+                "publication": dates.get(f"{matiere}/{video}--{s['id']}", "").replace("T", " "),
+                **textes(s["accroche"] + atf, SERIES.get(matiere, matiere), numero, titre),
             })
 
     with open(sortie_shorts / "catalogue.csv", "w", newline="", encoding="utf-8") as f:
@@ -95,13 +100,15 @@ def main() -> None:
           "- Musique : aucune (la narration seule ; pas de son sous licence à gérer).",
           "- Rythme proposé : un short par jour, en alternant les vidéos ; toujours après la publication de la vidéo complète.",
           "", "## Tous les shorts", "",
-          "| Série | Vidéo | Short | Accroche | Lignes | Durée | Statut |", "| --- | --- | --- | --- | --- | --- | --- |"]
+          "| Série | Vidéo | Short | Accroche | Lignes | Durée | Statut | Publication (heure suisse) |",
+          "| --- | --- | --- | --- | --- | --- | --- | --- |"]
     for r in rangs:
         md.append(f"| {r['serie']} | {r['video']} — {r['titre_video']} | `{r['id']}` | {r['accroche']} | "
-                  f"{r['lignes']} | {'' if r['statut'] == 'prêt' else '≈ '}{r['duree_s']} s | {r['statut']} |")
+                  f"{r['lignes']} | {'' if r['statut'] == 'prêt' else '≈ '}{r['duree_s']} s | {r['statut']} | "
+                  f"{r['publication'] or 'à fixer'} |")
     md += ["", "## Textes par plateforme (shorts prêts)", ""]
     for r in prets:
-        md += [f"### {r['serie']}, vidéo {r['video']} — {r['accroche']}", "", f"Fichier : `out/shorts/{r['fichier']}`", "",
+        md += [f"### {r['serie']}, vidéo {r['video']} — {r['accroche']}", "", f"Fichier : `out/shorts/{r['fichier']}` · publication : {r['publication'] or 'à fixer'}", "",
                f"**YouTube** — titre : {r['youtube_titre']}", "", "```text", r["youtube_description"], "```", "",
                "**Instagram**", "", "```text", r["instagram"], "```", "", "**TikTok**", "", "```text", r["tiktok"], "```", ""]
     (RACINE / "docs" / "strategie" / "catalogue-shorts.md").write_text("\n".join(md), encoding="utf-8")

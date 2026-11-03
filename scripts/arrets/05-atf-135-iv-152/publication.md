@@ -4,12 +4,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ## Titre
 
-Deux contre un : faut-il savoir qui a frappé ? | Droit pénal suisse
+ATF 135 IV 152 — Deux contre un : faut-il savoir qui a frappé ? | Droit pénal suisse
 
-## Description (2937 caractères sur 5 000)
+## Description (2973 caractères sur 5 000)
 
 ```text
-Deux contre un : faut-il savoir qui a frappé ? — expliqué simplement, à partir d'un cas concret.
+ATF 135 IV 152 : deux contre un : faut-il savoir qui a frappé ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
 
 Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • ATF 135 IV 152, consid. 2.1, 2.3.1, 2.3.2 : Agression à deux contre un : les deux agresseurs sont coauteurs, il n'est plus nécessaire de savoir qui a donné quel coup ; dol éventuel quant aux lésions ; l'agression s'applique en concours avec les lésions si une autre personne déterminée a été effectivement mise en danger, ou si, les lésions restant simples, la mise en danger a dépassé le résultat

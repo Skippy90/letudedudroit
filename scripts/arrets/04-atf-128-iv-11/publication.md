@@ -4,12 +4,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ## Titre
 
-Vingt mille francs pour un CD-ROM : qui a décidé qui ? | Droit pénal suisse
+ATF 128 IV 11 — Vingt mille francs pour un CD-ROM : qui a décidé qui ? | Droit pénal suisse
 
-## Description (2517 caractères sur 5 000)
+## Description (2552 caractères sur 5 000)
 
 ```text
-Vingt mille francs pour un CD-ROM : qui a décidé qui ? — expliqué simplement, à partir d'un cas concret.
+ATF 128 IV 11 : vingt mille francs pour un CD-ROM : qui a décidé qui ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
 
 Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • ATF 128 IV 11, consid. 2a à 2f : Instigation : susciter la décision d'agir ; pas d'instigation si l'auteur était déjà décidé, mais celui qui est seulement disposé peut encore être décidé ; un CD-ROM ou sa copie est une chose mobilière ; tentative d'instigation à vol confirmée pour celui qui a accepté de payer 20 000 francs pour une copie

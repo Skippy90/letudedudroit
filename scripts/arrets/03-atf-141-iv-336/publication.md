@@ -4,12 +4,12 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ## Titre
 
-Une vignette sous film adhésif : « Je ne savais pas » ? | Droit pénal suisse
+ATF 141 IV 336 — Une vignette sous film adhésif : « Je ne savais pas » ? | Droit pénal suisse
 
-## Description (2399 caractères sur 5 000)
+## Description (2435 caractères sur 5 000)
 
 ```text
-Une vignette sous film adhésif : « Je ne savais pas » ? — expliqué simplement, à partir d'un cas concret.
+ATF 141 IV 336 : une vignette sous film adhésif : « Je ne savais pas » ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
 
 Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fédéral sur bger.ch) :
 • ATF 141 IV 336, consid. 1, 2.3, 2.4.1, 2.4.2 et 2.4.3 : Vignette autoroutière décollée, recouverte de film adhésif et recollée : acte rattaché à la Suisse ; falsification d'un timbre officiel de valeur ; intention admise, le motif ne comptant que pour la peine ; erreur sur l'illicéité refusée, car l'automobiliste était conscient de l'illicéité, même s'il ne pensait risquer qu'une amende

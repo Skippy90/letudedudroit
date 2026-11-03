@@ -20,7 +20,27 @@ TAGS = ["droit suisse", "droit pénal", "code pénal suisse", "étudiant en droi
 # Séries nouvelles : mise en ligne non répertoriée, contrôle sur YouTube, puis publique.
 NON_REPERTORIE = {"arrets"}
 CONTROLE = ("0. Mise en ligne **non répertoriée**. Regarder la vidéo sur YouTube : voix, sous-titres, incrustations, "
-            "chapitres et liens de la description. Rendre la vidéo publique seulement si tout est conforme.\n")
+            "chapitres et liens de la description. Si tout est conforme, passer la visibilité sur **Programmer**, "
+            "à la date et à l'heure du tableau ci-dessus (heure suisse). Sinon, ne rien publier et signaler le défaut.\n")
+PROGRAMMATION = RACINE / "docs" / "strategie" / "programmation.json"
+JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre",
+        "décembre"]
+
+
+def date_prevue(slug: str):
+    """Date de publication prévue (docs/strategie/programmation.json), à l'heure suisse ; None si pas encore fixée."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    prog = json.loads(PROGRAMMATION.read_text(encoding="utf-8")) if PROGRAMMATION.exists() else {}
+    quand = prog.get("videos", {}).get(slug)
+    return datetime.fromisoformat(quand).replace(tzinfo=ZoneInfo("Europe/Zurich")) if quand else None
+
+
+def en_toutes_lettres(d) -> str:
+    return f"{JOURS[d.weekday()]} {d.day} {MOIS[d.month - 1]} {d.year} à {d.hour} h{d.minute:02d}".replace(" h00", " h")
+
+
 PLAYLISTS = {"droit-penal-general": "Droit pénal général", "arrets": "Les arrêts du Tribunal fédéral", "procedure-penale": "Procédure pénale"}
 
 
@@ -50,6 +70,7 @@ def main(slug: str, tags_video: list[str]) -> None:
                                   str(video)], capture_output=True, text=True, check=True).stdout)
     numero = nom[:2].lstrip("0")
     playlist = PLAYLISTS.get(matiere, matiere)
+    quand = date_prevue(slug)
 
     sortie = RACINE / "out" / "upload" / nom
     if sortie.exists():
@@ -72,10 +93,12 @@ def main(slug: str, tags_video: list[str]) -> None:
         "altered_or_synthetic_content": False,
         "license": "youtube (licence standard ; la CC BY-SA 4.0 est indiquée dans la description, YouTube ne proposant que CC BY)",
         "embeddable": True,
-        "privacy_status": "unlisted, puis public après contrôle" if matiere in NON_REPERTORIE else "public",
+        "privacy_status": ("unlisted, puis programmée après contrôle" if matiere in NON_REPERTORIE
+                           else "programmée (privée jusqu'à publish_at)" if quand else "public"),
         "playlist": f"{playlist} (créer si absente ; vidéos dans l'ordre des numéros)",
         "pinned_comment": commentaire,
         "chapters": "dans la description (premier à 0:00)",
+        "publish_at": quand.isoformat() if quand else "pas encore fixée (voir docs/strategie/programmation.json)",
     }
     (sortie / "youtube.json").write_text(json.dumps(reglages, ensure_ascii=False, indent=2), encoding="utf-8")
     minutes = f"{int(duree // 60)} min {int(duree % 60):02d}"
@@ -102,7 +125,8 @@ Consignes pour l'agent qui publie. Tout est validé par la chaîne ; ne rien ré
 | Langue de la vidéo et de l'audio | Français |
 | Licence | Licence YouTube standard (la CC BY-SA 4.0 est mentionnée dans la description) |
 | Intégration autorisée | Oui |
-| Visibilité | {"**Non répertoriée** d'abord ; publique seulement après le contrôle ci-dessous" if matiere in NON_REPERTORIE else "Public"} |
+| Publication programmée | {en_toutes_lettres(quand) + " (heure suisse)" if quand else "pas encore fixée : ne pas publier"} |
+| Visibilité | {"**Non répertoriée** d'abord ; programmée seulement après le contrôle ci-dessous" if matiere in NON_REPERTORIE else "**Programmer** à la date ci-dessus" if quand else "Public"} |
 | Tags | {", ".join(reglages["tags"])} |
 
 ## Après la mise en ligne
