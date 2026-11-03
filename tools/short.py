@@ -70,14 +70,15 @@ def sous_titres_short(timings: dict, debut: float, fin: float, sortie: Path) -> 
             pieces = [len(mots_texte(w)) for w in mots]
             exact = sum(pieces) == len(reconnus)
             rang = [sum(pieces[:i]) for i in range(len(mots) + 1)]
-            mots = sous_titres.chiffres_des_renvois(mots)
+            # « vidéo six » → « vidéo 6 » se fait morceau par morceau : la liste des mots garde sa longueur,
+            # sinon les rangs ne correspondent plus aux mots reconnus dans la voix.
             for a, b in sous_titres.morceaux(mots):
                 if reconnus and exact:
                     d, f = reconnus[rang[a]]["debut"], reconnus[max(rang[a], rang[b] - 1)]["fin"]
                 else:
                     duree = phrase["fin"] - phrase["debut"]
                     d, f = phrase["debut"] + duree * a / len(mots), phrase["debut"] + duree * b / len(mots)
-                evenements.append([d - debut, f - debut + 0.15, " ".join(mots[a:b])])
+                evenements.append([d - debut, f - debut + 0.15, " ".join(sous_titres.chiffres_des_renvois(mots[a:b]))])
     for e, suivant in zip(evenements, evenements[1:]):
         e[1] = min(e[1], suivant[0])
     lignes = [f"""[Script Info]
