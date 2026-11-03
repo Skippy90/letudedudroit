@@ -82,7 +82,8 @@ Style « scène » : le cas se joue à la piscine (chaise haute de la surveillan
 | 24.2@agi | effacer-titres ; case "Accident évité ?" |
 | 25.1@hypothèse | titre "Par hypothèse" ; arret "ATF 117 IV 130" |
 | 25.2@sauvé | sous-titre "Sauvé à temps ?" |
-| 26.1@équivalence | effacer-titres ; arret-retirer ; article "Art. 11 CP" ; case "Équivalence" |
+| 26.1@onze | article "Art. 11 CP" |
+| 26.1@équivalence | effacer-titres ; arret-retirer ; case "Équivalence" |
 | 26.2@geste | titre "Comme un geste" |
 | 27.1@remplies | cocher 1 vert ; cocher 2 vert |
 | 27.1@blessures | titre "Clara pourrait répondre" |
