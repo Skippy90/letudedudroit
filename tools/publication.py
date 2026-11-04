@@ -103,6 +103,10 @@ def main(slug: str) -> None:
     if reponse:
         texte_reponse = sans_markdown(reponse[1])
         lignes += ["", "Réponse à la question finale :", texte_reponse[:1].upper() + texte_reponse[1:]]
+    # Ressources d'aide (vidéos sur des violences) : scripts/<slug>/ressources.txt, ajouté tel quel.
+    ressources = dossier / "ressources.txt"
+    if ressources.exists():
+        lignes += ["", ressources.read_text(encoding="utf-8").strip()]
     lignes += ["", "Chapitres :", *[f"{t} {nom}" for t, nom in chapitres]]
     lignes += [
         "",

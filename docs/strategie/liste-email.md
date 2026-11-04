@@ -1,6 +1,6 @@
 # Liste d'e-mails — proposition de mise en place
 
-**Statut : service choisi le 2 novembre 2026 : MailerLite.** Le reste est une proposition à valider. Les points juridiques (nLPD, LCD) sont à vérifier sur Fedlex avant l'ouverture ; les prix et conditions des services sont à vérifier sur leurs sites.
+**Statut : service choisi le 4 novembre 2026 : Infomaniak Newsletter** (remplace MailerLite, choisi le 2 novembre). Éditrice et responsable du traitement : la narratrice, en son nom (décision du 4 novembre 2026) ; son nom et son adresse sont dans `site/identite.json`, hors du dépôt. Le reste est une proposition à valider. Les points juridiques (nLPD, LCD) sont à vérifier sur Fedlex avant l'ouverture ; les prix et conditions des services sont à vérifier sur leurs sites.
 
 ## But
 
@@ -27,7 +27,7 @@ Transformer un spectateur de passage en lecteur fidèle : la fiche du cours grat
 | Brevo | Société française, offre gratuite, automatisations | Moins pratique pour vendre des produits |
 | Infomaniak Newsletter | Données en Suisse, cohérent si le site est aussi chez Infomaniak | Payant dès le départ |
 
-**Décision (2.11.2026) : MailerLite.** À mentionner dans la politique de confidentialité : sous-traitant et pays de stockage des données (À VÉRIFIER dans les conditions de MailerLite au moment de l'ouverture).
+**Décision (4.11.2026) : Infomaniak Newsletter** : données gérées par un prestataire suisse, même fournisseur que le domaine et l'adresse contact@letudedudroit.ch. À VÉRIFIER : envois automatiques (fiche, séquence de bienvenue) disponibles ou non. À mentionner dans la politique de confidentialité : sous-traitant et pays de stockage des données (À VÉRIFIER dans les conditions de MailerLite au moment de l'ouverture).
 
 ## Exigences légales à vérifier avant l'ouverture
 

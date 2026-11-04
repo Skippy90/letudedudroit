@@ -227,23 +227,21 @@ A_PROPOS = """<h2>Le projet</h2>
 <h2>Contact</h2>
 <p>Une question, une erreur à signaler : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>"""
 
-CONFIDENTIALITE = """<p class="alerte">Projet à relire et à compléter avant la mise en ligne (À VÉRIFIER : responsable du traitement, adresse postale, service d’envoi choisi).</p>
-<h2>Qui traite vos données</h2>
-<p>À VÉRIFIER : nom et adresse de la personne responsable du site L’étude du droit.</p>
+CONFIDENTIALITE = """<h2>Qui traite vos données</h2>
+<p>{RESPONSABLE}{ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 <h2>Ce qui est collecté</h2>
 <p>Si vous vous inscrivez pour recevoir les fiches : votre adresse e-mail et la date de votre consentement. Rien d’autre n’est demandé.</p>
 <h2>Pourquoi</h2>
 <p>Pour vous envoyer les fiches de cours et l’annonce des nouvelles vidéos. Votre adresse n’est ni vendue ni utilisée à d’autres fins.</p>
 <h2>Où et combien de temps</h2>
-<p>À VÉRIFIER : service d’envoi utilisé et pays où les données sont hébergées. Les données sont conservées jusqu’à votre désinscription.</p>
+<p>Les adresses sont gérées avec le service Newsletter d’Infomaniak (Infomaniak Network SA, Genève), qui agit pour notre compte. À VÉRIFIER : hébergement des données en Suisse, selon les conditions d’Infomaniak. Les données sont conservées jusqu’à votre désinscription, puis effacées.</p>
 <h2>Vidéos YouTube</h2>
 <p>Les pages du site n’intègrent pas de lecteur YouTube : un clic sur une vidéo vous emmène sur YouTube, qui applique alors ses propres règles.</p>
 <h2>Vos droits</h2>
-<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. À VÉRIFIER : renvoi exact aux dispositions applicables (loi fédérale sur la protection des données ; règlement européen pour les personnes dans l’Union européenne).</p>"""
+<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. Ces droits découlent de la loi fédérale sur la protection des données (LPD, RS 235.1), notamment de ses art. 19 (devoir d’informer), 25 (droit d’accès) et 32 (rectification et effacement). À VÉRIFIER : règles complémentaires pour les personnes résidant dans l’Union européenne.</p>"""
 
-MENTIONS = """<p class="alerte">Projet à compléter avant la mise en ligne.</p>
-<h2>Éditrice du site</h2>
-<p>Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>. À VÉRIFIER : nom et adresse postale.</p>
+MENTIONS = """<h2>Éditrice du site</h2>
+<p>{RESPONSABLE}{ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 <h2>Contenus</h2>
 <p>Les vidéos, scripts et fiches sont des introductions pédagogiques. Ils ne remplacent pas un conseil juridique adapté à une situation particulière.</p>
 <h2>Licence</h2>
@@ -253,6 +251,13 @@ MENTIONS = """<p class="alerte">Projet à compléter avant la mise en ligne.</p>
 def main(sortie: str | None, apercu: bool) -> None:
     import fiche
     reglages = json.loads((RACINE / "site/site.json").read_text(encoding="utf-8"))
+    # Identité de l'éditrice : site/identite.json, hors du dépôt (.gitignore) ; elle n'apparaît que sur le site publié.
+    ident_f = RACINE / "site/identite.json"
+    identite = json.loads(ident_f.read_text(encoding="utf-8")) if ident_f.exists() else {}
+    remplacer = {"{CONTACT}": e(reglages.get("contact", "")),
+                 "{RESPONSABLE}": e(identite.get("nom", "À VÉRIFIER : nom de l’éditrice")),
+                 # Adresse postale facultative (pas de vente en ligne) : sans elle, le nom et l'e-mail suffisent.
+                 "{ADRESSE}": (", " + e(identite["adresse"])) if identite.get("adresse") else ""}
     dossier = Path(sortie) if sortie else RACINE / "site/public"
     if dossier.exists():
         shutil.rmtree(dossier)
@@ -280,7 +285,9 @@ def main(sortie: str | None, apercu: bool) -> None:
                                                         CONFIDENTIALITE, "Protection des données sur L’étude du droit.")),
                          ("mentions", page_texte("Mentions légales", "Qui publie ce site.", MENTIONS, "Mentions légales."))]:
         (dossier / nom).mkdir()
-        (dossier / nom / "index.html").write_text(contenu.replace("{CONTACT}", e(reglages.get("contact", ""))), encoding="utf-8")
+        for cle, valeur in remplacer.items():
+            contenu = contenu.replace(cle, valeur)
+        (dossier / nom / "index.html").write_text(contenu, encoding="utf-8")
     print(f"Site : {dossier}")
 
 
