@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ATF 122 IV 1 — Un mari violent, tué pendant son sommeil : légitime défense ? | Droit pénal suisse
 
-## Description (2992 caractères sur 5 000)
+## Description (3274 caractères sur 5 000)
 
 ```text
 ATF 122 IV 1 : un mari violent, tué pendant son sommeil : légitime défense ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
@@ -25,6 +25,8 @@ Articles et arrêts cités (lois vérifiées sur Fedlex, arrêts du Tribunal fé
 
 Réponse à la question finale :
 Parce que la légitime défense suppose une attaque en cours ou imminente, alors que l'état de nécessité suppose seulement un danger imminent. Le mari dormait : il n'y avait ni attaque ni menace d'attaque imminente, et l'épouse, après vingt minutes de réflexion, ne pouvait pas dire y avoir cru (ATF 122 IV 1, consid. 2a ; art. 15 CP). Dans cette affaire, le danger tenait au risque d'une nouvelle agression ; face à un danger permanent, comme celui que fait peser un tyran domestique, l'imminence s'apprécie plus largement. Les violences graves et répétées retenues par les juges laissaient donc envisager un danger durable et imminent, impossible à détourner autrement. Les vies en jeu ayant une valeur comparable, l'acte pouvait tout au plus être excusé, pas justifié (ATF 122 IV 1, consid. 2b, 3 et 4 ; aujourd'hui art. 17 et 18 CP).
+
+Besoin d'aide ? Victimes de violence et leurs proches : le 142, ligne nationale d'aide aux victimes, gratuite, anonyme et confidentielle, 24 h sur 24. En cas de danger immédiat : police, 117. Informations et centres d'aide (LAVI) de votre canton : https://www.aide-aux-victimes.ch
 
 Chapitres :
 0:00 Les faits
