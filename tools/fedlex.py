@@ -28,6 +28,8 @@ RECUEILS = {
     "co": ("27/317_321_377", "Code des obligations, RS 220"),
     "ocr": ("1962/1364_1409_1420", "Ordonnance sur les règles de la circulation routière, RS 741.11"),
     "lda": ("1993/1798_1798_1798", "Loi sur le droit d'auteur, RS 231.1"),
+    "lcd": ("1988/223_223_223", "Loi fédérale contre la concurrence déloyale, RS 241"),
+    "lpd": ("2022/491", "Loi fédérale sur la protection des données, RS 235.1"),
 }
 
 
