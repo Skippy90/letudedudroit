@@ -50,13 +50,13 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 11.3 | scene-vide ; article-retirer ; repere-liste "Comprendre" "Se retenir" ; personnage theo "Théo" turquoise gauche ; titre "« au moment d'agir »" ambre |
 | 11.4 | sous-titre "L'état à l'instant de l'acte" ; accent theo |
 | 12.1 | scene-vide ; rembobiner ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 1" |
-| 12.2 | etiquette crise "Crise psychotique" -3.6 1.7 |
+| 12.2@psychotique | etiquette crise "Crise psychotique" -3.6 1.7 |
 | 12.3 | etiquette-retirer crise ; bulle theo "Un démon !" |
-| 13.1 | repere-marquer 1 ambre ; effacer-titres ; titre "Il ne voit plus l'interdit" |
+| 13.1 | repere-marquer 1 ambre ; effacer-titres ; effacer-bulle theo ; titre "Ne voit plus l'interdit" |
 | 13.2 | repere-marquer 1 gris |
 | 13.3 | etiquette irr "Irresponsable" 0.6 1.7 |
 | 14.1 | scene-vide ; rembobiner ; repere-marquer 1 neutre ; decor rue Festival ; personnage theo "Théo" turquoise gauche ; placer theo -3 ; personnage agent "L'agent" bleu_clair droite ; placer agent 2 ; titre "Variante 2" |
-| 14.2 | bulle theo "C'est interdit, je sais" ; repere-marquer 1 vert |
+| 14.2@interdit | bulle theo "C'est interdit, je sais" ; repere-marquer 1 vert |
 | 14.3 | effacer-bulle theo ; etiquette maitrise "Plus aucune maîtrise" 0.6 1.7 |
 | 14.3+1.5 | marcher theo 0 |
 | 15.1 | pousser theo agent ; repere-marquer 2 ambre |
@@ -106,9 +106,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'entr�
 | 29.1+2.5 | etiquette insu "Drogué, à son insu" 0.6 1.7 |
 | 29.2 | etiquette insu "Pas fautif" 0.6 1.7 |
 | 29.3 | article "Art. 263 CP" ; titre "Ni l'alinéa 4, ni 263" |
-| 29.4 | scene-vide ; article-retirer ; titre "L'ivresse volontaire ne suffit pas" ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
-| 29.5 | sous-titre "Les conditions de chaque règle" |
-| 29.6 | repere 0.25 "La faute" |
+| 29.4 | scene-vide ; article-retirer ; titre "Ivresse volontaire" ; frise ; point 0.25 "Il boit" ; point 0.7 "Il frappe" |
+| 29.5 | sous-titre "Conditions précises" |
+| 29.6 | effacer-titres ; repere 0.25 "La faute" |
 | 30.1 | scene-vide ; personnage theo "Théo" turquoise gauche ; bulle theo "Un démon !" ; repere-marquer 1 gris |
 | 30.2 | titre "Pas punissable" |
 | 30.3 | effacer-bulle theo ; sous-titre "Pas forcément la fin" |
