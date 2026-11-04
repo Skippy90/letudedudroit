@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Était-il responsable ? | Droit pénal suisse
 
-## Description (3410 caractères sur 5 000)
+## Description (3357 caractères sur 5 000)
 
 ```text
 Était-il responsable ? — expliqué simplement, à partir d'un cas concret.
@@ -32,16 +32,15 @@ En principe non, mais tout dépend de deux conditions cumulatives. Selon l'artic
 
 Chapitres :
 0:00 Le cas de départ
-0:31 La carte : le troisième étage
-0:56 L'irresponsabilité
-2:17 La responsabilité restreinte
-2:50 Qui décide ? L'expert
-3:32 Le piège classique
-4:44 Irresponsable, mais pas libre
-5:14 Conclusion et question
+0:35 La carte : le troisième étage
+1:02 L'irresponsabilité
+2:33 La responsabilité restreinte
+3:08 Qui décide ? L'expert
+3:49 Le piège classique
+5:24 Irresponsable, mais pas libre
+5:55 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/08-responsabilite
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

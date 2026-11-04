@@ -25,9 +25,9 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 4.2 | article "Art. 139 CP" |
 | 4.3 | etiquette-retirer plainte ; titre "Un vol ?" |
 | 4.4 | bulle elodie "Je ne savais pas" |
-| 5.1 | scene-vide ; article-retirer ; titre "« Je ne savais pas »" |
-| 5.2 | colonnes "Les faits" "Le droit" |
-| 6.1 | colonne-accent 1 ; picto velo -3.5 -1.3 |
+| 5.1 | scene-vide ; article-retirer ; titre "« Je ne savais pas »" ; personnage elodie "Élodie" turquoise gauche ; bulle elodie "Je ne savais pas" |
+| 5.2 | retirer elodie ; colonnes "Les faits" "Le droit" ; picto velo 0 -1.6 |
+| 6.1 | colonne-accent 1 ; picto-deplacer velo -3.5 -1.3 |
 | 6.2 | effacer-titres ; titre "Ce qu'on faisait" |
 | 6.3 | article "Art. 13 CP" ; sous-titre "Erreur sur les faits" |
 | 7.1 | effacer-titres ; colonne-accent 2 ; titre "Le droit d'agir" ; picto parlement 3.5 -1.3 |
@@ -50,14 +50,14 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 13.3 | titre "La typicité tombe" |
 | 14.1 | scene-vide ; article "Art. 13 CP" ; titre "Second alinéa" ; personnage elodie "Élodie" turquoise gauche |
 | 14.2 | sous-titre "Précautions voulues ? Sinon, négligence" |
-| 15.1 | effacer-titres ; retirer elodie ; titre "Si la loi la punit" |
+| 15.1 | effacer-titres ; titre "Si la loi la punit" |
 | 15.2 | case "Vol par négligence" ; cocher 1 gris ; article "Art. 139 CP" |
-| 15.3 | sous-titre "Pas punissable" |
+| 15.3 | effacer-titres ; titre "Pas punissable" |
 | 16.1 | scene-vide ; rembobiner ; article-retirer ; decor rue Université ; personnage elodie "Élodie" turquoise gauche ; placer elodie -2 ; picto velo -5.2 -1.85 ; titre "L'erreur inverse" |
-| 16.2 | bulle elodie "Je le vole" |
+| 16.2@voler | bulle elodie "Je le vole" |
 | 16.3 | etiquette sien "C'était le sien" 0.6 1.7 |
 | 16.4 | effacer-titres ; titre "Tentative impossible ?" |
-| 16.5 | renvoi "vidéo 9" ; sous-titre "La tentative : vidéo 9" |
+| 16.5 | renvoi "vidéo 9" |
 | 17.1 | scene-vide ; renvoi "vidéo 6" ; personnage elodie "Élodie" turquoise gauche ; bulle elodie "Il m'attaque ?" ; bouclier 3.5 0.3 |
 | 17.2 | titre "Jugée d'après sa croyance" |
 | 18.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 ambre ; personnage arthur "Arthur" bleu_clair gauche |
@@ -91,7 +91,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant l'unive
 | 28.2 | sous-titre "Nul n'est censé ignorer la loi" |
 | 28.3 | effacer-titres ; titre "L'erreur ne compte jamais ?" |
 | 29.1 | barrer |
-| 29.2 | scene-vide ; article "Art. 21 CP" ; titre "L'erreur est admise" ; repere-marquer 2 ambre |
+| 29.2 | scene-vide ; article "Art. 21 CP" ; titre "L'erreur est admise" ; repere-marquer 2 ambre ; personnage elodie "Élodie" turquoise gauche |
 | 29.3 | sous-titre "Si l'on ne pouvait pas savoir" |
 | 30.1 | scene-vide ; article-retirer ; repere-marquer 2 neutre ; repere-marquer 1 ambre ; batiment ; etage 1 gris |
 | 30.2 | titre "L'erreur sur les faits" |

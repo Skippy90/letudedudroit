@@ -36,11 +36,11 @@ Oui. En allumant le feu, Lucas a créé un risque ; il devait donc l'éteindre o
 
 Chapitres :
 0:00 Le cas de départ
-0:44 La carte : agir et ne pas agir
-1:22 La position de garant
-3:08 Clara et Maël
-4:36 Le piège classique
-5:31 Conclusion et question
+0:45 La carte : agir et ne pas agir
+1:24 La position de garant
+3:07 Clara et Maël
+4:37 Le piège classique
+5:37 Conclusion et question
 
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/05-commission-par-omission
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.

@@ -1,50 +1,36 @@
 {
-  "note": "Heure suisse (Europe/Zurich). Vidéos longues : jeudi 18 h (droit pénal général) et un lundi sur deux 18 h (arrêts du TF, chacun après la vidéo qu'il prolonge). Shorts : mardi, samedi, dimanche 12 h (série principale) et mercredi 12 h (arrêts). Un élément absent n'a pas encore de date.",
+  "note": "Heure suisse (Europe/Zurich). Rythme : une vidéo longue par jour à 18 h ; chaque arrêt du TF sort juste après la vidéo de droit pénal général qu'il prolonge. Shorts : à recaler sur ce rythme. Shorts : un par jour à 12 h, d'abord le premier short de la vidéo de la veille, puis les autres pour combler.",
   "fuseau": "Europe/Zurich",
   "en_attente": {
-    "arrets/04-atf-128-iv-11": "lundi suivant la publication de la vidéo 10 (instigation) — proposé : 11 janvier 2027 si la vidéo 10 sort le 7 janvier",
-    "arrets/05-atf-135-iv-152": "deux semaines après l'ATF 128 IV 11 — proposé : 25 janvier 2027"
+    "arrets/04-atf-128-iv-11": "le lendemain de la vidéo 10 (instigation)",
+    "arrets/05-atf-135-iv-152": "le lendemain de l'ATF 128 IV 11",
+    "droit-penal-general/09-tentative": "mardi 10 novembre 2026, 18 h, dès l'enregistrement"
   },
   "videos": {
-    "droit-penal-general/03-crime-delit-contravention": "2026-11-05T18:00",
-    "droit-penal-general/04-intention-negligence": "2026-11-12T18:00",
-    "droit-penal-general/05-commission-par-omission": "2026-11-19T18:00",
-    "droit-penal-general/06-faits-justificatifs": "2026-11-26T18:00",
-    "droit-penal-general/07-erreur": "2026-12-03T18:00",
-    "droit-penal-general/08-responsabilite": "2026-12-10T18:00",
-    "droit-penal-general/09-tentative": "2026-12-17T18:00",
-    "arrets/01-atf-130-iv-58": "2026-11-16T18:00",
-    "arrets/02-atf-122-iv-1": "2026-11-30T18:00",
-    "arrets/03-atf-141-iv-336": "2026-12-14T18:00"
+    "droit-penal-general/05-commission-par-omission": "2026-11-04T18:00",
+    "droit-penal-general/06-faits-justificatifs": "2026-11-05T18:00",
+    "arrets/02-atf-122-iv-1": "2026-11-06T18:00",
+    "droit-penal-general/07-erreur": "2026-11-07T18:00",
+    "arrets/03-atf-141-iv-336": "2026-11-08T18:00",
+    "droit-penal-general/08-responsabilite": "2026-11-09T18:00"
   },
   "shorts": {
-    "droit-penal-general/02-pas-de-peine-sans-loi--mentir": "2026-11-03T12:00",
-    "droit-penal-general/02-pas-de-peine-sans-loi--loi-nouvelle": "2026-11-07T12:00",
-    "droit-penal-general/02-pas-de-peine-sans-loi--piege": "2026-11-08T12:00",
-    "droit-penal-general/03-crime-delit-contravention--vol": "2026-11-10T12:00",
-    "droit-penal-general/03-crime-delit-contravention--gifle": "2026-11-14T12:00",
-    "droit-penal-general/03-crime-delit-contravention--piege": "2026-11-15T12:00",
-    "droit-penal-general/04-intention-negligence--tant-pis": "2026-11-17T12:00",
-    "droit-penal-general/04-intention-negligence--juge": "2026-11-21T12:00",
-    "droit-penal-general/04-intention-negligence--negligence": "2026-11-22T12:00",
-    "droit-penal-general/05-commission-par-omission--rien-fait": "2026-11-24T12:00",
-    "droit-penal-general/05-commission-par-omission--temoin": "2026-11-28T12:00",
-    "droit-penal-general/01-trois-etages--trois-etages": "2026-11-29T12:00",
-    "droit-penal-general/06-faits-justificatifs--se-defendre": "2026-12-01T12:00",
-    "droit-penal-general/06-faits-justificatifs--piege": "2026-12-05T12:00",
-    "droit-penal-general/01-trois-etages--permis": "2026-12-06T12:00",
-    "droit-penal-general/07-erreur--velo": "2026-12-08T12:00",
-    "droit-penal-general/07-erreur--nul-n-est-cense": "2026-12-12T12:00",
-    "droit-penal-general/01-trois-etages--pas-coupable": "2026-12-13T12:00",
-    "droit-penal-general/08-responsabilite--festival": "2026-12-15T12:00",
-    "droit-penal-general/08-responsabilite--trop-bu": "2026-12-19T12:00",
-    "droit-penal-general/09-tentative--kiosque": "2026-12-22T12:00",
-    "droit-penal-general/09-tentative--piege": "2026-12-26T12:00",
-    "arrets/01-atf-130-iv-58--course": "2026-11-18T12:00",
-    "arrets/01-atf-130-iv-58--espoir": "2026-11-25T12:00",
-    "arrets/02-atf-122-iv-1--dort": "2026-12-02T12:00",
-    "arrets/01-atf-130-iv-58--piege": "2026-12-09T12:00",
-    "arrets/03-atf-141-iv-336--vignette": "2026-12-16T12:00",
-    "arrets/03-atf-141-iv-336--amende": "2026-12-23T12:00"
+    "arrets/01-atf-130-iv-58--course": "2026-11-04T12:00",
+    "droit-penal-general/05-commission-par-omission--rien-fait": "2026-11-05T12:00",
+    "droit-penal-general/06-faits-justificatifs--se-defendre": "2026-11-06T12:00",
+    "arrets/02-atf-122-iv-1--dort": "2026-11-07T12:00",
+    "droit-penal-general/07-erreur--velo": "2026-11-08T12:00",
+    "arrets/03-atf-141-iv-336--vignette": "2026-11-09T12:00",
+    "droit-penal-general/08-responsabilite--festival": "2026-11-10T12:00",
+    "arrets/01-atf-130-iv-58--espoir": "2026-11-11T12:00",
+    "droit-penal-general/05-commission-par-omission--temoin": "2026-11-12T12:00",
+    "droit-penal-general/06-faits-justificatifs--piege": "2026-11-13T12:00",
+    "droit-penal-general/07-erreur--nul-n-est-cense": "2026-11-14T12:00",
+    "arrets/03-atf-141-iv-336--amende": "2026-11-15T12:00",
+    "arrets/01-atf-130-iv-58--piege": "2026-11-16T12:00",
+    "droit-penal-general/08-responsabilite--trop-bu": "2026-11-17T12:00"
+  },
+  "publiees": {
+    "arrets/01-atf-130-iv-58": "2026-11-03"
   }
 }

@@ -13,7 +13,7 @@ Style « scène » (repris le 1er novembre 2026) : Théo revient devant l'entré
 | Moment | Actions |
 | --- | --- |
 | 1.1 | titre "Deux histoires pour finir" ; livre "Code pénal" 0 -0.5 |
-| 1.2 | scene-vide ; decor rue Festival ; etiquette lieu "Près de Nyon" -3.6 1.7 |
+| 1.2 | scene-vide ; decor festival ; etiquette lieu "Près de Nyon" -3.6 1.7 |
 | 1.3 | personnage theo "Théo" turquoise gauche ; placer theo -2 ; personnage agent "L'agent" bleu_clair droite ; placer agent 1 ; renvoi "vidéo 8" |
 | 1.3+2.5 | pousser theo agent |
 | 1.3+4 | chute agent 2 ; dommage agent |

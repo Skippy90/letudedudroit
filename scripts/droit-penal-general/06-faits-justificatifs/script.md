@@ -56,7 +56,7 @@ Personnages : Yasmine (silhouette turquoise), Kevin (silhouette rose), Hugo (sil
 | 24 | Second fait justificatif : l'état de nécessité. Ici, pas d'agresseur. Seulement un danger. | Le titre « État de nécessité » |
 | 25 | Un après-midi de canicule, Hugo voit un bébé enfermé seul dans une voiture brûlante. Personne ne répond. Il brise la vitre pour le sortir. | La silhouette de Hugo ; le mot « Vitre brisée » |
 | 26 | Briser la vitre d'autrui, c'est un dommage à la propriété. Mais l'article 17 du Code pénal rend ce geste licite, à trois conditions. | Bloc « Art. 17 CP » ; une liste se prépare |
-| 27 | Il faut un danger imminent. Selon le Tribunal fédéral, c'est un danger ni passé ni futur, mais actuel et concret. Il faut aussi qu'il soit impossible de l'écarter autrement. Et il faut sauvegarder des intérêts prépondérants. | Liste : « Danger imminent », « Pas d'autre moyen », « Intérêts prépondérants » |
+| 27 | Il faut un danger imminent. Selon le Tribunal fédéral, c'est un danger ni passé ni futur, mais actuel et concret. Il faut aussi qu'il soit impossible de l'écarter autrement. Et il faut sauvegarder les intérêts prépondérants. | Liste : « Danger imminent », « Pas d'autre moyen », « Intérêts prépondérants » |
 | 28 | La vie d'un bébé pèse bien plus lourd qu'une vitre. Le geste de Hugo est justifié. | Deux colonnes « La vie » et « Une vitre » ; la première en ambre |
 | 29 | Et quand les deux biens en jeu ont une valeur comparable ? L'acte n'est plus justifié. Il faut toujours un danger imminent, impossible à écarter autrement, qui menace un bien essentiel. Selon l'article 18, le juge atténue la peine si l'on pouvait exiger de l'auteur qu'il renonce au bien menacé. Sinon, l'auteur n'est pas coupable. | Bloc « Art. 18 CP » ; les deux colonnes de même taille |
 | 30 | Parfois, on ne pouvait pas raisonnablement exiger de l'auteur qu'il sacrifie son bien. Alors, il n'agit même pas de manière coupable. Là encore, on bascule au troisième étage. | L'étage « Culpabilité » en ambre |
@@ -68,7 +68,7 @@ Personnages : Yasmine (silhouette turquoise), Kevin (silhouette rose), Hugo (sil
 | 31 | Il existe d'autres faits justificatifs. Par exemple, l'article 14 rend licite l'acte que la loi ordonne ou autorise. C'est le cas d'un policier qui procède à une arrestation dans les règles. | Bloc « Art. 14 CP » ; le mot « Acte autorisé par la loi » |
 | 32 | Attention au piège classique. On croit souvent que face à un agresseur, tout est permis. C'est faux. | La phrase « Face à un agresseur, tout est permis » apparaît, puis se barre |
 | 33 | La défense doit rester proportionnée. Le juge regarde la gravité de l'attaque, les biens en jeu, et le moyen de défense utilisé. Il se place dans la situation de la victime, au moment de l'attaque. | Deux colonnes « Attaque » et « Défense » |
-| 34 | Et la légitime défense ne vaut que pendant l'attaque, ou face à une attaque imminente. Avant, c'est trop tôt. Après, c'est trop tard. Une défense trop tardive ou trop violente peut rester punissable, même si l'agresseur avait tort au départ. | La frise : une zone verte courte autour du point « Attaque » |
+| 34 | Et la légitime défense ne vaut que pendant l'attaque, ou face à une attaque imminente. Avant, c'était trop tôt. Après, c'est trop tard. Une défense trop tardive ou trop violente peut rester punissable, même si l'agresseur avait tort au départ. | La frise : une zone verte courte autour du point « Attaque » |
 
 ## Conclusion et question
 

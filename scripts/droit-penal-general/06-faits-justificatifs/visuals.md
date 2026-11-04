@@ -58,9 +58,8 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 15.1@cru | bulle yasmine "Attaquée ?" |
 | 15.2@putative | effacer-bulle yasmine ; titre "Légitime défense putative" |
 | 15.3@erreur | sous-titre "Une question d'erreur" ; renvoi "vidéo 7" |
-| 16.1 | scene-vide ; rembobiner |
-| 16.2 | decor rue Bar ; personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 1 |
-| 16.2+1.5 | picto tension -0.8 -0.2 |
+| 16.1 | scene-vide ; rembobiner ; decor rue Bar |
+| 16.2 | personnage yasmine "Yasmine" turquoise gauche ; placer yasmine -2 ; personnage kevin "Kevin" rose droite ; placer kevin 1 ; picto tension -0.8 -0.2 |
 | 16.2@rentre | picto-retirer tension ; marcher kevin 4 |
 | 16.3@lendemain | etiquette lendemain "Le lendemain" -3.2 1.7 |
 | 16.3@frapper | marcher yasmine 2 |
@@ -78,9 +77,8 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 20.1@fédéral | arret "ATF 136 IV 49" |
 | 20.1@retenue | titre "Une grande retenue" |
 | 20.2@dernier | sous-titre "Le dernier moyen" |
-| 20.3@gravité | sous-titre "Selon la gravité et les autres moyens" |
-| 21.1 | scene-vide ; arret-retirer ; batiment ; fleche 1 ; etage 1 vert |
-| 21.1@limites | titre "Trop loin : un excès" |
+| 20.3@gravité | sous-titre "Selon la gravité" |
+| 21.1 | scene-vide ; arret-retirer ; titre "Trop loin : un excès" ; batiment ; fleche 1 ; etage 1 vert |
 | 21.2@seize | article "Art. 16 CP" ; sous-titre "Peine atténuée" |
 | 22.1@excitation | sous-titre "Excitation ou saisissement excusable" |
 | 22.2@coupable | etage 3 gris ; repere-etage 3 gris |
@@ -136,7 +134,7 @@ Style « scène » : les cas se jouent à la sortie d'un bar (décor de rue, ens
 | 36.2@dix | article "Art. 17 CP" |
 | 37.1@illicéité | etage 2 gris ; repere-etage 2 gris ; sous-titre "Plus d'illicéité" |
 | 37.2@articles | article "Art. 16 et 18 CP" |
-| 37.2@culpabilité | etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Peine atténuée ou pas coupable" |
+| 37.2@culpabilité | effacer-titres ; etage 2 vert ; etage 3 ambre ; repere-etage 2 ambre ; repere-etage 3 ambre ; sous-titre "Excuse possible" |
 | 37.3@attaque | effacer-titres ; titre "Attaque ? Danger ?" ambre |
 | 38.1 | scene-vide ; article-retirer ; repere-etage 2 ambre ; repere-etage 3 neutre ; titre "Une question pour finir" |
 | 38.2 | effacer-titres ; decor escalier ; personnage nadia "Nadia" violet gauche ; placer nadia 0 ; personnage voisin "Un voisin" ambre_pale droite ; placer voisin 4 |
