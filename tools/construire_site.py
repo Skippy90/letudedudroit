@@ -234,11 +234,11 @@ CONFIDENTIALITE = """<h2>Qui traite vos données</h2>
 <h2>Pourquoi</h2>
 <p>Pour vous envoyer les fiches de cours et l’annonce des nouvelles vidéos. Votre adresse n’est ni vendue ni utilisée à d’autres fins.</p>
 <h2>Où et combien de temps</h2>
-<p>Les adresses sont gérées avec le service Newsletter d’Infomaniak (Infomaniak Network SA, Genève), qui agit pour notre compte. À VÉRIFIER : hébergement des données en Suisse, selon les conditions d’Infomaniak. Les données sont conservées jusqu’à votre désinscription, puis effacées.</p>
+<p>La lettre d’information ouvrira prochainement. Les adresses seront alors gérées avec le service Newsletter d’Infomaniak, à Genève, qui agira pour notre compte. Elles seront conservées jusqu’à votre désinscription, puis effacées. Cette page sera complétée à l’ouverture.</p>
 <h2>Vidéos YouTube</h2>
 <p>Les pages du site n’intègrent pas de lecteur YouTube : un clic sur une vidéo vous emmène sur YouTube, qui applique alors ses propres règles.</p>
 <h2>Vos droits</h2>
-<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. Ces droits découlent de la loi fédérale sur la protection des données (LPD, RS 235.1), notamment de ses art. 19 (devoir d’informer), 25 (droit d’accès) et 32 (rectification et effacement). À VÉRIFIER : règles complémentaires pour les personnes résidant dans l’Union européenne.</p>"""
+<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. Ces droits découlent de la loi fédérale sur la protection des données (LPD, RS 235.1), notamment de ses art. 19 (devoir d’informer), 25 (droit d’accès) et 32 (rectification et effacement).</p>"""
 
 MENTIONS = """<h2>Éditrice du site</h2>
 <p>{RESPONSABLE}{ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
