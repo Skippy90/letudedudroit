@@ -646,6 +646,49 @@ class Rue(VGroup):
         return [1.6 * n, Y_SOL, 0]
 
 
+class Festival(VGroup):
+    """Un festival de plein air, le soir : une tente à gauche, l'arche d'entrée et sa banderole au centre,
+    une guirlande de fanions, la scène à droite avec sa structure, ses projecteurs et une enceinte.
+
+    Même trame que la rue (sol, trois masses à gauche, au centre, à droite) : les positions des personnages
+    et des étiquettes d'une scène de rue restent valables."""
+
+    def __init__(self, banderole="Festival"):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        # Tente : un toit en pointe sur un corps, une ouverture.
+        tente = VGroup(
+            Rectangle(width=2.4, height=2.0, **DECOR).move_to([-5.4, Y_SOL + 1.0, 0]),
+            Polygon([-6.7, Y_SOL + 2.0, 0], [-4.1, Y_SOL + 2.0, 0], [-5.4, Y_SOL + 3.0, 0], **DECOR),
+            Line([-5.4, Y_SOL, 0], [-5.4, Y_SOL + 1.3, 0], **DECOR))
+        # Arche d'entrée : deux mâts, une banderole avec le nom du lieu.
+        mats = VGroup(Line([-0.9, Y_SOL, 0], [-0.9, Y_SOL + 3.3, 0], **DECOR),
+                      Line([2.1, Y_SOL, 0], [2.1, Y_SOL + 3.3, 0], **DECOR))
+        bande = Rectangle(width=3.0, height=0.6, **DECOR).move_to([0.6, Y_SOL + 3.0, 0])
+        nom = texte(banderole, T_PETIT).set_opacity(0.4).move_to(bande)
+        # Guirlande de fanions, de la tente à l'arche.
+        from manim import VMobject
+        fil = VMobject(**DECOR)
+        pts = [[-4.1 + 3.2 * t, Y_SOL + 2.9 - 0.35 * 4 * t * (1 - t), 0] for t in [k / 10 for k in range(11)]]
+        fil.set_points_smoothly(pts)
+        fanions = VGroup(*[Polygon(pts[k], [pts[k][0] + 0.24, pts[k][1], 0], [pts[k][0] + 0.12, pts[k][1] - 0.28, 0],
+                                   color=ACCENT if k % 2 else TEXTE, stroke_width=2, stroke_opacity=0.45,
+                                   fill_color=ACCENT if k % 2 else TEXTE, fill_opacity=0.25) for k in range(1, 10)])
+        # Scène : plancher, structure, projecteurs, une enceinte.
+        plancher = Rectangle(width=3.4, height=0.5, **DECOR).move_to([5.3, Y_SOL + 0.25, 0])
+        structure = VGroup(Line([3.8, Y_SOL + 0.5, 0], [3.8, Y_SOL + 3.4, 0], **DECOR),
+                           Line([6.8, Y_SOL + 0.5, 0], [6.8, Y_SOL + 3.4, 0], **DECOR),
+                           Line([3.8, Y_SOL + 3.4, 0], [6.8, Y_SOL + 3.4, 0], **DECOR))
+        projecteurs = VGroup(*[Dot([x, Y_SOL + 3.2, 0], radius=0.09, color=ACCENT, fill_opacity=0.6) for x in (4.5, 5.3, 6.1)])
+        enceinte = VGroup(Rectangle(width=0.6, height=1.0, **DECOR).move_to([6.3, Y_SOL + 1.0, 0]),
+                          Circle(radius=0.18, **DECOR).move_to([6.3, Y_SOL + 0.85, 0]))
+        self.textes = [nom]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
+        super().__init__(sol, tente, mats, bande, nom, fil, fanions, plancher, structure, projecteurs, enceinte)
+
+    def pied(self, n):
+        """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
+        return [1.6 * n, Y_SOL, 0]
+
+
 class Tribunal(VGroup):
     """Salle d'audience : sol, estrade et banc du juge à droite, barre des témoins à gauche du centre.
 
