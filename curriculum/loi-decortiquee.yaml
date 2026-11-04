@@ -1,0 +1,11 @@
+# Curriculum — La loi décortiquée (un article à la fois : texte exact, carte, méthode, zooms)
+matiere: loi-decortiquee
+recueil: "Code pénal suisse, RS 311.0, lu sur Fedlex"
+videos:
+  - id: 01
+    slug: art-12-cp
+    titre: "Article 12 : l'intention, mot à mot"
+    notion: "Intention, dol éventuel et négligence (art. 12 CP)"
+    articles: ["1", "12", "117", "125", "144"]
+    requiert: ["droit-penal-general/01", "droit-penal-general/04", "arrets/01"]
+    statut: script-redige

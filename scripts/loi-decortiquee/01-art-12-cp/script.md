@@ -27,8 +27,8 @@ Format de la série : le texte de l'article s'affiche mot pour mot, morceau par 
 | 12 | On part toujours du texte : le sens des mots, dans la langue de tous les jours et dans la langue du droit. | Case « Le texte » |
 | 13 | Si le texte laisse un doute, on cherche son vrai sens avec trois autres clés. | Trois cases apparaissent |
 | 14 | Les autres articles : la règle doit s'accorder avec le reste de la loi. Le but : à quoi sert la règle ? L'histoire : qu'a voulu le législateur ? | « Les autres articles », « Le but », « L'histoire » |
-| 15 | Le Tribunal fédéral le dit lui-même : aucune méthode ne l'emporte d'office sur les autres. Il les combine. | Bloc de l'arrêt (référence à confirmer) ; les quatre clés convergent |
-| 16 | En droit pénal, une limite de plus : on ne peut pas étendre une infraction au-delà de son texte. C'est le principe de la vidéo deux : pas de peine sans loi. | Bloc « Art. 1 CP » ; renvoi « vidéo 2 » |
+| 15 | Le Tribunal fédéral le dit lui-même : il ne privilégie aucune méthode. Il les combine, avec pragmatisme, pour trouver le vrai sens de la règle. | Bloc « ATF 146 IV 249 » ; les quatre clés convergent vers « Le sens » |
+| 16 | En droit pénal, une limite de plus. On ne peut pas punir un comportement que la loi ne vise pas, même lue le plus largement possible. C'est le principe de la vidéo deux : pas de peine sans loi. | Bloc « Art. 1 CP » ; bloc « ATF 138 IV 13 » ; renvoi « vidéo 2 » |
 
 ## Zoom : le premier alinéa
 
