@@ -228,7 +228,7 @@ A_PROPOS = """<h2>Le projet</h2>
 <p>Une question, une erreur à signaler : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>"""
 
 CONFIDENTIALITE = """<h2>Qui traite vos données</h2>
-<p>{RESPONSABLE}, {ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
+<p>{RESPONSABLE}{ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 <h2>Ce qui est collecté</h2>
 <p>Si vous vous inscrivez pour recevoir les fiches : votre adresse e-mail et la date de votre consentement. Rien d’autre n’est demandé.</p>
 <h2>Pourquoi</h2>
@@ -241,7 +241,7 @@ CONFIDENTIALITE = """<h2>Qui traite vos données</h2>
 <p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. Ces droits découlent de la loi fédérale sur la protection des données (LPD, RS 235.1), notamment de ses art. 19 (devoir d’informer), 25 (droit d’accès) et 32 (rectification et effacement). À VÉRIFIER : règles complémentaires pour les personnes résidant dans l’Union européenne.</p>"""
 
 MENTIONS = """<h2>Éditrice du site</h2>
-<p>{RESPONSABLE}, {ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
+<p>{RESPONSABLE}{ADRESSE}. Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>
 <h2>Contenus</h2>
 <p>Les vidéos, scripts et fiches sont des introductions pédagogiques. Ils ne remplacent pas un conseil juridique adapté à une situation particulière.</p>
 <h2>Licence</h2>
@@ -256,7 +256,8 @@ def main(sortie: str | None, apercu: bool) -> None:
     identite = json.loads(ident_f.read_text(encoding="utf-8")) if ident_f.exists() else {}
     remplacer = {"{CONTACT}": e(reglages.get("contact", "")),
                  "{RESPONSABLE}": e(identite.get("nom", "À VÉRIFIER : nom de l’éditrice")),
-                 "{ADRESSE}": e(identite.get("adresse", "À VÉRIFIER : adresse postale"))}
+                 # Adresse postale facultative (pas de vente en ligne) : sans elle, le nom et l'e-mail suffisent.
+                 "{ADRESSE}": (", " + e(identite["adresse"])) if identite.get("adresse") else ""}
     dossier = Path(sortie) if sortie else RACINE / "site/public"
     if dossier.exists():
         shutil.rmtree(dossier)
