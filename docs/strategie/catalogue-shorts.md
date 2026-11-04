@@ -2,7 +2,7 @@
 
 Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque vidéo. Un short reprend tel quel un extrait audité de la vidéo ; seule l'accroche lui est propre (à valider par la relectrice). Les textes par plateforme sont dans `out/shorts/catalogue.csv` et dans le paquet `out/upload/shorts-catalogue.zip`.
 
-**35 shorts : 26 prêts, 9 à produire après l'enregistrement.**
+**35 shorts : 28 prêts, 7 à produire après l'enregistrement.**
 
 ## Réglages communs
 
@@ -17,11 +17,11 @@ Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque 
 | Série | Vidéo | Short | Accroche | Lignes | Durée | Statut | Publication (heure suisse) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Les arrêts du Tribunal fédéral | 1 — Une course de voitures, deux morts : meurtre ? | `course` | Une course improvisée, deux morts : meurtre ? | 3–7 | 45 s | prêt | 2026-11-04 12:00 |
-| Les arrêts du Tribunal fédéral | 1 — Une course de voitures, deux morts : meurtre ? | `espoir` | « Pourvu que ça passe » : est-ce assez ? | 20–23 | 39 s | prêt | 2026-11-10 12:00 |
-| Les arrêts du Tribunal fédéral | 1 — Une course de voitures, deux morts : meurtre ? | `piege` | « Il ne voulait pas tuer » : donc pas un meurtre ? | 32–35 | 30 s | prêt | 2026-11-15 12:00 |
+| Les arrêts du Tribunal fédéral | 1 — Une course de voitures, deux morts : meurtre ? | `espoir` | « Pourvu que ça passe » : est-ce assez ? | 20–23 | 39 s | prêt | 2026-11-11 12:00 |
+| Les arrêts du Tribunal fédéral | 1 — Une course de voitures, deux morts : meurtre ? | `piege` | « Il ne voulait pas tuer » : donc pas un meurtre ? | 32–35 | 30 s | prêt | 2026-11-16 12:00 |
 | Les arrêts du Tribunal fédéral | 2 — Un mari violent, tué pendant son sommeil : légitime défense ? | `dort` | Peut-on se défendre contre quelqu'un qui dort ? | 14–18 | 35 s | prêt | 2026-11-07 12:00 |
 | Les arrêts du Tribunal fédéral | 3 — Une vignette sous film adhésif : « Je ne savais pas » ? | `vignette` | Une vignette sous film adhésif : falsification ? | 1–5 | 48 s | prêt | 2026-11-09 12:00 |
-| Les arrêts du Tribunal fédéral | 3 — Une vignette sous film adhésif : « Je ne savais pas » ? | `amende` | « Je pensais risquer une amende » : une excuse ? | 20–23 | 33 s | prêt | 2026-11-14 12:00 |
+| Les arrêts du Tribunal fédéral | 3 — Une vignette sous film adhésif : « Je ne savais pas » ? | `amende` | « Je pensais risquer une amende » : une excuse ? | 20–23 | 33 s | prêt | 2026-11-15 12:00 |
 | Les arrêts du Tribunal fédéral | 4 — Vingt mille francs pour un CD-ROM : qui a décidé qui ? | `partant` | Il était partant : peut-on encore l'instiguer ? | 33–37 | 37 s | prêt | à fixer |
 | Les arrêts du Tribunal fédéral | 5 — Deux contre un : faut-il savoir qui a frappé ? | `qui-a-frappe` | Deux contre un : faut-il savoir qui a frappé ? | 18–20 | 25 s | prêt | à fixer |
 | Droit pénal général | 1 — Qu'est-ce qu'une infraction ? Les trois étages | `trois-etages` | Une infraction, c'est trois étages | 4–6 | 33 s | prêt | à fixer |
@@ -37,13 +37,13 @@ Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque 
 | Droit pénal général | 4 — Le voulait-il vraiment ? | `juge` | Comment un juge sait-il ce que vous vouliez ? | 29–31 | 26 s | prêt | à fixer |
 | Droit pénal général | 4 — Le voulait-il vraiment ? | `negligence` | La négligence est-elle toujours punie ? | 33–35 | 36 s | prêt | à fixer |
 | Droit pénal général | 5 — Coupable de n'avoir rien fait | `rien-fait` | Peut-on être coupable sans rien faire ? | 1–5 | 40 s | prêt | 2026-11-05 12:00 |
-| Droit pénal général | 5 — Coupable de n'avoir rien fait | `temoin` | Témoin d'une noyade : punissable s'il ne fait rien ? | 29–31 | 32 s | prêt | 2026-11-11 12:00 |
+| Droit pénal général | 5 — Coupable de n'avoir rien fait | `temoin` | Témoin d'une noyade : punissable s'il ne fait rien ? | 29–31 | 32 s | prêt | 2026-11-12 12:00 |
 | Droit pénal général | 6 — Avait-il le droit de se défendre ? | `se-defendre` | Se défendre en frappant : punissable ? | 1–3 | 29 s | prêt | 2026-11-06 12:00 |
-| Droit pénal général | 6 — Avait-il le droit de se défendre ? | `piege` | Face à un agresseur, tout est permis ? | 32–34 | 34 s | prêt | 2026-11-12 12:00 |
+| Droit pénal général | 6 — Avait-il le droit de se défendre ? | `piege` | Face à un agresseur, tout est permis ? | 32–34 | 34 s | prêt | 2026-11-13 12:00 |
 | Droit pénal général | 7 — Je ne savais pas | `velo` | Elle part avec le mauvais vélo : vol ? | 1–4 | 36 s | prêt | 2026-11-08 12:00 |
-| Droit pénal général | 7 — Je ne savais pas | `nul-n-est-cense` | « Nul n'est censé ignorer la loi » : vraiment ? | 28–31 | 41 s | prêt | 2026-11-13 12:00 |
-| Droit pénal général | 8 — Était-il responsable ? | `festival` | Peut-on lui reprocher son geste ? | 1–3 | ≈ 34 s | après enregistrement | à fixer |
-| Droit pénal général | 8 — Était-il responsable ? | `trop-bu` | « J'avais trop bu » : une excuse ? | 24–26 | ≈ 38 s | après enregistrement | à fixer |
+| Droit pénal général | 7 — Je ne savais pas | `nul-n-est-cense` | « Nul n'est censé ignorer la loi » : vraiment ? | 28–31 | 41 s | prêt | 2026-11-14 12:00 |
+| Droit pénal général | 8 — Était-il responsable ? | `festival` | Peut-on lui reprocher son geste ? | 1–3 | 31 s | prêt | 2026-11-10 12:00 |
+| Droit pénal général | 8 — Était-il responsable ? | `trop-bu` | « J'avais trop bu » : une excuse ? | 24–26 | 35 s | prêt | 2026-11-17 12:00 |
 | Droit pénal général | 9 — Il a essayé, mais… | `kiosque` | Il n'a rien volé : peut-il être puni ? | 1–4 | ≈ 37 s | après enregistrement | à fixer |
 | Droit pénal général | 9 — Il a essayé, mais… | `piege` | Rien pris, donc pas d'infraction ? | 29–31 | ≈ 32 s | après enregistrement | à fixer |
 | Droit pénal général | 10 — Ils étaient plusieurs | `quatre` | Quatre amis, un vol : qui est coupable ? | 1–5 | ≈ 46 s | après enregistrement | à fixer |
@@ -90,7 +90,7 @@ Une course improvisée, deux morts : meurtre ? (ATF 130 IV 58) Vidéo complète 
 
 ### Les arrêts du Tribunal fédéral, vidéo 1 — « Pourvu que ça passe » : est-ce assez ?
 
-Fichier : `out/shorts/arrets--01-atf-130-iv-58--espoir.mp4` · publication : 2026-11-10 12:00
+Fichier : `out/shorts/arrets--01-atf-130-iv-58--espoir.mp4` · publication : 2026-11-11 12:00
 
 **YouTube** — titre : « Pourvu que ça passe » : est-ce assez ? (ATF 130 IV 58) #Shorts
 
@@ -124,7 +124,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 
 ### Les arrêts du Tribunal fédéral, vidéo 1 — « Il ne voulait pas tuer » : donc pas un meurtre ?
 
-Fichier : `out/shorts/arrets--01-atf-130-iv-58--piege.mp4` · publication : 2026-11-15 12:00
+Fichier : `out/shorts/arrets--01-atf-130-iv-58--piege.mp4` · publication : 2026-11-16 12:00
 
 **YouTube** — titre : « Il ne voulait pas tuer » : donc pas un meurtre ? (ATF 130 IV 58) #Shorts
 
@@ -226,7 +226,7 @@ Une vignette sous film adhésif : falsification ? (ATF 141 IV 336) Vidéo compl�
 
 ### Les arrêts du Tribunal fédéral, vidéo 3 — « Je pensais risquer une amende » : une excuse ?
 
-Fichier : `out/shorts/arrets--03-atf-141-iv-336--amende.mp4` · publication : 2026-11-14 12:00
+Fichier : `out/shorts/arrets--03-atf-141-iv-336--amende.mp4` · publication : 2026-11-15 12:00
 
 **YouTube** — titre : « Je pensais risquer une amende » : une excuse ? (ATF 141 IV 336) #Shorts
 
@@ -770,7 +770,7 @@ Peut-on être coupable sans rien faire ? Vidéo complète sur YouTube : L'étude
 
 ### Droit pénal général, vidéo 5 — Témoin d'une noyade : punissable s'il ne fait rien ?
 
-Fichier : `out/shorts/droit-penal-general--05-commission-par-omission--temoin.mp4` · publication : 2026-11-11 12:00
+Fichier : `out/shorts/droit-penal-general--05-commission-par-omission--temoin.mp4` · publication : 2026-11-12 12:00
 
 **YouTube** — titre : Témoin d'une noyade : punissable s'il ne fait rien ? #Shorts
 
@@ -838,7 +838,7 @@ Se défendre en frappant : punissable ? Vidéo complète sur YouTube : L'étude 
 
 ### Droit pénal général, vidéo 6 — Face à un agresseur, tout est permis ?
 
-Fichier : `out/shorts/droit-penal-general--06-faits-justificatifs--piege.mp4` · publication : 2026-11-12 12:00
+Fichier : `out/shorts/droit-penal-general--06-faits-justificatifs--piege.mp4` · publication : 2026-11-13 12:00
 
 **YouTube** — titre : Face à un agresseur, tout est permis ? #Shorts
 
@@ -906,7 +906,7 @@ Elle part avec le mauvais vélo : vol ? Vidéo complète sur YouTube : L'étude 
 
 ### Droit pénal général, vidéo 7 — « Nul n'est censé ignorer la loi » : vraiment ?
 
-Fichier : `out/shorts/droit-penal-general--07-erreur--nul-n-est-cense.mp4` · publication : 2026-11-13 12:00
+Fichier : `out/shorts/droit-penal-general--07-erreur--nul-n-est-cense.mp4` · publication : 2026-11-14 12:00
 
 **YouTube** — titre : « Nul n'est censé ignorer la loi » : vraiment ? #Shorts
 
@@ -936,4 +936,72 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 
 ```text
 « Nul n'est censé ignorer la loi » : vraiment ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 8 — Peut-on lui reprocher son geste ?
+
+Fichier : `out/shorts/droit-penal-general--08-responsabilite--festival.mp4` · publication : 2026-11-10 12:00
+
+**YouTube** — titre : Peut-on lui reprocher son geste ? #Shorts
+
+```text
+Peut-on lui reprocher son geste ?
+
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+Peut-on lui reprocher son geste ?
+
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+Peut-on lui reprocher son geste ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 8 — « J'avais trop bu » : une excuse ?
+
+Fichier : `out/shorts/droit-penal-general--08-responsabilite--trop-bu.mp4` · publication : 2026-11-17 12:00
+
+**YouTube** — titre : « J'avais trop bu » : une excuse ? #Shorts
+
+```text
+« J'avais trop bu » : une excuse ?
+
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+« J'avais trop bu » : une excuse ?
+
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+« J'avais trop bu » : une excuse ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```

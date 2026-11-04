@@ -4,14 +4,15 @@
   "en_attente": {
     "arrets/04-atf-128-iv-11": "le lendemain de la vidéo 10 (instigation)",
     "arrets/05-atf-135-iv-152": "le lendemain de l'ATF 128 IV 11",
-    "droit-penal-general/08-responsabilite": "dès l'enregistrement ; le lendemain de la dernière vidéo publiée"
+    "droit-penal-general/09-tentative": "mardi 10 novembre 2026, 18 h, dès l'enregistrement"
   },
   "videos": {
     "droit-penal-general/05-commission-par-omission": "2026-11-04T18:00",
     "droit-penal-general/06-faits-justificatifs": "2026-11-05T18:00",
     "arrets/02-atf-122-iv-1": "2026-11-06T18:00",
     "droit-penal-general/07-erreur": "2026-11-07T18:00",
-    "arrets/03-atf-141-iv-336": "2026-11-08T18:00"
+    "arrets/03-atf-141-iv-336": "2026-11-08T18:00",
+    "droit-penal-general/08-responsabilite": "2026-11-09T18:00"
   },
   "shorts": {
     "arrets/01-atf-130-iv-58--course": "2026-11-04T12:00",
@@ -20,12 +21,14 @@
     "arrets/02-atf-122-iv-1--dort": "2026-11-07T12:00",
     "droit-penal-general/07-erreur--velo": "2026-11-08T12:00",
     "arrets/03-atf-141-iv-336--vignette": "2026-11-09T12:00",
-    "arrets/01-atf-130-iv-58--espoir": "2026-11-10T12:00",
-    "droit-penal-general/05-commission-par-omission--temoin": "2026-11-11T12:00",
-    "droit-penal-general/06-faits-justificatifs--piege": "2026-11-12T12:00",
-    "droit-penal-general/07-erreur--nul-n-est-cense": "2026-11-13T12:00",
-    "arrets/03-atf-141-iv-336--amende": "2026-11-14T12:00",
-    "arrets/01-atf-130-iv-58--piege": "2026-11-15T12:00"
+    "droit-penal-general/08-responsabilite--festival": "2026-11-10T12:00",
+    "arrets/01-atf-130-iv-58--espoir": "2026-11-11T12:00",
+    "droit-penal-general/05-commission-par-omission--temoin": "2026-11-12T12:00",
+    "droit-penal-general/06-faits-justificatifs--piege": "2026-11-13T12:00",
+    "droit-penal-general/07-erreur--nul-n-est-cense": "2026-11-14T12:00",
+    "arrets/03-atf-141-iv-336--amende": "2026-11-15T12:00",
+    "arrets/01-atf-130-iv-58--piege": "2026-11-16T12:00",
+    "droit-penal-general/08-responsabilite--trop-bu": "2026-11-17T12:00"
   },
   "publiees": {
     "arrets/01-atf-130-iv-58": "2026-11-03"
