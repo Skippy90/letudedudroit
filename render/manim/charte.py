@@ -7,7 +7,7 @@ renvoi « vidéo N » en bas à droite.
 """
 
 from manim import (
-    DOWN, LEFT, RIGHT, UP, Arc, Circle, Create, Dot, Ellipse, FadeIn, FadeOut, GrowArrow,
+    DOWN, LEFT, RIGHT, UP, UL, DL, DR, Arc, Circle, Create, Dot, Ellipse, FadeIn, FadeOut, GrowArrow,
     Line, Polygon, Rectangle, RoundedRectangle, Text, Transform, VGroup, Write, Arrow,
     CurvedArrow, there_and_back,
 )
@@ -115,6 +115,69 @@ class BlocArticle(VGroup):
         super().__init__(cadre, etiquette)
         self.move_to([0, Y_ARTICLE, 0])
         self.cadre, self.libelle = cadre, libelle
+
+
+class TexteLoi(VGroup):
+    """La loi mot pour mot : une carte « Art. N CP », un morceau du texte à la fois (douze mots à l'écran au plus),
+    une réglette qui montre où l'on est dans l'article, des passages soulignés et numérotés (les conditions).
+
+    Le texte vient de Fedlex, tel quel ; seule la coupe en morceaux est propre à la vidéo."""
+
+    LARGEUR, Y = 12.4, 0.9
+
+    def __init__(self, libelle, morceaux, rang=0):
+        self.libelle, self.morceaux, self.rang = libelle, morceaux, rang
+        self.carte = RoundedRectangle(corner_radius=0.18, width=self.LARGEUR, height=3.1, color=TEXTE,
+                                      stroke_width=2, stroke_opacity=0.5, fill_color=SURFACE, fill_opacity=1)
+        self.carte.move_to([0, self.Y, 0])
+        self.entete = texte(libelle, T_PETIT, gras=True).move_to(self.carte.get_corner(UL) + [0.45, -0.38, 0],
+                                                                aligned_edge=LEFT)
+        self.corps = self._corps(morceaux[rang])
+        self.reglette = self._reglette(rang)
+        self.soulignes = VGroup()
+        super().__init__(self.carte, self.entete, self.corps, self.reglette, self.soulignes)
+
+    def _corps(self, morceau):
+        corps = texte(f"« {morceau} »", T_SOUS_TITRE)
+        if corps.width > self.LARGEUR - 1.2:
+            corps.scale_to_fit_width(self.LARGEUR - 1.2)
+        return corps.move_to([0, self.Y - 0.05, 0])
+
+    def _reglette(self, rang):
+        n, l = len(self.morceaux), 2.6
+        traits = VGroup()
+        for k in range(n):
+            x0 = -l / 2 + k * l / n
+            couleur, opacite = (ACCENT, 1) if k == rang else (TEXTE, 0.6 if k < rang else 0.2)
+            traits.add(Line([x0 + 0.04, 0, 0], [x0 + l / n - 0.04, 0, 0], color=couleur, stroke_width=6,
+                            stroke_opacity=opacite))
+        return traits.move_to([0, self.carte.get_bottom()[1] + 0.35, 0])
+
+    def suivant(self, rang):
+        """Le morceau suivant : nouveau corps et réglette ; les soulignements du morceau précédent s'effacent."""
+        self.rang = rang
+        nouveau, reglette = self._corps(self.morceaux[rang]), self._reglette(rang)
+        anciens = self.soulignes
+        self.soulignes = VGroup()
+        return nouveau, reglette, anciens
+
+    def souligner(self, fragment, numero=None):
+        """Souligne un passage du morceau affiché (couleur d'accent) ; un numéro de condition au-dessus, si donné."""
+        sans_blancs = lambda t: "".join(t.split())
+        texte_affiche = sans_blancs(f"« {self.morceaux[self.rang]} »")
+        debut = texte_affiche.find(sans_blancs(fragment))
+        if debut < 0:
+            raise ValueError(f"« {fragment} » n'est pas dans le morceau affiché")
+        glyphes = self.corps[debut:debut + len(sans_blancs(fragment))]
+        trait = Line(glyphes.get_corner(DL) + [0, -0.12, 0], glyphes.get_corner(DR) + [0, -0.12, 0],
+                     color=ACCENT, stroke_width=6)
+        marque = VGroup(trait)
+        if numero is not None:
+            rond = Circle(radius=0.22, color=ACCENT, stroke_width=3, fill_color=SURFACE, fill_opacity=1)
+            chiffre = texte(str(numero), T_PETIT - 6, ACCENT, gras=True).move_to(rond)
+            marque.add(VGroup(rond, chiffre).next_to(glyphes, UP, buff=0.18))
+        self.soulignes.add(marque)
+        return glyphes, marque
 
 
 class BlocArret(VGroup):
