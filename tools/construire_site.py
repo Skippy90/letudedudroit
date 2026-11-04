@@ -225,9 +225,9 @@ A_PROPOS = """<h2>Le projet</h2>
 <h2>Ouvert</h2>
 <p>Les scripts, les audits et le code qui fabrique les vidéos sont publics. Les contenus sont sous licence CC BY-SA 4.0 : vous pouvez les réutiliser en citant « L’étude du droit » et en partageant dans les mêmes conditions. Le nom et le logo, eux, ne sont pas couverts par cette licence.</p>
 <h2>Contact</h2>
-<p>À VÉRIFIER : adresse de contact à indiquer.</p>"""
+<p>Une question, une erreur à signaler : <a href="mailto:{CONTACT}">{CONTACT}</a>.</p>"""
 
-CONFIDENTIALITE = """<p class="alerte">Projet à relire et à compléter avant la mise en ligne (À VÉRIFIER : responsable du traitement, adresse, service d’envoi choisi).</p>
+CONFIDENTIALITE = """<p class="alerte">Projet à relire et à compléter avant la mise en ligne (À VÉRIFIER : responsable du traitement, adresse postale, service d’envoi choisi).</p>
 <h2>Qui traite vos données</h2>
 <p>À VÉRIFIER : nom et adresse de la personne responsable du site L’étude du droit.</p>
 <h2>Ce qui est collecté</h2>
@@ -239,11 +239,11 @@ CONFIDENTIALITE = """<p class="alerte">Projet à relire et à compléter avant l
 <h2>Vidéos YouTube</h2>
 <p>Les pages du site n’intègrent pas de lecteur YouTube : un clic sur une vidéo vous emmène sur YouTube, qui applique alors ses propres règles.</p>
 <h2>Vos droits</h2>
-<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement. À VÉRIFIER : adresse à laquelle écrire, et renvoi exact aux dispositions applicables (loi fédérale sur la protection des données ; règlement européen pour les personnes dans l’Union européenne).</p>"""
+<p>Vous pouvez vous désinscrire en un clic depuis chaque e-mail, et demander l’accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:{CONTACT}">{CONTACT}</a>. À VÉRIFIER : renvoi exact aux dispositions applicables (loi fédérale sur la protection des données ; règlement européen pour les personnes dans l’Union européenne).</p>"""
 
 MENTIONS = """<p class="alerte">Projet à compléter avant la mise en ligne.</p>
 <h2>Éditrice du site</h2>
-<p>À VÉRIFIER : nom, adresse, adresse de contact.</p>
+<p>Contact : <a href="mailto:{CONTACT}">{CONTACT}</a>. À VÉRIFIER : nom et adresse postale.</p>
 <h2>Contenus</h2>
 <p>Les vidéos, scripts et fiches sont des introductions pédagogiques. Ils ne remplacent pas un conseil juridique adapté à une situation particulière.</p>
 <h2>Licence</h2>
@@ -259,6 +259,8 @@ def main(sortie: str | None, apercu: bool) -> None:
     (dossier / "assets").mkdir(parents=True)
     shutil.copy(RACINE / "site/style.css", dossier / "assets/style.css")
     (dossier / "index.html").write_text(accueil(reglages, apercu), encoding="utf-8")
+    if reglages.get("domaine"):
+        (dossier / "CNAME").write_text(reglages["domaine"] + "\n", encoding="utf-8")  # GitHub Pages : domaine personnalisé
     for slug, info in reglages["videos"].items():
         cible = dossier / slug
         cible.mkdir(parents=True)
@@ -278,7 +280,7 @@ def main(sortie: str | None, apercu: bool) -> None:
                                                         CONFIDENTIALITE, "Protection des données sur L’étude du droit.")),
                          ("mentions", page_texte("Mentions légales", "Qui publie ce site.", MENTIONS, "Mentions légales."))]:
         (dossier / nom).mkdir()
-        (dossier / nom / "index.html").write_text(contenu, encoding="utf-8")
+        (dossier / nom / "index.html").write_text(contenu.replace("{CONTACT}", e(reglages.get("contact", ""))), encoding="utf-8")
     print(f"Site : {dossier}")
 
 
