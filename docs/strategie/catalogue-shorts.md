@@ -2,7 +2,7 @@
 
 Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque vidéo. Un short reprend tel quel un extrait audité de la vidéo ; seule l'accroche lui est propre (à valider par la relectrice). Les textes par plateforme sont dans `out/shorts/catalogue.csv` et dans le paquet `out/upload/shorts-catalogue.zip`.
 
-**35 shorts : 28 prêts, 7 à produire après l'enregistrement.**
+**35 shorts : 30 prêts, 5 à produire après l'enregistrement.**
 
 ## Réglages communs
 
@@ -44,8 +44,8 @@ Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque 
 | Droit pénal général | 7 — Je ne savais pas | `nul-n-est-cense` | « Nul n'est censé ignorer la loi » : vraiment ? | 28–31 | 41 s | prêt | 2026-11-14 12:00 |
 | Droit pénal général | 8 — Était-il responsable ? | `festival` | Peut-on lui reprocher son geste ? | 1–3 | 31 s | prêt | 2026-11-10 12:00 |
 | Droit pénal général | 8 — Était-il responsable ? | `trop-bu` | « J'avais trop bu » : une excuse ? | 24–26 | 35 s | prêt | 2026-11-17 12:00 |
-| Droit pénal général | 9 — Il a essayé, mais… | `kiosque` | Il n'a rien volé : peut-il être puni ? | 1–4 | ≈ 37 s | après enregistrement | à fixer |
-| Droit pénal général | 9 — Il a essayé, mais… | `piege` | Rien pris, donc pas d'infraction ? | 29–31 | ≈ 32 s | après enregistrement | à fixer |
+| Droit pénal général | 9 — Il a essayé, mais… | `kiosque` | Il n'a rien volé : peut-il être puni ? | 1–4 | 33 s | prêt | 2026-11-18 12:00 |
+| Droit pénal général | 9 — Il a essayé, mais… | `piege` | Rien pris, donc pas d'infraction ? | 29–31 | 27 s | prêt | 2026-11-19 12:00 |
 | Droit pénal général | 10 — Ils étaient plusieurs | `quatre` | Quatre amis, un vol : qui est coupable ? | 1–5 | ≈ 46 s | après enregistrement | à fixer |
 | Droit pénal général | 10 — Ils étaient plusieurs | `piege` | Seul celui qui vole est coupable ? | 29–31 | ≈ 34 s | après enregistrement | à fixer |
 | Droit pénal général | 11 — Quelle peine ? | `quelle-peine` | Premier vol à vingt ans : quelle peine ? | 1–3 | ≈ 29 s | après enregistrement | à fixer |
@@ -1032,4 +1032,74 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 
 ```text
 « J'avais trop bu » : une excuse ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 9 — Il n'a rien volé : peut-il être puni ?
+
+Fichier : `out/shorts/droit-penal-general--09-tentative--kiosque.mp4` · publication : 2026-11-18 12:00
+
+**YouTube** — titre : Il n'a rien volé : peut-il être puni ? #Shorts
+
+```text
+Il n'a rien volé : peut-il être puni ?
+
+Extrait de la vidéo « Il a essayé, mais… » (Droit pénal général, vidéo 9). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+Il n'a rien volé : peut-il être puni ?
+
+Extrait de la vidéo « Il a essayé, mais… » (Droit pénal général, vidéo 9). Vidéo complète et fiche gratuite : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+Il n'a rien volé : peut-il être puni ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 9 — Rien pris, donc pas d'infraction ?
+
+Fichier : `out/shorts/droit-penal-general--09-tentative--piege.mp4` · publication : 2026-11-19 12:00
+
+**YouTube** — titre : Rien pris, donc pas d'infraction ? #Shorts
+
+```text
+Rien pris, donc pas d'infraction ?
+
+Extrait de la vidéo « Il a essayé, mais… » (Droit pénal général, vidéo 9). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+Rien pris, donc pas d'infraction ?
+
+Extrait de la vidéo « Il a essayé, mais… » (Droit pénal général, vidéo 9). Vidéo complète et fiche gratuite : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+Rien pris, donc pas d'infraction ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
