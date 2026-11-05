@@ -54,7 +54,7 @@ Propositions à intégrer lors des corrections des scripts (une phrase à lire, 
 ## Vidéo 9 — Il a essayé, mais…
 
 - **Avant la ligne 9** : « Selon vous, acheter un pied-de-biche et repérer les lieux, est-ce déjà punissable ? » — Le spectateur situe lui-même la préparation sur le chemin du crime.
-- **Avant la ligne 21** : « Selon vous, la caisse vide sauve-t-elle Kilian ? » — L'intuition dit souvent non punissable ; la règle de l'art. 22 surprend davantage après.
+- **Avant la ligne 21** : « Selon vous, la caisse vide sauve-t-elle Simon ? » — L'intuition dit souvent non punissable ; la règle de l'art. 22 surprend davantage après.
 - **Avant la ligne 28** : « Selon vous, s'arrêter parce que la police arrive, est-ce renoncer de soi-même ? » — On fait réfléchir aux mots « de sa propre initiative » avant de les expliquer.
 
 ## Vidéo 10 — Ils étaient plusieurs
