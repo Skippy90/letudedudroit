@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ATF 141 IV 336 — Une vignette sous film adhésif : « Je ne savais pas » ? | Droit pénal suisse
 
-## Description (2435 caractères sur 5 000)
+## Description (2510 caractères sur 5 000)
 
 ```text
 ATF 141 IV 336 : une vignette sous film adhésif : « Je ne savais pas » ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
@@ -32,6 +32,7 @@ Chapitres :
 4:48 Le piège classique
 5:05 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/arrets/03-atf-141-iv-336
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.

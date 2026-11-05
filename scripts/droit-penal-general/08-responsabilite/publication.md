@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Était-il responsable ? | Droit pénal suisse
 
-## Description (3357 caractères sur 5 000)
+## Description (3432 caractères sur 5 000)
 
 ```text
 Était-il responsable ? — expliqué simplement, à partir d'un cas concret.
@@ -40,6 +40,7 @@ Chapitres :
 5:24 Irresponsable, mais pas libre
 5:55 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/08-responsabilite
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.

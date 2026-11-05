@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Je ne savais pas | Droit pénal suisse
 
-## Description (3160 caractères sur 5 000)
+## Description (3235 caractères sur 5 000)
 
 ```text
 Je ne savais pas — expliqué simplement, à partir d'un cas concret.
@@ -36,6 +36,7 @@ Chapitres :
 4:34 Le piège classique
 5:16 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/07-erreur
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
