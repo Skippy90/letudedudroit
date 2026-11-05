@@ -8,8 +8,12 @@
   "instagram": "https://www.instagram.com/letudedudroit",
   "github": "https://github.com/Skippy90/letudedudroit",
   "inscription": {
-    "action": "",
-    "note": "Laisser « action » vide tant que le service d'envoi (lettre d'information) n'est pas choisi : le formulaire s'affiche alors fermé."
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26892/submit",
+    "webform_id": "26892",
+    "key": "eyJpdiI6IlpxRFJBNzNVaWp3QXJ5MEw2RlpWZUZEd3hvbzNXdDUwMzJMeG5CRUJ6MGc9IiwibWFjIjoiMDc2YTJjM2JiOTczMTIyOTA0ODgxYzk1MTg2MGQ0YzY3ODBiODQwY2VkMDgwMzM3YWYwODk0Yjc0MTQ5MmM1OSIsInZhbHVlIjoiTXVEbmVGRldkbzBrK21zZ3FOS2w3WnhTTmdsM1ZaZjBoYW13eFZnWE52bz0ifQ==",
+    "champ_email": "inf[1]",
+    "version_scripts": "1793887200",
+    "note": "Formulaire Infomaniak Newsletter (code d'intégration HTML du 5.11.2026) : adresse d'envoi, identifiants et champs repris tels quels ; le texte et le style sont ceux du site. La clé est publique (elle figure dans le code d'intégration)."
   },
   "videos": {
     "droit-penal-general/01-trois-etages": {
