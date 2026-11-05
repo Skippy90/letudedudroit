@@ -38,3 +38,45 @@ videos:
     articles: ["12", "123", "134"]
     requiert: ["droit-penal-general/04", "droit-penal-general/10", "arrets/01"]
     statut: script-redige
+  - id: 06
+    slug: atf-133-iv-9
+    titre: "Il refuse de se laisser dépasser : meurtre ?"
+    notion: "Dol éventuel ou négligence sur la route (ATF 133 IV 9)"
+    articles: ["12", "111", "117"]
+    requiert: ["arrets/01"]
+    statut: script-redige
+  - id: 07
+    slug: atf-85-iv-1
+    titre: "Il boit, puis il conduit : où commence la faute ?"
+    notion: "Actio libera in causa par négligence (ATF 85 IV 1)"
+    articles: ["12", "19", "263"]
+    requiert: ["droit-penal-general/08"]
+    statut: script-redige
+  - id: 08
+    slug: atf-125-iv-242
+    titre: "Un test, un mensonge : dol éventuel ou négligence ?"
+    notion: "Dol éventuel et transmission du VIH (ATF 125 IV 242)"
+    articles: ["12", "122", "231"]
+    requiert: ["droit-penal-general/04"]
+    statut: script-redige
+  - id: 09
+    slug: atf-131-iv-1
+    titre: "Le partenaire savait : tentative et consentement"
+    notion: "Consentement à la mise en danger ; tentative (ATF 131 IV 1)"
+    articles: ["12", "22", "122", "231"]
+    requiert: ["droit-penal-general/09", "arrets/08"]
+    statut: script-redige
+  - id: 10
+    slug: atf-141-iv-61
+    titre: "Meurtre ou assassinat : ce qui fait la différence"
+    notion: "Assassinat et peine à vie complémentaire (ATF 141 IV 61)"
+    articles: ["40", "49", "111", "112"]
+    requiert: ["droit-penal-general/04"]
+    statut: script-redige
+  - id: 11
+    slug: atf-130-iv-111
+    titre: "Une réunion sur invitation : est-ce « en public » ?"
+    notion: "Notion de « public » à l'art. 261bis (ATF 130 IV 111)"
+    articles: ["261bis"]
+    requiert: []
+    statut: script-redige
