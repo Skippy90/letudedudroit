@@ -31,3 +31,11 @@ Dans `site/site.json`, mettre `"en_ligne": true` et son identifiant YouTube (la 
 ## Plus tard
 
 Le module de cours (exercices, progression, répétition espacée, jeu « Pris dans le Code ») et les offres payantes demandent des comptes et un paiement : ce n'est plus un site statique. À concevoir une fois l'audience et le contenu du premier module en place.
+
+## Formulaire d'inscription (Infomaniak Newsletter)
+
+- `site/site.json`, rubrique `inscription` : adresse d'envoi, identifiant du formulaire (26892), clé publique, nom du champ e-mail (`inf[1]`) et version des scripts, repris du code d'intégration HTML d'Infomaniak.
+- Les deux champs pièges à robots, `inf_email_check` et `website`, restent vides et invisibles ; le contrôle anti-robots ALTCHA d'Infomaniak est chargé avec le formulaire. Sans eux, les inscriptions peuvent être rejetées.
+- **Si les paramètres du formulaire changent dans Infomaniak, recopier le code HTML** (« Voir le code d'intégration », onglet HTML) et mettre à jour `site.json` : Infomaniak précise que le code doit être mis à jour après chaque modification.
+- Le texte et le style restent ceux du site ; ceux du code d'Infomaniak (« Newsletter », « Ne manquez pas les promotions… ») ne sont pas repris.
+
