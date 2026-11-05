@@ -85,7 +85,16 @@ def page(titre: str, corps: str, prof: int, description: str, apercu: bool = Fal
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap">
-<link rel="stylesheet" href="{r}assets/style.css">"""
+<link rel="stylesheet" href="{r}assets/style.css">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png">"""
+    if prof == 0:  # accueil : nom du site et logo pour les résultats Google
+        domaine = json.loads((RACINE / "site/site.json").read_text(encoding="utf-8")).get("domaine", "letudedudroit.ch")
+        tete += f"""
+<script type="application/ld+json">{json.dumps([
+            {"@context": "https://schema.org", "@type": "WebSite", "name": "L’étude du droit", "url": f"https://{domaine}/"},
+            {"@context": "https://schema.org", "@type": "Organization", "name": "L’étude du droit", "url": f"https://{domaine}/",
+             "logo": f"https://{domaine}/favicon-512.png"}], ensure_ascii=False)}</script>"""
     entete = f"""<header class="entete"><div class="cadre">
 <a class="marque" href="{r}index.html"><span class="pastille">{SYMBOLE}</span><span>L’étude du droit</span></a>
 <nav><a href="{r}index.html#videos">Vidéos</a><a href="{r}parcours/index.html">Parcours</a><a href="{r}a-propos/index.html">À propos</a></nav>
@@ -281,6 +290,8 @@ def main(sortie: str | None, apercu: bool) -> None:
         shutil.rmtree(dossier)
     (dossier / "assets").mkdir(parents=True)
     shutil.copy(RACINE / "site/style.css", dossier / "assets/style.css")
+    for icone in (RACINE / "site/icones").iterdir():  # à la racine : Google cherche /favicon.ico
+        shutil.copy(icone, dossier / icone.name)
     (dossier / "index.html").write_text(accueil(reglages, apercu), encoding="utf-8")
     if reglages.get("domaine"):
         (dossier / "CNAME").write_text(reglages["domaine"] + "\n", encoding="utf-8")  # GitHub Pages : domaine personnalisé
