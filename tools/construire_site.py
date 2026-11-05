@@ -110,10 +110,12 @@ def page(titre: str, corps: str, prof: int, description: str, apercu: bool = Fal
     return f"<!doctype html>\n<html lang=\"fr\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n{tete}\n</head><body>{contenu}</body></html>\n"
 
 
-def lecteur(youtube: str, miniature: str, titre: str) -> str:
-    """La vidéo : la miniature, et un lien vers YouTube (aucun contenu de YouTube n'est chargé avant le clic)."""
-    if youtube:
-        return (f'<a class="lecteur" href="https://www.youtube.com/watch?v={e(youtube)}" rel="noopener">'
+def lecteur(youtube: str, miniature: str, titre: str, chaine: str = "") -> str:
+    """La vidéo : la miniature, et un lien vers YouTube (aucun contenu de YouTube n'est chargé avant le clic).
+    Sans identifiant de vidéo, le lien mène à la chaîne."""
+    if youtube or chaine:
+        cible = f"https://www.youtube.com/watch?v={e(youtube)}" if youtube else e(chaine)
+        return (f'<a class="lecteur" href="{cible}" rel="noopener">'
                 f'<img src="{miniature}" alt="Miniature : {e(titre)}" width="1280" height="720">'
                 f'<span class="lire">Regarder sur YouTube</span></a>')
     return (f'<div class="lecteur"><img src="{miniature}" alt="Miniature : {e(titre)}" width="1280" height="720">'
@@ -202,7 +204,7 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
     depot = f'{reglages["github"]}/tree/main/scripts/{slug}'
     corps = f"""<section class="video"><div class="cadre">
 <p class="sur">{e(matiere)} · Vidéo {numero}</p><h1>{e(s["titre"])}</h1>
-{lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"])}
+{lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"], reglages.get("youtube", ""))}
 </div></section>
 <section class="contenu"><div class="cadre colonnes">
 <article>
