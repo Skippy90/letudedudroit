@@ -64,6 +64,7 @@ Fichier : `out/shorts/arrets--01-atf-130-iv-58--course.mp4` · publication : 202
 Une course improvisée, deux morts : meurtre ? (ATF 130 IV 58)
 
 Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -74,7 +75,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une course improvisée, deux morts : meurtre ? (ATF 130 IV 58)
 
-Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -85,7 +86,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une course improvisée, deux morts : meurtre ? (ATF 130 IV 58) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une course improvisée, deux morts : meurtre ? (ATF 130 IV 58) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 1 — « Pourvu que ça passe » : est-ce assez ?
@@ -98,6 +99,7 @@ Fichier : `out/shorts/arrets--01-atf-130-iv-58--espoir.mp4` · publication : 202
 « Pourvu que ça passe » : est-ce assez ? (ATF 130 IV 58)
 
 Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -108,7 +110,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Pourvu que ça passe » : est-ce assez ? (ATF 130 IV 58)
 
-Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -119,7 +121,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Pourvu que ça passe » : est-ce assez ? (ATF 130 IV 58) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Pourvu que ça passe » : est-ce assez ? (ATF 130 IV 58) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 1 — « Il ne voulait pas tuer » : donc pas un meurtre ?
@@ -132,6 +134,7 @@ Fichier : `out/shorts/arrets--01-atf-130-iv-58--piege.mp4` · publication : 2026
 « Il ne voulait pas tuer » : donc pas un meurtre ? (ATF 130 IV 58)
 
 Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -142,7 +145,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Il ne voulait pas tuer » : donc pas un meurtre ? (ATF 130 IV 58)
 
-Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Une course de voitures, deux morts : meurtre ? » (Les arrêts du Tribunal fédéral, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -153,7 +156,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Il ne voulait pas tuer » : donc pas un meurtre ? (ATF 130 IV 58) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Il ne voulait pas tuer » : donc pas un meurtre ? (ATF 130 IV 58) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 2 — Peut-on se défendre contre quelqu'un qui dort ?
@@ -166,6 +169,7 @@ Fichier : `out/shorts/arrets--02-atf-122-iv-1--dort.mp4` · publication : 2026-1
 Peut-on se défendre contre quelqu'un qui dort ? (ATF 122 IV 1)
 
 Extrait de la vidéo « Un mari violent, tué pendant son sommeil : légitime défense ? » (Les arrêts du Tribunal fédéral, vidéo 2). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -176,7 +180,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Peut-on se défendre contre quelqu'un qui dort ? (ATF 122 IV 1)
 
-Extrait de la vidéo « Un mari violent, tué pendant son sommeil : légitime défense ? » (Les arrêts du Tribunal fédéral, vidéo 2). Vidéo complète : lien en bio.
+Extrait de la vidéo « Un mari violent, tué pendant son sommeil : légitime défense ? » (Les arrêts du Tribunal fédéral, vidéo 2). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -187,7 +191,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Peut-on se défendre contre quelqu'un qui dort ? (ATF 122 IV 1) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Peut-on se défendre contre quelqu'un qui dort ? (ATF 122 IV 1) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 3 — Une vignette sous film adhésif : falsification ?
@@ -200,6 +204,7 @@ Fichier : `out/shorts/arrets--03-atf-141-iv-336--vignette.mp4` · publication : 
 Une vignette sous film adhésif : falsification ? (ATF 141 IV 336)
 
 Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -210,7 +215,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une vignette sous film adhésif : falsification ? (ATF 141 IV 336)
 
-Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). Vidéo complète : lien en bio.
+Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -221,7 +226,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une vignette sous film adhésif : falsification ? (ATF 141 IV 336) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une vignette sous film adhésif : falsification ? (ATF 141 IV 336) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 3 — « Je pensais risquer une amende » : une excuse ?
@@ -234,6 +239,7 @@ Fichier : `out/shorts/arrets--03-atf-141-iv-336--amende.mp4` · publication : 20
 « Je pensais risquer une amende » : une excuse ? (ATF 141 IV 336)
 
 Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -244,7 +250,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Je pensais risquer une amende » : une excuse ? (ATF 141 IV 336)
 
-Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). Vidéo complète : lien en bio.
+Extrait de la vidéo « Une vignette sous film adhésif : « Je ne savais pas » ? » (Les arrêts du Tribunal fédéral, vidéo 3). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -255,7 +261,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Je pensais risquer une amende » : une excuse ? (ATF 141 IV 336) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Je pensais risquer une amende » : une excuse ? (ATF 141 IV 336) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 4 — Il était partant : peut-on encore l'instiguer ?
@@ -268,6 +274,7 @@ Fichier : `out/shorts/arrets--04-atf-128-iv-11--partant.mp4` · publication : à
 Il était partant : peut-on encore l'instiguer ? (ATF 128 IV 11)
 
 Extrait de la vidéo « Vingt mille francs pour un CD-ROM : qui a décidé qui ? » (Les arrêts du Tribunal fédéral, vidéo 4). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -278,7 +285,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Il était partant : peut-on encore l'instiguer ? (ATF 128 IV 11)
 
-Extrait de la vidéo « Vingt mille francs pour un CD-ROM : qui a décidé qui ? » (Les arrêts du Tribunal fédéral, vidéo 4). Vidéo complète : lien en bio.
+Extrait de la vidéo « Vingt mille francs pour un CD-ROM : qui a décidé qui ? » (Les arrêts du Tribunal fédéral, vidéo 4). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -289,7 +296,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Il était partant : peut-on encore l'instiguer ? (ATF 128 IV 11) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Il était partant : peut-on encore l'instiguer ? (ATF 128 IV 11) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Les arrêts du Tribunal fédéral, vidéo 5 — Deux contre un : faut-il savoir qui a frappé ?
@@ -302,6 +309,7 @@ Fichier : `out/shorts/arrets--05-atf-135-iv-152--qui-a-frappe.mp4` · publicatio
 Deux contre un : faut-il savoir qui a frappé ? (ATF 135 IV 152)
 
 Extrait de la vidéo « Deux contre un : faut-il savoir qui a frappé ? » (Les arrêts du Tribunal fédéral, vidéo 5). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -312,7 +320,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Deux contre un : faut-il savoir qui a frappé ? (ATF 135 IV 152)
 
-Extrait de la vidéo « Deux contre un : faut-il savoir qui a frappé ? » (Les arrêts du Tribunal fédéral, vidéo 5). Vidéo complète : lien en bio.
+Extrait de la vidéo « Deux contre un : faut-il savoir qui a frappé ? » (Les arrêts du Tribunal fédéral, vidéo 5). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -323,7 +331,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Deux contre un : faut-il savoir qui a frappé ? (ATF 135 IV 152) Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Deux contre un : faut-il savoir qui a frappé ? (ATF 135 IV 152) Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 1 — Une infraction, c'est trois étages
@@ -336,6 +344,7 @@ Fichier : `out/shorts/droit-penal-general--01-trois-etages--trois-etages.mp4` ·
 Une infraction, c'est trois étages
 
 Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -346,7 +355,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une infraction, c'est trois étages
 
-Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -357,7 +366,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une infraction, c'est trois étages Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une infraction, c'est trois étages Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 1 — Un acte décrit par la loi peut-il être permis ?
@@ -370,6 +379,7 @@ Fichier : `out/shorts/droit-penal-general--01-trois-etages--permis.mp4` · publi
 Un acte décrit par la loi peut-il être permis ?
 
 Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -380,7 +390,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Un acte décrit par la loi peut-il être permis ?
 
-Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -391,7 +401,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Un acte décrit par la loi peut-il être permis ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Un acte décrit par la loi peut-il être permis ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 1 — « Pas coupable » : donc il ne se passe rien ?
@@ -404,6 +414,7 @@ Fichier : `out/shorts/droit-penal-general--01-trois-etages--pas-coupable.mp4` ·
 « Pas coupable » : donc il ne se passe rien ?
 
 Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -414,7 +425,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Pas coupable » : donc il ne se passe rien ?
 
-Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète : lien en bio.
+Extrait de la vidéo « Qu'est-ce qu'une infraction ? Les trois étages » (Droit pénal général, vidéo 1). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -425,7 +436,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Pas coupable » : donc il ne se passe rien ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Pas coupable » : donc il ne se passe rien ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 2 — « Pas dans le Code pénal, donc c'est permis » ?
@@ -438,6 +449,7 @@ Fichier : `out/shorts/droit-penal-general--02-pas-de-peine-sans-loi--piege.mp4` 
 « Pas dans le Code pénal, donc c'est permis » ?
 
 Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -448,7 +460,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Pas dans le Code pénal, donc c'est permis » ?
 
-Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète : lien en bio.
+Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -459,7 +471,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Pas dans le Code pénal, donc c'est permis » ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Pas dans le Code pénal, donc c'est permis » ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 2 — Mentir à un ami, est-ce puni en Suisse ?
@@ -472,6 +484,7 @@ Fichier : `out/shorts/droit-penal-general--02-pas-de-peine-sans-loi--mentir.mp4`
 Mentir à un ami, est-ce puni en Suisse ?
 
 Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -482,7 +495,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Mentir à un ami, est-ce puni en Suisse ?
 
-Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète : lien en bio.
+Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -493,7 +506,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Mentir à un ami, est-ce puni en Suisse ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Mentir à un ami, est-ce puni en Suisse ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 2 — Une nouvelle loi peut-elle punir ce que tu as déjà fait ?
@@ -506,6 +519,7 @@ Fichier : `out/shorts/droit-penal-general--02-pas-de-peine-sans-loi--loi-nouvell
 Une nouvelle loi peut-elle punir ce que tu as déjà fait ?
 
 Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -516,7 +530,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une nouvelle loi peut-elle punir ce que tu as déjà fait ?
 
-Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète : lien en bio.
+Extrait de la vidéo « Pas de peine sans loi » (Droit pénal général, vidéo 2). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -527,7 +541,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une nouvelle loi peut-elle punir ce que tu as déjà fait ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une nouvelle loi peut-elle punir ce que tu as déjà fait ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 3 — Voler un téléphone : crime ou délit ?
@@ -540,6 +554,7 @@ Fichier : `out/shorts/droit-penal-general--03-crime-delit-contravention--vol.mp4
 Voler un téléphone : crime ou délit ?
 
 Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -550,7 +565,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Voler un téléphone : crime ou délit ?
 
-Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète : lien en bio.
+Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -561,7 +576,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Voler un téléphone : crime ou délit ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Voler un téléphone : crime ou délit ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 3 — Une gifle, est-ce un crime ?
@@ -574,6 +589,7 @@ Fichier : `out/shorts/droit-penal-general--03-crime-delit-contravention--gifle.m
 Une gifle, est-ce un crime ?
 
 Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -584,7 +600,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une gifle, est-ce un crime ?
 
-Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète : lien en bio.
+Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -595,7 +611,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une gifle, est-ce un crime ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une gifle, est-ce un crime ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 3 — Une peine légère rend-elle l'infraction moins grave ?
@@ -608,6 +624,7 @@ Fichier : `out/shorts/droit-penal-general--03-crime-delit-contravention--piege.m
 Une peine légère rend-elle l'infraction moins grave ?
 
 Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -618,7 +635,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Une peine légère rend-elle l'infraction moins grave ?
 
-Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète : lien en bio.
+Extrait de la vidéo « Crime, délit ou contravention ? » (Droit pénal général, vidéo 3). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -629,7 +646,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Une peine légère rend-elle l'infraction moins grave ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Une peine légère rend-elle l'infraction moins grave ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 4 — « Si je touche quelqu'un, tant pis » : est-ce voulu ?
@@ -642,6 +659,7 @@ Fichier : `out/shorts/droit-penal-general--04-intention-negligence--tant-pis.mp4
 « Si je touche quelqu'un, tant pis » : est-ce voulu ?
 
 Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -652,7 +670,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Si je touche quelqu'un, tant pis » : est-ce voulu ?
 
-Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète : lien en bio.
+Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -663,7 +681,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Si je touche quelqu'un, tant pis » : est-ce voulu ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Si je touche quelqu'un, tant pis » : est-ce voulu ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 4 — Comment un juge sait-il ce que vous vouliez ?
@@ -676,6 +694,7 @@ Fichier : `out/shorts/droit-penal-general--04-intention-negligence--juge.mp4` ·
 Comment un juge sait-il ce que vous vouliez ?
 
 Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -686,7 +705,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Comment un juge sait-il ce que vous vouliez ?
 
-Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète : lien en bio.
+Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -697,7 +716,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Comment un juge sait-il ce que vous vouliez ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Comment un juge sait-il ce que vous vouliez ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 4 — La négligence est-elle toujours punie ?
@@ -710,6 +729,7 @@ Fichier : `out/shorts/droit-penal-general--04-intention-negligence--negligence.m
 La négligence est-elle toujours punie ?
 
 Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -720,7 +740,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 La négligence est-elle toujours punie ?
 
-Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète : lien en bio.
+Extrait de la vidéo « Le voulait-il vraiment ? » (Droit pénal général, vidéo 4). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -731,7 +751,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-La négligence est-elle toujours punie ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+La négligence est-elle toujours punie ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 5 — Peut-on être coupable sans rien faire ?
@@ -744,6 +764,7 @@ Fichier : `out/shorts/droit-penal-general--05-commission-par-omission--rien-fait
 Peut-on être coupable sans rien faire ?
 
 Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -754,7 +775,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Peut-on être coupable sans rien faire ?
 
-Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). Vidéo complète : lien en bio.
+Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -765,7 +786,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Peut-on être coupable sans rien faire ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Peut-on être coupable sans rien faire ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 5 — Témoin d'une noyade : punissable s'il ne fait rien ?
@@ -778,6 +799,7 @@ Fichier : `out/shorts/droit-penal-general--05-commission-par-omission--temoin.mp
 Témoin d'une noyade : punissable s'il ne fait rien ?
 
 Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -788,7 +810,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Témoin d'une noyade : punissable s'il ne fait rien ?
 
-Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). Vidéo complète : lien en bio.
+Extrait de la vidéo « Coupable de n'avoir rien fait » (Droit pénal général, vidéo 5). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -799,7 +821,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Témoin d'une noyade : punissable s'il ne fait rien ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Témoin d'une noyade : punissable s'il ne fait rien ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 6 — Se défendre en frappant : punissable ?
@@ -812,6 +834,7 @@ Fichier : `out/shorts/droit-penal-general--06-faits-justificatifs--se-defendre.m
 Se défendre en frappant : punissable ?
 
 Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -822,7 +845,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Se défendre en frappant : punissable ?
 
-Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). Vidéo complète : lien en bio.
+Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -833,7 +856,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Se défendre en frappant : punissable ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Se défendre en frappant : punissable ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 6 — Face à un agresseur, tout est permis ?
@@ -846,6 +869,7 @@ Fichier : `out/shorts/droit-penal-general--06-faits-justificatifs--piege.mp4` ·
 Face à un agresseur, tout est permis ?
 
 Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -856,7 +880,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Face à un agresseur, tout est permis ?
 
-Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). Vidéo complète : lien en bio.
+Extrait de la vidéo « Avait-il le droit de se défendre ? » (Droit pénal général, vidéo 6). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -867,7 +891,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Face à un agresseur, tout est permis ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Face à un agresseur, tout est permis ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 7 — Elle part avec le mauvais vélo : vol ?
@@ -880,6 +904,7 @@ Fichier : `out/shorts/droit-penal-general--07-erreur--velo.mp4` · publication :
 Elle part avec le mauvais vélo : vol ?
 
 Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -890,7 +915,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Elle part avec le mauvais vélo : vol ?
 
-Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). Vidéo complète : lien en bio.
+Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -901,7 +926,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Elle part avec le mauvais vélo : vol ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Elle part avec le mauvais vélo : vol ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 7 — « Nul n'est censé ignorer la loi » : vraiment ?
@@ -914,6 +939,7 @@ Fichier : `out/shorts/droit-penal-general--07-erreur--nul-n-est-cense.mp4` · pu
 « Nul n'est censé ignorer la loi » : vraiment ?
 
 Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -924,7 +950,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « Nul n'est censé ignorer la loi » : vraiment ?
 
-Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). Vidéo complète : lien en bio.
+Extrait de la vidéo « Je ne savais pas » (Droit pénal général, vidéo 7). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -935,7 +961,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« Nul n'est censé ignorer la loi » : vraiment ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« Nul n'est censé ignorer la loi » : vraiment ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 8 — Peut-on lui reprocher son geste ?
@@ -948,6 +974,7 @@ Fichier : `out/shorts/droit-penal-general--08-responsabilite--festival.mp4` · p
 Peut-on lui reprocher son geste ?
 
 Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -958,7 +985,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 Peut-on lui reprocher son geste ?
 
-Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète : lien en bio.
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -969,7 +996,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-Peut-on lui reprocher son geste ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+Peut-on lui reprocher son geste ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
 
 ### Droit pénal général, vidéo 8 — « J'avais trop bu » : une excuse ?
@@ -982,6 +1009,7 @@ Fichier : `out/shorts/droit-penal-general--08-responsabilite--trop-bu.mp4` · pu
 « J'avais trop bu » : une excuse ?
 
 Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
 #Shorts #droitsuisse #droitpénal
@@ -992,7 +1020,7 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 ```text
 « J'avais trop bu » : une excuse ?
 
-Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète : lien en bio.
+Extrait de la vidéo « Était-il responsable ? » (Droit pénal général, vidéo 8). Vidéo complète et fiche gratuite : lien en bio.
 Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
 
 Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
@@ -1003,5 +1031,5 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 **TikTok**
 
 ```text
-« J'avais trop bu » : une excuse ? Vidéo complète sur YouTube : L'étude du droit (lien en bio). Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+« J'avais trop bu » : une excuse ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```

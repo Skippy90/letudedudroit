@@ -112,36 +112,36 @@ def lecteur(youtube: str, miniature: str, titre: str) -> str:
 
 
 def inscription(reglages: dict, prof: int) -> str:
-    """Formulaire d'inscription aux fiches. Avec Infomaniak Newsletter : mêmes adresse d'envoi, identifiants,
-    champs pièges et contrôle anti-robots (ALTCHA) que le code d'intégration ; texte et style du site."""
+    """Formulaire d'inscription aux fiches. Avec Infomaniak Newsletter : la structure du code d'intégration est
+    reprise à l'identique (enveloppe, blocs, champs pièges, contrôle anti-robots ALTCHA), seuls le texte et le style
+    changent : le script d'Infomaniak s'appuie sur cette structure. Les champs pièges sont vidés à l'envoi, au cas où
+    un gestionnaire de mots de passe les aurait remplis (inf_email_check contient « email »)."""
     ins = reglages["inscription"]
     action = ins.get("action", "")
     r = "../" * prof
-    ferme = "" if action else " disabled"
+    intro = """<div><p class="sur">Fiches de cours</p><h2>Recevoir la fiche de chaque vidéo</h2>
+<p>Une page par notion : le cas, la règle, le piège classique, les articles et arrêts cités. Par e-mail, à chaque nouvelle vidéo.</p></div>"""
+    if "newsletter.infomaniak.com" not in action:
+        return f"""<section class="inscription" id="fiches"><div class="cadre">{intro}
+<form class="formulaire"><label for="courriel">Adresse e-mail</label>
+<input id="courriel" type="email" placeholder="prenom@exemple.ch" disabled>
+<button type="submit" disabled>Inscriptions bientôt ouvertes</button></form></div></section>"""
     v = e(ins.get("version_scripts", ""))
-    infomaniak = "newsletter.infomaniak.com" in action
-    pieges = (f'<input type="text" name="inf_email_check" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none">'
-              f'<input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="piege">'
-              f'<input type="hidden" name="key" value="{e(ins.get("key", ""))}"><input type="hidden" name="webform_id" value="{e(ins.get("webform_id", ""))}">'
-              ) if infomaniak else ""
-    robots = (f'<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v={v}" type="module"></script>'
-              f'<altcha-widget hidelogo hidefooter floating challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge"></altcha-widget>'
-              f'<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v={v}" defer></script>'
-              f'<script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v={v}"></script>') if infomaniak else ""
-    nom_email = e(ins.get("champ_email", "email"))
-    return f"""<section class="inscription" id="fiches"><div class="cadre">
-<div><p class="sur">Fiches de cours</p><h2>Recevoir la fiche de chaque vidéo</h2>
-<p>Une page par notion : le cas, la règle, le piège classique, les articles et arrêts cités. Par e-mail, à chaque nouvelle vidéo.</p></div>
-<form{f' action="{e(action)}" method="post"' if action else ''} class="formulaire inf-form">{pieges}
-<div class="inf-success" style="display:none"><p><strong>Presque fini : un e-mail de confirmation vient de vous être envoyé.</strong> Cliquez sur le lien qu’il contient pour valider votre inscription.</p></div>
-<div class="inf-content"><div class="inf-input inf-input-text">
-<label for="courriel">Adresse e-mail</label>
-<input id="courriel" name="{nom_email}" data-inf-meta="1" data-inf-error="" type="email" autocomplete="email" required placeholder="prenom@exemple.ch"{ferme}>
-<span class="inf-message"></span></div>
-<label class="accord"><input id="accord" type="checkbox" required{ferme}><span>J’accepte de recevoir les fiches et les nouvelles vidéos par e-mail. Désinscription en un clic, à tout moment (<a href="{r}confidentialite/index.html">protection des données</a>).</span></label>
-{robots}
-<div class="inf-submit"><input type="submit" value="{'Recevoir les fiches' if action else 'Inscriptions bientôt ouvertes'}"{ferme}></div>
-</div></form></div></section>"""
+    return f"""<section class="inscription" id="fiches"><div class="cadre">{intro}
+<form method="post" action="{e(action)}" class="inf-form formulaire"><input type="text" name="inf_email_check" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none" /><input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" /><input type="hidden" name="key" value="{e(ins.get("key", ""))}"><input type="hidden" name="webform_id" value="{e(ins.get("webform_id", ""))}">
+<div class="inf-main_daa845e72247bceebbf545aed4737521">
+<div class="inf-success" style="display:none"><h4>Presque fini : un e-mail de confirmation vient de vous être envoyé. Cliquez sur le lien qu’il contient pour valider votre inscription.</h4><p><a href="#" class="inf-btn">&laquo;</a></p></div>
+<div class="inf-content">
+<div class="inf-input inf-input-text"><label for="courriel">Adresse e-mail</label><input id="courriel" type="email" name="{e(ins.get("champ_email", "inf[1]"))}" data-inf-meta="1" data-inf-error="" required="required" placeholder="prenom@exemple.ch" autocomplete="email"></div>
+<div class="inf-rgpd">Votre adresse sert uniquement à vous envoyer les fiches et l’annonce des nouvelles vidéos. Vous confirmerez par un lien reçu par e-mail ; désinscription en un clic dans chaque envoi (<a href="{r}confidentialite/index.html">protection des données</a>).</div>
+<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v={v}" type="module"></script>
+<altcha-widget hidelogo hidefooter floating challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge" ></altcha-widget>
+<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v={v}" defer></script>
+<script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v={v}"></script>
+<div class="inf-submit"><input type="submit" value="Recevoir les fiches"></div>
+</div></div></form>
+<script>document.querySelectorAll('form.inf-form').forEach(function(f){{f.addEventListener('submit',function(){{['inf_email_check','website'].forEach(function(n){{var c=f.querySelector('[name="'+n+'"]');if(c)c.value='';}});}},true);}});</script>
+</div></section>"""
 
 
 # ----- pages -----

@@ -110,6 +110,7 @@ def main(slug: str) -> None:
     lignes += ["", "Chapitres :", *[f"{t} {nom}" for t, nom in chapitres]]
     lignes += [
         "",
+        "La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches",
         f"Script complet, audit des sources et code : {DEPOT}/tree/main/scripts/{slug}",
         "Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant "
         "« L'étude du droit » et en partageant dans les mêmes conditions.",

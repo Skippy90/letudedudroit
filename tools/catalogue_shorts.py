@@ -44,10 +44,10 @@ def textes(accroche: str, serie: str, numero: str, titre: str) -> dict[str, str]
     return {
         "youtube_titre": f"{accroche} #Shorts"[:100],
         "youtube_description": f"{accroche}\n\nExtrait de la vidéo {video}. La vidéo complète, avec les articles "
-                               f"et les liens Fedlex, est sur la chaîne.\n\n{MENTION}\n{TAGS['youtube']}",
-        "instagram": f"{accroche}\n\nExtrait de la vidéo {video}. Vidéo complète : lien en bio.\n"
+                               f"et les liens Fedlex, est sur la chaîne.\nLa fiche du cours, gratuite : https://letudedudroit.ch/#fiches\n\n{MENTION}\n{TAGS['youtube']}",
+        "instagram": f"{accroche}\n\nExtrait de la vidéo {video}. Vidéo complète et fiche gratuite : lien en bio.\n"
                      f"Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.\n\n{MENTION}\n\n{TAGS['instagram']}",
-        "tiktok": f"{accroche} Vidéo complète sur YouTube : L'étude du droit (lien en bio). "
+        "tiktok": f"{accroche} Vidéo complète sur YouTube et fiche gratuite : lien en bio. "
                   f"{MENTION} {TAGS['tiktok']}",
     }
 
