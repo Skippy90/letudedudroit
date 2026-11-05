@@ -29,7 +29,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 5.3 | point 0.35 "Préparation" ; repere-marquer 1 neutre ; repere-marquer 2 ambre |
 | 5.4 | point 0.6 "Exécution" ; repere-marquer 2 neutre ; repere-marquer 3 ambre |
 | 5.5 | point 0.85 "Résultat" ; repere-marquer 3 neutre ; repere-marquer 4 ambre |
-| 6.1 | effacer-titres ; titre "Consommée" ; sous-titre "Tous les éléments réunis" |
+| 6.1 | effacer-titres ; titre "Consommée" ; sous-titre "Tout est réuni" |
 | 6.2 | sous-titre "Souvent : un résultat" ; accent frise |
 | 6.3 | zone 0.75 1 gris ; repere-marquer 4 gris ; sous-titre "Jamais atteint" |
 | 7.1 | effacer-titres ; titre "Où commence le punissable ?" ; questions |
@@ -67,7 +67,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 19.2 | titre "Pas de tentative par négligence" |
 | 19.3 | effacer-titres ; titre "Vouloir le résultat" ; bulle simon "Voler" |
 | 20.1 | scene-vide ; rembobiner ; article-retirer ; decor rue Kiosque ; personnage simon "Simon" turquoise gauche ; placer simon -3 ; etiquette var "Changeons l'histoire" -3.6 1.7 |
-| 20.2 | etiquette-retirer var ; marcher simon 0 ; etiquette caisse "La caisse" 1.5 1.7 |
+| 20.2@kiosque | etiquette-retirer var ; marcher simon 0 ; etiquette caisse "La caisse" 1.5 1.7 |
 | 20.2+2.5 | etiquette caisse "Caisse vide" 1.5 1.7 |
 | 20.3 | etiquette soir "Vidée le soir même" -3.6 1.7 |
 | 21.1 | scene-vide ; titre "Ne pouvait pas réussir" ; personnage simon "Simon" turquoise gauche |
@@ -80,7 +80,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 23.1 | etiquette-retirer alinea ; effacer-titres ; bulle quelqu "Une formule magique" ; etiquette coffre "Un coffre-fort" 3.5 0.3 |
 | 23.2 | effacer-bulle quelqu ; etiquette-retirer coffre ; case "Tentative" ; cocher 1 gris |
 | 24.1 | scene-vide ; rembobiner ; article-retirer ; decor rue Kiosque ; personnage simon "Simon" turquoise gauche ; placer simon -3 ; etiquette var "Dernière version" -3.6 1.7 |
-| 24.2 | etiquette-retirer var ; marcher simon 0 ; etiquette force "Il force la porte" 0.6 1.7 |
+| 24.2@forcer | etiquette-retirer var ; marcher simon 0 ; etiquette force "Il force la porte" 0.6 1.7 |
 | 24.3 | etiquette rue "Personne ne passe" -4.4 1.7 |
 | 24.4 | etiquette-retirer force ; etiquette-retirer rue ; bulle simon "Le kiosquier" |
 | 24.5 | effacer-bulle simon ; marcher simon -3 ; etiquette rentre "Il rentre chez lui" -3.6 1.7 |
@@ -95,7 +95,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le kios
 | 27.1 | scene-vide ; article "Art. 23 CP" ; titre "Empêcher la consommation" ; personnage auteur "L'auteur" rose gauche ; picto feu 3.0 0.0 |
 | 27.2 | sous-titre "Il éteint le feu" |
 | 27.2+2.5 | picto-retirer feu ; picto coche 3.0 0.0 |
-| 27.3 | sous-titre "Selon l'infraction et les faits" ; accent auteur |
+| 27.3 | sous-titre "Selon les faits" ; accent auteur |
 | 28.1 | scene-vide ; article-retirer ; decor rue Kiosque ; personnage simon "Simon" turquoise gauche ; placer simon 0 ; titre "« De sa propre initiative »" ambre |
 | 28.2 | picto voiture 4.4 -1.9 ; etiquette police "La police" 4.4 -0.6 |
 | 28.2+2 | effacer-titres ; marcher simon -3 ; mot-barre "Désistement" 0.2 2.0 |
