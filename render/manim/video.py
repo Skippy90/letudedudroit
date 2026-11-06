@@ -606,7 +606,7 @@ class Schemas(Scene):
 
     # ----- actions : décors, mouvements, repère -----
     def a_decor(self, nom, *options):
-        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "festival": c.Festival, "tribunal": c.Tribunal, "parc": c.Parc, "piscine": c.Piscine}
+        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "festival": c.Festival, "tribunal": c.Tribunal, "parc": c.Parc, "piscine": c.Piscine, "frontiere": c.Frontiere}
         if nom not in decors:
             raise ValueError(f"décor inconnu « {nom} »")
         self.decor = decors[nom](*options)

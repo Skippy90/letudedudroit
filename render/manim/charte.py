@@ -837,6 +837,31 @@ class Festival(VGroup):
         return [1.6 * n, Y_SOL, 0]
 
 
+class Frontiere(VGroup):
+    """Une frontière : à gauche l'étranger, à droite la Suisse ; un poste-frontière et sa barrière au milieu.
+
+    Même trame que la rue (placer de -4 à 4) : -4 à -1 à l'étranger, 1 à 4 en Suisse."""
+
+    def __init__(self, moment="jour"):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        borne = VGroup(*[Line([0, Y_SOL + 0.25 * k, 0], [0, Y_SOL + 0.25 * k + 0.14, 0], **DECOR) for k in range(14)])
+        poste = VGroup(Rectangle(width=0.9, height=1.3, **DECOR).move_to([0.75, Y_SOL + 0.65, 0]),
+                       Polygon([0.2, Y_SOL + 1.3, 0], [1.3, Y_SOL + 1.3, 0], [0.75, Y_SOL + 1.7, 0], **DECOR))
+        barriere = VGroup(Line([-0.15, Y_SOL + 0.9, 0], [-1.6, Y_SOL + 0.9, 0], color=ACCENT, stroke_width=4, stroke_opacity=0.5),
+                          Line([-0.15, Y_SOL, 0], [-0.15, Y_SOL + 0.95, 0], **DECOR))
+        etranger = texte("Étranger", T_PETIT).set_opacity(0.4).move_to([-4.2, 3.2, 0])
+        suisse = texte("Suisse", T_PETIT).set_opacity(0.4).move_to([3.4, 3.2, 0])
+        self.textes = [etranger, suisse]
+        super().__init__(sol, borne, poste, barriere, etranger, suisse)
+        if DECORS_DETAILLES:
+            d = VGroup(_arbre(-5.6, r=0.5, h=1.3, opacite=0.22), _arbre(5.6, r=0.5, h=1.3, opacite=0.22),
+                       *([_soleil(-6.4, 3.2), _nuage(5.6, 3.2, 1.0)] if moment == "jour" else [_lune(-6.5, 3.3)]))
+            self.submobjects.insert(0, d)
+
+    def pied(self, n):
+        return [1.6 * n, Y_SOL, 0]
+
+
 class Tribunal(VGroup):
     """Salle d'audience : sol, estrade et banc du juge à droite, barre des témoins à gauche du centre.
 
