@@ -13,7 +13,7 @@ Personnages : Max (silhouette turquoise), Jade (silhouette rose), Lina (silhouet
 | 1 | Un samedi, dans un magasin d'électronique à Martigny. Un ordinateur portable disparaît d'un présentoir. Quatre personnes ont joué un rôle. | Quatre silhouettes apparaissent l'une après l'autre |
 | 2 | Lina a eu l'idée. C'est elle qui a convaincu Max, en lui promettant de lui racheter l'ordinateur. | La silhouette de Lina ; une bulle « Vas-y » |
 | 3 | Max et Jade ont tout organisé ensemble. Jade occupe le vendeur avec des questions. Pendant ce temps, Max glisse l'ordinateur dans un sac. Ils comptent se partager l'argent de la revente. Le vendeur ne remarque rien. | Les silhouettes de Max et Jade côte à côte |
-| 4 | Et ce sac, c'est Noé qui l'a prêté, en sachant très bien à quoi il allait servir. | La silhouette de Noé ; le mot « Le sac » |
+| 4 | Et ce sac, c'est Noé qui l'a porté, en sachant très bien à quoi il allait servir. | La silhouette de Noé ; le mot « Le sac » |
 | 5 | Une seule main a pris l'ordinateur. Mais qui, parmi ces quatre personnes, répond du vol ? Et comment ? | Le titre « Qui répond du vol ? » |
 
 ## La carte : auteurs et participants
