@@ -96,7 +96,7 @@ class Personnage(VGroup):
         if STYLE_PERSONNAGES == "batons":
             from bonhomme import Bonhomme
             sens = -1 if X_POSITIONS[position] > 0 else 1  # regarde vers le centre
-            silhouette = Bonhomme(couleur, (0, 0), sens=sens, expression=expression, echelle=0.85, epaisseur=8)
+            silhouette = Bonhomme(couleur, (0, 0), sens=sens, expression=expression, echelle=0.75, epaisseur=8)
             etiquette = avec_fond(texte(nom, T_PETIT)).next_to(silhouette, DOWN, buff=0.12)
             super().__init__(silhouette, etiquette)
             self.silhouette, self.etiquette, self.nom = silhouette, etiquette, nom
