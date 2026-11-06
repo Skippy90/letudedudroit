@@ -7,7 +7,7 @@ renvoi « vidéo N » en bas à droite.
 """
 
 from manim import (
-    DOWN, LEFT, RIGHT, UP, Arc, Circle, Create, Dot, Ellipse, FadeIn, FadeOut, GrowArrow,
+    DOWN, LEFT, RIGHT, UP, UL, UR, DL, DR, Arc, Circle, Create, Dot, Ellipse, FadeIn, FadeOut, GrowArrow,
     Line, Polygon, Rectangle, RoundedRectangle, Text, Transform, VGroup, Write, Arrow,
     CurvedArrow, there_and_back,
 )
@@ -418,7 +418,40 @@ def barre(mobject):
 # Les décors sont dessinés au trait fin, en blanc cassé très atténué : ils situent la scène
 # sans jamais concurrencer les silhouettes ni les schémas.
 DECOR = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
+# Détails du décor (fenêtres, pavés, mobilier) : plus fins et plus pâles que la structure, pour habiller la scène
+# sans concurrencer les personnages. DECORS=simples : les décors d'avant novembre 2026, sans détails.
+DETAIL = dict(color=TEXTE, stroke_width=2.5, stroke_opacity=0.3)
+DECORS_DETAILLES = _os.environ.get("DECORS", "detailles") != "simples"
 Y_SOL = -2.3
+
+
+def _fenetre(x, y, l=0.7, h=0.5, volets=False):
+    """Petite fenêtre à croisillon, avec appui ; volets en option."""
+    cadre = Rectangle(width=l, height=h, **DETAIL).move_to([x, y, 0])
+    parts = [cadre, Line(cadre.get_top(), cadre.get_bottom(), **DETAIL),
+             Line([x - l / 2 - 0.06, y - h / 2 - 0.05, 0], [x + l / 2 + 0.06, y - h / 2 - 0.05, 0], **DETAIL)]
+    if volets:
+        parts += [Rectangle(width=0.16, height=h, **DETAIL).next_to(cadre, s, buff=0.04) for s in (LEFT, RIGHT)]
+    return VGroup(*parts)
+
+
+def _arbre(x, r=0.7, h=1.2, opacite=0.3):
+    style = dict(color=TEXTE, stroke_width=2, stroke_opacity=opacite)
+    tronc = Line([x, Y_SOL, 0], [x, Y_SOL + h, 0], **style)
+    houppier = VGroup(*[Circle(radius=r * k, **style).move_to([x + dx, Y_SOL + h + r * 0.8 + dy, 0])
+                        for k, dx, dy in ((1.0, 0, 0), (0.7, -r * 0.7, -r * 0.35), (0.7, r * 0.7, -r * 0.3))])
+    return VGroup(tronc, houppier)
+
+
+def _etoiles(points):
+    return VGroup(*[Dot([x, y, 0], radius=0.035, color=TEXTE, fill_opacity=0.5) for x, y in points])
+
+
+def _lune(x, y):
+    from manim import Difference
+    disque = Circle(radius=0.34).move_to([x, y, 0])
+    ombre = Circle(radius=0.31).move_to([x + 0.16, y + 0.08, 0])
+    return Difference(disque, ombre, color=TEXTE, fill_color=TEXTE, fill_opacity=0.45, stroke_width=0)
 
 
 class Escalier(VGroup):
@@ -445,6 +478,18 @@ class Escalier(VGroup):
         croisillon = VGroup(Line(self.fenetre.get_top(), self.fenetre.get_bottom(), **DECOR),
                             Line(self.fenetre.get_left(), self.fenetre.get_right(), **DECOR))
         super().__init__(sol, marches, rampe, montants, porte, poignee, self.fenetre, croisillon)
+        if DECORS_DETAILLES:
+            boites = VGroup(*[Rectangle(width=0.32, height=0.24, **DETAIL).move_to([-4.3 + 0.36 * k, Y_SOL + 1.35 + 0.28 * r, 0])
+                              for k in range(3) for r in range(2)])
+            d = VGroup(
+                Line([-7.1, Y_SOL + 0.12, 0], [self.X0, Y_SOL + 0.12, 0], **DETAIL),      # plinthe
+                boites,                                                                   # boîtes aux lettres
+                Rectangle(width=0.9, height=1.1, **DETAIL).move_to([-5.8, Y_SOL + 1.75, 0]),  # vitre de la porte
+                Line([-6.5, Y_SOL - 0.08, 0], [-5.1, Y_SOL - 0.08, 0], **DETAIL),         # paillasson
+                Line([-0.8, 3.6, 0], [-0.8, 3.1, 0], **DETAIL),                           # plafonnier
+                Arc(radius=0.25, start_angle=3.1416, angle=3.1416, **DETAIL).move_to([-0.8, 3.0, 0]),
+                Rectangle(width=0.14, height=0.22, **DETAIL).move_to([-4.9, Y_SOL + 1.2, 0]))  # interrupteur
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point où se tient un personnage sur la marche n (0 = sol, au pied de l'escalier ;
@@ -655,6 +700,22 @@ class Appartement(VGroup):
             scotch = Line(boite.get_top(), boite.get_top() + DOWN * 0.3, **DECOR)
             cartons.add(VGroup(boite, scotch))
         super().__init__(sol, porte, poignee, self.fenetre, croisillon, cartons)
+        if DECORS_DETAILLES:
+            f = self.fenetre
+            rideaux = VGroup(*[Line(f.get_corner(UL) + [dx, 0.15, 0], f.get_corner(DL) + [dx, -0.25, 0], **DETAIL)
+                               for dx in (-0.25, -0.15)],
+                             *[Line(f.get_corner(UR) + [dx, 0.15, 0], f.get_corner(DR) + [dx, -0.25, 0], **DETAIL)
+                               for dx in (0.15, 0.25)])
+            d = VGroup(
+                rideaux, Line(f.get_corner(UL) + [-0.35, 0.18, 0], f.get_corner(UR) + [0.35, 0.18, 0], **DETAIL),
+                Line([-7.1, Y_SOL + 0.12, 0], [7.1, Y_SOL + 0.12, 0], **DETAIL),           # plinthe
+                Rectangle(width=1.0, height=0.7, **DETAIL).move_to([0.4, 0.9, 0]),         # cadre au mur
+                Line([1.6, 3.6, 0], [1.6, 3.0, 0], **DETAIL),                              # suspension
+                Polygon([1.35, 3.0, 0], [1.85, 3.0, 0], [1.75, 3.2, 0], [1.45, 3.2, 0], **DETAIL),
+                VGroup(Rectangle(width=0.4, height=0.35, **DETAIL).move_to([-4.0, Y_SOL + 0.175, 0]),  # plante
+                       *[Line([-4.0, Y_SOL + 0.35, 0], [-4.0 + dx, Y_SOL + 0.95, 0], **DETAIL) for dx in (-0.25, 0, 0.25)]),
+                VGroup(*[Line([x - 0.25, Y_SOL + 0.45, 0], [x + 0.25, Y_SOL + 0.45, 0], **DETAIL) for x in (4.4, 5.9)]))  # étiquettes des cartons
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, de -3 (devant la porte) à 2 (devant les cartons), tous les 1,6."""
@@ -678,6 +739,28 @@ class Rue(VGroup):
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
         self.textes = [enseigne]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
         super().__init__(sol, facades, self.mur, vitrine, store, enseigne, reverbere)
+        if DECORS_DETAILLES:
+            from manim import ArcBetweenPoints
+            d = VGroup(
+                # façades : fenêtres, corniches, gouttière
+                _fenetre(-6.15, 0.5, 0.8, 0.6), _fenetre(-4.65, 0.5, 0.8, 0.6),
+                Line([-7.0, 1.22, 0], [-3.8, 1.22, 0], **DETAIL), Line([-3.98, Y_SOL, 0], [-3.98, 1.1, 0], **DETAIL),
+                _fenetre(3.75, 0.2), _fenetre(5.45, 0.2),
+                Line([2.7, 0.82, 0], [6.5, 0.82, 0], **DETAIL),
+                # commerce : porte vitrée, store festonné, étagère de la vitrine
+                Rectangle(width=0.85, height=1.6, **DETAIL).move_to([-0.35, Y_SOL + 0.8, 0]),
+                Dot([-0.05, Y_SOL + 0.8, 0], radius=0.035, color=TEXTE, fill_opacity=0.3),
+                VGroup(*[ArcBetweenPoints([0.5 + 0.4 * k, Y_SOL + 1.6, 0], [0.9 + 0.4 * k, Y_SOL + 1.6, 0], angle=3.1416,
+                                          **DETAIL) for k in range(5)]),
+                Line([0.8, Y_SOL + 0.45, 0], [2.2, Y_SOL + 0.45, 0], **DETAIL),
+                # trottoir : bordure, joints, marquage de la chaussée
+                Line([-7.1, Y_SOL - 0.14, 0], [7.1, Y_SOL - 0.14, 0], **DETAIL),
+                VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL - 0.14, 0], **DETAIL) for x in [-6.6 + 1.2 * k for k in range(12)]]),
+                # réverbère : lanterne et halo ; le ciel du soir
+                Polygon([6.05, Y_SOL + 3.12, 0], [6.35, Y_SOL + 3.12, 0], [6.28, Y_SOL + 2.92, 0], [6.12, Y_SOL + 2.92, 0], **DETAIL),
+                Circle(radius=0.45, stroke_width=0, fill_color=ACCENT, fill_opacity=0.08).move_to([6.2, Y_SOL + 2.95, 0]),
+                _lune(-6.4, 2.9), _etoiles([(-5.2, 3.3), (-4.4, 2.75), (-2.6, 3.4), (3.3, 2.0), (2.6, 2.6)]))
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
@@ -721,6 +804,17 @@ class Festival(VGroup):
                           Circle(radius=0.18, **DECOR).move_to([6.3, Y_SOL + 0.85, 0]))
         self.textes = [nom]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
         super().__init__(sol, tente, mats, bande, nom, fil, fanions, plancher, structure, projecteurs, enceinte)
+        if DECORS_DETAILLES:
+            faisceaux = VGroup(*[Polygon([px, Y_SOL + 3.15, 0], [px - 0.35, Y_SOL + 0.5, 0], [px + 0.35, Y_SOL + 0.5, 0],
+                                         stroke_width=0, fill_color=ACCENT, fill_opacity=0.05) for px in (4.5, 5.3, 6.1)])
+            barrieres = VGroup(*[VGroup(Line([x, Y_SOL, 0], [x, Y_SOL + 0.7, 0], **DETAIL),
+                                        Line([x, Y_SOL + 0.6, 0], [x + 0.9, Y_SOL + 0.6, 0], **DETAIL),
+                                        Line([x + 0.9, Y_SOL, 0], [x + 0.9, Y_SOL + 0.7, 0], **DETAIL)) for x in (2.6,)])
+            herbe = Line([-7.1, Y_SOL - 0.14, 0], [7.1, Y_SOL - 0.14, 0], **DETAIL)
+            d = VGroup(faisceaux, barrieres, herbe,
+                       Line([-6.1, Y_SOL, 0], [-5.9, Y_SOL + 0.9, 0], **DETAIL), Line([-4.7, Y_SOL, 0], [-4.9, Y_SOL + 0.9, 0], **DETAIL),
+                       _lune(-6.4, 3.3), _etoiles([(-3.0, 3.4), (-2.2, 2.9), (3.0, 3.5), (2.8, 2.5)]))
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
@@ -748,6 +842,20 @@ class Tribunal(VGroup):
         super().__init__(sol, mur, estrade, porte, self.banc, self.barre)
         for m in self.meubles:
             m.set_z_index(1)
+        if DECORS_DETAILLES:
+            x = self.X_BANC
+            embleme = VGroup(Circle(radius=0.32, **DETAIL).move_to([x, Y_SOL + 2.95, 0]),
+                             Line([x - 0.2, Y_SOL + 2.95, 0], [x + 0.2, Y_SOL + 2.95, 0], **DETAIL),
+                             Line([x, Y_SOL + 2.75, 0], [x, Y_SOL + 3.15, 0], **DETAIL))
+            boiseries = VGroup(*[Rectangle(width=0.9, height=1.0, **DETAIL).move_to([-4.6 + 1.1 * k, Y_SOL + 0.62, 0])
+                                 for k in range(5) if abs(-4.6 + 1.1 * k - self.X_BARRE) > 1.0])
+            horloge = VGroup(Circle(radius=0.22, **DETAIL).move_to([-3.2, 2.4, 0]),
+                             Line([-3.2, 2.4, 0], [-3.2, 2.55, 0], **DETAIL), Line([-3.2, 2.4, 0], [-3.08, 2.4, 0], **DETAIL))
+            pupitre = Line([x - 1.5, Y_SOL + 1.6, 0], [x + 1.5, Y_SOL + 1.6, 0], **DETAIL)
+            d = VGroup(embleme, boiseries, horloge, pupitre,
+                       Rectangle(width=0.9, height=1.1, **DETAIL).move_to([-5.8, Y_SOL + 1.75, 0]),
+                       Line([-7.1, Y_SOL + 0.12, 0], [7.1, Y_SOL + 0.12, 0], **DETAIL))
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière le banc du juge, sur l'estrade."""
@@ -832,6 +940,20 @@ class Parc(VGroup):
         self.meubles = [self.haie]
         super().__init__(sol, tronc, feuillage, self.poteau, self.haie)
         self.haie.set_z_index(1)
+        if DECORS_DETAILLES:
+            banc = VGroup(Line([2.0, Y_SOL + 0.45, 0], [3.4, Y_SOL + 0.45, 0], **DETAIL),
+                          Line([2.0, Y_SOL + 0.75, 0], [3.4, Y_SOL + 0.75, 0], **DETAIL),
+                          *[Line([x, Y_SOL, 0], [x, Y_SOL + 0.45, 0], **DETAIL) for x in (2.15, 3.25)])
+            touffes = VGroup(*[VGroup(Line([x, Y_SOL, 0], [x - 0.08, Y_SOL + 0.14, 0], **DETAIL),
+                                      Line([x, Y_SOL, 0], [x + 0.08, Y_SOL + 0.16, 0], **DETAIL))
+                               for x in (-6.4, -5.1, -3.3, -0.6, 1.4, 3.9)])
+            chemin = VGroup(Line([-7.1, Y_SOL - 0.18, 0], [7.1, Y_SOL - 0.18, 0], **DETAIL))
+            lampadaire = VGroup(Line([-6.6, Y_SOL, 0], [-6.6, Y_SOL + 2.6, 0], **DETAIL),
+                                Circle(radius=0.14, **DETAIL).move_to([-6.6, Y_SOL + 2.75, 0]))
+            d = VGroup(_arbre(-4.6, r=0.55, h=1.4, opacite=0.22), _arbre(3.0, r=0.6, h=1.9, opacite=0.22),
+                       banc, touffes, chemin, lampadaire,
+                       _lune(5.8, 3.0), _etoiles([(-5.6, 3.3), (-3.4, 3.0), (1.2, 3.35), (4.4, 3.4)]))
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 à 4 ; 3 est derrière la haie."""
@@ -866,8 +988,27 @@ class Piscine(VGroup):
                                  for i in range(int(self.L_BASSIN / 0.35) + 1)])
         self.bassin = VGroup(bord, eau)
         self.meubles = [self.bassin]
+        if DECORS_DETAILLES:
+            # Dans le bassin (au premier plan, avec lui) : carrelage du bord, ligne d'eau à bouchons.
+            carreaux = VGroup(*[Line([x0 + 0.4 * k, Y_SOL + 0.08, 0], [x0 + 0.4 * k, Y_SOL + 0.9, 0], **DETAIL)
+                                for k in range(1, int(self.L_BASSIN / 0.4))])
+            bouchons = VGroup(*[Dot([x0 + 0.25 + 0.3 * k, Y_SOL + 0.88, 0], radius=0.03, color=ACCENT, fill_opacity=0.3)
+                                for k in range(int(self.L_BASSIN / 0.3))])
+            self.bassin.add(carreaux, bouchons)
         super().__init__(sol, pieds, siege, dossier, self.bassin)
         self.bassin.set_z_index(1)
+        if DECORS_DETAILLES:
+            echelle = VGroup(*[Arc(radius=0.22, start_angle=0, angle=3.1416, **DETAIL).move_to([x0 + 0.5 + dx, Y_SOL + 1.25, 0])
+                               for dx in (0, 0.45)])
+            parasol = VGroup(Line([-2.9, Y_SOL, 0], [-2.9, Y_SOL + 2.4, 0], **DETAIL),
+                             Polygon([-3.8, Y_SOL + 2.2, 0], [-2.0, Y_SOL + 2.2, 0], [-2.9, Y_SOL + 2.7, 0], **DETAIL))
+            transat = VGroup(Line([-3.5, Y_SOL + 0.35, 0], [-2.5, Y_SOL + 0.35, 0], **DETAIL),
+                             Line([-2.5, Y_SOL + 0.35, 0], [-2.25, Y_SOL + 0.8, 0], **DETAIL),
+                             *[Line([x, Y_SOL, 0], [x, Y_SOL + 0.35, 0], **DETAIL) for x in (-3.4, -2.6)])
+            dalles = VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL - 0.14, 0], **DETAIL) for x in [-6.8 + 0.9 * k for k in range(7)]],
+                            Line([-7.1, Y_SOL - 0.14, 0], [x0, Y_SOL - 0.14, 0], **DETAIL))
+            d = VGroup(echelle, parasol, transat, dalles, _arbre(-6.5, r=0.45, h=1.6, opacite=0.22))
+            self.submobjects.insert(0, d)
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 à 4 ; de 2 à 4, dans l'eau."""
