@@ -205,10 +205,12 @@ class Schemas(Scene):
         # Un objet qu'on range dans le sac le touche.
         if {na, nb} == {"picto ordinateur", "picto sac"}:
             return True
-        # Un objet porté touche celui qui le porte.
-        for nom, qui in getattr(self, "tenus", {}).items():
-            if {na, nb} == {f"picto {nom}", qui}:
-                return True
+        # Un objet porté peut toucher ce qui l'entoure (celui qui le porte, la voiture où on le charge).
+        if any(n in (na, nb) for n in [f"picto {nom}" for nom in getattr(self, "tenus", {})]):
+            return True
+        # On monte en voiture : un personnage peut la toucher.
+        if "picto voiture" in (na, nb) and ({na, nb} - {"picto voiture"}) & set(self.personnages):
+            return True
         objet = next((n for n in ("picto ballon", "picto bouteille", "picto ordinateur", "picto sac") if n in (na, nb)), None)
         if objet and ({na, nb} - {objet}) & set(self.personnages):
             return True
@@ -705,7 +707,7 @@ class Schemas(Scene):
             if sens_final is None:
                 sens_final = self.sens_vers_voisin(p, p.silhouette.get_x() + decalage[0])
             m = Marche(p.silhouette, decalage, run_time=duree, sens_final=sens_final)
-            m.duree_propre = max(1.2, abs(decalage[0]) * 0.45)
+            m.duree_propre = max(0.8, abs(decalage[0]) * 0.32)
             return m
         return p.silhouette.animate(run_time=duree).shift(decalage)
 
@@ -729,8 +731,9 @@ class Schemas(Scene):
         return b
 
     def _main(self, b, picto):
-        """Où se tient un objet porté : sous la main avant, le haut de l'objet dans la main."""
-        return b.main("d") + DOWN * (picto.height / 2 - 0.05)
+        """Où se tient un objet porté : il pend à la main avant, la main dans l'anse (le haut de l'objet un peu
+        au-dessus de la main)."""
+        return b.main("d") + DOWN * (picto.height / 2 - 0.1)
 
     def _accrocher(self, ident, nom):
         b, picto = self._bonhomme(ident), self.pictos[nom]
@@ -740,6 +743,9 @@ class Schemas(Scene):
             picto.scale(0.75)
             picto.porte_reduit = True
         picto.add_updater(lambda m: m.move_to(self._main(b, m)))
+        # La main passe devant l'objet : l'objet porté se dessine sous le bonhomme (qui reste sous les meubles).
+        picto.set_z_index(0)
+        b.set_z_index(0.5)
         self.tenus[nom] = ident
 
     def _decrocher(self, nom):
@@ -818,10 +824,10 @@ class Schemas(Scene):
             p = self.personnages[ident]
             decalage = np.array([ecart - 0.7 * np.sign(ecart), 0, 0])
             self.jouer(self.deplacer(p, decalage), p.etiquette.animate.shift(decalage))
-        self.jouer(b.vers("prend", run_time=0.5), duree=0.5)
-        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.4)
+        self.jouer(b.vers("prend", run_time=0.4), duree=0.4)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.3)
         self._accrocher(ident, nom)
-        self.jouer(b.vers("porte", run_time=0.5), duree=0.5)
+        self.jouer(b.vers("porte", run_time=0.4), duree=0.4)
         return []
 
     def a_donner(self, de, vers, nom):
@@ -839,9 +845,9 @@ class Schemas(Scene):
         self._approcher(de, vers, ecart)
         self.jouer(a.vers(pose_de, run_time=0.6), b.vers("donne", run_time=0.6), duree=0.6)
         self._decrocher(nom)
-        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.35)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.3)
         self._accrocher(vers, nom)
-        self.jouer(a.vers("debout", run_time=0.5), b.vers("porte", run_time=0.5), duree=0.5)
+        self.jouer(a.vers("debout", run_time=0.35), b.vers("porte", run_time=0.35), duree=0.35)
         return []
 
     def a_poser(self, ident, nom, x, y):
@@ -873,7 +879,7 @@ class Schemas(Scene):
             self.jouer(b.vers(None, run_time=0.2), autre.vers(None, run_time=0.2), duree=0.2)
         self.focus = self.personnages[ident]
         for pose in ("parle_a", "parle_b", "parle_a", "debout"):
-            self.jouer(b.vers(pose, run_time=0.4), duree=0.4)
+            self.jouer(b.vers(pose, run_time=0.3), duree=0.3)
         return []
 
     def a_visage(self, ident, expression):

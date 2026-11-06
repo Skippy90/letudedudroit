@@ -486,8 +486,6 @@ class Escalier(VGroup):
                 boites,                                                                   # boîtes aux lettres
                 Rectangle(width=0.9, height=1.1, **DETAIL).move_to([-5.8, Y_SOL + 1.75, 0]),  # vitre de la porte
                 Line([-6.5, Y_SOL - 0.08, 0], [-5.1, Y_SOL - 0.08, 0], **DETAIL),         # paillasson
-                Line([-0.8, 3.6, 0], [-0.8, 3.1, 0], **DETAIL),                           # plafonnier
-                Arc(radius=0.25, start_angle=3.1416, angle=3.1416, **DETAIL).move_to([-0.8, 3.0, 0]),
                 Rectangle(width=0.14, height=0.22, **DETAIL).move_to([-4.9, Y_SOL + 1.2, 0]))  # interrupteur
             self.submobjects.insert(0, d)
 
@@ -710,8 +708,6 @@ class Appartement(VGroup):
                 rideaux, Line(f.get_corner(UL) + [-0.35, 0.18, 0], f.get_corner(UR) + [0.35, 0.18, 0], **DETAIL),
                 Line([-7.1, Y_SOL + 0.12, 0], [7.1, Y_SOL + 0.12, 0], **DETAIL),           # plinthe
                 Rectangle(width=1.0, height=0.7, **DETAIL).move_to([0.4, 0.9, 0]),         # cadre au mur
-                Line([1.6, 3.6, 0], [1.6, 3.0, 0], **DETAIL),                              # suspension
-                Polygon([1.35, 3.0, 0], [1.85, 3.0, 0], [1.75, 3.2, 0], [1.45, 3.2, 0], **DETAIL),
                 VGroup(Rectangle(width=0.4, height=0.35, **DETAIL).move_to([-4.0, Y_SOL + 0.175, 0]),  # plante
                        *[Line([-4.0, Y_SOL + 0.35, 0], [-4.0 + dx, Y_SOL + 0.95, 0], **DETAIL) for dx in (-0.25, 0, 0.25)]),
                 VGroup(*[Line([x - 0.25, Y_SOL + 0.45, 0], [x + 0.25, Y_SOL + 0.45, 0], **DETAIL) for x in (4.4, 5.9)]))  # étiquettes des cartons
@@ -754,12 +750,10 @@ class Rue(VGroup):
                                           **DETAIL) for k in range(5)]),
                 Line([0.8, Y_SOL + 0.45, 0], [2.2, Y_SOL + 0.45, 0], **DETAIL),
                 # trottoir : bordure, joints, marquage de la chaussée
-                Line([-7.1, Y_SOL - 0.14, 0], [7.1, Y_SOL - 0.14, 0], **DETAIL),
-                VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL - 0.14, 0], **DETAIL) for x in [-6.6 + 1.2 * k for k in range(12)]]),
                 # réverbère : lanterne et halo ; le ciel du soir
                 Polygon([6.05, Y_SOL + 3.12, 0], [6.35, Y_SOL + 3.12, 0], [6.28, Y_SOL + 2.92, 0], [6.12, Y_SOL + 2.92, 0], **DETAIL),
                 Circle(radius=0.45, stroke_width=0, fill_color=ACCENT, fill_opacity=0.08).move_to([6.2, Y_SOL + 2.95, 0]),
-                _lune(-6.4, 2.9), _etoiles([(-5.2, 3.3), (-4.4, 2.75), (-2.6, 3.4), (3.3, 2.0), (2.6, 2.6)]))
+                _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)]))
             self.submobjects.insert(0, d)
 
     def pied(self, n):
@@ -810,10 +804,10 @@ class Festival(VGroup):
             barrieres = VGroup(*[VGroup(Line([x, Y_SOL, 0], [x, Y_SOL + 0.7, 0], **DETAIL),
                                         Line([x, Y_SOL + 0.6, 0], [x + 0.9, Y_SOL + 0.6, 0], **DETAIL),
                                         Line([x + 0.9, Y_SOL, 0], [x + 0.9, Y_SOL + 0.7, 0], **DETAIL)) for x in (2.6,)])
-            herbe = Line([-7.1, Y_SOL - 0.14, 0], [7.1, Y_SOL - 0.14, 0], **DETAIL)
+            herbe = VGroup()
             d = VGroup(faisceaux, barrieres, herbe,
                        Line([-6.1, Y_SOL, 0], [-5.9, Y_SOL + 0.9, 0], **DETAIL), Line([-4.7, Y_SOL, 0], [-4.9, Y_SOL + 0.9, 0], **DETAIL),
-                       _lune(-6.4, 3.3), _etoiles([(-3.0, 3.4), (-2.2, 2.9), (3.0, 3.5), (2.8, 2.5)]))
+                       _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5)]))
             self.submobjects.insert(0, d)
 
     def pied(self, n):
@@ -849,8 +843,8 @@ class Tribunal(VGroup):
                              Line([x, Y_SOL + 2.75, 0], [x, Y_SOL + 3.15, 0], **DETAIL))
             boiseries = VGroup(*[Rectangle(width=0.9, height=1.0, **DETAIL).move_to([-4.6 + 1.1 * k, Y_SOL + 0.62, 0])
                                  for k in range(5) if abs(-4.6 + 1.1 * k - self.X_BARRE) > 1.0])
-            horloge = VGroup(Circle(radius=0.22, **DETAIL).move_to([-3.2, 2.4, 0]),
-                             Line([-3.2, 2.4, 0], [-3.2, 2.55, 0], **DETAIL), Line([-3.2, 2.4, 0], [-3.08, 2.4, 0], **DETAIL))
+            horloge = VGroup(Circle(radius=0.22, **DETAIL).move_to([-5.8, 0.75, 0]),
+                             Line([-5.8, 0.75, 0], [-5.8, 0.9, 0], **DETAIL), Line([-5.8, 0.75, 0], [-5.68, 0.75, 0], **DETAIL))
             pupitre = Line([x - 1.5, Y_SOL + 1.6, 0], [x + 1.5, Y_SOL + 1.6, 0], **DETAIL)
             d = VGroup(embleme, boiseries, horloge, pupitre,
                        Rectangle(width=0.9, height=1.1, **DETAIL).move_to([-5.8, Y_SOL + 1.75, 0]),
@@ -947,12 +941,12 @@ class Parc(VGroup):
             touffes = VGroup(*[VGroup(Line([x, Y_SOL, 0], [x - 0.08, Y_SOL + 0.14, 0], **DETAIL),
                                       Line([x, Y_SOL, 0], [x + 0.08, Y_SOL + 0.16, 0], **DETAIL))
                                for x in (-6.4, -5.1, -3.3, -0.6, 1.4, 3.9)])
-            chemin = VGroup(Line([-7.1, Y_SOL - 0.18, 0], [7.1, Y_SOL - 0.18, 0], **DETAIL))
+            chemin = VGroup()
             lampadaire = VGroup(Line([-6.6, Y_SOL, 0], [-6.6, Y_SOL + 2.6, 0], **DETAIL),
                                 Circle(radius=0.14, **DETAIL).move_to([-6.6, Y_SOL + 2.75, 0]))
             d = VGroup(_arbre(-4.6, r=0.55, h=1.4, opacite=0.22), _arbre(3.0, r=0.6, h=1.9, opacite=0.22),
                        banc, touffes, chemin, lampadaire,
-                       _lune(5.8, 3.0), _etoiles([(-5.6, 3.3), (-3.4, 3.0), (1.2, 3.35), (4.4, 3.4)]))
+                       _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)]))
             self.submobjects.insert(0, d)
 
     def pied(self, n):
@@ -1005,8 +999,7 @@ class Piscine(VGroup):
             transat = VGroup(Line([-3.5, Y_SOL + 0.35, 0], [-2.5, Y_SOL + 0.35, 0], **DETAIL),
                              Line([-2.5, Y_SOL + 0.35, 0], [-2.25, Y_SOL + 0.8, 0], **DETAIL),
                              *[Line([x, Y_SOL, 0], [x, Y_SOL + 0.35, 0], **DETAIL) for x in (-3.4, -2.6)])
-            dalles = VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL - 0.14, 0], **DETAIL) for x in [-6.8 + 0.9 * k for k in range(7)]],
-                            Line([-7.1, Y_SOL - 0.14, 0], [x0, Y_SOL - 0.14, 0], **DETAIL))
+            dalles = VGroup()
             d = VGroup(echelle, parasol, transat, dalles, _arbre(-6.5, r=0.45, h=1.6, opacite=0.22))
             self.submobjects.insert(0, d)
 

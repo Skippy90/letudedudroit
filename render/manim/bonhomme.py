@@ -23,7 +23,7 @@ POSES = {
     # Actions : tendre un objet, se pencher pour prendre, porter à bout de bras, gestes de la parole.
     "donne":    dict(tronc=6,  bras_g=15,  av_g=10,  bras_d=70,  av_d=78,  cuisse_g=12,  jambe_g=0,   cuisse_d=-8,  jambe_d=0),
     "prend":    dict(tronc=34, bras_g=40,  av_g=30,  bras_d=55,  av_d=25,  cuisse_g=20,  jambe_g=-25, cuisse_d=-10, jambe_d=-5),
-    "porte":    dict(tronc=0,  bras_g=20,  av_g=12,  bras_d=14,  av_d=40,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
+    "porte":    dict(tronc=0,  bras_g=20,  av_g=12,  bras_d=36,  av_d=40,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
     "parle_a":  dict(tronc=2,  bras_g=20,  av_g=12,  bras_d=40,  av_d=120, cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
     "parle_b":  dict(tronc=0,  bras_g=35,  av_g=95,  bras_d=25,  av_d=70,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
     "recule":   dict(tronc=-14, bras_g=60, av_g=120, bras_d=45,  av_d=110, cuisse_g=-25, jambe_g=-30, cuisse_d=20,  jambe_d=5),

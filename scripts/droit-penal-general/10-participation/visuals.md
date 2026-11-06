@@ -14,19 +14,21 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | --- | --- |
 | 1.1 | decor rue Électronique ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
 | 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 ; picto ordinateur 0.5 -1.5 |
-| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 ; picto sac -3.85 -1.3 |
-| 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 |
-| 2.2 | etiquette-retirer idee ; parole lina "Je te le rachète" ; picto pieces -6.4 1.3 ; pose lina pointe |
-| 2.2+2 | picto-deplacer pieces -1.6 1.0 0.6 |
-| 3.1 | effacer-parole lina ; etiquette-retirer ordi ; etiquette ensemble "Organisé à deux" 1.6 1.7 |
-| 3.2 | personnage vendeur "Vendeur" ambre_pale droite ; placer vendeur 3 ; etiquette-retirer ensemble ; etiquette q "Des questions" 4.0 1.7 |
-| 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 ; picto-deplacer sac -0.75 -1.3 1 |
-| 3.3+1.5 | picto-deplacer ordinateur -0.75 -1.25 0.6 |
-| 3.3+2.4 | picto-retirer ordinateur |
+| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -2 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 ; picto sac -2.4 -1.3 ; tenir noe sac aussitot |
+| 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 ; rejoindre max lina |
+| 2.2 | etiquette-retirer idee ; parler lina max ; parole lina "Je te le rachète" |
+| 2.2+1.8 | picto pieces -6.4 1.3 |
+| 2.2+2.8 | picto-deplacer pieces -5.1 1.2 0.6 |
+| 3.1 | effacer-parole lina ; etiquette-retirer ordi ; picto-retirer pieces ; marcher max -1 ; etiquette ensemble "Organisé à deux" 1.6 1.7 ; personnage vendeur "Vendeur" ambre_pale droite ; placer vendeur 3 |
+| 3.1+1.4 | donner noe max sac |
+| 3.2 | etiquette-retirer ensemble ; marcher noe -2 |
+| 3.2+0.3 | parler jade vendeur ; etiquette q "Des questions" 4.0 1.7 |
+| 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 ; prendre max ordinateur |
+| 3.3+1.8 | ranger ordinateur sac |
 | 3.4 | etiquette-retirer sac ; etiquette ensemble "Partager la revente" 1.6 1.7 ; accent max ; visage max content ; visage jade content |
 | 3.5 | etiquette-retirer ensemble ; etiquette rien "Il ne voit rien" 4.8 1.0 |
-| 4.1 | etiquette-retirer rien ; picto-retirer pieces ; etiquette noe "Le sac de Noé" -4.8 1.7 ; accent noe |
-| 4.1+2.5 | etiquette noe "Il savait pourquoi" -4.8 1.7 |
+| 4.1 | etiquette-retirer rien ; etiquette noe "Le sac de Noé" -3.4 1.7 ; accent noe |
+| 4.1+2.5 | etiquette noe "Il savait pourquoi" -3.4 1.7 |
 | 5.1 | retirer vendeur ; etiquette-retirer noe ; etiquette sac "Une seule main" -1.6 1.7 |
 | 5.2 | etiquette-retirer sac ; titre "Qui répond du vol ?" ; visage max inquiet ; visage jade inquiet |
 | 5.3 | sous-titre "Et comment ?" |
@@ -57,12 +59,12 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 14.2 | etiquette coaut "Par leurs actes" 0.6 1.7 |
 | 15.1 | scene-vide ; article-retirer ; arret-retirer ; repere-marquer 2 ambre ; decor rue Électronique ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage max "Max" turquoise droite ; placer max 2 |
 | 15.2 | etiquette pas "Pas au magasin" -5.0 1.0 |
-| 15.3 | bulle max "Voler ?" ; accent lina ; visage max surpris ; pose lina pointe |
+| 15.3 | rejoindre max lina ; parler lina max ; bulle max "Voler ?" ; visage max surpris |
 | 16.1 | article "Art. 24 CP" ; etiquette-retirer pas ; etiquette decide "Décider autrui" -2.0 1.7 |
 | 16.1+4 | etiquette decide "Crime ou délit" -2.0 1.7 |
 | 16.2 | etiquette instig "L'instigatrice" -5.2 1.0 |
 | 17.1 | scene-vide ; arret "ATF 128 IV 11" ; personnage lina "Lina" violet gauche ; personnage max "Max" turquoise centre-droite ; titre "Susciter la décision" |
-| 17.2 | effacer-titres ; parole lina "Je te le rachète" ; jetons lina max |
+| 17.2 | effacer-titres ; parler lina max ; parole lina "Je te le rachète" ; jetons lina max |
 | 18.1 | effacer-parole lina ; titre "Une occasion ne suffit pas" |
 | 18.2 | effacer-titres ; titre "Influence directe" ; accent lina |
 | 18.3 | effacer-titres ; titre "Une autre limite" |
@@ -81,7 +83,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 22.1+2.5 | picto telephone 3.5 0.0 |
 | 22.2 | etiquette cas "Aucun vol" -3.6 2.45 |
 | 22.3 | effacer-bulle info ; etiquette-retirer cas ; titre "Tentative d'instigation à vol" ; accent homme ; visage homme triste |
-| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 ; picto sac -3.85 -1.3 |
+| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 ; picto sac -3.85 -1.3 ; tenir noe sac aussitot |
 | 23.2 | etiquette ni "Ni l'idée, ni le plan" 0.6 1.7 |
 | 23.3 | etiquette ni "Il a aidé" 0.6 1.7 ; accent noe |
 | 24.1 | article "Art. 25 CP" ; etiquette ni "Prêter assistance" 0.6 1.7 |
@@ -94,7 +96,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 26.2 | bulle noe "Pour un vol" ; accent cases |
 | 26.3 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; renvoi "vidéo 4" ; titre "Le dol éventuel suffit" |
 | 26.4 | effacer-titres ; titre "Les grands traits suffisent" ; picto document 2.2 0.0 |
-| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Sac utilisé" ; picto sac -3.2 -0.5 |
+| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Sac utilisé" ; picto sac -3.2 -0.5 ; tenir noe sac aussitot |
 | 27.2 | effacer-titres ; titre "Vol facilité" ; cocher 1 vert |
 | 27.3 | effacer-titres ; titre "Noé savait" ; cocher 2 vert |
 | 27.4 | accent cases |
@@ -127,8 +129,10 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 34.2 | etiquette-retirer r ; effacer-titres ; titre "Quel rôle, et quand ?" ; retirer noe ; personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; personnage lina "Lina" violet centre ; personnage noe "Noé" bleu_clair centre-droite |
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
-| 35.3 | bulle paul "Pour un cambriolage" |
-| 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; retirer ami ; picto-deplacer voiture 5.6 -1.5 ; picto outils 3.0 -1.6 |
+| 35.3 | parler paul ami ; bulle paul "Pour un cambriolage" |
+| 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; picto outils 2.6 -1.6 ; prendre ami outils |
+| 35.4+2 | marcher ami 2 |
+| 35.4+3.4 | retirer ami ; picto-retirer outils ; picto-deplacer voiture 5.6 -1.5 |
 | 35.5 | etiquette cambr "Cambriolage commis" 0.6 1.7 |
 | 36.1 | etiquette-retirer cambr ; titre "Quel rôle ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre ; repere-marquer 3 ambre ; visage paul inquiet |
 | 36.2 | effacer-titres ; titre "Quelle peine ?" |
