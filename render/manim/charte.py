@@ -582,6 +582,30 @@ class Picto(VGroup):
             balle = Circle(radius=0.2, color=TEXTE, fill_color=TEXTE, fill_opacity=1, stroke_width=0)
             couture = Arc(radius=0.2, start_angle=-0.9, angle=1.8, color=FOND, stroke_width=3).shift(LEFT * 0.12)
             elements = [balle, couture]
+        elif nom == "ordinateur":
+            # Ordinateur portable : écran ouvert et clavier vu de face.
+            ecran = RoundedRectangle(corner_radius=0.05, width=0.9, height=0.6, color=TEXTE, stroke_width=4).shift(UP * 0.22)
+            vitre = RoundedRectangle(corner_radius=0.03, width=0.7, height=0.42, color=ACCENT, stroke_width=3).move_to(ecran)
+            base = Polygon([-0.6, -0.12, 0], [0.6, -0.12, 0], [0.5, -0.02, 0], [-0.5, -0.02, 0], color=TEXTE, stroke_width=4)
+            elements = [ecran, vitre, base]
+        elif nom == "sac":
+            # Sac à main ou cabas : corps arrondi et anse.
+            corps = RoundedRectangle(corner_radius=0.12, width=0.9, height=0.7, color=TEXTE, stroke_width=4)
+            anse = Arc(radius=0.24, start_angle=0, angle=3.14159265, color=TEXTE, stroke_width=4).next_to(corps, UP, buff=-0.02)
+            rabat = Line([-0.45, 0.12, 0], [0.45, 0.12, 0], color=TEXTE, stroke_width=3)
+            elements = [corps, anse, rabat]
+        elif nom == "cd":
+            disque = Circle(radius=0.38, color=TEXTE, stroke_width=4)
+            reflet = Arc(radius=0.26, start_angle=0.4, angle=1.1, color=ACCENT, stroke_width=3)
+            trou = Circle(radius=0.08, color=TEXTE, stroke_width=3)
+            elements = [disque, reflet, trou]
+        elif nom == "outils":
+            # Caisse à outils : boîte, poignée, un manche de marteau qui dépasse.
+            boite = RoundedRectangle(corner_radius=0.06, width=1.0, height=0.5, color=TEXTE, stroke_width=4)
+            poignee = RoundedRectangle(corner_radius=0.05, width=0.4, height=0.18, color=TEXTE, stroke_width=4).next_to(boite, UP, buff=0)
+            manche = Line([0.25, 0.25, 0], [0.55, 0.62, 0], color=ACCENT, stroke_width=5)
+            tete = Line([0.44, 0.7, 0], [0.68, 0.52, 0], color=ACCENT, stroke_width=8)
+            elements = [boite, poignee, manche, tete]
         else:
             raise ValueError(f"picto inconnu « {nom} »")
         super().__init__(*elements)

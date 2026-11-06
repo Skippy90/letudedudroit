@@ -8,19 +8,21 @@ Personnages (bonhommes en bâtons depuis le 6 novembre 2026 ; poses et visages a
 
 Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le magasin (décor rue, enseigne « Électronique ») ; les auteurs se tiennent devant la vitrine, les participants restent à l'écart ; un pense-bête « Coauteur / Instigateur / Complice » en haut à droite s'allume sur le rôle dont on parle ; les arrêts du Tribunal fédéral s'affichent à côté de l'article.
 
-Écarts assumés avec la colonne « À l'écran » : le sac et l'ordinateur ne sont pas dessinés (pas de pictogramme), ils sont nommés par des étiquettes ; pas de tableau ni de flèche entre silhouettes : les peines sont posées en étiquettes sous les silhouettes (ligne 30), l'accessoriété par une étiquette (ligne 32) ; les trois rôles de la question finale s'allument dans le pense-bête au lieu de trois cases.
+Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de Noé à Max, l'ordinateur y entre), le CD-ROM, la caisse à outils de Paul. Écarts assumés avec la colonne « À l'écran » : pas de tableau ni de flèche entre silhouettes : les peines sont posées en étiquettes sous les silhouettes (ligne 30), l'accessoriété par une étiquette (ligne 32) ; les trois rôles de la question finale s'allument dans le pense-bête au lieu de trois cases.
 
 | Moment | Actions |
 | --- | --- |
 | 1.1 | decor rue Électronique ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
-| 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 |
-| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 |
+| 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 ; picto ordinateur 0.5 -1.5 |
+| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 ; picto sac -3.85 -1.3 |
 | 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 |
 | 2.2 | etiquette-retirer idee ; parole lina "Je te le rachète" ; picto pieces -6.4 1.3 ; pose lina pointe |
 | 2.2+2 | picto-deplacer pieces -1.6 1.0 0.6 |
 | 3.1 | effacer-parole lina ; etiquette-retirer ordi ; etiquette ensemble "Organisé à deux" 1.6 1.7 |
 | 3.2 | personnage vendeur "Vendeur" ambre_pale droite ; placer vendeur 3 ; etiquette-retirer ensemble ; etiquette q "Des questions" 4.0 1.7 |
-| 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 |
+| 3.3 | etiquette-retirer q ; etiquette sac "Dans un sac" -1.6 1.7 ; picto-deplacer sac -0.75 -1.3 1 |
+| 3.3+1.5 | picto-deplacer ordinateur -0.75 -1.25 0.6 |
+| 3.3+2.4 | picto-retirer ordinateur |
 | 3.4 | etiquette-retirer sac ; etiquette ensemble "Partager la revente" 1.6 1.7 ; accent max ; visage max content ; visage jade content |
 | 3.5 | etiquette-retirer ensemble ; etiquette rien "Il ne voit rien" 4.8 1.0 |
 | 4.1 | etiquette-retirer rien ; picto-retirer pieces ; etiquette noe "Le sac de Noé" -4.8 1.7 ; accent noe |
@@ -74,12 +76,12 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 20.2 | effacer-titres ; titre "Tenter de décider, punissable" ; etiquette al2 "Alinéa 2" 0 -1.6 |
 | 21.1 | scene-vide ; arret "ATF 128 IV 11" ; personnage homme "Un homme" ambre_pale gauche ; titre "Un cas réel" |
 | 21.2 | personnage info "L'informaticien" bleu_clair centre-droite ; etiquette cas "Vingt mille francs" -1.2 2.2 ; jetons homme info |
-| 21.3 | effacer-titres ; etiquette cas "Copie d'un CD-ROM" -1.2 2.2 ; picto document -2.0 -0.5 |
+| 21.3 | effacer-titres ; etiquette cas "Copie d'un CD-ROM" -1.2 2.2 ; picto cd -2.0 -0.5 |
 | 22.1 | etiquette-retirer cas ; bulle info "Je me ravise" ; visage info inquiet |
 | 22.1+2.5 | picto telephone 3.5 0.0 |
 | 22.2 | etiquette cas "Aucun vol" -3.6 2.45 |
 | 22.3 | effacer-bulle info ; etiquette-retirer cas ; titre "Tentative d'instigation à vol" ; accent homme ; visage homme triste |
-| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 |
+| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 ; picto sac -3.85 -1.3 |
 | 23.2 | etiquette ni "Ni l'idée, ni le plan" 0.6 1.7 |
 | 23.3 | etiquette ni "Il a aidé" 0.6 1.7 ; accent noe |
 | 24.1 | article "Art. 25 CP" ; etiquette ni "Prêter assistance" 0.6 1.7 |
@@ -92,7 +94,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 26.2 | bulle noe "Pour un vol" ; accent cases |
 | 26.3 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; renvoi "vidéo 4" ; titre "Le dol éventuel suffit" |
 | 26.4 | effacer-titres ; titre "Les grands traits suffisent" ; picto document 2.2 0.0 |
-| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Sac utilisé" |
+| 27.1 | scene-vide ; personnage noe "Noé" bleu_clair gauche ; cases "Contribution causale" "Sait et accepte" ; titre "Sac utilisé" ; picto sac -3.2 -0.5 |
 | 27.2 | effacer-titres ; titre "Vol facilité" ; cocher 1 vert |
 | 27.3 | effacer-titres ; titre "Noé savait" ; cocher 2 vert |
 | 27.4 | accent cases |
@@ -126,7 +128,7 @@ Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le maga
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
 | 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
 | 35.3 | bulle paul "Pour un cambriolage" |
-| 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; retirer ami ; picto-deplacer voiture 5.6 -1.5 |
+| 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; retirer ami ; picto-deplacer voiture 5.6 -1.5 ; picto outils 3.0 -1.6 |
 | 35.5 | etiquette cambr "Cambriolage commis" 0.6 1.7 |
 | 36.1 | etiquette-retirer cambr ; titre "Quel rôle ?" ; repere-marquer 1 ambre ; repere-marquer 2 ambre ; repere-marquer 3 ambre ; visage paul inquiet |
 | 36.2 | effacer-titres ; titre "Quelle peine ?" |

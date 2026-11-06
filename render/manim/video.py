@@ -199,7 +199,10 @@ class Schemas(Scene):
             if autre == "frise " + (na if na.startswith("repère de frise ") else nb)[len("repère de frise "):]:
                 return True
         # Le ballon part du pied d'une silhouette, ou la touche.
-        objet = next((n for n in ("picto ballon", "picto bouteille") if n in (na, nb)), None)
+        # Un objet qu'on range dans le sac le touche.
+        if {na, nb} == {"picto ordinateur", "picto sac"}:
+            return True
+        objet = next((n for n in ("picto ballon", "picto bouteille", "picto ordinateur", "picto sac") if n in (na, nb)), None)
         if objet and ({na, nb} - {objet}) & set(self.personnages):
             return True
         for k, p in self.personnages.items():
