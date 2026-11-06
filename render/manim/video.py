@@ -270,6 +270,9 @@ class Schemas(Scene):
             g, d, b, h = boite(a)
             if b < -3.3:
                 alertes.append(f"{na} dans la bande des sous-titres")
+            # Rien ne sort du cadre (16:9, ±7,11 en largeur, ±4 en hauteur), avec une petite marge.
+            if g < -7.05 or d > 7.05 or h > 3.9:
+                alertes.append(f"{na} sort du cadre (de {g:.2f} à {d:.2f}, haut {h:.2f})")
             for nb, bb in el[i + 1:]:
                 if a in bb.get_family() or bb in a.get_family() or self.voulu(na, nb):
                     continue

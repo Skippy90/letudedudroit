@@ -33,8 +33,8 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 6.1 | effacer-titres ; titre "Deux familles" |
 | 6.2 | etiquette auteurs "Auteurs" 0 1.7 |
 | 6.3 | etiquette part "Participants" -5.4 1.7 |
-| 7.1 | effacer-titres ; etiquette auteurs "Seul ou coauteurs" 0 1.7 |
-| 7.2 | etiquette part "Instigateur, complice" -5.0 1.7 |
+| 7.1 | effacer-titres ; etiquette auteurs "Seul ou coauteurs" 0.5 1.7 |
+| 7.2 | etiquette part "Instigateur, complice" -4.5 1.7 |
 | 8.1 | etiquette-retirer auteurs ; etiquette-retirer part ; repere-liste "Coauteur" "Instigateur" "Complice" |
 | 8.2 | accent max |
 | 9.1 | scene-vide ; personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; repere-marquer 1 ambre |
@@ -56,11 +56,11 @@ Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de N
 | 14.1 | etiquette-retirer coaut ; bulle max "Ensemble" ; bulle jade "Ensemble" |
 | 14.2 | etiquette coaut "Par leurs actes" 0.6 1.7 |
 | 15.1 | scene-vide ; article-retirer ; arret-retirer ; repere-marquer 2 ambre ; decor rue Électronique ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage max "Max" turquoise droite ; placer max 2 |
-| 15.2 | etiquette pas "Pas au magasin" -5.4 1.0 |
+| 15.2 | etiquette pas "Pas au magasin" -5.0 1.0 |
 | 15.3 | bulle max "Voler ?" ; accent lina ; visage max surpris ; pose lina pointe |
 | 16.1 | article "Art. 24 CP" ; etiquette-retirer pas ; etiquette decide "Décider autrui" -2.0 1.7 |
 | 16.1+4 | etiquette decide "Crime ou délit" -2.0 1.7 |
-| 16.2 | etiquette instig "L'instigatrice" -5.6 1.0 |
+| 16.2 | etiquette instig "L'instigatrice" -5.2 1.0 |
 | 17.1 | scene-vide ; arret "ATF 128 IV 11" ; personnage lina "Lina" violet gauche ; personnage max "Max" turquoise centre-droite ; titre "Susciter la décision" |
 | 17.2 | effacer-titres ; parole lina "Je te le rachète" ; jetons lina max |
 | 18.1 | effacer-parole lina ; titre "Une occasion ne suffit pas" |
