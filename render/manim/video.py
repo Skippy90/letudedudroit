@@ -652,7 +652,8 @@ class Schemas(Scene):
         return [FadeOut(self.etiquettes.pop(ident))]
 
     def pieds_sur(self, p, n):
-        cible = np.array(self.decor.pied(int(n)))
+        v = float(n)  # une place intermédiaire (1.7) est permise dans les décors à places régulières
+        cible = np.array(self.decor.pied(int(v) if v.is_integer() else v))
         return cible - p.silhouette.get_bottom()
 
     def a_placer(self, ident, n):

@@ -8,13 +8,13 @@ Personnages (bonhommes en bâtons depuis le 6 novembre 2026 ; poses et visages a
 
 Style « scène » (repris le 1er novembre 2026) : le cas se joue devant le magasin (décor rue, enseigne « Électronique ») ; les auteurs se tiennent devant la vitrine, les participants restent à l'écart ; un pense-bête « Coauteur / Instigateur / Complice » en haut à droite s'allume sur le rôle dont on parle ; les arrêts du Tribunal fédéral s'affichent à côté de l'article.
 
-Objets dessinés (6 novembre 2026) : l'ordinateur, le sac de Noé (il passe de Noé à Max, l'ordinateur y entre), le CD-ROM, la caisse à outils de Paul. Écarts assumés avec la colonne « À l'écran » : pas de tableau ni de flèche entre silhouettes : les peines sont posées en étiquettes sous les silhouettes (ligne 30), l'accessoriété par une étiquette (ligne 32) ; les trois rôles de la question finale s'allument dans le pense-bête au lieu de trois cases.
+Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de Noé (il passe de Noé à Max, l'ordinateur y entre), le CD-ROM, la caisse à outils de Paul. Écarts assumés avec la colonne « À l'écran » : pas de tableau ni de flèche entre silhouettes : les peines sont posées en étiquettes sous les silhouettes (ligne 30), l'accessoriété par une étiquette (ligne 32) ; les trois rôles de la question finale s'allument dans le pense-bête au lieu de trois cases.
 
 | Moment | Actions |
 | --- | --- |
 | 1.1 | decor rue Électronique ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
-| 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 ; picto ordinateur 0.5 -1.5 |
-| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -2 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1 ; picto sac -2.4 -1.3 ; tenir noe sac aussitot |
+| 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 ; picto ordinateur 1.5 -1.5 |
+| 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -2 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1.7 ; picto sac -2.4 -1.3 ; tenir noe sac aussitot |
 | 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 ; rejoindre max lina |
 | 2.2 | etiquette-retirer idee ; parler lina max ; parole lina "Je te le rachète" |
 | 2.2+1.8 | picto pieces -6.4 1.3 |
