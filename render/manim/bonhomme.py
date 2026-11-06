@@ -20,6 +20,12 @@ POSES = {
     "pointe":   dict(tronc=0,  bras_g=-20, av_g=-12,   bras_d=95,  av_d=90,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
     "bras_ciel": dict(tronc=-4, bras_g=145, av_g=165, bras_d=-145, av_d=-165, cuisse_g=10, jambe_g=0, cuisse_d=-10, jambe_d=0),
     "assis":    dict(tronc=-6, bras_g=20,  av_g=70,  bras_d=10,  av_d=65,  cuisse_g=90,  jambe_g=0,   cuisse_d=85,  jambe_d=-5),
+    # Actions : tendre un objet, se pencher pour prendre, porter à bout de bras, gestes de la parole.
+    "donne":    dict(tronc=6,  bras_g=15,  av_g=10,  bras_d=70,  av_d=78,  cuisse_g=12,  jambe_g=0,   cuisse_d=-8,  jambe_d=0),
+    "prend":    dict(tronc=34, bras_g=40,  av_g=30,  bras_d=55,  av_d=25,  cuisse_g=20,  jambe_g=-25, cuisse_d=-10, jambe_d=-5),
+    "porte":    dict(tronc=0,  bras_g=20,  av_g=12,  bras_d=14,  av_d=40,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
+    "parle_a":  dict(tronc=2,  bras_g=20,  av_g=12,  bras_d=40,  av_d=120, cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
+    "parle_b":  dict(tronc=0,  bras_g=35,  av_g=95,  bras_d=25,  av_d=70,  cuisse_g=6,   jambe_g=0,   cuisse_d=-6,  jambe_d=0),
     "recule":   dict(tronc=-14, bras_g=60, av_g=120, bras_d=45,  av_d=110, cuisse_g=-25, jambe_g=-30, cuisse_d=20,  jambe_d=5),
 }
 
@@ -84,11 +90,13 @@ class Bonhomme(VGroup):
         cou = epaule + direction(a["tronc"] + 180, s) * 0.12 * k
         tete_c = cou + direction(a["tronc"] + 180, s) * t["tete"] * k
         membres = []
+        self.mains = {}
         for cote in ("g", "d"):
             coude = epaule + direction(a[f"bras_{cote}"], s) * t["bras"] * k
             main = coude + direction(a[f"av_{cote}"], s) * t["av"] * k
             genou = h + direction(a[f"cuisse_{cote}"], s) * t["cuisse"] * k
             pied = genou + direction(a[f"jambe_{cote}"], s) * t["jambe"] * k
+            self.mains[cote] = main + direction(a[f"av_{cote}"], s) * 0.06 * k
             membres += [Line(epaule, coude, **trait), Line(coude, main, **trait),
                         Line(h, genou, **trait), Line(genou, pied, **trait)]
             # main et pied : petites ellipses, comme un trait de feutre
@@ -107,6 +115,16 @@ class Bonhomme(VGroup):
                 ancien.become(neuf)
         else:
             self.submobjects = neufs
+
+    def main(self, cote="d"):
+        """Position de la main, calculée sur le dessin tel qu'il est (même après un shift ou un scale extérieur)."""
+        tronc = self.submobjects[0]
+        h = np.array(tronc.get_start())
+        k = np.linalg.norm(tronc.get_end() - tronc.get_start()) / (self.TAILLE["tronc"] + 0.12)
+        t, s, a = self.TAILLE, self.sens, self.angles
+        epaule = h + direction(a["tronc"] + 180, s) * t["tronc"] * k
+        coude = epaule + direction(a[f"bras_{cote}"], s) * t["bras"] * k
+        return coude + direction(a[f"av_{cote}"], s) * (t["av"] + 0.06) * k
 
     def synchroniser(self):
         """Relit la hanche et l'échelle sur le dessin : un déplacement ou une mise à l'échelle faits de l'extérieur

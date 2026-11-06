@@ -57,7 +57,12 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `neige` | Flocons qui tombent derrière la fenêtre du décor |
 | `placer ID N` | Pose un personnage sur la marche N du décor (0 : pied de l'escalier ; -1 à -3 : dans le hall, -3 devant la porte), sans animation ; à jouer avec son apparition |
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
-| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée), `velo`, `portefeuille` ; `NOM:2` pour un deuxième pictogramme du même type |
+| `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée), `velo`, `portefeuille`, `ordinateur`, `sac`, `cd`, `outils` ; `NOM:2` pour un deuxième pictogramme du même type |
+| `pose ID POSE [EXPRESSION]` / `visage ID EXPRESSION` | Bonhomme : poses `debout`, `tend`, `pointe`, `bras-ciel`, `assis`, `recule`, `donne`, `prend`, `porte` ; expressions `neutre`, `content`, `triste`, `inquiet`, `surpris`, `fache` |
+| `tenir ID OBJET` / `prendre ID OBJET` | Le bonhomme prend l'objet (pictogramme) en main ; `prendre` : il marche jusqu'à l'objet s'il est loin et se penche. Ensuite l'objet le suit (marche, poses) |
+| `donner DE VERS OBJET` | De tend l'objet, l'autre tend la main, l'objet passe de l'un à l'autre (ils se tournent l'un vers l'autre) |
+| `poser ID OBJET X Y` / `ranger OBJET CONTENANT` | Il pose l'objet et le lâche ; un objet entre dans un autre et disparaît (l'ordinateur dans le sac) |
+| `parler ID [VERS]` | Gestes de la parole (deux mouvements de la main), tourné vers l'autre |
 | `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |

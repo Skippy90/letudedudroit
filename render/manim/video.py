@@ -82,6 +82,7 @@ class Schemas(Scene):
         self.questions_etages, self.bouclier = {}, None
         self.decor = self.neige = None
         self.pictos, self.etiquettes = {}, {}
+        self.tenus = {}  # objet porté → qui le porte
         self.focus = None
 
     # ----- temps -----
@@ -110,6 +111,8 @@ class Schemas(Scene):
     def jouer(self, *animations, duree=DUREE_ANIM):
         animations = [a for a in animations if a is not None]
         if animations:
+            # Une marche dure le temps de ses pas, pas les 0,7 s d'une apparition.
+            duree = max([duree] + [getattr(a, "duree_propre", 0) for a in animations])
             self.play(*animations, run_time=duree)
 
     def attendre_jusqua(self, instant):
@@ -202,6 +205,10 @@ class Schemas(Scene):
         # Un objet qu'on range dans le sac le touche.
         if {na, nb} == {"picto ordinateur", "picto sac"}:
             return True
+        # Un objet porté touche celui qui le porte.
+        for nom, qui in getattr(self, "tenus", {}).items():
+            if {na, nb} == {f"picto {nom}", qui}:
+                return True
         objet = next((n for n in ("picto ballon", "picto bouteille", "picto ordinateur", "picto sac") if n in (na, nb)), None)
         if objet and ({na, nb} - {objet}) & set(self.personnages):
             return True
@@ -626,6 +633,7 @@ class Schemas(Scene):
         return [p.animate(path_arc=-float(arc)).move_to([float(x), float(y), 0])]
 
     def a_picto_retirer(self, nom):
+        self._decrocher(nom)
         return [FadeOut(self.pictos.pop(nom))]
 
     def a_etiquette(self, ident, contenu, x, y):
@@ -685,7 +693,9 @@ class Schemas(Scene):
         """Un bonhomme marche (jambes et bras alternent) ; une silhouette glisse."""
         if hasattr(p.silhouette, "angles"):
             from bonhomme import Marche
-            return Marche(p.silhouette, decalage, run_time=duree)
+            m = Marche(p.silhouette, decalage, run_time=duree)
+            m.duree_propre = max(1.2, abs(decalage[0]) * 0.45)
+            return m
         return p.silhouette.animate(run_time=duree).shift(decalage)
 
     def a_pose(self, ident, pose, expression=None):
@@ -699,6 +709,102 @@ class Schemas(Scene):
         if not hasattr(p.silhouette, "angles"):
             return []
         return [p.silhouette.vers(cle, expression, run_time=0.6)]
+
+    # ----- actions avec des objets : les bonhommes tiennent, donnent, prennent, posent ; ils parlent -----
+    def _bonhomme(self, ident):
+        b = self.personnages[ident].silhouette
+        if not hasattr(b, "angles"):
+            raise ValueError(f"« {ident} » n'est pas un bonhomme (style silhouettes) : actions d'objets impossibles")
+        return b
+
+    def _main(self, b, picto):
+        """Où se tient un objet porté : sous la main avant, le haut de l'objet dans la main."""
+        return b.main("d") + DOWN * (picto.height / 2 - 0.05)
+
+    def _accrocher(self, ident, nom):
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._decrocher(nom)
+        # Porté, l'objet est un peu plus petit : un sac à la main ne descend pas plus bas que le genou.
+        if not getattr(picto, "porte_reduit", False):
+            picto.scale(0.75)
+            picto.porte_reduit = True
+        picto.add_updater(lambda m: m.move_to(self._main(b, m)))
+        self.tenus[nom] = ident
+
+    def _decrocher(self, nom):
+        if nom in self.pictos:
+            self.pictos[nom].clear_updaters()
+        self.tenus.pop(nom, None)
+
+    def _tourner_vers(self, b, x):
+        b.sens = 1 if x > b.hanche[0] else -1
+
+    def a_tenir(self, ident, nom):
+        """Le bonhomme prend l'objet en main et le garde : il le suit quand il marche ou bouge."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self.jouer(b.vers("porte", run_time=0.4), duree=0.4)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.5)
+        self._accrocher(ident, nom)
+        return []
+
+    def a_prendre(self, ident, nom):
+        """Il se penche vers l'objet, le saisit, se redresse en le portant."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._tourner_vers(b, picto.get_x())
+        self.focus = self.personnages[ident]
+        # Trop loin pour l'attraper : il marche d'abord jusqu'à l'objet (ce qu'il porte déjà le suit).
+        ecart = picto.get_x() - b.hanche[0]
+        if abs(ecart) > 0.9:
+            p = self.personnages[ident]
+            decalage = np.array([ecart - 0.7 * np.sign(ecart), 0, 0])
+            self.jouer(self.deplacer(p, decalage), p.etiquette.animate.shift(decalage))
+        self.jouer(b.vers("prend", run_time=0.5), duree=0.5)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.4)
+        self._accrocher(ident, nom)
+        self.jouer(b.vers("porte", run_time=0.5), duree=0.5)
+        return []
+
+    def a_donner(self, de, vers, nom):
+        """De tend l'objet, vers tend la main, l'objet passe de l'un à l'autre."""
+        a, b, picto = self._bonhomme(de), self._bonhomme(vers), self.pictos[nom]
+        self._tourner_vers(a, b.hanche[0])
+        self._tourner_vers(b, a.hanche[0])
+        self.focus = self.personnages[vers]
+        if self.tenus.get(nom) != de:
+            self._accrocher(de, nom)
+        self.jouer(a.vers("donne", run_time=0.6), b.vers("donne", run_time=0.6), duree=0.6)
+        self._decrocher(nom)
+        self.jouer(picto.animate(path_arc=-0.6).move_to(self._main(b, picto)), duree=0.6)
+        self._accrocher(vers, nom)
+        self.jouer(a.vers("debout", run_time=0.5), b.vers("porte", run_time=0.5), duree=0.5)
+        return []
+
+    def a_poser(self, ident, nom, x, y):
+        """Il pose l'objet à l'endroit donné et le lâche."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._tourner_vers(b, float(x))
+        self._decrocher(nom)
+        self.jouer(b.vers("prend", run_time=0.5), picto.animate.move_to([float(x), float(y), 0]), duree=0.5)
+        self.jouer(b.vers("debout", run_time=0.4), duree=0.4)
+        return []
+
+    def a_ranger(self, nom, contenant):
+        """Un objet entre dans un autre (l'ordinateur dans le sac) et disparaît dedans."""
+        picto, cible = self.pictos[nom], self.pictos[contenant]
+        self._decrocher(nom)
+        self.jouer(picto.animate.move_to(cible.get_center()).scale(0.3).set_opacity(0), duree=0.6)
+        self.remove(self.pictos.pop(nom))
+        return []
+
+    def a_parler(self, ident, vers=None):
+        """Gestes de la parole : la main avant monte et descend, deux fois ; il se tourne vers l'autre."""
+        b = self._bonhomme(ident)
+        if vers:
+            self._tourner_vers(b, self._bonhomme(vers).hanche[0])
+        self.focus = self.personnages[ident]
+        for pose in ("parle_a", "parle_b", "parle_a", "debout"):
+            self.jouer(b.vers(pose, run_time=0.4), duree=0.4)
+        return []
 
     def a_visage(self, ident, expression):
         """Change l'expression d'un bonhomme : neutre, content, triste, inquiet, surpris, fache."""
