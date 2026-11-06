@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ATF 130 IV 58 — Une course de voitures, deux morts : meurtre ? | Droit pénal suisse
 
-## Description (2078 caractères sur 5 000)
+## Description (2193 caractères sur 5 000)
 
 ```text
 ATF 130 IV 58 : une course de voitures, deux morts : meurtre ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
@@ -32,7 +32,10 @@ Chapitres :
 4:39 Le piège classique
 4:52 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/arrets/01-atf-130-iv-58
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
+
+Aussi cité : BGE 130 IV 58 · 130 IV 58
 ```

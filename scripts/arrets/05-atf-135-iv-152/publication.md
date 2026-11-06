@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ATF 135 IV 152 — Deux contre un : faut-il savoir qui a frappé ? | Droit pénal suisse
 
-## Description (2973 caractères sur 5 000)
+## Description (3090 caractères sur 5 000)
 
 ```text
 ATF 135 IV 152 : deux contre un : faut-il savoir qui a frappé ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
@@ -34,7 +34,10 @@ Chapitres :
 5:17 Le piège classique
 5:34 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/arrets/05-atf-135-iv-152
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
+
+Aussi cité : BGE 135 IV 152 · 135 IV 152
 ```

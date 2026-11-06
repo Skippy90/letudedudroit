@@ -118,6 +118,8 @@ def main(slug: str) -> None:
     if timings.get("source", config_voix["source"]) == "synthese":
         lignes.append("Narration synthétique (voix générée par ElevenLabs).")
     lignes.append("Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.")
+    if atf:  # autres façons de chercher l'arrêt : forme allemande et numéro seul
+        lignes += ["", f"Aussi cité : BGE {atf[4:]} · {atf[4:]}"]
     description = "\n".join(lignes)
 
     sortie = dossier / "publication.md"

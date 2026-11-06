@@ -22,7 +22,14 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "tools"))
-MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale"}
+MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale",
+            "arrets": "Les arrêts du Tribunal fédéral", "loi-decortiquee": "La loi décortiquée"}
+
+
+def numero_atf(slug: str) -> str:
+    """« arrets/01-atf-130-iv-58 » → « ATF 130 IV 58 » ; chaîne vide hors de la série des arrêts."""
+    m = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])
+    return f"ATF {m[1]} {m[2].upper()} {m[3]}" if m else ""
 e = html.escape
 
 
@@ -77,7 +84,7 @@ def lire_curriculum() -> list[dict]:
 SYMBOLE = (RACINE / "docs/marque/symbole.svg").read_text(encoding="utf-8")
 
 
-def page(titre: str, corps: str, prof: int, description: str, apercu: bool = False) -> str:
+def page(titre: str, corps: str, prof: int, description: str, apercu: bool = False, donnees: str = "") -> str:
     """Une page du site ; « prof » : profondeur du dossier, pour les liens relatifs."""
     r = "../" * prof
     tete = f"""<title>{e(titre)}</title>
@@ -88,6 +95,8 @@ def page(titre: str, corps: str, prof: int, description: str, apercu: bool = Fal
 <link rel="stylesheet" href="{r}assets/style.css">
 <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png">"""
+    if donnees:
+        tete += "\n" + donnees
     if prof == 0:  # accueil : nom du site et logo pour les résultats Google
         domaine = json.loads((RACINE / "site/site.json").read_text(encoding="utf-8")).get("domaine", "letudedudroit.ch")
         tete += f"""
@@ -163,13 +172,16 @@ def carte(slug: str, info: dict, prof: int, numero: str) -> str:
     etat = "" if info.get("en_ligne") else '<span class="etat">Bientôt</span>'
     lien = f'{r}{slug}/index.html' if info.get("en_ligne") else None
     image = f'<img src="{r}{slug}/miniature.png" alt="" width="1280" height="720" loading="lazy">'
-    corps = f'{image}<span class="num">Vidéo {numero}</span><h3>{e(s["titre"])}</h3>{etat}'
+    corps = f'{image}<span class="num">{e(numero_atf(slug) or "Vidéo " + numero)}</span><h3>{e(s["titre"])}</h3>{etat}'
     return f'<a class="carte" href="{lien}">{corps}</a>' if lien else f'<div class="carte inactive">{corps}</div>'
 
 
 def accueil(reglages: dict, apercu: bool) -> str:
-    cartes = "".join(carte(slug, info, 0, slug.split("/")[1][:2].lstrip("0"))
-                     for slug, info in reglages["videos"].items())
+    series = {}
+    for slug, info in reglages["videos"].items():
+        series.setdefault(slug.split("/")[0], []).append(carte(slug, info, 0, slug.split("/")[1][:2].lstrip("0")))
+    grilles = "".join(f'<p class="sur"{"" if i == 0 else " style=\"margin-top:56px\""}>{e(MATIERES.get(m, m))}</p><h2>{"Les vidéos" if i == 0 else "Les arrêts expliqués"}</h2>'
+                      f'<div class="grille">{"".join(c)}</div>' for i, (m, c) in enumerate(series.items()))
     corps = f"""<section class="une"><div class="cadre">
 <p class="nom"><span>L’étude du droit</span></p>
 <h1>Le droit suisse, <em>une notion à la fois.</em></h1>
@@ -177,8 +189,7 @@ def accueil(reglages: dict, apercu: bool) -> str:
 <p class="liens"><a class="bouton" href="#videos">Voir les vidéos</a><a class="bouton second" href="#fiches">Recevoir les fiches</a></p>
 </div></section>
 <section class="videos" id="videos"><div class="cadre">
-<p class="sur">Droit pénal général</p><h2>Les vidéos</h2>
-<div class="grille">{cartes}</div></div></section>
+{grilles}</div></section>
 <section class="methode"><div class="cadre">
 <p class="sur">La méthode</p><h2>Comment une vidéo est construite</h2>
 <ol class="etapes">
@@ -196,6 +207,8 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
     sources = lire_sources(slug)
     matiere = MATIERES.get(slug.split("/")[0], "Droit suisse")
     numero = slug.split("/")[1][:2].lstrip("0")
+    atf = numero_atf(slug)
+    titre_page = f"{atf} — {s['titre']}" if atf else s["titre"]
     cas = s["sections"][0] if s["sections"] else ("", [])
     script = "".join(f'<h3>{e(nom)}</h3>' + "".join(f'<p><span class="n">{n}</span>{e(t)}</p>' for n, t in lignes)
                      for nom, lignes in s["sections"])
@@ -203,7 +216,7 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
                     f'{" : " + e(t.split(" : ", 1)[1]) if " : " in t else ""}</li>' for t, u in sources)
     depot = f'{reglages["github"]}/tree/main/scripts/{slug}'
     corps = f"""<section class="video"><div class="cadre">
-<p class="sur">{e(matiere)} · Vidéo {numero}</p><h1>{e(s["titre"])}</h1>
+<p class="sur">{e(matiere)} · {e(atf or "Vidéo " + numero)}</p><h1>{e(titre_page)}</h1>
 {lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"], reglages.get("youtube", ""))}
 </div></section>
 <section class="contenu"><div class="cadre colonnes">
@@ -219,7 +232,30 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
 <p class="petit">Lois vérifiées sur Fedlex, arrêts sur le site du Tribunal fédéral. <a href="{e(depot)}" rel="noopener">Script, audit des sources et code</a>.</p>
 </aside></div></section>
 {inscription(reglages, 2)}"""
-    return page(f"{s['titre']} · L’étude du droit", corps, 2, f"{s['titre']} : le cas, la règle, le piège, les articles cités.")
+    if atf:
+        description = (f"{atf} (BGE {atf[4:]}) expliqué simplement : {s['titre'][:1].lower() + s['titre'][1:]} "
+                       "Les faits, la solution du Tribunal fédéral, le piège classique et les articles cités.")
+    else:
+        description = f"{s['titre']} : le cas, la règle, le piège, les articles cités."
+    return page(f"{titre_page} · L’étude du droit", corps, 2, description, donnees=donnees_video(slug, info, reglages, titre_page, description))
+
+
+def donnees_video(slug: str, info: dict, reglages: dict, titre: str, description: str) -> str:
+    """Données structurées schema.org VideoObject : Google les lit pour afficher la vidéo dans ses résultats.
+    Seulement quand la vidéo est sur YouTube (identifiant connu) : sans lien vers la vidéo, Google les ignore."""
+    if not info.get("youtube"):
+        return ""
+    prog_f = RACINE / "docs/strategie/programmation.json"
+    prog = json.loads(prog_f.read_text(encoding="utf-8")) if prog_f.exists() else {}
+    date = prog.get("videos", {}).get(slug) or prog.get("publiees", {}).get(slug, "")
+    domaine = reglages.get("domaine", "letudedudroit.ch")
+    objet = {"@context": "https://schema.org", "@type": "VideoObject", "name": titre, "description": description,
+             "thumbnailUrl": f"https://{domaine}/{slug}/miniature.png", "inLanguage": "fr-CH",
+             "embedUrl": f"https://www.youtube.com/embed/{info['youtube']}",
+             "url": f"https://www.youtube.com/watch?v={info['youtube']}"}
+    if date:
+        objet["uploadDate"] = date if "T" not in date else date + ":00+01:00"
+    return f'<script type="application/ld+json">{json.dumps(objet, ensure_ascii=False)}</script>'
 
 
 def page_parcours(reglages: dict) -> str:

@@ -79,12 +79,15 @@ def main(slug: str, tags_video: list[str]) -> None:
     shutil.copy(video, sortie / "video.mp4")
     shutil.copy(dossier / "miniature.png", sortie / "miniature.png")
     (sortie / "description.txt").write_text(description + "\n", encoding="utf-8")
+    from sous_titres_srt import srt
+    srt(slug, sortie / "sous-titres.fr.srt")
     commentaire = (question + " Répondez en commentaire 👇 (réponse dans la description)").strip()
     reglages = {
         "video_file": "video.mp4",
         "thumbnail_file": "miniature.png",
         "title": titre,
         "description_file": "description.txt",
+        "captions_file": "sous-titres.fr.srt (langue : français ; nom de la piste : Français)",
         "tags": tags_video + TAGS,
         "category": "Education (id 27)",
         "default_language": "fr",
@@ -110,6 +113,7 @@ Consignes pour l'agent qui publie. Tout est validé par la chaîne ; ne rien ré
 - `video.mp4` : la vidéo (1920 × 1080, {minutes}, sous-titres incrustés).
 - `miniature.png` : la miniature personnalisée.
 - `description.txt` : la description, à coller telle quelle (chapitres compris).
+- `sous-titres.fr.srt` : les sous-titres en fichier, à ajouter comme piste « Français » (Google et YouTube les lisent ; les sous-titres incrustés, non).
 - `youtube.json` : les mêmes réglages, en format machine.
 
 ## Réglages
@@ -118,6 +122,7 @@ Consignes pour l'agent qui publie. Tout est validé par la chaîne ; ne rien ré
 | Titre | {titre} |
 | Description | contenu de `description.txt`, sans modification |
 | Miniature | `miniature.png` |
+| Sous-titres | `sous-titres.fr.srt`, langue français (Sous-titres → Ajouter → Importer un fichier → « Avec minutage ») |
 | Playlist | « {playlist} » (la créer si absente ; vidéos dans l'ordre des numéros) |
 | Public cible | Non, cette vidéo n'est pas conçue pour les enfants |
 | Contenu modifié ou synthétique | Non (narration enregistrée par une personne réelle) |
