@@ -59,10 +59,10 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `marcher ID N` / `pousser ID CIBLE` / `chute ID N` | Le personnage va à la marche N ; pousse la cible ; tombe jusqu'à la marche N |
 | `picto NOM X Y` / `picto-retirer NOM` | Pictogramme : `parking`, `tension`, `lune`, `telephone`, `tag`, `vagues`, `coche` (condition remplie, vert), `ballon`, `bouteille`, `voiture`, `feu` (flamme ambre : le rouge reste réservé au dommage), `prison` (peine privative de liberté), `pieces` (argent : peine pécuniaire, amende, réparation), `document` (contrat, écrit), `danger`, `parlement` (la loi votée), `corde` (la cordée), `velo`, `portefeuille`, `ordinateur`, `sac`, `cd`, `outils` ; `NOM:2` pour un deuxième pictogramme du même type |
 | `pose ID POSE [EXPRESSION]` / `visage ID EXPRESSION` | Bonhomme : poses `debout`, `tend`, `pointe`, `bras-ciel`, `assis`, `recule`, `donne`, `prend`, `porte` ; expressions `neutre`, `content`, `triste`, `inquiet`, `surpris`, `fache` |
-| `tenir ID OBJET` / `prendre ID OBJET` | Le bonhomme prend l'objet (pictogramme) en main ; `prendre` : il marche jusqu'à l'objet s'il est loin et se penche. Ensuite l'objet le suit (marche, poses) |
+| `tenir ID OBJET [aussitot]` / `prendre ID OBJET` | Le bonhomme prend (`aussitot` : il l'a déjà en main en apparaissant) l'objet (pictogramme) en main ; `prendre` : il marche jusqu'à l'objet s'il est loin et se penche. Ensuite l'objet le suit (marche, poses) |
 | `donner DE VERS OBJET` | De tend l'objet, l'autre tend la main, l'objet passe de l'un à l'autre (ils se tournent l'un vers l'autre) |
 | `poser ID OBJET X Y` / `ranger OBJET CONTENANT` | Il pose l'objet et le lâche ; un objet entre dans un autre et disparaît (l'ordinateur dans le sac) |
-| `parler ID [VERS]` | Gestes de la parole (deux mouvements de la main) ; les deux se tournent l'un vers l'autre |
+| `parler ID [VERS]` | Gestes de la parole ; s'il est loin, il va d'abord jusqu'à l'autre ; les deux se font face |
 | `rejoindre ID CIBLE` | Il marche jusqu'à la cible et s'arrête à côté d'elle ; ils se font face |
 
 Interactions : pour `donner` et `pousser`, celui qui agit s'approche jusqu'au contact (les mains se rejoignent, ou se posent sur l'autre) ; les deux se font face ; leurs prénoms s'écartent s'ils se toucheraient. Après `marcher`, un bonhomme se tourne vers son voisin le plus proche.

@@ -765,6 +765,14 @@ class Schemas(Scene):
         a, b = p.silhouette, q.silhouette
         xa, xb = a.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
         cote = 1 if xa > xb else -1
+        # La place est prise par un troisième personnage : il va de l'autre côté, si celle-là est libre et dans l'écran.
+        autres = [r.silhouette.get_x() for k, r in self.personnages.items()
+                  if k not in (ident, cible) and self.a_l_ecran(r)]
+        def libre(c):
+            x = xb + c * ecart
+            return abs(x) < 6.2 and all(abs(x - o) > 0.9 for o in autres)
+        if not libre(cote) and libre(-cote):
+            cote = -cote
         dx = (xb + cote * ecart) - xa
         if abs(dx) > 0.15:
             decalage = np.array([dx, 0, 0])
@@ -783,9 +791,17 @@ class Schemas(Scene):
         self._approcher(ident, cible, 1.1)
         return []
 
-    def a_tenir(self, ident, nom):
-        """Le bonhomme prend l'objet en main et le garde : il le suit quand il marche ou bouge."""
+    def a_tenir(self, ident, nom, *options):
+        """Le bonhomme prend l'objet en main et le garde : il le suit quand il marche ou bouge.
+        « aussitot » : il l'a déjà en main en apparaissant (à mettre au même moment que personnage et picto)."""
         b, picto = self._bonhomme(ident), self.pictos[nom]
+        if "aussitot" in options:
+            b.synchroniser()  # la position réelle (après placer), pas celle de la création
+            b.angles = dict(__import__("bonhomme").POSES["porte"])
+            b.dessiner()
+            self._accrocher(ident, nom)
+            picto.move_to(self._main(b, picto))
+            return []
         self.jouer(b.vers("porte", run_time=0.4), duree=0.4)
         self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.5)
         self._accrocher(ident, nom)
@@ -848,8 +864,10 @@ class Schemas(Scene):
     def a_parler(self, ident, vers=None):
         """Gestes de la parole : la main avant monte et descend, deux fois ; il se tourne vers l'autre."""
         b = self._bonhomme(ident)
-        if vers:  # ils se font face
+        if vers:  # il va jusqu'à l'autre s'il est loin, puis ils se font face
             autre = self._bonhomme(vers)
+            if abs(autre.submobjects[0].get_start()[0] - b.submobjects[0].get_start()[0]) > 2.0:
+                self._approcher(ident, vers, 1.3)
             xb, xa = autre.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
             b.sens, autre.sens = (1, -1) if xb > xa else (-1, 1)
             self.jouer(b.vers(None, run_time=0.2), autre.vers(None, run_time=0.2), duree=0.2)
