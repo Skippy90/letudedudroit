@@ -29,7 +29,7 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 
 | Élément | Représentation à l'écran |
 | --- | --- |
-| Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, appartement, rue, parc, piscine, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
+| Le lieu du cas | Décor au trait fin, blanc cassé très atténué, habillé de détails encore plus pâles (fenêtres, mobilier, trottoir, ciel du soir) depuis le 6 novembre 2026. Les vidéos déjà rendues gardent leurs décors et silhouettes d'origine : on ne les refait pas, l'évolution de la chaîne reste visible. (cage d'escalier, appartement, rue, parc, piscine, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
 | Ce qui se passe | Les bonhommes bougent dans le décor : ils marchent (jambes et bras alternent), poussent, tombent, et changent de pose (`pose <id> tend|pointe|bras-ciel|assis|recule|debout [expression]`) ou de visage (`visage <id> <expression>`) au moment où la voix le dit. Sur un sujet grave (violence, maladie, décès), le visage reste neutre ou triste, jamais content |
 | Un mot-clé | Étiquette courte en blanc sur pastille rouge, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
 | Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée rouge de la tension entre deux personnes) |
