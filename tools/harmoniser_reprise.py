@@ -38,6 +38,15 @@ def mesure(x: np.ndarray):
     return bandes, db[voix].mean()
 
 
+def lufs(fichier, debut=None, duree=None) -> float:
+    """Sonie intégrée (EBU R128, en LUFS) : ce que l'oreille perçoit, pauses comprises comme dans la norme."""
+    cmd = ["ffmpeg", "-nostdin"] + (["-ss", str(debut), "-t", str(duree)] if debut is not None else [])
+    cmd += ["-i", str(fichier), "-af", "ebur128", "-f", "null", "-"]
+    sortie = subprocess.run(cmd, capture_output=True, text=True).stderr
+    import re
+    return float(re.findall(r"I:\s+(-?[\d.]+) LUFS", sortie)[-1])
+
+
 def main(reprise, principal, debut, duree, sortie, passes=3):
     """Plusieurs passes : chaque passe corrige ce que la précédente a laissé (l'égaliseur n'est pas exact)."""
     ref_b, ref_v = mesure(lire(principal, float(debut), float(duree)))
@@ -46,9 +55,16 @@ def main(reprise, principal, debut, duree, sortie, passes=3):
     for k in range(passes):
         passe(source, ref_b, ref_v, sortie)
         source = sortie
-    b3, v3 = mesure(sf.read(sortie)[0].astype(np.float32))
+    # Le niveau se règle à la fin sur la sonie perçue (LUFS) de la même phrase dans l'enregistrement principal.
+    cible, avant, obtenu = lufs(principal, float(debut), float(duree)), lufs(reprise), lufs(sortie)
+    y, _ = sf.read(sortie)
+    y = y * 10 ** ((cible - obtenu) / 20)
+    if np.abs(y).max() > 0.98:
+        y *= 0.98 / np.abs(y).max()
+    sf.write(sortie, y, SR)
+    b3, _ = mesure(sf.read(sortie)[0].astype(np.float32))
     reste = (ref_b - ref_b.mean()) - (b3 - b3.mean())
-    print(f"Niveau de voix : principal {ref_v:.1f} dB, reprise {v_avant:.1f} → {v3:.1f} dB")
+    print(f"Sonie (LUFS) : phrase de référence {cible:.1f}, reprise {avant:.1f} → {lufs(sortie):.1f}")
     print("Écart de timbre restant par bande (dB) :")
     for c, z in zip(CENTRES[::3], reste[::3]):
         print(f"  {c:6.0f} Hz : {z:+5.1f}")
