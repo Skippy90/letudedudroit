@@ -36,12 +36,12 @@ Paul est, selon toute vraisemblance, complice. Sa voiture a transporté les outi
 
 Chapitres :
 0:00 Le cas de départ
-0:52 La carte : auteurs et participants
-1:20 Les coauteurs : Max et Jade
-2:17 L'instigatrice : Lina
-3:53 Le complice : Noé
-5:00 Le piège classique
-5:56 Conclusion et question
+0:51 La carte : auteurs et participants
+1:19 Les coauteurs : Max et Jade
+2:16 L'instigatrice : Lina
+3:51 Le complice : Noé
+4:58 Le piège classique
+5:55 Conclusion et question
 
 La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/10-participation
