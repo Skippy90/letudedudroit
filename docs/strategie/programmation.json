@@ -1,10 +1,7 @@
 {
   "note": "Heure suisse (Europe/Zurich). Rythme : une vidéo longue par jour à 18 h ; chaque arrêt du TF sort juste après la vidéo de droit pénal général qu'il prolonge. Shorts : à recaler sur ce rythme. Shorts : un par jour à 12 h, d'abord le premier short de la vidéo de la veille, puis les autres pour combler.",
   "fuseau": "Europe/Zurich",
-  "en_attente": {
-    "arrets/04-atf-128-iv-11": "le lendemain de la vidéo 10 (instigation)",
-    "arrets/05-atf-135-iv-152": "le lendemain de l'ATF 128 IV 11"
-  },
+  "en_attente": {},
   "videos": {
     "droit-penal-general/05-commission-par-omission": "2026-11-04T18:00",
     "droit-penal-general/06-faits-justificatifs": "2026-11-05T18:00",
@@ -12,7 +9,10 @@
     "droit-penal-general/07-erreur": "2026-11-07T18:00",
     "arrets/03-atf-141-iv-336": "2026-11-08T18:00",
     "droit-penal-general/08-responsabilite": "2026-11-09T18:00",
-    "droit-penal-general/09-tentative": "2026-11-10T18:00"
+    "droit-penal-general/09-tentative": "2026-11-10T18:00",
+    "droit-penal-general/10-participation": "2026-11-11T18:00",
+    "arrets/04-atf-128-iv-11": "2026-11-12T18:00",
+    "arrets/05-atf-135-iv-152": "2026-11-13T18:00"
   },
   "shorts": {
     "arrets/01-atf-130-iv-58--course": "2026-11-04T12:00",
@@ -30,7 +30,9 @@
     "arrets/01-atf-130-iv-58--piege": "2026-11-16T12:00",
     "droit-penal-general/08-responsabilite--trop-bu": "2026-11-17T12:00",
     "droit-penal-general/09-tentative--kiosque": "2026-11-18T12:00",
-    "droit-penal-general/09-tentative--piege": "2026-11-19T12:00"
+    "droit-penal-general/09-tentative--piege": "2026-11-19T12:00",
+    "droit-penal-general/10-participation--quatre": "2026-11-20T12:00",
+    "droit-penal-general/10-participation--piege": "2026-11-21T12:00"
   },
   "publiees": {
     "arrets/01-atf-130-iv-58": "2026-11-03"

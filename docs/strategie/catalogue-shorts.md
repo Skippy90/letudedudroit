@@ -2,7 +2,7 @@
 
 Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque vidéo. Un short reprend tel quel un extrait audité de la vidéo ; seule l'accroche lui est propre (à valider par la relectrice). Les textes par plateforme sont dans `out/shorts/catalogue.csv` et dans le paquet `out/upload/shorts-catalogue.zip`.
 
-**35 shorts : 30 prêts, 5 à produire après l'enregistrement.**
+**35 shorts : 32 prêts, 3 à produire après l'enregistrement.**
 
 ## Réglages communs
 
@@ -46,8 +46,8 @@ Généré par `tools/catalogue_shorts.py` à partir des `shorts.json` de chaque 
 | Droit pénal général | 8 — Était-il responsable ? | `trop-bu` | « J'avais trop bu » : une excuse ? | 24–26 | 35 s | prêt | 2026-11-17 12:00 |
 | Droit pénal général | 9 — Il a essayé, mais… | `kiosque` | Il n'a rien volé : peut-il être puni ? | 1–4 | 33 s | prêt | 2026-11-18 12:00 |
 | Droit pénal général | 9 — Il a essayé, mais… | `piege` | Rien pris, donc pas d'infraction ? | 29–31 | 27 s | prêt | 2026-11-19 12:00 |
-| Droit pénal général | 10 — Ils étaient plusieurs | `quatre` | Quatre amis, un vol : qui est coupable ? | 1–5 | ≈ 46 s | après enregistrement | à fixer |
-| Droit pénal général | 10 — Ils étaient plusieurs | `piege` | Seul celui qui vole est coupable ? | 29–31 | ≈ 34 s | après enregistrement | à fixer |
+| Droit pénal général | 10 — Ils étaient plusieurs | `quatre` | Quatre amis, un vol : qui est coupable ? | 1–5 | 48 s | prêt | 2026-11-20 12:00 |
+| Droit pénal général | 10 — Ils étaient plusieurs | `piege` | Seul celui qui vole est coupable ? | 29–31 | 34 s | prêt | 2026-11-21 12:00 |
 | Droit pénal général | 11 — Quelle peine ? | `quelle-peine` | Premier vol à vingt ans : quelle peine ? | 1–3 | ≈ 29 s | après enregistrement | à fixer |
 | Droit pénal général | 11 — Quelle peine ? | `sursis` | « Il a eu du sursis, il n'a pas été puni » ? | 30–32 | ≈ 31 s | après enregistrement | à fixer |
 | Droit pénal général | 12 — Quand la justice ne poursuit plus | `prescrit` | « C'est prescrit, donc il est innocent » ? | 30–32 | ≈ 31 s | après enregistrement | à fixer |
@@ -1102,4 +1102,74 @@ Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-
 
 ```text
 Rien pris, donc pas d'infraction ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 10 — Quatre amis, un vol : qui est coupable ?
+
+Fichier : `out/shorts/droit-penal-general--10-participation--quatre.mp4` · publication : 2026-11-20 12:00
+
+**YouTube** — titre : Quatre amis, un vol : qui est coupable ? #Shorts
+
+```text
+Quatre amis, un vol : qui est coupable ?
+
+Extrait de la vidéo « Ils étaient plusieurs » (Droit pénal général, vidéo 10). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+Quatre amis, un vol : qui est coupable ?
+
+Extrait de la vidéo « Ils étaient plusieurs » (Droit pénal général, vidéo 10). Vidéo complète et fiche gratuite : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+Quatre amis, un vol : qui est coupable ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
+```
+
+### Droit pénal général, vidéo 10 — Seul celui qui vole est coupable ?
+
+Fichier : `out/shorts/droit-penal-general--10-participation--piege.mp4` · publication : 2026-11-21 12:00
+
+**YouTube** — titre : Seul celui qui vole est coupable ? #Shorts
+
+```text
+Seul celui qui vole est coupable ?
+
+Extrait de la vidéo « Ils étaient plusieurs » (Droit pénal général, vidéo 10). La vidéo complète, avec les articles et les liens Fedlex, est sur la chaîne.
+La fiche du cours, gratuite : https://letudedudroit.ch/#fiches
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+#Shorts #droitsuisse #droitpénal
+```
+
+**Instagram**
+
+```text
+Seul celui qui vole est coupable ?
+
+Extrait de la vidéo « Ils étaient plusieurs » (Droit pénal général, vidéo 10). Vidéo complète et fiche gratuite : lien en bio.
+Et vous, qu'auriez-vous répondu ? Dites-le en commentaire.
+
+Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0.
+
+#droitsuisse #droitpénal #étudiantendroit #suisseromande #apprendreledroit
+```
+
+**TikTok**
+
+```text
+Seul celui qui vole est coupable ? Vidéo complète sur YouTube et fiche gratuite : lien en bio. Introduction pédagogique, pas un conseil juridique. Contenu sous licence CC BY-SA 4.0. #droitsuisse #droit #étudiantendroit #suisseromande #apprendresurtiktok
 ```
