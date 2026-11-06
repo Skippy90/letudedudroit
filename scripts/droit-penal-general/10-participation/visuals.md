@@ -12,7 +12,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de N
 
 | Moment | Actions |
 | --- | --- |
-| 1.1 | decor rue Électronique ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
+| 1.1 | decor rue Électronique jour ; etiquette lieu "Martigny, samedi" -3.6 1.7 |
 | 1.2 | etiquette ordi "L'ordinateur" 0.6 1.7 ; picto ordinateur 1.5 -1.5 |
 | 1.3 | etiquette-retirer lieu ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage noe "Noé" bleu_clair gauche ; placer noe -2 ; personnage max "Max" turquoise centre-gauche ; placer max -1 ; personnage jade "Jade" rose droite ; placer jade 1.7 ; picto sac -2.4 -1.3 ; tenir noe sac aussitot |
 | 2.1 | accent lina ; etiquette idee "L'idée" -6.0 1.0 ; rejoindre max lina |
@@ -52,12 +52,12 @@ Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de N
 | 12.1 | cocher 1 vert ; accent max |
 | 12.2 | cocher 2 vert |
 | 12.3 | cocher 3 vert ; accent jade |
-| 13.1 | scene-vide ; article "Art. 139 CP" ; decor rue Électronique ; personnage max "Max" turquoise gauche ; placer max -3 ; personnage jade "Jade" rose droite ; placer jade 4 ; etiquette coaut "Coauteurs du vol" 0.6 1.7 ; repere-marquer 1 vert |
+| 13.1 | scene-vide ; article "Art. 139 CP" ; decor rue Électronique jour ; personnage max "Max" turquoise gauche ; placer max -3 ; personnage jade "Jade" rose droite ; placer jade 4 ; etiquette coaut "Coauteurs du vol" 0.6 1.7 ; repere-marquer 1 vert |
 | 13.2 | etiquette main "Seul Max a pris" -4.6 1.0 |
 | 13.3 | etiquette-retirer main ; etiquette coaut "L'infraction entière" 0.6 1.7 ; accent jade ; visage jade surpris |
 | 14.1 | etiquette-retirer coaut ; bulle max "Ensemble" ; bulle jade "Ensemble" |
 | 14.2 | etiquette coaut "Par leurs actes" 0.6 1.7 |
-| 15.1 | scene-vide ; article-retirer ; arret-retirer ; repere-marquer 2 ambre ; decor rue Électronique ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage max "Max" turquoise droite ; placer max 2 |
+| 15.1 | scene-vide ; article-retirer ; arret-retirer ; repere-marquer 2 ambre ; decor rue Électronique jour ; personnage lina "Lina" violet gauche ; placer lina -4 ; personnage max "Max" turquoise droite ; placer max 2 |
 | 15.2 | etiquette pas "Pas au magasin" -5.0 1.0 |
 | 15.3 | rejoindre max lina ; parler lina max ; bulle max "Voler ?" ; visage max surpris |
 | 16.1 | article "Art. 24 CP" ; etiquette-retirer pas ; etiquette decide "Décider autrui" -2.0 1.7 |
@@ -68,7 +68,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de N
 | 18.1 | effacer-parole lina ; titre "Une occasion ne suffit pas" |
 | 18.2 | effacer-titres ; titre "Influence directe" ; accent lina |
 | 18.3 | effacer-titres ; titre "Une autre limite" |
-| 18.4 | scene-vide ; rembobiner ; decor rue Électronique ; personnage max "Max" turquoise gauche ; placer max -3 ; bulle max "Déjà décidé" ; personnage lina "Lina" violet droite ; placer lina 4 |
+| 18.4 | scene-vide ; rembobiner ; decor rue Électronique jour ; personnage max "Max" turquoise gauche ; placer max -3 ; bulle max "Déjà décidé" ; personnage lina "Lina" violet droite ; placer lina 4 |
 | 18.5 | mot-barre "Instigation" 0.6 1.9 ; visage lina surpris ; visage max content |
 | 19.1 | scene-vide ; arret-retirer ; personnage lina "Lina" violet gauche ; titre "La sanction" ; repere-marquer 2 vert |
 | 19.2 | sous-titre "La peine de l'auteur" ; picto prison 2.2 0.0 |
@@ -83,7 +83,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de N
 | 22.1+2.5 | picto telephone 3.5 0.0 |
 | 22.2 | etiquette cas "Aucun vol" -3.6 2.45 |
 | 22.3 | effacer-bulle info ; etiquette-retirer cas ; titre "Tentative d'instigation à vol" ; accent homme ; visage homme triste |
-| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 ; picto sac -3.85 -1.3 ; tenir noe sac aussitot |
+| 23.1 | scene-vide ; arret-retirer ; article-retirer ; repere-marquer 3 ambre ; decor rue Électronique jour ; personnage noe "Noé" bleu_clair gauche ; placer noe -3 ; personnage max "Max" turquoise droite ; placer max 3 ; etiquette sac "Le sac" -4.8 1.0 ; picto sac -3.85 -1.3 ; tenir noe sac aussitot |
 | 23.2 | etiquette ni "Ni l'idée, ni le plan" 0.6 1.7 |
 | 23.3 | etiquette ni "Il a aidé" 0.6 1.7 ; accent noe |
 | 24.1 | article "Art. 25 CP" ; etiquette ni "Prêter assistance" 0.6 1.7 |
@@ -128,7 +128,7 @@ Objets dessinés (6 novembre 2026) : l'ordinateur (dans la vitrine), le sac de N
 | 34.1 | retirer lina ; personnage noe "Noé" bleu_clair centre ; etiquette r "Peine atténuée" 0 -2.0 ; repere-marquer 3 vert |
 | 34.2 | etiquette-retirer r ; effacer-titres ; titre "Quel rôle, et quand ?" ; retirer noe ; personnage max "Max" turquoise gauche ; personnage jade "Jade" rose centre-gauche ; personnage lina "Lina" violet centre ; personnage noe "Noé" bleu_clair centre-droite |
 | 35.1 | scene-vide ; repere-marquer 1 neutre ; repere-marquer 2 neutre ; repere-marquer 3 neutre ; titre "Une question pour finir" |
-| 35.2 | effacer-titres ; decor rue Garage ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
+| 35.2 | effacer-titres ; decor rue Garage jour ; personnage paul "Paul" ambre_pale gauche ; placer paul -4 ; personnage ami "L'ami" rose droite ; placer ami 1 ; picto voiture 4.2 -1.5 |
 | 35.3 | parler paul ami ; bulle paul "Pour un cambriolage" |
 | 35.4 | effacer-bulle paul ; etiquette cambr "Les outils, le trajet" 0.6 1.7 ; picto outils 2.6 -1.6 ; prendre ami outils |
 | 35.4+2 | marcher ami 2 |

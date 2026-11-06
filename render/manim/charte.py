@@ -447,6 +447,24 @@ def _etoiles(points):
     return VGroup(*[Dot([x, y, 0], radius=0.035, color=TEXTE, fill_opacity=0.5) for x, y in points])
 
 
+def _soleil(x, y):
+    """Soleil au trait : un disque pâle et de courts rayons (scène de jour)."""
+    import math
+    disque = Circle(radius=0.3, color=TEXTE, stroke_width=2.5, stroke_opacity=0.35,
+                    fill_color=TEXTE, fill_opacity=0.12).move_to([x, y, 0])
+    rayons = VGroup(*[Line([x + 0.42 * math.cos(a), y + 0.42 * math.sin(a), 0],
+                           [x + 0.6 * math.cos(a), y + 0.6 * math.sin(a), 0], **DETAIL)
+                      for a in [k * math.pi / 4 for k in range(8)]])
+    return VGroup(disque, rayons)
+
+
+def _nuage(x, y, l=1.0):
+    from manim import ArcBetweenPoints
+    return VGroup(*[ArcBetweenPoints([x + a, y, 0], [x + b, y, 0], angle=-3.1416, **DETAIL)
+                    for a, b in ((-l / 2, -l / 6), (-l / 6, l / 4), (l / 4, l / 2))],
+                  Line([x - l / 2, y, 0], [x + l / 2, y, 0], **DETAIL))
+
+
 def _lune(x, y):
     from manim import Difference
     disque = Circle(radius=0.34).move_to([x, y, 0])
@@ -721,7 +739,9 @@ class Appartement(VGroup):
 class Rue(VGroup):
     """Une rue le soir : trottoir, façades, un commerce (boulangerie par défaut) et sa vitrine, un réverbère."""
 
-    def __init__(self, enseigne="Boulangerie"):
+    def __init__(self, enseigne="Boulangerie", moment="soir"):
+        """moment : « soir » (lune, étoiles, réverbère allumé) ou « jour » (soleil, nuages, réverbère éteint)."""
+        self.jour = moment == "jour"
         sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
         facades = VGroup(
             Rectangle(width=3.0, height=3.4, **DECOR).move_to([-5.4, Y_SOL + 1.7, 0]),
@@ -732,7 +752,8 @@ class Rue(VGroup):
         enseigne = texte(enseigne, T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
-                           Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=ACCENT, fill_opacity=0.6))
+                           Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=GRIS if moment == "jour" else ACCENT,
+                               fill_opacity=0.35 if moment == "jour" else 0.6))
         self.textes = [enseigne]  # contrôlé : rien ne doit le couvrir (voir Schemas.textes_sur_decor)
         super().__init__(sol, facades, self.mur, vitrine, store, enseigne, reverbere)
         if DECORS_DETAILLES:
@@ -750,10 +771,11 @@ class Rue(VGroup):
                                           **DETAIL) for k in range(5)]),
                 Line([0.8, Y_SOL + 0.45, 0], [2.2, Y_SOL + 0.45, 0], **DETAIL),
                 # trottoir : bordure, joints, marquage de la chaussée
-                # réverbère : lanterne et halo ; le ciel du soir
+                # réverbère : lanterne (et son halo le soir) ; le ciel : lune et étoiles le soir, soleil et nuages le jour
                 Polygon([6.05, Y_SOL + 3.12, 0], [6.35, Y_SOL + 3.12, 0], [6.28, Y_SOL + 2.92, 0], [6.12, Y_SOL + 2.92, 0], **DETAIL),
-                Circle(radius=0.45, stroke_width=0, fill_color=ACCENT, fill_opacity=0.08).move_to([6.2, Y_SOL + 2.95, 0]),
-                _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)]))
+                *([_soleil(-6.4, 3.2), _nuage(-5.0, 2.7, 1.1)] if self.jour else
+                  [Circle(radius=0.45, stroke_width=0, fill_color=ACCENT, fill_opacity=0.08).move_to([6.2, Y_SOL + 2.95, 0]),
+                   _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)])]))
             self.submobjects.insert(0, d)
 
     def pied(self, n):
