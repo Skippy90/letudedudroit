@@ -579,7 +579,8 @@ class Schemas(Scene):
 
     # ----- actions : personnes -----
     def a_personnage(self, ident, nom, couleur, position, *options):
-        p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position)
+        expression = next((o for o in options if o in ("content", "triste", "inquiet", "surpris", "fache")), "neutre")
+        p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position, expression)
         # « haut » : un peu plus haut, pour laisser la place à une frise en dessous.
         if "haut" in options:
             p.shift(UP * 0.45)
@@ -666,13 +667,41 @@ class Schemas(Scene):
                 # Il sort de derrière un meuble : son nom revient sous lui, au lieu de garder son décalage sur le meuble.
                 p.derriere_meuble = False
                 cible = p.silhouette.get_bottom() + decalage + DOWN * (0.2 + p.etiquette.height / 2)
-                return [p.silhouette.animate(run_time=1.2).shift(decalage),
-                        p.etiquette.animate(run_time=1.2).move_to(cible)]
-            return [p.animate(run_time=1.2).shift(decalage)]
+                return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(cible)]
+            return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).shift(decalage)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
         p.derriere_meuble = True
-        return [p.silhouette.animate(run_time=1.2).shift(decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
+        return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
+
+    @staticmethod
+    def deplacer(p, decalage, duree=1.2):
+        """Un bonhomme marche (jambes et bras alternent) ; une silhouette glisse."""
+        if hasattr(p.silhouette, "angles"):
+            from bonhomme import Marche
+            return Marche(p.silhouette, decalage, run_time=duree)
+        return p.silhouette.animate(run_time=duree).shift(decalage)
+
+    def a_pose(self, ident, pose, expression=None):
+        """Change la pose d'un bonhomme (debout, tend, pointe, bras-ciel, assis, recule), et au besoin son visage."""
+        from bonhomme import POSES
+        p = self.personnages[ident]
+        self.focus = p
+        cle = pose.replace("-", "_")
+        if cle not in POSES:
+            raise ValueError(f"pose inconnue « {pose} » ; poses : {', '.join(sorted(POSES))}")
+        if not hasattr(p.silhouette, "angles"):
+            return []
+        return [p.silhouette.vers(cle, expression, run_time=0.6)]
+
+    def a_visage(self, ident, expression):
+        """Change l'expression d'un bonhomme : neutre, content, triste, inquiet, surpris, fache."""
+        if expression not in ("neutre", "content", "triste", "inquiet", "surpris", "fache"):
+            raise ValueError(f"expression inconnue « {expression} »")
+        p = self.personnages[ident]
+        if not hasattr(p.silhouette, "angles"):
+            return []
+        return [p.silhouette.vers(None, expression, run_time=0.4)]
 
     def a_pousser(self, ident, cible):
         a, b = self.personnages[ident], self.personnages[cible]

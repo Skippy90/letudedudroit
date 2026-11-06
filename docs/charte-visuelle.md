@@ -6,7 +6,7 @@ Un vocabulaire graphique fixe remplace le visage : le spectateur doit reconnaît
 
 | Élément | Représentation à l'écran |
 | --- | --- |
-| Une personne | Silhouette simple, sans visage ; chaque personnage du cas garde sa couleur du début à la fin |
+| Une personne | Bonhomme en bâtons articulé, au trait de sa couleur, avec un visage simple (deux yeux, une bouche, des sourcils) ; expressions : neutre, content, triste, inquiet, surpris, fâché. Chaque personnage du cas garde sa couleur du début à la fin (depuis novembre 2026 ; l'ancien style « silhouette sans visage » reste disponible avec PERSONNAGES=silhouettes) |
 | La loi | Bloc rectangulaire avec le numéro d'article à l'intérieur (« Art. 123 CP »), toujours centré en bas de l'image |
 | L'infraction | Bâtiment à trois étages : Typicité en bas, Illicéité au milieu, Culpabilité en haut ; vert quand l'étage est franchi, gris quand il manque |
 | Le temps et les délais | Frise horizontale où les délais se dessinent en direct |
@@ -30,7 +30,7 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 | Élément | Représentation à l'écran |
 | --- | --- |
 | Le lieu du cas | Décor au trait fin, blanc cassé très atténué (cage d'escalier, appartement, rue, parc, piscine, salle d'audience ; d'autres à venir : poste de police) ; il situe la scène sans concurrencer les silhouettes |
-| Ce qui se passe | Les silhouettes se déplacent dans le décor : marcher, pousser, tomber ; elles restent sans visage et sans bras |
+| Ce qui se passe | Les bonhommes bougent dans le décor : ils marchent (jambes et bras alternent), poussent, tombent, et changent de pose (`pose <id> tend|pointe|bras-ciel|assis|recule|debout [expression]`) ou de visage (`visage <id> <expression>`) au moment où la voix le dit. Sur un sujet grave (violence, maladie, décès), le visage reste neutre ou triste, jamais content |
 | Un mot-clé | Étiquette courte en blanc sur pastille rouge, posée près de ce dont elle parle, qui apparaît au moment exact où le mot est prononcé |
 | Un objet ou une idée simple | Pictogramme au trait (panneau « P » de parking, ligne brisée rouge de la tension entre deux personnes) |
 | Où en est le raisonnement | Petit bâtiment à trois étages en haut à droite, présent du moment où les trois étages sont posés jusqu'à la fin ; ses étages suivent le cas principal (rouge : étage en cours d'examen ; vert : franchi) |

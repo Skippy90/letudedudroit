@@ -85,10 +85,24 @@ def mots(contenu: str) -> int:
     return sum(1 for m in contenu.replace("’", "'").split() if any(c.isalpha() for c in m))
 
 
-class Personnage(VGroup):
-    """Silhouette sans visage, couleur fixe, nom en dessous."""
+STYLE_PERSONNAGES = _os.environ.get("PERSONNAGES", "batons")  # « silhouettes » : l'ancien style, sans visage
 
-    def __init__(self, nom, couleur, position):
+
+class Personnage(VGroup):
+    """Bonhomme en bâtons articulé, avec visage (ou, en style « silhouettes », silhouette sans visage) ;
+    couleur fixe, nom en dessous."""
+
+    def __init__(self, nom, couleur, position, expression="neutre"):
+        if STYLE_PERSONNAGES == "batons":
+            from bonhomme import Bonhomme
+            sens = -1 if X_POSITIONS[position] > 0 else 1  # regarde vers le centre
+            silhouette = Bonhomme(couleur, (0, 0), sens=sens, expression=expression, echelle=0.85, epaisseur=8)
+            etiquette = avec_fond(texte(nom, T_PETIT)).next_to(silhouette, DOWN, buff=0.12)
+            super().__init__(silhouette, etiquette)
+            self.silhouette, self.etiquette, self.nom = silhouette, etiquette, nom
+            self.move_to([X_POSITIONS[position], Y_PERSONNAGE - 0.2, 0])
+            self.position = position
+            return
         tete = Circle(radius=0.38, color=couleur, fill_color=couleur, fill_opacity=1, stroke_width=0)
         corps = RoundedRectangle(corner_radius=0.5, width=1.25, height=1.55, color=couleur,
                                  fill_color=couleur, fill_opacity=1, stroke_width=0)
