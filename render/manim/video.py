@@ -682,18 +682,29 @@ class Schemas(Scene):
                 p.derriere_meuble = False
                 cible = p.silhouette.get_bottom() + decalage + DOWN * (0.2 + p.etiquette.height / 2)
                 return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(cible)]
-            return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).shift(decalage)]
+            # Le nom se replace sous le personnage (il a pu s'écarter pendant un contact).
+            cible = [p.silhouette.submobjects[0].get_start()[0] + decalage[0], p.etiquette.get_y(), 0] \
+                if hasattr(p.silhouette, "angles") else p.etiquette.get_center() + decalage
+            return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(cible)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
         p.derriere_meuble = True
         return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
 
-    @staticmethod
-    def deplacer(p, decalage, duree=1.2):
-        """Un bonhomme marche (jambes et bras alternent) ; une silhouette glisse."""
+    def sens_vers_voisin(self, p, x):
+        """Le sens dans lequel regarder une fois arrivé en x : vers le personnage le plus proche, sinon vers le centre."""
+        autres = [q.silhouette.get_x() for q in self.personnages.values() if q is not p and self.a_l_ecran(q)]
+        cible = min(autres, key=lambda a: abs(a - x)) if autres else 0.0
+        return 1 if cible > x else -1
+
+    def deplacer(self, p, decalage, duree=1.2, sens_final=None):
+        """Un bonhomme marche (jambes et bras alternent) ; une silhouette glisse.
+        Arrivé, le bonhomme se tourne vers son voisin le plus proche (ou le sens demandé)."""
         if hasattr(p.silhouette, "angles"):
             from bonhomme import Marche
-            m = Marche(p.silhouette, decalage, run_time=duree)
+            if sens_final is None:
+                sens_final = self.sens_vers_voisin(p, p.silhouette.get_x() + decalage[0])
+            m = Marche(p.silhouette, decalage, run_time=duree, sens_final=sens_final)
             m.duree_propre = max(1.2, abs(decalage[0]) * 0.45)
             return m
         return p.silhouette.animate(run_time=duree).shift(decalage)
@@ -739,6 +750,39 @@ class Schemas(Scene):
     def _tourner_vers(self, b, x):
         b.sens = 1 if x > b.hanche[0] else -1
 
+    def _portee(self, b, pose="donne"):
+        """Distance horizontale entre la hanche et la main avant dans une pose donnée."""
+        from bonhomme import POSES
+        avant, sens = dict(b.angles), b.sens
+        b.angles, b.sens = dict(POSES[pose]), 1
+        portee = b.main("d")[0] - b.submobjects[0].get_start()[0]
+        b.angles, b.sens = avant, sens
+        return portee
+
+    def _approcher(self, ident, cible, ecart):
+        """Ident marche jusqu'à se tenir à `ecart` de la cible (de son côté), puis tous deux se font face."""
+        p, q = self.personnages[ident], self.personnages[cible]
+        a, b = p.silhouette, q.silhouette
+        xa, xb = a.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
+        cote = 1 if xa > xb else -1
+        dx = (xb + cote * ecart) - xa
+        if abs(dx) > 0.15:
+            decalage = np.array([dx, 0, 0])
+            self.jouer(self.deplacer(p, decalage, sens_final=-cote), p.etiquette.animate.shift(decalage))
+        a.sens, b.sens = -cote, cote
+        anims = [a.vers(None, run_time=0.2), b.vers(None, run_time=0.2)]
+        # Tout près l'un de l'autre : les prénoms s'écartent juste assez pour ne pas se toucher.
+        ea, eb = p.etiquette, q.etiquette
+        manque = (ea.width + eb.width) / 2 + 0.15 - abs(ea.get_x() - eb.get_x())
+        if manque > 0:
+            anims += [ea.animate.shift(RIGHT * cote * manque / 2), eb.animate.shift(LEFT * cote * manque / 2)]
+        self.jouer(*anims, duree=0.3)
+
+    def a_rejoindre(self, ident, cible):
+        """Il marche jusqu'à la cible et s'arrête à côté d'elle, face à elle."""
+        self._approcher(ident, cible, 1.1)
+        return []
+
     def a_tenir(self, ident, nom):
         """Le bonhomme prend l'objet en main et le garde : il le suit quand il marche ou bouge."""
         b, picto = self._bonhomme(ident), self.pictos[nom]
@@ -767,14 +811,19 @@ class Schemas(Scene):
     def a_donner(self, de, vers, nom):
         """De tend l'objet, vers tend la main, l'objet passe de l'un à l'autre."""
         a, b, picto = self._bonhomme(de), self._bonhomme(vers), self.pictos[nom]
-        self._tourner_vers(a, b.hanche[0])
-        self._tourner_vers(b, a.hanche[0])
         self.focus = self.personnages[vers]
         if self.tenus.get(nom) != de:
             self._accrocher(de, nom)
-        self.jouer(a.vers("donne", run_time=0.6), b.vers("donne", run_time=0.6), duree=0.6)
+        # Celui qui donne s'approche : bras tendus, les deux mains se rejoignent sous l'objet. Pas trop près
+        # non plus : les deux prénoms ne doivent pas se toucher ; s'il le faut, il se penche (pose « tend »).
+        noms = (self.personnages[de].etiquette.width + self.personnages[vers].etiquette.width) / 2 + 0.15
+        ecart = max(2 * self._portee(a) - 0.1, noms)
+        pose_de = "donne" if ecart <= 2 * self._portee(a) else "tend"
+        ecart = min(ecart, self._portee(a, pose_de) + self._portee(b) - 0.05)
+        self._approcher(de, vers, ecart)
+        self.jouer(a.vers(pose_de, run_time=0.6), b.vers("donne", run_time=0.6), duree=0.6)
         self._decrocher(nom)
-        self.jouer(picto.animate(path_arc=-0.6).move_to(self._main(b, picto)), duree=0.6)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.35)
         self._accrocher(vers, nom)
         self.jouer(a.vers("debout", run_time=0.5), b.vers("porte", run_time=0.5), duree=0.5)
         return []
@@ -799,8 +848,11 @@ class Schemas(Scene):
     def a_parler(self, ident, vers=None):
         """Gestes de la parole : la main avant monte et descend, deux fois ; il se tourne vers l'autre."""
         b = self._bonhomme(ident)
-        if vers:
-            self._tourner_vers(b, self._bonhomme(vers).hanche[0])
+        if vers:  # ils se font face
+            autre = self._bonhomme(vers)
+            xb, xa = autre.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
+            b.sens, autre.sens = (1, -1) if xb > xa else (-1, 1)
+            self.jouer(b.vers(None, run_time=0.2), autre.vers(None, run_time=0.2), duree=0.2)
         self.focus = self.personnages[ident]
         for pose in ("parle_a", "parle_b", "parle_a", "debout"):
             self.jouer(b.vers(pose, run_time=0.4), duree=0.4)
@@ -817,6 +869,17 @@ class Schemas(Scene):
 
     def a_pousser(self, ident, cible):
         a, b = self.personnages[ident], self.personnages[cible]
+        if hasattr(a.silhouette, "angles") and hasattr(b.silhouette, "angles"):
+            # Contact : il s'approche, les mains sur l'autre, qui recule d'un pas en vacillant.
+            self.focus = a
+            self._approcher(ident, cible, self._portee(a.silhouette, "tend") + 0.1)
+            sens = a.silhouette.sens
+            recul = np.array([0.5 * sens, 0, 0])
+            self.jouer(a.silhouette.vers("tend", run_time=0.35), duree=0.35)
+            self.jouer(b.silhouette.vers("recule", "surpris", deplacement=recul, run_time=0.4),
+                       b.etiquette.animate.shift(recul), duree=0.4)
+            self.jouer(a.silhouette.vers("debout", run_time=0.5), b.silhouette.vers("debout", run_time=0.5), duree=0.5)
+            return []
         sens = 1 if b.get_center()[0] > a.get_center()[0] else -1
         self.focus = a
         return [a.silhouette.animate(rate_func=there_and_back).shift(RIGHT * 0.45 * sens).rotate(-0.15 * sens)]

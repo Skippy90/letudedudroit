@@ -173,8 +173,9 @@ class ChangerPose(Animation):
 class Marche(Animation):
     """Marche sur une distance : les jambes et les bras alternent, puis le bonhomme se remet debout."""
 
-    def __init__(self, bonhomme, deplacement, pas=None, **reglages):
+    def __init__(self, bonhomme, deplacement, pas=None, sens_final=None, **reglages):
         self.depl = np.array([deplacement[0], deplacement[1], 0.0])
+        self.sens_final = sens_final  # arrivé, il se tourne (vers celui à qui il a affaire)
         self.pas = pas or max(2, round(abs(deplacement[0]) / 0.7))
         super().__init__(bonhomme, **reglages)
 
@@ -197,4 +198,6 @@ class Marche(Animation):
             v = self.depart[c] + (marche - self.depart[c]) * debut
             b.angles[c] = v + (debout[c] - v) * fin
         b.hanche = self.h0 + self.depl * alpha
+        if alpha >= 1 and self.sens_final:
+            b.sens = self.sens_final
         b.dessiner()

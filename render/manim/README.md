@@ -62,7 +62,10 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `tenir ID OBJET` / `prendre ID OBJET` | Le bonhomme prend l'objet (pictogramme) en main ; `prendre` : il marche jusqu'à l'objet s'il est loin et se penche. Ensuite l'objet le suit (marche, poses) |
 | `donner DE VERS OBJET` | De tend l'objet, l'autre tend la main, l'objet passe de l'un à l'autre (ils se tournent l'un vers l'autre) |
 | `poser ID OBJET X Y` / `ranger OBJET CONTENANT` | Il pose l'objet et le lâche ; un objet entre dans un autre et disparaît (l'ordinateur dans le sac) |
-| `parler ID [VERS]` | Gestes de la parole (deux mouvements de la main), tourné vers l'autre |
+| `parler ID [VERS]` | Gestes de la parole (deux mouvements de la main) ; les deux se tournent l'un vers l'autre |
+| `rejoindre ID CIBLE` | Il marche jusqu'à la cible et s'arrête à côté d'elle ; ils se font face |
+
+Interactions : pour `donner` et `pousser`, celui qui agit s'approche jusqu'au contact (les mains se rejoignent, ou se posent sur l'autre) ; les deux se font face ; leurs prénoms s'écartent s'ils se toucheraient. Après `marcher`, un bonhomme se tourne vers son voisin le plus proche.
 | `picto-deplacer NOM X Y` [`ARC`] | Déplace un pictogramme (le ballon qui part, la bouteille qui tombe) ; `ARC` > 0 : trajectoire en cloche |
 | `etiquette ID "…" X Y` / `etiquette-retirer ID` | Mot-clé en ambre à la position (X, Y) |
 | `repere-batiment` / `repere-etage N COULEUR` | Petit bâtiment permanent en haut à droite (il survit aux `scene-vide`) et couleur de ses étages |
