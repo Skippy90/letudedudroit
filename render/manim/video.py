@@ -597,6 +597,7 @@ class Schemas(Scene):
     def a_personnage(self, ident, nom, couleur, position, *options):
         expression = next((o for o in options if o in ("content", "triste", "inquiet", "surpris", "fache")), "neutre")
         p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position, expression)
+        p.cree_a = self.t
         # « haut » : un peu plus haut, pour laisser la place à une frise en dessous.
         if "haut" in options:
             p.shift(UP * 0.45)
@@ -946,6 +947,12 @@ class Schemas(Scene):
             raise ValueError(f"expression inconnue « {expression} »")
         p = self.personnages[ident]
         if not hasattr(p.silhouette, "angles"):
+            return []
+        if getattr(p, "cree_a", None) == self.t:
+            # Créé au même moment : le visage est posé tout de suite (une animation se battrait avec l'apparition).
+            p.silhouette.synchroniser()
+            p.silhouette.expression = expression
+            p.silhouette.dessiner()
             return []
         return [p.silhouette.vers(None, expression, run_time=0.4)]
 
