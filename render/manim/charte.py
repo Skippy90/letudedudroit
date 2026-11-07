@@ -877,13 +877,14 @@ class Palais(VGroup):
 
     def __init__(self, moment="jour"):
         sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
-        corps = Rectangle(width=4.0, height=2.6, **DECOR).move_to([0, Y_SOL + 1.3, 0])
-        fronton = Polygon([-2.2, Y_SOL + 2.6, 0], [2.2, Y_SOL + 2.6, 0], [0, Y_SOL + 3.3, 0], **DECOR)
-        tambour = Rectangle(width=1.6, height=0.5, **DECOR).move_to([0, Y_SOL + 3.55, 0])
-        coupole = Arc(radius=0.8, start_angle=0, angle=3.1416, **DECOR).move_to([0, Y_SOL + 4.2, 0])
-        colonnes = VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL + 2.3, 0], **DECOR) for x in (-1.5, -0.75, 0, 0.75, 1.5)])
-        ailes = VGroup(*[Rectangle(width=2.6, height=2.0, **DECOR).move_to([s * 3.4, Y_SOL + 1.0, 0]) for s in (-1, 1)])
-        fenetres = VGroup(*[_fenetre(s * 3.4 + dx, Y_SOL + 1.35, 0.5, 0.5) for s in (-1, 1) for dx in (-0.7, 0, 0.7)])
+        # Hauteur limitée (coupole sous y = 1.3) : les légendes à y = 1.9 passent au-dessus sans toucher.
+        corps = Rectangle(width=4.0, height=2.0, **DECOR).move_to([0, Y_SOL + 1.0, 0])
+        fronton = Polygon([-2.2, Y_SOL + 2.0, 0], [2.2, Y_SOL + 2.0, 0], [0, Y_SOL + 2.55, 0], **DECOR)
+        tambour = Rectangle(width=1.3, height=0.4, **DECOR).move_to([0, Y_SOL + 2.75, 0])
+        coupole = Arc(radius=0.65, start_angle=0, angle=3.1416, **DECOR).move_to([0, Y_SOL + 3.28, 0])
+        colonnes = VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL + 1.75, 0], **DECOR) for x in (-1.5, -0.75, 0, 0.75, 1.5)])
+        ailes = VGroup(*[Rectangle(width=2.6, height=1.6, **DECOR).move_to([s * 3.4, Y_SOL + 0.8, 0]) for s in (-1, 1)])
+        fenetres = VGroup(*[_fenetre(s * 3.4 + dx, Y_SOL + 1.1, 0.5, 0.45) for s in (-1, 1) for dx in (-0.7, 0, 0.7)])
         super().__init__(sol, ailes, fenetres, corps, colonnes, fronton, tambour, coupole)
 
     def pied(self, n):
