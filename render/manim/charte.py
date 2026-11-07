@@ -435,8 +435,8 @@ DECOR = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
 DETAIL = dict(color=TEXTE, stroke_width=2.5, stroke_opacity=0.3)
 DECORS_DETAILLES = _os.environ.get("DECORS", "detailles") != "simples"
 if CONSTITUTION:  # sur fond rouge, les bâtiments sont plus marqués
-    DECOR = dict(color=TEXTE, stroke_width=3.5, stroke_opacity=0.8)
-    DETAIL = dict(color=TEXTE, stroke_width=2.5, stroke_opacity=0.55)
+    DECOR = dict(color=TEXTE, stroke_width=5, stroke_opacity=1.0)
+    DETAIL = dict(color=TEXTE, stroke_width=3.2, stroke_opacity=0.8)
 Y_SOL = -2.3
 
 
@@ -782,7 +782,7 @@ class Rue(VGroup):
         self.mur = Rectangle(width=3.8, height=3.6, **DECOR).move_to([0.6, Y_SOL + 1.8, 0])
         vitrine = Rectangle(width=1.6, height=1.3, **DECOR).move_to([1.5, Y_SOL + 0.75, 0])
         store = Line([0.5, Y_SOL + 1.6, 0], [2.5, Y_SOL + 1.6, 0], **DECOR)
-        enseigne = texte(enseigne, T_PETIT).set_opacity(0.4).move_to([0.6, Y_SOL + 3.05, 0])
+        enseigne = texte(enseigne, T_PETIT).set_opacity(0.9 if CONSTITUTION else 0.4).move_to([0.6, Y_SOL + 3.05, 0])
         reverbere = VGroup(Line([6.6, Y_SOL, 0], [6.6, Y_SOL + 3.2, 0], **DECOR),
                            Line([6.6, Y_SOL + 3.2, 0], [6.2, Y_SOL + 3.2, 0], **DECOR),
                            Dot([6.2, Y_SOL + 3.05, 0], radius=0.09, color=GRIS if moment == "jour" else ACCENT,
