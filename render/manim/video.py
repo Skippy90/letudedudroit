@@ -754,8 +754,13 @@ class Schemas(Scene):
             self.pictos[nom].clear_updaters()
         self.tenus.pop(nom, None)
 
+    @staticmethod
+    def _x(b):
+        """Abscisse réelle du bonhomme (la hanche telle que dessinée, après les déplacements)."""
+        return b.submobjects[0].get_start()[0]
+
     def _tourner_vers(self, b, x):
-        b.sens = 1 if x > b.hanche[0] else -1
+        b.sens = 1 if x > self._x(b) else -1
 
     def _portee(self, b, pose="donne"):
         """Distance horizontale entre la hanche et la main avant dans une pose donnée."""
@@ -793,6 +798,17 @@ class Schemas(Scene):
             anims += [ea.animate.shift(RIGHT * cote * manque / 2), eb.animate.shift(LEFT * cote * manque / 2)]
         self.jouer(*anims, duree=0.3)
 
+    def a_tourner(self, ident, vers):
+        """Il se tourne vers un point (abscisse X), vers un autre personnage, ou « gauche » / « droite »."""
+        b = self._bonhomme(ident)
+        if vers in ("gauche", "droite"):
+            b.sens = -1 if vers == "gauche" else 1
+        elif vers in self.personnages:
+            self._tourner_vers(b, self._x(self._bonhomme(vers)))
+        else:
+            self._tourner_vers(b, float(vers))
+        return [b.vers(None, run_time=0.3)]
+
     def a_rejoindre(self, ident, cible):
         """Il marche jusqu'à la cible et s'arrête à côté d'elle, face à elle."""
         self._approcher(ident, cible, 1.1)
@@ -820,7 +836,7 @@ class Schemas(Scene):
         self._tourner_vers(b, picto.get_x())
         self.focus = self.personnages[ident]
         # Trop loin pour l'attraper : il marche d'abord jusqu'à l'objet (ce qu'il porte déjà le suit).
-        ecart = picto.get_x() - b.hanche[0]
+        ecart = picto.get_x() - self._x(b)
         if abs(ecart) > 0.9:
             p = self.personnages[ident]
             decalage = np.array([ecart - 0.7 * np.sign(ecart), 0, 0])

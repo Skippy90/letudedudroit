@@ -63,6 +63,7 @@ Un tableau à deux colonnes : `Moment` et `Actions`.
 | `donner DE VERS OBJET` | De tend l'objet, l'autre tend la main, l'objet passe de l'un à l'autre (ils se tournent l'un vers l'autre) |
 | `poser ID OBJET X Y` / `ranger OBJET CONTENANT` | Il pose l'objet et le lâche ; un objet entre dans un autre et disparaît (l'ordinateur dans le sac) |
 | `parler ID [VERS]` | Gestes de la parole ; s'il est loin, il va d'abord jusqu'à l'autre ; les deux se font face |
+| `tourner ID VERS` | Il se tourne : `gauche`, `droite`, vers un personnage ou vers l'abscisse X |
 | `rejoindre ID CIBLE` | Il marche jusqu'à la cible et s'arrête à côté d'elle ; ils se font face |
 
 Interactions : pour `donner` et `pousser`, celui qui agit s'approche jusqu'au contact (les mains se rejoignent, ou se posent sur l'autre) ; les deux se font face ; leurs prénoms s'écartent s'ils se toucheraient. Après `marcher`, un bonhomme se tourne vers son voisin le plus proche.
