@@ -545,6 +545,8 @@ class Schemas(Scene):
 
     def a_article(self, libelle):
         nouveau = c.BlocArticle(libelle)
+        # Le bloc passe devant les prénoms : un nom qui le croise pendant une marche glisse dessous, sans se superposer.
+        nouveau.set_z_index(6)
         anciens = [FadeOut(self.article)] if self.article is not None else []
         self.article = nouveau
         return anciens + self.placer_bas() + [FadeIn(nouveau, shift=UP * 0.2)]
