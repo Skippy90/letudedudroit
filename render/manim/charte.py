@@ -1085,7 +1085,8 @@ class Parc(VGroup):
                                 Circle(radius=0.14, **DETAIL).move_to([-6.6, Y_SOL + 2.75, 0]))
             d = VGroup(_arbre(-4.6, r=0.55, h=1.4, opacite=0.22), _arbre(3.0, r=0.6, h=1.9, opacite=0.22),
                        banc, touffes, chemin, lampadaire,
-                       _lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)]))
+                       *([_soleil(-6.4, 3.2), _nuage(-5.0, 2.7, 1.1)] if CONSTITUTION else
+                         [_lune(-6.5, 3.3), _etoiles([(-5.8, 2.7), (-6.8, 2.5), (-5.4, 3.5)])]))
             self.submobjects.insert(0, d)
 
     def pied(self, n):
