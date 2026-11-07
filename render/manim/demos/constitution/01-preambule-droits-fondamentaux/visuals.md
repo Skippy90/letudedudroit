@@ -23,7 +23,7 @@ Source : Constitution fédérale (RS 101), version consolidée en vigueur le 3 m
 | 4.1 | scene-vide ; article "Art. 2 Cst." ; decor parc ; personnage tom "Tom" turquoise gauche ; placer tom -3 ; personnage ana "Ana" rose droite ; placer ana 2.5 |
 | 4.1+1 | etiquette b "Égalité des chances, autant que possible" 0 1.9 |
 | 4.1+4 | etiquette b "Préserver les ressources naturelles" 0 1.9 |
-| 4.1+6.5 | rejoindre ana tom ; etiquette b "Un ordre international juste et pacifique" 0 1.9 |
+| 4.1+6.5 | tourner tom ana ; tourner ana tom ; visage tom content ; visage ana content ; etiquette b "Un ordre international juste et pacifique" 0 1.9 |
 | 5.1 | scene-vide ; article "Art. 3 Cst." ; carte cantons petite ; personnage f "Confédération" turquoise droite |
 | 5.1+1.5 | carte-canton VD ; etiquette s "Les cantons sont souverains" 1.8 2.9 |
 | 5.1+4 | etiquette s "Dans les limites de la Constitution" 1.8 2.9 |
