@@ -318,9 +318,12 @@ def solaire():
 
 
 def casque():
-    calotte = Arc(radius=0.5, start_angle=0, angle=PI, color=c.TEXTE, stroke_width=E, **_p()).move_to([0, 0.1, 0])
-    bord = L((-0.7, -0.15), (0.7, -0.15), w=5)
-    return [calotte, bord, L((-0.5, -0.15), (-0.5, -0.15))]
+    # Casque militaire de profil : calotte arrondie, bord évasé, jugulaire.
+    calotte = courbe((-0.6, -0.1), (-0.5, 0.3), (-0.1, 0.52), (0.35, 0.42), (0.6, 0.05), (0.62, -0.1), sw=5)
+    bord = courbe((-0.75, -0.18), (-0.6, -0.1), (0.62, -0.1), (0.78, -0.2), sw=5)
+    bande = L((-0.52, 0.05), (0.56, 0.05), w=2)
+    jugulaire = courbe((-0.35, -0.12), (-0.2, -0.42), (0.2, -0.42), (0.35, -0.12), sw=3)
+    return [calotte, bord, bande, jugulaire]
 
 
 def cadenas():
@@ -568,6 +571,98 @@ def bateau():
 
 def velo_():
     return []
+
+
+def poignee():
+    # Deux mains qui se serrent, vues de côté : deux manches et des doigts entrelacés.
+    manche_g = R(0.42, 0.34, -0.62, -0.05, r=0.04)
+    manche_d = R(0.42, 0.34, 0.62, -0.05, r=0.04)
+    main_g = P((-0.41, 0.12), (0.05, 0.22), (0.25, 0.08), (0.05, -0.05), (-0.41, -0.2))
+    main_d = P((0.41, 0.12), (0.12, 0.12), (-0.18, -0.05), (-0.1, -0.22), (0.41, -0.2))
+    doigts = [L((-0.05 + 0.1 * k, -0.06), (0.02 + 0.1 * k, -0.2), w=3) for k in range(3)]
+    return [manche_g, manche_d, main_g, main_d, *doigts]
+
+
+def atome():
+    orbites = [Ellipse(width=1.2, height=0.42, color=c.TEXTE, stroke_width=3).rotate(a) for a in (0, PI / 3, 2 * PI / 3)]
+    return [*orbites, C(0.1, plein=False, sw=0).set_fill(c.TEXTE, 1)]
+
+
+def cerf():
+    corps = R(0.8, 0.34, 0, 0, r=0.15)
+    cou = L((0.32, 0.1), (0.45, 0.42), w=5)
+    tete = Ellipse(width=0.3, height=0.16, color=c.TEXTE, stroke_width=E, **_p()).rotate(-0.4).move_to([0.55, 0.45, 0])
+    bois = [L((0.45, 0.52), (0.35, 0.85), w=3), L((0.39, 0.68), (0.25, 0.75), w=3),
+            L((0.55, 0.52), (0.7, 0.85), w=3), L((0.63, 0.68), (0.78, 0.72), w=3)]
+    pattes = [L((x, -0.15), (x, -0.55)) for x in (-0.3, -0.15, 0.18, 0.32)]
+    return [*pattes, cou, corps, tete, *bois]
+
+
+def telepherique():
+    cable = L((-0.85, 0.55), (0.85, 0.25), w=3)
+    suspente = L((0, 0.4), (0, 0.15), w=3)
+    cabine = R(0.6, 0.5, 0, -0.1, r=0.06)
+    vitre = R(0.42, 0.18, 0, -0.02, r=0.02, plein=False, sw=3)
+    return [cable, suspente, cabine, vitre]
+
+
+def satellite():
+    corps = R(0.32, 0.32, 0, 0, r=0.03).rotate(PI / 4)
+    panneaux = [R(0.45, 0.22, s * 0.45, s * 0.45, r=0.0).rotate(PI / 4) for s in (-1, 1)]
+    antenne_ = Arc(radius=0.15, start_angle=PI / 4 + PI / 2, angle=PI, color=c.TEXTE, stroke_width=3).move_to([0.22, -0.22, 0])
+    return [*panneaux, corps, antenne_]
+
+
+def poubelle():
+    bac = P((-0.35, 0.3), (0.35, 0.3), (0.28, -0.55), (-0.28, -0.55))
+    couvercle = L((-0.45, 0.38), (0.45, 0.38), w=5)
+    poignee_ = R(0.24, 0.1, 0, 0.47, r=0.03, plein=False, sw=3)
+    stries = [L((x, 0.15), (x * 0.85, -0.42), w=2) for x in (-0.15, 0, 0.15)]
+    return [bac, couvercle, poignee_, *stries]
+
+
+def anneaux():
+    return [C(0.3, -0.18, -0.05, plein=False, sw=5), C(0.3, 0.18, -0.05, plein=False, sw=5),
+            P((0.12, 0.3), (0.24, 0.3), (0.3, 0.4), (0.18, 0.48), (0.06, 0.4), sw=3)]
+
+
+def palette():
+    corps = courbe((0.1, -0.5), (-0.4, -0.38), (-0.6, 0.0), (-0.35, 0.42), (0.15, 0.48), (0.55, 0.22), (0.5, -0.05),
+                   (0.25, -0.08), (0.2, -0.3), (0.1, -0.5), sw=4)
+    trou = C(0.08, 0.22, 0.12, plein=False, sw=3)
+    taches = [C(0.07, x, y, plein=False, sw=0).set_fill(c.TEXTE, 0.9) for x, y in ((-0.3, 0.15), (-0.1, 0.32), (-0.3, -0.15), (0.0, -0.25))]
+    pinceau = L((0.35, -0.55), (0.75, 0.0), w=4)
+    return [corps, trou, *taches, pinceau]
+
+
+def bus():
+    caisse = R(1.5, 0.75, 0, 0.05, r=0.1)
+    vitres = [R(0.26, 0.24, -0.5 + 0.33 * k, 0.17, r=0.03, plein=False, sw=3) for k in range(4)]
+    porte = R(0.2, 0.42, 0.58, -0.04, r=0.02, plein=False, sw=3)
+    roues = [C(0.14, x, -0.38) for x in (-0.45, 0.4)]
+    return [caisse, *vitres, porte, *roues]
+
+
+def flocon():
+    branches = []
+    for k in range(6):
+        a = k * PI / 3
+        d = np.array([np.cos(a), np.sin(a)])
+        branches.append(L((0, 0), tuple(0.55 * d), w=4))
+        for t in (0.3, 0.42):
+            base = t * d
+            for s in (-1, 1):
+                b = np.array([np.cos(a + s * 0.7), np.sin(a + s * 0.7)])
+                branches.append(L(tuple(base), tuple(base + 0.14 * b), w=3))
+    return branches
+
+
+def thermometre():
+    tube = RoundedRectangle(corner_radius=0.1, width=0.2, height=0.95, color=c.TEXTE, stroke_width=E, **_p()).move_to([0, 0.12, 0])
+    boule = C(0.18, 0, -0.42)
+    mercure = VGroup(L((0, -0.3), (0, 0.25), w=6), C(0.1, 0, -0.42, plein=False, sw=0).set_fill(c.TEXTE, 1))
+    graduations = [L((0.14, 0.4 - 0.15 * k), (0.25, 0.4 - 0.15 * k), w=2) for k in range(4)]
+    return [tube, boule, mercure, *graduations]
 
 
 FONCTIONS = {n: f for n, f in globals().items() if callable(f) and f.__module__ == __name__
