@@ -12,7 +12,7 @@ on ne montre jamais l'acte.
 | --- | --- | --- | --- |
 | 1 | Livre 1, titre 1 : Champ d'application (+ art. 10) | 1 à 10 | essai fait (`render/manim/demos/articles-1-10`) |
 | 2 | Livre 1, titre 2 : Conditions de la répression (I) | 11 à 21 | essai fait (`render/manim/demos/articles-11-21`) |
-| 3 | Titre 2 (II) : tentative, participation, presse, plainte | 22 à 33 | à faire |
+| 3 | Titre 2 (II) : tentative, participation, médias, représentation, plainte | 22 à 33 | essai fait (`render/manim/demos/articles-22-33`) |
 | 4 | Titre 3, chapitre 1 : Peines | 34 à 55a | à faire |
 | 5 | Titre 3, chapitre 2 : Mesures | 56 à 73 | à faire |
 | 6 | Titres 4 et 5 : exécution, probation, règles de conduite | 74 à 96 | à faire |
