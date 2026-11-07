@@ -110,7 +110,7 @@ Source : Constitution fédérale (RS 101), version consolidée en vigueur le 3 m
 | 25.1+4 | bulle tom "Service civil ?" ; etiquette x "La loi prévoit un service civil" 0 3.45 ; picto-retirer casque ; picto livre -1.6 2.22 1.3 ; picto outils 1.6 2.22 1.3 |
 | 25.1+7 | effacer-bulle tom ; accent mia ; etiquette x "Suissesses : volontaires dans l'armée" 0 3.45 ; picto-retirer livre ; picto-retirer outils ; picto casque 1.0 2.22 1.3 ; picto main_levee 3.0 2.22 1.3 |
 | 26.1 | scene-vide ; article "Art. 59 Cst." ; decor rue Canton jour ; personnage tom "Tom" turquoise gauche ; placer tom -3 ; picto pieces -6.6 -1.3 ; tenir tom pieces aussitot ; personnage k "Canton" rose droite ; placer k 3 |
-| 26.1+1 | etiquette x "Pas de service : une taxe" 0 3.45 ; picto casque 0 2.15 1.1 |
+| 26.1+1 | etiquette x "Pas de service : une taxe" 0 3.45 ; picto casque 0 2.05 0.85 |
 | 26.1+2 | interdit casque |
 | 26.1+3 | donner tom k pieces |
 | 26.1+5.5 | etiquette x "Perte de revenu : juste compensation" 0 3.45 ; picto-retirer casque ; picto tirelire 0 2.22 1.3 |
