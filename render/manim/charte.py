@@ -28,8 +28,18 @@ ROUGE = "#D9534F"  # dommage, dans l'ancienne grille (THEME=ambre)
 if MARQUE:
     ACCENT, ROUGE = ROUGE_MARQUE, "#E3A52F"  # accent rouge suisse ; dommage ambre
 SURFACE = "#1F1F22"  # fond des blocs, un cran plus clair que le fond
+# Pastille des mots-clés : blanc sur rouge (marque) ; inversée dans le thème « constitution ».
+PASTILLE_FOND, PASTILLE_TEXTE = ROUGE_MARQUE, "#FFFFFF"
 
-# Une couleur fixe par personnage, choisie dans visuals.md
+# Thème « constitution » (série sur la Constitution fédérale) : fond rouge suisse, tout le dessin en blanc.
+# Pas de croix suisse : son usage est réglementé (loi sur la protection des armoiries).
+CONSTITUTION = _os.environ.get("THEME") == "constitution"
+if CONSTITUTION:
+    FOND, TEXTE, ACCENT, ROUGE = ROUGE_MARQUE, "#FFFFFF", "#FFFFFF", "#FFFFFF"
+    VERT, GRIS, SURFACE = "#FFFFFF", "#F4A9A3", "#B51F15"
+    PASTILLE_FOND, PASTILLE_TEXTE = "#FFFFFF", ROUGE_MARQUE
+
+# Une couleur fixe par personnage, choisie dans visuals.md (tous blancs dans le thème « constitution »)
 COULEURS_PERSONNAGES = {
     "bleu_clair": "#7FB3E6",
     "ambre_pale": "#F0C987",
@@ -37,6 +47,8 @@ COULEURS_PERSONNAGES = {
     "violet": "#A78BFA",
     "turquoise": "#5EC8C0",
 }
+if CONSTITUTION:
+    COULEURS_PERSONNAGES = {k: "#FFFFFF" for k in COULEURS_PERSONNAGES}
 ETATS = {"vert": VERT, "gris": GRIS, "ambre": ACCENT, "neutre": SURFACE}
 
 POLICE = "Inter"
@@ -68,7 +80,7 @@ def avec_fond(mob, buff=0.08):
 def pastille(mob, buff=0.08):
     """Texte blanc sur pastille rouge (thème « marque »)."""
     fond = RoundedRectangle(corner_radius=0.1, width=mob.width + 2 * buff, height=mob.height + 2 * buff,
-                            stroke_width=0, fill_color=ROUGE_MARQUE, fill_opacity=1).move_to(mob)
+                            stroke_width=0, fill_color=PASTILLE_FOND, fill_opacity=1).move_to(mob)
     return VGroup(fond, mob)
 
 
@@ -76,7 +88,7 @@ def accent_texte(contenu, taille=None):
     """Un mot-clé : ambre sur fond noir, ou blanc sur pastille rouge dans le thème « marque »."""
     taille = taille or T_PETIT
     if MARQUE:
-        return pastille(texte(contenu, taille, "#FFFFFF"))
+        return pastille(texte(contenu, taille, PASTILLE_TEXTE))
     return avec_fond(texte(contenu, taille, ACCENT))
 
 
@@ -643,6 +655,24 @@ class Picto(VGroup):
             balle = Circle(radius=0.2, color=TEXTE, fill_color=TEXTE, fill_opacity=1, stroke_width=0)
             couture = Arc(radius=0.2, start_angle=-0.9, angle=1.8, color=FOND, stroke_width=3).shift(LEFT * 0.12)
             elements = [balle, couture]
+        elif nom == "urne":
+            # Urne de vote : boîte, fente, un bulletin qui dépasse.
+            boite = RoundedRectangle(corner_radius=0.05, width=0.9, height=0.8, color=TEXTE, stroke_width=4,
+                                     fill_color=FOND, fill_opacity=1)
+            fente = Line([-0.25, 0.4, 0], [0.25, 0.4, 0], color=TEXTE, stroke_width=6)
+            bulletin = Rectangle(width=0.32, height=0.4, color=TEXTE, stroke_width=3, fill_color=FOND,
+                                 fill_opacity=1).move_to([0.0, 0.62, 0])
+            elements = [bulletin, boite, fente]
+        elif nom == "balance":
+            # Balance de l'égalité : fléau horizontal, deux plateaux à la même hauteur.
+            pied = VGroup(Line([0, -0.5, 0], [0, 0.45, 0], color=TEXTE, stroke_width=4),
+                          Line([-0.3, -0.5, 0], [0.3, -0.5, 0], color=TEXTE, stroke_width=4))
+            flea = Line([-0.75, 0.45, 0], [0.75, 0.45, 0], color=TEXTE, stroke_width=4)
+            plateaux = VGroup(*[VGroup(Line([x, 0.45, 0], [x - 0.2, 0.05, 0], color=TEXTE, stroke_width=3),
+                                       Line([x, 0.45, 0], [x + 0.2, 0.05, 0], color=TEXTE, stroke_width=3),
+                                       Arc(radius=0.24, start_angle=3.1416, angle=3.1416, color=TEXTE, stroke_width=4)
+                                       .move_to([x, 0.0, 0])) for x in (-0.75, 0.75)])
+            elements = [pied, flea, plateaux]
         elif nom == "ordinateur":
             # Ordinateur portable : écran ouvert et clavier vu de face.
             ecran = RoundedRectangle(corner_radius=0.05, width=0.9, height=0.6, color=TEXTE, stroke_width=4, fill_color=FOND, fill_opacity=1).shift(UP * 0.22)
@@ -834,6 +864,26 @@ class Festival(VGroup):
 
     def pied(self, n):
         """Point au sol, tous les 1,6, de -4 (bord gauche) à 4 (bord droit)."""
+        return [1.6 * n, Y_SOL, 0]
+
+
+class Palais(VGroup):
+    """Le Palais fédéral, au trait : corps central à colonnes et coupole, deux ailes (les deux Chambres).
+
+    Même trame que la rue (placer de -4 à 4) ; les personnages se tiennent devant, sur l'esplanade."""
+
+    def __init__(self, moment="jour"):
+        sol = Line([-7.1, Y_SOL, 0], [7.1, Y_SOL, 0], **DECOR)
+        corps = Rectangle(width=4.0, height=2.6, **DECOR).move_to([0, Y_SOL + 1.3, 0])
+        fronton = Polygon([-2.2, Y_SOL + 2.6, 0], [2.2, Y_SOL + 2.6, 0], [0, Y_SOL + 3.3, 0], **DECOR)
+        tambour = Rectangle(width=1.6, height=0.5, **DECOR).move_to([0, Y_SOL + 3.55, 0])
+        coupole = Arc(radius=0.8, start_angle=0, angle=3.1416, **DECOR).move_to([0, Y_SOL + 4.2, 0])
+        colonnes = VGroup(*[Line([x, Y_SOL, 0], [x, Y_SOL + 2.3, 0], **DECOR) for x in (-1.5, -0.75, 0, 0.75, 1.5)])
+        ailes = VGroup(*[Rectangle(width=2.6, height=2.0, **DECOR).move_to([s * 3.4, Y_SOL + 1.0, 0]) for s in (-1, 1)])
+        fenetres = VGroup(*[_fenetre(s * 3.4 + dx, Y_SOL + 1.35, 0.5, 0.5) for s in (-1, 1) for dx in (-0.7, 0, 0.7)])
+        super().__init__(sol, ailes, fenetres, corps, colonnes, fronton, tambour, coupole)
+
+    def pied(self, n):
         return [1.6 * n, Y_SOL, 0]
 
 
