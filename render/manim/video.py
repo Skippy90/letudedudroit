@@ -72,6 +72,7 @@ def lire_moments(slug):
 class Schemas(Scene):
     def setup(self):
         self.t = 0.0
+        self.carte, self.carte_marques = None, {}
         self.alertes = []
         self.personnages, self.paroles, self.bulles = {}, {}, {}
         self.titre = self.sous_titre = self.article = self.renvoi = None
@@ -266,7 +267,7 @@ class Schemas(Scene):
         """Vrai si l'écran ne montre que du texte : ni personnage, ni décor, ni schéma, ni pictogramme."""
         graphiques = [self.decor, self.batiment, self.frise, self.livre, self.pyramide, self.bouclier,
                       self.livres and VGroup(*self.livres)]
-        graphiques += list(self.personnages.values()) + list(self.pictos.values())
+        graphiques += list(self.personnages.values()) + list(self.pictos.values()) + [getattr(self, "carte", None)]
         return not any(m is not None and self.a_l_ecran(m) for m in graphiques)
 
     def chevauchements(self):
@@ -797,6 +798,46 @@ class Schemas(Scene):
         if manque > 0:
             anims += [ea.animate.shift(RIGHT * cote * manque / 2), eb.animate.shift(LEFT * cote * manque / 2)]
         self.jouer(*anims, duree=0.3)
+
+    # ----- la carte de la Suisse (thème constitution) -----
+    def a_carte(self, *options):
+        """La Suisse au trait. Options : `cantons`, `lacs`, `petite` (à gauche, pour laisser place à des
+        personnages), ou trois nombres X Y LARGEUR."""
+        nombres = [float(o) for o in options if o.replace(".", "", 1).lstrip("-").isdigit()]
+        if len(nombres) == 3:
+            x, y, l = nombres
+        elif "petite" in options:
+            x, y, l = -3.6, 0.1, 5.0
+        else:
+            x, y, l = 0.0, 0.35, 7.6
+        self.carte = c.CarteSuisse("cantons" in options, "lacs" in options, l, (x, y))
+        self.carte_marques = {}
+        self.focus = self.carte
+        return [Create(self.carte, run_time=1.2)]
+
+    def a_carte_canton(self, sigle, *options):
+        """Met un canton en valeur : rempli de blanc, son sigle au centre (option `sans-nom` : sans sigle)."""
+        if sigle not in self.carte.cantons:
+            raise ValueError(f"canton inconnu « {sigle} »")
+        g = self.carte.cantons[sigle]
+        anims = [g.animate.set_fill(c.TEXTE, opacity=0.85)]
+        if "sans-nom" not in options:
+            nom = c.texte(sigle, c.T_PETIT, c.FOND, gras=True).move_to(self.carte.point_canton(sigle))
+            self.carte_marques[sigle] = nom
+            anims.append(FadeIn(nom))
+        self.focus = g
+        return anims
+
+    def a_carte_cantons_tous(self):
+        """Tous les cantons s'allument l'un après l'autre (les 26 cantons forment la Confédération)."""
+        from manim import LaggedStart
+        return [LaggedStart(*[g.animate.set_fill(c.TEXTE, opacity=0.35) for g in self.carte.cantons.values()],
+                            lag_ratio=0.08, run_time=2.4)]
+
+    def a_carte_retirer(self):
+        parts = [self.carte] + list(getattr(self, "carte_marques", {}).values())
+        self.carte, self.carte_marques = None, {}
+        return [FadeOut(m) for m in parts]
 
     def a_tourner(self, ident, vers):
         """Il se tourne vers un point (abscisse X), vers un autre personnage, ou « gauche » / « droite »."""

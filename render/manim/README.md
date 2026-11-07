@@ -121,6 +121,17 @@ seule l'accroche est nouvelle et doit être validée par la relectrice. Mise en 
 scène 16:9 au centre, grands sous-titres (quatre mots), barre de progression rouge, rappel de la vidéo complète.
 Sortie : `out/shorts/<matiere>--<numero-slug>--<id>.mp4`.
 
+## Carte de la Suisse
+
+| Action | Effet |
+| --- | --- |
+| `carte` [`cantons`] [`lacs`] [`petite` \| `X Y LARGEUR`] | La Suisse au trait (contour du pays) ; avec `cantons` les 26 cantons, `lacs` les lacs ; `petite` : à gauche, pour laisser la place à des personnages à droite |
+| `carte-canton SIGLE` [`sans-nom`] | Un canton rempli de blanc, son sigle au centre (ZH, BE, LU, UR, SZ, OW, NW, GL, ZG, FR, SO, BS, BL, SH, AR, AI, SG, GR, AG, TG, TI, VD, VS, NE, GE, JU) |
+| `carte-cantons-tous` | Les 26 cantons s'allument l'un après l'autre |
+| `carte-retirer` | Retire la carte |
+
+Données : `render/manim/donnees/suisse.json`, produit par `tools/carte_suisse.py` à partir du paquet libre swiss-maps (limites généralisées OFS/swisstopo 2026).
+
 ## Thème « constitution »
 
 `THEME=constitution` : fond rouge suisse, tout le dessin en blanc (personnages, décors, pictogrammes), mots-clés en rouge sur pastille blanche, blocs d'article rouge foncé. Pas de croix suisse (usage réglementé par la loi sur la protection des armoiries).

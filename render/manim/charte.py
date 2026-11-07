@@ -434,6 +434,9 @@ DECOR = dict(color=TEXTE, stroke_width=3, stroke_opacity=0.35)
 # sans concurrencer les personnages. DECORS=simples : les décors d'avant novembre 2026, sans détails.
 DETAIL = dict(color=TEXTE, stroke_width=2.5, stroke_opacity=0.3)
 DECORS_DETAILLES = _os.environ.get("DECORS", "detailles") != "simples"
+if CONSTITUTION:  # sur fond rouge, les bâtiments sont plus marqués
+    DECOR = dict(color=TEXTE, stroke_width=3.5, stroke_opacity=0.8)
+    DETAIL = dict(color=TEXTE, stroke_width=2.5, stroke_opacity=0.55)
 Y_SOL = -2.3
 
 
@@ -885,6 +888,44 @@ class Palais(VGroup):
 
     def pied(self, n):
         return [1.6 * n, Y_SOL, 0]
+
+
+class CarteSuisse(VGroup):
+    """La Suisse au trait : contour du pays, et au besoin les 26 cantons et les lacs.
+
+    Données : render/manim/donnees/suisse.json (tools/carte_suisse.py ; limites généralisées OFS/swisstopo,
+    paquet libre swiss-maps). `largeur` en unités Manim ; `centre` du dessin."""
+
+    def __init__(self, cantons=False, lacs=False, largeur=8.0, centre=(0, -0.2)):
+        import json
+        from pathlib import Path
+        donnees = json.loads((Path(__file__).parent / "donnees" / "suisse.json").read_text(encoding="utf-8"))
+        cx, cy = centre
+        self.largeur, self.centre_xy, self.donnees = largeur, (cx, cy), donnees
+
+        def point(p):
+            return [cx + p[0] * largeur, cy + p[1] * largeur, 0]
+
+        def contour(anneau, **style):
+            return Polygon(*[point(p) for p in anneau], **style)
+
+        self.cantons = {}
+        elements = []
+        if lacs:
+            elements.append(VGroup(*[contour(a, color=TEXTE, stroke_width=1.5, stroke_opacity=0.5,
+                                             fill_color=TEXTE, fill_opacity=0.12) for a in donnees["lacs"]]))
+        if cantons:
+            for sigle, c in donnees["cantons"].items():
+                g = VGroup(*[contour(a, color=TEXTE, stroke_width=1.6, stroke_opacity=0.7) for a in c["anneaux"]])
+                self.cantons[sigle] = g
+                elements.append(g)
+        self.pays = VGroup(*[contour(a, color=TEXTE, stroke_width=5) for a in donnees["pays"]])
+        elements.append(self.pays)
+        super().__init__(*elements)
+
+    def point_canton(self, sigle):
+        c = self.donnees["cantons"][sigle]["centre"]
+        return [self.centre_xy[0] + c[0] * self.largeur, self.centre_xy[1] + c[1] * self.largeur, 0]
 
 
 class Frontiere(VGroup):
