@@ -69,6 +69,16 @@ dans `out/constitution-<épisode>.mp4` ; les scènes dans `render/manim/demos/co
 - Art. 196 et 197 : principe des dispositions transitoires et quelques chiffres seulement (ch. 1, 4, 13, 14 de
   l'art. 196 ; ch. 1, 3, 9, 13 de l'art. 197).
 
+## Illustrations (version du 7 novembre)
+Chaque légende a maintenant son dessin : ~95 pictogrammes au trait (`render/manim/pictos.py`), « interdit » (objet
+barré), jauges pour les pourcentages déjà écrits dans la légende, flèches entre acteurs, petites foules. Le texte
+des légendes n'a pas changé. À regarder en relisant :
+- Les foules sont symboliques (12 bonshommes pour 100 000 signatures), sauf les 7 membres du Conseil fédéral.
+- Art. 70 : les cantons plurilingues coloriés sont Berne, Fribourg, Valais et Grisons.
+- Art. 115 et art. 141 (« 8 cantons ») : aucun canton d'exemple colorié, pour ne pas laisser croire à des cantons précis.
+- Art. 72 al. 3 et « pas dans les lieux de culte » (art. 10a) : texte seul, sans dessin.
+- Pas de croix ni d'emblème : la santé est un cœur, l'armée un casque.
+
 ## Pictogrammes qui manquent (à dessiner pour une version publiée)
-Maison, train, camion, animal, arbre, montagne, croix médicale, enveloppe, passeport, caméra, micro, sablier,
-loupe, salle du Conseil fédéral, salle du parlement.
+Dessinés depuis (voir ci-dessus). Manquent encore : enfant, téléphone de secours ou main tendue (aide), règle
+(métrologie), lingot, pylône électrique, salle du Conseil fédéral, salle du parlement.
