@@ -80,5 +80,5 @@ des légendes n'a pas changé. À regarder en relisant :
 - Pas de croix ni d'emblème : la santé est un cœur, l'armée un casque.
 
 ## Pictogrammes qui manquent (à dessiner pour une version publiée)
-Dessinés depuis (voir ci-dessus). Manquent encore : enfant, téléphone de secours ou main tendue (aide), règle
+Dessinés depuis (voir ci-dessus). Manquent encore : enfant, main tendue (aide), règle
 (métrologie), lingot, pylône électrique, salle du Conseil fédéral, salle du parlement.
