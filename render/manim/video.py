@@ -658,9 +658,9 @@ class Schemas(Scene):
         self.neige = c.Neige(self.decor.fenetre)
         return [FadeIn(self.neige)]
 
-    def a_picto(self, nom, x, y):
-        # « parlement:2 » : un deuxième pictogramme du même type, avec son propre nom.
-        p = c.Picto(nom.split(":")[0], [float(x), float(y), 0])
+    def a_picto(self, nom, x, y, taille="1"):
+        # « parlement:2 » : un deuxième pictogramme du même type, avec son propre nom. taille : facteur d'échelle.
+        p = c.Picto(nom.split(":")[0], [float(x), float(y), 0], float(taille))
         self.pictos[nom] = p
         self.focus = p
         return [FadeIn(p, scale=0.6)]
@@ -670,6 +670,82 @@ class Schemas(Scene):
         p = self.pictos[nom]
         self.focus = p
         return [p.animate(path_arc=-float(arc)).move_to([float(x), float(y), 0])]
+
+    # ----- graphiques : interdit, jauge, flèche entre deux éléments, foule -----
+    def _objet(self, ident):
+        if ident in self.personnages:
+            return self.personnages[ident].silhouette
+        if ident in self.pictos:
+            return self.pictos[ident]
+        if getattr(self, "carte", None) is not None and ident == "carte":
+            return self.carte
+        raise KeyError(f"élément inconnu « {ident} »")
+
+    def a_interdit(self, nom):
+        """Barre un pictogramme (cercle et diagonale) : « interdit »."""
+        p = self.pictos[nom]
+        r = max(p.width, p.height) / 2 + 0.06
+        ctr = p.get_center()
+        cercle = c.Circle(radius=r, color=c.TEXTE, stroke_width=6).move_to(ctr)
+        barre = c.Line(ctr + r * np.array([-0.7071, 0.7071, 0]), ctr + r * np.array([0.7071, -0.7071, 0]),
+                       color=c.TEXTE, stroke_width=6)
+        g = VGroup(cercle, barre)
+        p.add(g)
+        self.focus = p
+        return [Create(cercle), Create(barre)]
+
+    def a_jauge(self, ident, x, y, pourcent, *libelle):
+        """Barre horizontale qui se remplit jusqu'au pourcentage ; le chiffre s'écrit à droite (« 8,5 % »)."""
+        largeur, hauteur = 3.2, 0.36
+        v = float(pourcent.replace(",", "."))
+        cadre = c.RoundedRectangle(corner_radius=0.06, width=largeur, height=hauteur, color=c.TEXTE, stroke_width=4)
+        cadre.move_to([float(x), float(y), 0])
+        plein = c.Rectangle(width=max(largeur * v / 100, 0.02), height=hauteur - 0.08, stroke_width=0,
+                            fill_color=c.TEXTE, fill_opacity=0.9)
+        plein.move_to(cadre.get_left() + RIGHT * (0.04 + plein.width / 2))
+        chiffre = c.texte(f"{pourcent} %" if not libelle else libelle[0], c.T_PETIT, c.TEXTE, gras=True)
+        chiffre.next_to(cadre, RIGHT, buff=0.2)
+        g = VGroup(cadre, plein, chiffre)
+        self.pictos[ident] = g
+        self.focus = g
+        self.play(FadeIn(cadre), FadeIn(chiffre), run_time=0.3)
+        return [c.GrowFromEdge(plein, LEFT)]
+
+    def a_relier(self, a, b, *options):
+        """Flèche d'un élément (personnage ou pictogramme) vers un autre : qui donne, qui décide, qui reçoit.
+        « double » : flèche dans les deux sens (collaboration)."""
+        oa, ob = self._objet(a), self._objet(b)
+        d = ob.get_center() - oa.get_center()
+        d = d / (np.linalg.norm(d) + 1e-9)
+        # On part du bord de chaque élément, avec un petit jeu.
+        def bord(m, sens):
+            demi = np.array([m.width / 2, m.height / 2, 0])
+            t = min(demi[0] / (abs(sens[0]) + 1e-9), demi[1] / (abs(sens[1]) + 1e-9))
+            return m.get_center() + sens * (t + 0.2)
+        cls = c.DoubleArrow if "double" in options else c.Arrow
+        fleche = cls(bord(oa, d), bord(ob, -d), color=c.TEXTE, stroke_width=6, buff=0,
+                     max_tip_length_to_length_ratio=0.25)
+        self.pictos[f"{a}>{b}"] = fleche
+        self.focus = fleche
+        return [GrowArrow(fleche)]
+
+    def a_foule(self, ident, x, y, n, *options):
+        """n petits bonshommes en rangs (signatures, citoyens, cantons) ; ils apparaissent l'un après l'autre."""
+        n = int(n)
+        par_rang = int(options[0]) if options else min(n, 10)
+        gens = VGroup()
+        for k in range(n):
+            i, j = k % par_rang, k // par_rang
+            tete = c.Circle(radius=0.09, color=c.TEXTE, stroke_width=3, fill_color=c.FOND, fill_opacity=1)
+            corps = c.Line([0, -0.1, 0], [0, -0.38, 0], color=c.TEXTE, stroke_width=3)
+            bras = c.Line([-0.12, -0.2, 0], [0.12, -0.2, 0], color=c.TEXTE, stroke_width=3)
+            jambes = VGroup(c.Line([0, -0.38, 0], [-0.09, -0.55, 0], color=c.TEXTE, stroke_width=3),
+                            c.Line([0, -0.38, 0], [0.09, -0.55, 0], color=c.TEXTE, stroke_width=3))
+            gens.add(VGroup(corps, bras, jambes, tete).shift([0.36 * i, -0.66 * j, 0]))
+        gens.move_to([float(x), float(y), 0])
+        self.pictos[ident] = gens
+        self.focus = gens
+        return [c.LaggedStart(*[FadeIn(g, shift=UP * 0.1) for g in gens], lag_ratio=min(0.15, 2.0 / max(n, 1)))]
 
     def a_picto_retirer(self, nom):
         self._decrocher(nom)

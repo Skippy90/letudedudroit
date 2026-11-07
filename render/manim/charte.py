@@ -9,7 +9,7 @@ renvoi « vidéo N » en bas à droite.
 from manim import (
     DOWN, LEFT, RIGHT, UP, UL, UR, DL, DR, Arc, Circle, Create, Dot, Ellipse, FadeIn, FadeOut, GrowArrow,
     Line, Polygon, Rectangle, RoundedRectangle, Text, Transform, VGroup, Write, Arrow,
-    CurvedArrow, there_and_back,
+    CurvedArrow, there_and_back, DoubleArrow, GrowFromEdge, LaggedStart,
 )
 
 # Couleurs de la charte
@@ -554,8 +554,11 @@ class Neige(VGroup):
 class Picto(VGroup):
     """Pictogrammes au trait, dans les couleurs de la charte."""
 
-    def __init__(self, nom, position):
-        if nom == "parking":
+    def __init__(self, nom, position, taille=1.0):
+        import pictos as _pictos
+        if (formes := _pictos.dessiner(nom)) is not None:
+            elements = formes
+        elif nom == "parking":
             cadre = RoundedRectangle(corner_radius=0.12, width=0.9, height=0.9, color=TEXTE, stroke_width=4)
             lettre = texte("P", T_SOUS_TITRE, TEXTE, gras=True).move_to(cadre)
             elements = [cadre, lettre]
@@ -703,6 +706,8 @@ class Picto(VGroup):
         else:
             raise ValueError(f"picto inconnu « {nom} »")
         super().__init__(*elements)
+        if taille != 1.0:
+            self.scale(taille)
         self.move_to(position)
 
 
