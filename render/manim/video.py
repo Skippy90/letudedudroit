@@ -189,6 +189,40 @@ class Schemas(Scene):
         return [(n, m) for n, m in el if m is not None and self.a_l_ecran(m) and m.get_family()[0].has_points()
                 or (m is not None and self.a_l_ecran(m) and len(m.get_family()) > 1)]
 
+    def ranger_noms(self):
+        """Après chaque moment : les prénoms qui se touchent s'écartent, un prénom posé sur le bloc d'article
+        (ou d'arrêt) glisse sur le côté, et aucun ne sort du cadre. Petit glissement de 0,25 s."""
+        noms = [p.etiquette for p in self.personnages.values()
+                if self.a_l_ecran(p) and not getattr(p, "derriere_meuble", False) and p.etiquette.has_points()
+                or (self.a_l_ecran(p) and not getattr(p, "derriere_meuble", False) and len(p.etiquette.get_family()) > 1)]
+        if not noms:
+            return
+        cibles = {id(e): e.get_x() for e in noms}
+        larg = {id(e): e.width for e in noms}
+        hauteur = lambda e: (e.get_bottom()[1], e.get_top()[1])
+        blocs = [b for b in (self.article, getattr(self, "arret", None)) if b is not None and self.a_l_ecran(b)]
+        for _ in range(6):
+            for e in noms:
+                b0, h0 = hauteur(e)
+                x = cibles[id(e)]
+                for b in blocs:
+                    if b.get_bottom()[1] < h0 + 0.05 and b0 - 0.05 < b.get_top()[1] \
+                            and x - larg[id(e)] / 2 < b.get_right()[0] + 0.12 and b.get_left()[0] - 0.12 < x + larg[id(e)] / 2:
+                        x = (b.get_left()[0] - 0.15 - larg[id(e)] / 2) if x < b.get_x() else (b.get_right()[0] + 0.15 + larg[id(e)] / 2)
+                cibles[id(e)] = min(max(x, -7.0 + larg[id(e)] / 2), 7.0 - larg[id(e)] / 2)
+            tri = sorted(noms, key=lambda e: cibles[id(e)])
+            for a, b in zip(tri, tri[1:]):
+                (ab, ah), (bb, bh) = hauteur(a), hauteur(b)
+                if bb > ah + 0.05 or ab > bh + 0.05:
+                    continue
+                manque = (larg[id(a)] + larg[id(b)]) / 2 + 0.15 - (cibles[id(b)] - cibles[id(a)])
+                if manque > 0:
+                    cibles[id(a)] -= manque / 2
+                    cibles[id(b)] += manque / 2
+        anims = [e.animate.set_x(cibles[id(e)]) for e in noms if abs(cibles[id(e)] - e.get_x()) > 0.02]
+        if anims:
+            self.jouer(*anims, duree=0.25)
+
     def voulu(self, na, nb):
         """Contacts prévus par la charte : la bulle part de la tête, le nom s'inscrit sur le meuble."""
         # Un point et un repère posés au même endroit de la frise se croisent.
@@ -322,6 +356,7 @@ class Schemas(Scene):
                 self.jouer(*[x for a in creations for x in self.executer(a, repere)], duree=0.5)
                 actions = [a for a in actions if a[0] not in CREATIONS]
             self.jouer(*[x for a in actions for x in self.executer(a, repere)])
+            self.ranger_noms()
             total = self.mots_visibles()
             if total > 12:
                 self.alertes.append(f"{repere} : {total} mots affichés (maximum 12)")
