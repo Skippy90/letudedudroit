@@ -4,8 +4,9 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 
 - L'enregistrement est déposé dans voice/<slug>/ sous le nom enregistrement.<ext>
   (m4a, mp3, wav…), un seul fichier pour toute la vidéo, prises ratées comprises.
-- Il est transcrit une fois, avec l'instant de chaque mot, par la reconnaissance
-  vocale d'ElevenLabs (modèle « scribe »). La transcription est gardée dans
+- Il est transcrit une fois, avec l'instant de chaque mot, sur la machine et gratuitement
+  (faster-whisper, modèle « medium » ; WHISPER_MODELE pour un autre). Sur demande
+  ({"transcription": "elevenlabs"} dans reglages.json), par la reconnaissance d'ElevenLabs (payante). La transcription est gardée dans
   voice/<slug>/transcription.json : relancer l'outil ne coûte rien.
 - Chaque phrase de tts.txt est cherchée dans la transcription. Quand elle a été lue
   plusieurs fois, la dernière prise complète est gardée : les faux départs et les
@@ -92,7 +93,27 @@ def mots_texte(texte: str) -> list[str]:
     return [m for m in (normaliser(x) for x in re.split(r"[\s'’\-]+", texte)) if m]
 
 
-def transcrire(fichier: Path) -> dict:
+MODELE_WHISPER = os.environ.get("WHISPER_MODELE", "medium")
+
+
+def transcrire_local(fichier: Path) -> dict:
+    """Transcription gratuite, sur la machine (faster-whisper, modèle téléchargé une fois depuis huggingface.co).
+    Même forme de réponse que la reconnaissance d'ElevenLabs : une liste de mots avec leurs instants."""
+    from faster_whisper import WhisperModel
+    modele = WhisperModel(MODELE_WHISPER, device="cpu", compute_type="int8",
+                          download_root=str(RACINE / ".cache" / "whisper"))
+    segments, _ = modele.transcribe(str(fichier), language="fr", word_timestamps=True, vad_filter=False,
+                                    condition_on_previous_text=False)
+    mots = [{"text": w.word.strip(), "start": round(w.start, 3), "end": round(w.end, 3), "type": "word"}
+            for seg in segments for w in (seg.words or []) if w.word.strip()]
+    return {"text": " ".join(m["text"] for m in mots), "words": mots, "moteur": f"faster-whisper {MODELE_WHISPER}"}
+
+
+def transcrire(fichier: Path, moteur: str = "local") -> dict:
+    """Par défaut, transcription locale et gratuite ; {"transcription": "elevenlabs"} dans reglages.json
+    utilise la reconnaissance d'ElevenLabs (payante, en crédits)."""
+    if moteur != "elevenlabs":
+        return transcrire_local(fichier)
     limite = uuid.uuid4().hex
     parties = [f'--{limite}\r\nContent-Disposition: form-data; name="{nom}"\r\n\r\n{valeur}\r\n'.encode()
                for nom, valeur in (("model_id", "scribe_v1"), ("language_code", "fra"),
@@ -236,7 +257,8 @@ def main(slug: str) -> None:
         mp3 = tmp / "envoi.mp3"
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(brut), "-ar", "16000", "-b:a", "64k", str(mp3)],
                        check=True)
-        transcription.write_text(json.dumps({"source": empreinte, "reponse": transcrire(mp3)}, ensure_ascii=False),
+        transcription.write_text(json.dumps({"source": empreinte, "reponse": transcrire(mp3, reglages.get("transcription", "local"))},
+                                            ensure_ascii=False),
                                  encoding="utf-8")
     reponse = json.loads(transcription.read_text(encoding="utf-8"))["reponse"]
 
