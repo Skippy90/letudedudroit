@@ -98,15 +98,32 @@ MODELE_WHISPER = os.environ.get("WHISPER_MODELE", "medium")
 
 def transcrire_local(fichier: Path) -> dict:
     """Transcription gratuite, sur la machine (faster-whisper, modèle téléchargé une fois depuis huggingface.co).
-    Même forme de réponse que la reconnaissance d'ElevenLabs : une liste de mots avec leurs instants."""
+    L'enregistrement est découpé aux pauses (détecteur de voix Silero) et chaque morceau est transcrit seul :
+    transcrit d'un bloc, Whisper saute souvent une phrase relue juste après sa première prise, et la reprise
+    disparaît du montage. Même forme de réponse que la reconnaissance d'ElevenLabs."""
     from faster_whisper import WhisperModel
+    from faster_whisper.audio import decode_audio
+    from faster_whisper.vad import VadOptions, get_speech_timestamps
+    fr = 16000
+    son_ = decode_audio(str(fichier), sampling_rate=fr)
+    zones = get_speech_timestamps(son_, VadOptions(min_silence_duration_ms=500, speech_pad_ms=200))
+    # Zones voisines regroupées jusqu'à 12 s : assez de contexte, trop court pour qu'une reprise soit fusionnée.
+    morceaux = []
+    for z in zones:
+        if morceaux and z["end"] - morceaux[-1][0] <= 12 * fr and z["start"] - morceaux[-1][1] < 0.8 * fr:
+            morceaux[-1][1] = z["end"]
+        else:
+            morceaux.append([z["start"], z["end"]])
     modele = WhisperModel(MODELE_WHISPER, device="cpu", compute_type="int8",
                           download_root=str(RACINE / ".cache" / "whisper"))
-    segments, _ = modele.transcribe(str(fichier), language="fr", word_timestamps=True, vad_filter=False,
-                                    condition_on_previous_text=False)
-    mots = [{"text": w.word.strip(), "start": round(w.start, 3), "end": round(w.end, 3), "type": "word"}
-            for seg in segments for w in (seg.words or []) if w.word.strip()]
-    return {"text": " ".join(m["text"] for m in mots), "words": mots, "moteur": f"faster-whisper {MODELE_WHISPER}"}
+    mots = []
+    for debut, fin in morceaux:
+        segments, _ = modele.transcribe(son_[debut:fin], language="fr", word_timestamps=True,
+                                        condition_on_previous_text=False)
+        decalage = debut / fr
+        mots += [{"text": w.word.strip(), "start": round(w.start + decalage, 3), "end": round(w.end + decalage, 3),
+                  "type": "word"} for seg in segments for w in (seg.words or []) if w.word.strip()]
+    return {"text": " ".join(m["text"] for m in mots), "words": mots, "moteur": f"faster-whisper {MODELE_WHISPER}, par morceaux"}
 
 
 def transcrire(fichier: Path, moteur: str = "local") -> dict:
