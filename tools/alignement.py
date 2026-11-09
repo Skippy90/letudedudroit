@@ -216,6 +216,34 @@ def isoler(monte: Path, dossier: Path, tmp: Path) -> Path:
     return isole
 
 
+def caler_sur_le_son(instants: list[tuple[float, float]], x: np.ndarray, fr: int) -> list[tuple[float, float]]:
+    """Recale le début et la fin de chaque mot sur le son réel.
+
+    Les instants de Whisper sont approximatifs (souvent 0,1 à 0,4 s trop tard au début d'un mot, trop tôt à la
+    fin) : une coupe faite sur eux tranche la première syllabe ou la dernière. On élargit donc chaque mot tant
+    que le son reste nettement au-dessus du bruit de fond, sans empiéter sur le mot voisin, et de 0,5 s au plus."""
+    h = int(0.01 * fr)
+    n = len(x) // h
+    env = np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1) + 1e-12)
+    seuil = np.percentile(env, 10) * 6
+    ordre = sorted(range(len(instants)), key=lambda k: instants[k][0])
+    cales = list(instants)
+    for r, k in enumerate(ordre):
+        debut, fin = instants[k]
+        avant = instants[ordre[r - 1]][1] if r else 0.0
+        apres = instants[ordre[r + 1]][0] if r + 1 < len(ordre) else len(x) / fr
+        a = int(debut / 0.01)
+        borne = max(int(max(avant, debut - 0.5) / 0.01), 0)
+        while a > borne and a - 1 < n and env[a - 1] > seuil:
+            a -= 1
+        z = int(fin / 0.01)
+        borne = min(int(min(apres, fin + 0.5) / 0.01), n)
+        while z < borne and env[z] > seuil:
+            z += 1
+        cales[k] = (min(debut, a * 0.01), max(fin, z * 0.01))
+    return cales
+
+
 def porte_sur_les_mots(x: np.ndarray, fr: int, instants: list[tuple[float, float]]) -> np.ndarray:
     """Atténue tout ce qui n'est pas de la parole, d'après l'instant de chaque mot transcrit.
 
@@ -288,6 +316,9 @@ def main(slug: str) -> None:
             entendus.append(m)
             instants.append((w["start"], w["end"]))
 
+    x, fr = sf.read(brut)
+    instants = caler_sur_le_son(instants, x, fr)
+
     # Phrases dans l'ordre, avec toutes leurs prises.
     phrases = [(b, p, t) for b, ph in enumerate(blocs) for p, t in enumerate(ph)]
     candidats = [prises(mots_texte(t), entendus) for _, _, t in phrases]
@@ -355,8 +386,20 @@ def main(slug: str) -> None:
                 i -= 1
         choix[k] = (i, j, part, tete, queue)
 
+    # Une prise ne traverse pas un long silence pour aller chercher un ou deux derniers mots : après « jour-amende »,
+    # une pause de 3 s, puis « Enfin, l'amende » (faux départ de la ligne suivante) ne font pas partie de la phrase.
+    for k, (i, j, part, tete, queue) in enumerate(choix):
+        for g in range(j - 1, max(i, j - 3) - 1, -1):
+            if instants[g + 1][0] - instants[g][1] > 1.5:
+                j = g
+                break
+        for g in range(i, min(j, i + 2)):
+            if instants[g + 1][0] - instants[g][1] > 1.5:
+                i = g + 1
+                break
+        choix[k] = (i, j, part, tete, queue)
+
     # Montage.
-    x, fr = sf.read(brut)
     if reglages.get("porte", True):
         x = porte_sur_les_mots(x, fr, instants)
     # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
@@ -369,41 +412,100 @@ def main(slug: str) -> None:
     rampe = np.linspace(0, 1, fondu)
     morceaux, t, rapport = [], 0.0, []
     timings = [[] for _ in blocs]
+    # Points de coupe de chaque phrase (en secondes), recalés sur le son : on recule le début (et on avance la
+    # fin) jusqu'à un vrai silence de 80 ms, de 0,6 s au plus. Un mot voisin collé à la phrase (moins de 0,15 s)
+    # est traversé : c'est souvent un mot de bord mal reconnu (« Grâce » pour « Reste »). Un mot séparé par une
+    # pause (une prise ratée) borne la recherche. Deux phrases lues d'un trait sont coupées au point le plus calme
+    # entre elles : rien n'est répété ni tranché.
+    h = int(0.01 * fr)
+    nb = len(x) // h
+    env = np.sqrt((x[:nb * h].reshape(nb, h) ** 2).mean(1) + 1e-12)
+    seuil = np.percentile(env, 10) * 6
+
+    def coupe_debut(i):
+        debut = instants[i][0]
+        lim = max(debut - 0.6, 0.0)
+        if i and debut - instants[i - 1][1] >= 0.15:
+            lim = max(lim, instants[i - 1][1] + 0.03)
+        elif i:
+            # Mot collé juste avant : on ne le traverse que s'il ouvre lui-même une prise (silence avant lui),
+            # comme un premier mot mal reconnu ; sinon c'est la fin d'un faux départ enchaîné sur la reprise.
+            isole = i < 2 or instants[i - 1][0] - instants[i - 2][1] >= 0.3
+            if not isole:
+                lim = max(lim, instants[i - 1][1])
+        f = int(debut / 0.01)
+        while f - 8 > lim / 0.01 and env[max(f - 8, 0):f].max() > seuil:
+            f -= 1
+        return max(lim, min(debut - MARGE, f * 0.01 - 0.04))
+
+    def coupe_fin(j):
+        fin = instants[j][1]
+        lim = min(fin + 0.6, len(x) / fr)
+        if j + 1 < len(instants) and instants[j + 1][0] - fin >= 0.15:
+            lim = min(lim, instants[j + 1][0] - 0.03)
+        elif j + 1 < len(instants):
+            isole = j + 2 >= len(instants) or instants[j + 2][0] - instants[j + 1][1] >= 0.3
+            if not isole:
+                lim = min(lim, instants[j + 1][0])
+        f = int(fin / 0.01)
+        while f + 8 < min(lim / 0.01, nb) and env[f:f + 8].max() > seuil:
+            f += 1
+        return min(lim, max(fin + MARGE, f * 0.01 + 0.04))
+
+    coupes = [[coupe_debut(i), coupe_fin(j)] for i, j, *_ in choix]
+    for k in range(1, len(choix)):
+        if choix[k - 1][1] + 1 == choix[k][0] and coupes[k][0] < coupes[k - 1][1]:
+            g, d = instants[choix[k - 1][1]][1], instants[choix[k][0]][0]
+            if d - g > 0.02:
+                fa, fb = int(g / 0.01), max(int(d / 0.01), int(g / 0.01) + 1)
+                milieu = (fa + int(np.argmin(env[fa:fb]))) * 0.01
+            else:
+                milieu = (g + d) / 2
+            coupes[k - 1][1] = coupes[k][0] = milieu
+
+    # Phrase rattachée à la précédente par sa pause d'origine (copiée telle quelle) : la jonction ne reçoit
+    # pas de fondu, le son passe de l'une à l'autre exactement comme dans l'enregistrement.
+    rattachee = [bool(k) and naturelles and choix[k - 1][1] + 1 == choix[k][0]
+                 and coupes[k][0] - coupes[k - 1][1] <= (PAUSE_PHRASE if phrases[k][1] else PAUSE_LIGNE)[1]
+                 for k in range(len(choix))]
     for k, ((b, p, texte), (i, j, part, _, _)) in enumerate(zip(phrases, choix)):
-        debut, fin = instants[i][0], instants[j][1]
+        A, Z = coupes[k]
+        debut = instants[i][0]
         if k:
-            fin_prec = instants[choix[k - 1][1]][1]
+            Zp = coupes[k - 1][1]
             contigu = choix[k - 1][1] + 1 == i  # aucun mot (donc aucune reprise) entre les deux
             bornes = PAUSE_PHRASE if p else PAUSE_LIGNE
-            if contigu:
-                pause = min(max(debut - fin_prec - 2 * MARGE, bornes[0]), bornes[1])
+            ecart = A - Zp
+            if rattachee[k]:
+                # Pause d'origine gardée telle quelle (même très courte) : la respiration et l'ambiance restent.
+                morceaux.append(x[int(Zp * fr):int(A * fr)].copy())
             else:
-                pause = PAUSE_COUPE["phrase" if p else "ligne"]
-            ecart = debut - fin_prec - 2 * MARGE
-            if naturelles and contigu and bornes[0] <= ecart <= bornes[1]:
-                # Pause d'origine gardée telle quelle : la respiration et l'ambiance restent.
-                morceaux.append(x[int((fin_prec + MARGE) * fr):int((debut - MARGE) * fr)].copy())
-            elif naturelles:
-                # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                pause = (min(max(ecart, bornes[0]), bornes[1]) if contigu
+                         else PAUSE_COUPE["phrase" if p else "ligne"])
                 n = int(pause * fr)
-                morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
-            else:
-                morceaux.append(np.zeros(int(pause * fr)))
+                if naturelles:
+                    # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                    morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
+                else:
+                    morceaux.append(np.zeros(n))
             t += len(morceaux[-1]) / fr
-        a, z = max(0, int((debut - MARGE) * fr)), min(len(x), int((fin + MARGE) * fr))
+        a, z = max(0, int(A * fr)), min(len(x), int(Z * fr))
         seg = x[a:z].copy()
-        seg[:fondu] *= rampe
-        seg[-fondu:] *= rampe[::-1]
+        # Pas de fondu là où deux phrases lues d'un trait se rejoignent exactement : le son continue tel quel.
+        if not rattachee[k]:
+            seg[:fondu] *= rampe
+        if not (k + 1 < len(coupes) and rattachee[k + 1]):
+            seg[-fondu:] *= rampe[::-1]
         morceaux.append(seg)
         # Instant de chaque mot reconnu, dans le temps de la narration montée
         # (sert à caler un visuel sur un mot précis et aux sous-titres).
         mots = [{"mot": entendus[w], "debut": round(t + instants[w][0] - a / fr, 3),
                  "fin": round(t + instants[w][1] - a / fr, 3)} for w in range(i, j + 1)]
-        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3),
-                           "mots": mots})
+        timings[b].append({"texte": texte, "debut": round(t + max(0.0, instants[i][0] - a / fr), 3),
+                           "fin": round(t + min(len(seg) / fr, instants[j][1] - a / fr), 3), "mots": mots})
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
-        note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"
+        note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s (coupe {A:.2f}–{Z:.2f})"
         if k in retouches:
             note += " (retouche enregistrée à part)"
         elif reprises:
