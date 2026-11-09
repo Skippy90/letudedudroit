@@ -85,7 +85,7 @@ Objets et actions (9 novembre 2026) : le téléphone volé (pris des mains de la
 | 14.1 | scene-vide ; article "Art. 139 CP" ; decor tribunal ; personnage ines "Inès" rose gauche ; placer ines -1 ; personnage juge "Le juge" violet droite ; placer juge 3 ; visage ines inquiet |
 | 14.1@cinq | picto prison -4.2 1.4 ; etiquette cinq "5 ans au plus" -4.2 0.2 |
 | 14.2 | tourner juge -4.2 |
-| 14.2+4 | parler juge |
+| 14.2+0.6 | parler juge |
 | 14.2@pécuniaire | picto pieces 1.2 1.4 ; etiquette pec "Peine pécuniaire" 1.2 0.2 |
 | 14.3 | accent juge ; tourner juge 1.2 |
 | 15.1 | scene-vide ; article-retirer ; arret "ATF 147 IV 241" ; personnage juge "Le juge" violet centre-droite ; titre "Trois questions" |
@@ -98,7 +98,7 @@ Objets et actions (9 novembre 2026) : le téléphone volé (pris des mains de la
 | 16.1 | scene-vide ; arret-retirer ; article "Art. 41 CP" ; titre "Un cadre" ; personnage juge "Le juge" violet centre ; picto prison -3.5 0.4 ; picto pieces 3.5 0.4 |
 | 16.2 | sous-titre "Préférer la prison ?" ; tourner juge gauche |
 | 16.2@deux | etiquette deux "Deux raisons" 0 -1.8 |
-| 16.2+7 | accent juge |
+| 16.2+2.5 | accent juge |
 | 17.1 | effacer-titres ; etiquette-retirer deux ; retirer juge ; picto-retirer pieces ; picto-deplacer prison -4.6 0.9 ; case "Détourner de récidiver" |
 | 17.2 | case "Paiement impossible" |
 | 17.2@pécuniaire | picto pieces -4.6 -0.8 |
