@@ -1,6 +1,6 @@
 # La bibliothèque des grands arrêts — plan
 
-**Statut : plan validé dans son principe le 16 novembre 2026 (« on ne va pas se contenter du droit pénal »).**
+**Statut : plan validé le 16 novembre 2026 ; scripts en préparation.**
 Chaque script reste soumis à la règle absolue : arrêt lu en entier sur search.bger.ch, articles ouverts sur Fedlex à la
 date de rédaction, audit rempli, validation de la relectrice avant enregistrement.
 
@@ -155,12 +155,10 @@ Les 11 arrêts pénaux déjà rédigés (2 à 5 et 7 à 11) s'intercalent selon 
 - **Pas de conseil individuel** : les vidéos sur le bail, la famille et l'AI finissent par une orientation (ASLOCA,
   permanence juridique, avocat, office AI).
 
-## 8. Rythme
+## 8. Cadence
 
-- Côté agent : **deux scripts d'arrêt par semaine**, avec l'audit et le texte pour la voix (`tts.txt`).
-- Côté relecture et enregistrement : la relectrice valide l'audit, la narratrice enregistre. C'est le goulot :
-  **un à deux arrêts enregistrés par semaine** selon le temps disponible.
-- 33 arrêts à deux par semaine, c'est environ quatre mois d'écriture. On commence par les six premiers, puis bilan.
+La cadence d'enregistrement et de publication est décidée par la créatrice. Côté agent, tous les scripts sont
+préparés d'avance (script, audit, texte pour la voix), pour qu'elle puise dans la bibliothèque à son rythme.
 
 ## 9. Prochaines étapes
 
