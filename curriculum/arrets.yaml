@@ -120,9 +120,9 @@ videos:
     titre: "Divorce : la fin de la « règle des 45 ans »"
     notion: "Reprise d'une activité lucrative après séparation ou divorce (ATF 147 III 308)"
     serie: famille-argent
-    articles: []
+    articles: ["125 CC", "163 CC"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 17
     slug: atf-138-iii-322
     titre: "La FIFA peut-elle empêcher un joueur de travailler ?"
