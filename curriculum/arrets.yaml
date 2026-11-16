@@ -96,9 +96,9 @@ videos:
     titre: "Comment le juge calcule une pension pour un enfant"
     notion: "Entretien de l'enfant : méthode en deux étapes avec répartition de l'excédent (ATF 147 III 265)"
     serie: famille-argent
-    articles: []
+    articles: ["276 CC", "276a CC", "285 CC", "285a CC", "93 LP"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 14
     slug: atf-147-iii-14
     titre: "Votre loyer de départ est-il abusif ?"
@@ -288,9 +288,9 @@ videos:
     titre: "Après un divorce, quand reprendre le travail ?"
     notion: "Entretien de prise en charge ; degrés scolaires (ATF 144 III 481)"
     serie: famille-argent
-    articles: []
+    articles: ["125 CC", "163 CC", "276 CC", "276a CC", "285 CC"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 38
     slug: atf-143-v-409
     titre: "Dépression et AI"
@@ -312,9 +312,9 @@ videos:
     titre: "Parents non mariés : comment se partage l'excédent"
     notion: "Excédent pour les enfants de parents non mariés (ATF 149 III 441)"
     serie: famille-argent
-    articles: []
+    articles: ["276 CC", "285 CC", "289 CC"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 41
     slug: atf-143-ii-297
     titre: "Un contrat de dentifrice devenu grand arrêt sur les cartels"
@@ -328,9 +328,9 @@ videos:
     titre: "Impôts et minimum vital du parent qui paie"
     notion: "Impôts et leasing dans le minimum vital du débiteur d'entretien (ATF 140 III 337)"
     serie: famille-argent
-    articles: []
+    articles: ["163 CC", "176 CC", "92 LP", "93 LP", "9 Cst."]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 43
     slug: atf-133-i-58
     titre: "L'État doit-il fournir le produit d'un suicide assisté ?"
