@@ -104,9 +104,9 @@ videos:
     titre: "Votre loyer de départ est-il abusif ?"
     notion: "Contestation du loyer initial ; calcul du rendement net (ATF 147 III 14)"
     serie: logement
-    articles: []
+    articles: ["269 CO", "269a CO", "270 CO", "11 OBLF", "12a OBLF", "16 OBLF"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 15
     slug: atf-129-i-217
     titre: "Le peuple peut-il voter pour discriminer ?"
@@ -160,9 +160,9 @@ videos:
     titre: "Le bailleur a oublié la formule officielle"
     notion: "Loyer initial sans formule officielle (ATF 140 III 583)"
     serie: logement
-    articles: []
+    articles: ["11 CO", "20 CO", "62 CO", "67 CO", "269d CO", "270 CO", "2 CC", "19 OBLF"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 22
     slug: atf-138-ii-346
     titre: "Google Street View et votre visage"
@@ -256,9 +256,9 @@ videos:
     titre: "Bail indexé : peut-on demander une baisse ?"
     notion: "Baisse de loyer à la fin de la durée initiale d'un bail indexé (ATF 147 III 32)"
     serie: logement
-    articles: []
+    articles: ["269 CO", "269b CO", "269d CO", "270 CO", "270a CO", "270c CO", "17 OBLF"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 34
     slug: atf-110-ia-7
     titre: "Le mariage coûte-t-il plus cher en impôts ?"
