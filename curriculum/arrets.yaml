@@ -80,3 +80,262 @@ videos:
     articles: ["261bis"]
     requiert: []
     statut: script-redige
+
+  # --- Bibliothèque des grands arrêts (plan du 16.11.2026, docs/strategie/bibliotheque-atf.md) ---
+  # Références contrôlées sur search.bger.ch (regeste) ; faits et raisonnement à lire en entier avant le script.
+  - id: 12
+    slug: atf-116-ia-359
+    titre: "En 1990, des Suissesses ne pouvaient toujours pas voter"
+    notion: "Égalité des droits politiques entre femmes et hommes ; Appenzell Rhodes-Intérieures (ATF 116 Ia 359)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 13
+    slug: atf-147-iii-265
+    titre: "Comment le juge calcule une pension pour un enfant"
+    notion: "Entretien de l'enfant : méthode en deux étapes avec répartition de l'excédent (ATF 147 III 265)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 14
+    slug: atf-147-iii-14
+    titre: "Votre loyer de départ est-il abusif ?"
+    notion: "Contestation du loyer initial ; calcul du rendement net (ATF 147 III 14)"
+    serie: logement
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 15
+    slug: atf-129-i-217
+    titre: "Le peuple peut-il voter pour discriminer ?"
+    notion: "Naturalisations aux urnes ; interdiction de discriminer et devoir de motiver (ATF 129 I 217)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 16
+    slug: atf-147-iii-308
+    titre: "Divorce : la fin de la « règle des 45 ans »"
+    notion: "Reprise d'une activité lucrative après séparation ou divorce (ATF 147 III 308)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 17
+    slug: atf-138-iii-322
+    titre: "La FIFA peut-elle empêcher un joueur de travailler ?"
+    notion: "Matuzalem : ordre public matériel et engagement excessif (ATF 138 III 322)"
+    serie: travail-personnalite
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 18
+    slug: atf-123-i-296
+    titre: "Le foulard à l'école : l'enseignante et l'élève"
+    notion: "Neutralité confessionnelle de l'école et liberté de conscience et de croyance (ATF 123 I 296 / 142 I 49)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 19
+    slug: atf-147-iv-9
+    titre: "Une vidéo illégale peut-elle servir de preuve ?"
+    notion: "Exploitabilité de preuves obtenues illicitement (art. 141 al. 2 CPP) (ATF 147 IV 9)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 20
+    slug: atf-150-iii-305
+    titre: "Une pension peut-elle durer toute la vie ?"
+    notion: "Limitation dans le temps de l'entretien après divorce (ATF 150 III 305)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 21
+    slug: atf-140-iii-583
+    titre: "Le bailleur a oublié la formule officielle"
+    notion: "Loyer initial sans formule officielle (ATF 140 III 583)"
+    serie: logement
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 22
+    slug: atf-138-ii-346
+    titre: "Google Street View et votre visage"
+    notion: "Protection de la personnalité et données personnelles (ATF 138 II 346)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 23
+    slug: atf-143-iv-241
+    titre: "Quand le procureur peut-il classer ?"
+    notion: "Classement et in dubio pro duriore (ATF 143 IV 241)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 24
+    slug: atf-125-iii-70
+    titre: "Mobbing : quand le licenciement devient abusif"
+    notion: "Mobbing, licenciement abusif et tort moral (ATF 125 III 70)"
+    serie: travail-personnalite
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 25
+    slug: atf-146-i-145
+    titre: "Les Aînées pour le climat contre la Suisse"
+    notion: "Demande de décision sur des actes matériels en matière de climat (ATF 146 I 145)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 26
+    slug: atf-141-v-281
+    titre: "Une rente AI pour des douleurs qu'on ne voit pas ?"
+    notion: "Troubles psychosomatiques : procédure probatoire structurée (ATF 141 V 281)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 27
+    slug: atf-148-iv-329
+    titre: "Le stealthing devant le Tribunal fédéral"
+    notion: "Stealthing et art. 191 CP (ancien droit) (ATF 148 IV 329)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 28
+    slug: atf-116-ia-252
+    titre: "Un crucifix dans une école publique ?"
+    notion: "Crucifix en classe et neutralité confessionnelle (ATF 116 Ia 252)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 29
+    slug: atf-147-iii-293
+    titre: "Divorce : comment se calcule la pension entre ex-époux"
+    notion: "Entretien après divorce : méthode en deux étapes (ATF 147 III 293)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 30
+    slug: atf-143-i-377
+    titre: "L'AI peut-elle vous faire surveiller ?"
+    notion: "Observation par l'AI sans base légale suffisante (ATF 143 I 377)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 31
+    slug: atf-135-i-79
+    titre: "La religion dispense-t-elle du cours de natation ?"
+    notion: "Dispense de natation mixte pour motifs religieux (ATF 135 I 79)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 32
+    slug: atf-148-iv-234
+    titre: "Ce que l'arrêt de 2022 a montré sur l'ancien droit du viol"
+    notion: "Contrainte et consentement (ancien droit) (ATF 148 IV 234)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 33
+    slug: atf-147-iii-32
+    titre: "Bail indexé : peut-on demander une baisse ?"
+    notion: "Baisse de loyer à la fin de la durée initiale d'un bail indexé (ATF 147 III 32)"
+    serie: logement
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 34
+    slug: atf-110-ia-7
+    titre: "Le mariage coûte-t-il plus cher en impôts ?"
+    notion: "Hegetschweiler : égalité fiscale entre couples mariés et concubins (ATF 110 Ia 7)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 35
+    slug: atf-143-i-129
+    titre: "Une initiative populaire peut-elle être annulée ?"
+    notion: "Initiative cantonale fribourgeoise invalidée (ATF 143 I 129)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 36
+    slug: atf-137-iii-303
+    titre: "Un footballeur écarté peut-il partir sur-le-champ ?"
+    notion: "Résiliation immédiate par le travailleur ; droit d'être occupé (ATF 137 III 303)"
+    serie: travail-personnalite
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 37
+    slug: atf-144-iii-481
+    titre: "Après un divorce, quand reprendre le travail ?"
+    notion: "Entretien de prise en charge ; degrés scolaires (ATF 144 III 481)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 38
+    slug: atf-143-v-409
+    titre: "Dépression et AI"
+    notion: "Troubles dépressifs légers à moyens et invalidité (ATF 143 V 409)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 39
+    slug: atf-140-iv-196
+    titre: "Le juge d'appel doit-il réentendre les témoins ?"
+    notion: "Immédiateté et preuves en appel (ATF 140 IV 196)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 40
+    slug: atf-149-iii-441
+    titre: "Parents non mariés : comment se partage l'excédent"
+    notion: "Excédent pour les enfants de parents non mariés (ATF 149 III 441)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 41
+    slug: atf-143-ii-297
+    titre: "Un contrat de dentifrice devenu grand arrêt sur les cartels"
+    notion: "Gaba : accords verticaux et concurrence (ATF 143 II 297)"
+    serie: economie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 42
+    slug: atf-140-iii-337
+    titre: "Impôts et minimum vital du parent qui paie"
+    notion: "Impôts et leasing dans le minimum vital du débiteur d'entretien (ATF 140 III 337)"
+    serie: famille-argent
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 43
+    slug: atf-133-i-58
+    titre: "L'État doit-il fournir le produit d'un suicide assisté ?"
+    notion: "Pentobarbital sodique et ordonnance médicale (ATF 133 I 58)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
