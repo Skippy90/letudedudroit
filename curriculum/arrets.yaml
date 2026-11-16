@@ -88,9 +88,9 @@ videos:
     titre: "En 1990, des Suissesses ne pouvaient toujours pas voter"
     notion: "Égalité des droits politiques entre femmes et hommes ; Appenzell Rhodes-Intérieures (ATF 116 Ia 359)"
     serie: libertes-democratie
-    articles: []
+    articles: ["4 aCst.", "74 aCst.", "8 Cst.", "39 Cst.", "51 Cst."]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 13
     slug: atf-147-iii-265
     titre: "Comment le juge calcule une pension pour un enfant"
@@ -112,9 +112,9 @@ videos:
     titre: "Le peuple peut-il voter pour discriminer ?"
     notion: "Naturalisations aux urnes ; interdiction de discriminer et devoir de motiver (ATF 129 I 217)"
     serie: libertes-democratie
-    articles: []
+    articles: ["8 Cst.", "29 Cst.", "34 Cst.", "35 Cst.", "15 LN", "16 LN"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 16
     slug: atf-147-iii-308
     titre: "Divorce : la fin de la « règle des 45 ans »"
@@ -192,9 +192,9 @@ videos:
     titre: "Les Aînées pour le climat contre la Suisse"
     notion: "Demande de décision sur des actes matériels en matière de climat (ATF 146 I 145)"
     serie: libertes-democratie
-    articles: []
+    articles: ["25a PA", "10 Cst.", "13 Cst.", "6 CEDH", "3 LCl"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 26
     slug: atf-141-v-281
     titre: "Une rente AI pour des douleurs qu'on ne voit pas ?"
@@ -272,9 +272,9 @@ videos:
     titre: "Une initiative populaire peut-elle être annulée ?"
     notion: "Initiative cantonale fribourgeoise invalidée (ATF 143 I 129)"
     serie: libertes-democratie
-    articles: []
+    articles: ["8 Cst.", "34 Cst.", "139 Cst.", "43 Cst./FR"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 36
     slug: atf-137-iii-303
     titre: "Un footballeur écarté peut-il partir sur-le-champ ?"
