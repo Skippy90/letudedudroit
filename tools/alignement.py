@@ -438,7 +438,15 @@ def main(slug: str) -> None:
             f -= 1
         return max(lim, min(debut - MARGE, f * 0.01 - 0.04))
 
-    def coupe_fin(j):
+    def coupe_fin(j, suivant):
+        # Un mot mal découpé par la transcription (« Land's Game Mind » pour « Landsgemeinde ») : les morceaux
+        # collés au dernier mot reconnu (moins de 0,15 s), suivis d'une vraie pause, font partie de la phrase.
+        k = j
+        while (k + 1 < suivant and k - j < 2 and instants[k + 1][0] - instants[k][1] < 0.15
+               and instants[k + 1][1] - instants[j][1] < 0.8):
+            k += 1
+        if k > j and (k + 1 >= len(instants) or instants[k + 1][0] - instants[k][1] >= 0.3):
+            j = k
         fin = instants[j][1]
         lim = min(fin + 0.6, len(x) / fr)
         if j + 1 < len(instants) and instants[j + 1][0] - fin >= 0.15:
@@ -452,7 +460,8 @@ def main(slug: str) -> None:
             f += 1
         return min(lim, max(fin + MARGE, f * 0.01 + 0.04))
 
-    coupes = [[coupe_debut(i), coupe_fin(j)] for i, j, *_ in choix]
+    coupes = [[coupe_debut(i), coupe_fin(j, choix[k + 1][0] if k + 1 < len(choix) else len(instants))]
+              for k, (i, j, *_ ) in enumerate(choix)]
     for k in range(1, len(choix)):
         if choix[k - 1][1] + 1 == choix[k][0] and coupes[k][0] < coupes[k - 1][1]:
             g, d = instants[choix[k - 1][1]][1], instants[choix[k][0]][0]
