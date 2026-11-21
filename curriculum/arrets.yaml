@@ -128,9 +128,9 @@ videos:
     titre: "La FIFA peut-elle empêcher un joueur de travailler ?"
     notion: "Matuzalem : ordre public matériel et engagement excessif (ATF 138 III 322)"
     serie: travail-personnalite
-    articles: []
+    articles: ["27 CC", "60 CC", "176 LDIP", "190 LDIP", "191 LDIP", "192 LDIP", "10 Cst.", "27 Cst."]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 18
     slug: atf-123-i-296
     titre: "Le foulard à l'école : l'enseignante et l'élève"
@@ -184,9 +184,9 @@ videos:
     titre: "Mobbing : quand le licenciement devient abusif"
     notion: "Mobbing, licenciement abusif et tort moral (ATF 125 III 70)"
     serie: travail-personnalite
-    articles: []
+    articles: ["2 CC", "49 CO", "101 CO", "324a CO", "328 CO", "336 CO", "336a CO"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 25
     slug: atf-146-i-145
     titre: "Les Aînées pour le climat contre la Suisse"
@@ -280,9 +280,9 @@ videos:
     titre: "Un footballeur écarté peut-il partir sur-le-champ ?"
     notion: "Résiliation immédiate par le travailleur ; droit d'être occupé (ATF 137 III 303)"
     serie: travail-personnalite
-    articles: []
+    articles: ["2 CC", "4 CC", "28 CC", "41 CO", "49 CO", "55 CO", "99 CO", "101 CO", "324 CO", "328 CO", "337 CO", "337b CO", "337c CO", "337d CO"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 37
     slug: atf-144-iii-481
     titre: "Après un divorce, quand reprendre le travail ?"
