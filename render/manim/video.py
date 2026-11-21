@@ -442,7 +442,7 @@ class Schemas(Scene):
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
         # Thème « marque » : un titre mis en avant s'écrit en blanc sur une pastille rouge.
         if c.MARQUE and "ambre" in options:
-            nouveau = c.pastille(c.texte(contenu, c.T_TITRE, "#FFFFFF", gras=True)).move_to([0, c.Y_TITRE, 0])
+            nouveau = c.pastille(c.texte(contenu, c.T_TITRE, c.PASTILLE_TEXTE, gras=True)).move_to([0, c.Y_TITRE, 0])
         if nouveau.width > self.largeur_titres():
             nouveau.scale_to_fit_width(self.largeur_titres())
         nouveau.set_x(self.x_titres(nouveau.width))
