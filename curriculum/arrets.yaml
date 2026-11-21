@@ -152,9 +152,9 @@ videos:
     titre: "Une pension peut-elle durer toute la vie ?"
     notion: "Limitation dans le temps de l'entretien après divorce (ATF 150 III 305)"
     serie: famille-argent
-    articles: []
+    articles: ["125 CC", "163 CC"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 21
     slug: atf-140-iii-583
     titre: "Le bailleur a oublié la formule officielle"
@@ -224,9 +224,9 @@ videos:
     titre: "Divorce : comment se calcule la pension entre ex-époux"
     notion: "Entretien après divorce : méthode en deux étapes (ATF 147 III 293)"
     serie: famille-argent
-    articles: []
+    articles: ["125 CC", "163 CC", "277 CPC"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 30
     slug: atf-143-i-377
     titre: "L'AI peut-elle vous faire surveiller ?"
@@ -264,9 +264,9 @@ videos:
     titre: "Le mariage coûte-t-il plus cher en impôts ?"
     notion: "Hegetschweiler : égalité fiscale entre couples mariés et concubins (ATF 110 Ia 7)"
     serie: famille-argent
-    articles: []
+    articles: ["4 aCst.", "54 aCst.", "8 Cst.", "14 Cst.", "127 Cst.", "190 Cst.", "3 LHID", "11 LHID", "9 LIFD", "36 LIFD"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 35
     slug: atf-143-i-129
     titre: "Une initiative populaire peut-elle être annulée ?"
