@@ -136,9 +136,9 @@ videos:
     titre: "Le foulard à l'école : l'enseignante et l'élève"
     notion: "Neutralité confessionnelle de l'école et liberté de conscience et de croyance (ATF 123 I 296 / 142 I 49)"
     serie: libertes-democratie
-    articles: []
+    articles: ["8 Cst.", "15 Cst.", "36 Cst.", "303 CC", "27 aCst.", "49 aCst."]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 19
     slug: atf-147-iv-9
     titre: "Une vidéo illégale peut-elle servir de preuve ?"
@@ -216,9 +216,9 @@ videos:
     titre: "Un crucifix dans une école publique ?"
     notion: "Crucifix en classe et neutralité confessionnelle (ATF 116 Ia 252)"
     serie: libertes-democratie
-    articles: []
+    articles: ["15 Cst.", "303 CC", "27 aCst.", "49 aCst."]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 29
     slug: atf-147-iii-293
     titre: "Divorce : comment se calcule la pension entre ex-époux"
@@ -240,9 +240,9 @@ videos:
     titre: "La religion dispense-t-elle du cours de natation ?"
     notion: "Dispense de natation mixte pour motifs religieux (ATF 135 I 79)"
     serie: libertes-democratie
-    articles: []
+    articles: ["15 Cst.", "36 Cst.", "62 Cst.", "9 CEDH", "12 LESp", "33 LESp", "4 LEI"]
     requiert: []
-    statut: planifie
+    statut: script-redige
   - id: 32
     slug: atf-148-iv-234
     titre: "Ce que l'arrêt de 2022 a montré sur l'ancien droit du viol"
