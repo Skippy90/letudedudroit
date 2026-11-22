@@ -12,6 +12,29 @@
 - ATF 129 I 232 (initiative « Einbürgerungen vors Volk! » en ville de Zurich) : mentionné à la ligne 34 uniquement d'après le renvoi du consid. 3.3 de notre arrêt. Cet arrêt n'a pas été lu en entier pour cette vidéo : **À VÉRIFIER** avant d'en dire davantage.
 - Personnes : les recourants sont désignés par des lettres dans l'arrêt (A. à E.) ; le script ne leur donne ni nom ni prénom fictif, et ne précise pas leur sexe (non indiqué dans l'extrait). La commune est nommée dans l'intitulé de l'arrêt.
 
+## Mise à jour du 22 novembre 2026 : texte enregistré
+
+Le script a été remplacé par le texte lu par l'autrice (enregistrement humain du 22 novembre 2026). Les tableaux plus bas ont été établis sur la version préparée avant l'enregistrement : leurs numéros de lignes renvoient à cette ancienne version, et leurs extraits de l'arrêt restent valables. Les affirmations nouvelles ou reformulées ont été relues le 22 novembre 2026 sur search.bger.ch (ATF 129 I 217 et chapeau de l'ATF 129 I 232) et sur Fedlex (Cst., état au 3 mars 2024 ; LN, état au 1er septembre 2023), par le navigateur.
+
+| Ligne | Ce que dit le texte enregistré | Source | Vérifié |
+| --- | --- | --- | --- |
+| 6 | Initiative populaire acceptée en 1999 ; le scrutin de mars 2000 n'est que la deuxième application de la règle | Consid. 2.3.2 : première application « erstmals im September 1999 » ; le vote du 12 mars 2000 « war der zweite Anwendungsfall des Einbürgerungs-Referendums » | - [ ] |
+| 7 | 56 personnes, dont certaines ont grandi en Suisse, voire y sont nées | Consid. 2.3.1 : « Ein Teil der Bewerber wurde bereits in der Schweiz geboren ». Point d'attention : « ont grandi en Suisse » est une déduction pour les personnes nées en Suisse ; l'arrêt ne le dit que du groupe venu de l'ex-Yougoslavie et du candidat italien W. | - [ ] |
+| 11 | L'arrêt désigne les cinq recourants par les lettres A, B, C, D et E | État de fait : « A., B., C., D. und E. ». Point d'attention : « pour préserver leur anonymat » est l'explication usuelle de l'anonymisation, non une phrase de l'arrêt | - [ ] |
+| 12 | Le gouvernement lucernois déclare d'abord le recours tardif ; le Tribunal fédéral annule cette décision en 2001 ; en mars 2002, rejet sur le fond | État de fait : non-entrée en matière, délai de dix jours non respecté ; arrêt du 6 mars 2001 (1P.674/2000) ; « Am 19. März 2002 ... Er wies die Beschwerde ab, soweit er darauf eintrat » | - [ ] |
+| 13 | Pour le gouvernement, la liberté de vote prévaut tant qu'une discrimination n'est pas démontrée sans aucun doute ; les éléments présentés ne l'établissent pas | Consid. 2.2 (« ohne jeglichen Zweifel » ; « Diese Voraussetzung liege hier nicht vor ») | - [ ] |
+| 20 | Distinguer le droit d'obtenir une naturalisation du droit de ne pas subir de discrimination ; la seconde garantie peut être invoquée sans droit à une décision favorable | Regeste et consid. 1.1 | - [ ] |
+| 22 | Art. 35 al. 2 Cst. : respecter les droits fondamentaux et contribuer à leur réalisation | Fedlex, art. 35 al. 2 Cst. ; consid. 2.2.1 | - [ ] |
+| 23 | La liberté de vote ne garantit pas le maintien d'un résultat contraire au droit ; une décision ne devient pas constitutionnelle du seul fait qu'une majorité l'a adoptée | Consid. 2.2.2. La seconde phrase est une reformulation de l'autrice | - [ ] |
+| 25 | Pas de niveau de preuve plus élevé pour une décision populaire que pour une décision administrative | Consid. 2.2.3. « Le caractère démocratique du scrutin ne constitue pas une protection particulière contre le contrôle judiciaire » est une reformulation de l'autrice | - [ ] |
+| 28 | Un ressortissant italien né en Suisse en 1980 naturalisé ; deux candidats originaires de l'ex-Yougoslavie nés à Lucerne refusés | Consid. 2.3.1 : W., né en 1980 ; « X., geb. 1981 in Luzern, und Y., geb. 1979 in Luzern ». **Retouche** : l'enregistrement disait « 1979 et 1980 » ; ces mots ont été retirés de la narration (2,5 s) et les années de l'arrêt sont à l'écran. À réécouter à cet endroit | - [ ] |
+| 30 | Dans les semaines précédant le scrutin, tracts et lettres de lecteurs hostiles aux personnes originaires de l'ex-Yougoslavie | Consid. 2.3.2 : tract relatif au vote du 12 mars 2000, lettres de lecteurs du 9 mars 2000. Point d'attention : l'un des tracts cités date de juin 1999 (vote sur l'initiative) | - [ ] |
+| 35 | La procédure de naturalisation aux urnes pratiquée à Emmen est contraire à la Constitution et doit être remplacée | Consid. 4 | - [ ] |
+| 37 | Le même jour, autre arrêt concernant la ville de Zurich ; le Tribunal fédéral y confirme l'invalidation d'une initiative soumettant les naturalisations au vote aux urnes | ATF 129 I 232, chapeau et regeste lus le 22 novembre 2026 : arrêt 1P.1/2003 du 9 juillet 2003 ; « Nullité d'une initiative visant à soumettre au vote populaire par les urnes les demandes de naturalisation ». Le corps de cet arrêt n'a pas été lu en entier : **À VÉRIFIER** avant d'en dire davantage (issue exacte du recours) | - [ ] |
+| 39–40 | Art. 15 LN : le droit cantonal peut prévoir le vote de l'assemblée communale ; art. 16 LN : tout rejet motivé ; rejet par les électeurs seulement sur proposition de rejet motivée | Fedlex, art. 15 al. 2 et 16 al. 1 et 2 LN, relus le 22 novembre 2026 | - [ ] |
+
+Montage de la voix : `voice/arrets/15-atf-129-i-217/montage.txt` (prises gardées). La transcription automatique a été corrigée à la main à deux endroits (fins de phrases mal reconnues). L'agent ne peut pas écouter le son : les coupes ont été contrôlées par mesure du niveau sonore et par nouvelle transcription.
+
 La colonne « Vérifié » n'est cochée que par la relectrice.
 
 ## Articles cités

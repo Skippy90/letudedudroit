@@ -1,0 +1,9407 @@
+{
+ "voix": "Enregistrement humain",
+ "source": "humaine",
+ "duree": 696.48,
+ "lignes": [
+  {
+   "ligne": 1,
+   "debut": 0.2,
+   "fin": 11.29,
+   "phrases": [
+    {
+     "texte": "Le douze mars deux mille, dans une commune suisse, les citoyens sont appelés à se prononcer sur une question inhabituelle.",
+     "debut": 0.2,
+     "fin": 6.522,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 0.2,
+       "fin": 0.387
+      },
+      {
+       "mot": "douze",
+       "debut": 0.38,
+       "fin": 0.569
+      },
+      {
+       "mot": "mars",
+       "debut": 0.56,
+       "fin": 0.871
+      },
+      {
+       "mot": "deux",
+       "debut": 0.87,
+       "fin": 1.234
+      },
+      {
+       "mot": "mille",
+       "debut": 0.87,
+       "fin": 1.234
+      },
+      {
+       "mot": "dans",
+       "debut": 1.23,
+       "fin": 1.536
+      },
+      {
+       "mot": "une",
+       "debut": 1.53,
+       "fin": 1.778
+      },
+      {
+       "mot": "commune",
+       "debut": 1.77,
+       "fin": 2.262
+      },
+      {
+       "mot": "suisse",
+       "debut": 2.26,
+       "fin": 2.83
+      },
+      {
+       "mot": "les",
+       "debut": 2.74,
+       "fin": 3.035
+      },
+      {
+       "mot": "citoyens",
+       "debut": 3.03,
+       "fin": 3.497
+      },
+      {
+       "mot": "sont",
+       "debut": 3.49,
+       "fin": 3.753
+      },
+      {
+       "mot": "appelés",
+       "debut": 3.75,
+       "fin": 4.163
+      },
+      {
+       "mot": "à",
+       "debut": 4.16,
+       "fin": 4.266
+      },
+      {
+       "mot": "se",
+       "debut": 4.26,
+       "fin": 4.42
+      },
+      {
+       "mot": "prononcer",
+       "debut": 4.42,
+       "fin": 4.932
+      },
+      {
+       "mot": "sur",
+       "debut": 4.93,
+       "fin": 5.138
+      },
+      {
+       "mot": "une",
+       "debut": 5.13,
+       "fin": 5.343
+      },
+      {
+       "mot": "question",
+       "debut": 5.34,
+       "fin": 5.804
+      },
+      {
+       "mot": "inhabituelle",
+       "debut": 5.8,
+       "fin": 6.522
+      }
+     ]
+    },
+    {
+     "texte": "Quelles personnes pourront devenir suisses, et lesquelles ne le pourront pas ?",
+     "debut": 7.31,
+     "fin": 11.29,
+     "mots": [
+      {
+       "mot": "quelles",
+       "debut": 7.31,
+       "fin": 7.665
+      },
+      {
+       "mot": "personnes",
+       "debut": 7.66,
+       "fin": 8.108
+      },
+      {
+       "mot": "pourront",
+       "debut": 8.1,
+       "fin": 8.508
+      },
+      {
+       "mot": "devenir",
+       "debut": 8.5,
+       "fin": 8.862
+      },
+      {
+       "mot": "suisses",
+       "debut": 8.86,
+       "fin": 9.217
+      },
+      {
+       "mot": "et",
+       "debut": 9.77,
+       "fin": 9.921
+      },
+      {
+       "mot": "lesquels",
+       "debut": 9.92,
+       "fin": 10.361
+      },
+      {
+       "mot": "ne",
+       "debut": 10.36,
+       "fin": 10.508
+      },
+      {
+       "mot": "le",
+       "debut": 10.5,
+       "fin": 10.654
+      },
+      {
+       "mot": "pourront",
+       "debut": 10.65,
+       "fin": 11.094
+      },
+      {
+       "mot": "pas",
+       "debut": 11.09,
+       "fin": 11.29
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 2,
+   "debut": 12.84,
+   "fin": 29.862,
+   "phrases": [
+    {
+     "texte": "Le résultat est saisissant.",
+     "debut": 12.84,
+     "fin": 14.328,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 12.84,
+       "fin": 13.003
+      },
+      {
+       "mot": "résultat",
+       "debut": 13.0,
+       "fin": 13.48
+      },
+      {
+       "mot": "est",
+       "debut": 13.48,
+       "fin": 13.692
+      },
+      {
+       "mot": "saisissant",
+       "debut": 13.69,
+       "fin": 14.328
+      }
+     ]
+    },
+    {
+     "texte": "Toutes les demandes de candidats italiens sont acceptées.",
+     "debut": 14.74,
+     "fin": 17.528,
+     "mots": [
+      {
+       "mot": "toutes",
+       "debut": 14.74,
+       "fin": 15.21
+      },
+      {
+       "mot": "les",
+       "debut": 15.21,
+       "fin": 15.392
+      },
+      {
+       "mot": "demandes",
+       "debut": 15.39,
+       "fin": 15.801
+      },
+      {
+       "mot": "de",
+       "debut": 15.8,
+       "fin": 15.937
+      },
+      {
+       "mot": "candidats",
+       "debut": 15.93,
+       "fin": 16.392
+      },
+      {
+       "mot": "italiens",
+       "debut": 16.39,
+       "fin": 16.801
+      },
+      {
+       "mot": "sont",
+       "debut": 16.8,
+       "fin": 17.028
+      },
+      {
+       "mot": "acceptées",
+       "debut": 17.02,
+       "fin": 17.528
+      }
+     ]
+    },
+    {
+     "texte": "En revanche, celles des personnes originaires de l'ex-Yougoslavie sont systématiquement rejetées.",
+     "debut": 18.21,
+     "fin": 23.82,
+     "mots": [
+      {
+       "mot": "en",
+       "debut": 18.21,
+       "fin": 18.466
+      },
+      {
+       "mot": "revanche",
+       "debut": 18.46,
+       "fin": 19.288
+      },
+      {
+       "mot": "celles",
+       "debut": 19.43,
+       "fin": 19.776
+      },
+      {
+       "mot": "des",
+       "debut": 19.77,
+       "fin": 19.97
+      },
+      {
+       "mot": "personnes",
+       "debut": 19.96,
+       "fin": 20.456
+      },
+      {
+       "mot": "originaires",
+       "debut": 20.45,
+       "fin": 21.039
+      },
+      {
+       "mot": "de",
+       "debut": 21.03,
+       "fin": 21.184
+      },
+      {
+       "mot": "l",
+       "debut": 21.18,
+       "fin": 22.01
+      },
+      {
+       "mot": "ex",
+       "debut": 21.18,
+       "fin": 22.01
+      },
+      {
+       "mot": "yougoslavie",
+       "debut": 21.18,
+       "fin": 22.01
+      },
+      {
+       "mot": "sont",
+       "debut": 22.01,
+       "fin": 22.253
+      },
+      {
+       "mot": "systématiquement",
+       "debut": 22.25,
+       "fin": 23.078
+      },
+      {
+       "mot": "re",
+       "debut": 23.07,
+       "fin": 23.224
+      },
+      {
+       "mot": "le",
+       "debut": 23.66,
+       "fin": 23.827
+      }
+     ]
+    },
+    {
+     "texte": "Le peuple a voté.",
+     "debut": 24.32,
+     "fin": 25.428,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 24.32,
+       "fin": 24.511
+      },
+      {
+       "mot": "peuple",
+       "debut": 24.51,
+       "fin": 24.939
+      },
+      {
+       "mot": "a",
+       "debut": 24.93,
+       "fin": 25.061
+      },
+      {
+       "mot": "voté",
+       "debut": 25.06,
+       "fin": 25.428
+      }
+     ]
+    },
+    {
+     "texte": "Mais sa décision est-elle conforme à la Constitution ?",
+     "debut": 26.45,
+     "fin": 29.862,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 26.45,
+       "fin": 26.779
+      },
+      {
+       "mot": "sa",
+       "debut": 26.77,
+       "fin": 26.972
+      },
+      {
+       "mot": "décision",
+       "debut": 26.97,
+       "fin": 27.55
+      },
+      {
+       "mot": "est",
+       "debut": 27.55,
+       "fin": 28.128
+      },
+      {
+       "mot": "elle",
+       "debut": 27.55,
+       "fin": 28.128
+      },
+      {
+       "mot": "conforme",
+       "debut": 28.12,
+       "fin": 28.706
+      },
+      {
+       "mot": "à",
+       "debut": 28.7,
+       "fin": 28.834
+      },
+      {
+       "mot": "la",
+       "debut": 28.83,
+       "fin": 29.027
+      },
+      {
+       "mot": "constitution",
+       "debut": 29.02,
+       "fin": 29.862
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 3,
+   "debut": 30.81,
+   "fin": 45.833,
+   "phrases": [
+    {
+     "texte": "Bienvenue sur L'étude du droit.",
+     "debut": 30.81,
+     "fin": 32.302,
+     "mots": [
+      {
+       "mot": "bienvenue",
+       "debut": 30.81,
+       "fin": 31.412
+      },
+      {
+       "mot": "sur",
+       "debut": 31.41,
+       "fin": 31.649
+      },
+      {
+       "mot": "l",
+       "debut": 31.64,
+       "fin": 32.124
+      },
+      {
+       "mot": "étude",
+       "debut": 31.64,
+       "fin": 32.124
+      },
+      {
+       "mot": "du",
+       "debut": 32.12,
+       "fin": 32.302
+      }
+     ]
+    },
+    {
+     "texte": "Aujourd'hui, nous revenons sur l'affaire d'Emmen, un arrêt majeur du Tribunal fédéral.",
+     "debut": 33.15,
+     "fin": 37.87,
+     "mots": [
+      {
+       "mot": "aujourd",
+       "debut": 33.15,
+       "fin": 33.737
+      },
+      {
+       "mot": "hui",
+       "debut": 33.15,
+       "fin": 33.737
+      },
+      {
+       "mot": "nous",
+       "debut": 33.73,
+       "fin": 33.979
+      },
+      {
+       "mot": "revenons",
+       "debut": 33.97,
+       "fin": 34.416
+      },
+      {
+       "mot": "sur",
+       "debut": 34.41,
+       "fin": 34.61
+      },
+      {
+       "mot": "l",
+       "debut": 34.61,
+       "fin": 35.096
+      },
+      {
+       "mot": "affaire",
+       "debut": 34.61,
+       "fin": 35.096
+      },
+      {
+       "mot": "des",
+       "debut": 35.09,
+       "fin": 35.29
+      },
+      {
+       "mot": "mennes",
+       "debut": 35.29,
+       "fin": 35.63
+      },
+      {
+       "mot": "un",
+       "debut": 35.81,
+       "fin": 35.982
+      },
+      {
+       "mot": "arrêt",
+       "debut": 35.98,
+       "fin": 36.325
+      },
+      {
+       "mot": "majeur",
+       "debut": 36.32,
+       "fin": 36.726
+      },
+      {
+       "mot": "du",
+       "debut": 36.72,
+       "fin": 36.897
+      },
+      {
+       "mot": "tribunal",
+       "debut": 36.89,
+       "fin": 37.412
+      },
+      {
+       "mot": "fédéral",
+       "debut": 37.41,
+       "fin": 37.87
+      }
+     ]
+    },
+    {
+     "texte": "Une décision qui pose une question fondamentale.",
+     "debut": 38.56,
+     "fin": 41.07,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 38.56,
+       "fin": 38.767
+      },
+      {
+       "mot": "décision",
+       "debut": 38.76,
+       "fin": 39.227
+      },
+      {
+       "mot": "qui",
+       "debut": 39.22,
+       "fin": 39.432
+      },
+      {
+       "mot": "pose",
+       "debut": 39.43,
+       "fin": 39.688
+      },
+      {
+       "mot": "une",
+       "debut": 39.68,
+       "fin": 39.893
+      },
+      {
+       "mot": "question",
+       "debut": 39.89,
+       "fin": 40.353
+      },
+      {
+       "mot": "fondamentale",
+       "debut": 40.35,
+       "fin": 41.07
+      }
+     ]
+    },
+    {
+     "texte": "Jusqu'où peut aller la volonté populaire lorsqu'elle se heurte aux droits fondamentaux ?",
+     "debut": 41.63,
+     "fin": 45.833,
+     "mots": [
+      {
+       "mot": "jusqu",
+       "debut": 41.63,
+       "fin": 42.089
+      },
+      {
+       "mot": "où",
+       "debut": 41.63,
+       "fin": 42.089
+      },
+      {
+       "mot": "peut",
+       "debut": 42.08,
+       "fin": 42.342
+      },
+      {
+       "mot": "aller",
+       "debut": 42.34,
+       "fin": 42.646
+      },
+      {
+       "mot": "la",
+       "debut": 42.64,
+       "fin": 42.798
+      },
+      {
+       "mot": "volonté",
+       "debut": 42.79,
+       "fin": 43.202
+      },
+      {
+       "mot": "populaire",
+       "debut": 43.2,
+       "fin": 43.708
+      },
+      {
+       "mot": "lorsqu",
+       "debut": 43.7,
+       "fin": 44.315
+      },
+      {
+       "mot": "elle",
+       "debut": 43.7,
+       "fin": 44.315
+      },
+      {
+       "mot": "surte",
+       "debut": 44.31,
+       "fin": 44.619
+      },
+      {
+       "mot": "aux",
+       "debut": 44.61,
+       "fin": 44.821
+      },
+      {
+       "mot": "droits",
+       "debut": 44.82,
+       "fin": 45.175
+      },
+      {
+       "mot": "fondamentaux",
+       "debut": 45.17,
+       "fin": 45.833
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 4,
+   "debut": 46.84,
+   "fin": 55.94,
+   "phrases": [
+    {
+     "texte": "Nous sommes à Emmen, dans le canton de Lucerne.",
+     "debut": 46.84,
+     "fin": 49.508,
+     "mots": [
+      {
+       "mot": "nous",
+       "debut": 46.84,
+       "fin": 47.124
+      },
+      {
+       "mot": "sommes",
+       "debut": 47.12,
+       "fin": 47.521
+      },
+      {
+       "mot": "à",
+       "debut": 47.52,
+       "fin": 47.635
+      },
+      {
+       "mot": "hémen",
+       "debut": 47.63,
+       "fin": 47.975
+      },
+      {
+       "mot": "dans",
+       "debut": 47.97,
+       "fin": 48.259
+      },
+      {
+       "mot": "le",
+       "debut": 48.25,
+       "fin": 48.429
+      },
+      {
+       "mot": "canton",
+       "debut": 48.42,
+       "fin": 48.827
+      },
+      {
+       "mot": "de",
+       "debut": 48.82,
+       "fin": 48.997
+      },
+      {
+       "mot": "lucerne",
+       "debut": 48.99,
+       "fin": 49.508
+      }
+     ]
+    },
+    {
+     "texte": "Le douze mars deux mille, les habitants sont appelés aux urnes pour se prononcer sur plusieurs demandes de naturalisation.",
+     "debut": 49.97,
+     "fin": 55.94,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 49.97,
+       "fin": 50.133
+      },
+      {
+       "mot": "douze",
+       "debut": 50.13,
+       "fin": 50.29
+      },
+      {
+       "mot": "mars",
+       "debut": 50.29,
+       "fin": 50.551
+      },
+      {
+       "mot": "deux",
+       "debut": 50.55,
+       "fin": 50.865
+      },
+      {
+       "mot": "mille",
+       "debut": 50.55,
+       "fin": 50.865
+      },
+      {
+       "mot": "les",
+       "debut": 50.86,
+       "fin": 51.075
+      },
+      {
+       "mot": "habitants",
+       "debut": 51.07,
+       "fin": 51.598
+      },
+      {
+       "mot": "sont",
+       "debut": 51.59,
+       "fin": 51.859
+      },
+      {
+       "mot": "appelés",
+       "debut": 51.85,
+       "fin": 52.278
+      },
+      {
+       "mot": "aux",
+       "debut": 52.27,
+       "fin": 52.487
+      },
+      {
+       "mot": "urnes",
+       "debut": 52.48,
+       "fin": 52.801
+      },
+      {
+       "mot": "pour",
+       "debut": 52.8,
+       "fin": 53.063
+      },
+      {
+       "mot": "se",
+       "debut": 53.06,
+       "fin": 53.22
+      },
+      {
+       "mot": "prononcer",
+       "debut": 53.22,
+       "fin": 53.743
+      },
+      {
+       "mot": "sur",
+       "debut": 53.74,
+       "fin": 53.952
+      },
+      {
+       "mot": "plusieurs",
+       "debut": 53.95,
+       "fin": 54.475
+      },
+      {
+       "mot": "demandes",
+       "debut": 54.47,
+       "fin": 54.946
+      },
+      {
+       "mot": "de",
+       "debut": 54.94,
+       "fin": 55.103
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 55.1,
+       "fin": 55.94
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 5,
+   "debut": 57.51,
+   "fin": 69.586,
+   "phrases": [
+    {
+     "texte": "Il ne s'agit donc pas de voter sur une loi ou une question d'intérêt général.",
+     "debut": 57.51,
+     "fin": 61.17,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 57.51,
+       "fin": 57.651
+      },
+      {
+       "mot": "ne",
+       "debut": 57.65,
+       "fin": 57.792
+      },
+      {
+       "mot": "s",
+       "debut": 57.79,
+       "fin": 58.12
+      },
+      {
+       "mot": "agit",
+       "debut": 57.79,
+       "fin": 58.12
+      },
+      {
+       "mot": "donc",
+       "debut": 58.12,
+       "fin": 58.355
+      },
+      {
+       "mot": "pas",
+       "debut": 58.35,
+       "fin": 58.542
+      },
+      {
+       "mot": "de",
+       "debut": 58.54,
+       "fin": 58.683
+      },
+      {
+       "mot": "voter",
+       "debut": 58.68,
+       "fin": 58.965
+      },
+      {
+       "mot": "sur",
+       "debut": 58.96,
+       "fin": 59.152
+      },
+      {
+       "mot": "une",
+       "debut": 59.15,
+       "fin": 59.34
+      },
+      {
+       "mot": "loi",
+       "debut": 59.33,
+       "fin": 59.528
+      },
+      {
+       "mot": "ou",
+       "debut": 59.52,
+       "fin": 59.668
+      },
+      {
+       "mot": "une",
+       "debut": 59.66,
+       "fin": 59.856
+      },
+      {
+       "mot": "question",
+       "debut": 59.85,
+       "fin": 60.278
+      },
+      {
+       "mot": "d",
+       "debut": 60.27,
+       "fin": 60.748
+      },
+      {
+       "mot": "intérêt",
+       "debut": 60.27,
+       "fin": 60.748
+      },
+      {
+       "mot": "général",
+       "debut": 60.74,
+       "fin": 61.17
+      }
+     ]
+    },
+    {
+     "texte": "Cette fois, les électeurs doivent décider du sort de personnes bien identifiées, qui souhaitent obtenir la nationalité suisse.",
+     "debut": 61.6,
+     "fin": 69.586,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 61.6,
+       "fin": 62.101
+      },
+      {
+       "mot": "fois",
+       "debut": 62.1,
+       "fin": 62.514
+      },
+      {
+       "mot": "les",
+       "debut": 62.75,
+       "fin": 62.966
+      },
+      {
+       "mot": "électeurs",
+       "debut": 62.96,
+       "fin": 63.488
+      },
+      {
+       "mot": "doivent",
+       "debut": 63.48,
+       "fin": 63.905
+      },
+      {
+       "mot": "décider",
+       "debut": 63.9,
+       "fin": 64.321
+      },
+      {
+       "mot": "du",
+       "debut": 64.32,
+       "fin": 64.478
+      },
+      {
+       "mot": "sort",
+       "debut": 64.47,
+       "fin": 64.738
+      },
+      {
+       "mot": "de",
+       "debut": 64.73,
+       "fin": 64.895
+      },
+      {
+       "mot": "personnes",
+       "debut": 64.89,
+       "fin": 65.416
+      },
+      {
+       "mot": "bien",
+       "debut": 65.41,
+       "fin": 65.676
+      },
+      {
+       "mot": "identifiées",
+       "debut": 65.67,
+       "fin": 66.354
+      },
+      {
+       "mot": "qui",
+       "debut": 66.72,
+       "fin": 66.986
+      },
+      {
+       "mot": "souhaite",
+       "debut": 66.98,
+       "fin": 67.571
+      },
+      {
+       "mot": "obtenir",
+       "debut": 67.57,
+       "fin": 68.091
+      },
+      {
+       "mot": "la",
+       "debut": 68.09,
+       "fin": 68.286
+      },
+      {
+       "mot": "nationalité",
+       "debut": 68.28,
+       "fin": 69.066
+      },
+      {
+       "mot": "suisse",
+       "debut": 69.06,
+       "fin": 69.586
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 6,
+   "debut": 70.86,
+   "fin": 86.972,
+   "phrases": [
+    {
+     "texte": "Cette procédure résulte d'une initiative populaire acceptée en mille neuf cent nonante-neuf.",
+     "debut": 70.86,
+     "fin": 75.9,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 70.86,
+       "fin": 71.302
+      },
+      {
+       "mot": "procédure",
+       "debut": 71.3,
+       "fin": 72.032
+      },
+      {
+       "mot": "résulte",
+       "debut": 72.03,
+       "fin": 72.616
+      },
+      {
+       "mot": "d",
+       "debut": 72.61,
+       "fin": 73.054
+      },
+      {
+       "mot": "une",
+       "debut": 72.61,
+       "fin": 73.054
+      },
+      {
+       "mot": "initiative",
+       "debut": 73.05,
+       "fin": 73.856
+      },
+      {
+       "mot": "populaire",
+       "debut": 73.85,
+       "fin": 74.586
+      },
+      {
+       "mot": "acceptée",
+       "debut": 74.58,
+       "fin": 75.243
+      },
+      {
+       "mot": "en",
+       "debut": 75.24,
+       "fin": 75.462
+      },
+      {
+       "mot": "mille",
+       "debut": 75.46,
+       "fin": 75.9
+      },
+      {
+       "mot": "neuf",
+       "debut": 75.46,
+       "fin": 75.9
+      },
+      {
+       "mot": "cent",
+       "debut": 75.46,
+       "fin": 75.9
+      },
+      {
+       "mot": "nonante",
+       "debut": 75.46,
+       "fin": 75.9
+      },
+      {
+       "mot": "neuf",
+       "debut": 75.46,
+       "fin": 75.9
+      }
+     ]
+    },
+    {
+     "texte": "Depuis, les naturalisations ordinaires doivent être soumises au vote des citoyens.",
+     "debut": 76.36,
+     "fin": 81.148,
+     "mots": [
+      {
+       "mot": "depuis",
+       "debut": 76.36,
+       "fin": 77.148
+      },
+      {
+       "mot": "les",
+       "debut": 77.32,
+       "fin": 77.532
+      },
+      {
+       "mot": "naturalisations",
+       "debut": 77.53,
+       "fin": 78.347
+      },
+      {
+       "mot": "ordinaires",
+       "debut": 78.34,
+       "fin": 78.907
+      },
+      {
+       "mot": "doivent",
+       "debut": 78.9,
+       "fin": 79.314
+      },
+      {
+       "mot": "être",
+       "debut": 79.31,
+       "fin": 79.569
+      },
+      {
+       "mot": "soumises",
+       "debut": 79.56,
+       "fin": 80.027
+      },
+      {
+       "mot": "au",
+       "debut": 80.02,
+       "fin": 80.18
+      },
+      {
+       "mot": "vote",
+       "debut": 80.18,
+       "fin": 80.435
+      },
+      {
+       "mot": "des",
+       "debut": 80.43,
+       "fin": 80.639
+      },
+      {
+       "mot": "citoyens",
+       "debut": 80.63,
+       "fin": 81.148
+      }
+     ]
+    },
+    {
+     "texte": "Le scrutin de mars deux mille n'est que la deuxième application de cette nouvelle règle.",
+     "debut": 81.87,
+     "fin": 86.972,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 81.87,
+       "fin": 82.126
+      },
+      {
+       "mot": "scrutin",
+       "debut": 82.12,
+       "fin": 82.801
+      },
+      {
+       "mot": "de",
+       "debut": 82.8,
+       "fin": 83.055
+      },
+      {
+       "mot": "mars",
+       "debut": 83.05,
+       "fin": 83.478
+      },
+      {
+       "mot": "deux",
+       "debut": 83.47,
+       "fin": 83.9
+      },
+      {
+       "mot": "mille",
+       "debut": 83.47,
+       "fin": 84.04
+      },
+      {
+       "mot": "n",
+       "debut": 84.08,
+       "fin": 84.374
+      },
+      {
+       "mot": "est",
+       "debut": 84.08,
+       "fin": 84.374
+      },
+      {
+       "mot": "que",
+       "debut": 84.37,
+       "fin": 84.57
+      },
+      {
+       "mot": "la",
+       "debut": 84.57,
+       "fin": 84.717
+      },
+      {
+       "mot": "deuxième",
+       "debut": 84.71,
+       "fin": 85.158
+      },
+      {
+       "mot": "application",
+       "debut": 85.15,
+       "fin": 85.747
+      },
+      {
+       "mot": "de",
+       "debut": 85.74,
+       "fin": 85.894
+      },
+      {
+       "mot": "cette",
+       "debut": 85.89,
+       "fin": 86.188
+      },
+      {
+       "mot": "nouvelle",
+       "debut": 86.18,
+       "fin": 86.629
+      },
+      {
+       "mot": "règle",
+       "debut": 86.62,
+       "fin": 86.972
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 7,
+   "debut": 88.53,
+   "fin": 97.118,
+   "phrases": [
+    {
+     "texte": "Au total, vingt-trois demandes sont soumises au vote.",
+     "debut": 88.53,
+     "fin": 91.422,
+     "mots": [
+      {
+       "mot": "au",
+       "debut": 88.53,
+       "fin": 88.723
+      },
+      {
+       "mot": "total",
+       "debut": 88.72,
+       "fin": 89.173
+      },
+      {
+       "mot": "vingt",
+       "debut": 89.17,
+       "fin": 89.365
+      },
+      {
+       "mot": "trois",
+       "debut": 89.17,
+       "fin": 89.365
+      },
+      {
+       "mot": "demandes",
+       "debut": 89.36,
+       "fin": 89.944
+      },
+      {
+       "mot": "sont",
+       "debut": 89.94,
+       "fin": 90.265
+      },
+      {
+       "mot": "soumises",
+       "debut": 90.26,
+       "fin": 90.844
+      },
+      {
+       "mot": "au",
+       "debut": 90.84,
+       "fin": 91.036
+      },
+      {
+       "mot": "vote",
+       "debut": 91.03,
+       "fin": 91.422
+      }
+     ]
+    },
+    {
+     "texte": "Elles concernent cinquante-six personnes, dont certaines ont grandi en Suisse, voire y sont nées.",
+     "debut": 91.81,
+     "fin": 97.118,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 91.81,
+       "fin": 92.137
+      },
+      {
+       "mot": "concerne",
+       "debut": 92.13,
+       "fin": 92.696
+      },
+      {
+       "mot": "cinquante",
+       "debut": 92.69,
+       "fin": 92.882
+      },
+      {
+       "mot": "six",
+       "debut": 92.69,
+       "fin": 92.882
+      },
+      {
+       "mot": "personnes",
+       "debut": 92.88,
+       "fin": 93.566
+      },
+      {
+       "mot": "dont",
+       "debut": 93.81,
+       "fin": 94.116
+      },
+      {
+       "mot": "certaines",
+       "debut": 94.11,
+       "fin": 94.729
+      },
+      {
+       "mot": "ont",
+       "debut": 94.72,
+       "fin": 94.974
+      },
+      {
+       "mot": "grandi",
+       "debut": 94.97,
+       "fin": 95.403
+      },
+      {
+       "mot": "en",
+       "debut": 95.4,
+       "fin": 95.587
+      },
+      {
+       "mot": "suisse",
+       "debut": 95.58,
+       "fin": 96.077
+      },
+      {
+       "mot": "voix",
+       "debut": 96.07,
+       "fin": 96.383
+      },
+      {
+       "mot": "et",
+       "debut": 96.38,
+       "fin": 96.567
+      },
+      {
+       "mot": "son",
+       "debut": 96.56,
+       "fin": 96.812
+      },
+      {
+       "mot": "nez",
+       "debut": 96.81,
+       "fin": 97.118
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 8,
+   "debut": 98.07,
+   "fin": 108.966,
+   "phrases": [
+    {
+     "texte": "Lorsque les résultats sont annoncés, une première tendance apparaît.",
+     "debut": 98.07,
+     "fin": 101.606,
+     "mots": [
+      {
+       "mot": "lorsque",
+       "debut": 98.07,
+       "fin": 98.51
+      },
+      {
+       "mot": "les",
+       "debut": 98.5,
+       "fin": 98.729
+      },
+      {
+       "mot": "résultats",
+       "debut": 98.72,
+       "fin": 99.274
+      },
+      {
+       "mot": "sont",
+       "debut": 99.27,
+       "fin": 99.547
+      },
+      {
+       "mot": "annoncés",
+       "debut": 99.54,
+       "fin": 100.038
+      },
+      {
+       "mot": "une",
+       "debut": 100.18,
+       "fin": 100.364
+      },
+      {
+       "mot": "première",
+       "debut": 100.36,
+       "fin": 100.763
+      },
+      {
+       "mot": "tendance",
+       "debut": 100.76,
+       "fin": 101.162
+      },
+      {
+       "mot": "apparaît",
+       "debut": 101.16,
+       "fin": 101.606
+      }
+     ]
+    },
+    {
+     "texte": "Les quatre demandes présentées par des ressortissants italiens sont toutes acceptées.",
+     "debut": 102.29,
+     "fin": 106.566,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 102.29,
+       "fin": 102.497
+      },
+      {
+       "mot": "quatre",
+       "debut": 102.49,
+       "fin": 102.844
+      },
+      {
+       "mot": "demandes",
+       "debut": 102.84,
+       "fin": 103.291
+      },
+      {
+       "mot": "présentées",
+       "debut": 103.29,
+       "fin": 103.836
+      },
+      {
+       "mot": "par",
+       "debut": 103.83,
+       "fin": 104.035
+      },
+      {
+       "mot": "des",
+       "debut": 104.03,
+       "fin": 104.233
+      },
+      {
+       "mot": "ressortissants",
+       "debut": 104.23,
+       "fin": 104.978
+      },
+      {
+       "mot": "italiens",
+       "debut": 104.97,
+       "fin": 105.425
+      },
+      {
+       "mot": "sont",
+       "debut": 105.42,
+       "fin": 105.673
+      },
+      {
+       "mot": "toutes",
+       "debut": 105.67,
+       "fin": 106.02
+      },
+      {
+       "mot": "acceptées",
+       "debut": 106.02,
+       "fin": 106.566
+      }
+     ]
+    },
+    {
+     "texte": "Elles concernent huit personnes.",
+     "debut": 107.22,
+     "fin": 108.966,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 107.22,
+       "fin": 107.548
+      },
+      {
+       "mot": "concerne",
+       "debut": 107.54,
+       "fin": 108.128
+      },
+      {
+       "mot": "huit",
+       "debut": 108.12,
+       "fin": 108.257
+      },
+      {
+       "mot": "personnes",
+       "debut": 108.25,
+       "fin": 108.966
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 9,
+   "debut": 109.92,
+   "fin": 122.128,
+   "phrases": [
+    {
+     "texte": "En revanche, les seize demandes déposées par des personnes originaires de l'ex-Yougoslavie sont toutes rejetées.",
+     "debut": 109.92,
+     "fin": 116.656,
+     "mots": [
+      {
+       "mot": "on",
+       "debut": 109.92,
+       "fin": 110.151
+      },
+      {
+       "mot": "relance",
+       "debut": 110.15,
+       "fin": 110.832
+      },
+      {
+       "mot": "les",
+       "debut": 111.04,
+       "fin": 111.28
+      },
+      {
+       "mot": "seize",
+       "debut": 111.28,
+       "fin": 111.458
+      },
+      {
+       "mot": "demandes",
+       "debut": 111.45,
+       "fin": 111.989
+      },
+      {
+       "mot": "déposées",
+       "debut": 111.98,
+       "fin": 112.521
+      },
+      {
+       "mot": "par",
+       "debut": 112.52,
+       "fin": 112.757
+      },
+      {
+       "mot": "des",
+       "debut": 112.75,
+       "fin": 112.993
+      },
+      {
+       "mot": "personnes",
+       "debut": 112.99,
+       "fin": 113.584
+      },
+      {
+       "mot": "originaire",
+       "debut": 113.58,
+       "fin": 114.234
+      },
+      {
+       "mot": "de",
+       "debut": 114.23,
+       "fin": 114.411
+      },
+      {
+       "mot": "l",
+       "debut": 114.41,
+       "fin": 115.356
+      },
+      {
+       "mot": "ex",
+       "debut": 114.41,
+       "fin": 115.356
+      },
+      {
+       "mot": "yugoslavie",
+       "debut": 114.41,
+       "fin": 115.356
+      },
+      {
+       "mot": "sont",
+       "debut": 115.35,
+       "fin": 115.652
+      },
+      {
+       "mot": "toutes",
+       "debut": 115.65,
+       "fin": 116.065
+      },
+      {
+       "mot": "rejetées",
+       "debut": 116.06,
+       "fin": 116.656
+      }
+     ]
+    },
+    {
+     "texte": "Au total, trente-huit personnes se voient ainsi refuser la naturalisation.",
+     "debut": 117.5,
+     "fin": 122.128,
+     "mots": [
+      {
+       "mot": "au",
+       "debut": 117.5,
+       "fin": 117.78
+      },
+      {
+       "mot": "total",
+       "debut": 117.78,
+       "fin": 118.416
+      },
+      {
+       "mot": "trente",
+       "debut": 118.53,
+       "fin": 118.725
+      },
+      {
+       "mot": "huit",
+       "debut": 118.53,
+       "fin": 118.725
+      },
+      {
+       "mot": "personnes",
+       "debut": 118.72,
+       "fin": 119.367
+      },
+      {
+       "mot": "se",
+       "debut": 119.36,
+       "fin": 119.559
+      },
+      {
+       "mot": "voient",
+       "debut": 119.55,
+       "fin": 120.009
+      },
+      {
+       "mot": "ainsi",
+       "debut": 120.0,
+       "fin": 120.394
+      },
+      {
+       "mot": "refuser",
+       "debut": 120.39,
+       "fin": 120.908
+      },
+      {
+       "mot": "la",
+       "debut": 120.9,
+       "fin": 121.101
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 121.1,
+       "fin": 122.128
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 10,
+   "debut": 123.69,
+   "fin": 133.144,
+   "phrases": [
+    {
+     "texte": "Les autres demandes sont également refusées.",
+     "debut": 123.69,
+     "fin": 126.36,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 123.69,
+       "fin": 123.929
+      },
+      {
+       "mot": "autres",
+       "debut": 123.92,
+       "fin": 124.344
+      },
+      {
+       "mot": "demandes",
+       "debut": 124.34,
+       "fin": 124.878
+      },
+      {
+       "mot": "sont",
+       "debut": 124.87,
+       "fin": 125.174
+      },
+      {
+       "mot": "également",
+       "debut": 125.17,
+       "fin": 125.767
+      },
+      {
+       "mot": "refusées",
+       "debut": 125.76,
+       "fin": 126.36
+      }
+     ]
+    },
+    {
+     "texte": "Elles concernent une famille turque, un ressortissant hongrois, ainsi qu'une famille polonaise et néerlandaise.",
+     "debut": 126.86,
+     "fin": 133.144,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 126.86,
+       "fin": 127.116
+      },
+      {
+       "mot": "concerne",
+       "debut": 127.11,
+       "fin": 127.576
+      },
+      {
+       "mot": "une",
+       "debut": 127.57,
+       "fin": 127.781
+      },
+      {
+       "mot": "famille",
+       "debut": 127.78,
+       "fin": 128.191
+      },
+      {
+       "mot": "turque",
+       "debut": 128.19,
+       "fin": 128.64
+      },
+      {
+       "mot": "un",
+       "debut": 128.77,
+       "fin": 128.955
+      },
+      {
+       "mot": "ressortissant",
+       "debut": 128.95,
+       "fin": 129.769
+      },
+      {
+       "mot": "hongrois",
+       "debut": 129.76,
+       "fin": 130.351
+      },
+      {
+       "mot": "ainsi",
+       "debut": 130.35,
+       "fin": 130.7
+      },
+      {
+       "mot": "qu",
+       "debut": 130.7,
+       "fin": 131.107
+      },
+      {
+       "mot": "une",
+       "debut": 130.7,
+       "fin": 131.107
+      },
+      {
+       "mot": "famille",
+       "debut": 131.1,
+       "fin": 131.573
+      },
+      {
+       "mot": "polonaise",
+       "debut": 131.57,
+       "fin": 132.155
+      },
+      {
+       "mot": "et",
+       "debut": 132.15,
+       "fin": 132.329
+      },
+      {
+       "mot": "néerlandaise",
+       "debut": 132.32,
+       "fin": 133.144
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 11,
+   "debut": 134.69,
+   "fin": 146.002,
+   "phrases": [
+    {
+     "texte": "Parmi les personnes écartées, cinq décident de contester le résultat.",
+     "debut": 134.69,
+     "fin": 138.77,
+     "mots": [
+      {
+       "mot": "parmi",
+       "debut": 134.69,
+       "fin": 135.043
+      },
+      {
+       "mot": "les",
+       "debut": 135.04,
+       "fin": 135.276
+      },
+      {
+       "mot": "personnes",
+       "debut": 135.27,
+       "fin": 135.859
+      },
+      {
+       "mot": "écartées",
+       "debut": 135.85,
+       "fin": 136.441
+      },
+      {
+       "mot": "cinq",
+       "debut": 136.44,
+       "fin": 136.732
+      },
+      {
+       "mot": "décident",
+       "debut": 136.73,
+       "fin": 137.256
+      },
+      {
+       "mot": "de",
+       "debut": 137.25,
+       "fin": 137.431
+      },
+      {
+       "mot": "contester",
+       "debut": 137.43,
+       "fin": 138.013
+      },
+      {
+       "mot": "le",
+       "debut": 138.01,
+       "fin": 138.188
+      },
+      {
+       "mot": "résultat",
+       "debut": 138.18,
+       "fin": 138.77
+      }
+     ]
+    },
+    {
+     "texte": "Pour préserver leur anonymat, l'arrêt les désigne simplement par les lettres A, B, C, D et E.",
+     "debut": 139.27,
+     "fin": 146.002,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 139.27,
+       "fin": 139.535
+      },
+      {
+       "mot": "préserver",
+       "debut": 139.53,
+       "fin": 140.065
+      },
+      {
+       "mot": "leur",
+       "debut": 140.06,
+       "fin": 140.331
+      },
+      {
+       "mot": "anonymity",
+       "debut": 140.33,
+       "fin": 140.914
+      },
+      {
+       "mot": "l",
+       "debut": 141.12,
+       "fin": 141.736
+      },
+      {
+       "mot": "arrêt",
+       "debut": 141.12,
+       "fin": 141.736
+      },
+      {
+       "mot": "les",
+       "debut": 141.73,
+       "fin": 142.04
+      },
+      {
+       "mot": "désigne",
+       "debut": 142.03,
+       "fin": 142.65
+      },
+      {
+       "mot": "simplement",
+       "debut": 142.65,
+       "fin": 143.488
+      },
+      {
+       "mot": "par",
+       "debut": 143.48,
+       "fin": 143.793
+      },
+      {
+       "mot": "les",
+       "debut": 143.79,
+       "fin": 144.097
+      },
+      {
+       "mot": "lettres",
+       "debut": 144.09,
+       "fin": 144.707
+      },
+      {
+       "mot": "a",
+       "debut": 144.7,
+       "fin": 144.935
+      },
+      {
+       "mot": "b",
+       "debut": 144.93,
+       "fin": 145.164
+      },
+      {
+       "mot": "c",
+       "debut": 145.16,
+       "fin": 145.393
+      },
+      {
+       "mot": "d",
+       "debut": 145.39,
+       "fin": 145.545
+      },
+      {
+       "mot": "et",
+       "debut": 145.54,
+       "fin": 145.773
+      },
+      {
+       "mot": "e",
+       "debut": 145.77,
+       "fin": 146.002
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 12,
+   "debut": 146.96,
+   "fin": 164.43,
+   "phrases": [
+    {
+     "texte": "Leur parcours judiciaire sera long.",
+     "debut": 146.96,
+     "fin": 149.194,
+     "mots": [
+      {
+       "mot": "leur",
+       "debut": 146.96,
+       "fin": 147.475
+      },
+      {
+       "mot": "parcours",
+       "debut": 147.47,
+       "fin": 147.974
+      },
+      {
+       "mot": "judiciaire",
+       "debut": 147.97,
+       "fin": 148.584
+      },
+      {
+       "mot": "sera",
+       "debut": 148.58,
+       "fin": 148.861
+      },
+      {
+       "mot": "long",
+       "debut": 148.86,
+       "fin": 149.194
+      }
+     ]
+    },
+    {
+     "texte": "Elles saisissent d'abord le gouvernement lucernois, qui déclare le recours tardif.",
+     "debut": 149.66,
+     "fin": 153.994,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 149.66,
+       "fin": 149.913
+      },
+      {
+       "mot": "saisisse",
+       "debut": 149.91,
+       "fin": 150.366
+      },
+      {
+       "mot": "d",
+       "debut": 150.36,
+       "fin": 150.767
+      },
+      {
+       "mot": "abord",
+       "debut": 150.36,
+       "fin": 150.767
+      },
+      {
+       "mot": "le",
+       "debut": 150.76,
+       "fin": 150.918
+      },
+      {
+       "mot": "gouvernement",
+       "debut": 150.91,
+       "fin": 151.572
+      },
+      {
+       "mot": "lucerneux",
+       "debut": 151.57,
+       "fin": 152.16
+      },
+      {
+       "mot": "qui",
+       "debut": 152.22,
+       "fin": 152.451
+      },
+      {
+       "mot": "déclare",
+       "debut": 152.45,
+       "fin": 152.908
+      },
+      {
+       "mot": "le",
+       "debut": 152.9,
+       "fin": 153.079
+      },
+      {
+       "mot": "recours",
+       "debut": 153.07,
+       "fin": 153.537
+      },
+      {
+       "mot": "tardif",
+       "debut": 153.53,
+       "fin": 153.994
+      }
+     ]
+    },
+    {
+     "texte": "Le Tribunal fédéral annule cette première décision en deux mille un.",
+     "debut": 154.69,
+     "fin": 157.934,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 154.69,
+       "fin": 154.852
+      },
+      {
+       "mot": "tribunal",
+       "debut": 154.85,
+       "fin": 155.339
+      },
+      {
+       "mot": "fédéral",
+       "debut": 155.33,
+       "fin": 155.771
+      },
+      {
+       "mot": "annule",
+       "debut": 155.77,
+       "fin": 156.15
+      },
+      {
+       "mot": "cette",
+       "debut": 156.15,
+       "fin": 156.474
+      },
+      {
+       "mot": "première",
+       "debut": 156.47,
+       "fin": 156.961
+      },
+      {
+       "mot": "décision",
+       "debut": 156.96,
+       "fin": 157.447
+      },
+      {
+       "mot": "en",
+       "debut": 157.44,
+       "fin": 157.61
+      },
+      {
+       "mot": "deux",
+       "debut": 157.61,
+       "fin": 157.934
+      },
+      {
+       "mot": "mille",
+       "debut": 157.61,
+       "fin": 157.934
+      },
+      {
+       "mot": "un",
+       "debut": 157.61,
+       "fin": 157.934
+      }
+     ]
+    },
+    {
+     "texte": "Mais en mars deux mille deux, le gouvernement cantonal rejette finalement leur contestation sur le fond.",
+     "debut": 158.65,
+     "fin": 164.43,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 158.65,
+       "fin": 159.032
+      },
+      {
+       "mot": "en",
+       "debut": 159.03,
+       "fin": 159.256
+      },
+      {
+       "mot": "mars",
+       "debut": 159.25,
+       "fin": 159.63
+      },
+      {
+       "mot": "deux",
+       "debut": 159.63,
+       "fin": 160.078
+      },
+      {
+       "mot": "mille",
+       "debut": 159.63,
+       "fin": 160.078
+      },
+      {
+       "mot": "deux",
+       "debut": 159.63,
+       "fin": 160.078
+      },
+      {
+       "mot": "le",
+       "debut": 160.35,
+       "fin": 160.517
+      },
+      {
+       "mot": "gouvernement",
+       "debut": 160.51,
+       "fin": 161.224
+      },
+      {
+       "mot": "cantonal",
+       "debut": 161.22,
+       "fin": 161.713
+      },
+      {
+       "mot": "rejette",
+       "debut": 161.71,
+       "fin": 162.147
+      },
+      {
+       "mot": "finalement",
+       "debut": 162.14,
+       "fin": 162.745
+      },
+      {
+       "mot": "leur",
+       "debut": 162.74,
+       "fin": 163.017
+      },
+      {
+       "mot": "contestation",
+       "debut": 163.01,
+       "fin": 163.723
+      },
+      {
+       "mot": "sur",
+       "debut": 163.72,
+       "fin": 163.941
+      },
+      {
+       "mot": "le",
+       "debut": 163.94,
+       "fin": 164.104
+      },
+      {
+       "mot": "fond",
+       "debut": 164.1,
+       "fin": 164.43
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 13,
+   "debut": 165.38,
+   "fin": 177.684,
+   "phrases": [
+    {
+     "texte": "Pour le gouvernement, la liberté de vote doit prévaloir tant qu'une discrimination n'est pas démontrée sans aucun doute.",
+     "debut": 165.38,
+     "fin": 171.444,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 165.38,
+       "fin": 165.654
+      },
+      {
+       "mot": "le",
+       "debut": 165.65,
+       "fin": 165.815
+      },
+      {
+       "mot": "gouvernement",
+       "debut": 165.81,
+       "fin": 166.516
+      },
+      {
+       "mot": "la",
+       "debut": 166.72,
+       "fin": 166.871
+      },
+      {
+       "mot": "liberté",
+       "debut": 166.87,
+       "fin": 167.252
+      },
+      {
+       "mot": "de",
+       "debut": 167.25,
+       "fin": 167.395
+      },
+      {
+       "mot": "vote",
+       "debut": 167.39,
+       "fin": 167.633
+      },
+      {
+       "mot": "doit",
+       "debut": 167.63,
+       "fin": 167.871
+      },
+      {
+       "mot": "prévaloir",
+       "debut": 167.87,
+       "fin": 168.348
+      },
+      {
+       "mot": "tant",
+       "debut": 168.34,
+       "fin": 168.586
+      },
+      {
+       "mot": "qu",
+       "debut": 168.58,
+       "fin": 168.919
+      },
+      {
+       "mot": "une",
+       "debut": 168.58,
+       "fin": 168.919
+      },
+      {
+       "mot": "discrimination",
+       "debut": 168.91,
+       "fin": 169.634
+      },
+      {
+       "mot": "n",
+       "debut": 169.63,
+       "fin": 169.92
+      },
+      {
+       "mot": "est",
+       "debut": 169.63,
+       "fin": 169.92
+      },
+      {
+       "mot": "pas",
+       "debut": 169.92,
+       "fin": 170.11
+      },
+      {
+       "mot": "démontrée",
+       "debut": 170.11,
+       "fin": 170.587
+      },
+      {
+       "mot": "sans",
+       "debut": 170.58,
+       "fin": 170.825
+      },
+      {
+       "mot": "aucun",
+       "debut": 170.82,
+       "fin": 171.111
+      },
+      {
+       "mot": "doute",
+       "debut": 171.11,
+       "fin": 171.444
+      }
+     ]
+    },
+    {
+     "texte": "Or, selon lui, les éléments présentés ne permettent pas d'établir une telle violation.",
+     "debut": 172.26,
+     "fin": 177.684,
+     "mots": [
+      {
+       "mot": "or",
+       "debut": 172.26,
+       "fin": 172.66
+      },
+      {
+       "mot": "selon",
+       "debut": 172.66,
+       "fin": 173.253
+      },
+      {
+       "mot": "lui",
+       "debut": 173.25,
+       "fin": 173.748
+      },
+      {
+       "mot": "les",
+       "debut": 174.08,
+       "fin": 174.288
+      },
+      {
+       "mot": "éléments",
+       "debut": 174.28,
+       "fin": 174.737
+      },
+      {
+       "mot": "présentés",
+       "debut": 174.73,
+       "fin": 175.237
+      },
+      {
+       "mot": "ne",
+       "debut": 175.23,
+       "fin": 175.387
+      },
+      {
+       "mot": "permettent",
+       "debut": 175.38,
+       "fin": 175.936
+      },
+      {
+       "mot": "pas",
+       "debut": 175.93,
+       "fin": 176.136
+      },
+      {
+       "mot": "d",
+       "debut": 176.13,
+       "fin": 176.635
+      },
+      {
+       "mot": "établir",
+       "debut": 176.13,
+       "fin": 176.635
+      },
+      {
+       "mot": "une",
+       "debut": 176.63,
+       "fin": 176.835
+      },
+      {
+       "mot": "telle",
+       "debut": 176.83,
+       "fin": 177.135
+      },
+      {
+       "mot": "violation",
+       "debut": 177.13,
+       "fin": 177.684
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 14,
+   "debut": 179.24,
+   "fin": 190.008,
+   "phrases": [
+    {
+     "texte": "Les cinq requérants portent donc une nouvelle fois l'affaire devant le Tribunal fédéral.",
+     "debut": 179.24,
+     "fin": 183.192,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 179.24,
+       "fin": 179.421
+      },
+      {
+       "mot": "cinq",
+       "debut": 179.42,
+       "fin": 179.643
+      },
+      {
+       "mot": "requérants",
+       "debut": 179.64,
+       "fin": 180.131
+      },
+      {
+       "mot": "portent",
+       "debut": 180.13,
+       "fin": 180.486
+      },
+      {
+       "mot": "donc",
+       "debut": 180.48,
+       "fin": 180.708
+      },
+      {
+       "mot": "une",
+       "debut": 180.7,
+       "fin": 180.885
+      },
+      {
+       "mot": "nouvelle",
+       "debut": 180.88,
+       "fin": 181.285
+      },
+      {
+       "mot": "fois",
+       "debut": 181.28,
+       "fin": 181.506
+      },
+      {
+       "mot": "l",
+       "debut": 181.5,
+       "fin": 181.95
+      },
+      {
+       "mot": "affaire",
+       "debut": 181.5,
+       "fin": 181.95
+      },
+      {
+       "mot": "devant",
+       "debut": 181.95,
+       "fin": 182.26
+      },
+      {
+       "mot": "le",
+       "debut": 182.26,
+       "fin": 182.394
+      },
+      {
+       "mot": "tribunal",
+       "debut": 182.39,
+       "fin": 182.793
+      },
+      {
+       "mot": "fédéral",
+       "debut": 182.79,
+       "fin": 183.192
+      }
+     ]
+    },
+    {
+     "texte": "Le neuf juillet deux mille trois, celui-ci rend un arrêt qui marquera durablement le droit suisse de la naturalisation.",
+     "debut": 183.71,
+     "fin": 190.008,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 183.71,
+       "fin": 184.009
+      },
+      {
+       "mot": "neuf",
+       "debut": 184.0,
+       "fin": 184.198
+      },
+      {
+       "mot": "juillet",
+       "debut": 184.19,
+       "fin": 184.958
+      },
+      {
+       "mot": "deux",
+       "debut": 184.95,
+       "fin": 185.432
+      },
+      {
+       "mot": "mille",
+       "debut": 184.95,
+       "fin": 185.432
+      },
+      {
+       "mot": "trois",
+       "debut": 184.95,
+       "fin": 185.432
+      },
+      {
+       "mot": "celui",
+       "debut": 185.7,
+       "fin": 186.158
+      },
+      {
+       "mot": "ci",
+       "debut": 185.7,
+       "fin": 186.158
+      },
+      {
+       "mot": "rend",
+       "debut": 186.15,
+       "fin": 186.408
+      },
+      {
+       "mot": "un",
+       "debut": 186.4,
+       "fin": 186.558
+      },
+      {
+       "mot": "arrêt",
+       "debut": 186.55,
+       "fin": 186.858
+      },
+      {
+       "mot": "qui",
+       "debut": 186.85,
+       "fin": 187.058
+      },
+      {
+       "mot": "marquera",
+       "debut": 187.05,
+       "fin": 187.508
+      },
+      {
+       "mot": "durablement",
+       "debut": 187.5,
+       "fin": 188.108
+      },
+      {
+       "mot": "le",
+       "debut": 188.1,
+       "fin": 188.258
+      },
+      {
+       "mot": "droit",
+       "debut": 188.25,
+       "fin": 188.558
+      },
+      {
+       "mot": "suisse",
+       "debut": 188.55,
+       "fin": 188.908
+      },
+      {
+       "mot": "de",
+       "debut": 188.9,
+       "fin": 189.058
+      },
+      {
+       "mot": "la",
+       "debut": 189.05,
+       "fin": 189.208
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 189.2,
+       "fin": 190.008
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 15,
+   "debut": 191.55,
+   "fin": 201.794,
+   "phrases": [
+    {
+     "texte": "Au cœur du litige se trouve d'abord l'article huit, alinéa deux, de la Constitution fédérale.",
+     "debut": 191.55,
+     "fin": 196.16,
+     "mots": [
+      {
+       "mot": "au",
+       "debut": 191.55,
+       "fin": 191.734
+      },
+      {
+       "mot": "cœur",
+       "debut": 191.73,
+       "fin": 192.001
+      },
+      {
+       "mot": "du",
+       "debut": 192.0,
+       "fin": 192.161
+      },
+      {
+       "mot": "litige",
+       "debut": 192.16,
+       "fin": 192.534
+      },
+      {
+       "mot": "se",
+       "debut": 192.53,
+       "fin": 192.694
+      },
+      {
+       "mot": "trouve",
+       "debut": 192.69,
+       "fin": 193.068
+      },
+      {
+       "mot": "d",
+       "debut": 193.06,
+       "fin": 193.495
+      },
+      {
+       "mot": "abord",
+       "debut": 193.06,
+       "fin": 193.495
+      },
+      {
+       "mot": "l",
+       "debut": 193.49,
+       "fin": 194.028
+      },
+      {
+       "mot": "article",
+       "debut": 193.49,
+       "fin": 194.028
+      },
+      {
+       "mot": "huit",
+       "debut": 194.02,
+       "fin": 194.135
+      },
+      {
+       "mot": "aliné",
+       "debut": 194.13,
+       "fin": 194.455
+      },
+      {
+       "mot": "à",
+       "debut": 194.45,
+       "fin": 194.562
+      },
+      {
+       "mot": "deux",
+       "debut": 194.56,
+       "fin": 194.668
+      },
+      {
+       "mot": "de",
+       "debut": 194.66,
+       "fin": 194.828
+      },
+      {
+       "mot": "la",
+       "debut": 194.82,
+       "fin": 194.988
+      },
+      {
+       "mot": "constitution",
+       "debut": 194.98,
+       "fin": 195.682
+      },
+      {
+       "mot": "fédérale",
+       "debut": 195.68,
+       "fin": 196.162
+      }
+     ]
+    },
+    {
+     "texte": "Cette disposition interdit toute discrimination, notamment en raison de l'origine d'une personne.",
+     "debut": 196.5,
+     "fin": 201.794,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 196.5,
+       "fin": 196.829
+      },
+      {
+       "mot": "disposition",
+       "debut": 196.82,
+       "fin": 197.482
+      },
+      {
+       "mot": "interdit",
+       "debut": 197.48,
+       "fin": 197.972
+      },
+      {
+       "mot": "toute",
+       "debut": 197.97,
+       "fin": 198.299
+      },
+      {
+       "mot": "discrimination",
+       "debut": 198.29,
+       "fin": 199.17
+      },
+      {
+       "mot": "notamment",
+       "debut": 199.35,
+       "fin": 199.849
+      },
+      {
+       "mot": "en",
+       "debut": 199.84,
+       "fin": 199.998
+      },
+      {
+       "mot": "raison",
+       "debut": 199.99,
+       "fin": 200.348
+      },
+      {
+       "mot": "de",
+       "debut": 200.34,
+       "fin": 200.497
+      },
+      {
+       "mot": "l",
+       "debut": 200.49,
+       "fin": 200.996
+      },
+      {
+       "mot": "origine",
+       "debut": 200.49,
+       "fin": 200.996
+      },
+      {
+       "mot": "d",
+       "debut": 200.99,
+       "fin": 201.295
+      },
+      {
+       "mot": "une",
+       "debut": 200.99,
+       "fin": 201.295
+      },
+      {
+       "mot": "personne",
+       "debut": 201.29,
+       "fin": 201.794
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 16,
+   "debut": 202.64,
+   "fin": 212.45,
+   "phrases": [
+    {
+     "texte": "S'y ajoute l'article vingt-neuf, alinéa deux, qui garantit le droit d'être entendu.",
+     "debut": 202.64,
+     "fin": 207.01,
+     "mots": [
+      {
+       "mot": "si",
+       "debut": 202.64,
+       "fin": 202.862
+      },
+      {
+       "mot": "ajoutes",
+       "debut": 202.86,
+       "fin": 203.437
+      },
+      {
+       "mot": "l",
+       "debut": 203.43,
+       "fin": 204.156
+      },
+      {
+       "mot": "article",
+       "debut": 203.43,
+       "fin": 204.156
+      },
+      {
+       "mot": "vingt",
+       "debut": 204.15,
+       "fin": 204.371
+      },
+      {
+       "mot": "neuf",
+       "debut": 204.15,
+       "fin": 204.371
+      },
+      {
+       "mot": "aliné",
+       "debut": 204.37,
+       "fin": 204.802
+      },
+      {
+       "mot": "à",
+       "debut": 204.8,
+       "fin": 204.946
+      },
+      {
+       "mot": "deux",
+       "debut": 204.94,
+       "fin": 205.14
+      },
+      {
+       "mot": "qui",
+       "debut": 205.2,
+       "fin": 205.396
+      },
+      {
+       "mot": "garantit",
+       "debut": 205.39,
+       "fin": 205.823
+      },
+      {
+       "mot": "le",
+       "debut": 205.82,
+       "fin": 205.966
+      },
+      {
+       "mot": "droit",
+       "debut": 205.96,
+       "fin": 206.25
+      },
+      {
+       "mot": "d",
+       "debut": 206.25,
+       "fin": 206.583
+      },
+      {
+       "mot": "être",
+       "debut": 206.25,
+       "fin": 206.583
+      },
+      {
+       "mot": "entendu",
+       "debut": 206.58,
+       "fin": 207.01
+      }
+     ]
+    },
+    {
+     "texte": "De cette garantie découle notamment l'obligation, pour une autorité, de motiver ses décisions.",
+     "debut": 207.86,
+     "fin": 212.45,
+     "mots": [
+      {
+       "mot": "de",
+       "debut": 207.86,
+       "fin": 208.007
+      },
+      {
+       "mot": "cette",
+       "debut": 208.0,
+       "fin": 208.297
+      },
+      {
+       "mot": "garantie",
+       "debut": 208.29,
+       "fin": 208.731
+      },
+      {
+       "mot": "découle",
+       "debut": 208.73,
+       "fin": 209.118
+      },
+      {
+       "mot": "notamment",
+       "debut": 209.11,
+       "fin": 209.601
+      },
+      {
+       "mot": "l",
+       "debut": 209.6,
+       "fin": 210.277
+      },
+      {
+       "mot": "obligation",
+       "debut": 209.6,
+       "fin": 210.277
+      },
+      {
+       "mot": "pour",
+       "debut": 210.27,
+       "fin": 210.518
+      },
+      {
+       "mot": "une",
+       "debut": 210.51,
+       "fin": 210.711
+      },
+      {
+       "mot": "autorité",
+       "debut": 210.71,
+       "fin": 211.194
+      },
+      {
+       "mot": "de",
+       "debut": 211.19,
+       "fin": 211.339
+      },
+      {
+       "mot": "motiver",
+       "debut": 211.33,
+       "fin": 211.726
+      },
+      {
+       "mot": "ces",
+       "debut": 211.72,
+       "fin": 211.919
+      },
+      {
+       "mot": "décisions",
+       "debut": 211.91,
+       "fin": 212.45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 17,
+   "debut": 213.71,
+   "fin": 226.88,
+   "phrases": [
+    {
+     "texte": "Mais une troisième disposition intervient : l'article trente-quatre de la Constitution, consacré aux droits politiques.",
+     "debut": 213.71,
+     "fin": 220.642,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 213.71,
+       "fin": 214.017
+      },
+      {
+       "mot": "une",
+       "debut": 214.01,
+       "fin": 214.256
+      },
+      {
+       "mot": "troisième",
+       "debut": 214.25,
+       "fin": 214.854
+      },
+      {
+       "mot": "disposition",
+       "debut": 214.85,
+       "fin": 215.572
+      },
+      {
+       "mot": "intervient",
+       "debut": 215.57,
+       "fin": 216.29
+      },
+      {
+       "mot": "l",
+       "debut": 216.79,
+       "fin": 217.434
+      },
+      {
+       "mot": "article",
+       "debut": 216.79,
+       "fin": 217.434
+      },
+      {
+       "mot": "trente",
+       "debut": 217.43,
+       "fin": 217.627
+      },
+      {
+       "mot": "quatre",
+       "debut": 217.43,
+       "fin": 217.627
+      },
+      {
+       "mot": "de",
+       "debut": 217.62,
+       "fin": 217.82
+      },
+      {
+       "mot": "la",
+       "debut": 217.82,
+       "fin": 218.013
+      },
+      {
+       "mot": "constitution",
+       "debut": 218.01,
+       "fin": 218.85
+      },
+      {
+       "mot": "consacré",
+       "debut": 218.99,
+       "fin": 219.508
+      },
+      {
+       "mot": "au",
+       "debut": 219.5,
+       "fin": 219.678
+      },
+      {
+       "mot": "droit",
+       "debut": 219.67,
+       "fin": 220.018
+      },
+      {
+       "mot": "politique",
+       "debut": 220.01,
+       "fin": 220.642
+      }
+     ]
+    },
+    {
+     "texte": "Il protège la libre formation de l'opinion des citoyens et l'expression fidèle de leur volonté.",
+     "debut": 221.66,
+     "fin": 226.88,
+     "mots": [
+      {
+       "mot": "ils",
+       "debut": 221.66,
+       "fin": 222.109
+      },
+      {
+       "mot": "protègent",
+       "debut": 222.1,
+       "fin": 222.611
+      },
+      {
+       "mot": "la",
+       "debut": 222.61,
+       "fin": 222.762
+      },
+      {
+       "mot": "libre",
+       "debut": 222.76,
+       "fin": 223.063
+      },
+      {
+       "mot": "formation",
+       "debut": 223.06,
+       "fin": 223.565
+      },
+      {
+       "mot": "de",
+       "debut": 223.56,
+       "fin": 223.716
+      },
+      {
+       "mot": "l",
+       "debut": 223.71,
+       "fin": 224.218
+      },
+      {
+       "mot": "opinion",
+       "debut": 223.71,
+       "fin": 224.218
+      },
+      {
+       "mot": "des",
+       "debut": 224.21,
+       "fin": 224.419
+      },
+      {
+       "mot": "citoyens",
+       "debut": 224.41,
+       "fin": 224.871
+      },
+      {
+       "mot": "et",
+       "debut": 224.87,
+       "fin": 225.022
+      },
+      {
+       "mot": "l",
+       "debut": 225.02,
+       "fin": 225.675
+      },
+      {
+       "mot": "expression",
+       "debut": 225.02,
+       "fin": 225.675
+      },
+      {
+       "mot": "fidèle",
+       "debut": 225.67,
+       "fin": 226.026
+      },
+      {
+       "mot": "de",
+       "debut": 226.02,
+       "fin": 226.177
+      },
+      {
+       "mot": "leur",
+       "debut": 226.17,
+       "fin": 226.428
+      },
+      {
+       "mot": "volonté",
+       "debut": 226.42,
+       "fin": 226.88
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 18,
+   "debut": 228.43,
+   "fin": 241.292,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral doit donc résoudre deux questions.",
+     "debut": 228.43,
+     "fin": 231.19,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 228.43,
+       "fin": 228.581
+      },
+      {
+       "mot": "tribunal",
+       "debut": 228.58,
+       "fin": 229.033
+      },
+      {
+       "mot": "fédéral",
+       "debut": 229.03,
+       "fin": 229.435
+      },
+      {
+       "mot": "doit",
+       "debut": 229.43,
+       "fin": 229.686
+      },
+      {
+       "mot": "donc",
+       "debut": 229.68,
+       "fin": 229.938
+      },
+      {
+       "mot": "résoudre",
+       "debut": 229.93,
+       "fin": 230.39
+      },
+      {
+       "mot": "deux",
+       "debut": 230.39,
+       "fin": 230.641
+      },
+      {
+       "mot": "questions",
+       "debut": 230.64,
+       "fin": 231.194
+      }
+     ]
+    },
+    {
+     "texte": "Un vote populaire peut-il constituer une discrimination interdite par la Constitution ?",
+     "debut": 231.72,
+     "fin": 236.366,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 231.72,
+       "fin": 231.888
+      },
+      {
+       "mot": "vote",
+       "debut": 231.88,
+       "fin": 232.158
+      },
+      {
+       "mot": "populaire",
+       "debut": 232.15,
+       "fin": 232.697
+      },
+      {
+       "mot": "peut",
+       "debut": 232.69,
+       "fin": 233.129
+      },
+      {
+       "mot": "il",
+       "debut": 232.69,
+       "fin": 233.129
+      },
+      {
+       "mot": "constituer",
+       "debut": 233.12,
+       "fin": 233.722
+      },
+      {
+       "mot": "une",
+       "debut": 233.72,
+       "fin": 233.938
+      },
+      {
+       "mot": "discrimination",
+       "debut": 233.93,
+       "fin": 234.747
+      },
+      {
+       "mot": "interdite",
+       "debut": 234.74,
+       "fin": 235.287
+      },
+      {
+       "mot": "par",
+       "debut": 235.28,
+       "fin": 235.503
+      },
+      {
+       "mot": "la",
+       "debut": 235.5,
+       "fin": 235.665
+      },
+      {
+       "mot": "constitution",
+       "debut": 235.66,
+       "fin": 236.366
+      }
+     ]
+    },
+    {
+     "texte": "Et peut-on refuser une naturalisation sans expliquer les raisons de ce refus ?",
+     "debut": 237.07,
+     "fin": 241.292,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 237.07,
+       "fin": 237.235
+      },
+      {
+       "mot": "peut",
+       "debut": 237.23,
+       "fin": 237.673
+      },
+      {
+       "mot": "on",
+       "debut": 237.23,
+       "fin": 237.673
+      },
+      {
+       "mot": "refuser",
+       "debut": 237.67,
+       "fin": 238.112
+      },
+      {
+       "mot": "une",
+       "debut": 238.11,
+       "fin": 238.331
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 238.33,
+       "fin": 239.154
+      },
+      {
+       "mot": "sans",
+       "debut": 239.15,
+       "fin": 239.428
+      },
+      {
+       "mot": "expliquer",
+       "debut": 239.42,
+       "fin": 239.976
+      },
+      {
+       "mot": "les",
+       "debut": 239.97,
+       "fin": 240.196
+      },
+      {
+       "mot": "raisons",
+       "debut": 240.19,
+       "fin": 240.634
+      },
+      {
+       "mot": "de",
+       "debut": 240.63,
+       "fin": 240.799
+      },
+      {
+       "mot": "ce",
+       "debut": 240.79,
+       "fin": 240.963
+      },
+      {
+       "mot": "refus",
+       "debut": 240.96,
+       "fin": 241.292
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 19,
+   "debut": 242.84,
+   "fin": 255.705,
+   "phrases": [
+    {
+     "texte": "Avant d'y répondre, un obstacle procédural doit être surmonté.",
+     "debut": 242.84,
+     "fin": 246.438,
+     "mots": [
+      {
+       "mot": "avant",
+       "debut": 242.84,
+       "fin": 243.201
+      },
+      {
+       "mot": "d",
+       "debut": 243.2,
+       "fin": 243.44
+      },
+      {
+       "mot": "y",
+       "debut": 243.2,
+       "fin": 243.44
+      },
+      {
+       "mot": "répondre",
+       "debut": 243.44,
+       "fin": 244.038
+      },
+      {
+       "mot": "un",
+       "debut": 244.28,
+       "fin": 244.432
+      },
+      {
+       "mot": "obstacle",
+       "debut": 244.43,
+       "fin": 244.884
+      },
+      {
+       "mot": "procédural",
+       "debut": 244.88,
+       "fin": 245.435
+      },
+      {
+       "mot": "doit",
+       "debut": 245.43,
+       "fin": 245.686
+      },
+      {
+       "mot": "être",
+       "debut": 245.68,
+       "fin": 245.937
+      },
+      {
+       "mot": "surmonté",
+       "debut": 245.93,
+       "fin": 246.438
+      }
+     ]
+    },
+    {
+     "texte": "À l'époque, le droit lucernois ne reconnaît aucun droit à obtenir la naturalisation.",
+     "debut": 247.13,
+     "fin": 252.19,
+     "mots": [
+      {
+       "mot": "à",
+       "debut": 247.13,
+       "fin": 247.294
+      },
+      {
+       "mot": "l",
+       "debut": 247.29,
+       "fin": 247.922
+      },
+      {
+       "mot": "époque",
+       "debut": 247.29,
+       "fin": 247.93
+      },
+      {
+       "mot": "le",
+       "debut": 248.17,
+       "fin": 248.343
+      },
+      {
+       "mot": "droit",
+       "debut": 248.34,
+       "fin": 248.673
+      },
+      {
+       "mot": "lucerneux",
+       "debut": 248.67,
+       "fin": 249.222
+      },
+      {
+       "mot": "ne",
+       "debut": 249.22,
+       "fin": 249.387
+      },
+      {
+       "mot": "reconnaît",
+       "debut": 249.38,
+       "fin": 249.937
+      },
+      {
+       "mot": "aucun",
+       "debut": 249.93,
+       "fin": 250.266
+      },
+      {
+       "mot": "droit",
+       "debut": 250.26,
+       "fin": 250.596
+      },
+      {
+       "mot": "à",
+       "debut": 250.59,
+       "fin": 250.706
+      },
+      {
+       "mot": "obtenir",
+       "debut": 250.7,
+       "fin": 251.146
+      },
+      {
+       "mot": "la",
+       "debut": 251.14,
+       "fin": 251.311
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 251.31,
+       "fin": 252.19
+      }
+     ]
+    },
+    {
+     "texte": "Les candidats peuvent-ils néanmoins contester leur refus ?",
+     "debut": 252.81,
+     "fin": 255.705,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 252.81,
+       "fin": 253.021
+      },
+      {
+       "mot": "candidats",
+       "debut": 253.02,
+       "fin": 253.527
+      },
+      {
+       "mot": "peuvent",
+       "debut": 253.52,
+       "fin": 254.135
+      },
+      {
+       "mot": "ils",
+       "debut": 253.52,
+       "fin": 254.135
+      },
+      {
+       "mot": "néanmoins",
+       "debut": 254.13,
+       "fin": 254.641
+      },
+      {
+       "mot": "contester",
+       "debut": 254.64,
+       "fin": 255.148
+      },
+      {
+       "mot": "leur",
+       "debut": 255.14,
+       "fin": 255.401
+      },
+      {
+       "mot": "refus",
+       "debut": 255.4,
+       "fin": 255.705
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 20,
+   "debut": 256.8,
+   "fin": 271.984,
+   "phrases": [
+    {
+     "texte": "Oui, répond le Tribunal fédéral, car il faut distinguer le droit d'obtenir une naturalisation du droit de ne pas subir de discrimination.",
+     "debut": 256.8,
+     "fin": 265.008,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 256.8,
+       "fin": 256.966
+      },
+      {
+       "mot": "épon",
+       "debut": 256.96,
+       "fin": 257.237
+      },
+      {
+       "mot": "le",
+       "debut": 257.23,
+       "fin": 257.4
+      },
+      {
+       "mot": "tribunal",
+       "debut": 257.39,
+       "fin": 257.887
+      },
+      {
+       "mot": "fédéral",
+       "debut": 257.88,
+       "fin": 258.32
+      },
+      {
+       "mot": "car",
+       "debut": 258.65,
+       "fin": 258.879
+      },
+      {
+       "mot": "il",
+       "debut": 258.87,
+       "fin": 259.043
+      },
+      {
+       "mot": "faut",
+       "debut": 259.04,
+       "fin": 259.317
+      },
+      {
+       "mot": "distinguer",
+       "debut": 259.31,
+       "fin": 259.919
+      },
+      {
+       "mot": "le",
+       "debut": 259.91,
+       "fin": 260.084
+      },
+      {
+       "mot": "droit",
+       "debut": 260.08,
+       "fin": 260.412
+      },
+      {
+       "mot": "d",
+       "debut": 260.41,
+       "fin": 260.96
+      },
+      {
+       "mot": "obtenir",
+       "debut": 260.41,
+       "fin": 260.96
+      },
+      {
+       "mot": "une",
+       "debut": 260.96,
+       "fin": 261.179
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 261.17,
+       "fin": 262.0
+      },
+      {
+       "mot": "du",
+       "debut": 262.18,
+       "fin": 262.373
+      },
+      {
+       "mot": "droit",
+       "debut": 262.37,
+       "fin": 262.758
+      },
+      {
+       "mot": "de",
+       "debut": 262.75,
+       "fin": 262.951
+      },
+      {
+       "mot": "ne",
+       "debut": 262.95,
+       "fin": 263.144
+      },
+      {
+       "mot": "pas",
+       "debut": 263.14,
+       "fin": 263.401
+      },
+      {
+       "mot": "subir",
+       "debut": 263.4,
+       "fin": 263.787
+      },
+      {
+       "mot": "de",
+       "debut": 263.78,
+       "fin": 263.98
+      },
+      {
+       "mot": "discrimination",
+       "debut": 263.98,
+       "fin": 265.008
+      }
+     ]
+    },
+    {
+     "texte": "Une personne peut invoquer cette seconde garantie, même lorsqu'elle ne dispose d'aucun droit à une décision favorable.",
+     "debut": 265.7,
+     "fin": 271.984,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 265.7,
+       "fin": 265.911
+      },
+      {
+       "mot": "personne",
+       "debut": 265.91,
+       "fin": 266.385
+      },
+      {
+       "mot": "peut",
+       "debut": 266.38,
+       "fin": 266.649
+      },
+      {
+       "mot": "invoquer",
+       "debut": 266.64,
+       "fin": 267.123
+      },
+      {
+       "mot": "cette",
+       "debut": 267.12,
+       "fin": 267.44
+      },
+      {
+       "mot": "seconde",
+       "debut": 267.44,
+       "fin": 267.862
+      },
+      {
+       "mot": "garantie",
+       "debut": 267.86,
+       "fin": 268.336
+      },
+      {
+       "mot": "même",
+       "debut": 268.58,
+       "fin": 268.842
+      },
+      {
+       "mot": "lorsqu",
+       "debut": 268.84,
+       "fin": 269.47
+      },
+      {
+       "mot": "elle",
+       "debut": 268.84,
+       "fin": 269.47
+      },
+      {
+       "mot": "dispose",
+       "debut": 269.47,
+       "fin": 269.889
+      },
+      {
+       "mot": "d",
+       "debut": 269.88,
+       "fin": 270.308
+      },
+      {
+       "mot": "aucun",
+       "debut": 269.88,
+       "fin": 270.308
+      },
+      {
+       "mot": "droit",
+       "debut": 270.3,
+       "fin": 270.622
+      },
+      {
+       "mot": "à",
+       "debut": 270.62,
+       "fin": 270.727
+      },
+      {
+       "mot": "une",
+       "debut": 270.72,
+       "fin": 270.937
+      },
+      {
+       "mot": "décision",
+       "debut": 270.93,
+       "fin": 271.408
+      },
+      {
+       "mot": "favorable",
+       "debut": 271.4,
+       "fin": 271.984
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 21,
+   "debut": 273.55,
+   "fin": 289.534,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral examine ensuite la nature du vote.",
+     "debut": 273.55,
+     "fin": 276.862,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 273.55,
+       "fin": 273.734
+      },
+      {
+       "mot": "tribunal",
+       "debut": 273.73,
+       "fin": 274.276
+      },
+      {
+       "mot": "fédéral",
+       "debut": 274.27,
+       "fin": 274.757
+      },
+      {
+       "mot": "examine",
+       "debut": 274.75,
+       "fin": 275.238
+      },
+      {
+       "mot": "ensuite",
+       "debut": 275.23,
+       "fin": 275.719
+      },
+      {
+       "mot": "la",
+       "debut": 275.71,
+       "fin": 275.9
+      },
+      {
+       "mot": "nature",
+       "debut": 275.9,
+       "fin": 276.321
+      },
+      {
+       "mot": "du",
+       "debut": 276.32,
+       "fin": 276.501
+      },
+      {
+       "mot": "vote",
+       "debut": 276.5,
+       "fin": 276.862
+      }
+     ]
+    },
+    {
+     "texte": "Lorsqu'ils se prononcent sur une naturalisation, les citoyens n'agissent pas uniquement comme des électeurs.",
+     "debut": 277.58,
+     "fin": 283.326,
+     "mots": [
+      {
+       "mot": "lorsqu",
+       "debut": 277.58,
+       "fin": 278.096
+      },
+      {
+       "mot": "il",
+       "debut": 277.58,
+       "fin": 278.096
+      },
+      {
+       "mot": "se",
+       "debut": 278.09,
+       "fin": 278.25
+      },
+      {
+       "mot": "prononce",
+       "debut": 278.24,
+       "fin": 278.709
+      },
+      {
+       "mot": "sur",
+       "debut": 278.7,
+       "fin": 278.913
+      },
+      {
+       "mot": "une",
+       "debut": 278.91,
+       "fin": 279.117
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 279.11,
+       "fin": 279.934
+      },
+      {
+       "mot": "les",
+       "debut": 280.24,
+       "fin": 280.448
+      },
+      {
+       "mot": "citoyens",
+       "debut": 280.44,
+       "fin": 280.91
+      },
+      {
+       "mot": "n",
+       "debut": 280.91,
+       "fin": 281.476
+      },
+      {
+       "mot": "agissent",
+       "debut": 280.91,
+       "fin": 281.476
+      },
+      {
+       "mot": "pas",
+       "debut": 281.47,
+       "fin": 281.681
+      },
+      {
+       "mot": "uniquement",
+       "debut": 281.68,
+       "fin": 282.247
+      },
+      {
+       "mot": "comme",
+       "debut": 282.24,
+       "fin": 282.555
+      },
+      {
+       "mot": "des",
+       "debut": 282.55,
+       "fin": 282.761
+      },
+      {
+       "mot": "électeurs",
+       "debut": 282.76,
+       "fin": 283.326
+      }
+     ]
+    },
+    {
+     "texte": "Ils exercent une compétence de la commune et accomplissent, à ce titre, une tâche étatique.",
+     "debut": 283.72,
+     "fin": 289.534,
+     "mots": [
+      {
+       "mot": "ils",
+       "debut": 283.72,
+       "fin": 283.951
+      },
+      {
+       "mot": "exercent",
+       "debut": 283.95,
+       "fin": 284.45
+      },
+      {
+       "mot": "une",
+       "debut": 284.45,
+       "fin": 284.671
+      },
+      {
+       "mot": "compétence",
+       "debut": 284.67,
+       "fin": 285.28
+      },
+      {
+       "mot": "de",
+       "debut": 285.28,
+       "fin": 285.446
+      },
+      {
+       "mot": "la",
+       "debut": 285.44,
+       "fin": 285.612
+      },
+      {
+       "mot": "commune",
+       "debut": 285.61,
+       "fin": 286.14
+      },
+      {
+       "mot": "et",
+       "debut": 286.22,
+       "fin": 286.419
+      },
+      {
+       "mot": "accomplisse",
+       "debut": 286.41,
+       "fin": 287.193
+      },
+      {
+       "mot": "à",
+       "debut": 287.19,
+       "fin": 287.322
+      },
+      {
+       "mot": "ce",
+       "debut": 287.32,
+       "fin": 287.515
+      },
+      {
+       "mot": "titre",
+       "debut": 287.51,
+       "fin": 287.966
+      },
+      {
+       "mot": "une",
+       "debut": 288.05,
+       "fin": 288.347
+      },
+      {
+       "mot": "tâche",
+       "debut": 288.34,
+       "fin": 288.792
+      },
+      {
+       "mot": "étatique",
+       "debut": 288.79,
+       "fin": 289.534
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 22,
+   "debut": 290.48,
+   "fin": 308.196,
+   "phrases": [
+    {
+     "texte": "Or l'article trente-cinq, alinéa deux, de la Constitution impose à quiconque assume une tâche de l'État de respecter les droits fondamentaux et de contribuer à leur réalisation.",
+     "debut": 290.48,
+     "fin": 301.444,
+     "mots": [
+      {
+       "mot": "or",
+       "debut": 290.48,
+       "fin": 290.782
+      },
+      {
+       "mot": "l",
+       "debut": 290.78,
+       "fin": 291.515
+      },
+      {
+       "mot": "article",
+       "debut": 290.78,
+       "fin": 291.515
+      },
+      {
+       "mot": "trente",
+       "debut": 291.51,
+       "fin": 291.736
+      },
+      {
+       "mot": "cinq",
+       "debut": 291.51,
+       "fin": 291.736
+      },
+      {
+       "mot": "aliné",
+       "debut": 291.73,
+       "fin": 292.176
+      },
+      {
+       "mot": "à",
+       "debut": 292.17,
+       "fin": 292.323
+      },
+      {
+       "mot": "deux",
+       "debut": 292.32,
+       "fin": 292.69
+      },
+      {
+       "mot": "de",
+       "debut": 292.69,
+       "fin": 292.91
+      },
+      {
+       "mot": "la",
+       "debut": 292.91,
+       "fin": 293.13
+      },
+      {
+       "mot": "constitution",
+       "debut": 293.13,
+       "fin": 294.1
+      },
+      {
+       "mot": "impose",
+       "debut": 294.32,
+       "fin": 294.753
+      },
+      {
+       "mot": "à",
+       "debut": 294.75,
+       "fin": 294.875
+      },
+      {
+       "mot": "quiconque",
+       "debut": 294.87,
+       "fin": 295.483
+      },
+      {
+       "mot": "assume",
+       "debut": 295.48,
+       "fin": 295.908
+      },
+      {
+       "mot": "une",
+       "debut": 295.9,
+       "fin": 296.151
+      },
+      {
+       "mot": "tâche",
+       "debut": 296.15,
+       "fin": 296.516
+      },
+      {
+       "mot": "de",
+       "debut": 296.51,
+       "fin": 296.699
+      },
+      {
+       "mot": "l",
+       "debut": 296.69,
+       "fin": 297.124
+      },
+      {
+       "mot": "état",
+       "debut": 296.69,
+       "fin": 297.19
+      },
+      {
+       "mot": "de",
+       "debut": 297.2,
+       "fin": 297.38
+      },
+      {
+       "mot": "respecter",
+       "debut": 297.38,
+       "fin": 297.952
+      },
+      {
+       "mot": "les",
+       "debut": 297.95,
+       "fin": 298.181
+      },
+      {
+       "mot": "droits",
+       "debut": 298.18,
+       "fin": 298.582
+      },
+      {
+       "mot": "fondamentaux",
+       "debut": 298.58,
+       "fin": 299.326
+      },
+      {
+       "mot": "et",
+       "debut": 299.32,
+       "fin": 299.498
+      },
+      {
+       "mot": "de",
+       "debut": 299.49,
+       "fin": 299.669
+      },
+      {
+       "mot": "contribuer",
+       "debut": 299.66,
+       "fin": 300.299
+      },
+      {
+       "mot": "à",
+       "debut": 300.29,
+       "fin": 300.414
+      },
+      {
+       "mot": "leur",
+       "debut": 300.41,
+       "fin": 300.7
+      },
+      {
+       "mot": "réalisation",
+       "debut": 300.7,
+       "fin": 301.444
+      }
+     ]
+    },
+    {
+     "texte": "Cette obligation s'applique donc également au corps électoral lorsqu'il décide d'une naturalisation.",
+     "debut": 302.61,
+     "fin": 308.196,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 302.61,
+       "fin": 302.947
+      },
+      {
+       "mot": "obligation",
+       "debut": 302.94,
+       "fin": 303.555
+      },
+      {
+       "mot": "s",
+       "debut": 303.55,
+       "fin": 304.163
+      },
+      {
+       "mot": "applique",
+       "debut": 303.55,
+       "fin": 304.163
+      },
+      {
+       "mot": "donc",
+       "debut": 304.16,
+       "fin": 304.439
+      },
+      {
+       "mot": "également",
+       "debut": 304.43,
+       "fin": 304.992
+      },
+      {
+       "mot": "au",
+       "debut": 304.99,
+       "fin": 305.157
+      },
+      {
+       "mot": "corps",
+       "debut": 305.15,
+       "fin": 305.489
+      },
+      {
+       "mot": "électoral",
+       "debut": 305.48,
+       "fin": 306.041
+      },
+      {
+       "mot": "lorsqu",
+       "debut": 306.04,
+       "fin": 306.594
+      },
+      {
+       "mot": "il",
+       "debut": 306.04,
+       "fin": 306.594
+      },
+      {
+       "mot": "décide",
+       "debut": 306.59,
+       "fin": 306.981
+      },
+      {
+       "mot": "d",
+       "debut": 306.98,
+       "fin": 307.312
+      },
+      {
+       "mot": "une",
+       "debut": 306.98,
+       "fin": 307.312
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 307.31,
+       "fin": 308.196
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 23,
+   "debut": 309.14,
+   "fin": 325.14,
+   "phrases": [
+    {
+     "texte": "Et la liberté de vote ?",
+     "debut": 309.14,
+     "fin": 310.532,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 309.14,
+       "fin": 309.325
+      },
+      {
+       "mot": "la",
+       "debut": 309.32,
+       "fin": 309.506
+      },
+      {
+       "mot": "liberté",
+       "debut": 309.5,
+       "fin": 309.989
+      },
+      {
+       "mot": "de",
+       "debut": 309.98,
+       "fin": 310.17
+      },
+      {
+       "mot": "vote",
+       "debut": 310.17,
+       "fin": 310.532
+      }
+     ]
+    },
+    {
+     "texte": "Elle protège l'expression authentique de la volonté populaire.",
+     "debut": 311.16,
+     "fin": 314.756,
+     "mots": [
+      {
+       "mot": "elle",
+       "debut": 311.16,
+       "fin": 311.445
+      },
+      {
+       "mot": "protège",
+       "debut": 311.44,
+       "fin": 311.902
+      },
+      {
+       "mot": "l",
+       "debut": 311.9,
+       "fin": 312.644
+      },
+      {
+       "mot": "expression",
+       "debut": 311.9,
+       "fin": 312.644
+      },
+      {
+       "mot": "authentique",
+       "debut": 312.64,
+       "fin": 313.329
+      },
+      {
+       "mot": "de",
+       "debut": 313.32,
+       "fin": 313.5
+      },
+      {
+       "mot": "la",
+       "debut": 313.5,
+       "fin": 313.671
+      },
+      {
+       "mot": "volonté",
+       "debut": 313.67,
+       "fin": 314.128
+      },
+      {
+       "mot": "populaire",
+       "debut": 314.12,
+       "fin": 314.756
+      }
+     ]
+    },
+    {
+     "texte": "Mais elle ne garantit pas le maintien d'un résultat contraire au droit.",
+     "debut": 315.54,
+     "fin": 318.372,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 315.54,
+       "fin": 315.772
+      },
+      {
+       "mot": "elle",
+       "debut": 315.77,
+       "fin": 316.0
+      },
+      {
+       "mot": "ne",
+       "debut": 316.0,
+       "fin": 316.137
+      },
+      {
+       "mot": "garantit",
+       "debut": 316.13,
+       "fin": 316.547
+      },
+      {
+       "mot": "pas",
+       "debut": 316.54,
+       "fin": 316.73
+      },
+      {
+       "mot": "le",
+       "debut": 316.73,
+       "fin": 316.867
+      },
+      {
+       "mot": "maintien",
+       "debut": 316.86,
+       "fin": 317.277
+      },
+      {
+       "mot": "d",
+       "debut": 317.27,
+       "fin": 317.505
+      },
+      {
+       "mot": "un",
+       "debut": 317.27,
+       "fin": 317.505
+      },
+      {
+       "mot": "résultat",
+       "debut": 317.5,
+       "fin": 317.916
+      },
+      {
+       "mot": "contraire",
+       "debut": 317.91,
+       "fin": 318.372
+      }
+     ]
+    },
+    {
+     "texte": "Une décision ne devient pas constitutionnelle du seul fait qu'elle a été adoptée par une majorité.",
+     "debut": 319.07,
+     "fin": 325.14,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 319.07,
+       "fin": 319.325
+      },
+      {
+       "mot": "décision",
+       "debut": 319.32,
+       "fin": 319.876
+      },
+      {
+       "mot": "ne",
+       "debut": 319.87,
+       "fin": 320.059
+      },
+      {
+       "mot": "devient",
+       "debut": 320.05,
+       "fin": 320.549
+      },
+      {
+       "mot": "pas",
+       "debut": 320.54,
+       "fin": 320.794
+      },
+      {
+       "mot": "constitutionnelle",
+       "debut": 320.79,
+       "fin": 321.896
+      },
+      {
+       "mot": "du",
+       "debut": 321.89,
+       "fin": 322.079
+      },
+      {
+       "mot": "seul",
+       "debut": 322.07,
+       "fin": 322.385
+      },
+      {
+       "mot": "fait",
+       "debut": 322.38,
+       "fin": 322.692
+      },
+      {
+       "mot": "qu",
+       "debut": 322.69,
+       "fin": 323.181
+      },
+      {
+       "mot": "elle",
+       "debut": 322.69,
+       "fin": 323.181
+      },
+      {
+       "mot": "a",
+       "debut": 323.18,
+       "fin": 323.304
+      },
+      {
+       "mot": "été",
+       "debut": 323.3,
+       "fin": 323.548
+      },
+      {
+       "mot": "adoptée",
+       "debut": 323.54,
+       "fin": 324.038
+      },
+      {
+       "mot": "par",
+       "debut": 324.03,
+       "fin": 324.283
+      },
+      {
+       "mot": "une",
+       "debut": 324.28,
+       "fin": 324.528
+      },
+      {
+       "mot": "majorité",
+       "debut": 324.52,
+       "fin": 325.14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 24,
+   "debut": 326.09,
+   "fin": 344.58,
+   "phrases": [
+    {
+     "texte": "Reste à déterminer si les candidats ont réellement été discriminés.",
+     "debut": 326.09,
+     "fin": 330.072,
+     "mots": [
+      {
+       "mot": "reste",
+       "debut": 326.09,
+       "fin": 326.443
+      },
+      {
+       "mot": "à",
+       "debut": 326.44,
+       "fin": 326.56
+      },
+      {
+       "mot": "déterminer",
+       "debut": 326.56,
+       "fin": 327.204
+      },
+      {
+       "mot": "si",
+       "debut": 327.2,
+       "fin": 327.38
+      },
+      {
+       "mot": "les",
+       "debut": 327.38,
+       "fin": 327.614
+      },
+      {
+       "mot": "candidats",
+       "debut": 327.61,
+       "fin": 328.199
+      },
+      {
+       "mot": "ont",
+       "debut": 328.19,
+       "fin": 328.433
+      },
+      {
+       "mot": "réellement",
+       "debut": 328.43,
+       "fin": 329.077
+      },
+      {
+       "mot": "été",
+       "debut": 329.07,
+       "fin": 329.311
+      },
+      {
+       "mot": "discriminés",
+       "debut": 329.31,
+       "fin": 330.072
+      }
+     ]
+    },
+    {
+     "texte": "La difficulté est évidente.",
+     "debut": 330.77,
+     "fin": 332.676,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 330.77,
+       "fin": 330.98
+      },
+      {
+       "mot": "difficulté",
+       "debut": 330.98,
+       "fin": 331.726
+      },
+      {
+       "mot": "est",
+       "debut": 331.72,
+       "fin": 331.997
+      },
+      {
+       "mot": "évidente",
+       "debut": 331.99,
+       "fin": 332.676
+      }
+     ]
+    },
+    {
+     "texte": "Dans un scrutin secret, chaque citoyen vote sans avoir à expliquer son choix.",
+     "debut": 333.04,
+     "fin": 337.732,
+     "mots": [
+      {
+       "mot": "dans",
+       "debut": 333.04,
+       "fin": 333.35
+      },
+      {
+       "mot": "un",
+       "debut": 333.35,
+       "fin": 333.532
+      },
+      {
+       "mot": "scrutin",
+       "debut": 333.53,
+       "fin": 334.016
+      },
+      {
+       "mot": "secret",
+       "debut": 334.01,
+       "fin": 334.51
+      },
+      {
+       "mot": "chaque",
+       "debut": 334.68,
+       "fin": 335.076
+      },
+      {
+       "mot": "citoyen",
+       "debut": 335.07,
+       "fin": 335.528
+      },
+      {
+       "mot": "vote",
+       "debut": 335.52,
+       "fin": 335.81
+      },
+      {
+       "mot": "sans",
+       "debut": 335.81,
+       "fin": 336.093
+      },
+      {
+       "mot": "avoir",
+       "debut": 336.09,
+       "fin": 336.432
+      },
+      {
+       "mot": "à",
+       "debut": 336.43,
+       "fin": 336.545
+      },
+      {
+       "mot": "expliquer",
+       "debut": 336.54,
+       "fin": 337.11
+      },
+      {
+       "mot": "son",
+       "debut": 337.11,
+       "fin": 337.336
+      },
+      {
+       "mot": "choix",
+       "debut": 337.33,
+       "fin": 337.732
+      }
+     ]
+    },
+    {
+     "texte": "Il est donc généralement impossible d'établir directement les motivations individuelles des électeurs.",
+     "debut": 338.42,
+     "fin": 344.58,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 338.42,
+       "fin": 338.62
+      },
+      {
+       "mot": "est",
+       "debut": 338.62,
+       "fin": 338.881
+      },
+      {
+       "mot": "donc",
+       "debut": 338.88,
+       "fin": 339.207
+      },
+      {
+       "mot": "généralement",
+       "debut": 339.2,
+       "fin": 340.055
+      },
+      {
+       "mot": "impossible",
+       "debut": 340.05,
+       "fin": 340.772
+      },
+      {
+       "mot": "d",
+       "debut": 340.8,
+       "fin": 341.439
+      },
+      {
+       "mot": "établir",
+       "debut": 340.88,
+       "fin": 341.439
+      },
+      {
+       "mot": "directement",
+       "debut": 341.43,
+       "fin": 342.1
+      },
+      {
+       "mot": "les",
+       "debut": 342.1,
+       "fin": 342.321
+      },
+      {
+       "mot": "motivations",
+       "debut": 342.32,
+       "fin": 342.982
+      },
+      {
+       "mot": "individuelles",
+       "debut": 342.98,
+       "fin": 343.753
+      },
+      {
+       "mot": "des",
+       "debut": 343.75,
+       "fin": 343.974
+      },
+      {
+       "mot": "électeurs",
+       "debut": 343.97,
+       "fin": 344.58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 25,
+   "debut": 345.53,
+   "fin": 363.208,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral doit alors raisonner à partir d'indices.",
+     "debut": 345.53,
+     "fin": 348.648,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 345.53,
+       "fin": 345.69
+      },
+      {
+       "mot": "tribunal",
+       "debut": 345.69,
+       "fin": 346.166
+      },
+      {
+       "mot": "fédéral",
+       "debut": 346.16,
+       "fin": 346.588
+      },
+      {
+       "mot": "doit",
+       "debut": 346.58,
+       "fin": 346.852
+      },
+      {
+       "mot": "alors",
+       "debut": 346.85,
+       "fin": 347.169
+      },
+      {
+       "mot": "résoudre",
+       "debut": 347.16,
+       "fin": 347.645
+      },
+      {
+       "mot": "à",
+       "debut": 347.64,
+       "fin": 347.75
+      },
+      {
+       "mot": "partir",
+       "debut": 347.75,
+       "fin": 348.12
+      },
+      {
+       "mot": "d",
+       "debut": 348.12,
+       "fin": 348.648
+      },
+      {
+       "mot": "endice",
+       "debut": 348.12,
+       "fin": 348.648
+      }
+     ]
+    },
+    {
+     "texte": "Il précise surtout qu'une décision populaire n'exige pas un niveau de preuve plus élevé qu'une décision administrative.",
+     "debut": 349.46,
+     "fin": 355.72,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 349.46,
+       "fin": 349.692
+      },
+      {
+       "mot": "précise",
+       "debut": 349.69,
+       "fin": 350.29
+      },
+      {
+       "mot": "surtout",
+       "debut": 350.29,
+       "fin": 351.0
+      },
+      {
+       "mot": "qu",
+       "debut": 350.88,
+       "fin": 351.331
+      },
+      {
+       "mot": "une",
+       "debut": 351.0,
+       "fin": 351.331
+      },
+      {
+       "mot": "décision",
+       "debut": 351.33,
+       "fin": 351.751
+      },
+      {
+       "mot": "populaire",
+       "debut": 351.75,
+       "fin": 352.218
+      },
+      {
+       "mot": "n",
+       "debut": 352.21,
+       "fin": 352.592
+      },
+      {
+       "mot": "exige",
+       "debut": 352.21,
+       "fin": 352.592
+      },
+      {
+       "mot": "pas",
+       "debut": 352.59,
+       "fin": 352.778
+      },
+      {
+       "mot": "un",
+       "debut": 352.77,
+       "fin": 352.918
+      },
+      {
+       "mot": "niveau",
+       "debut": 352.91,
+       "fin": 353.245
+      },
+      {
+       "mot": "de",
+       "debut": 353.24,
+       "fin": 353.385
+      },
+      {
+       "mot": "preuve",
+       "debut": 353.38,
+       "fin": 353.712
+      },
+      {
+       "mot": "plus",
+       "debut": 353.71,
+       "fin": 353.946
+      },
+      {
+       "mot": "élevé",
+       "debut": 353.94,
+       "fin": 354.226
+      },
+      {
+       "mot": "qu",
+       "debut": 354.22,
+       "fin": 354.553
+      },
+      {
+       "mot": "une",
+       "debut": 354.22,
+       "fin": 354.553
+      },
+      {
+       "mot": "décision",
+       "debut": 354.55,
+       "fin": 354.973
+      },
+      {
+       "mot": "administrative",
+       "debut": 354.97,
+       "fin": 355.72
+      }
+     ]
+    },
+    {
+     "texte": "Le caractère démocratique du scrutin ne constitue pas une protection particulière contre le contrôle judiciaire.",
+     "debut": 356.31,
+     "fin": 363.208,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 356.31,
+       "fin": 356.517
+      },
+      {
+       "mot": "caractère",
+       "debut": 356.51,
+       "fin": 357.186
+      },
+      {
+       "mot": "démocratique",
+       "debut": 357.18,
+       "fin": 358.056
+      },
+      {
+       "mot": "du",
+       "debut": 358.05,
+       "fin": 358.257
+      },
+      {
+       "mot": "scrutin",
+       "debut": 358.25,
+       "fin": 358.83
+      },
+      {
+       "mot": "ne",
+       "debut": 358.94,
+       "fin": 359.108
+      },
+      {
+       "mot": "constitue",
+       "debut": 359.1,
+       "fin": 359.67
+      },
+      {
+       "mot": "pas",
+       "debut": 359.67,
+       "fin": 359.895
+      },
+      {
+       "mot": "une",
+       "debut": 359.89,
+       "fin": 360.119
+      },
+      {
+       "mot": "protection",
+       "debut": 360.11,
+       "fin": 360.737
+      },
+      {
+       "mot": "particulière",
+       "debut": 360.73,
+       "fin": 361.467
+      },
+      {
+       "mot": "contre",
+       "debut": 361.46,
+       "fin": 361.86
+      },
+      {
+       "mot": "le",
+       "debut": 361.86,
+       "fin": 362.029
+      },
+      {
+       "mot": "contrôle",
+       "debut": 362.02,
+       "fin": 362.534
+      },
+      {
+       "mot": "judiciaire",
+       "debut": 362.53,
+       "fin": 363.208
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 26,
+   "debut": 364.17,
+   "fin": 375.606,
+   "phrases": [
+    {
+     "texte": "Le premier indice réside dans les résultats eux-mêmes.",
+     "debut": 364.17,
+     "fin": 367.51,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 364.17,
+       "fin": 364.352
+      },
+      {
+       "mot": "premier",
+       "debut": 364.35,
+       "fin": 364.838
+      },
+      {
+       "mot": "indice",
+       "debut": 364.83,
+       "fin": 365.263
+      },
+      {
+       "mot": "réside",
+       "debut": 365.26,
+       "fin": 365.688
+      },
+      {
+       "mot": "dans",
+       "debut": 365.68,
+       "fin": 365.992
+      },
+      {
+       "mot": "les",
+       "debut": 365.99,
+       "fin": 366.235
+      },
+      {
+       "mot": "résultats",
+       "debut": 366.23,
+       "fin": 366.842
+      },
+      {
+       "mot": "eux",
+       "debut": 366.84,
+       "fin": 367.51
+      },
+      {
+       "mot": "mêmes",
+       "debut": 366.84,
+       "fin": 367.51
+      }
+     ]
+    },
+    {
+     "texte": "Toutes les demandes provenant de l'ex-Yougoslavie ont été rejetées.",
+     "debut": 368.29,
+     "fin": 371.286,
+     "mots": [
+      {
+       "mot": "toutes",
+       "debut": 368.29,
+       "fin": 368.693
+      },
+      {
+       "mot": "les",
+       "debut": 368.69,
+       "fin": 368.918
+      },
+      {
+       "mot": "demandes",
+       "debut": 368.91,
+       "fin": 369.426
+      },
+      {
+       "mot": "provenant",
+       "debut": 369.42,
+       "fin": 369.989
+      },
+      {
+       "mot": "de",
+       "debut": 369.98,
+       "fin": 370.158
+      },
+      {
+       "mot": "l",
+       "debut": 370.15,
+       "fin": 371.06
+      },
+      {
+       "mot": "ex",
+       "debut": 370.15,
+       "fin": 371.06
+      },
+      {
+       "mot": "yugoslavie",
+       "debut": 370.15,
+       "fin": 371.06
+      },
+      {
+       "mot": "ont",
+       "debut": 371.06,
+       "fin": 371.286
+      }
+     ]
+    },
+    {
+     "texte": "Pourtant, les candidats concernés ne forment pas un groupe homogène.",
+     "debut": 372.07,
+     "fin": 375.606,
+     "mots": [
+      {
+       "mot": "pourtant",
+       "debut": 372.07,
+       "fin": 372.586
+      },
+      {
+       "mot": "les",
+       "debut": 372.58,
+       "fin": 372.791
+      },
+      {
+       "mot": "candidats",
+       "debut": 372.79,
+       "fin": 373.303
+      },
+      {
+       "mot": "concernés",
+       "debut": 373.3,
+       "fin": 373.814
+      },
+      {
+       "mot": "ne",
+       "debut": 373.81,
+       "fin": 373.968
+      },
+      {
+       "mot": "forment",
+       "debut": 373.96,
+       "fin": 374.377
+      },
+      {
+       "mot": "pas",
+       "debut": 374.37,
+       "fin": 374.582
+      },
+      {
+       "mot": "un",
+       "debut": 374.58,
+       "fin": 374.736
+      },
+      {
+       "mot": "groupe",
+       "debut": 374.73,
+       "fin": 375.094
+      },
+      {
+       "mot": "homogène",
+       "debut": 375.09,
+       "fin": 375.606
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 27,
+   "debut": 376.55,
+   "fin": 389.51,
+   "phrases": [
+    {
+     "texte": "Certains vivent seuls, d'autres ont une famille.",
+     "debut": 376.55,
+     "fin": 379.062,
+     "mots": [
+      {
+       "mot": "certains",
+       "debut": 376.55,
+       "fin": 377.015
+      },
+      {
+       "mot": "vivent",
+       "debut": 377.01,
+       "fin": 377.373
+      },
+      {
+       "mot": "seuls",
+       "debut": 377.37,
+       "fin": 377.731
+      },
+      {
+       "mot": "d",
+       "debut": 377.73,
+       "fin": 378.192
+      },
+      {
+       "mot": "autres",
+       "debut": 377.73,
+       "fin": 378.192
+      },
+      {
+       "mot": "ont",
+       "debut": 378.19,
+       "fin": 378.397
+      },
+      {
+       "mot": "une",
+       "debut": 378.39,
+       "fin": 378.601
+      },
+      {
+       "mot": "famille",
+       "debut": 378.6,
+       "fin": 379.062
+      }
+     ]
+    },
+    {
+     "texte": "Leurs professions, leurs revenus et leur situation personnelle diffèrent.",
+     "debut": 379.53,
+     "fin": 383.414,
+     "mots": [
+      {
+       "mot": "leur",
+       "debut": 379.53,
+       "fin": 379.8
+      },
+      {
+       "mot": "profession",
+       "debut": 379.8,
+       "fin": 380.447
+      },
+      {
+       "mot": "leurs",
+       "debut": 380.44,
+       "fin": 380.771
+      },
+      {
+       "mot": "revenus",
+       "debut": 380.77,
+       "fin": 381.202
+      },
+      {
+       "mot": "et",
+       "debut": 381.2,
+       "fin": 381.364
+      },
+      {
+       "mot": "leur",
+       "debut": 381.36,
+       "fin": 381.634
+      },
+      {
+       "mot": "situation",
+       "debut": 381.63,
+       "fin": 382.173
+      },
+      {
+       "mot": "personnelle",
+       "debut": 382.17,
+       "fin": 382.821
+      },
+      {
+       "mot": "diffèrent",
+       "debut": 382.82,
+       "fin": 383.414
+      }
+     ]
+    },
+    {
+     "texte": "Plusieurs sont nés en Suisse.",
+     "debut": 383.94,
+     "fin": 385.366,
+     "mots": [
+      {
+       "mot": "plusieurs",
+       "debut": 383.94,
+       "fin": 384.436
+      },
+      {
+       "mot": "sont",
+       "debut": 384.43,
+       "fin": 384.68
+      },
+      {
+       "mot": "nés",
+       "debut": 384.68,
+       "fin": 384.876
+      },
+      {
+       "mot": "en",
+       "debut": 384.87,
+       "fin": 385.023
+      },
+      {
+       "mot": "suisse",
+       "debut": 385.02,
+       "fin": 385.366
+      }
+     ]
+    },
+    {
+     "texte": "Les autres s'y sont installés entre mille neuf cent septante et un et mille neuf cent nonante et un.",
+     "debut": 385.73,
+     "fin": 389.51,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 385.73,
+       "fin": 385.998
+      },
+      {
+       "mot": "autres",
+       "debut": 385.99,
+       "fin": 386.452
+      },
+      {
+       "mot": "s",
+       "debut": 386.45,
+       "fin": 386.711
+      },
+      {
+       "mot": "y",
+       "debut": 386.45,
+       "fin": 386.711
+      },
+      {
+       "mot": "sont",
+       "debut": 386.71,
+       "fin": 387.036
+      },
+      {
+       "mot": "installés",
+       "debut": 387.03,
+       "fin": 387.684
+      },
+      {
+       "mot": "entre",
+       "debut": 387.68,
+       "fin": 388.074
+      },
+      {
+       "mot": "mille",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "neuf",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "cent",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "septante",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "et",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "un",
+       "debut": 388.07,
+       "fin": 388.398
+      },
+      {
+       "mot": "et",
+       "debut": 388.39,
+       "fin": 388.593
+      },
+      {
+       "mot": "mille",
+       "debut": 388.59,
+       "fin": 388.982
+      },
+      {
+       "mot": "neuf",
+       "debut": 388.59,
+       "fin": 388.982
+      },
+      {
+       "mot": "cent",
+       "debut": 388.59,
+       "fin": 388.982
+      },
+      {
+       "mot": "septante",
+       "debut": 388.59,
+       "fin": 388.982
+      },
+      {
+       "mot": "deux",
+       "debut": 388.59,
+       "fin": 388.99
+      },
+      {
+       "mot": "et",
+       "debut": 389.06,
+       "fin": 389.518
+      },
+      {
+       "mot": "mille",
+       "debut": 389.51,
+       "fin": 390.422
+      },
+      {
+       "mot": "neuf",
+       "debut": 389.51,
+       "fin": 390.422
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 28,
+   "debut": 390.26,
+   "fin": 406.587,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral procède alors à une comparaison révélatrice.",
+     "debut": 390.26,
+     "fin": 393.928,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 390.26,
+       "fin": 390.437
+      },
+      {
+       "mot": "tribunal",
+       "debut": 390.43,
+       "fin": 390.944
+      },
+      {
+       "mot": "fédéral",
+       "debut": 390.94,
+       "fin": 391.394
+      },
+      {
+       "mot": "procède",
+       "debut": 391.39,
+       "fin": 391.845
+      },
+      {
+       "mot": "alors",
+       "debut": 391.84,
+       "fin": 392.182
+      },
+      {
+       "mot": "à",
+       "debut": 392.18,
+       "fin": 392.295
+      },
+      {
+       "mot": "une",
+       "debut": 392.29,
+       "fin": 392.52
+      },
+      {
+       "mot": "comparaison",
+       "debut": 392.52,
+       "fin": 393.196
+      },
+      {
+       "mot": "révélatrice",
+       "debut": 393.19,
+       "fin": 393.928
+      }
+     ]
+    },
+    {
+     "texte": "Un ressortissant italien, né en Suisse en mille neuf cent huitante, a été naturalisé.",
+     "debut": 394.3,
+     "fin": 399.528,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 394.3,
+       "fin": 394.49
+      },
+      {
+       "mot": "ressortissant",
+       "debut": 394.49,
+       "fin": 395.375
+      },
+      {
+       "mot": "italien",
+       "debut": 395.37,
+       "fin": 395.944
+      },
+      {
+       "mot": "né",
+       "debut": 396.02,
+       "fin": 396.291
+      },
+      {
+       "mot": "en",
+       "debut": 396.29,
+       "fin": 396.553
+      },
+      {
+       "mot": "suisse",
+       "debut": 396.55,
+       "fin": 397.166
+      },
+      {
+       "mot": "en",
+       "debut": 397.16,
+       "fin": 397.428
+      },
+      {
+       "mot": "mille",
+       "debut": 397.42,
+       "fin": 397.953
+      },
+      {
+       "mot": "neuf",
+       "debut": 397.42,
+       "fin": 397.953
+      },
+      {
+       "mot": "cent",
+       "debut": 397.42,
+       "fin": 397.953
+      },
+      {
+       "mot": "quatre",
+       "debut": 397.42,
+       "fin": 397.953
+      },
+      {
+       "mot": "vingts",
+       "debut": 397.42,
+       "fin": 397.953
+      },
+      {
+       "mot": "a",
+       "debut": 397.95,
+       "fin": 398.128
+      },
+      {
+       "mot": "été",
+       "debut": 398.12,
+       "fin": 398.478
+      },
+      {
+       "mot": "naturalisé",
+       "debut": 398.47,
+       "fin": 399.528
+      }
+     ]
+    },
+    {
+     "texte": "À l'inverse, deux candidats originaires de l'ex-Yougoslavie, nés à Lucerne, ont essuyé un refus.",
+     "debut": 400.44,
+     "fin": 406.587,
+     "mots": [
+      {
+       "mot": "à",
+       "debut": 400.44,
+       "fin": 400.561
+      },
+      {
+       "mot": "l",
+       "debut": 400.56,
+       "fin": 401.218
+      },
+      {
+       "mot": "inverse",
+       "debut": 400.56,
+       "fin": 401.218
+      },
+      {
+       "mot": "deux",
+       "debut": 401.21,
+       "fin": 401.517
+      },
+      {
+       "mot": "candidats",
+       "debut": 401.51,
+       "fin": 402.114
+      },
+      {
+       "mot": "originaires",
+       "debut": 402.11,
+       "fin": 402.831
+      },
+      {
+       "mot": "de",
+       "debut": 402.83,
+       "fin": 403.01
+      },
+      {
+       "mot": "l",
+       "debut": 403.01,
+       "fin": 403.846
+      },
+      {
+       "mot": "ex",
+       "debut": 403.01,
+       "fin": 403.846
+      },
+      {
+       "mot": "yugoslav",
+       "debut": 403.01,
+       "fin": 403.95
+      },
+      {
+       "mot": "nés",
+       "debut": 403.96,
+       "fin": 404.362
+      },
+      {
+       "mot": "à",
+       "debut": 404.36,
+       "fin": 404.562
+      },
+      {
+       "mot": "lucerne",
+       "debut": 404.56,
+       "fin": 404.925
+      },
+      {
+       "mot": "essuyé",
+       "debut": 404.925,
+       "fin": 405.587
+      },
+      {
+       "mot": "un",
+       "debut": 405.585,
+       "fin": 405.887
+      },
+      {
+       "mot": "refus",
+       "debut": 405.885,
+       "fin": 406.587
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 29,
+   "debut": 407.595,
+   "fin": 422.203,
+   "phrases": [
+    {
+     "texte": "Ni la durée du séjour, ni la profession, ni les revenus, ni la situation familiale ne permettent d'expliquer une différence aussi systématique.",
+     "debut": 407.595,
+     "fin": 416.059,
+     "mots": [
+      {
+       "mot": "ni",
+       "debut": 407.595,
+       "fin": 407.775
+      },
+      {
+       "mot": "la",
+       "debut": 407.775,
+       "fin": 407.951
+      },
+      {
+       "mot": "durée",
+       "debut": 407.945,
+       "fin": 408.304
+      },
+      {
+       "mot": "du",
+       "debut": 408.295,
+       "fin": 408.48
+      },
+      {
+       "mot": "séjour",
+       "debut": 408.475,
+       "fin": 408.95
+      },
+      {
+       "mot": "ni",
+       "debut": 408.945,
+       "fin": 409.126
+      },
+      {
+       "mot": "la",
+       "debut": 409.125,
+       "fin": 409.303
+      },
+      {
+       "mot": "profession",
+       "debut": 409.295,
+       "fin": 410.008
+      },
+      {
+       "mot": "ni",
+       "debut": 410.005,
+       "fin": 410.184
+      },
+      {
+       "mot": "les",
+       "debut": 410.175,
+       "fin": 410.419
+      },
+      {
+       "mot": "revenus",
+       "debut": 410.415,
+       "fin": 410.948
+      },
+      {
+       "mot": "ni",
+       "debut": 410.945,
+       "fin": 411.124
+      },
+      {
+       "mot": "la",
+       "debut": 411.115,
+       "fin": 411.3
+      },
+      {
+       "mot": "situation",
+       "debut": 411.295,
+       "fin": 411.888
+      },
+      {
+       "mot": "familiale",
+       "debut": 411.885,
+       "fin": 412.475
+      },
+      {
+       "mot": "ne",
+       "debut": 412.475,
+       "fin": 412.651
+      },
+      {
+       "mot": "permettent",
+       "debut": 412.645,
+       "fin": 413.298
+      },
+      {
+       "mot": "d",
+       "debut": 413.295,
+       "fin": 414.003
+      },
+      {
+       "mot": "expliquer",
+       "debut": 413.295,
+       "fin": 414.003
+      },
+      {
+       "mot": "une",
+       "debut": 413.995,
+       "fin": 414.238
+      },
+      {
+       "mot": "différence",
+       "debut": 414.235,
+       "fin": 414.884
+      },
+      {
+       "mot": "aussi",
+       "debut": 414.875,
+       "fin": 415.236
+      },
+      {
+       "mot": "systématique",
+       "debut": 415.235,
+       "fin": 416.059
+      }
+     ]
+    },
+    {
+     "texte": "En revanche, les résultats présentent une correspondance frappante avec l'origine des candidats.",
+     "debut": 416.875,
+     "fin": 422.203,
+     "mots": [
+      {
+       "mot": "en",
+       "debut": 416.875,
+       "fin": 417.103
+      },
+      {
+       "mot": "revanche",
+       "debut": 417.095,
+       "fin": 417.851
+      },
+      {
+       "mot": "les",
+       "debut": 417.995,
+       "fin": 418.199
+      },
+      {
+       "mot": "résultats",
+       "debut": 418.195,
+       "fin": 418.7
+      },
+      {
+       "mot": "présentent",
+       "debut": 418.695,
+       "fin": 419.25
+      },
+      {
+       "mot": "une",
+       "debut": 419.245,
+       "fin": 419.45
+      },
+      {
+       "mot": "correspondance",
+       "debut": 419.445,
+       "fin": 420.201
+      },
+      {
+       "mot": "frappante",
+       "debut": 420.195,
+       "fin": 420.702
+      },
+      {
+       "mot": "avec",
+       "debut": 420.695,
+       "fin": 420.952
+      },
+      {
+       "mot": "l",
+       "debut": 420.945,
+       "fin": 421.452
+      },
+      {
+       "mot": "origine",
+       "debut": 420.945,
+       "fin": 421.452
+      },
+      {
+       "mot": "des",
+       "debut": 421.445,
+       "fin": 421.652
+      },
+      {
+       "mot": "candidats",
+       "debut": 421.645,
+       "fin": 422.203
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 30,
+   "debut": 423.145,
+   "fin": 437.881,
+   "phrases": [
+    {
+     "texte": "Un deuxième ensemble d'indices vient renforcer ce constat.",
+     "debut": 423.145,
+     "fin": 426.617,
+     "mots": [
+      {
+       "mot": "un",
+       "debut": 423.145,
+       "fin": 423.325
+      },
+      {
+       "mot": "deuxième",
+       "debut": 423.325,
+       "fin": 423.854
+      },
+      {
+       "mot": "ensemble",
+       "debut": 423.845,
+       "fin": 424.383
+      },
+      {
+       "mot": "d",
+       "debut": 424.375,
+       "fin": 424.971
+      },
+      {
+       "mot": "indices",
+       "debut": 424.375,
+       "fin": 424.971
+      },
+      {
+       "mot": "vient",
+       "debut": 424.965,
+       "fin": 425.324
+      },
+      {
+       "mot": "renforcer",
+       "debut": 425.315,
+       "fin": 425.912
+      },
+      {
+       "mot": "ce",
+       "debut": 425.905,
+       "fin": 426.088
+      },
+      {
+       "mot": "constat",
+       "debut": 426.085,
+       "fin": 426.617
+      }
+     ]
+    },
+    {
+     "texte": "Dans les semaines précédant le scrutin, des tracts et des lettres de lecteurs avaient diffusé des propos ouvertement hostiles aux personnes originaires de l'ex-Yougoslavie.",
+     "debut": 427.175,
+     "fin": 437.881,
+     "mots": [
+      {
+       "mot": "dans",
+       "debut": 427.175,
+       "fin": 427.422
+      },
+      {
+       "mot": "les",
+       "debut": 427.415,
+       "fin": 427.616
+      },
+      {
+       "mot": "semaines",
+       "debut": 427.615,
+       "fin": 428.05
+      },
+      {
+       "mot": "précédentes",
+       "debut": 428.045,
+       "fin": 428.63
+      },
+      {
+       "mot": "le",
+       "debut": 428.625,
+       "fin": 428.774
+      },
+      {
+       "mot": "scrutin",
+       "debut": 428.765,
+       "fin": 429.215
+      },
+      {
+       "mot": "des",
+       "debut": 429.355,
+       "fin": 429.62
+      },
+      {
+       "mot": "tracts",
+       "debut": 429.615,
+       "fin": 430.079
+      },
+      {
+       "mot": "et",
+       "debut": 430.075,
+       "fin": 430.276
+      },
+      {
+       "mot": "des",
+       "debut": 430.275,
+       "fin": 430.538
+      },
+      {
+       "mot": "lettres",
+       "debut": 430.535,
+       "fin": 431.063
+      },
+      {
+       "mot": "de",
+       "debut": 431.055,
+       "fin": 431.26
+      },
+      {
+       "mot": "lecteurs",
+       "debut": 431.255,
+       "fin": 431.851
+      },
+      {
+       "mot": "avaient",
+       "debut": 431.845,
+       "fin": 432.376
+      },
+      {
+       "mot": "diffusé",
+       "debut": 432.375,
+       "fin": 432.901
+      },
+      {
+       "mot": "des",
+       "debut": 432.895,
+       "fin": 433.163
+      },
+      {
+       "mot": "propos",
+       "debut": 433.155,
+       "fin": 433.623
+      },
+      {
+       "mot": "ouvertement",
+       "debut": 433.615,
+       "fin": 434.41
+      },
+      {
+       "mot": "hostiles",
+       "debut": 434.405,
+       "fin": 435.001
+      },
+      {
+       "mot": "aux",
+       "debut": 435.145,
+       "fin": 435.392
+      },
+      {
+       "mot": "personnes",
+       "debut": 435.385,
+       "fin": 435.999
+      },
+      {
+       "mot": "originaire",
+       "debut": 435.995,
+       "fin": 436.667
+      },
+      {
+       "mot": "de",
+       "debut": 436.665,
+       "fin": 436.849
+      },
+      {
+       "mot": "l",
+       "debut": 436.845,
+       "fin": 437.881
+      },
+      {
+       "mot": "ex",
+       "debut": 436.845,
+       "fin": 437.881
+      },
+      {
+       "mot": "yugoslavie",
+       "debut": 436.845,
+       "fin": 437.881
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 31,
+   "debut": 438.825,
+   "fin": 457.221,
+   "phrases": [
+    {
+     "texte": "Certes, ces publications ne permettent pas d'attribuer les mêmes opinions à chaque électeur, ni même à la majorité.",
+     "debut": 438.825,
+     "fin": 445.945,
+     "mots": [
+      {
+       "mot": "certes",
+       "debut": 438.825,
+       "fin": 439.32
+      },
+      {
+       "mot": "ces",
+       "debut": 439.315,
+       "fin": 439.565
+      },
+      {
+       "mot": "publications",
+       "debut": 439.565,
+       "fin": 440.363
+      },
+      {
+       "mot": "ne",
+       "debut": 440.355,
+       "fin": 440.547
+      },
+      {
+       "mot": "permettent",
+       "debut": 440.545,
+       "fin": 441.221
+      },
+      {
+       "mot": "pas",
+       "debut": 441.215,
+       "fin": 441.467
+      },
+      {
+       "mot": "d",
+       "debut": 441.465,
+       "fin": 442.203
+      },
+      {
+       "mot": "attribuer",
+       "debut": 441.465,
+       "fin": 442.203
+      },
+      {
+       "mot": "les",
+       "debut": 442.195,
+       "fin": 442.448
+      },
+      {
+       "mot": "mêmes",
+       "debut": 442.445,
+       "fin": 442.816
+      },
+      {
+       "mot": "opinions",
+       "debut": 442.815,
+       "fin": 443.369
+      },
+      {
+       "mot": "à",
+       "debut": 443.365,
+       "fin": 443.491
+      },
+      {
+       "mot": "chaque",
+       "debut": 443.485,
+       "fin": 443.921
+      },
+      {
+       "mot": "électeur",
+       "debut": 443.915,
+       "fin": 444.534
+      },
+      {
+       "mot": "ni",
+       "debut": 444.525,
+       "fin": 444.718
+      },
+      {
+       "mot": "même",
+       "debut": 444.715,
+       "fin": 445.025
+      },
+      {
+       "mot": "à",
+       "debut": 445.025,
+       "fin": 445.148
+      },
+      {
+       "mot": "la",
+       "debut": 445.145,
+       "fin": 445.332
+      },
+      {
+       "mot": "majorité",
+       "debut": 445.325,
+       "fin": 445.945
+      }
+     ]
+    },
+    {
+     "texte": "Mais elles témoignent d'un climat de préjugés.",
+     "debut": 446.625,
+     "fin": 448.725,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 446.625,
+       "fin": 446.908
+      },
+      {
+       "mot": "elle",
+       "debut": 446.905,
+       "fin": 447.184
+      },
+      {
+       "mot": "témoigne",
+       "debut": 447.175,
+       "fin": 447.679
+      },
+      {
+       "mot": "d",
+       "debut": 447.675,
+       "fin": 447.954
+      },
+      {
+       "mot": "un",
+       "debut": 447.675,
+       "fin": 447.954
+      },
+      {
+       "mot": "climat",
+       "debut": 447.945,
+       "fin": 448.34
+      },
+      {
+       "mot": "de",
+       "debut": 448.335,
+       "fin": 448.505
+      },
+      {
+       "mot": "pré",
+       "debut": 448.505,
+       "fin": 448.725
+      }
+     ]
+    },
+    {
+     "texte": "Et, au regard des résultats, le Tribunal fédéral considère que ces préjugés ont joué un rôle décisif dans le scrutin.",
+     "debut": 449.655,
+     "fin": 457.221,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 449.655,
+       "fin": 449.833
+      },
+      {
+       "mot": "au",
+       "debut": 449.825,
+       "fin": 450.009
+      },
+      {
+       "mot": "regard",
+       "debut": 450.005,
+       "fin": 450.42
+      },
+      {
+       "mot": "des",
+       "debut": 450.415,
+       "fin": 450.655
+      },
+      {
+       "mot": "résultats",
+       "debut": 450.655,
+       "fin": 451.301
+      },
+      {
+       "mot": "le",
+       "debut": 451.505,
+       "fin": 451.705
+      },
+      {
+       "mot": "tribunal",
+       "debut": 451.705,
+       "fin": 452.283
+      },
+      {
+       "mot": "fédéral",
+       "debut": 452.275,
+       "fin": 452.796
+      },
+      {
+       "mot": "considère",
+       "debut": 452.795,
+       "fin": 453.437
+      },
+      {
+       "mot": "que",
+       "debut": 453.435,
+       "fin": 453.694
+      },
+      {
+       "mot": "ses",
+       "debut": 453.685,
+       "fin": 453.95
+      },
+      {
+       "mot": "préjugés",
+       "debut": 453.945,
+       "fin": 454.527
+      },
+      {
+       "mot": "ont",
+       "debut": 454.525,
+       "fin": 454.784
+      },
+      {
+       "mot": "joué",
+       "debut": 454.775,
+       "fin": 455.105
+      },
+      {
+       "mot": "un",
+       "debut": 455.105,
+       "fin": 455.297
+      },
+      {
+       "mot": "rôle",
+       "debut": 455.295,
+       "fin": 455.618
+      },
+      {
+       "mot": "décisif",
+       "debut": 455.615,
+       "fin": 456.131
+      },
+      {
+       "mot": "dans",
+       "debut": 456.125,
+       "fin": 456.451
+      },
+      {
+       "mot": "le",
+       "debut": 456.445,
+       "fin": 456.644
+      },
+      {
+       "mot": "scrutin",
+       "debut": 456.635,
+       "fin": 457.221
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 32,
+   "debut": 458.175,
+   "fin": 478.161,
+   "phrases": [
+    {
+     "texte": "Les juges concluent ainsi que les recourants ont été désavantagés en raison de leur origine.",
+     "debut": 458.175,
+     "fin": 462.993,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 458.175,
+       "fin": 458.388
+      },
+      {
+       "mot": "juges",
+       "debut": 458.385,
+       "fin": 458.698
+      },
+      {
+       "mot": "concluent",
+       "debut": 458.695,
+       "fin": 459.216
+      },
+      {
+       "mot": "ainsi",
+       "debut": 459.215,
+       "fin": 459.526
+      },
+      {
+       "mot": "que",
+       "debut": 459.525,
+       "fin": 459.733
+      },
+      {
+       "mot": "les",
+       "debut": 459.725,
+       "fin": 459.94
+      },
+      {
+       "mot": "recourants",
+       "debut": 459.935,
+       "fin": 460.509
+      },
+      {
+       "mot": "ont",
+       "debut": 460.505,
+       "fin": 460.716
+      },
+      {
+       "mot": "été",
+       "debut": 460.715,
+       "fin": 460.923
+      },
+      {
+       "mot": "désavantagés",
+       "debut": 460.915,
+       "fin": 461.596
+      },
+      {
+       "mot": "en",
+       "debut": 461.595,
+       "fin": 461.751
+      },
+      {
+       "mot": "raison",
+       "debut": 461.745,
+       "fin": 462.113
+      },
+      {
+       "mot": "de",
+       "debut": 462.105,
+       "fin": 462.269
+      },
+      {
+       "mot": "leur",
+       "debut": 462.265,
+       "fin": 462.527
+      },
+      {
+       "mot": "origine",
+       "debut": 462.525,
+       "fin": 462.993
+      }
+     ]
+    },
+    {
+     "texte": "Aucune justification objective n'explique cette différence de traitement.",
+     "debut": 463.555,
+     "fin": 467.729,
+     "mots": [
+      {
+       "mot": "aucune",
+       "debut": 463.555,
+       "fin": 463.952
+      },
+      {
+       "mot": "justification",
+       "debut": 463.945,
+       "fin": 464.741
+      },
+      {
+       "mot": "objective",
+       "debut": 464.735,
+       "fin": 465.305
+      },
+      {
+       "mot": "n",
+       "debut": 465.305,
+       "fin": 465.925
+      },
+      {
+       "mot": "explique",
+       "debut": 465.305,
+       "fin": 465.925
+      },
+      {
+       "mot": "cette",
+       "debut": 465.915,
+       "fin": 466.263
+      },
+      {
+       "mot": "différence",
+       "debut": 466.255,
+       "fin": 466.883
+      },
+      {
+       "mot": "de",
+       "debut": 466.875,
+       "fin": 467.052
+      },
+      {
+       "mot": "traitement",
+       "debut": 467.045,
+       "fin": 467.729
+      }
+     ]
+    },
+    {
+     "texte": "Le refus de naturalisation constitue donc une discrimination contraire à l'article huit, alinéa deux, de la Constitution fédérale.",
+     "debut": 468.735,
+     "fin": 478.161,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 468.735,
+       "fin": 468.95
+      },
+      {
+       "mot": "refus",
+       "debut": 468.945,
+       "fin": 469.367
+      },
+      {
+       "mot": "de",
+       "debut": 469.365,
+       "fin": 469.576
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 469.575,
+       "fin": 470.62
+      },
+      {
+       "mot": "constitue",
+       "debut": 470.615,
+       "fin": 471.315
+      },
+      {
+       "mot": "donc",
+       "debut": 471.315,
+       "fin": 471.663
+      },
+      {
+       "mot": "une",
+       "debut": 471.655,
+       "fin": 471.942
+      },
+      {
+       "mot": "discrimination",
+       "debut": 471.935,
+       "fin": 472.985
+      },
+      {
+       "mot": "contraire",
+       "debut": 472.985,
+       "fin": 473.775
+      },
+      {
+       "mot": "à",
+       "debut": 473.855,
+       "fin": 474.018
+      },
+      {
+       "mot": "l",
+       "debut": 474.015,
+       "fin": 474.805
+      },
+      {
+       "mot": "article",
+       "debut": 474.015,
+       "fin": 474.805
+      },
+      {
+       "mot": "huit",
+       "debut": 474.805,
+       "fin": 475.041
+      },
+      {
+       "mot": "aligné",
+       "debut": 475.035,
+       "fin": 475.592
+      },
+      {
+       "mot": "à",
+       "debut": 475.585,
+       "fin": 475.749
+      },
+      {
+       "mot": "deux",
+       "debut": 475.745,
+       "fin": 475.985
+      },
+      {
+       "mot": "de",
+       "debut": 476.125,
+       "fin": 476.343
+      },
+      {
+       "mot": "la",
+       "debut": 476.335,
+       "fin": 476.553
+      },
+      {
+       "mot": "constitution",
+       "debut": 476.545,
+       "fin": 477.462
+      },
+      {
+       "mot": "fédérale",
+       "debut": 477.455,
+       "fin": 478.161
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 33,
+   "debut": 479.105,
+   "fin": 498.359,
+   "phrases": [
+    {
+     "texte": "Mais le raisonnement ne s'arrête pas.",
+     "debut": 479.105,
+     "fin": 480.815,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 479.105,
+       "fin": 479.366
+      },
+      {
+       "mot": "le",
+       "debut": 479.365,
+       "fin": 479.521
+      },
+      {
+       "mot": "raisonnement",
+       "debut": 479.515,
+       "fin": 480.194
+      },
+      {
+       "mot": "ne",
+       "debut": 480.185,
+       "fin": 480.349
+      },
+      {
+       "mot": "s",
+       "debut": 480.345,
+       "fin": 480.815
+      },
+      {
+       "mot": "arrête",
+       "debut": 480.345,
+       "fin": 480.815
+      }
+     ]
+    },
+    {
+     "texte": "Le Tribunal fédéral examine une seconde violation : l'absence de motivation.",
+     "debut": 481.245,
+     "fin": 486.543,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 481.245,
+       "fin": 481.442
+      },
+      {
+       "mot": "tribunal",
+       "debut": 481.435,
+       "fin": 482.014
+      },
+      {
+       "mot": "fédéral",
+       "debut": 482.005,
+       "fin": 482.523
+      },
+      {
+       "mot": "examine",
+       "debut": 482.515,
+       "fin": 483.032
+      },
+      {
+       "mot": "une",
+       "debut": 483.025,
+       "fin": 483.286
+      },
+      {
+       "mot": "seconde",
+       "debut": 483.285,
+       "fin": 483.795
+      },
+      {
+       "mot": "violation",
+       "debut": 483.795,
+       "fin": 484.495
+      },
+      {
+       "mot": "l",
+       "debut": 485.085,
+       "fin": 485.672
+      },
+      {
+       "mot": "absence",
+       "debut": 485.085,
+       "fin": 485.672
+      },
+      {
+       "mot": "de",
+       "debut": 485.665,
+       "fin": 485.846
+      },
+      {
+       "mot": "motivation",
+       "debut": 485.845,
+       "fin": 486.543
+      }
+     ]
+    },
+    {
+     "texte": "Une décision qui refuse la naturalisation doit pouvoir être justifiée.",
+     "debut": 487.445,
+     "fin": 492.105,
+     "mots": [
+      {
+       "mot": "une",
+       "debut": 487.445,
+       "fin": 487.71
+      },
+      {
+       "mot": "décision",
+       "debut": 487.705,
+       "fin": 488.289
+      },
+      {
+       "mot": "qui",
+       "debut": 488.285,
+       "fin": 488.546
+      },
+      {
+       "mot": "refuse",
+       "debut": 488.545,
+       "fin": 488.996
+      },
+      {
+       "mot": "la",
+       "debut": 488.995,
+       "fin": 489.189
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 489.185,
+       "fin": 490.153
+      },
+      {
+       "mot": "doit",
+       "debut": 490.265,
+       "fin": 490.597
+      },
+      {
+       "mot": "pouvoir",
+       "debut": 490.595,
+       "fin": 491.121
+      },
+      {
+       "mot": "être",
+       "debut": 491.115,
+       "fin": 491.449
+      },
+      {
+       "mot": "justifié",
+       "debut": 491.445,
+       "fin": 492.105
+      }
+     ]
+    },
+    {
+     "texte": "Cette exigence découle du droit d'être entendu, en lien avec l'interdiction de discriminer.",
+     "debut": 493.095,
+     "fin": 498.359,
+     "mots": [
+      {
+       "mot": "cette",
+       "debut": 493.095,
+       "fin": 493.399
+      },
+      {
+       "mot": "exigence",
+       "debut": 493.395,
+       "fin": 493.848
+      },
+      {
+       "mot": "découle",
+       "debut": 493.845,
+       "fin": 494.248
+      },
+      {
+       "mot": "du",
+       "debut": 494.245,
+       "fin": 494.398
+      },
+      {
+       "mot": "droit",
+       "debut": 494.395,
+       "fin": 494.698
+      },
+      {
+       "mot": "d",
+       "debut": 494.695,
+       "fin": 495.047
+      },
+      {
+       "mot": "être",
+       "debut": 494.695,
+       "fin": 495.047
+      },
+      {
+       "mot": "entendu",
+       "debut": 495.045,
+       "fin": 495.447
+      },
+      {
+       "mot": "en",
+       "debut": 495.685,
+       "fin": 495.873
+      },
+      {
+       "mot": "lien",
+       "debut": 495.865,
+       "fin": 496.176
+      },
+      {
+       "mot": "avec",
+       "debut": 496.175,
+       "fin": 496.479
+      },
+      {
+       "mot": "l",
+       "debut": 496.475,
+       "fin": 497.389
+      },
+      {
+       "mot": "interdiction",
+       "debut": 496.475,
+       "fin": 497.389
+      },
+      {
+       "mot": "de",
+       "debut": 497.385,
+       "fin": 497.571
+      },
+      {
+       "mot": "discriminer",
+       "debut": 497.565,
+       "fin": 498.359
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 34,
+   "debut": 499.905,
+   "fin": 517.255,
+   "phrases": [
+    {
+     "texte": "Or, dans une votation populaire à bulletin secret, une telle motivation ne peut pas être fournie.",
+     "debut": 499.905,
+     "fin": 506.535,
+     "mots": [
+      {
+       "mot": "orre",
+       "debut": 499.905,
+       "fin": 500.661
+      },
+      {
+       "mot": "dans",
+       "debut": 500.835,
+       "fin": 501.108
+      },
+      {
+       "mot": "une",
+       "debut": 501.105,
+       "fin": 501.321
+      },
+      {
+       "mot": "votation",
+       "debut": 501.315,
+       "fin": 501.802
+      },
+      {
+       "mot": "populaire",
+       "debut": 501.795,
+       "fin": 502.335
+      },
+      {
+       "mot": "à",
+       "debut": 502.335,
+       "fin": 502.442
+      },
+      {
+       "mot": "bulletin",
+       "debut": 502.435,
+       "fin": 502.922
+      },
+      {
+       "mot": "secret",
+       "debut": 502.915,
+       "fin": 503.435
+      },
+      {
+       "mot": "une",
+       "debut": 503.525,
+       "fin": 503.726
+      },
+      {
+       "mot": "telle",
+       "debut": 503.725,
+       "fin": 504.022
+      },
+      {
+       "mot": "motivation",
+       "debut": 504.015,
+       "fin": 504.564
+      },
+      {
+       "mot": "ne",
+       "debut": 504.555,
+       "fin": 504.712
+      },
+      {
+       "mot": "peut",
+       "debut": 504.705,
+       "fin": 504.958
+      },
+      {
+       "mot": "pas",
+       "debut": 504.955,
+       "fin": 505.155
+      },
+      {
+       "mot": "être",
+       "debut": 505.145,
+       "fin": 505.402
+      },
+      {
+       "mot": "fournée",
+       "debut": 505.395,
+       "fin": 505.845
+      },
+      {
+       "mot": "le",
+       "debut": 506.335,
+       "fin": 506.536
+      }
+     ]
+    },
+    {
+     "texte": "Le résultat indique combien de personnes ont voté pour ou contre.",
+     "debut": 507.115,
+     "fin": 510.907,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 507.115,
+       "fin": 507.291
+      },
+      {
+       "mot": "résultat",
+       "debut": 507.285,
+       "fin": 507.808
+      },
+      {
+       "mot": "indique",
+       "debut": 507.805,
+       "fin": 508.267
+      },
+      {
+       "mot": "combien",
+       "debut": 508.265,
+       "fin": 508.726
+      },
+      {
+       "mot": "de",
+       "debut": 508.725,
+       "fin": 508.898
+      },
+      {
+       "mot": "personnes",
+       "debut": 508.895,
+       "fin": 509.472
+      },
+      {
+       "mot": "ont",
+       "debut": 509.465,
+       "fin": 509.702
+      },
+      {
+       "mot": "voté",
+       "debut": 509.695,
+       "fin": 509.989
+      },
+      {
+       "mot": "pour",
+       "debut": 509.985,
+       "fin": 510.276
+      },
+      {
+       "mot": "ou",
+       "debut": 510.275,
+       "fin": 510.448
+      },
+      {
+       "mot": "contre",
+       "debut": 510.445,
+       "fin": 510.907
+      }
+     ]
+    },
+    {
+     "texte": "Il ne révèle pas les raisons de leur choix.",
+     "debut": 512.055,
+     "fin": 513.535,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 512.055,
+       "fin": 512.154
+      },
+      {
+       "mot": "ne",
+       "debut": 512.145,
+       "fin": 512.253
+      },
+      {
+       "mot": "révèle",
+       "debut": 512.245,
+       "fin": 512.483
+      },
+      {
+       "mot": "pas",
+       "debut": 512.475,
+       "fin": 512.615
+      },
+      {
+       "mot": "les",
+       "debut": 512.605,
+       "fin": 512.747
+      },
+      {
+       "mot": "raisons",
+       "debut": 512.745,
+       "fin": 513.011
+      },
+      {
+       "mot": "de",
+       "debut": 513.005,
+       "fin": 513.11
+      },
+      {
+       "mot": "leur",
+       "debut": 513.105,
+       "fin": 513.274
+      },
+      {
+       "mot": "choix",
+       "debut": 513.265,
+       "fin": 513.535
+      }
+     ]
+    },
+    {
+     "texte": "La difficulté tient donc à la procédure elle-même.",
+     "debut": 514.195,
+     "fin": 517.255,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 514.195,
+       "fin": 514.383
+      },
+      {
+       "mot": "difficulté",
+       "debut": 514.375,
+       "fin": 515.041
+      },
+      {
+       "mot": "tient",
+       "debut": 515.035,
+       "fin": 515.4
+      },
+      {
+       "mot": "donc",
+       "debut": 515.395,
+       "fin": 515.699
+      },
+      {
+       "mot": "à",
+       "debut": 515.695,
+       "fin": 515.819
+      },
+      {
+       "mot": "la",
+       "debut": 515.815,
+       "fin": 515.998
+      },
+      {
+       "mot": "procédure",
+       "debut": 515.995,
+       "fin": 516.597
+      },
+      {
+       "mot": "elle",
+       "debut": 516.595,
+       "fin": 517.255
+      },
+      {
+       "mot": "même",
+       "debut": 516.595,
+       "fin": 517.255
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 35,
+   "debut": 518.805,
+   "fin": 537.927,
+   "phrases": [
+    {
+     "texte": "Le Tribunal fédéral admet le recours et annule la décision du gouvernement lucernois.",
+     "debut": 518.805,
+     "fin": 524.069,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 518.805,
+       "fin": 518.992
+      },
+      {
+       "mot": "tribunal",
+       "debut": 518.985,
+       "fin": 519.543
+      },
+      {
+       "mot": "fédéral",
+       "debut": 519.535,
+       "fin": 520.032
+      },
+      {
+       "mot": "admet",
+       "debut": 520.025,
+       "fin": 520.399
+      },
+      {
+       "mot": "le",
+       "debut": 520.395,
+       "fin": 520.583
+      },
+      {
+       "mot": "recours",
+       "debut": 520.575,
+       "fin": 521.072
+      },
+      {
+       "mot": "et",
+       "debut": 521.065,
+       "fin": 521.256
+      },
+      {
+       "mot": "annule",
+       "debut": 521.255,
+       "fin": 521.684
+      },
+      {
+       "mot": "la",
+       "debut": 521.675,
+       "fin": 521.867
+      },
+      {
+       "mot": "décision",
+       "debut": 521.865,
+       "fin": 522.418
+      },
+      {
+       "mot": "du",
+       "debut": 522.415,
+       "fin": 522.601
+      },
+      {
+       "mot": "gouvernement",
+       "debut": 522.595,
+       "fin": 523.396
+      },
+      {
+       "mot": "lucerneux",
+       "debut": 523.395,
+       "fin": 524.069
+      }
+     ]
+    },
+    {
+     "texte": "Il constate également que la procédure de naturalisation aux urnes pratiquée à Emmen est contraire à la Constitution.",
+     "debut": 524.915,
+     "fin": 532.677,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 524.915,
+       "fin": 525.115
+      },
+      {
+       "mot": "constate",
+       "debut": 525.115,
+       "fin": 525.695
+      },
+      {
+       "mot": "également",
+       "debut": 525.695,
+       "fin": 526.34
+      },
+      {
+       "mot": "que",
+       "debut": 526.335,
+       "fin": 526.598
+      },
+      {
+       "mot": "la",
+       "debut": 526.595,
+       "fin": 526.792
+      },
+      {
+       "mot": "procédure",
+       "debut": 526.785,
+       "fin": 527.437
+      },
+      {
+       "mot": "de",
+       "debut": 527.435,
+       "fin": 527.63
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 527.625,
+       "fin": 528.598
+      },
+      {
+       "mot": "aux",
+       "debut": 528.595,
+       "fin": 528.856
+      },
+      {
+       "mot": "urnes",
+       "debut": 528.855,
+       "fin": 529.243
+      },
+      {
+       "mot": "pratiquées",
+       "debut": 529.235,
+       "fin": 529.953
+      },
+      {
+       "mot": "à",
+       "debut": 529.945,
+       "fin": 530.082
+      },
+      {
+       "mot": "hemen",
+       "debut": 530.075,
+       "fin": 530.555
+      },
+      {
+       "mot": "et",
+       "debut": 530.615,
+       "fin": 530.81
+      },
+      {
+       "mot": "contraire",
+       "debut": 530.805,
+       "fin": 531.454
+      },
+      {
+       "mot": "à",
+       "debut": 531.445,
+       "fin": 531.583
+      },
+      {
+       "mot": "la",
+       "debut": 531.575,
+       "fin": 531.776
+      },
+      {
+       "mot": "constitution",
+       "debut": 531.775,
+       "fin": 532.677
+      }
+     ]
+    },
+    {
+     "texte": "Les autorités devront la remplacer par une procédure conforme aux droits fondamentaux.",
+     "debut": 533.435,
+     "fin": 537.927,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 533.435,
+       "fin": 533.642
+      },
+      {
+       "mot": "autorités",
+       "debut": 533.635,
+       "fin": 534.158
+      },
+      {
+       "mot": "devront",
+       "debut": 534.155,
+       "fin": 534.571
+      },
+      {
+       "mot": "la",
+       "debut": 534.565,
+       "fin": 534.726
+      },
+      {
+       "mot": "remplacer",
+       "debut": 534.725,
+       "fin": 535.242
+      },
+      {
+       "mot": "par",
+       "debut": 535.235,
+       "fin": 535.449
+      },
+      {
+       "mot": "une",
+       "debut": 535.445,
+       "fin": 535.655
+      },
+      {
+       "mot": "procédure",
+       "debut": 535.655,
+       "fin": 536.172
+      },
+      {
+       "mot": "conforme",
+       "debut": 536.165,
+       "fin": 536.636
+      },
+      {
+       "mot": "aux",
+       "debut": 536.635,
+       "fin": 536.843
+      },
+      {
+       "mot": "droits",
+       "debut": 536.835,
+       "fin": 537.204
+      },
+      {
+       "mot": "fondamentaux",
+       "debut": 537.195,
+       "fin": 537.927
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 36,
+   "debut": 539.225,
+   "fin": 554.345,
+   "phrases": [
+    {
+     "texte": "Attention toutefois.",
+     "debut": 539.225,
+     "fin": 540.391,
+     "mots": [
+      {
+       "mot": "attention",
+       "debut": 539.225,
+       "fin": 539.781
+      },
+      {
+       "mot": "toutefois",
+       "debut": 539.775,
+       "fin": 540.391
+      }
+     ]
+    },
+    {
+     "texte": "Le Tribunal fédéral ne naturalise pas lui-même les cinq recourants.",
+     "debut": 541.205,
+     "fin": 545.095,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 541.205,
+       "fin": 541.382
+      },
+      {
+       "mot": "tribunal",
+       "debut": 541.375,
+       "fin": 541.896
+      },
+      {
+       "mot": "fédéral",
+       "debut": 541.895,
+       "fin": 542.353
+      },
+      {
+       "mot": "ne",
+       "debut": 542.345,
+       "fin": 542.525
+      },
+      {
+       "mot": "naturalise",
+       "debut": 542.515,
+       "fin": 543.153
+      },
+      {
+       "mot": "pas",
+       "debut": 543.145,
+       "fin": 543.381
+      },
+      {
+       "mot": "lui",
+       "debut": 543.375,
+       "fin": 543.896
+      },
+      {
+       "mot": "même",
+       "debut": 543.375,
+       "fin": 543.896
+      },
+      {
+       "mot": "les",
+       "debut": 543.895,
+       "fin": 544.124
+      },
+      {
+       "mot": "cinq",
+       "debut": 544.115,
+       "fin": 544.41
+      },
+      {
+       "mot": "recourants",
+       "debut": 544.405,
+       "fin": 545.095
+      }
+     ]
+    },
+    {
+     "texte": "Il appartient aux autorités cantonales et communales de décider de la suite de leurs demandes, dans un cadre respectueux de la Constitution.",
+     "debut": 546.115,
+     "fin": 554.345,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 546.115,
+       "fin": 546.317
+      },
+      {
+       "mot": "appartient",
+       "debut": 546.315,
+       "fin": 546.961
+      },
+      {
+       "mot": "aux",
+       "debut": 546.955,
+       "fin": 547.196
+      },
+      {
+       "mot": "autorités",
+       "debut": 547.195,
+       "fin": 547.782
+      },
+      {
+       "mot": "cantonales",
+       "debut": 547.775,
+       "fin": 548.426
+      },
+      {
+       "mot": "et",
+       "debut": 548.425,
+       "fin": 548.602
+      },
+      {
+       "mot": "communales",
+       "debut": 548.595,
+       "fin": 549.247
+      },
+      {
+       "mot": "de",
+       "debut": 549.245,
+       "fin": 549.423
+      },
+      {
+       "mot": "décider",
+       "debut": 549.415,
+       "fin": 549.891
+      },
+      {
+       "mot": "de",
+       "debut": 549.885,
+       "fin": 550.067
+      },
+      {
+       "mot": "la",
+       "debut": 550.065,
+       "fin": 550.243
+      },
+      {
+       "mot": "suite",
+       "debut": 550.235,
+       "fin": 550.595
+      },
+      {
+       "mot": "de",
+       "debut": 550.595,
+       "fin": 550.77
+      },
+      {
+       "mot": "leurs",
+       "debut": 550.765,
+       "fin": 551.122
+      },
+      {
+       "mot": "demandes",
+       "debut": 551.115,
+       "fin": 551.649
+      },
+      {
+       "mot": "dans",
+       "debut": 551.645,
+       "fin": 551.942
+      },
+      {
+       "mot": "un",
+       "debut": 551.935,
+       "fin": 552.118
+      },
+      {
+       "mot": "cadre",
+       "debut": 552.115,
+       "fin": 552.47
+      },
+      {
+       "mot": "respectueux",
+       "debut": 552.465,
+       "fin": 553.173
+      },
+      {
+       "mot": "de",
+       "debut": 553.165,
+       "fin": 553.349
+      },
+      {
+       "mot": "la",
+       "debut": 553.345,
+       "fin": 553.525
+      },
+      {
+       "mot": "constitution",
+       "debut": 553.525,
+       "fin": 554.345
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 37,
+   "debut": 555.295,
+   "fin": 572.589,
+   "phrases": [
+    {
+     "texte": "Le même jour, le Tribunal fédéral rend un autre arrêt important, concernant cette fois la ville de Zurich.",
+     "debut": 555.295,
+     "fin": 560.909,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 555.295,
+       "fin": 555.456
+      },
+      {
+       "mot": "même",
+       "debut": 555.455,
+       "fin": 555.72
+      },
+      {
+       "mot": "jour",
+       "debut": 555.715,
+       "fin": 556.037
+      },
+      {
+       "mot": "le",
+       "debut": 556.035,
+       "fin": 556.196
+      },
+      {
+       "mot": "tribunal",
+       "debut": 556.195,
+       "fin": 556.671
+      },
+      {
+       "mot": "fédéral",
+       "debut": 556.665,
+       "fin": 557.094
+      },
+      {
+       "mot": "rend",
+       "debut": 557.085,
+       "fin": 557.359
+      },
+      {
+       "mot": "un",
+       "debut": 557.355,
+       "fin": 557.517
+      },
+      {
+       "mot": "autre",
+       "debut": 557.515,
+       "fin": 557.834
+      },
+      {
+       "mot": "arrêt",
+       "debut": 557.825,
+       "fin": 558.152
+      },
+      {
+       "mot": "important",
+       "debut": 558.145,
+       "fin": 558.733
+      },
+      {
+       "mot": "concernant",
+       "debut": 558.875,
+       "fin": 559.412
+      },
+      {
+       "mot": "cette",
+       "debut": 559.405,
+       "fin": 559.702
+      },
+      {
+       "mot": "fois",
+       "debut": 559.695,
+       "fin": 559.943
+      },
+      {
+       "mot": "la",
+       "debut": 559.935,
+       "fin": 560.088
+      },
+      {
+       "mot": "ville",
+       "debut": 560.085,
+       "fin": 560.378
+      },
+      {
+       "mot": "de",
+       "debut": 560.375,
+       "fin": 560.523
+      },
+      {
+       "mot": "zurich",
+       "debut": 560.515,
+       "fin": 560.909
+      }
+     ]
+    },
+    {
+     "texte": "Il y confirme l'invalidation d'une initiative qui voulait soumettre les naturalisations au vote populaire aux urnes.",
+     "debut": 561.535,
+     "fin": 567.661,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 561.535,
+       "fin": 561.694
+      },
+      {
+       "mot": "y",
+       "debut": 561.685,
+       "fin": 561.799
+      },
+      {
+       "mot": "confirme",
+       "debut": 561.795,
+       "fin": 562.27
+      },
+      {
+       "mot": "l",
+       "debut": 562.265,
+       "fin": 563.055
+      },
+      {
+       "mot": "invalidation",
+       "debut": 562.265,
+       "fin": 563.055
+      },
+      {
+       "mot": "d",
+       "debut": 563.055,
+       "fin": 563.369
+      },
+      {
+       "mot": "une",
+       "debut": 563.055,
+       "fin": 563.369
+      },
+      {
+       "mot": "initiative",
+       "debut": 563.365,
+       "fin": 563.945
+      },
+      {
+       "mot": "qui",
+       "debut": 563.935,
+       "fin": 564.154
+      },
+      {
+       "mot": "voulait",
+       "debut": 564.145,
+       "fin": 564.573
+      },
+      {
+       "mot": "soumettre",
+       "debut": 564.565,
+       "fin": 565.096
+      },
+      {
+       "mot": "les",
+       "debut": 565.095,
+       "fin": 565.306
+      },
+      {
+       "mot": "naturalisations",
+       "debut": 565.305,
+       "fin": 566.143
+      },
+      {
+       "mot": "au",
+       "debut": 566.135,
+       "fin": 566.3
+      },
+      {
+       "mot": "vote",
+       "debut": 566.295,
+       "fin": 566.562
+      },
+      {
+       "mot": "populaire",
+       "debut": 566.555,
+       "fin": 567.085
+      },
+      {
+       "mot": "aux",
+       "debut": 567.085,
+       "fin": 567.295
+      },
+      {
+       "mot": "urnes",
+       "debut": 567.295,
+       "fin": 567.661
+      }
+     ]
+    },
+    {
+     "texte": "Là encore, l'impossibilité de motiver un refus est déterminante.",
+     "debut": 568.415,
+     "fin": 572.589,
+     "mots": [
+      {
+       "mot": "là",
+       "debut": 568.415,
+       "fin": 568.61
+      },
+      {
+       "mot": "encore",
+       "debut": 568.605,
+       "fin": 569.123
+      },
+      {
+       "mot": "l",
+       "debut": 569.115,
+       "fin": 570.15
+      },
+      {
+       "mot": "impossibilité",
+       "debut": 569.115,
+       "fin": 570.15
+      },
+      {
+       "mot": "de",
+       "debut": 570.145,
+       "fin": 570.343
+      },
+      {
+       "mot": "motiver",
+       "debut": 570.335,
+       "fin": 570.856
+      },
+      {
+       "mot": "un",
+       "debut": 570.855,
+       "fin": 571.049
+      },
+      {
+       "mot": "refus",
+       "debut": 571.045,
+       "fin": 571.434
+      },
+      {
+       "mot": "est",
+       "debut": 571.425,
+       "fin": 571.69
+      },
+      {
+       "mot": "déterminante",
+       "debut": 571.685,
+       "fin": 572.589
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 38,
+   "debut": 574.135,
+   "fin": 588.037,
+   "phrases": [
+    {
+     "texte": "Ces deux décisions consacrent un principe essentiel.",
+     "debut": 574.135,
+     "fin": 576.997,
+     "mots": [
+      {
+       "mot": "ces",
+       "debut": 574.135,
+       "fin": 574.353
+      },
+      {
+       "mot": "deux",
+       "debut": 574.345,
+       "fin": 574.623
+      },
+      {
+       "mot": "décisions",
+       "debut": 574.615,
+       "fin": 575.162
+      },
+      {
+       "mot": "consacrent",
+       "debut": 575.155,
+       "fin": 575.756
+      },
+      {
+       "mot": "un",
+       "debut": 575.755,
+       "fin": 575.918
+      },
+      {
+       "mot": "principe",
+       "debut": 575.915,
+       "fin": 576.403
+      },
+      {
+       "mot": "essentiel",
+       "debut": 576.395,
+       "fin": 576.997
+      }
+     ]
+    },
+    {
+     "texte": "Lorsqu'un corps électoral statue sur la situation juridique d'une personne, il exerce une fonction étatique.",
+     "debut": 577.495,
+     "fin": 583.589,
+     "mots": [
+      {
+       "mot": "lorsqu",
+       "debut": 577.495,
+       "fin": 578.025
+      },
+      {
+       "mot": "un",
+       "debut": 577.495,
+       "fin": 578.025
+      },
+      {
+       "mot": "corps",
+       "debut": 578.025,
+       "fin": 578.342
+      },
+      {
+       "mot": "électoral",
+       "debut": 578.335,
+       "fin": 578.87
+      },
+      {
+       "mot": "status",
+       "debut": 578.865,
+       "fin": 579.239
+      },
+      {
+       "mot": "sur",
+       "debut": 579.235,
+       "fin": 579.45
+      },
+      {
+       "mot": "la",
+       "debut": 579.445,
+       "fin": 579.609
+      },
+      {
+       "mot": "situation",
+       "debut": 579.605,
+       "fin": 580.136
+      },
+      {
+       "mot": "juridique",
+       "debut": 580.135,
+       "fin": 580.664
+      },
+      {
+       "mot": "d",
+       "debut": 580.655,
+       "fin": 580.981
+      },
+      {
+       "mot": "une",
+       "debut": 580.655,
+       "fin": 580.981
+      },
+      {
+       "mot": "personne",
+       "debut": 580.975,
+       "fin": 581.675
+      },
+      {
+       "mot": "il",
+       "debut": 581.685,
+       "fin": 581.862
+      },
+      {
+       "mot": "exerce",
+       "debut": 581.855,
+       "fin": 582.265
+      },
+      {
+       "mot": "une",
+       "debut": 582.265,
+       "fin": 582.495
+      },
+      {
+       "mot": "fonction",
+       "debut": 582.495,
+       "fin": 583.013
+      },
+      {
+       "mot": "étatique",
+       "debut": 583.005,
+       "fin": 583.589
+      }
+     ]
+    },
+    {
+     "texte": "Il doit donc respecter les mêmes garanties fondamentales que les autres autorités.",
+     "debut": 584.115,
+     "fin": 588.037,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 584.115,
+       "fin": 584.263
+      },
+      {
+       "mot": "doit",
+       "debut": 584.255,
+       "fin": 584.498
+      },
+      {
+       "mot": "donc",
+       "debut": 584.495,
+       "fin": 584.734
+      },
+      {
+       "mot": "respecter",
+       "debut": 584.725,
+       "fin": 585.206
+      },
+      {
+       "mot": "les",
+       "debut": 585.205,
+       "fin": 585.395
+      },
+      {
+       "mot": "mêmes",
+       "debut": 585.395,
+       "fin": 585.678
+      },
+      {
+       "mot": "garanties",
+       "debut": 585.675,
+       "fin": 586.15
+      },
+      {
+       "mot": "fondamentales",
+       "debut": 586.145,
+       "fin": 586.81
+      },
+      {
+       "mot": "que",
+       "debut": 586.805,
+       "fin": 586.999
+      },
+      {
+       "mot": "les",
+       "debut": 586.995,
+       "fin": 587.188
+      },
+      {
+       "mot": "autres",
+       "debut": 587.185,
+       "fin": 587.518
+      },
+      {
+       "mot": "autorités",
+       "debut": 587.515,
+       "fin": 588.037
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 39,
+   "debut": 589.235,
+   "fin": 603.431,
+   "phrases": [
+    {
+     "texte": "Et aujourd'hui ?",
+     "debut": 589.235,
+     "fin": 590.183,
+     "mots": [
+      {
+       "mot": "et",
+       "debut": 589.235,
+       "fin": 589.419
+      },
+      {
+       "mot": "aujourd",
+       "debut": 589.415,
+       "fin": 590.183
+      },
+      {
+       "mot": "hui",
+       "debut": 589.415,
+       "fin": 590.183
+      }
+     ]
+    },
+    {
+     "texte": "La loi fédérale sur la nationalité suisse encadre expressément ces procédures.",
+     "debut": 591.035,
+     "fin": 595.585,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 591.035,
+       "fin": 591.208
+      },
+      {
+       "mot": "loi",
+       "debut": 591.205,
+       "fin": 591.439
+      },
+      {
+       "mot": "fédérale",
+       "debut": 591.435,
+       "fin": 591.958
+      },
+      {
+       "mot": "sur",
+       "debut": 591.955,
+       "fin": 592.188
+      },
+      {
+       "mot": "la",
+       "debut": 592.185,
+       "fin": 592.361
+      },
+      {
+       "mot": "nationalité",
+       "debut": 592.355,
+       "fin": 593.053
+      },
+      {
+       "mot": "suisse",
+       "debut": 593.045,
+       "fin": 593.457
+      },
+      {
+       "mot": "encadre",
+       "debut": 593.455,
+       "fin": 593.919
+      },
+      {
+       "mot": "expressément",
+       "debut": 593.915,
+       "fin": 594.668
+      },
+      {
+       "mot": "ces",
+       "debut": 594.665,
+       "fin": 594.899
+      },
+      {
+       "mot": "procédures",
+       "debut": 594.895,
+       "fin": 595.591
+      }
+     ]
+    },
+    {
+     "texte": "Son article quinze permet toujours aux cantons de prévoir qu'une demande de naturalisation soit soumise au vote d'une assemblée communale.",
+     "debut": 596.055,
+     "fin": 603.431,
+     "mots": [
+      {
+       "mot": "son",
+       "debut": 596.055,
+       "fin": 596.281
+      },
+      {
+       "mot": "article",
+       "debut": 596.275,
+       "fin": 596.724
+      },
+      {
+       "mot": "quinze",
+       "debut": 596.715,
+       "fin": 596.89
+      },
+      {
+       "mot": "permet",
+       "debut": 596.885,
+       "fin": 597.278
+      },
+      {
+       "mot": "toujours",
+       "debut": 597.275,
+       "fin": 597.777
+      },
+      {
+       "mot": "au",
+       "debut": 597.775,
+       "fin": 597.944
+      },
+      {
+       "mot": "canton",
+       "debut": 597.935,
+       "fin": 598.332
+      },
+      {
+       "mot": "de",
+       "debut": 598.325,
+       "fin": 598.498
+      },
+      {
+       "mot": "prévoir",
+       "debut": 598.495,
+       "fin": 598.941
+      },
+      {
+       "mot": "qu",
+       "debut": 598.935,
+       "fin": 599.329
+      },
+      {
+       "mot": "une",
+       "debut": 598.935,
+       "fin": 599.329
+      },
+      {
+       "mot": "demande",
+       "debut": 599.325,
+       "fin": 599.773
+      },
+      {
+       "mot": "de",
+       "debut": 599.765,
+       "fin": 599.939
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 599.935,
+       "fin": 600.77
+      },
+      {
+       "mot": "soit",
+       "debut": 600.765,
+       "fin": 601.048
+      },
+      {
+       "mot": "soumise",
+       "debut": 601.045,
+       "fin": 601.491
+      },
+      {
+       "mot": "au",
+       "debut": 601.485,
+       "fin": 601.657
+      },
+      {
+       "mot": "vote",
+       "debut": 601.655,
+       "fin": 601.934
+      },
+      {
+       "mot": "d",
+       "debut": 601.925,
+       "fin": 602.267
+      },
+      {
+       "mot": "une",
+       "debut": 601.925,
+       "fin": 602.267
+      },
+      {
+       "mot": "assemblée",
+       "debut": 602.265,
+       "fin": 602.821
+      },
+      {
+       "mot": "communale",
+       "debut": 602.815,
+       "fin": 603.431
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 40,
+   "debut": 604.975,
+   "fin": 621.181,
+   "phrases": [
+    {
+     "texte": "Mais l'article seize impose que tout refus soit motivé.",
+     "debut": 604.975,
+     "fin": 608.699,
+     "mots": [
+      {
+       "mot": "mais",
+       "debut": 604.975,
+       "fin": 605.326
+      },
+      {
+       "mot": "l",
+       "debut": 605.325,
+       "fin": 606.029
+      },
+      {
+       "mot": "article",
+       "debut": 605.325,
+       "fin": 606.029
+      },
+      {
+       "mot": "seize",
+       "debut": 606.025,
+       "fin": 606.24
+      },
+      {
+       "mot": "impose",
+       "debut": 606.235,
+       "fin": 606.732
+      },
+      {
+       "mot": "que",
+       "debut": 606.725,
+       "fin": 607.013
+      },
+      {
+       "mot": "tout",
+       "debut": 607.005,
+       "fin": 607.364
+      },
+      {
+       "mot": "refus",
+       "debut": 607.355,
+       "fin": 607.786
+      },
+      {
+       "mot": "soit",
+       "debut": 607.785,
+       "fin": 608.137
+      },
+      {
+       "mot": "motivé",
+       "debut": 608.135,
+       "fin": 608.699
+      }
+     ]
+    },
+    {
+     "texte": "Les électeurs ne peuvent rejeter une demande que si une proposition de rejet motivée leur a été soumise.",
+     "debut": 609.675,
+     "fin": 615.165,
+     "mots": [
+      {
+       "mot": "les",
+       "debut": 609.675,
+       "fin": 609.89
+      },
+      {
+       "mot": "électeurs",
+       "debut": 609.885,
+       "fin": 610.412
+      },
+      {
+       "mot": "ne",
+       "debut": 610.405,
+       "fin": 610.569
+      },
+      {
+       "mot": "peuvent",
+       "debut": 610.565,
+       "fin": 610.987
+      },
+      {
+       "mot": "rejeter",
+       "debut": 610.985,
+       "fin": 611.405
+      },
+      {
+       "mot": "une",
+       "debut": 611.405,
+       "fin": 611.613
+      },
+      {
+       "mot": "demande",
+       "debut": 611.605,
+       "fin": 612.031
+      },
+      {
+       "mot": "que",
+       "debut": 612.025,
+       "fin": 612.24
+      },
+      {
+       "mot": "si",
+       "debut": 612.235,
+       "fin": 612.397
+      },
+      {
+       "mot": "une",
+       "debut": 612.395,
+       "fin": 612.606
+      },
+      {
+       "mot": "proposition",
+       "debut": 612.605,
+       "fin": 613.233
+      },
+      {
+       "mot": "de",
+       "debut": 613.225,
+       "fin": 613.389
+      },
+      {
+       "mot": "rejet",
+       "debut": 613.385,
+       "fin": 613.703
+      },
+      {
+       "mot": "motivée",
+       "debut": 613.695,
+       "fin": 614.12
+      },
+      {
+       "mot": "leur",
+       "debut": 614.115,
+       "fin": 614.382
+      },
+      {
+       "mot": "a",
+       "debut": 614.375,
+       "fin": 614.486
+      },
+      {
+       "mot": "été",
+       "debut": 614.485,
+       "fin": 614.695
+      },
+      {
+       "mot": "soumise",
+       "debut": 614.695,
+       "fin": 615.165
+      }
+     ]
+    },
+    {
+     "texte": "Le droit actuel distingue ainsi la participation démocratique de l'absence de justification.",
+     "debut": 615.875,
+     "fin": 621.181,
+     "mots": [
+      {
+       "mot": "le",
+       "debut": 615.875,
+       "fin": 616.06
+      },
+      {
+       "mot": "droit",
+       "debut": 616.055,
+       "fin": 616.401
+      },
+      {
+       "mot": "actuel",
+       "debut": 616.395,
+       "fin": 616.799
+      },
+      {
+       "mot": "distingue",
+       "debut": 616.795,
+       "fin": 617.368
+      },
+      {
+       "mot": "ainsi",
+       "debut": 617.365,
+       "fin": 617.71
+      },
+      {
+       "mot": "la",
+       "debut": 617.705,
+       "fin": 617.881
+      },
+      {
+       "mot": "participation",
+       "debut": 617.875,
+       "fin": 618.677
+      },
+      {
+       "mot": "démocratique",
+       "debut": 618.675,
+       "fin": 619.417
+      },
+      {
+       "mot": "de",
+       "debut": 619.415,
+       "fin": 619.588
+      },
+      {
+       "mot": "l",
+       "debut": 619.585,
+       "fin": 620.157
+      },
+      {
+       "mot": "absence",
+       "debut": 619.585,
+       "fin": 620.157
+      },
+      {
+       "mot": "de",
+       "debut": 620.155,
+       "fin": 620.327
+      },
+      {
+       "mot": "justification",
+       "debut": 620.325,
+       "fin": 621.181
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 41,
+   "debut": 622.091,
+   "fin": 629.324,
+   "phrases": [
+    {
+     "texte": "L'erreur serait donc de raisonner ainsi.",
+     "debut": 622.091,
+     "fin": 624.151,
+     "mots": [
+      {
+       "mot": "l",
+       "debut": 622.091,
+       "fin": 622.543
+      },
+      {
+       "mot": "erreur",
+       "debut": 622.091,
+       "fin": 622.543
+      },
+      {
+       "mot": "serait",
+       "debut": 622.541,
+       "fin": 622.895
+      },
+      {
+       "mot": "donc",
+       "debut": 622.891,
+       "fin": 623.146
+      },
+      {
+       "mot": "de",
+       "debut": 623.141,
+       "fin": 623.297
+      },
+      {
+       "mot": "raisonner",
+       "debut": 623.291,
+       "fin": 623.799
+      },
+      {
+       "mot": "ainsi",
+       "debut": 623.791,
+       "fin": 624.151
+      }
+     ]
+    },
+    {
+     "texte": "Puisque le peuple est souverain, sa décision n'a jamais besoin d'être justifiée.",
+     "debut": 625.05,
+     "fin": 629.324,
+     "mots": [
+      {
+       "mot": "puisque",
+       "debut": 625.05,
+       "fin": 625.455
+      },
+      {
+       "mot": "le",
+       "debut": 625.45,
+       "fin": 625.604
+      },
+      {
+       "mot": "peuple",
+       "debut": 625.6,
+       "fin": 625.953
+      },
+      {
+       "mot": "est",
+       "debut": 625.95,
+       "fin": 626.152
+      },
+      {
+       "mot": "souverain",
+       "debut": 626.15,
+       "fin": 626.7
+      },
+      {
+       "mot": "sa",
+       "debut": 626.84,
+       "fin": 627.006
+      },
+      {
+       "mot": "décision",
+       "debut": 627.0,
+       "fin": 627.48
+      },
+      {
+       "mot": "n",
+       "debut": 627.48,
+       "fin": 627.691
+      },
+      {
+       "mot": "a",
+       "debut": 627.48,
+       "fin": 627.691
+      },
+      {
+       "mot": "jamais",
+       "debut": 627.69,
+       "fin": 628.06
+      },
+      {
+       "mot": "besoin",
+       "debut": 628.06,
+       "fin": 628.428
+      },
+      {
+       "mot": "d",
+       "debut": 628.42,
+       "fin": 628.797
+      },
+      {
+       "mot": "être",
+       "debut": 628.42,
+       "fin": 628.797
+      },
+      {
+       "mot": "justifiée",
+       "debut": 628.79,
+       "fin": 629.324
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 42,
+   "debut": 630.46,
+   "fin": 652.148,
+   "phrases": [
+    {
+     "texte": "La souveraineté populaire ne signifie pas que toutes les décisions sont juridiquement possibles.",
+     "debut": 630.46,
+     "fin": 635.048,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 630.46,
+       "fin": 630.602
+      },
+      {
+       "mot": "souveraineté",
+       "debut": 630.6,
+       "fin": 631.217
+      },
+      {
+       "mot": "populaire",
+       "debut": 631.21,
+       "fin": 631.69
+      },
+      {
+       "mot": "ne",
+       "debut": 631.69,
+       "fin": 631.832
+      },
+      {
+       "mot": "signifie",
+       "debut": 631.83,
+       "fin": 632.257
+      },
+      {
+       "mot": "pas",
+       "debut": 632.25,
+       "fin": 632.447
+      },
+      {
+       "mot": "que",
+       "debut": 632.44,
+       "fin": 632.636
+      },
+      {
+       "mot": "toutes",
+       "debut": 632.63,
+       "fin": 632.967
+      },
+      {
+       "mot": "les",
+       "debut": 632.96,
+       "fin": 633.156
+      },
+      {
+       "mot": "décisions",
+       "debut": 633.15,
+       "fin": 633.629
+      },
+      {
+       "mot": "sont",
+       "debut": 633.62,
+       "fin": 633.866
+      },
+      {
+       "mot": "juridiquement",
+       "debut": 633.86,
+       "fin": 634.528
+      },
+      {
+       "mot": "possibles",
+       "debut": 634.52,
+       "fin": 635.048
+      }
+     ]
+    },
+    {
+     "texte": "Lorsqu'une décision porte sur les droits ou la situation individuelle d'une personne, elle reste soumise à la Constitution.",
+     "debut": 635.74,
+     "fin": 643.752,
+     "mots": [
+      {
+       "mot": "lorsqu",
+       "debut": 635.74,
+       "fin": 636.401
+      },
+      {
+       "mot": "une",
+       "debut": 635.74,
+       "fin": 636.401
+      },
+      {
+       "mot": "décision",
+       "debut": 636.4,
+       "fin": 636.941
+      },
+      {
+       "mot": "porte",
+       "debut": 636.94,
+       "fin": 637.301
+      },
+      {
+       "mot": "sur",
+       "debut": 637.3,
+       "fin": 637.541
+      },
+      {
+       "mot": "les",
+       "debut": 637.54,
+       "fin": 637.782
+      },
+      {
+       "mot": "droits",
+       "debut": 637.78,
+       "fin": 638.202
+      },
+      {
+       "mot": "ou",
+       "debut": 638.2,
+       "fin": 638.382
+      },
+      {
+       "mot": "la",
+       "debut": 638.38,
+       "fin": 638.562
+      },
+      {
+       "mot": "situation",
+       "debut": 638.56,
+       "fin": 639.163
+      },
+      {
+       "mot": "individuelle",
+       "debut": 639.16,
+       "fin": 639.943
+      },
+      {
+       "mot": "d",
+       "debut": 639.94,
+       "fin": 640.304
+      },
+      {
+       "mot": "une",
+       "debut": 639.94,
+       "fin": 640.304
+      },
+      {
+       "mot": "personne",
+       "debut": 640.3,
+       "fin": 641.0
+      },
+      {
+       "mot": "elle",
+       "debut": 641.08,
+       "fin": 641.435
+      },
+      {
+       "mot": "reste",
+       "debut": 641.43,
+       "fin": 641.856
+      },
+      {
+       "mot": "soumise",
+       "debut": 641.85,
+       "fin": 642.418
+      },
+      {
+       "mot": "à",
+       "debut": 642.41,
+       "fin": 642.558
+      },
+      {
+       "mot": "la",
+       "debut": 642.55,
+       "fin": 642.769
+      },
+      {
+       "mot": "constitution",
+       "debut": 642.76,
+       "fin": 643.752
+      }
+     ]
+    },
+    {
+     "texte": "La majorité ne peut ni écarter les garanties fondamentales, ni transformer une discrimination en décision licite.",
+     "debut": 645.06,
+     "fin": 652.148,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 645.06,
+       "fin": 645.242
+      },
+      {
+       "mot": "majorité",
+       "debut": 645.24,
+       "fin": 645.776
+      },
+      {
+       "mot": "ne",
+       "debut": 645.77,
+       "fin": 645.954
+      },
+      {
+       "mot": "peut",
+       "debut": 645.95,
+       "fin": 646.25
+      },
+      {
+       "mot": "ni",
+       "debut": 646.25,
+       "fin": 646.428
+      },
+      {
+       "mot": "écarter",
+       "debut": 646.42,
+       "fin": 646.903
+      },
+      {
+       "mot": "les",
+       "debut": 646.9,
+       "fin": 647.14
+      },
+      {
+       "mot": "garanties",
+       "debut": 647.14,
+       "fin": 647.733
+      },
+      {
+       "mot": "fondamentales",
+       "debut": 647.73,
+       "fin": 648.58
+      },
+      {
+       "mot": "ni",
+       "debut": 648.63,
+       "fin": 648.839
+      },
+      {
+       "mot": "transformer",
+       "debut": 648.83,
+       "fin": 649.603
+      },
+      {
+       "mot": "une",
+       "debut": 649.6,
+       "fin": 649.857
+      },
+      {
+       "mot": "discrimination",
+       "debut": 649.85,
+       "fin": 650.812
+      },
+      {
+       "mot": "en",
+       "debut": 650.81,
+       "fin": 651.003
+      },
+      {
+       "mot": "décision",
+       "debut": 651.0,
+       "fin": 651.575
+      },
+      {
+       "mot": "ni",
+       "debut": 651.57,
+       "fin": 651.766
+      },
+      {
+       "mot": "site",
+       "debut": 651.76,
+       "fin": 652.148
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 43,
+   "debut": 653.69,
+   "fin": 671.48,
+   "phrases": [
+    {
+     "texte": "Retenons l'essentiel.",
+     "debut": 653.69,
+     "fin": 654.94,
+     "mots": [
+      {
+       "mot": "retenons",
+       "debut": 653.69,
+       "fin": 654.201
+      },
+      {
+       "mot": "l",
+       "debut": 654.2,
+       "fin": 654.94
+      },
+      {
+       "mot": "essentiel",
+       "debut": 654.2,
+       "fin": 654.94
+      }
+     ]
+    },
+    {
+     "texte": "En matière de naturalisation, le vote populaire constitue l'exercice d'une tâche étatique.",
+     "debut": 655.56,
+     "fin": 661.174,
+     "mots": [
+      {
+       "mot": "en",
+       "debut": 655.56,
+       "fin": 655.736
+      },
+      {
+       "mot": "matière",
+       "debut": 655.73,
+       "fin": 656.2
+      },
+      {
+       "mot": "de",
+       "debut": 656.2,
+       "fin": 656.374
+      },
+      {
+       "mot": "naturalisation",
+       "debut": 656.37,
+       "fin": 657.302
+      },
+      {
+       "mot": "le",
+       "debut": 657.48,
+       "fin": 657.664
+      },
+      {
+       "mot": "vote",
+       "debut": 657.66,
+       "fin": 657.966
+      },
+      {
+       "mot": "populaire",
+       "debut": 657.96,
+       "fin": 658.571
+      },
+      {
+       "mot": "constitue",
+       "debut": 658.57,
+       "fin": 659.177
+      },
+      {
+       "mot": "l",
+       "debut": 659.17,
+       "fin": 659.842
+      },
+      {
+       "mot": "exercice",
+       "debut": 659.17,
+       "fin": 659.842
+      },
+      {
+       "mot": "d",
+       "debut": 659.84,
+       "fin": 660.206
+      },
+      {
+       "mot": "une",
+       "debut": 659.84,
+       "fin": 660.206
+      },
+      {
+       "mot": "tâche",
+       "debut": 660.2,
+       "fin": 660.569
+      },
+      {
+       "mot": "étatique",
+       "debut": 660.56,
+       "fin": 661.174
+      }
+     ]
+    },
+    {
+     "texte": "Il doit respecter l'interdiction de discriminer et l'obligation de motiver les refus.",
+     "debut": 661.86,
+     "fin": 666.934,
+     "mots": [
+      {
+       "mot": "il",
+       "debut": 661.86,
+       "fin": 662.043
+      },
+      {
+       "mot": "doit",
+       "debut": 662.04,
+       "fin": 662.337
+      },
+      {
+       "mot": "respecter",
+       "debut": 662.33,
+       "fin": 662.927
+      },
+      {
+       "mot": "l",
+       "debut": 662.92,
+       "fin": 663.811
+      },
+      {
+       "mot": "interdiction",
+       "debut": 662.92,
+       "fin": 663.811
+      },
+      {
+       "mot": "de",
+       "debut": 663.81,
+       "fin": 663.987
+      },
+      {
+       "mot": "discriminer",
+       "debut": 663.98,
+       "fin": 664.695
+      },
+      {
+       "mot": "et",
+       "debut": 664.69,
+       "fin": 664.871
+      },
+      {
+       "mot": "l",
+       "debut": 664.87,
+       "fin": 665.638
+      },
+      {
+       "mot": "obligation",
+       "debut": 664.87,
+       "fin": 665.638
+      },
+      {
+       "mot": "de",
+       "debut": 665.63,
+       "fin": 665.814
+      },
+      {
+       "mot": "motiver",
+       "debut": 665.81,
+       "fin": 666.286
+      },
+      {
+       "mot": "les",
+       "debut": 666.28,
+       "fin": 666.521
+      },
+      {
+       "mot": "refus",
+       "debut": 666.52,
+       "fin": 666.934
+      }
+     ]
+    },
+    {
+     "texte": "La volonté populaire s'exerce dans les limites de l'État de droit.",
+     "debut": 667.56,
+     "fin": 671.48,
+     "mots": [
+      {
+       "mot": "la",
+       "debut": 667.56,
+       "fin": 667.739
+      },
+      {
+       "mot": "volonté",
+       "debut": 667.73,
+       "fin": 668.207
+      },
+      {
+       "mot": "populaire",
+       "debut": 668.2,
+       "fin": 668.791
+      },
+      {
+       "mot": "s",
+       "debut": 668.79,
+       "fin": 669.317
+      },
+      {
+       "mot": "exerce",
+       "debut": 668.79,
+       "fin": 669.317
+      },
+      {
+       "mot": "dans",
+       "debut": 669.31,
+       "fin": 669.61
+      },
+      {
+       "mot": "les",
+       "debut": 669.61,
+       "fin": 669.843
+      },
+      {
+       "mot": "limites",
+       "debut": 669.84,
+       "fin": 670.311
+      },
+      {
+       "mot": "de",
+       "debut": 670.31,
+       "fin": 670.486
+      },
+      {
+       "mot": "l",
+       "debut": 670.48,
+       "fin": 670.896
+      },
+      {
+       "mot": "état",
+       "debut": 670.48,
+       "fin": 670.896
+      },
+      {
+       "mot": "de",
+       "debut": 670.89,
+       "fin": 671.071
+      },
+      {
+       "mot": "droit",
+       "debut": 671.07,
+       "fin": 671.48
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 44,
+   "debut": 673.03,
+   "fin": 687.938,
+   "phrases": [
+    {
+     "texte": "Pour terminer, une question.",
+     "debut": 673.03,
+     "fin": 674.668,
+     "mots": [
+      {
+       "mot": "pour",
+       "debut": 673.03,
+       "fin": 673.387
+      },
+      {
+       "mot": "terminer",
+       "debut": 673.38,
+       "fin": 673.921
+      },
+      {
+       "mot": "une",
+       "debut": 673.92,
+       "fin": 674.134
+      },
+      {
+       "mot": "question",
+       "debut": 674.13,
+       "fin": 674.668
+      }
+     ]
+    },
+    {
+     "texte": "Pourquoi le Tribunal fédéral s'est-il appuyé sur un ensemble d'indices, plutôt que sur une preuve directe, pour établir la discrimination ?",
+     "debut": 675.53,
+     "fin": 683.724,
+     "mots": [
+      {
+       "mot": "pourquoi",
+       "debut": 675.53,
+       "fin": 676.096
+      },
+      {
+       "mot": "le",
+       "debut": 676.09,
+       "fin": 676.257
+      },
+      {
+       "mot": "tribunal",
+       "debut": 676.25,
+       "fin": 676.737
+      },
+      {
+       "mot": "fédéral",
+       "debut": 676.73,
+       "fin": 677.324
+      },
+      {
+       "mot": "c",
+       "debut": 677.4,
+       "fin": 677.945
+      },
+      {
+       "mot": "est",
+       "debut": 677.4,
+       "fin": 677.945
+      },
+      {
+       "mot": "il",
+       "debut": 677.4,
+       "fin": 677.945
+      },
+      {
+       "mot": "appuyé",
+       "debut": 677.94,
+       "fin": 678.363
+      },
+      {
+       "mot": "sur",
+       "debut": 678.36,
+       "fin": 678.602
+      },
+      {
+       "mot": "un",
+       "debut": 678.6,
+       "fin": 678.781
+      },
+      {
+       "mot": "ensemble",
+       "debut": 678.78,
+       "fin": 679.319
+      },
+      {
+       "mot": "d",
+       "debut": 679.31,
+       "fin": 679.916
+      },
+      {
+       "mot": "indices",
+       "debut": 679.31,
+       "fin": 679.916
+      },
+      {
+       "mot": "plutôt",
+       "debut": 680.09,
+       "fin": 680.487
+      },
+      {
+       "mot": "que",
+       "debut": 680.48,
+       "fin": 680.711
+      },
+      {
+       "mot": "sur",
+       "debut": 680.71,
+       "fin": 680.934
+      },
+      {
+       "mot": "une",
+       "debut": 680.93,
+       "fin": 681.158
+      },
+      {
+       "mot": "preuve",
+       "debut": 681.15,
+       "fin": 681.549
+      },
+      {
+       "mot": "directe",
+       "debut": 681.54,
+       "fin": 681.996
+      },
+      {
+       "mot": "pour",
+       "debut": 682.08,
+       "fin": 682.337
+      },
+      {
+       "mot": "établir",
+       "debut": 682.33,
+       "fin": 682.748
+      },
+      {
+       "mot": "la",
+       "debut": 682.74,
+       "fin": 682.902
+      },
+      {
+       "mot": "discrimination",
+       "debut": 682.9,
+       "fin": 683.724
+      }
+     ]
+    },
+    {
+     "texte": "Je vous invite à proposer votre réponse en commentaire.",
+     "debut": 684.98,
+     "fin": 687.938,
+     "mots": [
+      {
+       "mot": "je",
+       "debut": 684.98,
+       "fin": 685.14
+      },
+      {
+       "mot": "vous",
+       "debut": 685.14,
+       "fin": 685.404
+      },
+      {
+       "mot": "invite",
+       "debut": 685.4,
+       "fin": 685.774
+      },
+      {
+       "mot": "à",
+       "debut": 685.77,
+       "fin": 685.879
+      },
+      {
+       "mot": "proposer",
+       "debut": 685.87,
+       "fin": 686.354
+      },
+      {
+       "mot": "votre",
+       "debut": 686.35,
+       "fin": 686.671
+      },
+      {
+       "mot": "réponse",
+       "debut": 686.67,
+       "fin": 687.093
+      },
+      {
+       "mot": "en",
+       "debut": 687.09,
+       "fin": 687.252
+      },
+      {
+       "mot": "commentaire",
+       "debut": 687.25,
+       "fin": 687.938
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ligne": 45,
+   "debut": 689.07,
+   "fin": 696.284,
+   "phrases": [
+    {
+     "texte": "Vous retrouverez la solution, ainsi que la référence complète à l'arrêt, dans la description de cette vidéo.",
+     "debut": 689.07,
+     "fin": 694.14,
+     "mots": [
+      {
+       "mot": "vous",
+       "debut": 689.07,
+       "fin": 689.325
+      },
+      {
+       "mot": "retrouverez",
+       "debut": 689.32,
+       "fin": 689.931
+      },
+      {
+       "mot": "la",
+       "debut": 689.93,
+       "fin": 690.083
+      },
+      {
+       "mot": "solution",
+       "debut": 690.08,
+       "fin": 690.588
+      },
+      {
+       "mot": "ainsi",
+       "debut": 690.76,
+       "fin": 691.027
+      },
+      {
+       "mot": "que",
+       "debut": 691.02,
+       "fin": 691.2
+      },
+      {
+       "mot": "la",
+       "debut": 691.2,
+       "fin": 691.33
+      },
+      {
+       "mot": "référence",
+       "debut": 691.33,
+       "fin": 691.762
+      },
+      {
+       "mot": "complète",
+       "debut": 691.76,
+       "fin": 692.151
+      },
+      {
+       "mot": "à",
+       "debut": 692.15,
+       "fin": 692.238
+      },
+      {
+       "mot": "l",
+       "debut": 692.23,
+       "fin": 692.584
+      },
+      {
+       "mot": "arrêt",
+       "debut": 692.23,
+       "fin": 692.584
+      },
+      {
+       "mot": "dans",
+       "debut": 692.58,
+       "fin": 692.8
+      },
+      {
+       "mot": "la",
+       "debut": 692.8,
+       "fin": 692.93
+      },
+      {
+       "mot": "description",
+       "debut": 692.93,
+       "fin": 693.448
+      },
+      {
+       "mot": "de",
+       "debut": 693.44,
+       "fin": 693.578
+      },
+      {
+       "mot": "cette",
+       "debut": 693.57,
+       "fin": 693.837
+      },
+      {
+       "mot": "vidéo",
+       "debut": 693.83,
+       "fin": 694.14
+      }
+     ]
+    },
+    {
+     "texte": "À bientôt sur L'étude du droit.",
+     "debut": 694.83,
+     "fin": 696.284,
+     "mots": [
+      {
+       "mot": "à",
+       "debut": 694.83,
+       "fin": 694.948
+      },
+      {
+       "mot": "bientôt",
+       "debut": 694.94,
+       "fin": 695.413
+      },
+      {
+       "mot": "sur",
+       "debut": 695.41,
+       "fin": 695.645
+      },
+      {
+       "mot": "l",
+       "debut": 695.64,
+       "fin": 696.11
+      },
+      {
+       "mot": "étude",
+       "debut": 695.64,
+       "fin": 696.11
+      },
+      {
+       "mot": "du",
+       "debut": 696.11,
+       "fin": 696.284
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "retouche": "ligne 28, phrase 3 : années retirées (2,475 s), voir montage.txt"
+}
