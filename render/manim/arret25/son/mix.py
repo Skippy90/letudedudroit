@@ -4,7 +4,8 @@ sys.path.insert(0, "/home/claude/a25")
 from temps import *
 SR = 48000
 v, sr = sf.read("voix.wav"); assert sr == SR
-TOTAL = M(FIN) + 15.0   # 15 s d'écran de fin muet
+TOTAL = M(FIN) + 15.0   # 15 s d'écran de fin muet (temps de la vidéo)
+TOTAL0 = TOTAL * K       # même durée avant l'accélération de la voix
 # ton de pièce : le passage de 0,6 s le plus calme
 # ton de pièce : le passage de 0,6 s le plus calme qui ne soit pas un silence numérique
 w = int(0.6 * SR); pw = int(0.02 * SR)
@@ -30,13 +31,13 @@ morceaux, p = [], 0
 fd = int(0.02 * SR); rmp = np.linspace(1, 0, fd)
 for x, s in sorted(AJOUTS):
     i = int(x * SR)
-    if s >= 0: morceaux += [v[p:i], ton(int(s * SR))]; p = i
+    if s >= 0: i = max(i, p); morceaux += [v[p:i], ton(int(s * SR))]; p = i   # jamais en arrière : un ajout tombé dans un silence déjà raccourci se place à sa fin
     else:
         hh = int(-s * SR / 2); a = v[p:i - hh].copy(); a[-fd:] *= rmp; morceaux.append(a); p = i + hh; v[p:p + fd] *= rmp[::-1]
 morceaux.append(v[p:])
-voix = np.concatenate(morceaux); voix = np.concatenate([voix, ton(max(0, int(TOTAL * SR) - len(voix)))])[:int(TOTAL * SR)]
+voix = np.concatenate(morceaux); voix = np.concatenate([voix, ton(max(0, int(TOTAL0 * SR) - len(voix)))])[:int(TOTAL0 * SR)]
 k = int(0.6 * SR); voix[-k:] *= np.linspace(1, 0, k)
-rng = np.random.default_rng(25); n = len(voix); fx = np.zeros((n, 2))
+rng = np.random.default_rng(25); n = int(TOTAL * SR); fx = np.zeros((n, 2))
 def pose(t0, s, g=1.0, pan=0.5, video=False):
     a = int((t0 if video else M(t0)) * SR); m = min(len(s), n - a)
     if a < 0 or m <= 0: return
@@ -89,5 +90,5 @@ for fjs in sorted(glob.glob("/tmp/a25/sons-*.json")):
     for t_, nom, g_ in dj["ev"]:
         w_, g0 = SONS[nom]; pose(dj["t0"] + t_, w_, g0 * g_, video=True); nb_sons += 1
 print("bruitages des personnages :", nb_sons)
-sf.write("voix_p.wav", voix, SR); sf.write("bruitages.wav", np.clip(fx, -1, 1), SR)
+sf.write("voix_pre.wav", voix, SR); sf.write("bruitages.wav", np.clip(fx, -1, 1), SR)
 print("total", TOTAL, len(voix) / SR)

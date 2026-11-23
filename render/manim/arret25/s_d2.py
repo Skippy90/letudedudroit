@@ -10,7 +10,7 @@ class D2(Sec25):
     def construct(self):
         self.debut(fil_avant=2)
         # 27 — les juges minimisent-ils l'urgence ? non
-        te = terre(1.5).move_to([-3.9, -0.3, 0]); th = thermometre(1.2, 0.5).move_to([-1.5, -0.2, 0])
+        te = terre(1.5, "inquiet").move_to([-3.9, -0.3, 0]); th = thermometre(1.2, 0.5).move_to([-1.5, -0.2, 0])
         j = juge(1.9, "neutre"); j.move_to([1.2, -1.3, 0])
         self.at(S(27, 1) - 0.2, FadeIn(te, scale=0.6), FadeIn(th, shift=0.2 * UP), FadeIn(j, shift=0.2 * UP), rt=0.5)
         im = bulle(["Les juges minimisent", "l'urgence climatique ?"], 24); im.move_to([4.4, 1.6, 0])
@@ -20,7 +20,7 @@ class D2(Sec25):
         self.at(W(27, 2, "lecture") - 0.3, Create(cx), FadeIn(li, shift=0.1 * UP), rt=0.4); self.son("thud", 0.6)
         ur = puce("Urgent", 36).move_to([4.4, 1.9, 0])
         self.at(S(27, 3) - 0.3, FadeOut(im), FadeOut(cx), FadeOut(li), rt=0.3)
-        self.at(W(27, 3, "urgent") - 0.3, FadeIn(ur, scale=1.5), th.niv.animate.set_value(0.85), rt=0.5); self.son("ding", 0.8)
+        self.at(W(27, 3, "urgent") - 0.3, FadeIn(ur, scale=1.5), th.niv.animate.set_value(0.85), rt=0.5); self.son("ding", 0.8); terre_visage(te, "chaud")
         visage(j, 1.9, "decide")
         ci = VGroup(T("Ralentir le réchauffement,", 24), T("pour protéger la vie sur Terre", 24)).arrange(DOWN, buff=0.12).move_to([4.4, 0.6, 0])
         sc = bandeau("ATF 146 I 145, en substance", 18).next_to(ci, DOWN, buff=0.2)
@@ -31,7 +31,7 @@ class D2(Sec25):
         t = titre("La distinction est ailleurs"); jg = jauge(y=0.6); jt = bandeau("Intensité de l'atteinte", 22).move_to([-4.6, 2.3, 0])
         self.at(S(28, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), rt=0.4)
         self.at(S(28, 2) - 0.05, FadeIn(jg), FadeIn(jt), rt=0.4)
-        ur = VGroup(terre(0.45), puce("Urgence reconnue", 22)).arrange(RIGHT, buff=0.2).move_to([4.0, 2.3, 0])
+        ur = VGroup(terre(0.45, "chaud"), puce("Urgence reconnue", 22)).arrange(RIGHT, buff=0.2).move_to([4.0, 2.3, 0])
         self.at(W(28, 2, "urgence") - 0.3, FadeIn(ur, shift=0.15 * DOWN), rt=0.4); self.son("plop", 0.7)
         q = quatre(0.95, "decide"); q.move_to([-4.6, -2.0, 0])
         c1 = curseur(); c1.move_to([jg.x0 + 0.8, 1.1, 0]); n1 = bandeau("Les omissions dénoncées", 22)

@@ -61,12 +61,12 @@ class Bf(Sec25):
         # 7 — le reproche
         self.vider(S(7, 1) - 0.5, garder=[cal], rt=0.4)
         t = titre("Le reproche"); q = quatre(1.5, "decide"); q.move_to([-3.4, -1.4, 0])
-        te = terre(1.2).move_to([3.0, 0.2, 0]); th = thermometre(1.1, 0.35).move_to([5.4, 0.2, 0])
+        te = terre(1.3, "inquiet").move_to([3.0, 0.2, 0]); th = thermometre(1.1, 0.35).move_to([5.4, 0.2, 0])
         self.at(S(7, 1) - 0.1, FadeIn(t, shift=0.2 * DOWN), FadeIn(q, shift=0.2 * UP), rt=0.5)
         self.at(S(7, 2) - 0.1, FadeIn(te, scale=0.6), FadeIn(th, shift=0.2 * UP), rt=0.4)
         bu = bulle(["Pas assez de mesures", "contre le réchauffement"], 24); bu.next_to(q, UP, buff=0.3).shift(1.2 * RIGHT)
         self.at(W(7, 2, "mesures") - 0.3, FadeIn(bu, shift=0.15 * UP), rt=0.4)
-        self.at(W(7, 2, "réchauffement") - 0.4, th.niv.animate.set_value(0.85), rt=1.0)
+        self.at(W(7, 2, "réchauffement") - 0.4, th.niv.animate.set_value(0.85), rt=1.0); terre_visage(te, "chaud"); self.son("triste", 0.6)
         self.saut(*q, h=0.14, rt=0.35)
         # 8 — l'Accord de Paris
         self.vider(S(8, 1) - 0.5, garder=[cal], rt=0.4)

@@ -287,12 +287,54 @@ def thermometre(e=1.0, niveau=0.4):
     return g
 
 
-def terre(e=1.0):
-    m = Circle(0.9 * e, fill_color=CIEL, fill_opacity=1, stroke_color=ENCRE, stroke_width=4 * e)
-    c1 = Ellipse(width=0.75 * e, height=0.5 * e, fill_color=MENTHE, fill_opacity=1, stroke_width=0).shift(0.3 * e * LEFT + 0.3 * e * UP).rotate(0.4)
-    c2 = Ellipse(width=0.55 * e, height=0.7 * e, fill_color=MENTHE, fill_opacity=1, stroke_width=0).shift(0.35 * e * RIGHT + 0.25 * e * DOWN).rotate(-0.3)
-    c3 = Ellipse(width=0.3 * e, height=0.2 * e, fill_color=MENTHE, fill_opacity=1, stroke_width=0).shift(0.45 * e * LEFT + 0.45 * e * DOWN)
-    return VGroup(m, c1, c2, c3)
+OCEAN = "#6EC1EE"; TERRE_V = "#7FD49A"; JOUE = "#F59AA5"
+
+
+def _blob(pts, e, couleur):
+    m = VMobject(fill_color=couleur, fill_opacity=1, stroke_width=0)
+    m.set_points_smoothly([np.array([x * e, y * e, 0]) for x, y in pts] + [np.array([pts[0][0] * e, pts[0][1] * e, 0])])
+    return m
+
+
+def terre_visage(g, k="content"):
+    """Pose (ou remplace) l'expression de la Terre : content, inquiet, chaud."""
+    e = g.e
+    if getattr(g, "visage", None) is not None: g.remove(g.visage)
+    c = g.mer.get_center(); ep = 5 * e
+    f = VGroup(*[Dot(c + np.array([s * 0.26 * e, 0.08 * e, 0]), radius=0.065 * e, color=ENCRE) for s in (-1, 1)])
+    f.add(*[Circle(0.1 * e, fill_color=JOUE, fill_opacity=0.75 if k == "chaud" else 0.5, stroke_width=0).move_to(c + np.array([s * 0.45 * e, -0.1 * e, 0])) for s in (-1, 1)])
+    m = c + np.array([0, -0.2 * e, 0])
+    if k == "content": f.add(Arc(radius=0.2 * e, start_angle=PI * 1.2, angle=PI * 0.6, color=ENCRE, stroke_width=ep).move_to(m))
+    elif k == "inquiet":
+        f.add(Arc(radius=0.2 * e, start_angle=PI * 0.25, angle=PI * 0.5, color=ENCRE, stroke_width=ep).move_to(m + np.array([0, -0.04 * e, 0])))
+        f.add(*[Line(c + np.array([s * 0.38 * e, 0.22 * e, 0]), c + np.array([s * 0.16 * e, 0.32 * e, 0]), color=ENCRE, stroke_width=ep * 0.8) for s in (-1, 1)])
+    else:
+        f.add(Ellipse(width=0.22 * e, height=0.16 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(m + np.array([0, -0.02 * e, 0])))
+        f.add(*[Line(c + np.array([s * 0.38 * e, 0.22 * e, 0]), c + np.array([s * 0.16 * e, 0.32 * e, 0]), color=ENCRE, stroke_width=ep * 0.8) for s in (-1, 1)])
+        for x, y in ((-1.02, 0.3), (1.04, 0.45), (0.98, 0.1)):
+            f.add(VGroup(Circle(0.06 * e, fill_color="#CFEBFA", fill_opacity=1, stroke_width=0), Polygon([-0.05 * e, 0.03 * e, 0], [0.05 * e, 0.03 * e, 0], [0, 0.16 * e, 0], fill_color="#CFEBFA", fill_opacity=1, stroke_width=0)).move_to(c + np.array([x * e, y * e, 0])))
+    g.add(f); g.visage = f
+    return g
+
+
+def terre(e=1.0, humeur="content"):
+    """Une jolie Terre : halo, océan, continents, calotte, nuages, et un visage (humeur=None pour l'enlever)."""
+    halo = VGroup(Circle(1.2 * e, fill_color=BLANC, fill_opacity=0.07, stroke_width=0), Circle(1.05 * e, fill_color=BLANC, fill_opacity=0.14, stroke_width=0))
+    mer = Circle(0.9 * e, fill_color=OCEAN, fill_opacity=1, stroke_color=ENCRE, stroke_width=4 * e)
+    ombre = AnnularSector(inner_radius=0.72 * e, outer_radius=0.88 * e, angle=PI * 0.7, start_angle=-PI * 0.75, fill_color="#3E93C9", fill_opacity=0.55, stroke_width=0)
+    c1 = _blob([(-0.62, 0.22), (-0.42, 0.52), (-0.12, 0.6), (0.02, 0.4), (-0.18, 0.3), (-0.3, 0.05), (-0.5, -0.02)], e, TERRE_V)
+    c2 = _blob([(0.22, 0.5), (0.5, 0.52), (0.68, 0.28), (0.52, 0.2), (0.36, 0.3)], e, TERRE_V)
+    c3 = _blob([(0.12, -0.42), (0.4, -0.36), (0.56, -0.52), (0.38, -0.72), (0.14, -0.66)], e, TERRE_V)
+    c4 = _blob([(-0.5, -0.4), (-0.3, -0.36), (-0.24, -0.58), (-0.42, -0.68)], e, TERRE_V)
+    cal = Ellipse(width=0.5 * e, height=0.16 * e, fill_color=BLANC, fill_opacity=0.95, stroke_width=0).shift(0.78 * e * UP)
+    def nu(x, y, k):
+        return VGroup(*[Circle(r * e * k, fill_color=BLANC, fill_opacity=0.95, stroke_width=0).move_to([(x + dx * k) * e, (y + dy * k) * e, 0]) for dx, dy, r in ((-0.14, 0, 0.09), (0, 0.04, 0.12), (0.15, 0, 0.09))])
+    n1, n2 = nu(-0.78, 0.6, 1.0), nu(0.8, -0.2, 0.9)
+    for n_, v in ((n1, 0.05), (n2, -0.04)): _vivant(n_, 0.0, 3.0); n_.vx = v
+    g = VGroup(halo, mer, ombre, c1, c2, c3, c4, cal, n1, n2); g.e, g.mer = e, mer
+    _vivant(g, 0.04 * e, 3.4)
+    if humeur: terre_visage(g, humeur)
+    return g
 
 
 def enveloppe(e=1.0):

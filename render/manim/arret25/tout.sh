@@ -10,7 +10,7 @@ if [ "$2" != "son" ]; then
   for x in "${SEC[@]}"; do set -- $x; [ -f /tmp/a25/sons-$2.json ] || ./rendre.sh -qh "$x" >> /tmp/a25/hq3.log 2>&1; done
 fi
 : > /tmp/a25/l.txt; for x in "${SEC[@]}" "s_f Fin fin"; do set -- $x; echo "file '$(ls /tmp/a25/videos/$1/1080p30/$3.mp4)'" >> /tmp/a25/l.txt; done
-cd son && ffmpeg -v error -y -i $N/narration.wav -af "highpass=f=70" -ar 48000 -ac 1 voix.wav && $PY mix.py > /tmp/a25/mix.log 2>&1 && ffmpeg -v error -y -i voix_p.wav -i bruitages.wav -filter_complex "[0]pan=stereo|c0=c0|c1=c0[v];[1]volume=0.22[b];[v][b]amix=inputs=2:normalize=0,volume=-1.5dB,alimiter=limit=0.89:level=disabled[o]" -map "[o]" -ar 48000 mix.wav
+cd son && ffmpeg -v error -y -i $N/narration.wav -af "highpass=f=70" -ar 48000 -ac 1 voix.wav && $PY mix.py > /tmp/a25/mix.log 2>&1 && ffmpeg -v error -y -i voix_pre.wav -af "atempo=$($PY -c "import sys; sys.path.insert(0,'/home/claude/a25'); from temps import K; print(K)")" voix_p.wav && ffmpeg -v error -y -i voix_p.wav -i bruitages.wav -filter_complex "[0]pan=stereo|c0=c0|c1=c0[v];[1]volume=0.22[b];[v][b]amix=inputs=2:normalize=0,volume=-1.5dB,alimiter=limit=0.89:level=disabled[o]" -map "[o]" -ar 48000 mix.wav
 cd .. && $PY srt.py /tmp/a25/arret-25.srt && $PY ass.py /tmp/a25/arret-25.srt /tmp/a25/s.ass
 cd /tmp/a25 && ffmpeg -v error -y -f concat -safe 0 -i l.txt -c copy tout.mp4
 D=$($PY -c "import sys; sys.path.insert(0,'/home/claude/a25'); from temps import *; print(round(M(FIN)+14.95,2))")

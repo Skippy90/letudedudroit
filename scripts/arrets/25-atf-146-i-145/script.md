@@ -4,7 +4,7 @@ Série : les arrêts du Tribunal fédéral (libertés et démocratie). Arrêts :
 
 **Texte enregistré.** Ce script est le texte lu par l'autrice le 23 novembre 2026 (enregistrement humain), transcrit puis vérifié contre les sources (voir `audit.md`). Il remplace la version préparée avant l'enregistrement, que l'autrice a réécrite. Durée de la narration : 12 minutes 21 secondes. Plusieurs phrases dépassent vingt mots : c'est le texte de l'autrice, laissé tel quel.
 
-Écarts entre la voix et le texte écrit : ligne 2, la voix dit « ont-elles parvenu » (le texte écrit « sont-elles parvenues ») ; ligne 10, la voix dit « de plus de 75 ans », l'arrêt dit « dès 75 ans » ; ligne 30, la voix dit « le requête ».
+Écarts entre la voix et le texte écrit : ligne 2, la voix dit « ont-elles parvenu » (le texte écrit « ont-elles pu parvenir ») ; ligne 10, la voix dit « de plus de 75 ans », l'arrêt dit « dès 75 ans » ; ligne 30, la voix dit « le requête ».
 
 L'association est nommée (affaire notoire) ; les quatre femmes sont désignées comme dans les arrêts, sans nom. Sujet politiquement disputé : aucun avis de la chaîne sur la politique climatique ni sur l'arrêt de Strasbourg ; le script dit ce que chaque juridiction a décidé, et rien sur le débat politique qui a suivi.
 
@@ -13,7 +13,7 @@ L'association est nommée (affaire notoire) ; les quatre femmes sont désignées
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 1 | En deux mille seize, plusieurs femmes âgées demandent à la Confédération de mieux protéger le climat. Leur démarche est juridique. Elles estiment que l'inaction des autorités met leurs droits fondamentaux en danger. | Calendrier « 2016 » ; les quatre aînées, la Confédération, une enveloppe ; globe et thermomètre ; balance « Une démarche juridique » |
-| 2 | En deux mille vingt, le Tribunal fédéral refuse que leur demande soit examinée sur le fond. Mais en deux mille vingt-quatre, à Strasbourg, leur association obtient un arrêt condamnant la Suisse. Comment deux juridictions sont-elles parvenues à des conclusions si différentes ? | Tribunal fédéral, tampon « Pas d'examen sur le fond » ; Cour de Strasbourg, « Un arrêt contre la Suisse » ; point d'interrogation |
+| 2 | En deux mille vingt, le Tribunal fédéral refuse que leur demande soit examinée sur le fond. Mais en deux mille vingt-quatre, à Strasbourg, leur association obtient un arrêt condamnant la Suisse. Comment deux juridictions ont-elles pu parvenir à des conclusions si différentes ? | Tribunal fédéral, tampon « Pas d'examen sur le fond » ; Cour de Strasbourg, « Un arrêt contre la Suisse » ; point d'interrogation |
 | 3 | Bienvenue sur L'étude du droit. Aujourd'hui, nous suivons l'affaire des Aînées pour le climat, de l'administration fédérale à la Cour européenne des droits de l'homme. Deux arrêts, deux raisonnements, et une question centrale. Qui peut demander à un juge de contrôler l'action climatique de l'État ? | Nom de la chaîne ; titre « Les Aînées pour le climat » ; de l'administration fédérale à la Cour ; « 2 arrêts, 2 raisonnements, 1 question » ; la question centrale |
 
 ## Les faits

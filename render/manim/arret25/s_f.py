@@ -27,8 +27,9 @@ class Ff(Sec25):
         hs = [3.0, 2.3, 1.6, 0.9, 0.3]; bars = VGroup(*[Rectangle(width=0.8, height=h_, fill_color=GRIS, fill_opacity=1, stroke_width=0).move_to([-0.5 + 1.25 * k, -2.2 + h_ / 2, 0]) for k, h_ in enumerate(hs)])
         an = T("2050", 26).move_to([-0.5 + 1.25 * 5, -2.65, 0]); zn = puce("Zéro net", 34).move_to([-0.5 + 1.25 * 5 - 0.3, -0.6, 0])
         self.at(S(44, 3) - 0.05, Create(sol), LaggedStart(*[FadeIn(b, shift=0.2 * UP) for b in bars], lag_ratio=0.15), rt=1.0); self.son("zip")
-        self.at(W(44, 3, "zéro") - 0.3, FadeIn(zn, scale=1.4), rt=0.4); self.son("ding", 0.8)
-        ge = bandeau("Gaz à effet de serre", 20).move_to([1.2, 1.4, 0]); self.at(W(44, 3, "gaz") - 0.3, FadeIn(ge), rt=0.3)
+        tz = terre(0.8).move_to([4.6, 1.5, 0])
+        self.at(W(44, 3, "zéro") - 0.3, FadeIn(zn, scale=1.4), FadeIn(tz, scale=0.5), rt=0.4); self.son("ding", 0.8)
+        ge = bandeau("Gaz à effet de serre", 20).move_to([0.8, 1.4, 0]); self.at(W(44, 3, "gaz") - 0.3, FadeIn(ge), rt=0.3)
         self.at(W(44, 3, "cinquante") - 0.6, FadeIn(an, scale=1.3), rt=0.3)
         # 45 — l'article 25a PA existe toujours
         self.vider(S(45, 1) - 0.5, rt=0.4)
