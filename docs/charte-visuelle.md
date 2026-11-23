@@ -41,6 +41,26 @@ Ajouts au vocabulaire graphique, validés sur le prototype de la vidéo 1 :
 
 Les silhouettes placées dans un décor sont réduites de 20 % pour tenir sur les marches ; leur nom garde sa taille.
 
+## Style rouge : droit constitutionnel et grands arrêts (adopté le 23 novembre 2026)
+
+Utilisé pour les arrêts 12 (Appenzell) et 15 (Emmen). Le fond noir reste celui du droit pénal ; le rouge signale la Constitution. Code : `render/manim/style_rouge/` et, pour l'arrêt 15, `render/manim/arret15/`.
+
+| Élément | Règle |
+| --- | --- |
+| Couleurs | Fond rouge de la marque en dégradé (`#DA291C` vers `#B81F15`), panneaux `#96170F` et `#74110B`, texte et formes crème `#FBF3E4`, encre `#3B0906`. Mot-clé : texte rouge sur pastille crème. Étiquette discrète : texte crème sur bandeau encre |
+| Structure | Fil conducteur en bas (« Les faits · Les textes · La question · La réponse · À retenir ») et carton plein écran à chaque partie, en fondu |
+| Personnages | Silhouettes pleines, tête crème pour tous, avec un visage simple : neutre, content, triste, perplexe, surpris, décidé, bouche cousue. L'expression change au moment où la voix le dit |
+| Origine d'un personnage | Quand l'origine compte pour le raisonnement, l'habit porte les couleurs du drapeau, avec une légende à l'écran. Jamais d'autre signe distinctif (ni accessoire, ni trait physique, ni cliché). Si la source ne nomme qu'un ensemble (« ex-Yougoslavie »), on le dit dans l'audit |
+| Jeu des personnages | Ils jouent les faits : ils marchent en sautillant, franchissent une porte ou butent dessus, sautent de joie, reculent. Une scène jouée remplace un tableau chaque fois que c'est possible |
+| Ton | Une pointe de malice est permise sur la procédure et le raisonnement, jamais sur les personnes concernées ni sur un passage sensible (propos haineux, violence) : leur contenu n'est ni cité ni montré |
+| Textes de loi | Page crème avec la référence en tête ; texte officiel exact, coupes marquées « […] », ajout entre crochets ; un résumé ne porte jamais de guillemets |
+| Vie de l'image | Caméra qui avance lentement sur chaque plan (3 % au plus) et revient au changement de plan ; grandes formes pâles qui glissent dans le fond ; léger va-et-vient des personnages. Rien ne doit sortir du cadre à l'avancée maximale |
+| Texte du bas | Le texte lu, sur une ligne, qui se remplit au fil de la voix ; chiffres en chiffres |
+| Son | Voix sans traitement autre qu'un filtre des graves ; les silences entre deux prises sont comblés par le ton de la pièce ; bruitages courts et discrets liés aux gestes (bulletin, porte, joie, déception). Pas de musique sans validation à l'oreille |
+| Contrôle | Planches-contact horodatées avant chaque livraison ; aucun chevauchement de texte toléré, même bref |
+
+Les règles générales restent valables : douze mots au plus à l'écran hors texte de loi et texte du bas, une idée par plan, schémas construits devant le spectateur.
+
 ## Texture de l'image (adoptée le 1er novembre 2026)
 
 Appliquée au montage (`tools/assembler.py`), sur les schémas seulement (l'ouverture et la fin gardent le rouge exact) ; les sous-titres restent nets :
