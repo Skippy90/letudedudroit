@@ -47,7 +47,7 @@ ligne 18, phrase 3 : prise gardée à 502.9 s (coupe 502.74–507.31)
 ligne 19, phrase 1 : prise gardée à 509.0 s (coupe 508.85–512.79)
 ligne 19, phrase 2 : prise gardée à 520.2 s (coupe 520.06–525.47) (1 prise(s) précédente(s) coupée(s))
 ligne 19, phrase 3 : prise gardée à 525.9 s (coupe 525.74–528.98)
-ligne 20, phrase 1 : prise gardée à 531.0 s (coupe 530.65–539.35)
+ligne 20, phrase 1 : prise gardée à 530.0 s (coupe 529.90–539.35)
 ligne 20, phrase 2 : prise gardée à 539.9 s (coupe 539.70–546.33)
 ligne 21, phrase 1 : prise gardée à 552.2 s (coupe 552.06–555.74)
 ligne 21, phrase 2 : prise gardée à 556.3 s (coupe 556.11–562.18) — À RÉÉCOUTER, 88% des mots reconnus. Attendu : « Lorsqu'ils se prononcent sur une naturalisation, les citoyens n'agissent pas uniquement comme des électeurs. » ; reconnu : « lorsqu il se prononce sur une naturalisation les citoyens n agissent pas uniquement comme des électeurs »
@@ -70,8 +70,8 @@ ligne 26, phrase 2 : prise gardée à 749.7 s (coupe 749.58–752.92) — À RÉ
 ligne 26, phrase 3 : prise gardée à 753.5 s (coupe 753.37–757.24)
 ligne 27, phrase 1 : prise gardée à 779.4 s (coupe 779.28–781.95) (2 prise(s) précédente(s) coupée(s))
 ligne 27, phrase 2 : prise gardée à 782.4 s (coupe 781.95–786.39) (1 prise(s) précédente(s) coupée(s))
-ligne 27, phrase 3 : prise gardée à 786.8 s (coupe 786.39–788.36)
-ligne 27, phrase 4 : prise gardée à 788.6 s (coupe 788.36–792.39)
+ligne 27, phrase 3 : prise gardée à 786.8 s (coupe 786.39–788.67)
+ligne 27, phrase 4 : prise gardée à 788.8 s (coupe 788.67–793.34)
 ligne 28, phrase 1 : prise gardée à 800.1 s (coupe 799.98–803.86)
 ligne 28, phrase 2 : prise gardée à 804.2 s (coupe 803.86–809.60)
 ligne 28, phrase 3 : prise gardée à 833.2 s (coupe 832.80–841.98) (2 prise(s) précédente(s) coupée(s))
@@ -126,4 +126,7 @@ ligne 44, phrase 3 : prise gardée à 1456.8 s (coupe 1456.68–1459.99)
 ligne 45, phrase 1 : prise gardée à 1464.7 s (coupe 1464.34–1469.95)
 ligne 45, phrase 2 : prise gardée à 1470.4 s (coupe 1470.28–1472.09) (1 prise(s) précédente(s) coupée(s)) — À RÉÉCOUTER, 86% des mots reconnus. Attendu : « À bientôt sur L'étude du droit. » ; reconnu : « à bientôt sur l étude du »
 
-Retouche après montage (22 novembre 2026) : ligne 28, phrase 3. Les mots « en mille neuf cent septante-neuf et mille neuf cent huitante » ont été retirés de narration.wav (de 404,925 s à 407,400 s de la narration brute, 2,475 s) : l'arrêt dit 1981 et 1979 (consid. 2.3.1). timings.json est décalé d'autant ; timings-bruts.json garde les instants d'avant la retouche.
+Retouches après montage (23 novembre 2026), refaites par /home/claude/a15/retouche_annees.py (copie dans les livrables) :
+- ligne 28, phrase 3 : les mots « en mille neuf cent septante-neuf et mille neuf cent huitante » sont retirés de narration.wav (2,475 s) : l'arrêt dit 1981 et 1979 (consid. 2.3.1). timings.json est décalé d'autant ; timings-bruts.json garde les instants d'avant la retouche.
+- ligne 2, phrase 3 et ligne 34, phrase 1 : la coupe gardait l'attaque d'une prise écartée, collée à la fin de la phrase ; ce fragment est éteint.
+Corrections de la transcription avant l'alignement : ligne 20, phrase 1 (le « Oui » initial manquait) et ligne 27, phrase 4 (« 1991 » était coupé).
