@@ -14,7 +14,7 @@ class C(Sec25):
         # 14 — ouvrir la loi : l'article 25a PA
         q = quatre(1.1, "perplexe"); q.move_to([-5.3, -1.3, 0])
         self.at(S(14, 1) - 0.1, FadeIn(q, shift=0.2 * UP), rt=0.4)
-        lv = livre("Procédure", "administrative", "25a").move_to([1.2, 0.3, 0])
+        lv = loi("sur la procédure", "administrative", "25a", "RS 172.021").move_to([1.2, 0.3, 0])
         self.at(W(14, 1, "ouvrir") - 0.4, FadeIn(lv, shift=0.3 * UP), rt=0.5); self.son("plop")
         ba = bloc_art(); self.at(W(14, 2, "article") - 0.2, FadeIn(ba, scale=1.4), lv.animate(rate_func=there_and_back).scale(1.08), rt=0.5); self.son("ding", 0.7)
         pa = bandeau("PA : loi fédérale sur la procédure administrative", 20).move_to([1.2, -1.75, 0])

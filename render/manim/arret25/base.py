@@ -297,22 +297,34 @@ def _blob(pts, e, couleur):
 
 
 def terre_visage(g, k="content"):
-    """Pose (ou remplace) l'expression de la Terre : content, inquiet, chaud."""
+    """Pose (ou remplace) l'expression de la Terre : content, soulage, surpris, inquiet, malade (thermomètre, poche de glace), chaud (océan rougi, gouttes)."""
     e = g.e
     if getattr(g, "visage", None) is not None: g.remove(g.visage)
     c = g.mer.get_center(); ep = 5 * e
     f = VGroup(*[Dot(c + np.array([s * 0.26 * e, 0.08 * e, 0]), radius=0.065 * e, color=ENCRE) for s in (-1, 1)])
     f.add(*[Circle(0.1 * e, fill_color=JOUE, fill_opacity=0.75 if k == "chaud" else 0.5, stroke_width=0).move_to(c + np.array([s * 0.45 * e, -0.1 * e, 0])) for s in (-1, 1)])
-    m = c + np.array([0, -0.2 * e, 0])
+    m = c + np.array([0, -0.2 * e, 0]); sourcil = lambda y0, y1: [Line(c + np.array([s * 0.38 * e, y0 * e, 0]), c + np.array([s * 0.16 * e, y1 * e, 0]), color=ENCRE, stroke_width=ep * 0.8) for s in (-1, 1)]
     if k == "content": f.add(Arc(radius=0.2 * e, start_angle=PI * 1.2, angle=PI * 0.6, color=ENCRE, stroke_width=ep).move_to(m))
+    elif k == "soulage":
+        f.remove(f[0], f[1])
+        f.add(*[Arc(radius=0.09 * e, start_angle=PI * 0.1, angle=PI * 0.8, color=ENCRE, stroke_width=ep).move_to(c + np.array([s * 0.26 * e, 0.1 * e, 0])) for s in (-1, 1)])
+        f.add(Arc(radius=0.24 * e, start_angle=PI * 1.15, angle=PI * 0.7, color=ENCRE, stroke_width=ep).move_to(m))
+    elif k == "surpris":
+        f.add(Ellipse(width=0.16 * e, height=0.22 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(m + np.array([0, -0.03 * e, 0])))
+        f.add(*[Arc(radius=0.12 * e, start_angle=PI * 0.2, angle=PI * 0.6, color=ENCRE, stroke_width=ep * 0.8).move_to(c + np.array([s * 0.26 * e, 0.3 * e, 0])) for s in (-1, 1)])
     elif k == "inquiet":
         f.add(Arc(radius=0.2 * e, start_angle=PI * 0.25, angle=PI * 0.5, color=ENCRE, stroke_width=ep).move_to(m + np.array([0, -0.04 * e, 0])))
-        f.add(*[Line(c + np.array([s * 0.38 * e, 0.22 * e, 0]), c + np.array([s * 0.16 * e, 0.32 * e, 0]), color=ENCRE, stroke_width=ep * 0.8) for s in (-1, 1)])
+        f.add(*sourcil(0.22, 0.32))
+    elif k == "malade":
+        f.add(Line(m + 0.16 * e * LEFT, m + 0.16 * e * RIGHT, color=ENCRE, stroke_width=ep), *sourcil(0.22, 0.32))
+        f.add(Line(m + 0.05 * e * RIGHT, m + np.array([0.5 * e, -0.26 * e, 0]), color=BLANC, stroke_width=ep * 1.6), Circle(0.07 * e, fill_color=AMBRE, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).move_to(m + np.array([0.52 * e, -0.27 * e, 0])))
+        f.add(RoundedRectangle(corner_radius=0.08 * e, width=0.5 * e, height=0.26 * e, fill_color="#CFEBFA", fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).rotate(0.25).move_to(c + np.array([-0.3 * e, 0.72 * e, 0])))
     else:
         f.add(Ellipse(width=0.22 * e, height=0.16 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(m + np.array([0, -0.02 * e, 0])))
-        f.add(*[Line(c + np.array([s * 0.38 * e, 0.22 * e, 0]), c + np.array([s * 0.16 * e, 0.32 * e, 0]), color=ENCRE, stroke_width=ep * 0.8) for s in (-1, 1)])
+        f.add(*sourcil(0.22, 0.32))
         for x, y in ((-1.02, 0.3), (1.04, 0.45), (0.98, 0.1)):
             f.add(VGroup(Circle(0.06 * e, fill_color="#CFEBFA", fill_opacity=1, stroke_width=0), Polygon([-0.05 * e, 0.03 * e, 0], [0.05 * e, 0.03 * e, 0], [0, 0.16 * e, 0], fill_color="#CFEBFA", fill_opacity=1, stroke_width=0)).move_to(c + np.array([x * e, y * e, 0])))
+    g.mer.set_fill("#F2A47C" if k == "chaud" else ("#A9C9B8" if k == "malade" else OCEAN))
     g.add(f); g.visage = f
     return g
 
@@ -377,3 +389,113 @@ def livre(l1, l2, gros=None):
 def main_levee(b, h, cote=1):
     c = b[1].get_center()
     return Line(c + np.array([cote * 0.16 * h, -0.2 * h, 0]), c + np.array([cote * 0.27 * h, 0.27 * h, 0]), color=CREME, stroke_width=6 * h).set_cap_style(CapStyleType.ROUND)
+
+
+def terre_pousse(g):
+    """Une jeune pousse sur la Terre (l'espoir, le zéro net)."""
+    e = g.e; c = g.mer.get_center(); h = c + np.array([0, 0.9 * e, 0])
+    p = VGroup(Line(h, h + 0.42 * e * UP, color="#3E9E5F", stroke_width=6 * e),
+               Ellipse(width=0.34 * e, height=0.16 * e, fill_color=TERRE_V, fill_opacity=1, stroke_color="#3E9E5F", stroke_width=2 * e).rotate(0.6).move_to(h + np.array([0.17 * e, 0.44 * e, 0])),
+               Ellipse(width=0.34 * e, height=0.16 * e, fill_color=TERRE_V, fill_opacity=1, stroke_color="#3E9E5F", stroke_width=2 * e).rotate(-0.6).move_to(h + np.array([-0.17 * e, 0.4 * e, 0])))
+    g.add(p); g.pousse = p
+    return p
+
+
+# ---------- Textes de loi : trois familles, trois couvertures ----------
+JAUNE_CODE = "#F5C83B"; BLEU_TRAITE = "#1F3A6E"; OR = "#F3D27A"
+
+
+def croix_suisse(e=1.0):
+    return VGroup(RoundedRectangle(corner_radius=0.04 * e, width=0.42 * e, height=0.42 * e, fill_color=ROUGE, fill_opacity=1, stroke_width=0),
+                  Rectangle(width=0.26 * e, height=0.08 * e, fill_color=BLANC, fill_opacity=1, stroke_width=0), Rectangle(width=0.08 * e, height=0.26 * e, fill_color=BLANC, fill_opacity=1, stroke_width=0))
+
+
+def _titres(l1, l2, couleur, larg, taille=20):
+    tt = VGroup(*[T(x, taille, couleur) for x in (l1, l2) if x]).arrange(DOWN, buff=0.1)
+    if tt.width > larg: tt.scale_to_fit_width(larg)
+    return tt
+
+
+def code(l1, l2, gros=None):
+    """Un code (Code civil, Code pénal, Code des obligations…) : couverture jaune, dos sombre, croix suisse."""
+    f = RoundedRectangle(corner_radius=0.1, width=2.5, height=3.2, fill_color=JAUNE_CODE, fill_opacity=1, stroke_width=0)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.1 * DOWN + 0.1 * RIGHT)
+    pages = Rectangle(width=2.36, height=0.12, fill_color=BLANC, fill_opacity=1, stroke_width=0).move_to(f.get_bottom() + 0.1 * UP)
+    dos = Rectangle(width=0.3, height=3.2, fill_color=ENCRE, fill_opacity=1, stroke_width=0).align_to(f, LEFT)
+    cx = croix_suisse(1.0).move_to(f.get_corner(UR) + 0.42 * LEFT + 0.42 * DOWN)
+    tt = _titres(l1, l2, ENCRE, 1.9).move_to(f.get_center() + 0.15 * RIGHT + 0.55 * UP)
+    g = VGroup(ombre, f, pages, dos, cx, tt)
+    if gros: g.add(T(gros, 44, ENCRE).move_to(f.get_center() + 0.15 * RIGHT + 0.6 * DOWN))
+    return g
+
+
+def loi(l1, l2, gros=None, rs=None):
+    """Une loi fédérale hors des codes (PA, LCl…) : cahier clair, bandeau rouge, croix suisse, numéro du recueil."""
+    f = RoundedRectangle(corner_radius=0.06, width=2.5, height=3.2, fill_color=CREME, fill_opacity=1, stroke_width=0)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.1 * DOWN + 0.1 * RIGHT)
+    bande = Rectangle(width=2.5, height=0.62, fill_color=ENCRE, fill_opacity=1, stroke_width=0).align_to(f, UP)
+    cx = croix_suisse(0.9).move_to(bande.get_left() + 0.38 * RIGHT); lf = T("Loi fédérale", 18).move_to(bande.get_center() + 0.25 * RIGHT)
+    agrafes = VGroup(*[Line(ORIGIN, 0.22 * UP, color=ENCRE, stroke_width=4).move_to(f.get_left() + 0.1 * RIGHT + y * UP) for y in (0.5, -0.9)])
+    tt = _titres(l1, l2, ENCRE, 2.1).move_to(f.get_center() + 0.45 * UP)
+    g = VGroup(ombre, f, bande, cx, lf, agrafes, tt)
+    if gros: g.add(T(gros, 44, ROUGE).move_to(f.get_center() + 0.55 * DOWN))
+    if rs: g.add(T(rs, 15, ENCRE, False).move_to(f.get_bottom() + 0.28 * UP))
+    return g
+
+
+def traite(l1, l2, gros=None, embleme="etoiles", rs=None):
+    """Un traité international (Convention européenne, Accord de Paris…) : couverture bleu nuit, lettres dorées, sceau."""
+    f = RoundedRectangle(corner_radius=0.1, width=2.5, height=3.2, fill_color=BLEU_TRAITE, fill_opacity=1, stroke_width=0)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.1 * DOWN + 0.1 * RIGHT)
+    filet = RoundedRectangle(corner_radius=0.07, width=2.2, height=2.9, color=OR, stroke_width=2.5).move_to(f)
+    if embleme == "etoiles": em = VGroup(*[Star(5, outer_radius=0.06, fill_color=OR, fill_opacity=1, stroke_width=0).move_to([0.36 * np.sin(k * TAU / 12), 0.36 * np.cos(k * TAU / 12), 0]) for k in range(12)])
+    else:
+        em = VGroup(Circle(0.36, color=OR, stroke_width=3), Ellipse(width=0.34, height=0.72, color=OR, stroke_width=2), Line(0.36 * LEFT, 0.36 * RIGHT, color=OR, stroke_width=2), Line(0.36 * UP, 0.36 * DOWN, color=OR, stroke_width=2))
+    em.move_to(f.get_center() + 0.85 * UP)
+    tt = _titres(l1, l2, OR, 2.0, 18).move_to(f.get_center() + 0.1 * UP)
+    ruban = VGroup(Polygon([-0.12, 0, 0], [0.12, 0, 0], [0.16, -0.5, 0], [0, -0.38, 0], [-0.16, -0.5, 0], fill_color=ROUGE, fill_opacity=1, stroke_width=0), Circle(0.2, fill_color=OR, fill_opacity=1, stroke_width=0)).move_to(f.get_corner(DR) + 0.42 * LEFT + 0.5 * UP)
+    g = VGroup(ombre, f, filet, em, tt, ruban)
+    if gros: g.add(T(gros, 40, CREME).move_to(f.get_center() + 0.75 * DOWN + 0.2 * LEFT))
+    if rs: g.add(T(rs, 14, OR, False).move_to(f.get_bottom() + 0.26 * UP + 0.3 * LEFT))
+    return g
+
+
+# ---------- Les droits, avec une image qui parle ----------
+def coeur(e=1.0, couleur=JOUE):
+    return VGroup(Circle(0.12 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).shift(0.1 * e * LEFT), Circle(0.12 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).shift(0.1 * e * RIGHT),
+                  Polygon([-0.215 * e, -0.045 * e, 0], [0.215 * e, -0.045 * e, 0], [0, -0.3 * e, 0], fill_color=couleur, fill_opacity=1, stroke_width=0))
+
+
+def icone_vie(e=1.0):
+    """Le droit à la vie : un arbre en feuilles, une jeune pousse à son pied, un cœur."""
+    sol = Line([-0.9 * e, 0, 0], [0.9 * e, 0, 0], color=CREME, stroke_width=4 * e)
+    tronc = Polygon([-0.09 * e, 0, 0], [0.09 * e, 0, 0], [0.06 * e, 0.75 * e, 0], [-0.06 * e, 0.75 * e, 0], fill_color=ENCRE, fill_opacity=1, stroke_width=0)
+    feuilles = VGroup(*[Circle(r * e, fill_color=c, fill_opacity=1, stroke_width=0).move_to([x * e, y * e, 0]) for x, y, r, c in ((-0.3, 0.95, 0.34, "#5FBF82"), (0.3, 0.98, 0.36, TERRE_V), (0, 1.3, 0.4, "#9BE0B0"), (0, 0.9, 0.3, TERRE_V))])
+    pousse = VGroup(Line([0.6 * e, 0, 0], [0.6 * e, 0.28 * e, 0], color="#5FBF82", stroke_width=5 * e), Ellipse(width=0.22 * e, height=0.1 * e, fill_color=TERRE_V, fill_opacity=1, stroke_width=0).rotate(0.6).move_to([0.7 * e, 0.3 * e, 0]),
+                    Ellipse(width=0.22 * e, height=0.1 * e, fill_color=TERRE_V, fill_opacity=1, stroke_width=0).rotate(-0.6).move_to([0.5 * e, 0.27 * e, 0]))
+    c = coeur(0.9 * e).move_to([0, 1.12 * e, 0])
+    _vivant(feuilles, 0.03 * e, 2.8); c.add_updater(lambda m: m.move_to(feuilles.get_center() + 0.02 * e * UP))
+    return VGroup(sol, tronc, feuilles, pousse, c)
+
+
+def icone_foyer(e=1.0):
+    """La vie privée et familiale : une maison éclairée, une famille devant, un cœur."""
+    mur = Rectangle(width=1.3 * e, height=0.85 * e, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([0, 0.425 * e, 0])
+    toit = Polygon([-0.82 * e, 0.85 * e, 0], [0.82 * e, 0.85 * e, 0], [0, 1.45 * e, 0], fill_color=ENCRE, fill_opacity=1, stroke_width=0)
+    fen = Square(0.3 * e, fill_color=AMBRE, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).move_to([0.32 * e, 0.5 * e, 0])
+    porte = Rectangle(width=0.28 * e, height=0.5 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([-0.3 * e, 0.25 * e, 0])
+    sol = Line([-1.0 * e, 0, 0], [1.9 * e, 0, 0], color=CREME, stroke_width=4 * e)
+    fam = VGroup(_bh(0.72 * e, MENTHE, femme=True), _bh(0.46 * e, AMBRE), _bh(0.76 * e, LILAS)).arrange(RIGHT, buff=0.05 * e, aligned_edge=DOWN).move_to([1.25 * e, 0, 0], aligned_edge=DOWN)
+    c = coeur(0.8 * e).move_to([0, 1.72 * e, 0]); _vivant(c, 0.04 * e, 2.2)
+    return VGroup(sol, mur, toit, fen, porte, fam, c)
+
+
+def carte_droit(icone, titre_, sous, l=6.5, h=2.5):
+    """Un droit fondamental : son image à gauche, son nom et ses articles à droite."""
+    f = RoundedRectangle(corner_radius=0.22, width=l, height=h, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0)
+    icone.move_to(f.get_left() + 1.35 * RIGHT)
+    tx = VGroup(T(titre_, 26), T(sous, 19, CREME, False)).arrange(DOWN, buff=0.14, aligned_edge=LEFT)
+    if tx.width > l - 2.9: tx.scale_to_fit_width(l - 2.9)
+    tx.move_to(f.get_left() + 2.65 * RIGHT, aligned_edge=LEFT)
+    g = VGroup(f, icone, tx); g.icone = icone
+    return g

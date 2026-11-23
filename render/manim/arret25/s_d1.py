@@ -112,6 +112,7 @@ class D1(Sec25):
         self.at(W(26, 1, "seuil") - 0.3, Create(tr2), FadeIn(p2[0], shift=0.15 * DOWN), rt=0.8)
         self.at(W(26, 1, "franchi") - 0.6, FadeIn(p2[1], shift=0.1 * DOWN), rt=0.4)
         sb = sablier(0.8).move_to([fr.X(2029), 0.1, 0]); st = puce("Il reste encore du temps", 24).move_to([-2.4, 1.3, 0])
-        self.at(S(26, 2) - 0.05, FadeIn(sb, scale=0.5), FadeIn(st, shift=0.15 * UP), rt=0.4); self.son("grelot", 0.6)
+        ts = terre(0.6, "soulage").move_to([-4.0, 0.2, 0])
+        self.at(S(26, 2) - 0.05, FadeIn(sb, scale=0.5), FadeIn(st, shift=0.15 * UP), FadeIn(ts, scale=0.5), rt=0.4); self.son("grelot", 0.6)
         self.play(Rotate(sb, PI), run_time=0.9)
         self.fin()
