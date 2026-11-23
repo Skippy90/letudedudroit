@@ -59,7 +59,7 @@ class Es(Sec25):
         # 39 — l'association : la qualité pour agir
         self.at(S(39, 1) - 0.45, *[FadeOut(x) for x in (ir, qv, t2)], q.animate.scale(0.6).move_to([-5.6, -2.2, 0]).set_opacity(0.55), a.animate.set_opacity(1).scale(1.25).move_to([-2.6, -0.9, 0]), rt=0.5)
         t = titre("L'association"); self.at(S(39, 1), FadeIn(t, shift=0.2 * DOWN), rt=0.3)
-        self.at(W(39, 2, "reconnaît") - 0.3, pt.animate.stretch_to_fit_width(0.14).align_to(pt, LEFT), rt=0.5); self.son("zip")
+        self.at(W(39, 2, "reconnaît") - 0.3, pt.animate.stretch_to_fit_width(0.14).align_to(pt, LEFT), rt=0.5); self.son("souffle")
         ok = VGroup(coche(True, 0.34), T("Elle peut agir au nom de ses membres", 26)).arrange(RIGHT, buff=0.2).move_to([-0.8, 2.25, 0])
         self.at(W(39, 2, "agir") - 0.3, FadeIn(ok, scale=1.2), rt=0.35); self.son("joie")
         for x in a.membres: visage(x, 0.62, "content")

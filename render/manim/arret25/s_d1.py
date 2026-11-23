@@ -31,7 +31,7 @@ class D1(Sec25):
         porte = Rectangle(width=0.9, height=1.2, fill_color=ENCRE, fill_opacity=1, stroke_color=CREME, stroke_width=3).move_to(tf[2].get_center() + 0.02 * DOWN)
         self.add(porte)
         ouv = bandeau("Une précision favorable", 24).next_to(tf, DOWN, buff=0.2)
-        self.at(W(19, 2, "précision") - 0.3, porte.animate.stretch_to_fit_width(0.14).align_to(porte, LEFT), FadeIn(ouv), rt=0.6); self.son("zip")
+        self.at(W(19, 2, "précision") - 0.3, porte.animate.stretch_to_fit_width(0.14).align_to(porte, LEFT), FadeIn(ouv), rt=0.6); self.son("souffle")
         ac = VGroup(coche(True, 0.3), T("Les actes", 30)).arrange(RIGHT, buff=0.25).move_to([3.6, 0.6, 0])
         om = VGroup(coche(True, 0.3), T("Certaines omissions", 30)).arrange(RIGHT, buff=0.25); om.move_to([3.6, -0.5, 0]).align_to(ac, LEFT)
         self.at(W(19, 3, "actes") - 0.3, FadeIn(ac, shift=0.3 * LEFT), rt=0.4); self.son("plop")

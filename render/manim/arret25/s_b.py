@@ -96,7 +96,7 @@ class Bf(Sec25):
         self.at(W(9, 1, "réduction") - 0.4, FadeIn(r1, shift=0.2 * UP), FadeIn(n1), rt=0.4)
         m50 = puce("au moins − 50 %", 34).move_to([2.4, 1.2, 0])
         self.jusqua(W(9, 1, "cinquante") - 0.4)
-        self.son("zip"); self.play(r2.animate.stretch_to_fit_height(1.8).move_to([2.4, -2.3 + 0.9, 0]), FadeIn(m50, scale=1.4), run_time=0.7)
+        self.son("souffle"); self.play(r2.animate.stretch_to_fit_height(1.8).move_to([2.4, -2.3 + 0.9, 0]), FadeIn(m50, scale=1.4), run_time=0.7)
         self.at(W(9, 1, "émissions") - 0.2, FadeIn(em), rt=0.3)
         pr = bandeau("par rapport à 1990", 22).next_to(m50, DOWN, buff=0.15); self.at(W(9, 1, "rapport") - 0.2, FadeIn(pr), rt=0.3)
         # 10 — pourquoi ces femmes ? les fortes chaleurs
