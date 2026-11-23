@@ -90,7 +90,7 @@ class D2(Sec25):
         self.vider(S(32, 1) - 0.5, rt=0.4)
         t = titre("Un dernier argument"); q = quatre(0.9, "decide"); q.move_to([-4.2, -2.2, 0])
         self.at(S(32, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(q, shift=0.2 * UP), rt=0.5)
-        lv = traite("Convention européenne", "des droits de l'homme", "6 § 1", "etoiles", "RS 0.101").move_to([-4.2, 0.5, 0])
+        lv = traite("Convention européenne", "des droits de l'homme", "6 § 1", "balance", "RS 0.101").move_to([-4.2, 0.5, 0])
         self.at(S(32, 2) - 0.05, FadeIn(lv, shift=0.3 * UP), q.animate.shift(0.1 * DOWN), rt=0.4); self.son("plop")
         tr = tribunal(2.6).move_to([2.9, -0.6, 0]); pt = Rectangle(width=0.8, height=1.1, fill_color=ENCRE, fill_opacity=1, stroke_color=CREME, stroke_width=3).move_to(tr[2].get_center())
         ac = puce("Accès à un tribunal", 26).next_to(tr, UP, buff=0.3)

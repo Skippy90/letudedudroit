@@ -317,8 +317,13 @@ def terre_visage(g, k="content"):
         f.add(*sourcil(0.22, 0.32))
     elif k == "malade":
         f.add(Line(m + 0.16 * e * LEFT, m + 0.16 * e * RIGHT, color=ENCRE, stroke_width=ep), *sourcil(0.22, 0.32))
-        f.add(Line(m + 0.05 * e * RIGHT, m + np.array([0.5 * e, -0.26 * e, 0]), color=BLANC, stroke_width=ep * 1.6), Circle(0.07 * e, fill_color=AMBRE, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).move_to(m + np.array([0.52 * e, -0.27 * e, 0])))
-        f.add(RoundedRectangle(corner_radius=0.08 * e, width=0.5 * e, height=0.26 * e, fill_color="#CFEBFA", fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).rotate(0.25).move_to(c + np.array([-0.3 * e, 0.72 * e, 0])))
+        poche = RoundedRectangle(corner_radius=0.1 * e, width=0.62 * e, height=0.3 * e, fill_color="#CFEBFA", fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).rotate(0.2).move_to(c + np.array([-0.22 * e, 0.74 * e, 0]))
+        th = VGroup(RoundedRectangle(corner_radius=0.07 * e, width=0.95 * e, height=0.14 * e, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e),
+                    Line(0.36 * e * LEFT, 0.12 * e * RIGHT, color=ROUGE, stroke_width=4 * e),
+                    *[Line(ORIGIN, 0.05 * e * UP, color=ENCRE, stroke_width=1.5 * e).move_to([(-0.2 + 0.14 * i) * e, 0.035 * e, 0]) for i in range(5)],
+                    Circle(0.1 * e, fill_color=ROUGE, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e).move_to(0.5 * e * LEFT))
+        th.rotate(-0.5).move_to(c + np.array([0.62 * e, 0.62 * e, 0]))
+        f.add(th, poche)
     else:
         f.add(Ellipse(width=0.22 * e, height=0.16 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(m + np.array([0, -0.02 * e, 0])))
         f.add(*sourcil(0.22, 0.32))
@@ -374,16 +379,21 @@ def etoiles(r=0.7, n=12, t=0.1):
 
 
 def cour(l=3.0):
-    """La Cour de Strasbourg : un tribunal surmonté d'un cercle d'étoiles."""
-    t = tribunal(l); et = etoiles(0.42, 12, 0.07).move_to(t.get_top() + 0.62 * UP)
-    return VGroup(t, et)
-
-
-def livre(l1, l2, gros=None):
-    """Livre du kit, titre ajusté à la largeur du cadre."""
-    g = _kit.livre(l1, l2, gros)
-    if g[4].width > 1.85: g[4].scale_to_fit_width(1.85)
-    return g
+    """La Cour de Strasbourg : silhouette à deux tours rondes (sans étoiles : on y lirait l'Union européenne).
+    Rend VGroup(batiment, toit) ; batiment[2] est l'entrée, pour y poser une porte."""
+    u = l / 3.0
+    def tour(x, h, r):
+        corps = Rectangle(width=2 * r * u, height=h * u, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([x * u, h * u / 2, 0])
+        haut = Ellipse(width=2 * r * u, height=0.34 * u, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=3 * u).move_to([x * u, h * u, 0])
+        bandes = VGroup(*[Line([(x - r) * u, y * u, 0], [(x + r) * u, y * u, 0], color=ENCRE, stroke_width=2 * u).set_opacity(0.35) for y in np.arange(0.35, h - 0.1, 0.32)])
+        return VGroup(corps, bandes, haut)
+    socle = Rectangle(width=3.3 * u, height=0.16 * u, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([0, -0.08 * u, 0])
+    ombre = Rectangle(width=3.3 * u, height=0.1 * u, fill_color=ROUGE_4, fill_opacity=0.6, stroke_width=0).move_to([0.06 * u, -0.2 * u, 0])
+    entree = Rectangle(width=0.95 * u, height=1.15 * u, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([0, 0.575 * u, 0])
+    vitr = VGroup(*[Line([x * u, 0.08 * u, 0], [x * u, 1.07 * u, 0], color=CREME, stroke_width=2 * u).set_opacity(0.5) for x in (-0.24, 0, 0.24)])
+    bat = VGroup(ombre, socle, entree, tour(-1.0, 1.9, 0.58), tour(1.0, 1.55, 0.58), vitr)
+    toit = Line([-0.6 * u, 1.2 * u, 0], [0.6 * u, 1.2 * u, 0], color=CREME, stroke_width=7 * u)
+    return VGroup(bat, toit)
 
 
 def main_levee(b, h, cote=1):
@@ -448,7 +458,7 @@ def traite(l1, l2, gros=None, embleme="etoiles", rs=None):
     f = RoundedRectangle(corner_radius=0.1, width=2.5, height=3.2, fill_color=BLEU_TRAITE, fill_opacity=1, stroke_width=0)
     ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.1 * DOWN + 0.1 * RIGHT)
     filet = RoundedRectangle(corner_radius=0.07, width=2.2, height=2.9, color=OR, stroke_width=2.5).move_to(f)
-    if embleme == "etoiles": em = VGroup(*[Star(5, outer_radius=0.06, fill_color=OR, fill_opacity=1, stroke_width=0).move_to([0.36 * np.sin(k * TAU / 12), 0.36 * np.cos(k * TAU / 12), 0]) for k in range(12)])
+    if embleme == "balance": em = balance(0.4).set_color(OR)
     else:
         em = VGroup(Circle(0.36, color=OR, stroke_width=3), Ellipse(width=0.34, height=0.72, color=OR, stroke_width=2), Line(0.36 * LEFT, 0.36 * RIGHT, color=OR, stroke_width=2), Line(0.36 * UP, 0.36 * DOWN, color=OR, stroke_width=2))
     em.move_to(f.get_center() + 0.85 * UP)
