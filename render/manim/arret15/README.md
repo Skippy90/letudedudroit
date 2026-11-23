@@ -8,10 +8,11 @@ Vidéo écrite scène par scène, hors du moteur `video.py` : chaque section est
 | --- | --- |
 | `temps.py` | Instants des phrases (`S`, `E`, `W` pour un mot, `B` pour la frontière avant une ligne) et temps de la vidéo `M(t)` : cartons de partie, deux pauses de réflexion, silences trop longs raccourcis |
 | `base.py` | Personnages (`acteur`, habits aux couleurs des drapeaux, `visage`), objets (`passeport`, `cadenas`, `tampon`), classe `Sec15` : caméra, décor, `marche`, `saut`, `son` |
-| `s_a.py` … `s_e.py` | Les sections : ouverture (lignes 1 à 3), faits (4 à 14), textes et question (15 à 18), réponse (19 à 36, en trois fichiers), à retenir (37 à 45) et écran de fin |
+| `s_a.py` … `s_e.py` | Les sections : ouverture (lignes 1 à 3), faits (4 à 14), textes et question (15 à 18), réponse (19 à 36, en trois fichiers), à retenir (37 à 45) et écran de fin muet de 15 s (script, fiche, licence, puis place des éléments YouTube) |
 | `mix.py` | Voix (trous de silence comblés par le ton de la pièce, pauses), bruitages calculés, dont ceux notés par les scènes avec `self.son(...)` |
 | `srt.py`, `ass.py` | Texte du bas : sous-titres, puis version à remplissage progressif incrustée dans l'image |
 | `retouche_annees.py` | Trois retouches de la narration montée (voir `voice/arrets/15-atf-129-i-217/montage.txt`) |
+| `fiche15.py` | Fiche de cours en PDF (deux pages), composée de phrases du script audité ; écrit `out/arrets--15-atf-129-i-217--fiche.pdf` |
 | `mini2.py` | Miniature (`MiniA` : le score 8 sur 8, 0 sur 38) |
 | `rendre.sh`, `tout.sh`, `revue.sh` | Rendu d'une section, chaîne complète, planches-contact de contrôle |
 

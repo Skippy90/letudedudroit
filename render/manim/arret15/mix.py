@@ -7,7 +7,7 @@ SORTIE = os.environ.get("A15_SORTIE", "/tmp/a15")
 from temps import *
 SR = 48000
 v, sr = sf.read("voix.wav"); assert sr == SR
-TOTAL = M(FIN) + 10.9
+TOTAL = M(FIN) + 15.0   # 15 s d'écran de fin muet
 # ton de pièce : le passage de 0,6 s le plus calme
 # ton de pièce : le passage de 0,6 s le plus calme qui ne soit pas un silence numérique
 w = int(0.6 * SR); pw = int(0.02 * SR)

@@ -14,5 +14,5 @@ ffmpeg -v error -y -i voix_p.wav -i bruitages.wav -filter_complex "[0]pan=stereo
 $PY "$ICI/srt.py" arret-15.srt && $PY "$ICI/ass.py" arret-15.srt s.ass
 for x in s_a/1080p30/a s_b/1080p30/b s_c/1080p30/c s_d1/1080p30/d1 s_d2/1080p30/d2 s_d3/1080p30/d3 s_e/1080p30/e s_e/1080p30/f; do echo "file '$S/videos/$x.mp4'"; done > l.txt
 ffmpeg -v error -y -f concat -safe 0 -i l.txt -c copy tout.mp4
-D=$($PY -c "import sys; sys.path.insert(0,'$ICI'); from temps import *; print(round(M(FIN)+10.85,2))")
+D=$($PY -c "import sys; sys.path.insert(0,'$ICI'); from temps import *; print(round(M(FIN)+14.95,2))")
 ffmpeg -v error -y -i tout.mp4 -i mix.wav -i arret-15.srt -vf "subtitles=s.ass" -map 0:v -map 1:a -map 2 -c:v libx264 -preset medium -crf 27 -tune animation -pix_fmt yuv420p -c:a aac -b:a 128k -c:s mov_text -metadata:s:s:0 language=fra -movflags +faststart -t $D "$RACINE/out/arret-15-$V.mp4"

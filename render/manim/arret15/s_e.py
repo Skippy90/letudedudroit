@@ -89,15 +89,31 @@ class Ef(Sec15):
 
 
 class Fin(Sec15):
-    """Écran de fin : 10,9 s après la narration."""
+    """Écran de fin, muet, 15 s : ce qui est offert (script, fiche, licence), puis la place des éléments YouTube."""
     def construct(self):
         self.fond = Rectangle(width=17, height=10, stroke_width=0).set_fill(color=[ROUGE, ROUGE_2], opacity=1).set_sheen_direction(DOWN).move_to([0, -0.45, 0])
         self.add(self.fond); self.camera.frame.scale(1.1125).move_to([0, -0.45, 0])
         logo = T("L'étude du droit", 72).move_to([0, -0.1, 0]); self.add(logo)
-        self.play(logo.animate.scale(0.55).move_to([0, 3.1, 0]), run_time=0.8)
-        cad = RoundedRectangle(corner_radius=0.25, width=6.4, height=3.6, color=CREME, stroke_width=5).move_to([-3.3, -0.2, 0])
-        suiv = puce("Vidéo suivante", 26).move_to(cad.get_top())
+        self.play(logo.animate.scale(0.5).move_to([0, 3.25, 0]), run_time=0.7)
+        t = puce("Gratuit, pour aller plus loin", 30).move_to([0, 2.25, 0])
+
+        def carte_(icone, a, b, c, x):
+            f = RoundedRectangle(corner_radius=0.25, width=4.6, height=3.5, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([x, -0.35, 0])
+            icone.move_to(f.get_center() + 0.85 * UP)
+            tx = VGroup(T(a, 28), T(b, 20, CREME, False), T(c, 20, CREME, False)).arrange(DOWN, buff=0.14).move_to(f.get_center() + 0.8 * DOWN)
+            return VGroup(f, icone, tx)
+        cc = VGroup(RoundedRectangle(corner_radius=0.12, width=2.5, height=0.8, fill_color=CREME, fill_opacity=1, stroke_width=0), T("CC BY-SA 4.0", 26, ROUGE))
+        c1 = carte_(dossier(1.5), "Le script complet", "et l'audit des sources,", "sur GitHub", -4.9)
+        c2 = carte_(page("Fiche", ["Faits", "Réponse", "À retenir"], l=1.9, taille=13).scale(0.68), "La fiche du cours", "en PDF,", "sur letudedudroit.ch", 0)
+        c3 = carte_(cc, "Un contenu libre", "à réutiliser en citant", "L'étude du droit", 4.9)
+        liens = bandeau("Tous les liens sont dans la description", 24).move_to([0, -2.75, 0])
+        self.play(FadeIn(t, shift=0.2 * DOWN), run_time=0.4)
+        for c in (c1, c2, c3): self.play(FadeIn(c, shift=0.3 * UP), run_time=0.45); self.wait(0.75)
+        self.play(FadeIn(liens, shift=0.15 * UP), run_time=0.4); self.wait(2.3)
+        # place aux éléments de fin de YouTube (vidéo suivante, abonnement)
+        ligne = T("Script · Fiche · Licence CC BY-SA 4.0 : liens dans la description", 22, CREME, False).move_to([0, -3.2, 0])
+        cad = RoundedRectangle(corner_radius=0.25, width=6.4, height=3.6, color=CREME, stroke_width=5).move_to([-3.3, -0.2, 0]); suiv = puce("Vidéo suivante", 26).move_to(cad.get_top())
         rond = Circle(1.25, color=CREME, stroke_width=5).move_to([3.6, 0.2, 0]); ab = bandeau("S'abonner", 24).next_to(rond, DOWN, buff=0.3)
-        src = T("Script, sources et arrêt : dans la description", 22, CREME, False).move_to([0, -3.2, 0])
-        self.play(Create(cad), FadeIn(suiv), Create(rond), FadeIn(ab), FadeIn(src), run_time=1.0)
-        self.wait(10.9 - 0.8 - 1.0)
+        self.play(*[FadeOut(x, shift=0.3 * DOWN) for x in (c1, c2, c3, liens, t)], run_time=0.4)
+        self.play(Create(cad), FadeIn(suiv), Create(rond), FadeIn(ab), FadeIn(ligne), run_time=0.9)
+        self.wait(15.0 - self.renderer.time)
