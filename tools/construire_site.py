@@ -214,7 +214,8 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
                      for nom, lignes in s["sections"])
     liste = "".join(f'<li><a href="{e(u)}" rel="noopener">{e(t.split(" : ")[0])}</a>'
                     f'{" : " + e(t.split(" : ", 1)[1]) if " : " in t else ""}</li>' for t, u in sources)
-    depot = f'{reglages["github"]}/tree/main/scripts/{slug}'
+    # « branche » : tant que le script n'est pas fusionné dans main, le lien pointe sur sa branche.
+    depot = f'{reglages["github"]}/tree/{info.get("branche", "main")}/scripts/{slug}'
     corps = f"""<section class="video"><div class="cadre">
 <p class="sur">{e(matiere)} · {e(atf or "Vidéo " + numero)}</p><h1>{e(titre_page)}</h1>
 {lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"], reglages.get("youtube", ""))}
@@ -344,7 +345,10 @@ def main(sortie: str | None, apercu: bool) -> None:
                 subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(info.get("scene", 10)), "-i", str(schemas),
                                 "-frames:v", "1", "-q:v", "3", "-vf", "scale=1280:-2", str(cible / "scene.jpg")], check=True)
             (cible / "index.html").write_text(page_video(slug, info, reglages), encoding="utf-8")
-            fiche.main(slug, str(cible / "fiche.pdf"))
+            if info.get("fiche"):  # fiche faite à la main (style rouge) : copiée telle quelle
+                shutil.copy(RACINE / info["fiche"], cible / "fiche.pdf")
+            else:
+                fiche.main(slug, str(cible / "fiche.pdf"))
     for nom, contenu in [("parcours", page_parcours(reglages)),
                          ("a-propos", page_texte("À propos", "Pourquoi ce projet, et comment il est fait.", A_PROPOS,
                                                  "Le projet L’étude du droit : méthode, sources, licence.")),
