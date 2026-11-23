@@ -8,6 +8,14 @@
 - Hors de l'arrêt, donc absents du script : ce qu'est devenu le centre « Islam et société », le nombre de signatures, le détail des débats au Grand Conseil. **À VÉRIFIER** si l'on veut en parler dans la description.
 - Personnes : l'arrêt publié nomme le parti recourant et le second recourant. Le script nomme le parti (« la section fribourgeoise de l'UDC ») et dit « un particulier » pour le second recourant ; les auteurs des avis de droit, nommés dans l'arrêt, ne le sont pas dans le script.
 
+## Mise à jour du 23 novembre 2026 : version préparée pour l'enregistrement
+
+- Trois lignes ajoutées en tête : accroche (1 et 2) et annonce (3). Elles ne disent rien de plus que les anciennes lignes 1 et 8 : l'initiative aboutit en 2015 dans le canton de Fribourg (état de fait A), le Grand Conseil la déclare nulle (état de fait B), le peuple ne vote donc pas.
+- **Les numéros de lignes des tableaux ci-dessous sont ceux de l'ancienne version : ajouter 3.**
+- Connecteurs ajoutés entre les phrases (« donc », « or », « mais », « en effet », « certes », « car », « par conséquent ») : ils suivent le raisonnement de l'arrêt et n'ajoutent aucune affirmation. Ancienne ligne 1 : « Reprenons depuis le début » remplace la date, déjà dite à la ligne 1.
+- Constitution fribourgeoise (RS 131.219), point « À VÉRIFIER » ci-dessus : texte ouvert le 23 novembre 2026 dans le PDF du recueil fédéral, état au 1er janvier 2025 (https://res.cloudinary.com/adminch/image/private/s--9cTR2sj7--/v1742874405/Bundespublikationen/131-219f.pdf). Art. 141 al. 1, lu mot pour mot : « L'État accorde un statut de droit public aux Églises catholique-romaine et évangélique-réformée. » Art. 43 (« Validité ») : le Grand Conseil invalide entièrement ou partiellement les initiatives « si elles violent le droit supérieur », si elles ne respectent pas l'unité de la forme ou de la matière, ou si elles sont inexécutables. Réserve : l'art. 43 a été lu par un outil de lecture qui n'en a rendu qu'un fragment littéral et le reste en résumé ; à rouvrir si l'on veut l'afficher mot pour mot à l'écran.
+- Restent ouverts : le numéro de dossier de l'arrêt et ce qui est hors de l'arrêt (sort du centre, nombre de signatures).
+
 La colonne « Vérifié » n'est cochée que par la relectrice.
 
 ## Articles cités
