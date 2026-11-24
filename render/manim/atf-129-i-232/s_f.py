@@ -1,0 +1,107 @@
+from base import *
+
+
+class Ff(Sec232):
+    L0, L1 = 40, 46
+
+    def construct(self):
+        self.debut(3); self.chapitre(4, "À retenir", 5)
+        # 40 — 9 juillet 2003 : recours rejeté, l'initiative reste invalide
+        cal = calendrier("9 JUILLET", "2003").scale(0.85).move_to([-5.8, 2.3, 0])
+        tf = tribunal(3.0).move_to([-3.0, -0.35, 0]); tl = bandeau("Tribunal fédéral", 22).next_to(tf, DOWN, buff=0.2)
+        self.at(S(40, 1) - 0.05, FadeIn(cal, shift=0.3 * DOWN), FadeIn(tf, shift=0.3 * UP), FadeIn(tl), rt=0.5)
+        rr = tampon("RECOURS REJETÉ", 34).move_to([-2.2, 1.85, 0])
+        self.at(W(40, 1, "rejette") - 0.3, FadeIn(rr, scale=2.2), rt=0.25); self.son("thud")
+        ini = initiative(1.0).move_to([3.7, 0.2, 0]); iv = tampon("INVALIDE", 40).move_to(ini.get_center() + 0.2 * DOWN)
+        self.at(S(40, 2) - 0.05, FadeIn(ini, shift=0.3 * LEFT), rt=0.4); self.at(W(40, 2, "invalide") - 0.3, FadeIn(iv, scale=2.2), rt=0.25); self.son("thud", 0.8)
+        gc = bas("La procédure voulue ne peut pas respecter les garanties constitutionnelles", 24); self.at(W(40, 2, "procédure") - 0.2, FadeIn(gc, shift=0.15 * UP), rt=0.4)
+        # 41 — ne pas confondre avec Emmen
+        self.vider(S(41, 1) - 0.45, rt=0.4)
+        t = titre("À ne pas confondre"); mj = bandeau("Deux arrêts du même jour : 9 juillet 2003", 22).move_to([0, 2.45, 0])
+        def col(x, nom, ref):
+            f = RoundedRectangle(corner_radius=0.25, width=6.2, height=3.9, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([x, -0.45, 0])
+            return VGroup(f, puce(nom, 30).move_to(f.get_top() + 0.5 * DOWN), T(ref, 20, CREME, False).move_to(f.get_top() + 1.05 * DOWN))
+        ce = col(-3.4, "Emmen", "ATF 129 I 217"); cz = col(3.4, "Zurich", "ATF 129 I 232")
+        self.at(S(41, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), rt=0.4)
+        self.at(W(41, 1, "Emmen") - 0.4, FadeIn(ce, shift=0.3 * UP), FadeIn(cz, shift=0.3 * UP), rt=0.5); self.at(W(41, 1, "même") - 0.2, FadeIn(mj, shift=0.1 * DOWN), rt=0.4)
+        ue = urne(1.0).move_to([-4.9, -1.1, 0]); re_ = VGroup(*[verdict("REFUS", False).scale(0.8).move_to([-2.9, -0.5 - 0.7 * k, 0]) for k in range(2)])
+        le = T("Des refus déjà votés", 24).move_to([-3.4, -2.75, 0]).set_y(ce[0].get_bottom()[1] + 0.35)
+        self.at(S(41, 2) - 0.05, FadeIn(ue, shift=0.2 * UP), cz.animate.set_opacity(0.45), rt=0.4)
+        self.at(W(41, 2, "refus") - 0.3, LaggedStart(*[FadeIn(r, scale=1.8) for r in re_], lag_ratio=0.2), FadeIn(le), rt=0.7); self.son("thud", 0.6)
+        iz = initiative(0.7, True).move_to([3.4, -0.95, 0]); xz = VGroup(Line(iz.get_corner(UL), iz.get_corner(DR), color=ENCRE, stroke_width=9), Line(iz.get_corner(DL), iz.get_corner(UR), color=ENCRE, stroke_width=9))
+        lz = T("Un système empêché à l'avance", 24).move_to([3.4, cz[0].get_bottom()[1] + 0.35, 0])
+        self.at(S(41, 3) - 0.05, cz.animate.set_opacity(1), VGroup(ce, ue, re_, le).animate.set_opacity(0.45), FadeIn(iz, shift=0.2 * UP), rt=0.5)
+        self.at(W(41, 3, "empêche") - 0.3, Create(xz), FadeIn(lz), rt=0.5); self.son("thud", 0.6)
+        self.play(VGroup(ce, ue, re_, le).animate.set_opacity(1), run_time=0.4)
+        # 42 — la portée
+        self.vider(S(42, 1) - 0.45, rt=0.4)
+        t = titre("La portée de l'arrêt")
+        l0 = ligne_coche(True, "La participation populaire", "n'est pas interdite en général", 26)
+        l1 = ligne_coche(False, "Le vote aux urnes", "sur des demandes individuelles", 26)
+        l2 = ligne_coche(None, "Les assemblées communales", "question laissée ouverte", 26)
+        VGroup(l0, l1, l2).arrange(DOWN, buff=0.45, aligned_edge=LEFT).move_to([0, -0.35, 0])
+        self.at(S(42, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), rt=0.4); self.at(W(42, 1, "toute") - 0.4, FadeIn(l0, shift=0.3 * LEFT), rt=0.4); self.son("plop")
+        self.at(S(42, 2), FadeIn(l1, shift=0.3 * LEFT), rt=0.4); self.son("plop")
+        self.at(S(42, 3), FadeIn(l2, shift=0.3 * LEFT), rt=0.4); self.son("ding", 0.6)
+        # 43 — le droit actuel : art. 15 à 17 LN
+        self.vider(S(43, 1) - 0.45, rt=0.4)
+        t = titre("Et aujourd'hui ?")
+        ln = loi("Loi sur la", "nationalité", "LN", "RS 141.0").scale(0.95).move_to([-4.9, -0.2, 0])
+        self.at(S(43, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(ln, shift=0.3 * RIGHT), rt=0.5); self.son("hop")
+        def art(n, a):
+            return VGroup(puce(f"Art. {n}", 26), T(a, 26)).arrange(RIGHT, buff=0.3)
+        a1 = art(15, "Vote possible en assemblée communale"); a2 = art(16, "Tout refus doit être motivé"); a3 = art(17, "La sphère privée est protégée")
+        VGroup(a1, a2, a3).arrange(DOWN, buff=0.55, aligned_edge=LEFT).move_to([1.9, -0.2, 0])
+        self.at(W(43, 2, "permettent") - 0.4, FadeIn(a1, shift=0.3 * LEFT), rt=0.4); self.son("plop")
+        self.at(W(43, 2, "imposent") - 0.3, FadeIn(a2, shift=0.3 * LEFT), rt=0.4); self.son("plop")
+        self.at(W(43, 2, "protègent") - 0.3, FadeIn(a3, shift=0.3 * LEFT), rt=0.4); self.son("plop")
+        # 44 — synthèse
+        self.vider(S(44, 1) - 0.45, rt=0.4)
+        t = titre("À retenir")
+        s1 = carton(["Une naturalisation est une décision", "individuelle, soumise aux droits fondamentaux"], 10.6, 1.9, 26).move_to([0, 1.1, 0])
+        s2 = carton(["La démocratie ne supprime pas les garanties", "qui rendent cette décision contrôlable"], 10.6, 1.9, 26).move_to([0, -1.3, 0])
+        self.at(S(44, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), rt=0.4); self.at(W(44, 1, "naturalisation") - 0.4, FadeIn(s1, shift=0.3 * UP), rt=0.5); self.son("ding", 0.6)
+        self.at(S(44, 2) - 0.05, FadeIn(s2, shift=0.3 * UP), rt=0.5); self.son("ding", 0.7)
+        # 45 — la question finale
+        self.vider(S(45, 1) - 0.45, rt=0.4)
+        t = titre("Une question pour finir", 32)
+        q = VGroup(T("Pourquoi une administration ne peut-elle pas", 32), T("inventer, après le scrutin,", 32), T("les raisons d'un refus populaire ?", 32)).arrange(DOWN, buff=0.22).move_to([0, 0.5, 0])
+        self.at(S(45, 1) - 0.05, FadeIn(t, scale=1.2), rt=0.4)
+        self.at(W(45, 1, "pourquoi") - 0.3, FadeIn(q[0], shift=0.15 * UP), rt=0.4); self.at(W(45, 1, "inventer") - 0.3, FadeIn(q[1], shift=0.15 * UP), rt=0.4)
+        self.at(W(45, 1, "raisons") - 0.3, FadeIn(q[2], shift=0.15 * UP), rt=0.4); self.son("ding", 0.7)
+        cm = bas("Votre réponse en commentaire", 28); self.at(S(45, 2) - 0.1, FadeIn(cm, shift=0.15 * UP), rt=0.4)
+        ld = bas("Le lien vers l'arrêt est dans la description", 26)
+        self.at(S(45, 3) - 0.1, FadeOut(cm), FadeIn(ld, shift=0.15 * UP), rt=0.4)
+        self.vider(S(45, 4) - 0.4, rt=0.35)
+        logo = T("L'étude du droit", 78).move_to([0, 0.1, 0]); ab = bandeau("À bientôt", 30).next_to(logo, DOWN, buff=0.5)
+        self.at(S(45, 4) - 0.05, FadeIn(logo, scale=0.8), FadeIn(ab, shift=0.15 * UP), rt=0.4); self.son("joie")
+        self.fin()
+class Fin(Sec232):
+    """Écran de fin, muet, 15 s : ce qui est offert (script, fiche, licence), puis la place des éléments YouTube."""
+    def construct(self):
+        self.fond = Rectangle(width=17, height=10, stroke_width=0).set_fill(color=[ROUGE, ROUGE_2], opacity=1).set_sheen_direction(DOWN).move_to([0, -0.45, 0])
+        self.add(self.fond); self.camera.frame.scale(1.1125).move_to([0, -0.45, 0])
+        logo = T("L'étude du droit", 72).move_to([0, -0.1, 0]); self.add(logo)
+        self.play(logo.animate.scale(0.5).move_to([0, 3.25, 0]), run_time=0.7)
+        t = puce("Gratuit, pour aller plus loin", 30).move_to([0, 2.25, 0])
+
+        def carte_(icone, a, b, c, x):
+            f = RoundedRectangle(corner_radius=0.25, width=4.6, height=3.5, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([x, -0.35, 0])
+            icone.move_to(f.get_center() + 0.85 * UP)
+            tx = VGroup(T(a, 28), T(b, 20, CREME, False), T(c, 20, CREME, False)).arrange(DOWN, buff=0.14).move_to(f.get_center() + 0.8 * DOWN)
+            return VGroup(f, icone, tx)
+        cc = VGroup(RoundedRectangle(corner_radius=0.12, width=2.5, height=0.8, fill_color=CREME, fill_opacity=1, stroke_width=0), T("CC BY-SA 4.0", 26, ROUGE))
+        c1 = carte_(dossier(1.5), "Le script complet", "et l'audit des sources,", "sur GitHub", -4.9)
+        c2 = carte_(page("Fiche", ["Faits", "Réponse", "À retenir"], l=1.9, taille=13).scale(0.68), "La fiche du cours", "en PDF,", "sur letudedudroit.ch", 0)
+        c3 = carte_(cc, "Un contenu libre", "à réutiliser en citant", "L'étude du droit", 4.9)
+        liens = bandeau("Tous les liens sont dans la description", 24).move_to([0, -2.75, 0])
+        self.play(FadeIn(t, shift=0.2 * DOWN), run_time=0.4)
+        for c in (c1, c2, c3): self.play(FadeIn(c, shift=0.3 * UP), run_time=0.45); self.wait(0.75)
+        self.play(FadeIn(liens, shift=0.15 * UP), run_time=0.4); self.wait(2.3)
+        # place aux éléments de fin de YouTube (vidéo suivante, abonnement)
+        ligne = T("Script · Fiche · Licence CC BY-SA 4.0 : liens dans la description", 22, CREME, False).move_to([0, -3.2, 0])
+        cad = RoundedRectangle(corner_radius=0.25, width=6.4, height=3.6, color=CREME, stroke_width=5).move_to([-3.3, -0.2, 0]); suiv = puce("Vidéo suivante", 26).move_to(cad.get_top())
+        rond = Circle(1.25, color=CREME, stroke_width=5).move_to([3.6, 0.2, 0]); ab = bandeau("S'abonner", 24).next_to(rond, DOWN, buff=0.3)
+        self.play(*[FadeOut(x, shift=0.3 * DOWN) for x in (c1, c2, c3, liens, t)], run_time=0.4)
+        self.play(Create(cad), FadeIn(suiv), Create(rond), FadeIn(ab), FadeIn(ligne), run_time=0.9)
+        self.wait(15.0 - self.renderer.time)

@@ -79,3 +79,11 @@ Parce que personne ne connaît les raisons réelles des votants : le vote est se
 - Relecture de l'arrêt sur bger.ch par la relectrice, et coches de ce tableau.
 - Attribution du numéro dans la série, puis renommage du dossier.
 - `visuals.md`, après l'enregistrement.
+
+## Enregistrement et montage (24 novembre 2026)
+
+Voix : enregistrement humain de l'autrice (`Voix_261124_205540.m4a`, 25 min 48 s, prises ratées comprises), à partir du script corrigé. Montage par `tools/alignement.py` : 88 phrases retrouvées sur 88, 44 avec reprises coupées, narration de 8 min 58 s (`voice/arrets/atf-129-i-232-zurich/montage.txt`). Transcription locale (Whisper medium).
+
+Contrôle : la narration montée a été retranscrite et comparée au texte, séquence par séquence. Les écarts relevés sont des erreurs de reconnaissance (nombres, mots allemands, fins de phrase tronquées par le moteur) ; les huit séquences douteuses (6, 11, 17, 19, 23, 28, 41, 43) ont été retranscrites à part et sont complètes. **Deux passages restent à écouter par l'autrice**, la reconnaissance y entend autre chose que le texte : séquence 23 (« lié par les droits fondamentaux », reconnu « lois ») et séquence 43 (« les articles quinze à dix-sept de la loi sur la nationalité permettent », reconnu avec un mot en trop).
+
+Vidéo : 8 min 24 s avec l'écran de fin (voix accélérée de 5 %, hauteur conservée ; silences resserrés ; cinq cartons de partie). Niveau : −14,8 LUFS. Calage son-image constant (0,13 à 0,16 s sur quatorze séquences mesurées). Scènes : `render/manim/atf-129-i-232/`. À l'écran, tout texte reprend le script ou les articles vérifiés ci-dessus ; la fiche du dossier de candidat reprend la liste du considérant 4.3.2.
