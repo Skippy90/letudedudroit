@@ -17,7 +17,7 @@ def borne(l): return 0.0 if l == 1 else (B(l) if l <= DERNIERE else len(v) / sr)
 def niveau(a, b):
     x = v[int(a * sr):int(b * sr)]; p = int(0.05 * sr); k = len(x) // p; r = np.sqrt((x[:k * p].reshape(k, p) ** 2).mean(1)); r = r[r > 10 ** (-38 / 20)]
     return 20 * np.log10(np.sqrt((r ** 2).mean()) + 1e-9)
-niv = {l: niveau(S(l), E(l)) for l in range(1, DERNIERE + 1)}; cible = float(np.median(list(niv.values())))
+niv = {l: niveau(S(l), E(l)) for l in range(1, DERNIERE + 1)}; cible = float(np.median(list(niv.values()))) + 5.0   # la narration est montée bas (-22 LUFS) pour ne pas solliciter le limiteur du montage
 gain = np.ones(len(v)); r = int(0.05 * sr)
 for l in range(1, DERNIERE + 1):
     g = 10 ** (np.clip(cible - niv[l], -8, 8) / 20); i0, i1 = int(borne(l) * sr), int(borne(l + 1) * sr); gain[i0:i1] = g

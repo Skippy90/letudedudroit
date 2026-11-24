@@ -551,11 +551,48 @@ def initiative(e=1.0, court=False):
     return g.scale(e)
 
 
-def station(nom, date=None, l=3.1):
-    f = RoundedRectangle(corner_radius=0.2, width=l, height=2.7, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0)
-    n = VGroup(*[T(x, 24) for x in nom]).arrange(DOWN, buff=0.08).move_to(f.get_top() + 0.6 * DOWN)
-    g = VGroup(f, n); g.f = f
-    if date: g.add(T(date, 19, CREME, False).move_to(f.get_bottom() + 0.32 * UP))
+def ic_parlement(e=1.0):
+    """Parlement communal : un hémicycle, ses rangées de sièges, la tribune."""
+    g = VGroup()
+    for r, n in ((0.55, 5), (0.85, 8), (1.15, 11)):
+        for k in range(n):
+            an = PI * (0.08 + 0.84 * k / (n - 1))
+            g.add(Circle(0.085 * e, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([r * e * np.cos(an), r * e * np.sin(an), 0]))
+    trib = VGroup(Rectangle(width=0.5 * e, height=0.22 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([0, 0.06 * e, 0]), Circle(0.1 * e, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([0, 0.3 * e, 0]))
+    sol = Line([-1.3 * e, -0.08 * e, 0], [1.3 * e, -0.08 * e, 0], color=CREME, stroke_width=4 * e)
+    return VGroup(g, trib, sol)
+
+
+def ic_district(e=1.0):
+    """Conseil de district : une petite autorité de surveillance, quelques membres autour d'une table."""
+    table = RoundedRectangle(corner_radius=0.06 * e, width=1.9 * e, height=0.32 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([0, 0.16 * e, 0])
+    mb = VGroup(*[_bh(0.95 * e, CREME, femme=(k == 1)) for k in range(3)]).arrange(RIGHT, buff=0.22 * e).move_to([0, 0.75 * e, 0])
+    pieds = VGroup(*[Rectangle(width=0.08 * e, height=0.25 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([x * e, -0.1 * e, 0]) for x in (-0.75, 0.75)])
+    doc = Rectangle(width=0.3 * e, height=0.2 * e, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([0, 0.2 * e, 0])
+    return VGroup(mb, table, pieds, doc)
+
+
+def ic_gouvernement(e=1.0):
+    """Gouvernement cantonal : un hôtel du gouvernement, avec son drapeau."""
+    p = palais(2.3).scale(e * 0.74)
+    mat = Line(p.get_top(), p.get_top() + 0.4 * e * UP, color=ENCRE, stroke_width=4 * e)
+    drap = Polygon(mat.get_end(), mat.get_end() + 0.42 * e * RIGHT + 0.1 * e * DOWN, mat.get_end() + 0.2 * e * DOWN, fill_color=CREME, fill_opacity=1, stroke_color=ENCRE, stroke_width=2)
+    return VGroup(p, mat, drap)
+
+
+def ic_tf(e=1.0):
+    return tribunal(2.2).scale(e * 0.62)
+
+
+def station(nom, date=None, l=3.15, icone=None):
+    f = RoundedRectangle(corner_radius=0.2, width=l, height=4.2, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0)
+    g = VGroup(f); g.f = f
+    if icone is not None:
+        icone.move_to(f.get_top() + 1.0 * DOWN); g.add(icone)
+    n = VGroup(*[T(x, 23) for x in nom]).arrange(DOWN, buff=0.07).move_to(f.get_top() + 2.4 * DOWN)
+    g.add(n)
+    if date: g.add(T(date, 18, CREME, False).move_to(f.get_bottom() + 0.3 * UP))
+    g.zone_verdict = f.get_bottom() + 0.95 * UP
     return g
 
 
@@ -575,3 +612,41 @@ def bulle_pensee(s, taille=20, couleur=CREME):
     f = RoundedRectangle(corner_radius=0.2, width=max(0.9, t.width + 0.4), height=t.height + 0.36, fill_color=couleur, fill_opacity=1, stroke_width=0)
     pts = VGroup(Circle(0.07, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to(f.get_bottom() + 0.16 * DOWN), Circle(0.045, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to(f.get_bottom() + 0.3 * DOWN))
     return VGroup(f, t, pts)
+
+
+def parti(h=1.3, texte="UDC · ville de Zurich"):
+    """Un parti politique, sans son logo : trois militants derrière une banderole à son nom."""
+    ms = VGroup(*[_bh(h, CREME, femme=(k == 1)) for k in range(3)]).arrange(RIGHT, buff=0.3 * h)
+    for m in ms: m.h = h; visage(m, h, "decide")
+    t = T(texte, max(16, int(17 * h)), ENCRE)
+    ban = RoundedRectangle(corner_radius=0.05, width=max(ms.width + 0.5 * h, t.width + 0.4), height=0.42 * h, fill_color=CREME, fill_opacity=1, stroke_color=ENCRE, stroke_width=3)
+    ban.move_to(ms.get_top() + 0.42 * h * UP); t.move_to(ban)
+    pots = VGroup(*[Line(ban.get_bottom() + s * (ban.width / 2 - 0.12) * RIGHT, [ban.get_center()[0] + s * (ban.width / 2 - 0.12), ms.get_center()[1] - 0.05 * h, 0], color=ENCRE, stroke_width=5) for s in (-1, 1)])
+    g = VGroup(pots, ms, ban, t); _vivant(g, 0.03 * h); g.h = h
+    return g
+
+
+def baguette(p, cible, ep=5):
+    """Le personnage montre quelque chose : un trait part de sa main vers la cible."""
+    h = getattr(p, "h", 1.0); c = p[1].get_center(); cible = np.array(cible, dtype=float); s = 1 if cible[0] > c[0] else -1
+    a = c + np.array([s * 0.2 * h, -0.28 * h, 0])
+    return VGroup(Line(a, cible, color=ENCRE, stroke_width=ep).set_cap_style(CapStyleType.ROUND), Circle(0.07, fill_color=CREME, fill_opacity=1, stroke_color=ENCRE, stroke_width=2).move_to(cible))
+
+
+def agent(h=1.4, humeur="neutre"):
+    """Une personne de l'administration : silhouette claire, col sombre."""
+    p = _bh(h, CREME); p.h = h
+    p.add(Rectangle(width=0.2 * h, height=0.07 * h, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to([0, 0.63 * h, 0]))
+    _vivant(p, 0.03 * h); visage(p, h, humeur)
+    return p
+
+
+def donnees(e=1.0):
+    """Les données personnelles : une fiche avec un portrait, gardée par un cadenas."""
+    f = RoundedRectangle(corner_radius=0.07 * e, width=1.25 * e, height=1.5 * e, fill_color=CREME, fill_opacity=1, stroke_width=0)
+    tete = Circle(0.17 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(f.get_center() + np.array([-0.3 * e, 0.42 * e, 0]))
+    buste = AnnularSector(inner_radius=0, outer_radius=0.24 * e, angle=PI, start_angle=0, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_arc_center_to(f.get_center() + np.array([-0.3 * e, 0.08 * e, 0]))
+    lg = VGroup(*[Line([0, 0, 0], [l_ * e, 0, 0], color=ROUGE_3, stroke_width=4 * e) for l_ in (0.42, 0.3, 0.9, 0.9, 0.6)])
+    for k, l_ in enumerate(lg): l_.move_to(f.get_center() + np.array([(0.28 if k < 2 else 0) * e, (0.45 - 0.16 * k if k < 2 else -0.05 - 0.2 * (k - 1)) * e, 0]))
+    c = cadenas(0.75 * e).move_to(f.get_corner(DR) + np.array([-0.12 * e, 0.18 * e, 0]))
+    return VGroup(f, tete, buste, lg, c)

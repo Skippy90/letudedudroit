@@ -11,11 +11,11 @@ class B_(Sec232):
         vil = VGroup(maison(-0.9, 0, 1.1, 0.8, 0.9), maison(0.35, 0, 1.3, 1.25, 1.0), maison(1.6, 0, 1.0, 0.65, 0.8)).move_to([5.3, -0.1, 0])
         vl = bandeau("Ville de Zurich", 22).next_to(vil, DOWN, buff=0.2)
         self.at(S(4, 1) - 0.05, FadeIn(cal, shift=0.3 * DOWN), rt=0.4); self.son("ding", 0.6)
-        au = puce("UDC de la ville de Zurich", 24).move_to([-4.2, -0.2, 0]); aul = bandeau("Auteur de l'initiative", 20).next_to(au, DOWN, buff=0.15)
-        self.at(W(4, 1, "UDC") - 0.3, FadeIn(au, shift=0.2 * RIGHT), FadeIn(aul), FadeIn(vil, shift=0.3 * UP), FadeIn(vl), rt=0.5)
-        ini = page("Initiative populaire", ["« Einbürgerungen", "vors Volk ! »"], taille=26).move_to([-4.2, -1.0, 0])
-        self.at(W(4, 1, "dépose") - 0.3, FadeOut(aul), au.animate.move_to([-4.6, 0.95, 0]), FadeIn(ini, shift=0.3 * UP), rt=0.5); self.son("hop")
-        self.at(W(4, 1, "intitulée") + 0.2, ini.animate.move_to([-0.1, -0.5, 0]), rt=0.9); self.son("plop")
+        au = parti(1.35).move_to([-4.7, -0.75, 0]); aul = bandeau("Auteur de l'initiative", 20).next_to(au, DOWN, buff=0.2)
+        self.at(W(4, 1, "UDC") - 0.3, FadeIn(au, shift=0.3 * RIGHT), FadeIn(aul), FadeIn(vil, shift=0.3 * UP), FadeIn(vl), rt=0.5)
+        ini = page("Initiative populaire", ["« Einbürgerungen", "vors Volk ! »"], taille=26).scale(0.5).move_to(au.get_right() + 0.3 * RIGHT)
+        self.at(W(4, 1, "dépose") - 0.3, FadeIn(ini, scale=0.5), rt=0.3); self.son("hop")
+        self.play(ini.animate.scale(2).move_to([0.6, 0.9, 0]), run_time=0.9, path_arc=-0.5); self.son("plop")
         tr = bas("Les naturalisations devant le peuple", 28)
         self.at(W(4, 1, "naturalisations") - 0.3, FadeIn(tr, shift=0.15 * UP), rt=0.5)
         # 5 — qui est visé, qui déciderait
@@ -68,31 +68,32 @@ class B_(Sec232):
         # 8 à 11 — le parcours : quatre décisions
         self.vider(S(8, 1) - 0.45, rt=0.4)
         xs = [-5.25, -1.75, 1.75, 5.25]
-        st = [station(["Parlement", "communal"], "17 janvier 2001"), station(["Conseil", "de district"], "30 août 2001"), station(["Gouvernement", "cantonal"], "13 novembre 2002"), station(["Tribunal", "fédéral"], "9 juillet 2003")]
-        for s_, x in zip(st, xs): s_.move_to([x, -0.75, 0])
+        st = [station(["Parlement", "communal"], "17 janvier 2001", icone=ic_parlement(0.95)), station(["Conseil", "de district"], "30 août 2001", icone=ic_district(1.0)),
+              station(["Gouvernement", "cantonal"], "13 novembre 2002", icone=ic_gouvernement(1.0)), station(["Tribunal", "fédéral"], "9 juillet 2003", icone=ic_tf(1.0))]
+        for s_, x in zip(st, xs): s_.move_to([x, -0.35, 0])
         fls = [Arrow(st[k].get_right() + 0.02 * RIGHT, st[k + 1].get_left() + 0.02 * LEFT, color=CREME, stroke_width=6, buff=0.05, max_tip_length_to_length_ratio=0.5) for k in range(3)]
-        t = titre("Valable ou non ? Quatre décisions"); ini = initiative(0.62, True).move_to([xs[0], 1.6, 0])
+        t = titre("Valable ou non ? Quatre décisions").set_x(2.2); ini = initiative(0.5, True).move_to([xs[0], 2.42, 0])
         self.at(S(8, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(st[0], shift=0.3 * UP), FadeIn(ini, shift=0.2 * DOWN), rt=0.5)
-        v0 = verdict("INVALIDE", False).move_to(st[0].get_center() + 0.25 * DOWN)
+        v0 = verdict("INVALIDE", False).move_to(st[0].get_center() + 1.15 * DOWN)
         self.at(W(8, 1, "invalide") - 0.3, FadeIn(v0, scale=2.2), rt=0.25); self.son("thud")
-        jg = VGroup(Rectangle(width=2.4, height=0.3, fill_color=ROUGE_4, fill_opacity=1, stroke_width=0)); jg.move_to([xs[0], -2.45, 0])
-        rp = Rectangle(width=1.6, height=0.3, fill_color=CREME, fill_opacity=1, stroke_width=0).align_to(jg, LEFT).set_y(-2.45)
+        jg = VGroup(Rectangle(width=2.4, height=0.3, fill_color=ROUGE_4, fill_opacity=1, stroke_width=0)); jg.move_to([-1.9, -3.0, 0])
+        rp = Rectangle(width=1.6, height=0.3, fill_color=CREME, fill_opacity=1, stroke_width=0).align_to(jg, LEFT).set_y(-3.0)
         jl = T("Majorité des 2/3", 22).next_to(jg, RIGHT, buff=0.25)
         self.at(W(8, 1, "majorité") - 0.3, FadeIn(jg), GrowFromEdge(rp, LEFT), FadeIn(jl), rt=0.7)
         # 9
         self.at(S(9, 1) - 0.1, GrowArrow(fls[0]), FadeOut(jg), FadeOut(rp), FadeOut(jl), rt=0.5); self.son("souffle")
         self.at(S(9, 2) - 0.1, FadeIn(st[1], shift=0.3 * UP), ini.animate.set_x(xs[1]), rt=0.6)
-        v1 = verdict("AU VOTE", True).move_to(st[1].get_center() + 0.25 * DOWN)
+        v1 = verdict("AU VOTE", True).move_to(st[1].get_center() + 1.15 * DOWN)
         self.at(W(9, 2, "raison") - 0.3, FadeIn(v1, scale=2.2), v0.animate.set_opacity(0.5), st[0].animate.set_opacity(0.6), rt=0.3); self.son("joie")
         # 10
         self.at(S(10, 1) - 0.1, GrowArrow(fls[1]), rt=0.5); self.son("souffle")
         self.at(S(10, 2) - 0.1, FadeIn(st[2], shift=0.3 * UP), ini.animate.set_x(xs[2]), rt=0.6)
-        v2 = verdict("INVALIDE", False).move_to(st[2].get_center() + 0.25 * DOWN)
+        v2 = verdict("INVALIDE", False).move_to(st[2].get_center() + 1.15 * DOWN)
         self.at(W(10, 2, "confirme") - 0.3, FadeIn(v2, scale=2.2), v1.animate.set_opacity(0.5), st[1].animate.set_opacity(0.6), rt=0.3); self.son("thud")
         # 11
         self.at(S(11, 1) - 0.1, GrowArrow(fls[2]), rt=0.5); self.son("souffle")
-        rc = bandeau("Recours : l'UDC zurichoise et 2 citoyens", 22).move_to([2.2, -2.6, 0])
+        rc = bandeau("Recours : l'UDC zurichoise et 2 citoyens", 22).move_to([0, -3.05, 0])
         self.at(W(11, 1, "saisissent") - 0.3, FadeIn(st[3], shift=0.3 * UP), ini.animate.set_x(xs[3]), FadeIn(rc, shift=0.15 * UP), v2.animate.set_opacity(0.5), st[2].animate.set_opacity(0.6), rt=0.6)
-        q = puce("?", 44).move_to(st[3].get_center() + 0.25 * DOWN)
-        self.at(S(11, 2), FadeIn(q, scale=0.4), Indicate(st[3][-1], color=CREME, scale_factor=1.15), rt=0.6); self.son("ding", 0.7)
+        q = puce("?", 44).move_to(st[3].get_center() + 1.15 * DOWN)
+        self.at(S(11, 2), FadeIn(q, scale=0.4), Indicate(st[3][1], color=CREME, scale_factor=1.12), rt=0.6); self.son("ding", 0.7)
         self.fin()

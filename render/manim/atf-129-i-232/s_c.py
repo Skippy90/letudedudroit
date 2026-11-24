@@ -32,8 +32,8 @@ class C(Sec232):
         # 14 — la thèse des auteurs
         self.vider(S(14, 1) - 0.45, rt=0.4)
         t = titre("La thèse des auteurs")
-        au = candidat(1.9, 0, "decide", femme=False); au[0].set_fill(CREME, 1); au.move_to([-5.0, -0.9, 0]); al = bandeau("Les auteurs de l'initiative", 20).next_to(au, DOWN, buff=0.2)
-        b1 = bulle(["Souveraineté", "populaire !"], 26).next_to(au, RIGHT, buff=0.5).shift(0.9 * UP)
+        au = parti(1.4).move_to([-4.9, -0.8, 0]); al = bandeau("Les auteurs de l'initiative", 20).next_to(au, DOWN, buff=0.2)
+        b1 = bulle(["Souveraineté", "populaire !"], 26).move_to([-1.2, 1.1, 0])
         self.at(S(14, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(au, shift=0.3 * RIGHT), FadeIn(al), rt=0.5)
         self.at(W(14, 1, "souveraineté") - 0.3, FadeIn(b1, scale=0.6), rt=0.35); self.son("hop")
         cp = carton(["Naturaliser :", "un choix politique"], 5.2, 1.9, 28).move_to([3.5, 0.9, 0])
@@ -43,8 +43,8 @@ class C(Sec232):
         # 15 — une procédure adaptée ; des motifs expliqués ensuite
         self.jusqua(S(15, 1) - 0.4)
         self.play(*[FadeOut(x_, shift=0.7 * LEFT) for x_ in (b1, cp, el, ll)], run_time=0.4)
-        l1 = ligne_coche(True, "Une procédure adaptée", "informerait les citoyens").move_to([2.2, 1.0, 0], aligned_edge=LEFT).set_x(2.9)
-        l2 = ligne_coche(True, "Une autorité expliquerait", "ensuite les motifs du refus").set_x(2.9).set_y(-0.9); l2.align_to(l1, LEFT)
+        l1 = ligne_coche(True, "Une procédure adaptée", "informerait les citoyens").set_x(3.2).set_y(1.0)
+        l2 = ligne_coche(True, "Une autorité expliquerait", "ensuite les motifs du refus").set_x(3.2).set_y(-0.9); l2.align_to(l1, LEFT)
         self.at(W(15, 1, "procédure") - 0.3, FadeIn(l1, shift=0.3 * LEFT), rt=0.5); self.son("plop")
         self.at(W(15, 2, "autorité") - 0.3, FadeIn(l2, shift=0.3 * LEFT), rt=0.5); self.son("plop")
         se = bas("Selon les auteurs de l'initiative", 24)

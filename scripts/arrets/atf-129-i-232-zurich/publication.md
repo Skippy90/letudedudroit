@@ -13,21 +13,21 @@ En 1999, une initiative déposée en ville de Zurich veut confier aux électeurs
 Chapitres
 0:00 Une initiative déclarée invalide
 0:34 Les faits : l'initiative zurichoise de 1999
-1:19 Quatre décisions, jusqu'au Tribunal fédéral
-1:57 La question posée
-2:17 La thèse des auteurs
-2:39 Une décision individuelle, pas un acte politique
-3:12 L'obligation de motiver (art. 29 al. 2 Cst.)
-3:44 L'interdiction de discriminer (art. 8 et 35 Cst.)
-4:05 Pourquoi un vote secret ne peut pas être motivé
-5:17 L'information des votants (art. 34 Cst.)
-5:48 La sphère privée des candidats (art. 13 Cst.)
-6:09 Zurich en chiffres
-6:48 La décision du 9 juillet 2003
-7:00 Ne pas confondre avec Emmen
-7:14 La portée et le droit actuel
-7:39 À retenir
-7:51 La question pour vous
+1:17 Quatre décisions, jusqu'au Tribunal fédéral
+1:56 La question posée
+2:16 La thèse des auteurs
+2:37 Une décision individuelle, pas un acte politique
+3:11 L'obligation de motiver (art. 29 al. 2 Cst.)
+3:42 L'interdiction de discriminer (art. 8 et 35 Cst.)
+4:03 Pourquoi un vote secret ne peut pas être motivé
+5:14 L'information des votants (art. 34 Cst.)
+5:46 La sphère privée des candidats (art. 13 Cst.)
+6:07 Zurich en chiffres
+6:46 La décision du 9 juillet 2003
+6:58 Ne pas confondre avec Emmen
+7:11 La portée et le droit actuel
+7:36 À retenir
+7:48 La question pour vous
 
 Sources
 - ATF 129 I 232 (arrêt 1P.1/2003 du 9 juillet 2003, en allemand) : https://www.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=BGE-129-I-232&lang=de&type=show_document
@@ -69,7 +69,7 @@ droit suisse, Tribunal fédéral, ATF 129 I 232, naturalisation, Zurich, initiat
 
 ## À vérifier avant de publier
 
-1. Écouter deux passages où la reconnaissance vocale hésite : vers 3:59 (« lié par les droits fondamentaux ») et vers 7:29 (« les articles 15 à 17 de la loi sur la nationalité permettent… »).
+1. Écouter deux passages où la reconnaissance vocale hésite : vers 3:57 (« lié par les droits fondamentaux ») et vers 7:26 (« les articles 15 à 17 de la loi sur la nationalité permettent… »).
 2. Relire l'arrêt sur bger.ch (l'audit a été fait sur la copie de l'Université de Berne) et cocher l'audit.
 3. La fiche de cours est prête (fiche-zurich-atf-129-i-232.pdf) : à mettre en ligne sur letudedudroit.ch, l'écran de fin la mentionne.
 4. Le numéro de la vidéo dans la série n'est pas attribué.
