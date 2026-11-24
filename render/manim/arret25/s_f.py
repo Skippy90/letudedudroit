@@ -42,9 +42,6 @@ class Ff(Sec25):
         self.at(S(45, 2) - 0.05, FadeIn(un, shift=0.2 * UP), FadeIn(pt), rt=0.4)
         self.at(W(45, 2, "personnes") - 0.3, FadeIn(pp, shift=0.1 * DOWN), rt=0.3); self.son("hop")
         self.play(*self.marche([un], [[1.8, -0.95, 0]], 3), run_time=1.0)
-        st = cour(1.9).move_to([5.3, -0.7, 0]); gl = VGroup(puce("À lire avec la Convention", 22), T("telle qu'interprétée à Strasbourg", 20, CREME, False)).arrange(DOWN, buff=0.1).move_to([4.6, 1.5, 0])
-        self.at(W(45, 3, "garanties") - 0.6, FadeOut(pp), FadeIn(gl[0], shift=0.15 * DOWN), FadeIn(st, shift=0.3 * UP), rt=0.5); self.son("ding", 0.7)
-        self.at(W(45, 3, "telles") - 0.2, FadeIn(gl[1]), rt=0.3)
         # 46 — le principal piège
         self.vider(S(46, 1) - 0.5, rt=0.4)
         t = titre("Le principal piège", 36); self.at(S(46, 1) - 0.1, FadeIn(t, scale=1.3), rt=0.4); self.son("grelot", 0.6)

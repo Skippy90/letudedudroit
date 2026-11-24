@@ -81,7 +81,7 @@ L'association est nommée (affaire notoire) ; les quatre femmes sont désignées
 | N° | Texte à lire (voix) | À l'écran |
 | --- | --- | --- |
 | 44 | Que retenir de cette décision à la lumière du droit actuel ? La Suisse dispose notamment d'une loi sur le climat et l'innovation, adoptée en deux mille vingt-deux, approuvée par le peuple en deux mille vingt-trois et entrée en vigueur le premier janvier deux mille vingt-cinq. Elle fixe l'objectif de zéro émission nette de gaz à effet de serre d'ici à deux mille cinquante. | Carton de partie ; « Loi sur le climat et l'innovation » : 2022 adoptée, 2023 approuvée par le peuple, 1er janvier 2025 en vigueur ; « Zéro net, 2050 » |
-| 45 | De son côté, l'article vingt-cinq a PA existe toujours. Il protège les personnes touchées dans leurs droits par certains actes ou omissions de l'administration. Mais sa mise en œuvre doit désormais être comprise en tenant compte des garanties de la Convention, telles qu'interprétées à Strasbourg. | Recueil « 25a », « Toujours en vigueur » ; une personne passe la porte ; « À lire avec la Convention » |
+| 45 | De son côté, l'article vingt-cinq a PA existe toujours. Il protège les personnes touchées dans leurs droits par certains actes ou omissions de l'administration. | Recueil « 25a », « Toujours en vigueur » ; une personne passe la porte |
 
 ## Le piège
 

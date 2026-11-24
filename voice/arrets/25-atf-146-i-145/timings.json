@@ -1,7 +1,7 @@
 {
  "voix": "Enregistrement humain",
  "source": "humaine",
- "duree": 738.913,
+ "duree": 731.051,
  "lignes": [
   {
    "ligne": 1,
@@ -9528,7 +9528,7 @@
   {
    "ligne": 45,
    "debut": 648.897,
-   "fin": 665.383,
+   "fin": 657.521,
    "phrases": [
     {
      "texte": "De son côté, l'article vingt-cinq a PA existe toujours.",
@@ -9673,297 +9673,180 @@
        "fin": 657.917
       }
      ]
-    },
-    {
-     "texte": "Mais sa mise en œuvre doit désormais être comprise en tenant compte des garanties de la Convention, telles qu'interprétées à Strasbourg.",
-     "debut": 658.783,
-     "fin": 665.779,
-     "mots": [
-      {
-       "mot": "mais",
-       "debut": 658.783,
-       "fin": 659.046
-      },
-      {
-       "mot": "sa",
-       "debut": 659.043,
-       "fin": 659.199
-      },
-      {
-       "mot": "mise",
-       "debut": 659.193,
-       "fin": 659.454
-      },
-      {
-       "mot": "en",
-       "debut": 659.453,
-       "fin": 659.607
-      },
-      {
-       "mot": "œuvre",
-       "debut": 659.603,
-       "fin": 659.913
-      },
-      {
-       "mot": "doit",
-       "debut": 659.903,
-       "fin": 660.168
-      },
-      {
-       "mot": "désormais",
-       "debut": 660.163,
-       "fin": 660.678
-      },
-      {
-       "mot": "être",
-       "debut": 660.673,
-       "fin": 660.933
-      },
-      {
-       "mot": "comprise",
-       "debut": 660.933,
-       "fin": 661.392
-      },
-      {
-       "mot": "en",
-       "debut": 661.383,
-       "fin": 661.545
-      },
-      {
-       "mot": "tenant",
-       "debut": 661.543,
-       "fin": 661.902
-      },
-      {
-       "mot": "compte",
-       "debut": 661.893,
-       "fin": 662.259
-      },
-      {
-       "mot": "des",
-       "debut": 662.253,
-       "fin": 662.464
-      },
-      {
-       "mot": "garanties",
-       "debut": 662.463,
-       "fin": 662.974
-      },
-      {
-       "mot": "de",
-       "debut": 662.973,
-       "fin": 663.127
-      },
-      {
-       "mot": "la",
-       "debut": 663.123,
-       "fin": 663.28
-      },
-      {
-       "mot": "convention",
-       "debut": 663.273,
-       "fin": 663.892
-      },
-      {
-       "mot": "telles",
-       "debut": 663.883,
-       "fin": 664.249
-      },
-      {
-       "mot": "qu",
-       "debut": 664.243,
-       "fin": 665.065
-      },
-      {
-       "mot": "interprétées",
-       "debut": 664.243,
-       "fin": 665.065
-      },
-      {
-       "mot": "à",
-       "debut": 665.063,
-       "fin": 665.167
-      },
-      {
-       "mot": "strasbourg",
-       "debut": 665.163,
-       "fin": 665.779
-      }
-     ]
     }
    ]
   },
   {
    "ligne": 46,
-   "debut": 666.687,
-   "fin": 677.101,
+   "debut": 658.825,
+   "fin": 669.239,
    "phrases": [
     {
      "texte": "On comprend alors le principal piège de cette affaire.",
-     "debut": 667.083,
-     "fin": 669.783,
+     "debut": 659.221,
+     "fin": 661.921,
      "mots": [
       {
        "mot": "on",
-       "debut": 667.083,
-       "fin": 667.232
+       "debut": 659.221,
+       "fin": 659.37
       },
       {
        "mot": "comprend",
-       "debut": 667.223,
-       "fin": 667.674
+       "debut": 659.361,
+       "fin": 659.812
       },
       {
        "mot": "alors",
-       "debut": 667.673,
-       "fin": 667.969
+       "debut": 659.811,
+       "fin": 660.107
       },
       {
        "mot": "le",
-       "debut": 667.963,
-       "fin": 668.116
+       "debut": 660.101,
+       "fin": 660.254
       },
       {
        "mot": "principal",
-       "debut": 668.113,
-       "fin": 668.607
+       "debut": 660.251,
+       "fin": 660.745
       },
       {
        "mot": "piège",
-       "debut": 668.603,
-       "fin": 668.901
+       "debut": 660.741,
+       "fin": 661.039
       },
       {
        "mot": "de",
-       "debut": 668.893,
-       "fin": 669.049
+       "debut": 661.031,
+       "fin": 661.187
       },
       {
        "mot": "cette",
-       "debut": 669.043,
-       "fin": 669.343
+       "debut": 661.181,
+       "fin": 661.481
       },
       {
        "mot": "affaire",
-       "debut": 669.343,
-       "fin": 669.785
+       "debut": 661.481,
+       "fin": 661.923
       }
      ]
     },
     {
      "texte": "Croire que, parce qu'il a rejeté le recours en deux mille vingt, le Tribunal fédéral a validé la politique climatique suisse.",
-     "debut": 670.183,
-     "fin": 677.497,
+     "debut": 662.321,
+     "fin": 669.635,
      "mots": [
       {
        "mot": "croire",
-       "debut": 670.183,
-       "fin": 670.767
+       "debut": 662.321,
+       "fin": 662.905
       },
       {
        "mot": "que",
-       "debut": 670.763,
-       "fin": 671.097
+       "debut": 662.901,
+       "fin": 663.235
       },
       {
        "mot": "parce",
-       "debut": 671.213,
-       "fin": 671.571
+       "debut": 663.351,
+       "fin": 663.709
       },
       {
        "mot": "qu",
-       "debut": 671.563,
-       "fin": 671.928
+       "debut": 663.701,
+       "fin": 664.066
       },
       {
        "mot": "il",
-       "debut": 671.563,
-       "fin": 671.928
+       "debut": 663.701,
+       "fin": 664.066
       },
       {
        "mot": "a",
-       "debut": 671.923,
-       "fin": 672.048
+       "debut": 664.061,
+       "fin": 664.186
       },
       {
        "mot": "rejeté",
-       "debut": 672.043,
-       "fin": 672.465
+       "debut": 664.181,
+       "fin": 664.603
       },
       {
        "mot": "le",
-       "debut": 672.463,
-       "fin": 672.644
+       "debut": 664.601,
+       "fin": 664.782
       },
       {
        "mot": "recours",
-       "debut": 672.643,
-       "fin": 673.121
+       "debut": 664.781,
+       "fin": 665.259
       },
       {
        "mot": "en",
-       "debut": 673.113,
-       "fin": 673.299
+       "debut": 665.251,
+       "fin": 665.437
       },
       {
        "mot": "deux",
-       "debut": 673.293,
-       "fin": 673.657
+       "debut": 665.431,
+       "fin": 665.795
       },
       {
        "mot": "mille",
-       "debut": 673.293,
-       "fin": 673.657
+       "debut": 665.431,
+       "fin": 665.795
       },
       {
        "mot": "vingt",
-       "debut": 673.293,
-       "fin": 673.657
+       "debut": 665.431,
+       "fin": 665.795
       },
       {
        "mot": "le",
-       "debut": 673.733,
-       "fin": 673.926
+       "debut": 665.871,
+       "fin": 666.064
       },
       {
        "mot": "tribunal",
-       "debut": 673.923,
-       "fin": 674.48
+       "debut": 666.061,
+       "fin": 666.618
       },
       {
        "mot": "fédéral",
-       "debut": 674.473,
-       "fin": 674.972
+       "debut": 666.611,
+       "fin": 667.11
       },
       {
        "mot": "a",
-       "debut": 674.963,
-       "fin": 675.096
+       "debut": 667.101,
+       "fin": 667.234
       },
       {
        "mot": "validé",
-       "debut": 675.093,
-       "fin": 675.527
+       "debut": 667.231,
+       "fin": 667.665
       },
       {
        "mot": "la",
-       "debut": 675.523,
-       "fin": 675.711
+       "debut": 667.661,
+       "fin": 667.849
       },
       {
        "mot": "politique",
-       "debut": 675.703,
-       "fin": 676.327
+       "debut": 667.841,
+       "fin": 668.465
       },
       {
        "mot": "climatique",
-       "debut": 676.323,
-       "fin": 677.004
+       "debut": 668.461,
+       "fin": 669.142
       },
       {
        "mot": "suisse",
-       "debut": 677.003,
-       "fin": 677.497
+       "debut": 669.141,
+       "fin": 669.635
       }
      ]
     }
@@ -9971,167 +9854,167 @@
   },
   {
    "ligne": 47,
-   "debut": 678.037,
-   "fin": 687.713,
+   "debut": 670.175,
+   "fin": 679.851,
    "phrases": [
     {
      "texte": "Non.",
-     "debut": 678.433,
-     "fin": 678.989,
+     "debut": 670.571,
+     "fin": 671.127,
      "mots": [
       {
        "mot": "non",
-       "debut": 678.433,
-       "fin": 678.989
+       "debut": 670.571,
+       "fin": 671.127
       }
      ]
     },
     {
      "texte": "Les juges suisses se sont arrêtés à la possibilité d'obtenir une décision et un examen judiciaire.",
-     "debut": 679.453,
-     "fin": 684.557,
+     "debut": 671.591,
+     "fin": 676.695,
      "mots": [
       {
        "mot": "les",
-       "debut": 679.453,
-       "fin": 679.663
+       "debut": 671.591,
+       "fin": 671.801
       },
       {
        "mot": "juges",
-       "debut": 679.663,
-       "fin": 679.972
+       "debut": 671.801,
+       "fin": 672.11
       },
       {
        "mot": "suisses",
-       "debut": 679.963,
-       "fin": 680.384
+       "debut": 672.101,
+       "fin": 672.522
       },
       {
        "mot": "se",
-       "debut": 680.383,
-       "fin": 680.539
+       "debut": 672.521,
+       "fin": 672.677
       },
       {
        "mot": "sont",
-       "debut": 680.533,
-       "fin": 680.796
+       "debut": 672.671,
+       "fin": 672.934
       },
       {
        "mot": "arrêtés",
-       "debut": 680.793,
-       "fin": 681.209
+       "debut": 672.931,
+       "fin": 673.347
       },
       {
        "mot": "à",
-       "debut": 681.203,
-       "fin": 681.312
+       "debut": 673.341,
+       "fin": 673.45
       },
       {
        "mot": "la",
-       "debut": 681.303,
-       "fin": 681.466
+       "debut": 673.441,
+       "fin": 673.604
       },
       {
        "mot": "possibilité",
-       "debut": 681.463,
-       "fin": 682.084
+       "debut": 673.601,
+       "fin": 674.222
       },
       {
        "mot": "d",
-       "debut": 682.083,
-       "fin": 682.599
+       "debut": 674.221,
+       "fin": 674.737
       },
       {
        "mot": "obtenir",
-       "debut": 682.083,
-       "fin": 682.599
+       "debut": 674.221,
+       "fin": 674.737
       },
       {
        "mot": "une",
-       "debut": 682.593,
-       "fin": 682.805
+       "debut": 674.731,
+       "fin": 674.943
       },
       {
        "mot": "décision",
-       "debut": 682.803,
-       "fin": 683.269
+       "debut": 674.941,
+       "fin": 675.407
       },
       {
        "mot": "et",
-       "debut": 683.263,
-       "fin": 683.424
+       "debut": 675.401,
+       "fin": 675.562
       },
       {
        "mot": "un",
-       "debut": 683.423,
-       "fin": 683.578
+       "debut": 675.561,
+       "fin": 675.716
       },
       {
        "mot": "examen",
-       "debut": 683.573,
-       "fin": 683.939
+       "debut": 675.711,
+       "fin": 676.077
       },
       {
        "mot": "judiciaire",
-       "debut": 683.933,
-       "fin": 684.557
+       "debut": 676.071,
+       "fin": 676.695
       }
      ]
     },
     {
      "texte": "Ils n'ont pas dit si les mesures climatiques étaient suffisantes.",
-     "debut": 685.053,
-     "fin": 688.109,
+     "debut": 677.191,
+     "fin": 680.247,
      "mots": [
       {
        "mot": "n",
-       "debut": 685.053,
-       "fin": 685.352
+       "debut": 677.191,
+       "fin": 677.49
       },
       {
        "mot": "ont",
-       "debut": 685.053,
-       "fin": 685.352
+       "debut": 677.191,
+       "fin": 677.49
       },
       {
        "mot": "pas",
-       "debut": 685.343,
-       "fin": 685.549
+       "debut": 677.481,
+       "fin": 677.687
       },
       {
        "mot": "dit",
-       "debut": 685.543,
-       "fin": 685.746
+       "debut": 677.681,
+       "fin": 677.884
       },
       {
        "mot": "si",
-       "debut": 685.743,
-       "fin": 685.894
+       "debut": 677.881,
+       "fin": 678.032
       },
       {
        "mot": "les",
-       "debut": 685.893,
-       "fin": 686.091
+       "debut": 678.031,
+       "fin": 678.229
       },
       {
        "mot": "mesures",
-       "debut": 686.083,
-       "fin": 686.485
+       "debut": 678.221,
+       "fin": 678.623
       },
       {
        "mot": "climatiques",
-       "debut": 686.483,
-       "fin": 687.075
+       "debut": 678.621,
+       "fin": 679.213
       },
       {
        "mot": "étaient",
-       "debut": 687.073,
-       "fin": 687.469
+       "debut": 679.211,
+       "fin": 679.607
       },
       {
        "mot": "suffisantes",
-       "debut": 687.463,
-       "fin": 688.109
+       "debut": 679.601,
+       "fin": 680.247
       }
      ]
     }
@@ -10139,342 +10022,342 @@
   },
   {
    "ligne": 48,
-   "debut": 689.247,
-   "fin": 710.705,
+   "debut": 681.385,
+   "fin": 702.843,
    "phrases": [
     {
      "texte": "Au fond, les deux arrêts ne répondent pas exactement à la même question.",
-     "debut": 689.643,
-     "fin": 693.373,
+     "debut": 681.781,
+     "fin": 685.511,
      "mots": [
       {
        "mot": "au",
-       "debut": 689.643,
-       "fin": 689.802
+       "debut": 681.781,
+       "fin": 681.94
       },
       {
        "mot": "fond",
-       "debut": 689.793,
-       "fin": 690.108
+       "debut": 681.931,
+       "fin": 682.246
       },
       {
        "mot": "les",
-       "debut": 690.103,
-       "fin": 690.312
+       "debut": 682.241,
+       "fin": 682.45
       },
       {
        "mot": "deux",
-       "debut": 690.303,
-       "fin": 690.567
+       "debut": 682.441,
+       "fin": 682.705
       },
       {
        "mot": "arrêts",
-       "debut": 690.563,
-       "fin": 690.924
+       "debut": 682.701,
+       "fin": 683.062
       },
       {
        "mot": "ne",
-       "debut": 690.923,
-       "fin": 691.077
+       "debut": 683.061,
+       "fin": 683.215
       },
       {
        "mot": "répondent",
-       "debut": 691.073,
-       "fin": 691.588
+       "debut": 683.211,
+       "fin": 683.726
       },
       {
        "mot": "pas",
-       "debut": 691.583,
-       "fin": 691.792
+       "debut": 683.721,
+       "fin": 683.93
       },
       {
        "mot": "exactement",
-       "debut": 691.783,
-       "fin": 692.353
+       "debut": 683.921,
+       "fin": 684.491
       },
       {
        "mot": "à",
-       "debut": 692.353,
-       "fin": 692.455
+       "debut": 684.491,
+       "fin": 684.593
       },
       {
        "mot": "la",
-       "debut": 692.453,
-       "fin": 692.608
+       "debut": 684.591,
+       "fin": 684.746
       },
       {
        "mot": "même",
-       "debut": 692.603,
-       "fin": 692.863
+       "debut": 684.741,
+       "fin": 685.001
       },
       {
        "mot": "question",
-       "debut": 692.863,
-       "fin": 693.373
+       "debut": 685.001,
+       "fin": 685.511
       }
      ]
     },
     {
      "texte": "En Suisse, l'article vingt-cinq a PA n'a pas permis l'examen de cette demande de portée générale.",
-     "debut": 694.063,
-     "fin": 699.005,
+     "debut": 686.201,
+     "fin": 691.143,
      "mots": [
       {
        "mot": "en",
-       "debut": 694.063,
-       "fin": 694.233
+       "debut": 686.201,
+       "fin": 686.371
       },
       {
        "mot": "suisse",
-       "debut": 694.233,
-       "fin": 694.683
+       "debut": 686.371,
+       "fin": 686.821
       },
       {
        "mot": "l",
-       "debut": 694.683,
-       "fin": 695.244
+       "debut": 686.821,
+       "fin": 687.382
       },
       {
        "mot": "article",
-       "debut": 694.683,
-       "fin": 695.244
+       "debut": 686.821,
+       "fin": 687.382
       },
       {
        "mot": "vingt",
-       "debut": 695.243,
-       "fin": 695.637
+       "debut": 687.381,
+       "fin": 687.775
       },
       {
        "mot": "cinqapa",
-       "debut": 695.243,
-       "fin": 695.637
+       "debut": 687.381,
+       "fin": 687.775
       },
       {
        "mot": "n",
-       "debut": 695.633,
-       "fin": 695.861
+       "debut": 687.771,
+       "fin": 687.999
       },
       {
        "mot": "a",
-       "debut": 695.633,
-       "fin": 695.861
+       "debut": 687.771,
+       "fin": 687.999
       },
       {
        "mot": "pas",
-       "debut": 695.853,
-       "fin": 696.086
+       "debut": 687.991,
+       "fin": 688.224
       },
       {
        "mot": "permis",
-       "debut": 696.083,
-       "fin": 696.479
+       "debut": 688.221,
+       "fin": 688.617
       },
       {
        "mot": "l",
-       "debut": 696.473,
-       "fin": 696.984
+       "debut": 688.611,
+       "fin": 689.122
       },
       {
        "mot": "examen",
-       "debut": 696.473,
-       "fin": 696.984
+       "debut": 688.611,
+       "fin": 689.122
       },
       {
        "mot": "de",
-       "debut": 696.983,
-       "fin": 697.153
+       "debut": 689.121,
+       "fin": 689.291
       },
       {
        "mot": "cette",
-       "debut": 697.153,
-       "fin": 697.489
+       "debut": 689.291,
+       "fin": 689.627
       },
       {
        "mot": "demande",
-       "debut": 697.483,
-       "fin": 697.938
+       "debut": 689.621,
+       "fin": 690.076
       },
       {
        "mot": "de",
-       "debut": 697.933,
-       "fin": 698.107
+       "debut": 690.071,
+       "fin": 690.245
       },
       {
        "mot": "portée",
-       "debut": 698.103,
-       "fin": 698.5
+       "debut": 690.241,
+       "fin": 690.638
       },
       {
        "mot": "générale",
-       "debut": 698.493,
-       "fin": 699.005
+       "debut": 690.631,
+       "fin": 691.143
       }
      ]
     },
     {
      "texte": "À Strasbourg, l'association a pu agir et faire constater des violations des articles huit et six de la Convention, tandis que les quatre femmes, à titre individuel, sont restées irrecevables.",
-     "debut": 699.793,
-     "fin": 711.101,
+     "debut": 691.931,
+     "fin": 703.239,
      "mots": [
       {
        "mot": "à",
-       "debut": 699.793,
-       "fin": 699.936
+       "debut": 691.931,
+       "fin": 692.074
       },
       {
        "mot": "strasbourg",
-       "debut": 699.933,
-       "fin": 700.797
+       "debut": 692.071,
+       "fin": 692.935
       },
       {
        "mot": "l",
-       "debut": 700.873,
-       "fin": 701.723
+       "debut": 693.011,
+       "fin": 693.861
       },
       {
        "mot": "association",
-       "debut": 700.873,
-       "fin": 701.723
+       "debut": 693.011,
+       "fin": 693.861
       },
       {
        "mot": "a",
-       "debut": 701.723,
-       "fin": 701.843
+       "debut": 693.861,
+       "fin": 693.981
       },
       {
        "mot": "pu",
-       "debut": 701.843,
-       "fin": 702.023
+       "debut": 693.981,
+       "fin": 694.161
       },
       {
        "mot": "agir",
-       "debut": 702.023,
-       "fin": 702.324
+       "debut": 694.161,
+       "fin": 694.462
       },
       {
        "mot": "et",
-       "debut": 702.323,
-       "fin": 702.504
+       "debut": 694.461,
+       "fin": 694.642
       },
       {
        "mot": "faire",
-       "debut": 702.503,
-       "fin": 702.865
+       "debut": 694.641,
+       "fin": 695.003
       },
       {
        "mot": "constater",
-       "debut": 702.863,
-       "fin": 703.466
+       "debut": 695.001,
+       "fin": 695.604
       },
       {
        "mot": "des",
-       "debut": 703.463,
-       "fin": 703.707
+       "debut": 695.601,
+       "fin": 695.845
       },
       {
        "mot": "violations",
-       "debut": 703.703,
-       "fin": 704.368
+       "debut": 695.841,
+       "fin": 696.506
       },
       {
        "mot": "de",
-       "debut": 704.363,
-       "fin": 704.549
+       "debut": 696.501,
+       "fin": 696.687
       },
       {
        "mot": "l",
-       "debut": 704.543,
-       "fin": 705.15
+       "debut": 696.681,
+       "fin": 697.288
       },
       {
        "mot": "article",
-       "debut": 704.543,
-       "fin": 705.15
+       "debut": 696.681,
+       "fin": 697.288
       },
       {
        "mot": "huit",
-       "debut": 705.143,
-       "fin": 705.27
+       "debut": 697.281,
+       "fin": 697.408
       },
       {
        "mot": "et",
-       "debut": 705.263,
-       "fin": 705.45
+       "debut": 697.401,
+       "fin": 697.588
       },
       {
        "mot": "six",
-       "debut": 705.443,
-       "fin": 705.571
+       "debut": 697.581,
+       "fin": 697.709
       },
       {
        "mot": "de",
-       "debut": 705.563,
-       "fin": 705.751
+       "debut": 697.701,
+       "fin": 697.889
       },
       {
        "mot": "la",
-       "debut": 705.743,
-       "fin": 705.931
+       "debut": 697.881,
+       "fin": 698.069
       },
       {
        "mot": "convention",
-       "debut": 705.923,
-       "fin": 706.653
+       "debut": 698.061,
+       "fin": 698.791
       },
       {
        "mot": "tandis",
-       "debut": 706.703,
-       "fin": 707.224
+       "debut": 698.841,
+       "fin": 699.362
       },
       {
        "mot": "que",
-       "debut": 707.223,
-       "fin": 707.411
+       "debut": 699.361,
+       "fin": 699.549
       },
       {
        "mot": "les",
-       "debut": 707.403,
-       "fin": 707.598
+       "debut": 699.541,
+       "fin": 699.736
       },
       {
        "mot": "quatre",
-       "debut": 707.593,
-       "fin": 707.926
+       "debut": 699.731,
+       "fin": 700.064
       },
       {
        "mot": "femmes",
-       "debut": 707.923,
-       "fin": 708.253
+       "debut": 700.061,
+       "fin": 700.391
       },
       {
        "mot": "à",
-       "debut": 708.393,
-       "fin": 708.518
+       "debut": 700.531,
+       "fin": 700.656
       },
       {
        "mot": "titre",
-       "debut": 708.513,
-       "fin": 708.871
+       "debut": 700.651,
+       "fin": 701.009
       },
       {
        "mot": "individuel",
-       "debut": 708.863,
-       "fin": 709.575
+       "debut": 701.001,
+       "fin": 701.713
       },
       {
        "mot": "sont",
-       "debut": 709.573,
-       "fin": 709.868
+       "debut": 701.711,
+       "fin": 702.006
       },
       {
        "mot": "restés",
-       "debut": 709.863,
-       "fin": 710.279
+       "debut": 702.001,
+       "fin": 702.417
       },
       {
        "mot": "irrecevables",
-       "debut": 710.273,
-       "fin": 711.101
+       "debut": 702.411,
+       "fin": 703.239
       }
      ]
     }
@@ -10482,294 +10365,294 @@
   },
   {
    "ligne": 49,
-   "debut": 711.847,
-   "fin": 730.675,
+   "debut": 703.985,
+   "fin": 722.813,
    "phrases": [
     {
      "texte": "Et voilà la question que je vous laisse.",
-     "debut": 712.243,
-     "fin": 713.831,
+     "debut": 704.381,
+     "fin": 705.969,
      "mots": [
       {
        "mot": "et",
-       "debut": 712.243,
-       "fin": 712.367
+       "debut": 704.381,
+       "fin": 704.505
       },
       {
        "mot": "voilà",
-       "debut": 712.363,
-       "fin": 712.598
+       "debut": 704.501,
+       "fin": 704.736
       },
       {
        "mot": "la",
-       "debut": 712.593,
-       "fin": 712.713
+       "debut": 704.731,
+       "fin": 704.851
       },
       {
        "mot": "question",
-       "debut": 712.713,
-       "fin": 713.06
+       "debut": 704.851,
+       "fin": 705.198
       },
       {
        "mot": "que",
-       "debut": 713.053,
-       "fin": 713.214
+       "debut": 705.191,
+       "fin": 705.352
       },
       {
        "mot": "je",
-       "debut": 713.213,
-       "fin": 713.33
+       "debut": 705.351,
+       "fin": 705.468
       },
       {
        "mot": "vous",
-       "debut": 713.323,
-       "fin": 713.523
+       "debut": 705.461,
+       "fin": 705.661
       },
       {
        "mot": "laisse",
-       "debut": 713.523,
-       "fin": 713.831
+       "debut": 705.661,
+       "fin": 705.969
       }
      ]
     },
     {
      "texte": "Pourquoi le Tribunal fédéral a-t-il vu dans cette démarche une action populaire, alors que Strasbourg a reconnu la qualité pour agir de l'association ?",
-     "debut": 714.763,
-     "fin": 723.461,
+     "debut": 706.901,
+     "fin": 715.599,
      "mots": [
       {
        "mot": "pourquoi",
-       "debut": 714.763,
-       "fin": 715.359
+       "debut": 706.901,
+       "fin": 707.497
       },
       {
        "mot": "le",
-       "debut": 715.353,
-       "fin": 715.521
+       "debut": 707.491,
+       "fin": 707.659
       },
       {
        "mot": "tribunal",
-       "debut": 715.513,
-       "fin": 716.007
+       "debut": 707.651,
+       "fin": 708.145
       },
       {
        "mot": "fédéral",
-       "debut": 716.003,
-       "fin": 716.439
+       "debut": 708.141,
+       "fin": 708.577
       },
       {
        "mot": "a",
-       "debut": 716.433,
-       "fin": 716.817
+       "debut": 708.571,
+       "fin": 708.955
       },
       {
        "mot": "t",
-       "debut": 716.433,
-       "fin": 716.817
+       "debut": 708.571,
+       "fin": 708.955
       },
       {
        "mot": "il",
-       "debut": 716.433,
-       "fin": 716.817
+       "debut": 708.571,
+       "fin": 708.955
       },
       {
        "mot": "vu",
-       "debut": 716.813,
-       "fin": 716.979
+       "debut": 708.951,
+       "fin": 709.117
       },
       {
        "mot": "dans",
-       "debut": 716.973,
-       "fin": 717.249
+       "debut": 709.111,
+       "fin": 709.387
       },
       {
        "mot": "cette",
-       "debut": 717.243,
-       "fin": 717.573
+       "debut": 709.381,
+       "fin": 709.711
       },
       {
        "mot": "démarche",
-       "debut": 717.573,
-       "fin": 718.059
+       "debut": 709.711,
+       "fin": 710.197
       },
       {
        "mot": "une",
-       "debut": 718.053,
-       "fin": 718.275
+       "debut": 710.191,
+       "fin": 710.413
       },
       {
        "mot": "action",
-       "debut": 718.273,
-       "fin": 718.653
+       "debut": 710.411,
+       "fin": 710.791
       },
       {
        "mot": "populaire",
-       "debut": 718.653,
-       "fin": 719.193
+       "debut": 710.791,
+       "fin": 711.331
       },
       {
        "mot": "alors",
-       "debut": 719.573,
-       "fin": 719.91
+       "debut": 711.711,
+       "fin": 712.048
       },
       {
        "mot": "que",
-       "debut": 719.903,
-       "fin": 720.132
+       "debut": 712.041,
+       "fin": 712.27
       },
       {
        "mot": "strasbourg",
-       "debut": 720.123,
-       "fin": 720.742
+       "debut": 712.261,
+       "fin": 712.88
       },
       {
        "mot": "a",
-       "debut": 720.733,
-       "fin": 720.853
+       "debut": 712.871,
+       "fin": 712.991
       },
       {
        "mot": "reconnu",
-       "debut": 720.853,
-       "fin": 721.297
+       "debut": 712.991,
+       "fin": 713.435
       },
       {
        "mot": "la",
-       "debut": 721.293,
-       "fin": 721.464
+       "debut": 713.431,
+       "fin": 713.602
       },
       {
        "mot": "qualité",
-       "debut": 721.463,
-       "fin": 721.907
+       "debut": 713.601,
+       "fin": 714.045
       },
       {
        "mot": "pour",
-       "debut": 721.903,
-       "fin": 722.185
+       "debut": 714.041,
+       "fin": 714.323
       },
       {
        "mot": "agir",
-       "debut": 722.183,
-       "fin": 722.462
+       "debut": 714.321,
+       "fin": 714.6
       },
       {
        "mot": "de",
-       "debut": 722.453,
-       "fin": 722.629
+       "debut": 714.591,
+       "fin": 714.767
       },
       {
        "mot": "l",
-       "debut": 722.623,
-       "fin": 723.461
+       "debut": 714.761,
+       "fin": 715.599
       },
       {
        "mot": "association",
-       "debut": 722.623,
-       "fin": 723.461
+       "debut": 714.761,
+       "fin": 715.599
       }
      ]
     },
     {
      "texte": "Qu'est-ce qui distingue juridiquement ces deux solutions ?",
-     "debut": 724.723,
-     "fin": 727.301,
+     "debut": 716.861,
+     "fin": 719.439,
      "mots": [
       {
        "mot": "qu",
-       "debut": 724.723,
-       "fin": 725.18
+       "debut": 716.861,
+       "fin": 717.318
       },
       {
        "mot": "est",
-       "debut": 724.723,
-       "fin": 725.18
+       "debut": 716.861,
+       "fin": 717.318
       },
       {
        "mot": "ce",
-       "debut": 724.723,
-       "fin": 725.18
+       "debut": 716.861,
+       "fin": 717.318
       },
       {
        "mot": "qui",
-       "debut": 725.173,
-       "fin": 725.361
+       "debut": 717.311,
+       "fin": 717.499
       },
       {
        "mot": "distingue",
-       "debut": 725.353,
-       "fin": 725.812
+       "debut": 717.491,
+       "fin": 717.95
       },
       {
        "mot": "juridiquement",
-       "debut": 725.803,
-       "fin": 726.444
+       "debut": 717.941,
+       "fin": 718.582
       },
       {
        "mot": "ces",
-       "debut": 726.443,
-       "fin": 726.624
+       "debut": 718.581,
+       "fin": 718.762
       },
       {
        "mot": "deux",
-       "debut": 726.623,
-       "fin": 726.85
+       "debut": 718.761,
+       "fin": 718.988
       },
       {
        "mot": "solutions",
-       "debut": 726.843,
-       "fin": 727.301
+       "debut": 718.981,
+       "fin": 719.439
       }
      ]
     },
     {
      "texte": "Je vous invite à proposer votre réponse en commentaire.",
-     "debut": 728.053,
-     "fin": 731.071,
+     "debut": 720.191,
+     "fin": 723.209,
      "mots": [
       {
        "mot": "je",
-       "debut": 728.053,
-       "fin": 728.485
+       "debut": 720.191,
+       "fin": 720.623
       },
       {
        "mot": "vous",
-       "debut": 728.483,
-       "fin": 728.729
+       "debut": 720.621,
+       "fin": 720.867
       },
       {
        "mot": "invite",
-       "debut": 728.723,
-       "fin": 729.071
+       "debut": 720.861,
+       "fin": 721.209
       },
       {
        "mot": "à",
-       "debut": 729.063,
-       "fin": 729.168
+       "debut": 721.201,
+       "fin": 721.306
       },
       {
        "mot": "proposer",
-       "debut": 729.163,
-       "fin": 729.607
+       "debut": 721.301,
+       "fin": 721.745
       },
       {
        "mot": "votre",
-       "debut": 729.603,
-       "fin": 729.9
+       "debut": 721.741,
+       "fin": 722.038
       },
       {
        "mot": "réponse",
-       "debut": 729.893,
-       "fin": 730.29
+       "debut": 722.031,
+       "fin": 722.428
       },
       {
        "mot": "en",
-       "debut": 730.283,
-       "fin": 730.437
+       "debut": 722.421,
+       "fin": 722.575
       },
       {
        "mot": "commentaire",
-       "debut": 730.433,
-       "fin": 731.071
+       "debut": 722.571,
+       "fin": 723.209
       }
      ]
     }
@@ -10777,130 +10660,130 @@
   },
   {
    "ligne": 50,
-   "debut": 731.047,
-   "fin": 738.259,
+   "debut": 723.185,
+   "fin": 730.397,
    "phrases": [
     {
      "texte": "Pour retrouver les deux décisions et les textes applicables, les références figurent dans la description.",
-     "debut": 731.443,
-     "fin": 736.223,
+     "debut": 723.581,
+     "fin": 728.361,
      "mots": [
       {
        "mot": "pour",
-       "debut": 731.443,
-       "fin": 731.67
+       "debut": 723.581,
+       "fin": 723.808
       },
       {
        "mot": "retrouver",
-       "debut": 731.663,
-       "fin": 732.123
+       "debut": 723.801,
+       "fin": 724.261
       },
       {
        "mot": "les",
-       "debut": 732.123,
-       "fin": 732.304
+       "debut": 724.261,
+       "fin": 724.442
       },
       {
        "mot": "deux",
-       "debut": 732.303,
-       "fin": 732.53
+       "debut": 724.441,
+       "fin": 724.668
       },
       {
        "mot": "décisions",
-       "debut": 732.523,
-       "fin": 732.984
+       "debut": 724.661,
+       "fin": 725.122
       },
       {
        "mot": "et",
-       "debut": 732.983,
-       "fin": 733.12
+       "debut": 725.121,
+       "fin": 725.258
       },
       {
        "mot": "les",
-       "debut": 733.113,
-       "fin": 733.301
+       "debut": 725.251,
+       "fin": 725.439
       },
       {
        "mot": "textes",
-       "debut": 733.293,
-       "fin": 733.618
+       "debut": 725.431,
+       "fin": 725.756
       },
       {
        "mot": "applicables",
-       "debut": 733.613,
-       "fin": 734.207
+       "debut": 725.751,
+       "fin": 726.345
       },
       {
        "mot": "les",
-       "debut": 734.283,
-       "fin": 734.463
+       "debut": 726.421,
+       "fin": 726.601
       },
       {
        "mot": "références",
-       "debut": 734.463,
-       "fin": 734.935
+       "debut": 726.601,
+       "fin": 727.073
       },
       {
        "mot": "figurent",
-       "debut": 734.933,
-       "fin": 735.321
+       "debut": 727.071,
+       "fin": 727.459
       },
       {
        "mot": "dans",
-       "debut": 735.313,
-       "fin": 735.536
+       "debut": 727.451,
+       "fin": 727.674
       },
       {
        "mot": "la",
-       "debut": 735.533,
-       "fin": 735.665
+       "debut": 727.671,
+       "fin": 727.803
       },
       {
        "mot": "description",
-       "debut": 735.663,
-       "fin": 736.223
+       "debut": 727.801,
+       "fin": 728.361
       }
      ]
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 736.943,
-     "fin": 738.655,
+     "debut": 729.081,
+     "fin": 730.793,
      "mots": [
       {
        "mot": "a",
-       "debut": 736.943,
-       "fin": 737.054
+       "debut": 729.081,
+       "fin": 729.192
       },
       {
        "mot": "bientôt",
-       "debut": 737.053,
-       "fin": 737.481
+       "debut": 729.191,
+       "fin": 729.619
       },
       {
        "mot": "sur",
-       "debut": 737.473,
-       "fin": 737.694
+       "debut": 729.611,
+       "fin": 729.832
       },
       {
        "mot": "l",
-       "debut": 737.693,
-       "fin": 738.121
+       "debut": 729.831,
+       "fin": 730.259
       },
       {
        "mot": "étude",
-       "debut": 737.693,
-       "fin": 738.121
+       "debut": 729.831,
+       "fin": 730.259
       },
       {
        "mot": "du",
-       "debut": 738.113,
-       "fin": 738.281
+       "debut": 730.251,
+       "fin": 730.419
       },
       {
        "mot": "droit",
-       "debut": 738.273,
-       "fin": 738.655
+       "debut": 730.411,
+       "fin": 730.793
       }
      ]
     }
