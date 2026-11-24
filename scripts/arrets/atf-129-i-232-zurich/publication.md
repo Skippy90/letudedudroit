@@ -69,7 +69,7 @@ droit suisse, Tribunal fédéral, ATF 129 I 232, naturalisation, Zurich, initiat
 
 ## À vérifier avant de publier
 
-1. Écouter deux passages où la reconnaissance vocale hésite : vers 3:55 (« lié par les droits fondamentaux ») et vers 7:27 (« les articles 15 à 17 de la loi sur la nationalité permettent… »).
+1. Écouter deux passages où la reconnaissance vocale hésite : vers 3:59 (« lié par les droits fondamentaux ») et vers 7:29 (« les articles 15 à 17 de la loi sur la nationalité permettent… »).
 2. Relire l'arrêt sur bger.ch (l'audit a été fait sur la copie de l'Université de Berne) et cocher l'audit.
-3. La fiche de cours en PDF n'est pas encore faite pour cette vidéo : l'écran de fin la mentionne.
+3. La fiche de cours est prête (fiche-zurich-atf-129-i-232.pdf) : à mettre en ligne sur letudedudroit.ch, l'écran de fin la mentionne.
 4. Le numéro de la vidéo dans la série n'est pas attribué.
