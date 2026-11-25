@@ -589,9 +589,9 @@ def station(nom, date=None, l=3.15, icone=None):
     g = VGroup(f); g.f = f
     if icone is not None:
         icone.move_to(f.get_top() + 1.0 * DOWN); g.add(icone)
-    n = VGroup(*[T(x, 23) for x in nom]).arrange(DOWN, buff=0.07).move_to(f.get_top() + 2.4 * DOWN)
+    n = VGroup(*[T(x, 23) for x in nom]).arrange(DOWN, buff=0.07).move_to(f.get_top() + 2.3 * DOWN)
     g.add(n)
-    if date: g.add(T(date, 18, CREME, False).move_to(f.get_bottom() + 0.3 * UP))
+    if date: g.add(T(date, 17, CREME, False).move_to(f.get_bottom() + 0.24 * UP))
     g.zone_verdict = f.get_bottom() + 0.95 * UP
     return g
 
@@ -617,7 +617,9 @@ def bulle_pensee(s, taille=20, couleur=CREME):
 def parti(h=1.3, texte="UDC · ville de Zurich"):
     """Un parti politique, sans son logo : trois militants derrière une banderole à son nom."""
     ms = VGroup(*[_bh(h, CREME, femme=(k == 1)) for k in range(3)]).arrange(RIGHT, buff=0.3 * h)
-    for m in ms: m.h = h; visage(m, h, "decide")
+    for m in ms:
+        m.h = h; c0 = m[0].get_center() - np.array([0, 0.33 * h, 0])
+        m.add(Polygon(c0 + [-0.13 * h, 0.66 * h, 0], c0 + [-0.03 * h, 0.66 * h, 0], c0 + [0.13 * h, 0.1 * h, 0], c0 + [0.04 * h, 0.06 * h, 0], fill_color="#3FA35B", fill_opacity=1, stroke_width=0)); visage(m, h, "decide")
     t = T(texte, max(16, int(17 * h)), ENCRE)
     ban = RoundedRectangle(corner_radius=0.05, width=max(ms.width + 0.5 * h, t.width + 0.4), height=0.42 * h, fill_color=CREME, fill_opacity=1, stroke_color=ENCRE, stroke_width=3)
     ban.move_to(ms.get_top() + 0.42 * h * UP); t.move_to(ban)
@@ -656,3 +658,176 @@ def maillot_ch(p):
     """La personne naturalisée : une croix suisse apparaît sur son maillot."""
     h = getattr(p, "h", 1.3)
     return croix_suisse(0.62 * h).move_to(p[0].get_center() + 0.02 * h * UP)
+
+
+# =====================================================================================================================
+# STANDARDS « GRANDS ARRÊTS » (docs/standards-grands-arrets.md) : couleur des icônes, identité des personnages, décisions
+# =====================================================================================================================
+BLEU_ZH = "#2B8FD9"; VERT_OK = "#2FB36B"; OR_S = "#F2C14E"; BOIS = "#B9773E"
+
+
+def dossier(e=1.0):
+    """Dossier : chemise ambre, feuille claire qui dépasse."""
+    ch = RoundedRectangle(corner_radius=0.05 * e, width=0.66 * e, height=0.8 * e, fill_color=AMBRE, fill_opacity=1, stroke_width=0)
+    onglet = RoundedRectangle(corner_radius=0.03 * e, width=0.3 * e, height=0.14 * e, fill_color=AMBRE, fill_opacity=1, stroke_width=0).move_to(ch.get_corner(UL) + np.array([0.17 * e, 0.04 * e, 0]))
+    fe = Rectangle(width=0.5 * e, height=0.6 * e, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to(ch.get_center() + 0.02 * e * UP)
+    lg = VGroup(*[Line([-0.17 * e, y * e, 0], [0.17 * e, y * e, 0], color=ROUGE_3, stroke_width=3 * e) for y in (0.2, 0.06, -0.08)])
+    return VGroup(VGroup(onglet, ch, fe), lg)
+
+
+def urne(e=1.0):
+    """Urne : caisse claire, bandeau bleu, bulletin qui tombe."""
+    b = RoundedRectangle(corner_radius=0.08 * e, width=1.3 * e, height=1.0 * e, fill_color=CREME, fill_opacity=1, stroke_width=0)
+    fente = Rectangle(width=0.7 * e, height=0.08 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(b.get_top() + 0.12 * e * DOWN)
+    bul = Rectangle(width=0.5 * e, height=0.5 * e, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=2).rotate(0.2).move_to(b.get_top() + 0.25 * e * UP)
+    bande = Rectangle(width=1.3 * e, height=0.2 * e, fill_color=CIEL, fill_opacity=1, stroke_width=0).move_to(b.get_center() + 0.2 * e * DOWN)
+    g = VGroup(bul, b, fente, bande)
+    _vivant(g[0], 0.05 * e, 1.9); return g
+
+
+def loupe(e=1.0):
+    g = VGroup(Line([0.3 * e, -0.3 * e, 0], [0.75 * e, -0.75 * e, 0], color=BOIS, stroke_width=12 * e), Circle(0.42 * e, color=ENCRE, stroke_width=9 * e, fill_color=CIEL, fill_opacity=0.55))
+    return _vivant(g, 0.05 * e, 2.3)
+
+
+def cadenas(e=1.0):
+    anse = Arc(radius=0.2 * e, start_angle=0, angle=PI, color=ENCRE, stroke_width=8 * e).shift(0.2 * e * UP)
+    corps = RoundedRectangle(corner_radius=0.06 * e, width=0.62 * e, height=0.46 * e, fill_color=OR_S, fill_opacity=1, stroke_color=ENCRE, stroke_width=2.5 * e)
+    trou = VGroup(Circle(0.06 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0), Rectangle(width=0.05 * e, height=0.12 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).shift(0.08 * e * DOWN))
+    return VGroup(anse, corps, trou)
+
+
+def passeport(e=1.0):
+    """Passeport suisse : rouge, croix blanche."""
+    f = RoundedRectangle(corner_radius=0.08 * e, width=1.0 * e, height=1.4 * e, fill_color="#C4161C", fill_opacity=1, stroke_color=CREME, stroke_width=3 * e)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).set_stroke(width=0).shift(0.07 * e * (DOWN + RIGHT))
+    c = VGroup(Rectangle(width=0.36 * e, height=0.11 * e), Rectangle(width=0.11 * e, height=0.36 * e)).set_fill(BLANC, 1).set_stroke(width=0).move_to(f.get_center() + 0.22 * e * UP)
+    l = VGroup(*[Line([-0.26 * e, 0, 0], [0.26 * e, 0, 0], color=BLANC, stroke_width=3 * e, stroke_opacity=0.8) for _ in range(2)]).arrange(DOWN, buff=0.12 * e).move_to(f.get_center() + 0.35 * e * DOWN)
+    return VGroup(ombre, f, c, l)
+
+
+def coche(ok=True, r=0.42):
+    """Oui : pastille verte. Non : pastille claire, croix rouge."""
+    k = r / 0.42
+    if ok:
+        return VGroup(Circle(r, fill_color=VERT_OK, fill_opacity=1, stroke_color=BLANC, stroke_width=3 * k),
+                      VMobject(color=BLANC, stroke_width=9 * k).set_points_as_corners([[-0.2 * k, 0, 0], [-0.05 * k, -0.16 * k, 0], [0.22 * k, 0.18 * k, 0]]))
+    q = 0.17 * k
+    return VGroup(Circle(r, fill_color=CREME, fill_opacity=1, stroke_width=0), VGroup(Line([-q, -q, 0], [q, q, 0], color=ROUGE, stroke_width=9 * k), Line([-q, q, 0], [q, -q, 0], color=ROUGE, stroke_width=9 * k)))
+
+
+def maison(x, y, l=1.3, h=0.9, e=1.0):
+    """Bâtiment : fenêtres éclairées (ambre), porte en bois."""
+    mur = Rectangle(width=l, height=h, fill_color=CREME, fill_opacity=1, stroke_width=0).move_to([x, y + h / 2, 0])
+    toit = Polygon([x - l / 2 - 0.12, y + h, 0], [x + l / 2 + 0.12, y + h, 0], [x, y + h + 0.55 * e, 0], fill_color=ENCRE, fill_opacity=1, stroke_width=0)
+    fen = VGroup(*[Square(0.13, fill_color=AMBRE if (i + j) % 2 == 0 else ROUGE_3, fill_opacity=1, stroke_width=0).move_to([x - l / 2 + 0.22 + i * (l - 0.44) / 3, y + h * (0.3 + 0.38 * j), 0]) for i in range(4) for j in range(2)])
+    return VGroup(mur, toit, fen)
+
+
+def drapeau_ch(e=1.0):
+    """Drapeau suisse sur sa hampe."""
+    mat = Line([0, 0, 0], [0, 1.5 * e, 0], color=BOIS, stroke_width=6 * e)
+    d = Square(0.6 * e, fill_color="#D8232A", fill_opacity=1, stroke_color=BLANC, stroke_width=2 * e).move_to([0.34 * e, 1.18 * e, 0])
+    c = VGroup(Rectangle(width=0.36 * e, height=0.12 * e), Rectangle(width=0.12 * e, height=0.36 * e)).set_fill(BLANC, 1).set_stroke(width=0).move_to(d)
+    return VGroup(mat, d, c)
+
+
+def drapeau_zh(e=1.0):
+    """Drapeau zurichois : tranché, blanc en haut à droite, bleu en bas à gauche."""
+    mat = Line([0, 0, 0], [0, 1.5 * e, 0], color=BOIS, stroke_width=6 * e)
+    o = np.array([0.04 * e, 0.88 * e, 0]); a = 0.6 * e
+    bl = Polygon(o + [0, a, 0], o + [a, a, 0], o + [a, 0, 0], fill_color=BLANC, fill_opacity=1, stroke_width=0)
+    bu = Polygon(o + [0, a, 0], o + [0, 0, 0], o + [a, 0, 0], fill_color=BLEU_ZH, fill_opacity=1, stroke_width=0)
+    cadre = Square(a, color=BLANC, stroke_width=2 * e).move_to(o + [a / 2, a / 2, 0])
+    return VGroup(mat, bl, bu, cadre)
+
+
+def ecusson_zh(e=1.0):
+    a = 0.2 * e
+    bl = Polygon([-a, a, 0], [a, a, 0], [a, -a, 0], fill_color=BLANC, fill_opacity=1, stroke_width=0)
+    bu = Polygon([-a, a, 0], [-a, -a, 0], [a, -a, 0], fill_color=BLEU_ZH, fill_opacity=1, stroke_width=0)
+    return VGroup(bl, bu, Square(2 * a, color=ENCRE, stroke_width=1.5 * e))
+
+
+def electeur(h=1.1, femme=False, humeur="neutre"):
+    """Un membre du corps électoral zurichois : maillot bleu et blanc, toujours un visage."""
+    b = _bh(h, CREME, femme=femme); b.h = h
+    b[0].set_fill(BLEU_ZH, 1)
+    b.add(Polygon([-0.2 * h if not femme else -0.13 * h, 0.66 * h, 0], [0.2 * h if not femme else 0.13 * h, 0.66 * h, 0], [0.0, 0.3 * h, 0], fill_color=BLANC, fill_opacity=1, stroke_width=0))
+    _vivant(b, 0.03 * h); visage(b, h, humeur)
+    return b
+
+
+def electeurs(n=6, h=1.1, humeur="neutre", drapeaux=False):
+    g = VGroup(*[electeur(h, femme=(k % 2 == 1), humeur=humeur) for k in range(n)]).arrange(RIGHT, buff=0.16 * h)
+    if drapeaux:
+        fz = drapeau_zh(0.8 * h).next_to(g, LEFT, buff=0.12 * h).align_to(g, DOWN); fc = drapeau_ch(0.8 * h).next_to(g, RIGHT, buff=0.12 * h).align_to(g, DOWN)
+        g.drapeaux = VGroup(fz, fc); g.add(fz, fc); g.n = n
+    return g
+
+
+def personnes(g):
+    """Les seules silhouettes d'un groupe d'électeurs (sans les drapeaux)."""
+    return [m for m in g if hasattr(m, "h")]
+
+
+def humeur(g, k, h=None):
+    """Change l'expression d'un personnage ou de tout un groupe."""
+    for m in (personnes(g) if not hasattr(g, "h") else [g]): visage(m, h or m.h, k)
+
+
+def colorer_foule(g):
+    """Une foule de silhouettes devient le corps électoral zurichois : un maillot bleu sur deux."""
+    for i, b in enumerate(g):
+        if i % 2 == 0: b[0].set_fill(BLEU_ZH, 1)
+    return g
+
+
+def juge(h=1.0, humeur="neutre"):
+    """Un juge : robe noire, rabat blanc, toque."""
+    b = _bh(h, CREME); b[0].set_fill("#1B1B1F", 1); b.h = h
+    rab = VGroup(*[Polygon([s * 0.01 * h, 0.66 * h, 0], [s * 0.085 * h, 0.66 * h, 0], [s * 0.07 * h, 0.42 * h, 0], [s * 0.01 * h, 0.42 * h, 0], fill_color=BLANC, fill_opacity=1, stroke_width=0) for s in (-1, 1)])
+    toque = VGroup(RoundedRectangle(corner_radius=0.03 * h, width=0.3 * h, height=0.13 * h, fill_color="#1B1B1F", fill_opacity=1, stroke_width=0).move_to([0, 0.975 * h, 0]),
+                   Rectangle(width=0.3 * h, height=0.03 * h, fill_color=OR_S, fill_opacity=1, stroke_width=0).move_to([0, 0.925 * h, 0]))
+    b.add(rab, toque)
+    _vivant(b, 0.02 * h); visage(b, h, humeur)
+    return b
+
+
+def decision(mot, ok, titre_="DÉCISION", e=1.0, sceau=True):
+    """Le design des décisions : une feuille à en-tête, le dispositif en tampon, un sceau à ruban."""
+    t = T(mot, 24, VERT_OK if ok else ROUGE)
+    l = max(2.25, t.width + 0.75)
+    f = RoundedRectangle(corner_radius=0.07, width=l, height=1.12, fill_color=CREME, fill_opacity=1, stroke_width=0)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.07 * DOWN + 0.07 * RIGHT)
+    tete = Rectangle(width=l, height=0.3, fill_color=ENCRE, fill_opacity=1, stroke_width=0).align_to(f, UP)
+    tt = T(titre_, 13).move_to(tete)
+    cadre = RoundedRectangle(corner_radius=0.06, width=t.width + 0.28, height=t.height + 0.24, color=VERT_OK if ok else ROUGE, stroke_width=4)
+    VGroup(cadre, t).move_to(f.get_center() + 0.16 * DOWN + (0.16 * LEFT if sceau else 0)).rotate(-0.05)
+    g = VGroup(ombre, f, tete, tt, cadre, t)
+    if sceau:
+        c = f.get_corner(DR) + np.array([-0.24, 0.2, 0])
+        rub = VGroup(*[Polygon(c + [s * 0.02, 0, 0], c + [s * 0.17, -0.34, 0], c + [s * 0.05, -0.27, 0], c + [s * 0.0, -0.36, 0], fill_color="#C4161C", fill_opacity=1, stroke_width=0) for s in (-1, 1)])
+        sc = VGroup(Circle(0.17, fill_color=OR_S, fill_opacity=1, stroke_color=ENCRE, stroke_width=2).move_to(c), Circle(0.09, color=ENCRE, stroke_width=1.5).move_to(c))
+        g.add(rub, sc)
+    g.scale(e); cadre.set_stroke(width=4 * e)
+    return g
+
+
+def verdict(s, ok):
+    return decision(s, ok)
+
+
+def arret_tf(mot, ok=False, e=1.0):
+    """L'arrêt du Tribunal fédéral : même design, en-tête « ARRÊT », croix suisse."""
+    g = decision(mot, ok, "ARRÊT DU TRIBUNAL FÉDÉRAL", 1.0)
+    g.add(croix_suisse(0.5).move_to(g[2].get_left() + 0.22 * RIGHT)); g[3].shift(0.12 * RIGHT)
+    return g.scale(e)
+
+
+def militant(h=1.0, humeur="decide"):
+    """Un militant du parti auteur de l'initiative (silhouette claire, écharpe verte)."""
+    p = _bh(h, CREME); p.h = h
+    p.add(Polygon([-0.2 * h, 0.66 * h, 0], [-0.08 * h, 0.66 * h, 0], [0.16 * h, 0.1 * h, 0], [0.06 * h, 0.06 * h, 0], fill_color="#3FA35B", fill_opacity=1, stroke_width=0))
+    _vivant(p, 0.03 * h); visage(p, h, humeur)
+    return p

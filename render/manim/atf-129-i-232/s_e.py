@@ -78,16 +78,19 @@ class Es(Sec232):
         foule = groupe(88, False, 0.5, 22, 12.4).move_to([0, -1.2, 0])
         for i, b_ in enumerate(foule):
             if i % 2: b_.become(bonhomme(0.5, CREME, femme=True).move_to(b_))
+        for i, b_ in enumerate(foule):
+            if i % 3 == 0: b_[0].set_fill(BLEU_ZH, 1)
+        fz36 = drapeau_zh(1.1).move_to([-4.3, 1.3, 0]); fc36 = drapeau_ch(1.1).move_to([4.0, 1.3, 0])
         n = ValueTracker(0)
         cpt = always_redraw(lambda: T(f"{int(n.get_value()):,}".replace(",", " "), 86).move_to([0, 1.55, 0]))
         sous = bandeau("Plus de 101 000 électeurs, fin 2001", 26).move_to([0, 0.55, 0])
-        self.jusqua(S(36, 2) - 0.4); self.play(FadeOut(vil), run_time=0.3); self.add(cpt); self.son("grelot", 0.6)
+        self.jusqua(S(36, 2) - 0.4); self.play(FadeOut(vil), run_time=0.3); self.add(cpt); self.son("grelot", 0.6); self.add(fz36, fc36)
         self.play(n.animate.set_value(101000), LaggedStart(*[FadeIn(b_, shift=0.08 * UP) for b_ in foule], lag_ratio=0.01), run_time=2.2, rate_func=rate_functions.ease_out_cubic)
         self.at(W(36, 2, "plus") - 0.2, FadeIn(sous, shift=0.1 * UP), rt=0.4); self.son("ding", 0.6)
         # 37 — environ 450 dossiers par an
         self.jusqua(S(37, 1) - 0.3)
         self.remove(cpt); c0 = T("101 000", 86).move_to([0, 1.55, 0]); self.add(c0)
-        self.play(FadeOut(sous), c0.animate.scale(0.45).move_to([3.9, 2.5, 0]), foule.animate.scale(0.42).move_to([3.9, 1.3, 0]), run_time=0.5)
+        self.play(FadeOut(sous), FadeOut(fz36), FadeOut(fc36), c0.animate.scale(0.45).move_to([3.9, 2.5, 0]), foule.animate.scale(0.42).move_to([3.9, 1.3, 0]), run_time=0.5)
         m = ValueTracker(0); cp2 = always_redraw(lambda: T(f"≈ {int(m.get_value())}", 80).move_to([-3.6, 1.6, 0]))
         tasd = tas(30, 10, 0.55).move_to([-3.6, -0.9, 0]); dl = bandeau("dossiers par an", 26).move_to([-3.6, 0.65, 0])
         self.jusqua(W(37, 1, "environ") - 0.3); self.add(cp2)

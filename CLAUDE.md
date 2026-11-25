@@ -8,6 +8,8 @@ Des vidéos courtes (6 à 10 minutes) et des shorts (30 secondes) qui expliquent
 
 Le script de référence (vidéo 1, « Qu'est-ce qu'une infraction ? Les trois étages ») et la charte visuelle se trouvent dans le dossier `docs/`. Toute nouvelle vidéo respecte exactement ce format.
 
+**Série « grands arrêts de droit constitutionnel » (texte de l'autrice, voix humaine, style rouge)** : lis `docs/standards-grands-arrets.md` avant de commencer et applique-le d'office. Il consigne les demandes récurrentes de l'autrice (déroulement, qualité de la voix, personnages, institutions, design des décisions, texte du bas, miniature, contrôles avant livraison). Toute nouvelle demande récurrente y est ajoutée le jour même.
+
 ## Règle absolue : zéro affirmation juridique sans source vérifiée
 
 1. Chaque article cité dans un script est vérifié contre la version en vigueur sur Fedlex (`https://www.fedlex.admin.ch`) au moment de la rédaction. Tu notes la date de la version consultée.

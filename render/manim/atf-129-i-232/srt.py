@@ -8,28 +8,62 @@ REMPL = [("cinq octobre mille neuf cent nonante-neuf", "5 octobre 1999"), ("mill
          ("article vingt-neuf, alinéa deux", "article 29, alinéa 2"), ("article huit, alinéa deux", "article 8, alinéa 2"), ("article trente-cinq", "article 35"),
          ("article trente-quatre", "article 34"), ("article treize", "article 13"), ("fin de deux mille un", "fin de 2001"), ("cent un mille personnes", "101 000 personnes"),
          ("quatre cent cinquante dossiers", "450 dossiers"), ("articles quinze à dix-sept", "articles 15 à 17")]
-MAXC = 60
+MAXC = 42          # standard : une ligne courte, lisible sur téléphone
+PETITS = {"à", "de", "du", "des", "le", "la", "les", "un", "une", "et", "ou", "en", "au", "aux", "que", "qui", "ne", "se", "sa", "son", "ses", "leur", "leurs", "ce", "cette", "ces", "par", "pour", "sur", "dans", "avec", "sans", "est", "a", "il", "elle", "ils", "elles", "on", "y", "plus", "très", "d'un", "d'une", "qu'il", "qu'elle", "qu'une", "qu'un"}
+import difflib, re as _re
 def h(t):
     ms = int(round(t * 1000)); return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
-cles = sorted(PH); out = []; n = 0
-for i, c in enumerate(cles):
-    p = PH[c]; brut = p["texte"]; d, f = p["debut"], p["fin"]
-    txt = brut
+def _n(x): return _re.sub(r"[^\w]", "", x.lower())
+def mots_affiches(p):
+    """Les mots affichés (chiffres arabes) avec leurs instants, repris des mots lus (nombres en lettres)."""
+    brut = p["texte"]; txt = brut
     for a, b in REMPL: txt = txt.replace(a, b).replace(a.capitalize(), b)
-    mots = txt.split(); k = -(-len(txt) // MAXC); blocs = []
-    while k > 1:
-        reste = " ".join(mots); cible = len(reste) / k; best = None; c = 0
-        for j, m in enumerate(mots[:-1]):
-            c += len(m) + 1
-            score = abs(c - cible) - (10 if m[-1] in ",;:" else 0)
-            if c <= MAXC + 6 and (best is None or score < best[0]): best = (score, j + 1)
-        blocs.append(mots[:best[1]]); mots = mots[best[1]:]; k -= 1
-    blocs.append(mots)
-    tot = sum(len(" ".join(b)) + 1 for b in blocs); t = d
-    suiv = PH[cles[i + 1]]["debut"] if i + 1 < len(cles) else f + 1
-    for k, b in enumerate(blocs):
-        e = t + (f - d) * (len(" ".join(b)) + 1) / tot
-        vf = M(e) if k < len(blocs) - 1 else min(M(f) + 0.4, M(suiv) - 0.05)
-        vf = max(vf, M(t) + 0.3)
-        n += 1; out.append(f"{n}\n{h(M(t))} --> {h(vf)}\n{' '.join(b)}\n"); t = e
-open(sys.argv[1], "w").write("\n".join(out)); print(n, max(len(x.split(chr(10))[2]) for x in out))
+    D = txt.split(); Sx = p.get("mots") or []
+    if not Sx:
+        tot = sum(len(m) + 1 for m in D); t = p["debut"]; out = []
+        for m in D:
+            e = t + (p["fin"] - p["debut"]) * (len(m) + 1) / tot; out.append([m, t, e]); t = e
+        return out
+    out = [None] * len(D)
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, [_n(w["mot"]) for w in Sx], [_n(m) for m in D], autojunk=False).get_opcodes():
+        if tag == "equal":
+            for k in range(i2 - i1): out[j1 + k] = [D[j1 + k], Sx[i1 + k]["debut"], Sx[i1 + k]["fin"]]
+        elif j2 > j1:
+            a = Sx[i1]["debut"] if i2 > i1 else (Sx[i1 - 1]["fin"] if i1 else p["debut"]); b = Sx[i2 - 1]["fin"] if i2 > i1 else a
+            tot = sum(len(m) + 1 for m in D[j1:j2]); t = a
+            for k in range(j1, j2):
+                e = t + (b - a) * (len(D[k]) + 1) / tot; out[k] = [D[k], t, e]; t = e
+    return out
+def decoupe(ms):
+    """Coupe en lignes de MAXC caractères au plus : de préférence après une ponctuation, jamais sur un petit mot."""
+    n = len(ms); INF = 1e9; best = [INF] * (n + 1); prev = [0] * (n + 1); best[0] = 0
+    for j in range(1, n + 1):
+        for i in range(max(0, j - 12), j):
+            L = len(" ".join(m[0] for m in ms[i:j]))
+            if L > MAXC and j - i > 1: continue
+            if i > 0 and ms[i][0] in (":", "?", "!", ";", "»"): continue
+            dernier = ms[j - 1][0]; c = 0.04 * (L - 32) ** 2 + (14 if L < 14 and (i > 0 or j < n) else 0)
+            if j < n:
+                if dernier[-1] in ",;:.?!": c -= 7
+                if _n(dernier) in PETITS or dernier in (":", "«"): c += 12
+            if best[i] + c + 3 < best[j]: best[j] = best[i] + c + 3; prev[j] = i
+    cp = []; j = n
+    while j > 0: cp.append((prev[j], j)); j = prev[j]
+    return [ms[a:b] for a, b in reversed(cp)]
+def blocs():
+    """[(début vidéo, fin vidéo, [(mot, début vidéo, fin vidéo)])] pour tout le texte."""
+    cles = sorted(PH); out = []
+    for i, c in enumerate(cles):
+        p = PH[c]; suiv = PH[cles[i + 1]]["debut"] if i + 1 < len(cles) else p["fin"] + 1
+        lignes = decoupe(mots_affiches(p))
+        for k, L in enumerate(lignes):
+            d = M(L[0][1]) if k else M(min(p["debut"], L[0][1]))
+            f = M(lignes[k + 1][0][1]) if k < len(lignes) - 1 else min(M(p["fin"]) + 0.4, M(suiv) - 0.05)
+            f = max(f, d + 0.3); out.append((d, f, [(m, M(a), M(b)) for m, a, b in L]))
+    for k in range(len(out) - 1):            # jamais deux lignes à l'écran en même temps
+        if out[k][1] > out[k + 1][0]: out[k] = (out[k][0], out[k + 1][0], out[k][2])
+    return out
+if __name__ == "__main__":
+    B_ = blocs()
+    open(sys.argv[1], "w").write("\n".join(f"{n}\n{h(d)} --> {h(f)}\n{' '.join(m[0] for m in L)}\n" for n, (d, f, L) in enumerate(B_, 1)))
+    print(len(B_), max(len(" ".join(m[0] for m in L)) for _, _, L in B_))

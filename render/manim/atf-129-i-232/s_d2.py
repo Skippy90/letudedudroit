@@ -9,12 +9,13 @@ class D2(Sec232):
         # 24 — des milliers de votes, à bulletin secret
         t = titre("Comment expliquer un refus ?")
         u = urne(2.0).move_to([0, -0.6, 0]); cdn = cadenas(1.3).move_to(u[1].get_center() + 0.1 * DOWN)
-        fg = groupe(22, False, 0.62, 11, 5.6).move_to([-4.2, -0.9, 0]); fd = groupe(22, True, 0.62, 11, 5.6).move_to([4.2, -0.9, 0])
+        fg = groupe(22, False, 0.62, 11, 5.6).move_to([-4.2, -0.9, 0]); fd = groupe(22, True, 0.62, 11, 5.6).move_to([4.2, -0.9, 0]); colorer_foule(fg); colorer_foule(fd)
+        fz = drapeau_zh(1.2).move_to([-6.6, 1.0, 0]); fc = drapeau_ch(1.2).move_to([6.3, 1.0, 0])
         self.at(S(24, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(u, shift=0.3 * UP), rt=0.5)
         rf = verdict("REFUS", False).scale(1.3).move_to([-4.4, 0.6, 0]); pq = T("Pourquoi ?", 34).next_to(rf, DOWN, buff=0.35)
         self.at(W(24, 1, "expliquer") - 0.3, FadeIn(rf, scale=1.8), rt=0.3); self.son("thud", 0.6); self.play(FadeIn(pq, shift=0.1 * UP), run_time=0.3)
         self.at(W(24, 1, "milliers") - 0.7, FadeOut(rf), FadeOut(pq), rt=0.3)
-        self.at(W(24, 1, "milliers") - 0.4, LaggedStart(*[FadeIn(b, shift=0.1 * UP) for b in [*fg, *fd]], lag_ratio=0.02), rt=1.0); self.son("grelot", 0.6)
+        self.at(W(24, 1, "milliers") - 0.4, LaggedStart(*[FadeIn(b, shift=0.1 * UP) for b in [*fg, *fd]], lag_ratio=0.02), FadeIn(fz, shift=0.3 * UP), FadeIn(fc, shift=0.3 * UP), rt=1.0); self.son("grelot", 0.6)
         ss = puce("À bulletin secret", 28).next_to(u, UP, buff=0.4)
         self.at(W(24, 1, "bulletin") - 0.3, FadeIn(cdn, scale=2), FadeIn(ss, shift=0.1 * UP), rt=0.4); self.son("thud", 0.7)
         # 25 — chacun ses raisons, personne ne les dit

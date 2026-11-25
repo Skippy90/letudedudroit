@@ -14,7 +14,7 @@ class C(Sec232):
         x = VGroup(Line(mq.get_corner(UL), mq.get_corner(DR), color=ENCRE, stroke_width=9), Line(mq.get_corner(DL), mq.get_corner(UR), color=ENCRE, stroke_width=9))
         pq = puce("Pas la question", 26).move_to([3.6, 1.55, 0])
         self.play(Create(x), FadeIn(pq, shift=0.2 * LEFT), run_time=0.5); self.son("thud", 0.7)
-        tf = tribunal(2.6).move_to([3.6, -0.7, 0]); ad = bandeau("Aucun dossier individuel jugé ici", 24).next_to(tf, DOWN, buff=0.3)
+        tf = tribunal(2.6).move_to([3.6, -0.5, 0]); jj = VGroup(*[juge(0.95, "decide") for _ in range(3)]).arrange(RIGHT, buff=0.25).move_to([3.6, -1.15, 0]); tf = VGroup(tf, jj); ad = bandeau("Aucun dossier individuel jugé ici", 24).next_to(tf, DOWN, buff=0.3)
         self.at(S(12, 2) - 0.1, FadeIn(tf, shift=0.3 * UP), rt=0.5); self.at(W(12, 2, "dossier") - 0.3, FadeIn(ad, shift=0.15 * UP), cs.animate.set_opacity(0.5), rt=0.5)
         # 13 — la vraie question
         self.vider(S(13, 1) - 0.45, rt=0.4)
@@ -37,7 +37,7 @@ class C(Sec232):
         self.at(S(14, 1) - 0.05, FadeIn(t, shift=0.2 * DOWN), FadeIn(au, shift=0.3 * RIGHT), FadeIn(al), rt=0.5)
         self.at(W(14, 1, "souveraineté") - 0.3, FadeIn(b1, scale=0.6), rt=0.35); self.son("hop")
         cp = carton(["Naturaliser :", "un choix politique"], 5.2, 1.9, 28).move_to([3.5, 0.9, 0])
-        el = electeurs(6, 1.0, "content").move_to([3.5, -1.4, 0]); ll = bandeau("que le peuple effectue librement", 22).next_to(el, DOWN, buff=0.2)
+        el = electeurs(5, 1.0, "content", drapeaux=True).move_to([3.5, -1.4, 0]); ll = bandeau("que le peuple effectue librement", 22).next_to(el, DOWN, buff=0.2)
         self.at(W(14, 2, "choix") - 0.4, FadeIn(cp, shift=0.3 * UP), rt=0.5)
         self.at(W(14, 2, "peuple") - 0.3, LaggedStart(*[FadeIn(b, shift=0.15 * UP) for b in el], lag_ratio=0.08), FadeIn(ll), rt=0.6); self.son("joie", 0.7)
         # 15 — une procédure adaptée ; des motifs expliqués ensuite
