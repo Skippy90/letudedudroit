@@ -1,8 +1,8 @@
 # Standards des vidéos « grands arrêts de droit constitutionnel »
 
-Ce document consigne ce qui a été demandé, corrigé et validé sur les trois premières vidéos de la série (Emmen, ATF 129 I 217 ; Aînées pour le climat, ATF 146 I 145 ; Zurich, ATF 129 I 232). Il s'applique d'office à chaque nouvelle vidéo de la série : rien de ce qui suit ne doit avoir à être redemandé. Il complète le brief (`CLAUDE.md`) et la charte visuelle (`docs/charte-visuelle.md`) ; en cas de désaccord sur le style, c'est ce document qui vaut pour la série.
+Ce document consigne ce qui a été demandé, corrigé et validé sur les quatre premières vidéos de la série (Emmen, ATF 129 I 217 ; Aînées pour le climat, ATF 146 I 145 ; Zurich, ATF 129 I 232 ; Minimum vital, ATF 121 I 367). Il s'applique d'office à chaque nouvelle vidéo de la série : rien de ce qui suit ne doit avoir à être redemandé. Il complète le brief (`CLAUDE.md`) et la charte visuelle (`docs/charte-visuelle.md`) ; en cas de désaccord sur le style, c'est ce document qui vaut pour la série.
 
-Dernière mise à jour : 25 novembre 2026.
+Dernière mise à jour : 26 novembre 2026.
 
 ## 1. Déroulement d'une vidéo
 
@@ -39,7 +39,9 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
   1. aucune coupe ne mord sur un passage de voix voisin (fin d'une prise écartée, début de la phrase suivante) ;
   2. aucun son à niveau de voix dans les silences entre deux phrases ;
   3. la narration montée, retranscrite, redonne le texte, séquence par séquence ; les passages douteux sont retranscrits à part, sur un extrait plus long ;
-  4. les passages que la machine ne peut pas trancher sont donnés à l'autrice avec leur minutage, dans la vidéo.
+  4. les passages que la machine ne peut pas trancher sont donnés à l'autrice avec leur minutage, dans la vidéo ;
+  5. **reprises cachées** : chaque phrase dont une prise a été écartée, ou que l'autrice a relue, est aussi retranscrite **par morceaux de deux secondes environ, coupés aux silences** de l'enregistrement brut. Sur un long extrait, la transcription lisse les accrocs : à 8:09 de la vidéo sur l'ATF 121 I 367, « ni un revue de lit… un revenu déterminé » n'apparaissait qu'en morceaux courts.
+- **Relecture partielle** (demande du 25 novembre 2026, « 8:09 y a une reprise ») : quand l'autrice bute dans une phrase puis relit seulement une partie, l'alignement garde la première prise, complète mais ratée. Couper le texte de voix à la ponctuation (table `VOIX` de `sequences.py`, sans toucher au script) pour que le montage garde la relecture, puis décaler les numéros de phrase dans les scènes et dans `temps.py`. Exemples dans l'ATF 121 I 367 : 13 (« gouvernement, »), 17 (« alors : »), 38 (« bernois : »), 39 (« précis : »).
 - Une prise ratée sans rechange : proposer de réenregistrer **la phrase d'avant, la phrase, la phrase d'après** (on ne garde que celle du milieu), ou une coupe si le sens reste complet. Pour montrer un passage, envoyer un extrait audio de l'enregistrement brut, avec des minutages en minutes et secondes, en précisant s'il s'agit de l'enregistrement ou de la vidéo.
 - On ne synthétise jamais la voix de l'autrice.
 
@@ -52,6 +54,7 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
   - 0,9 s avant une séquence qui change de direction (« Pourtant », « Or », « Mais », « Surtout », « Autrement dit ») ;
   - **les indications de marge de l'autrice sont appliquées** (« pause avant la question », « silence après… », « détacher les 2 idées ») : entre deux phrases, à la durée voulue ; dans une phrase, seulement là où la voix s'arrête déjà, pour ne jamais couper un mot ;
   - environ 1 s après une question qui ouvre une partie ; les énumérations restent enchaînées ; une pause de réflexion (2,2 s) après la question finale ;
+  - **une question qui clôt les faits ou une partie se détache** (demande du 25 novembre 2026, « une petite pause avant “Est-ce juridiquement possible ?” ») : environ 1,1 s avant, 1,2 s après ;
   - **tout silence de plus d'une demi-seconde à l'intérieur d'une phrase** (souffle, jonction entre deux morceaux de prise, reprise abandonnée) est ramené à 0,35 s ;
   - pendant une pause voulue, l'image se pose : rien de nouveau n'apparaît.
 - **Bruitages** discrets (mixés à 0,22) ; jamais de son strident (le « zip » est banni, remplacé par un souffle).
@@ -65,6 +68,9 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 - **La narration est en images jusqu'à la fin.** Les séquences de portée, de droit actuel, de synthèse et la question finale sont des petites scènes avec personnages, pas des listes de texte.
 - Jamais plus de douze mots affichés à la fois, hors texte d'article.
 - Rien ne sort du cadre, rien ne se chevauche : contrôler chaque section sur une planche-contact avant le rendu final, puis des images de la vidéo finale.
+- **Une image se comprend sans la voix** (demandes du 25 novembre 2026, « c'est quoi les prestations sociales imagées ? », « c'est quoi le truc bleu clair ? », « c'est quoi ce câble ? ») : pas de métaphore abstraite (barres pour des prestations, bouclier pour un droit, trait fin pour désigner). Des objets concrets et des personnages en action. Quand l'autrice demande « c'est quoi ? », l'image est à refaire, et son remplaçant devient un standard (tableau des institutions ci-dessous).
+- **Une distinction juridique se montre en deux vignettes côte à côte** (« image et illustration pauvres ») : ce qui suffit et ce qui ne suffit pas, chacun dans son cadre avec ses personnages ou ses objets en action, coche verte d'un côté, croix rouge de l'autre. Jamais une liste à cocher seule.
+- **Une rangée d'icônes reçoit le même traitement** (« pourquoi il n'y a que la liberté de réunion en couleur ? ») : toutes en couleur. Une seule icône en couleur parmi des icônes crème se lit comme une mise en évidence.
 
 ### Personnages : toujours un visage, toujours une réaction
 | Personnage | Dessin | Brique |
@@ -83,7 +89,7 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 - **Montrer du doigt, jamais de « câble »** (demande du 25 novembre 2026) : quand un personnage désigne quelque chose, il tend le bras et une flèche ambre courte et épaisse se pose juste devant la cible. Plus de trait fin tiré du personnage jusqu'à la cible : il se lit comme un câble. Brique : `baguette` (le nom est resté, le dessin a changé).
 - **Les objets passent de main en main** (demande du 25 novembre 2026, « plus d'images pour illustrer et plus d'interactions illustratives ») : l'autorité *remet* sa décision (elle part de la main de l'agent et arrive devant les intéressés), le tampon *s'abat* sur la feuille, les documents de voyage sont *tendus*, la barrière *se lève* pour laisser passer, l'aide (colis, assiette, pièce) est *donnée* par l'État à la personne, les votants *glissent* leur bulletin dans l'urne, le juge *épingle* les cartes et *suit* les critères à la loupe. Une scène où un objet apparaît seul est à revoir : qui le donne, qui le reçoit ? Briques : `main_de`, `bras_tendu`, `donner`, `tamponner`, `ouvrir_barriere`, `valise` (`render/manim/atf-121-i-367/base.py`).
 - **Chaque séquence a au moins une interaction** entre deux personnages, ou entre un personnage et un objet ; les personnages concernés réagissent ensuite (soulagés, tristes, ils reculent, ils se serrent autour d'un cœur).
-- **Tout personnage à l'écran a un rôle lisible** : une étiquette sous lui (« Une autorité », « Tribunal fédéral ») ou une action claire. Jamais de silhouette posée là sans raison, jamais d'étiquette ou de tampon par-dessus un personnage. Quand une instance « répond », c'est son personnage qui apparaît (un juge pour le Tribunal fédéral), pas une étiquette seule.
+- **Tout personnage à l'écran a un rôle lisible** : une étiquette sous lui (« Une autorité », « Tribunal fédéral ») ou une action claire. Jamais de silhouette posée là sans raison (« pourquoi il y a un bonhomme tout seul en haut à droite ? » : un personnage debout sur un socle, sans action, a été retiré), jamais d'étiquette ou de tampon par-dessus un personnage. Quand une instance « répond », c'est son personnage qui apparaît (un juge pour le Tribunal fédéral), pas une étiquette seule.
 
 ### Cantons et drapeaux
 - Les couleurs d'un canton sont réservées à son identité (maillots des électeurs, drapeau). **Les objets génériques restent neutres** : le bandeau de l'urne est menthe, pas bleu, pour ne pas être lu comme zurichois ou lucernois.
@@ -132,11 +138,13 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 | Coupes de montage | aucune ne mord sur un passage voisin ; chaque coupe tombe dans un silence de l'enregistrement brut (`controle_voix.py`, point 1 bis), sinon une syllabe est tranchée |
 | Silences | aucun son à niveau de voix entre deux phrases |
 | Texte | retranscription conforme, passages douteux listés avec leur minutage |
+| Reprises | phrases à prises multiples retranscrites par morceaux courts : aucun mot ni groupe de mots répété |
+| Images | aucune métaphore abstraite, aucune icône seule en couleur dans une rangée, aucun personnage sans rôle |
 | Calage son-image | écart constant d'un bout à l'autre (0,13 à 0,16 s) |
 | Niveau | −15 à −16 LUFS |
 | Timbre | écart moyen à la référence inférieur à 1,5 dB |
 | Scènes | aucun « DEPASSEMENT », aucun « MOT INTROUVABLE » dans les journaux de rendu |
-| Images | planche-contact de chaque section, images de la vidéo finale aux endroits modifiés |
+| Planches | planche-contact de chaque section, images de la vidéo finale aux endroits modifiés |
 | Chapitres | recalculés à chaque changement de durée, dix secondes au moins entre deux |
 
 ## 7. Miniature, kit de publication, fiche
@@ -148,11 +156,12 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 
 ## 8. Ce qui est automatisé, et où
 
-- Briques graphiques : `render/manim/atf-129-i-232/base.py`, section « STANDARDS GRANDS ARRÊTS » (à extraire dans `render/manim/commun/` à la prochaine vidéo, sans changer les noms).
+- Briques graphiques : `render/manim/atf-129-i-232/base.py`, section « STANDARDS GRANDS ARRÊTS », et `render/manim/atf-121-i-367/base.py` (Berne, membre du gouvernement, guichet, demande, réfugié, toit, parapluie, étagère des prestations, geste de désigner, objets donnés de main en main). À extraire dans `render/manim/commun/` à la prochaine vidéo, sans changer les noms.
 - Texte du bas et sous-titres : `srt.py`, `ass.py`.
 - Son : `son/egaliser.py` (timbre de référence, niveau, limiteur doux), `son/mix.py` (rythme, bruitages).
 - Contrôles de la voix : `tools/controle_voix.py`.
-- Chaîne complète : `tout.sh <version>` ; `tout.sh <version> son` pour ne refaire que le son et l'encodage.
+- Chaîne complète : `tout.sh <version>` ; `tout.sh <version> son` pour ne refaire que le son et l'encodage. Ne jamais lancer deux `tout.sh` en même temps : ils écrivent dans les mêmes fichiers.
+- Kit de publication : `kit_maj.py <publication.md> <version> <durée>` recalcule chapitres, durée, écran de fin et points d'écoute (`render/manim/atf-121-i-367/`).
 
 Toute nouvelle demande récurrente de l'autrice est ajoutée ici le jour même, avec la brique ou le contrôle qui l'applique.
 - Reprise par une autre session ou un autre modèle : `docs/passation-grands-arrets.md` (état des pull requests, chaîne de production, chemins à adapter, erreurs à surveiller) ; outils `tools/transcrire_secours.py` et `tools/extrait_audio.py`.
