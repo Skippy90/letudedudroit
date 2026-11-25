@@ -115,3 +115,11 @@ Conclusion : les séquences 33 à 37 donnent les quatre raisons de l'arrêt dans
 - [ ] Relire les consid. 2c, 3b, 3c et 3d sur bger.ch et cocher les tableaux.
 - [ ] Séquence 8 : garder ou non « Un nouveau renvoi semble envisageable » (transition narrative, sans équivalent exact dans l'arrêt).
 - [ ] Fixer le numéro de la vidéo dans la série.
+
+## Enregistrement et montage (25 novembre 2026)
+
+- Enregistrement de l'autrice (34 min 31 s, prises ratées comprises) monté par `tools/alignement.py` ; narration de 10 min 40 s, vidéo de 9 min 55 s (écran de fin compris).
+- Séquences 17 et 38 : l'autrice a lu la phrase en deux temps, aux deux-points. Le texte de voix passe donc à la ligne à ces deux endroits (« … apparaît alors : » / « sans droit explicite… » ; « … du gouvernement bernois : » / « priver les trois frères… »). Le texte du script ne change pas.
+- Séquence 38 : la dernière prise de « Priver les trois frères… » semblait hésitante à la retranscription (« Privé et les trois frères… ») ; la prise précédente, complète et nette, est gardée. Les passages écartés sont retirés de `voice/…/transcription.json` (note dans le fichier).
+- Retranscription de contrôle des passages signalés : séquences 1, 2, 4, 6, 17, 22, 27, 31, 38 et 45 conformes. À écouter par l'autrice : la référence lue à la séquence 45 (la machine entend « ATF 121, un romain, 367 »).
+- Son : timbre égalisé vers la vidéo 25 (écart moyen 2,2 dB avant, 1,0 dB après), −15,8 LUFS, 1,4 % d'échantillons retouchés par le limiteur doux.

@@ -1,0 +1,145 @@
+from base import *
+
+
+def votants_ch(n=6, h=1.0):
+    g = VGroup(*[candidat(h, k, "content") for k in range(n)]).arrange(RIGHT, buff=0.15 * h, aligned_edge=DOWN)
+    return g
+
+
+class Ff(Sec367):
+    L0, L1 = 40, 46
+
+    def construct(self):
+        self.debut(3); self.chapitre(4, "À retenir", 5)
+        # 40 — 1999 : nouvelle Constitution fédérale ; article 12, en vigueur en 2000
+        cal = calendrier("ANNÉE", "1999").scale(0.8).move_to([-5.6, 2.4, 0])
+        self.at(S(40, 1) - 0.05, FadeIn(cal, shift=0.3 * DOWN), rt=0.4); self.son("ding", 0.5)
+        pe = votants_ch(5, 1.05).move_to([-3.6, -1.1, 0]); u = urne(1.0).next_to(pe, RIGHT, buff=0.3).align_to(pe, DOWN); lpe = bandeau("Le peuple", 20).next_to(pe, DOWN, buff=0.2)
+        ca = carte(3.6).move_to([-3.2, 1.0, 0]); lca = bandeau("Les cantons", 18).next_to(ca, RIGHT, buff=0.2)
+        self.at(W(40, 1, "peuple") - 0.3, LaggedStart(*[FadeIn(b, shift=0.2 * UP) for b in pe], lag_ratio=0.1), FadeIn(u), FadeIn(lpe), rt=0.6)
+        self.at(W(40, 1, "cantons") - 0.3, FadeIn(ca), FadeIn(lca), rt=0.45)
+        cst = constit("1999", 0.95).move_to([3.6, 0.4, 0]); ok = coche(True, 0.42).move_to(cst.get_corner(UR) + 0.1 * UR)
+        self.at(W(40, 1, "acceptent") - 0.3, FadeIn(cst, shift=0.3 * UP), rt=0.4)
+        self.play(FadeIn(ok, scale=2), *[b.animate(rate_func=there_and_back).shift(0.15 * UP) for b in pe], run_time=0.4); self.son("joie", 0.5)
+        self.jusqua(S(40, 2) - 0.25)
+        self.play(*[FadeOut(x) for x in (pe, u, lpe, ca, lca, cal, ok)], cst.animate.move_to([3.4, 0.2, 0]), run_time=0.45)
+        cd = carte_droit(besoins(0.42), "Conditions minimales", "d'existence", l=5.6, h=2.2).move_to([-3.4, 1.0, 0])
+        ar = arret_tf("ATF 121 I 367", True, 0.8).next_to(cd, DOWN, buff=0.3)
+        self.at(W(40, 2, "droit") - 0.3, FadeIn(cd, shift=0.2 * RIGHT), FadeIn(ar, shift=0.2 * UP), rt=0.45)
+        self.at(W(40, 2, "place") - 0.3, cd.animate.scale(0.33).move_to(cst.get_center() + 0.55 * DOWN), FadeOut(cst[6]), rt=0.9); self.son("hop")
+        a12 = puce("Article 12", 30).next_to(cst, UP, buff=0.25)
+        self.at(W(40, 2, "article") - 0.3, FadeIn(a12, scale=0.6), rt=0.35); self.son("ding", 0.6)
+        cal2 = calendrier("EN VIGUEUR", "2000").scale(0.75).move_to([-0.2, -1.0, 0])
+        self.at(W(40, 2, "vigueur") - 0.3, FadeIn(cal2, shift=0.2 * UP), rt=0.4)
+        # 41 — le texte de l'article 12
+        self.vider(S(41, 1) - 0.4, rt=0.4)
+        pg = page("Art. 12 Cst. · Aide dans des situations de détresse", ["Quiconque est dans une situation de détresse", "et n'est pas en mesure de subvenir à son entretien", "a le droit d'être aidé et assisté", "et de recevoir les moyens indispensables pour mener", "une existence conforme à la dignité humaine."], l=9.6, taille=23).move_to([0.9, 0.55, 0])
+        jg = juge(1.45, "decide").move_to([-5.8, -1.0, 0])
+        self.at(S(41, 1) - 0.1, FadeIn(pg, shift=0.2 * UP), FadeIn(jg, shift=0.2 * RIGHT), rt=0.5)
+        bq = None
+        for k, mot in enumerate(("quiconque", "subvenir", "aide", "moyens", "dignité")):
+            cad = cadre_autour(pg.corps[k], 0.06)
+            anims = [Create(cad)]
+            self.at(W(41, 1, mot) - 0.3, *anims, rt=0.35)
+            nb = baguette(jg, pg.corps[k].get_left() + 0.1 * LEFT)
+            self.add(nb)
+            if bq is not None: self.remove(bq)
+            bq = nb
+            if k == 4: self.son("ding", 0.6)
+        # 42 — l'article 12 n'est pas toute l'aide sociale : un noyau
+        self.vider(S(42, 1) - 0.4, rt=0.4)
+        at = etiquette("Attention", 26).move_to([-5.2, 2.5, 0])
+        nx = noyau(1.15).move_to([0.6, 0.35, 0]); lext = bandeau("L'aide sociale cantonale", 20).move_to(nx[0].get_top() + 0.35 * UP)
+        self.at(S(42, 1) - 0.05, FadeIn(at, scale=0.5), rt=0.35)
+        self.at(W(42, 1, "article") - 0.3, FadeIn(nx[1:], scale=0.5), rt=0.4)
+        self.at(W(42, 1, "ensemble") - 0.3, FadeIn(nx[0], scale=0.8), FadeIn(lext), rt=0.5); self.bring_to_front(nx[1], nx[2]); self.son("plop")
+        ne = T("≠", 60).move_to([-3.4, 0.35, 0]); self.play(FadeIn(ne, scale=0.5), run_time=0.3)
+        ln = puce("Un noyau constitutionnel", 22).move_to([-3.9, -1.3, 0]); fl = Arrow(ln.get_right(), nx[1].get_left(), color=CREME, buff=0.1, stroke_width=6)
+        self.at(W(42, 2, "noyau") - 0.3, FadeOut(ne), FadeIn(ln, shift=0.1 * RIGHT), GrowArrow(fl), Indicate(nx[1], color=CREME, scale_factor=1.08), rt=0.5); self.son("ding", 0.6)
+        lo = VGroup(*[texte_cantonal("Loi", "cantonale", None, "Canton").scale(0.3) for _ in range(3)]).arrange(RIGHT, buff=0.1).move_to([5.3, -0.9, 0])
+        llo = T("Les lois applicables", 20).next_to(lo, DOWN, buff=0.15)
+        self.at(W(42, 2, "lois") - 0.4, LaggedStart(*[FadeIn(x, shift=0.2 * LEFT) for x in lo], lag_ratio=0.15), FadeIn(llo), rt=0.5); self.son("plop")
+        pr = bandeau("Autres prestations et leurs conditions", 18).move_to([5.0, 1.9, 0])
+        self.at(W(42, 2, "autres") - 0.3, FadeIn(pr, shift=0.1 * DOWN), Indicate(nx[0], color=ROUGE_4, scale_factor=1.03), rt=0.45)
+        # 43 — deux choses à retenir
+        self.vider(S(43, 1) - 0.4, rt=0.4)
+        hd = puce("2 choses à retenir", 30).move_to([0, 2.6, 0])
+        self.at(S(43, 1) - 0.05, FadeIn(hd, shift=0.15 * DOWN), rt=0.35); self.son("ding", 0.6)
+        f1 = RoundedRectangle(corner_radius=0.22, width=6.3, height=4.2, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([-3.4, -0.15, 0])
+        f2 = f1.copy().move_to([3.4, -0.15, 0])
+        n1 = VGroup(Circle(0.3, fill_color=CREME, fill_opacity=1, stroke_width=0), T("1", 26, ROUGE)).move_to(f1.get_corner(UL) + 0.45 * DR)
+        n2 = VGroup(Circle(0.3, fill_color=CREME, fill_opacity=1, stroke_width=0), T("2", 26, ROUGE)).move_to(f2.get_corner(UL) + 0.45 * DR)
+        self.play(FadeIn(f1), FadeIn(n1), run_time=0.3)
+        a = arret_tf("1995", True, 0.75).move_to(f1.get_center() + np.array([-1.5, 0.55, 0])); c = constit("1999", 0.48).move_to(f1.get_center() + np.array([1.7, 0.55, 0]))
+        fa = Arrow(a.get_right(), c.get_left(), color=CREME, buff=0.15, stroke_width=6)
+        t1 = VGroup(T("Un droit reconnu par les juges", 20), T("avant d'être écrit", 20)).arrange(DOWN, buff=0.08).move_to(f1.get_bottom() + 0.75 * UP)
+        self.at(S(43, 2) - 0.05, FadeIn(a, scale=0.5), rt=0.35)
+        self.at(W(43, 2, "inscrit") - 0.3, GrowArrow(fa), FadeIn(c, scale=0.5), FadeIn(t1), rt=0.45); self.son("plop")
+        self.at(S(43, 3) - 0.1, FadeIn(f2), FadeIn(n2), rt=0.3)
+        su = candidat(1.0, 1, "content").move_to(f2.get_center() + np.array([-1.0, -0.15, 0])); su.add(maillot_ch(su))
+        et = frere(1.0, 0, "content").move_to(f2.get_center() + np.array([1.0, -0.15, 0]))
+        bc = bouclier(0.55, None).move_to(f2.get_center() + 0.95 * UP)
+        t2 = VGroup(T("La dignité ne dépend pas", 20), T("de la nationalité", 20)).arrange(DOWN, buff=0.08).move_to(f2.get_bottom() + 0.65 * UP)
+        self.at(W(43, 3, "besoins") - 0.3, FadeIn(su, shift=0.2 * UP), FadeIn(et, shift=0.2 * UP), FadeIn(bc, scale=0.5), rt=0.45)
+        self.at(W(43, 3, "nationalité") - 0.4, FadeIn(t2), rt=0.4); self.son("joie", 0.5)
+        # 44 — la question : provoquer sa situation, ou abuser réellement ?
+        self.vider(S(44, 1) - 0.4, rt=0.4)
+        q = puce("À votre avis ?", 32).move_to([0, 2.6, 0])
+        self.at(S(44, 1) - 0.05, FadeIn(q, shift=0.15 * DOWN), rt=0.35); self.son("ding", 0.6)
+        pa = candidat(1.4, 1, "triste").move_to([-4.0, -0.9, 0]); pa[0].set_fill(GRIS, 1); la = VGroup(T("Provoquer sa propre", 22), T("situation de besoin", 22)).arrange(DOWN, buff=0.08).next_to(pa, UP, buff=0.35)
+        pb = candidat(1.4, 0, "perplexe").move_to([4.0, -0.9, 0]); pb[0].set_fill(GRIS, 1); lb_ = VGroup(T("Abuser réellement", 22), T("de l'assistance", 22)).arrange(DOWN, buff=0.08).next_to(pb, UP, buff=0.35)
+        bal = balance(1.0).move_to([0, -0.4, 0]); qm = T("?", 70).move_to([0, 1.2, 0])
+        self.at(S(44, 1) + 0.3, FadeIn(bal, shift=0.2 * UP), rt=0.4)
+        self.at(W(44, 1, "provoque") - 0.3, FadeIn(pa, shift=0.2 * UP), FadeIn(la), rt=0.4)
+        self.at(W(44, 1, "abuse") - 0.3, FadeIn(pb, shift=0.2 * UP), FadeIn(lb_), rt=0.4)
+        self.at(W(44, 1, "assistance") - 0.1, FadeIn(qm, scale=0.4), rt=0.45); self.son("plop")
+        self.play(Rotate(bal.fleau, 0.1), run_time=0.9, rate_func=there_and_back)
+        self.play(Rotate(bal.fleau, -0.1), run_time=0.9, rate_func=there_and_back)
+        cm = bas("Votre réponse en commentaire", 28); bc = bulle(["…"], 34).move_to([0, 1.2, 0])
+        self.at(S(44, 2) - 0.1, FadeIn(cm, shift=0.15 * UP), Transform(qm, bc), rt=0.4)
+        # 45 — dans la description ; à bientôt
+        self.vider(S(45, 1) - 0.4, rt=0.35)
+        ar = arret_tf("ATF 121 I 367", True, 0.95).move_to([-4.2, 0.8, 0]); cs_ = page("Considérants", ["Consid. 2 et 3"], l=3.0, taille=20).scale(0.8).move_to([0, 0.8, 0])
+        cst = constit("Art. 12", 0.7).move_to([4.2, 0.6, 0]); ld = bas("Dans la description", 28)
+        self.at(W(45, 1, "ATF") - 0.3, FadeIn(ar, scale=0.6), rt=0.35); self.son("plop")
+        self.at(W(45, 1, "considérants") - 0.3, FadeIn(cs_, scale=0.6), rt=0.35); self.son("plop")
+        self.at(W(45, 1, "article") - 0.3, FadeIn(cst, scale=0.6), rt=0.35); self.son("plop")
+        self.at(W(45, 1, "description") - 0.4, FadeIn(ld, shift=0.15 * UP), rt=0.35)
+        self.vider(S(45, 2) - 0.35, rt=0.3)
+        logo = T("L'étude du droit", 78).move_to([0, 0.3, 0]); ab = bandeau("À bientôt", 30).next_to(logo, DOWN, buff=0.5)
+        salut = VGroup(frere(1.2, 0, "content"), frere(1.2, 1, "content"), mere(1.15, "content"), juge(1.2, "content"), frere(1.2, 2, "content")).arrange(RIGHT, buff=0.5, aligned_edge=DOWN).move_to([0, -2.0, 0])
+        salut[2].add(maillot_ch(salut[2]))
+        self.at(S(45, 2) - 0.05, FadeIn(logo, scale=0.8), FadeIn(ab, shift=0.15 * UP), LaggedStart(*[FadeIn(x_, shift=0.3 * UP) for x_ in salut], lag_ratio=0.12), rt=0.5); self.son("joie")
+        self.play(*[x_.animate(rate_func=there_and_back).shift(0.2 * UP) for x_ in salut], run_time=0.5)
+        self.fin()
+
+
+class Fin(Sec367):
+    """Écran de fin, muet, 15 s : ce qui est offert (script, fiche, licence), puis la place des éléments YouTube."""
+    def construct(self):
+        self.fond = Rectangle(width=17, height=10, stroke_width=0).set_fill(color=[ROUGE, ROUGE_2], opacity=1).set_sheen_direction(DOWN).move_to([0, -0.45, 0])
+        self.add(self.fond); self.camera.frame.scale(1.1125).move_to([0, -0.45, 0])
+        logo = T("L'étude du droit", 72).move_to([0, -0.1, 0]); self.add(logo)
+        self.play(logo.animate.scale(0.5).move_to([0, 3.25, 0]), run_time=0.7)
+        t = puce("Gratuit, pour aller plus loin", 30).move_to([0, 2.25, 0])
+
+        def carte_(icone, a, b, c, x):
+            f = RoundedRectangle(corner_radius=0.25, width=4.6, height=3.5, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([x, -0.35, 0])
+            icone.move_to(f.get_center() + 0.85 * UP)
+            tx = VGroup(T(a, 28), T(b, 20, CREME, False), T(c, 20, CREME, False)).arrange(DOWN, buff=0.14).move_to(f.get_center() + 0.8 * DOWN)
+            return VGroup(f, icone, tx)
+        cc = VGroup(RoundedRectangle(corner_radius=0.12, width=2.5, height=0.8, fill_color=CREME, fill_opacity=1, stroke_width=0), T("CC BY-SA 4.0", 26, ROUGE))
+        c1 = carte_(dossier(1.5), "Le script complet", "et l'audit des sources,", "sur GitHub", -4.9)
+        c2 = carte_(page("Fiche", ["Faits", "Réponse", "À retenir"], l=1.9, taille=13).scale(0.68), "La fiche du cours", "en PDF,", "sur letudedudroit.ch", 0)
+        c3 = carte_(cc, "Un contenu libre", "à réutiliser en citant", "L'étude du droit", 4.9)
+        liens = bandeau("Tous les liens sont dans la description", 24).move_to([0, -2.75, 0])
+        self.play(FadeIn(t, shift=0.2 * DOWN), run_time=0.4)
+        for c in (c1, c2, c3): self.play(FadeIn(c, shift=0.3 * UP), run_time=0.45); self.wait(0.75)
+        self.play(FadeIn(liens, shift=0.15 * UP), run_time=0.4); self.wait(2.3)
+        # place aux éléments de fin de YouTube (vidéo suivante, abonnement)
+        ligne = T("Script · Fiche · Licence CC BY-SA 4.0 : liens dans la description", 22, CREME, False).move_to([0, -3.2, 0])
+        cad = RoundedRectangle(corner_radius=0.25, width=6.4, height=3.6, color=CREME, stroke_width=5).move_to([-3.3, -0.2, 0]); suiv = puce("Vidéo suivante", 26).move_to(cad.get_top())
+        rond = Circle(1.25, color=CREME, stroke_width=5).move_to([3.6, 0.2, 0]); ab = bandeau("S'abonner", 24).next_to(rond, DOWN, buff=0.3)
+        self.play(*[FadeOut(x, shift=0.3 * DOWN) for x in (c1, c2, c3, liens, t)], run_time=0.4)
+        self.play(Create(cad), FadeIn(suiv), Create(rond), FadeIn(ab), FadeIn(ligne), run_time=0.9)
+        self.wait(15.0 - self.renderer.time)

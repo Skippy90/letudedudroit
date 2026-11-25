@@ -1,0 +1,56 @@
+from base import *
+
+
+class C(Sec367):
+    L0, L1 = 15, 18
+
+    def construct(self):
+        self.debut(0); self.chapitre(1, "La question", 2)
+        # 15 — la Constitution de 1874 ne garantissait pas expressément l'aide en cas de détresse
+        js = juges(3, 1.15, "perplexe").move_to([-4.6, -1.05, 0]); ljs = bandeau("Les juges", 20).next_to(js, DOWN, buff=0.2)
+        self.at(S(15, 1) - 0.05, FadeIn(js, shift=0.2 * UP), FadeIn(ljs), rt=0.45)
+        vx = constit_1874(0.85).move_to([0.2, 0.3, 0]); lv = puce("Constitution de 1874", 22).next_to(vx, UP, buff=0.2)
+        self.at(W(15, 1, "Constitution") - 0.3, FadeIn(vx, shift=0.3 * UP), rt=0.45)
+        self.at(W(15, 1, "celle") - 0.2, FadeIn(lv, shift=0.1 * DOWN), rt=0.35); self.son("ding", 0.6)
+        bq = baguette(js[2], vx.get_left() + 0.1 * LEFT); self.play(Create(bq), run_time=0.3)
+        nv = constit("Art. 12", 0.85).move_to([4.6, 0.3, 0]); ln = puce("Constitution actuelle", 22).next_to(nv, UP, buff=0.2)
+        self.at(W(15, 2, "actuelle") - 0.4, FadeIn(nv, shift=0.3 * LEFT), FadeIn(ln), rt=0.45); self.son("plop")
+        x0 = coche(False, 0.42).move_to(vx.get_corner(DR) + 0.15 * UL); ok = coche(True, 0.42).move_to(nv.get_corner(DR) + 0.15 * UL)
+        la = bandeau("Aide en cas de détresse", 22).move_to([2.4, -2.1, 0])
+        self.at(W(15, 2, "garantissait") - 0.3, FadeIn(ok, scale=2), FadeIn(x0, scale=2), FadeIn(la, shift=0.1 * UP), rt=0.4); self.son("thud", 0.5)
+        self.at(W(15, 2, "expressément") - 0.2, Indicate(x0, scale_factor=1.3), rt=0.5)
+        # 16 — la nouvelle Constitution bernoise : en vigueur en janvier 1995, après la décision ; inutilisable ici
+        self.vider(S(16, 1) - 0.4, rt=0.4)
+        cb = texte_cantonal("Constitution", "cantonale", "1993").scale(0.85).move_to([-4.3, 0.2, 0])
+        self.at(S(16, 1), FadeIn(cb, shift=0.3 * UP), rt=0.45); self.son("plop")
+        ok = coche(True, 0.4).move_to(cb.get_corner(DR) + 0.15 * UL); lok = bandeau("Une telle protection", 20).next_to(cb, DOWN, buff=0.25)
+        self.at(W(16, 1, "protection") - 0.4, FadeIn(ok, scale=2), FadeIn(lok), rt=0.35)
+        fz = frise(0, 2, x0=-0.9, x1=5.4, y=0.4, reperes=())
+        d1 = VGroup(Dot([0.4, 0.4, 0], radius=0.13, color=CREME), decision("REFUS", False, "26.10.1994", 0.7).move_to([0.4, 1.55, 0]))
+        d2 = VGroup(Dot([4.2, 0.4, 0], radius=0.13, color=CREME), cb.copy().scale(0.42).move_to([4.2, 1.75, 0]), T("1er janvier 1995", 20).move_to([4.2, -0.15, 0]))
+        lav = T("Décision contestée", 20).move_to([0.4, -0.15, 0])
+        self.at(S(16, 2) - 0.1, GrowArrow(fz[0]), FadeIn(d1, shift=0.2 * DOWN), FadeIn(lav), rt=0.5)
+        self.at(W(16, 2, "vigueur") - 0.3, FadeIn(d2, shift=0.2 * DOWN), rt=0.45); self.son("ding", 0.6)
+        ap = etiquette("Après !", 26).move_to([2.3, -1.0, 0])
+        self.at(W(16, 2, "après") - 0.2, FadeIn(ap, scale=0.5), rt=0.3)
+        jg = juge(1.35, "perplexe").move_to([-1.3, -1.05, 0]).shift(0 * RIGHT)
+        self.at(S(16, 3) - 0.1, FadeOut(ap), FadeOut(lok), FadeIn(jg, shift=0.2 * UP), rt=0.4)
+        lj = bandeau("Tribunal fédéral", 18).next_to(jg, DOWN, buff=0.15)
+        xx = coche(False, 0.42).move_to(cb.get_center())
+        self.at(W(16, 3, "servir") - 0.3, FadeIn(lj), cb.animate.set_opacity(0.35), FadeOut(ok), FadeIn(xx, scale=2), rt=0.4); self.son("thud", 0.6)
+        pa = bandeau("Pas applicable au refus de 1994", 22).move_to([-4.0, 2.35, 0])
+        self.at(W(16, 3, "refus") - 0.3, FadeIn(pa, shift=0.1 * UP), rt=0.35)
+        # 17 — sans droit écrit, une garantie fondamentale ?
+        self.vider(S(17, 1) - 0.4, rt=0.4)
+        cst = constit(None, 0.85).move_to([-4.3, 0.3, 0]); vide = VGroup(RoundedRectangle(corner_radius=0.08, width=1.3, height=0.9, color=CREME, stroke_width=4), T("?", 40)).next_to(cst, RIGHT, buff=0.25)
+        self.at(S(17, 1), FadeIn(cst, shift=0.3 * UP), rt=0.4)
+        lx = bandeau("Pas de droit explicite", 22).next_to(cst, DOWN, buff=0.25)
+        self.at(W(17, 2, "explicite") - 0.4, Create(vide[0]), FadeIn(vide[1], scale=0.5), FadeIn(lx), rt=0.45); self.son("plop")
+        fr = freres(1.3, "perplexe").move_to([1.6, -1.05, 0])
+        self.at(W(17, 2, "hommes") - 0.3, FadeIn(fr, shift=0.2 * UP), rt=0.4)
+        bc = bouclier(0.95, "?").move_to([1.6, 1.55, 0]); lb = T("Une garantie fondamentale", 22).next_to(bc, RIGHT, buff=0.3)
+        self.at(W(17, 2, "garantie") - 0.3, FadeIn(bc, scale=0.4), FadeIn(lb, shift=0.1 * LEFT), rt=0.45); self.son("ding", 0.7)
+        tf = ic_tf(0.8).move_to([5.4, -0.65, 0]); lt = bandeau("En justice", 18).next_to(tf, DOWN, buff=0.15)
+        self.at(W(17, 2, "justice") - 0.4, FadeIn(tf, shift=0.2 * LEFT), FadeIn(lt), rt=0.4)
+        self.play(Wiggle(bc, scale_value=1.08), run_time=0.6)
+        self.fin()
