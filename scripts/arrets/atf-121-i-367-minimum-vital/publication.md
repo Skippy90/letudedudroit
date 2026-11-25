@@ -13,23 +13,23 @@ Trois frères ne peuvent ni travailler légalement en Suisse, ni être renvoyés
 
 Chapitres
 0:00 Trois frères, aucune aide
-0:36 Les faits
-1:45 Ni travail, ni renvoi : le refus
-2:07 Le Conseil-exécutif bernois et l'abus de droit
-2:48 La question : un droit non écrit ?
-3:31 Les droits non écrits et leurs critères
-3:57 Se nourrir, se vêtir, un abri
-4:36 Un droit constitutionnel reconnu
-4:50 Le minimum, pas toute l'aide sociale
-5:28 Aussi pour les étrangers
-6:05 L'application à l'affaire
-6:32 Qu'est-ce qu'un abus de droit ?
-7:11 La cause réelle de la détresse
-7:52 La décision du 27 octobre 1995
-8:07 Ce que l'arrêt ne donne pas
-8:21 L'article 12 de la Constitution
-9:00 À retenir
-9:16 La question pour vous
+0:34 Les faits
+1:43 Ni travail, ni renvoi : le refus
+2:05 Le Conseil-exécutif bernois et l'abus de droit
+2:46 La question : un droit non écrit ?
+3:30 Les droits non écrits et leurs critères
+3:56 Se nourrir, se vêtir, un abri
+4:34 Un droit constitutionnel reconnu
+4:48 Le minimum, pas toute l'aide sociale
+5:26 Aussi pour les étrangers
+6:03 L'application à l'affaire
+6:30 Qu'est-ce qu'un abus de droit ?
+7:09 La cause réelle de la détresse
+7:50 La décision du 27 octobre 1995
+8:05 Ce que l'arrêt ne donne pas
+8:19 L'article 12 de la Constitution
+8:58 À retenir
+9:14 La question pour vous
 
 Arrêt et article cités (article vérifié sur Fedlex) :
 • ATF 121 I 367 (arrêt du 27 octobre 1995, IIe Cour de droit public, en allemand)
@@ -60,17 +60,17 @@ droit suisse, Tribunal fédéral, ATF 121 I 367, minimum vital, article 12 Const
 
 ## Réglages dans YouTube Studio
 
-- Fichier vidéo : atf-121-i-367-minimum-vital-v2.mp4 (1080p, 9 min 56 s).
+- Fichier vidéo : atf-121-i-367-minimum-vital-v3.mp4 (1080p, 9 min 54 s).
 - Miniature : miniature-atf-121-i-367.png (une assiette, « Le droit de survivre », « même sans permis de séjour ? »).
 - Sous-titres : minimum-vital-sous-titres.srt (français, « avec minutage »).
 - Langue de la vidéo : français. Catégorie : Éducation. « Non, elle n'est pas conçue pour les enfants. »
-- Écran de fin : à partir de 9:41, sur les 15 dernières secondes, qui sont muettes. Une vidéo dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.
+- Écran de fin : à partir de 9:39, sur les 15 dernières secondes, qui sont muettes. Une vidéo dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.
 - Playlist : les arrêts du Tribunal fédéral, si elle existe.
 - Après la mise en ligne : épingler le commentaire, mettre la fiche PDF sur letudedudroit.ch, puis donner le lien et la date pour la mise à jour de la page du site.
 
 ## À vérifier avant de publier
 
-1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 2:33, « L'aide sociale pourrait donc leur être entièrement retirée » (la machine entend « le ret… » à la place de « leur être » : probablement une diction rapide, à confirmer) ; vers 9:30, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:56, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
+1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 2:32, « L'aide sociale pourrait donc leur être entièrement retirée » (la machine entend « le ret… » à la place de « leur être » : probablement une diction rapide, à confirmer) ; vers 9:28, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:54, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
 2. Relire l'arrêt sur bger.ch (l'audit a été fait sur la copie de l'Université de Berne) et cocher l'audit.
 3. La fiche de cours est prête (fiche-atf-121-i-367.pdf) : à mettre en ligne sur letudedudroit.ch, l'écran de fin la mentionne.
 4. Le numéro de la vidéo dans la série n'est pas attribué.
