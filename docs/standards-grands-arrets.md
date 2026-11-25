@@ -133,3 +133,4 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 - Chaîne complète : `tout.sh <version>` ; `tout.sh <version> son` pour ne refaire que le son et l'encodage.
 
 Toute nouvelle demande récurrente de l'autrice est ajoutée ici le jour même, avec la brique ou le contrôle qui l'applique.
+- Reprise par une autre session ou un autre modèle : `docs/passation-grands-arrets.md` (état des pull requests, chaîne de production, chemins à adapter, erreurs à surveiller) ; outils `tools/transcrire_secours.py` et `tools/extrait_audio.py`.
