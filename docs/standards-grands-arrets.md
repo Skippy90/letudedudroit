@@ -67,6 +67,12 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 
 - **Émotions cohérentes avec le récit** : à chaque décision, les personnages concernés réagissent (content et petit saut quand on gagne, triste quand on perd, surpris devant un coup de théâtre, perplexe devant une question ouverte, muet pour un vote secret). Un personnage suit son affaire d'une instance à l'autre et change de visage à chaque étape.
 - **Les personnages interagissent avec le texte** : le juge montre du doigt le passage de l'article, la requérante parle, l'agent examine le dossier à la loupe, les électeurs reçoivent l'information.
+- **Tout personnage à l'écran a un rôle lisible** : une étiquette sous lui (« Une autorité », « Tribunal fédéral ») ou une action claire. Jamais de silhouette posée là sans raison, jamais d'étiquette ou de tampon par-dessus un personnage. Quand une instance « répond », c'est son personnage qui apparaît (un juge pour le Tribunal fédéral), pas une étiquette seule.
+
+### Cantons et drapeaux
+- Les couleurs d'un canton sont réservées à son identité (maillots des électeurs, drapeau). **Les objets génériques restent neutres** : le bandeau de l'urne est menthe, pas bleu, pour ne pas être lu comme zurichois ou lucernois.
+- Deux cantons peuvent avoir les mêmes couleurs (Zurich et Lucerne : bleu et blanc). Dès que deux cantons sont comparés, chaque drapeau porte le nom du canton à côté (`drapeau_nomme`).
+- Chaque drapeau est vérifié sur une source avant d'être dessiné. Zurich : tranché, bleu côté hampe en bas, blanc en haut au vent (`drapeau_zh`). Lucerne : coupé, blanc en haut, bleu en bas (`drapeau_lu`). Une commune (Emmen) est située par le drapeau de son canton, nommé.
 
 ### Institutions, textes et décisions
 | Élément | Dessin | Brique |
@@ -85,9 +91,10 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 | Droit fondamental | carte avec une image qui porte l'émotion : arbre pour la vie, foyer pour la vie privée et familiale, fiche sous cadenas pour les données | `carte_droit`, `icone_vie`, `icone_foyer`, `donnees` |
 | **Décision** | feuille à en-tête (« DÉCISION », « ARRÊT DU TRIBUNAL FÉDÉRAL »), dispositif en tampon vert ou rouge, sceau à ruban | `decision`, `arret_tf`, `verdict` |
 | Initiative, acte invalidé | page, tampon « INVALIDE » | `initiative`, `tampon` |
+| Dossier d'une personne | chemise ambre à onglet, feuille à en-tête, portrait agrafé ; les rubriques apparaissent une à une | `fiche` (dossier du candidat), `dossier` (petite icône) |
 
 ### Palette des icônes
-Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau bleu, fenêtres éclairées, passeport rouge à croix blanche, pastille verte pour oui, croix rouge pour non, pastille ambre pour une question ouverte, robes menthe, ambre, lilas et ciel.
+Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenêtres éclairées, passeport rouge à croix blanche, pastille verte pour oui, croix rouge pour non, pastille ambre pour une question ouverte, robes menthe, ambre, lilas et ciel.
 
 ## 5. Le texte du bas et les sous-titres
 

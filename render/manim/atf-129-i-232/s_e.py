@@ -2,7 +2,19 @@ from base import *
 
 
 def fiche(lignes, titre_="Dossier du candidat", taille=24):
-    return page(titre_, lignes, l=4.4, taille=taille)
+    """Le dossier du candidat : chemise ambre à onglet, feuille à en-tête, portrait agrafé."""
+    p = page(titre_, lignes, l=4.4, taille=taille)
+    f = p[1]; l, h = f.width, f.height
+    ch = RoundedRectangle(corner_radius=0.16, width=l + 0.5, height=h + 0.45, fill_color=AMBRE, fill_opacity=1, stroke_width=0).move_to(f.get_center() + 0.05 * DOWN)
+    ong = RoundedRectangle(corner_radius=0.1, width=1.5, height=0.5, fill_color=AMBRE, fill_opacity=1, stroke_width=0).move_to(ch.get_corner(UL) + np.array([0.95, 0.12, 0]))
+    dos = RoundedRectangle(corner_radius=0.16, width=l + 0.5, height=h + 0.45, fill_color="#E0A92E", fill_opacity=1, stroke_width=0).move_to(ch.get_center() + 0.12 * UP + 0.1 * RIGHT)
+    c = f.get_corner(UR) + np.array([-0.62, -1.25, 0])
+    cadre = RoundedRectangle(corner_radius=0.05, width=0.8, height=0.95, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=2).move_to(c)
+    tete = Circle(0.16, fill_color=LILAS, fill_opacity=1, stroke_color=ENCRE, stroke_width=1.5).move_to(c + np.array([0, 0.15, 0]))
+    buste = AnnularSector(inner_radius=0, outer_radius=0.27, angle=PI, start_angle=0, fill_color=LILAS, fill_opacity=1, stroke_width=0).move_arc_center_to(c + np.array([0, -0.4, 0]))
+    agrafe = Line(c + np.array([-0.12, 0.5, 0]), c + np.array([0.12, 0.44, 0]), color=GRIS, stroke_width=5)
+    g = VGroup(dos, ong, ch, p, cadre, tete, buste, agrafe); g.corps = p.corps
+    return g
 
 
 class Es(Sec232):

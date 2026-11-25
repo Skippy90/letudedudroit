@@ -676,11 +676,11 @@ def dossier(e=1.0):
 
 
 def urne(e=1.0):
-    """Urne : caisse claire, bandeau bleu, bulletin qui tombe."""
+    """Urne : caisse claire, bandeau menthe (neutre : ni bleu zurichois ni bleu lucernois), bulletin."""
     b = RoundedRectangle(corner_radius=0.08 * e, width=1.3 * e, height=1.0 * e, fill_color=CREME, fill_opacity=1, stroke_width=0)
     fente = Rectangle(width=0.7 * e, height=0.08 * e, fill_color=ENCRE, fill_opacity=1, stroke_width=0).move_to(b.get_top() + 0.12 * e * DOWN)
     bul = Rectangle(width=0.5 * e, height=0.5 * e, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=2).rotate(0.2).move_to(b.get_top() + 0.25 * e * UP)
-    bande = Rectangle(width=1.3 * e, height=0.2 * e, fill_color=CIEL, fill_opacity=1, stroke_width=0).move_to(b.get_center() + 0.2 * e * DOWN)
+    bande = Rectangle(width=1.3 * e, height=0.2 * e, fill_color=MENTHE, fill_opacity=1, stroke_width=0)   # menthe : aucune couleur cantonale.move_to(b.get_center() + 0.2 * e * DOWN)
     g = VGroup(bul, b, fente, bande)
     _vivant(g[0], 0.05 * e, 1.9); return g
 
@@ -831,3 +831,18 @@ def militant(h=1.0, humeur="decide"):
     p.add(Polygon([-0.2 * h, 0.66 * h, 0], [-0.08 * h, 0.66 * h, 0], [0.16 * h, 0.1 * h, 0], [0.06 * h, 0.06 * h, 0], fill_color="#3FA35B", fill_opacity=1, stroke_width=0))
     _vivant(p, 0.03 * h); visage(p, h, humeur)
     return p
+
+
+def drapeau_lu(e=1.0):
+    """Drapeau lucernois : coupé, blanc en haut, bleu en bas."""
+    mat = Line([0, 0, 0], [0, 1.5 * e, 0], color=BOIS, stroke_width=6 * e)
+    o = np.array([0.04 * e, 0.88 * e, 0]); a = 0.6 * e
+    bl = Rectangle(width=a, height=a / 2, fill_color=BLANC, fill_opacity=1, stroke_width=0).move_to(o + [a / 2, 0.75 * a, 0])
+    bu = Rectangle(width=a, height=a / 2, fill_color=BLEU_ZH, fill_opacity=1, stroke_width=0).move_to(o + [a / 2, 0.25 * a, 0])
+    cadre = Square(a, color=BLANC, stroke_width=2 * e).move_to(o + [a / 2, a / 2, 0])
+    return VGroup(mat, bl, bu, cadre)
+
+
+def drapeau_nomme(d, nom, taille=16):
+    """Un drapeau cantonal avec le nom du canton à côté (deux cantons ont parfois les mêmes couleurs)."""
+    return VGroup(d, T(nom, taille).next_to(d, RIGHT, buff=0.08).align_to(d, DOWN))

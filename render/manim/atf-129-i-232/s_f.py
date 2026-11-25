@@ -30,6 +30,8 @@ class Ff(Sec232):
         ue = urne(0.85).move_to([-5.6, -0.95, 0]); re_ = VGroup(*[decision("REFUS", False, e=0.62).move_to([-3.75, -0.55 - 0.82 * k, 0]) for k in range(2)])
         cem = VGroup(*[candidat(1.05, k, "neutre") for k in (0, 3)]).arrange(RIGHT, buff=0.15).move_to([-1.55, -0.95, 0])
         le = T("Des refus déjà votés", 23).move_to([-3.5, ce[0].get_bottom()[1] + 0.33, 0])
+        dl_ = drapeau_nomme(drapeau_lu(0.62), "Lucerne").move_to([-5.75, 0.72, 0]); dz_ = drapeau_nomme(drapeau_zh(0.62), "Zurich").move_to([1.2, 0.72, 0]); ce.add(dl_); cz.add(dz_)
+        self.play(FadeIn(dl_, shift=0.2 * UP), FadeIn(dz_, shift=0.2 * UP), run_time=0.3)
         self.at(S(41, 2) - 0.05, FadeIn(ue, shift=0.2 * UP), FadeIn(cem, shift=0.2 * UP), cz.animate.set_opacity(0.45), rt=0.4)
         self.at(W(41, 2, "refus") - 0.3, LaggedStart(*[FadeIn(r, scale=1.8) for r in re_], lag_ratio=0.25), FadeIn(le), rt=0.7); self.son("thud", 0.6)
         for c_ in cem: visage(c_, 1.05, "triste")
