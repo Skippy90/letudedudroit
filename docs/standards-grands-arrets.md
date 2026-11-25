@@ -9,6 +9,9 @@ Dernière mise à jour : 25 novembre 2026.
 1. **L'autrice envoie son script** (PDF, deux colonnes : direction de voix, texte à enregistrer).
 2. **Audit** contre l'arrêt et contre Fedlex, puis réponse courte : ce qui est faux, ce qui est à resserrer, ce qui est conforme. Chaque correction est proposée avec sa formulation de remplacement.
 3. **Script revu en PDF**, dans la mise en page de l'autrice, dès qu'elle a validé les corrections. C'est ce document qu'elle lit pour enregistrer : ne pas se contenter de la pull request.
+   - Livré en **PDF annoté et en Word modifiable**, avec les **liaisons à faire mises en évidence** (signe ‿ et lettres soulignées en rouge) : seulement les liaisons obligatoires ou attendues en lecture soignée, jamais les facultatives ni les simples enchaînements.
+   - Séquences corrigées repérées (trait ambre), consignes de voix ajustées repérées (brun). Après toute correction, relire chaque consigne de voix : elle doit viser des mots réellement présents dans sa séquence.
+   - Outil : `python tools/script_arret_annote.py arrets/<slug>` produit `script.md`, `tts.txt`, le PDF et le Word à partir de `sequences.py` (modèle : ATF 121 I 367).
 4. **Pull request « script »** : `script.md`, `audit.md`, `tts.txt`, générés d'une seule source pour rester identiques.
 5. **L'autrice enregistre** (voix humaine, téléphone, prises ratées comprises).
 6. **Montage, images, son, contrôles** (sections 2 à 6), puis livraison : vidéo 1080p, version légère, sous-titres, miniature, kit de publication, fiche PDF.
@@ -21,6 +24,9 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 - Lois : ouvrir Fedlex avec le navigateur intégré (le shell et la recherche web ne l'atteignent pas), noter l'état et la date de consultation, citer le texte exact dans l'audit.
 - Arrêt : lire le texte original. Si seul un miroir est accessible (servat.unibe.ch), le dire dans l'audit et laisser la relecture sur bger.ch à l'autrice.
 - Tout ce qui s'affiche à l'écran reprend le script ou un article vérifié. Aucun chiffre inventé pour « faire vrai » (pas de pourcentage de vote fictif).
+- Ne jamais prêter à une partie un motif que l'arrêt ne rapporte pas : distinguer ce que disent les faits, ce que soutient l'autorité et ce qu'apprécie le Tribunal.
+- L'audit donne pour chaque correction son fondement (considérant, page, courte citation) et traite à part les points que l'autrice demande de vérifier.
+- Institutions cantonales : nom officiel français à la première occurrence (« Conseil-exécutif bernois »), forme courante ensuite.
 - Une phrase de l'autrice sans source est signalée, avec l'état réel de la pratique ; elle décide de la garder ou de la couper.
 - « Cour EDH » pour la Cour, « CEDH » pour la Convention. Strasbourg n'est pas l'Union européenne : jamais d'étoiles.
 - Partis et personnes : le parti auteur est nommé, jamais son logo ; les particuliers ne sont pas nommés. La chaîne ne prend pas position.
