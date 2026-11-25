@@ -1,0 +1,75 @@
+from base import *
+
+
+class D3(Sec15):
+    L0, L1 = 33, 37
+
+    def construct(self):
+        self.debut(3)
+        # 33 — seconde violation : pas de motivation
+        v1 = VGroup(coche(True, 0.36), T("Première violation : la discrimination", 28)).arrange(RIGHT, buff=0.3).move_to([0, 0.9, 0])
+        v2 = VGroup(Circle(0.36, color=CREME, stroke_width=5), T("Une seconde violation ?", 28)).arrange(RIGHT, buff=0.3).move_to([0, -0.3, 0]).align_to(v1, LEFT)
+        self.at(S(33, 1) - 0.2, FadeIn(v1, shift=0.3 * LEFT), rt=0.5); self.at(S(33, 2) - 0.1, FadeIn(v2, shift=0.3 * LEFT), rt=0.5)
+        t = titre("Seconde violation : l'absence de motivation", 28)
+        self.at(W(33, 2, "absence") - 0.2, FadeIn(t, shift=0.2 * DOWN), rt=0.5)
+        self.vider(S(33, 3) - 0.45, garder=[t], rt=0.35)
+        d = dossier(2.4).move_to([-4.6, -0.4, 0]); ref = tampon("REFUS", 30).move_to(d.get_center() + 0.2 * DOWN)
+        b = acteur(1.8, "yu", False, "perplexe").move_to([-1.9, -0.9, 0]); pq = bulle(["Pourquoi ?"], 26).next_to(b, UR, buff=0.05).shift(0.3 * LEFT)
+        self.at(S(33, 3), FadeIn(d, shift=0.3 * UP), FadeIn(ref, scale=2), FadeIn(b), rt=0.5); self.at(W(33, 3, "doit") - 0.2, FadeIn(pq, scale=0.5), rt=0.4)
+        a1 = VGroup(puce("Droit d'être entendu", 22), T("art. 29 al. 2 Cst.", 20, CREME, False)).arrange(DOWN, buff=0.12).move_to([4.2, 1.6, 0])
+        a2 = VGroup(puce("Interdiction de discriminer", 22), T("art. 8 al. 2 Cst.", 20, CREME, False)).arrange(DOWN, buff=0.12).move_to([4.2, 0.0, 0])
+        om = VGroup(RoundedRectangle(corner_radius=0.18, width=5.0, height=1.0, fill_color=ENCRE, fill_opacity=1, stroke_width=0), T("Obligation de motiver", 28)).move_to([4.2, -1.9, 0])
+        f1 = Arrow(a2.get_bottom() + 0.1 * DOWN, om.get_top() + 0.1 * UP, color=CREME, stroke_width=6, buff=0); pl = T("+", 40).move_to([4.2, 0.85, 0])
+        self.at(W(33, 4, "droit") - 0.3, FadeIn(a1, shift=0.2 * LEFT), rt=0.4); self.at(W(33, 4, "interdiction") - 0.5, FadeIn(pl), FadeIn(a2, shift=0.2 * LEFT), rt=0.4)
+        self.play(GrowArrow(f1), FadeIn(om, scale=1.2), run_time=0.5)
+        # 34 — impossible aux urnes
+        self.vider(S(34, 1) - 0.5, rt=0.4)
+        t = titre("Aux urnes : impossible"); u = urne(2.0).move_to([-4.4, -0.7, 0]); cdn = cadenas(1.3).move_to(u[1].get_center() + 0.1 * DOWN)
+        self.at(S(34, 1), FadeIn(u, shift=0.3 * UP), rt=0.5); self.at(W(34, 1, "secret") - 0.3, FadeIn(cdn, scale=2), rt=0.3)
+        self.at(W(34, 1, "ne") - 0.2, FadeIn(t, shift=0.2 * DOWN), rt=0.4)
+        qui = acteur(1.5, "yu", False, "perplexe").move_to([-1.9, -0.95, 0]); pq2 = bulle(["Pourquoi ?"], 22).next_to(qui, UP, buff=0.15).shift(0.5 * RIGHT)
+        def bar(nom, l, y):
+            n = T(nom, 26).move_to([1.4, y, 0]); r = Rectangle(width=l, height=0.55, fill_color=CREME, fill_opacity=1, stroke_width=0).next_to(n, RIGHT, buff=0.35)
+            return VGroup(n, r)
+        b1, b2 = bar("Pour", 1.7, 0.9), bar("Contre", 3.6, 0.0); b2[1].align_to(b1[1], LEFT); b2[0].align_to(b1[0], RIGHT)
+        self.at(S(34, 2), FadeIn(b1[0]), FadeIn(b2[0]), GrowFromEdge(b1[1], LEFT), GrowFromEdge(b2[1], LEFT), rt=0.9)
+        cb = bandeau("Le résultat : des nombres", 22).move_to([3.4, 1.9, 0]); self.play(FadeIn(cb), run_time=0.3)
+        vide = VGroup(RoundedRectangle(corner_radius=0.2, width=4.4, height=1.1, color=CREME, stroke_width=5).set_stroke(opacity=0.9), T("Les raisons : ?", 28)).move_to([3.4, -1.5, 0])
+        vide[0].become(DashedVMobject(vide[0], num_dashes=30))
+        self.at(S(34, 3) - 0.3, FadeIn(qui, shift=0.3 * LEFT), rt=0.3)
+        self.play(FadeIn(vide, shift=0.2 * UP), FadeIn(pq2, scale=0.5), run_time=0.4)
+        self.son("grelot"); self.play(Wiggle(u, scale_value=1.06, rotation_angle=0.03 * TAU), run_time=0.7)
+        visage(qui, 1.5, "triste")
+        self.pop("L'urne ne répond pas.", [-4.3, 1.9, 0], 2.2, 24)
+        pr = bas("Le problème vient de la procédure elle-même", 26, -2.95); self.at(S(34, 4) + 0.2, FadeIn(pr, shift=0.15 * UP), rt=0.5)
+        # 35 — le recours est admis
+        self.vider(S(35, 1) - 0.5, rt=0.4)
+        tf = tribunal(3.0).scale(1.1).move_to([-5.0, 0.3, 0]); tl = bandeau("Tribunal fédéral", 20).next_to(tf, DOWN, buff=0.15)
+        adm = VGroup(coche(True, 0.42), T("Recours admis", 40)).arrange(RIGHT, buff=0.3).move_to([2.2, 2.3, 0])
+        self.at(S(35, 1) - 0.1, FadeIn(tf, shift=0.3 * UP), FadeIn(tl), rt=0.5); gagn = VGroup(*[acteur(0.85, "yu", (k in (1, 3)), "content") for k in range(5)]).arrange(RIGHT, buff=0.1).move_to([-2.7, 2.3, 0])
+        self.at(W(35, 1, "admet") - 0.2, FadeIn(adm, scale=1.3), FadeIn(gagn, shift=0.2 * UP), rt=0.4); self.son("joie"); self.saut(*gagn, h=0.2, rt=0.4)
+        self.pop("Et toc.", [-5.0, 2.6, 0], 1.8, 28)
+        def lg(a, tp, y):
+            c = VGroup(RoundedRectangle(corner_radius=0.15, width=6.2, height=1.05, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0), T(a, 22)).move_to([0.6, y, 0])
+            s = tampon(tp, 22, -0.08).next_to(c, RIGHT, buff=0.3)
+            return c, s
+        c1, s1 = lg("Décision du gouvernement lucernois", "ANNULÉE", 0.7); c2, s2 = lg("Procédure de vote aux urnes d'Emmen", "CONTRAIRE", -0.75)
+        self.at(W(35, 1, "annule") - 0.3, FadeIn(c1, shift=0.2 * LEFT), rt=0.4); self.at(W(35, 1, "décision") - 0.1, FadeIn(s1, scale=2), rt=0.3)
+        self.at(W(35, 2, "procédure") - 0.3, FadeIn(c2, shift=0.2 * LEFT), rt=0.4); self.at(W(35, 2, "contraire") - 0.2, FadeIn(s2, scale=2), rt=0.3)
+        cc = T("à la Constitution", 20, CREME, False).next_to(s2, DOWN, buff=0.12); self.play(FadeIn(cc), run_time=0.3)
+        rp = bas("À remplacer par une procédure conforme aux droits fondamentaux", 24, -2.6); self.at(S(35, 3) + 0.2, FadeIn(rp, shift=0.15 * UP), rt=0.5)
+        # 36 — attention : pas de naturalisation par le Tribunal fédéral
+        self.vider(S(36, 1) - 0.5, garder=[tf, tl], rt=0.4)
+        t = titre("Attention", 34); self.at(S(36, 1) - 0.1, FadeIn(t, scale=1.5), rt=0.4)
+        pp = passeport(1.3).move_to([-0.9, -0.2, 0]); cx = VGroup(Line(pp.get_corner(UL), pp.get_corner(DR), color=CREME, stroke_width=10), Line(pp.get_corner(UR), pp.get_corner(DL), color=CREME, stroke_width=10))
+        self.pop("Pas si vite.", [2.9, 2.0, 0], 2.0)
+        self.at(S(36, 2), FadeIn(pp, shift=0.3 * RIGHT), rt=0.4); self.at(W(36, 2, "ne") - 0.1, Create(cx), rt=0.4); self.son("triste", 0.7)
+        nn = bandeau("Il ne naturalise pas lui-même", 20).next_to(pp, DOWN, buff=0.35); self.play(FadeIn(nn), run_time=0.3)
+        ca = maison(0, 0, 2.2, 1.2, 1.0).move_to([3.2, 0.9, 0]); cal = bandeau("Canton", 20).next_to(ca, RIGHT, buff=0.25)
+        co = maison(0, 0, 2.2, 1.2, 1.0).move_to([3.2, -1.5, 0]); col = bandeau("Commune", 20).next_to(co, RIGHT, buff=0.25)
+        self.at(W(36, 3, "autorités") - 0.3, FadeIn(ca, shift=0.3 * UP), FadeIn(cal), FadeIn(co, shift=0.3 * UP), FadeIn(col), rt=0.6)
+        ds = dossier(0.9).move_to(tf.get_right() + 0.5 * RIGHT + 0.5 * DOWN)
+        self.at(W(36, 3, "décider") - 0.3, FadeOut(pp), FadeOut(cx), FadeOut(nn), FadeIn(ds, scale=0.4), rt=0.4)
+        self.play(ds.animate.move_to([1.4, -0.3, 0]), run_time=1.0)
+        su = bas("À elles de décider de la suite, dans le respect de la Constitution", 24, -2.95); self.at(W(36, 3, "cadre") - 0.6, FadeIn(su, shift=0.15 * UP), rt=0.5)
+        self.fin()
