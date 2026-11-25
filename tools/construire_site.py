@@ -28,7 +28,7 @@ MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale":
 
 def numero_atf(slug: str) -> str:
     """« arrets/01-atf-130-iv-58 » → « ATF 130 IV 58 » ; chaîne vide hors de la série des arrêts."""
-    m = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])
+    m = re.match(r"(?:\d+-)?atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])   # avec ou sans numéro dans la série
     return f"ATF {m[1]} {m[2].upper()} {m[3]}" if m else ""
 e = html.escape
 
@@ -39,15 +39,21 @@ def lire_script(slug: str) -> dict:
     """Titre, sections (nom, [(numéro, texte lu)]) et réponse attendue du script."""
     texte = (RACINE / "scripts" / slug / "script.md").read_text(encoding="utf-8")
     titre = re.sub(r"^#\s*Vidéo\s+\d+\s*[—-]\s*", "", texte.splitlines()[0]).strip()
-    sections, courante = [], None
+    titre = re.sub(r"^#\s*(ATF\s+\d+\s+[IVX]+\s+\d+\s*[—-]\s*)?", "", titre).strip()   # dossier sans numéro : « # ATF … — titre »
+    sections, courante, col = [], None, 1
     for ligne in texte.splitlines():
         if ligne.startswith("## "):
             courante = (ligne[3:].strip(), [])
             sections.append(courante)
-        m = re.match(r"\|\s*(\d+)\s*\|\s*(.+?)\s*\|", ligne)
-        if m and courante:
-            courante[1].append((int(m[1]), m[2]))
+        cellules = [c.strip() for c in ligne.strip().strip("|").split("|")]
+        if "Texte à enregistrer" in cellules:   # scripts des grands arrêts : N°, direction de voix, texte
+            col = cellules.index("Texte à enregistrer")
+        if len(cellules) > col and cellules[0].isdigit() and courante:
+            courante[1].append((int(cellules[0]), cellules[col]))
     reponse = re.search(r"\*\*Réponse attendue à la question finale\*\*[^:]*:\s*(.+)", texte)
+    pub = RACINE / "scripts" / slug / "publication.md"
+    if not reponse and pub.exists():   # sinon, la réponse donnée dans la description
+        reponse = re.search(r"Réponse à la question finale\n(.+)", pub.read_text(encoding="utf-8"))
     return {"titre": titre, "sections": [s for s in sections if s[1]],
             "reponse": reponse[1].strip() if reponse else ""}
 

@@ -8,6 +8,7 @@
 
 ## Description
 
+```text
 En 1999, une initiative déposée en ville de Zurich veut confier aux électeurs, par un vote aux urnes, la décision de naturaliser les personnes étrangères nées à l'étranger. Avant tout vote, les autorités la déclarent invalide. Le 9 juillet 2003, le Tribunal fédéral confirme : une naturalisation est une décision individuelle, soumise aux droits fondamentaux. Un refus doit être motivé, et un vote secret ne peut pas l'être. Informer correctement les votants exposerait en outre la vie privée des candidats.
 
 Chapitres
@@ -29,10 +30,13 @@ Chapitres
 7:36 À retenir
 7:48 La question pour vous
 
-Sources
-- ATF 129 I 232 (arrêt 1P.1/2003 du 9 juillet 2003, en allemand) : https://www.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=BGE-129-I-232&lang=de&type=show_document
-- Constitution fédérale (RS 101), art. 8 al. 2, 13, 29 al. 2, 34 al. 2 et 35 al. 2 : https://www.fedlex.admin.ch/eli/cc/1999/404/fr
-- Loi sur la nationalité suisse (LN, RS 141.0), art. 15 à 17 : https://www.fedlex.admin.ch/eli/cc/2016/404/fr
+Articles et arrêts cités (lois vérifiées sur Fedlex) :
+• ATF 129 I 232 (arrêt 1P.1/2003 du 9 juillet 2003, en allemand)
+  https://www.bger.ch/ext/eurospider/live/de/php/clir/http/index.php?highlight_docid=BGE-129-I-232&lang=de&type=show_document
+• Constitution fédérale (RS 101), art. 8 al. 2, 13, 29 al. 2, 34 al. 2 et 35 al. 2
+  https://www.fedlex.admin.ch/eli/cc/1999/404/fr
+• Loi sur la nationalité suisse (LN, RS 141.0), art. 15 à 17
+  https://www.fedlex.admin.ch/eli/cc/2016/404/fr
 - Sur l'affaire d'Emmen, jugée le même jour (ATF 129 I 217) : la vidéo de la chaîne consacrée à cet arrêt.
 
 Ce que disent les articles cités
@@ -51,6 +55,7 @@ Parce que personne ne connaît les raisons réelles des votants : le vote est se
 Gratuit, pour aller plus loin
 Le script complet et l'audit des sources : https://github.com/Skippy90/letudedudroit/tree/atf-129-i-232-enregistrement/scripts/arrets/atf-129-i-232-zurich
 Contenu sous licence CC BY-SA 4.0. Voix : enregistrement humain. Cette vidéo est une explication pédagogique, pas un conseil juridique. Elle dit ce que les auteurs de l'initiative soutenaient et ce que le Tribunal fédéral a jugé ; elle ne prend pas position sur la naturalisation par le peuple.
+```
 
 ## Commentaire à épingler
 
