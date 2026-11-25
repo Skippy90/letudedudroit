@@ -650,3 +650,9 @@ def donnees(e=1.0):
     for k, l_ in enumerate(lg): l_.move_to(f.get_center() + np.array([(0.28 if k < 2 else 0) * e, (0.45 - 0.16 * k if k < 2 else -0.05 - 0.2 * (k - 1)) * e, 0]))
     c = cadenas(0.75 * e).move_to(f.get_corner(DR) + np.array([-0.12 * e, 0.18 * e, 0]))
     return VGroup(f, tete, buste, lg, c)
+
+
+def maillot_ch(p):
+    """La personne naturalisée : une croix suisse apparaît sur son maillot."""
+    h = getattr(p, "h", 1.3)
+    return croix_suisse(0.62 * h).move_to(p[0].get_center() + 0.02 * h * UP)

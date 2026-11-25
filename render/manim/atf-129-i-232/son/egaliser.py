@@ -1,4 +1,4 @@
-"""Zurich : ramène chaque ligne au même niveau de voix, puis limiteur doux. Entrée et sortie : voix.wav (48 kHz, mono)."""
+"""Zurich : rapproche le timbre de celui de la vidéo 25, ramène chaque ligne au même niveau de voix, puis limiteur doux. Entrée et sortie : voix.wav (48 kHz, mono)."""
 import sys, numpy as np, soundfile as sf
 from scipy.signal import firwin2, fftconvolve
 sys.path.insert(0, "/home/claude/z232")
@@ -13,14 +13,34 @@ def spectre(a, b):
         X = np.abs(np.fft.rfft(w * np.hanning(n))) ** 2
         acc += [X[(f >= c / 2 ** (1 / 6)) & (f < c * 2 ** (1 / 6))].mean() for c in centres]; k += 1
     return 10 * np.log10(acc / max(k, 1) + 1e-20)
+# Timbre : on rapproche la voix de celle de la vidéo 25 (voix traitée, référence validée à l'écoute), ±8 dB au plus.
+def spectre_de(x):
+    acc = np.zeros(len(centres)); k = 0; seuil = 10 ** (-40 / 20) * max(1e-9, float(np.sqrt((x ** 2).mean())) / 0.05)
+    masques = [(f >= c / 2 ** (1 / 6)) & (f < c * 2 ** (1 / 6)) for c in centres]
+    for i in range(0, len(x) - n, n // 2):
+        w = x[i:i + n]
+        if np.sqrt((w ** 2).mean()) < seuil: continue
+        X = np.abs(np.fft.rfft(w * np.hanning(n))) ** 2
+        acc += [X[m_].mean() for m_ in masques]; k += 1
+    return 10 * np.log10(acc / max(k, 1) + 1e-20)
+REF = "/home/claude/z232/son/ref25.npy"
+import os
+if not os.path.exists(REF):
+    r_, sr_ = sf.read("/home/claude/a25/son/voix_pre.wav"); assert sr_ == sr; np.save(REF, spectre_de(r_ if r_.ndim == 1 else r_[:, 0]))
+ref = np.load(REF); ref = ref - ref.mean(); s_ = spectre_de(v); s_ = s_ - s_.mean()
+g_ = np.clip(ref - s_, -8, 8); g_ = np.convolve(np.pad(g_, 1, mode="edge"), [0.25, 0.5, 0.25], mode="valid")
+fr_ = np.concatenate([[0, 60], centres, [12000, sr / 2]]); gd = np.concatenate([[0, 0], g_, [g_[-1] / 2, 0]])
+v = fftconvolve(v, firwin2(1025, fr_ / (sr / 2), 10 ** (gd / 20)), mode="same")
+s2 = spectre_de(v); s2 = s2 - s2.mean()
+print("égalisation vers la vidéo 25 :", " ".join(f"{x:+.1f}" for x in g_), "; écart moyen avant", round(float(np.abs(ref - s_).mean()), 1), "dB, après", round(float(np.abs(ref - s2).mean()), 1), "dB")
 def borne(l): return 0.0 if l == 1 else (B(l) if l <= DERNIERE else len(v) / sr)
 def niveau(a, b):
     x = v[int(a * sr):int(b * sr)]; p = int(0.05 * sr); k = len(x) // p; r = np.sqrt((x[:k * p].reshape(k, p) ** 2).mean(1)); r = r[r > 10 ** (-38 / 20)]
     return 20 * np.log10(np.sqrt((r ** 2).mean()) + 1e-9)
-niv = {l: niveau(S(l), E(l)) for l in range(1, DERNIERE + 1)}; cible = float(np.median(list(niv.values()))) + 5.0   # la narration est montée bas (-22 LUFS) pour ne pas solliciter le limiteur du montage
+niv = {l: niveau(S(l), E(l)) for l in range(1, DERNIERE + 1)}; PLUS = 9.5; cible = float(np.median(list(niv.values()))) + PLUS   # après égalisation du timbre ; la narration est montée bas (-22 LUFS) pour ne pas solliciter le limiteur du montage
 gain = np.ones(len(v)); r = int(0.05 * sr)
 for l in range(1, DERNIERE + 1):
-    g = 10 ** (np.clip(cible - niv[l], -8, 8) / 20); i0, i1 = int(borne(l) * sr), int(borne(l + 1) * sr); gain[i0:i1] = g
+    g = 10 ** ((np.clip(cible - PLUS - niv[l], -8, 8) + PLUS) / 20); i0, i1 = int(borne(l) * sr), int(borne(l + 1) * sr); gain[i0:i1] = g
 k = np.ones(r) / r; gain = np.convolve(np.pad(gain, r // 2, mode="edge"), k, mode="valid")[:len(v)]
 v *= gain; pic = np.abs(v).max()
 # crêtes : limiteur doux (gain réduit autour des seules crêtes qui dépassent, lissé sur 10 ms)
