@@ -63,7 +63,7 @@ droit suisse, Tribunal fédéral, ATF 129 I 232, naturalisation, Zurich, initiat
 ## Réglages dans YouTube Studio
 
 - Fichier vidéo : zurich-atf-129-i-232-v5.mp4 (1080p, 8 min 20 s).
-- Miniature : miniature-zurich-atf-129-i-232.png.
+- Miniature : miniature-zurich-atf-129-i-232.png (un bulletin de vote « Peut-elle devenir suisse ? », frappé « INVALIDE »).
 - Sous-titres : zurich-sous-titres.srt (français, « avec minutage »).
 - Langue de la vidéo : français. Catégorie : Éducation. « Non, elle n'est pas conçue pour les enfants. »
 - Écran de fin : à partir de 8:05, sur les 15 dernières secondes, qui sont muettes. Une vidéo (« la plus pertinente pour le spectateur », ou la vidéo sur Emmen) dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.

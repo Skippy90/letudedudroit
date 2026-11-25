@@ -119,7 +119,7 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 
 ## 7. Miniature, kit de publication, fiche
 
-- **Miniature** : typographique, deux panneaux, un mot fort par panneau (« OUI ? » / « NON. »), une année et une instance sous chaque mot, un objet central à cheval sur la couture, une question en haut, les références en bas. **Tribunal fédéral en rouge, l'autre partie en brun.** Sobre, lisible en tout petit, exacte en droit. Source : une page HTML photographiée (`miniature/m.html`).
+- **Miniature** : **une idée différente pour chaque vidéo**, jamais le gabarit de la précédente. Ce qui reste commun : les couleurs de la marque, un seul objet ou une seule idée, peu de mots et très gros, lisible en tout petit, sobre, exacte en droit, les références en bas. Exemples : Aînées, deux panneaux « NON. » / « OUI. » avec la Terre sur la couture (Tribunal fédéral en rouge, Strasbourg en brun) ; Zurich, un bulletin de vote « Peut-elle devenir suisse ? » frappé du tampon « INVALIDE ». Source : une page HTML photographiée (`miniature/m.html`).
 - **Kit** (`publication.md`) : trois titres, description, chapitres, sources avec liens Fedlex et bger, ce que disent les articles, réponse à la question finale, commentaire à épingler, mots-clés, réglages, points à vérifier avant de publier. Mention de la licence CC BY-SA 4.0 et de la voix humaine.
 - **Fiche de cours** : deux pages au plus, tirée du texte du script.
 - Fichiers livrés avec un numéro de version dans le nom ; une version « légère » pour regarder, la version 1080p pour YouTube.

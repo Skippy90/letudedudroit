@@ -1,23 +1,27 @@
 <!doctype html><meta charset="utf-8"><style>
 *{margin:0;box-sizing:border-box}
 body{width:1920px;height:1080px;overflow:hidden;font-family:Inter,sans-serif;position:relative;background:#DA291C}
-.g{position:absolute;left:0;top:0;width:960px;height:1080px;background:#2B0807}
-.d{position:absolute;left:960px;top:0;width:960px;height:1080px;background:#DA291C}
-.c{position:absolute;top:0;width:760px;height:1080px;display:flex;flex-direction:column;justify-content:center;color:#FBF4E4}
-.g .c{left:120px}.d .c{left:240px;align-items:flex-end;text-align:right;width:600px}
-.an{font-weight:300;font-size:84px;letter-spacing:2px;opacity:.85;line-height:1}
-.mot{font-weight:900;font-size:256px;letter-spacing:-8px;line-height:.98;margin:6px 0 26px -14px}
-.d .mot{margin:6px -6px 26px 0}
-.qui{font-weight:700;font-size:44px;letter-spacing:7px;text-transform:uppercase;padding-top:24px;line-height:1.1;position:relative}
-.qui:before{content:"";position:absolute;top:0;left:0;width:150px;height:8px;background:#FBF4E4}
-.d .qui:before{left:auto;right:0}
-.g .qui:before{background:#DA291C}
-.terre{position:absolute;left:960px;top:522px;width:820px;height:820px;transform:translate(-50%,-50%);filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
-.haut{position:absolute;left:0;right:0;top:64px;text-align:center}
-.haut span{display:inline-block;background:#FBF4E4;color:#2B0807;font-weight:800;font-size:40px;letter-spacing:6px;text-transform:uppercase;padding:14px 34px;border-radius:8px}
-.ref{position:absolute;bottom:58px;font-weight:500;font-size:30px;letter-spacing:2px;color:#FBF4E4;opacity:.7}
+.halo{position:absolute;border-radius:50%;background:#fff;opacity:.07}
+.bulletin{position:absolute;left:210px;top:70px;width:1330px;height:800px;background:#FBF4E4;border-radius:22px;transform:rotate(-4deg);box-shadow:26px 30px 0 rgba(60,8,6,.45);padding:54px 70px;color:#2B0807}
+.tete{display:flex;justify-content:space-between;align-items:center;border-bottom:8px solid #2B0807;padding-bottom:22px;font-weight:800;font-size:40px;letter-spacing:7px;text-transform:uppercase}
+.tete span:last-child{font-weight:500;letter-spacing:3px;font-size:34px;text-transform:none}
+.q{display:flex;gap:56px;align-items:center;margin-top:56px}
+.portrait{flex:none;width:230px;height:270px;background:#fff;border:6px solid #2B0807;border-radius:14px;position:relative;overflow:hidden}
+.portrait i{position:absolute;left:50%;transform:translateX(-50%);background:#C9A9EC;border:5px solid #2B0807}
+.portrait .t{top:42px;width:92px;height:92px;border-radius:50%}
+.portrait .b{top:150px;width:176px;height:176px;border-radius:50% 50% 0 0}
+.q h1{font-weight:900;font-size:112px;line-height:1.02;letter-spacing:-3px}
+.cases{display:flex;gap:100px;margin-top:50px;padding-left:10px}
+.case{display:flex;align-items:center;gap:30px;font-weight:900;font-size:104px;letter-spacing:-2px}
+.case b{display:block;width:104px;height:104px;border:12px solid #2B0807;border-radius:16px}
+.tampon{position:absolute;left:800px;top:725px;transform:rotate(7deg);border:20px solid #DA291C;border-radius:28px;color:#DA291C;font-weight:900;font-size:190px;letter-spacing:4px;padding:6px 46px 12px;background:#FBF4E4;line-height:1;box-shadow:14px 16px 0 rgba(60,8,6,.35)}
+.ref{position:absolute;bottom:52px;font-weight:600;font-size:36px;letter-spacing:3px;color:#FBF4E4}
 </style>
-<div class="g"><div class="c"><div class="an">1999</div><div class="mot">OUI ?</div><div class="qui">Initiative</div></div><div class="ref" style="left:120px">Zurich</div></div>
-<div class="d"><div class="c"><div class="an">2003</div><div class="mot">NON.</div><div class="qui">Tribunal fédéral</div></div><div class="ref" style="right:120px">ATF 129 I 232</div></div>
-<img class="terre" src="urne.png">
-<div class="haut"><span>Le peuple peut-il choisir qui devient suisse&nbsp;?</span></div>
+<div class="halo" style="left:-200px;top:-260px;width:800px;height:800px"></div><div class="halo" style="right:-260px;bottom:-320px;width:900px;height:900px"></div>
+<div class="bulletin">
+ <div class="tete"><span>Bulletin de vote</span><span>Ville de Zurich</span></div>
+ <div class="q"><div class="portrait"><i class="t"></i><i class="b"></i></div><h1>Peut-elle devenir suisse&nbsp;?</h1></div>
+ <div class="cases"><div class="case"><b></b>OUI</div><div class="case"><b></b>NON</div></div>
+</div>
+<div class="tampon">INVALIDE</div>
+<div class="ref" style="left:70px">Tribunal fédéral, 2003</div><div class="ref" style="right:70px">ATF 129 I 232</div>
