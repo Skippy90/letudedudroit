@@ -8,6 +8,8 @@ Des vidéos courtes (6 à 10 minutes) et des shorts (30 secondes) qui expliquent
 
 Le script de référence (vidéo 1, « Qu'est-ce qu'une infraction ? Les trois étages ») et la charte visuelle se trouvent dans le dossier `docs/`. Toute nouvelle vidéo respecte exactement ce format.
 
+**Série « grands arrêts de droit constitutionnel » (texte de l'autrice, voix humaine, style rouge)** : lis `docs/standards-grands-arrets.md` avant de commencer et applique-le d'office. Il consigne les demandes récurrentes de l'autrice (déroulement, qualité de la voix, personnages, institutions, design des décisions, texte du bas, miniature, contrôles avant livraison). Toute nouvelle demande récurrente y est ajoutée le jour même.
+
 ## Règle absolue : zéro affirmation juridique sans source vérifiée
 
 1. Chaque article cité dans un script est vérifié contre la version en vigueur sur Fedlex (`https://www.fedlex.admin.ch`) au moment de la rédaction. Tu notes la date de la version consultée.
@@ -39,8 +41,8 @@ out/               vidéos rendues, prêtes à publier
 
 ## Charte visuelle (résumé ; version complète dans docs/)
 
-- Fond noir, texte blanc cassé, accent rouge suisse de la marque (mots-clés en blanc sur pastille rouge), vert pour « condition remplie », gris pour « condition manquante », ambre pour le dommage.
-- Personnes : silhouettes sans visage, une couleur fixe par personnage. Loi : bloc « Art. N CP » centré en bas. Infraction : bâtiment à trois étages. Délais : frise horizontale. Autorités : pyramide à trois niveaux. Fait justificatif : bouclier. État d'esprit : bulle de pensée.
+- Droit pénal : fond noir ; droit constitutionnel et grands arrêts : fond rouge (« style rouge »). Fond noir, texte blanc cassé, accent rouge suisse de la marque (mots-clés en blanc sur pastille rouge), vert pour « condition remplie », gris pour « condition manquante », ambre pour le dommage.
+- Personnes : bonhommes avec un visage simple (expressions), une couleur fixe par personnage ; détail et style rouge du droit constitutionnel dans `docs/charte-visuelle.md`. Loi : bloc « Art. N CP » centré en bas. Infraction : bâtiment à trois étages. Délais : frise horizontale. Autorités : pyramide à trois niveaux. Fait justificatif : bouclier. État d'esprit : bulle de pensée.
 - Chaque phrase fait apparaître ou bouger quelque chose. Aucun plan fixe de plus de quatre secondes. Jamais plus de douze mots affichés à la fois.
 - Police sans empattement, lisible sur téléphone, rien sous 28 points sur une image 1920 × 1080.
 

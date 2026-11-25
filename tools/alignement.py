@@ -4,8 +4,9 @@ Usage : python tools/alignement.py <matiere>/<numero-slug>
 
 - L'enregistrement est déposé dans voice/<slug>/ sous le nom enregistrement.<ext>
   (m4a, mp3, wav…), un seul fichier pour toute la vidéo, prises ratées comprises.
-- Il est transcrit une fois, avec l'instant de chaque mot, par la reconnaissance
-  vocale d'ElevenLabs (modèle « scribe »). La transcription est gardée dans
+- Il est transcrit une fois, avec l'instant de chaque mot, sur la machine et gratuitement
+  (faster-whisper, modèle « medium » ; WHISPER_MODELE pour un autre). Sur demande
+  ({"transcription": "elevenlabs"} dans reglages.json), par la reconnaissance d'ElevenLabs (payante). La transcription est gardée dans
   voice/<slug>/transcription.json : relancer l'outil ne coûte rien.
 - Chaque phrase de tts.txt est cherchée dans la transcription. Quand elle a été lue
   plusieurs fois, la dernière prise complète est gardée : les faux départs et les
@@ -92,7 +93,44 @@ def mots_texte(texte: str) -> list[str]:
     return [m for m in (normaliser(x) for x in re.split(r"[\s'’\-]+", texte)) if m]
 
 
-def transcrire(fichier: Path) -> dict:
+MODELE_WHISPER = os.environ.get("WHISPER_MODELE", "medium")
+
+
+def transcrire_local(fichier: Path) -> dict:
+    """Transcription gratuite, sur la machine (faster-whisper, modèle téléchargé une fois depuis huggingface.co).
+    L'enregistrement est découpé aux pauses (détecteur de voix Silero) et chaque morceau est transcrit seul :
+    transcrit d'un bloc, Whisper saute souvent une phrase relue juste après sa première prise, et la reprise
+    disparaît du montage. Même forme de réponse que la reconnaissance d'ElevenLabs."""
+    from faster_whisper import WhisperModel
+    from faster_whisper.audio import decode_audio
+    from faster_whisper.vad import VadOptions, get_speech_timestamps
+    fr = 16000
+    son_ = decode_audio(str(fichier), sampling_rate=fr)
+    zones = get_speech_timestamps(son_, VadOptions(min_silence_duration_ms=500, speech_pad_ms=200))
+    # Zones voisines regroupées jusqu'à 12 s : assez de contexte, trop court pour qu'une reprise soit fusionnée.
+    morceaux = []
+    for z in zones:
+        if morceaux and z["end"] - morceaux[-1][0] <= 12 * fr and z["start"] - morceaux[-1][1] < 0.8 * fr:
+            morceaux[-1][1] = z["end"]
+        else:
+            morceaux.append([z["start"], z["end"]])
+    modele = WhisperModel(MODELE_WHISPER, device="cpu", compute_type="int8",
+                          download_root=str(RACINE / ".cache" / "whisper"))
+    mots = []
+    for debut, fin in morceaux:
+        segments, _ = modele.transcribe(son_[debut:fin], language="fr", word_timestamps=True,
+                                        condition_on_previous_text=False)
+        decalage = debut / fr
+        mots += [{"text": w.word.strip(), "start": round(w.start + decalage, 3), "end": round(w.end + decalage, 3),
+                  "type": "word"} for seg in segments for w in (seg.words or []) if w.word.strip()]
+    return {"text": " ".join(m["text"] for m in mots), "words": mots, "moteur": f"faster-whisper {MODELE_WHISPER}, par morceaux"}
+
+
+def transcrire(fichier: Path, moteur: str = "local") -> dict:
+    """Par défaut, transcription locale et gratuite ; {"transcription": "elevenlabs"} dans reglages.json
+    utilise la reconnaissance d'ElevenLabs (payante, en crédits)."""
+    if moteur != "elevenlabs":
+        return transcrire_local(fichier)
     limite = uuid.uuid4().hex
     parties = [f'--{limite}\r\nContent-Disposition: form-data; name="{nom}"\r\n\r\n{valeur}\r\n'.encode()
                for nom, valeur in (("model_id", "scribe_v1"), ("language_code", "fra"),
@@ -178,6 +216,34 @@ def isoler(monte: Path, dossier: Path, tmp: Path) -> Path:
     return isole
 
 
+def caler_sur_le_son(instants: list[tuple[float, float]], x: np.ndarray, fr: int) -> list[tuple[float, float]]:
+    """Recale le début et la fin de chaque mot sur le son réel.
+
+    Les instants de Whisper sont approximatifs (souvent 0,1 à 0,4 s trop tard au début d'un mot, trop tôt à la
+    fin) : une coupe faite sur eux tranche la première syllabe ou la dernière. On élargit donc chaque mot tant
+    que le son reste nettement au-dessus du bruit de fond, sans empiéter sur le mot voisin, et de 0,5 s au plus."""
+    h = int(0.01 * fr)
+    n = len(x) // h
+    env = np.sqrt((x[:n * h].reshape(n, h) ** 2).mean(1) + 1e-12)
+    seuil = np.percentile(env, 10) * 6
+    ordre = sorted(range(len(instants)), key=lambda k: instants[k][0])
+    cales = list(instants)
+    for r, k in enumerate(ordre):
+        debut, fin = instants[k]
+        avant = instants[ordre[r - 1]][1] if r else 0.0
+        apres = instants[ordre[r + 1]][0] if r + 1 < len(ordre) else len(x) / fr
+        a = int(debut / 0.01)
+        borne = max(int(max(avant, debut - 0.5) / 0.01), 0)
+        while a > borne and a - 1 < n and env[a - 1] > seuil:
+            a -= 1
+        z = int(fin / 0.01)
+        borne = min(int(min(apres, fin + 0.5) / 0.01), n)
+        while z < borne and env[z] > seuil:
+            z += 1
+        cales[k] = (min(debut, a * 0.01), max(fin, z * 0.01))
+    return cales
+
+
 def porte_sur_les_mots(x: np.ndarray, fr: int, instants: list[tuple[float, float]]) -> np.ndarray:
     """Atténue tout ce qui n'est pas de la parole, d'après l'instant de chaque mot transcrit.
 
@@ -236,7 +302,8 @@ def main(slug: str) -> None:
         mp3 = tmp / "envoi.mp3"
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(brut), "-ar", "16000", "-b:a", "64k", str(mp3)],
                        check=True)
-        transcription.write_text(json.dumps({"source": empreinte, "reponse": transcrire(mp3)}, ensure_ascii=False),
+        transcription.write_text(json.dumps({"source": empreinte, "reponse": transcrire(mp3, reglages.get("transcription", "local"))},
+                                            ensure_ascii=False),
                                  encoding="utf-8")
     reponse = json.loads(transcription.read_text(encoding="utf-8"))["reponse"]
 
@@ -248,6 +315,9 @@ def main(slug: str) -> None:
         for m in mots_texte(w["text"]):
             entendus.append(m)
             instants.append((w["start"], w["end"]))
+
+    x, fr = sf.read(brut)
+    instants = caler_sur_le_son(instants, x, fr)
 
     # Phrases dans l'ordre, avec toutes leurs prises.
     phrases = [(b, p, t) for b, ph in enumerate(blocs) for p, t in enumerate(ph)]
@@ -316,8 +386,20 @@ def main(slug: str) -> None:
                 i -= 1
         choix[k] = (i, j, part, tete, queue)
 
+    # Une prise ne traverse pas un long silence pour aller chercher un ou deux derniers mots : après « jour-amende »,
+    # une pause de 3 s, puis « Enfin, l'amende » (faux départ de la ligne suivante) ne font pas partie de la phrase.
+    for k, (i, j, part, tete, queue) in enumerate(choix):
+        for g in range(j - 1, max(i, j - 3) - 1, -1):
+            if instants[g + 1][0] - instants[g][1] > 1.5:
+                j = g
+                break
+        for g in range(i, min(j, i + 2)):
+            if instants[g + 1][0] - instants[g][1] > 1.5:
+                i = g + 1
+                break
+        choix[k] = (i, j, part, tete, queue)
+
     # Montage.
-    x, fr = sf.read(brut)
     if reglages.get("porte", True):
         x = porte_sur_les_mots(x, fr, instants)
     # reglages.json : {"pauses": "naturelles"} garde les pauses d'origine entre les phrases
@@ -330,41 +412,109 @@ def main(slug: str) -> None:
     rampe = np.linspace(0, 1, fondu)
     morceaux, t, rapport = [], 0.0, []
     timings = [[] for _ in blocs]
+    # Points de coupe de chaque phrase (en secondes), recalés sur le son : on recule le début (et on avance la
+    # fin) jusqu'à un vrai silence de 80 ms, de 0,6 s au plus. Un mot voisin collé à la phrase (moins de 0,15 s)
+    # est traversé : c'est souvent un mot de bord mal reconnu (« Grâce » pour « Reste »). Un mot séparé par une
+    # pause (une prise ratée) borne la recherche. Deux phrases lues d'un trait sont coupées au point le plus calme
+    # entre elles : rien n'est répété ni tranché.
+    h = int(0.01 * fr)
+    nb = len(x) // h
+    env = np.sqrt((x[:nb * h].reshape(nb, h) ** 2).mean(1) + 1e-12)
+    seuil = np.percentile(env, 10) * 6
+
+    def coupe_debut(i):
+        debut = instants[i][0]
+        lim = max(debut - 0.6, 0.0)
+        if i and debut - instants[i - 1][1] >= 0.15:
+            lim = max(lim, instants[i - 1][1] + 0.03)
+        elif i:
+            # Mot collé juste avant : on ne le traverse que s'il ouvre lui-même une prise (silence avant lui),
+            # comme un premier mot mal reconnu ; sinon c'est la fin d'un faux départ enchaîné sur la reprise.
+            isole = i < 2 or instants[i - 1][0] - instants[i - 2][1] >= 0.3
+            if not isole:
+                lim = max(lim, instants[i - 1][1])
+        f = int(debut / 0.01)
+        while f - 8 > lim / 0.01 and env[max(f - 8, 0):f].max() > seuil:
+            f -= 1
+        return max(lim, min(debut - MARGE, f * 0.01 - 0.04))
+
+    def coupe_fin(j, suivant):
+        # Un mot mal découpé par la transcription (« Land's Game Mind » pour « Landsgemeinde ») : les morceaux
+        # collés au dernier mot reconnu (moins de 0,15 s), suivis d'une vraie pause, font partie de la phrase.
+        k = j
+        while (k + 1 < suivant and k - j < 2 and instants[k + 1][0] - instants[k][1] < 0.15
+               and instants[k + 1][1] - instants[j][1] < 0.8):
+            k += 1
+        if k > j and (k + 1 >= len(instants) or instants[k + 1][0] - instants[k][1] >= 0.3):
+            j = k
+        fin = instants[j][1]
+        lim = min(fin + 0.6, len(x) / fr)
+        if j + 1 < len(instants) and instants[j + 1][0] - fin >= 0.15:
+            lim = min(lim, instants[j + 1][0] - 0.03)
+        elif j + 1 < len(instants):
+            isole = j + 2 >= len(instants) or instants[j + 2][0] - instants[j + 1][1] >= 0.3
+            if not isole:
+                lim = min(lim, instants[j + 1][0])
+        f = int(fin / 0.01)
+        while f + 8 < min(lim / 0.01, nb) and env[f:f + 8].max() > seuil:
+            f += 1
+        return min(lim, max(fin + MARGE, f * 0.01 + 0.04))
+
+    coupes = [[coupe_debut(i), coupe_fin(j, choix[k + 1][0] if k + 1 < len(choix) else len(instants))]
+              for k, (i, j, *_ ) in enumerate(choix)]
+    for k in range(1, len(choix)):
+        if choix[k - 1][1] + 1 == choix[k][0] and coupes[k][0] < coupes[k - 1][1]:
+            g, d = instants[choix[k - 1][1]][1], instants[choix[k][0]][0]
+            if d - g > 0.02:
+                fa, fb = int(g / 0.01), max(int(d / 0.01), int(g / 0.01) + 1)
+                milieu = (fa + int(np.argmin(env[fa:fb]))) * 0.01
+            else:
+                milieu = (g + d) / 2
+            coupes[k - 1][1] = coupes[k][0] = milieu
+
+    # Phrase rattachée à la précédente par sa pause d'origine (copiée telle quelle) : la jonction ne reçoit
+    # pas de fondu, le son passe de l'une à l'autre exactement comme dans l'enregistrement.
+    rattachee = [bool(k) and naturelles and choix[k - 1][1] + 1 == choix[k][0]
+                 and coupes[k][0] - coupes[k - 1][1] <= (PAUSE_PHRASE if phrases[k][1] else PAUSE_LIGNE)[1]
+                 for k in range(len(choix))]
     for k, ((b, p, texte), (i, j, part, _, _)) in enumerate(zip(phrases, choix)):
-        debut, fin = instants[i][0], instants[j][1]
+        A, Z = coupes[k]
+        debut = instants[i][0]
         if k:
-            fin_prec = instants[choix[k - 1][1]][1]
+            Zp = coupes[k - 1][1]
             contigu = choix[k - 1][1] + 1 == i  # aucun mot (donc aucune reprise) entre les deux
             bornes = PAUSE_PHRASE if p else PAUSE_LIGNE
-            if contigu:
-                pause = min(max(debut - fin_prec - 2 * MARGE, bornes[0]), bornes[1])
+            ecart = A - Zp
+            if rattachee[k]:
+                # Pause d'origine gardée telle quelle (même très courte) : la respiration et l'ambiance restent.
+                morceaux.append(x[int(Zp * fr):int(A * fr)].copy())
             else:
-                pause = PAUSE_COUPE["phrase" if p else "ligne"]
-            ecart = debut - fin_prec - 2 * MARGE
-            if naturelles and contigu and bornes[0] <= ecart <= bornes[1]:
-                # Pause d'origine gardée telle quelle : la respiration et l'ambiance restent.
-                morceaux.append(x[int((fin_prec + MARGE) * fr):int((debut - MARGE) * fr)].copy())
-            elif naturelles:
-                # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                pause = (min(max(ecart, bornes[0]), bornes[1]) if contigu
+                         else PAUSE_COUPE["phrase" if p else "ligne"])
                 n = int(pause * fr)
-                morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
-            else:
-                morceaux.append(np.zeros(int(pause * fr)))
+                if naturelles:
+                    # Silence d'ambiance (le passage le plus calme de l'enregistrement), pas un silence numérique.
+                    morceaux.append(np.resize(ambiance, n) * np.r_[rampe, np.ones(max(0, n - 2 * fondu)), rampe[::-1]][:n])
+                else:
+                    morceaux.append(np.zeros(n))
             t += len(morceaux[-1]) / fr
-        a, z = max(0, int((debut - MARGE) * fr)), min(len(x), int((fin + MARGE) * fr))
+        a, z = max(0, int(A * fr)), min(len(x), int(Z * fr))
         seg = x[a:z].copy()
-        seg[:fondu] *= rampe
-        seg[-fondu:] *= rampe[::-1]
+        # Pas de fondu là où deux phrases lues d'un trait se rejoignent exactement : le son continue tel quel.
+        if not rattachee[k]:
+            seg[:fondu] *= rampe
+        if not (k + 1 < len(coupes) and rattachee[k + 1]):
+            seg[-fondu:] *= rampe[::-1]
         morceaux.append(seg)
         # Instant de chaque mot reconnu, dans le temps de la narration montée
         # (sert à caler un visuel sur un mot précis et aux sous-titres).
         mots = [{"mot": entendus[w], "debut": round(t + instants[w][0] - a / fr, 3),
                  "fin": round(t + instants[w][1] - a / fr, 3)} for w in range(i, j + 1)]
-        timings[b].append({"texte": texte, "debut": round(t + MARGE, 3), "fin": round(t + len(seg) / fr - MARGE, 3),
-                           "mots": mots})
+        timings[b].append({"texte": texte, "debut": round(t + max(0.0, instants[i][0] - a / fr), 3),
+                           "fin": round(t + min(len(seg) / fr, instants[j][1] - a / fr), 3), "mots": mots})
         t += len(seg) / fr
         reprises = len([c for c in candidats[k] if c[0] < i])
-        note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s"
+        note = f"ligne {b + 1}, phrase {p + 1} : prise gardée à {debut:.1f} s (coupe {A:.2f}–{Z:.2f})"
         if k in retouches:
             note += " (retouche enregistrée à part)"
         elif reprises:
@@ -383,7 +533,9 @@ def main(slug: str) -> None:
     mesure = subprocess.run(["ffmpeg", "-i", str(monte), "-t", f"{t:.3f}", "-af", "ebur128", "-f", "null", "-"],
                             capture_output=True, text=True).stderr
     integre = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", mesure)[-1])
-    gain = -16 - integre
+    # reglages.json : {"niveau": -20} vise un niveau plus bas, pour un enregistrement aux crêtes fortes
+    # (le limiteur ne doit retenir que de rares crêtes, sinon le son « pompe »).
+    gain = float(reglages.get("niveau", -16)) - integre
     # Les rares crêtes isolées (consonnes, chocs) sont retenues par un limiteur doux à -1,5 dB.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-t", f"{t:.3f}",
                     "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:attack=5:release=80:level=disabled",

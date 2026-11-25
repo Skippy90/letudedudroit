@@ -22,7 +22,14 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RACINE / "tools"))
-MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale"}
+MATIERES = {"droit-penal-general": "Droit pénal général", "procedure-penale": "Procédure pénale",
+            "arrets": "Les arrêts du Tribunal fédéral", "loi-decortiquee": "La loi décortiquée"}
+
+
+def numero_atf(slug: str) -> str:
+    """« arrets/01-atf-130-iv-58 » → « ATF 130 IV 58 » ; chaîne vide hors de la série des arrêts."""
+    m = re.match(r"\d+-atf-(\d+)-([a-z]+)-(\d+)", slug.split("/")[1])
+    return f"ATF {m[1]} {m[2].upper()} {m[3]}" if m else ""
 e = html.escape
 
 
@@ -77,7 +84,7 @@ def lire_curriculum() -> list[dict]:
 SYMBOLE = (RACINE / "docs/marque/symbole.svg").read_text(encoding="utf-8")
 
 
-def page(titre: str, corps: str, prof: int, description: str, apercu: bool = False) -> str:
+def page(titre: str, corps: str, prof: int, description: str, apercu: bool = False, donnees: str = "") -> str:
     """Une page du site ; « prof » : profondeur du dossier, pour les liens relatifs."""
     r = "../" * prof
     tete = f"""<title>{e(titre)}</title>
@@ -85,7 +92,18 @@ def page(titre: str, corps: str, prof: int, description: str, apercu: bool = Fal
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap">
-<link rel="stylesheet" href="{r}assets/style.css">"""
+<link rel="stylesheet" href="{r}assets/style.css">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png">"""
+    if donnees:
+        tete += "\n" + donnees
+    if prof == 0:  # accueil : nom du site et logo pour les résultats Google
+        domaine = json.loads((RACINE / "site/site.json").read_text(encoding="utf-8")).get("domaine", "letudedudroit.ch")
+        tete += f"""
+<script type="application/ld+json">{json.dumps([
+            {"@context": "https://schema.org", "@type": "WebSite", "name": "L’étude du droit", "url": f"https://{domaine}/"},
+            {"@context": "https://schema.org", "@type": "Organization", "name": "L’étude du droit", "url": f"https://{domaine}/",
+             "logo": f"https://{domaine}/favicon-512.png"}], ensure_ascii=False)}</script>"""
     entete = f"""<header class="entete"><div class="cadre">
 <a class="marque" href="{r}index.html"><span class="pastille">{SYMBOLE}</span><span>L’étude du droit</span></a>
 <nav><a href="{r}index.html#videos">Vidéos</a><a href="{r}parcours/index.html">Parcours</a><a href="{r}a-propos/index.html">À propos</a></nav>
@@ -101,10 +119,12 @@ def page(titre: str, corps: str, prof: int, description: str, apercu: bool = Fal
     return f"<!doctype html>\n<html lang=\"fr\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n{tete}\n</head><body>{contenu}</body></html>\n"
 
 
-def lecteur(youtube: str, miniature: str, titre: str) -> str:
-    """La vidéo : la miniature, et un lien vers YouTube (aucun contenu de YouTube n'est chargé avant le clic)."""
-    if youtube:
-        return (f'<a class="lecteur" href="https://www.youtube.com/watch?v={e(youtube)}" rel="noopener">'
+def lecteur(youtube: str, miniature: str, titre: str, chaine: str = "") -> str:
+    """La vidéo : la miniature, et un lien vers YouTube (aucun contenu de YouTube n'est chargé avant le clic).
+    Sans identifiant de vidéo, le lien mène à la chaîne."""
+    if youtube or chaine:
+        cible = f"https://www.youtube.com/watch?v={e(youtube)}" if youtube else e(chaine)
+        return (f'<a class="lecteur" href="{cible}" rel="noopener">'
                 f'<img src="{miniature}" alt="Miniature : {e(titre)}" width="1280" height="720">'
                 f'<span class="lire">Regarder sur YouTube</span></a>')
     return (f'<div class="lecteur"><img src="{miniature}" alt="Miniature : {e(titre)}" width="1280" height="720">'
@@ -112,36 +132,36 @@ def lecteur(youtube: str, miniature: str, titre: str) -> str:
 
 
 def inscription(reglages: dict, prof: int) -> str:
-    """Formulaire d'inscription aux fiches. Avec Infomaniak Newsletter : mêmes adresse d'envoi, identifiants,
-    champs pièges et contrôle anti-robots (ALTCHA) que le code d'intégration ; texte et style du site."""
+    """Formulaire d'inscription aux fiches. Avec Infomaniak Newsletter : la structure du code d'intégration est
+    reprise à l'identique (enveloppe, blocs, champs pièges, contrôle anti-robots ALTCHA), seuls le texte et le style
+    changent : le script d'Infomaniak s'appuie sur cette structure. Les champs pièges sont vidés à l'envoi, au cas où
+    un gestionnaire de mots de passe les aurait remplis (inf_email_check contient « email »)."""
     ins = reglages["inscription"]
     action = ins.get("action", "")
     r = "../" * prof
-    ferme = "" if action else " disabled"
+    intro = """<div><p class="sur">Fiches de cours</p><h2>Recevoir la fiche de chaque vidéo</h2>
+<p>Une page par notion : le cas, la règle, le piège classique, les articles et arrêts cités. Par e-mail, à chaque nouvelle vidéo.</p></div>"""
+    if "newsletter.infomaniak.com" not in action:
+        return f"""<section class="inscription" id="fiches"><div class="cadre">{intro}
+<form class="formulaire"><label for="courriel">Adresse e-mail</label>
+<input id="courriel" type="email" placeholder="prenom@exemple.ch" disabled>
+<button type="submit" disabled>Inscriptions bientôt ouvertes</button></form></div></section>"""
     v = e(ins.get("version_scripts", ""))
-    infomaniak = "newsletter.infomaniak.com" in action
-    pieges = (f'<input type="text" name="inf_email_check" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none">'
-              f'<input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="piege">'
-              f'<input type="hidden" name="key" value="{e(ins.get("key", ""))}"><input type="hidden" name="webform_id" value="{e(ins.get("webform_id", ""))}">'
-              ) if infomaniak else ""
-    robots = (f'<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v={v}" type="module"></script>'
-              f'<altcha-widget hidelogo hidefooter floating challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge"></altcha-widget>'
-              f'<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v={v}" defer></script>'
-              f'<script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v={v}"></script>') if infomaniak else ""
-    nom_email = e(ins.get("champ_email", "email"))
-    return f"""<section class="inscription" id="fiches"><div class="cadre">
-<div><p class="sur">Fiches de cours</p><h2>Recevoir la fiche de chaque vidéo</h2>
-<p>Une page par notion : le cas, la règle, le piège classique, les articles et arrêts cités. Par e-mail, à chaque nouvelle vidéo.</p></div>
-<form{f' action="{e(action)}" method="post"' if action else ''} class="formulaire inf-form">{pieges}
-<div class="inf-success" style="display:none"><p><strong>Presque fini : un e-mail de confirmation vient de vous être envoyé.</strong> Cliquez sur le lien qu’il contient pour valider votre inscription.</p></div>
-<div class="inf-content"><div class="inf-input inf-input-text">
-<label for="courriel">Adresse e-mail</label>
-<input id="courriel" name="{nom_email}" data-inf-meta="1" data-inf-error="" type="email" autocomplete="email" required placeholder="prenom@exemple.ch"{ferme}>
-<span class="inf-message"></span></div>
-<label class="accord"><input id="accord" type="checkbox" required{ferme}><span>J’accepte de recevoir les fiches et les nouvelles vidéos par e-mail. Désinscription en un clic, à tout moment (<a href="{r}confidentialite/index.html">protection des données</a>).</span></label>
-{robots}
-<div class="inf-submit"><input type="submit" value="{'Recevoir les fiches' if action else 'Inscriptions bientôt ouvertes'}"{ferme}></div>
-</div></form></div></section>"""
+    return f"""<section class="inscription" id="fiches"><div class="cadre">{intro}
+<form method="post" action="{e(action)}" class="inf-form formulaire"><input type="text" name="inf_email_check" autocomplete="off" tabindex="-1" aria-hidden="true" style="display:none" /><input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" /><input type="hidden" name="key" value="{e(ins.get("key", ""))}"><input type="hidden" name="webform_id" value="{e(ins.get("webform_id", ""))}">
+<div class="inf-main_daa845e72247bceebbf545aed4737521">
+<div class="inf-success" style="display:none"><h4>Presque fini : un e-mail de confirmation vient de vous être envoyé. Cliquez sur le lien qu’il contient pour valider votre inscription.</h4><p><a href="#" class="inf-btn">&laquo;</a></p></div>
+<div class="inf-content">
+<div class="inf-input inf-input-text"><label for="courriel">Adresse e-mail</label><input id="courriel" type="email" name="{e(ins.get("champ_email", "inf[1]"))}" data-inf-meta="1" data-inf-error="" required="required" placeholder="prenom@exemple.ch" autocomplete="email"></div>
+<div class="inf-rgpd">Votre adresse sert uniquement à vous envoyer les fiches et l’annonce des nouvelles vidéos. Vous confirmerez par un lien reçu par e-mail ; désinscription en un clic dans chaque envoi (<a href="{r}confidentialite/index.html">protection des données</a>).</div>
+<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v={v}" type="module"></script>
+<altcha-widget hidelogo hidefooter floating challengeurl="https://newsletter.infomaniak.com/v3/altcha-challenge" ></altcha-widget>
+<script src="https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v={v}" defer></script>
+<script src="https://newsletter.infomaniak.com/v3/static/webform_index.js?v={v}"></script>
+<div class="inf-submit"><input type="submit" value="Recevoir les fiches"></div>
+</div></div></form>
+<script>document.querySelectorAll('form.inf-form').forEach(function(f){{f.addEventListener('submit',function(){{['inf_email_check','website'].forEach(function(n){{var c=f.querySelector('[name="'+n+'"]');if(c)c.value='';}});}},true);}});</script>
+</div></section>"""
 
 
 # ----- pages -----
@@ -152,13 +172,16 @@ def carte(slug: str, info: dict, prof: int, numero: str) -> str:
     etat = "" if info.get("en_ligne") else '<span class="etat">Bientôt</span>'
     lien = f'{r}{slug}/index.html' if info.get("en_ligne") else None
     image = f'<img src="{r}{slug}/miniature.png" alt="" width="1280" height="720" loading="lazy">'
-    corps = f'{image}<span class="num">Vidéo {numero}</span><h3>{e(s["titre"])}</h3>{etat}'
+    corps = f'{image}<span class="num">{e(numero_atf(slug) or "Vidéo " + numero)}</span><h3>{e(s["titre"])}</h3>{etat}'
     return f'<a class="carte" href="{lien}">{corps}</a>' if lien else f'<div class="carte inactive">{corps}</div>'
 
 
 def accueil(reglages: dict, apercu: bool) -> str:
-    cartes = "".join(carte(slug, info, 0, slug.split("/")[1][:2].lstrip("0"))
-                     for slug, info in reglages["videos"].items())
+    series = {}
+    for slug, info in reglages["videos"].items():
+        series.setdefault(slug.split("/")[0], []).append(carte(slug, info, 0, slug.split("/")[1][:2].lstrip("0")))
+    grilles = "".join(f'<p class="sur"{"" if i == 0 else " style=\"margin-top:56px\""}>{e(MATIERES.get(m, m))}</p><h2>{"Les vidéos" if i == 0 else "Les arrêts expliqués"}</h2>'
+                      f'<div class="grille">{"".join(c)}</div>' for i, (m, c) in enumerate(series.items()))
     corps = f"""<section class="une"><div class="cadre">
 <p class="nom"><span>L’étude du droit</span></p>
 <h1>Le droit suisse, <em>une notion à la fois.</em></h1>
@@ -166,8 +189,7 @@ def accueil(reglages: dict, apercu: bool) -> str:
 <p class="liens"><a class="bouton" href="#videos">Voir les vidéos</a><a class="bouton second" href="#fiches">Recevoir les fiches</a></p>
 </div></section>
 <section class="videos" id="videos"><div class="cadre">
-<p class="sur">Droit pénal général</p><h2>Les vidéos</h2>
-<div class="grille">{cartes}</div></div></section>
+{grilles}</div></section>
 <section class="methode"><div class="cadre">
 <p class="sur">La méthode</p><h2>Comment une vidéo est construite</h2>
 <ol class="etapes">
@@ -185,15 +207,18 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
     sources = lire_sources(slug)
     matiere = MATIERES.get(slug.split("/")[0], "Droit suisse")
     numero = slug.split("/")[1][:2].lstrip("0")
+    atf = numero_atf(slug)
+    titre_page = f"{atf} — {s['titre']}" if atf else s["titre"]
     cas = s["sections"][0] if s["sections"] else ("", [])
     script = "".join(f'<h3>{e(nom)}</h3>' + "".join(f'<p><span class="n">{n}</span>{e(t)}</p>' for n, t in lignes)
                      for nom, lignes in s["sections"])
     liste = "".join(f'<li><a href="{e(u)}" rel="noopener">{e(t.split(" : ")[0])}</a>'
                     f'{" : " + e(t.split(" : ", 1)[1]) if " : " in t else ""}</li>' for t, u in sources)
-    depot = f'{reglages["github"]}/tree/main/scripts/{slug}'
+    # « branche » : tant que le script n'est pas fusionné dans main, le lien pointe sur sa branche.
+    depot = f'{reglages["github"]}/tree/{info.get("branche", "main")}/scripts/{slug}'
     corps = f"""<section class="video"><div class="cadre">
-<p class="sur">{e(matiere)} · Vidéo {numero}</p><h1>{e(s["titre"])}</h1>
-{lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"])}
+<p class="sur">{e(matiere)} · {e(atf or "Vidéo " + numero)}</p><h1>{e(titre_page)}</h1>
+{lecteur(info.get("youtube", ""), "scene.jpg" if (RACINE / "render/manim/media" / slug / "schemas.mp4").exists() else "miniature.png", s["titre"], reglages.get("youtube", ""))}
 </div></section>
 <section class="contenu"><div class="cadre colonnes">
 <article>
@@ -208,7 +233,30 @@ def page_video(slug: str, info: dict, reglages: dict) -> str:
 <p class="petit">Lois vérifiées sur Fedlex, arrêts sur le site du Tribunal fédéral. <a href="{e(depot)}" rel="noopener">Script, audit des sources et code</a>.</p>
 </aside></div></section>
 {inscription(reglages, 2)}"""
-    return page(f"{s['titre']} · L’étude du droit", corps, 2, f"{s['titre']} : le cas, la règle, le piège, les articles cités.")
+    if atf:
+        description = (f"{atf} (BGE {atf[4:]}) expliqué simplement : {s['titre'][:1].lower() + s['titre'][1:]} "
+                       "Les faits, la solution du Tribunal fédéral, le piège classique et les articles cités.")
+    else:
+        description = f"{s['titre']} : le cas, la règle, le piège, les articles cités."
+    return page(f"{titre_page} · L’étude du droit", corps, 2, description, donnees=donnees_video(slug, info, reglages, titre_page, description))
+
+
+def donnees_video(slug: str, info: dict, reglages: dict, titre: str, description: str) -> str:
+    """Données structurées schema.org VideoObject : Google les lit pour afficher la vidéo dans ses résultats.
+    Seulement quand la vidéo est sur YouTube (identifiant connu) : sans lien vers la vidéo, Google les ignore."""
+    if not info.get("youtube"):
+        return ""
+    prog_f = RACINE / "docs/strategie/programmation.json"
+    prog = json.loads(prog_f.read_text(encoding="utf-8")) if prog_f.exists() else {}
+    date = prog.get("videos", {}).get(slug) or prog.get("publiees", {}).get(slug, "")
+    domaine = reglages.get("domaine", "letudedudroit.ch")
+    objet = {"@context": "https://schema.org", "@type": "VideoObject", "name": titre, "description": description,
+             "thumbnailUrl": f"https://{domaine}/{slug}/miniature.png", "inLanguage": "fr-CH",
+             "embedUrl": f"https://www.youtube.com/embed/{info['youtube']}",
+             "url": f"https://www.youtube.com/watch?v={info['youtube']}"}
+    if date:
+        objet["uploadDate"] = date if "T" not in date else date + ":00+01:00"
+    return f'<script type="application/ld+json">{json.dumps(objet, ensure_ascii=False)}</script>'
 
 
 def page_parcours(reglages: dict) -> str:
@@ -281,6 +329,8 @@ def main(sortie: str | None, apercu: bool) -> None:
         shutil.rmtree(dossier)
     (dossier / "assets").mkdir(parents=True)
     shutil.copy(RACINE / "site/style.css", dossier / "assets/style.css")
+    for icone in (RACINE / "site/icones").iterdir():  # à la racine : Google cherche /favicon.ico
+        shutil.copy(icone, dossier / icone.name)
     (dossier / "index.html").write_text(accueil(reglages, apercu), encoding="utf-8")
     if reglages.get("domaine"):
         (dossier / "CNAME").write_text(reglages["domaine"] + "\n", encoding="utf-8")  # GitHub Pages : domaine personnalisé
@@ -295,7 +345,10 @@ def main(sortie: str | None, apercu: bool) -> None:
                 subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(info.get("scene", 10)), "-i", str(schemas),
                                 "-frames:v", "1", "-q:v", "3", "-vf", "scale=1280:-2", str(cible / "scene.jpg")], check=True)
             (cible / "index.html").write_text(page_video(slug, info, reglages), encoding="utf-8")
-            fiche.main(slug, str(cible / "fiche.pdf"))
+            if info.get("fiche"):  # fiche faite à la main (style rouge) : copiée telle quelle
+                shutil.copy(RACINE / info["fiche"], cible / "fiche.pdf")
+            else:
+                fiche.main(slug, str(cible / "fiche.pdf"))
     for nom, contenu in [("parcours", page_parcours(reglages)),
                          ("a-propos", page_texte("À propos", "Pourquoi ce projet, et comment il est fait.", A_PROPOS,
                                                  "Le projet L’étude du droit : méthode, sources, licence.")),

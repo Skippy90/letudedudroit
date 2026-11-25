@@ -79,3 +79,27 @@ Parce que personne ne connaît les raisons réelles des votants : le vote est se
 - Relecture de l'arrêt sur bger.ch par la relectrice, et coches de ce tableau.
 - Attribution du numéro dans la série, puis renommage du dossier.
 - `visuals.md`, après l'enregistrement.
+
+## Enregistrement et montage (24 novembre 2026)
+
+Voix : enregistrement humain de l'autrice (`Voix_261124_205540.m4a`, 25 min 48 s, prises ratées comprises), à partir du script corrigé. Montage par `tools/alignement.py` : 88 phrases retrouvées sur 88, 44 avec reprises coupées, narration de 8 min 58 s (`voice/arrets/atf-129-i-232-zurich/montage.txt`). Transcription locale (Whisper medium).
+
+Contrôle : la narration montée a été retranscrite et comparée au texte, séquence par séquence. Les écarts relevés sont des erreurs de reconnaissance (nombres, mots allemands, fins de phrase tronquées par le moteur) ; les huit séquences douteuses (6, 11, 17, 19, 23, 28, 41, 43) ont été retranscrites à part et sont complètes. **Deux passages restent à écouter par l'autrice**, la reconnaissance y entend autre chose que le texte : séquence 23 (« lié par les droits fondamentaux », reconnu « lois ») et séquence 43 (« les articles quinze à dix-sept de la loi sur la nationalité permettent », reconnu avec un mot en trop).
+
+Vidéo : 8 min 24 s avec l'écran de fin (voix accélérée de 5 %, hauteur conservée ; silences resserrés ; cinq cartons de partie). Niveau : −14,8 LUFS. Calage son-image constant (0,13 à 0,16 s sur quatorze séquences mesurées). Scènes : `render/manim/atf-129-i-232/`. À l'écran, tout texte reprend le script ou les articles vérifiés ci-dessus ; la fiche du dossier de candidat reprend la liste du considérant 4.3.2.
+
+### Version 2 (25 novembre 2026)
+
+- **Trois raccords fautifs corrigés** (signalés à l'écoute à 1:03, 3:22 et 7:03 de la version 1) : séquences 6, 19 et 41. Le montage avait gardé la fin d'une prise écartée, ou le début de la phrase suivante. Cause : le moteur de transcription tronque parfois le dernier mot d'un passage court, et l'alignement débordait sur le passage voisin. La transcription est retouchée à la main à ces trois endroits (note dans `transcription.json`), puis la narration remontée. Contrôle : aucune coupe ne mord plus sur un passage voisin ; les trois séquences sont retranscrites complètes dans la vidéo finale.
+- **Niveau** : l'enregistrement est plus faible que celui de la vidéo 25 (−27,3 LUFS contre −21,6). Monté à −16 LUFS, il sollicitait trop le limiteur du montage (4 000 échantillons au plafond). La narration est désormais montée à −22 LUFS (`reglages.json` : `{"niveau": -22}`, option ajoutée à `tools/alignement.py`), et le niveau final est donné au mixage : −15,6 LUFS, 0,65 % d'échantillons retouchés par le limiteur doux.
+- **Images** : les quatre instances sont dessinées (hémicycle, conseil, hôtel du gouvernement, tribunal) ; l'UDC est montrée par trois militants derrière une banderole à son nom, **sans son logo** ; la vie privée et les données personnelles ont chacune leur image (art. 13 al. 1 et al. 2 Cst.) ; des personnages réagissent aux textes (séquences 17 à 22, 26 à 29, 32, 35, 42, 44, 45). Aucun texte nouveau n'affirme quoi que ce soit de plus que le script ; « Écoutez-moi ! » (séquence 19) illustre le droit d'être entendu.
+- Durée : 8 min 20 s avec l'écran de fin. Passages à écouter : 3:57 (séquence 23) et 7:26 (séquence 43).
+
+### Version 3 (25 novembre 2026)
+
+- **Timbre aligné sur la vidéo 25**, à la demande de l'autrice. Mesure par tiers d'octave : l'enregistrement de Zurich avait environ 5 dB de trop entre 160 et 400 Hz et 7 à 8 dB de moins au-dessus de 3 kHz que la voix traitée de la vidéo 25 (son plus sourd). Égalisation de ±8 dB au plus (`son/egaliser.py`, référence `son/ref25.npy`) : écart moyen ramené de 4,6 à 1,1 dB. Niveau final −15,7 LUFS (vidéo 25 : −15,1), 1 % d'échantillons retouchés par le limiteur doux.
+- Séquence 17 : la personne dont la demande est acceptée reçoit une croix suisse sur son maillot ; celle dont la demande est rejetée n'en a pas.
+
+### Version 4 (25 novembre 2026)
+
+Application des standards de la série (`docs/standards-grands-arrets.md`, consignés ce jour) : corps électoral aux couleurs de Zurich avec drapeau zurichois et drapeau suisse ; juges en robe noire, rabat blanc et toque ; design commun des décisions (feuille à en-tête, dispositif en tampon, sceau) ; icônes en couleur ; un militant suit l'initiative d'une instance à l'autre et réagit à chaque décision ; séquences 40 à 45 refaites en images ; texte du bas en lignes de 42 caractères au plus, surlignage calé sur les mots. Texte, voix, minutages et chapitres inchangés. Aucun texte nouveau à l'écran n'ajoute d'affirmation juridique : « Sa procédure ne peut pas respecter la Constitution » abrège la séquence 40 ; les légendes des séquences 42 à 44 reprennent le script.

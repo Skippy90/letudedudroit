@@ -1,2 +1,4 @@
 manim==0.19.0
 soundfile==0.14.0
+faster-whisper==1.2.1
+sherpa-onnx  # transcription de secours (tools/transcrire_secours.py)

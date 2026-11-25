@@ -38,3 +38,304 @@ videos:
     articles: ["12", "123", "134"]
     requiert: ["droit-penal-general/04", "droit-penal-general/10", "arrets/01"]
     statut: script-redige
+  - id: 06
+    slug: atf-133-iv-9
+    titre: "Il refuse de se laisser dépasser : meurtre ?"
+    notion: "Dol éventuel ou négligence sur la route (ATF 133 IV 9)"
+    articles: ["12", "111", "117"]
+    requiert: ["arrets/01"]
+    statut: script-redige
+  - id: 07
+    slug: atf-85-iv-1
+    titre: "Il boit, puis il conduit : où commence la faute ?"
+    notion: "Actio libera in causa par négligence (ATF 85 IV 1)"
+    articles: ["12", "19", "263"]
+    requiert: ["droit-penal-general/08"]
+    statut: script-redige
+  - id: 08
+    slug: atf-125-iv-242
+    titre: "Un test, un mensonge : dol éventuel ou négligence ?"
+    notion: "Dol éventuel et transmission du VIH (ATF 125 IV 242)"
+    articles: ["12", "122", "231"]
+    requiert: ["droit-penal-general/04"]
+    statut: script-redige
+  - id: 09
+    slug: atf-131-iv-1
+    titre: "Le partenaire savait : tentative et consentement"
+    notion: "Consentement à la mise en danger ; tentative (ATF 131 IV 1)"
+    articles: ["12", "22", "122", "231"]
+    requiert: ["droit-penal-general/09", "arrets/08"]
+    statut: script-redige
+  - id: 10
+    slug: atf-141-iv-61
+    titre: "Meurtre ou assassinat : ce qui fait la différence"
+    notion: "Assassinat et peine à vie complémentaire (ATF 141 IV 61)"
+    articles: ["40", "49", "111", "112"]
+    requiert: ["droit-penal-general/04"]
+    statut: script-redige
+  - id: 11
+    slug: atf-130-iv-111
+    titre: "Une réunion sur invitation : est-ce « en public » ?"
+    notion: "Notion de « public » à l'art. 261bis (ATF 130 IV 111)"
+    articles: ["261bis"]
+    requiert: []
+    statut: script-redige
+
+  # --- Bibliothèque des grands arrêts (plan du 16.11.2026, docs/strategie/bibliotheque-atf.md) ---
+  # Références contrôlées sur search.bger.ch (regeste) ; faits et raisonnement à lire en entier avant le script.
+  - id: 12
+    slug: atf-116-ia-359
+    titre: "En 1990, des Suissesses ne pouvaient toujours pas voter"
+    notion: "Égalité des droits politiques entre femmes et hommes ; Appenzell Rhodes-Intérieures (ATF 116 Ia 359)"
+    serie: libertes-democratie
+    articles: ["4 aCst.", "74 aCst.", "8 Cst.", "39 Cst.", "51 Cst."]
+    requiert: []
+    statut: script-redige
+  - id: 13
+    slug: atf-147-iii-265
+    titre: "Comment le juge calcule une pension pour un enfant"
+    notion: "Entretien de l'enfant : méthode en deux étapes avec répartition de l'excédent (ATF 147 III 265)"
+    serie: famille-argent
+    articles: ["276 CC", "276a CC", "285 CC", "285a CC", "93 LP"]
+    requiert: []
+    statut: script-redige
+  - id: 14
+    slug: atf-147-iii-14
+    titre: "Votre loyer de départ est-il abusif ?"
+    notion: "Contestation du loyer initial ; calcul du rendement net (ATF 147 III 14)"
+    serie: logement
+    articles: ["269 CO", "269a CO", "270 CO", "11 OBLF", "12a OBLF", "16 OBLF"]
+    requiert: []
+    statut: script-redige
+  - id: 15
+    slug: atf-129-i-217
+    titre: "Le peuple peut-il voter pour discriminer ?"
+    notion: "Naturalisations aux urnes ; interdiction de discriminer et devoir de motiver (ATF 129 I 217)"
+    serie: libertes-democratie
+    articles: ["8 Cst.", "29 Cst.", "34 Cst.", "35 Cst.", "15 LN", "16 LN"]
+    requiert: []
+    statut: script-redige
+  - id: 16
+    slug: atf-147-iii-308
+    titre: "Divorce : la fin de la « règle des 45 ans »"
+    notion: "Reprise d'une activité lucrative après séparation ou divorce (ATF 147 III 308)"
+    serie: famille-argent
+    articles: ["125 CC", "163 CC"]
+    requiert: []
+    statut: script-redige
+  - id: 17
+    slug: atf-138-iii-322
+    titre: "La FIFA peut-elle empêcher un joueur de travailler ?"
+    notion: "Matuzalem : ordre public matériel et engagement excessif (ATF 138 III 322)"
+    serie: travail-personnalite
+    articles: ["27 CC", "60 CC", "176 LDIP", "190 LDIP", "191 LDIP", "192 LDIP", "10 Cst.", "27 Cst."]
+    requiert: []
+    statut: script-redige
+  - id: 18
+    slug: atf-123-i-296
+    titre: "Le foulard à l'école : l'enseignante et l'élève"
+    notion: "Neutralité confessionnelle de l'école et liberté de conscience et de croyance (ATF 123 I 296 / 142 I 49)"
+    serie: libertes-democratie
+    articles: ["8 Cst.", "15 Cst.", "36 Cst.", "303 CC", "27 aCst.", "49 aCst."]
+    requiert: []
+    statut: script-redige
+  - id: 19
+    slug: atf-147-iv-9
+    titre: "Une vidéo illégale peut-elle servir de preuve ?"
+    notion: "Exploitabilité de preuves obtenues illicitement (art. 141 al. 2 CPP) (ATF 147 IV 9)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 20
+    slug: atf-150-iii-305
+    titre: "Une pension peut-elle durer toute la vie ?"
+    notion: "Limitation dans le temps de l'entretien après divorce (ATF 150 III 305)"
+    serie: famille-argent
+    articles: ["125 CC", "163 CC"]
+    requiert: []
+    statut: script-redige
+  - id: 21
+    slug: atf-140-iii-583
+    titre: "Le bailleur a oublié la formule officielle"
+    notion: "Loyer initial sans formule officielle (ATF 140 III 583)"
+    serie: logement
+    articles: ["11 CO", "20 CO", "62 CO", "67 CO", "269d CO", "270 CO", "2 CC", "19 OBLF"]
+    requiert: []
+    statut: script-redige
+  - id: 22
+    slug: atf-138-ii-346
+    titre: "Google Street View et votre visage"
+    notion: "Protection de la personnalité et données personnelles (ATF 138 II 346)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 23
+    slug: atf-143-iv-241
+    titre: "Quand le procureur peut-il classer ?"
+    notion: "Classement et in dubio pro duriore (ATF 143 IV 241)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 24
+    slug: atf-125-iii-70
+    titre: "Mobbing : quand le licenciement devient abusif"
+    notion: "Mobbing, licenciement abusif et tort moral (ATF 125 III 70)"
+    serie: travail-personnalite
+    articles: ["2 CC", "49 CO", "101 CO", "324a CO", "328 CO", "336 CO", "336a CO"]
+    requiert: []
+    statut: script-redige
+  - id: 25
+    slug: atf-146-i-145
+    titre: "Les Aînées pour le climat contre la Suisse"
+    notion: "Demande de décision sur des actes matériels en matière de climat (ATF 146 I 145)"
+    serie: libertes-democratie
+    articles: ["25a PA", "10 Cst.", "13 Cst.", "6 CEDH", "3 LCl"]
+    requiert: []
+    statut: script-redige
+  - id: 26
+    slug: atf-141-v-281
+    titre: "Une rente AI pour des douleurs qu'on ne voit pas ?"
+    notion: "Troubles psychosomatiques : procédure probatoire structurée (ATF 141 V 281)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 27
+    slug: atf-148-iv-329
+    titre: "Le stealthing devant le Tribunal fédéral"
+    notion: "Stealthing et art. 191 CP (ancien droit) (ATF 148 IV 329)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 28
+    slug: atf-116-ia-252
+    titre: "Un crucifix dans une école publique ?"
+    notion: "Crucifix en classe et neutralité confessionnelle (ATF 116 Ia 252)"
+    serie: libertes-democratie
+    articles: ["15 Cst.", "303 CC", "27 aCst.", "49 aCst."]
+    requiert: []
+    statut: script-redige
+  - id: 29
+    slug: atf-147-iii-293
+    titre: "Divorce : comment se calcule la pension entre ex-époux"
+    notion: "Entretien après divorce : méthode en deux étapes (ATF 147 III 293)"
+    serie: famille-argent
+    articles: ["125 CC", "163 CC", "277 CPC"]
+    requiert: []
+    statut: script-redige
+  - id: 30
+    slug: atf-143-i-377
+    titre: "L'AI peut-elle vous faire surveiller ?"
+    notion: "Observation par l'AI sans base légale suffisante (ATF 143 I 377)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 31
+    slug: atf-135-i-79
+    titre: "La religion dispense-t-elle du cours de natation ?"
+    notion: "Dispense de natation mixte pour motifs religieux (ATF 135 I 79)"
+    serie: libertes-democratie
+    articles: ["15 Cst.", "36 Cst.", "62 Cst.", "9 CEDH", "12 LESp", "33 LESp", "4 LEI"]
+    requiert: []
+    statut: script-redige
+  - id: 32
+    slug: atf-148-iv-234
+    titre: "Ce que l'arrêt de 2022 a montré sur l'ancien droit du viol"
+    notion: "Contrainte et consentement (ancien droit) (ATF 148 IV 234)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 33
+    slug: atf-147-iii-32
+    titre: "Bail indexé : peut-on demander une baisse ?"
+    notion: "Baisse de loyer à la fin de la durée initiale d'un bail indexé (ATF 147 III 32)"
+    serie: logement
+    articles: ["269 CO", "269b CO", "269d CO", "270 CO", "270a CO", "270c CO", "17 OBLF"]
+    requiert: []
+    statut: script-redige
+  - id: 34
+    slug: atf-110-ia-7
+    titre: "Le mariage coûte-t-il plus cher en impôts ?"
+    notion: "Hegetschweiler : égalité fiscale entre couples mariés et concubins (ATF 110 Ia 7)"
+    serie: famille-argent
+    articles: ["4 aCst.", "54 aCst.", "8 Cst.", "14 Cst.", "127 Cst.", "190 Cst.", "3 LHID", "11 LHID", "9 LIFD", "36 LIFD"]
+    requiert: []
+    statut: script-redige
+  - id: 35
+    slug: atf-143-i-129
+    titre: "Une initiative populaire peut-elle être annulée ?"
+    notion: "Initiative cantonale fribourgeoise invalidée (ATF 143 I 129)"
+    serie: libertes-democratie
+    articles: ["8 Cst.", "34 Cst.", "139 Cst.", "43 Cst./FR"]
+    requiert: []
+    statut: script-redige
+  - id: 36
+    slug: atf-137-iii-303
+    titre: "Un footballeur écarté peut-il partir sur-le-champ ?"
+    notion: "Résiliation immédiate par le travailleur ; droit d'être occupé (ATF 137 III 303)"
+    serie: travail-personnalite
+    articles: ["2 CC", "4 CC", "28 CC", "41 CO", "49 CO", "55 CO", "99 CO", "101 CO", "324 CO", "328 CO", "337 CO", "337b CO", "337c CO", "337d CO"]
+    requiert: []
+    statut: script-redige
+  - id: 37
+    slug: atf-144-iii-481
+    titre: "Après un divorce, quand reprendre le travail ?"
+    notion: "Entretien de prise en charge ; degrés scolaires (ATF 144 III 481)"
+    serie: famille-argent
+    articles: ["125 CC", "163 CC", "276 CC", "276a CC", "285 CC"]
+    requiert: []
+    statut: script-redige
+  - id: 38
+    slug: atf-143-v-409
+    titre: "Dépression et AI"
+    notion: "Troubles dépressifs légers à moyens et invalidité (ATF 143 V 409)"
+    serie: assurances-sociales
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 39
+    slug: atf-140-iv-196
+    titre: "Le juge d'appel doit-il réentendre les témoins ?"
+    notion: "Immédiateté et preuves en appel (ATF 140 IV 196)"
+    serie: penal
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 40
+    slug: atf-149-iii-441
+    titre: "Parents non mariés : comment se partage l'excédent"
+    notion: "Excédent pour les enfants de parents non mariés (ATF 149 III 441)"
+    serie: famille-argent
+    articles: ["276 CC", "285 CC", "289 CC"]
+    requiert: []
+    statut: script-redige
+  - id: 41
+    slug: atf-143-ii-297
+    titre: "Un contrat de dentifrice devenu grand arrêt sur les cartels"
+    notion: "Gaba : accords verticaux et concurrence (ATF 143 II 297)"
+    serie: economie
+    articles: []
+    requiert: []
+    statut: planifie
+  - id: 42
+    slug: atf-140-iii-337
+    titre: "Impôts et minimum vital du parent qui paie"
+    notion: "Impôts et leasing dans le minimum vital du débiteur d'entretien (ATF 140 III 337)"
+    serie: famille-argent
+    articles: ["163 CC", "176 CC", "92 LP", "93 LP", "9 Cst."]
+    requiert: []
+    statut: script-redige
+  - id: 43
+    slug: atf-133-i-58
+    titre: "L'État doit-il fournir le produit d'un suicide assisté ?"
+    notion: "Pentobarbital sodique et ordonnance médicale (ATF 133 I 58)"
+    serie: libertes-democratie
+    articles: []
+    requiert: []
+    statut: planifie

@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Ils étaient plusieurs | Droit pénal suisse
 
-## Description (3615 caractères sur 5 000)
+## Description (3637 caractères sur 5 000)
 
 ```text
 Ils étaient plusieurs — expliqué simplement, à partir d'un cas concret.
@@ -36,15 +36,15 @@ Paul est, selon toute vraisemblance, complice. Sa voiture a transporté les outi
 
 Chapitres :
 0:00 Le cas de départ
-0:44 La carte : auteurs et participants
-1:10 Les coauteurs : Max et Jade
-2:02 L'instigatrice : Lina
-3:22 Le complice : Noé
-4:17 Le piège classique
-5:07 Conclusion et question
+0:52 La carte : auteurs et participants
+1:20 Les coauteurs : Max et Jade
+2:17 L'instigatrice : Lina
+3:53 Le complice : Noé
+5:00 Le piège classique
+5:56 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/10-participation
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

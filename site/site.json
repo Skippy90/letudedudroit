@@ -28,23 +28,45 @@
     },
     "droit-penal-general/03-crime-delit-contravention": {
       "youtube": "",
-      "en_ligne": false,
+      "en_ligne": true,
       "scene": 9.5
     },
     "droit-penal-general/04-intention-negligence": {
       "youtube": "",
-      "en_ligne": false,
+      "en_ligne": true,
       "scene": 14.5
     },
     "droit-penal-general/05-commission-par-omission": {
       "youtube": "",
-      "en_ligne": false,
+      "en_ligne": true,
       "scene": 18.5
     },
     "droit-penal-general/06-faits-justificatifs": {
       "youtube": "",
-      "en_ligne": false,
+      "en_ligne": true,
       "scene": 13.0
+    },
+    "arrets/01-atf-130-iv-58": {
+      "youtube": "",
+      "en_ligne": true,
+      "scene": 18.0
+    },
+    "arrets/02-atf-122-iv-1": {
+      "youtube": "",
+      "en_ligne": true,
+      "scene": 18.0
+    },
+    "arrets/03-atf-141-iv-336": {
+      "youtube": "",
+      "en_ligne": false,
+      "scene": 18.0
+    },
+    "arrets/15-atf-129-i-217": {
+      "youtube": "h_w8Cqwrd-A",
+      "en_ligne": true,
+      "scene": 18.0,
+      "fiche": "scripts/arrets/15-atf-129-i-217/fiche.pdf",
+      "branche": "arret-15-enregistrement"
     }
   }
 }

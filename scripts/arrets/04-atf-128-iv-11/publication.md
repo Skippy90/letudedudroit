@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 ATF 128 IV 11 — Vingt mille francs pour un CD-ROM : qui a décidé qui ? | Droit pénal suisse
 
-## Description (2552 caractères sur 5 000)
+## Description (2667 caractères sur 5 000)
 
 ```text
 ATF 128 IV 11 : vingt mille francs pour un CD-ROM : qui a décidé qui ? L'arrêt du Tribunal fédéral expliqué simplement, à partir des faits.
@@ -32,7 +32,10 @@ Chapitres :
 5:26 Le piège classique
 5:43 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/arrets/04-atf-128-iv-11
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
+
+Aussi cité : BGE 128 IV 11 · 128 IV 11
 ```

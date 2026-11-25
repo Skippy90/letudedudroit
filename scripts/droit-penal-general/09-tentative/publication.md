@@ -6,7 +6,7 @@ Fiche générée par `tools/publication.py`. À relire avant tout envoi ; l'uplo
 
 Il a essayé, mais… | Droit pénal suisse
 
-## Description (3204 caractères sur 5 000)
+## Description (3226 caractères sur 5 000)
 
 ```text
 Il a essayé, mais… — expliqué simplement, à partir d'un cas concret.
@@ -32,16 +32,16 @@ Non, pas forcément. En commençant à griffer la portière, Mia passe à l'exé
 
 Chapitres :
 0:00 Le cas de départ
-0:35 La carte : le chemin du crime
-0:55 L'idée et la préparation
-1:27 Le seuil de la tentative
-2:46 La tentative impossible
-3:31 Le désistement
-4:31 Le piège classique
-4:57 Conclusion et question
+0:37 La carte : le chemin du crime
+1:04 L'idée et la préparation
+1:38 Le seuil de la tentative
+3:00 La tentative impossible
+3:45 Le désistement
+4:54 Le piège classique
+5:21 Conclusion et question
 
+La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches
 Script complet, audit des sources et code : https://github.com/Skippy90/letudedudroit/tree/main/scripts/droit-penal-general/09-tentative
 Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant « L'étude du droit » et en partageant dans les mêmes conditions.
-Narration synthétique (voix générée par ElevenLabs).
 Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.
 ```

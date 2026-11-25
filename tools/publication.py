@@ -110,6 +110,7 @@ def main(slug: str) -> None:
     lignes += ["", "Chapitres :", *[f"{t} {nom}" for t, nom in chapitres]]
     lignes += [
         "",
+        "La fiche du cours, gratuite, par e-mail : https://letudedudroit.ch/#fiches",
         f"Script complet, audit des sources et code : {DEPOT}/tree/main/scripts/{slug}",
         "Contenu sous licence Creative Commons BY-SA 4.0 : vous pouvez le réutiliser en citant "
         "« L'étude du droit » et en partageant dans les mêmes conditions.",
@@ -117,6 +118,8 @@ def main(slug: str) -> None:
     if timings.get("source", config_voix["source"]) == "synthese":
         lignes.append("Narration synthétique (voix générée par ElevenLabs).")
     lignes.append("Cette vidéo est une introduction pédagogique et ne remplace pas un conseil juridique.")
+    if atf:  # autres façons de chercher l'arrêt : forme allemande et numéro seul
+        lignes += ["", f"Aussi cité : BGE {atf[4:]} · {atf[4:]}"]
     description = "\n".join(lignes)
 
     sortie = dossier / "publication.md"

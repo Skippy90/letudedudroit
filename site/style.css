@@ -137,3 +137,12 @@ aside { display: grid; gap: 16px; min-width: 0; position: sticky; top: 84px; }
   aside { position: static; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* Formulaire Infomaniak : structure d'origine, aux couleurs du site. */
+.formulaire .inf-content { display: grid; gap: 10px; }
+.formulaire .inf-input label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }
+.formulaire .inf-rgpd { font-size: 0.84rem; line-height: 1.45; }
+.formulaire .inf-rgpd a { color: #fff; }
+.formulaire .inf-success h4 { margin: 0; font-size: 1rem; line-height: 1.5; }
+.formulaire .inf-success .inf-btn { color: #fff; }
+.formulaire .inf-input.inf-error input { border-color: #ffb4b4; }
+

@@ -72,6 +72,7 @@ def lire_moments(slug):
 class Schemas(Scene):
     def setup(self):
         self.t = 0.0
+        self.carte, self.carte_marques = None, {}
         self.alertes = []
         self.personnages, self.paroles, self.bulles = {}, {}, {}
         self.titre = self.sous_titre = self.article = self.renvoi = None
@@ -82,6 +83,7 @@ class Schemas(Scene):
         self.questions_etages, self.bouclier = {}, None
         self.decor = self.neige = None
         self.pictos, self.etiquettes = {}, {}
+        self.tenus = {}  # objet porté → qui le porte
         self.focus = None
 
     # ----- temps -----
@@ -110,6 +112,8 @@ class Schemas(Scene):
     def jouer(self, *animations, duree=DUREE_ANIM):
         animations = [a for a in animations if a is not None]
         if animations:
+            # Une marche dure le temps de ses pas, pas les 0,7 s d'une apparition.
+            duree = max([duree] + [getattr(a, "duree_propre", 0) for a in animations])
             self.play(*animations, run_time=duree)
 
     def attendre_jusqua(self, instant):
@@ -185,6 +189,40 @@ class Schemas(Scene):
         return [(n, m) for n, m in el if m is not None and self.a_l_ecran(m) and m.get_family()[0].has_points()
                 or (m is not None and self.a_l_ecran(m) and len(m.get_family()) > 1)]
 
+    def ranger_noms(self):
+        """Après chaque moment : les prénoms qui se touchent s'écartent, un prénom posé sur le bloc d'article
+        (ou d'arrêt) glisse sur le côté, et aucun ne sort du cadre. Petit glissement de 0,25 s."""
+        noms = [p.etiquette for p in self.personnages.values()
+                if self.a_l_ecran(p) and not getattr(p, "derriere_meuble", False) and p.etiquette.has_points()
+                or (self.a_l_ecran(p) and not getattr(p, "derriere_meuble", False) and len(p.etiquette.get_family()) > 1)]
+        if not noms:
+            return
+        cibles = {id(e): e.get_x() for e in noms}
+        larg = {id(e): e.width for e in noms}
+        hauteur = lambda e: (e.get_bottom()[1], e.get_top()[1])
+        blocs = [b for b in (self.article, getattr(self, "arret", None)) if b is not None and self.a_l_ecran(b)]
+        for _ in range(6):
+            for e in noms:
+                b0, h0 = hauteur(e)
+                x = cibles[id(e)]
+                for b in blocs:
+                    if b.get_bottom()[1] < h0 + 0.05 and b0 - 0.05 < b.get_top()[1] \
+                            and x - larg[id(e)] / 2 < b.get_right()[0] + 0.12 and b.get_left()[0] - 0.12 < x + larg[id(e)] / 2:
+                        x = (b.get_left()[0] - 0.15 - larg[id(e)] / 2) if x < b.get_x() else (b.get_right()[0] + 0.15 + larg[id(e)] / 2)
+                cibles[id(e)] = min(max(x, -7.0 + larg[id(e)] / 2), 7.0 - larg[id(e)] / 2)
+            tri = sorted(noms, key=lambda e: cibles[id(e)])
+            for a, b in zip(tri, tri[1:]):
+                (ab, ah), (bb, bh) = hauteur(a), hauteur(b)
+                if bb > ah + 0.05 or ab > bh + 0.05:
+                    continue
+                manque = (larg[id(a)] + larg[id(b)]) / 2 + 0.15 - (cibles[id(b)] - cibles[id(a)])
+                if manque > 0:
+                    cibles[id(a)] -= manque / 2
+                    cibles[id(b)] += manque / 2
+        anims = [e.animate.set_x(cibles[id(e)]) for e in noms if abs(cibles[id(e)] - e.get_x()) > 0.02]
+        if anims:
+            self.jouer(*anims, duree=0.25)
+
     def voulu(self, na, nb):
         """Contacts prévus par la charte : la bulle part de la tête, le nom s'inscrit sur le meuble."""
         # Un point et un repère posés au même endroit de la frise se croisent.
@@ -199,7 +237,16 @@ class Schemas(Scene):
             if autre == "frise " + (na if na.startswith("repère de frise ") else nb)[len("repère de frise "):]:
                 return True
         # Le ballon part du pied d'une silhouette, ou la touche.
-        objet = next((n for n in ("picto ballon", "picto bouteille") if n in (na, nb)), None)
+        # Un objet qu'on range dans le sac le touche.
+        if {na, nb} == {"picto ordinateur", "picto sac"}:
+            return True
+        # Un objet porté peut toucher ce qui l'entoure (celui qui le porte, la voiture où on le charge).
+        if any(n in (na, nb) for n in [f"picto {nom}" for nom in getattr(self, "tenus", {})]):
+            return True
+        # On monte en voiture : un personnage peut la toucher.
+        if "picto voiture" in (na, nb) and ({na, nb} - {"picto voiture"}) & set(self.personnages):
+            return True
+        objet = next((n for n in ("picto ballon", "picto bouteille", "picto ordinateur", "picto sac") if n in (na, nb)), None)
         if objet and ({na, nb} - {objet}) & set(self.personnages):
             return True
         for k, p in self.personnages.items():
@@ -254,7 +301,7 @@ class Schemas(Scene):
         """Vrai si l'écran ne montre que du texte : ni personnage, ni décor, ni schéma, ni pictogramme."""
         graphiques = [self.decor, self.batiment, self.frise, self.livre, self.pyramide, self.bouclier,
                       self.livres and VGroup(*self.livres)]
-        graphiques += list(self.personnages.values()) + list(self.pictos.values())
+        graphiques += list(self.personnages.values()) + list(self.pictos.values()) + [getattr(self, "carte", None)]
         return not any(m is not None and self.a_l_ecran(m) for m in graphiques)
 
     def chevauchements(self):
@@ -267,6 +314,9 @@ class Schemas(Scene):
             g, d, b, h = boite(a)
             if b < -3.3:
                 alertes.append(f"{na} dans la bande des sous-titres")
+            # Rien ne sort du cadre (16:9, ±7,11 en largeur, ±4 en hauteur), avec une petite marge.
+            if g < -7.05 or d > 7.05 or h > 3.9:
+                alertes.append(f"{na} sort du cadre (de {g:.2f} à {d:.2f}, haut {h:.2f})")
             for nb, bb in el[i + 1:]:
                 if a in bb.get_family() or bb in a.get_family() or self.voulu(na, nb):
                     continue
@@ -306,6 +356,7 @@ class Schemas(Scene):
                 self.jouer(*[x for a in creations for x in self.executer(a, repere)], duree=0.5)
                 actions = [a for a in actions if a[0] not in CREATIONS]
             self.jouer(*[x for a in actions for x in self.executer(a, repere)])
+            self.ranger_noms()
             total = self.mots_visibles()
             if total > 12:
                 self.alertes.append(f"{repere} : {total} mots affichés (maximum 12)")
@@ -391,7 +442,7 @@ class Schemas(Scene):
         nouveau = c.texte(contenu, c.T_TITRE, couleur, gras=True).move_to([0, c.Y_TITRE, 0])
         # Thème « marque » : un titre mis en avant s'écrit en blanc sur une pastille rouge.
         if c.MARQUE and "ambre" in options:
-            nouveau = c.pastille(c.texte(contenu, c.T_TITRE, "#FFFFFF", gras=True)).move_to([0, c.Y_TITRE, 0])
+            nouveau = c.pastille(c.texte(contenu, c.T_TITRE, c.PASTILLE_TEXTE, gras=True)).move_to([0, c.Y_TITRE, 0])
         if nouveau.width > self.largeur_titres():
             nouveau.scale_to_fit_width(self.largeur_titres())
         nouveau.set_x(self.x_titres(nouveau.width))
@@ -494,6 +545,8 @@ class Schemas(Scene):
 
     def a_article(self, libelle):
         nouveau = c.BlocArticle(libelle)
+        # Le bloc passe devant les prénoms : un nom qui le croise pendant une marche glisse dessous, sans se superposer.
+        nouveau.set_z_index(6)
         anciens = [FadeOut(self.article)] if self.article is not None else []
         self.article = nouveau
         return anciens + self.placer_bas() + [FadeIn(nouveau, shift=UP * 0.2)]
@@ -579,7 +632,9 @@ class Schemas(Scene):
 
     # ----- actions : personnes -----
     def a_personnage(self, ident, nom, couleur, position, *options):
-        p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position)
+        expression = next((o for o in options if o in ("content", "triste", "inquiet", "surpris", "fache")), "neutre")
+        p = c.Personnage(nom, c.COULEURS_PERSONNAGES[couleur], position, expression)
+        p.cree_a = self.t
         # « haut » : un peu plus haut, pour laisser la place à une frise en dessous.
         if "haut" in options:
             p.shift(UP * 0.45)
@@ -590,7 +645,7 @@ class Schemas(Scene):
 
     # ----- actions : décors, mouvements, repère -----
     def a_decor(self, nom, *options):
-        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "festival": c.Festival, "tribunal": c.Tribunal, "parc": c.Parc, "piscine": c.Piscine}
+        decors = {"escalier": c.Escalier, "appartement": c.Appartement, "rue": c.Rue, "festival": c.Festival, "tribunal": c.Tribunal, "parc": c.Parc, "piscine": c.Piscine, "frontiere": c.Frontiere, "palais": c.Palais}
         if nom not in decors:
             raise ValueError(f"décor inconnu « {nom} »")
         self.decor = decors[nom](*options)
@@ -605,9 +660,9 @@ class Schemas(Scene):
         self.neige = c.Neige(self.decor.fenetre)
         return [FadeIn(self.neige)]
 
-    def a_picto(self, nom, x, y):
-        # « parlement:2 » : un deuxième pictogramme du même type, avec son propre nom.
-        p = c.Picto(nom.split(":")[0], [float(x), float(y), 0])
+    def a_picto(self, nom, x, y, taille="1"):
+        # « parlement:2 » : un deuxième pictogramme du même type, avec son propre nom. taille : facteur d'échelle.
+        p = c.Picto(nom.split(":")[0], [float(x), float(y), 0], float(taille))
         self.pictos[nom] = p
         self.focus = p
         return [FadeIn(p, scale=0.6)]
@@ -618,7 +673,84 @@ class Schemas(Scene):
         self.focus = p
         return [p.animate(path_arc=-float(arc)).move_to([float(x), float(y), 0])]
 
+    # ----- graphiques : interdit, jauge, flèche entre deux éléments, foule -----
+    def _objet(self, ident):
+        if ident in self.personnages:
+            return self.personnages[ident].silhouette
+        if ident in self.pictos:
+            return self.pictos[ident]
+        if getattr(self, "carte", None) is not None and ident == "carte":
+            return self.carte
+        raise KeyError(f"élément inconnu « {ident} »")
+
+    def a_interdit(self, nom):
+        """Barre un pictogramme (cercle et diagonale) : « interdit »."""
+        p = self.pictos[nom]
+        r = max(p.width, p.height) / 2 + 0.06
+        ctr = p.get_center()
+        cercle = c.Circle(radius=r, color=c.TEXTE, stroke_width=6).move_to(ctr)
+        barre = c.Line(ctr + r * np.array([-0.7071, 0.7071, 0]), ctr + r * np.array([0.7071, -0.7071, 0]),
+                       color=c.TEXTE, stroke_width=6)
+        g = VGroup(cercle, barre)
+        p.add(g)
+        self.focus = p
+        return [Create(cercle), Create(barre)]
+
+    def a_jauge(self, ident, x, y, pourcent, *libelle):
+        """Barre horizontale qui se remplit jusqu'au pourcentage ; le chiffre s'écrit à droite (« 8,5 % »)."""
+        largeur, hauteur = 3.2, 0.36
+        v = float(pourcent.replace(",", "."))
+        cadre = c.RoundedRectangle(corner_radius=0.06, width=largeur, height=hauteur, color=c.TEXTE, stroke_width=4)
+        cadre.move_to([float(x), float(y), 0])
+        plein = c.Rectangle(width=max(largeur * v / 100, 0.02), height=hauteur - 0.08, stroke_width=0,
+                            fill_color=c.TEXTE, fill_opacity=0.9)
+        plein.move_to(cadre.get_left() + RIGHT * (0.04 + plein.width / 2))
+        chiffre = c.texte(f"{pourcent} %" if not libelle else libelle[0], c.T_PETIT, c.TEXTE, gras=True)
+        chiffre.next_to(cadre, RIGHT, buff=0.2)
+        g = VGroup(cadre, plein, chiffre)
+        self.pictos[ident] = g
+        self.focus = g
+        self.play(FadeIn(cadre), FadeIn(chiffre), run_time=0.3)
+        return [c.GrowFromEdge(plein, LEFT)]
+
+    def a_relier(self, a, b, *options):
+        """Flèche d'un élément (personnage ou pictogramme) vers un autre : qui donne, qui décide, qui reçoit.
+        « double » : flèche dans les deux sens (collaboration)."""
+        oa, ob = self._objet(a), self._objet(b)
+        d = ob.get_center() - oa.get_center()
+        d = d / (np.linalg.norm(d) + 1e-9)
+        # On part du bord de chaque élément, avec un petit jeu.
+        def bord(m, sens):
+            demi = np.array([m.width / 2, m.height / 2, 0])
+            t = min(demi[0] / (abs(sens[0]) + 1e-9), demi[1] / (abs(sens[1]) + 1e-9))
+            return m.get_center() + sens * (t + 0.2)
+        cls = c.DoubleArrow if "double" in options else c.Arrow
+        fleche = cls(bord(oa, d), bord(ob, -d), color=c.TEXTE, stroke_width=6, buff=0,
+                     max_tip_length_to_length_ratio=0.25)
+        self.pictos[f"{a}>{b}"] = fleche
+        self.focus = fleche
+        return [GrowArrow(fleche)]
+
+    def a_foule(self, ident, x, y, n, *options):
+        """n petits bonshommes en rangs (signatures, citoyens, cantons) ; ils apparaissent l'un après l'autre."""
+        n = int(n)
+        par_rang = int(options[0]) if options else min(n, 10)
+        gens = VGroup()
+        for k in range(n):
+            i, j = k % par_rang, k // par_rang
+            tete = c.Circle(radius=0.09, color=c.TEXTE, stroke_width=3, fill_color=c.FOND, fill_opacity=1)
+            corps = c.Line([0, -0.1, 0], [0, -0.38, 0], color=c.TEXTE, stroke_width=3)
+            bras = c.Line([-0.12, -0.2, 0], [0.12, -0.2, 0], color=c.TEXTE, stroke_width=3)
+            jambes = VGroup(c.Line([0, -0.38, 0], [-0.09, -0.55, 0], color=c.TEXTE, stroke_width=3),
+                            c.Line([0, -0.38, 0], [0.09, -0.55, 0], color=c.TEXTE, stroke_width=3))
+            gens.add(VGroup(corps, bras, jambes, tete).shift([0.36 * i, -0.66 * j, 0]))
+        gens.move_to([float(x), float(y), 0])
+        self.pictos[ident] = gens
+        self.focus = gens
+        return [c.LaggedStart(*[FadeIn(g, shift=UP * 0.1) for g in gens], lag_ratio=min(0.15, 2.0 / max(n, 1)))]
+
     def a_picto_retirer(self, nom):
+        self._decrocher(nom)
         return [FadeOut(self.pictos.pop(nom))]
 
     def a_etiquette(self, ident, contenu, x, y):
@@ -635,7 +767,8 @@ class Schemas(Scene):
         return [FadeOut(self.etiquettes.pop(ident))]
 
     def pieds_sur(self, p, n):
-        cible = np.array(self.decor.pied(int(n)))
+        v = float(n)  # une place intermédiaire (1.7) est permise dans les décors à places régulières
+        cible = np.array(self.decor.pied(int(v) if v.is_integer() else v))
         return cible - p.silhouette.get_bottom()
 
     def a_placer(self, ident, n):
@@ -666,16 +799,289 @@ class Schemas(Scene):
                 # Il sort de derrière un meuble : son nom revient sous lui, au lieu de garder son décalage sur le meuble.
                 p.derriere_meuble = False
                 cible = p.silhouette.get_bottom() + decalage + DOWN * (0.2 + p.etiquette.height / 2)
-                return [p.silhouette.animate(run_time=1.2).shift(decalage),
-                        p.etiquette.animate(run_time=1.2).move_to(cible)]
-            return [p.animate(run_time=1.2).shift(decalage)]
+                return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(cible)]
+            # Le nom se replace sous le personnage (il a pu s'écarter pendant un contact).
+            cible = [p.silhouette.submobjects[0].get_start()[0] + decalage[0], p.etiquette.get_y(), 0] \
+                if hasattr(p.silhouette, "angles") else p.etiquette.get_center() + decalage
+            return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(cible)]
         # Jusque derrière un meuble : le nom vient s'inscrire dessus, au premier plan.
         p.etiquette.set_z_index(2)
         p.derriere_meuble = True
-        return [p.silhouette.animate(run_time=1.2).shift(decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
+        return [self.deplacer(p, decalage), p.etiquette.animate(run_time=1.2).move_to(meuble)]
+
+    def sens_vers_voisin(self, p, x):
+        """Le sens dans lequel regarder une fois arrivé en x : vers le personnage le plus proche, sinon vers le centre."""
+        autres = [q.silhouette.get_x() for q in self.personnages.values() if q is not p and self.a_l_ecran(q)]
+        cible = min(autres, key=lambda a: abs(a - x)) if autres else 0.0
+        return 1 if cible > x else -1
+
+    def deplacer(self, p, decalage, duree=1.2, sens_final=None):
+        """Un bonhomme marche (jambes et bras alternent) ; une silhouette glisse.
+        Arrivé, le bonhomme se tourne vers son voisin le plus proche (ou le sens demandé)."""
+        if hasattr(p.silhouette, "angles"):
+            from bonhomme import Marche
+            if sens_final is None:
+                sens_final = self.sens_vers_voisin(p, p.silhouette.get_x() + decalage[0])
+            m = Marche(p.silhouette, decalage, run_time=duree, sens_final=sens_final)
+            m.duree_propre = max(0.8, abs(decalage[0]) * 0.32)
+            return m
+        return p.silhouette.animate(run_time=duree).shift(decalage)
+
+    def a_pose(self, ident, pose, expression=None):
+        """Change la pose d'un bonhomme (debout, tend, pointe, bras-ciel, assis, recule), et au besoin son visage."""
+        from bonhomme import POSES
+        p = self.personnages[ident]
+        self.focus = p
+        cle = pose.replace("-", "_")
+        if cle not in POSES:
+            raise ValueError(f"pose inconnue « {pose} » ; poses : {', '.join(sorted(POSES))}")
+        if not hasattr(p.silhouette, "angles"):
+            return []
+        return [p.silhouette.vers(cle, expression, run_time=0.6)]
+
+    # ----- actions avec des objets : les bonhommes tiennent, donnent, prennent, posent ; ils parlent -----
+    def _bonhomme(self, ident):
+        b = self.personnages[ident].silhouette
+        if not hasattr(b, "angles"):
+            raise ValueError(f"« {ident} » n'est pas un bonhomme (style silhouettes) : actions d'objets impossibles")
+        return b
+
+    def _main(self, b, picto):
+        """Où se tient un objet porté : il pend à la main avant, la main dans l'anse (le haut de l'objet un peu
+        au-dessus de la main)."""
+        return b.main("d") + DOWN * (picto.height / 2 - 0.1)
+
+    def _accrocher(self, ident, nom):
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._decrocher(nom)
+        # Porté, l'objet est un peu plus petit : un sac à la main ne descend pas plus bas que le genou.
+        if not getattr(picto, "porte_reduit", False):
+            picto.scale(0.75)
+            picto.porte_reduit = True
+        picto.add_updater(lambda m: m.move_to(self._main(b, m)))
+        # La main passe devant l'objet : l'objet porté se dessine sous le bonhomme (qui reste sous les meubles).
+        picto.set_z_index(0)
+        b.set_z_index(0.5)
+        self.tenus[nom] = ident
+
+    def _decrocher(self, nom):
+        if nom in self.pictos:
+            self.pictos[nom].clear_updaters()
+        self.tenus.pop(nom, None)
+
+    @staticmethod
+    def _x(b):
+        """Abscisse réelle du bonhomme (la hanche telle que dessinée, après les déplacements)."""
+        return b.submobjects[0].get_start()[0]
+
+    def _tourner_vers(self, b, x):
+        b.sens = 1 if x > self._x(b) else -1
+
+    def _portee(self, b, pose="donne"):
+        """Distance horizontale entre la hanche et la main avant dans une pose donnée."""
+        from bonhomme import POSES
+        avant, sens = dict(b.angles), b.sens
+        b.angles, b.sens = dict(POSES[pose]), 1
+        portee = b.main("d")[0] - b.submobjects[0].get_start()[0]
+        b.angles, b.sens = avant, sens
+        return portee
+
+    def _approcher(self, ident, cible, ecart):
+        """Ident marche jusqu'à se tenir à `ecart` de la cible (de son côté), puis tous deux se font face."""
+        p, q = self.personnages[ident], self.personnages[cible]
+        a, b = p.silhouette, q.silhouette
+        xa, xb = a.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
+        cote = 1 if xa > xb else -1
+        # La place est prise par un troisième personnage : il va de l'autre côté, si celle-là est libre et dans l'écran.
+        autres = [r.silhouette.get_x() for k, r in self.personnages.items()
+                  if k not in (ident, cible) and self.a_l_ecran(r)]
+        def libre(c):
+            x = xb + c * ecart
+            return abs(x) < 6.2 and all(abs(x - o) > 0.9 for o in autres)
+        if not libre(cote) and libre(-cote):
+            cote = -cote
+        dx = (xb + cote * ecart) - xa
+        if abs(dx) > 0.15:
+            decalage = np.array([dx, 0, 0])
+            self.jouer(self.deplacer(p, decalage, sens_final=-cote), p.etiquette.animate.shift(decalage))
+        a.sens, b.sens = -cote, cote
+        anims = [a.vers(None, run_time=0.2), b.vers(None, run_time=0.2)]
+        # Tout près l'un de l'autre : les prénoms s'écartent juste assez pour ne pas se toucher.
+        ea, eb = p.etiquette, q.etiquette
+        manque = (ea.width + eb.width) / 2 + 0.15 - abs(ea.get_x() - eb.get_x())
+        if manque > 0:
+            anims += [ea.animate.shift(RIGHT * cote * manque / 2), eb.animate.shift(LEFT * cote * manque / 2)]
+        self.jouer(*anims, duree=0.3)
+
+    # ----- la carte de la Suisse (thème constitution) -----
+    def a_carte(self, *options):
+        """La Suisse au trait. Options : `cantons`, `lacs`, `petite` (à gauche, pour laisser place à des
+        personnages), ou trois nombres X Y LARGEUR."""
+        nombres = [float(o) for o in options if o.replace(".", "", 1).lstrip("-").isdigit()]
+        if len(nombres) == 3:
+            x, y, l = nombres
+        elif "petite" in options:
+            x, y, l = -3.6, 0.1, 5.0
+        else:
+            x, y, l = 0.0, 0.35, 7.6
+        self.carte = c.CarteSuisse("cantons" in options, "lacs" in options, l, (x, y))
+        self.carte_marques = {}
+        self.focus = self.carte
+        return [Create(self.carte, run_time=1.2)]
+
+    def a_carte_canton(self, sigle, *options):
+        """Met un canton en valeur : rempli de blanc, son sigle au centre (option `sans-nom` : sans sigle)."""
+        if sigle not in self.carte.cantons:
+            raise ValueError(f"canton inconnu « {sigle} »")
+        g = self.carte.cantons[sigle]
+        anims = [g.animate.set_fill(c.TEXTE, opacity=0.85)]
+        if "sans-nom" not in options:
+            nom = c.texte(sigle, c.T_PETIT, c.FOND, gras=True).move_to(self.carte.point_canton(sigle))
+            self.carte_marques[sigle] = nom
+            anims.append(FadeIn(nom))
+        self.focus = g
+        return anims
+
+    def a_carte_cantons_tous(self):
+        """Tous les cantons s'allument l'un après l'autre (les 26 cantons forment la Confédération)."""
+        from manim import LaggedStart
+        return [LaggedStart(*[g.animate.set_fill(c.TEXTE, opacity=0.35) for g in self.carte.cantons.values()],
+                            lag_ratio=0.08, run_time=2.4)]
+
+    def a_carte_retirer(self):
+        parts = [self.carte] + list(getattr(self, "carte_marques", {}).values())
+        self.carte, self.carte_marques = None, {}
+        return [FadeOut(m) for m in parts]
+
+    def a_tourner(self, ident, vers):
+        """Il se tourne vers un point (abscisse X), vers un autre personnage, ou « gauche » / « droite »."""
+        b = self._bonhomme(ident)
+        if vers in ("gauche", "droite"):
+            b.sens = -1 if vers == "gauche" else 1
+        elif vers in self.personnages:
+            self._tourner_vers(b, self._x(self._bonhomme(vers)))
+        else:
+            self._tourner_vers(b, float(vers))
+        return [b.vers(None, run_time=0.3)]
+
+    def a_rejoindre(self, ident, cible):
+        """Il marche jusqu'à la cible et s'arrête à côté d'elle, face à elle."""
+        self._approcher(ident, cible, 1.1)
+        return []
+
+    def a_tenir(self, ident, nom, *options):
+        """Le bonhomme prend l'objet en main et le garde : il le suit quand il marche ou bouge.
+        « aussitot » : il l'a déjà en main en apparaissant (à mettre au même moment que personnage et picto)."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        if "aussitot" in options:
+            b.synchroniser()  # la position réelle (après placer), pas celle de la création
+            b.angles = dict(__import__("bonhomme").POSES["porte"])
+            b.dessiner()
+            self._accrocher(ident, nom)
+            picto.move_to(self._main(b, picto))
+            return []
+        self.jouer(b.vers("porte", run_time=0.4), duree=0.4)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.5)
+        self._accrocher(ident, nom)
+        return []
+
+    def a_prendre(self, ident, nom):
+        """Il se penche vers l'objet, le saisit, se redresse en le portant."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._tourner_vers(b, picto.get_x())
+        self.focus = self.personnages[ident]
+        # Trop loin pour l'attraper : il marche d'abord jusqu'à l'objet (ce qu'il porte déjà le suit).
+        ecart = picto.get_x() - self._x(b)
+        if abs(ecart) > 0.9:
+            p = self.personnages[ident]
+            decalage = np.array([ecart - 0.7 * np.sign(ecart), 0, 0])
+            self.jouer(self.deplacer(p, decalage), p.etiquette.animate.shift(decalage))
+        self.jouer(b.vers("prend", run_time=0.4), duree=0.4)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.3)
+        self._accrocher(ident, nom)
+        self.jouer(b.vers("porte", run_time=0.4), duree=0.4)
+        return []
+
+    def a_donner(self, de, vers, nom):
+        """De tend l'objet, vers tend la main, l'objet passe de l'un à l'autre."""
+        a, b, picto = self._bonhomme(de), self._bonhomme(vers), self.pictos[nom]
+        self.focus = self.personnages[vers]
+        if self.tenus.get(nom) != de:
+            self._accrocher(de, nom)
+        # Celui qui donne s'approche : bras tendus, les deux mains se rejoignent sous l'objet. Pas trop près
+        # non plus : les deux prénoms ne doivent pas se toucher ; s'il le faut, il se penche (pose « tend »).
+        noms = (self.personnages[de].etiquette.width + self.personnages[vers].etiquette.width) / 2 + 0.15
+        ecart = max(2 * self._portee(a) - 0.1, noms)
+        pose_de = "donne" if ecart <= 2 * self._portee(a) else "tend"
+        ecart = min(ecart, self._portee(a, pose_de) + self._portee(b) - 0.05)
+        self._approcher(de, vers, ecart)
+        self.jouer(a.vers(pose_de, run_time=0.6), b.vers("donne", run_time=0.6), duree=0.6)
+        self._decrocher(nom)
+        self.jouer(picto.animate.move_to(self._main(b, picto)), duree=0.3)
+        self._accrocher(vers, nom)
+        self.jouer(a.vers("debout", run_time=0.35), b.vers("porte", run_time=0.35), duree=0.35)
+        return []
+
+    def a_poser(self, ident, nom, x, y):
+        """Il pose l'objet à l'endroit donné et le lâche."""
+        b, picto = self._bonhomme(ident), self.pictos[nom]
+        self._tourner_vers(b, float(x))
+        self._decrocher(nom)
+        self.jouer(b.vers("prend", run_time=0.5), picto.animate.move_to([float(x), float(y), 0]), duree=0.5)
+        self.jouer(b.vers("debout", run_time=0.4), duree=0.4)
+        return []
+
+    def a_ranger(self, nom, contenant):
+        """Un objet entre dans un autre (l'ordinateur dans le sac) et disparaît dedans."""
+        picto, cible = self.pictos[nom], self.pictos[contenant]
+        self._decrocher(nom)
+        self.jouer(picto.animate.move_to(cible.get_center()).scale(0.3).set_opacity(0), duree=0.6)
+        self.remove(self.pictos.pop(nom))
+        return []
+
+    def a_parler(self, ident, vers=None):
+        """Gestes de la parole : la main avant monte et descend, deux fois ; il se tourne vers l'autre."""
+        b = self._bonhomme(ident)
+        if vers:  # il va jusqu'à l'autre s'il est loin, puis ils se font face
+            autre = self._bonhomme(vers)
+            if abs(autre.submobjects[0].get_start()[0] - b.submobjects[0].get_start()[0]) > 2.0:
+                self._approcher(ident, vers, 1.3)
+            xb, xa = autre.submobjects[0].get_start()[0], b.submobjects[0].get_start()[0]
+            b.sens, autre.sens = (1, -1) if xb > xa else (-1, 1)
+            self.jouer(b.vers(None, run_time=0.2), autre.vers(None, run_time=0.2), duree=0.2)
+        self.focus = self.personnages[ident]
+        for pose in ("parle_a", "parle_b", "parle_a", "debout"):
+            self.jouer(b.vers(pose, run_time=0.3), duree=0.3)
+        return []
+
+    def a_visage(self, ident, expression):
+        """Change l'expression d'un bonhomme : neutre, content, triste, inquiet, surpris, fache."""
+        if expression not in ("neutre", "content", "triste", "inquiet", "surpris", "fache"):
+            raise ValueError(f"expression inconnue « {expression} »")
+        p = self.personnages[ident]
+        if not hasattr(p.silhouette, "angles"):
+            return []
+        if getattr(p, "cree_a", None) == self.t:
+            # Créé au même moment : le visage est posé tout de suite (une animation se battrait avec l'apparition).
+            p.silhouette.synchroniser()
+            p.silhouette.expression = expression
+            p.silhouette.dessiner()
+            return []
+        return [p.silhouette.vers(None, expression, run_time=0.4)]
 
     def a_pousser(self, ident, cible):
         a, b = self.personnages[ident], self.personnages[cible]
+        if hasattr(a.silhouette, "angles") and hasattr(b.silhouette, "angles"):
+            # Contact : il s'approche, les mains sur l'autre, qui recule d'un pas en vacillant.
+            self.focus = a
+            self._approcher(ident, cible, self._portee(a.silhouette, "tend") + 0.1)
+            sens = a.silhouette.sens
+            recul = np.array([0.5 * sens, 0, 0])
+            self.jouer(a.silhouette.vers("tend", run_time=0.35), duree=0.35)
+            self.jouer(b.silhouette.vers("recule", "surpris", deplacement=recul, run_time=0.4),
+                       b.etiquette.animate.shift(recul), duree=0.4)
+            self.jouer(a.silhouette.vers("debout", run_time=0.5), b.silhouette.vers("debout", run_time=0.5), duree=0.5)
+            return []
         sens = 1 if b.get_center()[0] > a.get_center()[0] else -1
         self.focus = a
         return [a.silhouette.animate(rate_func=there_and_back).shift(RIGHT * 0.45 * sens).rotate(-0.15 * sens)]
