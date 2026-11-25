@@ -1,7 +1,7 @@
 {
  "voix": "Enregistrement humain",
  "source": "humaine",
- "duree": 634.434,
+ "duree": 633.084,
  "lignes": [
   {
    "ligne": 1,
@@ -2362,206 +2362,213 @@
   {
    "ligne": 13,
    "debut": 158.38,
-   "fin": 174.118,
+   "fin": 172.768,
    "phrases": [
     {
-     "texte": "Puisqu'ils pourraient, d'après le gouvernement, demander à récupérer leur nationalité et rentrer en Tchéquie, leur refus constituerait un abus de droit.",
+     "texte": "Puisqu'ils pourraient, d'après le gouvernement,",
      "debut": 158.38,
-     "fin": 168.672,
+     "fin": 160.476,
      "mots": [
       {
        "mot": "puisqu",
        "debut": 158.38,
-       "fin": 159.235
+       "fin": 158.849
       },
       {
        "mot": "il",
        "debut": 158.38,
-       "fin": 159.235
+       "fin": 158.849
       },
       {
        "mot": "pourrait",
-       "debut": 159.23,
-       "fin": 160.082
+       "debut": 158.84,
+       "fin": 159.314
       },
       {
        "mot": "d",
-       "debut": 160.08,
-       "fin": 160.759
+       "debut": 159.31,
+       "fin": 159.686
       },
       {
        "mot": "après",
-       "debut": 160.08,
-       "fin": 160.759
+       "debut": 159.31,
+       "fin": 159.686
       },
       {
        "mot": "le",
-       "debut": 160.75,
-       "fin": 161.013
+       "debut": 159.68,
+       "fin": 159.825
       },
       {
        "mot": "gouvernement",
-       "debut": 161.01,
-       "fin": 162.368
-      },
+       "debut": 159.82,
+       "fin": 160.476
+      }
+     ]
+    },
+    {
+     "texte": "demander à récupérer leur nationalité et rentrer en Tchéquie, leur refus constituerait un abus de droit.",
+     "debut": 161.1,
+     "fin": 167.322,
+     "mots": [
       {
        "mot": "demandaient",
-       "debut": 162.45,
-       "fin": 163.143
+       "debut": 161.1,
+       "fin": 161.793
       },
       {
        "mot": "à",
-       "debut": 163.14,
-       "fin": 163.258
+       "debut": 161.79,
+       "fin": 161.908
       },
       {
        "mot": "récupérer",
-       "debut": 163.25,
-       "fin": 163.834
+       "debut": 161.9,
+       "fin": 162.484
       },
       {
        "mot": "leur",
-       "debut": 163.83,
-       "fin": 164.122
+       "debut": 162.48,
+       "fin": 162.772
       },
       {
        "mot": "nationalité",
-       "debut": 164.12,
-       "fin": 164.813
+       "debut": 162.77,
+       "fin": 163.463
       },
       {
        "mot": "et",
-       "debut": 164.81,
-       "fin": 164.986
+       "debut": 163.46,
+       "fin": 163.636
       },
       {
        "mot": "rentrer",
-       "debut": 164.98,
-       "fin": 165.447
+       "debut": 163.63,
+       "fin": 164.097
       },
       {
        "mot": "en",
-       "debut": 165.44,
-       "fin": 165.62
+       "debut": 164.09,
+       "fin": 164.27
       },
       {
        "mot": "tchéquille",
-       "debut": 165.62,
-       "fin": 166.311
+       "debut": 164.27,
+       "fin": 164.961
       },
       {
        "mot": "le",
-       "debut": 166.31,
-       "fin": 166.483
+       "debut": 164.96,
+       "fin": 165.133
       },
       {
        "mot": "refus",
-       "debut": 166.48,
-       "fin": 166.829
+       "debut": 165.13,
+       "fin": 165.479
       },
       {
        "mot": "constituerait",
-       "debut": 166.82,
-       "fin": 167.635
+       "debut": 165.47,
+       "fin": 166.285
       },
       {
        "mot": "un",
-       "debut": 167.63,
-       "fin": 167.808
+       "debut": 166.28,
+       "fin": 166.458
       },
       {
        "mot": "abus",
-       "debut": 167.8,
-       "fin": 168.096
+       "debut": 166.45,
+       "fin": 166.746
       },
       {
        "mot": "de",
-       "debut": 168.09,
-       "fin": 168.269
+       "debut": 166.74,
+       "fin": 166.919
       },
       {
        "mot": "droit",
-       "debut": 168.26,
-       "fin": 168.672
+       "debut": 166.91,
+       "fin": 167.322
       }
      ]
     },
     {
      "texte": "L'aide sociale pourrait donc leur être entièrement retirée.",
-     "debut": 169.37,
-     "fin": 171.942,
+     "debut": 168.02,
+     "fin": 170.592,
      "mots": [
       {
        "mot": "l",
-       "debut": 169.37,
-       "fin": 169.675
+       "debut": 168.02,
+       "fin": 168.325
       },
       {
        "mot": "aide",
-       "debut": 169.37,
-       "fin": 169.675
+       "debut": 168.02,
+       "fin": 168.325
       },
       {
        "mot": "sociale",
-       "debut": 169.67,
-       "fin": 170.024
+       "debut": 168.32,
+       "fin": 168.674
       },
       {
        "mot": "pourrait",
-       "debut": 170.02,
-       "fin": 170.416
+       "debut": 168.67,
+       "fin": 169.066
       },
       {
        "mot": "donc",
-       "debut": 170.41,
-       "fin": 170.634
+       "debut": 169.06,
+       "fin": 169.284
       },
       {
        "mot": "leur",
-       "debut": 170.63,
-       "fin": 170.852
+       "debut": 169.28,
+       "fin": 169.502
       },
       {
        "mot": "être",
-       "debut": 170.85,
-       "fin": 171.07
+       "debut": 169.5,
+       "fin": 169.72
       },
       {
        "mot": "entièrement",
-       "debut": 171.07,
-       "fin": 171.593
+       "debut": 169.72,
+       "fin": 170.243
       },
       {
        "mot": "retiré",
-       "debut": 171.59,
-       "fin": 171.942
+       "debut": 170.24,
+       "fin": 170.592
       }
      ]
     },
     {
      "texte": "Est-ce juridiquement possible ?",
-     "debut": 172.88,
-     "fin": 174.118,
+     "debut": 171.53,
+     "fin": 172.768,
      "mots": [
       {
        "mot": "est",
-       "debut": 172.88,
-       "fin": 173.177
+       "debut": 171.53,
+       "fin": 171.827
       },
       {
        "mot": "ce",
-       "debut": 172.88,
-       "fin": 173.177
+       "debut": 171.53,
+       "fin": 171.827
       },
       {
        "mot": "juridiquement",
-       "debut": 173.17,
-       "fin": 173.75
+       "debut": 171.82,
+       "fin": 172.4
       },
       {
        "mot": "possible",
-       "debut": 173.74,
-       "fin": 174.118
+       "debut": 172.39,
+       "fin": 172.768
       }
      ]
     }
@@ -2569,195 +2576,195 @@
   },
   {
    "ligne": 14,
-   "debut": 175.67,
-   "fin": 185.074,
+   "debut": 174.32,
+   "fin": 183.724,
    "phrases": [
     {
      "texte": "Le cinq décembre mille neuf cent nonante-quatre, les trois frères saisissent le Tribunal fédéral par un recours de droit public.",
-     "debut": 175.67,
-     "fin": 181.512,
+     "debut": 174.32,
+     "fin": 180.162,
      "mots": [
       {
        "mot": "le",
-       "debut": 175.67,
-       "fin": 175.985
+       "debut": 174.32,
+       "fin": 174.635
       },
       {
        "mot": "cinq",
-       "debut": 175.98,
-       "fin": 176.191
+       "debut": 174.63,
+       "fin": 174.841
       },
       {
        "mot": "décembre",
-       "debut": 176.19,
-       "fin": 177.118
+       "debut": 174.84,
+       "fin": 175.768
       },
       {
        "mot": "mille",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "neuf",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "cent",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "quatre",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "vingt",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "quatre",
-       "debut": 177.11,
-       "fin": 177.736
+       "debut": 175.76,
+       "fin": 176.386
       },
       {
        "mot": "les",
-       "debut": 177.88,
-       "fin": 178.065
+       "debut": 176.53,
+       "fin": 176.715
       },
       {
        "mot": "trois",
-       "debut": 178.06,
-       "fin": 178.338
+       "debut": 176.71,
+       "fin": 176.988
       },
       {
        "mot": "frères",
-       "debut": 178.33,
-       "fin": 178.655
+       "debut": 176.98,
+       "fin": 177.305
       },
       {
        "mot": "saisissent",
-       "debut": 178.65,
-       "fin": 179.154
+       "debut": 177.3,
+       "fin": 177.804
       },
       {
        "mot": "le",
-       "debut": 179.15,
-       "fin": 179.29
+       "debut": 177.8,
+       "fin": 177.94
       },
       {
        "mot": "tribunal",
-       "debut": 179.29,
-       "fin": 179.698
+       "debut": 177.94,
+       "fin": 178.348
       },
       {
        "mot": "fédéral",
-       "debut": 179.69,
-       "fin": 180.061
+       "debut": 178.34,
+       "fin": 178.711
       },
       {
        "mot": "par",
-       "debut": 180.06,
-       "fin": 180.242
+       "debut": 178.71,
+       "fin": 178.892
       },
       {
        "mot": "un",
-       "debut": 180.24,
-       "fin": 180.378
+       "debut": 178.89,
+       "fin": 179.028
       },
       {
        "mot": "recours",
-       "debut": 180.37,
-       "fin": 180.741
+       "debut": 179.02,
+       "fin": 179.391
       },
       {
        "mot": "de",
-       "debut": 180.74,
-       "fin": 180.877
+       "debut": 179.39,
+       "fin": 179.527
       },
       {
        "mot": "droit",
-       "debut": 180.87,
-       "fin": 181.149
+       "debut": 179.52,
+       "fin": 179.799
       },
       {
        "mot": "public",
-       "debut": 181.14,
-       "fin": 181.512
+       "debut": 179.79,
+       "fin": 180.162
       }
      ]
     },
     {
      "texte": "L'affaire est tranchée le vingt-sept octobre mille neuf cent nonante-cinq.",
-     "debut": 182.21,
-     "fin": 185.074,
+     "debut": 180.86,
+     "fin": 183.724,
      "mots": [
       {
        "mot": "l",
-       "debut": 182.21,
-       "fin": 182.895
+       "debut": 180.86,
+       "fin": 181.545
       },
       {
        "mot": "affaire",
-       "debut": 182.21,
-       "fin": 182.895
+       "debut": 180.86,
+       "fin": 181.545
       },
       {
        "mot": "est",
-       "debut": 182.89,
-       "fin": 183.167
+       "debut": 181.54,
+       "fin": 181.817
       },
       {
        "mot": "ranchée",
-       "debut": 183.16,
-       "fin": 183.712
+       "debut": 181.81,
+       "fin": 182.362
       },
       {
        "mot": "le",
-       "debut": 183.71,
-       "fin": 183.916
+       "debut": 182.36,
+       "fin": 182.566
       },
       {
        "mot": "vingt",
-       "debut": 183.91,
-       "fin": 184.121
+       "debut": 182.56,
+       "fin": 182.771
       },
       {
        "mot": "sept",
-       "debut": 183.91,
-       "fin": 184.121
+       "debut": 182.56,
+       "fin": 182.771
       },
       {
        "mot": "octobre",
-       "debut": 184.12,
-       "fin": 184.665
+       "debut": 182.77,
+       "fin": 183.315
       },
       {
        "mot": "mille",
-       "debut": 184.66,
-       "fin": 185.074
+       "debut": 183.31,
+       "fin": 183.724
       },
       {
        "mot": "neuf",
-       "debut": 184.66,
-       "fin": 185.074
+       "debut": 183.31,
+       "fin": 183.724
       },
       {
        "mot": "cent",
-       "debut": 184.66,
-       "fin": 185.074
+       "debut": 183.31,
+       "fin": 183.724
       },
       {
        "mot": "nonante",
-       "debut": 184.66,
-       "fin": 185.074
+       "debut": 183.31,
+       "fin": 183.724
       },
       {
        "mot": "cinq",
-       "debut": 184.66,
-       "fin": 185.074
+       "debut": 183.31,
+       "fin": 183.724
       }
      ]
     }
@@ -2765,225 +2772,225 @@
   },
   {
    "ligne": 15,
-   "debut": 186.02,
-   "fin": 200.982,
+   "debut": 184.67,
+   "fin": 199.632,
    "phrases": [
     {
      "texte": "Pour comprendre la réponse des juges, il faut remonter à la Constitution alors applicable : celle de mille huit cent septante-quatre.",
-     "debut": 186.02,
-     "fin": 193.168,
+     "debut": 184.67,
+     "fin": 191.818,
      "mots": [
       {
        "mot": "pour",
-       "debut": 186.02,
-       "fin": 186.302
+       "debut": 184.67,
+       "fin": 184.952
       },
       {
        "mot": "comprendre",
-       "debut": 186.3,
-       "fin": 186.922
+       "debut": 184.95,
+       "fin": 185.572
       },
       {
        "mot": "la",
-       "debut": 186.92,
-       "fin": 187.092
+       "debut": 185.57,
+       "fin": 185.742
       },
       {
        "mot": "réponse",
-       "debut": 187.09,
-       "fin": 187.543
+       "debut": 185.74,
+       "fin": 186.193
       },
       {
        "mot": "des",
-       "debut": 187.54,
-       "fin": 187.768
+       "debut": 186.19,
+       "fin": 186.418
       },
       {
        "mot": "juges",
-       "debut": 187.76,
-       "fin": 188.163
+       "debut": 186.41,
+       "fin": 186.813
       },
       {
        "mot": "il",
-       "debut": 188.16,
-       "fin": 188.332
+       "debut": 186.81,
+       "fin": 186.982
       },
       {
        "mot": "faut",
-       "debut": 188.33,
-       "fin": 188.614
+       "debut": 186.98,
+       "fin": 187.264
       },
       {
        "mot": "remonter",
-       "debut": 188.61,
-       "fin": 189.122
+       "debut": 187.26,
+       "fin": 187.772
       },
       {
        "mot": "à",
-       "debut": 189.12,
-       "fin": 189.235
+       "debut": 187.77,
+       "fin": 187.885
       },
       {
        "mot": "la",
-       "debut": 189.23,
-       "fin": 189.404
+       "debut": 187.88,
+       "fin": 188.054
       },
       {
        "mot": "constitution",
-       "debut": 189.4,
-       "fin": 190.137
+       "debut": 188.05,
+       "fin": 188.787
       },
       {
        "mot": "alors",
-       "debut": 190.13,
-       "fin": 190.475
+       "debut": 188.78,
+       "fin": 189.125
       },
       {
        "mot": "applicable",
-       "debut": 190.47,
-       "fin": 191.152
+       "debut": 189.12,
+       "fin": 189.802
       },
       {
        "mot": "celle",
-       "debut": 191.49,
-       "fin": 192.162
+       "debut": 190.14,
+       "fin": 190.812
       },
       {
        "mot": "de",
-       "debut": 192.16,
-       "fin": 192.498
+       "debut": 190.81,
+       "fin": 191.148
       },
       {
        "mot": "mille",
-       "debut": 192.49,
-       "fin": 193.168
+       "debut": 191.14,
+       "fin": 191.818
       },
       {
        "mot": "huit",
-       "debut": 192.49,
-       "fin": 193.168
+       "debut": 191.14,
+       "fin": 191.818
       },
       {
        "mot": "cent",
-       "debut": 192.49,
-       "fin": 193.168
+       "debut": 191.14,
+       "fin": 191.818
       },
       {
        "mot": "septante",
-       "debut": 192.49,
-       "fin": 193.168
+       "debut": 191.14,
+       "fin": 191.818
       },
       {
        "mot": "quatre",
-       "debut": 192.49,
-       "fin": 193.168
+       "debut": 191.14,
+       "fin": 191.818
       }
      ]
     },
     {
      "texte": "Contrairement à notre Constitution actuelle, elle ne garantissait pas expressément le droit d'obtenir une aide en cas de détresse.",
-     "debut": 193.86,
-     "fin": 200.982,
+     "debut": 192.51,
+     "fin": 199.632,
      "mots": [
       {
        "mot": "contrairement",
-       "debut": 193.86,
-       "fin": 194.716
+       "debut": 192.51,
+       "fin": 193.366
       },
       {
        "mot": "à",
-       "debut": 194.71,
-       "fin": 194.837
+       "debut": 193.36,
+       "fin": 193.487
       },
       {
        "mot": "notre",
-       "debut": 194.83,
-       "fin": 195.202
+       "debut": 193.48,
+       "fin": 193.852
       },
       {
        "mot": "constitution",
-       "debut": 195.2,
-       "fin": 195.991
+       "debut": 193.85,
+       "fin": 194.641
       },
       {
        "mot": "actuelle",
-       "debut": 195.99,
-       "fin": 196.598
+       "debut": 194.64,
+       "fin": 195.248
       },
       {
        "mot": "elle",
-       "debut": 196.68,
-       "fin": 196.932
+       "debut": 195.33,
+       "fin": 195.582
       },
       {
        "mot": "ne",
-       "debut": 196.93,
-       "fin": 197.082
+       "debut": 195.58,
+       "fin": 195.732
       },
       {
        "mot": "garantissait",
-       "debut": 197.08,
-       "fin": 197.732
+       "debut": 195.73,
+       "fin": 196.382
       },
       {
        "mot": "pas",
-       "debut": 197.73,
-       "fin": 197.932
+       "debut": 196.38,
+       "fin": 196.582
       },
       {
        "mot": "expressément",
-       "debut": 197.93,
-       "fin": 198.582
+       "debut": 196.58,
+       "fin": 197.232
       },
       {
        "mot": "le",
-       "debut": 198.58,
-       "fin": 198.732
+       "debut": 197.23,
+       "fin": 197.382
       },
       {
        "mot": "droit",
-       "debut": 198.73,
-       "fin": 199.032
+       "debut": 197.38,
+       "fin": 197.682
       },
       {
        "mot": "d",
-       "debut": 199.03,
-       "fin": 199.532
+       "debut": 197.68,
+       "fin": 198.182
       },
       {
        "mot": "obtenir",
-       "debut": 199.03,
-       "fin": 199.532
+       "debut": 197.68,
+       "fin": 198.182
       },
       {
        "mot": "une",
-       "debut": 199.53,
-       "fin": 199.732
+       "debut": 198.18,
+       "fin": 198.382
       },
       {
        "mot": "aide",
-       "debut": 199.73,
-       "fin": 199.982
+       "debut": 198.38,
+       "fin": 198.632
       },
       {
        "mot": "en",
-       "debut": 199.98,
-       "fin": 200.132
+       "debut": 198.63,
+       "fin": 198.782
       },
       {
        "mot": "cas",
-       "debut": 200.13,
-       "fin": 200.332
+       "debut": 198.78,
+       "fin": 198.982
       },
       {
        "mot": "de",
-       "debut": 200.33,
-       "fin": 200.482
+       "debut": 198.98,
+       "fin": 199.132
       },
       {
        "mot": "détresse",
-       "debut": 200.48,
-       "fin": 200.982
+       "debut": 199.13,
+       "fin": 199.632
       }
      ]
     }
@@ -2991,297 +2998,297 @@
   },
   {
    "ligne": 16,
-   "debut": 202.64,
-   "fin": 220.002,
+   "debut": 201.29,
+   "fin": 218.652,
    "phrases": [
     {
      "texte": "Le canton de Berne avait bien adopté une nouvelle Constitution reconnaissant une telle protection.",
-     "debut": 202.64,
-     "fin": 207.87,
+     "debut": 201.29,
+     "fin": 206.52,
      "mots": [
       {
        "mot": "le",
-       "debut": 202.64,
-       "fin": 202.8
+       "debut": 201.29,
+       "fin": 201.45
       },
       {
        "mot": "canton",
-       "debut": 202.8,
-       "fin": 203.17
+       "debut": 201.45,
+       "fin": 201.82
       },
       {
        "mot": "de",
-       "debut": 203.17,
-       "fin": 203.329
+       "debut": 201.82,
+       "fin": 201.979
       },
       {
        "mot": "berne",
-       "debut": 203.32,
-       "fin": 203.645
+       "debut": 201.97,
+       "fin": 202.295
       },
       {
        "mot": "avait",
-       "debut": 203.64,
-       "fin": 203.962
+       "debut": 202.29,
+       "fin": 202.612
       },
       {
        "mot": "bien",
-       "debut": 203.96,
-       "fin": 204.226
+       "debut": 202.61,
+       "fin": 202.876
       },
       {
        "mot": "adopté",
-       "debut": 204.22,
-       "fin": 204.596
+       "debut": 202.87,
+       "fin": 203.246
       },
       {
        "mot": "une",
-       "debut": 204.59,
-       "fin": 204.807
+       "debut": 203.24,
+       "fin": 203.457
       },
       {
        "mot": "nouvelle",
-       "debut": 204.8,
-       "fin": 205.282
+       "debut": 203.45,
+       "fin": 203.932
       },
       {
        "mot": "constitution",
-       "debut": 205.28,
-       "fin": 205.969
+       "debut": 203.93,
+       "fin": 204.619
       },
       {
        "mot": "reconnaissant",
-       "debut": 205.96,
-       "fin": 206.708
+       "debut": 204.61,
+       "fin": 205.358
       },
       {
        "mot": "une",
-       "debut": 206.7,
-       "fin": 206.919
+       "debut": 205.35,
+       "fin": 205.569
       },
       {
        "mot": "telle",
-       "debut": 206.91,
-       "fin": 207.236
+       "debut": 205.56,
+       "fin": 205.886
       },
       {
        "mot": "protection",
-       "debut": 207.23,
-       "fin": 207.87
+       "debut": 205.88,
+       "fin": 206.52
       }
      ]
     },
     {
      "texte": "Mais celle-ci n'était entrée en vigueur qu'en janvier mille neuf cent nonante-cinq, après la décision contestée.",
-     "debut": 208.82,
-     "fin": 214.114,
+     "debut": 207.47,
+     "fin": 212.764,
      "mots": [
       {
        "mot": "mais",
-       "debut": 208.82,
-       "fin": 209.119
+       "debut": 207.47,
+       "fin": 207.769
       },
       {
        "mot": "celle",
-       "debut": 209.11,
-       "fin": 209.654
+       "debut": 207.76,
+       "fin": 208.304
       },
       {
        "mot": "ci",
-       "debut": 209.11,
-       "fin": 209.654
+       "debut": 207.76,
+       "fin": 208.304
       },
       {
        "mot": "n",
-       "debut": 209.65,
-       "fin": 210.129
+       "debut": 208.3,
+       "fin": 208.779
       },
       {
        "mot": "était",
-       "debut": 209.65,
-       "fin": 210.129
+       "debut": 208.3,
+       "fin": 208.779
       },
       {
        "mot": "entrée",
-       "debut": 210.12,
-       "fin": 210.545
+       "debut": 208.77,
+       "fin": 209.195
       },
       {
        "mot": "en",
-       "debut": 210.54,
-       "fin": 210.723
+       "debut": 209.19,
+       "fin": 209.373
       },
       {
        "mot": "vigueur",
-       "debut": 210.72,
-       "fin": 211.198
+       "debut": 209.37,
+       "fin": 209.848
       },
       {
        "mot": "qu",
-       "debut": 211.19,
-       "fin": 211.554
+       "debut": 209.84,
+       "fin": 210.204
       },
       {
        "mot": "en",
-       "debut": 211.19,
-       "fin": 211.554
+       "debut": 209.84,
+       "fin": 210.204
       },
       {
        "mot": "janvier",
-       "debut": 211.55,
-       "fin": 212.03
+       "debut": 210.2,
+       "fin": 210.68
       },
       {
        "mot": "mille",
-       "debut": 212.03,
-       "fin": 212.386
+       "debut": 210.68,
+       "fin": 211.036
       },
       {
        "mot": "neuf",
-       "debut": 212.03,
-       "fin": 212.386
+       "debut": 210.68,
+       "fin": 211.036
       },
       {
        "mot": "cent",
-       "debut": 212.03,
-       "fin": 212.386
+       "debut": 210.68,
+       "fin": 211.036
       },
       {
        "mot": "nonante",
-       "debut": 212.03,
-       "fin": 212.386
+       "debut": 210.68,
+       "fin": 211.036
       },
       {
        "mot": "cinq",
-       "debut": 212.03,
-       "fin": 212.39
+       "debut": 210.68,
+       "fin": 211.04
       },
       {
        "mot": "après",
-       "debut": 212.53,
-       "fin": 212.861
+       "debut": 211.18,
+       "fin": 211.511
       },
       {
        "mot": "la",
-       "debut": 212.86,
-       "fin": 213.024
+       "debut": 211.51,
+       "fin": 211.674
       },
       {
        "mot": "décision",
-       "debut": 213.02,
-       "fin": 213.515
+       "debut": 211.67,
+       "fin": 212.165
       },
       {
        "mot": "contestée",
-       "debut": 213.51,
-       "fin": 214.114
+       "debut": 212.16,
+       "fin": 212.764
       }
      ]
     },
     {
      "texte": "Le Tribunal fédéral ne pouvait donc pas s'en servir pour juger ce refus de mille neuf cent nonante-quatre.",
-     "debut": 214.83,
-     "fin": 220.002,
+     "debut": 213.48,
+     "fin": 218.652,
      "mots": [
       {
        "mot": "le",
-       "debut": 214.83,
-       "fin": 215.029
+       "debut": 213.48,
+       "fin": 213.679
       },
       {
        "mot": "tribunal",
-       "debut": 215.02,
-       "fin": 215.603
+       "debut": 213.67,
+       "fin": 214.253
       },
       {
        "mot": "fédéral",
-       "debut": 215.6,
-       "fin": 216.113
+       "debut": 214.25,
+       "fin": 214.763
       },
       {
        "mot": "ne",
-       "debut": 216.11,
-       "fin": 216.304
+       "debut": 214.76,
+       "fin": 214.954
       },
       {
        "mot": "pouvait",
-       "debut": 216.3,
-       "fin": 216.814
+       "debut": 214.95,
+       "fin": 215.464
       },
       {
        "mot": "donc",
-       "debut": 216.81,
-       "fin": 217.133
+       "debut": 215.46,
+       "fin": 215.783
       },
       {
        "mot": "pas",
-       "debut": 217.13,
-       "fin": 217.388
+       "debut": 215.78,
+       "fin": 216.038
       },
       {
        "mot": "s",
-       "debut": 217.38,
-       "fin": 217.707
+       "debut": 216.03,
+       "fin": 216.357
       },
       {
        "mot": "en",
-       "debut": 217.38,
-       "fin": 217.707
+       "debut": 216.03,
+       "fin": 216.357
       },
       {
        "mot": "servir",
-       "debut": 217.7,
-       "fin": 218.153
+       "debut": 216.35,
+       "fin": 216.803
       },
       {
        "mot": "pour",
-       "debut": 218.15,
-       "fin": 218.472
+       "debut": 216.8,
+       "fin": 217.122
       },
       {
        "mot": "juger",
-       "debut": 218.47,
-       "fin": 218.854
+       "debut": 217.12,
+       "fin": 217.504
       },
       {
        "mot": "ce",
-       "debut": 218.85,
-       "fin": 219.046
+       "debut": 217.5,
+       "fin": 217.696
       },
       {
        "mot": "refus",
-       "debut": 219.04,
-       "fin": 219.428
+       "debut": 217.69,
+       "fin": 218.078
       },
       {
        "mot": "de",
-       "debut": 219.42,
-       "fin": 219.619
+       "debut": 218.07,
+       "fin": 218.269
       },
       {
        "mot": "mille",
-       "debut": 219.61,
-       "fin": 220.002
+       "debut": 218.26,
+       "fin": 218.652
       },
       {
        "mot": "neuf",
-       "debut": 219.61,
-       "fin": 220.002
+       "debut": 218.26,
+       "fin": 218.652
       },
       {
        "mot": "cent",
-       "debut": 219.61,
-       "fin": 220.002
+       "debut": 218.26,
+       "fin": 218.652
       },
       {
        "mot": "nonante",
-       "debut": 219.61,
-       "fin": 220.002
+       "debut": 218.26,
+       "fin": 218.652
       },
       {
        "mot": "quatre",
-       "debut": 219.61,
-       "fin": 220.002
+       "debut": 218.26,
+       "fin": 218.652
       }
      ]
     }
@@ -3289,170 +3296,170 @@
   },
   {
    "ligne": 17,
-   "debut": 220.96,
-   "fin": 231.872,
+   "debut": 219.61,
+   "fin": 230.522,
    "phrases": [
     {
      "texte": "Un problème décisif apparaît alors :",
-     "debut": 220.96,
-     "fin": 222.826,
+     "debut": 219.61,
+     "fin": 221.476,
      "mots": [
       {
        "mot": "un",
-       "debut": 220.96,
-       "fin": 221.172
+       "debut": 219.61,
+       "fin": 219.822
       },
       {
        "mot": "problème",
-       "debut": 221.17,
-       "fin": 221.623
+       "debut": 219.82,
+       "fin": 220.273
       },
       {
        "mot": "décisif",
-       "debut": 221.62,
-       "fin": 222.024
+       "debut": 220.27,
+       "fin": 220.674
       },
       {
        "mot": "apparaît",
-       "debut": 222.02,
-       "fin": 222.475
+       "debut": 220.67,
+       "fin": 221.125
       },
       {
        "mot": "alors",
-       "debut": 222.47,
-       "fin": 222.826
+       "debut": 221.12,
+       "fin": 221.476
       }
      ]
     },
     {
      "texte": "sans droit explicite dans la Constitution fédérale, les trois hommes disposent-ils tout de même d'une garantie fondamentale qu'ils peuvent invoquer en justice ?",
-     "debut": 223.7,
-     "fin": 231.872,
+     "debut": 222.35,
+     "fin": 230.522,
      "mots": [
       {
        "mot": "sans",
-       "debut": 223.7,
-       "fin": 223.952
+       "debut": 222.35,
+       "fin": 222.602
       },
       {
        "mot": "droits",
-       "debut": 223.95,
-       "fin": 224.305
+       "debut": 222.6,
+       "fin": 222.955
       },
       {
        "mot": "explicites",
-       "debut": 224.3,
-       "fin": 224.86
+       "debut": 222.95,
+       "fin": 223.51
       },
       {
        "mot": "dans",
-       "debut": 224.86,
-       "fin": 225.112
+       "debut": 223.51,
+       "fin": 223.762
       },
       {
        "mot": "la",
-       "debut": 225.11,
-       "fin": 225.264
+       "debut": 223.76,
+       "fin": 223.914
       },
       {
        "mot": "constitution",
-       "debut": 225.26,
-       "fin": 225.92
+       "debut": 223.91,
+       "fin": 224.57
       },
       {
        "mot": "fédérale",
-       "debut": 225.92,
-       "fin": 226.424
+       "debut": 224.57,
+       "fin": 225.074
       },
       {
        "mot": "les",
-       "debut": 226.42,
-       "fin": 226.626
+       "debut": 225.07,
+       "fin": 225.276
       },
       {
        "mot": "trois",
-       "debut": 226.62,
-       "fin": 226.928
+       "debut": 225.27,
+       "fin": 225.578
       },
       {
        "mot": "hommes",
-       "debut": 226.92,
-       "fin": 227.282
+       "debut": 225.57,
+       "fin": 225.932
       },
       {
        "mot": "disposent",
-       "debut": 227.28,
-       "fin": 227.988
+       "debut": 225.93,
+       "fin": 226.638
       },
       {
        "mot": "ils",
-       "debut": 227.28,
-       "fin": 227.988
+       "debut": 225.93,
+       "fin": 226.638
       },
       {
        "mot": "tout",
-       "debut": 227.98,
-       "fin": 228.24
+       "debut": 226.63,
+       "fin": 226.89
       },
       {
        "mot": "de",
-       "debut": 228.24,
-       "fin": 228.391
+       "debut": 226.89,
+       "fin": 227.041
       },
       {
        "mot": "même",
-       "debut": 228.39,
-       "fin": 228.644
+       "debut": 227.04,
+       "fin": 227.294
       },
       {
        "mot": "d",
-       "debut": 228.64,
-       "fin": 228.946
+       "debut": 227.29,
+       "fin": 227.596
       },
       {
        "mot": "une",
-       "debut": 228.64,
-       "fin": 228.946
+       "debut": 227.29,
+       "fin": 227.596
       },
       {
        "mot": "garantie",
-       "debut": 228.94,
-       "fin": 229.4
+       "debut": 227.59,
+       "fin": 228.05
       },
       {
        "mot": "fondamentale",
-       "debut": 229.4,
-       "fin": 230.056
+       "debut": 228.05,
+       "fin": 228.706
       },
       {
        "mot": "qu",
-       "debut": 230.05,
-       "fin": 230.409
+       "debut": 228.7,
+       "fin": 229.059
       },
       {
        "mot": "ils",
-       "debut": 230.05,
-       "fin": 230.409
+       "debut": 228.7,
+       "fin": 229.059
       },
       {
        "mot": "peuvent",
-       "debut": 230.4,
-       "fin": 230.813
+       "debut": 229.05,
+       "fin": 229.463
       },
       {
        "mot": "invoquer",
-       "debut": 230.81,
-       "fin": 231.267
+       "debut": 229.46,
+       "fin": 229.917
       },
       {
        "mot": "en",
-       "debut": 231.26,
-       "fin": 231.418
+       "debut": 229.91,
+       "fin": 230.068
       },
       {
        "mot": "justice",
-       "debut": 231.41,
-       "fin": 231.872
+       "debut": 230.06,
+       "fin": 230.522
       }
      ]
     }
@@ -3460,180 +3467,180 @@
   },
   {
    "ligne": 18,
-   "debut": 233.42,
-   "fin": 244.636,
+   "debut": 232.07,
+   "fin": 243.286,
    "phrases": [
     {
      "texte": "La réponse n'est pas évidente.",
-     "debut": 233.42,
-     "fin": 235.13,
+     "debut": 232.07,
+     "fin": 233.78,
      "mots": [
       {
        "mot": "la",
-       "debut": 233.42,
-       "fin": 233.589
+       "debut": 232.07,
+       "fin": 232.239
       },
       {
        "mot": "réponse",
-       "debut": 233.58,
-       "fin": 234.03
+       "debut": 232.23,
+       "fin": 232.68
       },
       {
        "mot": "n",
-       "debut": 234.03,
-       "fin": 234.361
+       "debut": 232.68,
+       "fin": 233.011
       },
       {
        "mot": "est",
-       "debut": 234.03,
-       "fin": 234.361
+       "debut": 232.68,
+       "fin": 233.011
       },
       {
        "mot": "pas",
-       "debut": 234.36,
-       "fin": 234.581
+       "debut": 233.01,
+       "fin": 233.231
       },
       {
        "mot": "évidente",
-       "debut": 234.58,
-       "fin": 235.132
+       "debut": 233.23,
+       "fin": 233.782
       }
      ]
     },
     {
      "texte": "Mais le Tribunal fédéral avait déjà reconnu plusieurs droits constitutionnels non écrits, notamment la liberté personnelle, la liberté de la langue et la liberté de réunion.",
-     "debut": 235.6,
-     "fin": 244.636,
+     "debut": 234.25,
+     "fin": 243.286,
      "mots": [
       {
        "mot": "mais",
-       "debut": 235.6,
-       "fin": 235.846
+       "debut": 234.25,
+       "fin": 234.496
       },
       {
        "mot": "le",
-       "debut": 235.84,
-       "fin": 235.994
+       "debut": 234.49,
+       "fin": 234.644
       },
       {
        "mot": "tribunal",
-       "debut": 235.99,
-       "fin": 236.436
+       "debut": 234.64,
+       "fin": 235.086
       },
       {
        "mot": "fédéral",
-       "debut": 236.43,
-       "fin": 236.83
+       "debut": 235.08,
+       "fin": 235.48
       },
       {
        "mot": "avait",
-       "debut": 236.83,
-       "fin": 237.125
+       "debut": 235.48,
+       "fin": 235.775
       },
       {
        "mot": "déjà",
-       "debut": 237.12,
-       "fin": 237.371
+       "debut": 235.77,
+       "fin": 236.021
       },
       {
        "mot": "reconnu",
-       "debut": 237.37,
-       "fin": 237.765
+       "debut": 236.02,
+       "fin": 236.415
       },
       {
        "mot": "plusieurs",
-       "debut": 237.76,
-       "fin": 238.257
+       "debut": 236.41,
+       "fin": 236.907
       },
       {
        "mot": "droits",
-       "debut": 238.25,
-       "fin": 238.601
+       "debut": 236.9,
+       "fin": 237.251
       },
       {
        "mot": "constitutionnels",
-       "debut": 238.6,
-       "fin": 239.438
+       "debut": 237.25,
+       "fin": 238.088
       },
       {
        "mot": "non",
-       "debut": 239.43,
-       "fin": 239.634
+       "debut": 238.08,
+       "fin": 238.284
       },
       {
        "mot": "écrits",
-       "debut": 239.63,
-       "fin": 240.028
+       "debut": 238.28,
+       "fin": 238.678
       },
       {
        "mot": "notamment",
-       "debut": 240.16,
-       "fin": 240.735
+       "debut": 238.81,
+       "fin": 239.385
       },
       {
        "mot": "la",
-       "debut": 240.73,
-       "fin": 240.893
+       "debut": 239.38,
+       "fin": 239.543
       },
       {
        "mot": "liberté",
-       "debut": 240.89,
-       "fin": 241.315
+       "debut": 239.54,
+       "fin": 239.965
       },
       {
        "mot": "personnelle",
-       "debut": 241.31,
-       "fin": 242.0
+       "debut": 239.96,
+       "fin": 240.65
       },
       {
        "mot": "la",
-       "debut": 242.0,
-       "fin": 242.158
+       "debut": 240.65,
+       "fin": 240.808
       },
       {
        "mot": "liberté",
-       "debut": 242.15,
-       "fin": 242.58
+       "debut": 240.8,
+       "fin": 241.23
       },
       {
        "mot": "de",
-       "debut": 242.58,
-       "fin": 242.738
+       "debut": 241.23,
+       "fin": 241.388
       },
       {
        "mot": "la",
-       "debut": 242.73,
-       "fin": 242.896
+       "debut": 241.38,
+       "fin": 241.546
       },
       {
        "mot": "langue",
-       "debut": 242.89,
-       "fin": 243.265
+       "debut": 241.54,
+       "fin": 241.915
       },
       {
        "mot": "et",
-       "debut": 243.26,
-       "fin": 243.424
+       "debut": 241.91,
+       "fin": 242.074
       },
       {
        "mot": "la",
-       "debut": 243.42,
-       "fin": 243.582
+       "debut": 242.07,
+       "fin": 242.232
       },
       {
        "mot": "liberté",
-       "debut": 243.58,
-       "fin": 244.003
+       "debut": 242.23,
+       "fin": 242.653
       },
       {
        "mot": "de",
-       "debut": 244.0,
-       "fin": 244.162
+       "debut": 242.65,
+       "fin": 242.812
       },
       {
        "mot": "réunion",
-       "debut": 244.16,
-       "fin": 244.636
+       "debut": 242.81,
+       "fin": 243.286
       }
      ]
     }
@@ -3641,205 +3648,205 @@
   },
   {
    "ligne": 19,
-   "debut": 245.58,
-   "fin": 259.646,
+   "debut": 244.23,
+   "fin": 258.296,
    "phrases": [
     {
      "texte": "Pour reconnaître un tel droit, les juges examinent notamment s'il est indispensable à l'exercice des autres libertés ou au fonctionnement d'un État démocratique fondé sur le droit.",
-     "debut": 245.58,
-     "fin": 255.742,
+     "debut": 244.23,
+     "fin": 254.392,
      "mots": [
       {
        "mot": "pour",
-       "debut": 245.58,
-       "fin": 245.865
+       "debut": 244.23,
+       "fin": 244.515
       },
       {
        "mot": "reconnaître",
-       "debut": 245.86,
-       "fin": 246.536
+       "debut": 244.51,
+       "fin": 245.186
       },
       {
        "mot": "un",
-       "debut": 246.53,
-       "fin": 246.703
+       "debut": 245.18,
+       "fin": 245.353
       },
       {
        "mot": "tel",
-       "debut": 246.7,
-       "fin": 246.927
+       "debut": 245.35,
+       "fin": 245.577
       },
       {
        "mot": "droit",
-       "debut": 246.92,
-       "fin": 247.34
+       "debut": 245.57,
+       "fin": 245.99
       },
       {
        "mot": "les",
-       "debut": 247.26,
-       "fin": 247.57
+       "debut": 245.91,
+       "fin": 246.22
       },
       {
        "mot": "juges",
-       "debut": 247.57,
-       "fin": 247.906
+       "debut": 246.22,
+       "fin": 246.556
       },
       {
        "mot": "examinent",
-       "debut": 247.9,
-       "fin": 248.465
+       "debut": 246.55,
+       "fin": 247.115
       },
       {
        "mot": "notamment",
-       "debut": 248.46,
-       "fin": 249.025
+       "debut": 247.11,
+       "fin": 247.675
       },
       {
        "mot": "s",
-       "debut": 249.02,
-       "fin": 249.305
+       "debut": 247.67,
+       "fin": 247.955
       },
       {
        "mot": "il",
-       "debut": 249.02,
-       "fin": 249.305
+       "debut": 247.67,
+       "fin": 247.955
       },
       {
        "mot": "est",
-       "debut": 249.3,
-       "fin": 249.529
+       "debut": 247.95,
+       "fin": 248.179
       },
       {
        "mot": "indispensable",
-       "debut": 249.52,
-       "fin": 250.313
+       "debut": 248.17,
+       "fin": 248.963
       },
       {
        "mot": "à",
-       "debut": 250.31,
-       "fin": 250.425
+       "debut": 248.96,
+       "fin": 249.075
       },
       {
        "mot": "l",
-       "debut": 250.42,
-       "fin": 251.04
+       "debut": 249.07,
+       "fin": 249.69
       },
       {
        "mot": "exercice",
-       "debut": 250.42,
-       "fin": 251.04
+       "debut": 249.07,
+       "fin": 249.69
       },
       {
        "mot": "des",
-       "debut": 251.04,
-       "fin": 251.264
+       "debut": 249.69,
+       "fin": 249.914
       },
       {
        "mot": "autres",
-       "debut": 251.26,
-       "fin": 251.656
+       "debut": 249.91,
+       "fin": 250.306
       },
       {
        "mot": "libertés",
-       "debut": 251.65,
-       "fin": 252.16
+       "debut": 250.3,
+       "fin": 250.81
       },
       {
        "mot": "ou",
-       "debut": 252.16,
-       "fin": 252.328
+       "debut": 250.81,
+       "fin": 250.978
       },
       {
        "mot": "au",
-       "debut": 252.32,
-       "fin": 252.496
+       "debut": 250.97,
+       "fin": 251.146
       },
       {
        "mot": "fonctionnement",
-       "debut": 252.49,
-       "fin": 253.335
+       "debut": 251.14,
+       "fin": 251.985
       },
       {
        "mot": "d",
-       "debut": 253.33,
-       "fin": 253.615
+       "debut": 251.98,
+       "fin": 252.265
       },
       {
        "mot": "un",
-       "debut": 253.33,
-       "fin": 253.615
+       "debut": 251.98,
+       "fin": 252.265
       },
       {
        "mot": "état",
-       "debut": 253.61,
-       "fin": 253.895
+       "debut": 252.26,
+       "fin": 252.545
       },
       {
        "mot": "démocratique",
-       "debut": 253.89,
-       "fin": 254.623
+       "debut": 252.54,
+       "fin": 253.273
       },
       {
        "mot": "fondé",
-       "debut": 254.62,
-       "fin": 254.958
+       "debut": 253.27,
+       "fin": 253.608
       },
       {
        "mot": "sur",
-       "debut": 254.95,
-       "fin": 255.182
+       "debut": 253.6,
+       "fin": 253.832
       },
       {
        "mot": "le",
-       "debut": 255.18,
-       "fin": 255.35
+       "debut": 253.83,
+       "fin": 254.0
       },
       {
        "mot": "droit",
-       "debut": 255.35,
-       "fin": 255.742
+       "debut": 254.0,
+       "fin": 254.392
       }
      ]
     },
     {
      "texte": "Ils recherchent également un consensus suffisamment solide.",
-     "debut": 256.46,
-     "fin": 259.646,
+     "debut": 255.11,
+     "fin": 258.296,
      "mots": [
       {
        "mot": "il",
-       "debut": 256.46,
-       "fin": 256.633
+       "debut": 255.11,
+       "fin": 255.283
       },
       {
        "mot": "recherche",
-       "debut": 256.63,
-       "fin": 257.191
+       "debut": 255.28,
+       "fin": 255.841
       },
       {
        "mot": "également",
-       "debut": 257.19,
-       "fin": 257.749
+       "debut": 255.84,
+       "fin": 256.399
       },
       {
        "mot": "un",
-       "debut": 257.74,
-       "fin": 257.917
+       "debut": 256.39,
+       "fin": 256.567
       },
       {
        "mot": "consensus",
-       "debut": 257.91,
-       "fin": 258.474
+       "debut": 256.56,
+       "fin": 257.124
       },
       {
        "mot": "suffisamment",
-       "debut": 258.47,
-       "fin": 259.2
+       "debut": 257.12,
+       "fin": 257.85
       },
       {
        "mot": "solide",
-       "debut": 259.2,
-       "fin": 259.646
+       "debut": 257.85,
+       "fin": 258.296
       }
      ]
     }
@@ -3847,190 +3854,190 @@
   },
   {
    "ligne": 20,
-   "debut": 260.86,
-   "fin": 273.578,
+   "debut": 259.51,
+   "fin": 272.228,
    "phrases": [
     {
      "texte": "Or, avant de débattre, de voter ou simplement de mener sa vie, encore faut-il pouvoir se nourrir, se vêtir et disposer d'un abri.",
-     "debut": 260.86,
-     "fin": 269.35,
+     "debut": 259.51,
+     "fin": 268.0,
      "mots": [
       {
        "mot": "or",
-       "debut": 260.86,
-       "fin": 261.123
+       "debut": 259.51,
+       "fin": 259.773
       },
       {
        "mot": "avant",
-       "debut": 261.12,
-       "fin": 261.515
+       "debut": 259.77,
+       "fin": 260.165
       },
       {
        "mot": "de",
-       "debut": 261.51,
-       "fin": 261.711
+       "debut": 260.16,
+       "fin": 260.361
       },
       {
        "mot": "débattre",
-       "debut": 261.71,
-       "fin": 262.364
+       "debut": 260.36,
+       "fin": 261.014
       },
       {
        "mot": "de",
-       "debut": 262.36,
-       "fin": 262.56
+       "debut": 261.01,
+       "fin": 261.21
       },
       {
        "mot": "voter",
-       "debut": 262.56,
-       "fin": 262.952
+       "debut": 261.21,
+       "fin": 261.602
       },
       {
        "mot": "ou",
-       "debut": 262.95,
-       "fin": 263.148
+       "debut": 261.6,
+       "fin": 261.798
       },
       {
        "mot": "simplement",
-       "debut": 263.14,
-       "fin": 263.867
+       "debut": 261.79,
+       "fin": 262.517
       },
       {
        "mot": "de",
-       "debut": 263.86,
-       "fin": 264.063
+       "debut": 262.51,
+       "fin": 262.713
       },
       {
        "mot": "mener",
-       "debut": 264.06,
-       "fin": 264.455
+       "debut": 262.71,
+       "fin": 263.105
       },
       {
        "mot": "sa",
-       "debut": 264.45,
-       "fin": 264.651
+       "debut": 263.1,
+       "fin": 263.301
       },
       {
        "mot": "vie",
-       "debut": 264.65,
-       "fin": 264.977
+       "debut": 263.3,
+       "fin": 263.627
       },
       {
        "mot": "encore",
-       "debut": 264.97,
-       "fin": 265.435
+       "debut": 263.62,
+       "fin": 264.085
       },
       {
        "mot": "faut",
-       "debut": 265.43,
-       "fin": 265.957
+       "debut": 264.08,
+       "fin": 264.607
       },
       {
        "mot": "il",
-       "debut": 265.43,
-       "fin": 265.957
+       "debut": 264.08,
+       "fin": 264.607
       },
       {
        "mot": "pouvoir",
-       "debut": 265.95,
-       "fin": 266.48
+       "debut": 264.6,
+       "fin": 265.13
       },
       {
        "mot": "se",
-       "debut": 266.48,
-       "fin": 266.676
+       "debut": 265.13,
+       "fin": 265.326
       },
       {
        "mot": "nourrir",
-       "debut": 266.67,
-       "fin": 267.264
+       "debut": 265.32,
+       "fin": 265.914
       },
       {
        "mot": "se",
-       "debut": 267.26,
-       "fin": 267.46
+       "debut": 265.91,
+       "fin": 266.11
       },
       {
        "mot": "vêtir",
-       "debut": 267.46,
-       "fin": 267.852
+       "debut": 266.11,
+       "fin": 266.502
       },
       {
        "mot": "et",
-       "debut": 267.85,
-       "fin": 268.048
+       "debut": 266.5,
+       "fin": 266.698
       },
       {
        "mot": "disposer",
-       "debut": 268.04,
-       "fin": 268.635
+       "debut": 266.69,
+       "fin": 267.285
       },
       {
        "mot": "d",
-       "debut": 268.63,
-       "fin": 268.962
+       "debut": 267.28,
+       "fin": 267.612
       },
       {
        "mot": "un",
-       "debut": 268.63,
-       "fin": 268.962
+       "debut": 267.28,
+       "fin": 267.612
       },
       {
        "mot": "abri",
-       "debut": 268.96,
-       "fin": 269.354
+       "debut": 267.61,
+       "fin": 268.004
       }
      ]
     },
     {
      "texte": "Ces besoins élémentaires conditionnent l'existence humaine elle-même.",
-     "debut": 269.95,
-     "fin": 273.578,
+     "debut": 268.6,
+     "fin": 272.228,
      "mots": [
       {
        "mot": "ces",
-       "debut": 269.95,
-       "fin": 270.157
+       "debut": 268.6,
+       "fin": 268.807
       },
       {
        "mot": "besoins",
-       "debut": 270.15,
-       "fin": 270.572
+       "debut": 268.8,
+       "fin": 269.222
       },
       {
        "mot": "élémentaires",
-       "debut": 270.57,
-       "fin": 271.246
+       "debut": 269.22,
+       "fin": 269.896
       },
       {
        "mot": "conditionnent",
-       "debut": 271.24,
-       "fin": 271.971
+       "debut": 269.89,
+       "fin": 270.621
       },
       {
        "mot": "l",
-       "debut": 271.97,
-       "fin": 272.593
+       "debut": 270.62,
+       "fin": 271.243
       },
       {
        "mot": "existence",
-       "debut": 271.97,
-       "fin": 272.593
+       "debut": 270.62,
+       "fin": 271.243
       },
       {
        "mot": "humaine",
-       "debut": 272.59,
-       "fin": 273.008
+       "debut": 271.24,
+       "fin": 271.658
       },
       {
        "mot": "elle",
-       "debut": 273.0,
-       "fin": 273.578
+       "debut": 271.65,
+       "fin": 272.228
       },
       {
        "mot": "même",
-       "debut": 273.0,
-       "fin": 273.578
+       "debut": 271.65,
+       "fin": 272.228
       }
      ]
     }
@@ -4038,158 +4045,158 @@
   },
   {
    "ligne": 21,
-   "debut": 274.53,
-   "fin": 285.588,
+   "debut": 273.18,
+   "fin": 284.238,
    "phrases": [
     {
      "texte": "Le raisonnement est puissant : les libertés fondamentales perdraient une grande partie de leur portée si une personne pouvait être abandonnée à une détresse matérielle incompatible avec la dignité humaine.",
-     "debut": 274.53,
-     "fin": 285.588,
+     "debut": 273.18,
+     "fin": 284.238,
      "mots": [
       {
        "mot": "le",
-       "debut": 274.53,
-       "fin": 274.673
+       "debut": 273.18,
+       "fin": 273.323
       },
       {
        "mot": "raisonnement",
-       "debut": 274.67,
-       "fin": 275.266
+       "debut": 273.32,
+       "fin": 273.916
       },
       {
        "mot": "est",
-       "debut": 275.26,
-       "fin": 275.449
+       "debut": 273.91,
+       "fin": 274.099
       },
       {
        "mot": "puissant",
-       "debut": 275.44,
-       "fin": 275.86
+       "debut": 274.09,
+       "fin": 274.51
       },
       {
        "mot": "les",
-       "debut": 276.45,
-       "fin": 276.665
+       "debut": 275.1,
+       "fin": 275.315
       },
       {
        "mot": "libertés",
-       "debut": 276.66,
-       "fin": 277.134
+       "debut": 275.31,
+       "fin": 275.784
       },
       {
        "mot": "fondamentales",
-       "debut": 277.13,
-       "fin": 277.865
+       "debut": 275.78,
+       "fin": 276.515
       },
       {
        "mot": "perdraient",
-       "debut": 277.86,
-       "fin": 278.439
+       "debut": 276.51,
+       "fin": 277.089
       },
       {
        "mot": "une",
-       "debut": 278.43,
-       "fin": 278.648
+       "debut": 277.08,
+       "fin": 277.298
       },
       {
        "mot": "grande",
-       "debut": 278.64,
-       "fin": 279.013
+       "debut": 277.29,
+       "fin": 277.663
       },
       {
        "mot": "partie",
-       "debut": 279.01,
-       "fin": 279.378
+       "debut": 277.66,
+       "fin": 278.028
       },
       {
        "mot": "de",
-       "debut": 279.37,
-       "fin": 279.535
+       "debut": 278.02,
+       "fin": 278.185
       },
       {
        "mot": "leur",
-       "debut": 279.53,
-       "fin": 279.796
+       "debut": 278.18,
+       "fin": 278.446
       },
       {
        "mot": "portée",
-       "debut": 279.79,
-       "fin": 280.161
+       "debut": 278.44,
+       "fin": 278.811
       },
       {
        "mot": "si",
-       "debut": 280.16,
-       "fin": 280.318
+       "debut": 278.81,
+       "fin": 278.968
       },
       {
        "mot": "une",
-       "debut": 280.31,
-       "fin": 280.526
+       "debut": 278.96,
+       "fin": 279.176
       },
       {
        "mot": "personne",
-       "debut": 280.52,
-       "fin": 280.996
+       "debut": 279.17,
+       "fin": 279.646
       },
       {
        "mot": "pouvait",
-       "debut": 280.99,
-       "fin": 281.413
+       "debut": 279.64,
+       "fin": 280.063
       },
       {
        "mot": "être",
-       "debut": 281.41,
-       "fin": 281.674
+       "debut": 280.06,
+       "fin": 280.324
       },
       {
        "mot": "abandonnée",
-       "debut": 281.67,
-       "fin": 282.248
+       "debut": 280.32,
+       "fin": 280.898
       },
       {
        "mot": "à",
-       "debut": 282.24,
-       "fin": 282.353
+       "debut": 280.89,
+       "fin": 281.003
       },
       {
        "mot": "une",
-       "debut": 282.35,
-       "fin": 282.561
+       "debut": 281.0,
+       "fin": 281.211
       },
       {
        "mot": "détresse",
-       "debut": 282.56,
-       "fin": 283.031
+       "debut": 281.21,
+       "fin": 281.681
       },
       {
        "mot": "matérielle",
-       "debut": 283.03,
-       "fin": 283.605
+       "debut": 281.68,
+       "fin": 282.255
       },
       {
        "mot": "incompatible",
-       "debut": 283.6,
-       "fin": 284.283
+       "debut": 282.25,
+       "fin": 282.933
       },
       {
        "mot": "avec",
-       "debut": 284.28,
-       "fin": 284.544
+       "debut": 282.93,
+       "fin": 283.194
       },
       {
        "mot": "la",
-       "debut": 284.54,
-       "fin": 284.701
+       "debut": 283.19,
+       "fin": 283.351
       },
       {
        "mot": "dignité",
-       "debut": 284.7,
-       "fin": 285.118
+       "debut": 283.35,
+       "fin": 283.768
       },
       {
        "mot": "humaine",
-       "debut": 285.11,
-       "fin": 285.588
+       "debut": 283.76,
+       "fin": 284.238
       }
      ]
     }
@@ -4197,190 +4204,190 @@
   },
   {
    "ligne": 22,
-   "debut": 286.55,
-   "fin": 301.441,
+   "debut": 285.2,
+   "fin": 300.091,
    "phrases": [
     {
      "texte": "Les juges observent aussi que l'assistance aux personnes dans le besoin est depuis longtemps présente dans les législations cantonales.",
-     "debut": 286.55,
-     "fin": 294.246,
+     "debut": 285.2,
+     "fin": 292.896,
      "mots": [
       {
        "mot": "les",
-       "debut": 286.55,
-       "fin": 286.78
+       "debut": 285.2,
+       "fin": 285.43
       },
       {
        "mot": "juges",
-       "debut": 286.78,
-       "fin": 287.12
+       "debut": 285.43,
+       "fin": 285.77
       },
       {
        "mot": "observent",
-       "debut": 287.12,
-       "fin": 287.685
+       "debut": 285.77,
+       "fin": 286.335
       },
       {
        "mot": "aussi",
-       "debut": 287.68,
-       "fin": 288.025
+       "debut": 286.33,
+       "fin": 286.675
       },
       {
        "mot": "que",
-       "debut": 288.02,
-       "fin": 288.251
+       "debut": 286.67,
+       "fin": 286.901
       },
       {
        "mot": "l",
-       "debut": 288.25,
-       "fin": 288.986
+       "debut": 286.9,
+       "fin": 287.636
       },
       {
        "mot": "assistance",
-       "debut": 288.25,
-       "fin": 288.986
+       "debut": 286.9,
+       "fin": 287.636
       },
       {
        "mot": "aux",
-       "debut": 288.98,
-       "fin": 289.212
+       "debut": 287.63,
+       "fin": 287.862
       },
       {
        "mot": "personnes",
-       "debut": 289.21,
-       "fin": 289.778
+       "debut": 287.86,
+       "fin": 288.428
       },
       {
        "mot": "dont",
-       "debut": 289.77,
-       "fin": 290.061
+       "debut": 288.42,
+       "fin": 288.711
       },
       {
        "mot": "le",
-       "debut": 290.06,
-       "fin": 290.23
+       "debut": 288.71,
+       "fin": 288.88
       },
       {
        "mot": "besoin",
-       "debut": 290.23,
-       "fin": 290.626
+       "debut": 288.88,
+       "fin": 289.276
       },
       {
        "mot": "est",
-       "debut": 290.62,
-       "fin": 290.852
+       "debut": 289.27,
+       "fin": 289.502
       },
       {
        "mot": "depuis",
-       "debut": 290.85,
-       "fin": 291.248
+       "debut": 289.5,
+       "fin": 289.898
       },
       {
        "mot": "longtemps",
-       "debut": 291.24,
-       "fin": 291.814
+       "debut": 289.89,
+       "fin": 290.464
       },
       {
        "mot": "présente",
-       "debut": 291.81,
-       "fin": 292.323
+       "debut": 290.46,
+       "fin": 290.973
       },
       {
        "mot": "dans",
-       "debut": 292.32,
-       "fin": 292.606
+       "debut": 290.97,
+       "fin": 291.256
       },
       {
        "mot": "les",
-       "debut": 292.6,
-       "fin": 292.832
+       "debut": 291.25,
+       "fin": 291.482
       },
       {
        "mot": "législations",
-       "debut": 292.83,
-       "fin": 293.567
+       "debut": 291.48,
+       "fin": 292.217
       },
       {
        "mot": "cantonales",
-       "debut": 293.56,
-       "fin": 294.246
+       "debut": 292.21,
+       "fin": 292.896
       }
      ]
     },
     {
      "texte": "Plusieurs constitutions cantonales la protègent, et la doctrine juridique reconnaît largement son caractère fondamental.",
-     "debut": 294.79,
-     "fin": 301.441,
+     "debut": 293.44,
+     "fin": 300.091,
      "mots": [
       {
        "mot": "plusieurs",
-       "debut": 294.789,
-       "fin": 295.383
+       "debut": 293.439,
+       "fin": 294.033
       },
       {
        "mot": "constitutions",
-       "debut": 295.379,
-       "fin": 296.214
+       "debut": 294.029,
+       "fin": 294.864
       },
       {
        "mot": "cantonales",
-       "debut": 296.209,
-       "fin": 296.866
+       "debut": 294.859,
+       "fin": 295.516
       },
       {
        "mot": "la",
-       "debut": 296.859,
-       "fin": 297.044
+       "debut": 295.509,
+       "fin": 295.694
       },
       {
        "mot": "protègent",
-       "debut": 297.039,
-       "fin": 297.697
+       "debut": 295.689,
+       "fin": 296.347
       },
       {
        "mot": "et",
-       "debut": 297.869,
-       "fin": 298.026
+       "debut": 296.519,
+       "fin": 296.676
       },
       {
        "mot": "la",
-       "debut": 298.019,
-       "fin": 298.174
+       "debut": 296.669,
+       "fin": 296.824
       },
       {
        "mot": "doctrine",
-       "debut": 298.169,
-       "fin": 298.62
+       "debut": 296.819,
+       "fin": 297.27
       },
       {
        "mot": "juridique",
-       "debut": 298.619,
-       "fin": 299.115
+       "debut": 297.269,
+       "fin": 297.765
       },
       {
        "mot": "reconnaît",
-       "debut": 299.109,
-       "fin": 299.61
+       "debut": 297.759,
+       "fin": 298.26
       },
       {
        "mot": "largement",
-       "debut": 299.609,
-       "fin": 300.105
+       "debut": 298.259,
+       "fin": 298.755
       },
       {
        "mot": "son",
-       "debut": 300.099,
-       "fin": 300.303
+       "debut": 298.749,
+       "fin": 298.953
       },
       {
        "mot": "caractère",
-       "debut": 300.299,
-       "fin": 300.798
+       "debut": 298.949,
+       "fin": 299.448
       },
       {
        "mot": "fondamental",
-       "debut": 300.789,
-       "fin": 301.441
+       "debut": 299.439,
+       "fin": 300.091
       }
      ]
     }
@@ -4388,195 +4395,195 @@
   },
   {
    "ligne": 23,
-   "debut": 302.989,
-   "fin": 317.474,
+   "debut": 301.639,
+   "fin": 316.124,
    "phrases": [
     {
      "texte": "Sur cette base, le Tribunal fédéral reconnaît un droit constitutionnel fédéral non écrit à des conditions minimales d'existence.",
-     "debut": 302.989,
-     "fin": 310.369,
+     "debut": 301.639,
+     "fin": 309.019,
      "mots": [
       {
        "mot": "sur",
-       "debut": 302.989,
-       "fin": 303.339
+       "debut": 301.639,
+       "fin": 301.989
       },
       {
        "mot": "cette",
-       "debut": 303.339,
-       "fin": 303.805
+       "debut": 301.989,
+       "fin": 302.455
       },
       {
        "mot": "base",
-       "debut": 303.799,
-       "fin": 304.193
+       "debut": 302.449,
+       "fin": 302.843
       },
       {
        "mot": "le",
-       "debut": 304.369,
-       "fin": 304.532
+       "debut": 303.019,
+       "fin": 303.182
       },
       {
        "mot": "tribunal",
-       "debut": 304.529,
-       "fin": 305.01
+       "debut": 303.179,
+       "fin": 303.66
       },
       {
        "mot": "fédéral",
-       "debut": 305.009,
-       "fin": 305.434
+       "debut": 303.659,
+       "fin": 304.084
       },
       {
        "mot": "reconnaît",
-       "debut": 305.429,
-       "fin": 305.965
+       "debut": 304.079,
+       "fin": 304.615
       },
       {
        "mot": "un",
-       "debut": 305.959,
-       "fin": 306.124
+       "debut": 304.609,
+       "fin": 304.774
       },
       {
        "mot": "droit",
-       "debut": 306.119,
-       "fin": 306.442
+       "debut": 304.769,
+       "fin": 305.092
       },
       {
        "mot": "constitutionnel",
-       "debut": 306.439,
-       "fin": 307.291
+       "debut": 305.089,
+       "fin": 305.941
       },
       {
        "mot": "fédéral",
-       "debut": 307.289,
-       "fin": 307.716
+       "debut": 305.939,
+       "fin": 306.366
       },
       {
        "mot": "non",
-       "debut": 307.709,
-       "fin": 307.928
+       "debut": 306.359,
+       "fin": 306.578
       },
       {
        "mot": "écrit",
-       "debut": 307.919,
-       "fin": 308.247
+       "debut": 306.569,
+       "fin": 306.897
       },
       {
        "mot": "à",
-       "debut": 308.239,
-       "fin": 308.353
+       "debut": 306.889,
+       "fin": 307.003
       },
       {
        "mot": "des",
-       "debut": 308.349,
-       "fin": 308.565
+       "debut": 306.999,
+       "fin": 307.215
       },
       {
        "mot": "conditions",
-       "debut": 308.559,
-       "fin": 309.149
+       "debut": 307.209,
+       "fin": 307.799
       },
       {
        "mot": "minimales",
-       "debut": 309.149,
-       "fin": 309.679
+       "debut": 307.799,
+       "fin": 308.329
       },
       {
        "mot": "d",
-       "debut": 309.679,
-       "fin": 310.369
+       "debut": 308.329,
+       "fin": 309.019
       },
       {
        "mot": "existence",
-       "debut": 309.679,
-       "fin": 310.369
+       "debut": 308.329,
+       "fin": 309.019
       }
      ]
     },
     {
      "texte": "Mais cette reconnaissance soulève immédiatement une autre question : que peut-on exactement exiger de l'État ?",
-     "debut": 310.989,
-     "fin": 317.474,
+     "debut": 309.639,
+     "fin": 316.124,
      "mots": [
       {
        "mot": "mais",
-       "debut": 310.989,
-       "fin": 311.25
+       "debut": 309.639,
+       "fin": 309.9
       },
       {
        "mot": "cette",
-       "debut": 311.249,
-       "fin": 311.553
+       "debut": 309.899,
+       "fin": 310.203
       },
       {
        "mot": "reconnaissance",
-       "debut": 311.549,
-       "fin": 312.311
+       "debut": 310.199,
+       "fin": 310.961
       },
       {
        "mot": "soulève",
-       "debut": 312.309,
-       "fin": 312.715
+       "debut": 310.959,
+       "fin": 311.365
       },
       {
        "mot": "immédiatement",
-       "debut": 312.709,
-       "fin": 313.422
+       "debut": 311.359,
+       "fin": 312.072
       },
       {
        "mot": "une",
-       "debut": 313.419,
-       "fin": 313.625
+       "debut": 312.069,
+       "fin": 312.275
       },
       {
        "mot": "autre",
-       "debut": 313.619,
-       "fin": 313.928
+       "debut": 312.269,
+       "fin": 312.578
       },
       {
        "mot": "question",
-       "debut": 313.919,
-       "fin": 314.433
+       "debut": 312.569,
+       "fin": 313.083
       },
       {
        "mot": "que",
-       "debut": 314.929,
-       "fin": 315.187
+       "debut": 313.579,
+       "fin": 313.837
       },
       {
        "mot": "peut",
-       "debut": 315.179,
-       "fin": 315.695
+       "debut": 313.829,
+       "fin": 314.345
       },
       {
        "mot": "on",
-       "debut": 315.179,
-       "fin": 315.695
+       "debut": 313.829,
+       "fin": 314.345
       },
       {
        "mot": "exactement",
-       "debut": 315.689,
-       "fin": 316.394
+       "debut": 314.339,
+       "fin": 315.044
       },
       {
        "mot": "exiger",
-       "debut": 316.389,
-       "fin": 316.839
+       "debut": 315.039,
+       "fin": 315.489
       },
       {
        "mot": "de",
-       "debut": 316.839,
-       "fin": 317.029
+       "debut": 315.489,
+       "fin": 315.679
       },
       {
        "mot": "l",
-       "debut": 317.029,
-       "fin": 317.474
+       "debut": 315.679,
+       "fin": 316.124
       },
       {
        "mot": "état",
-       "debut": 317.029,
-       "fin": 317.474
+       "debut": 315.679,
+       "fin": 316.124
       }
      ]
     }
@@ -4584,195 +4591,195 @@
   },
   {
    "ligne": 24,
-   "debut": 318.419,
-   "fin": 329.537,
+   "debut": 317.069,
+   "fin": 328.187,
    "phrases": [
     {
      "texte": "Il ne s'agit pas d'un droit à un revenu garanti, ni d'un droit à toutes les prestations ordinaires de l'aide sociale.",
-     "debut": 318.419,
-     "fin": 324.737,
+     "debut": 317.069,
+     "fin": 323.387,
      "mots": [
       {
        "mot": "il",
-       "debut": 318.419,
-       "fin": 318.582
+       "debut": 317.069,
+       "fin": 317.232
       },
       {
        "mot": "ne",
-       "debut": 318.579,
-       "fin": 318.742
+       "debut": 317.229,
+       "fin": 317.392
       },
       {
        "mot": "s",
-       "debut": 318.739,
-       "fin": 319.117
+       "debut": 317.389,
+       "fin": 317.767
       },
       {
        "mot": "agit",
-       "debut": 318.739,
-       "fin": 319.117
+       "debut": 317.389,
+       "fin": 317.767
       },
       {
        "mot": "pas",
-       "debut": 319.109,
-       "fin": 319.331
+       "debut": 317.759,
+       "fin": 317.981
       },
       {
        "mot": "d",
-       "debut": 319.329,
-       "fin": 319.599
+       "debut": 317.979,
+       "fin": 318.249
       },
       {
        "mot": "un",
-       "debut": 319.329,
-       "fin": 319.599
+       "debut": 317.979,
+       "fin": 318.249
       },
       {
        "mot": "droit",
-       "debut": 319.599,
-       "fin": 319.92
+       "debut": 318.249,
+       "fin": 318.57
       },
       {
        "mot": "à",
-       "debut": 319.919,
-       "fin": 320.027
+       "debut": 318.569,
+       "fin": 318.677
       },
       {
        "mot": "un",
-       "debut": 320.019,
-       "fin": 320.187
+       "debut": 318.669,
+       "fin": 318.837
       },
       {
        "mot": "revenu",
-       "debut": 320.179,
-       "fin": 320.562
+       "debut": 318.829,
+       "fin": 319.212
       },
       {
        "mot": "garanti",
-       "debut": 320.559,
-       "fin": 321.044
+       "debut": 319.209,
+       "fin": 319.694
       },
       {
        "mot": "ni",
-       "debut": 321.039,
-       "fin": 321.204
+       "debut": 319.689,
+       "fin": 319.854
       },
       {
        "mot": "d",
-       "debut": 321.199,
-       "fin": 321.472
+       "debut": 319.849,
+       "fin": 320.122
       },
       {
        "mot": "un",
-       "debut": 321.199,
-       "fin": 321.472
+       "debut": 319.849,
+       "fin": 320.122
       },
       {
        "mot": "droit",
-       "debut": 321.469,
-       "fin": 321.793
+       "debut": 320.119,
+       "fin": 320.443
       },
       {
        "mot": "à",
-       "debut": 321.789,
-       "fin": 321.9
+       "debut": 320.439,
+       "fin": 320.55
       },
       {
        "mot": "toutes",
-       "debut": 321.899,
-       "fin": 322.275
+       "debut": 320.549,
+       "fin": 320.925
       },
       {
        "mot": "les",
-       "debut": 322.269,
-       "fin": 322.489
+       "debut": 320.919,
+       "fin": 321.139
       },
       {
        "mot": "prestations",
-       "debut": 322.489,
-       "fin": 323.131
+       "debut": 321.139,
+       "fin": 321.781
       },
       {
        "mot": "ordinaires",
-       "debut": 323.129,
-       "fin": 323.72
+       "debut": 321.779,
+       "fin": 322.37
       },
       {
        "mot": "de",
-       "debut": 323.719,
-       "fin": 323.881
+       "debut": 322.369,
+       "fin": 322.531
       },
       {
        "mot": "l",
-       "debut": 323.879,
-       "fin": 324.255
+       "debut": 322.529,
+       "fin": 322.905
       },
       {
        "mot": "aide",
-       "debut": 323.879,
-       "fin": 324.255
+       "debut": 322.529,
+       "fin": 322.905
       },
       {
        "mot": "sociale",
-       "debut": 324.249,
-       "fin": 324.737
+       "debut": 322.899,
+       "fin": 323.387
       }
      ]
     },
     {
      "texte": "La Constitution protège seulement le minimum indispensable à une vie digne.",
-     "debut": 325.199,
-     "fin": 329.537,
+     "debut": 323.849,
+     "fin": 328.187,
      "mots": [
       {
        "mot": "la",
-       "debut": 325.199,
-       "fin": 325.378
+       "debut": 323.849,
+       "fin": 324.028
       },
       {
        "mot": "constitution",
-       "debut": 325.369,
-       "fin": 326.129
+       "debut": 324.019,
+       "fin": 324.779
       },
       {
        "mot": "protège",
-       "debut": 326.129,
-       "fin": 326.591
+       "debut": 324.779,
+       "fin": 325.241
       },
       {
        "mot": "seulement",
-       "debut": 326.589,
-       "fin": 327.169
+       "debut": 325.239,
+       "fin": 325.819
       },
       {
        "mot": "le",
-       "debut": 327.169,
-       "fin": 327.342
+       "debut": 325.819,
+       "fin": 325.992
       },
       {
        "mot": "minimum",
-       "debut": 327.339,
-       "fin": 327.804
+       "debut": 325.989,
+       "fin": 326.454
       },
       {
        "mot": "indispensable",
-       "debut": 327.799,
-       "fin": 328.613
+       "debut": 326.449,
+       "fin": 327.263
       },
       {
        "mot": "à",
-       "debut": 328.609,
-       "fin": 328.728
+       "debut": 327.259,
+       "fin": 327.378
       },
       {
        "mot": "une",
-       "debut": 328.719,
-       "fin": 328.959
+       "debut": 327.369,
+       "fin": 327.609
       },
       {
        "mot": "vidingue",
-       "debut": 328.959,
-       "fin": 329.537
+       "debut": 327.609,
+       "fin": 328.187
       }
      ]
     }
@@ -4780,205 +4787,205 @@
   },
   {
    "ligne": 25,
-   "debut": 330.509,
-   "fin": 344.045,
+   "debut": 329.159,
+   "fin": 342.695,
    "phrases": [
     {
      "texte": "Ce minimum comprend ce qui permet de faire face aux besoins les plus élémentaires : manger, se vêtir, disposer d'un abri.",
-     "debut": 330.509,
-     "fin": 338.079,
+     "debut": 329.159,
+     "fin": 336.729,
      "mots": [
       {
        "mot": "ce",
-       "debut": 330.509,
-       "fin": 330.675
+       "debut": 329.159,
+       "fin": 329.325
       },
       {
        "mot": "minimum",
-       "debut": 330.669,
-       "fin": 331.102
+       "debut": 329.319,
+       "fin": 329.752
       },
       {
        "mot": "comprend",
-       "debut": 331.099,
-       "fin": 331.582
+       "debut": 329.749,
+       "fin": 330.232
       },
       {
        "mot": "ce",
-       "debut": 331.579,
-       "fin": 331.742
+       "debut": 330.229,
+       "fin": 330.392
       },
       {
        "mot": "qui",
-       "debut": 331.739,
-       "fin": 331.955
+       "debut": 330.389,
+       "fin": 330.605
       },
       {
        "mot": "permet",
-       "debut": 331.949,
-       "fin": 332.329
+       "debut": 330.599,
+       "fin": 330.979
       },
       {
        "mot": "de",
-       "debut": 332.329,
-       "fin": 332.489
+       "debut": 330.979,
+       "fin": 331.139
       },
       {
        "mot": "faire",
-       "debut": 332.489,
-       "fin": 332.809
+       "debut": 331.139,
+       "fin": 331.459
       },
       {
        "mot": "face",
-       "debut": 332.809,
-       "fin": 333.076
+       "debut": 331.459,
+       "fin": 331.726
       },
       {
        "mot": "aux",
-       "debut": 333.069,
-       "fin": 333.289
+       "debut": 331.719,
+       "fin": 331.939
       },
       {
        "mot": "besoins",
-       "debut": 333.289,
-       "fin": 333.716
+       "debut": 331.939,
+       "fin": 332.366
       },
       {
        "mot": "les",
-       "debut": 333.709,
-       "fin": 333.929
+       "debut": 332.359,
+       "fin": 332.579
       },
       {
        "mot": "plus",
-       "debut": 333.929,
-       "fin": 334.196
+       "debut": 332.579,
+       "fin": 332.846
       },
       {
        "mot": "élémentaires",
-       "debut": 334.189,
-       "fin": 334.943
+       "debut": 332.839,
+       "fin": 333.593
       },
       {
        "mot": "manger",
-       "debut": 335.379,
-       "fin": 335.947
+       "debut": 334.029,
+       "fin": 334.597
       },
       {
        "mot": "se",
-       "debut": 335.939,
-       "fin": 336.161
+       "debut": 334.589,
+       "fin": 334.811
       },
       {
        "mot": "vêtir",
-       "debut": 336.159,
-       "fin": 336.658
+       "debut": 334.809,
+       "fin": 335.308
       },
       {
        "mot": "disposer",
-       "debut": 336.649,
-       "fin": 337.297
+       "debut": 335.299,
+       "fin": 335.947
       },
       {
        "mot": "d",
-       "debut": 337.289,
-       "fin": 337.653
+       "debut": 335.939,
+       "fin": 336.303
       },
       {
        "mot": "un",
-       "debut": 337.289,
-       "fin": 337.653
+       "debut": 335.939,
+       "fin": 336.303
       },
       {
        "mot": "abri",
-       "debut": 337.649,
-       "fin": 338.079
+       "debut": 336.299,
+       "fin": 336.729
       }
      ]
     },
     {
      "texte": "L'aide peut être fournie en argent, mais aussi directement sous forme de prestations en nature.",
-     "debut": 339.259,
-     "fin": 344.045,
+     "debut": 337.909,
+     "fin": 342.695,
      "mots": [
       {
        "mot": "l",
-       "debut": 339.259,
-       "fin": 339.622
+       "debut": 337.909,
+       "fin": 338.272
       },
       {
        "mot": "aide",
-       "debut": 339.259,
-       "fin": 339.622
+       "debut": 337.909,
+       "fin": 338.272
       },
       {
        "mot": "peut",
-       "debut": 339.619,
-       "fin": 339.877
+       "debut": 338.269,
+       "fin": 338.527
       },
       {
        "mot": "être",
-       "debut": 339.869,
-       "fin": 340.132
+       "debut": 338.519,
+       "fin": 338.782
       },
       {
        "mot": "fournie",
-       "debut": 340.129,
-       "fin": 340.54
+       "debut": 338.779,
+       "fin": 339.19
       },
       {
        "mot": "en",
-       "debut": 340.539,
-       "fin": 340.693
+       "debut": 339.189,
+       "fin": 339.343
       },
       {
        "mot": "argent",
-       "debut": 340.689,
-       "fin": 341.101
+       "debut": 339.339,
+       "fin": 339.751
       },
       {
        "mot": "mais",
-       "debut": 341.249,
-       "fin": 341.482
+       "debut": 339.899,
+       "fin": 340.132
       },
       {
        "mot": "aussi",
-       "debut": 341.479,
-       "fin": 341.762
+       "debut": 340.129,
+       "fin": 340.412
       },
       {
        "mot": "directement",
-       "debut": 341.759,
-       "fin": 342.321
+       "debut": 340.409,
+       "fin": 340.971
       },
       {
        "mot": "sous",
-       "debut": 342.319,
-       "fin": 342.554
+       "debut": 340.969,
+       "fin": 341.204
       },
       {
        "mot": "forme",
-       "debut": 342.549,
-       "fin": 342.833
+       "debut": 341.199,
+       "fin": 341.483
       },
       {
        "mot": "de",
-       "debut": 342.829,
-       "fin": 342.973
+       "debut": 341.479,
+       "fin": 341.623
       },
       {
        "mot": "prestations",
-       "debut": 342.969,
-       "fin": 343.532
+       "debut": 341.619,
+       "fin": 342.182
       },
       {
        "mot": "en",
-       "debut": 343.529,
-       "fin": 343.672
+       "debut": 342.179,
+       "fin": 342.322
       },
       {
        "mot": "nature",
-       "debut": 343.669,
-       "fin": 344.045
+       "debut": 342.319,
+       "fin": 342.695
       }
      ]
     }
@@ -4986,215 +4993,215 @@
   },
   {
    "ligne": 26,
-   "debut": 344.959,
-   "fin": 359.603,
+   "debut": 343.609,
+   "fin": 358.253,
    "phrases": [
     {
      "texte": "En principe, c'est au législateur et aux autorités compétentes d'organiser les prestations sociales.",
-     "debut": 344.959,
-     "fin": 350.867,
+     "debut": 343.609,
+     "fin": 349.517,
      "mots": [
       {
        "mot": "en",
-       "debut": 344.959,
-       "fin": 345.139
+       "debut": 343.609,
+       "fin": 343.789
       },
       {
        "mot": "principe",
-       "debut": 345.139,
-       "fin": 345.712
+       "debut": 343.789,
+       "fin": 344.362
       },
       {
        "mot": "c",
-       "debut": 345.709,
-       "fin": 346.055
+       "debut": 344.359,
+       "fin": 344.705
       },
       {
        "mot": "est",
-       "debut": 345.709,
-       "fin": 346.055
+       "debut": 344.359,
+       "fin": 344.705
       },
       {
        "mot": "aux",
-       "debut": 346.049,
-       "fin": 346.284
+       "debut": 344.699,
+       "fin": 344.934
       },
       {
        "mot": "légistateurs",
-       "debut": 346.279,
-       "fin": 347.029
+       "debut": 344.929,
+       "fin": 345.679
       },
       {
        "mot": "et",
-       "debut": 347.029,
-       "fin": 347.201
+       "debut": 345.679,
+       "fin": 345.851
       },
       {
        "mot": "aux",
-       "debut": 347.199,
-       "fin": 347.43
+       "debut": 345.849,
+       "fin": 346.08
       },
       {
        "mot": "autorités",
-       "debut": 347.429,
-       "fin": 348.003
+       "debut": 346.079,
+       "fin": 346.653
       },
       {
        "mot": "compétentes",
-       "debut": 347.999,
-       "fin": 348.69
+       "debut": 346.649,
+       "fin": 347.34
       },
       {
        "mot": "d",
-       "debut": 348.689,
-       "fin": 349.378
+       "debut": 347.339,
+       "fin": 348.028
       },
       {
        "mot": "organiser",
-       "debut": 348.689,
-       "fin": 349.378
+       "debut": 347.339,
+       "fin": 348.028
       },
       {
        "mot": "les",
-       "debut": 349.369,
-       "fin": 349.607
+       "debut": 348.019,
+       "fin": 348.257
       },
       {
        "mot": "prestations",
-       "debut": 349.599,
-       "fin": 350.294
+       "debut": 348.249,
+       "fin": 348.944
       },
       {
        "mot": "sociales",
-       "debut": 350.289,
-       "fin": 350.867
+       "debut": 348.939,
+       "fin": 349.517
       }
      ]
     },
     {
      "texte": "Le juge constitutionnel n'est pas chargé de fixer tout un budget d'assistance ; il veille à ce que le seuil indispensable soit respecté.",
-     "debut": 351.559,
-     "fin": 359.603,
+     "debut": 350.209,
+     "fin": 358.253,
      "mots": [
       {
        "mot": "le",
-       "debut": 351.559,
-       "fin": 351.716
+       "debut": 350.209,
+       "fin": 350.366
       },
       {
        "mot": "juge",
-       "debut": 351.709,
-       "fin": 351.978
+       "debut": 350.359,
+       "fin": 350.628
       },
       {
        "mot": "constitutionnel",
-       "debut": 351.969,
-       "fin": 352.817
+       "debut": 350.619,
+       "fin": 351.467
       },
       {
        "mot": "n",
-       "debut": 352.809,
-       "fin": 353.131
+       "debut": 351.459,
+       "fin": 351.781
       },
       {
        "mot": "est",
-       "debut": 352.809,
-       "fin": 353.131
+       "debut": 351.459,
+       "fin": 351.781
       },
       {
        "mot": "pas",
-       "debut": 353.129,
-       "fin": 353.341
+       "debut": 351.779,
+       "fin": 351.991
       },
       {
        "mot": "chargé",
-       "debut": 353.339,
-       "fin": 353.708
+       "debut": 351.989,
+       "fin": 352.358
       },
       {
        "mot": "de",
-       "debut": 353.699,
-       "fin": 353.865
+       "debut": 352.349,
+       "fin": 352.515
       },
       {
        "mot": "fixer",
-       "debut": 353.859,
-       "fin": 354.179
+       "debut": 352.509,
+       "fin": 352.829
       },
       {
        "mot": "tout",
-       "debut": 354.169,
-       "fin": 354.441
+       "debut": 352.819,
+       "fin": 353.091
       },
       {
        "mot": "un",
-       "debut": 354.439,
-       "fin": 354.598
+       "debut": 353.089,
+       "fin": 353.248
       },
       {
        "mot": "budget",
-       "debut": 354.589,
-       "fin": 354.965
+       "debut": 353.239,
+       "fin": 353.615
       },
       {
        "mot": "d",
-       "debut": 354.959,
-       "fin": 355.699
+       "debut": 353.609,
+       "fin": 354.349
       },
       {
        "mot": "assistance",
-       "debut": 354.959,
-       "fin": 355.699
+       "debut": 353.609,
+       "fin": 354.349
       },
       {
        "mot": "il",
-       "debut": 356.099,
-       "fin": 356.287
+       "debut": 354.749,
+       "fin": 354.937
       },
       {
        "mot": "veille",
-       "debut": 356.279,
-       "fin": 356.717
+       "debut": 354.929,
+       "fin": 355.367
       },
       {
        "mot": "à",
-       "debut": 356.709,
-       "fin": 356.84
+       "debut": 355.359,
+       "fin": 355.49
       },
       {
        "mot": "ce",
-       "debut": 356.839,
-       "fin": 357.024
+       "debut": 355.489,
+       "fin": 355.674
       },
       {
        "mot": "que",
-       "debut": 357.019,
-       "fin": 357.27
+       "debut": 355.669,
+       "fin": 355.92
       },
       {
        "mot": "le",
-       "debut": 357.269,
-       "fin": 357.454
+       "debut": 355.919,
+       "fin": 356.104
       },
       {
        "mot": "seuil",
-       "debut": 357.449,
-       "fin": 357.822
+       "debut": 356.099,
+       "fin": 356.472
       },
       {
        "mot": "indispensable",
-       "debut": 357.819,
-       "fin": 358.682
+       "debut": 356.469,
+       "fin": 357.332
       },
       {
        "mot": "soit",
-       "debut": 358.679,
-       "fin": 358.989
+       "debut": 357.329,
+       "fin": 357.639
       },
       {
        "mot": "respecté",
-       "debut": 358.989,
-       "fin": 359.603
+       "debut": 357.639,
+       "fin": 358.253
       }
      ]
     }
@@ -5202,184 +5209,184 @@
   },
   {
    "ligne": 27,
-   "debut": 360.399,
-   "fin": 371.173,
+   "debut": 359.049,
+   "fin": 369.823,
    "phrases": [
     {
      "texte": "Reste une difficulté très concrète.",
-     "debut": 360.399,
-     "fin": 362.949,
+     "debut": 359.049,
+     "fin": 361.599,
      "mots": [
       {
        "mot": "reste",
-       "debut": 360.395,
-       "fin": 360.824
+       "debut": 359.045,
+       "fin": 359.474
       },
       {
        "mot": "une",
-       "debut": 360.815,
-       "fin": 361.107
+       "debut": 359.465,
+       "fin": 359.757
       },
       {
        "mot": "difficulté",
-       "debut": 361.105,
-       "fin": 361.887
+       "debut": 359.755,
+       "fin": 360.537
       },
       {
        "mot": "très",
-       "debut": 361.885,
-       "fin": 362.241
+       "debut": 360.535,
+       "fin": 360.891
       },
       {
        "mot": "concrète",
-       "debut": 362.235,
-       "fin": 362.949
+       "debut": 360.885,
+       "fin": 361.599
       }
      ]
     },
     {
      "texte": "Qui peut invoquer ce droit ?",
-     "debut": 363.545,
-     "fin": 364.933,
+     "debut": 362.195,
+     "fin": 363.583,
      "mots": [
       {
        "mot": "qui",
-       "debut": 363.545,
-       "fin": 363.743
+       "debut": 362.195,
+       "fin": 362.393
       },
       {
        "mot": "peut",
-       "debut": 363.735,
-       "fin": 363.991
+       "debut": 362.385,
+       "fin": 362.641
       },
       {
        "mot": "invoquer",
-       "debut": 363.985,
-       "fin": 364.437
+       "debut": 362.635,
+       "fin": 363.087
       },
       {
        "mot": "ce",
-       "debut": 364.435,
-       "fin": 364.586
+       "debut": 363.085,
+       "fin": 363.236
       },
       {
        "mot": "droit",
-       "debut": 364.585,
-       "fin": 364.933
+       "debut": 363.235,
+       "fin": 363.583
       }
      ]
     },
     {
      "texte": "Seulement les citoyens suisses ?",
-     "debut": 365.365,
-     "fin": 366.981,
+     "debut": 364.015,
+     "fin": 365.631,
      "mots": [
       {
        "mot": "seulement",
-       "debut": 365.365,
-       "fin": 365.873
+       "debut": 364.015,
+       "fin": 364.523
       },
       {
        "mot": "les",
-       "debut": 365.865,
-       "fin": 366.074
+       "debut": 364.515,
+       "fin": 364.724
       },
       {
        "mot": "citoyens",
-       "debut": 366.065,
-       "fin": 366.528
+       "debut": 364.715,
+       "fin": 365.178
       },
       {
        "mot": "suisses",
-       "debut": 366.525,
-       "fin": 366.981
+       "debut": 365.175,
+       "fin": 365.631
       }
      ]
     },
     {
      "texte": "Ou également une personne étrangère qui n'a pas le droit de séjourner dans le pays ?",
-     "debut": 367.345,
-     "fin": 371.173,
+     "debut": 365.995,
+     "fin": 369.823,
      "mots": [
       {
        "mot": "ou",
-       "debut": 367.345,
-       "fin": 367.489
+       "debut": 365.995,
+       "fin": 366.139
       },
       {
        "mot": "également",
-       "debut": 367.485,
-       "fin": 367.944
+       "debut": 366.135,
+       "fin": 366.594
       },
       {
        "mot": "une",
-       "debut": 367.935,
-       "fin": 368.126
+       "debut": 366.585,
+       "fin": 366.776
       },
       {
        "mot": "personne",
-       "debut": 368.125,
-       "fin": 368.535
+       "debut": 366.775,
+       "fin": 367.185
       },
       {
        "mot": "étrangère",
-       "debut": 368.535,
-       "fin": 368.99
+       "debut": 367.185,
+       "fin": 367.64
       },
       {
        "mot": "qui",
-       "debut": 368.985,
-       "fin": 369.172
+       "debut": 367.635,
+       "fin": 367.822
       },
       {
        "mot": "n",
-       "debut": 369.165,
-       "fin": 369.354
+       "debut": 367.815,
+       "fin": 368.004
       },
       {
        "mot": "a",
-       "debut": 369.165,
-       "fin": 369.354
+       "debut": 367.815,
+       "fin": 368.004
       },
       {
        "mot": "pas",
-       "debut": 369.345,
-       "fin": 369.536
+       "debut": 367.995,
+       "fin": 368.186
       },
       {
        "mot": "le",
-       "debut": 369.535,
-       "fin": 369.672
+       "debut": 368.185,
+       "fin": 368.322
       },
       {
        "mot": "droit",
-       "debut": 369.665,
-       "fin": 369.945
+       "debut": 368.315,
+       "fin": 368.595
       },
       {
        "mot": "de",
-       "debut": 369.945,
-       "fin": 370.082
+       "debut": 368.595,
+       "fin": 368.732
       },
       {
        "mot": "séjourner",
-       "debut": 370.075,
-       "fin": 370.536
+       "debut": 368.725,
+       "fin": 369.186
       },
       {
        "mot": "dans",
-       "debut": 370.535,
-       "fin": 370.764
+       "debut": 369.185,
+       "fin": 369.414
       },
       {
        "mot": "le",
-       "debut": 370.755,
-       "fin": 370.9
+       "debut": 369.405,
+       "fin": 369.55
       },
       {
        "mot": "pays",
-       "debut": 370.895,
-       "fin": 371.173
+       "debut": 369.545,
+       "fin": 369.823
       }
      ]
     }
@@ -5387,217 +5394,217 @@
   },
   {
    "ligne": 28,
-   "debut": 372.125,
-   "fin": 386.959,
+   "debut": 370.775,
+   "fin": 385.609,
    "phrases": [
     {
      "texte": "Pour le Tribunal fédéral, cette protection repose sur des exigences élémentaires d'humanité.",
-     "debut": 372.125,
-     "fin": 377.229,
+     "debut": 370.775,
+     "fin": 375.879,
      "mots": [
       {
        "mot": "pour",
-       "debut": 372.125,
-       "fin": 372.426
+       "debut": 370.775,
+       "fin": 371.076
       },
       {
        "mot": "le",
-       "debut": 372.425,
-       "fin": 372.604
+       "debut": 371.075,
+       "fin": 371.254
       },
       {
        "mot": "tribunal",
-       "debut": 372.595,
-       "fin": 373.138
+       "debut": 371.245,
+       "fin": 371.788
       },
       {
        "mot": "fédéral",
-       "debut": 373.135,
-       "fin": 373.613
+       "debut": 371.785,
+       "fin": 372.263
       },
       {
        "mot": "cette",
-       "debut": 373.725,
-       "fin": 374.042
+       "debut": 372.375,
+       "fin": 372.692
       },
       {
        "mot": "protection",
-       "debut": 374.035,
-       "fin": 374.617
+       "debut": 372.685,
+       "fin": 373.267
       },
       {
        "mot": "repose",
-       "debut": 374.615,
-       "fin": 374.983
+       "debut": 373.265,
+       "fin": 373.633
       },
       {
        "mot": "sur",
-       "debut": 374.975,
-       "fin": 375.192
+       "debut": 373.625,
+       "fin": 373.842
       },
       {
        "mot": "des",
-       "debut": 375.185,
-       "fin": 375.401
+       "debut": 373.835,
+       "fin": 374.051
       },
       {
        "mot": "exigences",
-       "debut": 375.395,
-       "fin": 375.923
+       "debut": 374.045,
+       "fin": 374.573
       },
       {
        "mot": "élémentaires",
-       "debut": 375.915,
-       "fin": 376.602
+       "debut": 374.565,
+       "fin": 375.252
       },
       {
        "mot": "d",
-       "debut": 376.595,
-       "fin": 377.229
+       "debut": 375.245,
+       "fin": 375.879
       },
       {
        "mot": "humanité",
-       "debut": 376.595,
-       "fin": 377.229
+       "debut": 375.245,
+       "fin": 375.879
       }
      ]
     },
     {
      "texte": "Elle appartient aussi aux étrangers, indépendamment de leur statut de séjour.",
-     "debut": 377.945,
-     "fin": 382.061,
+     "debut": 376.595,
+     "fin": 380.711,
      "mots": [
       {
        "mot": "elle",
-       "debut": 377.945,
-       "fin": 378.188
+       "debut": 376.595,
+       "fin": 376.838
       },
       {
        "mot": "appartient",
-       "debut": 378.185,
-       "fin": 378.705
+       "debut": 376.835,
+       "fin": 377.355
       },
       {
        "mot": "aussi",
-       "debut": 378.705,
-       "fin": 378.988
+       "debut": 377.355,
+       "fin": 377.638
       },
       {
        "mot": "aux",
-       "debut": 378.985,
-       "fin": 379.176
+       "debut": 377.635,
+       "fin": 377.826
       },
       {
        "mot": "étrangers",
-       "debut": 379.175,
-       "fin": 379.693
+       "debut": 377.825,
+       "fin": 378.343
       },
       {
        "mot": "indépendamment",
-       "debut": 379.995,
-       "fin": 380.755
+       "debut": 378.645,
+       "fin": 379.405
       },
       {
        "mot": "de",
-       "debut": 380.755,
-       "fin": 380.905
+       "debut": 379.405,
+       "fin": 379.555
       },
       {
        "mot": "leur",
-       "debut": 380.905,
-       "fin": 381.157
+       "debut": 379.555,
+       "fin": 379.807
       },
       {
        "mot": "statut",
-       "debut": 381.155,
-       "fin": 381.508
+       "debut": 379.805,
+       "fin": 380.158
       },
       {
        "mot": "de",
-       "debut": 381.505,
-       "fin": 381.659
+       "debut": 380.155,
+       "fin": 380.309
       },
       {
        "mot": "séjour",
-       "debut": 381.655,
-       "fin": 382.061
+       "debut": 380.305,
+       "fin": 380.711
       }
      ]
     },
     {
      "texte": "Le droit fondamental ne s'arrête donc pas à la frontière de la nationalité.",
-     "debut": 382.755,
-     "fin": 386.959,
+     "debut": 381.405,
+     "fin": 385.609,
      "mots": [
       {
        "mot": "le",
-       "debut": 382.755,
-       "fin": 382.921
+       "debut": 381.405,
+       "fin": 381.571
       },
       {
        "mot": "droit",
-       "debut": 382.915,
-       "fin": 383.253
+       "debut": 381.565,
+       "fin": 381.903
       },
       {
        "mot": "fondamental",
-       "debut": 383.245,
-       "fin": 383.917
+       "debut": 381.895,
+       "fin": 382.567
       },
       {
        "mot": "ne",
-       "debut": 383.915,
-       "fin": 384.083
+       "debut": 382.565,
+       "fin": 382.733
       },
       {
        "mot": "s",
-       "debut": 384.075,
-       "fin": 384.58
+       "debut": 382.725,
+       "fin": 383.23
       },
       {
        "mot": "arrête",
-       "debut": 384.075,
-       "fin": 384.58
+       "debut": 382.725,
+       "fin": 383.23
       },
       {
        "mot": "donc",
-       "debut": 384.575,
-       "fin": 384.857
+       "debut": 383.225,
+       "fin": 383.507
       },
       {
        "mot": "pas",
-       "debut": 384.855,
-       "fin": 385.078
+       "debut": 383.505,
+       "fin": 383.728
       },
       {
        "mot": "à",
-       "debut": 385.075,
-       "fin": 385.189
+       "debut": 383.725,
+       "fin": 383.839
       },
       {
        "mot": "la",
-       "debut": 385.185,
-       "fin": 385.355
+       "debut": 383.835,
+       "fin": 384.005
       },
       {
        "mot": "frontière",
-       "debut": 385.355,
-       "fin": 385.908
+       "debut": 384.005,
+       "fin": 384.558
       },
       {
        "mot": "de",
-       "debut": 385.905,
-       "fin": 386.074
+       "debut": 384.555,
+       "fin": 384.724
       },
       {
        "mot": "la",
-       "debut": 386.065,
-       "fin": 386.24
+       "debut": 384.715,
+       "fin": 384.89
       },
       {
        "mot": "nationalité",
-       "debut": 386.235,
-       "fin": 386.959
+       "debut": 384.885,
+       "fin": 385.609
       }
      ]
     }
@@ -5605,180 +5612,180 @@
   },
   {
    "ligne": 29,
-   "debut": 387.955,
-   "fin": 399.853,
+   "debut": 386.605,
+   "fin": 398.502,
    "phrases": [
     {
      "texte": "Cela ne signifie pas que chacun reçoit nécessairement les mêmes prestations.",
-     "debut": 387.955,
-     "fin": 391.589,
+     "debut": 386.605,
+     "fin": 390.239,
      "mots": [
       {
        "mot": "cela",
-       "debut": 387.955,
-       "fin": 388.197
+       "debut": 386.605,
+       "fin": 386.847
       },
       {
        "mot": "ne",
-       "debut": 388.195,
-       "fin": 388.338
+       "debut": 386.845,
+       "fin": 386.988
       },
       {
        "mot": "signifie",
-       "debut": 388.335,
-       "fin": 388.762
+       "debut": 386.985,
+       "fin": 387.412
       },
       {
        "mot": "pas",
-       "debut": 388.755,
-       "fin": 388.95
+       "debut": 387.405,
+       "fin": 387.6
       },
       {
        "mot": "que",
-       "debut": 388.945,
-       "fin": 389.139
+       "debut": 387.595,
+       "fin": 387.789
       },
       {
        "mot": "chacun",
-       "debut": 389.135,
-       "fin": 389.469
+       "debut": 387.785,
+       "fin": 388.119
       },
       {
        "mot": "reçoit",
-       "debut": 389.465,
-       "fin": 389.799
+       "debut": 388.115,
+       "fin": 388.449
       },
       {
        "mot": "nécessairement",
-       "debut": 389.795,
-       "fin": 390.505
+       "debut": 388.445,
+       "fin": 389.155
       },
       {
        "mot": "les",
-       "debut": 390.505,
-       "fin": 390.694
+       "debut": 389.155,
+       "fin": 389.344
       },
       {
        "mot": "mêmes",
-       "debut": 390.685,
-       "fin": 390.976
+       "debut": 389.335,
+       "fin": 389.626
       },
       {
        "mot": "prestations",
-       "debut": 390.975,
-       "fin": 391.589
+       "debut": 389.625,
+       "fin": 390.239
       }
      ]
     },
     {
      "texte": "L'ampleur et la forme de l'aide peuvent varier selon les besoins concrets, notamment lorsque le séjour en Suisse est provisoire.",
-     "debut": 392.575,
-     "fin": 399.853,
+     "debut": 391.224,
+     "fin": 398.502,
      "mots": [
       {
        "mot": "l",
-       "debut": 392.575,
-       "fin": 393.125
+       "debut": 391.224,
+       "fin": 391.774
       },
       {
        "mot": "ampleur",
-       "debut": 392.575,
-       "fin": 393.125
+       "debut": 391.224,
+       "fin": 391.774
       },
       {
        "mot": "et",
-       "debut": 393.125,
-       "fin": 393.29
+       "debut": 391.774,
+       "fin": 391.939
       },
       {
        "mot": "la",
-       "debut": 393.285,
-       "fin": 393.454
+       "debut": 391.934,
+       "fin": 392.103
       },
       {
        "mot": "forme",
-       "debut": 393.445,
-       "fin": 393.783
+       "debut": 392.094,
+       "fin": 392.432
       },
       {
        "mot": "de",
-       "debut": 393.775,
-       "fin": 393.948
+       "debut": 392.424,
+       "fin": 392.597
       },
       {
        "mot": "led",
-       "debut": 393.945,
-       "fin": 394.167
+       "debut": 392.594,
+       "fin": 392.816
       },
       {
        "mot": "peuvent",
-       "debut": 394.165,
-       "fin": 394.606
+       "debut": 392.814,
+       "fin": 393.255
       },
       {
        "mot": "varier",
-       "debut": 394.605,
-       "fin": 394.99
+       "debut": 393.254,
+       "fin": 393.639
       },
       {
        "mot": "selon",
-       "debut": 394.985,
-       "fin": 395.319
+       "debut": 393.634,
+       "fin": 393.968
       },
       {
        "mot": "les",
-       "debut": 395.315,
-       "fin": 395.538
+       "debut": 393.964,
+       "fin": 394.187
       },
       {
        "mot": "besoins",
-       "debut": 395.535,
-       "fin": 395.977
+       "debut": 394.184,
+       "fin": 394.626
       },
       {
        "mot": "concrets",
-       "debut": 395.975,
-       "fin": 396.525
+       "debut": 394.624,
+       "fin": 395.174
       },
       {
        "mot": "notamment",
-       "debut": 396.735,
-       "fin": 397.314
+       "debut": 395.384,
+       "fin": 395.963
       },
       {
        "mot": "lorsque",
-       "debut": 397.305,
-       "fin": 397.776
+       "debut": 395.954,
+       "fin": 396.425
       },
       {
        "mot": "le",
-       "debut": 397.775,
-       "fin": 397.949
+       "debut": 396.424,
+       "fin": 396.598
       },
       {
        "mot": "séjour",
-       "debut": 397.945,
-       "fin": 398.353
+       "debut": 396.594,
+       "fin": 397.002
       },
       {
        "mot": "en",
-       "debut": 398.345,
-       "fin": 398.526
+       "debut": 396.994,
+       "fin": 397.175
       },
       {
        "mot": "suisse",
-       "debut": 398.525,
-       "fin": 398.93
+       "debut": 397.174,
+       "fin": 397.579
       },
       {
        "mot": "est",
-       "debut": 398.925,
-       "fin": 399.161
+       "debut": 397.574,
+       "fin": 397.81
       },
       {
        "mot": "provisoire",
-       "debut": 399.155,
-       "fin": 399.853
+       "debut": 397.804,
+       "fin": 398.502
       }
      ]
     }
@@ -5786,163 +5793,163 @@
   },
   {
    "ligne": 30,
-   "debut": 400.805,
-   "fin": 412.689,
+   "debut": 399.454,
+   "fin": 411.338,
    "phrases": [
     {
      "texte": "Appliqué à notre affaire, ce principe écarte déjà le motif initial de la commune : l'absence de statut régulier ne permet pas, à elle seule, de refuser toute assistance indispensable.",
-     "debut": 400.805,
-     "fin": 412.689,
+     "debut": 399.454,
+     "fin": 411.338,
      "mots": [
       {
        "mot": "appliquer",
-       "debut": 400.805,
-       "fin": 401.376
+       "debut": 399.454,
+       "fin": 400.025
       },
       {
        "mot": "à",
-       "debut": 401.375,
-       "fin": 401.49
+       "debut": 400.024,
+       "fin": 400.139
       },
       {
        "mot": "notre",
-       "debut": 401.485,
-       "fin": 401.832
+       "debut": 400.134,
+       "fin": 400.481
       },
       {
        "mot": "affaire",
-       "debut": 401.825,
-       "fin": 402.289
+       "debut": 400.474,
+       "fin": 400.938
       },
       {
        "mot": "ce",
-       "debut": 402.495,
-       "fin": 402.668
+       "debut": 401.144,
+       "fin": 401.317
       },
       {
        "mot": "principe",
-       "debut": 402.665,
-       "fin": 403.169
+       "debut": 401.314,
+       "fin": 401.818
       },
       {
        "mot": "écarte",
-       "debut": 403.165,
-       "fin": 403.558
+       "debut": 401.814,
+       "fin": 402.207
       },
       {
        "mot": "déjà",
-       "debut": 403.555,
-       "fin": 403.836
+       "debut": 402.204,
+       "fin": 402.485
       },
       {
        "mot": "le",
-       "debut": 403.835,
-       "fin": 404.003
+       "debut": 402.484,
+       "fin": 402.652
       },
       {
        "mot": "motif",
-       "debut": 403.995,
-       "fin": 404.337
+       "debut": 402.644,
+       "fin": 402.986
       },
       {
        "mot": "initial",
-       "debut": 404.335,
-       "fin": 404.782
+       "debut": 402.984,
+       "fin": 403.431
       },
       {
        "mot": "de",
-       "debut": 404.775,
-       "fin": 404.949
+       "debut": 403.424,
+       "fin": 403.598
       },
       {
        "mot": "la",
-       "debut": 404.945,
-       "fin": 405.116
+       "debut": 403.594,
+       "fin": 403.765
       },
       {
        "mot": "commune",
-       "debut": 405.115,
-       "fin": 405.617
+       "debut": 403.764,
+       "fin": 404.266
       },
       {
        "mot": "l",
-       "debut": 406.085,
-       "fin": 406.75
+       "debut": 404.734,
+       "fin": 405.399
       },
       {
        "mot": "absence",
-       "debut": 406.085,
-       "fin": 406.75
+       "debut": 404.734,
+       "fin": 405.399
       },
       {
        "mot": "de",
-       "debut": 406.745,
-       "fin": 406.95
+       "debut": 405.394,
+       "fin": 405.599
       },
       {
        "mot": "statut",
-       "debut": 406.945,
-       "fin": 407.415
+       "debut": 405.594,
+       "fin": 406.064
       },
       {
        "mot": "régulier",
-       "debut": 407.415,
-       "fin": 408.014
+       "debut": 406.064,
+       "fin": 406.663
       },
       {
        "mot": "ne",
-       "debut": 408.005,
-       "fin": 408.213
+       "debut": 406.654,
+       "fin": 406.862
       },
       {
        "mot": "permet",
-       "debut": 408.205,
-       "fin": 408.679
+       "debut": 406.854,
+       "fin": 407.328
       },
       {
        "mot": "pas",
-       "debut": 408.675,
-       "fin": 408.945
+       "debut": 407.324,
+       "fin": 407.594
       },
       {
        "mot": "à",
-       "debut": 409.055,
-       "fin": 409.191
+       "debut": 407.704,
+       "fin": 407.84
       },
       {
        "mot": "elle",
-       "debut": 409.185,
-       "fin": 409.514
+       "debut": 407.834,
+       "fin": 408.163
       },
       {
        "mot": "seule",
-       "debut": 409.505,
-       "fin": 409.903
+       "debut": 408.154,
+       "fin": 408.552
       },
       {
        "mot": "de",
-       "debut": 409.895,
-       "fin": 410.098
+       "debut": 408.544,
+       "fin": 408.747
       },
       {
        "mot": "refuser",
-       "debut": 410.095,
-       "fin": 410.616
+       "debut": 408.744,
+       "fin": 409.265
       },
       {
        "mot": "toute",
-       "debut": 410.615,
-       "fin": 411.005
+       "debut": 409.264,
+       "fin": 409.654
       },
       {
        "mot": "assistance",
-       "debut": 411.005,
-       "fin": 411.717
+       "debut": 409.654,
+       "fin": 410.366
       },
       {
        "mot": "indispensable",
-       "debut": 411.715,
-       "fin": 412.689
+       "debut": 410.364,
+       "fin": 411.338
       }
      ]
     }
@@ -5950,207 +5957,207 @@
   },
   {
    "ligne": 31,
-   "debut": 413.634,
-   "fin": 427.824,
+   "debut": 412.284,
+   "fin": 426.474,
    "phrases": [
     {
      "texte": "Mais le gouvernement bernois avait avancé un autre argument : l'abus de droit.",
-     "debut": 413.634,
-     "fin": 418.576,
+     "debut": 412.284,
+     "fin": 417.226,
      "mots": [
       {
        "mot": "mais",
-       "debut": 413.634,
-       "fin": 413.92
+       "debut": 412.284,
+       "fin": 412.57
       },
       {
        "mot": "le",
-       "debut": 413.914,
-       "fin": 414.091
+       "debut": 412.564,
+       "fin": 412.741
       },
       {
        "mot": "gouvernement",
-       "debut": 414.084,
-       "fin": 414.83
+       "debut": 412.734,
+       "fin": 413.48
       },
       {
        "mot": "bernois",
-       "debut": 414.824,
-       "fin": 415.285
+       "debut": 413.474,
+       "fin": 413.935
       },
       {
        "mot": "avait",
-       "debut": 415.284,
-       "fin": 415.626
+       "debut": 413.934,
+       "fin": 414.276
       },
       {
        "mot": "avancé",
-       "debut": 415.624,
-       "fin": 416.024
+       "debut": 414.274,
+       "fin": 414.674
       },
       {
        "mot": "un",
-       "debut": 416.014,
-       "fin": 416.194
+       "debut": 414.664,
+       "fin": 414.844
       },
       {
        "mot": "autre",
-       "debut": 416.194,
-       "fin": 416.535
+       "debut": 414.844,
+       "fin": 415.185
       },
       {
        "mot": "argument",
-       "debut": 416.534,
-       "fin": 417.104
+       "debut": 415.184,
+       "fin": 415.754
       },
       {
        "mot": "l",
-       "debut": 417.564,
-       "fin": 417.985
+       "debut": 416.214,
+       "fin": 416.635
       },
       {
        "mot": "abus",
-       "debut": 417.564,
-       "fin": 417.985
+       "debut": 416.214,
+       "fin": 416.635
       },
       {
        "mot": "de",
-       "debut": 417.984,
-       "fin": 418.163
+       "debut": 416.634,
+       "fin": 416.813
       },
       {
        "mot": "droit",
-       "debut": 418.154,
-       "fin": 418.576
+       "debut": 416.804,
+       "fin": 417.226
       }
      ]
     },
     {
      "texte": "Les trois frères, disait-il, pourraient faire cesser leur détresse en demandant à retrouver leur nationalité tchèque.",
-     "debut": 419.204,
-     "fin": 425.616,
+     "debut": 417.854,
+     "fin": 424.266,
      "mots": [
       {
        "mot": "les",
-       "debut": 419.204,
-       "fin": 419.466
+       "debut": 417.854,
+       "fin": 418.116
       },
       {
        "mot": "trois",
-       "debut": 419.464,
-       "fin": 419.859
+       "debut": 418.114,
+       "fin": 418.509
       },
       {
        "mot": "frères",
-       "debut": 419.854,
-       "fin": 420.383
+       "debut": 418.504,
+       "fin": 419.033
       },
       {
        "mot": "disait",
-       "debut": 420.374,
-       "fin": 421.104
+       "debut": 419.024,
+       "fin": 419.754
       },
       {
        "mot": "il",
-       "debut": 420.374,
-       "fin": 421.104
+       "debut": 419.024,
+       "fin": 419.754
       },
       {
        "mot": "pourrait",
-       "debut": 421.344,
-       "fin": 421.8
+       "debut": 419.994,
+       "fin": 420.45
       },
       {
        "mot": "faire",
-       "debut": 421.794,
-       "fin": 422.101
+       "debut": 420.444,
+       "fin": 420.751
       },
       {
        "mot": "cesser",
-       "debut": 422.094,
-       "fin": 422.453
+       "debut": 420.744,
+       "fin": 421.103
       },
       {
        "mot": "leur",
-       "debut": 422.444,
-       "fin": 422.704
+       "debut": 421.094,
+       "fin": 421.354
       },
       {
        "mot": "détresse",
-       "debut": 422.704,
-       "fin": 423.156
+       "debut": 421.354,
+       "fin": 421.806
       },
       {
        "mot": "en",
-       "debut": 423.154,
-       "fin": 423.306
+       "debut": 421.804,
+       "fin": 421.956
       },
       {
        "mot": "demandant",
-       "debut": 423.304,
-       "fin": 423.808
+       "debut": 421.954,
+       "fin": 422.458
       },
       {
        "mot": "à",
-       "debut": 423.804,
-       "fin": 423.909
+       "debut": 422.454,
+       "fin": 422.559
       },
       {
        "mot": "retrouver",
-       "debut": 423.904,
-       "fin": 424.411
+       "debut": 422.554,
+       "fin": 423.061
       },
       {
        "mot": "la",
-       "debut": 424.404,
-       "fin": 424.562
+       "debut": 423.054,
+       "fin": 423.212
       },
       {
        "mot": "nationalité",
-       "debut": 424.554,
-       "fin": 425.164
+       "debut": 423.204,
+       "fin": 423.814
       },
       {
        "mot": "tchèque",
-       "debut": 425.164,
-       "fin": 425.616
+       "debut": 423.814,
+       "fin": 424.266
       }
      ]
     },
     {
      "texte": "Ils choisiraient de ne pas le faire.",
-     "debut": 426.404,
-     "fin": 427.824,
+     "debut": 425.054,
+     "fin": 426.474,
      "mots": [
       {
        "mot": "il",
-       "debut": 426.404,
-       "fin": 426.562
+       "debut": 425.054,
+       "fin": 425.212
       },
       {
        "mot": "choisirait",
-       "debut": 426.554,
-       "fin": 427.14
+       "debut": 425.204,
+       "fin": 425.79
       },
       {
        "mot": "de",
-       "debut": 427.134,
-       "fin": 427.298
+       "debut": 425.784,
+       "fin": 425.948
       },
       {
        "mot": "ne",
-       "debut": 427.294,
-       "fin": 427.456
+       "debut": 425.944,
+       "fin": 426.106
       },
       {
        "mot": "pas",
-       "debut": 427.454,
-       "fin": 427.666
+       "debut": 426.104,
+       "fin": 426.316
       },
       {
        "mot": "le",
-       "debut": 427.664,
-       "fin": 427.824
+       "debut": 426.314,
+       "fin": 426.474
       }
      ]
     }
@@ -6158,230 +6165,230 @@
   },
   {
    "ligne": 32,
-   "debut": 429.374,
-   "fin": 444.444,
+   "debut": 428.024,
+   "fin": 443.094,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral admet qu'un véritable abus peut, en principe, justifier un refus de prestations.",
-     "debut": 429.374,
-     "fin": 435.696,
+     "debut": 428.024,
+     "fin": 434.346,
      "mots": [
       {
        "mot": "le",
-       "debut": 429.374,
-       "fin": 429.598
+       "debut": 428.024,
+       "fin": 428.248
       },
       {
        "mot": "tribunal",
-       "debut": 429.594,
-       "fin": 430.251
+       "debut": 428.244,
+       "fin": 428.901
       },
       {
        "mot": "fédéral",
-       "debut": 430.244,
-       "fin": 430.832
+       "debut": 428.894,
+       "fin": 429.482
       },
       {
        "mot": "admet",
-       "debut": 430.914,
-       "fin": 431.275
+       "debut": 429.564,
+       "fin": 429.925
       },
       {
        "mot": "qu",
-       "debut": 431.274,
-       "fin": 431.633
+       "debut": 429.924,
+       "fin": 430.283
       },
       {
        "mot": "un",
-       "debut": 431.274,
-       "fin": 431.633
+       "debut": 429.924,
+       "fin": 430.283
       },
       {
        "mot": "véritable",
-       "debut": 431.624,
-       "fin": 432.231
+       "debut": 430.274,
+       "fin": 430.881
       },
       {
        "mot": "abus",
-       "debut": 432.224,
-       "fin": 432.529
+       "debut": 430.874,
+       "fin": 431.179
       },
       {
        "mot": "peut",
-       "debut": 432.524,
-       "fin": 432.888
+       "debut": 431.174,
+       "fin": 431.538
       },
       {
        "mot": "en",
-       "debut": 432.884,
-       "fin": 433.067
+       "debut": 431.534,
+       "fin": 431.717
       },
       {
        "mot": "principe",
-       "debut": 433.064,
-       "fin": 433.665
+       "debut": 431.714,
+       "fin": 432.315
       },
       {
        "mot": "justifier",
-       "debut": 433.664,
-       "fin": 434.262
+       "debut": 432.314,
+       "fin": 432.912
       },
       {
        "mot": "un",
-       "debut": 434.254,
-       "fin": 434.441
+       "debut": 432.904,
+       "fin": 433.091
       },
       {
        "mot": "refus",
-       "debut": 434.434,
-       "fin": 434.8
+       "debut": 433.084,
+       "fin": 433.45
       },
       {
        "mot": "de",
-       "debut": 434.794,
-       "fin": 434.979
+       "debut": 433.444,
+       "fin": 433.629
       },
       {
        "mot": "prestation",
-       "debut": 434.974,
-       "fin": 435.696
+       "debut": 433.624,
+       "fin": 434.346
       }
      ]
     },
     {
      "texte": "Encore faut-il montrer que l'aide est utilisée à une fin étrangère à son objet, et non simplement reprocher à quelqu'un ses décisions passées.",
-     "debut": 436.394,
-     "fin": 444.444,
+     "debut": 435.044,
+     "fin": 443.094,
      "mots": [
       {
        "mot": "encore",
-       "debut": 436.394,
-       "fin": 436.759
+       "debut": 435.044,
+       "fin": 435.409
       },
       {
        "mot": "faut",
-       "debut": 436.754,
-       "fin": 437.17
+       "debut": 435.404,
+       "fin": 435.82
       },
       {
        "mot": "il",
-       "debut": 436.754,
-       "fin": 437.17
+       "debut": 435.404,
+       "fin": 435.82
       },
       {
        "mot": "montrer",
-       "debut": 437.164,
-       "fin": 437.581
+       "debut": 435.814,
+       "fin": 436.231
       },
       {
        "mot": "que",
-       "debut": 437.574,
-       "fin": 437.786
+       "debut": 436.224,
+       "fin": 436.436
       },
       {
        "mot": "l",
-       "debut": 437.784,
-       "fin": 438.146
+       "debut": 436.434,
+       "fin": 436.796
       },
       {
        "mot": "aide",
-       "debut": 437.784,
-       "fin": 438.146
+       "debut": 436.434,
+       "fin": 436.796
       },
       {
        "mot": "est",
-       "debut": 438.144,
-       "fin": 438.351
+       "debut": 436.794,
+       "fin": 437.001
       },
       {
        "mot": "utilisée",
-       "debut": 438.344,
-       "fin": 438.813
+       "debut": 436.994,
+       "fin": 437.463
       },
       {
        "mot": "à",
-       "debut": 438.804,
-       "fin": 438.916
+       "debut": 437.454,
+       "fin": 437.566
       },
       {
        "mot": "une",
-       "debut": 438.914,
-       "fin": 439.122
+       "debut": 437.564,
+       "fin": 437.772
       },
       {
        "mot": "fin",
-       "debut": 439.114,
-       "fin": 439.327
+       "debut": 437.764,
+       "fin": 437.977
       },
       {
        "mot": "étrangère",
-       "debut": 439.324,
-       "fin": 439.84
+       "debut": 437.974,
+       "fin": 438.49
       },
       {
        "mot": "à",
-       "debut": 439.834,
-       "fin": 439.943
+       "debut": 438.484,
+       "fin": 438.593
       },
       {
        "mot": "son",
-       "debut": 439.934,
-       "fin": 440.149
+       "debut": 438.584,
+       "fin": 438.799
       },
       {
        "mot": "objet",
-       "debut": 440.144,
-       "fin": 440.508
+       "debut": 438.794,
+       "fin": 439.158
       },
       {
        "mot": "et",
-       "debut": 440.874,
-       "fin": 441.05
+       "debut": 439.524,
+       "fin": 439.7
       },
       {
        "mot": "non",
-       "debut": 441.044,
-       "fin": 441.276
+       "debut": 439.694,
+       "fin": 439.926
       },
       {
        "mot": "simplement",
-       "debut": 441.274,
-       "fin": 441.898
+       "debut": 439.924,
+       "fin": 440.548
       },
       {
        "mot": "reprocher",
-       "debut": 441.894,
-       "fin": 442.464
+       "debut": 440.544,
+       "fin": 441.114
       },
       {
        "mot": "à",
-       "debut": 442.464,
-       "fin": 442.577
+       "debut": 441.114,
+       "fin": 441.227
       },
       {
        "mot": "quelqu",
-       "debut": 442.574,
-       "fin": 443.143
+       "debut": 441.224,
+       "fin": 441.793
       },
       {
        "mot": "un",
-       "debut": 442.574,
-       "fin": 443.143
+       "debut": 441.224,
+       "fin": 441.793
       },
       {
        "mot": "ses",
-       "debut": 443.134,
-       "fin": 443.369
+       "debut": 441.784,
+       "fin": 442.019
       },
       {
        "mot": "décisions",
-       "debut": 443.364,
-       "fin": 443.935
+       "debut": 442.014,
+       "fin": 442.585
       },
       {
        "mot": "passées",
-       "debut": 443.934,
-       "fin": 444.444
+       "debut": 442.584,
+       "fin": 443.094
       }
      ]
     }
@@ -6389,210 +6396,210 @@
   },
   {
    "ligne": 33,
-   "debut": 445.704,
-   "fin": 458.144,
+   "debut": 444.354,
+   "fin": 456.794,
    "phrases": [
     {
      "texte": "Or les frères avaient été reconnus comme réfugiés en Suisse.",
-     "debut": 445.704,
-     "fin": 449.082,
+     "debut": 444.354,
+     "fin": 447.732,
      "mots": [
       {
        "mot": "or",
-       "debut": 445.704,
-       "fin": 445.928
+       "debut": 444.354,
+       "fin": 444.578
       },
       {
        "mot": "les",
-       "debut": 445.924,
-       "fin": 446.145
+       "debut": 444.574,
+       "fin": 444.795
       },
       {
        "mot": "frères",
-       "debut": 446.144,
-       "fin": 446.526
+       "debut": 444.794,
+       "fin": 445.176
       },
       {
        "mot": "avaient",
-       "debut": 446.524,
-       "fin": 446.961
+       "debut": 445.174,
+       "fin": 445.611
       },
       {
        "mot": "été",
-       "debut": 446.954,
-       "fin": 447.178
+       "debut": 445.604,
+       "fin": 445.828
       },
       {
        "mot": "reconnus",
-       "debut": 447.174,
-       "fin": 447.668
+       "debut": 445.824,
+       "fin": 446.318
       },
       {
        "mot": "comme",
-       "debut": 447.664,
-       "fin": 447.994
+       "debut": 446.314,
+       "fin": 446.644
       },
       {
        "mot": "réfugiés",
-       "debut": 447.994,
-       "fin": 448.484
+       "debut": 446.644,
+       "fin": 447.134
       },
       {
        "mot": "en",
-       "debut": 448.484,
-       "fin": 448.647
+       "debut": 447.134,
+       "fin": 447.297
       },
       {
        "mot": "suisse",
-       "debut": 448.644,
-       "fin": 449.082
+       "debut": 447.294,
+       "fin": 447.732
       }
      ]
     },
     {
      "texte": "Les juges relèvent qu'on ne pouvait pas leur imposer aussi simplement de se replacer volontairement sous la protection de l'État dont ils avaient fui les persécutions.",
-     "debut": 449.804,
-     "fin": 458.144,
+     "debut": 448.454,
+     "fin": 456.794,
      "mots": [
       {
        "mot": "les",
-       "debut": 449.804,
-       "fin": 450.01
+       "debut": 448.454,
+       "fin": 448.66
       },
       {
        "mot": "juges",
-       "debut": 450.004,
-       "fin": 450.308
+       "debut": 448.654,
+       "fin": 448.958
       },
       {
        "mot": "relèvent",
-       "debut": 450.304,
-       "fin": 450.754
+       "debut": 448.954,
+       "fin": 449.404
       },
       {
        "mot": "qu",
-       "debut": 450.754,
-       "fin": 451.052
+       "debut": 449.404,
+       "fin": 449.702
       },
       {
        "mot": "on",
-       "debut": 450.754,
-       "fin": 451.052
+       "debut": 449.404,
+       "fin": 449.702
       },
       {
        "mot": "ne",
-       "debut": 451.044,
-       "fin": 451.201
+       "debut": 449.694,
+       "fin": 449.851
       },
       {
        "mot": "pouvait",
-       "debut": 451.194,
-       "fin": 451.597
+       "debut": 449.844,
+       "fin": 450.247
       },
       {
        "mot": "pas",
-       "debut": 451.594,
-       "fin": 451.796
+       "debut": 450.244,
+       "fin": 450.446
       },
       {
        "mot": "leur",
-       "debut": 451.794,
-       "fin": 452.044
+       "debut": 450.444,
+       "fin": 450.694
       },
       {
        "mot": "imposer",
-       "debut": 452.044,
-       "fin": 452.441
+       "debut": 450.694,
+       "fin": 451.091
       },
       {
        "mot": "aussi",
-       "debut": 452.434,
-       "fin": 452.738
+       "debut": 451.084,
+       "fin": 451.388
       },
       {
        "mot": "simplement",
-       "debut": 452.734,
-       "fin": 453.284
+       "debut": 451.384,
+       "fin": 451.934
       },
       {
        "mot": "de",
-       "debut": 453.284,
-       "fin": 453.432
+       "debut": 451.934,
+       "fin": 452.082
       },
       {
        "mot": "se",
-       "debut": 453.424,
-       "fin": 453.581
+       "debut": 452.074,
+       "fin": 452.231
       },
       {
        "mot": "replacer",
-       "debut": 453.574,
-       "fin": 454.028
+       "debut": 452.224,
+       "fin": 452.678
       },
       {
        "mot": "volontairement",
-       "debut": 454.024,
-       "fin": 454.772
+       "debut": 452.674,
+       "fin": 453.422
       },
       {
        "mot": "sous",
-       "debut": 454.764,
-       "fin": 455.019
+       "debut": 453.414,
+       "fin": 453.669
       },
       {
        "mot": "la",
-       "debut": 455.014,
-       "fin": 455.168
+       "debut": 453.664,
+       "fin": 453.818
       },
       {
        "mot": "protection",
-       "debut": 455.164,
-       "fin": 455.714
+       "debut": 453.814,
+       "fin": 454.364
       },
       {
        "mot": "de",
-       "debut": 455.714,
-       "fin": 455.863
+       "debut": 454.364,
+       "fin": 454.513
       },
       {
        "mot": "l",
-       "debut": 455.854,
-       "fin": 456.21
+       "debut": 454.504,
+       "fin": 454.86
       },
       {
        "mot": "etat",
-       "debut": 455.854,
-       "fin": 456.21
+       "debut": 454.504,
+       "fin": 454.86
       },
       {
        "mot": "dont",
-       "debut": 456.204,
-       "fin": 456.458
+       "debut": 454.854,
+       "fin": 455.108
       },
       {
        "mot": "ils",
-       "debut": 456.454,
-       "fin": 456.656
+       "debut": 455.104,
+       "fin": 455.306
       },
       {
        "mot": "avaient",
-       "debut": 456.654,
-       "fin": 457.053
+       "debut": 455.304,
+       "fin": 455.703
       },
       {
        "mot": "fui",
-       "debut": 457.044,
-       "fin": 457.251
+       "debut": 455.694,
+       "fin": 455.901
       },
       {
        "mot": "les",
-       "debut": 457.244,
-       "fin": 457.45
+       "debut": 455.894,
+       "fin": 456.1
       },
       {
        "mot": "persécutions",
-       "debut": 457.444,
-       "fin": 458.144
+       "debut": 456.094,
+       "fin": 456.794
       }
      ]
     }
@@ -6600,185 +6607,185 @@
   },
   {
    "ligne": 34,
-   "debut": 459.104,
-   "fin": 471.448,
+   "debut": 457.754,
+   "fin": 470.098,
    "phrases": [
     {
      "texte": "De plus, leur réintégration dans la nationalité tchèque n'était pas une formalité dont l'issue était certaine.",
-     "debut": 459.104,
-     "fin": 465.356,
+     "debut": 457.754,
+     "fin": 464.006,
      "mots": [
       {
        "mot": "de",
-       "debut": 459.104,
-       "fin": 459.276
+       "debut": 457.754,
+       "fin": 457.926
       },
       {
        "mot": "plus",
-       "debut": 459.274,
-       "fin": 459.62
+       "debut": 457.924,
+       "fin": 458.27
       },
       {
        "mot": "le",
-       "debut": 459.614,
-       "fin": 459.792
+       "debut": 458.264,
+       "fin": 458.442
       },
       {
        "mot": "réintégration",
-       "debut": 459.784,
-       "fin": 460.595
+       "debut": 458.434,
+       "fin": 459.245
       },
       {
        "mot": "dans",
-       "debut": 460.594,
-       "fin": 460.882
+       "debut": 459.244,
+       "fin": 459.532
       },
       {
        "mot": "la",
-       "debut": 460.874,
-       "fin": 461.054
+       "debut": 459.524,
+       "fin": 459.704
       },
       {
        "mot": "nationalité",
-       "debut": 461.054,
-       "fin": 461.742
+       "debut": 459.704,
+       "fin": 460.392
       },
       {
        "mot": "tchèque",
-       "debut": 461.734,
-       "fin": 462.201
+       "debut": 460.384,
+       "fin": 460.851
       },
       {
        "mot": "n",
-       "debut": 462.194,
-       "fin": 462.66
+       "debut": 460.844,
+       "fin": 461.31
       },
       {
        "mot": "était",
-       "debut": 462.194,
-       "fin": 462.66
+       "debut": 460.844,
+       "fin": 461.31
       },
       {
        "mot": "pas",
-       "debut": 462.654,
-       "fin": 462.89
+       "debut": 461.304,
+       "fin": 461.54
       },
       {
        "mot": "une",
-       "debut": 462.884,
-       "fin": 463.119
+       "debut": 461.534,
+       "fin": 461.769
       },
       {
        "mot": "formalité",
-       "debut": 463.114,
-       "fin": 463.693
+       "debut": 461.764,
+       "fin": 462.343
       },
       {
        "mot": "dont",
-       "debut": 463.684,
-       "fin": 463.979
+       "debut": 462.334,
+       "fin": 462.629
       },
       {
        "mot": "l",
-       "debut": 463.974,
-       "fin": 464.438
+       "debut": 462.624,
+       "fin": 463.088
       },
       {
        "mot": "issue",
-       "debut": 463.974,
-       "fin": 464.438
+       "debut": 462.624,
+       "fin": 463.088
       },
       {
        "mot": "était",
-       "debut": 464.434,
-       "fin": 464.782
+       "debut": 463.084,
+       "fin": 463.432
       },
       {
        "mot": "certaine",
-       "debut": 464.774,
-       "fin": 465.356
+       "debut": 463.424,
+       "fin": 464.006
       }
      ]
     },
     {
      "texte": "Et ils avaient vécu de nombreuses années en Suisse, où résidait leur mère devenue suisse.",
-     "debut": 466.054,
-     "fin": 471.448,
+     "debut": 464.704,
+     "fin": 470.098,
      "mots": [
       {
        "mot": "et",
-       "debut": 466.054,
-       "fin": 466.218
+       "debut": 464.704,
+       "fin": 464.868
       },
       {
        "mot": "ils",
-       "debut": 466.214,
-       "fin": 466.428
+       "debut": 464.864,
+       "fin": 465.078
       },
       {
        "mot": "avaient",
-       "debut": 466.424,
-       "fin": 466.848
+       "debut": 465.074,
+       "fin": 465.498
       },
       {
        "mot": "vécu",
-       "debut": 466.844,
-       "fin": 467.111
+       "debut": 465.494,
+       "fin": 465.761
       },
       {
        "mot": "de",
-       "debut": 467.104,
-       "fin": 467.268
+       "debut": 465.754,
+       "fin": 465.918
       },
       {
        "mot": "nombreuses",
-       "debut": 467.264,
-       "fin": 467.846
+       "debut": 465.914,
+       "fin": 466.496
       },
       {
        "mot": "années",
-       "debut": 467.844,
-       "fin": 468.214
+       "debut": 466.494,
+       "fin": 466.864
       },
       {
        "mot": "en",
-       "debut": 468.214,
-       "fin": 468.372
+       "debut": 466.864,
+       "fin": 467.022
       },
       {
        "mot": "suisse",
-       "debut": 468.364,
-       "fin": 468.792
+       "debut": 467.014,
+       "fin": 467.442
       },
       {
        "mot": "où",
-       "debut": 469.004,
-       "fin": 469.171
+       "debut": 467.654,
+       "fin": 467.821
       },
       {
        "mot": "résidaient",
-       "debut": 469.164,
-       "fin": 469.782
+       "debut": 467.814,
+       "fin": 468.432
       },
       {
        "mot": "leurs",
-       "debut": 469.774,
-       "fin": 470.115
+       "debut": 468.424,
+       "fin": 468.765
       },
       {
        "mot": "mères",
-       "debut": 470.114,
-       "fin": 470.448
+       "debut": 468.764,
+       "fin": 469.098
       },
       {
        "mot": "devenues",
-       "debut": 470.444,
-       "fin": 470.948
+       "debut": 469.094,
+       "fin": 469.598
       },
       {
        "mot": "suisses",
-       "debut": 470.944,
-       "fin": 471.448
+       "debut": 469.594,
+       "fin": 470.098
       }
      ]
     }
@@ -6786,205 +6793,205 @@
   },
   {
    "ligne": 35,
-   "debut": 472.994,
-   "fin": 488.232,
+   "debut": 471.644,
+   "fin": 486.882,
    "phrases": [
     {
      "texte": "Surtout, leur détresse avait une cause immédiate : ils ne pouvaient ni être renvoyés effectivement, ni exercer légalement un emploi.",
-     "debut": 472.994,
-     "fin": 481.99,
+     "debut": 471.644,
+     "fin": 480.64,
      "mots": [
       {
        "mot": "surtout",
-       "debut": 472.994,
-       "fin": 473.862
+       "debut": 471.644,
+       "fin": 472.512
       },
       {
        "mot": "leur",
-       "debut": 474.164,
-       "fin": 474.468
+       "debut": 472.814,
+       "fin": 473.118
       },
       {
        "mot": "détresse",
-       "debut": 474.464,
-       "fin": 475.005
+       "debut": 473.114,
+       "fin": 473.655
       },
       {
        "mot": "avait",
-       "debut": 475.004,
-       "fin": 475.362
+       "debut": 473.654,
+       "fin": 474.012
       },
       {
        "mot": "une",
-       "debut": 475.354,
-       "fin": 475.601
+       "debut": 474.004,
+       "fin": 474.251
       },
       {
        "mot": "cause",
-       "debut": 475.594,
-       "fin": 475.958
+       "debut": 474.244,
+       "fin": 474.608
       },
       {
        "mot": "immédiate",
-       "debut": 475.954,
-       "fin": 476.614
+       "debut": 474.604,
+       "fin": 475.264
       },
       {
        "mot": "il",
-       "debut": 476.984,
-       "fin": 477.181
+       "debut": 475.634,
+       "fin": 475.831
       },
       {
        "mot": "ne",
-       "debut": 477.174,
-       "fin": 477.376
+       "debut": 475.824,
+       "fin": 476.026
       },
       {
        "mot": "pouvait",
-       "debut": 477.374,
-       "fin": 477.896
+       "debut": 476.024,
+       "fin": 476.546
       },
       {
        "mot": "ni",
-       "debut": 477.894,
-       "fin": 478.091
+       "debut": 476.544,
+       "fin": 476.741
       },
       {
        "mot": "être",
-       "debut": 478.084,
-       "fin": 478.416
+       "debut": 476.734,
+       "fin": 477.066
       },
       {
        "mot": "envoyé",
-       "debut": 478.414,
-       "fin": 478.871
+       "debut": 477.064,
+       "fin": 477.521
       },
       {
        "mot": "effectivement",
-       "debut": 478.864,
-       "fin": 479.845
+       "debut": 477.514,
+       "fin": 478.495
       },
       {
        "mot": "ni",
-       "debut": 479.844,
-       "fin": 480.04
+       "debut": 478.494,
+       "fin": 478.69
       },
       {
        "mot": "exercer",
-       "debut": 480.034,
-       "fin": 480.56
+       "debut": 478.684,
+       "fin": 479.21
       },
       {
        "mot": "légalement",
-       "debut": 480.554,
-       "fin": 481.275
+       "debut": 479.204,
+       "fin": 479.925
       },
       {
        "mot": "un",
-       "debut": 481.274,
-       "fin": 481.47
+       "debut": 479.924,
+       "fin": 480.12
       },
       {
        "mot": "emploi",
-       "debut": 481.464,
-       "fin": 481.99
+       "debut": 480.114,
+       "fin": 480.64
       }
      ]
     },
     {
      "texte": "Demander de quoi survivre dans cette situation ne revenait pas à détourner l'aide sociale de sa finalité.",
-     "debut": 482.684,
-     "fin": 488.232,
+     "debut": 481.334,
+     "fin": 486.882,
      "mots": [
       {
        "mot": "demander",
-       "debut": 482.684,
-       "fin": 483.155
+       "debut": 481.334,
+       "fin": 481.805
       },
       {
        "mot": "de",
-       "debut": 483.154,
-       "fin": 483.312
+       "debut": 481.804,
+       "fin": 481.962
       },
       {
        "mot": "quoi",
-       "debut": 483.304,
-       "fin": 483.574
+       "debut": 481.954,
+       "fin": 482.224
       },
       {
        "mot": "survivre",
-       "debut": 483.574,
-       "fin": 484.045
+       "debut": 482.224,
+       "fin": 482.695
       },
       {
        "mot": "dans",
-       "debut": 484.044,
-       "fin": 484.307
+       "debut": 482.694,
+       "fin": 482.957
       },
       {
        "mot": "cette",
-       "debut": 484.304,
-       "fin": 484.621
+       "debut": 482.954,
+       "fin": 483.271
       },
       {
        "mot": "situation",
-       "debut": 484.614,
-       "fin": 485.144
+       "debut": 483.264,
+       "fin": 483.794
       },
       {
        "mot": "ne",
-       "debut": 485.144,
-       "fin": 485.301
+       "debut": 483.794,
+       "fin": 483.951
       },
       {
        "mot": "revenait",
-       "debut": 485.294,
-       "fin": 485.772
+       "debut": 483.944,
+       "fin": 484.422
       },
       {
        "mot": "pas",
-       "debut": 485.764,
-       "fin": 485.981
+       "debut": 484.414,
+       "fin": 484.631
       },
       {
        "mot": "à",
-       "debut": 485.974,
-       "fin": 486.086
+       "debut": 484.624,
+       "fin": 484.736
       },
       {
        "mot": "détourner",
-       "debut": 486.084,
-       "fin": 486.609
+       "debut": 484.734,
+       "fin": 485.259
       },
       {
        "mot": "l",
-       "debut": 486.604,
-       "fin": 486.976
+       "debut": 485.254,
+       "fin": 485.626
       },
       {
        "mot": "aide",
-       "debut": 486.604,
-       "fin": 486.976
+       "debut": 485.254,
+       "fin": 485.626
       },
       {
        "mot": "sociale",
-       "debut": 486.974,
-       "fin": 487.395
+       "debut": 485.624,
+       "fin": 486.045
       },
       {
        "mot": "de",
-       "debut": 487.394,
-       "fin": 487.552
+       "debut": 486.044,
+       "fin": 486.202
       },
       {
        "mot": "sa",
-       "debut": 487.544,
-       "fin": 487.709
+       "debut": 486.194,
+       "fin": 486.359
       },
       {
        "mot": "finalité",
-       "debut": 487.704,
-       "fin": 488.232
+       "debut": 486.354,
+       "fin": 486.882
       }
      ]
     }
@@ -6992,183 +6999,183 @@
   },
   {
    "ligne": 36,
-   "debut": 489.184,
-   "fin": 502.064,
+   "debut": 487.834,
+   "fin": 500.714,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral relève encore un élément décisif : l'ancienne loi bernoise sur l'assistance interdisait de refuser le secours indispensable, même lorsque la personne avait gravement contribué à sa propre situation de besoin.",
-     "debut": 489.184,
-     "fin": 502.064,
+     "debut": 487.834,
+     "fin": 500.714,
      "mots": [
       {
        "mot": "le",
-       "debut": 489.184,
-       "fin": 489.34
+       "debut": 487.834,
+       "fin": 487.99
       },
       {
        "mot": "tribunal",
-       "debut": 489.334,
-       "fin": 489.795
+       "debut": 487.984,
+       "fin": 488.445
       },
       {
        "mot": "fédéral",
-       "debut": 489.794,
-       "fin": 490.2
+       "debut": 488.444,
+       "fin": 488.85
       },
       {
        "mot": "relève",
-       "debut": 490.194,
-       "fin": 490.554
+       "debut": 488.844,
+       "fin": 489.204
       },
       {
        "mot": "encore",
-       "debut": 490.554,
-       "fin": 490.908
+       "debut": 489.204,
+       "fin": 489.558
       },
       {
        "mot": "un",
-       "debut": 490.904,
-       "fin": 491.06
+       "debut": 489.554,
+       "fin": 489.71
       },
       {
        "mot": "élément",
-       "debut": 491.054,
-       "fin": 491.465
+       "debut": 489.704,
+       "fin": 490.115
       },
       {
        "mot": "décisif",
-       "debut": 491.464,
-       "fin": 491.92
+       "debut": 490.114,
+       "fin": 490.57
       },
       {
        "mot": "l",
-       "debut": 492.414,
-       "fin": 493.03
+       "debut": 491.064,
+       "fin": 491.68
       },
       {
        "mot": "ancienne",
-       "debut": 492.414,
-       "fin": 493.03
+       "debut": 491.064,
+       "fin": 491.68
       },
       {
        "mot": "loi",
-       "debut": 493.024,
-       "fin": 493.251
+       "debut": 491.674,
+       "fin": 491.901
       },
       {
        "mot": "bernoise",
-       "debut": 493.244,
-       "fin": 493.75
+       "debut": 491.894,
+       "fin": 492.4
       },
       {
        "mot": "sur",
-       "debut": 493.744,
-       "fin": 493.972
+       "debut": 492.394,
+       "fin": 492.622
       },
       {
        "mot": "l",
-       "debut": 493.964,
-       "fin": 494.692
+       "debut": 492.614,
+       "fin": 493.342
       },
       {
        "mot": "assistance",
-       "debut": 493.964,
-       "fin": 494.692
+       "debut": 492.614,
+       "fin": 493.342
       },
       {
        "mot": "interdisait",
-       "debut": 494.684,
-       "fin": 495.358
+       "debut": 493.334,
+       "fin": 494.008
       },
       {
        "mot": "de",
-       "debut": 495.354,
-       "fin": 495.524
+       "debut": 494.004,
+       "fin": 494.174
       },
       {
        "mot": "refuser",
-       "debut": 495.524,
-       "fin": 495.967
+       "debut": 494.174,
+       "fin": 494.617
       },
       {
        "mot": "le",
-       "debut": 495.964,
-       "fin": 496.133
+       "debut": 494.614,
+       "fin": 494.783
       },
       {
        "mot": "secours",
-       "debut": 496.124,
-       "fin": 496.577
+       "debut": 494.774,
+       "fin": 495.227
       },
       {
        "mot": "indispensable",
-       "debut": 496.574,
-       "fin": 497.408
+       "debut": 495.224,
+       "fin": 496.058
       },
       {
        "mot": "même",
-       "debut": 497.404,
-       "fin": 497.685
+       "debut": 496.054,
+       "fin": 496.335
       },
       {
        "mot": "lorsque",
-       "debut": 497.684,
-       "fin": 498.129
+       "debut": 496.334,
+       "fin": 496.779
       },
       {
        "mot": "la",
-       "debut": 498.124,
-       "fin": 498.295
+       "debut": 496.774,
+       "fin": 496.945
       },
       {
        "mot": "personne",
-       "debut": 498.294,
-       "fin": 498.794
+       "debut": 496.944,
+       "fin": 497.444
       },
       {
        "mot": "avait",
-       "debut": 498.794,
-       "fin": 499.126
+       "debut": 497.444,
+       "fin": 497.776
       },
       {
        "mot": "gravement",
-       "debut": 499.124,
-       "fin": 499.681
+       "debut": 497.774,
+       "fin": 498.331
       },
       {
        "mot": "contribué",
-       "debut": 499.674,
-       "fin": 500.235
+       "debut": 498.324,
+       "fin": 498.885
       },
       {
        "mot": "à",
-       "debut": 500.234,
-       "fin": 500.346
+       "debut": 498.884,
+       "fin": 498.996
       },
       {
        "mot": "sa",
-       "debut": 500.344,
-       "fin": 500.512
+       "debut": 498.994,
+       "fin": 499.162
       },
       {
        "mot": "propre",
-       "debut": 500.504,
-       "fin": 500.9
+       "debut": 499.154,
+       "fin": 499.55
       },
       {
        "mot": "situation",
-       "debut": 500.894,
-       "fin": 501.454
+       "debut": 499.544,
+       "fin": 500.104
       },
       {
        "mot": "de",
-       "debut": 501.454,
-       "fin": 501.621
+       "debut": 500.104,
+       "fin": 500.271
       },
       {
        "mot": "besoin",
-       "debut": 501.614,
-       "fin": 502.064
+       "debut": 500.264,
+       "fin": 500.714
       }
      ]
     }
@@ -7176,242 +7183,242 @@
   },
   {
    "ligne": 37,
-   "debut": 503.614,
-   "fin": 517.884,
+   "debut": 502.264,
+   "fin": 516.534,
    "phrases": [
     {
      "texte": "Autrement dit, une situation de détresse éventuellement imputable à l'intéressé n'est pas automatiquement un abus de droit.",
-     "debut": 503.614,
-     "fin": 510.35,
+     "debut": 502.264,
+     "fin": 509.0,
      "mots": [
       {
        "mot": "autrement",
-       "debut": 503.614,
-       "fin": 504.171
+       "debut": 502.264,
+       "fin": 502.821
       },
       {
        "mot": "dit",
-       "debut": 504.164,
-       "fin": 504.558
+       "debut": 502.814,
+       "fin": 503.208
       },
       {
        "mot": "une",
-       "debut": 504.734,
-       "fin": 504.942
+       "debut": 503.384,
+       "fin": 503.592
       },
       {
        "mot": "situation",
-       "debut": 504.934,
-       "fin": 505.452
+       "debut": 503.584,
+       "fin": 504.102
       },
       {
        "mot": "de",
-       "debut": 505.444,
-       "fin": 505.605
+       "debut": 504.094,
+       "fin": 504.255
       },
       {
        "mot": "détresse",
-       "debut": 505.604,
-       "fin": 506.064
+       "debut": 504.254,
+       "fin": 504.714
       },
       {
        "mot": "éventuellement",
-       "debut": 506.064,
-       "fin": 506.83
+       "debut": 504.714,
+       "fin": 505.48
       },
       {
        "mot": "imputable",
-       "debut": 506.824,
-       "fin": 507.34
+       "debut": 505.474,
+       "fin": 505.99
       },
       {
        "mot": "à",
-       "debut": 507.334,
-       "fin": 507.442
+       "debut": 505.984,
+       "fin": 506.092
       },
       {
        "mot": "l",
-       "debut": 507.434,
-       "fin": 508.105
+       "debut": 506.084,
+       "fin": 506.755
       },
       {
        "mot": "intéresser",
-       "debut": 507.434,
-       "fin": 508.105
+       "debut": 506.084,
+       "fin": 506.755
       },
       {
        "mot": "n",
-       "debut": 508.104,
-       "fin": 508.411
+       "debut": 506.754,
+       "fin": 507.061
       },
       {
        "mot": "est",
-       "debut": 508.104,
-       "fin": 508.411
+       "debut": 506.754,
+       "fin": 507.061
       },
       {
        "mot": "pas",
-       "debut": 508.404,
-       "fin": 508.615
+       "debut": 507.054,
+       "fin": 507.265
       },
       {
        "mot": "automatiquement",
-       "debut": 508.614,
-       "fin": 509.432
+       "debut": 507.264,
+       "fin": 508.082
       },
       {
        "mot": "un",
-       "debut": 509.424,
-       "fin": 509.585
+       "debut": 508.074,
+       "fin": 508.235
       },
       {
        "mot": "abus",
-       "debut": 509.584,
-       "fin": 509.84
+       "debut": 508.234,
+       "fin": 508.49
       },
       {
        "mot": "de",
-       "debut": 509.834,
-       "fin": 509.993
+       "debut": 508.484,
+       "fin": 508.643
       },
       {
        "mot": "droit",
-       "debut": 509.984,
-       "fin": 510.35
+       "debut": 508.634,
+       "fin": 509.0
       }
      ]
     },
     {
      "texte": "Le besoin doit être apprécié pour ce qu'il est.",
-     "debut": 511.044,
-     "fin": 513.264,
+     "debut": 509.694,
+     "fin": 511.914,
      "mots": [
       {
        "mot": "le",
-       "debut": 511.044,
-       "fin": 511.199
+       "debut": 509.694,
+       "fin": 509.849
       },
       {
        "mot": "besoin",
-       "debut": 511.194,
-       "fin": 511.56
+       "debut": 509.844,
+       "fin": 510.21
       },
       {
        "mot": "doit",
-       "debut": 511.554,
-       "fin": 511.818
+       "debut": 510.204,
+       "fin": 510.468
       },
       {
        "mot": "être",
-       "debut": 511.814,
-       "fin": 512.077
+       "debut": 510.464,
+       "fin": 510.727
       },
       {
        "mot": "apprécié",
-       "debut": 512.074,
-       "fin": 512.541
+       "debut": 510.724,
+       "fin": 511.191
       },
       {
        "mot": "pour",
-       "debut": 512.534,
-       "fin": 512.799
+       "debut": 511.184,
+       "fin": 511.449
       },
       {
        "mot": "ce",
-       "debut": 512.794,
-       "fin": 512.954
+       "debut": 511.444,
+       "fin": 511.604
       },
       {
        "mot": "qu",
-       "debut": 512.954,
-       "fin": 513.264
+       "debut": 511.604,
+       "fin": 511.914
       },
       {
        "mot": "il",
-       "debut": 512.954,
-       "fin": 513.264
+       "debut": 511.604,
+       "fin": 511.914
       }
      ]
     },
     {
      "texte": "Il n'y a abus que si le comportement vise uniquement à obtenir l'aide.",
-     "debut": 513.964,
-     "fin": 517.884,
+     "debut": 512.614,
+     "fin": 516.534,
      "mots": [
       {
        "mot": "il",
-       "debut": 513.964,
-       "fin": 514.133
+       "debut": 512.614,
+       "fin": 512.783
       },
       {
        "mot": "n",
-       "debut": 514.124,
-       "fin": 514.354
+       "debut": 512.774,
+       "fin": 513.004
       },
       {
        "mot": "y",
-       "debut": 514.124,
-       "fin": 514.354
+       "debut": 512.774,
+       "fin": 513.004
       },
       {
        "mot": "a",
-       "debut": 514.354,
-       "fin": 514.464
+       "debut": 513.004,
+       "fin": 513.114
       },
       {
        "mot": "abus",
-       "debut": 514.464,
-       "fin": 514.74
+       "debut": 513.114,
+       "fin": 513.39
       },
       {
        "mot": "que",
-       "debut": 514.734,
-       "fin": 514.961
+       "debut": 513.384,
+       "fin": 513.611
       },
       {
        "mot": "si",
-       "debut": 514.954,
-       "fin": 515.126
+       "debut": 513.604,
+       "fin": 513.776
       },
       {
        "mot": "le",
-       "debut": 515.124,
-       "fin": 515.292
+       "debut": 513.774,
+       "fin": 513.942
       },
       {
        "mot": "comportement",
-       "debut": 515.284,
-       "fin": 516.009
+       "debut": 513.934,
+       "fin": 514.659
       },
       {
        "mot": "vise",
-       "debut": 516.004,
-       "fin": 516.285
+       "debut": 514.654,
+       "fin": 514.935
       },
       {
        "mot": "uniquement",
-       "debut": 516.284,
-       "fin": 516.891
+       "debut": 514.934,
+       "fin": 515.541
       },
       {
        "mot": "à",
-       "debut": 516.884,
-       "fin": 517.002
+       "debut": 515.534,
+       "fin": 515.652
       },
       {
        "mot": "obtenir",
-       "debut": 516.994,
-       "fin": 517.443
+       "debut": 515.644,
+       "fin": 516.093
       },
       {
        "mot": "l",
-       "debut": 517.434,
-       "fin": 517.884
+       "debut": 516.084,
+       "fin": 516.534
       },
       {
        "mot": "aide",
-       "debut": 517.434,
-       "fin": 517.884
+       "debut": 516.084,
+       "fin": 516.534
       }
      ]
     }
@@ -7419,217 +7426,217 @@
   },
   {
    "ligne": 38,
-   "debut": 518.904,
-   "fin": 533.932,
+   "debut": 517.554,
+   "fin": 532.582,
    "phrases": [
     {
      "texte": "Le Tribunal fédéral ne retient donc aucun abus manifeste.",
-     "debut": 518.904,
-     "fin": 521.764,
+     "debut": 517.554,
+     "fin": 520.414,
      "mots": [
       {
        "mot": "le",
-       "debut": 518.904,
-       "fin": 519.052
+       "debut": 517.554,
+       "fin": 517.702
       },
       {
        "mot": "tribunal",
-       "debut": 519.044,
-       "fin": 519.496
+       "debut": 517.694,
+       "fin": 518.146
       },
       {
        "mot": "fédéral",
-       "debut": 519.494,
-       "fin": 519.89
+       "debut": 518.144,
+       "fin": 518.54
       },
       {
        "mot": "ne",
-       "debut": 519.884,
-       "fin": 520.038
+       "debut": 518.534,
+       "fin": 518.688
       },
       {
        "mot": "retient",
-       "debut": 520.034,
-       "fin": 520.433
+       "debut": 518.684,
+       "fin": 519.083
       },
       {
        "mot": "donc",
-       "debut": 520.424,
-       "fin": 520.679
+       "debut": 519.074,
+       "fin": 519.329
       },
       {
        "mot": "aucun",
-       "debut": 520.674,
-       "fin": 520.975
+       "debut": 519.324,
+       "fin": 519.625
       },
       {
        "mot": "abus",
-       "debut": 520.974,
-       "fin": 521.222
+       "debut": 519.624,
+       "fin": 519.872
       },
       {
        "mot": "manifeste",
-       "debut": 521.214,
-       "fin": 521.764
+       "debut": 519.864,
+       "fin": 520.414
       }
      ]
     },
     {
      "texte": "Il admet le recours et annule la décision du gouvernement bernois :",
-     "debut": 522.634,
-     "fin": 526.14,
+     "debut": 521.284,
+     "fin": 524.79,
      "mots": [
       {
        "mot": "il",
-       "debut": 522.634,
-       "fin": 522.797
+       "debut": 521.284,
+       "fin": 521.447
       },
       {
        "mot": "admet",
-       "debut": 522.794,
-       "fin": 523.11
+       "debut": 521.444,
+       "fin": 521.76
       },
       {
        "mot": "le",
-       "debut": 523.104,
-       "fin": 523.267
+       "debut": 521.754,
+       "fin": 521.917
       },
       {
        "mot": "recours",
-       "debut": 523.264,
-       "fin": 523.685
+       "debut": 521.914,
+       "fin": 522.335
       },
       {
        "mot": "et",
-       "debut": 523.684,
-       "fin": 523.841
+       "debut": 522.334,
+       "fin": 522.491
       },
       {
        "mot": "annule",
-       "debut": 523.834,
-       "fin": 524.207
+       "debut": 522.484,
+       "fin": 522.857
       },
       {
        "mot": "la",
-       "debut": 524.204,
-       "fin": 524.364
+       "debut": 522.854,
+       "fin": 523.014
       },
       {
        "mot": "décision",
-       "debut": 524.364,
-       "fin": 524.834
+       "debut": 523.014,
+       "fin": 523.484
       },
       {
        "mot": "du",
-       "debut": 524.834,
-       "fin": 524.991
+       "debut": 523.484,
+       "fin": 523.641
       },
       {
        "mot": "gouvernement",
-       "debut": 524.984,
-       "fin": 525.67
+       "debut": 523.634,
+       "fin": 524.32
       },
       {
        "mot": "bernois",
-       "debut": 525.664,
-       "fin": 526.14
+       "debut": 524.314,
+       "fin": 524.79
       }
      ]
     },
     {
      "texte": "priver les trois frères de toute aide indispensable viole le droit constitutionnel à des conditions minimales d'existence.",
-     "debut": 527.134,
-     "fin": 533.932,
+     "debut": 525.784,
+     "fin": 532.582,
      "mots": [
       {
        "mot": "priver",
-       "debut": 527.134,
-       "fin": 527.523
+       "debut": 525.784,
+       "fin": 526.173
       },
       {
        "mot": "les",
-       "debut": 527.514,
-       "fin": 527.744
+       "debut": 526.164,
+       "fin": 526.394
       },
       {
        "mot": "trois",
-       "debut": 527.744,
-       "fin": 528.075
+       "debut": 526.394,
+       "fin": 526.725
       },
       {
        "mot": "frères",
-       "debut": 528.074,
-       "fin": 528.462
+       "debut": 526.724,
+       "fin": 527.112
       },
       {
        "mot": "de",
-       "debut": 528.454,
-       "fin": 528.628
+       "debut": 527.104,
+       "fin": 527.278
       },
       {
        "mot": "toute",
-       "debut": 528.624,
-       "fin": 528.959
+       "debut": 527.274,
+       "fin": 527.609
       },
       {
        "mot": "aide",
-       "debut": 528.954,
-       "fin": 529.236
+       "debut": 527.604,
+       "fin": 527.886
       },
       {
        "mot": "indispensable",
-       "debut": 529.234,
-       "fin": 530.009
+       "debut": 527.884,
+       "fin": 528.659
       },
       {
        "mot": "viole",
-       "debut": 530.004,
-       "fin": 530.341
+       "debut": 528.654,
+       "fin": 528.991
       },
       {
        "mot": "le",
-       "debut": 530.334,
-       "fin": 530.506
+       "debut": 528.984,
+       "fin": 529.156
       },
       {
        "mot": "droit",
-       "debut": 530.504,
-       "fin": 530.838
+       "debut": 529.154,
+       "fin": 529.488
       },
       {
        "mot": "constitutionnel",
-       "debut": 530.834,
-       "fin": 531.722
+       "debut": 529.484,
+       "fin": 530.372
       },
       {
        "mot": "à",
-       "debut": 531.714,
-       "fin": 531.832
+       "debut": 530.364,
+       "fin": 530.482
       },
       {
        "mot": "des",
-       "debut": 531.824,
-       "fin": 532.053
+       "debut": 530.474,
+       "fin": 530.703
       },
       {
        "mot": "conditions",
-       "debut": 532.044,
-       "fin": 532.661
+       "debut": 530.694,
+       "fin": 531.311
       },
       {
        "mot": "minimales",
-       "debut": 532.654,
-       "fin": 533.214
+       "debut": 531.304,
+       "fin": 531.864
       },
       {
        "mot": "d",
-       "debut": 533.214,
-       "fin": 533.932
+       "debut": 531.864,
+       "fin": 532.582
       },
       {
        "mot": "existence",
-       "debut": 533.214,
-       "fin": 533.932
+       "debut": 531.864,
+       "fin": 532.582
       }
      ]
     }
@@ -7637,205 +7644,205 @@
   },
   {
    "ligne": 39,
-   "debut": 535.194,
-   "fin": 549.105,
+   "debut": 533.844,
+   "fin": 547.755,
    "phrases": [
     {
      "texte": "Il faut être précis : cet arrêt ne leur reconnaît ni un permis de séjour, ni un droit de travailler, ni un revenu déterminé.",
-     "debut": 535.194,
-     "fin": 543.304,
+     "debut": 533.844,
+     "fin": 541.954,
      "mots": [
       {
        "mot": "il",
-       "debut": 535.194,
-       "fin": 535.376
+       "debut": 533.844,
+       "fin": 534.026
       },
       {
        "mot": "faut",
-       "debut": 535.374,
-       "fin": 535.676
+       "debut": 534.024,
+       "fin": 534.326
       },
       {
        "mot": "être",
-       "debut": 535.674,
-       "fin": 535.976
+       "debut": 534.324,
+       "fin": 534.626
       },
       {
        "mot": "précis",
-       "debut": 535.974,
-       "fin": 536.456
+       "debut": 534.624,
+       "fin": 535.106
       },
       {
        "mot": "cet",
-       "debut": 537.044,
-       "fin": 537.3
+       "debut": 535.694,
+       "fin": 535.95
       },
       {
        "mot": "arrêt",
-       "debut": 537.294,
-       "fin": 537.671
+       "debut": 535.944,
+       "fin": 536.321
       },
       {
        "mot": "ne",
-       "debut": 537.664,
-       "fin": 537.857
+       "debut": 536.314,
+       "fin": 536.507
       },
       {
        "mot": "le",
-       "debut": 537.854,
-       "fin": 538.042
+       "debut": 536.504,
+       "fin": 536.692
       },
       {
        "mot": "reconnaît",
-       "debut": 538.034,
-       "fin": 538.661
+       "debut": 536.684,
+       "fin": 537.311
       },
       {
        "mot": "ni",
-       "debut": 538.654,
-       "fin": 538.847
+       "debut": 537.304,
+       "fin": 537.497
       },
       {
        "mot": "un",
-       "debut": 538.844,
-       "fin": 539.033
+       "debut": 537.494,
+       "fin": 537.683
       },
       {
        "mot": "permis",
-       "debut": 539.024,
-       "fin": 539.466
+       "debut": 537.674,
+       "fin": 538.116
       },
       {
        "mot": "de",
-       "debut": 539.464,
-       "fin": 539.652
+       "debut": 538.114,
+       "fin": 538.302
       },
       {
        "mot": "séjour",
-       "debut": 539.644,
-       "fin": 540.147
+       "debut": 538.294,
+       "fin": 538.797
       },
       {
        "mot": "ni",
-       "debut": 540.144,
-       "fin": 540.333
+       "debut": 538.794,
+       "fin": 538.983
       },
       {
        "mot": "un",
-       "debut": 540.324,
-       "fin": 540.518
+       "debut": 538.974,
+       "fin": 539.168
       },
       {
        "mot": "droit",
-       "debut": 540.514,
-       "fin": 540.89
+       "debut": 539.164,
+       "fin": 539.54
       },
       {
        "mot": "de",
-       "debut": 540.884,
-       "fin": 541.076
+       "debut": 539.534,
+       "fin": 539.726
       },
       {
        "mot": "travailler",
-       "debut": 541.074,
-       "fin": 541.818
+       "debut": 539.724,
+       "fin": 540.468
       },
       {
        "mot": "ni",
-       "debut": 541.814,
-       "fin": 542.004
+       "debut": 540.464,
+       "fin": 540.654
       },
       {
        "mot": "un",
-       "debut": 542.004,
-       "fin": 542.19
+       "debut": 540.654,
+       "fin": 540.84
       },
       {
        "mot": "revenu",
-       "debut": 542.184,
-       "fin": 542.623
+       "debut": 540.834,
+       "fin": 541.273
       },
       {
        "mot": "déterminé",
-       "debut": 542.614,
-       "fin": 543.304
+       "debut": 541.264,
+       "fin": 541.954
       }
      ]
     },
     {
      "texte": "Il tranche une question plus fondamentale : pouvaient-ils être privés de toute assistance nécessaire ?",
-     "debut": 544.004,
-     "fin": 549.105,
+     "debut": 542.654,
+     "fin": 547.755,
      "mots": [
       {
        "mot": "il",
-       "debut": 544.004,
-       "fin": 544.151
+       "debut": 542.654,
+       "fin": 542.801
       },
       {
        "mot": "tronche",
-       "debut": 544.144,
-       "fin": 544.523
+       "debut": 542.794,
+       "fin": 543.173
       },
       {
        "mot": "une",
-       "debut": 544.514,
-       "fin": 544.708
+       "debut": 543.164,
+       "fin": 543.358
       },
       {
        "mot": "question",
-       "debut": 544.704,
-       "fin": 545.126
+       "debut": 543.354,
+       "fin": 543.776
       },
       {
        "mot": "plus",
-       "debut": 545.124,
-       "fin": 545.358
+       "debut": 543.774,
+       "fin": 544.008
       },
       {
        "mot": "fondamentale",
-       "debut": 545.354,
-       "fin": 546.008
+       "debut": 544.004,
+       "fin": 544.658
       },
       {
        "mot": "pouvait",
-       "debut": 546.374,
-       "fin": 546.946
+       "debut": 545.024,
+       "fin": 545.596
       },
       {
        "mot": "il",
-       "debut": 546.374,
-       "fin": 546.946
+       "debut": 545.024,
+       "fin": 545.596
       },
       {
        "mot": "être",
-       "debut": 546.944,
-       "fin": 547.203
+       "debut": 545.594,
+       "fin": 545.853
       },
       {
        "mot": "privé",
-       "debut": 547.194,
-       "fin": 547.511
+       "debut": 545.844,
+       "fin": 546.161
       },
       {
        "mot": "de",
-       "debut": 547.504,
-       "fin": 547.665
+       "debut": 546.154,
+       "fin": 546.315
       },
       {
        "mot": "toute",
-       "debut": 547.664,
-       "fin": 547.974
+       "debut": 546.314,
+       "fin": 546.624
       },
       {
        "mot": "assistance",
-       "debut": 547.974,
-       "fin": 548.54
+       "debut": 546.624,
+       "fin": 547.19
       },
       {
        "mot": "nécessaire",
-       "debut": 548.534,
-       "fin": 549.105
+       "debut": 547.184,
+       "fin": 547.755
       }
      ]
     }
@@ -7843,235 +7850,235 @@
   },
   {
    "ligne": 40,
-   "debut": 550.654,
-   "fin": 564.73,
+   "debut": 549.304,
+   "fin": 563.38,
    "phrases": [
     {
      "texte": "Quatre ans plus tard, en mille neuf cent nonante-neuf, le peuple et les cantons acceptent une nouvelle Constitution fédérale.",
-     "debut": 550.654,
-     "fin": 556.786,
+     "debut": 549.304,
+     "fin": 555.436,
      "mots": [
       {
        "mot": "quatre",
-       "debut": 550.654,
-       "fin": 551.25
+       "debut": 549.304,
+       "fin": 549.9
       },
       {
        "mot": "ans",
-       "debut": 551.244,
-       "fin": 551.586
+       "debut": 549.894,
+       "fin": 550.236
       },
       {
        "mot": "plus",
-       "debut": 551.584,
-       "fin": 552.006
+       "debut": 550.234,
+       "fin": 550.656
       },
       {
        "mot": "tard",
-       "debut": 552.004,
-       "fin": 552.51
+       "debut": 550.654,
+       "fin": 551.16
       },
       {
        "mot": "en",
-       "debut": 552.504,
-       "fin": 552.762
+       "debut": 551.154,
+       "fin": 551.412
       },
       {
        "mot": "mille",
-       "debut": 552.754,
-       "fin": 553.266
+       "debut": 551.404,
+       "fin": 551.916
       },
       {
        "mot": "neuf",
-       "debut": 552.754,
-       "fin": 553.266
+       "debut": 551.404,
+       "fin": 551.916
       },
       {
        "mot": "cent",
-       "debut": 552.754,
-       "fin": 553.266
+       "debut": 551.404,
+       "fin": 551.916
       },
       {
        "mot": "nonante",
-       "debut": 552.754,
-       "fin": 553.266
+       "debut": 551.404,
+       "fin": 551.916
       },
       {
        "mot": "neuf",
-       "debut": 552.754,
-       "fin": 553.266
+       "debut": 551.404,
+       "fin": 551.916
       },
       {
        "mot": "le",
-       "debut": 553.344,
-       "fin": 553.526
+       "debut": 551.994,
+       "fin": 552.176
       },
       {
        "mot": "peuple",
-       "debut": 553.524,
-       "fin": 553.861
+       "debut": 552.174,
+       "fin": 552.511
       },
       {
        "mot": "et",
-       "debut": 553.854,
-       "fin": 554.005
+       "debut": 552.504,
+       "fin": 552.655
       },
       {
        "mot": "les",
-       "debut": 554.004,
-       "fin": 554.197
+       "debut": 552.654,
+       "fin": 552.847
       },
       {
        "mot": "cantons",
-       "debut": 554.194,
-       "fin": 554.581
+       "debut": 552.844,
+       "fin": 553.231
       },
       {
        "mot": "acceptent",
-       "debut": 554.574,
-       "fin": 555.06
+       "debut": 553.224,
+       "fin": 553.71
       },
       {
        "mot": "une",
-       "debut": 555.054,
-       "fin": 555.252
+       "debut": 553.704,
+       "fin": 553.902
       },
       {
        "mot": "nouvelle",
-       "debut": 555.244,
-       "fin": 555.683
+       "debut": 553.894,
+       "fin": 554.333
       },
       {
        "mot": "constitution",
-       "debut": 555.674,
-       "fin": 556.307
+       "debut": 554.324,
+       "fin": 554.957
       },
       {
        "mot": "fédérale",
-       "debut": 556.304,
-       "fin": 556.786
+       "debut": 554.954,
+       "fin": 555.436
       }
      ]
     },
     {
      "texte": "Le droit dégagé par le Tribunal fédéral y trouve désormais une place explicite, à l'article douze, entré en vigueur en deux mille.",
-     "debut": 557.484,
-     "fin": 564.73,
+     "debut": 556.134,
+     "fin": 563.38,
      "mots": [
       {
        "mot": "le",
-       "debut": 557.484,
-       "fin": 557.664
+       "debut": 556.134,
+       "fin": 556.314
       },
       {
        "mot": "droit",
-       "debut": 557.664,
-       "fin": 558.02
+       "debut": 556.314,
+       "fin": 556.67
       },
       {
        "mot": "dégagé",
-       "debut": 558.014,
-       "fin": 558.436
+       "debut": 556.664,
+       "fin": 557.086
       },
       {
        "mot": "par",
-       "debut": 558.434,
-       "fin": 558.674
+       "debut": 557.084,
+       "fin": 557.324
       },
       {
        "mot": "le",
-       "debut": 558.674,
-       "fin": 558.852
+       "debut": 557.324,
+       "fin": 557.502
       },
       {
        "mot": "tribunal",
-       "debut": 558.844,
-       "fin": 559.386
+       "debut": 557.494,
+       "fin": 558.036
       },
       {
        "mot": "fédéral",
-       "debut": 559.384,
-       "fin": 559.861
+       "debut": 558.034,
+       "fin": 558.511
       },
       {
        "mot": "y",
-       "debut": 559.854,
-       "fin": 559.98
+       "debut": 558.504,
+       "fin": 558.63
       },
       {
        "mot": "trouve",
-       "debut": 559.974,
-       "fin": 560.395
+       "debut": 558.624,
+       "fin": 559.045
       },
       {
        "mot": "désormais",
-       "debut": 560.394,
-       "fin": 560.989
+       "debut": 559.044,
+       "fin": 559.639
       },
       {
        "mot": "une",
-       "debut": 560.984,
-       "fin": 561.227
+       "debut": 559.634,
+       "fin": 559.877
       },
       {
        "mot": "place",
-       "debut": 561.224,
-       "fin": 561.583
+       "debut": 559.874,
+       "fin": 560.233
       },
       {
        "mot": "explicite",
-       "debut": 561.574,
-       "fin": 562.177
+       "debut": 560.224,
+       "fin": 560.827
       },
       {
        "mot": "à",
-       "debut": 562.174,
-       "fin": 562.296
+       "debut": 560.824,
+       "fin": 560.946
       },
       {
        "mot": "l",
-       "debut": 562.294,
-       "fin": 562.889
+       "debut": 560.944,
+       "fin": 561.539
       },
       {
        "mot": "article",
-       "debut": 562.294,
-       "fin": 562.889
+       "debut": 560.944,
+       "fin": 561.539
       },
       {
        "mot": "douze",
-       "debut": 562.884,
-       "fin": 563.127
+       "debut": 561.534,
+       "fin": 561.777
       },
       {
        "mot": "entrée",
-       "debut": 563.124,
-       "fin": 563.542
+       "debut": 561.774,
+       "fin": 562.192
       },
       {
        "mot": "en",
-       "debut": 563.534,
-       "fin": 563.721
+       "debut": 562.184,
+       "fin": 562.371
       },
       {
        "mot": "vigueur",
-       "debut": 563.714,
-       "fin": 564.196
+       "debut": 562.364,
+       "fin": 562.846
       },
       {
        "mot": "en",
-       "debut": 564.194,
-       "fin": 564.374
+       "debut": 562.844,
+       "fin": 563.024
       },
       {
        "mot": "deux",
-       "debut": 564.374,
-       "fin": 564.73
+       "debut": 563.024,
+       "fin": 563.38
       },
       {
        "mot": "mille",
-       "debut": 564.374,
-       "fin": 564.73
+       "debut": 563.024,
+       "fin": 563.38
       }
      ]
     }
@@ -8079,168 +8086,168 @@
   },
   {
    "ligne": 41,
-   "debut": 565.674,
-   "fin": 576.954,
+   "debut": 564.324,
+   "fin": 575.604,
    "phrases": [
     {
      "texte": "Cet article garantit à quiconque se trouve dans une situation de détresse, sans pouvoir subvenir à son entretien, l'aide et les moyens indispensables pour vivre conformément à la dignité humaine.",
-     "debut": 565.674,
-     "fin": 576.954,
+     "debut": 564.324,
+     "fin": 575.604,
      "mots": [
       {
        "mot": "cet",
-       "debut": 565.674,
-       "fin": 565.908
+       "debut": 564.324,
+       "fin": 564.558
       },
       {
        "mot": "article",
-       "debut": 565.904,
-       "fin": 566.368
+       "debut": 564.554,
+       "fin": 565.018
       },
       {
        "mot": "garantit",
-       "debut": 566.364,
-       "fin": 566.886
+       "debut": 565.014,
+       "fin": 565.536
       },
       {
        "mot": "à",
-       "debut": 566.884,
-       "fin": 567.001
+       "debut": 565.534,
+       "fin": 565.651
       },
       {
        "mot": "quiconque",
-       "debut": 566.994,
-       "fin": 567.577
+       "debut": 565.644,
+       "fin": 566.227
       },
       {
        "mot": "se",
-       "debut": 567.574,
-       "fin": 567.749
+       "debut": 566.224,
+       "fin": 566.399
       },
       {
        "mot": "trouve",
-       "debut": 567.744,
-       "fin": 568.152
+       "debut": 566.394,
+       "fin": 566.802
       },
       {
        "mot": "dans",
-       "debut": 568.144,
-       "fin": 568.439
+       "debut": 566.794,
+       "fin": 567.089
       },
       {
        "mot": "une",
-       "debut": 568.434,
-       "fin": 568.67
+       "debut": 567.084,
+       "fin": 567.32
       },
       {
        "mot": "situation",
-       "debut": 568.664,
-       "fin": 569.245
+       "debut": 567.314,
+       "fin": 567.895
       },
       {
        "mot": "de",
-       "debut": 569.244,
-       "fin": 569.417
+       "debut": 567.894,
+       "fin": 568.067
       },
       {
        "mot": "détresse",
-       "debut": 569.414,
-       "fin": 569.993
+       "debut": 568.064,
+       "fin": 568.643
       },
       {
        "mot": "sans",
-       "debut": 569.984,
-       "fin": 570.28
+       "debut": 568.634,
+       "fin": 568.93
       },
       {
        "mot": "pouvoir",
-       "debut": 570.274,
-       "fin": 570.741
+       "debut": 568.924,
+       "fin": 569.391
       },
       {
        "mot": "subvenir",
-       "debut": 570.734,
-       "fin": 571.258
+       "debut": 569.384,
+       "fin": 569.908
       },
       {
        "mot": "à",
-       "debut": 571.254,
-       "fin": 571.374
+       "debut": 569.904,
+       "fin": 570.024
       },
       {
        "mot": "son",
-       "debut": 571.374,
-       "fin": 571.604
+       "debut": 570.024,
+       "fin": 570.254
       },
       {
        "mot": "entretien",
-       "debut": 571.604,
-       "fin": 572.236
+       "debut": 570.254,
+       "fin": 570.886
       },
       {
        "mot": "l",
-       "debut": 572.234,
-       "fin": 572.639
+       "debut": 570.884,
+       "fin": 571.289
       },
       {
        "mot": "aide",
-       "debut": 572.234,
-       "fin": 572.639
+       "debut": 570.884,
+       "fin": 571.289
       },
       {
        "mot": "et",
-       "debut": 572.634,
-       "fin": 572.812
+       "debut": 571.284,
+       "fin": 571.462
       },
       {
        "mot": "les",
-       "debut": 572.804,
-       "fin": 573.042
+       "debut": 571.454,
+       "fin": 571.692
       },
       {
        "mot": "moyens",
-       "debut": 573.034,
-       "fin": 573.445
+       "debut": 571.684,
+       "fin": 572.095
       },
       {
        "mot": "indispensables",
-       "debut": 573.444,
-       "fin": 574.308
+       "debut": 572.094,
+       "fin": 572.958
       },
       {
        "mot": "pour",
-       "debut": 574.304,
-       "fin": 574.595
+       "debut": 572.954,
+       "fin": 573.245
       },
       {
        "mot": "vivre",
-       "debut": 574.594,
-       "fin": 574.94
+       "debut": 573.244,
+       "fin": 573.59
       },
       {
        "mot": "conformément",
-       "debut": 574.934,
-       "fin": 575.688
+       "debut": 573.584,
+       "fin": 574.338
       },
       {
        "mot": "à",
-       "debut": 575.684,
-       "fin": 575.803
+       "debut": 574.334,
+       "fin": 574.453
       },
       {
        "mot": "la",
-       "debut": 575.794,
-       "fin": 575.976
+       "debut": 574.444,
+       "fin": 574.626
       },
       {
        "mot": "dignité",
-       "debut": 575.974,
-       "fin": 576.436
+       "debut": 574.624,
+       "fin": 575.086
       },
       {
        "mot": "humaine",
-       "debut": 576.434,
-       "fin": 576.954
+       "debut": 575.084,
+       "fin": 575.604
       }
      ]
     }
@@ -8248,200 +8255,200 @@
   },
   {
    "ligne": 42,
-   "debut": 577.904,
-   "fin": 590.876,
+   "debut": 576.554,
+   "fin": 589.526,
    "phrases": [
     {
      "texte": "Attention cependant : l'article douze ne se confond pas avec l'ensemble de l'aide sociale cantonale.",
-     "debut": 577.904,
-     "fin": 583.228,
+     "debut": 576.554,
+     "fin": 581.878,
      "mots": [
       {
        "mot": "attention",
-       "debut": 577.904,
-       "fin": 578.458
+       "debut": 576.554,
+       "fin": 577.108
       },
       {
        "mot": "cependant",
-       "debut": 578.454,
-       "fin": 579.068
+       "debut": 577.104,
+       "fin": 577.718
       },
       {
        "mot": "l",
-       "debut": 579.434,
-       "fin": 579.945
+       "debut": 578.084,
+       "fin": 578.595
       },
       {
        "mot": "article",
-       "debut": 579.434,
-       "fin": 579.945
+       "debut": 578.084,
+       "fin": 578.595
       },
       {
        "mot": "douze",
-       "debut": 579.944,
-       "fin": 580.097
+       "debut": 578.594,
+       "fin": 578.747
       },
       {
        "mot": "ne",
-       "debut": 580.094,
-       "fin": 580.248
+       "debut": 578.744,
+       "fin": 578.898
       },
       {
        "mot": "se",
-       "debut": 580.244,
-       "fin": 580.4
+       "debut": 578.894,
+       "fin": 579.05
       },
       {
        "mot": "confond",
-       "debut": 580.394,
-       "fin": 580.804
+       "debut": 579.044,
+       "fin": 579.454
       },
       {
        "mot": "pas",
-       "debut": 580.804,
-       "fin": 581.006
+       "debut": 579.454,
+       "fin": 579.656
       },
       {
        "mot": "avec",
-       "debut": 581.004,
-       "fin": 581.258
+       "debut": 579.654,
+       "fin": 579.908
       },
       {
        "mot": "l",
-       "debut": 581.254,
-       "fin": 581.814
+       "debut": 579.904,
+       "fin": 580.464
       },
       {
        "mot": "ensemble",
-       "debut": 581.254,
-       "fin": 581.814
+       "debut": 579.904,
+       "fin": 580.464
       },
       {
        "mot": "de",
-       "debut": 581.814,
-       "fin": 581.965
+       "debut": 580.464,
+       "fin": 580.615
       },
       {
        "mot": "l",
-       "debut": 581.964,
-       "fin": 582.319
+       "debut": 580.614,
+       "fin": 580.969
       },
       {
        "mot": "aide",
-       "debut": 581.964,
-       "fin": 582.319
+       "debut": 580.614,
+       "fin": 580.969
       },
       {
        "mot": "sociale",
-       "debut": 582.314,
-       "fin": 582.723
+       "debut": 580.964,
+       "fin": 581.373
       },
       {
        "mot": "cantonale",
-       "debut": 582.714,
-       "fin": 583.228
+       "debut": 581.364,
+       "fin": 581.878
       }
      ]
     },
     {
      "texte": "Il fixe un noyau de protection constitutionnelle, tandis que les autres prestations et leurs conditions relèvent des lois applicables.",
-     "debut": 583.724,
-     "fin": 590.876,
+     "debut": 582.374,
+     "fin": 589.526,
      "mots": [
       {
        "mot": "il",
-       "debut": 583.724,
-       "fin": 583.888
+       "debut": 582.374,
+       "fin": 582.538
       },
       {
        "mot": "fixe",
-       "debut": 583.884,
-       "fin": 584.155
+       "debut": 582.534,
+       "fin": 582.805
       },
       {
        "mot": "un",
-       "debut": 584.154,
-       "fin": 584.315
+       "debut": 582.804,
+       "fin": 582.965
       },
       {
        "mot": "noyau",
-       "debut": 584.314,
-       "fin": 584.635
+       "debut": 582.964,
+       "fin": 583.285
       },
       {
        "mot": "de",
-       "debut": 584.634,
-       "fin": 584.795
+       "debut": 583.284,
+       "fin": 583.445
       },
       {
        "mot": "protection",
-       "debut": 584.794,
-       "fin": 585.382
+       "debut": 583.444,
+       "fin": 584.032
       },
       {
        "mot": "constitutionnelle",
-       "debut": 585.374,
-       "fin": 586.342
+       "debut": 584.024,
+       "fin": 584.992
       },
       {
        "mot": "tandis",
-       "debut": 586.334,
-       "fin": 586.715
+       "debut": 584.984,
+       "fin": 585.365
       },
       {
        "mot": "que",
-       "debut": 586.714,
-       "fin": 586.929
+       "debut": 585.364,
+       "fin": 585.579
       },
       {
        "mot": "les",
-       "debut": 586.924,
-       "fin": 587.142
+       "debut": 585.574,
+       "fin": 585.792
       },
       {
        "mot": "autres",
-       "debut": 587.134,
-       "fin": 587.515
+       "debut": 585.784,
+       "fin": 586.165
       },
       {
        "mot": "prestations",
-       "debut": 587.514,
-       "fin": 588.155
+       "debut": 586.164,
+       "fin": 586.805
       },
       {
        "mot": "et",
-       "debut": 588.154,
-       "fin": 588.316
+       "debut": 586.804,
+       "fin": 586.966
       },
       {
        "mot": "leurs",
-       "debut": 588.314,
-       "fin": 588.636
+       "debut": 586.964,
+       "fin": 587.286
       },
       {
        "mot": "conditions",
-       "debut": 588.634,
-       "fin": 589.222
+       "debut": 587.284,
+       "fin": 587.872
       },
       {
        "mot": "relèvent",
-       "debut": 589.214,
-       "fin": 589.702
+       "debut": 587.864,
+       "fin": 588.352
       },
       {
        "mot": "des",
-       "debut": 589.694,
-       "fin": 589.916
+       "debut": 588.344,
+       "fin": 588.566
       },
       {
        "mot": "lois",
-       "debut": 589.914,
-       "fin": 590.183
+       "debut": 588.564,
+       "fin": 588.833
       },
       {
        "mot": "applicables",
-       "debut": 590.174,
-       "fin": 590.876
+       "debut": 588.824,
+       "fin": 589.526
       }
      ]
     }
@@ -8449,217 +8456,217 @@
   },
   {
    "ligne": 43,
-   "debut": 592.434,
-   "fin": 608.662,
+   "debut": 591.084,
+   "fin": 607.312,
    "phrases": [
     {
      "texte": "Cet arrêt enseigne donc deux choses.",
-     "debut": 592.434,
-     "fin": 594.342,
+     "debut": 591.084,
+     "fin": 592.992,
      "mots": [
       {
        "mot": "cet",
-       "debut": 592.434,
-       "fin": 592.647
+       "debut": 591.084,
+       "fin": 591.297
       },
       {
        "mot": "arrêt",
-       "debut": 592.644,
-       "fin": 592.956
+       "debut": 591.294,
+       "fin": 591.606
       },
       {
        "mot": "enseigne",
-       "debut": 592.954,
-       "fin": 593.418
+       "debut": 591.604,
+       "fin": 592.068
       },
       {
        "mot": "donc",
-       "debut": 593.414,
-       "fin": 593.674
+       "debut": 592.064,
+       "fin": 592.324
       },
       {
        "mot": "deux",
-       "debut": 593.674,
-       "fin": 593.931
+       "debut": 592.324,
+       "fin": 592.581
       },
       {
        "mot": "choses",
-       "debut": 593.924,
-       "fin": 594.342
+       "debut": 592.574,
+       "fin": 592.992
       }
      ]
     },
     {
      "texte": "D'abord, un droit fondamental peut être reconnu par la jurisprudence avant d'être inscrit dans la Constitution.",
-     "debut": 595.044,
-     "fin": 601.814,
+     "debut": 593.694,
+     "fin": 600.464,
      "mots": [
       {
        "mot": "d",
-       "debut": 595.044,
-       "fin": 595.83
+       "debut": 593.694,
+       "fin": 594.48
       },
       {
        "mot": "abord",
-       "debut": 595.044,
-       "fin": 595.83
+       "debut": 593.694,
+       "fin": 594.48
       },
       {
        "mot": "un",
-       "debut": 595.914,
-       "fin": 596.08
+       "debut": 594.564,
+       "fin": 594.73
       },
       {
        "mot": "droit",
-       "debut": 596.074,
-       "fin": 596.412
+       "debut": 594.724,
+       "fin": 595.062
       },
       {
        "mot": "fondamental",
-       "debut": 596.404,
-       "fin": 597.075
+       "debut": 595.054,
+       "fin": 595.725
       },
       {
        "mot": "peut",
-       "debut": 597.074,
-       "fin": 597.351
+       "debut": 595.724,
+       "fin": 596.001
       },
       {
        "mot": "être",
-       "debut": 597.344,
-       "fin": 597.628
+       "debut": 595.994,
+       "fin": 596.278
       },
       {
        "mot": "reconnu",
-       "debut": 597.624,
-       "fin": 598.07
+       "debut": 596.274,
+       "fin": 596.72
       },
       {
        "mot": "par",
-       "debut": 598.064,
-       "fin": 598.291
+       "debut": 596.714,
+       "fin": 596.941
       },
       {
        "mot": "la",
-       "debut": 598.284,
-       "fin": 598.457
+       "debut": 596.934,
+       "fin": 597.107
       },
       {
        "mot": "jurisprudence",
-       "debut": 598.454,
-       "fin": 599.286
+       "debut": 597.104,
+       "fin": 597.936
       },
       {
        "mot": "avant",
-       "debut": 599.624,
-       "fin": 599.931
+       "debut": 598.274,
+       "fin": 598.581
       },
       {
        "mot": "d",
-       "debut": 599.924,
-       "fin": 600.287
+       "debut": 598.574,
+       "fin": 598.937
       },
       {
        "mot": "être",
-       "debut": 599.924,
-       "fin": 600.287
+       "debut": 598.574,
+       "fin": 598.937
       },
       {
        "mot": "inscrit",
-       "debut": 600.284,
-       "fin": 600.695
+       "debut": 598.934,
+       "fin": 599.345
       },
       {
        "mot": "dans",
-       "debut": 600.694,
-       "fin": 600.949
+       "debut": 599.344,
+       "fin": 599.599
       },
       {
        "mot": "la",
-       "debut": 600.944,
-       "fin": 601.102
+       "debut": 599.594,
+       "fin": 599.752
       },
       {
        "mot": "constitution",
-       "debut": 601.094,
-       "fin": 601.814
+       "debut": 599.744,
+       "fin": 600.464
       }
      ]
     },
     {
      "texte": "Ensuite, les besoins indispensables à la dignité humaine ne dépendent pas de la nationalité.",
-     "debut": 603.044,
-     "fin": 608.662,
+     "debut": 601.694,
+     "fin": 607.312,
      "mots": [
       {
        "mot": "ensuite",
-       "debut": 603.044,
-       "fin": 603.593
+       "debut": 601.694,
+       "fin": 602.243
       },
       {
        "mot": "les",
-       "debut": 603.584,
-       "fin": 603.834
+       "debut": 602.234,
+       "fin": 602.484
       },
       {
        "mot": "besoins",
-       "debut": 603.834,
-       "fin": 604.317
+       "debut": 602.484,
+       "fin": 602.967
       },
       {
        "mot": "indispensables",
-       "debut": 604.314,
-       "fin": 605.222
+       "debut": 602.964,
+       "fin": 603.872
       },
       {
        "mot": "à",
-       "debut": 605.214,
-       "fin": 605.343
+       "debut": 603.864,
+       "fin": 603.993
       },
       {
        "mot": "la",
-       "debut": 605.334,
-       "fin": 605.524
+       "debut": 603.984,
+       "fin": 604.174
       },
       {
        "mot": "dignité",
-       "debut": 605.524,
-       "fin": 606.007
+       "debut": 604.174,
+       "fin": 604.657
       },
       {
        "mot": "humaine",
-       "debut": 606.004,
-       "fin": 606.49
+       "debut": 604.654,
+       "fin": 605.14
       },
       {
        "mot": "ne",
-       "debut": 606.484,
-       "fin": 606.671
+       "debut": 605.134,
+       "fin": 605.321
       },
       {
        "mot": "dépendent",
-       "debut": 606.664,
-       "fin": 607.274
+       "debut": 605.314,
+       "fin": 605.924
       },
       {
        "mot": "pas",
-       "debut": 607.274,
-       "fin": 607.515
+       "debut": 605.924,
+       "fin": 606.165
       },
       {
        "mot": "de",
-       "debut": 607.514,
-       "fin": 607.696
+       "debut": 606.164,
+       "fin": 606.346
       },
       {
        "mot": "la",
-       "debut": 607.694,
-       "fin": 607.878
+       "debut": 606.344,
+       "fin": 606.528
       },
       {
        "mot": "nationalité",
-       "debut": 607.874,
-       "fin": 608.662
+       "debut": 606.524,
+       "fin": 607.312
       }
      ]
     }
@@ -8667,195 +8674,195 @@
   },
   {
    "ligne": 44,
-   "debut": 609.824,
-   "fin": 621.556,
+   "debut": 608.474,
+   "fin": 620.206,
    "phrases": [
     {
      "texte": "À votre avis, quelle différence juridique faut-il faire entre une personne qui provoque sa propre situation de besoin et une personne qui abuse réellement du droit à l'assistance ?",
-     "debut": 609.824,
-     "fin": 619.498,
+     "debut": 608.474,
+     "fin": 618.148,
      "mots": [
       {
        "mot": "a",
-       "debut": 609.824,
-       "fin": 609.938
+       "debut": 608.474,
+       "fin": 608.588
       },
       {
        "mot": "votre",
-       "debut": 609.934,
-       "fin": 610.257
+       "debut": 608.584,
+       "fin": 608.907
       },
       {
        "mot": "avis",
-       "debut": 610.254,
-       "fin": 610.576
+       "debut": 608.904,
+       "fin": 609.226
       },
       {
        "mot": "quelles",
-       "debut": 610.574,
-       "fin": 611.0
+       "debut": 609.224,
+       "fin": 609.65
       },
       {
        "mot": "différences",
-       "debut": 610.994,
-       "fin": 611.638
+       "debut": 609.644,
+       "fin": 610.288
       },
       {
        "mot": "juridiques",
-       "debut": 611.634,
-       "fin": 612.222
+       "debut": 610.284,
+       "fin": 610.872
       },
       {
        "mot": "faut",
-       "debut": 612.214,
-       "fin": 612.647
+       "debut": 610.864,
+       "fin": 611.297
       },
       {
        "mot": "il",
-       "debut": 612.214,
-       "fin": 612.647
+       "debut": 610.864,
+       "fin": 611.297
       },
       {
        "mot": "faire",
-       "debut": 612.644,
-       "fin": 612.965
+       "debut": 611.294,
+       "fin": 611.615
       },
       {
        "mot": "entre",
-       "debut": 612.964,
-       "fin": 613.284
+       "debut": 611.614,
+       "fin": 611.934
       },
       {
        "mot": "une",
-       "debut": 613.284,
-       "fin": 613.497
+       "debut": 611.934,
+       "fin": 612.147
       },
       {
        "mot": "personne",
-       "debut": 613.494,
-       "fin": 613.974
+       "debut": 612.144,
+       "fin": 612.624
       },
       {
        "mot": "qui",
-       "debut": 613.974,
-       "fin": 614.187
+       "debut": 612.624,
+       "fin": 612.837
       },
       {
        "mot": "provoque",
-       "debut": 614.184,
-       "fin": 614.665
+       "debut": 612.834,
+       "fin": 613.315
       },
       {
        "mot": "sa",
-       "debut": 614.664,
-       "fin": 614.824
+       "debut": 613.314,
+       "fin": 613.474
       },
       {
        "mot": "propre",
-       "debut": 614.824,
-       "fin": 615.196
+       "debut": 613.474,
+       "fin": 613.846
       },
       {
        "mot": "situation",
-       "debut": 615.194,
-       "fin": 615.727
+       "debut": 613.844,
+       "fin": 614.377
       },
       {
        "mot": "de",
-       "debut": 615.724,
-       "fin": 615.886
+       "debut": 614.374,
+       "fin": 614.536
       },
       {
        "mot": "besoin",
-       "debut": 615.884,
-       "fin": 616.258
+       "debut": 614.534,
+       "fin": 614.908
       },
       {
        "mot": "et",
-       "debut": 616.254,
-       "fin": 616.417
+       "debut": 614.904,
+       "fin": 615.067
       },
       {
        "mot": "une",
-       "debut": 616.414,
-       "fin": 616.63
+       "debut": 615.064,
+       "fin": 615.28
       },
       {
        "mot": "personne",
-       "debut": 616.624,
-       "fin": 617.108
+       "debut": 615.274,
+       "fin": 615.758
       },
       {
        "mot": "qui",
-       "debut": 617.104,
-       "fin": 617.32
+       "debut": 615.754,
+       "fin": 615.97
       },
       {
        "mot": "abuse",
-       "debut": 617.314,
-       "fin": 617.639
+       "debut": 615.964,
+       "fin": 616.289
       },
       {
        "mot": "réellement",
-       "debut": 617.634,
-       "fin": 618.223
+       "debut": 616.284,
+       "fin": 616.873
       },
       {
        "mot": "du",
-       "debut": 618.214,
-       "fin": 618.383
+       "debut": 616.864,
+       "fin": 617.033
       },
       {
        "mot": "droit",
-       "debut": 618.374,
-       "fin": 618.701
+       "debut": 617.024,
+       "fin": 617.351
       },
       {
        "mot": "à",
-       "debut": 618.694,
-       "fin": 618.807
+       "debut": 617.344,
+       "fin": 617.457
       },
       {
        "mot": "l",
-       "debut": 618.804,
-       "fin": 619.498
+       "debut": 617.454,
+       "fin": 618.148
       },
       {
        "mot": "assistance",
-       "debut": 618.804,
-       "fin": 619.498
+       "debut": 617.454,
+       "fin": 618.148
       }
      ]
     },
     {
      "texte": "Je vous lis en commentaire.",
-     "debut": 620.264,
-     "fin": 621.556,
+     "debut": 618.914,
+     "fin": 620.206,
      "mots": [
       {
        "mot": "je",
-       "debut": 620.264,
-       "fin": 620.402
+       "debut": 618.914,
+       "fin": 619.052
       },
       {
        "mot": "vous",
-       "debut": 620.394,
-       "fin": 620.633
+       "debut": 619.044,
+       "fin": 619.283
       },
       {
        "mot": "lis",
-       "debut": 620.624,
-       "fin": 620.818
+       "debut": 619.274,
+       "fin": 619.468
       },
       {
        "mot": "en",
-       "debut": 620.814,
-       "fin": 620.956
+       "debut": 619.464,
+       "fin": 619.606
       },
       {
        "mot": "commentaire",
-       "debut": 620.954,
-       "fin": 621.556
+       "debut": 619.604,
+       "fin": 620.206
       }
      ]
     }
@@ -8863,195 +8870,195 @@
   },
   {
    "ligne": 45,
-   "debut": 622.694,
-   "fin": 634.232,
+   "debut": 621.344,
+   "fin": 632.882,
    "phrases": [
     {
      "texte": "Vous retrouverez l'ATF cent vingt et un, un, trois cent soixante-sept, les considérants essentiels et l'article douze de la Constitution fédérale dans la description.",
-     "debut": 622.694,
-     "fin": 631.864,
+     "debut": 621.344,
+     "fin": 630.514,
      "mots": [
       {
        "mot": "vous",
-       "debut": 622.694,
-       "fin": 623.032
+       "debut": 621.344,
+       "fin": 621.682
       },
       {
        "mot": "retrouverez",
-       "debut": 623.024,
-       "fin": 623.829
+       "debut": 621.674,
+       "fin": 622.479
       },
       {
        "mot": "la",
-       "debut": 623.824,
-       "fin": 624.028
+       "debut": 622.474,
+       "fin": 622.678
       },
       {
        "mot": "tf",
-       "debut": 624.024,
-       "fin": 624.227
+       "debut": 622.674,
+       "fin": 622.877
       },
       {
        "mot": "cent",
-       "debut": 624.224,
-       "fin": 624.559
+       "debut": 622.874,
+       "fin": 623.209
       },
       {
        "mot": "vingt",
-       "debut": 624.224,
-       "fin": 624.559
+       "debut": 622.874,
+       "fin": 623.209
       },
       {
        "mot": "et",
-       "debut": 624.224,
-       "fin": 624.559
+       "debut": 622.874,
+       "fin": 623.209
       },
       {
        "mot": "un",
-       "debut": 624.224,
-       "fin": 624.559
+       "debut": 622.874,
+       "fin": 623.209
       },
       {
        "mot": "un",
-       "debut": 624.554,
-       "fin": 624.759
+       "debut": 623.204,
+       "fin": 623.409
       },
       {
        "mot": "remin",
-       "debut": 624.754,
-       "fin": 625.157
+       "debut": 623.404,
+       "fin": 623.807
       },
       {
        "mot": "trois",
-       "debut": 625.154,
-       "fin": 625.489
+       "debut": 623.804,
+       "fin": 624.139
       },
       {
        "mot": "cent",
-       "debut": 625.154,
-       "fin": 625.489
+       "debut": 623.804,
+       "fin": 624.139
       },
       {
        "mot": "soixante",
-       "debut": 625.154,
-       "fin": 625.489
+       "debut": 623.804,
+       "fin": 624.139
       },
       {
        "mot": "sept",
-       "debut": 625.154,
-       "fin": 625.489
+       "debut": 623.804,
+       "fin": 624.139
       },
       {
        "mot": "les",
-       "debut": 625.484,
-       "fin": 625.755
+       "debut": 624.134,
+       "fin": 624.405
       },
       {
        "mot": "considérences",
-       "debut": 625.754,
-       "fin": 626.684
+       "debut": 624.404,
+       "fin": 625.334
       },
       {
        "mot": "essentielles",
-       "debut": 626.674,
-       "fin": 627.548
+       "debut": 625.324,
+       "fin": 626.198
       },
       {
        "mot": "et",
-       "debut": 627.544,
-       "fin": 627.747
+       "debut": 626.194,
+       "fin": 626.397
       },
       {
        "mot": "l",
-       "debut": 627.744,
-       "fin": 628.411
+       "debut": 626.394,
+       "fin": 627.061
       },
       {
        "mot": "article",
-       "debut": 627.744,
-       "fin": 628.411
+       "debut": 626.394,
+       "fin": 627.061
       },
       {
        "mot": "douze",
-       "debut": 628.404,
-       "fin": 628.61
+       "debut": 627.054,
+       "fin": 627.26
       },
       {
        "mot": "de",
-       "debut": 628.604,
-       "fin": 628.809
+       "debut": 627.254,
+       "fin": 627.459
       },
       {
        "mot": "la",
-       "debut": 628.804,
-       "fin": 629.009
+       "debut": 627.454,
+       "fin": 627.659
       },
       {
        "mot": "constitution",
-       "debut": 629.004,
-       "fin": 629.872
+       "debut": 627.654,
+       "fin": 628.522
       },
       {
        "mot": "fédérale",
-       "debut": 629.864,
-       "fin": 630.469
+       "debut": 628.514,
+       "fin": 629.119
       },
       {
        "mot": "dans",
-       "debut": 630.464,
-       "fin": 630.802
+       "debut": 629.114,
+       "fin": 629.452
       },
       {
        "mot": "la",
-       "debut": 630.794,
-       "fin": 631.001
+       "debut": 629.444,
+       "fin": 629.651
       },
       {
        "mot": "description",
-       "debut": 630.994,
-       "fin": 631.864
+       "debut": 629.644,
+       "fin": 630.514
       }
      ]
     },
     {
      "texte": "À bientôt sur L'étude du droit.",
-     "debut": 632.714,
-     "fin": 634.232,
+     "debut": 631.364,
+     "fin": 632.882,
      "mots": [
       {
        "mot": "à",
-       "debut": 632.714,
-       "fin": 632.814
+       "debut": 631.364,
+       "fin": 631.464
       },
       {
        "mot": "bientôt",
-       "debut": 632.814,
-       "fin": 633.205
+       "debut": 631.464,
+       "fin": 631.855
       },
       {
        "mot": "sur",
-       "debut": 633.204,
-       "fin": 633.401
+       "debut": 631.854,
+       "fin": 632.051
       },
       {
        "mot": "l",
-       "debut": 633.394,
-       "fin": 633.792
+       "debut": 632.044,
+       "fin": 632.442
       },
       {
        "mot": "étude",
-       "debut": 633.394,
-       "fin": 633.792
+       "debut": 632.044,
+       "fin": 632.442
       },
       {
        "mot": "du",
-       "debut": 633.784,
-       "fin": 633.939
+       "debut": 632.434,
+       "fin": 632.589
       },
       {
        "mot": "droit",
-       "debut": 633.934,
-       "fin": 634.232
+       "debut": 632.584,
+       "fin": 632.882
       }
      ]
     }

@@ -1031,3 +1031,53 @@ def bouclier(e=1.0, texte=None, couleur=MENTHE):
     g = VGroup(p)
     if texte: g.add(T(texte, int(40 * e), ENCRE).move_to(p.get_center() + 0.05 * e * UP))
     return g
+
+
+# ---------- Interactions entre personnages (standard : plus d'interactions illustratives, 25 novembre 2026) ----------
+def main_de(p, cote=1):
+    """Position de la main d'un personnage (côté droit par défaut, -1 pour la gauche)."""
+    h = getattr(p, "h", 1.0); c = p[1].get_center()
+    return c + np.array([cote * 0.27 * h, -0.36 * h, 0])
+
+
+def bras_tendu(p, cote=1):
+    """Un bras tendu (pour donner, montrer, frapper à une porte)."""
+    h = getattr(p, "h", 1.0); c = p[1].get_center()
+    a = c + np.array([cote * 0.13 * h, -0.24 * h, 0]); b = c + np.array([cote * 0.36 * h, -0.2 * h, 0])
+    return Line(a, b, color=ENCRE, stroke_width=6 * h).set_cap_style(CapStyleType.ROUND)
+
+
+def donner(obj, cible, arc=-0.6, rt=0.8):
+    """Un objet passe d'une main à l'autre (ou va se poser sur une cible)."""
+    c = cible if isinstance(cible, np.ndarray) or isinstance(cible, (list, tuple)) else cible.get_center()
+    return obj.animate(path_arc=arc, run_time=rt).move_to(np.array(c, dtype=float))
+
+
+def valise(e=1.0, couleur=CIEL):
+    poig = RoundedRectangle(corner_radius=0.05 * e, width=0.3 * e, height=0.18 * e, color=ENCRE, stroke_width=5 * e).move_to([0, 0.36 * e, 0])
+    f = RoundedRectangle(corner_radius=0.07 * e, width=0.75 * e, height=0.55 * e, fill_color=couleur, fill_opacity=1, stroke_color=ENCRE, stroke_width=2.5 * e)
+    s = VGroup(*[Line([x * e, 0.27 * e, 0], [x * e, -0.27 * e, 0], color=ENCRE, stroke_width=2.5 * e) for x in (-0.2, 0.2)])
+    return VGroup(poig, f, s)
+
+
+def ouvrir_barriere(br, angle=1.35):
+    """La barrière se lève (rotation de la lisse autour du poteau)."""
+    return Rotate(VGroup(br[1], br[2]), angle=angle, about_point=np.array([br[0].get_x(), br[1].get_y(), 0]))
+
+
+def porte(ab):
+    """La porte de l'abri (dernier rectangle bois), pour l'ouvrir."""
+    return ab[3]
+
+
+def coeur_pop(pos, e=1.0):
+    return coeur(e).move_to(pos)
+
+
+def tamponner(scene, tampon_, cible_pos, juge_=None, son=True):
+    """Le tampon descend sur la feuille (un juge ou un agent l'abat)."""
+    tampon_.move_to(np.array(cible_pos) + 0.9 * UP).set_opacity(0)
+    scene.add(tampon_)
+    an = [tampon_.animate(rate_func=rate_functions.ease_in_quad).move_to(cible_pos).set_opacity(1)]
+    if juge_ is not None: an.append(juge_.animate(rate_func=there_and_back).shift(0.1 * DOWN))
+    return an

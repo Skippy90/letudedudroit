@@ -99,13 +99,14 @@ S = [
 (45, "SORTIE", "souriant", "Relâcher, sourire final.",
  "Vous retrouverez l'ATF 121 I 367, les considérants essentiels et l'article 12 de la Constitution fédérale dans la description. À bientôt sur L'étude du droit."),
 ]
+# Séquence 13 : début de phrase pris dans une autre prise que la fin ; la ligne est coupée après « gouvernement, ».
 # Séquences 17 et 38 : l'autrice a lu « … alors : sans … » et « … bernois : priver … » en deux temps ; le texte de voix passe à la ligne après les deux-points.
 VOIX = [("ATF 121 I 367", "ATF cent vingt et un, un, trois cent soixante-sept"), ("frères V. ", "frères V "),
  ("26 octobre", "vingt-six octobre"), ("27 octobre", "vingt-sept octobre"), ("5 décembre", "cinq décembre"),
  ("1874", "mille huit cent septante-quatre"), ("1980", "mille neuf cent huitante"), ("1987", "mille neuf cent huitante-sept"),
  ("1989", "mille neuf cent huitante-neuf"), ("1990", "mille neuf cent nonante"), ("1991", "mille neuf cent nonante et un"),
  ("1994", "mille neuf cent nonante-quatre"), ("1995", "mille neuf cent nonante-cinq"), ("1999", "mille neuf cent nonante-neuf"),
- ("2000", "deux mille"), ("bernois : priver", "bernois :\npriver"), ("alors : sans", "alors :\nsans"), ("article 12", "article douze"), ("3 frères", "trois frères"), ("3 hommes", "trois hommes"),
+ ("2000", "deux mille"), ("bernois : priver", "bernois :\npriver"), ("alors : sans", "alors :\nsans"), ("gouvernement, demander", "gouvernement,\ndemander"), ("article 12", "article douze"), ("3 frères", "trois frères"), ("3 hommes", "trois hommes"),
  ("3 ans", "trois ans"), ("2 choses", "deux choses")]
 NOTES = [
  "Source primaire : ATF 121 I 367, arrêt du 27 octobre 1995, IIe Cour de droit public, en particulier considérants 1b, 2a–d, 3a–d et 4. Texte original en allemand ; le script propose une reformulation française, non une citation littérale.",

@@ -48,7 +48,8 @@ PAUSES = {((44, 1), (44, 2)): 2.2,          # réflexion après la question fina
           ((1, 2), (1, 3)): 0.8,            # 1 : « Pause avant la question »
           ((1, 3), (2, 1)): 1.0,            # question d'accroche
           ((10, 2), (10, 3)): 0.9,          # 10 : « Silence après travailler en Suisse »
-          ((13, 2), (13, 3)): 0.7,          # 13 : « Pause courte avant la dernière phrase »
+          ((13, 1), (13, 2)): 0.3,          # 13 : virgule (début et fin de phrase pris dans deux prises)
+          ((13, 3), (13, 4)): 0.7,          # 13 : « Pause courte avant la dernière phrase »
           ((17, 1), (17, 2)): 0.5,          # 17 : deux-points
           ((23, 2), (24, 1)): 1.15,         # question qui ouvre « ce qu'il garantit »
           ((27, 2), (27, 3)): 0.9,          # 27 : « Pause après Qui peut invoquer ce droit ? »

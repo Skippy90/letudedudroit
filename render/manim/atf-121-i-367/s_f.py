@@ -17,6 +17,10 @@ class Ff(Sec367):
         pe = votants_ch(5, 1.05).move_to([-3.6, -1.1, 0]); u = urne(1.0).next_to(pe, RIGHT, buff=0.3).align_to(pe, DOWN); lpe = bandeau("Le peuple", 20).next_to(pe, DOWN, buff=0.2)
         ca = carte(3.6).move_to([-3.2, 1.0, 0]); lca = bandeau("Les cantons", 18).next_to(ca, RIGHT, buff=0.2)
         self.at(W(40, 1, "peuple") - 0.3, LaggedStart(*[FadeIn(b, shift=0.2 * UP) for b in pe], lag_ratio=0.1), FadeIn(u), FadeIn(lpe), rt=0.6)
+        bl = VGroup(*[Rectangle(width=0.22, height=0.28, fill_color=BLANC, fill_opacity=1, stroke_color=ENCRE, stroke_width=1.5).move_to(main_de(b, 1) + 0.2 * UP) for b in pe[2:]])
+        self.play(FadeIn(bl, scale=0.5), run_time=0.2)
+        self.play(LaggedStart(*[x.animate(path_arc=-0.8).move_to(u[2].get_center()).scale(0.6) for x in bl], lag_ratio=0.25), run_time=0.8)
+        self.remove(bl, *bl)
         self.at(W(40, 1, "cantons") - 0.3, FadeIn(ca), FadeIn(lca), rt=0.45)
         cst = constit("1999", 0.95).move_to([3.6, 0.4, 0]); ok = coche(True, 0.42).move_to(cst.get_corner(UR) + 0.1 * UR)
         self.at(W(40, 1, "acceptent") - 0.3, FadeIn(cst, shift=0.3 * UP), rt=0.4)
@@ -45,6 +49,13 @@ class Ff(Sec367):
             self.add(nb)
             if bq is not None: self.remove(bq)
             bq = nb
+            if k == 0:
+                pd = candidat(1.2, 1, "triste").move_to([5.9, -2.0, 0]); pd[0].set_fill(GRIS, 1)
+                self.play(FadeIn(pd, shift=0.2 * UP), run_time=0.3)
+            if k == 3:
+                c41 = colis(0.55).move_to(pg.corps[3].get_right() + 0.4 * RIGHT)
+                self.play(FadeIn(c41, scale=0.5), run_time=0.15); self.play(donner(c41, main_de(pd, -1) + 0.1 * DOWN, 0.5, 0.45))
+                visage(pd, 1.2, "content")
             if k == 4: self.son("ding", 0.6)
         # 42 — l'article 12 n'est pas toute l'aide sociale : un noyau
         self.vider(S(42, 1) - 0.4, rt=0.4)
