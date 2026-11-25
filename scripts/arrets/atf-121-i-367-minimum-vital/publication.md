@@ -70,7 +70,7 @@ droit suisse, Tribunal fédéral, ATF 121 I 367, minimum vital, article 12 Const
 
 ## À vérifier avant de publier
 
-1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 9:29, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:56, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
+1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 2:35, « L'aide sociale pourrait donc leur être entièrement retirée » (la machine entend « le ret… » à la place de « leur être » : probablement une diction rapide, à confirmer) ; vers 9:29, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:56, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
 2. Relire l'arrêt sur bger.ch (l'audit a été fait sur la copie de l'Université de Berne) et cocher l'audit.
 3. La fiche de cours est prête (fiche-atf-121-i-367.pdf) : à mettre en ligne sur letudedudroit.ch, l'écran de fin la mentionne.
 4. Le numéro de la vidéo dans la série n'est pas attribué.
