@@ -22,14 +22,14 @@ Chapitres
 4:33 Un droit constitutionnel reconnu
 4:47 Le minimum, pas toute l'aide sociale
 5:25 Aussi pour les étrangers
-6:01 L'application à l'affaire
-6:28 Qu'est-ce qu'un abus de droit ?
-7:07 La cause réelle de la détresse
+6:02 L'application à l'affaire
+6:29 Qu'est-ce qu'un abus de droit ?
+7:08 La cause réelle de la détresse
 7:49 La décision du 27 octobre 1995
 8:04 Ce que l'arrêt ne donne pas
-8:17 L'article 12 de la Constitution
+8:18 L'article 12 de la Constitution
 8:57 À retenir
-9:12 La question pour vous
+9:13 La question pour vous
 
 Arrêt et article cités (article vérifié sur Fedlex) :
 • ATF 121 I 367 (arrêt du 27 octobre 1995, IIe Cour de droit public, en allemand)
@@ -60,17 +60,17 @@ droit suisse, Tribunal fédéral, ATF 121 I 367, minimum vital, article 12 Const
 
 ## Réglages dans YouTube Studio
 
-- Fichier vidéo : atf-121-i-367-minimum-vital-v4.mp4 (1080p, 9 min 52 s).
+- Fichier vidéo : atf-121-i-367-minimum-vital-v5.mp4 (1080p, 9 min 53 s).
 - Miniature : miniature-atf-121-i-367.png (une assiette, « Le droit de survivre », « même sans permis de séjour ? »).
 - Sous-titres : minimum-vital-sous-titres.srt (français, « avec minutage »).
 - Langue de la vidéo : français. Catégorie : Éducation. « Non, elle n'est pas conçue pour les enfants. »
-- Écran de fin : à partir de 9:37, sur les 15 dernières secondes, qui sont muettes. Une vidéo dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.
+- Écran de fin : à partir de 9:38, sur les 15 dernières secondes, qui sont muettes. Une vidéo dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.
 - Playlist : les arrêts du Tribunal fédéral, si elle existe.
 - Après la mise en ligne : épingler le commentaire, mettre la fiche PDF sur letudedudroit.ch, puis donner le lien et la date pour la mise à jour de la page du site.
 
 ## À vérifier avant de publier
 
-1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 2:30, « L'aide sociale pourrait donc leur être entièrement retirée » (la machine entend « le ret… » à la place de « leur être » : probablement une diction rapide, à confirmer) ; vers 9:26, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:53, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
+1. Écouter les passages où la reconnaissance vocale hésite (minutages de la vidéo) : vers 2:30, « L'aide sociale pourrait donc leur être entièrement retirée » (la machine entend « le ret… » à la place de « leur être » : probablement une diction rapide, à confirmer) ; vers 9:27, la référence lue « ATF 121, un romain, 367 » (la machine entend « un romain » : à confirmer) ; et vers 7:53, la phrase « Il admet le recours… », que vous avez lue en deux temps : j'ai gardé votre prise complète et nette de « Priver les trois frères… », pas la toute dernière, qui semblait hésiter (« Privé et les trois frères… »).
 2. Relire l'arrêt sur bger.ch (l'audit a été fait sur la copie de l'Université de Berne) et cocher l'audit.
 3. La fiche de cours est prête (fiche-atf-121-i-367.pdf) : à mettre en ligne sur letudedudroit.ch, l'écran de fin la mentionne.
 4. Le numéro de la vidéo dans la série n'est pas attribué.

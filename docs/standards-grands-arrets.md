@@ -113,7 +113,7 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 ## 5. Le texte du bas et les sous-titres
 
 - Une ligne à la fois, **42 caractères au plus**, coupée de préférence après une ponctuation, **jamais sur un petit mot** (« à la », « de », « qui »), jamais avec une ponctuation en tête de ligne.
-- Le surlignage suit les mots tels qu'ils sont dits (instants des mots, pas un calcul au prorata sur la phrase).
+- **Pas d'effet karaoké** (demande du 25 novembre 2026) : chaque ligne s'affiche entière, en même temps que la voix, sans surlignage mot à mot. Les instants des mots servent seulement à faire commencer et finir chaque ligne au bon moment (`ass.py`).
 - Chiffres arabes pour les dates, les articles et les nombres ; orthographe et tournures du texte de l'autrice.
 - Le fichier `.srt` livré est le même découpage.
 
@@ -121,7 +121,7 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 
 | Contrôle | Seuil |
 | --- | --- |
-| Coupes de montage | aucune ne mord sur un passage voisin |
+| Coupes de montage | aucune ne mord sur un passage voisin ; chaque coupe tombe dans un silence de l'enregistrement brut (`controle_voix.py`, point 1 bis), sinon une syllabe est tranchée |
 | Silences | aucun son à niveau de voix entre deux phrases |
 | Texte | retranscription conforme, passages douteux listés avec leur minutage |
 | Calage son-image | écart constant d'un bout à l'autre (0,13 à 0,16 s) |

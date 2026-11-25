@@ -90,6 +90,24 @@ def lufs(fichier):
     return float(m[-1]) if m else None
 
 
+def coupes_dans_la_voix(dossier):
+    """Une coupe placée en pleine voix tranche une syllabe (« En effet, » coupé avant « -fet ») : chaque point de coupe
+    de montage.txt doit tomber là où l'enregistrement brut est silencieux (moins de −45 dB sur ±20 ms)."""
+    brut = next((p for p in dossier.glob("enregistrement.*")), None)
+    if brut is None: return []
+    r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(brut), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True)
+    x = np.frombuffer(r.stdout, dtype=np.float32); h = 160; nb = len(x) // h
+    env = 20 * np.log10(np.sqrt((x[:nb * h].reshape(nb, h).astype(float) ** 2).mean(1)) + 1e-9)
+    out = []
+    for l in (dossier / "montage.txt").read_text(encoding="utf-8").splitlines():
+        m = re.match(r"ligne (\d+), phrase (\d+) : .*?coupe ([\d.]+)–([\d.]+)", l)
+        if not m: continue
+        for nom, t in (("début", float(m[3])), ("fin", float(m[4]))):
+            i = int(t / 0.01); v = float(env[max(0, i - 2):i + 3].max())
+            if v > -45: out.append(f"{m[1]}.{m[2]} : le {nom} de la coupe ({t:.2f} s) tombe en pleine voix ({v:.0f} dB) : une syllabe est tranchée")
+    return out
+
+
 def main():
     dossier = RACINE / "voice" / sys.argv[1]
     v, sr = sf.read(dossier / "narration.wav")
@@ -98,6 +116,10 @@ def main():
     f = coupes(dossier)
     echec |= bool(f)
     print("\n".join("   ✗ " + x for x in f) or "   ✓ aucune coupe ne mord sur un passage voisin")
+    print("1 bis. Coupes dans le silence")
+    t = coupes_dans_la_voix(dossier)
+    echec |= bool(t)
+    print("\n".join("   ✗ " + x for x in t) or "   ✓ chaque coupe tombe dans un silence de l'enregistrement")
     print("2. Silences entre les phrases")
     a = silences(dossier, v, sr)
     print("\n".join("   ? " + x for x in a) or "   ✓ aucun son à niveau de voix dans les silences")
