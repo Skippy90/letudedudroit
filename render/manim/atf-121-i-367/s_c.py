@@ -25,7 +25,8 @@ class C(Sec367):
         # 16 — la nouvelle Constitution bernoise : en vigueur en janvier 1995, après la décision ; inutilisable ici
         self.vider(S(16, 1) - 0.4, rt=0.4)
         cb = texte_cantonal("Constitution", "cantonale", "1993").scale(0.85).move_to([-4.3, 0.2, 0])
-        self.at(S(16, 1), FadeIn(cb, shift=0.3 * UP), rt=0.45); self.son("plop")
+        fb16 = drapeau_nomme(drapeau_be(0.85), "Berne", 16).next_to(cb, RIGHT, buff=0.25).align_to(cb, UP)
+        self.at(S(16, 1), FadeIn(cb, shift=0.3 * UP), FadeIn(fb16), rt=0.45); self.son("plop")
         ok = coche(True, 0.4).move_to(cb.get_corner(DR) + 0.15 * UL); lok = bandeau("Une telle protection", 20).next_to(cb, DOWN, buff=0.25)
         self.at(W(16, 1, "protection") - 0.4, FadeIn(ok, scale=2), FadeIn(lok), rt=0.35)
         fz = frise(0, 2, x0=-0.9, x1=5.4, y=0.4, reperes=())
@@ -53,7 +54,7 @@ class C(Sec367):
         self.at(W(17, 2, "explicite") - 0.4, Create(vide[0]), FadeIn(vide[1], scale=0.5), FadeIn(lx), rt=0.45); self.son("plop")
         fr = freres(1.3, "perplexe").move_to([1.6, -1.05, 0])
         self.at(W(17, 2, "hommes") - 0.3, FadeIn(fr, shift=0.2 * UP), rt=0.4)
-        bc = bouclier(0.95, "?").move_to([1.6, 1.55, 0]); lb = T("Une garantie fondamentale", 22).next_to(bc, RIGHT, buff=0.3)
+        bc = parapluie(0.95, AMBRE, "?").move_to([1.6, 1.6, 0]); lb = T("Une garantie fondamentale", 22).next_to(bc, RIGHT, buff=0.3)
         self.at(W(17, 2, "garantie") - 0.3, FadeIn(bc, scale=0.4), FadeIn(lb, shift=0.1 * LEFT), rt=0.45); self.son("ding", 0.7)
         tf = ic_tf(0.8).move_to([5.4, -0.65, 0]); lt = bandeau("En justice", 18).next_to(tf, DOWN, buff=0.15)
         self.at(W(17, 2, "justice") - 0.4, FadeIn(tf, shift=0.2 * LEFT), FadeIn(lt), rt=0.4)

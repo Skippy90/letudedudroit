@@ -73,12 +73,14 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 | Personne naturalisée | une croix suisse apparaît sur son maillot ; la personne refusée n'a rien et son visage est triste | `maillot_ch` |
 | Corps électoral | maillot aux couleurs du canton (Zurich : bleu et blanc), drapeau du canton et drapeau suisse à côté du groupe | `electeurs(..., drapeaux=True)`, `colorer_foule` |
 | Juge | robe noire, rabat blanc, toque | `juge` |
-| Agent de l'administration | silhouette claire, col sombre | `agent` |
+| Agent de l'administration | silhouette claire, col sombre ; à un guichet, enseigne au nom de l'autorité (« Commune ») et drapeau du canton nommé à côté | `agent`, `guichet` |
+| Membre d'un gouvernement cantonal | silhouette claire, **écharpe aux couleurs héraldiques du canton** (Berne : noir et rouge), drapeau du canton et drapeau suisse à côté | `membre_be` (modèle pour les autres cantons) |
 | Parti politique | trois militants à écharpe derrière une banderole à son nom, jamais le logo | `parti`, `militant` |
 | La Terre (climat) | varie selon le récit : contente, inquiète, malade (poche de glace et thermomètre médical sur le front), chaude | `terre` |
 
 - **Émotions cohérentes avec le récit** : à chaque décision, les personnages concernés réagissent (content et petit saut quand on gagne, triste quand on perd, surpris devant un coup de théâtre, perplexe devant une question ouverte, muet pour un vote secret). Un personnage suit son affaire d'une instance à l'autre et change de visage à chaque étape.
 - **Les personnages interagissent avec le texte** : le juge montre du doigt le passage de l'article, la requérante parle, l'agent examine le dossier à la loupe, les électeurs reçoivent l'information.
+- **Montrer du doigt, jamais de « câble »** (demande du 25 novembre 2026) : quand un personnage désigne quelque chose, il tend le bras et une flèche ambre courte et épaisse se pose juste devant la cible. Plus de trait fin tiré du personnage jusqu'à la cible : il se lit comme un câble. Brique : `baguette` (le nom est resté, le dessin a changé).
 - **Les objets passent de main en main** (demande du 25 novembre 2026, « plus d'images pour illustrer et plus d'interactions illustratives ») : l'autorité *remet* sa décision (elle part de la main de l'agent et arrive devant les intéressés), le tampon *s'abat* sur la feuille, les documents de voyage sont *tendus*, la barrière *se lève* pour laisser passer, l'aide (colis, assiette, pièce) est *donnée* par l'État à la personne, les votants *glissent* leur bulletin dans l'urne, le juge *épingle* les cartes et *suit* les critères à la loupe. Une scène où un objet apparaît seul est à revoir : qui le donne, qui le reçoit ? Briques : `main_de`, `bras_tendu`, `donner`, `tamponner`, `ouvrir_barriere`, `valise` (`render/manim/atf-121-i-367/base.py`).
 - **Chaque séquence a au moins une interaction** entre deux personnages, ou entre un personnage et un objet ; les personnages concernés réagissent ensuite (soulagés, tristes, ils reculent, ils se serrent autour d'un cœur).
 - **Tout personnage à l'écran a un rôle lisible** : une étiquette sous lui (« Une autorité », « Tribunal fédéral ») ou une action claire. Jamais de silhouette posée là sans raison, jamais d'étiquette ou de tampon par-dessus un personnage. Quand une instance « répond », c'est son personnage qui apparaît (un juge pour le Tribunal fédéral), pas une étiquette seule.
@@ -86,7 +88,8 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 ### Cantons et drapeaux
 - Les couleurs d'un canton sont réservées à son identité (maillots des électeurs, drapeau). **Les objets génériques restent neutres** : le bandeau de l'urne est menthe, pas bleu, pour ne pas être lu comme zurichois ou lucernois.
 - Deux cantons peuvent avoir les mêmes couleurs (Zurich et Lucerne : bleu et blanc). Dès que deux cantons sont comparés, chaque drapeau porte le nom du canton à côté (`drapeau_nomme`).
-- Chaque drapeau est vérifié sur une source avant d'être dessiné. Zurich : tranché, bleu côté hampe en bas, blanc en haut au vent (`drapeau_zh`). Lucerne : coupé, blanc en haut, bleu en bas (`drapeau_lu`). Une commune (Emmen) est située par le drapeau de son canton, nommé.
+- Chaque drapeau est vérifié sur une source avant d'être dessiné. Zurich : tranché, bleu côté hampe en bas, blanc en haut au vent (`drapeau_zh`). Lucerne : coupé, blanc en haut, bleu en bas (`drapeau_lu`). Berne : champ rouge, bande d'or de l'angle haut côté hampe vers l'angle bas, ours noir qui monte vers la hampe, langue et griffes rouges ; drapeau carré ; couleurs héraldiques rouge et noir (`drapeau_be`, `drapeaux_be_ch` ; source : Flags of the World). Une commune (Emmen) est située par le drapeau de son canton, nommé.
+- **Le spectateur sait toujours dans quel canton l'affaire a commencé** (demande du 25 novembre 2026, « faut que les gens savent que c'est un arrêt qui a débuté à Berne ») : drapeau du canton, nommé, à côté de chaque autorité cantonale ou communale (guichet de la commune, gouvernement, constitution et loi cantonales, carte), et écharpe aux couleurs du canton pour le membre du gouvernement.
 
 ### Institutions, textes et décisions
 | Élément | Dessin | Brique |
@@ -105,6 +108,11 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 | Droit fondamental | carte avec une image qui porte l'émotion : arbre pour la vie, foyer pour la vie privée et familiale, fiche sous cadenas pour les données | `carte_droit`, `icone_vie`, `icone_foyer`, `donnees` |
 | **Décision** | feuille à en-tête (« DÉCISION », « ARRÊT DU TRIBUNAL FÉDÉRAL »), dispositif en tampon vert ou rouge, sceau à ruban | `decision`, `arret_tf`, `verdict` |
 | Initiative, acte invalidé | page, tampon « INVALIDE » | `initiative`, `tampon` |
+| **Demande** (d'une personne à une autorité) | formulaire crème à en-tête ambre « DEMANDE », objet en dessous (« de réintégration »), cases, ligne de signature, stylo | `demande` |
+| **Statut de réfugié** | une personne et sa valise, à l'abri sous le toit de l'État d'accueil (drapeau au faîte) ; étiquette « Réfugiés reconnus en Suisse » | `icone_refugie`, `toit` |
+| **Protection d'un État** | un toit, le drapeau de l'État au faîte ; ambre pour la Suisse, gris pour l'État quitté | `toit` |
+| **Protection d'un droit** (minimum vital, garantie) | parapluie ambre ouvert au-dessus des personnes protégées ; pastille « ? » quand la question est ouverte. Remplace le bouclier, mal compris | `parapluie` |
+| Prestations sociales | étagère : en haut l'argent, l'aide en nature, le dossier ; en bas manger, se vêtir, un abri ; trait du seuil indispensable | `besoins`, `piece`, `colis`, `assiette`, `habit`, `abri` |
 | Dossier d'une personne | chemise ambre à onglet, feuille à en-tête, portrait agrafé ; les rubriques apparaissent une à une | `fiche` (dossier du candidat), `dossier` (petite icône) |
 
 ### Palette des icônes

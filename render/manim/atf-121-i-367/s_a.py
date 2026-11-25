@@ -23,7 +23,7 @@ class A(Sec367):
         humeur(fr, "perplexe")
         # 1.2 — demande d'aide, refus
         self.jusqua(S(1, 2) - 0.3)
-        gu = guichet(1.45, "Commune").move_to([3.4, -0.55, 0])
+        gu = guichet(1.45, "Commune").move_to([3.4, -0.55, 0]); gu.add(drapeau_nomme(drapeau_be(0.85), "Berne", 16).move_to([5.6, -0.55, 0]))
         self.play(*[FadeOut(x, shift=0.3 * UP) for x in (ml, xm, tm, br, xb, tb, ch, lf)], FadeIn(gu, shift=0.3 * LEFT), fr.animate.move_to([-3.4, -0.9, 0]), run_time=0.45)
         self.play(*self.marche(list(fr), [b.get_center() + 1.3 * RIGHT for b in fr], 3), run_time=0.7)
         bu = bulle(["De l'aide", "pour vivre ?"], 22).next_to(fr, UP, buff=0.3).shift(0.6 * RIGHT)

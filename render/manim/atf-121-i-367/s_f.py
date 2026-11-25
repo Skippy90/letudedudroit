@@ -89,7 +89,7 @@ class Ff(Sec367):
         self.at(S(43, 3) - 0.1, FadeIn(f2), FadeIn(n2), rt=0.3)
         su = candidat(1.0, 1, "content").move_to(f2.get_center() + np.array([-1.0, -0.15, 0])); su.add(maillot_ch(su))
         et = frere(1.0, 0, "content").move_to(f2.get_center() + np.array([1.0, -0.15, 0]))
-        bc = bouclier(0.55, None).move_to(f2.get_center() + 0.95 * UP)
+        bc = parapluie(0.7).move_to(f2.get_center() + 0.75 * UP)
         t2 = VGroup(T("La dignité ne dépend pas", 20), T("de la nationalité", 20)).arrange(DOWN, buff=0.08).move_to(f2.get_bottom() + 0.65 * UP)
         self.at(W(43, 3, "besoins") - 0.3, FadeIn(su, shift=0.2 * UP), FadeIn(et, shift=0.2 * UP), FadeIn(bc, scale=0.5), rt=0.45)
         self.at(W(43, 3, "nationalité") - 0.4, FadeIn(t2), rt=0.4); self.son("joie", 0.5)

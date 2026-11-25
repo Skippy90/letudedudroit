@@ -60,7 +60,7 @@ droit suisse, Tribunal fédéral, ATF 121 I 367, minimum vital, article 12 Const
 
 ## Réglages dans YouTube Studio
 
-- Fichier vidéo : atf-121-i-367-minimum-vital-v5.mp4 (1080p, 9 min 53 s).
+- Fichier vidéo : atf-121-i-367-minimum-vital-v6.mp4 (1080p, 9 min 53 s).
 - Miniature : miniature-atf-121-i-367.png (une assiette, « Le droit de survivre », « même sans permis de séjour ? »).
 - Sous-titres : minimum-vital-sous-titres.srt (français, « avec minutage »).
 - Langue de la vidéo : français. Catégorie : Éducation. « Non, elle n'est pas conçue pour les enfants. »

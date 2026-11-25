@@ -1081,3 +1081,112 @@ def tamponner(scene, tampon_, cible_pos, juge_=None, son=True):
     an = [tampon_.animate(rate_func=rate_functions.ease_in_quad).move_to(cible_pos).set_opacity(1)]
     if juge_ is not None: an.append(juge_.animate(rate_func=there_and_back).shift(0.1 * DOWN))
     return an
+
+
+def parapluie(e=1.0, couleur=AMBRE, texte=None):
+    """Le droit qui protège : un parapluie ouvert (plus lisible qu'un bouclier). Rend VGroup(toile, nervures, manche[, texte])."""
+    R = 1.0 * e; n = 4
+    haut = [[R * np.cos(a), R * 0.62 * np.sin(a), 0] for a in np.linspace(0, PI, 40)]
+    bas = []
+    for k in range(n):
+        x0 = -R + 2 * R * k / n; x1 = -R + 2 * R * (k + 1) / n; c = (x0 + x1) / 2; r = (x1 - x0) / 2
+        bas += [[c - r * np.cos(t), 0.12 * e * np.sin(t), 0] for t in np.linspace(0, PI, 12)]
+    toile = VMobject(fill_color=couleur, fill_opacity=1, stroke_color=ENCRE, stroke_width=3.5 * e)
+    toile.set_points_as_corners(haut[::-1][::-1] and [*haut[::-1], *bas[::1]][::1] + [haut[-1]])
+    nerv = VGroup(*[Line([0, R * 0.62, 0], [x * e, 0.0, 0], color=ENCRE, stroke_width=2 * e, stroke_opacity=0.6) for x in (-0.5, 0, 0.5)])
+    pointe = Line([0, R * 0.62, 0], [0, R * 0.62 + 0.14 * e, 0], color=ENCRE, stroke_width=4 * e)
+    manche = VGroup(Line([0, 0, 0], [0, -0.95 * e, 0], color=ENCRE, stroke_width=5 * e),
+                    Arc(radius=0.13 * e, start_angle=PI, angle=PI, color=ENCRE, stroke_width=5 * e).move_arc_center_to([0.13 * e, -0.95 * e, 0]))
+    g = VGroup(toile, nerv, pointe, manche)
+    if texte:
+        g.add(VGroup(Circle(0.26 * e, fill_color=CREME, fill_opacity=1, stroke_color=ENCRE, stroke_width=2.5 * e), T(texte, int(30 * e), ENCRE)).move_to([0, R * 0.3, 0]))
+    return g
+
+
+# ---------- Canton de Berne : drapeau, membre du gouvernement (standard « identité cantonale », comme Zurich) ----------
+NOIR_BE = "#141414"; JAUNE_BE = "#F4C430"; ROUGE_BE = "#E2231A"
+
+
+def ours(e=1.0, couleur=NOIR_BE):
+    """L'ours bernois, simplifié : il marche vers la gauche ; langue et griffes rouges."""
+    corps = Ellipse(width=1.0 * e, height=0.5 * e, fill_color=couleur, fill_opacity=1, stroke_width=0)
+    tete = Circle(0.2 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to([-0.55 * e, 0.12 * e, 0])
+    museau = Ellipse(width=0.22 * e, height=0.14 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to([-0.74 * e, 0.07 * e, 0])
+    oreille = Circle(0.07 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to([-0.48 * e, 0.3 * e, 0])
+    langue = Polygon([-0.83 * e, 0.03 * e, 0], [-0.93 * e, 0.0, 0], [-0.83 * e, -0.02 * e, 0], fill_color=ROUGE_BE, fill_opacity=1, stroke_width=0)
+    pattes = VGroup(*[RoundedRectangle(corner_radius=0.04 * e, width=0.13 * e, height=0.32 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to([x * e, -0.27 * e, 0]) for x in (-0.33, -0.15, 0.17, 0.35)])
+    griffes = VGroup(*[Line([x * e - 0.07 * e, -0.43 * e, 0], [x * e + 0.03 * e, -0.43 * e, 0], color=ROUGE_BE, stroke_width=2.5 * e) for x in (-0.33, -0.15, 0.17, 0.35)])
+    queue = Circle(0.05 * e, fill_color=couleur, fill_opacity=1, stroke_width=0).move_to([0.52 * e, 0.08 * e, 0])
+    return VGroup(pattes, corps, queue, tete, museau, oreille, langue, griffes)
+
+
+def drapeau_be(e=1.0):
+    """Drapeau bernois (vérifié : FOTW) : champ rouge, bande d'or de l'angle haut côté hampe vers l'angle bas,
+    ours noir qui monte vers la hampe, langue et griffes rouges."""
+    mat = Line([0, 0, 0], [0, 1.5 * e, 0], color=BOIS, stroke_width=6 * e)
+    a = 0.62 * e; o = np.array([0.04 * e, 0.86 * e, 0])
+    champ = Square(a, fill_color=ROUGE_BE, fill_opacity=1, stroke_width=0).move_to(o + [a / 2, a / 2, 0])
+    l = 0.36 * a
+    bande = Polygon(o + [0, a, 0], o + [l, a, 0], o + [a, l, 0], o + [a, 0, 0], o + [a - l, 0, 0], o + [0, a - l, 0], fill_color=JAUNE_BE, fill_opacity=1, stroke_width=0)
+    o_ = ours(0.38 * e).rotate(-PI / 4).move_to(o + [a / 2, a / 2, 0])
+    cadre = Square(a, color=BLANC, stroke_width=2 * e).move_to(champ)
+    return VGroup(mat, champ, bande, o_, cadre)
+
+
+def drapeaux_be_ch(e=1.0, buff=0.15):
+    """L'identité bernoise : drapeau de Berne (nommé) et drapeau suisse, côte à côte."""
+    return VGroup(drapeau_nomme(drapeau_be(e), "Berne", int(16 * e + 2)), drapeau_ch(e)).arrange(RIGHT, buff=buff * e + 0.25, aligned_edge=DOWN)
+
+
+def membre_be(h=1.35, humeur="decide"):
+    """Un membre du Conseil-exécutif bernois : silhouette claire, écharpe aux couleurs de Berne (noir et rouge)."""
+    p = _bh(h, CREME); p.h = h
+    ech = VGroup(Polygon([-0.2 * h, 0.66 * h, 0], [-0.06 * h, 0.66 * h, 0], [0.17 * h, 0.1 * h, 0], [0.04 * h, 0.05 * h, 0], fill_color=NOIR_BE, fill_opacity=1, stroke_width=0),
+                 Polygon([-0.13 * h, 0.66 * h, 0], [-0.09 * h, 0.66 * h, 0], [0.13 * h, 0.09 * h, 0], [0.1 * h, 0.08 * h, 0], fill_color=ROUGE_BE, fill_opacity=1, stroke_width=0))
+    p.add(ech); _vivant(p, 0.03 * h); visage(p, h, humeur)
+    return p
+
+
+# ---------- Montrer du doigt, sans « câble » : bras tendu et flèche courte près de la cible ----------
+def baguette(p, cible, ep=5):
+    h = getattr(p, "h", 1.0); c = p[1].get_center(); cible = np.array(cible, dtype=float)
+    s = 1 if cible[0] > c[0] else -1
+    bras_ = bras_tendu(p, s)
+    d = cible - bras_.get_end(); n = np.linalg.norm(d); u = d / n if n > 1e-6 else RIGHT
+    fl = Arrow(cible - 0.75 * u, cible - 0.08 * u, buff=0, color=AMBRE, stroke_width=8, max_tip_length_to_length_ratio=0.45, max_stroke_width_to_length_ratio=12)
+    return VGroup(bras_, fl)
+
+
+# ---------- Standards d'icônes : la demande, le réfugié ----------
+def demande(e=1.0, titre="Demande", sous="de réintégration"):
+    """Une demande : formulaire à en-tête ambre, case cochée, ligne de signature, stylo."""
+    f = RoundedRectangle(corner_radius=0.08 * e, width=1.6 * e, height=2.0 * e, fill_color=CREME, fill_opacity=1, stroke_width=0)
+    ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.07 * e * (DOWN + RIGHT))
+    tete = Rectangle(width=1.6 * e, height=0.42 * e, fill_color=AMBRE, fill_opacity=1, stroke_width=0).align_to(f, UP)
+    tt = T(titre.upper(), int(15 * e), ENCRE).move_to(tete)
+    st = T(sous, int(13 * e), ENCRE, False).move_to(f.get_top() + 0.62 * e * DOWN) if sous else VGroup()
+    lg = VGroup(*[VGroup(Square(0.13 * e, color=ENCRE, stroke_width=2 * e), Line([0, 0, 0], [0.85 * e, 0, 0], color=ROUGE_3, stroke_width=3 * e)).arrange(RIGHT, buff=0.1 * e) for _ in range(3)]).arrange(DOWN, buff=0.16 * e, aligned_edge=LEFT).move_to(f.get_center() + 0.05 * e * DOWN)
+    sig = VGroup(Line([0, 0, 0], [0.9 * e, 0, 0], color=ENCRE, stroke_width=2.5 * e), T("signature", int(10 * e), ENCRE, False)).arrange(DOWN, buff=0.04 * e).move_to(f.get_bottom() + 0.28 * e * UP)
+    stylo = VGroup(RoundedRectangle(corner_radius=0.03 * e, width=0.12 * e, height=0.8 * e, fill_color=CIEL, fill_opacity=1, stroke_color=ENCRE, stroke_width=2 * e),
+                   Polygon([-0.06 * e, -0.4 * e, 0], [0.06 * e, -0.4 * e, 0], [0, -0.55 * e, 0], fill_color=ENCRE, fill_opacity=1, stroke_width=0)).rotate(-0.6).move_to(f.get_corner(DR) + np.array([0.1 * e, 0.35 * e, 0]))
+    return VGroup(ombre, f, tete, tt, st, lg, sig, stylo)
+
+
+def toit(l=2.0, couleur=AMBRE, drapeau=None):
+    """La protection d'un État : un toit ; drapeau facultatif posé au faîte (standard « toit protecteur »)."""
+    e = l / 2.0
+    t = VGroup(Polygon([-1.0 * e, 0, 0], [0, 0.7 * e, 0], [1.0 * e, 0, 0], [0.82 * e, 0, 0], [0, 0.5 * e, 0], [-0.82 * e, 0, 0], fill_color=couleur, fill_opacity=1, stroke_color=ENCRE, stroke_width=2.5))
+    if drapeau is not None:
+        d = drapeau.copy(); d.scale_to_fit_height(0.6 * e); d.shift([-d[0].get_x(), 0.62 * e - d.get_bottom()[1], 0])
+        t.add(d)
+    return t
+
+
+def icone_refugie(e=1.0, couleur=CIEL, drapeau=None):
+    """Le statut de réfugié (standard) : une personne avec sa valise, à l'abri sous le toit protecteur de l'État d'accueil."""
+    t_ = toit(2.0 * e, AMBRE, drapeau).shift(0.95 * e * UP - [0, 0, 0])
+    pe = _bh(1.15 * e, CREME); pe[0].set_fill(couleur, 1); pe.h = 1.15 * e; visage(pe, 1.15 * e, "content")
+    pe.move_to([-0.2 * e, 0.0, 0], aligned_edge=DOWN)
+    va = valise(0.5 * e, AMBRE).next_to(pe, RIGHT, buff=0.02 * e).align_to(pe, DOWN)
+    sol = Line([-0.9 * e, 0, 0], [0.9 * e, 0, 0], color=CREME, stroke_width=4 * e)
+    return VGroup(sol, t_, pe, va)
