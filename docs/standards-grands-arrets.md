@@ -47,7 +47,13 @@ Le dossier porte la référence de l'arrêt tant que le numéro dans la série n
 - **Timbre de référence : la voix traitée de la vidéo 25** (`render/manim/atf-129-i-232/son/ref25.npy`, spectre par tiers d'octave). Chaque nouvelle voix est égalisée vers cette référence (±8 dB au plus) ; l'écart moyen visé est inférieur à 1,5 dB. À l'intérieur d'une vidéo, les parties enregistrées à des moments différents sont d'abord ramenées au même timbre.
 - **Niveau** : chaque séquence au même niveau, vidéo finale entre −15 et −16 LUFS.
 - **Pas de limiteur qui pompe** : monter la narration assez bas pour que le limiteur du montage ne touche presque rien (`reglages.json`, `{"niveau": -22}` pour un enregistrement faible), donner le niveau au mixage, limiteur doux sur les seules crêtes (1 % d'échantillons retouchés au plus).
-- **Rythme** (« sinon c'est soporifique ») : silences resserrés (0,38 s dans une séquence, 0,7 s entre deux séquences, 0,95 s avant un carton de partie), voix accélérée de 5 % sans changer la hauteur, une pause de réflexion après la question finale.
+- **Rythme** (« sinon c'est soporifique ») : voix accélérée de 5 % sans changer la hauteur ; silences resserrés, mais **réglés sur le sens du texte**, pas uniformes (demande du 25 novembre 2026, « comprendre la structure du texte et le flow des idées ») :
+  - les séquences sont groupées en **blocs d'idées** (`BLOCS` dans `temps.py`) : 0,6 s entre deux séquences d'un même bloc, 1 s avant une séquence qui ouvre un bloc, 1 s avant un carton de partie ; 0,38 s entre deux phrases d'une séquence ;
+  - 0,9 s avant une séquence qui change de direction (« Pourtant », « Or », « Mais », « Surtout », « Autrement dit ») ;
+  - **les indications de marge de l'autrice sont appliquées** (« pause avant la question », « silence après… », « détacher les 2 idées ») : entre deux phrases, à la durée voulue ; dans une phrase, seulement là où la voix s'arrête déjà, pour ne jamais couper un mot ;
+  - environ 1 s après une question qui ouvre une partie ; les énumérations restent enchaînées ; une pause de réflexion (2,2 s) après la question finale ;
+  - **tout silence de plus d'une demi-seconde à l'intérieur d'une phrase** (souffle, jonction entre deux morceaux de prise, reprise abandonnée) est ramené à 0,35 s ;
+  - pendant une pause voulue, l'image se pose : rien de nouveau n'apparaît.
 - **Bruitages** discrets (mixés à 0,22) ; jamais de son strident (le « zip » est banni, remplacé par un souffle).
 - Dire ce que la mesure montre, et rappeler que le résultat ne peut pas être écouté par l'agent : c'est l'oreille de l'autrice qui tranche.
 
