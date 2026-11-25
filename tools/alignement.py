@@ -533,7 +533,9 @@ def main(slug: str) -> None:
     mesure = subprocess.run(["ffmpeg", "-i", str(monte), "-t", f"{t:.3f}", "-af", "ebur128", "-f", "null", "-"],
                             capture_output=True, text=True).stderr
     integre = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", mesure)[-1])
-    gain = -16 - integre
+    # reglages.json : {"niveau": -20} vise un niveau plus bas, pour un enregistrement aux crêtes fortes
+    # (le limiteur ne doit retenir que de rares crêtes, sinon le son « pompe »).
+    gain = float(reglages.get("niveau", -16)) - integre
     # Les rares crêtes isolées (consonnes, chocs) sont retenues par un limiteur doux à -1,5 dB.
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(monte), "-t", f"{t:.3f}",
                     "-af", f"volume={gain:.2f}dB,alimiter=limit=0.84:attack=5:release=80:level=disabled",
