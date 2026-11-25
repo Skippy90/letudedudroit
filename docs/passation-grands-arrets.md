@@ -8,17 +8,11 @@ Note pour la session (ou le modèle) qui reprend la production. État au 25 nove
 2. `docs/standards-grands-arrets.md` : toutes les demandes récurrentes de l'autrice. À appliquer d'office, et à compléter le jour même à chaque nouvelle demande récurrente.
 3. `render/manim/atf-129-i-232/` : la vidéo la plus aboutie. C'est le gabarit à copier pour un nouvel arrêt.
 
-## État des pull requests (rien n'est fusionné ; c'est l'autrice qui fusionne)
+## État du dépôt
 
-| PR | Branche | Base | Contenu |
-|---|---|---|---|
-| 7 | `style-rouge-arret-15` | `lien-fiches` | le kit du style rouge : `render/manim/style_rouge/{kit,suite,proto}.py` |
-| 8 | `arret-35-enregistrement` | `lien-fiches` | arrêt 35 |
-| 9 | `arret-25-enregistrement` | `lien-fiches` | arrêt 25 (Aînées pour le climat), terminé |
-| 10 | `atf-129-i-232-zurich` | `main` | script, audit et texte de voix de l'arrêt de Zurich |
-| 11 | `atf-129-i-232-enregistrement` | `arret-25-enregistrement` | vidéo de Zurich, standards, outils, cette note |
+Les pull requests 7 à 11 ont été fusionnées le 25 novembre 2026, sur instruction de l'autrice : le kit du style rouge (`render/manim/style_rouge/`), les arrêts 25 et 35, l'arrêt de Zurich (script, voix, vidéo), les standards, les outils et cette note sont réunis sur la branche `lien-fiches`. La pull request 12 porte `lien-fiches` vers `main`.
 
-Tant que ces branches ne sont pas fusionnées, une nouvelle session doit partir de `atf-129-i-232-enregistrement` et y ajouter le kit de la PR 7 (`git checkout style-rouge-arret-15 -- render/manim/style_rouge`). Les scènes importent `kit` : sans lui, rien ne se rend.
+Une nouvelle session part de `main` si la pull request 12 est fusionnée, sinon de `lien-fiches`. Elle travaille sur une nouvelle branche et ouvre une pull request ; elle ne fusionne que sur instruction explicite de l'autrice.
 
 ## Chaîne de production d'un nouvel arrêt
 
