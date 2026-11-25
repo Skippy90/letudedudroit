@@ -49,13 +49,15 @@ PAUSES = {((44, 1), (44, 2)): 2.2,          # réflexion après la question fina
           ((1, 3), (2, 1)): 1.0,            # question d'accroche
           ((10, 2), (10, 3)): 0.9,          # 10 : « Silence après travailler en Suisse »
           ((13, 1), (13, 2)): 0.3,          # 13 : virgule (début et fin de phrase pris dans deux prises)
-          ((13, 3), (13, 4)): 0.7,          # 13 : « Pause courte avant la dernière phrase »
+          ((13, 3), (13, 4)): 1.2,          # 13 : « Pause courte avant la dernière phrase » ; allongée (demande du 25 nov., 2:30) : la question se détache
+          ((13, 4), (14, 1)): 1.3,          # laisser la question « Est-ce juridiquement possible ? » résonner avant la procédure
           ((17, 1), (17, 2)): 0.5,          # 17 : deux-points
           ((23, 2), (24, 1)): 1.15,         # question qui ouvre « ce qu'il garantit »
           ((27, 2), (27, 3)): 0.9,          # 27 : « Pause après Qui peut invoquer ce droit ? »
           ((37, 2), (37, 3)): 0.8,          # 37 : « Pause avant la dernière phrase »
           ((38, 1), (38, 2)): 0.7, ((38, 2), (38, 3)): 0.55,   # 38 : solennité, deux-points
-          ((39, 1), (39, 2)): 0.6,
+          ((39, 1), (39, 2)): 0.45,         # « Il faut être précis : » / « cet arrêt… » (phrase coupée au montage, 25 nov.)
+          ((39, 2), (39, 3)): 0.6,
           ((43, 1), (43, 2)): 0.6, ((43, 2), (43, 3)): 0.8}    # 43 : « Détacher les 2 idées »
 AJOUTS = [(B(l) + 0.01, 1.2) for l in CHAPITRES]
 _c = sorted(PH)

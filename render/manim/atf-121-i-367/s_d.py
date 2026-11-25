@@ -9,13 +9,16 @@ def carte_lib(icone, l1, l2, l=3.3, h=2.5):
     return VGroup(f, icone, tx)
 
 
+# Les trois icônes sont en couleur, comme les autres (demande du 25 nov., 3:40 : seule la réunion l'était)
 def ic_personnelle(e=1.0):
-    b = _bh(1.0 * e, CREME); b.add(Line(b[1].get_center() + [-0.16 * e, -0.22 * e, 0], b[1].get_center() + [-0.42 * e, 0.12 * e, 0], color=CREME, stroke_width=7 * e), Line(b[1].get_center() + [0.16 * e, -0.22 * e, 0], b[1].get_center() + [0.42 * e, 0.12 * e, 0], color=CREME, stroke_width=7 * e))
+    b = _bh(1.0 * e, CIEL); b.add(Line(b[1].get_center() + [-0.16 * e, -0.22 * e, 0], b[1].get_center() + [-0.42 * e, 0.12 * e, 0], color=CIEL, stroke_width=7 * e), Line(b[1].get_center() + [0.16 * e, -0.22 * e, 0], b[1].get_center() + [0.42 * e, 0.12 * e, 0], color=CIEL, stroke_width=7 * e))
     visage(b, 1.0 * e, "content"); return b
 
 
 def ic_langue(e=1.0):
-    return VGroup(bulle(["Bonjour"], int(18 * e)).scale(0.9).shift(0.25 * e * UP + 0.2 * e * LEFT), bulle(["Grüezi"], int(18 * e)).scale(0.9).shift(0.3 * e * DOWN + 0.25 * e * RIGHT))
+    b1 = bulle(["Bonjour"], int(18 * e)); b2 = bulle(["Grüezi"], int(18 * e))
+    for b_, c_ in ((b1, MENTHE), (b2, AMBRE)): b_[0].set_fill(c_, 1); b_[1].set_fill(c_, 1)
+    return VGroup(b1.scale(0.9).shift(0.25 * e * UP + 0.2 * e * LEFT), b2.scale(0.9).shift(0.3 * e * DOWN + 0.25 * e * RIGHT))
 
 
 def ic_reunion(e=1.0):
@@ -61,15 +64,15 @@ class D1(Sec367):
             self.at(W(20, 1, mot) - 0.3, FadeIn(hauts[k], shift=0.2 * DOWN), FadeIn(lh[k]), rt=0.35); self.son("plop", 0.6)
         socle = RoundedRectangle(corner_radius=0.15, width=9.4, height=1.75, fill_color=ROUGE_3, fill_opacity=1, stroke_width=0).move_to([0, -1.2, 0])
         bs = besoins(1.0).move_to(socle.get_center() + 0.12 * UP)
-        pe20 = frere(1.15, 2, "content"); au_sol(pe20, 4.1, socle.get_top()[1])
-        self.at(W(20, 1, "encore") - 0.2, FadeIn(socle, shift=0.2 * UP), FadeIn(pe20, shift=0.3 * DOWN), rt=0.35)
+        # pas de personnage isolé sur le socle (demande du 25 nov., 4:07) : la personne est celle de « Mener sa vie »
+        self.at(W(20, 1, "encore") - 0.2, FadeIn(socle, shift=0.2 * UP), rt=0.35)
         for k, mot in enumerate(("nourrir", "vêtir", "abri")):
             self.at(W(20, 1, mot) - 0.35, FadeIn(bs[k], scale=0.5), rt=0.35); self.son("ding", 0.45)
         lb = puce("Les besoins élémentaires", 24).move_to(socle.get_bottom() + 0.05 * DOWN)
         self.at(W(20, 2, "besoins") - 0.3, FadeIn(lb, shift=0.1 * UP), rt=0.35)
         fl = VGroup(*[Arrow(socle.get_top() + x * RIGHT, socle.get_top() + x * RIGHT + 0.9 * UP, color=CREME, buff=0.05, stroke_width=6) for x in (-2.7, 0, 2.7)])
-        self.at(W(20, 2, "conditionnent") - 0.3, LaggedStart(*[GrowArrow(f) for f in fl], lag_ratio=0.15), rt=0.5)
-        self.at(W(20, 2, "existence") - 0.2, Indicate(socle, color=ROUGE_4, scale_factor=1.03), pe20.animate(rate_func=there_and_back).shift(0.25 * UP), rt=0.5)
+        self.at(W(20, 2, "conditionnent") - 0.3, LaggedStart(*[GrowArrow(f) for f in fl], lag_ratio=0.15), VGroup(hauts, lh).animate.shift(0.12 * UP), rt=0.5)
+        self.at(W(20, 2, "existence") - 0.2, Indicate(socle, color=ROUGE_4, scale_factor=1.03), hauts[2].animate(rate_func=there_and_back).shift(0.25 * UP), rt=0.5)
         # 21 — sans ce socle, les libertés perdent leur portée ; la dignité humaine
         self.vider(S(21, 1) - 0.4, rt=0.4)
         cs = VGroup(carte_lib(ic_personnelle(0.8), "Liberté", "personnelle", 2.8, 2.1), carte_lib(ic_langue(0.85), "Liberté", "de la langue", 2.8, 2.1), carte_lib(ic_reunion(0.85), "Liberté", "de réunion", 2.8, 2.1)).arrange(RIGHT, buff=0.35).move_to([0, 1.55, 0])

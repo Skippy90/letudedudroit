@@ -195,10 +195,10 @@ class E2(Sec367):
             g.arrange(DOWN, buff=0.25).move_to([-4.4 + 4.4 * k, 1.0, 0])
         for k, mot in enumerate(("permis", "travailler", "revenu")):
             x = coche(False, 0.34).move_to(it[k][0].get_corner(UR) + 0.1 * UR)
-            self.at(W(39, 1, mot) - 0.35, FadeIn(it[k], shift=0.2 * UP), rt=0.3)
+            self.at(W(39, 2, mot) - 0.35, FadeIn(it[k], shift=0.2 * UP), rt=0.3)
             self.play(FadeIn(x, scale=2), run_time=0.25); self.son("thud", 0.4)
         q = ligne_coche(None, "Pouvaient-ils être privés", "de toute assistance nécessaire ?", 24).move_to([0, -1.2, 0])
-        self.at(W(39, 2, "question") - 0.3, FadeIn(q, shift=0.15 * UP), rt=0.4); self.son("ding", 0.6)
+        self.at(W(39, 3, "question") - 0.3, FadeIn(q, shift=0.15 * UP), rt=0.4); self.son("ding", 0.6)
         no = coche(False, 0.42).move_to(q[0].get_center())
-        self.at(W(39, 2, "nécessaire") + 0.3, Transform(q[0], no), rt=0.4)
+        self.at(W(39, 3, "nécessaire") + 0.3, Transform(q[0], no), rt=0.4)
         self.fin()

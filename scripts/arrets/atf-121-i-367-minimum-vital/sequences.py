@@ -102,12 +102,14 @@ S = [
 # Séquence 22 : l'autrice lit « En effet, plusieurs constitutions… » dans toutes ses prises ; le texte de voix le reprend (le couper tranchait la syllabe « -fet »).
 # Séquence 13 : début de phrase pris dans une autre prise que la fin ; la ligne est coupée après « gouvernement, ».
 # Séquences 17 et 38 : l'autrice a lu « … alors : sans … » et « … bernois : priver … » en deux temps ; le texte de voix passe à la ligne après les deux-points.
+# Séquence 39 : la première prise de « cet arrêt ne leur reconnaît… » bute sur « ni un revenu » et reprend ; l'autrice l'a relue d'une traite juste après.
+# Le texte de voix passe à la ligne après « précis : » pour que le montage garde cette seconde lecture (demande du 25 nov., « 8:09 y a une reprise »).
 VOIX = [("ATF 121 I 367", "ATF cent vingt et un, un, trois cent soixante-sept"), ("frères V. ", "frères V "),
  ("26 octobre", "vingt-six octobre"), ("27 octobre", "vingt-sept octobre"), ("5 décembre", "cinq décembre"),
  ("1874", "mille huit cent septante-quatre"), ("1980", "mille neuf cent huitante"), ("1987", "mille neuf cent huitante-sept"),
  ("1989", "mille neuf cent huitante-neuf"), ("1990", "mille neuf cent nonante"), ("1991", "mille neuf cent nonante et un"),
  ("1994", "mille neuf cent nonante-quatre"), ("1995", "mille neuf cent nonante-cinq"), ("1999", "mille neuf cent nonante-neuf"),
- ("2000", "deux mille"), ("bernois : priver", "bernois :\npriver"), ("alors : sans", "alors :\nsans"), ("gouvernement, demander", "gouvernement,\ndemander"), ("Plusieurs constitutions cantonales", "En effet, plusieurs constitutions cantonales"), ("article 12", "article douze"), ("3 frères", "trois frères"), ("3 hommes", "trois hommes"),
+ ("2000", "deux mille"), ("bernois : priver", "bernois :\npriver"), ("précis : cet", "précis :\ncet"), ("alors : sans", "alors :\nsans"), ("gouvernement, demander", "gouvernement,\ndemander"), ("Plusieurs constitutions cantonales", "En effet, plusieurs constitutions cantonales"), ("article 12", "article douze"), ("3 frères", "trois frères"), ("3 hommes", "trois hommes"),
  ("3 ans", "trois ans"), ("2 choses", "deux choses")]
 NOTES = [
  "Source primaire : ATF 121 I 367, arrêt du 27 octobre 1995, IIe Cour de droit public, en particulier considérants 1b, 2a–d, 3a–d et 4. Texte original en allemand ; le script propose une reformulation française, non une citation littérale.",
