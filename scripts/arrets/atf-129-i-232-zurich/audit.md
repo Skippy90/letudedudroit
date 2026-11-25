@@ -99,3 +99,7 @@ Vidéo : 8 min 24 s avec l'écran de fin (voix accélérée de 5 %, hauteur cons
 
 - **Timbre aligné sur la vidéo 25**, à la demande de l'autrice. Mesure par tiers d'octave : l'enregistrement de Zurich avait environ 5 dB de trop entre 160 et 400 Hz et 7 à 8 dB de moins au-dessus de 3 kHz que la voix traitée de la vidéo 25 (son plus sourd). Égalisation de ±8 dB au plus (`son/egaliser.py`, référence `son/ref25.npy`) : écart moyen ramené de 4,6 à 1,1 dB. Niveau final −15,7 LUFS (vidéo 25 : −15,1), 1 % d'échantillons retouchés par le limiteur doux.
 - Séquence 17 : la personne dont la demande est acceptée reçoit une croix suisse sur son maillot ; celle dont la demande est rejetée n'en a pas.
+
+### Version 4 (25 novembre 2026)
+
+Application des standards de la série (`docs/standards-grands-arrets.md`, consignés ce jour) : corps électoral aux couleurs de Zurich avec drapeau zurichois et drapeau suisse ; juges en robe noire, rabat blanc et toque ; design commun des décisions (feuille à en-tête, dispositif en tampon, sceau) ; icônes en couleur ; un militant suit l'initiative d'une instance à l'autre et réagit à chaque décision ; séquences 40 à 45 refaites en images ; texte du bas en lignes de 42 caractères au plus, surlignage calé sur les mots. Texte, voix, minutages et chapitres inchangés. Aucun texte nouveau à l'écran n'ajoute d'affirmation juridique : « Sa procédure ne peut pas respecter la Constitution » abrège la séquence 40 ; les légendes des séquences 42 à 44 reprennent le script.

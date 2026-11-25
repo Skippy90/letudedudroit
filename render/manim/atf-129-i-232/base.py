@@ -797,11 +797,11 @@ def juge(h=1.0, humeur="neutre"):
 def decision(mot, ok, titre_="DÉCISION", e=1.0, sceau=True):
     """Le design des décisions : une feuille à en-tête, le dispositif en tampon, un sceau à ruban."""
     t = T(mot, 24, VERT_OK if ok else ROUGE)
-    l = max(2.25, t.width + 0.75)
+    tt = T(titre_, 13); l = max(2.25, t.width + 0.75, tt.width + 0.9)
     f = RoundedRectangle(corner_radius=0.07, width=l, height=1.12, fill_color=CREME, fill_opacity=1, stroke_width=0)
     ombre = f.copy().set_fill(ROUGE_4, 0.6).shift(0.07 * DOWN + 0.07 * RIGHT)
     tete = Rectangle(width=l, height=0.3, fill_color=ENCRE, fill_opacity=1, stroke_width=0).align_to(f, UP)
-    tt = T(titre_, 13).move_to(tete)
+    tt.move_to(tete)
     cadre = RoundedRectangle(corner_radius=0.06, width=t.width + 0.28, height=t.height + 0.24, color=VERT_OK if ok else ROUGE, stroke_width=4)
     VGroup(cadre, t).move_to(f.get_center() + 0.16 * DOWN + (0.16 * LEFT if sceau else 0)).rotate(-0.05)
     g = VGroup(ombre, f, tete, tt, cadre, t)
