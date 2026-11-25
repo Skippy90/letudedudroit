@@ -60,12 +60,16 @@ Votre réponse à la question finale : pourquoi une administration ne peut-elle 
 
 droit suisse, Tribunal fédéral, ATF 129 I 232, naturalisation, Zurich, initiative populaire, démocratie directe, droits fondamentaux, droit d'être entendu, obligation de motiver, interdiction de discrimination, sphère privée, droit constitutionnel, Emmen, loi sur la nationalité
 
-## Réglages
+## Réglages dans YouTube Studio
 
-- Miniature : miniature-zurich-atf-129-i-232.png
-- Sous-titres : zurich-sous-titres.srt (français)
-- Langue : français. Catégorie : Éducation. Pas conçu pour les enfants.
-- Écran de fin : les 15 dernières secondes sont muettes et laissent la place à la vidéo suivante et au bouton d'abonnement.
+- Fichier vidéo : zurich-atf-129-i-232-v5.mp4 (1080p, 8 min 20 s).
+- Miniature : miniature-zurich-atf-129-i-232.png.
+- Sous-titres : zurich-sous-titres.srt (français, « avec minutage »).
+- Langue de la vidéo : français. Catégorie : Éducation. « Non, elle n'est pas conçue pour les enfants. »
+- Écran de fin : à partir de 8:05, sur les 15 dernières secondes, qui sont muettes. Une vidéo (« la plus pertinente pour le spectateur », ou la vidéo sur Emmen) dans le cadre de gauche, le bouton d'abonnement dans le cercle de droite.
+- Fiche (carte) conseillée vers 7:00, quand la vidéo cite Emmen : lien vers la vidéo sur l'ATF 129 I 217.
+- Playlist : les arrêts du Tribunal fédéral, si elle existe.
+- Après la mise en ligne : épingler le commentaire, mettre la fiche PDF sur letudedudroit.ch, puis donner le lien et la date pour la mise à jour de la page du site.
 
 ## À vérifier avant de publier
 
