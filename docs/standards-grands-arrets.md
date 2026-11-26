@@ -1,8 +1,8 @@
 # Standards des vidéos « grands arrêts de droit constitutionnel »
 
-Ce document consigne ce qui a été demandé, corrigé et validé sur les quatre premières vidéos de la série (Emmen, ATF 129 I 217 ; Aînées pour le climat, ATF 146 I 145 ; Zurich, ATF 129 I 232 ; Minimum vital, ATF 121 I 367). Il s'applique d'office à chaque nouvelle vidéo de la série : rien de ce qui suit ne doit avoir à être redemandé. Il complète le brief (`CLAUDE.md`) et la charte visuelle (`docs/charte-visuelle.md`) ; en cas de désaccord sur le style, c'est ce document qui vaut pour la série.
+Ce document consigne ce qui a été demandé, corrigé et validé sur les quatre premières vidéos de la série (Emmen, ATF 129 I 217 ; Aînées pour le climat, ATF 146 I 145 ; Zurich, ATF 129 I 232 ; Minimum vital, ATF 121 I 367). Il s'applique d'office à chaque nouvelle vidéo de la série : rien de ce qui suit ne doit avoir à être redemandé. Section 8 : la série « Les grands arrêts français ». Il complète le brief (`CLAUDE.md`) et la charte visuelle (`docs/charte-visuelle.md`) ; en cas de désaccord sur le style, c'est ce document qui vaut pour la série.
 
-Dernière mise à jour : 26 novembre 2026.
+Dernière mise à jour : 26 novembre 2026 (série française ajoutée).
 
 ## 1. Déroulement d'une vidéo
 
@@ -154,7 +154,18 @@ Dossier ambre, cadenas doré, loupe à verre bleu, urne à bandeau menthe, fenê
 - **Fiche de cours** : deux pages au plus, tirée du texte du script.
 - Fichiers livrés avec un numéro de version dans le nom ; une version « légère » pour regarder, la version 1080p pour YouTube.
 
-## 8. Ce qui est automatisé, et où
+## 8. Série « Les grands arrêts français » (droit étranger)
+
+Ouverte le 26 novembre 2026 avec FR-01, Morsang-sur-Orge. Tout ce qui précède s'applique, avec ces différences :
+
+- **Numérotation et dossiers** : FR-01, FR-02… ; `scripts/arrets-francais/fr-NN-<slug>/`. Le script de l'autrice est découpé en **actes** (I · Le paradoxe, II · La bataille…) : ils figurent en marge du PDF et du Word (`ACTES` dans `sequences.py`) et servent de repères de montage, jamais de sous-titres à l'écran.
+- **Sources** : l'arrêt sur ArianeWeb, la base du Conseil d'État (conseil-etat.fr, lisible avec le navigateur intégré), au lieu de bger.ch ; les codes sur **Légifrance**, au lieu de Fedlex. Légifrance oppose une vérification de sécurité au navigateur de l'agent : elle n'est jamais contournée ; le texte est vérifié par la citation qu'en fait l'arrêt, et la relecture sur Légifrance est laissée à l'autrice dans l'audit. Pour un article abrogé (Code des communes), citer aussi l'article qui le reprend aujourd'hui (Code général des collectivités territoriales), sans dire que l'arrêt l'applique.
+- **Droit étranger signalé** : la vidéo dit dès l'accueil que l'arrêt est français et situe l'institution (« le Conseil d'État, la plus haute juridiction administrative française ») ; elle ne transpose jamais la règle au droit suisse.
+- **Personnes nommées dans l'arrêt publié** (demande du 26 novembre 2026) : nommées une seule fois, ensuite par leur rôle (« le participant »). Les sociétés restent nommées.
+- **Style visuel** (demande du 26 novembre 2026, « on passe au bleu drapeau français ») : fond **bleu du drapeau français**, `#000091`, la nuance foncée remise sur le drapeau de l'Élysée depuis juillet 2020 (à confirmer sur la charte de l'État avant le premier rendu). Mêmes formes crème et encre, mêmes icônes en couleur, mêmes personnages ; le rouge reste réservé aux croix « non » et aux liaisons du script.
+- **Nombres dans le texte de voix** : à la manière romande de l'autrice (« nonante »), puisque c'est elle qui lit ; le texte de voix ne sert qu'à l'alignement.
+
+## 9. Ce qui est automatisé, et où
 
 - Briques graphiques : `render/manim/atf-129-i-232/base.py`, section « STANDARDS GRANDS ARRÊTS », et `render/manim/atf-121-i-367/base.py` (Berne, membre du gouvernement, guichet, demande, réfugié, toit, parapluie, étagère des prestations, geste de désigner, objets donnés de main en main). À extraire dans `render/manim/commun/` à la prochaine vidéo, sans changer les noms.
 - Texte du bas et sous-titres : `srt.py`, `ass.py`.
