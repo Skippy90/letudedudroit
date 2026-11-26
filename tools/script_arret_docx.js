@@ -13,7 +13,7 @@ const cel = (enfants, w, o = {}) => new TableCell({ children: enfants, width: { 
 const lignes = [new TableRow({ tableHeader: true, children: ["MARGE · DIRECTION VOCALE", "TEXTE À ENREGISTRER"].map((t, i) =>
   cel([new Paragraph({ children: [run(t, { size: 16, color: "888888", bold: true })] })], i ? C2 : C1)) })]
   .concat(d.sequences.map((s) => new TableRow({ cantSplit: true, children: [
-    cel([new Paragraph({ children: [run(String(s.n).padStart(2, "0") + "  ", { size: 19, bold: true, color: ROUGE }), run(s.etiquette, { size: 19, bold: true }), run(" | " + s.ton, { size: 19, color: "777777" })] }),
+    cel([...(s.acte ? [new Paragraph({ spacing: { after: 60 }, children: [run(s.acte, { size: 16, bold: true, color: ROUGE })] })] : []), new Paragraph({ children: [run(String(s.n).padStart(2, "0") + "  ", { size: 19, bold: true, color: ROUGE }), run(s.etiquette, { size: 19, bold: true }), run(" | " + s.ton, { size: 19, color: "777777" })] }),
          new Paragraph({ spacing: { before: 50 }, children: [run(s.direction, { size: 19, italics: true, color: s.dm ? "8A5A00" : "555555" })] })], C1),
     cel([new Paragraph({ spacing: { line: 340 }, children: texte(s) })], C2, s.m ? { gauche: { style: BorderStyle.SINGLE, size: 18, color: "E0A526" } } : {})] })));
 const p = (enf, o = {}) => new Paragraph({ children: enf, ...o });
@@ -21,7 +21,7 @@ const doc = new Document({
   numbering: { config: [{ reference: "puces", levels: [{ level: 0, format: LevelFormat.BULLET, text: "•", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 500, hanging: 260 } } } }] }] },
   sections: [{ properties: { page: { size: { width: 11906, height: 16838, orientation: PageOrientation.LANDSCAPE }, margin: { top: 900, bottom: 900, left: 1200, right: 1200 } } },
     children: [
-      p([run("L’ÉTUDE DU DROIT / SCRIPT DE VOIX OFF · VERSION DÉFINITIVE", { size: 16, color: "888888" })], { alignment: AlignmentType.RIGHT }),
+      p([run(d.entete || "L’ÉTUDE DU DROIT / SCRIPT DE VOIX OFF · VERSION DÉFINITIVE", { size: 16, color: "888888" })], { alignment: AlignmentType.RIGHT }),
       p([run(d.titre, { size: 40, bold: true })], { spacing: { before: 120, after: 40 } }),
       p([run(d.sous_titre, { size: 21, color: "555555" })], { spacing: { after: 160 } }),
       p([run("Mode d’emploi. ", { size: 20, bold: true }), run("Lire uniquement la colonne de droite. Les consignes en marge dirigent l’intention, le débit et les silences. Les numéros restent fixes pour le montage.", { size: 20 })]),
