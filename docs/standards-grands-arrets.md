@@ -164,6 +164,22 @@ Ouverte le 26 novembre 2026 avec FR-01, Morsang-sur-Orge. Tout ce qui précède 
 - **Personnes nommées dans l'arrêt publié** (demande du 26 novembre 2026) : nommées une seule fois, ensuite par leur rôle (« le participant »). Les sociétés restent nommées.
 - **Style visuel** (demande du 26 novembre 2026, « on passe au bleu drapeau français ») : fond **bleu du drapeau français**, `#000091`, la nuance foncée remise sur le drapeau de l'Élysée depuis juillet 2020 (à confirmer sur la charte de l'État avant le premier rendu). Mêmes formes crème et encre, mêmes icônes en couleur, mêmes personnages ; le rouge reste réservé aux croix « non » et aux liaisons du script.
 - **Nombres dans le texte de voix** : à la manière romande de l'autrice (« nonante »), puisque c'est elle qui lit ; le texte de voix ne sert qu'à l'alignement.
+- **Production muette d'abord** (demande du 26 novembre 2026, « commence la production muette ») : dès que le script est validé, les images sont produites sur des instants estimés (2,8 mots par seconde, débit mesuré de l'autrice ; `FR01_TIMINGS`), avec le texte du bas et une piste silencieuse (`muet.sh`). Après l'enregistrement, on recale sur les vrais instants sans redessiner.
+- **Briques de la série** (`render/manim/fr-01-morsang-sur-orge/base.py`, section « FRANCE ») :
+
+| Élément | Dessin | Brique |
+| --- | --- | --- |
+| Drapeau français | bandes verticales bleu, blanc, rouge, bleu côté hampe, liseré crème (sinon le bleu se perd sur le fond) | `drapeau_fr` |
+| Maire | silhouette claire, écharpe tricolore de l'épaule droite au côté gauche, bleu près du col, glands dorés (CGCT, art. D. 2122-4) | `maire`, `echarpe_fr` |
+| Mairie | façade crème, horloge au fronton, enseigne « MAIRIE », drapeau tricolore | `mairie` |
+| Juridiction administrative | façade à colonnes, drapeau tricolore, nom en pastille | `palais` |
+| Conseil d'État | longue façade à arcades sur deux niveaux (Palais-Royal), fronton, drapeau | `conseil_etat` |
+| Code français | livre bleu clair, ruban tricolore ; pas de couverture d'éditeur | `code_fr` |
+| Ordre public | cadre titré « ORDRE PUBLIC », une tuile crème par composante ; la dignité est une tuile ambre qui vient s'y ajouter | `ordre_public`, `tuile_dignite`, `tuile` |
+| Pesée de deux intérêts | balance ; le plateau le plus lourd descend | `balance`, `pencher` |
+| Argent | pièce « F » (francs français avant 2002), billets avec leur montant | `piece_fr`, `billets` |
+| Carte | France métropolitaine (Natural Earth), la Suisse en repère ; loupe pour situer une commune près de Paris | `carte_france`, `projette` |
+| Distinction juridique | deux vignettes ; neutres (pastille ambre) quand la vidéo ne tranche pas | `vignette` |
 
 ## 9. Ce qui est automatisé, et où
 
